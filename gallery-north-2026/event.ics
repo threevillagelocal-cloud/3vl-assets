@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Three Village Local//Gallery North Outdoor Art Show//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gallery-north-outdoor-art-show-2026-day1@threevillagelocal.com
+DTSTAMP:20260909T000000Z
+DTSTART:20260926T140000Z
+DTEND:20260926T210000Z
+SUMMARY:Gallery North Outdoor Art Show & Music Festival (Day 1)
+DESCRIPTION:Gallery North's 61st Annual Outdoor Art Show and Music Festival. Free admission\, 100+ artists\, live music from WUSB\, kids' art activities\, and food vendors. Details: https://gallerynorth.org/pages/outdoor-art-show-and-music-festival
+LOCATION:Gallery North\, 90 North Country Rd\, Setauket\, NY 11733
+URL:https://gallerynorth.org/pages/outdoor-art-show-and-music-festival
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:gallery-north-outdoor-art-show-2026-day2@threevillagelocal.com
+DTSTAMP:20260909T000000Z
+DTSTART:20260927T140000Z
+DTEND:20260927T210000Z
+SUMMARY:Gallery North Outdoor Art Show & Music Festival (Day 2)
+DESCRIPTION:Gallery North's 61st Annual Outdoor Art Show and Music Festival. Free admission\, 100+ artists\, live music from WUSB\, kids' art activities\, and food vendors. Details: https://gallerynorth.org/pages/outdoor-art-show-and-music-festival
+LOCATION:Gallery North\, 90 North Country Rd\, Setauket\, NY 11733
+URL:https://gallerynorth.org/pages/outdoor-art-show-and-music-festival
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
