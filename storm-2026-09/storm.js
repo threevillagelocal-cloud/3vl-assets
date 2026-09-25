@@ -107,7 +107,7 @@ var t=f(pick('temperature')),ws=kmh(pick('windSpeed')),wg=kmh(val(p,'windGust'))
 var feel=f(val(p,'windChill')!=null?val(p,'windChill'):val(p,'heatIndex'));if(feel==null)feel=t;
 var dirs=['N','NE','E','SE','S','SW','W','NW'];ticks();
 setNum('stm-temp',t,0);setNum('stm-feel',feel,0);setNum('stm-hum',h,0);setNum('stm-dew',dp,0);
-if(ws!=null)setNum('stm-wspd',ws,0);
+if(ws!=null){setNum('stm-wspd',ws,0);if($('stm-wsus'))$('stm-wsus').textContent=Math.round(ws);window.stmW={s:ws,g:(wg!=null&&wg>ws)?wg:ws*1.25,d:wd,t:Date.now()}}
 if($('stm-wgst'))$('stm-wgst').textContent=wg!=null?Math.round(wg):'none';
 if(wd!=null){if($('stm-wdir'))$('stm-wdir').textContent=dirs[Math.round(wd/45)%8];if($('stm-needle'))$('stm-needle').style.transform='rotate('+wd+'deg)'}
 var garc=$('stm-garc');if(garc){var gv=wg!=null?wg:(ws||0);garc.style.strokeDashoffset=(628.3*(1-Math.min(gv/60,1))).toFixed(1)}
@@ -123,6 +123,13 @@ lastObs=new Date(p.timestamp);ago();
 });
 }
 function ago(){var el=$('stm-ago');if(!el||!lastObs)return;var m=Math.round((Date.now()-lastObs.getTime())/60000);el.textContent='Observed '+tm(lastObs)+' · '+(m<1?'just now':m===1?'1 min ago':m<90?m+' min ago':Math.round(m/60)+' hr ago')}
+/* ---------- live wind motion (bounded by measured sustained..gust) ---------- */
+var jv=null;
+function jitter(){var W=window.stmW,el=$('stm-wspd'),nd=$('stm-needle');
+  if(W&&el&&Date.now()-W.t>2500){var r=Math.random(),tgt=W.s+(W.g-W.s)*(r<.55?r*.35:r*r);
+    var from=jv==null?W.s:jv,t0=null;(function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/600,1),e=p*(2-p);jv=from+(tgt-from)*e;el.textContent=Math.round(jv);if(p<1)requestAnimationFrame(step)})(performance.now());
+    if(nd&&W.d!=null)nd.style.transform='rotate('+(W.d+(Math.random()-.5)*14).toFixed(1)+'deg)'}
+  setTimeout(jitter,700+Math.random()*1100)}
 /* ---------- hero countdown ---------- */
 function pad(n){return (n<10?'0':'')+n}
 function countdown(){var cl=$('stm-cl'),cv=$('stm-cv');if(!cl||!cv)return;var now=new Date(),target,label;
@@ -159,7 +166,7 @@ Promise.all([forecast().catch(function(){}),alerts().catch(function(){}).then(fu
 }
 function go(){
 document.addEventListener('change',function(e){if(e.target&&e.target.classList&&e.target.classList.contains('stm-cb'))prog()});
-restore();ticks();scrollFx();countdown();setInterval(countdown,1000);
+restore();ticks();scrollFx();countdown();setInterval(countdown,1000);if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches))setTimeout(jitter,3000);
 run();setInterval(run,10*60*1000);setInterval(ago,30000);
 ['stm-save','stm-save2'].forEach(function(id){var b=$(id);if(b)b.addEventListener('click',save)});
 var r=$('stm-ref');if(r)r.addEventListener('click',function(){r.classList.add('stm-spin');run();setTimeout(function(){r.classList.remove('stm-spin')},600)});

@@ -206,7 +206,7 @@
 .stm-dgust{fill:none;stroke:url(#stmgg);stroke-width:8;stroke-linecap:round;stroke-dasharray:628.3;stroke-dashoffset:628.3;transition:stroke-dashoffset 1.6s cubic-bezier(.2,.8,.2,1)}
 #stm-ticks line{stroke:rgba(200,225,255,.28);stroke-width:1.2}#stm-ticks line.stm-tk{stroke:rgba(200,225,255,.7);stroke-width:2}
 .stm-dcard{fill:#cfe3f7;font-size:13px;font-weight:900;text-anchor:middle}
-.stm-needle{transform-box:view-box;transform-origin:110px 110px;transition:transform 1.4s cubic-bezier(.2,.8,.2,1.2)}
+.stm-needle{transform-box:view-box;transform-origin:110px 110px;transition:transform .9s cubic-bezier(.3,.7,.3,1.4)}
 .stm-needle path{fill:#f2a93b;filter:drop-shadow(0 0 6px rgba(242,169,59,.8))}
 .stm-dhub{fill:#0b1726;stroke:rgba(77,225,255,.45);stroke-width:1.5}
 .stm-dspd{fill:#fff;font-size:40px;font-weight:900;text-anchor:middle;font-variant-numeric:tabular-nums}
