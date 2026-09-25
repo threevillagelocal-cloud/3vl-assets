@@ -127,7 +127,7 @@ function ago(){var el=$('stm-ago');if(!el||!lastObs)return;var m=Math.round((Dat
 var jv=null;
 function jitter(){var W=window.stmW,el=$('stm-wspd'),nd=$('stm-needle');
   if(W&&el&&Date.now()-W.t>2500){var r=Math.random(),tgt=W.s+(W.g-W.s)*(r<.55?r*.35:r*r);
-    var from=jv==null?W.s:jv,t0=null;(function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/600,1),e=p*(2-p);jv=from+(tgt-from)*e;el.textContent=Math.round(jv);if(p<1)requestAnimationFrame(step)})(performance.now());
+    var lo=W.s,hi=Math.max(W.g,W.s),from=jv==null?W.s:Math.min(Math.max(jv,lo),hi),t0=null;requestAnimationFrame(function step(ts){if(t0===null)t0=ts;var p=Math.min(Math.max((ts-t0)/600,0),1),e=p*(2-p);jv=Math.min(Math.max(from+(tgt-from)*e,lo),hi);el.textContent=Math.round(jv);if(p<1)requestAnimationFrame(step)});
     if(nd&&W.d!=null)nd.style.transform='rotate('+(W.d+(Math.random()-.5)*14).toFixed(1)+'deg)'}
   setTimeout(jitter,700+Math.random()*1100)}
 /* ---------- hero countdown ---------- */
