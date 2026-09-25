@@ -310,3 +310,5 @@
 .stm-rlbl{position:absolute;left:18px;top:-4px;white-space:nowrap;color:#fff;font-weight:900;font-size:12px;text-shadow:0 1px 3px #000,0 0 8px #000}
 .stm-rfail .stm-rbar,.stm-rfail .stm-rtimebox,.stm-rfail .stm-rleg,.stm-rfail .stm-rhome{display:none}
 @media (max-width:600px){.stm-rdr{aspect-ratio:3/4;min-height:420px}.stm-rspan{display:none}.stm-rleg{bottom:64px}.stm-rhname{font-size:13px}}
+
+.stm{opacity:1!important}
