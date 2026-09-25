@@ -1,0 +1,89 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Arial,sans-serif;color:#fff;overflow:hidden;background:#0b1522}
+.c{position:relative;overflow:hidden}
+.photo{position:absolute;inset:0;background:url(hero-rain.jpg) center 60%/cover no-repeat}
+.shade{position:absolute;inset:0}
+.rain{position:absolute;inset:0;background:repeating-linear-gradient(105deg,rgba(255,255,255,.06) 0 2px,transparent 2px 22px)}
+.glow{position:absolute;border-radius:50%;background:radial-gradient(closest-side,rgba(77,225,255,.28),transparent)}
+.live{display:inline-flex;align-items:center;gap:14px;background:#c8423a;color:#fff;font-weight:900;letter-spacing:.14em;border-radius:10px;box-shadow:0 8px 24px rgba(200,66,58,.45)}
+.live i{display:block;border-radius:50%;background:#fff;box-shadow:0 0 0 6px rgba(255,255,255,.3)}
+.kick{font-weight:900;letter-spacing:.3em;text-transform:uppercase;color:#f2a93b}
+.h{font-family:'Bebas Neue',Impact,sans-serif;line-height:.84;letter-spacing:2px;text-shadow:0 8px 30px rgba(0,0,0,.55)}
+.h b{color:#4de1ff;font-weight:400}
+.sub{font-weight:800;line-height:1.2;color:#e8f1fb}
+.chips{display:flex;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:10px;background:rgba(8,16,28,.62);border:2px solid rgba(77,225,255,.45);border-radius:999px;font-weight:800;color:#fff;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.chip s{text-decoration:none;color:#4de1ff}
+.logo{position:absolute;filter:drop-shadow(0 8px 18px rgba(0,0,0,.5))}
+.bar{position:absolute;left:0;right:0;bottom:0;background:#0e1a29;border-top:5px solid #f2a93b;display:flex;align-items:center;justify-content:space-between}
+.bl{font-weight:900}.br{font-weight:900;color:#f2a93b;letter-spacing:.14em;text-transform:uppercase}
+.credit{position:absolute;right:14px;color:rgba(255,255,255,.5);font-size:12px;font-weight:600}
+.cta{display:inline-flex;align-items:center;gap:12px;background:#f2a93b;color:#0e1a29;font-weight:900;border-radius:14px;letter-spacing:.06em;text-transform:uppercase}
+
+/* wide 1200x630 */
+.wide{width:1200px;height:630px}
+.wide .shade{background:linear-gradient(90deg,rgba(8,16,28,.93) 0%,rgba(8,16,28,.7) 55%,rgba(8,16,28,.25) 100%),linear-gradient(0deg,rgba(8,16,28,.7),transparent 50%)}
+.wide .live{position:absolute;left:52px;top:44px;font-size:22px;padding:10px 18px}.wide .live i{width:14px;height:14px}
+.wide .kick{position:absolute;left:54px;top:118px;font-size:24px}
+.wide .h{position:absolute;left:48px;top:152px;font-size:150px}
+.wide .sub{position:absolute;left:54px;top:300px;font-size:30px;max-width:720px}
+.wide .chips{position:absolute;left:52px;right:300px;top:388px;gap:10px}
+.wide .chip{font-size:20px;padding:9px 16px}
+.wide .logo{right:48px;top:40px;width:180px}
+.wide .bar{height:84px;padding:0 52px}.wide .bl{font-size:26px}.wide .br{font-size:22px}
+.wide .credit{bottom:92px}
+.wide .glow{right:-120px;top:-160px;width:640px;height:640px}
+
+/* square 1080 */
+.sq{width:1080px;height:1080px}
+.sq .shade{background:linear-gradient(180deg,rgba(8,16,28,.35) 0%,rgba(8,16,28,.55) 35%,rgba(8,16,28,.92) 78%)}
+.sq .live{position:absolute;left:64px;top:64px;font-size:30px;padding:14px 24px}.sq .live i{width:18px;height:18px}
+.sq .logo{right:60px;top:52px;width:200px}
+.sq .kick{position:absolute;left:66px;top:420px;font-size:34px}
+.sq .h{position:absolute;left:60px;top:470px;font-size:206px;white-space:nowrap}
+.sq .sub{position:absolute;left:66px;top:780px;font-size:38px;max-width:950px}
+.sq .chips{position:absolute;left:62px;right:62px;top:880px;gap:12px}
+.sq .chip{font-size:26px;padding:11px 20px}
+.sq .credit{bottom:14px}
+
+/* instagram 1080x1350 */
+.ig{width:1080px;height:1350px}
+.ig .shade{background:linear-gradient(180deg,rgba(8,16,28,.35) 0%,rgba(8,16,28,.5) 30%,rgba(8,16,28,.93) 70%)}
+.ig .live{position:absolute;left:64px;top:64px;font-size:30px;padding:14px 24px}.ig .live i{width:18px;height:18px}
+.ig .logo{right:60px;top:52px;width:210px}
+.ig .kick{position:absolute;left:66px;top:600px;font-size:36px}
+.ig .h{position:absolute;left:60px;top:650px;font-size:208px;white-space:nowrap}
+.ig .sub{position:absolute;left:66px;top:858px;font-size:40px;max-width:950px}
+.ig .chips{position:absolute;left:62px;right:62px;top:975px;gap:12px}
+.ig .chip{font-size:27px;padding:11px 20px}
+.ig .cta{position:absolute;left:62px;top:1175px;font-size:36px;padding:18px 28px}
+.ig .credit{bottom:14px}
+</style></head><body>
+<div class="c" id="c">
+<div class="photo"></div><div class="shade"></div><div class="rain"></div><div class="glow"></div>
+<div class="live"><i></i>LIVE</div>
+<img class="logo" src="logo3vl.png">
+<div class="kick">Three Village</div>
+<div class="h">Storm <b>Center</b></div>
+<div class="sub" id="sub">Everything you need this weekend, updated live all storm long</div>
+<div class="chips">
+<span class="chip"><s>&#9679;</s> Live Radar</span>
+<span class="chip"><s>&#9679;</s> Wind &amp; Rain Tracker</span>
+<span class="chip"><s>&#9679;</s> Alerts &amp; Flood Times</span>
+<span class="chip"><s>&#9679;</s> Cancellations</span>
+<span class="chip"><s>&#9679;</s> Local Pros Who Can Help</span>
+</div>
+<div class="cta" id="cta">&#128073; Link in bio</div>
+<div class="bar" id="bar"><div class="bl">Fri Sept 25 to Sun Sept 27, 2026</div><div class="br">threevillagelocal.com</div></div>
+<div class="credit">Photo: Mateus S. Figueiredo, CC BY-SA 4.0</div>
+</div>
+<script>
+var f=(location.search.match(/f=(\w+)/)||[])[1]||'wide';document.getElementById('c').className='c '+f;
+if(f!=='ig')document.getElementById('cta').style.display='none';
+if(f!=='wide')document.getElementById('bar').style.display='none';
+if(f==='wide')document.getElementById('sub').textContent='Live radar, alerts, cancellations and local help, updated all weekend';
+</script>
+</body></html>
