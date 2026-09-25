@@ -107,8 +107,8 @@ var t=f(pick('temperature')),ws=kmh(pick('windSpeed')),wg=kmh(val(p,'windGust'))
 var feel=f(val(p,'windChill')!=null?val(p,'windChill'):val(p,'heatIndex'));if(feel==null)feel=t;
 var dirs=['N','NE','E','SE','S','SW','W','NW'];ticks();
 setNum('stm-temp',t,0);setNum('stm-feel',feel,0);setNum('stm-hum',h,0);setNum('stm-dew',dp,0);
-if(ws!=null){setNum('stm-wspd',ws,0);if($('stm-wsus'))$('stm-wsus').textContent=Math.round(ws);window.stmW={s:ws,g:(wg!=null&&wg>ws)?wg:ws*1.25,d:wd,t:Date.now()}}
-if($('stm-wgst'))$('stm-wgst').textContent=wg!=null?Math.round(wg):'none';
+if(ws!=null){setNum('stm-wspd',ws,0);if($('stm-wsus'))$('stm-wsus').textContent=Math.round(ws);window.stmW={s:ws,g:(wg!=null&&wg>ws)?wg:ws+2,d:wd,t:Date.now()}}
+if($('stm-wgst')){var gp=$('stm-wgst').parentNode;if(gp&&wg!=null&&wg>0){$('stm-wgst').textContent=Math.round(wg);gp.lastChild.nodeValue=' mph'}else{$('stm-wgst').textContent='none';if(gp)gp.lastChild.nodeValue=' reported'}}
 if(wd!=null){if($('stm-wdir'))$('stm-wdir').textContent=dirs[Math.round(wd/45)%8];if($('stm-needle'))$('stm-needle').style.transform='rotate('+wd+'deg)'}
 var garc=$('stm-garc');if(garc){var gv=wg!=null?wg:(ws||0);garc.style.strokeDashoffset=(628.3*(1-Math.min(gv/60,1))).toFixed(1)}
 var ring=$('stm-humring');if(ring&&h!=null)ring.style.strokeDashoffset=(113.1*(1-h/100)).toFixed(1);
