@@ -173,3 +173,49 @@ var r=$('stm-ref');if(r)r.addEventListener('click',function(){r.classList.add('s
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
 })();
+/* ---------- premium live radar (Leaflet + RainViewer + CARTO dark) ---------- */
+(function(){
+var box=document.getElementById('stm-rdr');if(!box)return;
+var LCSS='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css',LJS='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
+var HOME=[40.935,-73.115],frames=[],layers=[],idx=0,timer=null,playing=true,map=null,host='';
+function $(id){return document.getElementById(id)}
+function tm(d){var h=d.getHours(),m=d.getMinutes(),ap=h>=12?'PM':'AM';h=h%12||12;return h+':'+(m<10?'0':'')+m+' '+ap}
+function fallback(){var m=$('stm-rmap');if(!m)return;box.classList.add('stm-rfail');
+  m.innerHTML='<iframe src="https://embed.windy.com/embed2.html?lat=40.90&lon=-73.10&detailLat=40.94&detailLon=-73.12&zoom=8&level=surface&overlay=radar&product=radar&menu=&message=true&marker=true&calendar=now&type=map&location=coordinates&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1" title="Live radar" style="position:absolute;inset:0;width:100%;height:100%;border:0" loading="lazy"></iframe>'}
+function load(cb){if(window.L)return cb();var l=document.createElement('link');l.rel='stylesheet';l.href=LCSS;document.head.appendChild(l);
+  var s=document.createElement('script');s.src=LJS;s.onload=cb;s.onerror=fallback;document.head.appendChild(s)}
+function show(i){if(!layers.length)return;layers.forEach(function(ly,k){ly.setOpacity(k===i?.78:0)});idx=i;
+  var f=frames[i],d=new Date(f.time*1000),ago=Math.round((Date.now()-d)/60000),last=i===frames.length-1;
+  if($('stm-rtime'))$('stm-rtime').textContent=tm(d);
+  if($('stm-rago')){$('stm-rago').textContent=last?'LIVE':'-'+ago+' min';$('stm-rago').className='stm-rago'+(last?' stm-rlive':'')}
+  if($('stm-rscrub'))$('stm-rscrub').value=i;
+  var fill=$('stm-rfill');if(fill)fill.style.width=(frames.length>1?i/(frames.length-1)*100:100)+'%'}
+function step(){var n=(idx+1)%frames.length;show(n);timer=setTimeout(step,n===frames.length-1?1800:450)}
+function play(on){playing=on;clearTimeout(timer);var b=$('stm-rplay');if(b){b.innerHTML=on?'&#10074;&#10074;':'&#9654;';b.setAttribute('aria-label',on?'Pause radar loop':'Play radar loop')}if(on)timer=setTimeout(step,450)}
+function refresh(){fetch('https://api.rainviewer.com/public/weather-maps.json').then(function(r){return r.json()}).then(function(d){
+  host=d.host;var past=(d.radar&&d.radar.past)||[];if(!past.length)return;
+  layers.forEach(function(ly){map.removeLayer(ly)});layers=[];frames=past;
+  past.forEach(function(f){var ly=L.tileLayer(host+f.path+'/256/{z}/{x}/{y}/4/1_1.png',{pane:'stmRadar',opacity:0,maxNativeZoom:7,maxZoom:11,tileSize:256,updateWhenIdle:false,keepBuffer:2,
+    attribution:'Radar <a href="https://www.rainviewer.com/" target="_blank" rel="noopener">RainViewer</a>'});ly.addTo(map);layers.push(ly)});
+  var sc=$('stm-rscrub');if(sc){sc.max=frames.length-1}
+  show(frames.length-1);if(playing)play(true)}).catch(fallback)}
+function init(){try{
+  var mob=window.matchMedia&&matchMedia('(max-width:600px)').matches;
+  map=L.map('stm-rmap',{center:[40.86,-73.05],zoom:mob?7:8,minZoom:5,maxZoom:11,zoomControl:false,scrollWheelZoom:false,dragging:!L.Browser.mobile,tap:false,attributionControl:true,zoomSnap:.5});
+  L.control.zoom({position:'bottomright'}).addTo(map);
+  map.createPane('stmRadar').style.zIndex=350;map.createPane('stmLabels').style.zIndex=450;map.getPane('stmLabels').style.pointerEvents='none';
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,attribution:'Map &copy; Esri, HERE, Garmin, &copy; OpenStreetMap contributors'}).addTo(map);
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,pane:'stmLabels'}).addTo(map);
+  L.marker(HOME,{icon:L.divIcon({className:'stm-rpin',html:'<span class="stm-rpulse"></span><span class="stm-rdot2"></span><span class="stm-rlbl">Three Village</span>',iconSize:[18,18],iconAnchor:[9,9]}),keyboard:false,interactive:false}).addTo(map);
+  // mobile: tap to unlock dragging so page scroll isn't hijacked
+  var lock=$('stm-rlock');if(L.Browser.mobile&&lock){lock.style.display='flex';lock.addEventListener('click',function(){map.dragging.enable();lock.style.display='none'})}
+  map.on('click',function(){map.scrollWheelZoom.enable()});map.on('mouseout',function(){map.scrollWheelZoom.disable()});
+  var pb=$('stm-rplay');if(pb)pb.addEventListener('click',function(){play(!playing)});
+  var sc=$('stm-rscrub');if(sc)sc.addEventListener('input',function(){play(false);show(+sc.value)});
+  var hb=$('stm-rhome');if(hb)hb.addEventListener('click',function(){map.flyTo(HOME,9,{duration:1.2})});
+  refresh();setInterval(refresh,10*60*1000);
+  box.classList.add('stm-rready');
+}catch(e){fallback()}}
+function go(){load(init)}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();go()}},{rootMargin:'600px 0px'});io.observe(box)}else go();
+})();
