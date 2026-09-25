@@ -174,7 +174,7 @@ var r=$('stm-ref');if(r)r.addEventListener('click',function(){r.classList.add('s
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
 })();
 /* ---------- premium live radar (Leaflet + RainViewer + CARTO dark) ---------- */
-(function(){
+(function(){function stmRadarStart(){
 var box=document.getElementById('stm-rdr');if(!box)return;
 var LCSS='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css',LJS='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
 var HOME=[40.935,-73.115],frames=[],layers=[],idx=0,timer=null,playing=true,map=null,host='';
@@ -218,4 +218,6 @@ function init(){try{
 }catch(e){fallback()}}
 function go(){load(init)}
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();go()}},{rootMargin:'600px 0px'});io.observe(box)}else go();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',stmRadarStart);else stmRadarStart();
 })();
