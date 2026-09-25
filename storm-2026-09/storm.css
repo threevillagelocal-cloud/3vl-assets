@@ -321,3 +321,10 @@
 .stm .stm-rmap .leaflet-control-attribution{white-space:normal}
 .stm .stm-rmap img{max-width:none!important}
 @media (max-width:600px){.stm-hero{background-image:url(hero-rain-900.webp)}}
+/* ===== v6: keep phone numbers and labels on one line (beats BD theme wrapping) ===== */
+#stm-top .stm-bph a,#stm-top .stm-nval a,#stm-top .stm-nval,#stm-top .stm-call{white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important}
+#stm-top .stm-bph a.stm-call{padding:0 14px!important;font-size:15px}
+@media (max-width:420px){#stm-top .stm-bph a.stm-call,#stm-top .stm-bph a.stm-b2{font-size:14px;padding:0 12px!important}}
+#stm-top #stm-rmap .stm-rlbl{white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important;width:auto!important;max-width:none!important}
+#stm-top #stm-rmap .stm-rdot2{display:block!important;width:10px!important;height:10px!important}
+#stm-top #stm-rmap .stm-rpulse{display:block!important;width:40px!important;height:40px!important}
