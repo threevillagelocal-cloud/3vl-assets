@@ -1,0 +1,658 @@
+{
+ "edition": "2026-10-02",
+ "brand": "The Weekender",
+ "range": "Oct 2-4, 2026",
+ "starts": "2026-10-02T17:00:00-04:00",
+ "ends": "2026-10-04T23:59:00-04:00",
+ "slug": "blog/the-weekender-three-village-oct-2-4-2026",
+ "headline": [
+  "Spies, Blues",
+  "& Scarecrows"
+ ],
+ "dek": "Culper Spy Day takes over Setauket, Blues on the Harbor finally gets its day in Port Jeff, and the scarecrows move into Stony Brook Village. Here's everything worth doing in Three Village this weekend, updated live.",
+ "hero": {
+  "img": "hero-po",
+  "credit": "Setauket Post Office. Photo: Vitsuha, CC0"
+ },
+ "days": {
+  "fri": "2026-10-02",
+  "sat": "2026-10-03",
+  "sun": "2026-10-04"
+ },
+ "picks": [
+  "spyday",
+  "blues",
+  "treason"
+ ],
+ "venues": {
+  "tvhs": {
+   "name": "Three Village Historical Society",
+   "addr": "93 N. Country Rd, East Setauket",
+   "ll": [
+    40.93391,
+    -73.11775
+   ]
+  },
+  "emma": {
+   "name": "Emma S. Clark Library",
+   "addr": "120 Main St, Setauket",
+   "ll": [
+    40.94487,
+    -73.11197
+   ]
+  },
+  "harborfront": {
+   "name": "Harborfront Park",
+   "addr": "101 E. Broadway, Port Jefferson",
+   "ll": [
+    40.94856,
+    -73.06718
+   ]
+  },
+  "theatre3": {
+   "name": "Theatre Three",
+   "addr": "412 Main St, Port Jefferson",
+   "ll": [
+    40.94366,
+    -73.06754
+   ]
+  },
+  "lim": {
+   "name": "The Long Island Museum",
+   "addr": "1200 Route 25A, Stony Brook",
+   "ll": [
+    40.93029,
+    -73.11519
+   ]
+  },
+  "staller": {
+   "name": "Staller Center, Main Stage",
+   "addr": "100 Nicolls Rd, Stony Brook",
+   "ll": [
+    40.91548,
+    -73.12113
+   ]
+  },
+  "sbv": {
+   "name": "Stony Brook Village Center",
+   "addr": "111 Main St, Stony Brook",
+   "ll": [
+    40.91742,
+    -73.14738
+   ]
+  },
+  "limehof": {
+   "name": "LI Music & Entertainment Hall of Fame",
+   "addr": "97 Main St, Stony Brook",
+   "ll": [
+    40.91707,
+    -73.1463
+   ]
+  },
+  "countryhouse": {
+   "name": "The Country House",
+   "addr": "1175 N. Country Rd, Stony Brook",
+   "ll": [
+    40.91267,
+    -73.14214
+   ]
+  },
+  "countrycorner": {
+   "name": "The Country Corner",
+   "addr": "270 Main St, East Setauket",
+   "ll": [
+    40.9442,
+    -73.1043
+   ]
+  },
+  "culpers": {
+   "name": "Culpers 1778",
+   "addr": "212 Main St, East Setauket",
+   "ll": [
+    40.9446,
+    -73.107
+   ]
+  },
+  "sherwood": {
+   "name": "Sherwood-Jayne Farm",
+   "addr": "55 Old Post Rd, East Setauket",
+   "ll": [
+    40.9318,
+    -73.0975
+   ]
+  },
+  "drowned": {
+   "name": "Drowned Meadow Cottage Museum",
+   "addr": "141 W. Broadway, Port Jefferson",
+   "ll": [
+    40.94589,
+    -73.07121
+   ]
+  },
+  "patriots": {
+   "name": "Patriots Rock",
+   "addr": "97 Main St, East Setauket",
+   "ll": [
+    40.9449,
+    -73.1098
+   ]
+  },
+  "brewster": {
+   "name": "Brewster House",
+   "addr": "18 Runs Rd, East Setauket",
+   "ll": [
+    40.94385,
+    -73.10303
+   ]
+  },
+  "gristmill": {
+   "name": "Stony Brook Grist Mill",
+   "addr": "100 Harbor Rd, Stony Brook",
+   "ll": [
+    40.9164,
+    -73.1505
+   ]
+  },
+  "tommys": {
+   "name": "Tommy's Place",
+   "addr": "109 Main St, Port Jefferson",
+   "ll": [
+    40.94632,
+    -73.06875
+   ]
+  },
+  "madiran": {
+   "name": "Madiran The Wine Bar",
+   "addr": "209 Route 25A, East Setauket",
+   "ll": [
+    40.9296,
+    -73.1028
+   ]
+  }
+ },
+ "events": [
+  {
+   "id": "tvfm",
+   "title": "Three Village Farmers & Artisans Market",
+   "start": "2026-10-02T15:00",
+   "end": "2026-10-02T18:00",
+   "venue": "tvhs",
+   "price": "Free",
+   "tags": [
+    "free",
+    "outdoor",
+    "food",
+    "kids"
+   ],
+   "img": "tvfm",
+   "desc": "40-plus farmers, bakers and makers on the historical society lawn. Fall hours now, so it wraps at 6.",
+   "url": "https://www.tvhs.org/farmers-market",
+   "src": "tvhs.org"
+  },
+  {
+   "id": "stitch",
+   "title": "Stitch & Chit-Chat",
+   "start": "2026-10-02T14:00",
+   "end": "2026-10-02T15:30",
+   "venue": "lim",
+   "price": "Free",
+   "tags": [
+    "free",
+    "arts"
+   ],
+   "desc": "Bring whatever you're knitting, crocheting or stitching and settle in with other makers at the museum.",
+   "url": "https://longislandmuseum.org/",
+   "src": "longislandmuseum.org"
+  },
+  {
+   "id": "spyday",
+   "title": "Culper Spy Day",
+   "start": "2026-10-03T10:00",
+   "end": "2026-10-03T16:00",
+   "venue": "tvhs",
+   "price": "Free",
+   "tags": [
+    "free",
+    "outdoor",
+    "kids",
+    "history"
+   ],
+   "img": "spyday",
+   "credit": "Photo: Three Village Historical Society",
+   "hot": true,
+   "desc": "The 12th annual celebration of Washington's spy ring, right where it happened. George Washington raises the flag at 10, then it's musket drills, invisible ink, a spy musical, an encampment, and a free hop-on trolley to 10 historic sites.",
+   "url": "https://www.tvhs.org/culper-spy-day",
+   "src": "tvhs.org"
+  },
+  {
+   "id": "blues",
+   "title": "Cedar Beach Blues on the Harbor",
+   "start": "2026-10-03T11:30",
+   "end": "2026-10-03T18:00",
+   "venue": "harborfront",
+   "price": "Free",
+   "tags": [
+    "free",
+    "outdoor",
+    "music"
+   ],
+   "img": "blues",
+   "credit": "Photo: Traitor, CC BY-SA 3.0",
+   "hot": true,
+   "desc": "36 years strong and pushed back a week by the nor'easter. Two stages of New York blues on the waterfront. Bring a chair. If it rains, it moves into the Port Jefferson Village Center.",
+   "url": "https://www.gpjac.org/general-6",
+   "src": "gpjac.org"
+  },
+  {
+   "id": "treason",
+   "title": "Treason's Trial: A Culper Spy Story",
+   "start": "2026-10-03T14:30",
+   "end": "2026-10-03T16:00",
+   "venue": "theatre3",
+   "price": "Free",
+   "tags": [
+    "free",
+    "history",
+    "stage"
+   ],
+   "img": "treason",
+   "credit": "Poster: Theatre Three",
+   "hot": true,
+   "extra": "Second show at 4:30 PM",
+   "desc": "World premiere of a brand-new play with music about how Washington's spy ring was born, set in the powder keg of May 1776. Two shows only, 2:30 and 4:30.",
+   "url": "https://theatrethree.com/special_events/treasons-trial/",
+   "src": "theatrethree.com"
+  },
+  {
+   "id": "emmalawn",
+   "title": "Spy Day on the Library Lawn",
+   "start": "2026-10-03T12:00",
+   "end": "2026-10-03T16:00",
+   "venue": "emma",
+   "price": "Free",
+   "tags": [
+    "free",
+    "kids",
+    "music",
+    "outdoor"
+   ],
+   "desc": "Revolutionary tunes live from 12 to 2, kids' games and a spy-themed craft until 4, free popcorn, and library history tours.",
+   "url": "https://www.emmaclark.org/culperspyday/",
+   "src": "emmaclark.org"
+  },
+  {
+   "id": "limspy",
+   "title": "Free Day at the Long Island Museum",
+   "start": "2026-10-03T12:00",
+   "end": "2026-10-03T17:00",
+   "venue": "lim",
+   "price": "Free",
+   "tags": [
+    "free",
+    "history",
+    "kids"
+   ],
+   "img": "lim",
+   "credit": "Photo: Dmadeo, CC BY-SA 3.0",
+   "desc": "Free admission for Spy Day. See the only known surviving letter between Tallmadge and Culper Jr., plus a Battle of Long Island talk with Bill Bleyer from 1 to 2:30.",
+   "url": "https://longislandmuseum.org/",
+   "src": "longislandmuseum.org"
+  },
+  {
+   "id": "patriots",
+   "title": "Patriots Rock Living History",
+   "start": "2026-10-03T10:00",
+   "end": "2026-10-03T15:00",
+   "venue": "patriots",
+   "price": "Free",
+   "tags": [
+    "free",
+    "outdoor",
+    "kids",
+    "history"
+   ],
+   "desc": "Blacksmithing, talks about the 1777 Battle of Setauket, live music, a trading post, and McNulty's ice cream truck.",
+   "url": "https://www.tvhs.org/culper-spy-day",
+   "src": "tvhs.org"
+  },
+  {
+   "id": "brewster",
+   "title": "Brewster House Spy Tours",
+   "start": "2026-10-03T10:00",
+   "end": "2026-10-03T16:00",
+   "venue": "brewster",
+   "price": "$5",
+   "tags": [
+    "history",
+    "kids"
+   ],
+   "desc": "Tour the oldest house in Brookhaven (c. 1665), once a tavern that served British troops while a Culper spy's cousin lived down the road. Suffolk 250 passport stamp stop.",
+   "url": "https://wmho.org/events-2/",
+   "src": "wmho.org"
+  },
+  {
+   "id": "tory",
+   "title": "Big Bill the Tory",
+   "start": "2026-10-03T11:00",
+   "end": "2026-10-03T15:00",
+   "venue": "sherwood",
+   "price": "$5",
+   "tags": [
+    "history",
+    "kids"
+   ],
+   "desc": "Hear the Loyalist side of the story from William Jayne III, who has some thoughts about Washington's pesky band of spies.",
+   "url": "https://www.tvhs.org/culper-spy-day",
+   "src": "tvhs.org"
+  },
+  {
+   "id": "scarecrow",
+   "title": "Scarecrow Competition Opens",
+   "start": "2026-10-03T10:00",
+   "end": "2026-10-03T18:00",
+   "venue": "sbv",
+   "price": "Free",
+   "tags": [
+    "free",
+    "outdoor",
+    "kids"
+   ],
+   "img": "scarecrow",
+   "credit": "Photo: Ward Melville Heritage Organization",
+   "desc": "The 36th annual scarecrows take over Stony Brook Village. Grab a ballot in any shop and vote for your favorite through Oct. 25.",
+   "url": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/",
+   "src": "stonybrookvillage.com"
+  },
+  {
+   "id": "symphony",
+   "title": "Stony Brook Symphony Orchestra",
+   "start": "2026-10-03T19:30",
+   "end": "2026-10-03T21:30",
+   "venue": "staller",
+   "price": "$10-$30",
+   "tags": [
+    "music",
+    "stage"
+   ],
+   "desc": "Season opener: Anna Clyne, Stravinsky's Violin Concerto with Hyun Ji Lee, and Dvorak's 8th. Pre-concert talk at 6:30.",
+   "url": "https://www.stallercenter.com/",
+   "src": "Stony Brook Music Dept. on Facebook"
+  },
+  {
+   "id": "pjfm",
+   "title": "Port Jefferson Farmers Market",
+   "start": "2026-10-04T09:00",
+   "end": "2026-10-04T14:00",
+   "venue": "harborfront",
+   "price": "Free",
+   "tags": [
+    "free",
+    "outdoor",
+    "food"
+   ],
+   "desc": "Sunday market on the harbor. Back after last week's storm cancellation.",
+   "url": "https://www.portjeffny.gov/",
+   "src": "TBR News Media"
+  },
+  {
+   "id": "limsun",
+   "title": "Free Sunday at the Long Island Museum",
+   "start": "2026-10-04T12:00",
+   "end": "2026-10-04T17:00",
+   "venue": "lim",
+   "price": "Free w/ Spy Day selfie",
+   "tags": [
+    "free",
+    "history",
+    "kids"
+   ],
+   "desc": "Show your Culper Spy Day selfie for free admission. Carriage museum scavenger hunt for the kids.",
+   "url": "https://www.tvhs.org/culper-spy-day",
+   "src": "tvhs.org"
+  },
+  {
+   "id": "founding",
+   "title": "Founding Families Exhibit",
+   "start": "2026-10-04T12:00",
+   "end": "2026-10-04T16:00",
+   "venue": "tvhs",
+   "price": "Free if you saw SPIES!",
+   "tags": [
+    "history"
+   ],
+   "desc": "A new exhibit at the historical society. Visited the SPIES! exhibit on Saturday? You get in free.",
+   "url": "https://www.tvhs.org/culper-spy-day",
+   "src": "tvhs.org"
+  },
+  {
+   "id": "gristmill",
+   "title": "Stony Brook Grist Mill Tours",
+   "start": "2026-10-04T13:00",
+   "end": "2026-10-04T16:00",
+   "venue": "gristmill",
+   "price": "See site",
+   "tags": [
+    "history",
+    "kids",
+    "outdoor"
+   ],
+   "desc": "One of the last Sundays of the season to see the working mill and its country store.",
+   "url": "https://wmho.org/",
+   "src": "wmho.org"
+  },
+  {
+   "id": "limehof",
+   "title": "Marian Mastrorilli Live",
+   "start": "2026-10-04T15:00",
+   "end": "2026-10-04T16:00",
+   "venue": "limehof",
+   "price": "See site",
+   "tags": [
+    "music"
+   ],
+   "desc": "\"Folk that rocks\" from the Huntington singer-songwriter, with Glenn Govier, at the Long Island Music and Entertainment Hall of Fame.",
+   "url": "https://stonybrookvillage.com/events/",
+   "src": "stonybrookvillage.com"
+  },
+  {
+   "id": "sedaris",
+   "title": "An Evening with David Sedaris",
+   "start": "2026-10-04T19:00",
+   "end": "2026-10-04T21:00",
+   "venue": "staller",
+   "price": "Tickets",
+   "tags": [
+    "stage"
+   ],
+   "img": "sedaris",
+   "credit": "Photo: Staller Center",
+   "desc": "The humorist brings new stories and his famous Q&A to the Staller Main Stage.",
+   "url": "https://stallercenter.showare.com/eventperformances.asp?evt=463",
+   "src": "stallercenter.com"
+  }
+ ],
+ "allweekend": [
+  {
+   "id": "cabaret",
+   "title": "Cabaret",
+   "venue": "theatre3",
+   "when": "Through Oct. 25",
+   "tags": [
+    "stage"
+   ],
+   "desc": "Theatre Three's mainstage run of the Kander and Ebb classic.",
+   "video": "sqgdz32gQVk",
+   "img": "cabaret",
+   "url": "https://theatrethree.com/mainstage_shows/cabaret/"
+  },
+  {
+   "id": "elephant",
+   "title": "Elephant & Piggie's We Are in a Play!",
+   "venue": "theatre3",
+   "when": "Through Oct. 24",
+   "tags": [
+    "kids",
+    "stage"
+   ],
+   "desc": "Mo Willems' best friends in a musical made for first-time theatergoers.",
+   "img": "elephant",
+   "url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/"
+  },
+  {
+   "id": "drowned",
+   "title": "Privateers at Drowned Meadow Cottage",
+   "venue": "drowned",
+   "when": "Sat & Sun, 11 AM-4 PM",
+   "tags": [
+    "free",
+    "kids",
+    "history"
+   ],
+   "desc": "Pirates with permission, storytelling for kids, and flax spinning. Free with a Spy Day selfie.",
+   "url": "https://www.tvhs.org/culper-spy-day"
+  }
+ ],
+ "specials": [
+  {
+   "biz": "The Country Corner",
+   "venue": "countrycorner",
+   "title": "Culper Spy Day Lunch & Brunch",
+   "when": "Sat, Oct. 3 · Open 11 AM",
+   "desc": "Suffolk's oldest continuously running tavern (the old McDowell Saloon, ca. 1904) opens at 11 for Spy Day, with brunch from 11 to 2, craft beer and a view of the Brewster family home. Stop in before or after the festivities.",
+   "src": "facebook",
+   "srcName": "The Country Corner",
+   "img": "cc-spyday",
+   "feature": true,
+   "img2": "cc-saloon",
+   "phone": ""
+  },
+  {
+   "biz": "The Country House",
+   "venue": "countryhouse",
+   "title": "Culper Spy Lunch",
+   "when": "Sat, Oct. 3",
+   "desc": "A one-day menu of dishes named for the Culper spies, plus a kids' menu with a chance to win free dessert.",
+   "img": "countryhouse",
+   "src": "facebook",
+   "srcName": "Stony Brook Village",
+   "phone": "631-751-3332"
+  },
+  {
+   "biz": "The Country House",
+   "venue": "countryhouse",
+   "title": "$50 Three-Course Prix Fixe",
+   "when": "Fri, Oct. 2",
+   "desc": "Sailing on the Discovery Wetlands Cruise? Show your cruise ticket for a three-course dinner.",
+   "src": "website",
+   "srcName": "stonybrookvillage.com",
+   "phone": "631-751-3332",
+   "img": "sbharbor"
+  },
+  {
+   "biz": "Madiran The Wine Bar",
+   "venue": "madiran",
+   "title": "Happy Hour Is Back",
+   "when": "Fri, 4-6 PM",
+   "desc": "A special happy hour menu at the award-winning wine bar, running Tuesday through Friday.",
+   "src": "website",
+   "srcName": "madiranthewinebar.com",
+   "phone": "631-675-2778",
+   "img": "madiran"
+  },
+  {
+   "biz": "Culpers 1778",
+   "venue": "culpers",
+   "title": "Spy Day Lunch Specials",
+   "when": "Sat, Oct. 3",
+   "desc": "The restaurant named for the ring itself. Reservations recommended.",
+   "src": "website",
+   "srcName": "tvhs.org",
+   "img": "culpers"
+  },
+  {
+   "biz": "Tommy's Place",
+   "venue": "tommys",
+   "title": "This Week's Specials",
+   "when": "All week",
+   "desc": "BBQ chicken mac and cheese, a chipotle steak quesadilla, Hector's lobster sandwich and creamy Italian sausage soup.",
+   "src": "facebook",
+   "srcName": "Tommy's Place",
+   "img": "tommys"
+  }
+ ],
+ "next": [
+  {
+   "when": "Sat, Oct. 10",
+   "title": "Port Jefferson Hill Climb",
+   "desc": "Rescheduled from the storm. Antique cars retrace the 1910 climb up East Broadway.",
+   "img": "r-hill",
+   "credit": "Photo: Joe Ross, CC BY-SA 2.0"
+  },
+  {
+   "when": "Oct. 10-11",
+   "title": "Witches & Warlocks Weekend",
+   "desc": "Spell jars, haunted harbor cruises and mischief all over Port Jeff.",
+   "img": "r-witch",
+   "credit": "Vintage postcard, public domain"
+  },
+  {
+   "when": "Oct. 15-17",
+   "title": "Art of the Guitar Festival",
+   "desc": "The John Monteleone festival returns to The Jazz Loft in Stony Brook.",
+   "img": "r-guitar",
+   "credit": "Photo: christina rutz, CC BY 2.0"
+  },
+  {
+   "when": "Thu, Oct. 22",
+   "title": "Ixchel Tequila Dinner",
+   "desc": "Five courses, five agave pours and mariachi at Ixchel in East Setauket. Spots are limited.",
+   "img": "r-agave",
+   "credit": "Photo: Tomascastelazo, CC BY-SA 4.0"
+  }
+ ],
+ "trolley": [
+  {
+   "stop": "Three Village Historical Society",
+   "note": "Flag raising at 10 AM, trolley departs"
+  },
+  {
+   "stop": "Setauket Neighborhood House",
+   "note": "Walk to Patriots Rock & the Village Green churches"
+  },
+  {
+   "stop": "Emma S. Clark Library",
+   "note": "Live music 12-2, kids' crafts"
+  },
+  {
+   "stop": "Sherwood-Jayne Farm",
+   "note": "Big Bill the Tory"
+  },
+  {
+   "stop": "Drowned Meadow Cottage",
+   "note": "Privateers in Port Jeff"
+  },
+  {
+   "stop": "Brewster House",
+   "note": "Built in 1665, tours every 15 min"
+  }
+ ],
+ "wxbg": {
+  "fri": {
+   "loc": "Stony Brook Village Green",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_1",
+   "photo": "sbvgreen",
+   "credit": "Live cam: Stony Brook Village Center"
+  },
+  "sat": {
+   "loc": "Port Jefferson Harbor",
+   "photo": "pjharbor",
+   "credit": "Photo: Traitor, CC BY-SA 3.0"
+  },
+  "sun": {
+   "loc": "Stony Brook Harbor",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_2",
+   "photo": "sbharbor2",
+   "credit": "Live cam: Stony Brook Village Center"
+  }
+ }
+}

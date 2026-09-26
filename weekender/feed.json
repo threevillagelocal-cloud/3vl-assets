@@ -1,0 +1,68 @@
+{
+ "updated": "2026-09-25T21:30:00-04:00",
+ "items": [
+  {
+   "t": "2026-09-25T14:42:00-04:00",
+   "src": "alert",
+   "who": "Port Jefferson Ferry",
+   "text": "Last boats Friday 6:45 PM from Port Jeff, 7:15 PM from Bridgeport. No service Saturday.",
+   "url": "https://www.88844ferry.com/"
+  },
+  {
+   "t": "2026-09-25",
+   "src": "web",
+   "who": "Greater Port Jefferson Arts Council",
+   "text": "Blues on the Harbor moves to Saturday, Oct. 3 because of the nor'easter.",
+   "url": "https://www.gpjac.org/general-6"
+  },
+  {
+   "t": "2026-09-25",
+   "src": "web",
+   "who": "Three Village Historical Society",
+   "text": "Culper Spy 5K canceled for Sunday due to dangerous winds. Spy Day on Oct. 3 is still on.",
+   "url": "https://runsignup.com/Race/NY/EastSetauket/CULPERSPYDAY5KRUNWALK"
+  },
+  {
+   "t": "2026-09-25",
+   "src": "news",
+   "who": "TBR News Media",
+   "text": "Port Jefferson Hill Climb rescheduled to Oct. 10.",
+   "url": "https://tbrnewsmedia.com/times-and-dates-sept-24-to-oct-1-2026/"
+  },
+  {
+   "t": "2026-09-24",
+   "src": "facebook",
+   "who": "Stony Brook Village",
+   "text": "The Country House's October lineup: Culper Spy Lunch Oct. 3, a psychic wine dinner Oct. 10.",
+   "url": "https://www.facebook.com/"
+  },
+  {
+   "t": "2026-09-24",
+   "src": "facebook",
+   "who": "Ixchel Mexican Cuisine",
+   "text": "Five-course tequila dinner with mariachi on Thursday, Oct. 22. Reservations open.",
+   "url": "https://www.facebook.com/"
+  },
+  {
+   "t": "2026-09-24",
+   "src": "facebook",
+   "who": "Tommy's Place",
+   "text": "New weekly specials: BBQ chicken mac and cheese and Hector's lobster sandwich.",
+   "url": "https://www.facebook.com/"
+  },
+  {
+   "t": "2026-09-23",
+   "src": "web",
+   "who": "Theatre Three",
+   "text": "Treason's Trial premieres Oct. 3 at 2:30 and 4:30. Admission is free.",
+   "url": "https://theatrethree.com/special_events/treasons-trial/"
+  }
+ ],
+ "jokes": [
+  "Route 347 update: still under construction. Historians believe the first cone was placed by the Culper Ring.",
+  "347 eastbound: moving at the speed of a Stony Brook Village scarecrow.",
+  "Breaking: a driver on 347 reports seeing actual pavement. Officials are investigating.",
+  "347 at Nicolls Road: allow 10 minutes, or one full season of fall foliage.",
+  "Good news: the merge on 347 is complete. Bad news: it has merged with your weekend plans."
+ ]
+}
