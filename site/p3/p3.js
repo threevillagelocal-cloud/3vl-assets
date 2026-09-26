@@ -3,13 +3,52 @@
 (function(){
 var me=document.currentScript;var BASE=me?me.src.replace(/p3\.js.*$/,''):'';
 var path=location.pathname.replace(/\/+$/,'')||'/';
-if(path!=='/categories'&&path!=='/blog')return;
+var SEARCH_ON=!!window.P3_SEARCH_PREVIEW;   /* business results: preview only until approved */
+var isResults=SEARCH_ON&&!!document.querySelector('.member_results.search_result');
+if(path!=='/categories'&&path!=='/blog'&&!isResults)return;
 function $(s,r){return (r||document).querySelector(s)}function $$(s,r){return [].slice.call((r||document).querySelectorAll(s))}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function mount(html,anchor){var d=document.createElement('div');d.id='p3';d.className='p3';d.innerHTML=html;anchor.parentNode.insertBefore(d,anchor);document.documentElement.classList.add('p3-on');return d}
 var ICON={'arts':'&#127912;','attorney':'&#9878;&#65039;','automotive':'&#128663;','beauty':'&#128135;','commercial':'&#127970;','community':'&#129309;','contractor':'&#128296;','doctor':'&#129658;','education':'&#127891;','events':'&#127926;','farm':'&#127806;','financial':'&#128176;','fitness':'&#127947;&#65039;','health':'&#127807;','home':'&#127969;','hotel':'&#127976;','local-gov':'&#127963;&#65039;','marine':'&#9875;','marketing':'&#128227;','nightlife':'&#127864;','non-profit':'&#10084;&#65039;','payroll':'&#129534;','pet':'&#128062;','real':'&#127968;','restaurant':'&#127869;&#65039;','food':'&#127869;&#65039;','shopping':'&#128717;&#65039;','retail':'&#128717;&#65039;','travel':'&#9992;&#65039;','wedding':'&#128141;','insurance':'&#128737;&#65039;','dentist':'&#129463;','landscap':'&#127795;','tech':'&#128187;','child':'&#129490;','religious':'&#9962;','sports':'&#9917;','service':'&#128736;&#65039;'};
 function iconFor(slug){for(var k in ICON){if(slug.indexOf(k)>=0)return ICON[k]}return '&#11088;'}
 var COLORS=['#006fbb','#d9534f','#0f866c','#f0ad4e','#8e5bd6','#205081','#3aa0e8'];
+
+/* ---------- BUSINESS RESULTS (search + category pages) ---------- */
+if(isResults){
+  var VIP=['71','78','112','115','122','137','138','142','151','217','228','240','299','364','474','484','499','528','552'];
+  var mem=$$('.member_results.search_result');
+  var biz=mem.map(function(it){var g=function(p){var m=it.querySelector('[itemprop="'+p+'"]');return m?(m.getAttribute('content')||m.getAttribute('href')||''):''};
+    var uid=(it.querySelector('.postItem')||{getAttribute:function(){return ''}}).getAttribute('data-userid')||'';
+    var u=(it.querySelector('[itemtype$="LocalBusiness"] link[itemprop="url"]')||{}).href||'';
+    return {n:g('name'),u:u.replace(/#.*$/,''),img:g('image'),tel:g('telephone'),d:g('description'),st:g('streetAddress'),town:(g('addressLocality')||'').replace('Setauket- East Setauket','East Setauket'),uid:uid,vip:VIP.indexOf(uid)>=0}});
+  var q=(location.search.match(/[?&]q=([^&]*)/)||[])[1];q=q?decodeURIComponent(q.replace(/\+/g,' ')):'';
+  var h1=$('h1');var catName=!q&&h1?h1.textContent.trim():'';
+  function fmtTel(t){t=(t||'').replace(/[^\d]/g,'').slice(-10);return t.length===10?t.slice(0,3)+'-'+t.slice(3,6)+'-'+t.slice(6):''}
+  function maps(b){return 'https://www.google.com/maps/search/?api=1&amp;query='+encodeURIComponent(b.n+' '+(b.st||'')+' '+b.town)}
+  function vipCard(b){var tel=fmtTel(b.tel);
+    return '<div class="p3-vcard"><div class="p3-vart" data-uid="'+esc(b.uid)+'"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></div><div class="p3-vbody">'+
+      '<span class="p3-vribbon">&#11088; VIP LOCAL BUSINESS</span><a class="p3-vname" href="'+esc(b.u)+'">'+esc(b.n)+'</a>'+
+      '<p class="p3-vloc">&#128205; '+esc([b.st,b.town].filter(Boolean).join(', ')||'Three Village')+'</p><p class="p3-vd">'+esc(b.d)+'</p>'+
+      (tel?'<a class="p3-vtel" href="tel:'+tel.replace(/-/g,'')+'">&#128222; '+tel+'</a>':'')+
+      '<div class="p3-vacts">'+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">Call now</a>':'')+'<a href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Directions</a><a class="p3-view" href="'+esc(b.u)+'">Full profile &rarr;</a></div></div></div>'}
+  function card(b,i){var tel=fmtTel(b.tel);
+    return '<div class="p3-rcard" style="--i:'+i+'"><a class="p3-rtop" href="'+esc(b.u)+'"><img src="'+esc(b.img)+'" alt="" loading="lazy"><div><b>'+esc(b.n)+'</b><small>&#128205; '+esc(b.town||'Three Village')+'</small></div></a>'+
+      '<p class="p3-rd">'+esc(b.d.slice(0,140))+(b.d.length>140?'&hellip;':'')+'</p><div class="p3-racts">'+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">&#128222; Call</a>':'')+
+      '<a href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Map</a><a class="p3-view" href="'+esc(b.u)+'">View &rarr;</a></div></div>'}
+  var vips=biz.filter(function(b){return b.vip}),rest=biz.filter(function(b){return !b.vip});
+  var title=q?'Results for <em>&ldquo;'+esc(q)+'&rdquo;</em>':'<em>'+esc(catName||'Local Businesses')+'</em>';
+  var h='<header class="p3-phero" style="background-image:url(\''+BASE+'img/village-hero.jpg\')"><div class="p3-phin"><span class="p3-kick">THREE VILLAGE LOCAL</span><h1 class="p3-h1">'+title+'</h1>'+
+    '<p class="p3-sub">Local businesses rated by your neighbors. Call, get directions or see the full profile.</p></div><span class="p3-credit">Photo: Iracaz, CC BY-SA 3.0</span></header>'+
+    (vips.length?'<div class="p3-vlist">'+vips.map(vipCard).join('')+'</div>':'')+
+    (rest.length?(vips.length?'<h2 class="p3-more">More local businesses</h2>':'')+'<div class="p3-rgrid">'+rest.map(card).join('')+'</div>':'');
+  var first=mem[0];var root=mount(h,first.closest('[itemprop="mainEntity"]')||first);
+  mem.forEach(function(e){e.style.display='none'});
+  $$('.feature_results_header,.post-search-result-count-container,.member-search-result-count-container,.member-search-result-filters,.views,.sort-members-select').forEach(function(e){if(!root.contains(e))e.style.display='none'});
+  if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none';
+  var vs=document.querySelector('script[src*="weekender/vipads.js"]');   /* VIP art = their rotator banner ad when they have one */
+  if(vs){var vb=vs.src.replace(/vipads\.js.*$/,'');fetch(vb+'banners.json').then(function(r){return r.json()}).then(function(L){var m={};L.forEach(function(x){if(!m[x.id])m[x.id]=vb+x.img});
+    $$('.p3-vart',root).forEach(function(a){var u=m[a.getAttribute('data-uid')];if(u){a.classList.add('has-ad');a.innerHTML='<img src="'+u+'" alt="" loading="lazy">'}})}).catch(function(){})}
+}
 
 /* ---------- CATEGORIES ---------- */
 if(path==='/categories'){

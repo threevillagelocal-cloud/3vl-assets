@@ -126,3 +126,31 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-none{margin:14px 2px;font-size:16px;color:var(--mut)}
 #p3#p3 .p3-none a{color:var(--blue);font-weight:800}
 #p3#p3 form.p3-hsearch{margin:16px 0 0}
+
+/* business results: VIP featured cards */
+#p3#p3 .p3-vlist{display:flex;flex-direction:column;gap:16px;margin-bottom:22px}
+#p3#p3 .p3-vcard{display:grid;grid-template-columns:minmax(0,300px) 1fr;background:linear-gradient(135deg,#fffaf0,#fff 45%);border:2px solid var(--gold);border-radius:22px;overflow:hidden;box-shadow:0 14px 34px rgba(240,173,78,.22),0 4px 12px rgba(27,47,69,.08);transition:transform .3s,box-shadow .3s}
+#p3#p3 .p3-vcard:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(240,173,78,.3),0 6px 16px rgba(27,47,69,.1)}
+#p3#p3 .p3-vart{background:#fff;display:flex;align-items:center;justify-content:center;padding:18px;border-right:1px solid #f3e2c3}
+#p3#p3 .p3-vart img{width:100%!important;height:auto!important;max-width:220px!important;border-radius:16px;object-fit:contain;margin:0!important}
+#p3#p3 .p3-vart.has-ad{padding:0;background:#0f1d2e}
+#p3#p3 .p3-vart.has-ad img{max-width:none!important;height:100%!important;border-radius:0;object-fit:cover}
+#p3#p3 .p3-vbody{padding:20px 24px 22px;display:flex;flex-direction:column;gap:8px}
+.p3-vribbon{align-self:flex-start;background:linear-gradient(90deg,#f0ad4e,#f6c56f);color:#1b2f45;font-weight:800;font-size:12px;letter-spacing:.14em;padding:6px 12px;border-radius:999px}
+#p3#p3 a.p3-vname{font-size:26px;font-weight:800;line-height:1.15;color:var(--ink)}
+#p3#p3 .p3-vloc{font-size:15px;color:var(--mut);font-weight:600}
+#p3#p3 .p3-vd{font-size:15px;line-height:1.55;color:#3d4b5a}
+#p3#p3 a.p3-vtel{font-size:28px;font-weight:800;color:var(--ink);letter-spacing:.01em}
+#p3#p3 .p3-vacts{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+#p3#p3 .p3-vacts a{font-weight:800;font-size:15px;padding:12px 18px;border-radius:12px;background:var(--cream);color:var(--ink)}
+#p3#p3 .p3-vacts a.p3-call{background:var(--blue);color:#fff}
+#p3#p3 .p3-vacts a.p3-view{background:var(--ink);color:#fff}
+#p3#p3 .p3-more{font-size:22px;font-weight:800;color:var(--ink);margin:6px 0 12px}
+@media(max-width:760px){
+  #p3#p3 .p3-vcard{grid-template-columns:1fr}
+  #p3#p3 .p3-vart{border-right:0;border-bottom:1px solid #f3e2c3}
+  #p3#p3 .p3-vart.has-ad img{height:auto!important}
+  #p3#p3 a.p3-vname{font-size:22px}
+  #p3#p3 a.p3-vtel{font-size:24px}
+  #p3#p3 .p3-vacts a{flex:1;text-align:center;padding:12px 8px}
+}
