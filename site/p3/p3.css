@@ -106,7 +106,10 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
   #p3#p3 .p3-lead{grid-template-columns:1fr}
   .p3-limg{min-height:220px}
   #p3#p3 .p3-lb h2{font-size:24px}
-  .p3-cgrid{grid-template-columns:1fr 1fr;gap:10px}
+  #p3#p3 .p3-cgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%}
+  #p3#p3 .p3-ctile{min-width:0;min-height:148px;justify-content:flex-start}
+  #p3#p3 .p3-ctx{width:100%;min-width:0}
+  #p3#p3 .p3-ctile b{font-size:15px;overflow-wrap:break-word;hyphens:auto}
   #p3#p3 .p3-ctile{flex-direction:column;align-items:flex-start;gap:10px;padding:14px}
   #p3#p3 .p3-ctile em{display:none}
   .p3-cic{flex:0 0 46px;width:46px;height:46px;font-size:22px}
