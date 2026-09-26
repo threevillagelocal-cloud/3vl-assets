@@ -246,3 +246,25 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-vspecs span{flex:0 0 auto;white-space:nowrap}
 #p3#p3 .p3-vcred{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
 #p3#p3 .p3-vtrust li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* VIP interactions */
+#p3#p3 .p3-vwrap{border-radius:22px;transition:box-shadow .3s}
+#p3#p3 .p3-vwrap.is-open .p3-vcard{border-bottom-left-radius:0;border-bottom-right-radius:0}
+#p3#p3 .p3-vacts .p3-call{padding:9px 16px}
+#p3#p3 .p3-vacts button.p3-vcf{border:0;font:inherit;font-weight:800;font-size:14px;padding:9px 14px;border-radius:12px;background:var(--cream);color:var(--ink);cursor:pointer}
+#p3#p3 .p3-vacts a:hover,#p3#p3 .p3-vacts button:hover{filter:brightness(.96);transform:translateY(-1px)}
+#p3#p3 .p3-text{display:none!important}
+@media(hover:none) and (pointer:coarse){#p3#p3 .p3-text{display:inline-block!important}}
+#p3#p3 button.p3-more-btn{align-self:flex-start;border:0;background:none;padding:2px 0;font:inherit;font-size:13px;font-weight:800;color:#a8812f;cursor:pointer;letter-spacing:.02em}
+#p3#p3 button.p3-more-btn span{display:inline-block;transition:transform .25s}
+#p3#p3 .is-open button.p3-more-btn span{transform:rotate(180deg)}
+#p3#p3 .p3-vmore{border:2px solid var(--gold);border-top:0;border-radius:0 0 22px 22px;background:#fffdf8;margin-top:-2px;animation:p3Drop .3s ease}
+@keyframes p3Drop{from{opacity:0;transform:translateY(-6px)}}
+#p3#p3 .p3-vmin{display:grid;grid-template-columns:1.3fr 1fr;gap:18px 30px;padding:18px 24px 20px}
+#p3#p3 .p3-vmh{font-size:11px!important;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#a8812f!important;margin:10px 0 4px!important}
+#p3#p3 .p3-vmh:first-child{margin-top:0!important}
+#p3#p3 .p3-vmd{font-size:14.5px!important;line-height:1.55;color:#3d4b5a!important}
+#p3#p3 .p3-vspecs.p3-wrap{flex-wrap:wrap}
+#p3#p3 a.p3-vmfull{display:inline-block;margin-top:14px;font-weight:800;color:#fff;background:var(--ink);padding:10px 16px;border-radius:12px}
+@media(max-width:760px){#p3#p3 .p3-vmin{grid-template-columns:1fr;padding:14px 18px}}
+@media(min-width:1101px){#p3#p3 .p3-vbody{gap:4px}}

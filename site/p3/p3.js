@@ -54,16 +54,20 @@ if(isResults){
   var biz=mem.map(function(it){var g=function(p){var m=it.querySelector('[itemprop="'+p+'"]');return m?(m.getAttribute('content')||m.getAttribute('href')||''):''};
     var uid=(it.querySelector('.postItem')||{getAttribute:function(){return ''}}).getAttribute('data-userid')||'';
     var u=(it.querySelector('[itemtype$="LocalBusiness"] link[itemprop="url"]')||{}).href||'';
-    return {n:g('name'),u:u.replace(/#.*$/,''),img:g('image'),tel:g('telephone'),d:g('description'),st:g('streetAddress'),town:(g('addressLocality')||'').replace('Setauket- East Setauket','East Setauket'),uid:uid,vip:VIP.indexOf(uid)>=0}});
+    return {n:g('name'),u:u.replace(/#.*$/,''),img:g('image'),tel:g('telephone'),d:g('description'),st:g('streetAddress'),zip:g('postalCode'),reg:g('addressRegion'),town:(g('addressLocality')||'').replace('Setauket- East Setauket','East Setauket'),uid:uid,vip:VIP.indexOf(uid)>=0}});
   var q=(location.search.match(/[?&]q=([^&]*)/)||[])[1];q=q?decodeURIComponent(q.replace(/\+/g,' ')):'';
   var h1=$('h1');var catName=!q&&h1?h1.textContent.trim():'';
   function fmtTel(t){t=(t||'').replace(/[^\d]/g,'').slice(-10);return t.length===10?t.slice(0,3)+'-'+t.slice(3,6)+'-'+t.slice(6):''}
   function maps(b){return 'https://www.google.com/maps/search/?api=1&amp;query='+encodeURIComponent(b.n+' '+(b.st||'')+' '+b.town)}
-  function vipCard(b){var tel=fmtTel(b.tel);
-    return '<div class="p3-vcard"><div class="p3-vart" data-uid="'+esc(b.uid)+'"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></div><div class="p3-vbody">'+
-      '<span class="p3-vribbon">&#11088; VIP LOCAL BUSINESS</span><a class="p3-vname" href="'+esc(b.u)+'">'+esc(b.n)+'</a>'+
+  function vipCard(b,idx){var tel=fmtTel(b.tel),t=tel.replace(/-/g,'');
+    return '<div class="p3-vwrap" data-i="'+idx+'" data-uid="'+esc(b.uid)+'" data-name="'+esc(b.n)+'"><div class="p3-vcard"><div class="p3-vart" data-uid="'+esc(b.uid)+'"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></div><div class="p3-vbody">'+
+      '<span class="p3-vribbon">&#11088; VIP LOCAL BUSINESS</span><a class="p3-vname" data-act="profile" href="'+esc(b.u)+'">'+esc(b.n)+'</a>'+
       '<p class="p3-vloc">&#128205; '+esc([b.st,b.town].filter(Boolean).join(', ')||'Three Village')+'</p><p class="p3-vd">'+esc(b.d)+'</p>'+
-      '<div class="p3-vacts">'+(tel?'<a class="p3-vtel" href="tel:'+tel.replace(/-/g,'')+'">&#128222; '+tel+'</a>':'')+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">Call now</a>':'')+'<a href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Directions</a><a class="p3-view" href="'+esc(b.u)+'">Full profile &rarr;</a></div></div><aside class="p3-vside" data-uid="'+esc(b.uid)+'" data-u="'+esc(b.u)+'"></aside></div>'}
+      '<div class="p3-vacts">'+(tel?'<a class="p3-vtel" data-act="call" href="tel:'+t+'">&#128222; '+tel+'</a><a class="p3-call" data-act="call" href="tel:'+t+'">Call</a><a class="p3-text" data-act="text" href="sms:'+t+'">&#128172; Text</a>':'')+
+      '<a data-act="directions" href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Directions</a>'+
+      '<button type="button" class="p3-vcf" data-act="save_contact">&#128100; Save contact</button></div>'+
+      '<button type="button" class="p3-more-btn" data-act="more" aria-expanded="false">More about us <span>&#9662;</span></button></div>'+
+      '<aside class="p3-vside" data-uid="'+esc(b.uid)+'" data-u="'+esc(b.u)+'"></aside></div><div class="p3-vmore" hidden></div></div>'}
   function card(b,i){var tel=fmtTel(b.tel);
     return '<div class="p3-rcard" style="--i:'+i+'"><a class="p3-rtop" href="'+esc(b.u)+'"><img src="'+esc(b.img)+'" alt="" loading="lazy"><div><b>'+esc(b.n)+'</b><small>&#128205; '+esc(b.town||'Three Village')+'</small></div></a>'+
       '<p class="p3-rd">'+esc(b.d.slice(0,140))+(b.d.length>140?'&hellip;':'')+'</p><div class="p3-racts">'+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">&#128222; Call</a>':'')+
@@ -72,12 +76,32 @@ if(isResults){
   var title=q?'Results for <em>&ldquo;'+esc(q)+'&rdquo;</em>':'<em>'+esc(catName||'Local Businesses')+'</em>';
   var h='<header class="p3-phero" style="background-image:url(\''+BASE+'img/village-hero.jpg\')"><div class="p3-phin"><span class="p3-kick">THREE VILLAGE LOCAL</span><h1 class="p3-h1">'+title+'</h1>'+
     '<p class="p3-sub">Local businesses rated by your neighbors. Call, get directions or see the full profile.</p></div><span class="p3-credit">Photo: Iracaz, CC BY-SA 3.0</span></header>'+
-    (vips.length?'<div class="p3-vlist">'+vips.map(vipCard).join('')+'</div>':'')+
+    (vips.length?'<div class="p3-vlist">'+vips.map(function(b,k){return vipCard(b,k)}).join('')+'</div>':'')+
     (rest.length?(vips.length?'<h2 class="p3-more">More local businesses</h2>':'')+'<div class="p3-rgrid">'+rest.map(card).join('')+'</div>':'');
   var first=mem[0];var root=mount(h,first.closest('[itemprop="mainEntity"]')||first);
   mem.forEach(function(e){e.style.display='none'});
   $$('.feature_results_header,.post-search-result-count-container,.member-search-result-count-container,.member-search-result-filters,.views,.sort-members-select').forEach(function(e){if(!root.contains(e))e.style.display='none'});
   if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none';
+
+  /* ---- interactions: expand, save contact, click tracking (GA4 event vip_card_click, per business) ---- */
+  function track(act,w){try{if(window.gtag)window.gtag('event','vip_card_click',{action:act,business:w.getAttribute('data-name'),business_id:w.getAttribute('data-uid'),page:location.pathname+location.search})}catch(e){}}
+  function vcf(b){var t=(b.tel||'').replace(/[^\d]/g,'').slice(-10),L=['BEGIN:VCARD','VERSION:3.0','FN:'+b.n,'ORG:'+b.n];
+    if(t)L.push('TEL;TYPE=WORK,VOICE:+1'+t);
+    if(b.st||b.town)L.push('ADR;TYPE=WORK:;;'+(b.st||'')+';'+(b.town||'')+';'+(b.reg||'NY')+';'+(b.zip||'')+';USA');
+    var m=META[b.uid]||{};if(m.web)L.push('URL:'+m.web);L.push('URL;TYPE=3VL:'+b.u);L.push('NOTE:Found on Three Village Local - threevillagelocal.com');L.push('END:VCARD');
+    var blob=new Blob([L.join('\r\n')],{type:'text/vcard'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=b.n.replace(/[^\w ]+/g,'').trim()+'.vcf';
+    document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},1500)}
+  function more(w,b){var p=w.querySelector('.p3-vmore'),m=META[b.uid]||{},h='<div class="p3-vmin"><div><p class="p3-vmh">About</p><p class="p3-vmd">'+esc(b.d)+'</p>';
+    if(m.cred)h+='<p class="p3-vmh">Credentials</p><p class="p3-vmd">'+esc(m.cred)+'</p>';
+    h+='</div><div>';
+    if(m.specs&&m.specs.length)h+='<p class="p3-vmh">Specialties</p><div class="p3-vspecs p3-wrap">'+m.specs.map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div>';
+    if(m.pay)h+='<p class="p3-vmh">Payment accepted</p><p class="p3-vmd">'+esc(m.pay)+'</p>';
+    h+='<p class="p3-vmh">Address</p><p class="p3-vmd">'+esc([b.st,b.town,(b.reg||'NY')+' '+(b.zip||'')].filter(Boolean).join(', '))+'</p>';
+    h+='<a class="p3-vmfull" data-act="profile" href="'+esc(b.u)+'">See full profile, photos &amp; reviews &rarr;</a></div></div>';p.innerHTML=h}
+  root.addEventListener('click',function(e){var a=e.target.closest('[data-act]');if(!a)return;var w=a.closest('.p3-vwrap');if(!w)return;
+    var b=vips[+w.getAttribute('data-i')],act=a.getAttribute('data-act');track(act,w);
+    if(act==='save_contact'){e.preventDefault();vcf(b)}
+    if(act==='more'){e.preventDefault();var p=w.querySelector('.p3-vmore'),open=p.hidden;if(open&&!p.innerHTML)more(w,b);p.hidden=!open;a.setAttribute('aria-expanded',open?'true':'false');w.classList.toggle('is-open',open)}});
   /* VIP cards use the listing's own logo/photo, never the banner ads (owner request 9/26) */
   /* VIP value panel: public listing details (verified, neighbor reviews, years, specialties, credentials, links) */
   function yrs(y){var n=new Date().getFullYear()-(+y);return n>0?n:0}
@@ -88,10 +112,11 @@ if(isResults){
     h+='</ul>';
     if(m.specs&&m.specs.length)h+='<div class="p3-vspecs">'+m.specs.slice(0,3).map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div>';
     if(m.cred)h+='<p class="p3-vcred">&#127891; '+(m.cred.length>110?esc(m.cred.slice(0,110).replace(/\s\S*$/,''))+'&hellip;':esc(m.cred))+'</p>';
-    var L=[];if(m.web)L.push('<a href="'+esc(m.web)+'" target="_blank" rel="noopener">Website</a>');if(m.fb)L.push('<a href="'+esc(m.fb)+'" target="_blank" rel="noopener">Facebook</a>');if(m.ig)L.push('<a href="'+esc(m.ig)+'" target="_blank" rel="noopener">Instagram</a>');
-    L.push('<a class="p3-vrev" href="'+esc(u.replace(/\/$/,''))+'/writeareview">&#9733; '+(m.reviews?'Write a review':'Be the first to review')+'</a>');
+    var L=[];if(m.web)L.push('<a data-act="website" href="'+esc(m.web)+'" target="_blank" rel="noopener">Website</a>');if(m.fb)L.push('<a data-act="facebook" href="'+esc(m.fb)+'" target="_blank" rel="noopener">Facebook</a>');if(m.ig)L.push('<a data-act="instagram" href="'+esc(m.ig)+'" target="_blank" rel="noopener">Instagram</a>');
+    L.push('<a class="p3-vrev" data-act="review" href="'+esc(u.replace(/\/$/,''))+'/writeareview">&#9733; '+(m.reviews?'Write a review':'Be the first to review')+'</a>');
     h+='<div class="p3-vlinks">'+L.join('')+'</div>';return h}
-  fetch(BASE+'vip_meta.json').then(function(r){return r.json()}).then(function(M){
+  var META={};
+  fetch(BASE+'vip_meta.json').then(function(r){return r.json()}).then(function(M){META=M;
     $$('.p3-vside',root).forEach(function(a){var m=M[a.getAttribute('data-uid')];if(m){a.innerHTML=side(m,a.getAttribute('data-u'));a.parentNode.classList.add('has-side')}})}).catch(function(){});
   /* trim the white margin baked into many logo files so the logo fills its box */
   function trim(img){try{var w=img.naturalWidth,h=img.naturalHeight;if(!w||!h)return;var c=document.createElement('canvas'),k=Math.min(1,600/Math.max(w,h));c.width=Math.round(w*k);c.height=Math.round(h*k);
