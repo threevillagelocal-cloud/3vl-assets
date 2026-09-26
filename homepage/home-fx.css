@@ -30,8 +30,10 @@
 .recent-member .well.tvl-lift:after{opacity:1}
 .recent-member .well > a.h4{color:#1b2f45!important;font-weight:800!important;letter-spacing:-.01em;transition:color .2s}
 .recent-member .well:hover > a.h4{color:#006fbb!important}
-.recent-member .recent-member-image a{display:inline-block;position:relative;border-radius:50%}
-.recent-member .recent-member-image img{border-radius:50%!important;background:#fff;padding:6px;box-shadow:0 0 0 3px #fff,0 0 0 5px rgba(240,173,78,.75),0 10px 22px rgba(27,47,69,.18);transition:transform .5s cubic-bezier(.3,1.4,.5,1)!important}
+.recent-member .recent-member-image a{display:inline-block;position:relative}
+.recent-member .recent-member-image img{width:104px!important;height:104px!important;max-height:none!important;object-fit:contain;border-radius:22px!important;background:#fff;padding:8px;box-shadow:0 0 0 3px #fff,0 0 0 5px rgba(240,173,78,.75),0 10px 22px rgba(27,47,69,.18);transition:transform .5s cubic-bezier(.3,1.4,.5,1)!important}
+.recent-member .recent-member-image img.tvl-photo{padding:0;object-fit:cover}
+.recent-member .recent-member-image{height:auto!important;padding-top:4px}
 .recent-member .well.tvl-lift .recent-member-image img{transform:translateY(-4px) scale(1.06)}
 .recent-member .recent-member-info p{color:#475569}
 .recent-member .recent-member-info .btn-primary{position:relative;overflow:hidden;border:0!important;border-radius:999px!important;font-weight:700;background:linear-gradient(135deg,#006fbb,#205081)!important;box-shadow:0 8px 18px rgba(0,111,187,.28);transition:transform .2s,box-shadow .25s!important}
