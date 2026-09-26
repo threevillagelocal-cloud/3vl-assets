@@ -19,10 +19,12 @@ if(path==='/categories'){
   var cats=panels.map(function(p,i){var a=$('.topClass',p);var subs=$$('.sub-level-link > a.sub-category',p).map(function(x){return {n:x.textContent.trim(),h:x.getAttribute('href')}});
     return {n:a.textContent.trim(),h:a.getAttribute('href'),slug:(a.getAttribute('href')||'').replace('/',''),subs:subs,c:COLORS[i%COLORS.length]}});
   var total=cats.reduce(function(s,c){return s+c.subs.length},0);
-  var h=hero('THREE VILLAGE LOCAL','Explore','Three Village','Every local business in Stony Brook, Setauket, Port Jefferson and nearby, sorted so you can find the right one fast.',[[cats.length,'categories'],[total,'specialties'],['100%','local']])+
-    '<div class="p3-search"><span>&#128269;</span><input id="p3q" placeholder="What are you looking for? Try &quot;pizza&quot;, &quot;plumber&quot;, &quot;dentist&quot;&hellip;"></div>'+
+  var h='<header class="p3-phero" style="background-image:url(\'__CAFE__\')"><div class="p3-phin"><span class="p3-kick">THREE VILLAGE LOCAL</span><h1 class="p3-h1">Explore <em>Three Village</em></h1>'+
+    '<p class="p3-sub">The local businesses your neighbors trust, all in one place.</p>'+
+    '<div class="p3-search p3-hsearch"><span>&#128269;</span><input id="p3q" placeholder="What are you looking for? Try &quot;pizza&quot;, &quot;plumber&quot;, &quot;dentist&quot;&hellip;"></div></div>'+
+    '<span class="p3-credit">Photo: Shixart1985, CC BY 2.0</span></header>'+
     '<div class="p3-chips">'+['Restaurants','Contractor','Home Services','Health & Wellness','Attorney','Real Estate','Beauty & Personal Care','Pet Services'].map(function(n){return '<span class="p3-chip">'+esc(n)+'</span>'}).join('')+'</div>'+
-    '<div class="p3-cgrid">'+cats.map(function(c,i){return '<a class="p3-ctile" href="'+esc(c.h)+'" data-n="'+esc((c.n+' '+c.subs.map(function(s){return s.n}).join(' ')).toLowerCase())+'" style="--c:'+c.c+';--i:'+(i%12)+'"><span class="p3-cic">'+iconFor(c.slug)+'</span><b>'+esc(c.n)+'</b><small>'+(c.subs.length?c.subs.slice(0,3).map(function(s){return esc(s.n)}).join(' &middot; ')+(c.subs.length>3?' &middot; +'+(c.subs.length-3)+' more':''):'Browse all')+'</small><em>&rarr;</em></a>'}).join('')+'</div>';
+    '<div class="p3-cgrid">'+cats.map(function(c,i){return '<a class="p3-ctile" href="'+esc(c.h)+'" data-n="'+esc((c.n+' '+c.subs.map(function(s){return s.n}).join(' ')).toLowerCase())+'" style="--c:'+c.c+';--i:'+(i%12)+'"><span class="p3-cic">'+iconFor(c.slug)+'</span><span class="p3-ctx"><b>'+esc(c.n)+'</b><small>'+(c.subs.length?c.subs.length+' specialt'+(c.subs.length===1?'y':'ies'):'Browse all')+'</small></span><em>&rarr;</em></a>'}).join('')+'</div>';
   var anchor=$('.category_filter_module')||panels[0];var root=mount(h,anchor);
   $$('.category_filter_module,.categories-panel').forEach(function(e){e.style.display='none'});
   $$('h1,h2').forEach(function(x){if(/Businesses by Category/.test(x.textContent)&&!root.contains(x))x.style.display='none'});

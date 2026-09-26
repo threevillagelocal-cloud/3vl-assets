@@ -3,7 +3,8 @@ import base64, json, subprocess, sys, time, urllib.request, websocket
 URL, OUT, MODE, W, H, MOB = sys.argv[1], sys.argv[2], sys.argv[3], int(sys.argv[4]), int(sys.argv[5]), sys.argv[6] == "1"
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 A = "C:/Users/Matt/AppData/Local/Temp/claude/C--Users-Matt/9198bbd2-d524-49ae-b687-c350243c81b5/scratchpad/premium/"
-css = open(A + "p3.css", encoding="utf-8").read(); js = open(A + "p3.js", encoding="utf-8").read()
+A2 = "C:/Users/Matt/Documents/3vl-assets/premium-mockups/"
+css = open(A2 + "today.css", encoding="utf-8").read(); js = open(A2 + "today.js", encoding="utf-8").read()
 import base64 as _b
 js = js.replace("__CAFE__", "data:image/jpeg;base64," + _b.b64encode(open("C:/Users/Matt/Documents/3vl-assets/premium-mockups/img/cafe-hero.jpg","rb").read()).decode())
 meta = "{}"
