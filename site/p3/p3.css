@@ -386,3 +386,4 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
   #p3#p3 .p3-vspecs span{font-size:11px;padding:2px 8px}
   #p3#p3 .p3-b{font-size:11.5px;padding:2px 8px}
 }
+@media(min-width:761px){#p3#p3 .p3-vcard .p3-vside .p3-vspecs{flex-wrap:nowrap!important;overflow:hidden!important}#p3#p3 .p3-vmedia a.p3-vprof{white-space:nowrap}}

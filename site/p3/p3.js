@@ -62,7 +62,7 @@ if(isResults){
   var vips=[];
   function vipCard(b,idx){var tel=fmtTel(b.tel),t=tel.replace(/-/g,'');
     return '<div class="p3-vwrap" data-i="'+idx+'" data-uid="'+esc(b.uid)+'" data-name="'+esc(b.n)+'"><div class="p3-vcard">'+
-      '<div class="p3-vmedia"><a class="p3-vart" data-act="profile" href="'+esc(b.u)+'" data-uid="'+esc(b.uid)+'" title="View full profile"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></a><a class="p3-vprof" data-act="profile" href="'+esc(b.u)+'">View full profile &rarr;</a></div>'+
+      '<div class="p3-vmedia"><a class="p3-vart" data-act="profile" href="'+esc(b.u)+'" data-uid="'+esc(b.uid)+'" title="View full profile"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></a><a class="p3-vprof" data-act="profile" href="'+esc(b.u)+'">View profile &rarr;</a></div>'+
       '<div class="p3-vbody"><a class="p3-vname" data-act="profile" href="'+esc(b.u)+'">'+esc(b.n)+'</a>'+
       '<p class="p3-vloc"><span class="p3-vtag">&#11088; VIP</span>&#128205; '+esc(addr(b))+'</p><p class="p3-vd">'+esc(b.d)+'</p>'+
       '<div class="p3-vacts">'+(tel?'<a class="p3-call p3-callbig" data-act="call" href="tel:'+t+'">&#128222; '+tel+'</a><a class="p3-text" data-act="text" href="sms:'+t+'">&#128172; Text</a>':'')+
