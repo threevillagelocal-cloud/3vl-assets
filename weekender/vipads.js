@@ -76,7 +76,11 @@ function spot(){
   var s=document.querySelector('.content_w_sidebar .sidebar-container')||document.querySelector('.content_w_sidebar > .col-md-3');
   if(s){var first=s.querySelector('.module');return{el:s,after:first,place:/member_results/.test(s.parentNode.className)?'search_sidebar':'listing_sidebar'}}
   return null}
-function go(){if(document.getElementById('vipx'))return;var t=spot();if(!t)return;if(!me||!me.getAttribute('data-placement'))PLACE=t.place;
+/* Retire BD's old static "Banner Ad" sidebar widgets: the rotator is the only ad on a page. */
+function retireOld(){var st=document.createElement('style');st.textContent='a:has(> img[src*="/images/banner-ads/"]),a:has(> img[alt="Banner Ad"]){display:none!important}';document.head.appendChild(st);
+  var imgs=document.querySelectorAll('img[src*="/images/banner-ads/"],img[alt="Banner Ad"]');
+  for(var i=0;i<imgs.length;i++){var a=imgs[i].closest('a')||imgs[i];var nx=a.nextElementSibling;a.parentNode.removeChild(a);if(nx&&/clearfix-lg/.test(nx.className))nx.parentNode.removeChild(nx)}}
+function go(){retireOld();if(document.getElementById('vipx'))return;var t=spot();if(!t)return;if(!me||!me.getAttribute('data-placement'))PLACE=t.place;
   fetch(BASE+'banners.json').then(function(r){return r.json()}).then(function(list){if(list&&list.length&&!document.getElementById('vipx'))build(list,t)}).catch(function(){})}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
 })();
