@@ -32,7 +32,7 @@ function setNum(id,val,dec){var el=$(id);if(!el||val==null||isNaN(val))return;va
 /* ---------- forecast ---------- */
 function forecast(){
 return get(FC).then(function(d){
-var p=d.properties,per=p.periods||[];
+var p=d.properties,per=p.periods||[];window.stmPer=per;
 var up=new Date(p.updateTime||p.generatedAt);
 if($('stm-upd'))$('stm-upd').textContent='Updated '+stamp(up);
 var fc=$('stm-fc');
@@ -59,12 +59,12 @@ var inch=mm/25.4;if(inch<0.1||!$('stm-rain'))return;$('stm-rain').textContent='A
 function alerts(){
 return get(AL).then(function(d){
 var box=$('stm-alerts');if(!box)return;
-var f=(d.features||[]).map(function(x){return x.properties}).filter(function(a){return a.event});
+var f=(d.features||[]).map(function(x){return x.properties}).filter(function(a){return a.event});window.stmAl=f;window.stmFlood=null;
 if(!f.length){box.innerHTML='<div class="stm-alert stm-a2"><span class="stm-alabel">No Active Alerts</span><span class="stm-atime">For the Three Village area</span><span class="stm-adesc">The National Weather Service has cleared all warnings.</span></div>';return}
 var blurb=function(e){return /wind/i.test(e)?'Strong gusts can down trees and power lines':/flood watch|flood warning/i.test(e)?'Shoreline and low road flooding possible':/flood statement|flood advisory/i.test(e)?'Minor flooding in low spots near the water':/warning/i.test(e)?'Take action now':'See weather.gov for details'};
 var cls=function(e){return /wind|warning/i.test(e)?'stm-a1':/flood/i.test(e)?'stm-a2':'stm-a3'};
 var rank=function(e){return /warning/i.test(e)?0:/watch/i.test(e)?1:/advisory/i.test(e)?2:3};f.sort(function(a,b){return rank(a.event)-rank(b.event)});var seen={},html='';
-f.forEach(function(a){if(seen[a.event])return;seen[a.event]=1;if(/coastal flood (watch|warning)/i.test(a.event)){window.stmFlood=[new Date(a.onset||a.effective),new Date(a.ends||a.expires)]}
+f.forEach(function(a){if(seen[a.event])return;seen[a.event]=1;if(/coastal flood (watch|warning)/i.test(a.event)){window.stmFlood=[new Date(a.onset||a.effective),new Date(a.ends||a.expires)];window.stmFloodName=a.event}
 var s=a.onset?new Date(a.onset):null,e=a.ends||a.expires?new Date(a.ends||a.expires):null;
 var when=(s?DAYS[s.getDay()]+' '+tm(s):'Now')+(e?' to '+DAYS[e.getDay()]+' '+tm(e):'');
 html+='<div class="stm-alert '+cls(a.event)+'"><span class="stm-alabel">'+esc(a.event)+'</span><span class="stm-atime">'+esc(when)+'</span><span class="stm-adesc">'+esc(blurb(a.event))+'</span></div>'});
@@ -76,9 +76,9 @@ function tides(){
 var n=new Date(),ymd=n.getFullYear()+('0'+(n.getMonth()+1)).slice(-2)+('0'+n.getDate()).slice(-2);
 return get(TD+ymd).then(function(d){
 var box=$('stm-tides');if(!box||!d.predictions)return;
-var highs=d.predictions.filter(function(x){return x.type==='H'&&new Date(x.t.replace(' ','T'))>new Date(Date.now()-3600e3)}).slice(0,4);
+window.stmTides=d.predictions;var highs=d.predictions.filter(function(x){return x.type==='H'&&new Date(x.t.replace(' ','T'))>new Date(Date.now()-3600e3)}).slice(0,4);
 if(!highs.length)return;
-box.innerHTML=highs.map(function(x){var t=new Date(x.t.replace(' ','T'));var fw=window.stmFlood&&t>=window.stmFlood[0]&&t<=window.stmFlood[1];return '<div class="stm-tide'+(fw?' stm-thigh':'')+'"><p class="stm-tday">'+DAYS[t.getDay()]+' '+MON[t.getMonth()]+' '+t.getDate()+'</p><p class="stm-ttime">'+tm(t)+'</p><p class="stm-tnote">'+(fw?'During the Flood Watch. ':'')+parseFloat(x.v).toFixed(1)+' ft predicted</p></div>'}).join('');
+box.innerHTML=highs.map(function(x){var t=new Date(x.t.replace(' ','T'));var fw=window.stmFlood&&t>=window.stmFlood[0]&&t<=window.stmFlood[1];return '<div class="stm-tide'+(fw?' stm-thigh':'')+'"><p class="stm-tday">'+DAYS[t.getDay()]+' '+MON[t.getMonth()]+' '+t.getDate()+'</p><p class="stm-ttime">'+tm(t)+'</p><p class="stm-tnote">'+(fw?'During the '+esc(window.stmFloodName||'flood alert')+'. ':'')+parseFloat(x.v).toFixed(1)+' ft predicted</p></div>'}).join('');
 });
 }
 /* ---------- live weather station ---------- */
@@ -134,7 +134,7 @@ function jitter(){var W=window.stmW,el=$('stm-wspd'),nd=$('stm-needle');
 function pad(n){return (n<10?'0':'')+n}
 function countdown(){var cl=$('stm-cl'),cv=$('stm-cv');if(!cl||!cv)return;var now=new Date(),target,label;
   if(now<T_START){target=T_START;label='Storm arrives in'}else if(now<T_PEAK){target=T_PEAK;label='Peak winds &amp; high tide in'}
-  else if(now<T_END){cl.innerHTML='Storm in progress';cv.textContent='Stay safe';return}else{cl.innerHTML='Storm has passed';cv.textContent='Cleanup info below';return}
+  else{var st=window.stmState;if(st&&st.over){cl.innerHTML='Storm has passed';cv.textContent='Cleanup info below';return}cl.innerHTML='Storm in progress';cv.textContent=st&&st.clear?'Drying out '+st.clear:'Stay safe';return}
   var s=Math.max(0,Math.floor((target-now)/1000)),d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),sec=s%60;
   cl.innerHTML=label;cv.textContent=(d?d+'d ':'')+h+'h '+pad(m)+'m '+pad(sec)+'s'}
 /* ---------- checklist (remembered on this device) ---------- */
@@ -159,14 +159,53 @@ function scrollFx(){var root=document.querySelector('.stm');if(!root||!('Interse
     if(nav){var l=a.offsetLeft-nav.clientWidth/2+a.clientWidth/2;nav.scrollTo?nav.scrollTo({left:l,behavior:'smooth'}):(nav.scrollLeft=l)}})},{rootMargin:'-35% 0px -60% 0px'});
   root.querySelectorAll('h2[id]').forEach(function(h){spy.observe(h)});
   var top=$('stm-totop'),hero=root.querySelector('.stm-hero');if(top&&hero){new IntersectionObserver(function(es){top.classList.toggle('stm-show',!es[0].isIntersecting)}).observe(hero)}}
+/* ---------- now / next: hero summary + timeline, rebuilt from live NWS + NOAA data ---------- */
+function lc(t){return t?t.charAt(0).toLowerCase()+t.slice(1):''}
+function gustOf(x){var g=(x.detailedForecast||'').match(/gusts as high as ([0-9]+) mph/i);return g?+g[1]:0}
+function popOf(x){return x.probabilityOfPrecipitation&&x.probabilityOfPrecipitation.value!=null?x.probabilityOfPrecipitation.value:null}
+function wet(x){var p=popOf(x);return /rain|shower|storm|drizzle/i.test(x.shortForecast)&&!(p!=null&&p<50)}
+function windTxt(x){var g=gustOf(x);return (x.windDirection?x.windDirection+' ':'')+'wind '+x.windSpeed+(g?', gusts to '+g+' mph':'')}
+function rainTxt(x){var r=((x.detailedForecast||'').match(/New (?:rainfall|precipitation) amounts? (?:of )?(?:between )?([^.]+)/i)||[])[1];return r?amt(r)+' more rain':''}
+function dayLbl(d){var n=new Date(),a=new Date(n.getFullYear(),n.getMonth(),n.getDate()),b=new Date(d.getFullYear(),d.getMonth(),d.getDate()),k=Math.round((b-a)/864e5);
+  return (k===0?'Today':k===1?'Tomorrow':DAYS[d.getDay()])+' '+tm(d)}
+function cxPrune(){var n=new Date(),t=n.getFullYear()+'-'+('0'+(n.getMonth()+1)).slice(-2)+('0'+n.getDate()).slice(-2);
+  document.querySelectorAll('.stm-cxi[data-until]').forEach(function(el){if(el.getAttribute('data-until')<t)el.style.display='none'})}
+function nowNext(){var per=window.stmPer||[],al=window.stmAl||[],now=new Date();if(!per.length)return;
+  var cur=per[0],clear=null,i;for(i=0;i<per.length;i++){if(!wet(per[i])){clear=per[i];break}}
+  var active=al.filter(function(a){return new Date(a.onset||a.effective)<=now&&new Date(a.ends||a.expires)>now});
+  var seen={},act=[];active.forEach(function(a){if(!seen[a.event]){seen[a.event]=1;act.push(a)}});
+  var over=!act.length&&!wet(cur);
+  window.stmState={over:over,clear:clear&&clear!==cur?clear.name.replace(/^This /,''):''};
+  /* hero */
+  var sub=$('stm-sub')||document.querySelector('.stm-sub');
+  if(sub){var h='<strong>Right now:</strong> '+esc(cur.shortForecast)+', '+esc(lc(windTxt(cur)))+'.';
+    if(act.length)h+=' '+act.map(function(a){var e=new Date(a.ends||a.expires);return esc(a.event)+' until '+esc(dayLbl(e))}).join('. ')+'.';
+    var nx=per.slice(1,3).map(function(x){return esc(x.name)+': '+esc(lc(x.shortForecast))}).join(', ');
+    h+=' <strong>Coming up:</strong> '+nx+'.';
+    h+=over?' The worst is behind us.':clear?' Drying out '+esc(clear.name)+'.':' No dry break in the forecast yet.';
+    sub.innerHTML=h}
+  /* timeline */
+  var tl=$('stm-tlive');if(!tl)return;var it=[];
+  it.push({t:now,l:'Now',c:'stm-tnow',h:'<strong>'+esc(cur.shortForecast)+'.</strong> '+esc(windTxt(cur))+'.'+(act.length?' '+esc(act.map(function(a){return a.event}).join(' and '))+' in effect.':'')});
+  seen={};al.forEach(function(a){if(seen[a.event])return;seen[a.event]=1;var s=new Date(a.onset||a.effective),e=new Date(a.ends||a.expires);
+    if(s>now)it.push({t:s,l:dayLbl(s),h:'<strong>'+esc(a.event)+' begins.</strong>'});
+    if(e>now&&e-now<5*864e5)it.push({t:e,l:dayLbl(e),c:'stm-tok',h:'<strong>'+esc(a.event)+' ends.</strong>'})});
+  (window.stmTides||[]).forEach(function(x){if(x.type!=='H')return;var t=new Date(x.t.replace(' ','T'));if(t<now||t-now>48*3600e3)return;
+    var fw=window.stmFlood&&t>=window.stmFlood[0]&&t<=window.stmFlood[1];
+    it.push({t:t,l:dayLbl(t),c:fw?'stm-peak':'',pk:fw,h:'<strong>High tide, '+parseFloat(x.v).toFixed(1)+' ft.</strong> '+(fw?'Highest flood risk along the shore and low roads.':'Watch low spots near the water.')})});
+  per.slice(1,6).forEach(function(x){if(x===clear)return;var r=rainTxt(x);
+    it.push({t:new Date(x.startTime),l:x.name,h:'<strong>'+esc(x.shortForecast)+'.</strong> '+esc(windTxt(x))+'.'+(r?' '+esc(r)+'.':'')})});
+  if(clear&&clear!==cur)it.push({t:new Date(clear.startTime),l:clear.name,c:'stm-ok',h:'<strong>Drying out.</strong> '+esc(clear.shortForecast)+'. Cleanup time.'});
+  it.sort(function(a,b){return a.t-b.t});
+  tl.innerHTML=it.map(function(x){return '<div class="stm-tli'+(x.c?' '+x.c:'')+'"><span class="stm-tlt">'+esc(x.l)+'</span><span class="stm-tld">'+x.h+'</span>'+(x.pk?'<span class="stm-pk">Peak</span>':'')+'</div>'}).join('')}
 /* ---------- run ---------- */
 function run(){
 if($('stm-ribbon'))$('stm-ribbon').classList.add('stm-loading');
-Promise.all([forecast().catch(function(){}),alerts().catch(function(){}).then(function(){return tides().catch(function(){})}),obs().catch(function(){}),qpf().catch(function(){})]).then(function(){if($('stm-ribbon'))$('stm-ribbon').classList.remove('stm-loading')});
+Promise.all([forecast().catch(function(){}),alerts().catch(function(){}).then(function(){return tides().catch(function(){})}),obs().catch(function(){}),qpf().catch(function(){})]).then(function(){try{nowNext()}catch(e){}try{cxPrune()}catch(e){}if($('stm-ribbon'))$('stm-ribbon').classList.remove('stm-loading')});
 }
 function go(){
 document.addEventListener('change',function(e){if(e.target&&e.target.classList&&e.target.classList.contains('stm-cb'))prog()});
-restore();ticks();scrollFx();countdown();setInterval(countdown,1000);if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches))setTimeout(jitter,3000);
+cxPrune();restore();ticks();scrollFx();countdown();setInterval(countdown,1000);if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches))setTimeout(jitter,3000);
 run();setInterval(run,10*60*1000);setInterval(ago,30000);
 ['stm-save','stm-save2'].forEach(function(id){var b=$(id);if(b)b.addEventListener('click',save)});
 var r=$('stm-ref');if(r)r.addEventListener('click',function(){r.classList.add('stm-spin');run();setTimeout(function(){r.classList.remove('stm-spin')},600)});
