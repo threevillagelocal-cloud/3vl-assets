@@ -27,11 +27,11 @@ var css='#vipx{background:#fff;border:1px solid #ebeef0;border-radius:12px;paddi
 '#vipx .vipx-glare{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.35),transparent 55%)}#vipx .vipx-rot.lift .vipx-glare{opacity:1}'+
 '@media (prefers-reduced-motion:reduce){#vipx .vipx-rot{transform:none!important}}'+
 '#vipx.vipx-sm{padding:10px}#vipx.vipx-sm .vipx-h{font-size:15px}#vipx.vipx-sm .vipx-btns a{font-size:12px;height:36px}'+
-'#vipx .vipx-nav{position:absolute;top:50%;z-index:4;width:38px;height:38px;margin-top:-19px;border:0;border-radius:50%;padding:0;background:rgba(15,28,43,.38);color:#fff;font-size:20px;line-height:38px;text-align:center;cursor:pointer;opacity:0;transition:opacity .25s,background .2s,transform .2s;backdrop-filter:blur(4px)}'+
-'#vipx .vipx-prev{left:8px}#vipx .vipx-next{right:8px}'+
-'#vipx .vipx-rot:hover .vipx-nav,#vipx .vipx-nav:focus-visible{opacity:.85}'+
-'#vipx .vipx-nav:hover{background:rgba(15,28,43,.75);opacity:1;transform:scale(1.08)}'+
-'@media (hover:none){#vipx .vipx-nav{opacity:.55}}'+
+'#vipx .vipx-nav{position:absolute;top:50%;z-index:4;width:30px;height:30px;margin-top:-15px;border:0;border-radius:50%;padding:0;background:rgba(15,28,43,.2);color:rgba(255,255,255,.9);font-size:17px;line-height:30px;text-align:center;cursor:pointer;opacity:0;transition:opacity .25s,background .2s,transform .2s;backdrop-filter:blur(4px)}'+
+'#vipx .vipx-prev{left:6px}#vipx .vipx-next{right:6px}'+
+'#vipx .vipx-rot:hover .vipx-nav,#vipx .vipx-nav:focus-visible{opacity:.55}'+
+'#vipx .vipx-nav:hover{background:rgba(15,28,43,.55);opacity:.95}'+
+'@media (hover:none){#vipx .vipx-nav{opacity:.35}}'+
 '#vipx .vipx-foot{display:block;text-align:center;margin-top:8px;font-size:12px;font-weight:700;color:#006fbb}';
 /* Shuffle so the same business or competitors (same "group") are at least GAP+1 slots apart, including when the loop wraps. */
 function spread(arr,key,gap){var best=arr.slice();
