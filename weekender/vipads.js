@@ -22,6 +22,10 @@ var css='#vipx{background:#fff;border:1px solid #ebeef0;border-radius:12px;paddi
 '#vipx .vipx-btns a{flex:1;display:inline-flex;align-items:center;justify-content:center;height:40px;border-radius:10px;font-weight:700;font-size:14px;text-decoration:none!important;white-space:nowrap}'+
 '#vipx .vipx-call{background:#006fbb;color:#fff!important}#vipx .vipx-view{background:#eef4fa;color:#1b2f45!important;border:1px solid #d6e3f0}'+
 '#vipx .vipx-dots{display:flex;justify-content:center;gap:4px;margin-top:10px}#vipx .vipx-dots b{width:6px;height:6px;border-radius:6px;background:#cfd8e3;transition:width .3s,background .3s}#vipx .vipx-dots b.on{width:16px;background:#006fbb}'+
+'#vipx .vipx-rot{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0)) scale(var(--sc,1));transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;will-change:transform;z-index:1}'+
+'#vipx .vipx-rot.lift{--ty:-8px;--sc:1.045;box-shadow:0 26px 50px rgba(27,47,69,.38),0 8px 16px rgba(27,47,69,.18);transition:transform .12s ease-out,box-shadow .35s}'+
+'#vipx .vipx-glare{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.35),transparent 55%)}#vipx .vipx-rot.lift .vipx-glare{opacity:1}'+
+'@media (prefers-reduced-motion:reduce){#vipx .vipx-rot{transform:none!important}}'+
 '#vipx .vipx-foot{display:block;text-align:center;margin-top:8px;font-size:12px;font-weight:700;color:#006fbb}';
 /* Shuffle so the same business or competitors (same "group") are at least GAP+1 slots apart, including when the loop wraps. */
 function spread(arr,key,gap){var best=arr.slice();
@@ -37,7 +41,7 @@ function build(list,side){
   var box=document.createElement('div');box.id='vipx';box.className='module';
   var h='<p class="vipx-h"><span>VIP</span>Local businesses we love</p><div class="vipx-rot">';
   list.forEach(function(v,i){h+='<div class="vipx-ad'+(i?'':' on')+'" data-vip="'+v.name+'"><a href="'+v.url+'" data-vip="'+v.name+'" style="--b:url('+BASE+v.img+')"><img src="'+BASE+v.img+'" alt="'+v.name+' ad" width="'+v.w+'" height="'+v.h+'" loading="'+(i?'lazy':'eager')+'"></a></div>'});
-  h+='<div class="vipx-bar"><i></i></div></div><div class="vipx-btns"><a class="vipx-call" href="#">&#128222; Call</a><a class="vipx-view" href="#">View on 3VL &rarr;</a></div><div class="vipx-dots">';
+  h+='<div class="vipx-glare"></div><div class="vipx-bar"><i></i></div></div><div class="vipx-btns"><a class="vipx-call" href="#">&#128222; Call</a><a class="vipx-view" href="#">View on 3VL &rarr;</a></div><div class="vipx-dots">';
   list.forEach(function(v,i){h+='<b'+(i?'':' class="on"')+'></b>'});
   h+='</div><a class="vipx-foot" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a>';
   box.innerHTML=h;side.insertBefore(box,side.firstChild);
@@ -48,6 +52,12 @@ function build(list,side){
     if(!seen[v.name]){var r=box.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0){seen[v.name]=1;track('vip_ad_view',{vip:v.name,placement:PLACE})}}}
   function loop(ts){if(!paused){var p=(ts-t0)/dur;bar.style.width=Math.min(100,p*100)+'%';if(p>=1)show(idx+1)}else t0=ts-(parseFloat(bar.style.width)||0)/100*dur;requestAnimationFrame(loop)}
   box.addEventListener('mouseenter',function(){paused=true});box.addEventListener('mouseleave',function(){paused=false});
+  var rot=box.querySelector('.vipx-rot');
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+    rot.addEventListener('mouseenter',function(){rot.classList.add('lift')});
+    rot.addEventListener('mousemove',function(e){var r=rot.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+      rot.style.setProperty('--ry',((x-.5)*10).toFixed(2)+'deg');rot.style.setProperty('--rx',((.5-y)*8).toFixed(2)+'deg');rot.style.setProperty('--gx',(x*100)+'%');rot.style.setProperty('--gy',(y*100)+'%')});
+    rot.addEventListener('mouseleave',function(){rot.classList.remove('lift');rot.style.setProperty('--rx','0deg');rot.style.setProperty('--ry','0deg')})}
   box.addEventListener('click',function(e){var a=e.target.closest('a[data-vip]');if(a)track('vip_ad_click',{vip:a.getAttribute('data-vip'),placement:PLACE,link:a.className||'banner'})});
   show(0);requestAnimationFrame(loop)}
 function go(){var side=document.querySelector('.post-detail-sidebar');if(!side||document.getElementById('vipx'))return;
