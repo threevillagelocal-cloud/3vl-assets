@@ -107,7 +107,7 @@
   "phone": "6318181725",
   "url": "https://www.threevillagelocal.com/southard-estate-planning",
   "bdphone": "6318181725",
-  "group": "vip137"
+  "group": "estateplan"
  },
  {
   "id": "112",
@@ -152,5 +152,27 @@
   "url": "https://www.threevillagelocal.com/matt-bardram-at-coltrain-mortgage",
   "bdphone": "6313329436",
   "group": "vip122"
+ },
+ {
+  "id": "138",
+  "name": "TJ Sirani, Zuma Payroll",
+  "img": "vip/banners/zuma.webp",
+  "w": 720,
+  "h": 600,
+  "phone": "6315256201",
+  "url": "https://www.threevillagelocal.com/tj-sirani-at-zuma-payroll",
+  "bdphone": "6315256201",
+  "group": "vip138"
+ },
+ {
+  "id": "228",
+  "name": "Raupp Law, P.C.",
+  "img": "vip/banners/raupp.webp",
+  "w": 720,
+  "h": 600,
+  "phone": "6317694440",
+  "url": "https://www.threevillagelocal.com/raupp-law-pc",
+  "bdphone": "6317694440",
+  "group": "estateplan"
  }
 ]
