@@ -125,8 +125,9 @@ def civic_ical(src, url, default_venue, default_url):
         desc = f.get("DESCRIPTION", ("", ""))[0].replace("\\n", " ").replace("\\,", ",")
         loc = re.sub(r"^\s*-\s*", "", re.sub(r"\s{2,}", " ", loc)).strip()
         venue = loc.split(" - ")[0].strip() if " - " in loc else default_venue
+        u = f.get("URL", ("", ""))[0].strip()
         out.append(ev(src, f.get("UID", (s.isoformat(), ""))[0], f.get("SUMMARY", ("", ""))[0].replace("\\,", ","), s, e,
-                      venue, loc or default_venue, f.get("URL", (default_url, ""))[0], desc, "", allday))
+                      venue, loc or default_venue, u if u.startswith("http") else default_url, desc, "", allday))
     return out
 
 
