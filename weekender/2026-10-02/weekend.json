@@ -168,6 +168,14 @@
     40.9408,
     -73.1055
    ]
+  },
+  "djs": {
+   "name": "DJ's Clam Shack",
+   "addr": "Stony Brook",
+   "ll": [
+    40.9175,
+    -73.13
+   ]
   }
  },
  "events": [
@@ -522,13 +530,23 @@
    "src": "facebook",
    "srcName": "The Country Corner",
    "img": "cc-spyday",
-   "feature": true,
    "img2": "cc-saloon",
    "phone": "",
    "ext": "cc-ext",
    "dish": "cc-spyday",
-   "extwide": "cc-ext-wide",
    "logo": "cc-logo"
+  },
+  {
+   "biz": "DJ’s Clam Shack",
+   "venue": "djs",
+   "title": "Lobster Rolls & Fresh Seafood",
+   "when": "Open daily · 11:30 AM to 9 PM",
+   "desc": "Stony Brook’s clam shack for overstuffed lobster rolls, fried clams and fresh seafood, seven days a week.",
+   "src": "facebook",
+   "srcName": "DJ’s Clam Shack",
+   "phone": "631-675-9660",
+   "ext": "djs-ext",
+   "dish": "djs-dish"
   },
   {
    "biz": "Madiran The Wine Bar",
