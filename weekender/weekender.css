@@ -694,3 +694,12 @@
   .wk-evc .wk-evbody{min-width:0}
   .wk-ev .wk-pstat{display:inline-flex;margin-top:2px}
 }
+
+/* Eat & Drink photos: fixed ratio so the business name is never cropped */
+.wk-sp .wk-eimg{height:auto!important;aspect-ratio:2/1;min-height:0!important;max-height:none!important}
+#wk-top .wk-sp .wk-eimg > img{width:100%;height:100%;object-fit:cover;object-position:center}
+.wk-spfeat{flex-direction:column!important}
+.wk-spfeat .wk-eimg{flex:0 0 auto!important;aspect-ratio:3/1}
+#wk-top .wk-spfeat .wk-eimg > img{border-radius:20px 20px 0 0!important}
+.wk-spfeat .wk-dish{width:120px;height:150px;right:18px;bottom:-40px}
+@media (max-width:760px){.wk-spfeat .wk-eimg{aspect-ratio:3/1}.wk-spfeat .wk-dish{width:96px;height:120px;bottom:-30px}}

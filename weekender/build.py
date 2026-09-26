@@ -159,8 +159,9 @@ def build(edition, local=False, sha="master"):
     for sp in d["specials"]:
         badge = '<span class="wk-src wk-fb">f</span>' if sp["src"] == "facebook" else '<span class="wk-src wk-web">&#127760;</span>'
         main = sp.get("ext") or sp.get("img")
-        pic = ('<div class="wk-eimg"><img src="%s" alt="%s" loading="lazy">%s</div>' % (
-            img(main, True), esc(sp["biz"]),
+        pic = ('<div class="wk-eimg">%s<img src="%s" alt="%s" loading="lazy">%s</div>' % (
+            ('<picture><source media="(min-width:761px)" srcset="%s"></picture>' % img(sp["extwide"])) if False else "",
+            img(sp["extwide"] if (sp.get("feature") and sp.get("extwide")) else main, True), esc(sp["biz"]),
             ('<span class="wk-dish"><img src="%s" alt="" loading="lazy"></span>' % img(sp["dish"], True)) if sp.get("dish") else "")) if main else ""
         call = ('<a class="wk-call" href="tel:%s">&#128222; Call</a>' % re.sub(r"\D", "", sp["phone"])) if sp.get("phone") else ''
         w('<article class="wk-sp wk-rv%s">%s<div class="wk-spb"><p class="wk-spbiz">%s</p><p class="wk-spt">%s</p><p class="wk-spw">%s</p>'

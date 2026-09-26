@@ -89,14 +89,6 @@
     -73.1463
    ]
   },
-  "countryhouse": {
-   "name": "The Country House",
-   "addr": "1175 N. Country Rd, Stony Brook",
-   "ll": [
-    40.91267,
-    -73.14214
-   ]
-  },
   "countrycorner": {
    "name": "The Country Corner",
    "addr": "270 Main St, East Setauket",
@@ -167,6 +159,14 @@
    "ll": [
     40.9296,
     -73.1028
+   ]
+  },
+  "ixchel": {
+   "name": "Ixchel Mexican Cuisine",
+   "addr": "130 Old Town Rd, East Setauket",
+   "ll": [
+    40.9408,
+    -73.1055
    ]
   }
  },
@@ -525,8 +525,10 @@
    "feature": true,
    "img2": "cc-saloon",
    "phone": "",
-   "ext": "cc-saloon",
-   "dish": "cc-spyday"
+   "ext": "cc-ext",
+   "dish": "cc-spyday",
+   "extwide": "cc-ext-wide",
+   "logo": "cc-logo"
   },
   {
    "biz": "Madiran The Wine Bar",
@@ -562,18 +564,18 @@
    "src": "facebook",
    "srcName": "Tommy's Place",
    "img": "tommys",
-   "ext": "tommys"
+   "ext": "tommys-ext"
   },
   {
-   "biz": "The Country House",
-   "venue": "countryhouse",
-   "title": "Spy Day Lunch & Prix Fixe",
-   "when": "Fri, Oct. 2 & Sat, Oct. 3",
-   "desc": "Sat: a one-day Culper Spy menu, plus a kids’ menu with a chance at free dessert. Fri: $50 three-course dinner with your Discovery Wetlands Cruise ticket.",
+   "biz": "Ixchel Mexican Cuisine",
+   "venue": "ixchel",
+   "title": "Tequila & Mariachi Dinner",
+   "when": "Thu, Oct. 22 · 6 PM",
+   "desc": "Five courses, five pours of 100% agave spirits and live mariachi. Spots are limited, so reserve now.",
    "src": "facebook",
-   "srcName": "Stony Brook Village",
-   "phone": "631-751-3332",
-   "ext": "countryhouse"
+   "srcName": "Ixchel Mexican Cuisine",
+   "phone": "631-526-2005",
+   "ext": "r-agave"
   }
  ],
  "next": [
