@@ -360,3 +360,29 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 
 #p3#p3 .p3-loadmore{text-align:center;margin:22px 0 10px}
 #p3#p3 .p3-loadmore .clickToLoadMoreBtn{display:inline-block;background:#1b2f45;color:#fff;border:0;border-radius:999px!important;padding:13px 26px;font:inherit;font-weight:800;font-size:15px;box-shadow:0 10px 22px rgba(27,47,69,.2)}
+
+/* auto-load */
+#p3#p3 .p3-loadmore{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+#p3#p3 .p3-sentinel{text-align:center;padding:18px 0 6px;min-height:40px}
+#p3#p3 .p3-sentinel span{display:none;font-weight:800;color:#6b7785;font-size:14px}
+#p3#p3 .p3-sentinel.is-on span{display:inline-block}
+/* VIP cards v9: near original height */
+@media(min-width:761px){
+  #p3#p3 .p3-vcard,#p3#p3 .p3-vcard.has-side{grid-template-columns:minmax(0,132px) minmax(0,1fr) minmax(0,240px)}
+  #p3#p3 .p3-vmedia{padding:10px;gap:6px}
+  #p3#p3 .p3-vmedia .p3-vart img{max-height:88px!important}
+  #p3#p3 .p3-vmedia .p3-vart.is-logo img{max-height:70px!important}
+  #p3#p3 .p3-vmedia a.p3-vprof{font-size:11.5px;padding:6px 6px}
+  #p3#p3 .p3-vbody{padding:10px 16px;gap:2px}
+  #p3#p3 .p3-vcard a.p3-vname{font-size:18px!important}
+  #p3#p3 .p3-vloc{font-size:13px}
+  #p3#p3 .p3-vd{font-size:13px}
+  #p3#p3 .p3-vacts{margin-top:5px;gap:6px}
+  #p3#p3 .p3-vacts a,#p3#p3 .p3-vacts button.p3-vcf{padding:7px 11px;font-size:13px}
+  #p3#p3 .p3-vacts a.p3-callbig{padding:7px 12px;font-size:14.5px}
+  #p3#p3 .p3-vcard.has-side .p3-vside{padding:10px 14px;gap:6px}
+  #p3#p3 .p3-vsh{display:none}
+  #p3#p3 .p3-vspecs{flex-wrap:nowrap!important;overflow:hidden!important}
+  #p3#p3 .p3-vspecs span{font-size:11px;padding:2px 8px}
+  #p3#p3 .p3-b{font-size:11.5px;padding:2px 8px}
+}

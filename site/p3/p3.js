@@ -81,9 +81,18 @@ if(isResults){
   var VL=$('#p3vl'),RG=$('#p3rg'),MORE=$('#p3more'),nRest=0;
   function hideChrome(){$$('.feature_results_header,.post-search-result-count-container,.member-search-result-count-container,.member-search-result-filters,.views,.sort-members-select').forEach(function(e){if(!root.contains(e))e.style.display='none'});
     if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none';
-    var more=document.querySelector('.clickToLoadMoreContainer');   /* BD's load-more trigger must sit under OUR list or scrolling never loads more */
+    var more=document.querySelector('.clickToLoadMoreContainer');
     if(more&&more.parentNode!==root){root.appendChild(more);more.classList.add('p3-loadmore')}}
   hideChrome();
+  /* seamless auto-load: when the end of our list comes near, press BD's load-more for the visitor */
+  var sent=document.createElement('div');sent.className='p3-sentinel';sent.innerHTML='<span>Loading more businesses&hellip;</span>';root.appendChild(sent);
+  var busy=false;
+  function loadMore(){var btn=document.querySelector('.clickToLoadMoreBtn'),cont=btn&&btn.closest('.clickToLoadMoreContainer');
+    var cur=+((document.querySelector('.current__amount__js')||{}).textContent||0),tot=+((document.querySelector('.total__js')||{}).textContent||0);
+    if(!btn||(tot&&cur>=tot)||(cont&&getComputedStyle(cont).display==='none')||btn.offsetParent===null&&cont&&cont.style.display==='none'){sent.style.display='none';return}
+    if(busy||/loadingMore/.test(btn.className))return;busy=true;sent.classList.add('is-on');btn.click();
+    setTimeout(function(){busy=false},1500)}
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es){if(es[0].isIntersecting)loadMore()},{rootMargin:'0px 0px 900px 0px'}).observe(sent);
 
   /* value panel from vip_meta.json (public listing details) */
   var META=null;
@@ -122,7 +131,9 @@ if(isResults){
     items.forEach(function(it){it.setAttribute('data-p3','1');it.style.display='none';var b=read(it);if(!b.n)return;
       if(b.vip){vips.push(b);vh+=vipCard(b,vips.length-1)}else{rh+=card(b,nRest++)}});
     if(vh)VL.insertAdjacentHTML('beforeend',vh);if(rh)RG.insertAdjacentHTML('beforeend',rh);
-    MORE.hidden=!(vips.length&&nRest);wireImgs(root);fillSides();hideChrome();eqSoon()}
+    MORE.hidden=!(vips.length&&nRest);wireImgs(root);fillSides();hideChrome();eqSoon();
+    if(typeof sent!=='undefined'){sent.classList.remove('is-on');root.appendChild(sent);busy=false;
+      var r=sent.getBoundingClientRect();if(r.top<innerHeight+900)setTimeout(loadMore,400)}}
   absorb();
   new MutationObserver(function(){absorb()}).observe(document.body,{childList:true,subtree:true});
 
