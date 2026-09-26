@@ -27,6 +27,11 @@ var css='#vipx{background:#fff;border:1px solid #ebeef0;border-radius:12px;paddi
 '#vipx .vipx-glare{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.35),transparent 55%)}#vipx .vipx-rot.lift .vipx-glare{opacity:1}'+
 '@media (prefers-reduced-motion:reduce){#vipx .vipx-rot{transform:none!important}}'+
 '#vipx.vipx-sm{padding:10px}#vipx.vipx-sm .vipx-h{font-size:15px}#vipx.vipx-sm .vipx-btns a{font-size:12px;height:36px}'+
+'#vipx .vipx-nav{position:absolute;top:50%;z-index:4;width:38px;height:38px;margin-top:-19px;border:0;border-radius:50%;padding:0;background:rgba(15,28,43,.38);color:#fff;font-size:20px;line-height:38px;text-align:center;cursor:pointer;opacity:0;transition:opacity .25s,background .2s,transform .2s;backdrop-filter:blur(4px)}'+
+'#vipx .vipx-prev{left:8px}#vipx .vipx-next{right:8px}'+
+'#vipx .vipx-rot:hover .vipx-nav,#vipx .vipx-nav:focus-visible{opacity:.85}'+
+'#vipx .vipx-nav:hover{background:rgba(15,28,43,.75);opacity:1;transform:scale(1.08)}'+
+'@media (hover:none){#vipx .vipx-nav{opacity:.55}}'+
 '#vipx .vipx-foot{display:block;text-align:center;margin-top:8px;font-size:12px;font-weight:700;color:#006fbb}';
 /* Shuffle so the same business or competitors (same "group") are at least GAP+1 slots apart, including when the loop wraps. */
 function spread(arr,key,gap){var best=arr.slice();
@@ -42,7 +47,7 @@ function build(list,side){
   var box=document.createElement('div');box.id='vipx';box.className='module';
   var h='<p class="vipx-h"><span>VIP</span>Local businesses we love</p><div class="vipx-rot">';
   list.forEach(function(v,i){h+='<div class="vipx-ad'+(i?'':' on')+'" data-vip="'+v.name+'"><a href="'+v.url+'" data-vip="'+v.name+'" style="--b:url('+BASE+v.img+')"><img src="'+BASE+v.img+'" alt="'+v.name+' ad" width="'+v.w+'" height="'+v.h+'" loading="'+(i?'lazy':'eager')+'"></a></div>'});
-  h+='<div class="vipx-glare"></div><div class="vipx-bar"><i></i></div></div><div class="vipx-btns"><a class="vipx-call" href="#">&#128222; Call</a><a class="vipx-view" href="#">View on 3VL &rarr;</a></div><div class="vipx-dots">';
+  h+='<button type="button" class="vipx-nav vipx-prev" aria-label="Previous ad">&#8249;</button><button type="button" class="vipx-nav vipx-next" aria-label="Next ad">&#8250;</button><div class="vipx-glare"></div><div class="vipx-bar"><i></i></div></div><div class="vipx-btns"><a class="vipx-call" href="#">&#128222; Call</a><a class="vipx-view" href="#">View on 3VL &rarr;</a></div><div class="vipx-dots">';
   list.forEach(function(v,i){h+='<b'+(i?'':' class="on"')+'></b>'});
   h+='</div><a class="vipx-foot" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a>';
   box.innerHTML=h;if(side.after&&side.after.nextSibling)side.el.insertBefore(box,side.after.nextSibling);else if(side.after)side.el.appendChild(box);else side.el.insertBefore(box,side.el.firstChild);
@@ -60,6 +65,8 @@ function build(list,side){
     rot.addEventListener('mousemove',function(e){var r=rot.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
       rot.style.setProperty('--ry',((x-.5)*10).toFixed(2)+'deg');rot.style.setProperty('--rx',((.5-y)*8).toFixed(2)+'deg');rot.style.setProperty('--gx',(x*100)+'%');rot.style.setProperty('--gy',(y*100)+'%')});
     rot.addEventListener('mouseleave',function(){rot.classList.remove('lift');rot.style.setProperty('--rx','0deg');rot.style.setProperty('--ry','0deg')})}
+  box.querySelector('.vipx-prev').addEventListener('click',function(e){e.preventDefault();e.stopPropagation();show(idx-1);track('vip_ad_nav',{dir:'prev',placement:PLACE})});
+  box.querySelector('.vipx-next').addEventListener('click',function(e){e.preventDefault();e.stopPropagation();show(idx+1);track('vip_ad_nav',{dir:'next',placement:PLACE})});
   box.addEventListener('click',function(e){var a=e.target.closest('a[data-vip]');if(a)track('vip_ad_click',{vip:a.getAttribute('data-vip'),placement:PLACE,link:a.className||'banner'})});
   show(0);requestAnimationFrame(loop)}
 /* Where the ad goes on each BD page type. Member profiles are skipped on purpose (a member's own page should not advertise other businesses). */
