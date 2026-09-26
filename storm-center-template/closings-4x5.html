@@ -1,0 +1,57 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#0b1320}
+.c{position:relative;width:1080px;height:1350px;font-family:Inter,sans-serif;color:#fff;overflow:hidden}
+.bg{position:absolute;inset:0;background:url(hero-rain.jpg) center/cover;filter:brightness(.7) saturate(.95)}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,14,24,.35) 0%,rgba(8,14,24,.8) 30%,rgba(8,14,24,.93) 60%,rgba(8,14,24,.97) 100%)}
+.rain{position:absolute;inset:0;background:repeating-linear-gradient(105deg,rgba(255,255,255,.07) 0 1px,transparent 1px 22px);opacity:.8}
+.top{position:absolute;left:62px;right:62px;top:56px;display:flex;justify-content:space-between;align-items:flex-start}
+.live{display:inline-flex;align-items:center;gap:12px;background:#d9453a;border-radius:12px;padding:12px 22px;font-weight:900;font-size:30px;letter-spacing:.06em}
+.live i{width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.35)}
+.logo{width:122px;height:122px}
+.head{position:absolute;left:62px;right:62px;top:150px}
+.k{font-weight:900;font-size:30px;letter-spacing:.28em;color:#f2a93b}
+.t{font-family:'Bebas Neue',sans-serif;font-size:118px;line-height:.9;margin-top:10px}
+.t b{color:#4de1ff;font-weight:400}
+.upd{margin-top:10px;font-size:25px;font-weight:700;color:#c9d6e4}
+.upd span{color:#fff}
+.list{position:absolute;left:62px;right:62px;top:392px;display:flex;flex-direction:column;gap:8px}
+.r{display:flex;align-items:center;gap:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:9px 16px}
+.bd{flex:0 0 146px;text-align:center;font-weight:900;font-size:17px;letter-spacing:.1em;text-transform:uppercase;padding:8px 0;border-radius:9px}
+.off .bd{background:#d9453a}.pp .bd{background:#f2a93b;color:#1b2430}.sus .bd{background:#4de1ff;color:#0b1320}
+.n{font-weight:800;font-size:25px;line-height:1.1}
+.d{font-weight:600;font-size:18px;color:#b9c7d8;margin-top:3px}
+.foot{position:absolute;left:62px;right:62px;bottom:34px;display:flex;align-items:center;gap:22px}
+.btn{display:inline-flex;align-items:center;gap:14px;background:#f2a93b;color:#1b2430;border:3px solid #fff;border-radius:16px;padding:16px 26px;font-weight:900;font-size:32px;letter-spacing:.03em;box-shadow:0 0 34px rgba(242,169,59,.55)}
+.ft{font-size:22px;font-weight:700;color:#c9d6e4;line-height:1.35}
+.ft b{color:#fff}
+.cred{position:absolute;right:18px;bottom:12px;font-size:13px;color:rgba(255,255,255,.45);font-weight:600}
+</style></head><body><div class="c">
+<div class="bg"></div><div class="shade"></div><div class="rain"></div>
+<div class="top"><span class="live"><i></i>LIVE</span><img class="logo" src="3vl-logo-160.png" alt=""></div>
+<div class="head">
+ <p class="k">THREE VILLAGE STORM CENTER</p>
+ <p class="t">CANCELED <b>&amp; CHANGED</b></p>
+ <p class="upd">This weekend&rsquo;s closings &middot; <span id="upd">Updated Fri, Sept 25, 11 PM</span></p>
+</div>
+<div class="list" id="list"></div>
+<div class="foot"><span class="btn">&#128073; LINK IN BIO</span><p class="ft">Full list, live radar &amp; alerts:<br><b>threevillagelocal.com</b></p></div>
+<p class="cred">Photo: Mateus S. Figueiredo, CC BY-SA 4.0</p>
+</div>
+<script>
+var R=[
+["off","Canceled","Three Village Farmers Market","Friday, Sept. 25"],
+["sus","Suspended","Port Jefferson Ferry","No boats Saturday. Back late Sunday morning"],
+["off","Canceled","Gallery North Outdoor Art Show","Sat & Sun. No rain date"],
+["off","Canceled","Culper Spy 5K Run/Walk","Sunday. Will not be rescheduled"],
+["off","Canceled","Port Jefferson Farmers Market","Sunday, Harborfront Park"],
+["off","Canceled","Port Jeff Country Music Festival","Saturday, Sept. 26"],
+["off","Canceled","Setauket Harbor Day","Sunday, Brookhaven Town Dock"],
+["off","Canceled","CommUniversity Day","Saturday, Stony Brook University"],
+["pp","Postponed","Blues on the Harbor","Now Saturday, Oct. 3, 11:30 AM to 6 PM"],
+["pp","Postponed","Port Jefferson Hill Climb","Now Saturday, Oct. 10"]];
+document.getElementById('list').innerHTML=R.map(function(r){return '<div class="r '+r[0]+'"><span class="bd">'+r[1]+'</span><div><p class="n">'+r[2]+'</p><p class="d">'+r[3]+'</p></div></div>'}).join('');
+</script></body></html>
