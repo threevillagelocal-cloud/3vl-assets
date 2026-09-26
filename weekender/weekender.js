@@ -138,9 +138,9 @@ function ago(s){var d=/T/.test(s)?new Date(s):null,t=now();
   if(!d){var day=new Date(s+'T12:00:00'),diff=Math.round((new Date(t.getFullYear(),t.getMonth(),t.getDate())-new Date(day.getFullYear(),day.getMonth(),day.getDate()))/864e5);return diff<=0?'Today':diff===1?'Yesterday':diff+' days ago'}
   var m=Math.round((t-d)/60000);if(m<1)return'Just now';if(m<60)return m+' min ago';if(m<1440)return Math.floor(m/60)+' hr ago';var dd=Math.floor(m/1440);return dd===1?'Yesterday':dd+' days ago'}
 var ICONS={joke:'&#128679;',facebook:'f',instagram:'&#9711;',tiktok:'&#9834;',alert:'!',news:'N',web:'&#8599;',nws:'&#9888;'};
-function drawFeed(items){var ol=$('wk-flist'),tk=$('wk-tkt');if(!ol)return;
+function drawFeed(items){var ol=$('wk-flist'),tk=$('wk-tkt');if(!ol&&!tk)return;
   items.sort(function(a,b){return(b.t>a.t)?1:-1});
-  ol.innerHTML=items.slice(0,14).map(function(it,i){var key=it.who+it.text,isNew=!firstLoad&&!seen[key];seen[key]=1;
+  if(ol)ol.innerHTML=items.slice(0,14).map(function(it,i){var key=it.who+it.text,isNew=!firstLoad&&!seen[key];seen[key]=1;
     var host='';try{host=it.url?new URL(it.url).hostname:''}catch(e){}var logo=it.logo||(host&&!/facebook\.com$/.test(host)&&it.src!=='nws'?'https://www.google.com/s2/favicons?sz=64&domain='+host:'');
     return '<li class="wk-fi'+(isNew?' is-new':'')+'" style="animation-delay:'+(i*60)+'ms"><span class="wk-fic s-'+it.src+(logo?' has-logo':'')+'">'+(logo?'<img src="'+logo+'" alt="" loading="lazy">':(ICONS[it.src]||'&#8226;'))+'</span><div><p class="wk-fw"><b>'+it.who+'</b> &middot; <span data-ago="'+it.t+'">'+ago(it.t)+'</span></p><p class="wk-ft">'+(it.url?'<a href="'+it.url+'" target="_blank" rel="noopener">'+it.text+'</a>':it.text)+'</p></div></li>'}).join('');
   store.set('wkFeedSeen',seen);firstLoad=false;

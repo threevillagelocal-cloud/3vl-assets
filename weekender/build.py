@@ -131,13 +131,13 @@ def build(edition, local=False, sha="master"):
     w('<p class="wk-dek">What&rsquo;s happening in Setauket, Stony Brook and Port Jefferson right now. Events, specials, weather and local news, updated all day.</p>')
     w('<div class="wk-hstats">'
       '<div class="wk-hs"><span class="wk-hsl">Today</span><b id="wk-hdate">--</b><span class="wk-hsc" id="wk-hclock">--:--</span></div>'
-      '<a class="wk-hs" href="#wk-now"><span class="wk-hsl"><i class="wk-hdot"></i>Happening now</span><b id="wk-hnow">--</b><span class="wk-hsc" id="wk-hnext">checking&hellip;</span></a>'
+      '<a class="wk-hs" href="#wk-sched"><span class="wk-hsl"><i class="wk-hdot"></i>Happening now</span><b id="wk-hnow">--</b><span class="wk-hsc" id="wk-hnext">checking&hellip;</span></a>'
       '<a class="wk-hs" href="#wk-wx"><span class="wk-hsl">Setauket weather</span><b><span class="wk-hwi2" id="wk-hwi2"></span><span id="wk-htemp">--</span>&deg;</b><span class="wk-hsc" id="wk-hsky">loading&hellip;</span></a>'
       '</div></div><p class="wk-pcred">%s</p></header>' % esc(d["hero"]["credit"]))
 
     # NAV
     w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
-      '<a href="#wk-picks">&#11088; Top Picks</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-now">&#9889; Live</a><a href="#wk-wx">&#9728;&#65039; Weather</a>'
+      '<a href="#wk-picks">&#11088; Top Picks</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-wx">&#9728;&#65039; Weather</a>'
       '<a href="#wk-sched">&#128197; Schedule</a><a href="#wk-spy">&#128373;&#65039; Spy Day</a>'
       '<a href="#wk-stage">&#127917; On Stage</a><a href="#wk-next">&#128302; On the Radar</a>'
       '</div></nav>')
@@ -181,15 +181,6 @@ def build(edition, local=False, sha="master"):
             " wk-spfeat" if sp.get("feature") else "", pic, esc(sp["biz"]), esc(sp["title"]), esc(sp["when"]), esc(sp["desc"]),
             badge, esc(sp["srcName"]), call, gmap(sp["venue"])))
     w('</div><p class="wk-note">Own a local spot with a special? <a href="https://www.threevillagelocal.com/promotion">Send it to us</a> and we&rsquo;ll feature it free.</p></section>')
-
-    # RIGHT NOW + THREE VILLAGE LIVE FEED
-    w('<section class="wk-sec" id="wk-now"><h2 class="wk-h2"><span>Three Village Live</span><small>Updates on its own. No refresh needed.</small></h2><div class="wk-livewrap">'
-      '<div class="wk-now"><div class="wk-nowh"><span class="wk-live"><i></i>LIVE</span>'
-      '<span class="wk-nowt" id="wk-nowt">Happening now</span><span class="wk-clock" id="wk-clock">--:--</span></div>'
-      '<div class="wk-nowb" id="wk-nowb"><p class="wk-nowempty">Checking the schedule&hellip;</p></div></div>'
-      '<div class="wk-feed"><div class="wk-nowh"><span class="wk-live wk-live2"><i></i>FEED</span><span class="wk-nowt">Latest from around town</span>'
-      '<span class="wk-fupd" id="wk-fupd">syncing&hellip;</span></div><ol class="wk-flist" id="wk-flist" aria-live="polite"></ol>'
-      '<p class="wk-fsrc">Pulled from local business pages, organizers, news and official alerts</p></div></div></section>')
 
     # WEATHER (compact)
     w('<section class="wk-sec" id="wk-wx"><h2 class="wk-h2"><span>Weather</span><small>Live from the National Weather Service</small></h2>'
