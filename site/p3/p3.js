@@ -80,6 +80,15 @@ if(isResults){
   $$('.feature_results_header,.post-search-result-count-container,.member-search-result-count-container,.member-search-result-filters,.views,.sort-members-select').forEach(function(e){if(!root.contains(e))e.style.display='none'});
   if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none';
   /* VIP cards use the listing's own logo/photo, never the banner ads (owner request 9/26) */
+  /* trim the white margin baked into many logo files so the logo fills its box */
+  function trim(img){try{var w=img.naturalWidth,h=img.naturalHeight;if(!w||!h)return;var c=document.createElement('canvas'),k=Math.min(1,600/Math.max(w,h));c.width=Math.round(w*k);c.height=Math.round(h*k);
+      var x=c.getContext('2d');x.drawImage(img,0,0,c.width,c.height);var d=x.getImageData(0,0,c.width,c.height).data,W=c.width,H=c.height,t=H,l=W,r=0,b=0;
+      for(var y=0;y<H;y++)for(var X=0;X<W;X++){var i=(y*W+X)*4;if(d[i+3]>20&&(d[i]<235||d[i+1]<235||d[i+2]<235)){if(y<t)t=y;if(y>b)b=y;if(X<l)l=X;if(X>r)r=X}}
+      if(r<=l||b<=t)return;var pad=Math.round(Math.max(r-l,b-t)*.04);l=Math.max(0,l-pad);t=Math.max(0,t-pad);r=Math.min(W-1,r+pad);b=Math.min(H-1,b+pad);
+      if((r-l)*(b-t)>W*H*.92)return;   /* photos / already tight */
+      var o=document.createElement('canvas');o.width=r-l+1;o.height=b-t+1;o.getContext('2d').drawImage(c,l,t,o.width,o.height,0,0,o.width,o.height);
+      img.onload=null;img.src=o.toDataURL('image/png');img.parentNode.classList.add('is-logo')}catch(e){}}
+  $$('.p3-vart img, .p3-rtop img',root).forEach(function(img){img.loading='eager';if(img.complete&&img.naturalWidth)trim(img);else img.onload=function(){trim(img)}});
 }
 
 /* ---------- CATEGORIES ---------- */

@@ -186,3 +186,11 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-ctile b:after{background:#c99d4a}
 #p3#p3 .p3-ctile em{background:transparent;box-shadow:inset 0 0 0 1px #dfe5ec;color:#8a96a3}
 #p3#p3 .p3-ctile:hover em{background:#1b2f45;color:#f0c26b;box-shadow:none}
+
+/* VIP card media: logos fill the box */
+#p3#p3 .p3-vcard{grid-template-columns:minmax(0,300px) 1fr}
+#p3#p3 .p3-vart{padding:22px;min-height:230px}
+#p3#p3 .p3-vart img{max-width:100%!important;width:100%!important;max-height:250px!important;height:auto!important;object-fit:contain}
+#p3#p3 .p3-vart.is-logo img{border-radius:0;width:100%!important;max-height:200px!important}
+#p3#p3 .p3-rtop.is-logo img{object-fit:contain;padding:6px;background:#fff}
+@media(max-width:760px){#p3#p3 .p3-vart{min-height:0;padding:20px 26px}#p3#p3 .p3-vart img{max-height:220px!important}}
