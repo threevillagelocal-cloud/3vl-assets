@@ -62,10 +62,10 @@ if(isResults){
   function vipCard(b,idx){var tel=fmtTel(b.tel),t=tel.replace(/-/g,'');
     return '<div class="p3-vwrap" data-i="'+idx+'" data-uid="'+esc(b.uid)+'" data-name="'+esc(b.n)+'"><div class="p3-vcard"><div class="p3-vart" data-uid="'+esc(b.uid)+'"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></div><div class="p3-vbody">'+
       '<span class="p3-vribbon">&#11088; VIP LOCAL BUSINESS</span><a class="p3-vname" data-act="profile" href="'+esc(b.u)+'">'+esc(b.n)+'</a>'+
-      '<p class="p3-vloc">&#128205; '+esc([b.st,b.town].filter(Boolean).join(', ')||'Three Village')+'</p><p class="p3-vd">'+esc(b.d)+'</p>'+
+      '<p class="p3-vloc">&#128205; '+esc([b.st,b.town].filter(function(x){return x&&!/^n\/?a$/i.test(x)}).join(', ')||'Three Village')+'</p><p class="p3-vd">'+esc(b.d)+'</p>'+
       '<div class="p3-vacts">'+(tel?'<a class="p3-vtel" data-act="call" href="tel:'+t+'">&#128222; '+tel+'</a><a class="p3-call" data-act="call" href="tel:'+t+'">Call</a><a class="p3-text" data-act="text" href="sms:'+t+'">&#128172; Text</a>':'')+
       '<a data-act="directions" href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Directions</a>'+
-      '<button type="button" class="p3-vcf" data-act="save_contact">&#128100; Save contact</button></div>'+
+      '<button type="button" class="p3-vcf" data-act="save_contact" title="Save to your phone contacts">&#128100; Save</button></div>'+
       '<button type="button" class="p3-more-btn" data-act="more" aria-expanded="false">More about us <span>&#9662;</span></button></div>'+
       '<aside class="p3-vside" data-uid="'+esc(b.uid)+'" data-u="'+esc(b.u)+'"></aside></div><div class="p3-vmore" hidden></div></div>'}
   function card(b,i){var tel=fmtTel(b.tel);

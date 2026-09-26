@@ -268,3 +268,20 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 a.p3-vmfull{display:inline-block;margin-top:14px;font-weight:800;color:#fff;background:var(--ink);padding:10px 16px;border-radius:12px}
 @media(max-width:760px){#p3#p3 .p3-vmin{grid-template-columns:1fr;padding:14px 18px}}
 @media(min-width:1101px){#p3#p3 .p3-vbody{gap:4px}}
+
+/* VIP cards v4: equal height by content, never clipped (works with browser zoom) */
+@media(min-width:761px){
+  #p3#p3 .p3-vcard,#p3#p3 .p3-vcard.has-side{height:auto!important;min-height:236px;overflow:visible}
+  #p3#p3 .p3-vbody,#p3#p3 .p3-vside{height:auto;overflow:visible}
+  #p3#p3 .p3-vbody>*,#p3#p3 .p3-vside>*{flex-shrink:0}
+  #p3#p3 a.p3-vname{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:unset}
+  #p3#p3 .p3-vloc{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #p3#p3 .p3-vd{min-height:2.9em}
+  #p3#p3 .p3-vacts{flex-wrap:nowrap;overflow:hidden}
+  #p3#p3 .p3-vacts>*{flex:0 0 auto;white-space:nowrap}
+  #p3#p3 .p3-vacts a.p3-vtel{font-size:20px}
+  #p3#p3 .p3-vside{justify-content:flex-start}
+  #p3#p3 .p3-vtrust{min-height:74px}
+  #p3#p3 .p3-vspecs{min-height:24px}
+  #p3#p3 .p3-vcred{min-height:1.4em}
+}
