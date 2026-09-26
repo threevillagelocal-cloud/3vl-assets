@@ -21,6 +21,7 @@
 .homepage_steps .btn-success:hover:after{width:1em;opacity:1;margin-left:6px}
 
 /* ---------- Three Village Favorites (featured member carousel) ---------- */
+.recent-member{padding-top:14px;padding-bottom:18px}
 .recent-member .well{position:relative;overflow:hidden;background:#fff!important;border:1px solid #e3e9f0!important;border-radius:20px!important;padding:22px 20px 20px!important;box-shadow:0 10px 26px rgba(27,47,69,.08)!important;
   transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0));transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,border-color .3s;will-change:transform}
 .recent-member .well:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,#006fbb,#205081 40%,#f0ad4e 60%,#006fbb);background-size:200% 100%;animation:tvlBar 8s linear infinite}
