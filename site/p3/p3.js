@@ -80,7 +80,9 @@ if(isResults){
   var first=$('.member_results.search_result');var root=mount(h,first.closest('[itemprop="mainEntity"]')||first);
   var VL=$('#p3vl'),RG=$('#p3rg'),MORE=$('#p3more'),nRest=0;
   function hideChrome(){$$('.feature_results_header,.post-search-result-count-container,.member-search-result-count-container,.member-search-result-filters,.views,.sort-members-select').forEach(function(e){if(!root.contains(e))e.style.display='none'});
-    if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none'}
+    if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none';
+    var more=document.querySelector('.clickToLoadMoreContainer');   /* BD's load-more trigger must sit under OUR list or scrolling never loads more */
+    if(more&&more.parentNode!==root){root.appendChild(more);more.classList.add('p3-loadmore')}}
   hideChrome();
 
   /* value panel from vip_meta.json (public listing details) */
