@@ -44,7 +44,9 @@ if(path==='/blog'){
     return {t:a.textContent.trim(),h:a.getAttribute('href'),img:img?img.getAttribute('src').replace('news-pictures-thumbnails','news-pictures'):'',thumb:img?img.getAttribute('src'):'',d:d?d.textContent.replace('Posted','').trim():'',ex:ex}}
   function hide(it){it.style.display='none';it.setAttribute('data-p3','1');var n=it.nextElementSibling;while(n&&(n.tagName==='HR'||/^clearfix$/.test(n.className))){n.style.display='none';n=n.nextElementSibling}}
   function card(p,i){return '<a class="p3-bcard" href="'+esc(p.h)+'" style="--i:'+(i%9)+'"><div class="p3-bimg"><img src="'+esc(p.img)+'" alt="'+esc(p.t)+'" loading="lazy" onerror="if(this.src!==this.dataset.t){this.src=this.dataset.t}" data-t="'+esc(p.thumb)+'"></div><div class="p3-bb"><p class="p3-date">'+esc(dfmt(p.d))+'</p><h3>'+esc(p.t)+'</h3><p>'+esc(p.ex.slice(0,120))+(p.ex.length>120?'&hellip;':'')+'</p></div></a>'}
-  var posts=items.map(read).filter(Boolean);var lead=posts[0],rest=posts.slice(1);
+  function ts(p){var m=(p.d||'').match(/(\d+)\/(\d+)\/(\d+)/);return m?new Date(+m[3],+m[1]-1,+m[2]).getTime():0}
+  var posts=items.map(read).filter(Boolean).sort(function(a,b){return ts(b)-ts(a)});   /* BD pins featured posts first; lead with the newest */
+  var lead=posts[0],rest=posts.slice(1);
   var mos=posts.slice(0,6).map(function(p){return '<span style="background-image:url(\''+esc(p.img)+'\')"></span>'}).join('');
   var h='<header class="p3-hero"><div class="p3-mosaic">'+mos+'</div><div class="p3-hin"><span class="p3-kick">THREE VILLAGE LOCAL</span><h1 class="p3-h1">Local <em>Stories</em></h1><p class="p3-sub">Neighbors, businesses, events and the news that matters in Stony Brook, Setauket and Port Jefferson.</p></div></header>'+
     '<a class="p3-lead" href="'+esc(lead.h)+'"><div class="p3-limg"><img src="'+esc(lead.img)+'" alt="'+esc(lead.t)+'" onerror="if(this.src!==this.dataset.t){this.src=this.dataset.t}" data-t="'+esc(lead.thumb)+'"><span class="p3-new">&#9679; LATEST</span></div><div class="p3-lb"><p class="p3-date">'+esc(dfmt(lead.d))+'</p><h2>'+esc(lead.t)+'</h2><p>'+esc(lead.ex)+'</p><span class="p3-go">Read the story &rarr;</span></div></a>'+
