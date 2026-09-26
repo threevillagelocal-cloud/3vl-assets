@@ -23,9 +23,16 @@ var css='#vipx{background:#fff;border:1px solid #ebeef0;border-radius:12px;paddi
 '#vipx .vipx-call{background:#006fbb;color:#fff!important}#vipx .vipx-view{background:#eef4fa;color:#1b2f45!important;border:1px solid #d6e3f0}'+
 '#vipx .vipx-dots{display:flex;justify-content:center;gap:4px;margin-top:10px}#vipx .vipx-dots b{width:6px;height:6px;border-radius:6px;background:#cfd8e3;transition:width .3s,background .3s}#vipx .vipx-dots b.on{width:16px;background:#006fbb}'+
 '#vipx .vipx-foot{display:block;text-align:center;margin-top:8px;font-size:12px;font-weight:700;color:#006fbb}';
+/* Shuffle so the same business or competitors (same "group") are at least GAP+1 slots apart, including when the loop wraps. */
+function spread(arr,key,gap){var best=arr.slice();
+  for(var tries=0;tries<200;tries++){var pool=arr.slice(),out=[];
+    for(var i=pool.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=pool[i];pool[i]=pool[j];pool[j]=t}
+    while(pool.length){var pick=-1;for(var k=0;k<pool.length;k++){var ok=true;for(var b=1;b<=gap&&b<=out.length;b++){if(key(out[out.length-b])===key(pool[k])){ok=false;break}}if(ok){pick=k;break}}
+      if(pick<0)break;out.push(pool.splice(pick,1)[0])}
+    if(out.length===arr.length){var wrapOk=true,n=out.length;for(var a=0;a<n&&wrapOk;a++)for(var d=1;d<=gap;d++){if(n>gap*2&&key(out[a])===key(out[(a+d)%n])){wrapOk=false;break}}if(wrapOk)return out;best=out}}
+  return best}
 function build(list,side){
-  for(var i=list.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=list[i];list[i]=list[j];list[j]=t}
-  for(var a=1;a<list.length;a++){if(list[a].id===list[a-1].id){for(var b=a+1;b<list.length;b++){if(list[b].id!==list[a-1].id){var tt=list[a];list[a]=list[b];list[b]=tt;break}}}}
+  list=spread(list,function(v){return v.group||v.id},3);
   var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
   var box=document.createElement('div');box.id='vipx';box.className='module';
   var h='<p class="vipx-h"><span>VIP</span>Local businesses we love</p><div class="vipx-rot">';
