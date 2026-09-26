@@ -138,3 +138,6 @@ html.tvc-on .content_w_sidebar>.col-md-3{order:2;width:100%;right:0}
 @media(prefers-reduced-motion:reduce){.tvc-mosaic span,.tvc-live i{animation:none}.tvc-card{opacity:1;transform:none}}
 #tvl-cal#tvl-cal .tvc img.tvc-img{width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;margin:0!important;border:0!important;border-radius:0!important}
 #tvl-cal#tvl-cal .tvc-pic{display:block}
+
+#tvl-cal#tvl-cal .tvc a.tvc-hbtn{display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:var(--gold);color:var(--ink)!important;font-weight:800;font-size:16px;padding:12px 20px;border-radius:999px;text-decoration:none!important;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:transform .15s,box-shadow .15s}
+#tvl-cal#tvl-cal .tvc a.tvc-hbtn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.3)}
