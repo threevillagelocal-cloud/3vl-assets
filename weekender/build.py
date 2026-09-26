@@ -109,7 +109,7 @@ def build(edition, local=False, sha="master"):
     out = []
     w = out.append
 
-    # Hide BD's own featured image + shrink BD's H1 into a kicker (same trick as the Storm Center).
+    # Hide BD's own featured image + shrink BD's H1 into a kicker (same trick as the Storm Guide).
     w('<style>#post-content .post-image-container,#post-content .post-image-container + hr{display:none!important}'
       '#post-content .post-title h1{font-size:13px!important;font-weight:700!important;color:#6b7785!important;'
       'text-transform:uppercase;letter-spacing:.08em;line-height:1.4!important;margin:0 0 10px!important}'

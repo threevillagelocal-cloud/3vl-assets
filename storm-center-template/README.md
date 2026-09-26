@@ -1,4 +1,6 @@
-# Three Village Storm Center: reusable template
+# Three Village Storm Guide: reusable template
+
+> Renamed from "Storm Center" on 9/26/2026 (owner: less official, no media-drama tone). Folder keeps its old name so existing links keep working. Never use "Storm Center" in new copy.
 
 The first edition went live on Sept 25, 2026 (BD post 253, /blog/storm-prep-wind-heavy-rain-this-weekend-in-three-village).
 Copy this folder for every future storm. Scale features up or down per storm, but keep the quality bar.
@@ -15,7 +17,7 @@ Copy this folder for every future storm. Scale features up or down per storm, bu
 2. Update the static fallbacks in article-body.html: alerts, forecast cards, timeline, tides, gauges, and the cancellations list.
 3. Cancellations: search 11733 / 11790 / 11777. Sources: TBR News, portjeffny.gov calendar, stonybrookvillage.com, tvhs.org, the 88844ferry.com ferry status, Three Village CSD. Use Canceled / Check First / Moving Indoors badges.
 4. Pick business cards for the storm type (flooding, power, trees, plumbing, snow removal). Pull logos with listUsers `image_main_file`.
-5. Render the three graphics. Use the "Three Village Storm Center" brand and "LIVE" chip.
+5. Render the three graphics. Use the "Three Village Storm Guide" brand and "LIVE" chip.
 6. Host the CSS/JS/images, then publish to BD via the API (never the Froala editor, which strips style and script). Run refreshSiteCache.
 7. Verify on the LIVE BD page: headless screenshot (desktop plus a 390px iframe), radar tiles render, phone numbers on one line.
 8. Get the user's OK on everything before the Twinr push and social posts. Twinr has no scheduling on our plan, so the push is sent live with Send Now.
