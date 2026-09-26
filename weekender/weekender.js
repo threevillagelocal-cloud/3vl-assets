@@ -51,8 +51,8 @@ function renderLive(data){
     if(tabs)tabs.innerHTML='<button type="button" class="wk-tab is-on" data-day="all">This Week</button><button type="button" class="wk-tab" data-day="'+dkey(t0)+'">Today</button><button type="button" class="wk-tab" data-day="'+dkey(new Date(t0.getTime()+864e5))+'">Tomorrow</button><button type="button" class="wk-tab" data-day="wknd">Weekend</button><span class="wk-tabink"></span>';
     $$('.wk-dayblk',sec).forEach(function(b){b.remove()});
     var anchor=root.querySelector('#wk-sched .wk-allwk')||$('wk-nomatch');
-    Object.keys(days).sort().forEach(function(k){var D=days[k],isT=k===dkey(t0),isTm=k===dkey(new Date(t0.getTime()+864e5));
-      var h='<div class="wk-dayblk" data-day="'+k+'"><p class="wk-dayh"><b>'+(isT?'Today':isTm?'Tomorrow':DAYN2x(D.d))+'</b><span>'+ds(D.d)+'</span></p><ol class="wk-tl">';
+    Object.keys(days).sort().forEach(function(k,di){var D=days[k],isT=k===dkey(t0),isTm=k===dkey(new Date(t0.getTime()+864e5));
+      var h='<div class="wk-dayblk'+(di?' is-collapsed':'')+'" data-day="'+k+'"><p class="wk-dayh" role="button" tabindex="0" aria-expanded="'+(di?'false':'true')+'"><b>'+(isT?'Today':isTm?'Tomorrow':DAYN2x(D.d))+'</b><span>'+ds(D.d)+'</span><i class="wk-dcount">'+D.l.length+' event'+(D.l.length===1?'':'s')+'</i><em class="wk-chev" aria-hidden="true"></em></p><ol class="wk-tl">';
       D.l.forEach(function(e){var th=e.img?'<img src="'+esc2(e.img)+'" alt="" loading="lazy" width="120" height="120">':'<span class="wk-ticon">'+(IC[(e.tags.filter(function(x){return x!=='free'})[0])||'arts']||'&#9733;')+'</span>';
         h+='<li class="wk-ev" '+attrs(e)+'><div class="wk-evt"><b>'+when(e)+'</b><span>'+(e.allday?'':'to '+tm(e.e))+'</span></div><div class="wk-evc"><div class="wk-evthumb">'+th+'</div><div class="wk-evbody">'+
           '<p class="wk-evtitle">'+(e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+' <span class="wk-pstat" data-status></span></p><p class="wk-evwhere">'+esc2(e.venue)+'</p>'+
@@ -222,10 +222,17 @@ function wxFx(k,w){var c=root.querySelector('.wk-wd[data-day='+k+'] .wk-wfx');if
   else{c.setAttribute('data-fx','sun');c.classList.add('wk-fx-sun')}}
 
 /* ---------- filters ---------- */
-var fDay='all',fTag='all';
+var fDay='all',fTag='all',lastDay='all';
+function setOpen(b,open){b.classList.toggle('is-collapsed',!open);var h=b.querySelector('.wk-dayh');if(h)h.setAttribute('aria-expanded',open?'true':'false')}
+root.addEventListener('click',function(e){var h=e.target.closest('.wk-dayblk .wk-dayh');if(!h)return;var b=h.parentNode,open=b.classList.contains('is-collapsed');setOpen(b,open);
+  if(open)track('weekender_day_open',{day:b.getAttribute('data-day')})});
+root.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.classList&&e.target.classList.contains('wk-dayh')&&e.target.closest('.wk-dayblk')){e.preventDefault();e.target.click()}});
 function applyFilter(){var shown=0;
   $$('.wk-ev').forEach(function(li){var ok=(fDay==='all'||li.getAttribute('data-day')===fDay||(fDay==='wknd'&&li.getAttribute('data-wknd')==='1'))&&(fTag==='all'||(' '+li.getAttribute('data-tags')+' ').indexOf(' '+fTag+' ')>=0);li.classList.toggle('is-hidden',!ok);if(ok)shown++});
-  $$('.wk-dayblk').forEach(function(b){var any=b.querySelectorAll('.wk-ev:not(.is-hidden)').length;b.classList.toggle('is-hidden',!any)});
+  $$('.wk-dayblk').forEach(function(b){var any=b.querySelectorAll('.wk-ev:not(.is-hidden)').length;b.classList.toggle('is-hidden',!any);
+    var c=b.querySelector('.wk-dcount');if(c)c.textContent=any+' event'+(any===1?'':'s')});
+  if(fDay!==lastDay){lastDay=fDay;var vis=$$('.wk-dayblk').filter(function(b){return !b.classList.contains('is-hidden')});
+    vis.forEach(function(b,i){setOpen(b,fDay!=='all'||i===0)})}
   $$('.wk-aw').forEach(function(a){a.classList.toggle('is-hidden',fTag!=='all'&&(' '+a.getAttribute('data-tags')+' ').indexOf(' '+fTag+' ')<0)});
   var c=$('wk-shown');if(c)c.textContent='Showing '+shown+' event'+(shown===1?'':'s')+(fDay==='wknd'?' this weekend':fDay!=='all'?' '+((root.querySelector('.wk-tab.is-on')||{}).textContent||'').toLowerCase():' this week')+(fTag!=='all'?' tagged '+fTag:'');
   var nm=$('wk-nomatch');if(nm)nm.hidden=shown>0;

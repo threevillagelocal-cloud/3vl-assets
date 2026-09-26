@@ -728,3 +728,17 @@
 .wk-adrot2 .wk-adrot{max-width:none}
 .wk-adrot2 .wk-adlabel{display:none}
 @media (max-width:1060px){.wk-adrot2{display:none}}
+
+/* collapsible days in What's On This Week (today open, others tap to expand) */
+.wk-dayblk .wk-dayh{cursor:pointer;user-select:none;align-items:center;transition:border-color .2s}
+.wk-dayblk .wk-dayh:hover b{color:var(--ink3)}
+.wk-dcount{margin-left:auto;font-style:normal;font-size:13px;font-weight:800;color:#fff;background:var(--ink3);padding:4px 10px;border-radius:999px;white-space:nowrap}
+.wk-chev{width:30px;height:30px;border-radius:50%;background:var(--cream);position:relative;flex:0 0 30px;transition:transform .25s,background .2s}
+.wk-chev:before{content:"";position:absolute;left:50%;top:44%;width:9px;height:9px;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:translate(-50%,-50%) rotate(45deg)}
+.wk-dayblk:not(.is-collapsed) .wk-chev{transform:rotate(180deg);background:var(--gold)}
+.wk-dayblk.is-collapsed .wk-tl,.wk-dayblk.is-collapsed .wk-more{display:none}
+.wk-dayblk.is-collapsed .wk-dayh{margin-bottom:0!important;border-bottom-color:var(--line)}
+.wk-dayblk.is-collapsed .wk-dcount{background:var(--ink)}
+#wk-top .wk-dayblk.is-collapsed .wk-more,#wk-top .wk-dayblk.is-collapsed .wk-tl{display:none!important}
+#wk-top .wk-tab{white-space:nowrap}
+@media(max-width:760px){#wk-top .wk-tab{font-size:14px;padding-left:6px;padding-right:6px}}
