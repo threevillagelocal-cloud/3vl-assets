@@ -25,6 +25,7 @@ var css='#vipx{background:#fff;border:1px solid #ebeef0;border-radius:12px;paddi
 '#vipx .vipx-foot{display:block;text-align:center;margin-top:8px;font-size:12px;font-weight:700;color:#006fbb}';
 function build(list,side){
   for(var i=list.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=list[i];list[i]=list[j];list[j]=t}
+  for(var a=1;a<list.length;a++){if(list[a].id===list[a-1].id){for(var b=a+1;b<list.length;b++){if(list[b].id!==list[a-1].id){var tt=list[a];list[a]=list[b];list[b]=tt;break}}}}
   var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
   var box=document.createElement('div');box.id='vipx';box.className='module';
   var h='<p class="vipx-h"><span>VIP</span>Local businesses we love</p><div class="vipx-rot">';
