@@ -23,7 +23,11 @@ TODAY = dt.date.today()
 def get(url, headers=None, timeout=40):
     req = urllib.request.Request(url, headers=headers or UA)
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+        raw = r.read()
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError:
+        return raw.decode("cp1252", "replace")
 
 
 def clean(s, n=None):
@@ -78,7 +82,22 @@ def tribe(src, base, default_venue=""):
 
 
 def portjeff():
-    t = get("https://www.portjeffny.gov/common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar")
+    return civic_ical("portjeff", "https://www.portjeffny.gov/common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar",
+                      "Port Jefferson", "https://www.portjeffny.gov/calendar.aspx")
+
+
+LOCAL = r"stony brook|setauket|port jeff|mt\.? sinai|mount sinai|old field|poquott|st\.? james|belle terre|miller place|west meadow|cedar beach"
+
+
+def brookhaven():
+    """Town of Brookhaven: only programs held in or near the Three Village area (skips town hall items)."""
+    return [e for e in civic_ical("brookhaven", "https://www.brookhavenny.gov/common/modules/iCalendar/iCalendar.aspx?catID=14&feed=calendar",
+                                  "Town of Brookhaven", "https://www.brookhavenny.gov/calendar.aspx")
+            if re.search(LOCAL, e["addr"] + " " + e["venue"], re.I)]
+
+
+def civic_ical(src, url, default_venue, default_url):
+    t = get(url)
     t = re.sub(r"\r?\n[ \t]", "", t)
     out = []
     for block in re.findall(r"BEGIN:VEVENT(.*?)END:VEVENT", t, re.S):
@@ -104,8 +123,10 @@ def portjeff():
             continue
         loc = f.get("LOCATION", ("", ""))[0].replace("\\,", ",").replace("\\n", " ")
         desc = f.get("DESCRIPTION", ("", ""))[0].replace("\\n", " ").replace("\\,", ",")
-        out.append(ev("portjeff", f.get("UID", (s.isoformat(), ""))[0], f.get("SUMMARY", ("", ""))[0].replace("\\,", ","), s, e,
-                      "Port Jefferson", loc or "Port Jefferson, NY", f.get("URL", ("https://www.portjeffny.gov/calendar.aspx", ""))[0], desc, "", allday))
+        loc = re.sub(r"^\s*-\s*", "", re.sub(r"\s{2,}", " ", loc)).strip()
+        venue = loc.split(" - ")[0].strip() if " - " in loc else default_venue
+        out.append(ev(src, f.get("UID", (s.isoformat(), ""))[0], f.get("SUMMARY", ("", ""))[0].replace("\\,", ","), s, e,
+                      venue, loc or default_venue, f.get("URL", (default_url, ""))[0], desc, "", allday))
     return out
 
 
@@ -145,7 +166,48 @@ def emmaclark():
     return out
 
 
+def chamber3v():
+    """Three Village Chamber of Commerce (GrowthZone portal): server-rendered cards with schema.org start/end."""
+    t = get("https://members.3vchamber.com/event-calendar")
+    out = []
+    for card in t.split('class="card gz-events-card"')[1:]:
+        m = re.search(r'gz-event-card-title"[^>]*>(.*?)</a>', card, re.S)
+        u = re.search(r'href="(https://members\.3vchamber\.com/event-calendar/Details/[^"?]+)', card)
+        sd = re.search(r'itemprop="startDate" content="([^"]+)"', card)
+        ed = re.search(r'itemprop="endDate" content="([^"]+)"', card)
+        if not (m and sd):
+            continue
+        p = lambda x: dt.datetime.strptime(x.strip(), "%m/%d/%Y %I:%M:%S %p")
+        s = p(sd.group(1)); e = p(ed.group(1)) if ed else s
+        img = re.search(r'itemprop="image" src="([^"]+)"', card)
+        img = img.group(1).replace("/c_limit,h_100,w_250/", "/c_limit,w_720/") if img else ""
+        d = re.search(r'gz-events-description"[^>]*>(.*?)</p>', card, re.S)
+        allday = s.hour == 0 and s.minute == 0
+        uid = u.group(1).rsplit("-", 1)[-1] if u else s.isoformat()
+        out.append(ev("3vchamber", uid, m.group(1), s, e, "Three Village area", "", u.group(1) if u else "https://www.3vchamber.com",
+                      d.group(1) if d else "", img, allday))
+    return out
+
+
+def squarespace(src, base, default_venue):
+    d = json.loads(get(base + "/events?format=json"))
+    et = dt.timezone(dt.timedelta(hours=-4))
+    ms = lambda x: dt.datetime.fromtimestamp(int(x) / 1000, dt.timezone.utc).astimezone(et).replace(tzinfo=None)
+    out = []
+    for e in d.get("upcoming", []):
+        loc = e.get("location") or {}
+        addr = ", ".join(x for x in (loc.get("addressLine1"), loc.get("addressLine2")) if x)
+        out.append(ev(src, e.get("id") or e.get("urlId"), e.get("title", ""), ms(e["startDate"]), ms(e.get("endDate") or e["startDate"]),
+                      loc.get("addressTitle") or default_venue, addr, base + e.get("fullUrl", ""), e.get("excerpt") or e.get("body") or "",
+                      e.get("assetUrl", ""), False))
+    return out
+
+
 SOURCES = [
+    ("Three Village Chamber", chamber3v),
+    ("Port Jefferson Chamber", lambda: tribe("pjchamber", "https://portjeffchamber.com", "Port Jefferson Village")),
+    ("I Love Port Jeff", lambda: squarespace("iloveportjeff", "https://www.iloveportjeff.com", "Port Jefferson Village")),
+    ("Town of Brookhaven (local)", brookhaven),
     ("Village of Port Jefferson", portjeff),
     ("Emma S. Clark Library", emmaclark),
     ("Stony Brook Village Center", lambda: tribe("sbv", "https://stonybrookvillage.com", "Stony Brook Village Center")),

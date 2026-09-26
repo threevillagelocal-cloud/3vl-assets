@@ -1,6 +1,10 @@
 {
-"updated": "2026-09-26T12:50:05.481765+00:00",
+"updated": "2026-09-26T13:02:59.531462+00:00",
 "counts": {
+"Three Village Chamber": 7,
+"Port Jefferson Chamber": 27,
+"I Love Port Jeff": 5,
+"Town of Brookhaven (local)": 13,
 "Village of Port Jefferson": 222,
 "Emma S. Clark Library": 219,
 "Stony Brook Village Center": 16,
@@ -18,6 +22,40 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
+{
+"id": "iloveportjeff-6a075f20c1f50c7ed02a8924",
+"title": "Port Jefferson Hill Climb",
+"start": "2026-09-26T08:00:00",
+"end": "2026-09-26T12:00:00",
+"allday": false,
+"venue": "Village Center/ Harborfront Park",
+"addr": "101 East Broadway, Port Jefferson, NY, 11777",
+"url": "https://www.iloveportjeff.com/events/hill-climb",
+"desc": "Experience one of Port Jefferson’s most unique traditions as vintage and classic cars take on the historic Port Jefferson Hill Climb. Come watch these incredible automobiles make their run up the hill and enjoy a day celebrating automotive history, community, ",
+"img": "https://images.squarespace-cdn.com/content/v1/6849b4cd4d4fd13a7a9784e5/1779014898052-0Z3KU909WSYZVVMEHJWS/34a54b2129aacb50190c5be40cb32c2c8c2496583015e4b7cfc316b5099d314b-rimg-w720-h676-gmir.jpg",
+"src": "iloveportjeff",
+"tags": [
+"history"
+],
+"status": "Postponed"
+},
+{
+"id": "brookhaven-5093",
+"title": "Growing Up Wild",
+"start": "2026-09-26T10:00:00",
+"end": "2026-09-26T11:00:00",
+"allday": false,
+"venue": "Cedar Beach",
+"addr": "Cedar Beach - 244 Harbor Beach Road Mt. Sinai NY 11766",
+"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+"desc": "https://www.brookhavenny.gov/calendar.aspx?EID=5093",
+"img": "",
+"src": "brookhaven",
+"tags": [
+"arts"
+],
+"status": ""
+},
 {
 "id": "emmaclark-america-250-historical-gravestones-cleaning-59546",
 "title": "America 250: Historical Gravestones Cleaning",
@@ -75,6 +113,41 @@
 "status": ""
 },
 {
+"id": "3vchamber-1912472",
+"title": "CommUniversity Day",
+"start": "2026-09-26T12:00:00",
+"end": "2026-09-26T16:00:00",
+"allday": false,
+"venue": "Three Village area",
+"addr": "",
+"url": "https://members.3vchamber.com/event-calendar/Details/communiversity-day-1912472",
+"desc": "",
+"img": "",
+"src": "3vchamber",
+"tags": [
+"arts"
+],
+"status": "Canceled"
+},
+{
+"id": "pjchamber-14858",
+"title": "Port Jefferson Country Music Festival",
+"start": "2026-09-26T12:00:00",
+"end": "2026-09-26T18:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/port-jefferson-country-music-festival/",
+"desc": "September 13th of the Festival will happen on 9/26.",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"music",
+"outdoor"
+],
+"status": "Canceled"
+},
+{
 "id": "lim-3225801",
 "title": "Blue Star Welcome Week 2026 for Military Families",
 "start": "2026-09-26T12:00:00",
@@ -94,12 +167,30 @@
 "status": ""
 },
 {
+"id": "pjchamber-14109",
+"title": "Cedar Beach Blues Festival",
+"start": "2026-09-27T00:00:00",
+"end": "2026-09-27T23:59:59",
+"allday": true,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "101 East Broadway, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/cedar-beach-blues-festival/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"music",
+"outdoor"
+],
+"status": "Postponed"
+},
+{
 "id": "portjeff-1093",
 "title": "Outdoor Summer Farmers Market",
 "start": "2026-09-27T00:00:00",
 "end": "2026-09-27T00:00:00",
 "allday": true,
-"venue": "Port Jefferson",
+"venue": "Jeanne Garant Harborfront Park",
 "addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
 "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
 "desc": "https://www.portjeffny.gov/calendar.aspx?EID=1093",
@@ -107,6 +198,41 @@
 "src": "portjeff",
 "tags": [
 "food",
+"outdoor"
+],
+"status": "Canceled"
+},
+{
+"id": "3vchamber-1879924",
+"title": "Culper Sept 5K",
+"start": "2026-09-27T09:00:00",
+"end": "2026-09-27T10:00:00",
+"allday": false,
+"venue": "Three Village area",
+"addr": "",
+"url": "https://members.3vchamber.com/event-calendar/Details/culper-sept-5k-1879924",
+"desc": "Help Raise funds for our Dominick Crawford Education + History Center. Register at www.tvhs.org/5K",
+"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_675,w_1200,x_0,y_0/q_auto/f_auto/c_limit,w_720/q_auto/v1785607679/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/61d413a9890241b996f315f3d47b917b/culper-5K-jpg.jpg",
+"src": "3vchamber",
+"tags": [
+"history",
+"outdoor"
+],
+"status": "Canceled"
+},
+{
+"id": "3vchamber-1879927",
+"title": "Setauket Harbor Day",
+"start": "2026-09-27T11:00:00",
+"end": "2026-09-27T16:00:00",
+"allday": false,
+"venue": "Three Village area",
+"addr": "",
+"url": "https://members.3vchamber.com/event-calendar/Details/setauket-harbor-day-1879927",
+"desc": "for Info: Contact Pam at 516-383-8101",
+"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_680,w_525,x_0,y_0/q_auto/f_auto/c_limit,w_720/q_auto/v1785608041/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/7dbf3f2e7c844ebaa274a22ecbfbdc40/setauket-harbor.jpg",
+"src": "3vchamber",
+"tags": [
 "outdoor"
 ],
 "status": "Canceled"
@@ -296,6 +422,23 @@
 "status": ""
 },
 {
+"id": "pjchamber-14941",
+"title": "Painting Kindness Rocks",
+"start": "2026-09-29T18:00:00",
+"end": "2026-09-29T20:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/painting-kindness-rocks/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": ""
+},
+{
 "id": "emmaclark-culper-spy-day-101-what-know-you-go-58114",
 "title": "Culper Spy Day 101: What to Know Before You Go",
 "start": "2026-09-29T19:00:00",
@@ -408,6 +551,23 @@
 "status": ""
 },
 {
+"id": "pjchamber-14820",
+"title": "PSEG Long Island Business First",
+"start": "2026-10-01T09:00:00",
+"end": "2026-10-01T11:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/pseg-long-island-business-first/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": ""
+},
+{
 "id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58902",
 "title": "Parent Toddler Workshop (18m - 3.5 yrs w/ caregiver)",
 "start": "2026-10-01T09:30:00",
@@ -479,6 +639,23 @@
 "tags": [
 "free",
 "kids"
+],
+"status": ""
+},
+{
+"id": "pjchamber-14934",
+"title": "Chamber Friends & Family Sunset Cruise",
+"start": "2026-10-01T18:00:00",
+"end": "2026-10-01T19:30:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/chamber-friends-family-sunset-cruise/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
 ],
 "status": ""
 },
@@ -714,6 +891,23 @@
 "pick": true
 },
 {
+"id": "brookhaven-5096",
+"title": "Nature Walks",
+"start": "2026-10-03T10:00:00",
+"end": "2026-10-03T11:00:00",
+"allday": false,
+"venue": "West Meadow Beach",
+"addr": "West Meadow Beach - 100 Trustees Road Stony Brook NY 11790",
+"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+"desc": "https://www.brookhavenny.gov/calendar.aspx?EID=5096",
+"img": "",
+"src": "brookhaven",
+"tags": [
+"outdoor"
+],
+"status": ""
+},
+{
 "id": "emmaclark-history-emma-s-clark-memorial-library-walking-tour-58126",
 "title": "The History of Emma S. Clark Memorial Library Walking Tour",
 "start": "2026-10-03T10:30:00",
@@ -750,23 +944,6 @@
 ],
 "status": "",
 "pick": false
-},
-{
-"id": "portjeff-1136",
-"title": "12th Annual Culper Spy Day",
-"start": "2026-10-03T11:00:00",
-"end": "2026-10-03T16:00:00",
-"allday": false,
-"venue": "Port Jefferson",
-"addr": "Three Village Historical Society 93 N. Country Road East Setauket, NY 11733 - Port Jefferson NY 11777",
-"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-"desc": "https://www.portjeffny.gov/calendar.aspx?EID=1136",
-"img": "",
-"src": "portjeff",
-"tags": [
-"history"
-],
-"status": ""
 },
 {
 "id": "cur-blues",
@@ -997,6 +1174,23 @@
 "pick": false
 },
 {
+"id": "pjchamber-14989",
+"title": "18th Annual Soles For All Souls",
+"start": "2026-10-04T00:00:00",
+"end": "2026-10-04T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/18th-annual-soles-for-all-souls/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": ""
+},
+{
 "id": "cur-pjfm",
 "title": "Port Jefferson Farmers Market",
 "start": "2026-10-04T09:00",
@@ -1022,7 +1216,7 @@
 "start": "2026-10-04T09:00:00",
 "end": "2026-10-04T14:00:00",
 "allday": false,
-"venue": "Port Jefferson",
+"venue": "Jeanne Garant Harborfront Park",
 "addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
 "url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
 "desc": "https://www.portjeffny.gov/calendar.aspx?EID=1094",
@@ -1182,6 +1376,23 @@
 ],
 "status": "",
 "pick": false
+},
+{
+"id": "pjchamber-14726",
+"title": "2026 Port Jefferson Scarecrow Walk",
+"start": "2026-10-05T00:00:00",
+"end": "2026-11-02T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
+"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd/ If you would like to create a scarecrow, please read the below criteria and fill out the participant form: – APPLICATION – CRITERIA VOTE FOR YOUR FAVORITE SC",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor"
+],
+"status": ""
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58873",
@@ -1392,7 +1603,8 @@
 "title": "Culper Spy 5K Run/Walk",
 "date": "2026-09-27",
 "status": "Canceled",
-"note": "Will not be rescheduled"
+"note": "Will not be rescheduled",
+"match": "culper.{0,20}5k|5k.{0,20}culper"
 },
 {
 "title": "Port Jefferson Ferry",
@@ -1404,43 +1616,51 @@
 "title": "Gallery North Outdoor Art Show",
 "date": "2026-09-26",
 "status": "Canceled",
-"note": "Sat & Sun. No rain date"
+"note": "Sat & Sun. No rain date",
+"match": "outdoor art show|gallery north",
+"until": "2026-09-27"
 },
 {
 "title": "Port Jefferson Farmers Market",
 "date": "2026-09-27",
 "status": "Canceled",
-"note": "Harborfront Park"
+"note": "Harborfront Park",
+"match": "farmers market"
 },
 {
 "title": "Port Jeff Country Music Festival",
 "date": "2026-09-26",
 "status": "Canceled",
-"note": "Due to the storm"
+"note": "Due to the storm",
+"match": "country music"
 },
 {
 "title": "Setauket Harbor Day",
 "date": "2026-09-27",
 "status": "Canceled",
-"note": "Brookhaven Town Dock"
+"note": "Brookhaven Town Dock",
+"match": "harbor day"
 },
 {
 "title": "CommUniversity Day",
 "date": "2026-09-26",
 "status": "Canceled",
-"note": "Stony Brook University"
+"note": "Stony Brook University",
+"match": "communiversity"
 },
 {
 "title": "Blues on the Harbor",
 "date": "2026-09-27",
 "status": "Postponed",
-"note": "Now Sat, Oct 3"
+"note": "Now Sat, Oct 3",
+"match": "blues"
 },
 {
 "title": "Port Jefferson Hill Climb",
 "date": "2026-09-26",
 "status": "Postponed",
-"note": "Now Sat, Oct 10"
+"note": "Now Sat, Oct 10",
+"match": "hill climb"
 }
 ]
 }

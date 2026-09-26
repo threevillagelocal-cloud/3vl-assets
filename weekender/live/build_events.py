@@ -64,15 +64,23 @@ def main():
                            "venue": v.get("name", ""), "addr": v.get("addr", ""), "url": e.get("url", ""), "desc": e["desc"],
                            "img": (base + e["img"] + "-720.webp") if e.get("img") else "", "src": "3vl", "tags": e["tags"][:3],
                            "status": e.get("status", ""), "pick": e["id"] in W.get("picks", [])})
+    # storm closings: closings.json entries with a "match" regex flag the same-day event (red ribbon on /now)
+    cpath = os.path.join(HERE, "closings.json")
+    closings = json.load(open(cpath, encoding="utf-8")) if os.path.exists(cpath) else []
+    for e in out:
+        e["start"] = e["start"][:19]; e["end"] = e["end"][:19]
+        for c in closings:
+            if c.get("match") and c["date"] <= e["start"][:10] <= c.get("until", c["date"]) and re.search(c["match"], e["title"], re.I):
+                e["status"] = e["status"] or c["status"]
     # de-dupe same title + same day
     seen, final = set(), []
-    for e in sorted(out, key=lambda x: x["start"]):
-        k = (re.sub(r"[^a-z0-9]", "", e["title"].lower()), e["start"][:10])
+    for e in sorted(out, key=lambda x: (x["start"][:10], x["src"] != "3vl", x["start"])):   # curated copy wins
+        k = (re.sub(r"[^a-z0-9]", "", re.sub(r"\b(the|a|an|annual|\d+(st|nd|rd|th))\b", "", e["title"].lower())), e["start"][:10])
         if k in seen:
             continue
         seen.add(k)
         final.append(e)
-    closings = json.load(open(os.path.join(HERE, "closings.json"), encoding="utf-8")) if os.path.exists(os.path.join(HERE, "closings.json")) else []
+    final.sort(key=lambda x: x["start"])
     data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings}
     json.dump(data, open(os.path.join(HERE, "events.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     print(counts, len(final))

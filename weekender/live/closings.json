@@ -1,11 +1,11 @@
 [
- {"title":"Culper Spy 5K Run/Walk","date":"2026-09-27","status":"Canceled","note":"Will not be rescheduled"},
- {"title":"Port Jefferson Ferry","date":"2026-09-26","status":"Suspended","note":"No boats Sat. Back late Sun morning"},
- {"title":"Gallery North Outdoor Art Show","date":"2026-09-26","status":"Canceled","note":"Sat & Sun. No rain date"},
- {"title":"Port Jefferson Farmers Market","date":"2026-09-27","status":"Canceled","note":"Harborfront Park"},
- {"title":"Port Jeff Country Music Festival","date":"2026-09-26","status":"Canceled","note":"Due to the storm"},
- {"title":"Setauket Harbor Day","date":"2026-09-27","status":"Canceled","note":"Brookhaven Town Dock"},
- {"title":"CommUniversity Day","date":"2026-09-26","status":"Canceled","note":"Stony Brook University"},
- {"title":"Blues on the Harbor","date":"2026-09-27","status":"Postponed","note":"Now Sat, Oct 3"},
- {"title":"Port Jefferson Hill Climb","date":"2026-09-26","status":"Postponed","note":"Now Sat, Oct 10"}
+ {"title": "Culper Spy 5K Run/Walk", "date": "2026-09-27", "status": "Canceled", "note": "Will not be rescheduled", "match": "culper.{0,20}5k|5k.{0,20}culper"},
+ {"title": "Port Jefferson Ferry", "date": "2026-09-26", "status": "Suspended", "note": "No boats Sat. Back late Sun morning"},
+ {"title": "Gallery North Outdoor Art Show", "date": "2026-09-26", "status": "Canceled", "note": "Sat & Sun. No rain date", "match": "outdoor art show|gallery north", "until": "2026-09-27"},
+ {"title": "Port Jefferson Farmers Market", "date": "2026-09-27", "status": "Canceled", "note": "Harborfront Park", "match": "farmers market"},
+ {"title": "Port Jeff Country Music Festival", "date": "2026-09-26", "status": "Canceled", "note": "Due to the storm", "match": "country music"},
+ {"title": "Setauket Harbor Day", "date": "2026-09-27", "status": "Canceled", "note": "Brookhaven Town Dock", "match": "harbor day"},
+ {"title": "CommUniversity Day", "date": "2026-09-26", "status": "Canceled", "note": "Stony Brook University", "match": "communiversity"},
+ {"title": "Blues on the Harbor", "date": "2026-09-27", "status": "Postponed", "note": "Now Sat, Oct 3", "match": "blues"},
+ {"title": "Port Jefferson Hill Climb", "date": "2026-09-26", "status": "Postponed", "note": "Now Sat, Oct 10", "match": "hill climb"}
 ]
