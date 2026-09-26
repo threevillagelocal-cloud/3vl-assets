@@ -1,111 +1,68 @@
-/* 3VL premium business profile (MOCKUP) */
-html.pf-on .member_profile .member-profile-header{display:none!important}
-#pf{--ink:#1b2f45;--blue:#006fbb;--gold:#f0ad4e;--line:#e3e9f0;--mut:#6b7785;--cream:#eef4fa;font-family:'Radio Canada',system-ui,sans-serif;color:var(--ink);margin:0 0 22px;text-align:left}
-#pf *{box-sizing:border-box}
+/* 3VL premium business profile v3 (MOCKUP) */
+html.pf-on .member_profile .member-profile-header,html.pf-on ol.breadcrumb,html.pf-on .coverPhoto{display:none!important}
+#pf{--ink:#1b2f45;--blue:#006fbb;--gold:#f0ad4e;--line:#e3e9f0;--mut:#6b7785;--cream:#eef4fa;font-family:'Radio Canada',system-ui,sans-serif;color:var(--ink);margin:6px 0 18px;text-align:left}
+#pf *,.pf-main *,.pf-contact *{box-sizing:border-box}
 #pf#pf h1,#pf#pf p{margin:0;padding:0;border:0;font-family:inherit;text-transform:none;letter-spacing:normal}
 #pf#pf a{text-decoration:none!important}
-.pf-hero{position:relative;border-radius:22px 22px 0 0;overflow:hidden;background:#132338 center 45%/cover no-repeat;isolation:isolate}
-.pf-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(12,22,36,.93) 0%,rgba(12,22,36,.82) 55%,rgba(12,22,36,.55) 100%)}
-.pf-hin{display:flex;gap:24px;align-items:center;padding:28px 30px 26px}
-.pf-logo{flex:0 0 148px;height:148px;background:#fff;border-radius:20px;display:flex;align-items:center;justify-content:center;padding:14px;box-shadow:0 14px 30px rgba(0,0,0,.35),0 0 0 4px rgba(255,255,255,.15)}
-#pf#pf .pf-logo img{max-width:100%!important;max-height:100%!important;width:auto;height:auto;object-fit:contain;border-radius:8px;margin:0!important}
-.pf-id{flex:1;min-width:0;color:#fff}
-.pf-vip{display:inline-block;background:linear-gradient(90deg,#f0ad4e,#f6c56f);color:#1b2f45;font-size:11.5px;font-weight:800;letter-spacing:.14em;padding:5px 12px;border-radius:999px;margin-bottom:10px}
-#pf#pf .pf-name{font-size:38px;line-height:1.06;font-weight:800;color:#fff}
-#pf#pf .pf-meta{font-size:16px;color:rgba(255,255,255,.86);margin-top:8px;font-weight:600}
-.pf-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-#pf#pf .pf-b{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:800;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff}
-#pf#pf .pf-bok{background:rgba(15,134,108,.9);border-color:transparent}
-#pf#pf .pf-bstar{background:rgba(240,173,78,.95);border-color:transparent;color:#1b2f45}
-.pf-specs{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.pf-specs span{font-size:12px;font-weight:700;color:rgba(255,255,255,.92);border:1px solid rgba(255,255,255,.3);padding:4px 10px;border-radius:999px}
-.pf-credit{position:absolute;right:12px;bottom:6px;font-size:10.5px;color:rgba(255,255,255,.5)}
-.pf-bar{display:flex;flex-wrap:wrap;gap:8px;padding:14px 18px;background:#fff;border:1px solid var(--line);border-top:0;border-radius:0 0 22px 22px;box-shadow:0 14px 30px rgba(27,47,69,.1)}
-#pf#pf .pf-a{display:inline-flex;align-items:center;gap:6px;border:0;font:inherit;font-weight:800;font-size:14.5px;padding:11px 16px;border-radius:12px;background:var(--cream);color:var(--ink);cursor:pointer;transition:transform .15s,filter .15s;white-space:nowrap}
+.pf-cover{border-radius:24px 24px 0 0;overflow:hidden;background:#0f1d2e;line-height:0}
+#pf#pf .pf-cover img{width:100%!important;height:auto!important;max-width:none!important;display:block;margin:0!important;border-radius:0!important}
+.pf-cover-empty{height:150px;background:linear-gradient(135deg,#1b2f45,#205081 60%,#006fbb)}
+.pf-card{background:#fff;border:1px solid var(--line);border-top:0;border-radius:0 0 24px 24px;box-shadow:0 18px 40px rgba(12,22,36,.12);padding:0 28px 20px}
+.pf-idrow{display:flex;gap:24px;align-items:flex-end}
+.pf-logo{flex:0 0 auto;height:140px;min-width:140px;max-width:280px;margin-top:-56px;padding:14px;background:#fff;border-radius:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 34px rgba(12,22,36,.22),0 0 0 1px rgba(27,47,69,.06);position:relative;z-index:2}
+#pf#pf .pf-logo img{max-height:112px!important;max-width:252px!important;width:auto;height:auto;object-fit:contain;margin:0!important;border-radius:6px}
+.pf-id{flex:1;min-width:0;padding-top:18px}
+.pf-vip{display:inline-block;background:linear-gradient(90deg,#f0ad4e,#f6c56f);color:#1b2f45;font-size:11px;font-weight:800;letter-spacing:.14em;padding:5px 12px;border-radius:999px;margin-bottom:8px}
+#pf#pf .pf-name{font-size:38px;line-height:1.05;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+#pf#pf .pf-meta{font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#a8812f;margin-top:8px}
+.pf-meta i{font-style:normal;color:#c9d2dc;margin:0 6px;font-size:8px;vertical-align:2px}
+.pf-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+#pf#pf .pf-b{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:800;padding:6px 12px;border-radius:999px;background:#eef2f7;color:var(--ink)}
+#pf#pf .pf-b small{font-weight:700;opacity:.75}
+#pf#pf .pf-bok{background:#e3f4ee;color:#0f866c}
+#pf#pf .pf-bstar{background:#fff1d9;color:#9a6a12}
+.pf-bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding-top:16px;border-top:1px solid #eef2f6}
+#pf#pf .pf-a{display:inline-flex;align-items:center;gap:6px;border:0;font:inherit;font-weight:800;font-size:14.5px;padding:11px 16px;border-radius:12px!important;background:var(--cream);color:var(--ink);cursor:pointer;transition:transform .15s,filter .15s;white-space:nowrap}
 #pf#pf .pf-a:hover{transform:translateY(-1px);filter:brightness(.97)}
-#pf#pf .pf-call{background:var(--blue);color:#fff;font-size:16px}
-#pf#pf .pf-text{display:none}
+#pf#pf .pf-call{background:var(--blue);color:#fff;font-size:16px;box-shadow:0 8px 18px rgba(0,111,187,.3)}
+#pf#pf .pf-a b{font-weight:800}
+#pf#pf .pf-text,#pf#pf .pf-short{display:none}
 @media(hover:none) and (pointer:coarse){#pf#pf .pf-text{display:inline-flex}}
+.pf-secnav{position:sticky;top:var(--hdr,56px);z-index:15;display:flex;gap:6px;margin-top:16px;padding:8px;background:rgba(246,248,251,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-radius:16px;overflow-x:auto;scrollbar-width:none}
+#pf#pf .pf-secnav a{flex:0 0 auto;font-weight:800;font-size:14px;color:var(--ink);padding:9px 16px;border-radius:999px;background:#fff;border:1px solid var(--line)}
+#pf#pf .pf-secnav a.is-on{background:var(--ink);color:#fff;border-color:var(--ink)}
 .pf-toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;background:#1b2f45;color:#fff;font-weight:800;padding:10px 18px;border-radius:999px;transition:all .3s;z-index:99;pointer-events:none}
 .pf-toast.is-on{opacity:1;transform:translate(-50%,0)}
-
-/* BD profile content, restyled */
-html.pf-on .member-profile-tabs{background:#fff;border:1px solid #e3e9f0;border-radius:22px;box-shadow:0 10px 26px rgba(27,47,69,.07);padding:10px 22px 24px;margin-top:0!important}
-html.pf-on .member-profile-tabs .profile-tabs-nav{display:flex;gap:6px;border:0!important;padding:8px 0 14px!important;background:none!important;flex-wrap:wrap}
-html.pf-on .member-profile-tabs .profile-tabs-nav>li{float:none;margin:0}
-html.pf-on .member-profile-tabs .profile-tabs-nav>li>a{border:0!important;border-radius:999px!important;background:#eef4fa!important;color:#1b2f45!important;font-weight:800;padding:9px 18px!important;margin:0!important}
-html.pf-on .member-profile-tabs .profile-tabs-nav>li.active>a{background:#1b2f45!important;color:#fff!important}
-html.pf-on .member_profile h2{font-family:'Radio Canada',sans-serif;font-weight:800;color:#1b2f45}
-html.pf-on .member_profile .table-view-group{border:0;border-bottom:1px solid #eef2f6;padding:12px 4px;margin:0}
-html.pf-on .member_profile .table-view-group .bold{color:#6b7785;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.pf-main{display:flex;flex-direction:column;gap:18px;font-family:'Radio Canada',system-ui,sans-serif}
+.pf-sec,.pf-contact{background:#fff;border:1px solid #e3e9f0;border-radius:22px;box-shadow:0 10px 26px rgba(27,47,69,.06);padding:22px 26px;scroll-margin-top:130px}
+html.pf-on .pf-h2{font-family:'Radio Canada',sans-serif!important;font-size:24px!important;font-weight:800!important;color:#1b2f45!important;margin:0 0 14px!important;padding:0 0 12px!important;border-bottom:2px solid #f0ad4e!important;display:flex;align-items:center;gap:10px;text-align:left!important}
+.pf-h2 span{font-size:13px;font-weight:800;background:#eef2f7;color:#1b2f45;padding:3px 10px;border-radius:999px}
+html.pf-on .pf-sec .table-view-group{border:0;border-bottom:1px solid #eef2f6;padding:11px 2px;margin:0}
+html.pf-on .pf-sec hr{border-color:#eef2f6}
+html.pf-on .pf-contact{margin-bottom:18px;padding:20px}
+html.pf-on .pf-contact .pf-h2{font-size:20px!important}
+#pf-contact a.pf-cphone{display:block;text-align:center;background:#006fbb;color:#fff!important;font-weight:800;font-size:20px;padding:12px;border-radius:14px;margin-bottom:10px;text-decoration:none!important}
+.pf-caddr{font-weight:700;color:#1b2f45;font-size:14.5px;margin:0 0 10px}
+html.pf-on .pf-contact h2:not(.pf-h2){font-size:12px!important;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#a8812f;margin:14px 0 6px!important;padding:0!important;border:0!important;text-align:left!important}
+html.pf-on .pf-contact .table-view-group{display:block;border:0;border-bottom:1px solid #eef2f6;padding:8px 0;margin:0}
+html.pf-on .pf-contact .table-view-group>div{width:100%!important;float:none!important;padding:0!important}
+html.pf-on .pf-contact .table-view-group .bold{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#6b7785;margin-bottom:2px}
+html.pf-on .pf-contact #map-canvas{border-radius:14px;overflow:hidden;margin-top:12px;height:220px!important}
 html.pf-on .content_w_sidebar>.col-md-3 .module{border-radius:18px;border:1px solid #e3e9f0;box-shadow:0 8px 20px rgba(27,47,69,.06)}
-
 @media(max-width:760px){
-  .pf-hin{flex-direction:column;align-items:flex-start;padding:22px 18px 20px;gap:16px}
-  .pf-logo{flex-basis:auto;width:110px;height:110px}
-  #pf#pf .pf-name{font-size:28px}
-  .pf-bar{position:sticky;bottom:0;z-index:20;border-radius:0 0 18px 18px;flex-wrap:nowrap;gap:6px;padding:10px}
-  #pf#pf .pf-a{flex:1 1 0;flex-direction:column;justify-content:center;gap:2px;padding:8px 4px;font-size:18px;min-width:0}
-  #pf#pf .pf-a span{font-size:10.5px;font-weight:800;white-space:nowrap}
-  #pf#pf .pf-call{flex:1.7 1 0;font-size:14px;flex-direction:row;gap:4px}
-  html.pf-on .member-profile-tabs{padding:8px 14px 18px;border-radius:18px}
-}
-
-/* wide logos: tile grows sideways */
-.pf-logo{flex:0 0 auto;width:auto;min-width:148px;max-width:300px}
-#pf#pf .pf-logo img{max-height:118px!important;max-width:272px!important}
-#pf#pf .pf-short{display:none}
-#pf#pf .pf-a b{font-weight:800}
-@media(max-width:760px){
-  .pf-logo{height:96px;min-width:96px;max-width:240px}
-  #pf#pf .pf-logo img{max-height:74px!important;max-width:212px!important}
-  #pf#pf .pf-long{display:none}
-  #pf#pf .pf-short{display:inline}
-  #pf#pf .pf-web{display:none}
-  #pf#pf .pf-call{flex:1.2 1 0;flex-direction:column;font-size:18px;gap:2px}
-  #pf#pf .pf-call .pf-short{font-size:10.5px;font-weight:800}
-}
-
-/* ===== v2: Storm-Guide-style hero ===== */
-html.pf-on .member_profile .breadcrumb{display:none}
-#pf{margin-top:4px}
-.pf-hero{position:relative;height:430px;border-radius:26px;overflow:hidden;background:#0c1624;isolation:isolate;box-shadow:0 24px 50px rgba(12,22,36,.35);display:flex;flex-direction:column;justify-content:flex-end}
-.pf-hero:before{display:none}
-.pf-photo{position:absolute;inset:-4%;background:center 45%/cover no-repeat;z-index:-2;animation:pfKen 26s ease-in-out infinite alternate}
-@keyframes pfKen{from{transform:scale(1) translate(0,0)}to{transform:scale(1.1) translate(-2%,-1.5%)}}
-.pf-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(12,22,36,.55) 0%,rgba(12,22,36,.15) 32%,rgba(12,22,36,.55) 62%,rgba(12,22,36,.94) 100%),radial-gradient(ellipse at 20% 100%,rgba(12,22,36,.6),transparent 60%)}
-.pf-top{position:absolute;top:26px;left:34px;right:34px}
-.pf-kick{font-size:13px;font-weight:800;letter-spacing:.24em;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.6)}
-.pf-kick i{font-style:normal;color:#f0ad4e;margin:0 8px;font-size:9px;vertical-align:2px}
-.pf-kick b{color:#f0ad4e;font-weight:800}
-.pf-hin{display:flex;align-items:flex-end;gap:28px;padding:0 34px 70px}
-.pf-id{flex:1;min-width:0}
-#pf#pf .pf-cat{font-size:15px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#f0c26b;text-shadow:0 2px 10px rgba(0,0,0,.7);margin:0 0 10px}
-.pf-cat i{font-style:normal;color:rgba(255,255,255,.55);margin:0 6px;font-size:9px;vertical-align:2px}
-#pf#pf .pf-name{font-size:56px;line-height:1;font-weight:800;color:#fff;letter-spacing:-.01em;text-shadow:0 2px 3px rgba(0,0,0,.5),0 6px 26px rgba(0,0,0,.6)}
-.pf-badges{margin-top:16px;gap:8px}
-#pf#pf .pf-b{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-size:13.5px;padding:7px 14px}
-#pf#pf .pf-b small{font-weight:700;opacity:.8;margin-left:2px}
-#pf#pf .pf-bok{background:rgba(15,134,108,.85);border-color:rgba(255,255,255,.2)}
-#pf#pf .pf-bstar{background:rgba(240,173,78,.95);color:#1b2f45;border-color:transparent}
-.pf-specs{margin-top:12px}
-.pf-specs span{background:rgba(12,22,36,.35);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
-.pf-logo{flex:0 0 auto;align-self:flex-end;width:auto;height:150px;min-width:150px;max-width:280px;padding:14px;border-radius:22px;background:#fff;box-shadow:0 18px 40px rgba(0,0,0,.45),0 0 0 5px rgba(255,255,255,.18);transform:rotate(-1.5deg)}
-#pf#pf .pf-logo img{max-height:122px!important;max-width:252px!important}
-.pf-credit{right:16px;bottom:52px}
-.pf-bar{position:relative;z-index:2;margin:-38px 26px 0;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(12,22,36,.18),0 0 0 1px rgba(27,47,69,.06);justify-content:center;padding:12px 14px}
-#pf#pf .pf-call{box-shadow:0 8px 18px rgba(0,111,187,.35)}
-@media(max-width:760px){
-  .pf-hero{height:auto;min-height:440px;border-radius:20px}
-  .pf-top{top:18px;left:18px;right:18px}
-  .pf-kick{font-size:11px;letter-spacing:.18em}
-  .pf-hin{flex-direction:column-reverse;align-items:flex-start;gap:16px;padding:70px 18px 64px}
-  #pf#pf .pf-name{font-size:34px}
-  #pf#pf .pf-cat{font-size:12px}
-  .pf-logo{height:96px;min-width:96px;max-width:230px;transform:none;padding:10px}
+  .pf-cover{border-radius:18px 18px 0 0}
+  .pf-card{padding:0 16px 14px;border-radius:0 0 18px 18px}
+  .pf-idrow{flex-direction:column;align-items:flex-start;gap:6px}
+  .pf-logo{height:96px;min-width:96px;max-width:230px;margin-top:-40px;padding:10px}
   #pf#pf .pf-logo img{max-height:76px!important;max-width:210px!important}
-  .pf-credit{bottom:48px}
-  .pf-bar{margin:-32px 10px 0;position:sticky;bottom:8px}
+  .pf-id{padding-top:4px}
+  #pf#pf .pf-name{font-size:28px}
+  #pf#pf .pf-meta{font-size:12px}
+  .pf-bar{position:sticky;bottom:8px;z-index:20;flex-wrap:nowrap;gap:6px;background:#fff;border-radius:16px;padding:8px;box-shadow:0 10px 26px rgba(12,22,36,.18)}
+  #pf#pf .pf-a{flex:1 1 0;flex-direction:column;justify-content:center;gap:2px;padding:8px 4px;font-size:18px;min-width:0}
+  #pf#pf .pf-a span{font-size:10.5px;white-space:nowrap}
+  #pf#pf .pf-long,#pf#pf .pf-web{display:none}
+  #pf#pf .pf-short{display:inline;font-size:10.5px}
+  #pf#pf .pf-call{flex:1.2 1 0;font-size:18px}
+  .pf-sec,.pf-contact{padding:16px;border-radius:18px}
 }
-#pf#pf nav.pf-bar{border-radius:18px!important;overflow:hidden}
-html.pf-on ol.breadcrumb{display:none!important}
