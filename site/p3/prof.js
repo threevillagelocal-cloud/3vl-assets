@@ -27,11 +27,11 @@ var h='<section id="pf" class="pf"><header class="pf-hero" style="background-ima
   (rating?'<a class="pf-b pf-bstar" href="'+esc(revs)+'">&#9733; '+esc((+rating).toFixed(1))+' &middot; '+esc(count||0)+' neighbor review'+(count==='1'?'':'s')+'</a>':'')+
   '</div></div></div><span class="pf-credit">Photo: Iracaz, CC BY-SA 3.0</span></header>'+
   '<nav class="pf-bar" aria-label="Contact '+esc(name)+'">'+
-  (tel?'<a class="pf-a pf-call" data-act="call" href="tel:'+tel+'">&#128222; '+telF+'</a><a class="pf-a pf-text" data-act="text" href="sms:'+tel+'">&#128172; <span>Text</span></a>':'')+
-  '<a class="pf-a" data-act="directions" href="'+esc(maps)+'" target="_blank" rel="noopener">&#128205; <span>Directions</span></a>'+
-  '<button type="button" class="pf-a" data-act="save_contact">&#128100; <span>Save contact</span></button>'+
+  (tel?'<a class="pf-a pf-call" data-act="call" href="tel:'+tel+'">&#128222; <b class="pf-long">'+telF+'</b><span class="pf-short">Call</span></a><a class="pf-a pf-text" data-act="text" href="sms:'+tel+'">&#128172; <span>Text</span></a>':'')+
+  '<a class="pf-a" data-act="directions" href="'+esc(maps)+'" target="_blank" rel="noopener">&#128205; <span><b class="pf-long">Directions</b><b class="pf-short">Map</b></span></a>'+
+  '<button type="button" class="pf-a" data-act="save_contact">&#128100; <span><b class="pf-long">Save contact</b><b class="pf-short">Save</b></span></button>'+
   (msg?'<a class="pf-a" data-act="message" href="'+esc(msg)+'">&#9993;&#65039; <span>Message</span></a>':'')+
-  (web?'<a class="pf-a" data-act="website" href="'+esc(web)+'" target="_blank" rel="noopener">&#127760; <span>Website</span></a>':'')+
+  (web?'<a class="pf-a pf-web" data-act="website" href="'+esc(web)+'" target="_blank" rel="noopener">&#127760; <span>Website</span></a>':'')+
   '<button type="button" class="pf-a" data-act="share">&#128279; <span>Share</span></button>'+
   '</nav><div class="pf-toast" id="pf-toast"></div></section>';
 hdr.insertAdjacentHTML('beforebegin',h);document.documentElement.classList.add('pf-on');
