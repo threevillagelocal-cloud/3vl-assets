@@ -9,7 +9,7 @@ function row(label){var r=$$('.table-view-group').filter(function(g){return txt(
 var name=txt($('h1',hdr)),cat=txt($('.profile-header-top-category',hdr)),uid=($('.userData',hdr)||{getAttribute:function(){return ''}}).getAttribute('data-userid');
 var logo=($('.profile-image img',hdr)||{}).src||'',telA=$('a[href^="tel:"]',hdr),tel=telA?telA.getAttribute('href').replace(/[^\d]/g,'').slice(-10):'';
 var telF=tel.length===10?tel.slice(0,3)+'-'+tel.slice(3,6)+'-'+tel.slice(6):'';
-var locEl=row('location'),addr=locEl?txt(locEl).replace(/United States$/,'').replace(/Setauket- East Setauket/,'East Setauket').replace(/\s*,\s*$/,''):txt($('.profile-header-location',hdr));
+var locEl=row('location'),addr=locEl?(locEl.innerText||'').split(/\n+/).map(function(x){return x.trim()}).filter(function(x){return x&&!/^united states$/i.test(x)}).join(', ').replace(/Setauket- East Setauket/,'East Setauket').replace(/New York,?\s*(\d{5})/,'NY $1'):txt($('.profile-header-location',hdr));
 var web=($('a.weblink')||{}).href||'',msg=($('.btn-send_message_action',hdr)||{}).href||'',rev=($('.btn-write_a_review_for',hdr)||{}).href||'',revs=($('.the-rating-link',hdr)||{}).href||'';
 var ratingTxt=txt($('.the-average-rating',hdr)),countTxt=txt($('.the-review-count',hdr));
 var rating=(ratingTxt.match(/([\d.]+)\s*\/\s*5/)||[])[1],count=(countTxt.match(/\d+/)||[])[0];
@@ -24,18 +24,27 @@ var h='<section id="pf" class="pf"><header class="pf-hero" style="background-ima
   '<div class="pf-id">'+(vipBadge?'<span class="pf-vip">&#11088; VIP LOCAL BUSINESS</span>':'')+'<h1 class="pf-name">'+esc(name)+'</h1>'+
   '<p class="pf-meta">'+esc(cat)+(addr?' &middot; &#128205; '+esc(addr):'')+'</p><div class="pf-badges" id="pf-badges">'+
   (verified?'<span class="pf-b pf-bok">&#10003; Verified local business</span>':'')+
-  (rating?'<a class="pf-b pf-bstar" href="'+esc(revs)+'">&#9733; '+esc(rating)+' &middot; '+esc(count||0)+' neighbor review'+(count==='1'?'':'s')+'</a>':'')+
+  (rating?'<a class="pf-b pf-bstar" href="'+esc(revs)+'">&#9733; '+esc((+rating).toFixed(1))+' &middot; '+esc(count||0)+' neighbor review'+(count==='1'?'':'s')+'</a>':'')+
   '</div></div></div><span class="pf-credit">Photo: Iracaz, CC BY-SA 3.0</span></header>'+
   '<nav class="pf-bar" aria-label="Contact '+esc(name)+'">'+
-  (tel?'<a class="pf-a pf-call" data-act="call" href="tel:'+tel+'">&#128222; '+telF+'</a><a class="pf-a pf-text" data-act="text" href="sms:'+tel+'">&#128172; Text</a>':'')+
-  '<a class="pf-a" data-act="directions" href="'+esc(maps)+'" target="_blank" rel="noopener">&#128205; Directions</a>'+
-  '<button type="button" class="pf-a" data-act="save_contact">&#128100; Save contact</button>'+
-  (msg?'<a class="pf-a" data-act="message" href="'+esc(msg)+'">&#9993;&#65039; Message</a>':'')+
-  (web?'<a class="pf-a" data-act="website" href="'+esc(web)+'" target="_blank" rel="noopener">&#127760; Website</a>':'')+
-  '<button type="button" class="pf-a" data-act="share">&#128279; Share</button>'+
+  (tel?'<a class="pf-a pf-call" data-act="call" href="tel:'+tel+'">&#128222; '+telF+'</a><a class="pf-a pf-text" data-act="text" href="sms:'+tel+'">&#128172; <span>Text</span></a>':'')+
+  '<a class="pf-a" data-act="directions" href="'+esc(maps)+'" target="_blank" rel="noopener">&#128205; <span>Directions</span></a>'+
+  '<button type="button" class="pf-a" data-act="save_contact">&#128100; <span>Save contact</span></button>'+
+  (msg?'<a class="pf-a" data-act="message" href="'+esc(msg)+'">&#9993;&#65039; <span>Message</span></a>':'')+
+  (web?'<a class="pf-a" data-act="website" href="'+esc(web)+'" target="_blank" rel="noopener">&#127760; <span>Website</span></a>':'')+
+  '<button type="button" class="pf-a" data-act="share">&#128279; <span>Share</span></button>'+
   '</nav><div class="pf-toast" id="pf-toast"></div></section>';
 hdr.insertAdjacentHTML('beforebegin',h);document.documentElement.classList.add('pf-on');
 var pf=document.getElementById('pf');
+
+
+/* logo files often have big white margins: trim so the logo fills its tile */
+(function(img){if(!img)return;function go(){try{var w=img.naturalWidth,h=img.naturalHeight;if(!w||!h)return;var c=document.createElement('canvas'),k=Math.min(1,700/Math.max(w,h));c.width=Math.round(w*k);c.height=Math.round(h*k);
+  var x=c.getContext('2d');x.drawImage(img,0,0,c.width,c.height);var d=x.getImageData(0,0,c.width,c.height).data,W=c.width,H=c.height,t=H,l=W,r=0,b=0;
+  for(var y=0;y<H;y++)for(var X=0;X<W;X++){var i=(y*W+X)*4;if(d[i+3]>20&&(d[i]<235||d[i+1]<235||d[i+2]<235)){if(y<t)t=y;if(y>b)b=y;if(X<l)l=X;if(X>r)r=X}}
+  if(r<=l||b<=t||(r-l)*(b-t)>W*H*.92)return;var p=Math.round(Math.max(r-l,b-t)*.04);l=Math.max(0,l-p);t=Math.max(0,t-p);r=Math.min(W-1,r+p);b=Math.min(H-1,b+p);
+  var o=document.createElement('canvas');o.width=r-l+1;o.height=b-t+1;o.getContext('2d').drawImage(c,l,t,o.width,o.height,0,0,o.width,o.height);img.onload=null;img.src=o.toDataURL('image/png')}catch(e){}}
+  if(img.complete&&img.naturalWidth)go();else img.onload=go})($('.pf-logo img',pf));
 
 /* extra trust from public listing details (years, specialties) */
 fetch(BASE+'vip_meta.json').then(function(r){return r.json()}).then(function(M){var m=M[uid];if(!m)return;var b=$('#pf-badges');
