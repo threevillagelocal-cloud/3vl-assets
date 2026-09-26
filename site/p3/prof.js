@@ -51,14 +51,16 @@ var contactNodes=[];
 if(panes[0]){var kids=[].slice.call(panes[0].children),about=[];
   kids.forEach(function(k,i){var n2=kids[i+2];
     if(k.classList.contains('table-view')||k.id==='map-canvas'||(k.classList.contains('alert')&&n2&&n2.id==='map-canvas'))contactNodes.push(k);else about.push(k)});
-  section('about','About',0,about)}
+  section('about','About',0,about);
+  var dup=$$('#pf-about h2:not(.pf-h2), #pf-about h3').filter(function(x){return /^about$/i.test(txt(x))})[0];if(dup)dup.style.display='none'}
 panes.slice(1).forEach(function(p){var t=label(p),key=/review/i.test(t)?'reviews':/blog|article/i.test(t)?'articles':/special/i.test(t)?'specialties':t.toLowerCase().replace(/\W+/g,'-');
   var kids=[].slice.call(p.children).filter(function(k,i){return !(k.tagName==='H2'&&i<2)&&!(k.tagName==='HR'&&i<3)});section(key,t,num(p),kids)});
 if(tabs){tabs.parentNode.insertBefore(main,tabs);tabs.style.display='none'}
 var side=$('.content_w_sidebar > .col-md-3');
 if(side){var cc=document.createElement('section');cc.className='pf-contact';cc.id='pf-contact';
   cc.innerHTML='<h2 class="pf-h2">Contact &amp; details</h2>'+(tel?'<a class="pf-cphone" data-act="call" href="tel:'+tel+'">&#128222; '+telF+'</a>':'')+(addr?'<p class="pf-caddr">&#128205; '+esc(addr)+'</p>':'');
-  contactNodes.forEach(function(n){cc.appendChild(n)});side.insertBefore(cc,side.firstChild);navItems.push(['contact','Contact'])}
+  contactNodes.forEach(function(n){cc.appendChild(n)});side.insertBefore(cc,side.firstChild);
+  $$('.table-view-group',cc).forEach(function(g){var l=txt($('.bold',g)).toLowerCase();if(/company name|phone number|^location$/.test(l))g.style.display='none'});navItems.push(['contact','Contact'])}
 $('#pf-secnav').innerHTML=navItems.map(function(n,i){return '<a href="#pf-'+n[0]+'"'+(i?'':' class="is-on"')+'>'+esc(n[1])+'</a>'}).join('');
 
 fetch(BASE+'vip_meta.json').then(function(r){return r.json()}).then(function(M){var m=M[uid];if(!m)return;var b=$('#pf-badges');

@@ -66,3 +66,5 @@ html.pf-on .content_w_sidebar>.col-md-3 .module{border-radius:18px;border:1px so
   #pf#pf .pf-call{flex:1.2 1 0;font-size:18px}
   .pf-sec,.pf-contact{padding:16px;border-radius:18px}
 }
+
+@media(max-width:760px){.pf-logo{margin-top:14px;box-shadow:0 8px 20px rgba(12,22,36,.14),0 0 0 1px rgba(27,47,69,.06)}#pf#pf .pf-bar{border-radius:16px!important}}
