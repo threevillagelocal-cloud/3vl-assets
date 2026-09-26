@@ -1,0 +1,7 @@
+
+# local preview/test copies of live BD pages (never publish)
+weekender/preview-frame.html
+weekender/*/preview.html
+weekender/t_*.html
+weekender/vipads-test.html
+site/t_*.html
