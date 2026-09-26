@@ -129,12 +129,12 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 
 /* business results: VIP featured cards */
 #p3#p3 .p3-vlist{display:flex;flex-direction:column;gap:16px;margin-bottom:22px}
-#p3#p3 .p3-vcard{display:grid;grid-template-columns:minmax(0,300px) 1fr;background:linear-gradient(135deg,#fffaf0,#fff 45%);border:2px solid var(--gold);border-radius:22px;overflow:hidden;box-shadow:0 14px 34px rgba(240,173,78,.22),0 4px 12px rgba(27,47,69,.08);transition:transform .3s,box-shadow .3s}
+#p3#p3 .p3-vcard{display:grid;grid-template-columns:minmax(0,330px) 1fr;align-items:stretch;background:linear-gradient(135deg,#fffaf0,#fff 45%);border:2px solid var(--gold);border-radius:22px;overflow:hidden;box-shadow:0 14px 34px rgba(240,173,78,.22),0 4px 12px rgba(27,47,69,.08);transition:transform .3s,box-shadow .3s}
 #p3#p3 .p3-vcard:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(240,173,78,.3),0 6px 16px rgba(27,47,69,.1)}
 #p3#p3 .p3-vart{background:#fff;display:flex;align-items:center;justify-content:center;padding:18px;border-right:1px solid #f3e2c3}
 #p3#p3 .p3-vart img{width:100%!important;height:auto!important;max-width:220px!important;border-radius:16px;object-fit:contain;margin:0!important}
-#p3#p3 .p3-vart.has-ad{padding:0;background:#0f1d2e}
-#p3#p3 .p3-vart.has-ad img{max-width:none!important;height:100%!important;border-radius:0;object-fit:cover}
+#p3#p3 .p3-vart.has-ad{padding:14px;background:linear-gradient(160deg,#1b2f45,#0f1d2e)}
+#p3#p3 .p3-vart.has-ad img{max-width:100%!important;width:100%!important;height:auto!important;aspect-ratio:6/5;border-radius:12px;object-fit:contain;box-shadow:0 8px 20px rgba(0,0,0,.35)}
 #p3#p3 .p3-vbody{padding:20px 24px 22px;display:flex;flex-direction:column;gap:8px}
 .p3-vribbon{align-self:flex-start;background:linear-gradient(90deg,#f0ad4e,#f6c56f);color:#1b2f45;font-weight:800;font-size:12px;letter-spacing:.14em;padding:6px 12px;border-radius:999px}
 #p3#p3 a.p3-vname{font-size:26px;font-weight:800;line-height:1.15;color:var(--ink)}
@@ -149,7 +149,6 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 @media(max-width:760px){
   #p3#p3 .p3-vcard{grid-template-columns:1fr}
   #p3#p3 .p3-vart{border-right:0;border-bottom:1px solid #f3e2c3}
-  #p3#p3 .p3-vart.has-ad img{height:auto!important}
   #p3#p3 a.p3-vname{font-size:22px}
   #p3#p3 a.p3-vtel{font-size:24px}
   #p3#p3 .p3-vacts a{flex:1;text-align:center;padding:12px 8px}
