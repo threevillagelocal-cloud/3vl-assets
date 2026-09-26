@@ -231,3 +231,18 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 /* phones: single column (must come last) */
 @media(max-width:760px){#p3#p3 .p3-vcard,#p3#p3 .p3-vcard.has-side{grid-template-columns:1fr}#p3#p3 .p3-vart{border-right:0;border-bottom:1px solid #f3e2c3}#p3#p3 .p3-vcard.has-side .p3-vside{flex-direction:column;align-items:flex-start}#p3#p3 .p3-vtrust{flex-direction:column}}
 @media(max-width:760px){#p3#p3 .p3-vart img{max-height:170px!important;width:auto!important}#p3#p3 .p3-vart.is-logo img{width:100%!important;max-height:120px!important}#p3#p3 .p3-vd{-webkit-line-clamp:3}}
+
+/* VIP cards: identical height on desktop */
+@media(min-width:1101px){
+  #p3#p3 .p3-vcard,#p3#p3 .p3-vcard.has-side{height:236px;overflow:hidden}
+  #p3#p3 .p3-vart{height:100%}
+  #p3#p3 .p3-vart img{max-height:190px!important}
+  #p3#p3 .p3-vart.is-logo img{max-height:140px!important}
+  #p3#p3 .p3-vbody,#p3#p3 .p3-vside{height:100%;overflow:hidden}
+}
+@media(min-width:761px) and (max-width:1100px){#p3#p3 .p3-vcard,#p3#p3 .p3-vcard.has-side{height:300px;overflow:hidden}#p3#p3 .p3-vart img{max-height:150px!important}}
+#p3#p3 a.p3-vname{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#p3#p3 .p3-vspecs{flex-wrap:nowrap;overflow:hidden;min-height:22px}
+#p3#p3 .p3-vspecs span{flex:0 0 auto;white-space:nowrap}
+#p3#p3 .p3-vcred{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+#p3#p3 .p3-vtrust li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

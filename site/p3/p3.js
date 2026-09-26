@@ -86,7 +86,7 @@ if(isResults){
     if(m.rating)h+='<li><i class="p3-star">&#9733;</i><b>'+m.rating.toFixed(1)+'</b>&nbsp;from '+m.reviews+' neighbor review'+(m.reviews===1?'':'s')+'</li>';
     if(m.since&&yrs(m.since)>0)h+='<li><i class="p3-cal">&#9719;</i>Serving since '+esc(m.since)+' &middot; '+yrs(m.since)+' yrs</li>';
     h+='</ul>';
-    if(m.specs&&m.specs.length)h+='<div class="p3-vspecs">'+m.specs.slice(0,4).map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div>';
+    if(m.specs&&m.specs.length)h+='<div class="p3-vspecs">'+m.specs.slice(0,3).map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div>';
     if(m.cred)h+='<p class="p3-vcred">&#127891; '+(m.cred.length>110?esc(m.cred.slice(0,110).replace(/\s\S*$/,''))+'&hellip;':esc(m.cred))+'</p>';
     var L=[];if(m.web)L.push('<a href="'+esc(m.web)+'" target="_blank" rel="noopener">Website</a>');if(m.fb)L.push('<a href="'+esc(m.fb)+'" target="_blank" rel="noopener">Facebook</a>');if(m.ig)L.push('<a href="'+esc(m.ig)+'" target="_blank" rel="noopener">Instagram</a>');
     L.push('<a class="p3-vrev" href="'+esc(u.replace(/\/$/,''))+'/writeareview">&#9733; '+(m.reviews?'Write a review':'Be the first to review')+'</a>');
