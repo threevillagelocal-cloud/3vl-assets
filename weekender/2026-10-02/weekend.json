@@ -671,5 +671,56 @@
    "photo": "sbharbor2",
    "credit": "Live cam: Stony Brook Village Center"
   }
+ },
+ "closings": {
+  "label": "Sat, Sept 26 & Sun, Sept 27",
+  "url": "https://www.threevillagelocal.com/blog/storm-prep-wind-heavy-rain-this-weekend-in-three-village",
+  "items": [
+   [
+    "Canceled",
+    "Culper Spy 5K Run/Walk",
+    "Sun, Sept 27"
+   ],
+   [
+    "Suspended",
+    "Port Jefferson Ferry",
+    "No boats Sat. Back late Sun morning"
+   ],
+   [
+    "Canceled",
+    "Gallery North Outdoor Art Show",
+    "Sat & Sun"
+   ],
+   [
+    "Canceled",
+    "Port Jefferson Farmers Market",
+    "Sun, Sept 27"
+   ],
+   [
+    "Canceled",
+    "Port Jeff Country Music Festival",
+    "Sat, Sept 26"
+   ],
+   [
+    "Canceled",
+    "Setauket Harbor Day",
+    "Sun, Sept 27"
+   ],
+   [
+    "Canceled",
+    "CommUniversity Day",
+    "Sat, Sept 26"
+   ],
+   [
+    "Postponed",
+    "Blues on the Harbor",
+    "Now Sat, Oct 3"
+   ],
+   [
+    "Postponed",
+    "Port Jefferson Hill Climb",
+    "Now Sat, Oct 10"
+   ]
+  ]
  }
 }

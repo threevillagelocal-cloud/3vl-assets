@@ -12,6 +12,7 @@ var DAYN={fri:'Friday',sat:'Saturday',sun:'Sunday'};
 function DAYN2(d){return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()]+' '+tm(d)}
 var TAGI={free:'&#127903;&#65039;',kids:'&#129490;',outdoor:'&#127795;',music:'&#127928;',history:'&#128373;&#65039;',food:'&#127822;',arts:'&#127912;',stage:'&#127917;'};
 function now(){var q=location.search.match(/wknow=([^&]+)/);return q?new Date(decodeURIComponent(q[1])):new Date()}
+function ds(d){return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()]+', '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getMonth()]+' '+d.getDate()}
 function tm(d){var h=d.getHours(),m=d.getMinutes(),ap=h>=12?'PM':'AM';h=h%12||12;return h+(m?':'+(m<10?'0':'')+m:'')+' '+ap}
 function pad(n){return(n<10?'0':'')+n}
 function toast(msg){var t=$('wk-toast');if(!t)return;t.textContent=msg;t.classList.add('is-on');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('is-on')},2200)}
@@ -24,7 +25,7 @@ $$('[data-id][data-start]').forEach(function(el){var id=el.getAttribute('data-id
   EV[id]={id:id,el:el,day:el.getAttribute('data-day'),start:new Date(el.getAttribute('data-start')),end:new Date(el.getAttribute('data-end')),
   tags:(el.getAttribute('data-tags')||'').split(' '),img:el.getAttribute('data-img')||'',lat:+el.getAttribute('data-lat'),lon:+el.getAttribute('data-lon'),
   title:el.getAttribute('data-title'),venue:el.getAttribute('data-venue'),addr:el.getAttribute('data-addr')}});
-var LIST=Object.keys(EV).map(function(k){return EV[k]}).sort(function(a,b){return a.start-b.start});
+var LIST=Object.keys(EV).map(function(k){return EV[k]}).filter(function(e){return !e.el.getAttribute('data-off')}).sort(function(a,b){return a.start-b.start});
 
 /* ---------- hero: leaves + countdown ---------- */
 function leaves(){var box=root.querySelector('.wk-leaves');if(!box||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
@@ -45,7 +46,7 @@ function heroLive(){var t=now(),d=$('wk-hdate'),c=$('wk-hclock');
   if(c)c.textContent=tm(t);
   var live=LIST.filter(function(e){return t>=e.start&&t<e.end}),next=LIST.filter(function(e){return e.start>t})[0],n=$('wk-hnow'),x=$('wk-hnext');
   if(n)n.textContent=live.length?live.length+(live.length===1?' event':' events'):'Quiet now';
-  if(x)x.textContent=next?'Next: '+next.title.slice(0,34)+(next.title.length>34?'...':'')+(next.start.toDateString()===t.toDateString()?' at '+tm(next.start):', '+DAYN[next.day].slice(0,3)):'See the full schedule';}
+  if(x)x.textContent=next?'Next: '+next.title.slice(0,34)+(next.title.length>34?'...':'')+(next.start.toDateString()===t.toDateString()?' at '+tm(next.start):', '+ds(next.start)):'See the full schedule';}
 function heroWx(){fetch('https://api.weather.gov/points/'+LAT+','+LON).then(function(r){return r.json()}).then(function(p){return fetch(p.properties.forecastHourly)}).then(function(r){return r.json()}).then(function(d){
   var p=(d.properties.periods||[])[0];if(!p)return;var te=$('wk-htemp'),sk=$('wk-hsky'),ic=$('wk-hwi2');
   if(te)te.textContent=p.temperature;if(sk)sk.textContent=p.shortForecast+(p.windSpeed?', wind '+p.windSpeed:'');if(ic)ic.innerHTML=wxSvg(p.shortForecast)}).catch(function(){})}
@@ -76,11 +77,11 @@ function nowPanel(){var b=$('wk-nowb'),c=$('wk-clock');if(!b)return;var t=now();
   var h='';
   function row(e,isLive){var p=isLive?Math.round((t-e.start)/(e.end-e.start)*100):0,lbl;
     if(isLive){var left=Math.round((e.end-t)/60000);lbl=(left>=60?Math.floor(left/60)+'h':left+'m')+'<br><small style="font-size:8px">left</small>'}
-    else{var d=Math.round((e.start-t)/60000);lbl=d<60?d+'m':d<1440?Math.floor(d/60)+'h':DAYN[e.day].slice(0,3)}
+    else{var d=Math.round((e.start-t)/60000);lbl=d<60?d+'m':d<1440?Math.floor(d/60)+'h':ds(e.start).split(', ')[1]}
     var pic=e.img?'<img src="'+e.img+'" alt="" loading="lazy">':'<span class="wk-nowico">'+(TAGI[e.tags.filter(function(t){return t!=="free"&&t!=="outdoor"})[0]||e.tags[0]]||'&#9733;')+'</span>';
-    return '<a class="wk-nowi" href="#'+e.el.id+'" data-jump="'+e.id+'"><span class="wk-nowpic">'+pic+'</span><span class="wk-nowtx"><b>'+e.title+'</b><small>'+e.venue+' &middot; '+(isLive?'until '+tm(e.end):DAYN[e.day]+' '+tm(e.start))+'</small></span><span class="wk-nowbar" style="--p:'+p+'"><span>'+lbl+'</span></span></a>'}
+    return '<a class="wk-nowi" href="#'+e.el.id+'" data-jump="'+e.id+'"><span class="wk-nowpic">'+pic+'</span><span class="wk-nowtx"><b>'+e.title+'</b><small>'+e.venue+' &middot; '+(isLive?'until '+tm(e.end):ds(e.start)+', '+tm(e.start))+'</small></span><span class="wk-nowbar" style="--p:'+p+'"><span>'+lbl+'</span></span></a>'}
   if(live.length){h+='<p class="wk-nowsub">&#9679; On right now &middot; '+live.length+'</p>';live.slice(0,4).forEach(function(e){h+=row(e,true)});if(live.length>4)h+='<a class="wk-nowmore" href="#wk-sched">+ '+(live.length-4)+' more happening now &rarr;</a>'}
-  if(next.length){h+='<p class="wk-nowsub">'+(t<START?'First up this weekend':'Up next')+'</p>';next.forEach(function(e){h+=row(e,false)})}
+  if(next.length){h+='<p class="wk-nowsub">'+(t<START?'Coming up':'Up next')+'</p>';next.forEach(function(e){h+=row(e,false)})}
   if(!h)h='<p class="wk-nowempty">That’s a wrap on this weekend. The next Weekender drops Thursday.</p>';
   b.innerHTML=h}
 
@@ -209,7 +210,7 @@ function share(text){var url=location.href.split('#')[0];if(navigator.share){nav
   else if(navigator.clipboard){navigator.clipboard.writeText(text+' '+url).then(function(){toast('Link copied')})}track('weekender_share',{})}
 function planText(){var items=saved.map(function(id){return EV[id]}).filter(Boolean).sort(function(a,b){return a.start-b.start});
   if(!items.length)return 'Here’s everything happening in Three Village this weekend:';
-  return 'My Three Village weekend: '+items.map(function(e){return DAYN[e.day].slice(0,3)+' '+tm(e.start)+' '+e.title}).join(', ')+'. Plan yours:'}
+  return 'My Three Village plans: '+items.map(function(e){return ds(e.start)+' '+tm(e.start)+' '+e.title}).join(', ')+'. Plan yours:'}
 
 /* ---------- VIP ads ---------- */
 /* Shuffle so the same business or competitors (same "group") are at least GAP+1 slots apart, including when the loop wraps. */
@@ -225,7 +226,7 @@ function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(
   ads=spread(ads,function(a){return a.getAttribute('data-group')||a.getAttribute('data-vip')},3);
   ads.forEach(function(a){rot.appendChild(a)});
   var idx=0,dur=6500,t0=0,paused=false,bar=$('wk-adbar'),dots=$('wk-addots'),seenV={};
-  var slots=$$('.wk-adslot');var clones=slots.map(function(s,n){var w=document.createElement('div');w.className='wk-adrot';s.appendChild(w);
+  var slots=$$('.wk-adslot');var r2=$('wk-adrot2');if(r2&&innerWidth>1060)slots.unshift(r2);var clones=slots.map(function(s,n){var w=document.createElement('div');w.className='wk-adrot';s.appendChild(w);
     ads.forEach(function(a){var c=a.cloneNode(true);c.classList.remove('is-on');var lb=document.createElement('span');lb.className='wk-adlabel';lb.textContent='3VL VIP';c.appendChild(lb);w.appendChild(c)});return $$('.wk-ad',w)});
   if(dots)dots.innerHTML=ads.map(function(a,i){return '<button type="button" aria-label="Show ad '+(i+1)+'"></button>'}).join('');
   function show(n){idx=(n+ads.length)%ads.length;ads.forEach(function(a,i){a.classList.toggle('is-on',i===idx);a.setAttribute('aria-hidden',i!==idx)});

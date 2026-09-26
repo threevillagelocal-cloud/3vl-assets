@@ -703,3 +703,28 @@
 #wk-top .wk-spfeat .wk-eimg > img{border-radius:20px 20px 0 0!important}
 .wk-spfeat .wk-dish{width:120px;height:150px;right:18px;bottom:-40px}
 @media (max-width:760px){.wk-spfeat .wk-eimg{aspect-ratio:3/1}.wk-spfeat .wk-dish{width:96px;height:120px;bottom:-30px}}
+
+/* ===== status ribbons (canceled / postponed / suspended) ===== */
+[data-off]{position:relative;overflow:hidden}
+.wk-pick[data-off]::after,.wk-ev[data-off]::after{content:attr(data-off);position:absolute;z-index:6;top:22px;right:-46px;width:190px;text-align:center;transform:rotate(35deg);background:#d9453a;color:#fff;font-weight:900;font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:6px 0;box-shadow:0 4px 12px rgba(0,0,0,.35)}
+.wk-ev[data-off] .wk-evc{position:relative;overflow:hidden}
+.wk-pick[data-off] .wk-pimg img,.wk-ev[data-off] .wk-evthumb img{filter:grayscale(.85) brightness(.8)}
+.wk-pick[data-off] .wk-ptitle,.wk-ev[data-off] .wk-evtitle{text-decoration:line-through;text-decoration-color:#d9453a;text-decoration-thickness:2px}
+/* closings strip */
+.wk-cxsec{padding-top:18px}
+.wk-cxhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.wk-cxhead p{margin:0!important;font-size:15px;color:var(--mut)}.wk-cxhead p b{color:var(--ink);font-size:18px;margin-right:6px}
+#wk-top .wk-cxall{margin-left:auto;font-weight:800;font-size:14px;color:var(--ink3)}
+.wk-cxrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.wk-cxi{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px 12px;min-height:74px}
+.wk-cxi::after{content:attr(data-off);position:absolute;top:12px;right:-38px;width:130px;text-align:center;transform:rotate(35deg);background:#d9453a;color:#fff;font-weight:900;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:4px 0}
+.wk-cxi[data-off="Postponed"]::after{background:#f0ad4e;color:#1b2f45}.wk-cxi[data-off="Suspended"]::after{background:#205081}
+.wk-cxn{font-weight:800;font-size:15px;line-height:1.2;padding-right:44px;color:var(--ink)}
+.wk-cxd{font-size:13px;color:var(--mut);margin-top:3px!important;padding-right:40px}
+@media (max-width:760px){.wk-cxrow.wk-swipe > *{flex-basis:62%}.wk-cxall{margin-left:0}}
+
+/* second rail ad */
+.wk-adrot2{margin-top:14px}
+.wk-adrot2 .wk-adrot{max-width:none}
+.wk-adrot2 .wk-adlabel{display:none}
+@media (max-width:1060px){.wk-adrot2{display:none}}

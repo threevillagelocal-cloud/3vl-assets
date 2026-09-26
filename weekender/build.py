@@ -24,6 +24,11 @@ def fmt_time(iso):
     m = "" if d.minute == 0 else ":%02d" % d.minute
     return "%d%s %s" % (h, m, "AM" if d.hour < 12 else "PM")
 
+def dshort(iso):
+    d = datetime.fromisoformat(iso)
+    return d.strftime('%a, %b ') + str(d.day)
+
+
 DAYNAME = {"fri": "Friday", "sat": "Saturday", "sun": "Sunday"}
 TAGS = {"free": "Free", "kids": "Kids", "outdoor": "Outdoor", "music": "Music", "history": "History",
         "food": "Food", "arts": "Arts", "stage": "On Stage"}
@@ -90,7 +95,7 @@ def build(edition, local=False, sha="master"):
         return ('data-id="%s" data-day="%s" data-start="%s-04:00" data-end="%s-04:00" data-tags="%s" '
                 'data-lat="%s" data-lon="%s" data-title="%s" data-venue="%s" data-addr="%s" data-img="%s"') % (
             e["id"], day_of(e["start"]), e["start"], e["end"], " ".join(e["tags"]), v["ll"][0], v["ll"][1],
-            esc(e["title"]), esc(v["name"]), esc(v["addr"]), img(e["img"], True) if e.get("img") else "")
+            esc(e["title"]), esc(v["name"]), esc(v["addr"]), img(e["img"], True) if e.get("img") else "") + ((' data-off="%s"' % esc(e["status"])) if e.get("status") else "")
 
     def actions(e):
         return ('<div class="wk-acts"><button type="button" class="wk-save" data-save="%s" aria-pressed="false">'
@@ -139,6 +144,13 @@ def build(edition, local=False, sha="master"):
     w('<div class="wk-ticker" id="wk-ticker" hidden><span class="wk-tkl"><i></i>LIVE</span><div class="wk-tkm"><div class="wk-tkt" id="wk-tkt"></div></div></div>')
 
     w('<div class="wk-grid"><div class="wk-main">')
+    cx = d.get("closings")
+    if cx:
+        w('<section class="wk-sec wk-cxsec" id="wk-cx"><div class="wk-cxhead"><span class="wk-live"><i></i>STORM</span>'
+          '<p><b>This weekend&rsquo;s closings</b> %s</p><a class="wk-cxall" href="%s">Full list &amp; live radar &rarr;</a></div><div class="wk-cxrow wk-swipe">' % (esc(cx["label"]), cx["url"]))
+        for it in cx["items"]:
+            w('<div class="wk-cxi" data-off="%s"><p class="wk-cxn">%s</p><p class="wk-cxd">%s</p></div>' % (esc(it[0]), esc(it[1]), esc(it[2])))
+        w('</div></section>')
 
     # TOP PICKS
     w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Picks</span><small>If you only do three things</small></h2><div class="wk-picks wk-swipe">')
@@ -149,7 +161,7 @@ def build(edition, local=False, sha="master"):
           '<div class="wk-pbody"><p class="wk-pwhen">%s &middot; %s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pwhere">&#128205; %s</p>'
           '<p class="wk-pdesc">%s</p><div class="wk-tags">%s<span class="wk-price">%s</span></div>%s</div>'
           '<p class="wk-icred">%s</p></article>' % (
-            evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, DAYNAME[day_of(e["start"])],
+            evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, dshort(e["start"]),
             fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"),
             esc(e["title"]), esc(V[e["venue"]]["name"]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), actions(e), esc(e.get("credit", ""))))
     w('</div></section>')
@@ -301,6 +313,7 @@ def build(edition, local=False, sha="master"):
             " is-on" if i == 0 else "", esc(v["name"]), esc(v.get("group", v["id"])), "false" if i == 0 else "true", v["url"], esc(v["name"]), base + v["img"],
             base + v["img"], esc(v["name"]) + " ad", "eager" if i == 0 else "lazy", v["w"], v["h"], v["phone"], esc(v["name"]), v["url"], esc(v["name"])))
     w('<div class="wk-adprog"><i id="wk-adbar"></i></div><div class="wk-addots" id="wk-addots"></div></div>')
+    w('<div class="wk-adrot2" id="wk-adrot2"></div>')
     w('<a class="wk-railcta" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a></div></aside>')
 
     w('</div>')  # /wk-grid
