@@ -400,3 +400,9 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-vnrow a.p3-vname{flex:0 1 auto;min-width:0}
 #p3#p3 .p3-ftag{flex:0 0 auto;display:inline-flex;align-items:center;gap:4px;background:linear-gradient(90deg,#ffc62e,#ffd95a);color:#1b2f45;font-size:10.5px;font-weight:900;letter-spacing:.12em;padding:3px 10px;border-radius:7px;box-shadow:0 4px 10px rgba(255,198,46,.4);white-space:nowrap}
 @media(max-width:760px){#p3#p3 .p3-vnrow{flex-wrap:wrap;gap:6px}}
+
+/* Featured: quiet corner tag inside the card */
+#p3#p3 .p3-vlist{gap:14px!important;padding-top:0}
+#p3#p3 .p3-vcard{position:relative}
+#p3#p3 .p3-vcard .p3-ftab{position:absolute;left:0;top:0;z-index:3;background:#ffd23f;color:#1b2f45;font-size:9.5px;font-weight:900;letter-spacing:.14em;padding:4px 10px 4px 12px;border-radius:0 0 10px 0;box-shadow:none;line-height:1.2}
+#p3#p3 .p3-vmedia{padding-top:22px}
