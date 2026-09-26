@@ -1,9 +1,9 @@
 {
-"updated": "2026-09-26T19:45:33.282125+00:00",
+"updated": "2026-09-26T22:41:18.316592+00:00",
 "counts": {
 "Three Village Chamber": 7,
 "Port Jefferson Chamber": 27,
-"I Love Port Jeff": 5,
+"I Love Port Jeff": 4,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 222,
 "Emma S. Clark Library": 217,
@@ -22,23 +22,6 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
-{
-"id": "iloveportjeff-6a075f20c1f50c7ed02a8924",
-"title": "Port Jefferson Hill Climb",
-"start": "2026-09-26T08:00:00",
-"end": "2026-09-26T12:00:00",
-"allday": false,
-"venue": "Village Center/ Harborfront Park",
-"addr": "101 East Broadway, Port Jefferson, NY, 11777",
-"url": "https://www.iloveportjeff.com/events/hill-climb",
-"desc": "Experience one of Port Jefferson’s most unique traditions as vintage and classic cars take on the historic Port Jefferson Hill Climb. Come watch these incredible automobiles make their run up the hill and enjoy a day celebrating automotive history, community, ",
-"img": "https://images.squarespace-cdn.com/content/v1/6849b4cd4d4fd13a7a9784e5/1779014898052-0Z3KU909WSYZVVMEHJWS/34a54b2129aacb50190c5be40cb32c2c8c2496583015e4b7cfc316b5099d314b-rimg-w720-h676-gmir.jpg",
-"src": "iloveportjeff",
-"tags": [
-"history"
-],
-"status": "Postponed"
-},
 {
 "id": "3vchamber-1912472",
 "title": "CommUniversity Day",
