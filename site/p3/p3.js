@@ -3,7 +3,7 @@
 (function(){
 var me=document.currentScript;var BASE=me?me.src.replace(/p3\.js.*$/,''):'';
 var path=location.pathname.replace(/\/+$/,'')||'/';
-var SEARCH_ON=!!window.P3_SEARCH_PREVIEW;   /* business results: preview only until approved */
+var SEARCH_ON=true;   /* business results: approved + live 9/26 */
 var isResults=SEARCH_ON&&!!document.querySelector('.member_results.search_result');
 if(path!=='/categories'&&path!=='/blog'&&!isResults)return;
 function $(s,r){return (r||document).querySelector(s)}function $$(s,r){return [].slice.call((r||document).querySelectorAll(s))}
