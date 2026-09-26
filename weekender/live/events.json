@@ -1,12 +1,12 @@
 {
-"updated": "2026-09-26T17:05:08.336693+00:00",
+"updated": "2026-09-26T19:45:33.282125+00:00",
 "counts": {
 "Three Village Chamber": 7,
 "Port Jefferson Chamber": 27,
 "I Love Port Jeff": 5,
-"Town of Brookhaven (local)": 12,
+"Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 222,
-"Emma S. Clark Library": 218,
+"Emma S. Clark Library": 217,
 "Stony Brook Village Center": 16,
 "Long Island Museum": 32,
 "Ward Melville Heritage Org": 5
@@ -38,23 +38,6 @@
 "history"
 ],
 "status": "Postponed"
-},
-{
-"id": "emmaclark-community-shred-day-58111",
-"title": "Community Shred Day",
-"start": "2026-09-26T10:00:00",
-"end": "2026-09-26T14:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/community-shred-day-58111",
-"desc": "Library Parking Lot Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Please do not line up early, as it blocks traffic into and out of the Library. *This event has been canc",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": ""
 },
 {
 "id": "3vchamber-1912472",
@@ -107,24 +90,6 @@
 "free",
 "kids",
 "arts"
-],
-"status": ""
-},
-{
-"id": "brookhaven-5094",
-"title": "Growing Up Wild",
-"start": "2026-09-26T14:00:00",
-"end": "2026-09-26T15:00:00",
-"allday": false,
-"venue": "Cedar Beach",
-"addr": "Cedar Beach - 244 Harbor Beach Road Mt. Sinai NY 11766",
-"url": "https://www.brookhavenny.gov/calendar.aspx?EID=5094",
-"desc": "Growing Up Wild Ages 3-6 Join. us for some fall family fun. Each session will feature a nature topic and activity. All programs are FREE. Registration is required. Please put program name and date in subject line of email. Please provide a phone number, number",
-"img": "",
-"src": "brookhaven",
-"tags": [
-"free",
-"kids"
 ],
 "status": ""
 },
