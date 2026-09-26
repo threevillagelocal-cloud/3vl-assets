@@ -9,8 +9,42 @@ if(path!=='/categories'&&path!=='/blog'&&!isResults)return;
 function $(s,r){return (r||document).querySelector(s)}function $$(s,r){return [].slice.call((r||document).querySelectorAll(s))}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function mount(html,anchor){var d=document.createElement('div');d.id='p3';d.className='p3';d.innerHTML=html;anchor.parentNode.insertBefore(d,anchor);document.documentElement.classList.add('p3-on');return d}
-var ICON={'arts':'&#127912;','attorney':'&#9878;&#65039;','automotive':'&#128663;','beauty':'&#128135;','commercial':'&#127970;','community':'&#129309;','contractor':'&#128296;','doctor':'&#129658;','education':'&#127891;','events':'&#127926;','farm':'&#127806;','financial':'&#128176;','fitness':'&#127947;&#65039;','health':'&#127807;','home':'&#127969;','hotel':'&#127976;','local-gov':'&#127963;&#65039;','marine':'&#9875;','marketing':'&#128227;','nightlife':'&#127864;','non-profit':'&#10084;&#65039;','payroll':'&#129534;','pet':'&#128062;','real':'&#127968;','restaurant':'&#127869;&#65039;','food':'&#127869;&#65039;','shopping':'&#128717;&#65039;','retail':'&#128717;&#65039;','travel':'&#9992;&#65039;','wedding':'&#128141;','insurance':'&#128737;&#65039;','dentist':'&#129463;','landscap':'&#127795;','tech':'&#128187;','child':'&#129490;','religious':'&#9962;','sports':'&#9917;','service':'&#128736;&#65039;'};
-function iconFor(slug){for(var k in ICON){if(slug.indexOf(k)>=0)return ICON[k]}return '&#11088;'}
+var SVG={
+ palette:'<path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.6-.8 1.6-1.6 0-1.2.9-1.9 2-1.9H17a4 4 0 0 0 4-4c0-5.2-4.1-10.5-9-10.5z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="9.5" cy="7" r="1.2"/><circle cx="14.5" cy="7" r="1.2"/>',
+ scale:'<path d="M12 3v18M7 21h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0L5 7M19 7l-3 6a3 3 0 0 0 6 0l-3-6"/>',
+ car:'<path d="M3 13l2-5a2 2 0 0 1 1.9-1.3h10.2A2 2 0 0 1 19 8l2 5v4H3zM6 17v2M18 17v2M3 13h18"/><circle cx="7.5" cy="15" r="1"/><circle cx="16.5" cy="15" r="1"/>',
+ scissors:'<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/>',
+ briefcase:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>',
+ users:'<circle cx="9" cy="8" r="3.5"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 5 5"/>',
+ hammer:'<path d="M13 7l-9 9 3 3 9-9M12 4h5l3 3v2l-2 2-5-5z"/>',
+ steth:'<path d="M6 3v6a4 4 0 0 0 8 0V3M10 13v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2"/>',
+ cross:'<path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/>',
+ grad:'<path d="M2 9l10-5 10 5-10 5zM6 11v5c3 2 9 2 12 0v-5M22 9v5"/>',
+ ticket:'<path d="M3 7h18v3a2 2 0 0 0 0 4v3H3v-3a2 2 0 0 0 0-4zM14 7v10"/>',
+ sprout:'<path d="M12 21v-9M12 12C12 7 8.5 5 4 5c0 4.5 3.2 7 8 7zM12 10c0-4 3-6 8-6 0 4-3 6-8 6"/>',
+ dollar:'<circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .8-3 2s1.3 1.8 3 2 3 .9 3 2.1-1.3 2-3 2c-1.5 0-2.6-.6-3-1.6M12 6.5v11"/>',
+ dumbbell:'<path d="M6 8v8M3 10v4M18 8v8M21 10v4M6 12h12"/>',
+ pulse:'<path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21l8.8-8.3a5 5 0 0 0 0-7.1zM4 12h3.5l1.5-2.5 2.5 5 1.5-2.5H20"/>',
+ home:'<path d="M3 10.5L12 3l9 7.5M5 9v12h14V9M10 21v-6h4v6"/>',
+ bed:'<path d="M3 18V7M3 13h18v5M21 18v-2.5A3.5 3.5 0 0 0 17.5 12H10v1"/><circle cx="6.5" cy="10" r="1.8"/>',
+ columns:'<path d="M3 21h18M5 21V10M9.5 21V10M14.5 21V10M19 21V10M2 10l10-6 10 6z"/>',
+ anchor:'<circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 13a7 7 0 0 0 14 0M3 13h4M17 13h4"/>',
+ megaphone:'<path d="M3 10v4h3l7 5V5l-7 5H3zM16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/>',
+ glass:'<path d="M8 3h8l-.5 6a3.5 3.5 0 0 1-7 0zM12 12.5V20M8.5 21h7"/>',
+ heart:'<path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21l8.8-8.3a5 5 0 0 0 0-7.1z"/>',
+ receipt:'<path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6M9 16h3"/>',
+ paw:'<circle cx="7" cy="9.5" r="1.6"/><circle cx="10.5" cy="6" r="1.6"/><circle cx="14.5" cy="6" r="1.6"/><circle cx="17.5" cy="9.5" r="1.6"/><path d="M8 17c0-3 2-5 4-5s4 2 4 5c0 2-2 2.4-4 2s-4 0-4-2z"/>',
+ clipboard:'<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6"/>',
+ building:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10.5 21v-3h3v3"/>',
+ key:'<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/>',
+ utensils:'<path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 0-3 3-3 6s1 4 3 4v8"/>',
+ bag:'<path d="M5 8h14l-1 13H6zM9 8V6a3 3 0 0 1 6 0v2"/>',
+ trophy:'<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M9 20h6M10 17h4"/>',
+ laptop:'<rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M3 19h18"/>',
+ star:'<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>'};
+var MAP=[['arts','palette'],['attorney','scale'],['automotive','car'],['beauty','scissors'],['business-services','briefcase'],['community','users'],['contractor','hammer'],['doctor','steth'],['medical','cross'],['education','grad'],['events','ticket'],['farm','sprout'],['financial','dollar'],['fitness-center','dumbbell'],['health','pulse'],['home','home'],['hotel','bed'],['local-government','columns'],['marine','anchor'],['marketing','megaphone'],['nightlife','glass'],['non-profit','heart'],['payroll','receipt'],['pet','paw'],['professional','clipboard'],['public-services','building'],['real-estate','key'],['restaurant','utensils'],['shopping','bag'],['sports','trophy'],['fitness-sports','trophy'],['technology','laptop']];
+function iconFor(slug){var k='star';for(var i=0;i<MAP.length;i++){if(slug.indexOf(MAP[i][0])>=0){k=MAP[i][1];break}}
+  return '<svg viewBox="0 0 24 24" aria-hidden="true">'+SVG[k]+'</svg>'}
 var COLORS=['#006fbb','#d9534f','#0f866c','#f0ad4e','#8e5bd6','#205081','#3aa0e8'];
 
 /* ---------- BUSINESS RESULTS (search + category pages) ---------- */
