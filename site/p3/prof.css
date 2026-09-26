@@ -1,8 +1,8 @@
 /* 3VL business profile: light premium polish (MOCKUP) */
 html.pf-on .member_profile{font-family:'Radio Canada',system-ui,sans-serif}
 /* cover: rounded, tucked on top of the header card */
-html.pf-on img.pf-coverimg{border-radius:22px 22px 0 0!important;margin:0!important;display:block;width:100%;box-shadow:none}
-html.pf-on .member_profile .member-profile-header{background:#fff;border:1px solid #e3e9f0;border-radius:0 0 22px 22px;box-shadow:0 14px 34px rgba(27,47,69,.10);padding:22px 18px 18px;margin:0 0 18px!important}
+html.pf-on img.pf-coverimg{border-radius:22px!important;box-shadow:0 12px 30px rgba(27,47,69,.12)!important;margin:0!important;display:block;width:100%;box-shadow:none}
+html.pf-on .member_profile .member-profile-header{background:#fff;border:1px solid #e3e9f0;border-radius:22px;box-shadow:0 14px 34px rgba(27,47,69,.10);padding:22px 18px 18px;margin:0 0 18px!important}
 html.pf-on .content_w_sidebar>.col-md-9>.member-profile-header:first-child{border-radius:22px}
 /* logo */
 html.pf-on .member-profile-header .profile-image img{border-radius:18px!important;border:1px solid #e3e9f0;box-shadow:0 8px 20px rgba(27,47,69,.10);background:#fff;padding:6px}
@@ -33,3 +33,7 @@ html.pf-on .member_profile #map-canvas{border-radius:0 0 16px 16px;overflow:hidd
 /* sidebar */
 html.pf-on .content_w_sidebar>.col-md-3 .module{border-radius:18px;border:1px solid #e3e9f0;box-shadow:0 8px 20px rgba(27,47,69,.06)}
 @media(max-width:760px){html.pf-on .member-profile-header h1{font-size:26px!important}html.pf-on .member-profile-tabs{padding:6px 12px 16px;border-radius:18px}html.pf-on img.pf-coverimg{border-radius:16px 16px 0 0!important}}
+
+html.pf-on .profile-header-top-category{margin-right:10px}
+html.pf-on .member-profile-header .profile-image img{width:100%!important;height:auto!important;max-height:130px;object-fit:contain}
+@media(max-width:760px){html.pf-on .member-profile-header .profile-image img{max-width:220px!important;max-height:110px!important;margin:0 auto}html.pf-on img.pf-coverimg{border-radius:16px!important}}

@@ -16,6 +16,13 @@ if(telA){var t=telA.getAttribute('href').replace(/[^\d]/g,'').slice(-10),f=t.sli
 /* the cover already shows the business name/logo: keep it, just make it part of the header card */
 var cover=$('.coverPhoto');if(cover){cover.classList.add('pf-coverimg')}
 
+/* logo: trim baked-in white margins */
+(function(img){if(!img)return;function go(){try{var w=img.naturalWidth,h=img.naturalHeight;if(!w||!h)return;var c=document.createElement('canvas'),k=Math.min(1,700/Math.max(w,h));c.width=Math.round(w*k);c.height=Math.round(h*k);
+  var x=c.getContext('2d');x.drawImage(img,0,0,c.width,c.height);var d=x.getImageData(0,0,c.width,c.height).data,W=c.width,H=c.height,t=H,l=W,r=0,b=0;
+  for(var y=0;y<H;y++)for(var X=0;X<W;X++){var i=(y*W+X)*4;if(d[i+3]>20&&(d[i]<235||d[i+1]<235||d[i+2]<235)){if(y<t)t=y;if(y>b)b=y;if(X<l)l=X;if(X>r)r=X}}
+  if(r<=l||b<=t||(r-l)*(b-t)>W*H*.92)return;var p=Math.round(Math.max(r-l,b-t)*.05);l=Math.max(0,l-p);t=Math.max(0,t-p);r=Math.min(W-1,r+p);b=Math.min(H-1,b+p);
+  var o=document.createElement('canvas');o.width=r-l+1;o.height=b-t+1;o.getContext('2d').drawImage(c,l,t,o.width,o.height,0,0,o.width,o.height);img.onload=null;img.removeAttribute('width');img.removeAttribute('height');img.src=o.toDataURL('image/png')}catch(e){}}
+  if(img.complete&&img.naturalWidth)go();else img.onload=go})($('.profile-image img',hdr));
 /* tidy */
 $$('.make-connection').forEach(function(e){e.style.display='none'});
 $$('.content_w_sidebar > .col-md-3 .module').forEach(function(m){if(!m.textContent.trim()&&!m.querySelector('iframe,img'))m.style.display='none'});
