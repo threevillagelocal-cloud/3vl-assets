@@ -26,6 +26,7 @@ var css='#vipx{background:#fff;border:1px solid #ebeef0;border-radius:12px;paddi
 '#vipx .vipx-rot.lift{--ty:-8px;--sc:1.045;box-shadow:0 26px 50px rgba(27,47,69,.38),0 8px 16px rgba(27,47,69,.18);transition:transform .12s ease-out,box-shadow .35s}'+
 '#vipx .vipx-glare{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.35),transparent 55%)}#vipx .vipx-rot.lift .vipx-glare{opacity:1}'+
 '@media (prefers-reduced-motion:reduce){#vipx .vipx-rot{transform:none!important}}'+
+'#vipx.vipx-sm{padding:10px}#vipx.vipx-sm .vipx-h{font-size:15px}#vipx.vipx-sm .vipx-btns a{font-size:12px;height:36px}'+
 '#vipx .vipx-foot{display:block;text-align:center;margin-top:8px;font-size:12px;font-weight:700;color:#006fbb}';
 /* Shuffle so the same business or competitors (same "group") are at least GAP+1 slots apart, including when the loop wraps. */
 function spread(arr,key,gap){var best=arr.slice();
@@ -44,7 +45,8 @@ function build(list,side){
   h+='<div class="vipx-glare"></div><div class="vipx-bar"><i></i></div></div><div class="vipx-btns"><a class="vipx-call" href="#">&#128222; Call</a><a class="vipx-view" href="#">View on 3VL &rarr;</a></div><div class="vipx-dots">';
   list.forEach(function(v,i){h+='<b'+(i?'':' class="on"')+'></b>'});
   h+='</div><a class="vipx-foot" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a>';
-  box.innerHTML=h;side.insertBefore(box,side.firstChild);
+  box.innerHTML=h;if(side.after&&side.after.nextSibling)side.el.insertBefore(box,side.after.nextSibling);else if(side.after)side.el.appendChild(box);else side.el.insertBefore(box,side.el.firstChild);
+  if(box.offsetWidth<290)box.classList.add('vipx-sm');
   var ads=box.querySelectorAll('.vipx-ad'),dots=box.querySelectorAll('.vipx-dots b'),bar=box.querySelector('.vipx-bar i'),call=box.querySelector('.vipx-call'),view=box.querySelector('.vipx-view');
   var idx=0,dur=6500,t0=0,paused=false,seen={};
   function show(n){idx=(n+list.length)%list.length;for(var k=0;k<ads.length;k++){ads[k].className='vipx-ad'+(k===idx?' on':'');dots[k].className=k===idx?'on':''}
@@ -60,7 +62,14 @@ function build(list,side){
     rot.addEventListener('mouseleave',function(){rot.classList.remove('lift');rot.style.setProperty('--rx','0deg');rot.style.setProperty('--ry','0deg')})}
   box.addEventListener('click',function(e){var a=e.target.closest('a[data-vip]');if(a)track('vip_ad_click',{vip:a.getAttribute('data-vip'),placement:PLACE,link:a.className||'banner'})});
   show(0);requestAnimationFrame(loop)}
-function go(){var side=document.querySelector('.post-detail-sidebar');if(!side||document.getElementById('vipx'))return;
-  fetch(BASE+'banners.json').then(function(r){return r.json()}).then(function(list){if(list&&list.length)build(list,side)}).catch(function(){})}
+/* Where the ad goes on each BD page type. Member profiles are skipped on purpose (a member's own page should not advertise other businesses). */
+function spot(){
+  if(document.querySelector('.content_w_sidebar.member_profile'))return null;
+  var p=document.querySelector('.post-detail-sidebar');if(p)return{el:p,where:'top',place:'blog_post_sidebar'};
+  var s=document.querySelector('.content_w_sidebar .sidebar-container')||document.querySelector('.content_w_sidebar > .col-md-3');
+  if(s){var first=s.querySelector('.module');return{el:s,after:first,place:/member_results/.test(s.parentNode.className)?'search_sidebar':'listing_sidebar'}}
+  return null}
+function go(){if(document.getElementById('vipx'))return;var t=spot();if(!t)return;if(!me||!me.getAttribute('data-placement'))PLACE=t.place;
+  fetch(BASE+'banners.json').then(function(r){return r.json()}).then(function(list){if(list&&list.length&&!document.getElementById('vipx'))build(list,t)}).catch(function(){})}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
 })();
