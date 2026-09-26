@@ -292,3 +292,10 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
   #p3#p3 a.p3-vname{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   #p3#p3 .p3-vtrust,#p3#p3 .p3-vcred,#p3#p3 .p3-vd{min-height:0}
 }
+
+/* VIP cards: navy outline + navy glow (owner pick 9/26) */
+#p3#p3 .p3-vcard{border:2px solid #1b2f45!important;background:#fff!important;box-shadow:0 14px 34px rgba(27,47,69,.20),0 4px 12px rgba(27,47,69,.08)!important}
+#p3#p3 .p3-vcard:hover{box-shadow:0 20px 42px rgba(27,47,69,.28),0 6px 16px rgba(27,47,69,.12)!important}
+#p3#p3 .p3-vart{border-right-color:#e1e7ee!important}
+#p3#p3 .p3-vcard.has-side .p3-vside{background:linear-gradient(180deg,#f2f6fb,#fff)!important;border-left-color:#e1e7ee!important}
+#p3#p3 .p3-vmore{border-color:#1b2f45!important;background:#f7f9fc!important}
