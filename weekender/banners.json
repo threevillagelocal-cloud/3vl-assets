@@ -129,7 +129,7 @@
   "phone": "6313388858",
   "url": "https://www.threevillagelocal.com/jlw-accounting-and-tax-services",
   "bdphone": "6313388858",
-  "group": "vip217"
+  "group": "books"
  },
  {
   "id": "71",
@@ -185,5 +185,16 @@
   "url": "https://www.threevillagelocal.com/j33-art-studios-inc",
   "bdphone": "6314037913",
   "group": "vip484"
+ },
+ {
+  "id": "240",
+  "name": "JM Management Solutions",
+  "img": "vip/banners/jm.webp",
+  "w": 720,
+  "h": 600,
+  "phone": "6319871532",
+  "url": "https://www.threevillagelocal.com/jm-management-solutions-inc",
+  "bdphone": "6319871532",
+  "group": "books"
  }
 ]
