@@ -299,3 +299,14 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-vart{border-right-color:#e1e7ee!important}
 #p3#p3 .p3-vcard.has-side .p3-vside{background:linear-gradient(180deg,#f2f6fb,#fff)!important;border-left-color:#e1e7ee!important}
 #p3#p3 .p3-vmore{border-color:#1b2f45!important;background:#f7f9fc!important}
+
+/* VIP cards v6: clean corners, no cut-offs, shorter */
+#p3#p3 .p3-vcard,#p3#p3 .p3-vcard.has-side{overflow:hidden!important;border-radius:20px}
+#p3#p3 .p3-vbody{padding:14px 20px 14px}
+#p3#p3 .p3-vacts{flex-wrap:wrap;align-items:center;gap:8px 10px;margin-top:8px}
+#p3#p3 .p3-vacts a.p3-callbig{background:var(--blue);color:#fff;font-size:17px;padding:10px 16px;letter-spacing:.01em}
+#p3#p3 .p3-vacts button.p3-more-btn{margin-left:2px;padding:6px 2px}
+#p3#p3 .p3-vspecs,#p3#p3 .p3-vspecs:not(.p3-wrap){flex-wrap:wrap!important;overflow:visible!important;max-height:none}
+#p3#p3 .p3-vspecs span{white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+#p3#p3 .p3-vlinks{margin-top:6px!important}
+#p3#p3 .p3-vcard.has-side .p3-vside{gap:7px}
