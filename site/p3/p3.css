@@ -392,3 +392,4 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-vlist{gap:26px!important;padding-top:12px}
 #p3#p3 .p3-vwrap{position:relative}
 #p3#p3 .p3-ftab{position:absolute;left:22px;top:-13px;z-index:3;display:inline-flex;align-items:center;gap:6px;background:linear-gradient(90deg,#f0ad4e,#f7c86e);color:#1b2f45;font-size:12px;font-weight:900;letter-spacing:.14em;padding:5px 14px;border-radius:8px;box-shadow:0 6px 14px rgba(240,173,78,.45),0 0 0 2px #fff}
+#p3#p3 .p3-ftab{background:linear-gradient(90deg,#ffc62e,#ffd95a);font-size:10.5px;letter-spacing:.12em;padding:3px 10px;top:-11px;border-radius:7px;box-shadow:0 5px 12px rgba(255,198,46,.45),0 0 0 2px #fff}
