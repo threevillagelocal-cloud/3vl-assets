@@ -26,7 +26,7 @@ hs.insertBefore(tiles,hs.firstChild);if(s1)s1.style.display='none';
 var s2=$('.homepage-section-2',hs),mem=s2?$$('.slick-slide:not(.slick-cloned) .member',s2):[];
 if(mem.length){var seen={},cards=mem.map(function(m){var a=$('a.h4',m);if(!a)return '';var href=a.getAttribute('href');if(seen[href])return '';seen[href]=1;
     var nm=(a.getAttribute('title')||a.textContent).replace(/\s*-\s*View Listing$/,'').trim(),img=$('img',m),src=img?(img.getAttribute('data-src')||img.getAttribute('src')):'';
-    var info=$('.recent-member-info',m),town=info?(info.textContent.split('Located in')[1]||'').replace(/\s+/g,' ').trim().replace('Setauket- East Setauket','East Setauket'):'';
+    var info=$('.recent-member-info',m),town=info?(info.textContent.split('Located in')[1]||'').replace(/\s+/g,' ').trim().replace(/View Listing/g,'').replace('Setauket- East Setauket','East Setauket').replace(/,?\s*$/,'').trim():'';
     var rt=($('.the-average-rating',m)||{}).textContent||'',r=(rt.match(/([\d.]+)\s*\/\s*5/)||[])[1],n=((($('.the-review-count',m)||{}).textContent||'').match(/\d+/)||[])[0];
     var ver=!!$('.member-search-verified',m);
     return '<a class="h2-fcard" href="'+esc(href)+'"><span class="h2-ftag">&#9733; FEATURED</span><span class="h2-flogo"><img src="'+esc(src)+'" alt="" loading="lazy"></span>'+
@@ -54,7 +54,7 @@ if(s3)s3.style.display='none';if(s4)s4.style.display='none';
 if(s5){var st=document.createElement('section');st.id='h2-stories';st.className='h2-sec';
   st.innerHTML='<div class="h2-in">'+head('Latest local stories','','/blog','All stories')+'<div class="h2-sgrid" id="h2-sgrid"></div></div>';
   var fallback=$$('.slickBlogArticles > div',s5).slice(0,3).map(function(d){var a=$('a.homepage-link-element',d)||$('a',d),pic=$('.pic',d);return {h:a?a.getAttribute('href'):'#',t:(($('.pic-title',d)||{}).textContent||'').trim(),img:pic?pic.getAttribute('data-src'):'',d:''}});
-  function draw(L){$('#h2-sgrid').innerHTML=L.slice(0,3).map(function(x){return '<a class="h2-scard" href="'+esc(x.h)+'"><span class="h2-simg"><img src="'+esc(x.img)+'" alt="" loading="lazy"></span><span class="h2-sb">'+(x.d?'<i>'+esc(x.d)+'</i>':'')+'<b>'+esc(x.t)+'</b></span></a>'}).join('')}
+  function draw(L){$('.h2-sgrid',st).innerHTML=L.slice(0,3).map(function(x){return '<a class="h2-scard" href="'+esc(x.h)+'"><span class="h2-simg"><img src="'+esc(x.img)+'" alt="" loading="lazy"></span><span class="h2-sb">'+(x.d?'<i>'+esc(x.d)+'</i>':'')+'<b>'+esc(x.t)+'</b></span></a>'}).join('')}
   draw(fallback);
   fetch('/blog').then(function(r){return r.text()}).then(function(t){var doc=new DOMParser().parseFromString(t,'text/html'),M=['Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec'];
     var L=$$('.search_result',doc).map(function(it){var a=$('.mid_section a.h3',it),img=$('img.search_result_image',it),d=(($('.posted_meta_data span',it)||{}).textContent||'').match(/(\d+)\/(\d+)\/(\d+)/);

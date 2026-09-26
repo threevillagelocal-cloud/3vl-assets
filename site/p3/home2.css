@@ -31,7 +31,7 @@ html.h2-on .h2-flogo img{max-width:100%!important;max-height:96px!important;widt
 .h2-ok{background:#e3f4ee;color:#0f866c}.h2-star{background:#fff1d9;color:#9a6a12}
 .h2-fgo{margin-top:auto;padding-top:6px;font-weight:800;font-size:14px;color:#006fbb}
 html.h2-on .h2-arr{position:absolute;top:calc(50% - 26px);z-index:2;width:44px;height:44px;border-radius:50%!important;border:0;background:#fff;color:#1b2f45;font-size:28px;line-height:1;box-shadow:0 6px 18px rgba(27,47,69,.22);cursor:pointer;padding:0}
-.h2-prev{left:-14px}.h2-next{right:-14px}
+.h2-prev{left:-30px}.h2-next{right:-30px}
 /* stories */
 .h2-sgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 html.h2-on a.h2-scard{display:flex;flex-direction:column;background:#fff;border:1px solid #e3e9f0;border-radius:18px;overflow:hidden;text-decoration:none!important;color:#1b2f45!important;box-shadow:0 8px 20px rgba(27,47,69,.07);transition:transform .25s,box-shadow .25s}
@@ -66,3 +66,5 @@ html.h2-on a.h2-blink{color:#fff!important;font-weight:700;font-size:14px;text-d
   html.h2-on .h2-bt{font-size:22px!important}
   .h2-bbtns{align-items:flex-start}
 }
+
+.h2-ftown{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
