@@ -593,7 +593,8 @@
    "src": "facebook",
    "srcName": "Ixchel Mexican Cuisine",
    "phone": "631-526-2005",
-   "ext": "r-agave"
+   "ext": "ixchel-ext",
+   "dish": "r-agave"
   }
  ],
  "next": [
