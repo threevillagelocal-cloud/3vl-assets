@@ -19,13 +19,14 @@ var maps='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(n
 
 function track(act){try{if(window.gtag)window.gtag('event','vip_profile_click',{action:act,business:name,business_id:uid})}catch(e){}}
 
-var h='<section id="pf" class="pf"><header class="pf-hero" style="background-image:url(\''+BASE+'img/village-hero.jpg\')"><div class="pf-hin">'+
-  '<div class="pf-logo"><img src="'+esc(logo)+'" alt="'+esc(name)+'"></div>'+
-  '<div class="pf-id">'+(vipBadge?'<span class="pf-vip">&#11088; VIP LOCAL BUSINESS</span>':'')+'<h1 class="pf-name">'+esc(name)+'</h1>'+
-  '<p class="pf-meta">'+esc(cat)+(addr?' &middot; &#128205; '+esc(addr):'')+'</p><div class="pf-badges" id="pf-badges">'+
-  (verified?'<span class="pf-b pf-bok">&#10003; Verified local business</span>':'')+
-  (rating?'<a class="pf-b pf-bstar" href="'+esc(revs)+'">&#9733; '+esc((+rating).toFixed(1))+' &middot; '+esc(count||0)+' neighbor review'+(count==='1'?'':'s')+'</a>':'')+
-  '</div></div></div><span class="pf-credit">Photo: Iracaz, CC BY-SA 3.0</span></header>'+
+var cover=($('.coverPhoto')||{}).src||'';
+var h='<section id="pf" class="pf"><header class="pf-hero"><div class="pf-photo" style="background-image:url(\''+BASE+'img/village-hero.jpg\')"></div><div class="pf-shade"></div>'+
+  '<div class="pf-top"><span class="pf-kick">THREE VILLAGE LOCAL'+(vipBadge?' <i>&#9679;</i> <b>VIP BUSINESS</b>':'')+'</span></div>'+
+  '<div class="pf-hin"><div class="pf-id"><p class="pf-cat">'+esc(cat)+(addr?' <i>&#9679;</i> '+esc(addr.split(',').slice(-2).join(',').trim()):'')+'</p><h1 class="pf-name">'+esc(name)+'</h1>'+
+  '<div class="pf-badges" id="pf-badges">'+(verified?'<span class="pf-b pf-bok">&#10003; Verified</span>':'')+
+  (rating?'<a class="pf-b pf-bstar" href="'+esc(revs)+'">&#9733; '+esc((+rating).toFixed(1))+' <small>'+esc(count||0)+' review'+(count==='1'?'':'s')+'</small></a>':'')+'</div></div>'+
+  '<div class="pf-logo"><img src="'+esc(logo)+'" alt="'+esc(name)+'"></div></div>'+
+  '<span class="pf-credit">Photo: Iracaz, CC BY-SA 3.0</span></header>'+
   '<nav class="pf-bar" aria-label="Contact '+esc(name)+'">'+
   (tel?'<a class="pf-a pf-call" data-act="call" href="tel:'+tel+'">&#128222; <b class="pf-long">'+telF+'</b><span class="pf-short">Call</span></a><a class="pf-a pf-text" data-act="text" href="sms:'+tel+'">&#128172; <span>Text</span></a>':'')+
   '<a class="pf-a" data-act="directions" href="'+esc(maps)+'" target="_blank" rel="noopener">&#128205; <span><b class="pf-long">Directions</b><b class="pf-short">Map</b></span></a>'+
@@ -48,8 +49,8 @@ var pf=document.getElementById('pf');
 
 /* extra trust from public listing details (years, specialties) */
 fetch(BASE+'vip_meta.json').then(function(r){return r.json()}).then(function(M){var m=M[uid];if(!m)return;var b=$('#pf-badges');
-  if(m.since){var y=new Date().getFullYear()-(+m.since);if(y>0)b.insertAdjacentHTML('beforeend','<span class="pf-b pf-bcal">Serving since '+esc(m.since)+' &middot; '+y+' yrs</span>')}
-  if(m.specs&&m.specs.length)$('.pf-id',pf).insertAdjacentHTML('beforeend','<div class="pf-specs">'+m.specs.map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div>')}).catch(function(){});
+  if(m.since){var y=new Date().getFullYear()-(+m.since);if(y>0)b.insertAdjacentHTML('beforeend','<span class="pf-b pf-bcal">Since '+esc(m.since)+' <small>'+y+' yrs</small></span>')}
+  if(m.specs&&m.specs.length)$('.pf-id',pf).insertAdjacentHTML('beforeend','<div class="pf-specs">'+m.specs.slice(0,4).map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div>')}).catch(function(){});
 
 function toast(t){var e=$('#pf-toast');e.textContent=t;e.classList.add('is-on');clearTimeout(toast.h);toast.h=setTimeout(function(){e.classList.remove('is-on')},3000)}
 pf.addEventListener('click',function(e){var a=e.target.closest('[data-act]');if(!a)return;var act=a.getAttribute('data-act');track(act);

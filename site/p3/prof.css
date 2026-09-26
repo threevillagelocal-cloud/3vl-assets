@@ -65,3 +65,45 @@ html.pf-on .content_w_sidebar>.col-md-3 .module{border-radius:18px;border:1px so
   #pf#pf .pf-call{flex:1.2 1 0;flex-direction:column;font-size:18px;gap:2px}
   #pf#pf .pf-call .pf-short{font-size:10.5px;font-weight:800}
 }
+
+/* ===== v2: Storm-Guide-style hero ===== */
+html.pf-on .member_profile .breadcrumb{display:none}
+#pf{margin-top:4px}
+.pf-hero{position:relative;height:430px;border-radius:26px;overflow:hidden;background:#0c1624;isolation:isolate;box-shadow:0 24px 50px rgba(12,22,36,.35);display:flex;flex-direction:column;justify-content:flex-end}
+.pf-hero:before{display:none}
+.pf-photo{position:absolute;inset:-4%;background:center 45%/cover no-repeat;z-index:-2;animation:pfKen 26s ease-in-out infinite alternate}
+@keyframes pfKen{from{transform:scale(1) translate(0,0)}to{transform:scale(1.1) translate(-2%,-1.5%)}}
+.pf-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(12,22,36,.55) 0%,rgba(12,22,36,.15) 32%,rgba(12,22,36,.55) 62%,rgba(12,22,36,.94) 100%),radial-gradient(ellipse at 20% 100%,rgba(12,22,36,.6),transparent 60%)}
+.pf-top{position:absolute;top:26px;left:34px;right:34px}
+.pf-kick{font-size:13px;font-weight:800;letter-spacing:.24em;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.pf-kick i{font-style:normal;color:#f0ad4e;margin:0 8px;font-size:9px;vertical-align:2px}
+.pf-kick b{color:#f0ad4e;font-weight:800}
+.pf-hin{display:flex;align-items:flex-end;gap:28px;padding:0 34px 70px}
+.pf-id{flex:1;min-width:0}
+#pf#pf .pf-cat{font-size:15px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#f0c26b;text-shadow:0 2px 10px rgba(0,0,0,.7);margin:0 0 10px}
+.pf-cat i{font-style:normal;color:rgba(255,255,255,.55);margin:0 6px;font-size:9px;vertical-align:2px}
+#pf#pf .pf-name{font-size:56px;line-height:1;font-weight:800;color:#fff;letter-spacing:-.01em;text-shadow:0 2px 3px rgba(0,0,0,.5),0 6px 26px rgba(0,0,0,.6)}
+.pf-badges{margin-top:16px;gap:8px}
+#pf#pf .pf-b{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-size:13.5px;padding:7px 14px}
+#pf#pf .pf-b small{font-weight:700;opacity:.8;margin-left:2px}
+#pf#pf .pf-bok{background:rgba(15,134,108,.85);border-color:rgba(255,255,255,.2)}
+#pf#pf .pf-bstar{background:rgba(240,173,78,.95);color:#1b2f45;border-color:transparent}
+.pf-specs{margin-top:12px}
+.pf-specs span{background:rgba(12,22,36,.35);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.pf-logo{flex:0 0 auto;align-self:flex-end;width:auto;height:150px;min-width:150px;max-width:280px;padding:14px;border-radius:22px;background:#fff;box-shadow:0 18px 40px rgba(0,0,0,.45),0 0 0 5px rgba(255,255,255,.18);transform:rotate(-1.5deg)}
+#pf#pf .pf-logo img{max-height:122px!important;max-width:252px!important}
+.pf-credit{right:16px;bottom:52px}
+.pf-bar{position:relative;z-index:2;margin:-38px 26px 0;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(12,22,36,.18),0 0 0 1px rgba(27,47,69,.06);justify-content:center;padding:12px 14px}
+#pf#pf .pf-call{box-shadow:0 8px 18px rgba(0,111,187,.35)}
+@media(max-width:760px){
+  .pf-hero{height:auto;min-height:440px;border-radius:20px}
+  .pf-top{top:18px;left:18px;right:18px}
+  .pf-kick{font-size:11px;letter-spacing:.18em}
+  .pf-hin{flex-direction:column-reverse;align-items:flex-start;gap:16px;padding:70px 18px 64px}
+  #pf#pf .pf-name{font-size:34px}
+  #pf#pf .pf-cat{font-size:12px}
+  .pf-logo{height:96px;min-width:96px;max-width:230px;transform:none;padding:10px}
+  #pf#pf .pf-logo img{max-height:76px!important;max-width:210px!important}
+  .pf-credit{bottom:48px}
+  .pf-bar{margin:-32px 10px 0;position:sticky;bottom:8px}
+}
