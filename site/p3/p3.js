@@ -79,9 +79,7 @@ if(isResults){
   mem.forEach(function(e){e.style.display='none'});
   $$('.feature_results_header,.post-search-result-count-container,.member-search-result-count-container,.member-search-result-filters,.views,.sort-members-select').forEach(function(e){if(!root.contains(e))e.style.display='none'});
   if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none';
-  var vs=document.querySelector('script[src*="weekender/vipads.js"]');   /* VIP art = their rotator banner ad when they have one */
-  if(vs){var vb=vs.src.replace(/vipads\.js.*$/,'');fetch(vb+'banners.json').then(function(r){return r.json()}).then(function(L){var m={};L.forEach(function(x){if(!m[x.id])m[x.id]=vb+x.img});
-    $$('.p3-vart',root).forEach(function(a){var u=m[a.getAttribute('data-uid')];if(u){a.classList.add('has-ad');a.innerHTML='<img src="'+u+'" alt="" loading="lazy">'}})}).catch(function(){})}
+  /* VIP cards use the listing's own logo/photo, never the banner ads (owner request 9/26) */
 }
 
 /* ---------- CATEGORIES ---------- */
