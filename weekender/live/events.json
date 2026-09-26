@@ -1,0 +1,1446 @@
+{
+"updated": "2026-09-26T12:49:21.231994+00:00",
+"counts": {
+"Village of Port Jefferson": 222,
+"Emma S. Clark Library": 219,
+"Stony Brook Village Center": 16,
+"Long Island Museum": 32,
+"Ward Melville Heritage Org": 5
+},
+"icons": {
+"kids": "&#129490;",
+"music": "&#127928;",
+"history": "&#128373;&#65039;",
+"food": "&#127822;",
+"stage": "&#127917;",
+"outdoor": "&#127795;",
+"arts": "&#127912;",
+"free": "&#127903;&#65039;"
+},
+"events": [
+{
+"id": "emmaclark-america-250-historical-gravestones-cleaning-59546",
+"title": "America 250: Historical Gravestones Cleaning",
+"start": "2026-09-26T10:00:00",
+"end": "2026-09-26T12:30:00",
+"allday": false,
+"venue": "Off site (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/america-250-historical-gravestones-cleaning-59546",
+"desc": "This program is taking place offsite, not in the Library. If minors are attending the program, a parent/guardian who is 18 years old or older must stay with the minor at all times. Minors are not allowed to be dropped off at offsite programs without a parent/g",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"history"
+],
+"status": ""
+},
+{
+"id": "emmaclark-community-shred-day-58111",
+"title": "Community Shred Day",
+"start": "2026-09-26T10:00:00",
+"end": "2026-09-26T14:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/community-shred-day-58111",
+"desc": "Library Parking Lot Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Please do not line up early, as it blocks traffic into and out of the Library. *This event has been canc",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-youre-charge-grades-pre-k-2-w-caregiver-58796",
+"title": "You're in Charge! (Grades Pre-K-2 w/ caregiver)",
+"start": "2026-09-26T10:30:00",
+"end": "2026-09-26T11:15:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/youre-charge-grades-pre-k-2-w-caregiver-58796",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Workshops & Training, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "lim-3225801",
+"title": "Blue Star Welcome Week 2026 for Military Families",
+"start": "2026-09-26T12:00:00",
+"end": "2026-10-04T17:00:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/blue-star-welcome-week-2026/",
+"desc": "The Long Island Museum is proud to partner with Blue Star Museums , offering free museum admission to active and retired military personnel and their family all year long. During Blue Star Welcome Week 2026 (September 26–October 4, 2026), we extend our Museum ",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/Blue-Star-Welcome-Week.jpg",
+"src": "lim",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "portjeff-1093",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-09-27T00:00:00",
+"end": "2026-09-27T00:00:00",
+"allday": true,
+"venue": "Port Jefferson",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+"desc": "https://www.portjeffny.gov/calendar.aspx?EID=1093",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "Canceled"
+},
+{
+"id": "emmaclark-tote-bags-library-drives-59547",
+"title": "Tote Bags for Library Drives",
+"start": "2026-09-27T11:00:00",
+"end": "2026-09-27T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tote-bags-library-drives-59547",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "emmaclark-mermaid-hairbrushes-people-need-59548",
+"title": "Mermaid Hairbrushes for People in Need",
+"start": "2026-09-27T15:00:00",
+"end": "2026-09-27T16:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/mermaid-hairbrushes-people-need-59548",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "lim-3225616",
+"title": "Carriage House Salon Series: Songs of the Gilded Age for Violin and Piano",
+"start": "2026-09-27T15:00:00",
+"end": "2026-09-27T16:15:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/gilded-age-songs/",
+"desc": "A new collaboration between Long Island Museum and Long Island Chamber Music, the series aims to embrace the early American tradition of intimate living room salons of the Gilded Age. The Carriage House Salon Series pairs world-class chamber music inside Long ",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Carriage-House-Salon-Series.jpg",
+"src": "lim",
+"tags": [
+"music",
+"history"
+],
+"status": ""
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58872",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-09-28T10:30:00",
+"end": "2026-09-28T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58872",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Themed activities that you and your child can enjoy together. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/12/2026 @ 10:30am Categories: Story Time, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-58882",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-09-28T11:30:00",
+"end": "2026-09-28T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58882",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun and meet some new friends. This storytime is geared to give the childrena little independence. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/12/2026 @ 11:",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "emmaclark-cooking-chef-rob-falling-greek-food-58112",
+"title": "Cooking with Chef Rob: Falling for Greek Food",
+"start": "2026-09-28T15:00:00",
+"end": "2026-09-28T16:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/cooking-chef-rob-falling-greek-food-58112",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Please review the program description for any potential allergies before signing yourself or a loved one up for this program. Children may not be left unattended. Parents or caregivers must remai",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"food"
+],
+"status": ""
+},
+{
+"id": "emmaclark-pokemon-club-grades-2-5-58555",
+"title": "Pokémon Club (Grades 2-5)",
+"start": "2026-09-28T17:00:00",
+"end": "2026-09-28T18:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/pokemon-club-grades-2-5-58555",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Other, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-editing-made-easy-imovie-38541",
+"title": "Editing Made Easy with iMovie [ZOOM]",
+"start": "2026-09-28T18:30:00",
+"end": "2026-09-28T20:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/editing-made-easy-imovie-38541",
+"desc": "Virtual Programming Registration is required. Registration starts: 09/14/2026 @ 9:30am Registration end: 09/28/2026 @ 6:29pm Learn how to use Apple’s iMovie program on your Mac. Students will learn basics of recording a movie, how to edit, add sound clips, add",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"stage"
+],
+"status": ""
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58877",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-09-29T10:30:00",
+"end": "2026-09-29T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58877",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Themed activities that you and your child can enjoy together. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 09/15/2026 @ 10:30am Categories: Story Time, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-58887",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-09-29T13:15:00",
+"end": "2026-09-29T13:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58887",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun and meet some new friends. This storytime is geared to give the childrena little independence. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/13/2026 @ 1:1",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-culper-spy-day-101-what-know-you-go-58114",
+"title": "Culper Spy Day 101: What to Know Before You Go",
+"start": "2026-09-29T19:00:00",
+"end": "2026-09-29T20:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/culper-spy-day-101-what-know-you-go-58114",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply sup",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"history"
+],
+"status": ""
+},
+{
+"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58892",
+"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
+"start": "2026-09-30T09:30:00",
+"end": "2026-09-30T10:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58892",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/14/2026 @ 9:30am Categories: Mommy & Me, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"stage"
+],
+"status": ""
+},
+{
+"id": "emmaclark-philosophy-through-literature-discussion-58115",
+"title": "Philosophy Through Literature Discussion",
+"start": "2026-09-30T15:00:00",
+"end": "2026-09-30T16:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/philosophy-through-literature-discussion-58115",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 08/24/2026 @ 9:30am Registration end: 09/30",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"stage"
+],
+"status": ""
+},
+{
+"id": "emmaclark-sweet-treats-our-heroes-community-service-project-grades-3-5-58120",
+"title": "Sweet Treats for Our Heroes Community Service Project (Grades 3-5)",
+"start": "2026-09-30T16:30:00",
+"end": "2026-09-30T17:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/sweet-treats-our-heroes-community-service-project-grades-3-5-58120",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Community Service, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-knit-cause-59655",
+"title": "Knit for a Cause",
+"start": "2026-09-30T17:30:00",
+"end": "2026-09-30T18:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/knit-cause-59655",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "emmaclark-ai-basics-introduction-artificial-intelligence-60457",
+"title": "AI Basics: An Introduction to Artificial Intelligence",
+"start": "2026-09-30T19:00:00",
+"end": "2026-09-30T20:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/ai-basics-introduction-artificial-intelligence-60457",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 08/24/2026 @ 9:30am Registration end: 10/17",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58902",
+"title": "Parent Toddler Workshop (18m - 3.5 yrs w/ caregiver)",
+"start": "2026-10-01T09:30:00",
+"end": "2026-10-01T10:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-18m-35-yrs-w-caregiver-58902",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/15/2026 @ 9:30am Categories: Mommy & Me, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"stage"
+],
+"status": ""
+},
+{
+"id": "emmaclark-library-walking-club-61171",
+"title": "Library Walking Club",
+"start": "2026-10-01T10:00:00",
+"end": "2026-10-01T11:15:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/library-walking-club-61171",
+"desc": "Library Front Lawn Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"outdoor"
+],
+"status": ""
+},
+{
+"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58907",
+"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
+"start": "2026-10-01T11:00:00",
+"end": "2026-10-01T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58907",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/15/2026 @ 11:00am Categories: Mommy & Me, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"stage"
+],
+"status": ""
+},
+{
+"id": "emmaclark-social-work-intern-appointments-58746",
+"title": "Social Work Intern Appointments",
+"start": "2026-10-01T14:00:00",
+"end": "2026-10-01T19:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58746",
+"desc": "Small Study Room Emma S. Clark Memorial Library Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical So",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-sailing-through-stressful-times-58122",
+"title": "Sailing Through Stressful Times",
+"start": "2026-10-01T19:00:00",
+"end": "2026-10-01T20:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/sailing-through-stressful-times-58122",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode number from your local library card to register. Children may not be left unattended. Par",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"stage"
+],
+"status": ""
+},
+{
+"id": "emmaclark-game-day-38288",
+"title": "Game Day",
+"start": "2026-10-02T10:00:00",
+"end": "2026-10-02T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/game-day-38288",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library We provide the space, tables and chairs. You bring your friends and a favorite board or card game to play. No registration required. Children may not be left unattended. Parents or caregivers mus",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"stage"
+],
+"status": ""
+},
+{
+"id": "cur-stitch",
+"title": "Stitch & Chit-Chat",
+"start": "2026-10-02T14:00",
+"end": "2026-10-02T15:30",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook",
+"url": "https://longislandmuseum.org/",
+"desc": "Bring whatever you're knitting, crocheting or stitching and settle in with other makers at the museum.",
+"img": "",
+"src": "3vl",
+"tags": [
+"free",
+"arts"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "emmaclark-knit-crochet-chat-58175",
+"title": "Knit, Crochet, & Chat",
+"start": "2026-10-02T14:00:00",
+"end": "2026-10-02T16:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/knit-crochet-chat-58175",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Please review the program description for materials required for participation in this program. Children may not be left unattended. Parents or caregivers must remain with their children at all t",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "lim-10000256",
+"title": "Stitch & Chit-Ch(at) – FREE!",
+"start": "2026-10-02T14:00:00",
+"end": "2026-10-02T15:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/stitch/2026-10-02/",
+"desc": "Whether you knit, crochet, embroider, or hand-sew, gather at the LIM to do what you love. Bring your work-in-progress and enjoy some good company. Open to adults and children 12 and up. This program will take place in the Studio located on the East side of cam",
+"img": "https://longislandmuseum.org/wp-content/uploads/2025/12/Stitch-and-Chit-Chat.jpg",
+"src": "lim",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "cur-tvfm",
+"title": "Three Village Farmers & Artisans Market",
+"start": "2026-10-02T15:00",
+"end": "2026-10-02T18:00",
+"allday": false,
+"venue": "Three Village Historical Society",
+"addr": "93 N. Country Rd, East Setauket",
+"url": "https://www.tvhs.org/farmers-market",
+"desc": "40-plus farmers, bakers and makers on the historical society lawn. Fall hours now, so it wraps at 6.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/tvfm-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"outdoor",
+"food"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "emmaclark-oreolympics-grades-k-5-58797",
+"title": "Oreolympics (Grades K-5)",
+"start": "2026-10-02T16:45:00",
+"end": "2026-10-02T17:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/oreolympics-grades-k-5-58797",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Games, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-candy-land-training-creations-night-59550",
+"title": "Candy Land Training & Creations Night",
+"start": "2026-10-02T18:00:00",
+"end": "2026-10-02T20:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/candy-land-training-creations-night-59550",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "cur-scarecrow",
+"title": "Scarecrow Competition Opens",
+"start": "2026-10-03T10:00",
+"end": "2026-10-03T18:00",
+"allday": false,
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook",
+"url": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/",
+"desc": "The 36th annual scarecrows take over Stony Brook Village. Grab a ballot in any shop and vote for your favorite through Oct. 25.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/scarecrow-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"outdoor",
+"kids"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "cur-brewster",
+"title": "Brewster House Spy Tours",
+"start": "2026-10-03T10:00",
+"end": "2026-10-03T16:00",
+"allday": false,
+"venue": "Brewster House",
+"addr": "18 Runs Rd, East Setauket",
+"url": "https://wmho.org/events-2/",
+"desc": "Tour the oldest house in Brookhaven (c. 1665), once a tavern that served British troops while a Culper spy's cousin lived down the road. Suffolk 250 passport stamp stop.",
+"img": "",
+"src": "3vl",
+"tags": [
+"history",
+"kids"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "cur-patriots",
+"title": "Patriots Rock Living History",
+"start": "2026-10-03T10:00",
+"end": "2026-10-03T15:00",
+"allday": false,
+"venue": "Patriots Rock",
+"addr": "97 Main St, East Setauket",
+"url": "https://www.tvhs.org/culper-spy-day",
+"desc": "Blacksmithing, talks about the 1777 Battle of Setauket, live music, a trading post, and McNulty's ice cream truck.",
+"img": "",
+"src": "3vl",
+"tags": [
+"free",
+"outdoor",
+"kids"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "cur-spyday",
+"title": "Culper Spy Day",
+"start": "2026-10-03T10:00",
+"end": "2026-10-03T16:00",
+"allday": false,
+"venue": "Three Village Historical Society",
+"addr": "93 N. Country Rd, East Setauket",
+"url": "https://www.tvhs.org/culper-spy-day",
+"desc": "The 12th annual celebration of Washington's spy ring, right where it happened. George Washington raises the flag at 10, then it's musket drills, invisible ink, a spy musical, an encampment, and a free hop-on trolley to 10 historic sites.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/spyday-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"outdoor",
+"kids"
+],
+"status": "",
+"pick": true
+},
+{
+"id": "emmaclark-history-emma-s-clark-memorial-library-walking-tour-58126",
+"title": "The History of Emma S. Clark Memorial Library Walking Tour",
+"start": "2026-10-03T10:30:00",
+"end": "2026-10-03T11:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/history-emma-s-clark-memorial-library-walking-tour-58126",
+"desc": "Library Front Lawn Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Discover the fascinating backstory of Suffolk County's oldest continuously operating library and the gem ",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"history"
+],
+"status": ""
+},
+{
+"id": "cur-tory",
+"title": "Big Bill the Tory",
+"start": "2026-10-03T11:00",
+"end": "2026-10-03T15:00",
+"allday": false,
+"venue": "Sherwood-Jayne Farm",
+"addr": "55 Old Post Rd, East Setauket",
+"url": "https://www.tvhs.org/culper-spy-day",
+"desc": "Hear the Loyalist side of the story from William Jayne III, who has some thoughts about Washington's pesky band of spies.",
+"img": "",
+"src": "3vl",
+"tags": [
+"history",
+"kids"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "portjeff-1136",
+"title": "12th Annual Culper Spy Day",
+"start": "2026-10-03T11:00:00",
+"end": "2026-10-03T16:00:00",
+"allday": false,
+"venue": "Port Jefferson",
+"addr": "Three Village Historical Society 93 N. Country Road East Setauket, NY 11733 - Port Jefferson NY 11777",
+"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+"desc": "https://www.portjeffny.gov/calendar.aspx?EID=1136",
+"img": "",
+"src": "portjeff",
+"tags": [
+"history"
+],
+"status": ""
+},
+{
+"id": "cur-blues",
+"title": "Cedar Beach Blues on the Harbor",
+"start": "2026-10-03T11:30",
+"end": "2026-10-03T18:00",
+"allday": false,
+"venue": "Harborfront Park",
+"addr": "101 E. Broadway, Port Jefferson",
+"url": "https://www.gpjac.org/general-6",
+"desc": "36 years strong and pushed back a week by the nor'easter. Two stages of New York blues on the waterfront. Bring a chair. If it rains, it moves into the Port Jefferson Village Center.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/blues-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"outdoor",
+"music"
+],
+"status": "",
+"pick": true
+},
+{
+"id": "cur-limspy",
+"title": "Free Day at the Long Island Museum",
+"start": "2026-10-03T12:00",
+"end": "2026-10-03T17:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook",
+"url": "https://longislandmuseum.org/",
+"desc": "Free admission for Spy Day. See the only known surviving letter between Tallmadge and Culper Jr., plus a Battle of Long Island talk with Bill Bleyer from 1 to 2:30.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/lim-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"history",
+"kids"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "cur-emmalawn",
+"title": "Spy Day on the Library Lawn",
+"start": "2026-10-03T12:00",
+"end": "2026-10-03T16:00",
+"allday": false,
+"venue": "Emma S. Clark Library",
+"addr": "120 Main St, Setauket",
+"url": "https://www.emmaclark.org/culperspyday/",
+"desc": "Revolutionary tunes live from 12 to 2, kids' games and a spy-themed craft until 4, free popcorn, and library history tours.",
+"img": "",
+"src": "3vl",
+"tags": [
+"free",
+"kids",
+"music"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "emmaclark-fairchild-becherer-music-american-colonial-period-58124",
+"title": "Fairchild & Becherer: Music of the American Colonial Period",
+"start": "2026-10-03T12:00:00",
+"end": "2026-10-03T14:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/fairchild-becherer-music-american-colonial-period-58124",
+"desc": "Library Front Lawn Emma S. Clark Memorial Library This is an outdoor program. In the case of inclement weather, the program will either be rescheduled or moved indoors to the Emma S. Clark Library's Community Room. Review event description for program-specific",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"music"
+],
+"status": ""
+},
+{
+"id": "emmaclark-monster-week-tabletop-rpg-61435",
+"title": "Monster of the Week: A Tabletop RPG",
+"start": "2026-10-03T12:00:00",
+"end": "2026-10-03T14:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-61435",
+"desc": "Board Room Emma S. Clark Memorial Library Please review the program description for any potential allergies before signing yourself or a loved one up for this program. Categories: Games, Teens & Tweens.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "lim-3225658",
+"title": "Culper Spy Day – FREE!",
+"start": "2026-10-03T12:00:00",
+"end": "2026-10-03T17:00:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/culper-spy-day-2026/",
+"desc": "Stop by during the Three Village Historical Society and Tri-Spy Tour’s 12th Annual Culper Spy Day, celebrating the rich Revolutionary heritage of our area. Explore LIM’s The Seat of Action: Long Island in the American Revolution and Beyond exhibition and view ",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Seat-of-Action.jpg",
+"src": "lim",
+"tags": [
+"free",
+"history",
+"arts"
+],
+"status": ""
+},
+{
+"id": "wmho-1191",
+"title": "Culper Spy Day Tours at The Brewster House",
+"start": "2026-10-03T12:00:00",
+"end": "2026-10-03T16:00:00",
+"allday": false,
+"venue": "Brewster House",
+"addr": "18 Runs Rd, East Setauket, NY 11733",
+"url": "https://wmho.org/event/li-250-event-at-the-brewster-house/",
+"desc": "Experience history firsthand with the Ward Melville Heritage Organization during special tours of The Brewster House (c.1665). Saturday, October 3rd, 2026 from 12pm-4pm. $5 admission. For additional information, please call 631-751-2244. This location is an of",
+"img": "",
+"src": "wmho",
+"tags": [
+"history"
+],
+"status": ""
+},
+{
+"id": "lim-3223856",
+"title": "Hawkins-Mount House Tours | LI250",
+"start": "2026-10-03T12:30:00",
+"end": "2026-10-03T16:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/hawkins-mount-house-tours-li250-3/",
+"desc": "As part of LIM’s America at 250 programming, join us for special tours of the historic Hawkins-Mount House! American genre painter William Sidney Mount created some of his most memorable scenes from inside an attic studio at this large, rambling 18th-century h",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/01/Mount-house-Tour-event-image.jpg",
+"src": "lim",
+"tags": [
+"history",
+"arts"
+],
+"status": ""
+},
+{
+"id": "lim-3225654",
+"title": "Long Island During the American Revolution – FREE Lecture",
+"start": "2026-10-03T13:00:00",
+"end": "2026-10-03T14:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/revolution-talk/",
+"desc": "Join former Newsday staff writer and local history author Bill Bleyer as he traces the captivating history of the events surrounding the largest engagement of the American Revolution—the 1776 Battle of Long Island, a major defeat for the colonists that could h",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Battle-of-Long-Island.jpg",
+"src": "lim",
+"tags": [
+"free",
+"history",
+"stage"
+],
+"status": ""
+},
+{
+"id": "cur-treason",
+"title": "Treason's Trial: A Culper Spy Story",
+"start": "2026-10-03T14:30",
+"end": "2026-10-03T16:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://theatrethree.com/special_events/treasons-trial/",
+"desc": "World premiere of a brand-new play with music about how Washington's spy ring was born, set in the powder keg of May 1776. Two shows only, 2:30 and 4:30.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/treason-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"history",
+"stage"
+],
+"status": "",
+"pick": true
+},
+{
+"id": "emmaclark-copy-welcome-teen-tween-services-department-59535",
+"title": "DATE CHANGE: Welcome to the Teen & Tween Services Department!",
+"start": "2026-10-03T14:30:00",
+"end": "2026-10-03T16:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/copy-welcome-teen-tween-services-department-59535",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Community Service, Educational Lecture, Teens & Tweens.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"stage"
+],
+"status": ""
+},
+{
+"id": "cur-symphony",
+"title": "Stony Brook Symphony Orchestra",
+"start": "2026-10-03T19:30",
+"end": "2026-10-03T21:30",
+"allday": false,
+"venue": "Staller Center, Main Stage",
+"addr": "100 Nicolls Rd, Stony Brook",
+"url": "https://www.stallercenter.com/",
+"desc": "Season opener: Anna Clyne, Stravinsky's Violin Concerto with Hyun Ji Lee, and Dvorak's 8th. Pre-concert talk at 6:30.",
+"img": "",
+"src": "3vl",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "cur-pjfm",
+"title": "Port Jefferson Farmers Market",
+"start": "2026-10-04T09:00",
+"end": "2026-10-04T14:00",
+"allday": false,
+"venue": "Harborfront Park",
+"addr": "101 E. Broadway, Port Jefferson",
+"url": "https://www.portjeffny.gov/",
+"desc": "Sunday market on the harbor. Back after last week's storm cancellation.",
+"img": "",
+"src": "3vl",
+"tags": [
+"free",
+"outdoor",
+"food"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "portjeff-1094",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-10-04T09:00:00",
+"end": "2026-10-04T14:00:00",
+"allday": false,
+"venue": "Port Jefferson",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
+"desc": "https://www.portjeffny.gov/calendar.aspx?EID=1094",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": ""
+},
+{
+"id": "cur-founding",
+"title": "Founding Families Exhibit",
+"start": "2026-10-04T12:00",
+"end": "2026-10-04T16:00",
+"allday": false,
+"venue": "Three Village Historical Society",
+"addr": "93 N. Country Rd, East Setauket",
+"url": "https://www.tvhs.org/culper-spy-day",
+"desc": "A new exhibit at the historical society. Visited the SPIES! exhibit on Saturday? You get in free.",
+"img": "",
+"src": "3vl",
+"tags": [
+"history"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "cur-limsun",
+"title": "Free Sunday at the Long Island Museum",
+"start": "2026-10-04T12:00",
+"end": "2026-10-04T17:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook",
+"url": "https://www.tvhs.org/culper-spy-day",
+"desc": "Show your Culper Spy Day selfie for free admission. Carriage museum scavenger hunt for the kids.",
+"img": "",
+"src": "3vl",
+"tags": [
+"free",
+"history",
+"kids"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "cur-gristmill",
+"title": "Stony Brook Grist Mill Tours",
+"start": "2026-10-04T13:00",
+"end": "2026-10-04T16:00",
+"allday": false,
+"venue": "Stony Brook Grist Mill",
+"addr": "100 Harbor Rd, Stony Brook",
+"url": "https://wmho.org/",
+"desc": "One of the last Sundays of the season to see the working mill and its country store.",
+"img": "",
+"src": "3vl",
+"tags": [
+"history",
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "cur-limehof",
+"title": "Marian Mastrorilli Live",
+"start": "2026-10-04T15:00",
+"end": "2026-10-04T16:00",
+"allday": false,
+"venue": "LI Music & Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook",
+"url": "https://stonybrookvillage.com/events/",
+"desc": "\"Folk that rocks\" from the Huntington singer-songwriter, with Glenn Govier, at the Long Island Music and Entertainment Hall of Fame.",
+"img": "",
+"src": "3vl",
+"tags": [
+"music"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "sbv-2369",
+"title": "Live Performance by by Marian Mastrorilli with Glenn Govier at the Long Island Music and Entertainment Hall of Fame",
+"start": "2026-10-04T15:00:00",
+"end": "2026-10-04T16:00:00",
+"allday": false,
+"venue": "The Long Island Music and Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/live-performance-by-by-marian-mastrorilli-with-glenn-govier-at-the-long-island-music-and-entertainment-hall-of-fame/",
+"desc": "Marian Mastrorilli has been writing and performing “folk that rocks!” in the NY area since her late 20’s. After claiming Huntington as a new hometown in 2018, she’s been making headway in Long Island’s acoustic community. Her latest CD Sea Salt and Sawdust, re",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/09/M-happy-wguitar-GDG-e1790173104496.jpeg",
+"src": "sbv",
+"tags": [
+"music"
+],
+"status": ""
+},
+{
+"id": "emmaclark-behind-post-59552",
+"title": "Behind the Post",
+"start": "2026-10-04T15:30:00",
+"end": "2026-10-04T16:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/behind-post-59552",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Community Service, Educational Lecture, Technology Class, Teens & Tweens.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"stage"
+],
+"status": ""
+},
+{
+"id": "lim-3225641",
+"title": "Sunday Street Concert Series: Rory Block",
+"start": "2026-10-04T17:00:00",
+"end": "2026-10-04T18:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/rory-block/",
+"desc": "Due to an unexpected injury, this performance has been postponed indefinitely. We hope to reschedule soon. Please stay tuned! The Long Island Museum, Port Jefferson Arts Council, and WUSB-FM are proud to present an eclectic music series featuring nationally an",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Rory-Block-Cover.jpg",
+"src": "lim",
+"tags": [
+"music",
+"stage",
+"arts"
+],
+"status": ""
+},
+{
+"id": "cur-sedaris",
+"title": "An Evening with David Sedaris",
+"start": "2026-10-04T19:00",
+"end": "2026-10-04T21:00",
+"allday": false,
+"venue": "Staller Center, Main Stage",
+"addr": "100 Nicolls Rd, Stony Brook",
+"url": "https://stallercenter.showare.com/eventperformances.asp?evt=463",
+"desc": "The humorist brings new stories and his famous Q&A to the Staller Main Stage.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/sedaris-720.webp",
+"src": "3vl",
+"tags": [
+"stage"
+],
+"status": "",
+"pick": false
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58873",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-10-05T10:30:00",
+"end": "2026-10-05T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58873",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Themed activities that you and your child can enjoy together. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/12/2026 @ 10:30am Categories: Story Time, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-58883",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-10-05T11:30:00",
+"end": "2026-10-05T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58883",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun and meet some new friends. This storytime is geared to give the childrena little independence. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/12/2026 @ 11:",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "emmaclark-spooky-spider-seashell-art-58127",
+"title": "Spooky Spider Seashell Art",
+"start": "2026-10-05T15:30:00",
+"end": "2026-10-05T17:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/spooky-spider-seashell-art-58127",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 09/14/2026 @ 9:30am Registration end: 10/05",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "emmaclark-after-school-story-time-grades-k-2-59001",
+"title": "After-School Story Time (Grades K-2)",
+"start": "2026-10-05T16:45:00",
+"end": "2026-10-05T17:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/after-school-story-time-grades-k-2-59001",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun listening to stories, creating crafts, and making new friends. Registration is required. Registration starts: 09/21/2026 @ 9:30am Registration end: 09/21/2026 @ 4:30pm Categories: Story Time, Chil",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "emmaclark-smartphone-secrets-38569",
+"title": "Smartphone Secrets: Unlocking the Power in Your Pocket [ZOOM]",
+"start": "2026-10-05T18:30:00",
+"end": "2026-10-05T20:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/smartphone-secrets-38569",
+"desc": "Virtual Programming Your Android and iPhone can do so much more than call and text. Learn how to customize your settings, download and manage apps, and explore accessibility features that make life easier. Whether you’re brand new to smartphones or just want t",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free"
+],
+"status": ""
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58878",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-10-06T10:30:00",
+"end": "2026-10-06T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58878",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Themed activities that you and your child can enjoy together. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 09/15/2026 @ 10:30am Categories: Story Time, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-58888",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-10-06T13:15:00",
+"end": "2026-10-06T13:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58888",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun and meet some new friends. This storytime is geared to give the childrena little independence. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/13/2026 @ 1:1",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-celebrating-100-years-laughter-mel-brooks-58129",
+"title": "Celebrating 100 Years of Laughter with Mel Brooks",
+"start": "2026-10-06T14:00:00",
+"end": "2026-10-06T15:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/celebrating-100-years-laughter-mel-brooks-58129",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode number from your local library card to register. Children may not be left unattended. Par",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"history"
+],
+"status": ""
+},
+{
+"id": "emmaclark-cricut-t-shirt-lottery-43470",
+"title": "Cricut: T-Shirt [LOTTERY]",
+"start": "2026-10-06T14:00:00",
+"end": "2026-10-06T16:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/cricut-t-shirt-lottery-43470",
+"desc": "Technology Center Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. THIS IS A LOTTERY PROGRAM. Upon registration, your name will be added to a waitlist pool from which indivi",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "emmaclark-tutus-tots-59554",
+"title": "Tutus for Tots",
+"start": "2026-10-06T17:00:00",
+"end": "2026-10-06T18:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tutus-tots-59554",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
+"id": "emmaclark-ai-basics-introduction-artificial-intelligence-60458",
+"title": "AI Basics: An Introduction to Artificial Intelligence",
+"start": "2026-10-06T19:00:00",
+"end": "2026-10-06T20:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/ai-basics-introduction-artificial-intelligence-60458",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 08/24/2026 @ 9:30am Registration end: 10/23",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+}
+],
+"closings": [
+{
+"title": "Culper Spy 5K Run/Walk",
+"date": "2026-09-27",
+"status": "Canceled",
+"note": "Will not be rescheduled"
+},
+{
+"title": "Port Jefferson Ferry",
+"date": "2026-09-26",
+"status": "Suspended",
+"note": "No boats Sat. Back late Sun morning"
+},
+{
+"title": "Gallery North Outdoor Art Show",
+"date": "2026-09-26",
+"status": "Canceled",
+"note": "Sat & Sun. No rain date"
+},
+{
+"title": "Port Jefferson Farmers Market",
+"date": "2026-09-27",
+"status": "Canceled",
+"note": "Harborfront Park"
+},
+{
+"title": "Port Jeff Country Music Festival",
+"date": "2026-09-26",
+"status": "Canceled",
+"note": "Due to the storm"
+},
+{
+"title": "Setauket Harbor Day",
+"date": "2026-09-27",
+"status": "Canceled",
+"note": "Brookhaven Town Dock"
+},
+{
+"title": "CommUniversity Day",
+"date": "2026-09-26",
+"status": "Canceled",
+"note": "Stony Brook University"
+},
+{
+"title": "Blues on the Harbor",
+"date": "2026-09-27",
+"status": "Postponed",
+"note": "Now Sat, Oct 3"
+},
+{
+"title": "Port Jefferson Hill Climb",
+"date": "2026-09-26",
+"status": "Postponed",
+"note": "Now Sat, Oct 10"
+}
+]
+}

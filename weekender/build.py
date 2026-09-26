@@ -120,8 +120,8 @@ def build(edition, local=False, sha="master"):
     w('<link rel="preload" as="image" href="%s" media="(max-width:720px)">' % img(d["hero"]["img"], True))
     ver = ("?v=%d" % int(__import__("time").time())) if local else ""
     w('<link rel="stylesheet" href="%sweekender.css%s">' % (base, ver))
-    w('<div class="wk" id="wk-top" data-start="%s" data-end="%s" data-assets="%s" data-edition="%s" data-feed="%s">' % (
-        d["starts"], d["ends"], esc(base), edition, esc(feed_url)))
+    w('<div class="wk" id="wk-top" data-start="%s" data-end="%s" data-assets="%s" data-edition="%s" data-feed="%s"%s>' % (
+        d["starts"], d["ends"], esc(base), edition, esc(feed_url), (' data-live="%slive/events.json"' % base) if local else ""))
 
     # HERO: compact live intro for Three Village Now
     w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="" width="1600" height="1067"></picture>'
