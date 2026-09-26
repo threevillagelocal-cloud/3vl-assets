@@ -66,7 +66,7 @@ if(isResults){
       '<div class="p3-vacts">'+(tel?'<a class="p3-call p3-callbig" data-act="call" href="tel:'+t+'">&#128222; '+tel+'</a><a class="p3-text" data-act="text" href="sms:'+t+'">&#128172; Text</a>':'')+
       '<a data-act="directions" href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Directions</a>'+
       '<button type="button" class="p3-vcf" data-act="save_contact" title="Save to your phone contacts">&#128100; Save</button>'+
-      '<button type="button" class="p3-more-btn" data-act="more" aria-expanded="false">More about us <span>&#9662;</span></button></div></div>'+
+      '<button type="button" class="p3-more-btn" data-act="more" aria-expanded="false" title="More about this business">More <span>&#9662;</span></button></div></div>'+
       '<aside class="p3-vside" data-uid="'+esc(b.uid)+'" data-u="'+esc(b.u)+'"></aside></div><div class="p3-vmore" hidden></div></div>'}
   function card(b,i){var tel=fmtTel(b.tel);
     return '<div class="p3-rcard" style="--i:'+i+'"><a class="p3-rtop" href="'+esc(b.u)+'"><img src="'+esc(b.img)+'" alt="" loading="lazy"><div><b>'+esc(b.n)+'</b><small>&#128205; '+esc(b.town||'Three Village')+'</small></div></a>'+
