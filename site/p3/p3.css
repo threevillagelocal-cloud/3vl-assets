@@ -310,3 +310,15 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-vspecs span{white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 #p3#p3 .p3-vlinks{margin-top:6px!important}
 #p3#p3 .p3-vcard.has-side .p3-vside{gap:7px}
+/* VIP cards v7: tighter */
+@media(min-width:761px){
+  #p3#p3 a.p3-vname{font-size:20px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:unset}
+  #p3#p3 .p3-vbody{padding:12px 20px 12px;gap:3px}
+  #p3#p3 .p3-vribbon{margin-bottom:2px}
+  #p3#p3 .p3-vd{font-size:13.5px;line-height:1.4}
+  #p3#p3 .p3-vacts{margin-top:6px}
+  #p3#p3 .p3-vart{padding:12px}
+  #p3#p3 .p3-vart img{max-height:156px!important}
+  #p3#p3 .p3-vart.is-logo img{max-height:120px!important}
+  #p3#p3 .p3-vcard.has-side .p3-vside{padding:12px 18px 12px}
+}
