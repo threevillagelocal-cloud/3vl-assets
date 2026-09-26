@@ -285,3 +285,4 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
   #p3#p3 .p3-vspecs{min-height:24px}
   #p3#p3 .p3-vcred{min-height:1.4em}
 }
+@media(min-width:761px){#p3#p3 .p3-vcard,#p3#p3 .p3-vcard.has-side{min-height:0}}

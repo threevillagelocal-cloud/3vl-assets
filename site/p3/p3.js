@@ -102,6 +102,12 @@ if(isResults){
     var b=vips[+w.getAttribute('data-i')],act=a.getAttribute('data-act');track(act,w);
     if(act==='save_contact'){e.preventDefault();vcf(b)}
     if(act==='more'){e.preventDefault();var p=w.querySelector('.p3-vmore'),open=p.hidden;if(open&&!p.innerHTML)more(w,b);p.hidden=!open;a.setAttribute('aria-expanded',open?'true':'false');w.classList.toggle('is-open',open)}});
+
+  /* all VIP cards share the tallest card's height (desktop); re-run on resize/zoom and when panels/logos load */
+  function equal(){var cs=$$('.p3-vcard',root);cs.forEach(function(c){c.style.minHeight=''});if(window.innerWidth<761)return;
+    var m=0;cs.forEach(function(c){m=Math.max(m,c.getBoundingClientRect().height)});cs.forEach(function(c){c.style.minHeight=Math.ceil(m)+'px'})}
+  var eqT;function eqSoon(){clearTimeout(eqT);eqT=setTimeout(equal,120)}
+  window.addEventListener('resize',eqSoon);$$('.p3-vcard img',root).forEach(function(i){i.addEventListener('load',eqSoon)});setTimeout(equal,300);setTimeout(equal,1500);
   /* VIP cards use the listing's own logo/photo, never the banner ads (owner request 9/26) */
   /* VIP value panel: public listing details (verified, neighbor reviews, years, specialties, credentials, links) */
   function yrs(y){var n=new Date().getFullYear()-(+y);return n>0?n:0}
@@ -117,7 +123,7 @@ if(isResults){
     h+='<div class="p3-vlinks">'+L.join('')+'</div>';return h}
   var META={};
   fetch(BASE+'vip_meta.json').then(function(r){return r.json()}).then(function(M){META=M;
-    $$('.p3-vside',root).forEach(function(a){var m=M[a.getAttribute('data-uid')];if(m){a.innerHTML=side(m,a.getAttribute('data-u'));a.parentNode.classList.add('has-side')}})}).catch(function(){});
+    $$('.p3-vside',root).forEach(function(a){var m=M[a.getAttribute('data-uid')];if(m){a.innerHTML=side(m,a.getAttribute('data-u'));a.parentNode.classList.add('has-side')}});eqSoon()}).catch(function(){});
   /* trim the white margin baked into many logo files so the logo fills its box */
   function trim(img){try{var w=img.naturalWidth,h=img.naturalHeight;if(!w||!h)return;var c=document.createElement('canvas'),k=Math.min(1,600/Math.max(w,h));c.width=Math.round(w*k);c.height=Math.round(h*k);
       var x=c.getContext('2d');x.drawImage(img,0,0,c.width,c.height);var d=x.getImageData(0,0,c.width,c.height).data,W=c.width,H=c.height,t=H,l=W,r=0,b=0;
