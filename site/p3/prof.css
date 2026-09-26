@@ -107,3 +107,5 @@ html.pf-on .member_profile .breadcrumb{display:none}
   .pf-credit{bottom:48px}
   .pf-bar{margin:-32px 10px 0;position:sticky;bottom:8px}
 }
+#pf#pf nav.pf-bar{border-radius:18px!important;overflow:hidden}
+html.pf-on ol.breadcrumb{display:none!important}
