@@ -63,8 +63,7 @@ if(isResults){
     return '<div class="p3-vcard"><div class="p3-vart" data-uid="'+esc(b.uid)+'"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></div><div class="p3-vbody">'+
       '<span class="p3-vribbon">&#11088; VIP LOCAL BUSINESS</span><a class="p3-vname" href="'+esc(b.u)+'">'+esc(b.n)+'</a>'+
       '<p class="p3-vloc">&#128205; '+esc([b.st,b.town].filter(Boolean).join(', ')||'Three Village')+'</p><p class="p3-vd">'+esc(b.d)+'</p>'+
-      (tel?'<a class="p3-vtel" href="tel:'+tel.replace(/-/g,'')+'">&#128222; '+tel+'</a>':'')+
-      '<div class="p3-vacts">'+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">Call now</a>':'')+'<a href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Directions</a><a class="p3-view" href="'+esc(b.u)+'">Full profile &rarr;</a></div></div></div>'}
+      '<div class="p3-vacts">'+(tel?'<a class="p3-vtel" href="tel:'+tel.replace(/-/g,'')+'">&#128222; '+tel+'</a>':'')+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">Call now</a>':'')+'<a href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Directions</a><a class="p3-view" href="'+esc(b.u)+'">Full profile &rarr;</a></div></div></div>'}
   function card(b,i){var tel=fmtTel(b.tel);
     return '<div class="p3-rcard" style="--i:'+i+'"><a class="p3-rtop" href="'+esc(b.u)+'"><img src="'+esc(b.img)+'" alt="" loading="lazy"><div><b>'+esc(b.n)+'</b><small>&#128205; '+esc(b.town||'Three Village')+'</small></div></a>'+
       '<p class="p3-rd">'+esc(b.d.slice(0,140))+(b.d.length>140?'&hellip;':'')+'</p><div class="p3-racts">'+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">&#128222; Call</a>':'')+
