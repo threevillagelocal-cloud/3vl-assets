@@ -168,7 +168,7 @@ function windTxt(x){var g=gustOf(x);return (x.windDirection?x.windDirection+' ':
 function rainTxt(x){var r=((x.detailedForecast||'').match(/New (?:rainfall|precipitation) amounts? (?:of )?(?:between )?([^.]+)/i)||[])[1];return r?amt(r)+' more rain':''}
 function dayLbl(d){var n=new Date(),a=new Date(n.getFullYear(),n.getMonth(),n.getDate()),b=new Date(d.getFullYear(),d.getMonth(),d.getDate()),k=Math.round((b-a)/864e5);
   return (k===0?'Today':k===1?'Tomorrow':DAYS[d.getDay()])+' '+tm(d)}
-function cxPrune(){var n=new Date(),t=n.getFullYear()+'-'+('0'+(n.getMonth()+1)).slice(-2)+('0'+n.getDate()).slice(-2);
+function cxPrune(){var n=new Date(),t=n.getFullYear()+'-'+('0'+(n.getMonth()+1)).slice(-2)+'-'+('0'+n.getDate()).slice(-2);
   document.querySelectorAll('.stm-cxi[data-until]').forEach(function(el){if(el.getAttribute('data-until')<t)el.style.display='none'})}
 function nowNext(){var per=window.stmPer||[],al=window.stmAl||[],now=new Date();if(!per.length)return;
   var cur=per[0],clear=null,i;for(i=0;i<per.length;i++){if(!wet(per[i])){clear=per[i];break}}
@@ -178,9 +178,9 @@ function nowNext(){var per=window.stmPer||[],al=window.stmAl||[],now=new Date();
   window.stmState={over:over,clear:clear&&clear!==cur?clear.name.replace(/^This /,''):''};
   /* hero */
   var sub=$('stm-sub')||document.querySelector('.stm-sub');
-  if(sub){var h='<strong>Right now:</strong> '+esc(cur.shortForecast)+', '+esc(lc(windTxt(cur)))+'.';
-    if(act.length)h+=' '+act.map(function(a){var e=new Date(a.ends||a.expires);return esc(a.event)+' until '+esc(dayLbl(e))}).join('. ')+'.';
-    var nx=per.slice(1,3).map(function(x){return esc(x.name)+': '+esc(lc(x.shortForecast))}).join(', ');
+  if(sub){var h='<strong>Right now:</strong> '+esc(cur.shortForecast)+', '+esc(windTxt(cur))+'.';
+    if(act.length)h+=' '+act.map(function(a){var e=new Date(a.ends||a.expires);return esc(a.event)+' until '+DAYS[e.getDay()]+' '+tm(e)}).join('. ')+'.';
+    var nx=per.slice(1,3).map(function(x){return esc(x.name)+': '+esc(x.shortForecast.toLowerCase())}).join(', ');
     h+=' <strong>Coming up:</strong> '+nx+'.';
     h+=over?' The worst is behind us.':clear?' Drying out '+esc(clear.name)+'.':' No dry break in the forecast yet.';
     sub.innerHTML=h}
