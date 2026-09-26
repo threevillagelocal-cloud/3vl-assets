@@ -1,12 +1,12 @@
 {
-"updated": "2026-09-26T13:03:33.875724+00:00",
+"updated": "2026-09-26T17:05:08.336693+00:00",
 "counts": {
 "Three Village Chamber": 7,
 "Port Jefferson Chamber": 27,
 "I Love Port Jeff": 5,
-"Town of Brookhaven (local)": 13,
+"Town of Brookhaven (local)": 12,
 "Village of Port Jefferson": 222,
-"Emma S. Clark Library": 219,
+"Emma S. Clark Library": 218,
 "Stony Brook Village Center": 16,
 "Long Island Museum": 32,
 "Ward Melville Heritage Org": 5
@@ -40,42 +40,6 @@
 "status": "Postponed"
 },
 {
-"id": "brookhaven-5093",
-"title": "Growing Up Wild",
-"start": "2026-09-26T10:00:00",
-"end": "2026-09-26T11:00:00",
-"allday": false,
-"venue": "Cedar Beach",
-"addr": "Cedar Beach - 244 Harbor Beach Road Mt. Sinai NY 11766",
-"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-"desc": "https://www.brookhavenny.gov/calendar.aspx?EID=5093",
-"img": "",
-"src": "brookhaven",
-"tags": [
-"arts"
-],
-"status": ""
-},
-{
-"id": "emmaclark-america-250-historical-gravestones-cleaning-59546",
-"title": "America 250: Historical Gravestones Cleaning",
-"start": "2026-09-26T10:00:00",
-"end": "2026-09-26T12:30:00",
-"allday": false,
-"venue": "Off site (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/america-250-historical-gravestones-cleaning-59546",
-"desc": "This program is taking place offsite, not in the Library. If minors are attending the program, a parent/guardian who is 18 years old or older must stay with the minor at all times. Minors are not allowed to be dropped off at offsite programs without a parent/g",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"free",
-"kids",
-"history"
-],
-"status": ""
-},
-{
 "id": "emmaclark-community-shred-day-58111",
 "title": "Community Shred Day",
 "start": "2026-09-26T10:00:00",
@@ -88,27 +52,7 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
-],
-"status": ""
-},
-{
-"id": "emmaclark-youre-charge-grades-pre-k-2-w-caregiver-58796",
-"title": "You're in Charge! (Grades Pre-K-2 w/ caregiver)",
-"start": "2026-09-26T10:30:00",
-"end": "2026-09-26T11:15:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/youre-charge-grades-pre-k-2-w-caregiver-58796",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Workshops & Training, Children.",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"free",
-"kids",
-"arts"
 ],
 "status": ""
 },
@@ -118,8 +62,8 @@
 "start": "2026-09-26T12:00:00",
 "end": "2026-09-26T16:00:00",
 "allday": false,
-"venue": "Three Village area",
-"addr": "",
+"venue": "Stony Brook University",
+"addr": "Stony Brook University, 440 Administration Bldg., Stony Brook, NY 11733-1131",
 "url": "https://members.3vchamber.com/event-calendar/Details/communiversity-day-1912472",
 "desc": "",
 "img": "",
@@ -167,6 +111,24 @@
 "status": ""
 },
 {
+"id": "brookhaven-5094",
+"title": "Growing Up Wild",
+"start": "2026-09-26T14:00:00",
+"end": "2026-09-26T15:00:00",
+"allday": false,
+"venue": "Cedar Beach",
+"addr": "Cedar Beach - 244 Harbor Beach Road Mt. Sinai NY 11766",
+"url": "https://www.brookhavenny.gov/calendar.aspx?EID=5094",
+"desc": "Growing Up Wild Ages 3-6 Join. us for some fall family fun. Each session will feature a nature topic and activity. All programs are FREE. Registration is required. Please put program name and date in subject line of email. Please provide a phone number, number",
+"img": "",
+"src": "brookhaven",
+"tags": [
+"free",
+"kids"
+],
+"status": ""
+},
+{
 "id": "pjchamber-14109",
 "title": "Cedar Beach Blues Festival",
 "start": "2026-09-27T00:00:00",
@@ -192,8 +154,8 @@
 "allday": true,
 "venue": "Jeanne Garant Harborfront Park",
 "addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-"desc": "https://www.portjeffny.gov/calendar.aspx?EID=1093",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1093",
+"desc": "This Sunday's Farmer's Market has been closed due to impending weather. See you next week on 10/3",
 "img": "",
 "src": "portjeff",
 "tags": [
@@ -211,8 +173,8 @@
 "venue": "Three Village area",
 "addr": "",
 "url": "https://members.3vchamber.com/event-calendar/Details/culper-sept-5k-1879924",
-"desc": "Help Raise funds for our Dominick Crawford Education + History Center. Register at www.tvhs.org/5K",
-"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_675,w_1200,x_0,y_0/q_auto/f_auto/c_limit,w_720/q_auto/v1785607679/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/61d413a9890241b996f315f3d47b917b/culper-5K-jpg.jpg",
+"desc": "Description Help Raise funds for our Dominick Crawford Education + History Center. Register at www.tvhs.org/5K",
+"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_675,w_1200,x_0,y_0/q_auto/f_auto/q_auto/v1785607717/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/c07d9ba5a68e4e70b1a52f1603455729/culper-5K-jpg.jpg",
 "src": "3vchamber",
 "tags": [
 "history",
@@ -230,7 +192,7 @@
 "addr": "",
 "url": "https://members.3vchamber.com/event-calendar/Details/setauket-harbor-day-1879927",
 "desc": "for Info: Contact Pam at 516-383-8101",
-"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_680,w_525,x_0,y_0/q_auto/f_auto/c_limit,w_720/q_auto/v1785608041/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/7dbf3f2e7c844ebaa274a22ecbfbdc40/setauket-harbor.jpg",
+"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_680,w_525,x_0,y_0/q_auto/f_auto/q_auto/v1785608058/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/e7c6cda963cd40e98ac6435844bb4cff/setauket-harbor.jpg",
 "src": "3vchamber",
 "tags": [
 "outdoor"
@@ -250,7 +212,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -269,7 +230,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -306,7 +266,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -324,7 +283,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -343,7 +301,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "food"
 ],
@@ -362,7 +319,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -380,7 +336,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "stage"
 ],
 "status": ""
@@ -398,7 +353,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -416,7 +370,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -451,9 +404,9 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
-"history"
+"history",
+"stage"
 ],
 "status": ""
 },
@@ -470,9 +423,9 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
-"stage"
+"stage",
+"arts"
 ],
 "status": ""
 },
@@ -489,7 +442,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "stage"
 ],
@@ -508,7 +460,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -526,7 +477,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -545,7 +495,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -580,9 +529,9 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
-"stage"
+"stage",
+"arts"
 ],
 "status": ""
 },
@@ -599,7 +548,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "outdoor"
 ],
@@ -618,9 +566,9 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
-"stage"
+"stage",
+"arts"
 ],
 "status": ""
 },
@@ -637,7 +585,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -672,9 +619,9 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
-"stage"
+"stage",
+"arts"
 ],
 "status": ""
 },
@@ -691,7 +638,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "stage"
 ],
@@ -729,7 +675,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -787,7 +732,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -805,7 +749,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -898,11 +841,13 @@
 "allday": false,
 "venue": "West Meadow Beach",
 "addr": "West Meadow Beach - 100 Trustees Road Stony Brook NY 11790",
-"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-"desc": "https://www.brookhavenny.gov/calendar.aspx?EID=5096",
+"url": "https://www.brookhavenny.gov/calendar.aspx?EID=5096",
+"desc": "Nature Walks Join us for a guided walk along the beach trail. We will explore the unique ecosystem and learn about varying habitats as the seasons change. All programs are FREE. Registration is required. Please put program name and date in subject line of emai",
 "img": "",
 "src": "brookhaven",
 "tags": [
+"free",
+"kids",
 "outdoor"
 ],
 "status": ""
@@ -920,9 +865,9 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
-"history"
+"history",
+"stage"
 ],
 "status": ""
 },
@@ -1018,9 +963,9 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
-"music"
+"music",
+"history"
 ],
 "status": ""
 },
@@ -1037,7 +982,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -1148,7 +1092,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "stage"
 ],
@@ -1218,8 +1161,8 @@
 "allday": false,
 "venue": "Jeanne Garant Harborfront Park",
 "addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "/common/modules/iCalendar/iCalendar.aspx?feed=calendar&catID=14",
-"desc": "https://www.portjeffny.gov/calendar.aspx?EID=1094",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1094",
+"desc": "",
 "img": "",
 "src": "portjeff",
 "tags": [
@@ -1334,7 +1277,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "stage"
 ],
@@ -1407,7 +1349,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -1425,7 +1366,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -1444,7 +1384,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -1463,7 +1402,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -1482,7 +1420,7 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free"
+"arts"
 ],
 "status": ""
 },
@@ -1499,7 +1437,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -1517,7 +1454,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
@@ -1535,9 +1471,9 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
-"history"
+"history",
+"stage"
 ],
 "status": ""
 },
@@ -1554,7 +1490,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -1573,7 +1508,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids",
 "arts"
 ],
@@ -1592,7 +1526,6 @@
 "img": "",
 "src": "emmaclark",
 "tags": [
-"free",
 "kids"
 ],
 "status": ""
