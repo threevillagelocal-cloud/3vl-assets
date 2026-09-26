@@ -332,3 +332,8 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 a.p3-vart:hover img{transform:scale(1.03)}
 #p3#p3 .p3-vart img{transition:transform .3s}
 #p3#p3 a.p3-vname:hover{color:#006fbb;text-decoration:underline!important}
+#p3#p3 .p3-vmedia{display:flex;flex-direction:column;justify-content:center;gap:10px;padding:12px 14px;border-right:1px solid #e1e7ee;background:#fff}
+#p3#p3 .p3-vmedia a.p3-vart{border:0!important;padding:0!important;flex:1 1 auto;min-height:0;background:none}
+#p3#p3 .p3-vmedia a.p3-vprof{margin-top:0;flex:0 0 auto;font-size:13.5px;padding:9px 10px}
+@media(min-width:761px){#p3#p3 .p3-vmedia .p3-vart img{max-height:140px!important}#p3#p3 .p3-vmedia .p3-vart.is-logo img{max-height:110px!important}}
+@media(max-width:760px){#p3#p3 .p3-vmedia{border-right:0;border-bottom:1px solid #e1e7ee}}

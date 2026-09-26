@@ -60,7 +60,7 @@ if(isResults){
   function fmtTel(t){t=(t||'').replace(/[^\d]/g,'').slice(-10);return t.length===10?t.slice(0,3)+'-'+t.slice(3,6)+'-'+t.slice(6):''}
   function maps(b){return 'https://www.google.com/maps/search/?api=1&amp;query='+encodeURIComponent(b.n+' '+(b.st||'')+' '+b.town)}
   function vipCard(b,idx){var tel=fmtTel(b.tel),t=tel.replace(/-/g,'');
-    return '<div class="p3-vwrap" data-i="'+idx+'" data-uid="'+esc(b.uid)+'" data-name="'+esc(b.n)+'"><div class="p3-vcard"><a class="p3-vart" data-act="profile" href="'+esc(b.u)+'" data-uid="'+esc(b.uid)+'" title="View full profile"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></a><div class="p3-vbody">'+
+    return '<div class="p3-vwrap" data-i="'+idx+'" data-uid="'+esc(b.uid)+'" data-name="'+esc(b.n)+'"><div class="p3-vcard"><div class="p3-vmedia"><a class="p3-vart" data-act="profile" href="'+esc(b.u)+'" data-uid="'+esc(b.uid)+'" title="View full profile"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></a><a class="p3-vprof" data-act="profile" href="'+esc(b.u)+'">View full profile &rarr;</a></div><div class="p3-vbody">'+
       '<span class="p3-vribbon">&#11088; VIP LOCAL BUSINESS</span><a class="p3-vname" data-act="profile" href="'+esc(b.u)+'">'+esc(b.n)+'</a>'+
       '<p class="p3-vloc">&#128205; '+esc([b.st,b.town].filter(function(x){return x&&!/^n\/?a$/i.test(x)}).join(', ')||'Three Village')+'</p><p class="p3-vd">'+esc(b.d)+'</p>'+
       '<div class="p3-vacts">'+(tel?'<a class="p3-call p3-callbig" data-act="call" href="tel:'+t+'">&#128222; '+tel+'</a><a class="p3-text" data-act="text" href="sms:'+t+'">&#128172; Text</a>':'')+
@@ -119,7 +119,7 @@ if(isResults){
     if(m.cred)h+='<p class="p3-vcred">&#127891; '+(m.cred.length>110?esc(m.cred.slice(0,110).replace(/\s\S*$/,''))+'&hellip;':esc(m.cred))+'</p>';
     var L=[];if(m.web)L.push('<a data-act="website" href="'+esc(m.web)+'" target="_blank" rel="noopener">Website</a>');if(m.fb)L.push('<a data-act="facebook" href="'+esc(m.fb)+'" target="_blank" rel="noopener">Facebook</a>');if(m.ig)L.push('<a data-act="instagram" href="'+esc(m.ig)+'" target="_blank" rel="noopener">Instagram</a>');
     L.push('<a class="p3-vrev" data-act="review" href="'+esc(u.replace(/\/$/,''))+'/writeareview">&#9733; '+(m.reviews?'Write a review':'Be the first to review')+'</a>');
-    h+='<div class="p3-vlinks">'+L.join('')+'</div>';h+='<a class="p3-vprof" data-act="profile" href="'+esc(u)+'">View full profile &rarr;</a>';return h}
+    h+='<div class="p3-vlinks">'+L.join('')+'</div>';return h}
   var META={};
   fetch(BASE+'vip_meta.json').then(function(r){return r.json()}).then(function(M){META=M;
     $$('.p3-vside',root).forEach(function(a){var m=M[a.getAttribute('data-uid')];if(m){a.innerHTML=side(m,a.getAttribute('data-u'));a.parentNode.classList.add('has-side')}});eqSoon()}).catch(function(){});
