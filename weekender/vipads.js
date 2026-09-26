@@ -43,32 +43,47 @@ function spread(arr,key,gap){var best=arr.slice();
   return best}
 function build(list,side){
   list=spread(list,function(v){return v.group||v.id},3);
-  var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
+  var gkey=function(v){return v.group||v.id};
+  var st=document.createElement('style');st.textContent=css+'#vipx .vipx-unit+.vipx-unit{margin-top:18px;padding-top:16px;border-top:1px dashed #e3e9f0}';document.head.appendChild(st);
   var box=document.createElement('div');box.id='vipx';box.className='module';
-  var h='<p class="vipx-h"><span>VIP</span>Local businesses we love</p><div class="vipx-rot">';
-  list.forEach(function(v,i){h+='<div class="vipx-ad'+(i?'':' on')+'" data-vip="'+v.name+'"><a href="'+v.url+'" data-vip="'+v.name+'" style="--b:url('+BASE+v.img+')"><img src="'+BASE+v.img+'" alt="'+v.name+' ad" width="'+v.w+'" height="'+v.h+'" loading="'+(i?'lazy':'eager')+'"></a></div>'});
-  h+='<button type="button" class="vipx-nav vipx-prev" aria-label="Previous ad">&#8249;</button><button type="button" class="vipx-nav vipx-next" aria-label="Next ad">&#8250;</button><div class="vipx-glare"></div><div class="vipx-bar"><i></i></div></div><div class="vipx-btns"><a class="vipx-call" href="#">&#128222; Call</a><a class="vipx-view" href="#">View on 3VL &rarr;</a></div><div class="vipx-dots">';
-  list.forEach(function(v,i){h+='<b'+(i?'':' class="on"')+'></b>'});
-  h+='</div><a class="vipx-foot" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a>';
+  /* two stacked rotators on desktop pages with room; one on phones or short pages */
+  var N=(innerWidth>=992&&document.documentElement.scrollHeight>2400&&list.length>=6)?2:1;
+  var h='<p class="vipx-h"><span>VIP</span>Local businesses we love</p>';
+  for(var u=0;u<N;u++){
+    h+='<div class="vipx-unit"><div class="vipx-rot">';
+    list.forEach(function(v,i){h+='<div class="vipx-ad" data-vip="'+v.name+'"><a href="'+v.url+'" data-vip="'+v.name+'" style="--b:url('+BASE+v.img+')"><img src="'+BASE+v.img+'" alt="'+v.name+' ad" width="'+v.w+'" height="'+v.h+'" loading="lazy"></a></div>'});
+    h+='<button type="button" class="vipx-nav vipx-prev" aria-label="Previous ad">&#8249;</button><button type="button" class="vipx-nav vipx-next" aria-label="Next ad">&#8250;</button><div class="vipx-glare"></div><div class="vipx-bar"><i></i></div></div><div class="vipx-btns"><a class="vipx-call" href="#">&#128222; Call</a><a class="vipx-view" href="#">View on 3VL &rarr;</a></div>';
+    if(N===1){h+='<div class="vipx-dots">';list.forEach(function(){h+='<b></b>'});h+='</div>'}
+    h+='</div>';
+  }
+  h+='<a class="vipx-foot" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a>';
   box.innerHTML=h;if(side.after&&side.after.nextSibling)side.el.insertBefore(box,side.after.nextSibling);else if(side.after)side.el.appendChild(box);else side.el.insertBefore(box,side.el.firstChild);
   if(box.offsetWidth<290)box.classList.add('vipx-sm');
-  var ads=box.querySelectorAll('.vipx-ad'),dots=box.querySelectorAll('.vipx-dots b'),bar=box.querySelector('.vipx-bar i'),call=box.querySelector('.vipx-call'),view=box.querySelector('.vipx-view');
-  var idx=0,dur=6500,t0=0,paused=false,seen={};
-  function show(n){idx=(n+list.length)%list.length;for(var k=0;k<ads.length;k++){ads[k].className='vipx-ad'+(k===idx?' on':'');dots[k].className=k===idx?'on':''}
-    var v=list[idx];call.href='tel:'+v.phone;call.setAttribute('data-vip',v.name);view.href=v.url;view.setAttribute('data-vip',v.name);t0=performance.now();
-    if(!seen[v.name]){var r=box.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0){seen[v.name]=1;track('vip_ad_view',{vip:v.name,placement:PLACE})}}}
-  function loop(ts){if(!paused){var p=(ts-t0)/dur;bar.style.width=Math.min(100,p*100)+'%';if(p>=1)show(idx+1)}else t0=ts-(parseFloat(bar.style.width)||0)/100*dur;requestAnimationFrame(loop)}
-  box.addEventListener('mouseenter',function(){paused=true});box.addEventListener('mouseleave',function(){paused=false});
-  var rot=box.querySelector('.vipx-rot');
-  if(matchMedia('(hover:hover) and (pointer:fine)').matches){
-    rot.addEventListener('mouseenter',function(){rot.classList.add('lift')});
-    rot.addEventListener('mousemove',function(e){var r=rot.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
-      rot.style.setProperty('--ry',((x-.5)*10).toFixed(2)+'deg');rot.style.setProperty('--rx',((.5-y)*8).toFixed(2)+'deg');rot.style.setProperty('--gx',(x*100)+'%');rot.style.setProperty('--gy',(y*100)+'%')});
-    rot.addEventListener('mouseleave',function(){rot.classList.remove('lift');rot.style.setProperty('--rx','0deg');rot.style.setProperty('--ry','0deg')})}
-  box.querySelector('.vipx-prev').addEventListener('click',function(e){e.preventDefault();e.stopPropagation();show(idx-1);track('vip_ad_nav',{dir:'prev',placement:PLACE})});
-  box.querySelector('.vipx-next').addEventListener('click',function(e){e.preventDefault();e.stopPropagation();show(idx+1);track('vip_ad_nav',{dir:'next',placement:PLACE})});
+  var dur=6500,seen={},units=[];
+  function showing(except){return units.filter(function(x){return x!==except&&x.idx>=0}).map(function(x){return gkey(list[x.idx])})}
+  Array.prototype.forEach.call(box.querySelectorAll('.vipx-unit'),function(el,u){
+    var U={el:el,ads:el.querySelectorAll('.vipx-ad'),dots:el.querySelectorAll('.vipx-dots b'),bar:el.querySelector('.vipx-bar i'),call:el.querySelector('.vipx-call'),view:el.querySelector('.vipx-view'),idx:-1,t0:0,paused:false};
+    U.show=function(n,dir){dir=dir||1;var k=(n+list.length)%list.length,busy=showing(U),guard=0;
+      while(busy.indexOf(gkey(list[k]))>=0&&guard<list.length){k=(k+dir+list.length)%list.length;guard++}
+      U.idx=k;for(var i=0;i<U.ads.length;i++){U.ads[i].className='vipx-ad'+(i===k?' on':'');if(U.dots[i])U.dots[i].className=i===k?'on':''}
+      var img=U.ads[k].querySelector('img');if(img)img.loading='eager';
+      var v=list[k];U.call.href='tel:'+v.phone;U.call.setAttribute('data-vip',v.name);U.view.href=v.url;U.view.setAttribute('data-vip',v.name);U.t0=performance.now();
+      var key=v.name+'#'+u;if(!seen[key]){var r=el.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0){seen[key]=1;track('vip_ad_view',{vip:v.name,placement:PLACE+(N>1?'_'+(u+1):'')})}}};
+    var rot=el.querySelector('.vipx-rot');
+    el.addEventListener('mouseenter',function(){U.paused=true});el.addEventListener('mouseleave',function(){U.paused=false});
+    if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+      rot.addEventListener('mouseenter',function(){rot.classList.add('lift')});
+      rot.addEventListener('mousemove',function(e){var r=rot.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+        rot.style.setProperty('--ry',((x-.5)*10).toFixed(2)+'deg');rot.style.setProperty('--rx',((.5-y)*8).toFixed(2)+'deg');rot.style.setProperty('--gx',(x*100)+'%');rot.style.setProperty('--gy',(y*100)+'%')});
+      rot.addEventListener('mouseleave',function(){rot.classList.remove('lift');rot.style.setProperty('--rx','0deg');rot.style.setProperty('--ry','0deg')})}
+    el.querySelector('.vipx-prev').addEventListener('click',function(e){e.preventDefault();e.stopPropagation();U.show(U.idx-1,-1);track('vip_ad_nav',{dir:'prev',placement:PLACE})});
+    el.querySelector('.vipx-next').addEventListener('click',function(e){e.preventDefault();e.stopPropagation();U.show(U.idx+1,1);track('vip_ad_nav',{dir:'next',placement:PLACE})});
+    units.push(U);
+  });
   box.addEventListener('click',function(e){var a=e.target.closest('a[data-vip]');if(a)track('vip_ad_click',{vip:a.getAttribute('data-vip'),placement:PLACE,link:a.className||'banner'})});
-  show(0);requestAnimationFrame(loop)}
+  units.forEach(function(U,u){U.show(u*Math.floor(list.length/2));U.t0=performance.now()-(u*dur/2)});
+  function loop(ts){units.forEach(function(U){if(!U.paused){var p=(ts-U.t0)/dur;U.bar.style.width=Math.min(100,p*100)+'%';if(p>=1)U.show(U.idx+1,1)}else U.t0=ts-(parseFloat(U.bar.style.width)||0)/100*dur});requestAnimationFrame(loop)}
+  requestAnimationFrame(loop)}
 /* Where the ad goes on each BD page type. Member profiles are skipped on purpose (a member's own page should not advertise other businesses). */
 function spot(){
   if(document.querySelector('.content_w_sidebar.member_profile'))return null;
