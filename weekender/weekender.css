@@ -593,3 +593,15 @@
 .wk-pbody .wk-acts{margin-top:auto;padding-top:10px}
 .wk-pnum{font-size:34px}
 @media (max-width:900px){.wk-picks{grid-template-columns:1fr}}
+/* Brand: Three Village Now + Updated Live */
+.wk-brandrow{display:flex;align-items:center;flex-wrap:wrap;gap:12px 16px;opacity:0;animation:wkUp .7s .05s forwards}
+.wk-brand2{margin:0!important;font-family:var(--disp);font-weight:700;font-size:clamp(22px,2.6vw,30px);line-height:1;letter-spacing:-.01em;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45);
+  padding:10px 16px;border-radius:14px;background:rgba(15,28,43,.45);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.22)}
+.wk-brand2 .wk-b2{color:var(--gold);position:relative}
+.wk-brand2 .wk-b2::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--gold),transparent);animation:wkUnder 2.8s ease-in-out infinite}
+@keyframes wkUnder{0%{transform:scaleX(.2);transform-origin:left;opacity:.4}50%{transform:scaleX(1);opacity:1}100%{transform:scaleX(.2);transform-origin:right;opacity:.4}}
+.wk-livepill{display:inline-flex;align-items:center;gap:8px;background:#e5322d;color:#fff;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:9px 14px;border-radius:999px;box-shadow:0 0 0 0 rgba(229,50,45,.6);animation:wkLiveGlow 2s infinite}
+.wk-livepill i{width:9px;height:9px;border-radius:50%;background:#fff;animation:wkPulse 1.4s infinite}
+@keyframes wkLiveGlow{0%{box-shadow:0 0 0 0 rgba(229,50,45,.55)}70%{box-shadow:0 0 0 14px rgba(229,50,45,0)}100%{box-shadow:0 0 0 0 rgba(229,50,45,0)}}
+.wk-kick{margin-top:14px!important}
+@media (prefers-reduced-motion:reduce){.wk-livepill,.wk-brand2 .wk-b2::after{animation:none}}

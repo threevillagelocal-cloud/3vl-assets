@@ -93,7 +93,9 @@ def build(edition, local=False, sha="master"):
     w('<header class="wk-hero"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="" width="1600" height="1067"></picture>'
       % (img(d["hero"]["img"], True), img(d["hero"]["img"])))
     w('<div class="wk-hshade"></div><div class="wk-leaves" aria-hidden="true"></div>')
-    w('<div class="wk-hin"><p class="wk-kick"><span class="wk-brand">THE <b>WEEKENDER</b></span><span class="wk-kdiv"></span><span>%s</span></p>' % esc(d["range"]))
+    w('<div class="wk-hin"><div class="wk-brandrow"><p class="wk-brand2"><span class="wk-b1">Three Village</span> <span class="wk-b2">Now</span></p>'
+      '<span class="wk-livepill"><i></i>Updated Live</span></div>'
+      '<p class="wk-kick"><span class="wk-kdiv"></span><span id="wk-today">%s</span></p>' % esc(d["range"]))
     w('<p class="wk-title"><span>%s</span><span class="wk-tacc">%s</span></p>' % (esc(d["headline"][0]), esc(d["headline"][1])))
     w('<p class="wk-dek">%s</p>' % esc(d["dek"]))
     w('<div class="wk-hrow"><div class="wk-count" id="wk-count"><span class="wk-cl" id="wk-cl">The weekend starts in</span>'
