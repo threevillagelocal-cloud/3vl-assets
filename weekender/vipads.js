@@ -75,6 +75,8 @@ function spot(){
   var p=document.querySelector('.post-detail-sidebar');if(p)return{el:p,where:'top',place:'blog_post_sidebar'};
   var s=document.querySelector('.content_w_sidebar .sidebar-container')||document.querySelector('.content_w_sidebar > .col-md-3');
   if(s){var first=s.querySelector('.module');return{el:s,after:first,place:/member_results/.test(s.parentNode.className)?'search_sidebar':'listing_sidebar'}}
+  var r=document.querySelector('.content-container .row > .col-md-8 + .col-md-4, .content-container .row > .col-md-9 + .col-md-3');
+  if(r)return{el:r,where:'top',place:'page_sidebar'};
   return null}
 /* Retire BD's old static "Banner Ad" sidebar widgets: the rotator is the only ad on a page. */
 function retireOld(){var st=document.createElement('style');st.textContent='a:has(> img[src*="/images/banner-ads/"]),a:has(> img[alt="Banner Ad"]){display:none!important}';document.head.appendChild(st);
