@@ -25,10 +25,11 @@ function trimLogo(img){
       if(!blank){if(xx<minX)minX=xx;if(xx>maxX)maxX=xx;if(yy<minY)minY=yy;if(yy>maxY)maxY=yy}}
     if(maxX<0)return;
     if(edge/edgeN<0.6){img.classList.add('tvl-photo');return}   /* edges mostly non-white: it's a photo, not a logo on white */
-    var bw=maxX-minX+1,bh=maxY-minY+1;if(bw>cw*0.92&&bh>ch*0.92)return;
-    var pad=Math.round(Math.max(bw,bh)*0.06),side=Math.max(bw,bh)+pad*2;
-    var o=document.createElement('canvas');o.width=side;o.height=side;var ox=o.getContext('2d');ox.fillStyle='#fff';ox.fillRect(0,0,side,side);
-    ox.drawImage(c,minX,minY,bw,bh,Math.round((side-bw)/2),Math.round((side-bh)/2),bw,bh);
+    var bw=maxX-minX+1,bh=maxY-minY+1;if(bw>cw*0.92&&bh>ch*0.92){if(cw/ch>1.35)img.classList.add('tvl-wide');return}
+    var pad=Math.round(Math.max(bw,bh)*0.05),ow=bw+pad*2,oh=bh+pad*2;
+    var o=document.createElement('canvas');o.width=ow;o.height=oh;var ox=o.getContext('2d');ox.fillStyle='#fff';ox.fillRect(0,0,ow,oh);
+    ox.drawImage(c,minX,minY,bw,bh,pad,pad,bw,bh);
+    if(ow/oh>1.35)img.classList.add('tvl-wide');
     img.src=o.toDataURL('image/png');
   }catch(e){}
 }

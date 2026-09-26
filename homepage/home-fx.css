@@ -33,6 +33,7 @@
 .recent-member .recent-member-image a{display:inline-block;position:relative}
 .recent-member .recent-member-image img{width:104px!important;height:104px!important;max-height:none!important;object-fit:contain;border-radius:22px!important;background:#fff;padding:8px;box-shadow:0 0 0 3px #fff,0 0 0 5px rgba(240,173,78,.75),0 10px 22px rgba(27,47,69,.18);transition:transform .5s cubic-bezier(.3,1.4,.5,1)!important}
 .recent-member .recent-member-image img.tvl-photo{padding:0;object-fit:cover}
+.recent-member .recent-member-image img.tvl-wide{width:100%!important;max-width:132px;height:78px!important;border-radius:16px!important;padding:6px 8px}
 .recent-member .recent-member-image{height:auto!important;padding-top:4px}
 .recent-member .well.tvl-lift .recent-member-image img{transform:translateY(-4px) scale(1.06)}
 .recent-member .recent-member-info p{color:#475569}
