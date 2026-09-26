@@ -171,3 +171,5 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-bb{padding:16px 18px 20px;gap:8px}
 #p3#p3 .p3-bb p:not(.p3-date){display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 @media(max-width:760px){#p3#p3 .p3-lead{grid-template-columns:1fr}#p3#p3 .p3-bgrid{grid-template-columns:1fr;gap:18px}#p3#p3 .p3-hero .p3-h1{font-size:32px}}
+
+#p3#p3 .p3-lb .p3-new{position:static;display:inline-block;margin-right:8px;vertical-align:1px;font-size:11px;padding:4px 10px}

@@ -88,7 +88,7 @@ if(path==='/blog'){
   var lead=posts[0],rest=posts.slice(1);
   var mos=posts.slice(0,6).map(function(p){return '<span style="background-image:url(\''+esc(p.img)+'\')"></span>'}).join('');
   var h='<header class="p3-hero"><div class="p3-mosaic">'+mos+'</div><div class="p3-hin"><span class="p3-kick">THREE VILLAGE LOCAL</span><h1 class="p3-h1">Local <em>Stories</em></h1><p class="p3-sub">Neighbors, businesses, events and the news that matters in Stony Brook, Setauket and Port Jefferson.</p></div></header>'+
-    '<a class="p3-lead" href="'+esc(lead.h)+'"><div class="p3-limg"><img src="'+esc(lead.img)+'" alt="'+esc(lead.t)+'" onerror="if(this.src!==this.dataset.t){this.src=this.dataset.t}" data-t="'+esc(lead.thumb)+'"><span class="p3-new">&#9679; LATEST</span></div><div class="p3-lb"><p class="p3-date">'+esc(dfmt(lead.d))+'</p><h2>'+esc(lead.t)+'</h2><p>'+esc(lead.ex)+'</p><span class="p3-go">Read the story &rarr;</span></div></a>'+
+    '<a class="p3-lead" href="'+esc(lead.h)+'"><div class="p3-limg"><img src="'+esc(lead.img)+'" alt="'+esc(lead.t)+'" onerror="if(this.src!==this.dataset.t){this.src=this.dataset.t}" data-t="'+esc(lead.thumb)+'"></div><div class="p3-lb"><p class="p3-date"><span class="p3-new">&#9679; LATEST</span> '+esc(dfmt(lead.d))+'</p><h2>'+esc(lead.t)+'</h2><p>'+esc(lead.ex)+'</p><span class="p3-go">Read the story &rarr;</span></div></a>'+
     '<div class="p3-bgrid" id="p3grid">'+rest.map(card).join('')+'</div>';
   var root=mount(h,items[0].closest('[itemprop="mainEntity"]')||items[0]);
   items.forEach(hide);
