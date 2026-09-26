@@ -292,7 +292,7 @@ function go(){hdr();window.addEventListener('scroll',hdr,{passive:true});
   (function(){var wx=$('wk-wx');if(!wx)return;var go2=function(){wxScenes();setInterval(wxScenes,30000)};if('IntersectionObserver' in window){var io3=new IntersectionObserver(function(en){if(en[0].isIntersecting){go2();io3.disconnect()}},{rootMargin:'300px'});io3.observe(wx)}else go2()})();
   $$('.wk-tab').forEach(function(b){b.addEventListener('click',function(){$$('.wk-tab').forEach(function(x){x.classList.toggle('is-on',x===b)});fDay=b.getAttribute('data-day');ink();applyFilter();track('weekender_filter',{day:fDay})})});
   $$('.wk-chip').forEach(function(b){b.addEventListener('click',function(){$$('.wk-chip').forEach(function(x){x.classList.toggle('is-on',x===b)});fTag=b.getAttribute('data-tag');applyFilter();track('weekender_filter',{tag:fTag})})});
-  (function(){var t=now(),pick='fri';['fri','sat','sun'].forEach(function(k){if(DAYS[k]&&DAYS[k].toDateString()===t.toDateString())pick=k});
+  (function(){var t=now(),pick=(DAYS.sun&&t>DAYS.sun)?'sun':'fri';['fri','sat','sun'].forEach(function(k){if(DAYS[k]&&DAYS[k].toDateString()===t.toDateString())pick=k});
     var b=root.querySelector('.wk-tab[data-day="'+pick+'"]');if(b){$$('.wk-tab').forEach(function(x){x.classList.toggle('is-on',x===b)});fDay=pick}})();
   root.addEventListener('click',function(e){var d=e.target.closest('.wk-evdesc');if(d)d.classList.toggle('is-open')});
   ink();window.addEventListener('resize',ink);applyFilter();
