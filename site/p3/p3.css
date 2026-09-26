@@ -323,3 +323,5 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
   #p3#p3 .p3-vcard.has-side .p3-vside{padding:12px 18px 12px}
 }
 @media(min-width:761px){#p3#p3 .p3-vacts{gap:6px 8px}#p3#p3 .p3-vacts a,#p3#p3 .p3-vacts button.p3-vcf{padding:9px 12px}#p3#p3 .p3-vacts a.p3-callbig{padding:9px 14px;font-size:16px}#p3#p3 .p3-vacts button.p3-more-btn{padding:6px 4px}}
+@media(min-width:761px){#p3#p3 .p3-vcard a.p3-vname{white-space:nowrap!important;display:block!important;overflow:hidden!important;text-overflow:ellipsis!important}}
+@media(min-width:761px) and (max-width:1500px){#p3#p3 .p3-vcard.has-side{grid-template-columns:minmax(0,190px) minmax(0,1fr) minmax(0,260px)}}
