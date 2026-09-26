@@ -96,6 +96,49 @@ def brookhaven():
             if re.search(LOCAL, e["addr"] + " " + e["venue"], re.I)]
 
 
+def cf_email(h):
+    """Decode a Cloudflare-protected email (href="/cdn-cgi/l/email-protection#...")."""
+    try:
+        k = int(h[:2], 16)
+        return "".join(chr(int(h[i:i + 2], 16) ^ k) for i in range(2, len(h), 2))
+    except Exception:
+        return ""
+
+
+_detail = {}
+
+
+def civic_detail(url):
+    """Full description, cost, contact email and phone from a CivicPlus calendar.aspx?EID= event page."""
+    if url in _detail:
+        return _detail[url]
+    out = {}
+    try:
+        t = get(url, timeout=20)
+        m = re.search(r'itemprop="description"[^>]*>(.*?)</div>', t, re.S)
+        if m:
+            d = clean(m.group(1).replace("�", " "))
+            out["desc"] = d
+        m = re.search(r'email-protection#([0-9a-f]+)', t)
+        if m:
+            out["email"] = cf_email(m.group(1))
+        else:
+            m = re.search(r'mailto:([^"?]+@[^"?]+)', t)
+            if m:
+                out["email"] = m.group(1)
+        m = re.search(r'Cost:</div>\s*<div[^>]*>(.*?)</div>', t, re.S)
+        if m:
+            out["cost"] = clean(m.group(1))
+        m = re.search(r'Phone:</div>\s*<div[^>]*>(.*?)</div>', t, re.S)
+        if m:
+            out["phone"] = clean(m.group(1))
+    except Exception:
+        pass
+    _detail[url] = out
+    return out
+
+
+
 def civic_ical(src, url, default_venue, default_url):
     t = get(url)
     t = re.sub(r"\r?\n[ \t]", "", t)
@@ -123,11 +166,31 @@ def civic_ical(src, url, default_venue, default_url):
             continue
         loc = f.get("LOCATION", ("", ""))[0].replace("\\,", ",").replace("\\n", " ")
         desc = f.get("DESCRIPTION", ("", ""))[0].replace("\\n", " ").replace("\\,", ",")
+        loc = html.unescape(loc.replace("\\;", ";").replace("\\", ""))
         loc = re.sub(r"^\s*-\s*", "", re.sub(r"\s{2,}", " ", loc)).strip()
-        venue = loc.split(" - ")[0].strip() if " - " in loc else default_venue
+        venue = loc.split(" - ")[0].strip() if " - " in loc else (loc if loc and len(loc) < 60 and not re.search(r"\d{5}", loc) else default_venue)
+        venue = venue.split(" > ")[0].strip()
+        hint = ""
+        if re.search(r"please visit|this event|ticketed|website|held at", venue + " " + loc, re.I):   # a sentence, not a place
+            hint = loc.rstrip(".") + "."
+            m = re.search(r"held at (?:the )?(.+?)(?: - |$)", loc, re.I)
+            venue, loc = (m.group(1).strip().rstrip("."), "") if m else (default_venue, "")
         u = f.get("URL", ("", ""))[0].strip()
-        out.append(ev(src, f.get("UID", (s.isoformat(), ""))[0], f.get("SUMMARY", ("", ""))[0].replace("\\,", ","), s, e,
-                      venue, loc or default_venue, u if u.startswith("http") else default_url, desc, "", allday))
+        link = u if u.startswith("http") else default_url
+        m = re.search(r"https?://\S*calendar\.aspx\?EID=\d+", desc)
+        extra = {}
+        if m:
+            link = m.group(0).replace("Calendar.aspx", "calendar.aspx")
+            if TODAY <= s.date() <= TODAY + dt.timedelta(days=DAYS_AHEAD):   # only fetch pages for events we will show
+                extra = civic_detail(link)
+            desc = desc.replace(m.group(0), "").strip()
+        x = ev(src, f.get("UID", (s.isoformat(), ""))[0], f.get("SUMMARY", ("", ""))[0].replace("\\,", ","), s, e,
+               venue, loc or default_venue, link,
+               " ".join(x for x in (extra.get("desc") or desc, hint) if x), "", allday)
+        for k in ("email", "phone", "cost"):
+            if extra.get(k):
+                x[k] = extra[k]
+        out.append(x)
     return out
 
 
@@ -167,6 +230,35 @@ def emmaclark():
     return out
 
 
+
+def gz_detail(url):
+    """Venue, address, contact and full-size flyer from a GrowthZone event detail page."""
+    out = {}
+    try:
+        t = get(url, timeout=20)
+        m = re.search(r'gz-event-address">\s*<strong>(.*?)</strong>(.*?)</div>', t, re.S)
+        if m:
+            out["venue"] = clean(m.group(1))
+            out["addr"] = re.sub(r"\s+,", ",", clean(re.sub(r"<br\s*/?>", ", ", m.group(2)))).replace(" United States", "").strip(", ")
+        m = re.search(r'gz-event-contact">(.*?)</div>', t, re.S)
+        if m:
+            ph = re.search(r'href="tel:[^"]*">([^<]+)', m.group(1))
+            em = re.search(r'mailto:([^"?]+)', m.group(1))
+            if ph:
+                out["phone"] = clean(ph.group(1))
+            if em:
+                out["email"] = em.group(1)
+        m = re.search(r'gz-eventcard-img" src="([^"]+)"', t)
+        if m:
+            out["image"] = m.group(1)
+        m = re.search(r'class="[^"]*gz-event-description[^"]*"[^>]*>(.*?)</div>', t, re.S)
+        if m and len(clean(m.group(1))) > 20:
+            out["desc"] = clean(m.group(1))
+    except Exception:
+        pass
+    return out
+
+
 def chamber3v():
     """Three Village Chamber of Commerce (GrowthZone portal): server-rendered cards with schema.org start/end."""
     t = get("https://members.3vchamber.com/event-calendar")
@@ -185,8 +277,18 @@ def chamber3v():
         d = re.search(r'gz-events-description"[^>]*>(.*?)</p>', card, re.S)
         allday = s.hour == 0 and s.minute == 0
         uid = u.group(1).rsplit("-", 1)[-1] if u else s.isoformat()
-        out.append(ev("3vchamber", uid, m.group(1), s, e, "Three Village area", "", u.group(1) if u else "https://www.3vchamber.com",
-                      d.group(1) if d else "", img, allday))
+        x = ev("3vchamber", uid, m.group(1), s, e, "Three Village area", "", u.group(1) if u else "https://www.3vchamber.com",
+               d.group(1) if d else "", img, allday)
+        if u and TODAY <= s.date() <= TODAY + dt.timedelta(days=DAYS_AHEAD):
+            det = gz_detail(u.group(1))
+            for k in ("venue", "addr", "phone", "email"):
+                if det.get(k):
+                    x[k] = det[k]
+            if det.get("image"):
+                x["image"] = det["image"]
+            if det.get("desc") and len(det["desc"]) > len(x["desc"]):
+                x["desc"] = clean(det["desc"], 700)
+        out.append(x)
     return out
 
 

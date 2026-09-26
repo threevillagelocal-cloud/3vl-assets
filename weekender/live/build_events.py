@@ -21,7 +21,7 @@ ICON = {"kids": "&#129490;", "music": "&#127928;", "history": "&#128373;&#65039;
 def tags_for(e):
     blob = (e["title"] + " " + e["desc"]).lower()
     t = [k for k, rx in TAGS if re.search(rx, blob)]
-    if re.search(r"\bfree\b", blob) or e["src"] == "emmaclark":
+    if re.search(r"\bfree\b", blob):
         t.insert(0, "free")
     return t[:3] or ["arts"]
 
