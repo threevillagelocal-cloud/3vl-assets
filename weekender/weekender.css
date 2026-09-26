@@ -623,3 +623,10 @@
 .wk-hwi2{display:inline-block;width:34px;height:34px}.wk-hwi2 .wi{width:100%;height:100%}
 .wk-hero2 .wk-pcred{bottom:6px}
 @media (max-width:760px){.wk-hero2 .wk-hin{padding:22px 18px}.wk-hstats{grid-template-columns:1fr}.wk-hero2{border-radius:0 0 22px 22px}}
+
+/* business links + spacing under the site menu */
+#wk-top a.wk-biz{color:inherit;font-weight:700;text-decoration:none;border-bottom:2px solid rgba(240,173,78,.7);transition:color .2s,border-color .2s}
+#wk-top a.wk-biz:hover{color:var(--ink3);border-bottom-color:var(--ink3)}
+#wk-top .wk-spyin a.wk-biz,#wk-top .wk-hero a.wk-biz,#wk-top .wk-now a.wk-biz,#wk-top .wk-feed a.wk-biz,#wk-top .wk-nx a.wk-biz{color:#fff}
+#wk-top .wk-spyin a.wk-biz:hover,#wk-top .wk-nx a.wk-biz:hover{color:var(--gold)}
+.wk{padding-top:22px}

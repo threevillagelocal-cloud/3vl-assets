@@ -30,6 +30,35 @@ TAGS = {"free": "Free", "kids": "Kids", "outdoor": "Outdoor", "music": "Music", 
 ICON = {"free": "&#127903;&#65039;", "kids": "&#129490;", "outdoor": "&#127795;", "music": "&#127928;",
         "history": "&#128373;&#65039;", "food": "&#127822;", "arts": "&#127912;", "stage": "&#127917;"}
 
+NOLINK_TAGS = ("a", "button", "script", "style", "h1", "h2", "h3", "title")
+NOLINK_CLASSES = ('class="wk-evtitle"', 'class="wk-awt"', 'class="wk-nxt"', 'class="wk-stib"', 'class="wk-ptitle"', 'class="wk-spt"')
+
+
+def linkify(html_str):
+    """Link business names in visible text only: never inside tags, links, buttons, headings, titles, scripts or styles."""
+    links = json.load(open(os.path.join(HERE, "biz_links.json"), encoding="utf-8"))
+    pat = re.compile("|".join(re.escape(n) for n in sorted(links, key=len, reverse=True)))
+    stack, out = [], []
+    for p in re.split(r"(<[^>]+>)", html_str):
+        if p.startswith("<"):
+            name = re.match(r"</?\s*([a-zA-Z0-9]+)", p)
+            tag = name.group(1).lower() if name else ""
+            if p.startswith("</"):
+                if stack and stack[-1] == tag:
+                    stack.pop()
+            elif not p.endswith("/>") and tag not in ("img", "br", "input", "link", "meta", "source", "circle", "path", "hr"):
+                blocked = tag in NOLINK_TAGS or any(c in p for c in NOLINK_CLASSES)
+                if blocked or stack:
+                    stack.append(tag)
+            out.append(p)
+        elif stack or not p.strip():
+            out.append(p)
+        else:
+            out.append(pat.sub(lambda m: '<a class="wk-biz" href="%s"%s>%s</a>' % (
+                links[m.group(0)], "" if "threevillagelocal.com" in links[m.group(0)] else ' target="_blank" rel="noopener"', m.group(0)), p))
+    return "".join(out)
+
+
 def build(edition, local=False, sha="master"):
     d = json.load(open(os.path.join(HERE, edition, "weekend.json"), encoding="utf-8"))
     vips = json.load(open(os.path.join(HERE, "vip.json"), encoding="utf-8"))
@@ -282,6 +311,7 @@ def build(edition, local=False, sha="master"):
 
     body = "\n".join(out)
     body = body.replace("’", "&rsquo;")
+    body = linkify(body)
     assert "\\" not in body, "backslash found: BD would strip it"
     return body
 
