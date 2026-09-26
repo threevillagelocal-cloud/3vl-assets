@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1080px;overflow:hidden}
+body{font-family:Inter,Arial,sans-serif;color:#fff;position:relative;background:#0b1522}
+.bg{position:absolute;inset:0;background:url('hero-rain.jpg') center/cover;filter:saturate(.9)}
+.bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,16,28,.55) 0%,rgba(8,16,28,.62) 38%,rgba(8,16,28,.9) 70%,rgba(8,16,28,.96) 100%)}
+.rain{position:absolute;inset:0;background:repeating-linear-gradient(105deg,rgba(255,255,255,.07) 0 2px,transparent 2px 26px)}
+.pill{position:absolute;left:64px;top:64px;background:#d9463f;border-radius:10px;padding:12px 22px;font-weight:900;font-size:30px;letter-spacing:.08em;display:flex;align-items:center;gap:12px}
+.pill i{width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.35)}
+.logo{position:absolute;left:50%;top:70px;width:200px;margin-left:-100px}
+.kick{position:absolute;left:64px;top:300px;font-weight:900;font-size:40px;letter-spacing:.3em;color:#f2a93b}
+.title{position:absolute;left:0;right:0;top:300px;text-align:center;font-family:'Bebas Neue',Impact,sans-serif;font-size:250px;line-height:.86;letter-spacing:.01em;text-shadow:0 8px 40px rgba(0,0,0,.6)}
+.title span{color:#4de1ff}
+.cards{position:absolute;left:64px;right:64px;top:640px;display:flex;flex-direction:column;gap:16px}
+.card{border-radius:18px;padding:18px 24px;display:flex;align-items:center;gap:20px;background:rgba(255,255,255,.08);border:2px solid rgba(77,225,255,.35)}
+.card b{font-size:34px;font-weight:900;line-height:1.1}
+.card small{display:block;font-size:26px;font-weight:700;color:rgba(255,255,255,.85);margin-top:4px}
+.card .ic{font-size:44px;width:56px;text-align:center}
+.warn{background:#d9463f;border-color:#ff8a80}
+.credit{position:absolute;right:24px;bottom:14px;font-size:15px;font-weight:600;color:rgba(255,255,255,.6)}
+</style></head><body>
+<div class="bg"></div><div class="rain"></div>
+<img class="logo" src="../storm-center-template/logo3vl.png">
+<div class="title">WEEKEND<br>STORM<br><span>UPDATE</span></div>
+</body></html>
