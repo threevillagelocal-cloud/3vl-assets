@@ -50,10 +50,10 @@ for v in vips:
         "verified": str(v.get("verified")) == "1",
         "rating": rating, "reviews": len(rs),
         "since": exp if re.fullmatch(r"(19|20)\d\d", exp) else "",
-        "cred": re.sub(r"\s+", " ", str(v.get("credentials") or "")).strip()[:160],
+        "cred": re.sub(r"\s+", " ", str(v.get("credentials") or "")).strip()[:400],
         "specs": specs[:6],
         "web": u(v.get("website")), "fb": u(v.get("facebook")), "ig": u(v.get("instagram")),
-        "pay": re.sub(r"\s+", " ", str(v.get("affiliation") or "")).strip()[:90],
+        "pay": re.sub(r"\s+", " ", str(v.get("affiliation") or "")).strip()[:400],
     }
 json.dump(meta, open(os.path.join(HERE, "vip_meta.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(len(meta), "VIPs")
