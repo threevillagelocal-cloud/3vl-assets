@@ -118,7 +118,7 @@
   "phone": "6312353300",
   "url": "https://www.threevillagelocal.com/the-odwyer-brainard-team-at-daniel-gale-sothebys-international-realty",
   "bdphone": "6312353300",
-  "group": "vip112"
+  "group": "realestate"
  },
  {
   "id": "217",
@@ -130,5 +130,16 @@
   "url": "https://www.threevillagelocal.com/jlw-accounting-and-tax-services",
   "bdphone": "6313388858",
   "group": "vip217"
+ },
+ {
+  "id": "71",
+  "name": "Team Passamenti",
+  "img": "vip/banners/passamenti.webp",
+  "w": 720,
+  "h": 600,
+  "phone": "6312043347",
+  "url": "https://www.threevillagelocal.com/team-passamenti-at-realty-connect-usa",
+  "bdphone": "6312043347",
+  "group": "realestate"
  }
 ]
