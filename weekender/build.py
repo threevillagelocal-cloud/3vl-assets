@@ -132,16 +132,16 @@ def build(edition, local=False, sha="master"):
 
     # NAV
     w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
-      '<a href="#wk-picks">&#11088; Top Picks</a><a href="#wk-now">&#9889; Live</a><a href="#wk-wx">&#9728;&#65039; Weather</a>'
+      '<a href="#wk-picks">&#11088; Top Picks</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-now">&#9889; Live</a><a href="#wk-wx">&#9728;&#65039; Weather</a>'
       '<a href="#wk-sched">&#128197; Schedule</a><a href="#wk-spy">&#128373;&#65039; Spy Day</a>'
-      '<a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-stage">&#127917; On Stage</a><a href="#wk-next">&#128302; On the Radar</a>'
+      '<a href="#wk-stage">&#127917; On Stage</a><a href="#wk-next">&#128302; On the Radar</a>'
       '</div></nav>')
     w('<div class="wk-ticker" id="wk-ticker" hidden><span class="wk-tkl"><i></i>LIVE</span><div class="wk-tkm"><div class="wk-tkt" id="wk-tkt"></div></div></div>')
 
     w('<div class="wk-grid"><div class="wk-main">')
 
     # TOP PICKS
-    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Picks</span><small>If you only do three things</small></h2><div class="wk-picks">')
+    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Picks</span><small>If you only do three things</small></h2><div class="wk-picks wk-swipe">')
     for i, pid in enumerate(d["picks"]):
         e = ev[pid]
         w('<article class="wk-pick wk-rv" %s style="--i:%d"><div class="wk-pimg"><img src="%s" alt="%s" loading="lazy" width="720" height="480">'
@@ -154,6 +154,21 @@ def build(edition, local=False, sha="master"):
             esc(e["title"]), esc(V[e["venue"]]["name"]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), actions(e), esc(e.get("credit", ""))))
     w('</div></section>')
 
+    # EAT & DRINK (exterior photo + dish inset; one card per business)
+    w('<section class="wk-sec" id="wk-eat"><h2 class="wk-h2"><span>Eat &amp; Drink</span><small>Local specials, updated daily</small></h2><div class="wk-eat wk-swipe">')
+    for sp in d["specials"]:
+        badge = '<span class="wk-src wk-fb">f</span>' if sp["src"] == "facebook" else '<span class="wk-src wk-web">&#127760;</span>'
+        main = sp.get("ext") or sp.get("img")
+        pic = ('<div class="wk-eimg"><img src="%s" alt="%s" loading="lazy">%s</div>' % (
+            img(main, True), esc(sp["biz"]),
+            ('<span class="wk-dish"><img src="%s" alt="" loading="lazy"></span>' % img(sp["dish"], True)) if sp.get("dish") else "")) if main else ""
+        call = ('<a class="wk-call" href="tel:%s">&#128222; Call</a>' % re.sub(r"\D", "", sp["phone"])) if sp.get("phone") else ''
+        w('<article class="wk-sp wk-rv%s">%s<div class="wk-spb"><p class="wk-spbiz">%s</p><p class="wk-spt">%s</p><p class="wk-spw">%s</p>'
+          '<p class="wk-spd">%s</p><p class="wk-spf">%s<span>via %s</span>%s<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>' % (
+            " wk-spfeat" if sp.get("feature") else "", pic, esc(sp["biz"]), esc(sp["title"]), esc(sp["when"]), esc(sp["desc"]),
+            badge, esc(sp["srcName"]), call, gmap(sp["venue"])))
+    w('</div><p class="wk-note">Own a local spot with a special? <a href="https://www.threevillagelocal.com/promotion">Send it to us</a> and we&rsquo;ll feature it free.</p></section>')
+
     # RIGHT NOW + THREE VILLAGE LIVE FEED
     w('<section class="wk-sec" id="wk-now"><h2 class="wk-h2"><span>Three Village Live</span><small>Updates on its own. No refresh needed.</small></h2><div class="wk-livewrap">'
       '<div class="wk-now"><div class="wk-nowh"><span class="wk-live"><i></i>LIVE</span>'
@@ -164,7 +179,7 @@ def build(edition, local=False, sha="master"):
       '<p class="wk-fsrc">Pulled from local business pages, organizers, news and official alerts</p></div></div></section>')
 
     # WEATHER (compact)
-    w('<section class="wk-sec" id="wk-wx"><h2 class="wk-h2"><span>Weekend Weather</span><small>Live from the National Weather Service</small></h2>'
+    w('<section class="wk-sec" id="wk-wx"><h2 class="wk-h2"><span>Weather</span><small>Live from the National Weather Service</small></h2>'
       '<p class="wk-verdict" id="wk-verdict">&#9728;&#65039; Loading the forecast&hellip;</p><div class="wk-wx">')
     for k in ("fri", "sat", "sun"):
         bg = d.get("wxbg", {}).get(k, {})
@@ -180,7 +195,7 @@ def build(edition, local=False, sha="master"):
     w('</div></section>')
 
     # SCHEDULE
-    w('<section class="wk-sec" id="wk-sched"><h2 class="wk-h2"><span>The Full Schedule</span><small>Tap &#9734; to build your weekend</small></h2>')
+    w('<section class="wk-sec" id="wk-sched"><h2 class="wk-h2"><span>The Full Schedule</span><small>Tap &#9734; to save to My Plans</small></h2>')
     w('<div class="wk-tabs" role="tablist"><button type="button" class="wk-tab is-on" data-day="all">All</button>'
       '<button type="button" class="wk-tab" data-day="fri">Fri <small>10/2</small></button><button type="button" class="wk-tab" data-day="sat">Sat <small>10/3</small></button>'
       '<button type="button" class="wk-tab" data-day="sun">Sun <small>10/4</small></button><span class="wk-tabink"></span></div>')
@@ -215,6 +230,7 @@ def build(edition, local=False, sha="master"):
       '<p class="wk-spyd">In 1778 a handful of Setauket neighbors ran the spy ring that fed George Washington the intel he needed. '
       'Twelve years in, their hometown throws them a party. Here is how to do the whole day.</p>'
       '<div class="wk-cipher" id="wk-cipher" aria-label="Decoded message"><span class="wk-ciphl">Intercepted message</span><b data-plain="MEET AT THE VILLAGE GREEN AT TEN">&nbsp;</b></div>')
+    w('<button type="button" class="wk-more wk-spytog" data-more="wk-spydet">Open the full field guide &#9662;</button><div class="wk-spydet" id="wk-spydet">')
     w('<div class="wk-trolley"><p class="wk-trh"><span>&#128651; Free hop-on, hop-off trolley</span><small>10 AM-4 PM &middot; first come, first served</small></p>'
       '<svg class="wk-route" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true"><path id="wk-rpath" d="M20 90 C 120 10, 200 10, 300 60 S 480 110, 580 30" /></svg>'
       '<div class="wk-bus" id="wk-bus">&#128651;</div><ol class="wk-stops">')
@@ -230,21 +246,9 @@ def build(edition, local=False, sha="master"):
       '<li><b>On site</b> The Branded Bun truck &amp; ALatte Coffee</li><li><b>Caroline Church</b> Dilly Dilly Donuts</li>'
       '<li><b>Checkmate Inn</b> Level Up Kitchen</li><li><b>Main St</b> Culpers 1778 &amp; Elaine&rsquo;s</li>'
       '<li><b>Patriots Rock</b> McNulty’s ice cream truck</li></ul></div></div>')
+    w('</div>')
     w('<p class="wk-spyf"><a class="wk-btn wk-btng" href="%s" target="_blank" rel="noopener">Full schedule &amp; digital map &rarr;</a>'
       '<button type="button" class="wk-btn wk-btno wk-save" data-save="spyday" aria-pressed="false"><span class="wk-star">&#9734;</span><span class="wk-savet">Save Spy Day</span></button></p></div></section>' % s["url"])
-
-    # EAT & DRINK
-    w('<section class="wk-sec" id="wk-eat"><h2 class="wk-h2"><span>Eat &amp; Drink</span><small>Specials pulled from local feeds</small></h2><div class="wk-eat">')
-    for sp in d["specials"]:
-        badge = '<span class="wk-src wk-fb">f</span>' if sp["src"] == "facebook" else '<span class="wk-src wk-web">&#127760;</span>'
-        pic = '<div class="wk-eimg"><img src="%s" alt="%s" loading="lazy"></div>' % (img(sp["img"], True), esc(sp["biz"])) if sp.get("img") else ''
-        call = ('<a class="wk-call" href="tel:%s">&#128222; %s</a>' % (re.sub(r"\D", "", sp["phone"]), esc(sp["phone"]))) if sp.get("phone") else ''
-        w('<article class="wk-sp wk-rv%s">%s<div class="wk-spb"><p class="wk-spbiz">%s</p><p class="wk-spt">%s</p><p class="wk-spw">%s</p>'
-          '<p class="wk-spd">%s</p>%s<p class="wk-spf">%s<span>via %s</span>%s<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>' % (
-            " wk-spfeat" if sp.get("feature") else "", pic, esc(sp["biz"]), esc(sp["title"]), esc(sp["when"]), esc(sp["desc"]),
-            ('<div class="wk-spimg2"><img src="%s" alt="" loading="lazy"><span>The old McDowell Saloon, ca. 1904</span></div>' % img(sp["img2"], True)) if sp.get("img2") else "",
-            badge, esc(sp["srcName"]), call, gmap(sp["venue"])))
-    w('</div><p class="wk-note">Own a local spot with a weekend special? <a href="https://www.threevillagelocal.com/promotion">Send it to us</a> by Wednesday and we&rsquo;ll add it free.</p></section>')
 
     w('<div class="wk-adslot" data-slot="2"></div>')
 
@@ -264,7 +268,7 @@ def build(edition, local=False, sha="master"):
     w('</div></div></section>')
 
     # NEXT WEEKEND
-    w('<section class="wk-sec" id="wk-next"><h2 class="wk-h2"><span>On the Radar</span><small>Save the dates</small></h2><div class="wk-next">')
+    w('<section class="wk-sec" id="wk-next"><h2 class="wk-h2"><span>On the Radar</span><small>Save the dates</small></h2><div class="wk-next wk-swipe">')
     for n in d["next"]:
         w('<div class="wk-nx wk-rv"%s><p class="wk-nxw">%s</p><p class="wk-nxt">%s</p><p class="wk-nxd">%s</p>%s</div>' % (
             (' style="--nx:url(%s)"' % img(n["img"], True)) if n.get("img") else "", esc(n["when"]), esc(n["title"]), esc(n["desc"]),
@@ -272,13 +276,13 @@ def build(edition, local=False, sha="master"):
     w('</div></section>')
 
     # SUBMIT + SHARE + APP
-    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got an event or a special?</p><p class="wk-subd">The Weekender goes out every Thursday. '
+    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got an event or a special?</p><p class="wk-subd">Three Village Now updates every day. '
       'Send us your event, menu special or promotion and we’ll put it in front of Three Village.</p>'
       '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Submit it free &rarr;</a></div>'
-      '<div class="wk-share"><p class="wk-subt">Send this to your weekend crew</p><div class="wk-shb">'
-      '<button type="button" class="wk-btn wk-btnw" id="wk-share">&#128172; Share the Weekender</button>'
+      '<div class="wk-share"><p class="wk-subt">Send this to your crew</p><div class="wk-shb">'
+      '<button type="button" class="wk-btn wk-btnw" id="wk-share">&#128172; Share Three Village Now</button>'
       '<button type="button" class="wk-btn wk-btnw" id="wk-share2">&#11088; Share my plan</button></div></div>'
-      '<div class="wk-app"><p class="wk-subt">Get the Weekender on your phone</p><p class="wk-subd">The free Three Village Local app sends the weekend lineup, local news and neighbor-rated businesses straight to you.</p>'
+      '<div class="wk-app"><p class="wk-subt">Get Three Village Now on your phone</p><p class="wk-subd">The free Three Village Local app puts today&rsquo;s events, local specials and neighbor-rated businesses right on your phone.</p>'
       '<div class="wk-appb"><a href="https://apps.apple.com/us/app/three-village-local/id6746367200" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/badges/app-store-badge.png" alt="Download on the App Store" width="142" height="50"></a>'
       '<a href="https://play.google.com/store/apps/details?id=com.threevillagelocal.app&amp;hl=en_US" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/badges/google-play-badge.png" alt="Get it on Google Play" width="168" height="50"></a></div></div></section>')
     w('<p class="wk-foot">Plans change. Check with the organizer before you head out. Sources: organizer websites, TBR News Media, and local business pages on Facebook.</p>')
@@ -301,8 +305,8 @@ def build(edition, local=False, sha="master"):
     w('</div>')  # /wk-grid
 
     # MY WEEKEND DRAWER
-    w('<button type="button" class="wk-fab" id="wk-fab" aria-controls="wk-drawer" aria-expanded="false"><span class="wk-star">&#9733;</span> My Weekend <b id="wk-fabn">0</b></button>'
-      '<div class="wk-drawer" id="wk-drawer" aria-hidden="true"><div class="wk-drin"><div class="wk-drh"><p>&#11088; My Weekend</p><button type="button" id="wk-drx" aria-label="Close">&times;</button></div>'
+    w('<button type="button" class="wk-fab" id="wk-fab" aria-controls="wk-drawer" aria-expanded="false"><span class="wk-star">&#9733;</span> My Plans <b id="wk-fabn">0</b></button>'
+      '<div class="wk-drawer" id="wk-drawer" aria-hidden="true"><div class="wk-drin"><div class="wk-drh"><p>&#11088; My Plans</p><button type="button" id="wk-drx" aria-label="Close">&times;</button></div>'
       '<div id="wk-drlist"></div><div class="wk-drf"><button type="button" class="wk-btn wk-btng" id="wk-calall">&#128197; Add all to my calendar</button>'
       '<button type="button" class="wk-btn wk-btno" id="wk-share3">&#128172; Share my plan</button></div></div></div>')
     w('<a href="#wk-top" class="wk-totop" id="wk-totop" aria-label="Back to top">&#8593;</a><div class="wk-toast" id="wk-toast" role="status"></div>')

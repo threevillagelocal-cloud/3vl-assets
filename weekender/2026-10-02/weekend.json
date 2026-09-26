@@ -524,29 +524,9 @@
    "img": "cc-spyday",
    "feature": true,
    "img2": "cc-saloon",
-   "phone": ""
-  },
-  {
-   "biz": "The Country House",
-   "venue": "countryhouse",
-   "title": "Culper Spy Lunch",
-   "when": "Sat, Oct. 3",
-   "desc": "A one-day menu of dishes named for the Culper spies, plus a kids' menu with a chance to win free dessert.",
-   "img": "countryhouse",
-   "src": "facebook",
-   "srcName": "Stony Brook Village",
-   "phone": "631-751-3332"
-  },
-  {
-   "biz": "The Country House",
-   "venue": "countryhouse",
-   "title": "$50 Three-Course Prix Fixe",
-   "when": "Fri, Oct. 2",
-   "desc": "Sailing on the Discovery Wetlands Cruise? Show your cruise ticket for a three-course dinner.",
-   "src": "website",
-   "srcName": "stonybrookvillage.com",
-   "phone": "631-751-3332",
-   "img": "sbharbor"
+   "phone": "",
+   "ext": "cc-saloon",
+   "dish": "cc-spyday"
   },
   {
    "biz": "Madiran The Wine Bar",
@@ -557,7 +537,9 @@
    "src": "website",
    "srcName": "madiranthewinebar.com",
    "phone": "631-675-2778",
-   "img": "madiran"
+   "img": "madiran",
+   "ext": "madiran-ext",
+   "dish": "madiran"
   },
   {
    "biz": "Culpers 1778",
@@ -567,7 +549,9 @@
    "desc": "The restaurant named for the ring itself. Reservations recommended.",
    "src": "website",
    "srcName": "tvhs.org",
-   "img": "culpers"
+   "img": "culpers",
+   "ext": "culpers-ext",
+   "dish": "culpers"
   },
   {
    "biz": "Tommy's Place",
@@ -577,7 +561,19 @@
    "desc": "BBQ chicken mac and cheese, a chipotle steak quesadilla, Hector's lobster sandwich and creamy Italian sausage soup.",
    "src": "facebook",
    "srcName": "Tommy's Place",
-   "img": "tommys"
+   "img": "tommys",
+   "ext": "tommys"
+  },
+  {
+   "biz": "The Country House",
+   "venue": "countryhouse",
+   "title": "Spy Day Lunch & Prix Fixe",
+   "when": "Fri, Oct. 2 & Sat, Oct. 3",
+   "desc": "Sat: a one-day Culper Spy menu, plus a kids’ menu with a chance at free dessert. Fri: $50 three-course dinner with your Discovery Wetlands Cruise ticket.",
+   "src": "facebook",
+   "srcName": "Stony Brook Village",
+   "phone": "631-751-3332",
+   "ext": "countryhouse"
   }
  ],
  "next": [

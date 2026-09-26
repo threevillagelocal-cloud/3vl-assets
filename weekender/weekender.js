@@ -229,7 +229,11 @@ function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(
     ads.forEach(function(a){var c=a.cloneNode(true);c.classList.remove('is-on');var lb=document.createElement('span');lb.className='wk-adlabel';lb.textContent='3VL VIP';c.appendChild(lb);w.appendChild(c)});return $$('.wk-ad',w)});
   if(dots)dots.innerHTML=ads.map(function(a,i){return '<button type="button" aria-label="Show ad '+(i+1)+'"></button>'}).join('');
   function show(n){idx=(n+ads.length)%ads.length;ads.forEach(function(a,i){a.classList.toggle('is-on',i===idx);a.setAttribute('aria-hidden',i!==idx)});
-    clones.forEach(function(cs,k){var m=(idx+k*4+3)%cs.length;cs.forEach(function(a,i){a.classList.toggle('is-on',i===m)})});
+    var usedG=[(ads[idx].getAttribute('data-group')||ads[idx].getAttribute('data-vip'))];
+    clones.forEach(function(cs,k){var m=(idx+k*4+3)%cs.length,guard=0;
+      while(guard<cs.length&&usedG.indexOf(cs[m].getAttribute('data-group')||cs[m].getAttribute('data-vip'))>=0){m=(m+1)%cs.length;guard++}
+      usedG.push(cs[m].getAttribute('data-group')||cs[m].getAttribute('data-vip'));
+      cs.forEach(function(a,i){a.classList.toggle('is-on',i===m)})});
     if(dots)$$('button',dots).forEach(function(b,i){b.classList.toggle('is-on',i===idx)});t0=performance.now();
     var name=ads[idx].getAttribute('data-vip');if(!seenV[name]&&rot.offsetParent){seenV[name]=1;track('vip_ad_view',{vip:name,placement:'weekender_rail'})}}
   function loop(ts){if(!paused){var p=(ts-t0)/dur;if(bar)bar.style.width=Math.min(100,p*100)+'%';if(p>=1)show(idx+1)}else{t0=ts-(parseFloat(bar&&bar.style.width||0)/100)*dur}requestAnimationFrame(loop)}
@@ -290,6 +294,20 @@ function spy(){var links=$$('.wk-navin a'),secs=links.map(function(a){return doc
     var tt=$('wk-totop');if(tt)tt.classList.toggle('is-up',window.scrollY>1200);var f=$('wk-fab');if(f)f.classList.toggle('is-up',saved.length>0||window.scrollY>900)}
   window.addEventListener('scroll',on,{passive:true});on()}
 
+
+/* ---------- compact mode (phones): cap long lists, toggles ---------- */
+function compact(){
+  var small=matchMedia('(max-width:760px)').matches;
+  $$('.wk-more[data-more]').forEach(function(btn){btn.addEventListener('click',function(){var t=$(btn.getAttribute('data-more'));if(!t)return;var open=t.classList.toggle('is-open');btn.innerHTML=open?'Close the field guide &#9652;':'Open the full field guide &#9662;'})});
+  if(!small)return;
+  $$('.wk-dayblk').forEach(function(blk){var items=$$('.wk-ev',blk);if(items.length<=4)return;
+    items.slice(4).forEach(function(li){li.classList.add('wk-capped')});
+    var b=document.createElement('button');b.type='button';b.className='wk-more';b.textContent='Show all '+items.length+' events';
+    b.addEventListener('click',function(){items.forEach(function(li){li.classList.remove('wk-capped')});b.remove()});blk.appendChild(b)});
+  var fl=$('wk-flist');if(fl){fl.classList.add('wk-fcap');var fb=document.createElement('button');fb.type='button';fb.className='wk-more wk-more-dark';fb.textContent='More from around town';
+    fb.addEventListener('click',function(){fl.classList.remove('wk-fcap');fb.remove()});fl.parentNode.insertBefore(fb,fl.nextSibling)}
+}
+
 /* ---------- boot ---------- */
 function hdr(){var n=document.querySelector('.navbar-fixed-top');var h=n?n.offsetHeight:0;root.style.setProperty('--hdr',h+'px')}
 function go(){hdr();window.addEventListener('scroll',hdr,{passive:true});
@@ -319,7 +337,7 @@ function go(){hdr();window.addEventListener('scroll',hdr,{passive:true});
   var ca=$('wk-calall');if(ca)ca.addEventListener('click',function(){var l=saved.map(function(id){return EV[id]}).filter(Boolean);if(l.length)ics(l);else toast('Save a few events first')});
   ['wk-share'].forEach(function(id){var b=$(id);if(b)b.addEventListener('click',function(){share('Everything happening in Three Village this weekend:')})});
   ['wk-share2','wk-share3'].forEach(function(id){var b=$(id);if(b)b.addEventListener('click',function(){share(planText())})});
-  syncSaved();vip();cipher();trolley();video();reveal();spy();
+  syncSaved();vip();cipher();compact();trolley();video();reveal();spy();
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
 })();
