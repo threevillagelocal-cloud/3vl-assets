@@ -22,10 +22,8 @@
 
 /* ---------- Three Village Favorites (featured member carousel) ---------- */
 .recent-member{padding-top:14px;padding-bottom:18px}
-.recent-member .well{position:relative;overflow:hidden;background:#fff!important;border:1px solid #e3e9f0!important;border-radius:20px!important;padding:22px 20px 20px!important;box-shadow:0 10px 26px rgba(27,47,69,.08)!important;
+.recent-member .well{position:relative;overflow:hidden;background:radial-gradient(130% 70% at 100% 0%,rgba(0,111,187,.10),transparent 60%),linear-gradient(180deg,#f2f6fb 0%,#ffffff 58%)!important;border:1px solid #d9e3ee!important;border-radius:20px!important;padding:22px 20px 20px!important;box-shadow:0 10px 26px rgba(27,47,69,.08)!important;
   transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0));transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,border-color .3s;will-change:transform}
-.recent-member .well:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,#006fbb,#205081 40%,#f0ad4e 60%,#006fbb);background-size:200% 100%;animation:tvlBar 8s linear infinite}
-@keyframes tvlBar{to{background-position:-200% 0}}
 .recent-member .well:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(circle at var(--gx,50%) var(--gy,30%),rgba(0,111,187,.08),transparent 55%)}
 .recent-member .well.tvl-lift{--ty:-8px;border-color:#cfe0f0!important;box-shadow:0 26px 50px rgba(27,47,69,.18),0 0 0 2px rgba(240,173,78,.45)!important;transition:transform .12s ease-out,box-shadow .45s,border-color .3s}
 .recent-member .well.tvl-lift:after{opacity:1}
@@ -43,5 +41,4 @@
 
 @media (prefers-reduced-motion:reduce){
   .homepage_steps [class*="homepage_step_"],.homepage_steps .sm-bmargin > a,.homepage_steps .sm-bmargin > a img,.recent-member .well,.recent-member .recent-member-image img{transition:none!important;transform:none!important;opacity:1!important}
-  .recent-member .well:before{animation:none}
 }
