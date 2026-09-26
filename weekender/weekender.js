@@ -32,11 +32,23 @@ function leaves(){var box=root.querySelector('.wk-leaves');if(!box||matchMedia('
   for(var i=0;i<14;i++){var s=document.createElement('span');s.className='wk-leaf';s.innerHTML=set[i%set.length];
     s.style.left=(Math.random()*100)+'%';s.style.animationDuration=(9+Math.random()*9)+'s';s.style.animationDelay=(-Math.random()*16)+'s';
     s.style.fontSize=(14+Math.random()*16)+'px';s.style.setProperty('--dx',(Math.random()*160-80)+'px');s.style.setProperty('--r',(Math.random()*720-360)+'deg');box.appendChild(s)}}
-function countdown(){var c=$('wk-count'),l=$('wk-cl'),t=now(),target,label;
+function countdown(){var c=$('wk-count'),l=$('wk-cl'),t=now(),target,label;if(!c||!l)return;
   if(t<START){target=START;label='The weekend starts in'}else if(t<END){target=END;label='&#9679; Live now. Weekend ends in';c.classList.add('is-live')}else{l.innerHTML='That’s a wrap. See you next weekend';$('wk-cv').style.display='none';return}
   l.innerHTML=label;var s=Math.max(0,Math.floor((target-t)/1000));
   var v={d:Math.floor(s/86400),h:pad(Math.floor(s%86400/3600)),m:pad(Math.floor(s%3600/60)),s:pad(s%60)};
   $$('#wk-cv i').forEach(function(i){var u=i.getAttribute('data-u');if(i.textContent!=String(v[u]))i.textContent=v[u]})}
+
+
+/* ---------- compact live hero ---------- */
+function heroLive(){var t=now(),d=$('wk-hdate'),c=$('wk-hclock');
+  if(d)d.textContent=t.toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric'});
+  if(c)c.textContent=tm(t);
+  var live=LIST.filter(function(e){return t>=e.start&&t<e.end}),next=LIST.filter(function(e){return e.start>t})[0],n=$('wk-hnow'),x=$('wk-hnext');
+  if(n)n.textContent=live.length?live.length+(live.length===1?' event':' events'):'Quiet now';
+  if(x)x.textContent=next?'Next: '+next.title.slice(0,34)+(next.title.length>34?'...':'')+(next.start.toDateString()===t.toDateString()?' at '+tm(next.start):', '+DAYN[next.day].slice(0,3)):'See the full schedule';}
+function heroWx(){fetch('https://api.weather.gov/points/'+LAT+','+LON).then(function(r){return r.json()}).then(function(p){return fetch(p.properties.forecastHourly)}).then(function(r){return r.json()}).then(function(d){
+  var p=(d.properties.periods||[])[0];if(!p)return;var te=$('wk-htemp'),sk=$('wk-hsky'),ic=$('wk-hwi2');
+  if(te)te.textContent=p.temperature;if(sk)sk.textContent=p.shortForecast+(p.windSpeed?', wind '+p.windSpeed:'');if(ic)ic.innerHTML=wxSvg(p.shortForecast)}).catch(function(){})}
 
 /* ---------- count-up stats ---------- */
 function countUp(el){var n=+el.getAttribute('data-n'),t0=null;function f(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/1200);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
@@ -284,7 +296,7 @@ function go(){hdr();window.addEventListener('scroll',hdr,{passive:true});
   var ed=root.getAttribute('data-start').slice(0,10),base=new Date(ed+'T12:00:00');DAYS.fri=base;DAYS.sat=new Date(base.getTime()+864e5);DAYS.sun=new Date(base.getTime()+1728e5);
   $$('.wk-ev').forEach(function(li){li.id='wk-ev-'+li.getAttribute('data-id')});$$('.wk-pick').forEach(function(p){EV[p.getAttribute('data-id')]&&!EV[p.getAttribute('data-id')].el.id&&(EV[p.getAttribute('data-id')].el.id='wk-pk-'+p.getAttribute('data-id'))});
   LIST.forEach(function(e){var li=root.querySelector('#wk-ev-'+e.id);if(li)e.el=li});
-  leaves();countdown();setInterval(countdown,1000);
+  countdown();heroLive();setInterval(heroLive,1000);heroWx();setInterval(heroWx,15*60000);
   var st=$$('.wk-num');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){countUp(x.target);io.unobserve(x.target)}})});st.forEach(function(e){io.observe(e)})}else st.forEach(countUp);
   statuses();nowPanel();setInterval(function(){statuses();nowPanel()},30000);
   loadFeed();loadAlerts();setInterval(loadFeed,60000);setInterval(loadAlerts,300000);setInterval(function(){$$('[data-ago]').forEach(function(s){s.textContent=ago(s.getAttribute('data-ago'))})},30000);

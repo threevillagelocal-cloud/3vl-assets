@@ -89,21 +89,17 @@ def build(edition, local=False, sha="master"):
     w('<div class="wk" id="wk-top" data-start="%s" data-end="%s" data-assets="%s" data-edition="%s" data-feed="%s">' % (
         d["starts"], d["ends"], esc(base), edition, esc(feed_url)))
 
-    # HERO
-    w('<header class="wk-hero"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="" width="1600" height="1067"></picture>'
+    # HERO: compact live intro for Three Village Now
+    w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="" width="1600" height="1067"></picture>'
       % (img(d["hero"]["img"], True), img(d["hero"]["img"])))
-    w('<div class="wk-hshade"></div><div class="wk-leaves" aria-hidden="true"></div>')
-    w('<div class="wk-hin"><div class="wk-brandrow"><p class="wk-brand2"><span class="wk-b1">Three Village</span> <span class="wk-b2">Now</span></p>'
-      '<span class="wk-livepill"><i></i>Updated Live</span></div>'
-      '<p class="wk-kick"><span class="wk-kdiv"></span><span id="wk-today">%s</span></p>' % esc(d["range"]))
-    w('<p class="wk-title"><span>%s</span><span class="wk-tacc">%s</span></p>' % (esc(d["headline"][0]), esc(d["headline"][1])))
-    w('<p class="wk-dek">%s</p>' % esc(d["dek"]))
-    w('<div class="wk-hrow"><div class="wk-count" id="wk-count"><span class="wk-cl" id="wk-cl">The weekend starts in</span>'
-      '<span class="wk-cv" id="wk-cv"><i data-u="d">0</i><em>d</em><i data-u="h">00</i><em>h</em><i data-u="m">00</i><em>m</em><i data-u="s">00</i><em>s</em></span></div>')
-    w('<div class="wk-hwx" id="wk-hwx">')
-    for k in ("fri", "sat", "sun"):
-        w('<div class="wk-hwd" data-day="%s"><span class="wk-hwn">%s</span><span class="wk-hwi">&#9925;</span><span class="wk-hwt">--&deg;</span></div>' % (k, DAYNAME[k][:3]))
-    w('</div></div></div><p class="wk-pcred">%s</p></header>' % esc(d["hero"]["credit"]))
+    w('<div class="wk-hshade"></div>')
+    w('<div class="wk-hin"><div class="wk-brandrow"><h1 class="wk-hname">Three Village <span>Now</span></h1><span class="wk-livepill"><i></i>Updated Live</span></div>')
+    w('<p class="wk-dek">What&rsquo;s happening in Setauket, Stony Brook and Port Jefferson right now. Events, specials, weather and local news, updated all day.</p>')
+    w('<div class="wk-hstats">'
+      '<div class="wk-hs"><span class="wk-hsl">Today</span><b id="wk-hdate">--</b><span class="wk-hsc" id="wk-hclock">--:--</span></div>'
+      '<a class="wk-hs" href="#wk-now"><span class="wk-hsl"><i class="wk-hdot"></i>Happening now</span><b id="wk-hnow">--</b><span class="wk-hsc" id="wk-hnext">checking&hellip;</span></a>'
+      '<a class="wk-hs" href="#wk-wx"><span class="wk-hsl">Setauket weather</span><b><span class="wk-hwi2" id="wk-hwi2"></span><span id="wk-htemp">--</span>&deg;</b><span class="wk-hsc" id="wk-hsky">loading&hellip;</span></a>'
+      '</div></div><p class="wk-pcred">%s</p></header>' % esc(d["hero"]["credit"]))
 
     # NAV
     w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
