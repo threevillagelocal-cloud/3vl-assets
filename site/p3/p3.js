@@ -63,7 +63,7 @@ if(isResults){
     return '<div class="p3-vcard"><div class="p3-vart" data-uid="'+esc(b.uid)+'"><img src="'+esc(b.img)+'" alt="'+esc(b.n)+'" loading="lazy"></div><div class="p3-vbody">'+
       '<span class="p3-vribbon">&#11088; VIP LOCAL BUSINESS</span><a class="p3-vname" href="'+esc(b.u)+'">'+esc(b.n)+'</a>'+
       '<p class="p3-vloc">&#128205; '+esc([b.st,b.town].filter(Boolean).join(', ')||'Three Village')+'</p><p class="p3-vd">'+esc(b.d)+'</p>'+
-      '<div class="p3-vacts">'+(tel?'<a class="p3-vtel" href="tel:'+tel.replace(/-/g,'')+'">&#128222; '+tel+'</a>':'')+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">Call now</a>':'')+'<a href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Directions</a><a class="p3-view" href="'+esc(b.u)+'">Full profile &rarr;</a></div></div></div>'}
+      '<div class="p3-vacts">'+(tel?'<a class="p3-vtel" href="tel:'+tel.replace(/-/g,'')+'">&#128222; '+tel+'</a>':'')+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">Call now</a>':'')+'<a href="'+maps(b)+'" target="_blank" rel="noopener">&#128205; Directions</a><a class="p3-view" href="'+esc(b.u)+'">Full profile &rarr;</a></div></div><aside class="p3-vside" data-uid="'+esc(b.uid)+'" data-u="'+esc(b.u)+'"></aside></div>'}
   function card(b,i){var tel=fmtTel(b.tel);
     return '<div class="p3-rcard" style="--i:'+i+'"><a class="p3-rtop" href="'+esc(b.u)+'"><img src="'+esc(b.img)+'" alt="" loading="lazy"><div><b>'+esc(b.n)+'</b><small>&#128205; '+esc(b.town||'Three Village')+'</small></div></a>'+
       '<p class="p3-rd">'+esc(b.d.slice(0,140))+(b.d.length>140?'&hellip;':'')+'</p><div class="p3-racts">'+(tel?'<a class="p3-call" href="tel:'+tel.replace(/-/g,'')+'">&#128222; Call</a>':'')+
@@ -79,6 +79,20 @@ if(isResults){
   $$('.feature_results_header,.post-search-result-count-container,.member-search-result-count-container,.member-search-result-filters,.views,.sort-members-select').forEach(function(e){if(!root.contains(e))e.style.display='none'});
   if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none';
   /* VIP cards use the listing's own logo/photo, never the banner ads (owner request 9/26) */
+  /* VIP value panel: public listing details (verified, neighbor reviews, years, specialties, credentials, links) */
+  function yrs(y){var n=new Date().getFullYear()-(+y);return n>0?n:0}
+  function side(m,u){var h='<p class="p3-vsh">Why neighbors choose them</p><ul class="p3-vtrust">';
+    if(m.verified)h+='<li><i class="p3-ok">&#10003;</i>Verified local business</li>';
+    if(m.rating)h+='<li><i class="p3-star">&#9733;</i><b>'+m.rating.toFixed(1)+'</b>&nbsp;from '+m.reviews+' neighbor review'+(m.reviews===1?'':'s')+'</li>';
+    if(m.since&&yrs(m.since)>0)h+='<li><i class="p3-cal">&#9719;</i>Serving since '+esc(m.since)+' &middot; '+yrs(m.since)+' yrs</li>';
+    h+='</ul>';
+    if(m.specs&&m.specs.length)h+='<div class="p3-vspecs">'+m.specs.slice(0,4).map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div>';
+    if(m.cred)h+='<p class="p3-vcred">&#127891; '+esc(m.cred.length>110?m.cred.slice(0,110).replace(/\s\S*$/,'')+'&hellip;':m.cred)+'</p>';
+    var L=[];if(m.web)L.push('<a href="'+esc(m.web)+'" target="_blank" rel="noopener">Website</a>');if(m.fb)L.push('<a href="'+esc(m.fb)+'" target="_blank" rel="noopener">Facebook</a>');if(m.ig)L.push('<a href="'+esc(m.ig)+'" target="_blank" rel="noopener">Instagram</a>');
+    L.push('<a class="p3-vrev" href="'+esc(u.replace(/\/$/,''))+'/writeareview">&#9733; '+(m.reviews?'Write a review':'Be the first to review')+'</a>');
+    h+='<div class="p3-vlinks">'+L.join('')+'</div>';return h}
+  fetch(BASE+'vip_meta.json').then(function(r){return r.json()}).then(function(M){
+    $$('.p3-vside',root).forEach(function(a){var m=M[a.getAttribute('data-uid')];if(m){a.innerHTML=side(m,a.getAttribute('data-u'));a.parentNode.classList.add('has-side')}})}).catch(function(){});
   /* trim the white margin baked into many logo files so the logo fills its box */
   function trim(img){try{var w=img.naturalWidth,h=img.naturalHeight;if(!w||!h)return;var c=document.createElement('canvas'),k=Math.min(1,600/Math.max(w,h));c.width=Math.round(w*k);c.height=Math.round(h*k);
       var x=c.getContext('2d');x.drawImage(img,0,0,c.width,c.height);var d=x.getImageData(0,0,c.width,c.height).data,W=c.width,H=c.height,t=H,l=W,r=0,b=0;

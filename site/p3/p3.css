@@ -210,3 +210,23 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-vacts a{padding:9px 14px;font-size:14px}
 #p3#p3 .p3-vacts a.p3-vtel{background:none;padding:0 10px 0 0;font-size:22px;color:var(--ink)}
 @media(max-width:760px){#p3#p3 .p3-vart img{max-height:190px!important}#p3#p3 .p3-vacts a.p3-vtel{flex-basis:100%;font-size:22px;text-align:left}}
+
+/* VIP value panel */
+#p3#p3 .p3-vside{display:none}
+#p3#p3 .p3-vcard.has-side{grid-template-columns:minmax(0,210px) minmax(0,1fr) minmax(0,300px)}
+#p3#p3 .p3-vcard.has-side .p3-vside{display:flex;flex-direction:column;gap:8px;padding:14px 18px 16px;background:linear-gradient(180deg,#fbf6ea,#fff);border-left:1px solid #f3e2c3}
+.p3-vsh{font-size:11px!important;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#a8812f!important}
+#p3#p3 .p3-vtrust{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+#p3#p3 .p3-vtrust li{display:flex;align-items:center;gap:8px;font-size:14px;color:#1b2f45;font-weight:600;margin:0;padding:0}
+#p3#p3 .p3-vtrust li b{font-weight:800}
+.p3-vtrust i{flex:0 0 20px;width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-style:normal;font-size:12px;font-weight:800}
+.p3-ok{background:#0f866c;color:#fff}.p3-star{background:#f0ad4e;color:#fff}.p3-cal{background:#1b2f45;color:#fff}
+#p3#p3 .p3-vspecs{display:flex;flex-wrap:wrap;gap:5px}
+#p3#p3 .p3-vspecs span{font-size:11.5px;font-weight:700;color:#1b2f45;background:#fff;border:1px solid #e6d3a8;padding:3px 9px;border-radius:999px}
+#p3#p3 .p3-vcred{font-size:12.5px!important;line-height:1.4;color:#5b6773!important}
+#p3#p3 .p3-vlinks{display:flex;flex-wrap:wrap;gap:6px 12px;margin-top:auto}
+#p3#p3 .p3-vlinks a{font-size:13px;font-weight:800;color:#006fbb}
+#p3#p3 .p3-vlinks a.p3-vrev{color:#a8812f}
+@media(max-width:1100px){#p3#p3 .p3-vcard.has-side{grid-template-columns:minmax(0,200px) minmax(0,1fr)}#p3#p3 .p3-vcard.has-side .p3-vside{grid-column:1/-1;border-left:0;border-top:1px solid #f3e2c3;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 16px}#p3#p3 .p3-vtrust{flex-direction:row;flex-wrap:wrap;gap:6px 14px}#p3#p3 .p3-vlinks{margin-top:0}}
+/* phones: single column (must come last) */
+@media(max-width:760px){#p3#p3 .p3-vcard,#p3#p3 .p3-vcard.has-side{grid-template-columns:1fr}#p3#p3 .p3-vart{border-right:0;border-bottom:1px solid #f3e2c3}#p3#p3 .p3-vcard.has-side .p3-vside{flex-direction:column;align-items:flex-start}#p3#p3 .p3-vtrust{flex-direction:column}}
