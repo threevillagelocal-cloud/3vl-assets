@@ -751,3 +751,34 @@
 #wk-top .wk-app{grid-column:1/-1}
 @media (min-width:761px){#wk-top .wk-app{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:28px;padding:24px 28px}#wk-top .wk-app .wk-subd{margin-bottom:0!important}#wk-top .wk-app .wk-appb{grid-column:2;grid-row:1/3;flex-wrap:nowrap}#wk-top .wk-app .wk-subt{font-size:22px}}
 @media (max-width:760px){#wk-top .wk-appb{flex-wrap:nowrap;gap:10px}#wk-top .wk-appb a{flex:0 1 auto;display:block}#wk-top .wk-appb img{height:46px!important;width:auto!important;max-width:100%!important}}
+/* ---- phone fixes: no sideways drag, side padding, reduced-motion visibility, swipe hints ---- */
+#wk-top{overflow-x:clip}
+@media (max-width:760px){
+  #wk-top .wk-hero{margin:0!important}
+  #wk-top .wk-main>.wk-sec,#wk-top .wk-main>.wk-foot,#wk-top .wk-main>.wk-adslot{padding-left:16px;padding-right:16px}
+  #wk-top .wk-ticker{margin:10px 12px 0}
+  #wk-top .wk-swipe{margin:0 -16px!important;padding:4px 16px 10px!important;scroll-padding-left:16px}
+  #wk-top .wk-swipe > *:last-child{margin-right:16px}
+  #wk-top .wk-wx{margin:0 -16px;padding:0 16px 6px;scroll-padding-left:16px}
+  #wk-top .wk-swh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:2px 0 4px}
+  #wk-top .wk-swh[hidden]{display:none}
+  #wk-top .wk-swd{display:flex;gap:6px;align-items:center}
+  #wk-top .wk-swd i{display:block;width:7px;height:7px;border-radius:99px;background:#c9d3de;transition:width .25s ease,background .25s ease}
+  #wk-top .wk-swd i.on{width:20px;background:#006fbb}
+  #wk-top .wk-swt{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:99px;background:#eaf2fa;color:#006fbb;font-size:13px;font-weight:800;letter-spacing:.02em;transition:opacity .3s ease}
+  #wk-top .wk-swt b{display:inline-block;animation:wkNudge 1.4s ease-in-out infinite}
+  #wk-top .wk-swt.is-end{opacity:.35}
+  #wk-top .wk-swt.is-end b{animation:none}
+}
+@media (min-width:761px){#wk-top .wk-swh{display:none}}
+@keyframes wkNudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+/* phones with 'reduce animations' on: never leave the hero hidden, flip the alert ticker instead of scrolling it */
+@media (prefers-reduced-motion:reduce){
+  #wk-top .wk-brandrow,#wk-top .wk-hstats,#wk-top .wk-dek{opacity:1!important;transform:none!important}
+}
+#wk-top .wk-ticker.is-rot{height:auto;min-height:46px}
+#wk-top .wk-ticker.is-rot .wk-tkt{animation:none!important;transform:none!important;display:block;height:auto;padding:8px 14px}
+#wk-top .wk-ticker.is-rot .wk-tkt span{display:none!important;margin:0;line-height:1.35;font-size:15px}
+#wk-top .wk-ticker.is-rot .wk-tkt span.on{display:block!important;white-space:normal!important}
+#wk-top .wk-ticker.is-rot .wk-tkt span.on *{white-space:normal!important}
+#wk-top .wk-ticker.is-rot .wk-tkt b{display:block!important;font-size:12px;letter-spacing:.04em;text-transform:uppercase;margin:0 0 2px}

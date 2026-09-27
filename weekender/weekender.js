@@ -146,7 +146,9 @@ function drawFeed(items){var ol=$('wk-flist'),tk=$('wk-tkt');if(!ol&&!tk)return;
   store.set('wkFeedSeen',seen);firstLoad=false;
   /* ticker only runs for big news: breaking items in feed.json or an active NWS warning */
   var big=items.filter(function(it){return it.breaking||(it.src==='nws'&&/Warning|Emergency/i.test(it.text))});
-  var bar=$('wk-ticker');if(tk&&bar){if(big.length){var s=big.slice(0,6).map(function(it){return '<span><b>'+it.who+'</b>'+it.text+'</span>'}).join('');tk.innerHTML=s+s+s;bar.hidden=false}else{bar.hidden=true}}}
+  var bar=$('wk-ticker');if(tk&&bar){if(big.length){var s=big.slice(0,6).map(function(it){return '<span><b>'+it.who+'</b>'+it.text+'</span>'}).join('');if(RM){tk.innerHTML=s;bar.classList.add('is-rot');tkI=0;tkRot();if(!tkT)tkT=setInterval(tkRot,5000)}else{tk.innerHTML=s+s+s}bar.hidden=false}else{bar.hidden=true}}}
+var RM=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches),tkI=0,tkT=null;
+function tkRot(){var sp=$$('#wk-tkt span');if(!sp.length)return;tkI=tkI%sp.length;sp.forEach(function(x,i){x.classList.toggle('on',i===tkI)});tkI++}
 var JOKES=[];
 var feedItems=[],nwsItems=[];
 function loadFeed(){var url=root.getAttribute('data-feed');if(!url)return;
@@ -393,8 +395,16 @@ function go(){hdr();window.addEventListener('scroll',hdr,{passive:true});
   var ca=$('wk-calall');if(ca)ca.addEventListener('click',function(){var l=saved.map(function(id){return EV[id]}).filter(Boolean);if(l.length)ics(l);else toast('Save a few events first')});
   ['wk-share'].forEach(function(id){var b=$(id);if(b)b.addEventListener('click',function(){share('Everything happening in Three Village this weekend:')})});
   ['wk-share2','wk-share3'].forEach(function(id){var b=$(id);if(b)b.addEventListener('click',function(){share(planText())})});
-  syncSaved();vip();cipher();compact();trolley();video();reveal();spy();
+  syncSaved();vip();cipher();compact();trolley();video();reveal();spy();swipeHints();
 }
+function swipeHints(){$$('.wk-swipe,.wk-wx').forEach(function(row){if(row.nextElementSibling&&row.nextElementSibling.classList.contains('wk-swh'))return;
+  var kids=[].filter.call(row.children,function(c){return c.offsetWidth>0});if(kids.length<2)return;
+  var h=document.createElement('div');h.className='wk-swh';h.setAttribute('aria-hidden','true');
+  h.innerHTML='<span class="wk-swd">'+kids.map(function(_,i){return '<i'+(i?'':' class="on"')+'></i>'}).join('')+'</span><span class="wk-swt">Swipe <b>&#8594;</b></span>';
+  row.parentNode.insertBefore(h,row.nextSibling);var dots=$$('i',h),t=h.querySelector('.wk-swt');
+  function upd(){var over=row.scrollWidth>row.clientWidth+8;h.hidden=!over;if(!over)return;var w=kids[0].offsetWidth+12,i=Math.round(row.scrollLeft/w);
+    if(row.scrollLeft+row.clientWidth>=row.scrollWidth-4)i=kids.length-1;dots.forEach(function(d,j){d.classList.toggle('on',j===i)});t.classList.toggle('is-end',i===kids.length-1)}
+  row.addEventListener('scroll',function(){requestAnimationFrame(upd)},{passive:true});window.addEventListener('resize',upd);upd()})}
 function boot(){var done=false,fin=function(){if(done)return;done=true;go()};
   setTimeout(fin,4000);
   fetch(LIVEURL+'?v='+Math.floor(Date.now()/300000),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){if(!done){try{renderLive(d)}catch(e){}fin()}}).catch(fin)}
