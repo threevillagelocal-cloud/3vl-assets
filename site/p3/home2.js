@@ -64,11 +64,12 @@ if(s5){var st=document.createElement('section');st.id='h2-stories';st.className=
 else hs.appendChild(band);
 })();
 /* Three Village Now portal banner (9/27): sits right above Happening Today (#td).
-   HELD until the public launch (members get the sneak preview first): set NOW_BANNER=true to turn it on. */
+   LIVE 9/27 (public launch). It replaces the Happening Today section (#td), which is hidden while the banner is on. */
 (function(){
-var NOW_BANNER=false;if(!NOW_BANNER&&!/[?&]tvnpreview=1/.test(location.search))return;
+var NOW_BANNER=true;if(!NOW_BANNER&&!/[?&]tvnpreview=1/.test(location.search))return;
 var p=location.pathname.replace(/\/+$/,'')||'/';if(p!=='/'&&p!=='/home')return;
-var css='#tvn{max-width:1140px;margin:30px auto 6px;padding:0 15px;font-family:"Radio Canada",sans-serif}'
+var css='#td{display:none!important}'
++'#tvn{max-width:1140px;margin:30px auto 6px;padding:0 15px;font-family:"Radio Canada",sans-serif}'
 +'#tvn a.tvn-card{position:relative;overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:center;padding:28px 30px;border-radius:26px;text-decoration:none!important;color:#fff!important;'
 +'background:radial-gradient(circle at 92% 0%,rgba(143,208,255,.22),transparent 45%),radial-gradient(circle at 0% 100%,rgba(58,160,232,.32),transparent 50%),linear-gradient(150deg,#1f3a5c,#13233a 60%,#0f1a28);'
 +'border:1.5px solid rgba(255,197,61,.45);box-shadow:0 20px 50px rgba(15,26,40,.25);transition:transform .2s,box-shadow .2s}'
