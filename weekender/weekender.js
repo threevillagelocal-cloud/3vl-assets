@@ -43,10 +43,11 @@ function renderLive(data){
   var chips=function(tg){return tg.map(function(x){return '<span class="wk-tag" data-t="'+x+'">'+(TAGL[x]||x)+'</span>'}).join('')};
   var attrs=function(e){var d=e.s,wk=(d.getDay()===0||d.getDay()===6||(d.getDay()===5&&d.getHours()>=15));
     return 'data-id="'+esc2(e.id)+'" data-day="'+dkey(d)+'" data-wknd="'+(wk?1:0)+'" data-start="'+e.s.toISOString()+'" data-end="'+e.e.toISOString()+'" data-tags="'+esc2(e.tags.join(' '))+'" data-title="'+esc2(e.title)+'" data-venue="'+esc2(e.venue)+'" data-addr="'+esc2(e.addr)+'" data-img="'+esc2(e.img)+'"'+(e.status?' data-off="'+esc2(e.status)+'"':'')};
-  var when=function(e){return e.allday?'All day':tm(e.s)};
+  var md=function(e){return e.e-e.s>864e5*1.1},thru=function(e){return 'thru '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][e.e.getMonth()]+' '+e.e.getDate()};
+  var when=function(e){return e.s<t0?'Ongoing':e.allday?'All day':tm(e.s)};
   /* schedule: tabs + one block per day */
   var sec=$('wk-sched');if(sec){
-    var days={};evs.forEach(function(e){if(e.ongoing)return;var k=dkey(e.s);(days[k]=days[k]||{d:new Date(e.s.getFullYear(),e.s.getMonth(),e.s.getDate()),l:[]}).l.push(e)});
+    var days={};evs.forEach(function(e){if(e.ongoing)return;var sd=e.s<t0?t0:e.s,k=dkey(sd);(days[k]=days[k]||{d:new Date(sd.getFullYear(),sd.getMonth(),sd.getDate()),l:[]}).l.push(e)});  /* ongoing events roll forward into Today */
     var tabs=root.querySelector('.wk-tabs');
     if(tabs)tabs.innerHTML='<button type="button" class="wk-tab is-on" data-day="all">This Week</button><button type="button" class="wk-tab" data-day="'+dkey(t0)+'">Today</button><button type="button" class="wk-tab" data-day="'+dkey(new Date(t0.getTime()+864e5))+'">Tomorrow</button><button type="button" class="wk-tab" data-day="wknd">Weekend</button><span class="wk-tabink"></span>';
     $$('.wk-dayblk',sec).forEach(function(b){b.remove()});
@@ -54,7 +55,7 @@ function renderLive(data){
     Object.keys(days).sort().forEach(function(k,di){var D=days[k],isT=k===dkey(t0),isTm=k===dkey(new Date(t0.getTime()+864e5));
       var h='<div class="wk-dayblk'+(di?' is-collapsed':'')+'" data-day="'+k+'"><p class="wk-dayh" role="button" tabindex="0" aria-expanded="'+(di?'false':'true')+'"><b>'+(isT?'Today':isTm?'Tomorrow':DAYN2x(D.d))+'</b><span>'+ds(D.d)+'</span><i class="wk-dcount">'+D.l.length+' event'+(D.l.length===1?'':'s')+'</i><em class="wk-chev" aria-hidden="true"></em></p><ol class="wk-tl">';
       D.l.forEach(function(e){var th=e.img?'<img src="'+esc2(e.img)+'" alt="" loading="lazy" width="120" height="120">':'<span class="wk-ticon">'+(IC[(e.tags.filter(function(x){return x!=='free'})[0])||'arts']||'&#9733;')+'</span>';
-        h+='<li class="wk-ev" '+attrs(e)+'><div class="wk-evt"><b>'+when(e)+'</b><span>'+(e.allday?'':'to '+tm(e.e))+'</span></div><div class="wk-evc"><div class="wk-evthumb">'+th+'</div><div class="wk-evbody">'+
+        h+='<li class="wk-ev" '+attrs(e)+'><div class="wk-evt"><b>'+when(e)+'</b><span>'+(md(e)?thru(e):e.allday?'':'to '+tm(e.e))+'</span></div><div class="wk-evc"><div class="wk-evthumb">'+th+'</div><div class="wk-evbody">'+
           '<p class="wk-evtitle">'+(e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+' <span class="wk-pstat" data-status></span></p><p class="wk-evwhere">'+esc2(e.venue)+'</p>'+
           (e.desc?'<p class="wk-evdesc" tabindex="0">'+esc2(e.desc)+'</p>':'')+'<div class="wk-tags">'+chips(e.tags)+'<span class="wk-wxchip"></span></div></div>'+acts(e)+'</div></li>'});
       h+='</ol></div>';anchor.insertAdjacentHTML('beforebegin',h)});

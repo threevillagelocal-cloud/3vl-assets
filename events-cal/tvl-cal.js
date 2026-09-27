@@ -33,18 +33,21 @@ function hideNative(){
 function load(){
   fetch('/event-calendar-json',{credentials:'same-origin'}).then(function(r){return r.json()}).then(function(d){
     var list=d.result||d||[];
-    list.forEach(function(x){var m=META[x.id]||{},s=new Date(+x.start),e=new Date(+x.end||+x.start);if(e<s)e=s;
+    list.forEach(function(x){var m=META[x.id]||{},s=new Date(+x.start),e=new Date(+x.end||+x.start);
       var url=String(x.url||'');if(url.indexOf('//')===0)url=location.protocol+url;
       var allday=s.getHours()===0&&s.getMinutes()===0;
+      if(e<=s)e=allday?new Date(s.getFullYear(),s.getMonth(),s.getDate(),23,59):new Date(s.getTime()+2*36e5);  /* no end time: assume 2 hours */
       EV.push({id:x.id,title:dec(x.title),url:url,s:s,e:e,allday:allday,img:m.i||'',venue:dec(m.v||''),tags:m.t||[],free:!!m.f})});
     EV.sort(function(a,b){return a.s-b.s});
-    EV.forEach(function(ev){var d0=day(ev.s),d1=day(ev.e),span=Math.round((d1-d0)/864e5);if(span<0||span>4)span=0;
+    EV.forEach(function(ev){var d0=day(ev.s),d1=day(ev.e),span=Math.round((d1-d0)/864e5);if(span<0)span=0;if(span>62)span=62;
       for(var i=0;i<=span;i++){var k=key(new Date(d0.getTime()+i*864e5+3600e3));(BY[k]=BY[k]||[]).push(ev)}});
     hideNative();render()}).catch(function(){R.innerHTML=''})}
 
 function pass(ev){return (!S.tag||ev.tags.indexOf(S.tag)>=0)&&(!S.free||ev.free)}
-function evsOn(d){return (BY[key(d)]||[]).filter(pass)}
-function upcoming(){return EV.filter(function(ev){return ev.e>=NOW||day(ev.s)>=T0}).filter(pass)}
+function evsOn(d){var l=(BY[key(d)]||[]).filter(pass);return key(d)===key(T0)?l.filter(function(ev){return ev.e>=NOW}):l}  /* today: hide events that already ended */
+function upcoming(){return EV.filter(function(ev){return ev.e>=NOW}).filter(pass)}   /* gone as soon as it ends */
+function multi(ev){return day(ev.e)>day(ev.s)}
+function rng(ev){var a=ev.s,b=ev.e;return MON[a.getMonth()]+' '+a.getDate()+' - '+(a.getMonth()===b.getMonth()?'':MON[b.getMonth()]+' ')+b.getDate()}
 
 function hero(){
   var up=EV.filter(function(ev){return day(ev.s)>=T0}),wk=0,fr=0,sat=new Date(T0);sat.setDate(T0.getDate()+((6-T0.getDay()+7)%7));
@@ -68,8 +71,8 @@ function thumb(ev,cls){var t=ev.tags[0]||'';
     '<span class="'+cls+' tvc-noimg" style="--tc:'+(TC[t]||'#205081')+'">'+(TI[t]||'&#11088;')+'</span>'}
 function card(ev,i){var d=ev.s,on=day(ev.s)<T0&&ev.e>=NOW;  /* multi-day event that started earlier and is still running */
   return '<a class="tvc-card" href="'+esc(ev.url)+'" style="--i:'+(i%12)+'"><div class="tvc-pic">'+thumb(ev,'tvc-img')+
-    (on?'<span class="tvc-date tvc-now"><b>NOW</b>thru '+MON[ev.e.getMonth()]+' '+ev.e.getDate()+'</span>':'<span class="tvc-date"><b>'+d.getDate()+'</b>'+MON[d.getMonth()]+'</span>')+(ev.free?'<span class="tvc-freep">Free</span>':'')+'</div>'+
-    '<div class="tvc-cb"><p class="tvc-when">'+(on?'Now through '+esc(DOW[ev.e.getDay()]+', '+MON[ev.e.getMonth()]+' '+ev.e.getDate()):esc(rel(d))+' &middot; '+(ev.allday?'All day':tm(ev.s)+(ev.e>ev.s&&day(ev.e).getTime()===day(ev.s).getTime()?' to '+tm(ev.e):'')))+'</p>'+
+    (on?'<span class="tvc-date tvc-now"><b>NOW</b>thru '+MON[ev.e.getMonth()]+' '+ev.e.getDate()+'</span>':'<span class="tvc-date"><b>'+d.getDate()+'</b>'+MON[d.getMonth()]+(multi(ev)?'<i class="tvc-thru">thru '+MON[ev.e.getMonth()]+' '+ev.e.getDate()+'</i>':'')+'</span>')+(ev.free?'<span class="tvc-freep">Free</span>':'')+'</div>'+
+    '<div class="tvc-cb"><p class="tvc-when">'+(on?'Now through '+esc(DOW[ev.e.getDay()]+', '+MON[ev.e.getMonth()]+' '+ev.e.getDate()):multi(ev)?esc(rng(ev))+(ev.allday?'':' &middot; '+tm(ev.s)):esc(rel(d))+' &middot; '+(ev.allday?'All day':tm(ev.s)+(ev.e>ev.s?' to '+tm(ev.e):'')))+'</p>'+
     '<h3 class="tvc-title">'+esc(ev.title)+'</h3>'+(ev.venue?'<p class="tvc-where">&#128205; '+esc(ev.venue)+'</p>':'')+
     '<div class="tvc-tags">'+ev.tags.map(function(t){return '<span style="--tc:'+TC[t]+'">'+esc(t)+'</span>'}).join('')+'</div><span class="tvc-go">Details &rarr;</span></div></a>'}
 
@@ -94,8 +97,8 @@ function month(){
 function list(){
   var l=upcoming(),out='',cur='',n=0;
   if(!l.length)return '<p class="tvc-empty">No upcoming events match this filter yet.</p>';
-  l.slice(0,S.shown).forEach(function(ev,i){var on=day(ev.s)<T0,k=on?'on':key(ev.s);if(k!==cur){if(cur)out+='</div>';cur=k;
-      out+='<div class="tvc-lday"><h2 class="tvc-lh">'+(on?'<b>Now</b><span>Still running</span>':'<b>'+esc(rel(ev.s).split(',')[0])+'</b><span>'+DOWL[ev.s.getDay()]+', '+MONL[ev.s.getMonth()]+' '+ev.s.getDate()+'</span>')+'</h2></div><div class="tvc-cards tvc-lcards">'}
+  l.slice(0,S.shown).forEach(function(ev,i){var dd=day(ev.s)<T0?T0:ev.s,k=key(dd);if(k!==cur){if(cur)out+='</div>';cur=k;   /* ongoing events roll forward into Today */
+      out+='<div class="tvc-lday"><h2 class="tvc-lh"><b>'+esc(rel(dd).split(',')[0])+'</b><span>'+DOWL[dd.getDay()]+', '+MONL[dd.getMonth()]+' '+dd.getDate()+'</span></h2></div><div class="tvc-cards tvc-lcards">'}
     out+=card(ev,n++)});
   out+='</div>';
   if(l.length>S.shown)out+='<div class="tvc-moreb"><button type="button" class="tvc-loadmore">Show more events <span>('+(l.length-S.shown)+' more)</span></button></div>';
