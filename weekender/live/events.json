@@ -1,12 +1,12 @@
 {
-"updated": "2026-09-27T18:17:33.764048+00:00",
+"updated": "2026-09-27T20:29:46.856689+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 25,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 222,
-"Emma S. Clark Library": 215,
+"Emma S. Clark Library": 214,
 "Stony Brook Village Center": 16,
 "Long Island Museum": 31,
 "Ward Melville Heritage Org": 5
@@ -92,24 +92,6 @@
 "outdoor"
 ],
 "status": "Canceled"
-},
-{
-"id": "emmaclark-mermaid-hairbrushes-people-need-59548",
-"title": "Mermaid Hairbrushes for People in Need",
-"start": "2026-09-27T15:00:00",
-"end": "2026-09-27T16:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/mermaid-hairbrushes-people-need-59548",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"arts"
-],
-"status": ""
 },
 {
 "id": "lim-3225616",
