@@ -93,7 +93,13 @@ def main():
             if s.get("inset"):
                 s["inset"] = igbase + s["inset"]
             specials.append(s)
-    data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings, "specials": specials}
+    # Owner's ranked list for the Eat & Drink cards (names, top to bottom); /now orders its cards by this
+    pref = json.load(open(os.path.join(HERE, "preference.json"), encoding="utf-8"))
+    names = {x["ig"].lower(): x["name"] for x in json.load(open(os.path.join(HERE, "ig_accounts.json"), encoding="utf-8"))}
+    eat_order = [names[h.lower()] for h in pref.get("order", []) if h.lower() in names]
+    if not pref.get("live"):
+        specials = []
+    data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings, "specials": specials, "eatOrder": eat_order, "eatCap": int(pref.get("cap", 9))}
     json.dump(data, open(os.path.join(HERE, "events.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     print(counts, len(final))
 

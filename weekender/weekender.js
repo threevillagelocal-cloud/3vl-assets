@@ -71,18 +71,23 @@ function renderLive(data){
   /* closings strip: only show items that are today or later */
   var cx=$('wk-cx');if(cx){var items=(data.closings||[]).filter(function(c){return new Date(c.date+'T23:59:00')>=t0});
     if(!items.length)cx.remove();else{var row=cx.querySelector('.wk-cxrow');if(row)row.innerHTML=items.map(function(c){return '<div class="wk-cxi" data-off="'+esc2(c.status)+'"><p class="wk-cxn">'+esc2(c.title)+'</p><p class="wk-cxd">'+esc2(c.note)+'</p></div>'}).join('')}}
-  /* Instagram specials (ig_specials.py): newest first, replace the curated card for the same business */
-  var sp=(data.specials||[]),eat=document.querySelector('#wk-eat .wk-eat');
-  if(eat&&sp.length){var nm=function(x){return String(x||'').toLowerCase().replace(/&[a-z#0-9]+;/g,'').replace(/\(.*?\)/g,'').replace(/[^a-z0-9]/g,'').replace(/^the/,'')};
-    var live={};sp.forEach(function(x){live[nm(x.biz)]=1});
-    [].forEach.call(eat.querySelectorAll('.wk-sp'),function(a){var b=a.querySelector('.wk-spbiz');if(b&&live[nm(b.textContent)])a.remove()});
-    var html=sp.map(function(x){var big=x.img||x.inset,small=x.img?x.inset:'';
+  /* Eat & Drink: walk the owner's ranked list (data.eatOrder). Each place shows its Instagram special if it has one,
+     else this week's hand-picked card, else it is skipped. Hand-picked places not on the list go last. Max data.eatCap. */
+  var eat=document.querySelector('#wk-eat .wk-eat'),order=data.eatOrder||[];
+  if(eat&&order.length){var nm=function(x){return String(x||'').toLowerCase().replace(/&[a-z#0-9]+;/g,'').replace(/\(.*?\)/g,'').replace(/[^a-z0-9]/g,'').replace(/^the/,'')};
+    var cur={},ig={},out=[],used={};
+    [].forEach.call(eat.querySelectorAll('.wk-sp'),function(a){var b=a.querySelector('.wk-spbiz');if(b)cur[nm(b.textContent)]=a});
+    (data.specials||[]).forEach(function(x){if(!ig[nm(x.biz)])ig[nm(x.biz)]=x});
+    var card=function(x,old){var big=x.img||x.inset,small=x.img?x.inset:'',ob=old&&old.querySelector('.wk-spbiz');
       var map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(x.biz.replace(/\s*\(.*?\)/,'')+', '+(x.town||'Three Village')+', NY');
-      return '<article class="wk-sp wk-rv is-in wk-spig">'+(big?'<div class="wk-eimg"><img src="'+esc2(big)+'" alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img src="'+esc2(small)+'" alt="" loading="lazy"></span>':'')+'<span class="wk-ignew">NEW AS OF '+new Date(x.posted).toLocaleDateString('en-US',{month:'short',day:'numeric'}).toUpperCase()+'</span></div>':'')+
-       '<div class="wk-spb"><p class="wk-spbiz">'+esc2(x.biz)+'</p><p class="wk-spt">'+esc2(x.title)+'</p>'+(x.when?'<p class="wk-spw">'+esc2(x.when)+'</p>':'')+'<p class="wk-spd">'+esc2(x.desc)+'</p>'+
-       '<p class="wk-spf"><span class="wk-src wk-igb">&#9711;</span><span>via <a class="wk-biz" href="'+esc2(x.url)+'" target="_blank" rel="noopener">Instagram</a></span><a class="wk-dir" href="'+esc2(map)+'" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>'}).join('');
-    eat.insertAdjacentHTML('afterbegin',html);
-    [].slice.call(eat.querySelectorAll('.wk-sp'),9).forEach(function(a){a.remove()})}
+      var t=document.createElement('div');
+      t.innerHTML='<article class="wk-sp wk-rv is-in">'+(big?'<div class="wk-eimg"><img src="'+esc2(big)+'" alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img src="'+esc2(small)+'" alt="" loading="lazy"></span>':'')+'</div>':'')+
+       '<div class="wk-spb"><p class="wk-spbiz">'+(ob?ob.innerHTML:esc2(x.biz.replace(/\s*\(.*?\)/,'')))+'</p><p class="wk-spt">'+esc2(x.title)+'</p>'+(x.when?'<p class="wk-spw">'+esc2(x.when)+'</p>':'')+'<p class="wk-spd">'+esc2(x.desc)+'</p>'+
+       '<p class="wk-spf"><span class="wk-src wk-igb">&#9711;</span><span>via <a class="wk-biz" href="'+esc2(x.url)+'" target="_blank" rel="noopener">Instagram</a></span><a class="wk-dir" href="'+esc2(map)+'" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>';
+      return t.firstChild};
+    order.forEach(function(n){var k=nm(n);if(used[k])return;used[k]=1;if(ig[k])out.push(card(ig[k],cur[k]));else if(cur[k])out.push(cur[k])});
+    Object.keys(cur).forEach(function(k){if(!used[k])out.push(cur[k])});
+    out=out.slice(0,data.eatCap||9);eat.innerHTML='';out.forEach(function(a){eat.appendChild(a)})}
   return true}
 function DAYN2x(d){return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][d.getDay()]}
 
