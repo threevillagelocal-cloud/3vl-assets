@@ -1,0 +1,71 @@
+.jn3{--ink:#1b2f45;--navy:#13233a;--blue:#006fbb;--gold:#ffc53d;--teal:#0f866c;--line:#e3e9f0;--mut:#55636f;font-family:'Radio Canada',sans-serif;color:var(--ink);max-width:1120px;margin:0 auto 50px;word-break:normal;overflow-wrap:normal;hyphens:none}
+.jn3 *{box-sizing:border-box;word-break:normal;overflow-wrap:normal}
+.jn3 p{margin:0}
+.jn3-head{text-align:center;max-width:860px;margin:0 auto;padding:10px 0 0}
+.jn3-kick{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:10px!important}
+.jn3 .jn3-h1{font-family:'Radio Canada',sans-serif;font-size:52px;font-weight:700;line-height:1.04;letter-spacing:-.02em;color:var(--ink);margin:0 0 14px}
+.jn3-h1 span{color:var(--blue);text-decoration:underline;text-decoration-color:#ffc53d;text-decoration-thickness:.16em;text-underline-offset:.1em;text-decoration-skip-ink:none}
+.jn3-dek{font-size:20px;line-height:1.5;color:var(--mut);max-width:720px;margin:0 auto!important}
+.jn3-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 0}
+.jn3-stat{display:flex;align-items:center;gap:12px;text-align:left;background:rgba(255,255,255,.75);border:1px solid rgba(27,47,69,.08);border-radius:18px;padding:14px 16px;box-shadow:0 8px 22px rgba(27,47,69,.07),inset 0 1px 0 #fff;backdrop-filter:blur(8px)}
+.jn3-stat b{display:block;font-size:22px;line-height:1.1;color:var(--ink)}
+.jn3-stat em{display:block;font-style:normal;font-size:14px;line-height:1.3;color:var(--mut)}
+.jn3-ic{display:flex;align-items:center;justify-content:center;flex:0 0 46px;width:46px;height:46px;border-radius:14px;font-size:22px;background:linear-gradient(145deg,#ffffff,#e8f1fa);border:1px solid rgba(27,47,69,.08);box-shadow:inset 0 1px 0 #fff,0 6px 14px rgba(27,47,69,.1)}
+.jn3-cards{display:grid;grid-template-columns:1fr 1fr 1.12fr;gap:18px;align-items:stretch;margin:40px 0 0}
+.jn3-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px 24px 24px;box-shadow:0 12px 34px rgba(27,47,69,.08)}
+.jn3-gn{border-top:4px solid var(--teal)}
+.jn3-vip{background:radial-gradient(circle at 85% 0%,rgba(255,197,61,.22),transparent 45%),linear-gradient(160deg,#1b2f45 0%,#0f1a28 100%);border:1.5px solid rgba(255,197,61,.65);color:#fff;box-shadow:0 26px 60px rgba(15,26,40,.35),0 0 0 6px rgba(255,197,61,.08);transform:translateY(-10px)}
+.jn3-tag{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin-bottom:6px!important}
+.jn3-gn .jn3-tag{color:var(--teal)}
+.jn3-vip .jn3-tag{color:var(--gold)}
+.jn3-badge{position:absolute;top:-14px;right:20px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.jn3-badge-teal{background:var(--teal);color:#fff}
+.jn3-badge-gold{background:var(--gold);color:var(--navy);box-shadow:0 6px 16px rgba(255,197,61,.4)}
+.jn3 .jn3-name{font-family:'Radio Canada',sans-serif;font-size:24px;font-weight:700;line-height:1.15;margin:0 0 8px;color:inherit}
+.jn3-price{font-size:44px;font-weight:700;line-height:1;letter-spacing:-.02em;margin:0 0 10px}
+.jn3-price small{font-size:17px;font-weight:600;letter-spacing:0;color:var(--mut);margin-left:3px}
+.jn3-vip .jn3-price{color:var(--gold)}
+.jn3-vip .jn3-price small{color:#c9d6e4}
+.jn3-value{display:inline-block;align-self:flex-start;font-size:14px;font-weight:700;color:var(--gold);background:rgba(255,197,61,.12);border:1px solid rgba(255,197,61,.35);border-radius:10px;padding:6px 10px;margin-bottom:12px!important}
+.jn3-sub{font-size:16px;line-height:1.5;color:var(--mut);margin-bottom:16px!important}
+.jn3-vip .jn3-sub{color:#c9d6e4}
+.jn3 .jn3-list{list-style:none;margin:0 0 18px;padding:0}
+.jn3-list li{position:relative;padding:0 0 0 30px;margin:0 0 11px;font-size:16px;line-height:1.45;color:var(--ink)}
+.jn3-list li:before{content:"\2713";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;background:#e8f1fa;color:var(--blue)}
+.jn3-gn .jn3-list li:before{background:#e3f4ee;color:var(--teal)}
+.jn3-vip .jn3-list li{color:#e6edf5}
+.jn3-vip .jn3-list li b{color:#fff}
+.jn3-vip .jn3-list li:before{background:rgba(255,197,61,.18);color:var(--gold);box-shadow:inset 0 0 0 1px rgba(255,197,61,.4)}
+.jn3-realtor{font-size:14px;line-height:1.45;color:var(--mut);border-top:1px dashed #cfd9e4;padding-top:12px;margin:auto 0 18px}
+.jn3-realtor b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:3px}
+.jn3-vip .jn3-realtor{color:#c9d6e4;border-top-color:rgba(255,255,255,.2)}
+.jn3-vip .jn3-realtor b{color:var(--gold)}
+.jn3 a.jn3-btn{position:relative;overflow:hidden;display:block;text-align:center;font-size:18px;font-weight:700;padding:15px 18px;border-radius:14px;text-decoration:none!important;transition:transform .15s,box-shadow .15s}
+.jn3 a.jn3-btn:hover{transform:translateY(-2px)}
+.jn3 .jn3-btn-line{background:#fff;color:var(--ink)!important;border:1.5px solid #cfd9e4}
+.jn3 .jn3-btn-teal{background:var(--teal);color:#fff!important;box-shadow:0 10px 24px rgba(15,134,108,.28)}
+.jn3 .jn3-btn-gold{background:var(--gold);color:var(--navy)!important;box-shadow:0 12px 28px rgba(255,197,61,.35)}
+.jn3 .jn3-btn-gold:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.6) 48%,transparent 62%);transform:translateX(-130%);animation:jn3Shine 4.5s ease-in-out 1.5s infinite}
+@keyframes jn3Shine{0%,70%{transform:translateX(-130%)}90%,100%{transform:translateX(130%)}}
+.jn3-fine{font-size:13px;color:#c9d6e4;text-align:center;margin-top:10px!important}
+.jn3-assure{text-align:center;font-size:16px;font-weight:600;color:var(--ink);margin:30px 0 8px!important}
+.jn3-proceeds{text-align:center;font-size:14px;line-height:1.5;color:var(--mut);max-width:720px;margin:0 auto!important}
+.jn3-more{max-width:900px;margin:46px auto 0;text-align:center}
+.jn3 .jn3-h2{font-family:'Radio Canada',sans-serif;font-size:34px;font-weight:700;letter-spacing:-.01em;color:var(--ink);margin:0 0 8px}
+.jn3-sub2{font-size:16px;line-height:1.5;color:var(--mut);margin:0 0 10px!important}
+.jn3-sub2 a{color:var(--blue);font-weight:700}
+.jn3-more-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 14px;text-align:left}
+.jn3-more-box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px 20px;box-shadow:0 8px 24px rgba(27,47,69,.06)}
+.jn3-more-box .jn3-ic{margin-bottom:10px}
+.jn3-more-box b{display:block;font-size:18px;margin-bottom:4px}
+.jn3-more-box p{font-size:15px;line-height:1.5;color:var(--mut)}
+.jn3-faq{max-width:980px;margin:46px auto 0;text-align:center}
+.jn3-faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;text-align:left}
+.jn3-q{background:#eef4fa;border-radius:18px;padding:18px 20px}
+.jn3-q b{display:block;font-size:18px;margin-bottom:6px}
+.jn3-q p{font-size:16px;line-height:1.5;color:var(--mut)}
+@media(max-width:980px){.jn3-cards{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto}.jn3-vip{order:-1;transform:none}.jn3-stats{grid-template-columns:1fr;max-width:520px;margin-left:auto;margin-right:auto}}
+@media(max-width:600px){.jn3 .jn3-h1{font-size:36px;line-height:1.08}.jn3-dek{font-size:18px}.jn3-card{padding:26px 18px 20px;border-radius:22px}.jn3-price{font-size:40px}.jn3 .jn3-h2{font-size:28px}.jn3-more-grid,.jn3-faq-grid{grid-template-columns:1fr}.jn3-assure{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.jn3 .jn3-btn-gold:after{animation:none}}
+.jn3-q:last-child:nth-child(odd){grid-column:1/-1}
+.jn3-nw{white-space:nowrap}
