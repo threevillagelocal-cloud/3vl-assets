@@ -46,7 +46,7 @@ function renderLive(data){
   var when=function(e){return e.allday?'All day':tm(e.s)};
   /* schedule: tabs + one block per day */
   var sec=$('wk-sched');if(sec){
-    var days={};evs.forEach(function(e){var k=dkey(e.s);(days[k]=days[k]||{d:new Date(e.s.getFullYear(),e.s.getMonth(),e.s.getDate()),l:[]}).l.push(e)});
+    var days={};evs.forEach(function(e){if(e.ongoing)return;var k=dkey(e.s);(days[k]=days[k]||{d:new Date(e.s.getFullYear(),e.s.getMonth(),e.s.getDate()),l:[]}).l.push(e)});
     var tabs=root.querySelector('.wk-tabs');
     if(tabs)tabs.innerHTML='<button type="button" class="wk-tab is-on" data-day="all">This Week</button><button type="button" class="wk-tab" data-day="'+dkey(t0)+'">Today</button><button type="button" class="wk-tab" data-day="'+dkey(new Date(t0.getTime()+864e5))+'">Tomorrow</button><button type="button" class="wk-tab" data-day="wknd">Weekend</button><span class="wk-tabink"></span>';
     $$('.wk-dayblk',sec).forEach(function(b){b.remove()});
@@ -64,10 +64,10 @@ function renderLive(data){
   }
   /* top picks: soonest upcoming events that have photos (curated picks first) */
   var pk=$('wk-picks'),box=pk&&pk.querySelector('.wk-picks');
-  if(box){var cand=evs.filter(function(e){return e.img&&!e.status&&e.e>t}).sort(function(a,b){return (b.pick?1:0)-(a.pick?1:0)||a.s-b.s});
-    var cur=cand.filter(function(e){return e.pick}),soon=cand.filter(function(e){return !e.pick&&e.s<new Date(t0.getTime()+3*864e5)}),pick=cur.concat(soon,cand.filter(function(e){return cur.indexOf(e)<0&&soon.indexOf(e)<0})).slice(0,3);
-    if(pick.length===3)box.innerHTML=pick.map(function(e,i){return '<article class="wk-pick wk-rv is-in" '+attrs(e).replace('data-id="','data-id="pk-')+'><div class="wk-pimg"><img src="'+esc2(e.img)+'" alt="'+esc2(e.title)+'" loading="lazy"><span class="wk-pnum">0'+(i+1)+'</span><span class="wk-pstat" data-status></span></div>'+
-      '<div class="wk-pbody"><p class="wk-pwhen">'+ds(e.s)+' &middot; '+when(e)+'</p><h3 class="wk-ptitle">'+esc2(e.title)+'</h3><p class="wk-pwhere">&#128205; '+esc2(e.venue)+'</p><p class="wk-pdesc">'+esc2(e.desc)+'</p><div class="wk-tags">'+chips(e.tags)+'</div>'+acts(e)+'</div></article>'}).join('')}
+  if(box){var cand=evs.filter(function(e){return e.img&&!e.status&&e.e>t}).sort(function(a,b){return (b.pick?1:0)-(a.pick?1:0)||(a.rank||9)-(b.rank||9)||a.s-b.s});
+    var cur=cand.filter(function(e){return e.pick}),soon=cand.filter(function(e){return !e.pick&&e.s<new Date(t0.getTime()+3*864e5)}),pick=cur.concat(soon,cand.filter(function(e){return cur.indexOf(e)<0&&soon.indexOf(e)<0})).slice(0,Math.max(3,cur.length));
+    if(pick.length>=3)box.innerHTML=pick.map(function(e,i){return '<article class="wk-pick wk-rv is-in" '+attrs(e).replace('data-id="','data-id="pk-')+'><div class="wk-pimg"><img src="'+esc2(e.img)+'" alt="'+esc2(e.title)+'" loading="lazy"><span class="wk-pnum">0'+(i+1)+'</span><span class="wk-pstat" data-status></span></div>'+
+      '<div class="wk-pbody"><p class="wk-pwhen">'+(e.ongoing?esc2(e.whenText)+' &middot; Open now':ds(e.s)+' &middot; '+when(e))+'</p><h3 class="wk-ptitle">'+esc2(e.title)+'</h3><p class="wk-pwhere">&#128205; '+esc2(e.venue)+'</p><p class="wk-pdesc">'+esc2(e.desc)+'</p><div class="wk-tags">'+chips(e.tags)+'</div>'+acts(e)+'</div></article>'}).join('')}
   /* closings strip: only show items that are today or later */
   var cx=$('wk-cx');if(cx){var items=(data.closings||[]).filter(function(c){return new Date(c.date+'T23:59:00')>=t0});
     if(!items.length)cx.remove();else{var row=cx.querySelector('.wk-cxrow');if(row)row.innerHTML=items.map(function(c){return '<div class="wk-cxi" data-off="'+esc2(c.status)+'"><p class="wk-cxn">'+esc2(c.title)+'</p><p class="wk-cxd">'+esc2(c.note)+'</p></div>'}).join('')}}

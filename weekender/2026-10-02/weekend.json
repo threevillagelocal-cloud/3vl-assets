@@ -22,7 +22,8 @@
  "picks": [
   "spyday",
   "blues",
-  "treason"
+  "treason",
+  "spooky"
  ],
  "venues": {
   "tvhs": {
@@ -175,6 +176,14 @@
    "ll": [
     40.9175,
     -73.13
+   ]
+  },
+  "otg": {
+   "name": "Olde Towne Gardens",
+   "addr": "360 Old Town Rd, East Setauket",
+   "ll": [
+    40.91917,
+    -73.0771
    ]
   }
  },
@@ -480,6 +489,25 @@
   }
  ],
  "allweekend": [
+  {
+   "id": "spooky",
+   "title": "Spooky Village at Olde Towne Gardens",
+   "venue": "otg",
+   "when": "Through Oct. 31",
+   "start": "2026-10-03T00:00",
+   "end": "2026-10-03T23:59",
+   "price": "Pay at the gate",
+   "tags": [
+    "kids",
+    "outdoor"
+   ],
+   "desc": "A family Halloween village at a garden center that's been in East Setauket since 1949. Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, hay bale play area, games and a pumpkin patch.",
+   "img": "spooky",
+   "credit": "Photo: Olde Towne Gardens",
+   "url": "https://theoldetownegardens.com/spooky-village/",
+   "member": "olde-towne-gardens",
+   "until": "2026-10-31T23:59"
+  },
   {
    "id": "cabaret",
    "title": "Cabaret",

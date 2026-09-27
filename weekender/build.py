@@ -103,7 +103,7 @@ def build(edition, local=False, sha="master"):
                 '<button type="button" class="wk-cal" data-cal="%s">&#128197; Add</button>'
                 '<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128205; Map</a></div>') % (e["id"], e["id"], gmap(e["venue"]))
 
-    ev = {e["id"]: e for e in d["events"]}
+    ev = {e["id"]: e for e in d["events"] + d["allweekend"] if "start" in e}
     n_ev = len(d["events"]) + len(d["allweekend"])
     n_free = sum(1 for e in d["events"] + d["allweekend"] if "free" in e["tags"])
     out = []
@@ -153,7 +153,7 @@ def build(edition, local=False, sha="master"):
         w('</div></section>')
 
     # TOP PICKS
-    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Picks</span><small>If you only do three things</small></h2><div class="wk-picks wk-swipe">')
+    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Picks</span><small>If you only do %s things</small>' % {3: 'three', 4: 'four'}.get(len(d['picks']), 'a few') + '</h2><div class="wk-picks wk-swipe">')
     for i, pid in enumerate(d["picks"]):
         e = ev[pid]
         w('<article class="wk-pick wk-rv" %s style="--i:%d"><div class="wk-pimg"><img src="%s" alt="%s" loading="lazy" width="720" height="480">'
@@ -161,8 +161,8 @@ def build(edition, local=False, sha="master"):
           '<div class="wk-pbody"><p class="wk-pwhen">%s &middot; %s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pwhere">&#128205; %s</p>'
           '<p class="wk-pdesc">%s</p><div class="wk-tags">%s<span class="wk-price">%s</span></div>%s</div>'
           '<p class="wk-icred">%s</p></article>' % (
-            evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, dshort(e["start"]),
-            fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"),
+            evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, *((esc(e["when"]), "Open now") if e.get("when") else (dshort(e["start"]),
+            fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"))),
             esc(e["title"]), esc(V[e["venue"]]["name"]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), actions(e), esc(e.get("credit", ""))))
     w('</div></section>')
 

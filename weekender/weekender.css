@@ -802,3 +802,6 @@
 .wk-spig .wk-eimg{position:relative}
 .wk-ignew{position:absolute;left:10px;top:10px;padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;letter-spacing:.1em;color:#fff;background:linear-gradient(90deg,#d6249f,#fd5949 60%,#fdb349)}
 .wk-src.wk-igb{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285aeb 90%);color:#fff}
+
+/* 4 top picks: 2x2 on desktop */
+@media (min-width:901px){.wk-picks:has(> .wk-pick:nth-child(4)){grid-template-columns:repeat(2,1fr)}}

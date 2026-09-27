@@ -64,6 +64,16 @@ def main():
                            "venue": v.get("name", ""), "addr": v.get("addr", ""), "url": e.get("url", ""), "desc": e["desc"],
                            "img": (base + e["img"] + "-720.webp") if e.get("img") else "", "src": "3vl", "tags": e["tags"][:3],
                            "status": e.get("status", ""), "pick": e["id"] in W.get("picks", [])})
+        for a in W.get("allweekend", []):
+            if a["id"] in W.get("picks", []):
+                v = W["venues"].get(a["venue"], {})
+                out.insert(0, {"id": "cur-" + a["id"], "title": a["title"], "start": dt.date.today().isoformat() + "T00:00", "end": a.get("until") or W.get("ends", ""),
+                               "allday": True, "ongoing": True, "whenText": a["when"], "venue": v.get("name", ""), "addr": v.get("addr", ""),
+                               "url": a.get("url", ""), "desc": a["desc"], "img": (base + a["img"] + "-720.webp") if a.get("img") else "",
+                               "src": "3vl", "tags": a["tags"][:3], "status": "", "pick": True})
+        for o in out:
+            if o.get("pick"):
+                o["rank"] = W["picks"].index(o["id"][4:]) + 1 if o["id"][4:] in W["picks"] else 9
     # storm closings: closings.json entries with a "match" regex flag the same-day event (red ribbon on /now)
     cpath = os.path.join(HERE, "closings.json")
     closings = json.load(open(cpath, encoding="utf-8")) if os.path.exists(cpath) else []

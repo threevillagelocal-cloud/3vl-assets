@@ -1,5 +1,5 @@
 {
-"updated": "2026-09-27T22:02:10.631214+00:00",
+"updated": "2026-09-27T22:40:32.780452+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 25,
@@ -22,6 +22,28 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
+{
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-09-27T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Through Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949. Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, hay bale play area, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/spooky-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": true,
+"rank": 4
+},
 {
 "id": "pjchamber-14109",
 "title": "Cedar Beach Blues Festival",
@@ -689,7 +711,8 @@
 "kids"
 ],
 "status": "",
-"pick": true
+"pick": true,
+"rank": 1
 },
 {
 "id": "brookhaven-5096",
@@ -766,7 +789,8 @@
 "music"
 ],
 "status": "",
-"pick": true
+"pick": true,
+"rank": 2
 },
 {
 "id": "cur-limspy",
@@ -935,7 +959,8 @@
 "stage"
 ],
 "status": "",
-"pick": true
+"pick": true,
+"rank": 3
 },
 {
 "id": "emmaclark-copy-welcome-teen-tween-services-department-59535",
