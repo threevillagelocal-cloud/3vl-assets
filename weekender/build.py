@@ -153,7 +153,7 @@ def build(edition, local=False, sha="master"):
         w('</div></section>')
 
     # TOP PICKS
-    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Picks</span><small>If you only do %s things</small>' % {3: 'three', 4: 'four'}.get(len(d['picks']), 'a few') + '</h2><div class="wk-picks wk-swipe">')
+    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Picks</span><small>If you only do %s things</small>' % {3: 'three', 4: 'four', 5: 'five', 6: 'six'}.get(len(d['picks']), 'a few') + '</h2><div class="wk-picks wk-swipe">')
     for i, pid in enumerate(d["picks"]):
         e = ev[pid]
         ongoing = bool(e.get("when"))

@@ -65,7 +65,7 @@ function renderLive(data){
   /* top picks: soonest upcoming events that have photos (curated picks first) */
   var pk=$('wk-picks'),box=pk&&pk.querySelector('.wk-picks');
   if(box){var cand=evs.filter(function(e){return e.img&&!e.status&&e.e>t}).sort(function(a,b){return (b.pick?1:0)-(a.pick?1:0)||(a.rank||9)-(b.rank||9)||a.s-b.s});
-    var cur=cand.filter(function(e){return e.pick}),soon=cand.filter(function(e){return !e.pick&&e.s<new Date(t0.getTime()+3*864e5)}),pick=cur.concat(soon,cand.filter(function(e){return cur.indexOf(e)<0&&soon.indexOf(e)<0})).slice(0,Math.max(3,cur.length));
+    var cur=cand.filter(function(e){return e.pick}),soon=cand.filter(function(e){return !e.pick&&e.s<new Date(t0.getTime()+3*864e5)}),pick=cur.concat(soon,cand.filter(function(e){return cur.indexOf(e)<0&&soon.indexOf(e)<0})).slice(0,Math.min(6,Math.max(3,cur.length)));
     if(pick.length>=3)box.innerHTML=pick.map(function(e,i){return '<article class="wk-pick wk-rv is-in" '+attrs(e).replace('data-id="','data-id="pk-')+'><div class="wk-pimg"><img src="'+esc2(e.img)+'" alt="'+esc2(e.title)+'" loading="lazy"><span class="wk-pnum">0'+(i+1)+'</span>'+(e.ongoing?'':'<span class="wk-pstat" data-status></span>')+'</div>'+
       '<div class="wk-pbody"><p class="wk-pwhen">'+(e.ongoing?esc2(e.whenText):ds(e.s)+' &middot; '+when(e))+'</p><h3 class="wk-ptitle">'+(e.ongoing&&e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+'</h3><p class="wk-pwhere">&#128205; '+esc2(e.venue)+'</p><p class="wk-pdesc">'+esc2(e.desc)+'</p><div class="wk-tags">'+chips(e.tags)+'</div>'+(e.ongoing?acts(e).replace(/<button type="button" class="wk-cal"[^<]*<\/button>/,'<a class="wk-dir" href="'+esc2(e.url)+'" target="_blank" rel="noopener">&#128279; Details</a>'):acts(e))+'</div></article>'}).join('')}
   /* closings strip: only show items that are today or later */
@@ -422,8 +422,14 @@ function swipeHints(){$$('.wk-swipe,.wk-wx').forEach(function(row){if(row.nextEl
   function upd(){var over=row.scrollWidth>row.clientWidth+8;h.hidden=!over;if(!over)return;var w=kids[0].offsetWidth+12,i=Math.round(row.scrollLeft/w);
     if(row.scrollLeft+row.clientWidth>=row.scrollWidth-4)i=kids.length-1;dots.forEach(function(d,j){d.classList.toggle('on',j===i)});t.classList.toggle('is-end',i===kids.length-1)}
   row.addEventListener('scroll',function(){requestAnimationFrame(upd)},{passive:true});window.addEventListener('resize',upd);upd()})}
+function pickArrows(){var sec=$('wk-picks'),row=sec&&sec.querySelector('.wk-picks'),h=sec&&sec.querySelector('.wk-h2');if(!row||!h||h.querySelector('.wk-parr'))return;
+  var b=document.createElement('span');b.className='wk-parr';b.innerHTML='<button type="button" aria-label="Previous picks">&#8249;</button><button type="button" aria-label="More picks">&#8250;</button>';h.appendChild(b);
+  var bt=b.querySelectorAll('button'),step=function(d){var c=row.querySelector('.wk-pick');row.scrollBy({left:d*((c?c.offsetWidth:300)+18),behavior:'smooth'})};
+  bt[0].onclick=function(){step(-1)};bt[1].onclick=function(){step(1)};
+  function upd(){var over=row.scrollWidth>row.clientWidth+8;b.hidden=!over;bt[0].disabled=row.scrollLeft<8;bt[1].disabled=row.scrollLeft+row.clientWidth>=row.scrollWidth-8}
+  row.addEventListener('scroll',function(){requestAnimationFrame(upd)},{passive:true});window.addEventListener('resize',upd);setTimeout(upd,300);upd()}
 function boot(){var done=false,fin=function(){if(done)return;done=true;go()};
-  setTimeout(fin,4000);
+  setTimeout(fin,4000);setTimeout(pickArrows,4200);
   fetch(LIVEURL+'?v='+Math.floor(Date.now()/300000),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){if(!done){try{renderLive(d)}catch(e){}fin()}}).catch(fin)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
 })();

@@ -803,6 +803,18 @@
 .wk-ignew{position:absolute;left:10px;top:10px;padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;letter-spacing:.1em;color:#fff;background:linear-gradient(90deg,#d6249f,#fd5949 60%,#fdb349)}
 .wk-src.wk-igb{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285aeb 90%);color:#fff}
 
-/* 4 top picks: 2x2 on desktop */
-@media (min-width:901px){.wk-picks:has(> .wk-pick:nth-child(4)){grid-template-columns:repeat(2,1fr)}}
 .wk-ptitle a{color:inherit;text-decoration:none}.wk-ptitle a:hover{text-decoration:underline}
+/* Top Picks: one horizontal row on desktop too (up to 6), 2 cards + a peek, arrow buttons */
+@media (min-width:761px){
+  #wk-top .wk-picks{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;padding:4px 2px 14px;scrollbar-width:none}
+  #wk-top .wk-picks::-webkit-scrollbar{display:none}
+  #wk-top .wk-picks > .wk-pick{flex:0 0 43%;scroll-snap-align:start}
+  #wk-picks .wk-h2{align-items:center}
+  #wk-picks .wk-h2 small{margin-left:auto}
+  .wk-parr{display:inline-flex;gap:8px;margin-left:14px}
+  .wk-parr[hidden]{display:none}
+  .wk-parr button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;color:#1b2f45;font-size:26px;line-height:1;cursor:pointer;box-shadow:0 6px 16px rgba(27,47,69,.10);transition:transform .2s,opacity .2s}
+  .wk-parr button:hover{transform:scale(1.08)}
+  .wk-parr button:disabled{opacity:.35;cursor:default;transform:none}
+}
+@media (max-width:760px){.wk-parr{display:none}}
