@@ -742,3 +742,12 @@
 #wk-top .wk-dayblk.is-collapsed .wk-more,#wk-top .wk-dayblk.is-collapsed .wk-tl{display:none!important}
 #wk-top .wk-tab{white-space:nowrap}
 @media(max-width:760px){#wk-top .wk-tab{font-size:14px;padding-left:6px;padding-right:6px}}
+/* schedule heading: Full calendar button */
+#wk-top .wk-h2r{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;font-style:normal}
+#wk-top a.wk-calbtn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:999px;background:#006fbb;color:#fff!important;font-size:14px;font-weight:800;line-height:1.2;text-decoration:none!important;white-space:nowrap;box-shadow:0 6px 16px rgba(0,111,187,.25);transition:transform .2s ease,box-shadow .2s ease}
+#wk-top a.wk-calbtn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,111,187,.35)}
+/* bottom boxes: promote + share on top, app box full width underneath (no empty space) */
+#wk-top .wk-submit{grid-row:auto}
+#wk-top .wk-app{grid-column:1/-1}
+@media (min-width:761px){#wk-top .wk-app{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:28px;padding:24px 28px}#wk-top .wk-app .wk-subd{margin-bottom:0!important}#wk-top .wk-app .wk-appb{grid-column:2;grid-row:1/3;flex-wrap:nowrap}#wk-top .wk-app .wk-subt{font-size:22px}}
+@media (max-width:760px){#wk-top .wk-appb{flex-wrap:nowrap;gap:10px}#wk-top .wk-appb a{flex:0 1 auto;display:block}#wk-top .wk-appb img{height:46px!important;width:auto!important;max-width:100%!important}}

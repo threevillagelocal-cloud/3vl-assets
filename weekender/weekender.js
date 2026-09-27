@@ -191,7 +191,8 @@ function paintWx(){var best=null;
     $$('.wk-ev[data-day='+k+']').forEach(function(li){var e=EV[li.getAttribute('data-id')],ch=li.querySelector('.wk-wxchip');if(!ch||!e||e.tags.indexOf('outdoor')<0)return;
       if(w.pop>=50){ch.innerHTML='&#9748; '+w.pop+'% rain, check plans';ch.className='wk-wxchip is-rain'}else if(sc>=75){ch.innerHTML='&#9728;&#65039; Great day for it';ch.className='wk-wxchip is-great'}})});
   $$('.wk-wd').forEach(function(c){c.classList.toggle('is-best',c.getAttribute('data-day')===best)});
-  var v=$('wk-verdict');if(v&&best){var w=WX[best];v.innerHTML=icon(w.short)+' <b>'+DAYN[best]+'</b> looks like the best day to be outside: '+w.short.toLowerCase()+', '+w.hi+'&deg;, '+w.pop+'% chance of rain.'}}
+  var v=$('wk-verdict');if(v&&best){var w=WX[best],bi=['fri','sat','sun'].indexOf(best),dn=bi===0?'Today':bi===1?'Tomorrow':['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][DAYS[best].getDay()];
+    v.innerHTML=icon(w.short)+(w.pop>=60?' Wet few days ahead. <b>'+dn+'</b> is the best of the three: ':' <b>'+dn+'</b> looks like the best day to be outside: ')+w.short.toLowerCase()+', '+w.hi+'&deg;, '+w.pop+'% chance of rain.'}}
 function loadWx(){fetch('https://api.weather.gov/points/'+LAT+','+LON).then(function(r){return r.json()}).then(function(p){return fetch(p.properties.forecast)}).then(function(r){return r.json()}).then(function(d){
   var per=d.properties.periods||[];
   ['fri','sat','sun'].forEach(function(k){if(!DAYS[k])return;var ds=DAYS[k].toDateString();

@@ -139,7 +139,7 @@ def build(edition, local=False, sha="master"):
     w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
       '<a href="#wk-picks">&#11088; Top Picks</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-wx">&#9728;&#65039; Weather</a>'
       '<a href="#wk-sched">&#128197; Schedule</a><a href="#wk-spy">&#128373;&#65039; Spy Day</a>'
-      '<a href="#wk-stage">&#127917; On Stage</a><a href="#wk-next">&#128302; On the Radar</a>'
+      '<a href="#wk-next">&#128302; On the Radar</a>'
       '</div></nav>')
     w('<div class="wk-ticker" id="wk-ticker" hidden><span class="wk-tkl"><i></i>LIVE</span><div class="wk-tkm"><div class="wk-tkt" id="wk-tkt"></div></div></div>')
 
@@ -199,7 +199,7 @@ def build(edition, local=False, sha="master"):
     w('</div></section>')
 
     # SCHEDULE
-    w('<section class="wk-sec" id="wk-sched"><h2 class="wk-h2"><span>The Full Schedule</span><small>Tap &#9734; to save to My Plans</small></h2>')
+    w('<section class="wk-sec" id="wk-sched"><h2 class="wk-h2"><span>The Full Schedule</span><em class="wk-h2r"><small>Tap &#9734; to save to My Plans</small><a class="wk-calbtn" href="https://www.threevillagelocal.com/events-calendar">&#128197; Full calendar &rarr;</a></em></h2>')
     w('<div class="wk-tabs" role="tablist"><button type="button" class="wk-tab is-on" data-day="all">All</button>'
       '<button type="button" class="wk-tab" data-day="fri">Fri <small>10/2</small></button><button type="button" class="wk-tab" data-day="sat">Sat <small>10/3</small></button>'
       '<button type="button" class="wk-tab" data-day="sun">Sun <small>10/4</small></button><span class="wk-tabink"></span></div>')
@@ -241,35 +241,11 @@ def build(edition, local=False, sha="master"):
     for i, t in enumerate(d["trolley"]):
         w('<li style="--i:%d"><b>%s</b><span>%s</span></li>' % (i, esc(t["stop"]), esc(t["note"])))
     w('</ol></div>')
-    w('<div class="wk-spyg"><div class="wk-spyc"><p class="wk-spych">&#9201;&#65039; At the Historical Society</p><ul>'
-      '<li><b>10:00</b> Flag raising with General Washington</li><li><b>11, 1 &amp; 3</b> <i>Shadow’s Rise</i> spy musical</li>'
-      '<li><b>12 &amp; 2</b> Build a timber frame house with Abraham Woodhull</li><li><b>All day</b> Encampment, musket drills, invisible ink, colonial food</li>'
-      '<li><b>10:30-3:30</b> SPIES! exhibit tours (ticketed)</li></ul></div>'
-      '<div class="wk-spyc"><p class="wk-spych">&#127869;&#65039; Where to eat</p><ul>'
-      '<li class="wk-spycc"><b>&#11088; The Country Corner</b> Suffolk&rsquo;s oldest tavern, lunch with a view of the Brewster House. Open 11, brunch 11-2</li>'
-      '<li><b>On site</b> The Branded Bun truck &amp; ALatte Coffee</li><li><b>Caroline Church</b> Dilly Dilly Donuts</li>'
-      '<li><b>Checkmate Inn</b> Level Up Kitchen</li><li><b>Main St</b> Culpers 1778 &amp; Elaine&rsquo;s</li>'
-      '<li><b>Patriots Rock</b> McNulty’s ice cream truck</li></ul></div></div>')
     w('</div>')
     w('<p class="wk-spyf"><a class="wk-btn wk-btng" href="%s" target="_blank" rel="noopener">Full schedule &amp; digital map &rarr;</a>'
       '<button type="button" class="wk-btn wk-btno wk-save" data-save="spyday" aria-pressed="false"><span class="wk-star">&#9734;</span><span class="wk-savet">Save Spy Day</span></button></p></div></section>' % s["url"])
 
     w('<div class="wk-adslot" data-slot="2"></div>')
-
-    # ON STAGE
-    cab = [a for a in d["allweekend"] if a.get("video")][0]
-    w('<section class="wk-sec" id="wk-stage"><h2 class="wk-h2"><span>On Stage</span><small>Theater, comedy &amp; concerts</small></h2>'
-      '<div class="wk-stageg"><div class="wk-vid" data-yt="%s"><img src="%s" alt="Cabaret at Theatre Three" loading="lazy" width="720" height="405">'
-      '<button type="button" class="wk-play" aria-label="Play the Cabaret trailer"><span></span></button>'
-      '<p class="wk-vcap"><b>Cabaret</b> at Theatre Three &middot; %s &middot; Watch the trailer</p></div><div class="wk-stagel">' % (cab["video"], img(cab["img"], True), esc(cab["when"])))
-    for sid in ("treason", "symphony", "limehof", "sedaris"):
-        e = ev[sid]
-        w('<a class="wk-sti" href="%s" target="_blank" rel="noopener"><span class="wk-stid">%s<b>%s</b></span><span class="wk-stib"><b>%s</b><small>%s &middot; %s</small></span><span class="wk-stip">%s</span></a>' % (
-            e["url"], DAYNAME[day_of(e["start"])][:3], fmt_time(e["start"]), esc(e["title"]), esc(V[e["venue"]]["name"]), esc(V[e["venue"]]["addr"].split(", ")[-1]), esc(e["price"])))
-    el = [a for a in d["allweekend"] if a["id"] == "elephant"][0]
-    w('<a class="wk-sti wk-stkid" href="%s" target="_blank" rel="noopener"><span class="wk-stid">Kids<b>All wknd</b></span><span class="wk-stib"><b>%s</b><small>Theatre Three &middot; %s</small></span><span class="wk-stip">Kids</span></a>' % (
-        el["url"], esc(el["title"]), esc(el["when"])))
-    w('</div></div></section>')
 
     # NEXT WEEKEND
     w('<section class="wk-sec" id="wk-next"><h2 class="wk-h2"><span>On the Radar</span><small>Save the dates</small></h2><div class="wk-next wk-swipe">')
@@ -280,7 +256,7 @@ def build(edition, local=False, sha="master"):
     w('</div></section>')
 
     # SUBMIT + SHARE + APP
-    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got an event or a special?</p><p class="wk-subd">Three Village Now updates every day. '
+    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got something you want to promote?</p><p class="wk-subd">Three Village Now updates every day. '
       'Send us your event, menu special or promotion and we’ll put it in front of Three Village.</p>'
       '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Submit it free &rarr;</a></div>'
       '<div class="wk-share"><p class="wk-subt">Send this to your crew</p><div class="wk-shb">'
