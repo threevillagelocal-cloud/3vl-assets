@@ -205,8 +205,20 @@ var path=location.pathname.replace(/\/+$/,'');var K='3vl_mm_done';
 function get(){try{return localStorage.getItem(K)}catch(e){return null}}
 function set(){try{localStorage.setItem(K,'1')}catch(e){}}
 if(path==='/member-match'){
-  if(get()&&!/[?&]edit=1/.test(location.search)){location.replace('/account/home');return}
-  document.addEventListener('submit',function(e){if(e.target&&/^member_match/.test(e.target.name||''))set()},true);
+  var edit=/[?&]edit=1/.test(location.search);
+  if(get()&&!edit){location.replace('/account/home');return}
+  /* other devices: an hourly job writes finished member IDs into window.MM_DONE on this page */
+  if(!edit&&window.MM_DONE&&MM_DONE.length&&window.fetch){
+    fetch('/account/home',{credentials:'same-origin'}).then(function(r){return r.text()}).then(function(t){
+      var m=t.match(/Member ID #(\d+)/);if(m&&MM_DONE.indexOf(+m[1])>-1){set();location.replace('/account/home')}
+    }).catch(function(){});
+  }
+  document.addEventListener('submit',function(e){
+    if(!e.target||!/^member_match/.test(e.target.name||''))return;set();
+    /* after BD shows its thank-you, point its "Back To Previous Page" button at the dashboard */
+    var n=0,t=setInterval(function(){n++;var a=[].filter.call(document.querySelectorAll('#main-content a,#main-content button'),function(x){return /Back To Previous Page/i.test(x.textContent)})[0];
+      if(a){clearInterval(t);var d=document.createElement('a');d.href='/account/home';d.className=a.className;d.textContent='Go to my dashboard';a.parentNode.replaceChild(d,a)}else if(n>40)clearInterval(t)},250);
+  },true);
   return;
 }
 if(path!=='/account/home')return;
