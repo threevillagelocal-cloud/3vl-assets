@@ -113,7 +113,59 @@ function put(){
   var box=document.createElement('div');box.id='tvn';box.innerHTML=html;
   if(td)td.parentNode.insertBefore(box,td);else hs.insertBefore(box,hs.firstChild);
   box.querySelector('a').addEventListener('click',function(){try{gtag('event','now_banner_click')}catch(e){}});
+  liveFeed(box);
   return true;
+}
+
+/* live feed: real content from /now (top pick + first special) and NWS weather; tiles stay if anything fails */
+function liveFeed(box){
+  if(!window.fetch||!window.DOMParser)return;
+  var g=box.querySelector('.tvn-g');if(!g)return;
+  var st2=document.createElement('style');st2.textContent='#tvn .tvn-feed{display:grid;grid-template-columns:1fr 1fr;gap:12px}'
+  +'#tvn .tvn-fc{position:relative;display:block;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 14px 30px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.15)}'
+  +'#tvn .tvn-fc .im{position:relative;display:block;height:150px;background:#1b2f45 center/cover}'
+  +'#tvn .tvn-fc .dish{position:absolute;right:8px;bottom:-16px;width:52px;height:52px;border-radius:12px;border:3px solid #fff;background:#fff center/cover;box-shadow:0 6px 14px rgba(0,0,0,.3)}'
+  +'#tvn .tvn-fc .lb{position:absolute;left:8px;top:8px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.95);color:#006fbb}'
+  +'#tvn .tvn-fc .tx{display:block;padding:10px 12px 12px;color:#13233a}'
+  +'#tvn .tvn-fc .wh{display:block;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#006fbb;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}'
+  +'#tvn .tvn-fc b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:17px;line-height:1.2;color:#13233a;word-break:normal}'
+  +'#tvn .tvn-wx{grid-column:1/-1;display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:12px;background:linear-gradient(90deg,#b8261f,#e0352d);border:1px solid rgba(255,255,255,.28);box-shadow:0 8px 20px rgba(224,53,45,.35);color:#fff}'
+  +'#tvn .tvn-wx.calm{background:linear-gradient(90deg,#b86b00,#f0a020);box-shadow:0 8px 20px rgba(240,160,32,.3)}'
+  +'#tvn .tvn-wx .ic{flex:0 0 26px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:rgba(255,255,255,.2);animation:tvnBlink 1.6s ease-in-out infinite}'
+  +'@keyframes tvnBlink{50%{background:rgba(255,255,255,.4)}}'
+  +'#tvn .tvn-wx .k{flex:0 0 auto;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}'
+  +'#tvn .tvn-wx .s{flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}'
+  +'#tvn .tvn-wx .t{flex:0 0 auto;font-size:15px;font-weight:800}'
+  +'@media(prefers-reduced-motion:reduce){#tvn .tvn-wx .ic{animation:none}}'
+  +'@media(max-width:860px){#tvn .tvn-fc .im{height:112px}#tvn .tvn-fc b{font-size:15px}#tvn .tvn-wx .k{display:none}}';
+  function esc2(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function tx(el,sel){var e=el&&el.querySelector(sel);return e?e.textContent.replace(/\s+/g,' ').trim():''}
+  fetch('/now',{credentials:'same-origin'}).then(function(r){return r.text()}).then(function(h){
+    var d=new DOMParser().parseFromString(h,'text/html');
+    var pk=d.querySelector('article.wk-pick'),sp=d.querySelector('#wk-eat article.wk-sp');
+    if(!pk&&!sp)return;
+    var html='';
+    if(pk){var im=pk.getAttribute('data-img')||((pk.querySelector('img')||{}).src||'');
+      html+='<span class="tvn-fc"><span class="im" style="background-image:url(\''+esc2(im)+'\')"><span class="lb">This week</span></span><span class="tx"><span class="wh">'+esc2(tx(pk,'.wk-pwhen'))+'</span><b>'+esc2(tx(pk,'.wk-ptitle'))+'</b></span></span>'}
+    if(sp){var ims=sp.querySelectorAll('.wk-eimg img'),a=ims[0]?ims[0].getAttribute('src'):'',b2=ims[1]?ims[1].getAttribute('src'):'';
+      html+='<span class="tvn-fc"><span class="im" style="background-image:url(\''+esc2(a)+'\')"><span class="lb">Local special</span>'+(b2?'<span class="dish" style="background-image:url(\''+esc2(b2)+'\')"></span>':'')+'</span><span class="tx"><span class="wh">'+esc2(tx(sp,'.wk-spbiz'))+'</span><b>'+esc2(tx(sp,'.wk-spt'))+'</b></span></span>'}
+    html+='<span class="tvn-wx calm" id="tvn-wx" style="display:none"></span>';
+    document.head.appendChild(st2);
+    var f=document.createElement('div');f.className='tvn-feed';f.innerHTML=html;g.parentNode.replaceChild(f,g);
+    var TRI='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19z"/><path d="M12 10v4.5"/><circle cx="12" cy="17" r=".8" fill="#fff"/></svg>';
+    var CLD='<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18h10a4 4 0 0 0 0-8 6 6 0 0 0-11.5 1.8A3.2 3.2 0 0 0 7 18z"/></svg>';
+    var j=function(u){return fetch(u,{headers:{'Accept':'application/geo+json'}}).then(function(r){return r.json()})};
+    Promise.all([j('https://api.weather.gov/alerts/active?point=40.9387,-73.1182').catch(function(){return null}),
+      j('https://api.weather.gov/points/40.9387,-73.1182').then(function(p){return j(p.properties.forecast)}).catch(function(){return null})]).then(function(r){
+      var w=document.getElementById('tvn-wx');if(!w)return;
+      var al=r[0]&&r[0].features&&r[0].features[0],pr=r[1]&&r[1].properties&&r[1].properties.periods[0];
+      if(!al&&!pr){w.remove();return}
+      var temp=pr?'<span class="t">'+esc2(pr.temperature)+'&deg;</span>':'';
+      if(al){w.className='tvn-wx';w.innerHTML='<span class="ic">'+TRI+'</span><span class="k">Weather alert</span><span class="s">'+esc2(al.properties.event)+(pr?' &middot; '+esc2(pr.shortForecast):'')+'</span>'+temp}
+      else{w.innerHTML='<span class="ic">'+CLD+'</span><span class="k">Live weather</span><span class="s">'+esc2(pr.name)+': '+esc2(pr.shortForecast)+'</span>'+temp}
+      w.style.display='';
+    });
+  }).catch(function(){});
 }
 var n=0,t=setInterval(function(){n++;if((document.getElementById('td')&&put())||n>30){clearInterval(t);put()}},200);
 })();
