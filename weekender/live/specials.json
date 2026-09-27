@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-27T21:00:16.034470+00:00",
+ "updated": "2026-09-27T21:06:48.181826+00:00",
  "specials": [],
  "candidates": [
   {
@@ -51,70 +51,6 @@
    "inset": "ig/p18117132107090064.jpg"
   },
   {
-   "id": "18098078141452047",
-   "biz": "Black Pearl Seafood Chophouse",
-   "ig": "blackpearlportjeff",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "2 Montauk Pumpkin Ales for $10",
-   "when": "Now through end of season",
-   "desc": "Seasonal special on local Montauk Pumpkin Ale at Black Pearl. Two beers for $10 while it lasts.",
-   "expires": "2026-10-31",
-   "posted": "2026-09-25T17:38:04+0000",
-   "url": "https://www.instagram.com/p/DduA4u2igdw/",
-   "img": "",
-   "inset": "ig/p18098078141452047.jpg"
-  },
-  {
-   "id": "18115681990812366",
-   "biz": "RUVO Kitchen & Wine Bar",
-   "ig": "ruvorestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant/Wine Bar",
-   "member": false,
-   "title": "Wine Down Wednesday - 25% Off Select Bottles",
-   "when": "Every Wednesday",
-   "desc": "25% off select wines from Long Island, Italy & California all day. In house only.",
-   "expires": "2026-10-10",
-   "posted": "2026-09-23T14:07:09+0000",
-   "url": "https://www.instagram.com/reel/Ddoe8cbO_IM/",
-   "img": "",
-   "inset": "ig/p18115681990812366.jpg"
-  },
-  {
-   "id": "18116576699008149",
-   "biz": "The Steam Room",
-   "ig": "thesteamroomrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant (Seafood)",
-   "member": false,
-   "title": "Crab Legs Thursdays",
-   "when": "Every Thursday",
-   "desc": "Crab legs for $20. Come in to The Steam Room in Port Jefferson.",
-   "expires": "2026-10-10",
-   "posted": "2026-09-24T10:02:55+0000",
-   "url": "https://www.instagram.com/p/Ddqn8dFDHe-/",
-   "img": "",
-   "inset": "ig/p18116576699008149.jpg"
-  },
-  {
-   "id": "18109489916464133",
-   "biz": "Burgerology",
-   "ig": "burgerologyusa",
-   "town": "Stony Brook",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Mega Mozzarella Sticks Launch",
-   "when": "Starting Monday, Sept. 30",
-   "desc": "Try new Mega Mozzarella Sticks and see how long of a cheese pull you can get.",
-   "expires": "2026-10-13",
-   "posted": "2026-09-27T16:28:07+0000",
-   "url": "https://www.instagram.com/reel/Ddy616GR7qC/",
-   "img": "",
-   "inset": "ig/p18109489916464133.jpg"
-  },
-  {
    "id": "17869208769642901",
    "biz": "Schnitzels",
    "ig": "eatschnitzels",
@@ -131,20 +67,20 @@
    "inset": "ig/p17869208769642901.jpg"
   },
   {
-   "id": "18166376863481072",
-   "biz": "Sweet Mama's",
-   "ig": "sweetmamasrestaurant",
+   "id": "18119689529285235",
+   "biz": "Little Cheese Shop",
+   "ig": "littlecheeseshop",
    "town": "Stony Brook",
-   "category": "Restaurant/Breakfast",
+   "category": "Cheese Shop/Cafe",
    "member": false,
-   "title": "Kids Night: Half Off Kids Meals",
-   "when": "Every Wednesday",
-   "desc": "Kids meals half off with adult entree purchase. Dine in only at either location.",
-   "expires": "2026-10-08",
-   "posted": "2026-09-23T17:03:00+0000",
-   "url": "https://www.instagram.com/p/DdozNueRnHt/",
+   "title": "Moses Reaper Cheese - Halloween Edition",
+   "when": "Now",
+   "desc": "Limited Halloween-themed cheese from Jasper Hill Farm at the shop while supplies last.",
+   "expires": "2026-10-11",
+   "posted": "2026-09-25T14:05:01+0000",
+   "url": "https://www.instagram.com/p/DdtonPDD8BE/",
    "img": "",
-   "inset": "ig/p18166376863481072.jpg"
+   "inset": "ig/p18119689529285235.jpg"
   }
  ]
 }
