@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0f1a28;font-family:'Radio Canada',sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+.ad{position:relative;width:1080px;height:1920px;overflow:hidden;
+ background:radial-gradient(circle at 85% 8%,rgba(58,160,232,.35),transparent 42%),radial-gradient(circle at 10% 90%,rgba(58,160,232,.22),transparent 45%),linear-gradient(165deg,#1f3a5c 0%,#13233a 50%,#0c1624 100%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:54px 54px}
+.head{position:absolute;left:0;right:0;top:46px;text-align:center}
+.pill{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(180deg,#ff4d45,#e0231c);font-weight:700;font-size:26px;letter-spacing:.16em;padding:10px 24px 10px 18px;border-radius:999px;border:1.5px solid rgba(255,255,255,.35);box-shadow:0 8px 22px rgba(224,35,28,.45)}
+.pill i{width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.28)}
+h1{font-size:104px;font-weight:700;letter-spacing:-.035em;line-height:1;margin:18px 0 10px}
+h1 span{color:#ffc53d}
+.sub{font-size:34px;font-weight:600;color:#dfe8f2}
+.ticker{position:absolute;left:60px;right:60px;top:330px;height:62px;border-radius:16px;overflow:hidden;box-shadow:0 14px 30px rgba(0,0,0,.35);z-index:4;background:url(cut_ticker.png) center/cover}
+.phone{position:absolute;left:340px;top:350px;width:400px;height:760px;border-radius:56px;padding:14px;background:linear-gradient(160deg,#2b3a4f,#0b111a);box-shadow:0 40px 80px rgba(0,0,0,.6),inset 0 0 0 2px rgba(255,255,255,.18);z-index:3}
+.screen{width:100%;height:100%;border-radius:44px;overflow:hidden;background:#13233a url(cut_screen.png) center 46px/100% auto no-repeat}
+.notch{position:absolute;left:50%;top:26px;width:120px;height:30px;margin-left:-60px;border-radius:20px;background:#0b111a;z-index:2}
+.card{position:absolute;border-radius:26px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.5),0 0 0 2px rgba(255,255,255,.12);background-size:100% 100%;z-index:2}
+.pick{left:24px;top:420px;width:296px;height:476px;background-image:url(cut_pick.png);transform:rotate(-6deg)}
+.eat{right:24px;top:420px;width:296px;height:430px;background-image:url(cut_eat.png);transform:rotate(6deg)}
+.tag{position:absolute;z-index:5;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;font-size:21px;font-weight:700;color:#13233a;background:rgba(255,255,255,.95);box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.tag b{color:#006fbb}
+.t1{left:30px;top:372px;transform:rotate(-6deg)}
+.t2{right:30px;top:372px;transform:rotate(6deg)}
+.cta{position:absolute;left:0;right:0;top:1180px;text-align:center;z-index:6}
+.cta b{display:inline-flex;align-items:center;gap:14px;padding:20px 40px;border-radius:999px;font-size:40px;font-weight:700;color:#13233a;background:linear-gradient(180deg,#ffd76a,#ffc53d);box-shadow:0 14px 34px rgba(255,197,61,.35),inset 0 1px 0 rgba(255,255,255,.7)}
+.wx{position:absolute;left:560px;top:900px;width:470px;height:287px;border-radius:26px;background:url(cut_wxcard.png) center/100% 100%;box-shadow:0 30px 60px rgba(0,0,0,.55),0 0 0 2px rgba(255,255,255,.14);transform:rotate(3deg);z-index:4}
+.t3{left:620px;top:862px;transform:rotate(3deg)}
+.fade{position:absolute;left:0;right:0;bottom:0;height:200px;background:linear-gradient(180deg,rgba(12,22,36,0),rgba(12,22,36,.95) 60%);z-index:5}
+
+.head{top:240px!important}
+h1{font-size:112px!important}
+.phone{left:300px!important;top:560px!important;width:480px!important;height:900px!important;border-radius:62px!important}
+.screen{border-radius:50px!important}
+.pick{left:14px!important;top:700px!important;width:300px!important;height:482px!important}
+.eat{right:14px!important;top:700px!important;width:300px!important;height:436px!important}
+.t1{left:24px!important;top:650px!important}.t2{right:24px!important;top:650px!important}
+.wx{left:auto!important;right:50px!important;top:1290px!important;width:500px!important;height:300px!important}
+.t3{left:auto!important;right:330px!important;top:1250px!important}
+.cta{top:1625px!important}
+.fade{height:320px!important}
+</style></head><body><div class="ad"><div class="grid"></div>
+<div class="head"><span class="pill"><i></i>LIVE</span><h1>Three Village <span>Now</span></h1><div class="sub">Events, specials, weather &amp; alerts. All live.</div></div>
+
+<span class="tag t1">&#128197; <b>This weekend</b></span><span class="tag t2">&#127869;&#65039; <b>Local specials</b></span>
+<div class="card pick"></div><div class="card eat"></div>
+<div class="phone"><div class="notch"></div><div class="screen"></div></div>
+<span class="tag t3">&#9925; <b>Live weather</b></span><div class="wx"></div><div class="fade"></div>
+<div class="cta"><b>threevillagelocal.com/now</b></div>
+</div></body></html>

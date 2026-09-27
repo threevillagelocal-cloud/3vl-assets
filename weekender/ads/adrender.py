@@ -15,7 +15,8 @@ try:
             r=json.loads(ws.recv())
             if r.get("id")==n[0]: return r.get("result",{})
     cmd("Page.enable")
-    for name,W,Hh in [("ad-4x5",1080,1350),("ad-9x16",1080,1920)]:
+    import sys
+    for name,W,Hh in [tuple([a.split(":")[0]]+[int(x) for x in a.split(":")[1:]]) for a in sys.argv[1:]]:
         cmd("Emulation.setDeviceMetricsOverride", width=W, height=Hh, deviceScaleFactor=1, mobile=False)
         cmd("Page.navigate",url=(H/(name+".html")).as_uri()); time.sleep(3)
         d=cmd("Page.captureScreenshot",format="png",clip={"x":0,"y":0,"width":W,"height":Hh,"scale":1})
