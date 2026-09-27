@@ -68,4 +68,4 @@
 @media(max-width:600px){.jn3 .jn3-h1{font-size:36px;line-height:1.08}.jn3-dek{font-size:18px}.jn3-card{padding:26px 18px 20px;border-radius:22px}.jn3-price{font-size:40px}.jn3 .jn3-h2{font-size:28px}.jn3-more-grid,.jn3-faq-grid{grid-template-columns:1fr}.jn3-assure{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.jn3 .jn3-btn-gold:after{animation:none}}
 .jn3-q:last-child:nth-child(odd){grid-column:1/-1}
-.jn3-nw{white-space:nowrap}
+.jn3 .jn3-nw{white-space:nowrap!important;display:inline-block}
