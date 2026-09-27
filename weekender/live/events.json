@@ -1,12 +1,12 @@
 {
-"updated": "2026-09-27T13:51:27.680793+00:00",
+"updated": "2026-09-27T18:17:33.764048+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 25,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 222,
-"Emma S. Clark Library": 217,
+"Emma S. Clark Library": 215,
 "Stony Brook Village Center": 16,
 "Long Island Museum": 31,
 "Ward Melville Heritage Org": 5
@@ -92,24 +92,6 @@
 "outdoor"
 ],
 "status": "Canceled"
-},
-{
-"id": "emmaclark-tote-bags-library-drives-59547",
-"title": "Tote Bags for Library Drives",
-"start": "2026-09-27T11:00:00",
-"end": "2026-09-27T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/tote-bags-library-drives-59547",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"arts"
-],
-"status": ""
 },
 {
 "id": "emmaclark-mermaid-hairbrushes-people-need-59548",
