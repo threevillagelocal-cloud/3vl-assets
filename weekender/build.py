@@ -156,14 +156,19 @@ def build(edition, local=False, sha="master"):
     w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Picks</span><small>If you only do %s things</small>' % {3: 'three', 4: 'four'}.get(len(d['picks']), 'a few') + '</h2><div class="wk-picks wk-swipe">')
     for i, pid in enumerate(d["picks"]):
         e = ev[pid]
+        ongoing = bool(e.get("when"))
+        when = esc(e["when"]) if ongoing else "%s &middot; %s" % (dshort(e["start"]), fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"))
+        title = ('<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(e["url"]), esc(e["title"]))) if ongoing and e.get("url") else esc(e["title"])
+        acts = actions(e)
+        if ongoing and e.get("url"):
+            acts = re.sub(r'<button type="button" class="wk-cal"[^<]*</button>', '<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a>' % esc(e["url"]), acts)
         w('<article class="wk-pick wk-rv" %s style="--i:%d"><div class="wk-pimg"><img src="%s" alt="%s" loading="lazy" width="720" height="480">'
-          '<span class="wk-pnum">%02d</span><span class="wk-pstat" data-status></span></div>'
-          '<div class="wk-pbody"><p class="wk-pwhen">%s &middot; %s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pwhere">&#128205; %s</p>'
+          '<span class="wk-pnum">%02d</span>%s</div>'
+          '<div class="wk-pbody"><p class="wk-pwhen">%s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pwhere">&#128205; %s</p>'
           '<p class="wk-pdesc">%s</p><div class="wk-tags">%s<span class="wk-price">%s</span></div>%s</div>'
           '<p class="wk-icred">%s</p></article>' % (
-            evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, *((esc(e["when"]), "Now open") if e.get("when") else (dshort(e["start"]),
-            fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"))),
-            esc(e["title"]), esc(V[e["venue"]]["name"]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), actions(e), esc(e.get("credit", ""))))
+            evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, "" if ongoing else '<span class="wk-pstat" data-status></span>',
+            when, title, esc(V[e["venue"]]["name"]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), acts, esc(e.get("credit", ""))))
     w('</div></section>')
 
     # EAT & DRINK (exterior photo + dish inset; one card per business)
