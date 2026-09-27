@@ -1,63 +1,39 @@
 <!doctype html>
 <html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1200px;height:630px;overflow:hidden;background:#0f1a28}
 body{font-family:'Radio Canada',sans-serif;color:#fff}
 .og{position:relative;width:1200px;height:630px;overflow:hidden}
 .bg{position:absolute;inset:0;background:url(hero-po.jpg) center 42%/cover}
-.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,22,32,.96) 0%,rgba(15,22,32,.9) 38%,rgba(15,22,32,.62) 62%,rgba(15,22,32,.45) 100%)}
-.glow{position:absolute;right:-120px;top:-160px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(240,173,78,.22),transparent 65%)}
-.left{position:absolute;left:64px;top:56px;width:560px}
-.logo{height:62px;display:block;margin-bottom:34px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.35))}
-.pill{display:inline-flex;align-items:center;gap:10px;background:#e5322d;color:#fff;font-weight:700;font-size:17px;letter-spacing:.16em;padding:9px 18px 9px 16px;border-radius:999px;box-shadow:0 8px 24px rgba(229,50,45,.4)}
-.pill i{width:11px;height:11px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.25)}
-h1{font-weight:700;font-size:84px;line-height:.95;letter-spacing:-.03em;margin:22px 0 18px}
-h1 span{color:#f0ad4e}
-.dek{font-size:24px;line-height:1.35;color:rgba(255,255,255,.88);max-width:520px}
-.url{position:absolute;left:64px;bottom:50px;display:inline-flex;align-items:center;gap:0;font-size:22px;font-weight:700;color:#fff;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.28);padding:11px 20px;border-radius:14px}
-.url b{color:#f0ad4e}
-.dash{position:absolute;right:52px;top:62px;width:470px;padding:18px;border-radius:26px;background:rgba(15,26,40,.72);border:1.5px solid rgba(255,255,255,.16);box-shadow:0 30px 70px rgba(0,0,0,.5);backdrop-filter:blur(6px)}
-.tabs{display:flex;gap:4px;background:#1b2f45;padding:5px;border-radius:14px;margin-bottom:14px}
-.tabs span{flex:1;text-align:center;font-size:15px;font-weight:700;color:rgba(255,255,255,.72);padding:9px 0;border-radius:10px;white-space:nowrap}
-.tabs span.on{background:#f0ad4e;color:#1b2f45}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.t{position:relative;height:190px;border-radius:18px;overflow:hidden;background:#1b2f45}
-.t .ph{position:absolute;inset:0;background-size:cover;background-position:center}
-.t .sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,22,32,0) 28%,rgba(15,22,32,.92) 100%)}
-.t .lb{position:absolute;left:14px;right:12px;bottom:12px}
-.t .k{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#f0ad4e;margin-bottom:3px}
-.t .n{font-size:21px;font-weight:700;line-height:1.1}
-.t .chip{position:absolute;top:11px;left:11px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.1em;padding:5px 10px;border-radius:999px;background:rgba(15,22,32,.72);border:1px solid rgba(255,255,255,.2)}
-.t .chip i{width:7px;height:7px;border-radius:50%;background:#ff3b30}
-.alert{background:linear-gradient(145deg,#d9534f,#9e2622)}
-.alert .ic{position:absolute;right:14px;top:14px;width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center}
-.alert .lines{position:absolute;left:14px;right:14px;top:18px}
-.alert .lines div{height:9px;border-radius:5px;background:rgba(255,255,255,.28);margin-bottom:9px}
-.wxbig{position:absolute;right:12px;top:10px}
+.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,22,32,.97) 0%,rgba(15,22,32,.9) 45%,rgba(15,22,32,.7) 100%)}
+.left{position:absolute;left:60px;top:52px;width:600px}
+.logo{height:78px;display:block;margin-bottom:30px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.4))}
+.pill{display:inline-flex;align-items:center;gap:14px;background:#e5322d;color:#fff;font-weight:700;font-size:30px;letter-spacing:.12em;padding:12px 26px 12px 22px;border-radius:999px;box-shadow:0 10px 30px rgba(229,50,45,.45)}
+.pill i{width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 0 0 7px rgba(255,255,255,.25)}
+h1{font-weight:700;font-size:124px;line-height:.9;letter-spacing:-.035em;margin:26px 0 0}
+h1 span{color:#f0ad4e;display:block}
+.grid{position:absolute;right:52px;top:52px;width:476px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.t{height:255px;border-radius:28px;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 44px rgba(0,0,0,.45)}
+.t svg{width:74px;height:74px}
+.t b{font-size:40px;line-height:1;font-weight:700;letter-spacing:-.01em}
+.c1{background:linear-gradient(150deg,#1e88d6,#006fbb)}
+.c2{background:linear-gradient(150deg,#ffc860,#f0ad4e);color:#1b2f45}
+.c3{background:linear-gradient(150deg,#17a283,#0f866c)}
+.c4{background:linear-gradient(150deg,#ef5f5a,#c9302c)}
 </style></head>
 <body><div class="og">
-<div class="bg"></div><div class="shade"></div><div class="glow"></div>
+<div class="bg"></div><div class="shade"></div>
 <div class="left">
   <img class="logo" src="logo.png" alt="">
-  <span class="pill"><i></i>UPDATED LIVE</span>
+  <span class="pill"><i></i>LIVE</span>
   <h1>Three Village <span>Now</span></h1>
-  <p class="dek">Today&rsquo;s events, local specials, weather and alerts for Setauket, <span style="white-space:nowrap">Stony Brook</span> &amp; <span style="white-space:nowrap">Port Jefferson</span>.</p>
 </div>
-<div class="url">threevillagelocal.com<b>/now</b></div>
-<div class="dash">
-  <div class="tabs"><span class="on">This Week</span><span>Today</span><span>Tomorrow</span><span>Weekend</span></div>
-  <div class="grid">
-    <div class="t"><div class="ph" style="background-image:url(r-hill.jpg);background-position:60% center"></div><div class="sh"></div><span class="chip"><i></i>HAPPENING NOW</span><div class="lb"><p class="k">What&rsquo;s on</p><p class="n">Events this week</p></div></div>
-    <div class="t"><div class="ph" style="background-image:url(cc-ext.jpg);background-position:30% center"></div><div class="sh"></div><div class="lb"><p class="k">Eat &amp; Drink</p><p class="n">Local specials</p></div></div>
-    <div class="t"><div class="ph" style="background-image:url(pjharbor.jpg);background-position:40% center"></div><div class="sh"></div>
-      <svg class="wxbig" width="62" height="62" viewBox="0 0 64 64" aria-hidden="true"><circle cx="24" cy="24" r="11" fill="#f0ad4e"/><g stroke="#f0ad4e" stroke-width="3.5" stroke-linecap="round"><path d="M24 5v5M24 38v5M5 24h5M38 24h5M10.5 10.5l3.5 3.5M34 34l3.5 3.5M10.5 37.5l3.5-3.5M34 14l3.5-3.5"/></g><path d="M22 52h28a9 9 0 0 0 0-18 13 13 0 0 0-25 3 7.5 7.5 0 0 0-3 15z" fill="#fff"/></svg>
-      <div class="lb"><p class="k">Live weather</p><p class="n">Forecast &amp; cams</p></div></div>
-    <div class="t alert"><span class="chip" style="background:rgba(0,0,0,.22)"><i style="background:#fff"></i>LIVE</span>
-      <div class="ic"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 10v4.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="17.2" r="1.3" fill="#fff"/></svg></div>
-      <div class="lb"><p class="k" style="color:#fff">Local alerts</p><p class="n">Closings &amp; warnings</p></div></div>
-  </div>
+<div class="grid">
+  <div class="t c1"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><circle cx="8.5" cy="14" r="1.2" fill="#fff"/><circle cx="12" cy="14" r="1.2" fill="#fff"/><circle cx="15.5" cy="14" r="1.2" fill="#fff"/></svg><b>Events</b></div>
+  <div class="t c2"><svg viewBox="0 0 24 24" fill="none" stroke="#1b2f45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5v8a2.5 2.5 0 0 0 5 0v-8M8.5 2.5v19M17 21.5v-19c-2.2 1.2-3.5 3.8-3.5 7v4h3.5"/></svg><b>Eat &amp; Drink</b></div>
+  <div class="t c3"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3.5"/><path d="M9 1.8v1.7M9 14.5v1.7M1.8 9h1.7M3.9 3.9l1.2 1.2M13 5l1.2-1.2M3.9 14.1l1.2-1.2"/><path d="M10 21h8a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.3 1.6A3.2 3.2 0 0 0 10 21z" fill="#0f866c"/></svg><b>Weather</b></div>
+  <div class="t c4"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20.5h20L12 3z"/><path d="M12 10v5"/><circle cx="12" cy="17.6" r=".9" fill="#fff"/></svg><b>Alerts</b></div>
 </div>
-<p style="position:absolute;right:54px;bottom:16px;font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.02em">Photos: Vitsuha (CC0), Joe Ross (CC BY-SA 2.0), Traitor (CC BY-SA 3.0), The Country Corner</p>
 </div></body></html>
