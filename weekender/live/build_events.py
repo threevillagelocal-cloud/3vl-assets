@@ -81,7 +81,19 @@ def main():
         seen.add(k)
         final.append(e)
     final.sort(key=lambda x: x["start"])
-    data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings}
+    # Instagram specials (written by ig_specials.py); images live next to this file in ig/
+    spath = os.path.join(HERE, "specials.json")
+    specials = []
+    if os.path.exists(spath):
+        igbase = "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/"
+        today = dt.date.today().isoformat()
+        for s in json.load(open(spath, encoding="utf-8")).get("specials", []):
+            if (s.get("expires") or "9999") < today:
+                continue
+            if s.get("inset"):
+                s["inset"] = igbase + s["inset"]
+            specials.append(s)
+    data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings, "specials": specials}
     json.dump(data, open(os.path.join(HERE, "events.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     print(counts, len(final))
 

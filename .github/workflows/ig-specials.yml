@@ -1,0 +1,36 @@
+name: Three Village Now - Instagram specials (every 3 hours)
+
+on:
+  schedule:
+    - cron: "40 11,14,17,20,23 * * *"   # 7:40a, 10:40a, 1:40p, 4:40p, 7:40p ET
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ig-specials
+  cancel-in-progress: false
+
+jobs:
+  specials:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pillow
+      - name: Read Instagram, pick out specials
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python weekender/live/ig_specials.py
+      - name: Rebuild the live feed
+        run: python weekender/live/build_events.py
+      - name: Commit
+        run: |
+          git config user.name "3VL specials"
+          git config user.email "actions@users.noreply.github.com"
+          git add weekender/live
+          git diff --cached --quiet || (git commit -m "Instagram specials $(date -u +%F-%H%M)" && git pull --rebase -q && git push)

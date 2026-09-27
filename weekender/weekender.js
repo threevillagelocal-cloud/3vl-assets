@@ -71,6 +71,17 @@ function renderLive(data){
   /* closings strip: only show items that are today or later */
   var cx=$('wk-cx');if(cx){var items=(data.closings||[]).filter(function(c){return new Date(c.date+'T23:59:00')>=t0});
     if(!items.length)cx.remove();else{var row=cx.querySelector('.wk-cxrow');if(row)row.innerHTML=items.map(function(c){return '<div class="wk-cxi" data-off="'+esc2(c.status)+'"><p class="wk-cxn">'+esc2(c.title)+'</p><p class="wk-cxd">'+esc2(c.note)+'</p></div>'}).join('')}}
+  /* Instagram specials (ig_specials.py): newest first, replace the curated card for the same business */
+  var sp=(data.specials||[]),eat=document.querySelector('#wk-eat .wk-eat');
+  if(eat&&sp.length){var nm=function(x){return String(x||'').toLowerCase().replace(/&[a-z#0-9]+;/g,'').replace(/\(.*?\)/g,'').replace(/[^a-z0-9]/g,'').replace(/^the/,'')};
+    var live={};sp.forEach(function(x){live[nm(x.biz)]=1});
+    [].forEach.call(eat.querySelectorAll('.wk-sp'),function(a){var b=a.querySelector('.wk-spbiz');if(b&&live[nm(b.textContent)])a.remove()});
+    var html=sp.map(function(x){var big=x.img||x.inset,small=x.img?x.inset:'';
+      var map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(x.biz.replace(/\s*\(.*?\)/,'')+', '+(x.town||'Three Village')+', NY');
+      return '<article class="wk-sp wk-rv is-in wk-spig">'+(big?'<div class="wk-eimg"><img src="'+esc2(big)+'" alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img src="'+esc2(small)+'" alt="" loading="lazy"></span>':'')+'<span class="wk-ignew">NEW ON INSTAGRAM</span></div>':'')+
+       '<div class="wk-spb"><p class="wk-spbiz">'+esc2(x.biz)+'</p><p class="wk-spt">'+esc2(x.title)+'</p>'+(x.when?'<p class="wk-spw">'+esc2(x.when)+'</p>':'')+'<p class="wk-spd">'+esc2(x.desc)+'</p>'+
+       '<p class="wk-spf"><span class="wk-src wk-igb">&#9711;</span><span>via <a class="wk-biz" href="'+esc2(x.url)+'" target="_blank" rel="noopener">Instagram</a></span><a class="wk-dir" href="'+esc2(map)+'" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>'}).join('');
+    eat.insertAdjacentHTML('afterbegin',html)}
   return true}
 function DAYN2x(d){return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][d.getDay()]}
 
