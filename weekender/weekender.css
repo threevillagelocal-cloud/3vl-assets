@@ -809,11 +809,13 @@
   #wk-top .wk-picks{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;padding:4px 2px 14px;scrollbar-width:none}
   #wk-top .wk-picks::-webkit-scrollbar{display:none}
   #wk-top .wk-picks > .wk-pick{flex:0 0 43%;scroll-snap-align:start}
+  #wk-top .wk-picks .wk-pbody{display:flex;flex-direction:column;flex:1}
+  #wk-top .wk-picks .wk-acts{margin-top:auto;padding-top:10px}
   #wk-picks .wk-h2{align-items:center}
   #wk-picks .wk-h2 small{margin-left:auto}
-  .wk-parr{display:inline-flex;gap:8px;margin-left:14px}
+  .wk-parr{display:inline-flex;gap:6px;margin-left:10px;margin-right:4px;flex:0 0 auto}
   .wk-parr[hidden]{display:none}
-  .wk-parr button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;color:#1b2f45;font-size:26px;line-height:1;cursor:pointer;box-shadow:0 6px 16px rgba(27,47,69,.10);transition:transform .2s,opacity .2s}
+  .wk-parr button{width:36px;height:36px;padding:0;border-radius:50%;border:1px solid var(--line);background:#fff;color:#1b2f45;font-size:26px;line-height:1;cursor:pointer;box-shadow:0 6px 16px rgba(27,47,69,.10);transition:transform .2s,opacity .2s}
   .wk-parr button:hover{transform:scale(1.08)}
   .wk-parr button:disabled{opacity:.35;cursor:default;transform:none}
 }
