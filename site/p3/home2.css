@@ -68,3 +68,30 @@ html.h2-on a.h2-blink{color:#fff!important;font-weight:700;font-size:14px;text-d
 }
 
 .h2-ftown{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* 9/27 premium VIP featured cards */
+html.h2-on a.h2-fcard.h2-vip{flex:0 0 264px;padding:0;gap:0;align-items:stretch;border:1.5px solid transparent;border-radius:22px;
+ background:linear-gradient(#fff,#fff) padding-box,linear-gradient(140deg,#ffd76a,#f0ad4e 30%,#e3e9f0 55%,#e3e9f0 75%,#ffd76a) border-box;
+ box-shadow:0 14px 34px rgba(27,47,69,.12),0 2px 6px rgba(27,47,69,.06)}
+html.h2-on a.h2-fcard.h2-vip:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(27,47,69,.18),0 0 0 4px rgba(255,197,61,.18)}
+.h2-vip .h2-fstage{position:relative;display:flex;align-items:center;justify-content:center;height:150px;margin:10px 10px 0;border-radius:16px;
+ background:radial-gradient(circle at 20% 0%,rgba(255,215,106,.28),transparent 55%),radial-gradient(circle at 100% 100%,rgba(0,111,187,.10),transparent 55%),linear-gradient(160deg,#fbfcfe,#eef3f9);
+ box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px rgba(27,47,69,.05)}
+.h2-vip .h2-flogo{height:112px;margin:0;padding:10px 14px;width:auto;max-width:86%;border-radius:14px;background:#fff;box-shadow:0 8px 20px rgba(27,47,69,.10),inset 0 1px 0 #fff}
+html.h2-on .h2-vip .h2-flogo img{max-height:92px!important;border-radius:8px}
+.h2-vip .h2-ftag{left:10px;top:10px;border-radius:999px;padding:5px 11px;font-size:10.5px;letter-spacing:.14em;color:#13233a;background:linear-gradient(180deg,#ffe08a,#ffc53d);box-shadow:0 6px 14px rgba(240,173,78,.35),inset 0 1px 0 rgba(255,255,255,.7);z-index:1}
+.h2-vip .h2-fbody{display:flex;flex-direction:column;gap:7px;padding:14px 16px 16px;flex:1}
+.h2-vip .h2-fname{font-size:18px;font-weight:800;color:#13233a;min-height:44px;word-break:normal;overflow-wrap:normal}
+.h2-vip .h2-vchk{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:6px;border-radius:50%;background:#0f866c;color:#fff;font-style:normal;font-size:11px;font-weight:900;vertical-align:2px}
+.h2-vip .h2-ftown{display:flex;align-items:center;gap:5px;font-size:13.5px;color:#5b6978;font-weight:600}
+.h2-vip .h2-ftown svg{flex:0 0 14px;color:#006fbb}
+.h2-vip .h2-frate{display:flex;align-items:center;gap:8px;min-height:20px}
+.h2-vip .h2-stars i{font-style:normal;font-size:15px;color:#d9e1ea;letter-spacing:1px}
+.h2-vip .h2-stars i.on{color:#f5b400;text-shadow:0 1px 0 rgba(0,0,0,.05)}
+.h2-vip .h2-frate em{font-style:normal;font-size:13px;font-weight:700;color:#5b6978}
+.h2-vip .h2-frate em.h2-new{color:#0f866c}
+.h2-vip .h2-fgo{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:6px;margin-top:auto;padding:11px 14px;border-radius:12px;background:#13233a;color:#fff!important;font-size:14.5px;font-weight:800}
+.h2-vip .h2-fgo span{color:#ffc53d;transition:transform .2s}
+.h2-vip:hover .h2-fgo span{transform:translateX(3px)}
+.h2-vip .h2-fgo:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.28) 48%,transparent 62%);transform:translateX(-130%);transition:transform .8s ease}
+.h2-vip:hover .h2-fgo:after{transform:translateX(130%)}
+@media(max-width:760px){html.h2-on a.h2-fcard.h2-vip{flex-basis:78%}}

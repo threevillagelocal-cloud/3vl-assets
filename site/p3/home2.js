@@ -29,9 +29,12 @@ if(mem.length){var seen={},cards=mem.map(function(m){var a=$('a.h4',m);if(!a)ret
     var info=$('.recent-member-info',m),town=info?(info.textContent.split('Located in')[1]||'').replace(/\s+/g,' ').trim().replace(/View Listing/g,'').replace('Setauket- East Setauket','East Setauket').replace(/,?\s*$/,'').trim():'';
     var rt=($('.the-average-rating',m)||{}).textContent||'',r=(rt.match(/([\d.]+)\s*\/\s*5/)||[])[1],n=((($('.the-review-count',m)||{}).textContent||'').match(/\d+/)||[])[0];
     var ver=!!$('.member-search-verified',m);
-    return '<a class="h2-fcard" href="'+esc(href)+'"><span class="h2-ftag">&#9733; FEATURED</span><span class="h2-flogo"><img src="'+esc(src)+'" alt="" loading="lazy"></span>'+
-      '<b class="h2-fname">'+esc(nm)+'</b><span class="h2-ftown">&#128205; '+esc(town||'Three Village')+'</span><span class="h2-fbadges">'+(ver?'<i class="h2-ok">&#10003; Verified</i>':'')+(r?'<i class="h2-star">&#9733; '+(+r).toFixed(1)+(n?' ('+n+')':'')+'</i>':'')+'</span>'+
-      '<span class="h2-fgo">View profile &rarr;</span></a>'}).join('');
+    var stars='';if(r){var f=Math.round(+r);for(var k=1;k<=5;k++)stars+='<i class="'+(k<=f?'on':'')+'">&#9733;</i>'}
+    return '<a class="h2-fcard h2-vip" href="'+esc(href)+'"><span class="h2-fstage"><span class="h2-ftag">&#9733; VIP MEMBER</span><span class="h2-flogo"><img src="'+esc(src)+'" alt="" loading="lazy"></span></span>'+
+      '<span class="h2-fbody"><b class="h2-fname">'+esc(nm)+(ver?'<i class="h2-vchk" title="Verified">&#10003;</i>':'')+'</b>'+
+      '<span class="h2-ftown"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11.5A7 7 0 0 1 19 9.5C19 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>'+esc(town||'Three Village')+'</span>'+
+      '<span class="h2-frate">'+(r?'<span class="h2-stars">'+stars+'</span><em>'+(+r).toFixed(1)+(n?' &middot; '+n+' review'+(n=='1'?'':'s'):'')+'</em>':'<em class="h2-new">Trusted local business</em>')+'</span>'+
+      '<span class="h2-fgo">View profile <span>&rarr;</span></span></span></a>'}).join('');
   var fs=document.createElement('section');fs.id='h2-feat';fs.className='h2-sec h2-alt';
   fs.innerHTML='<div class="h2-in">'+head('Featured local businesses','Trusted Three Village businesses that support this site.','/search_results','See all businesses')+
     '<div class="h2-rowwrap"><button class="h2-arr h2-prev" aria-label="Scroll left">&#8249;</button><div class="h2-frow">'+cards+'</div><button class="h2-arr h2-next" aria-label="Scroll right">&#8250;</button></div></div>';
