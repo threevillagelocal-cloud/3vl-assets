@@ -1,0 +1,19 @@
+{
+ "_how": "Owner's ranked list. Top to bottom: if a business has a current Instagram special it shows, if not we skip to the next. Max 'cap' cards. 'live': false keeps the section off until the owner approves the order.",
+ "live": false,
+ "cap": 9,
+ "order": [
+  "culpers1778", "countrycornerlongisland", "tommysplaceportjeff_", "madiranthewinebar_eastsetauket",
+  "ixchelmexicancuisine", "djsclamshackstonybrook", "blackpearlportjeff", "ruvorestaurant",
+  "thesteamroomrestaurant", "burgerologyusa", "eatschnitzels", "sweetmamasrestaurant",
+  "elaines_setauket", "lucastonybrook", "threevillageinn", "blissrestaurant_", "thebenchbarandgrill",
+  "prohibitionportjefferson", "portjeffbrewing", "poboybeerandcider", "fifthseasonrestaurant",
+  "pjlobsterhouse", "nantucketspjefferson", "castawayspj", "oldfieldspj", "thewhiskeybarrelportjeff",
+  "tara.inn", "rctaqueria", "hirosakiny", "ep_restaurant", "tajcrownofindia", "salsasalsa_portjeff",
+  "pastapasta_portjeff", "slurp_ramen_usa", "gourmetburgerbistro", "thepie216", "danfordshotelandmarina",
+  "toastcoffeeandkitchen", "crazybeansrestaurant", "littlecheeseshop", "levelupkitchenny",
+  "thestudy.bytoast", "breakroomny", "seportdelicatessen", "tigerlilycafe", "robinsonstearoom",
+  "secretgardentearoom", "premierepastryshop", "ralphsitalianicesstonybrook", "kilwins_port_jeff",
+  "portjefficecream", "mcnultysicecreamparlorli"
+ ]
+}

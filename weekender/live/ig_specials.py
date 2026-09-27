@@ -140,22 +140,25 @@ def main():
                              "member": a.get("group") == "member", "title": c.get("title", ""), "when": c.get("when", ""),
                              "desc": c.get("desc", ""), "expires": c.get("expires", ""), "posted": p["timestamp"],
                              "url": p["permalink"], "img": main_img, "inset": inset})
-    # newest first, max 2 per business
-    specials.sort(key=lambda s: (s["member"] and not re.search(r"restaurant|bar|food|cafe|bakery|pizza|brew|wine|ice|deli|grill|kitchen", s["category"], re.I), s["posted"][::-1] and -datetime.strptime(s["posted"], "%Y-%m-%dT%H:%M:%S%z").timestamp()))
-    per, final = {}, []
-    for s in specials:
-        if s["ig"] in per:
-            continue
-        per[s["ig"]] = 1
-        final.append(s)
-    final = final[:14]
+    # Owner's preference list: walk it top to bottom, first special per business, stop at the cap.
+    pref = json.load(open(os.path.join(HERE, "preference.json"), encoding="utf-8"))
+    rank = {h.lower(): i for i, h in enumerate(pref.get("order", []))}
+    specials.sort(key=lambda s: -datetime.strptime(s["posted"], "%Y-%m-%dT%H:%M:%S%z").timestamp())
+    best = {}
+    for s in specials:                      # newest special per business
+        if s["ig"].lower() in rank and s["ig"] not in best:
+            best[s["ig"]] = s
+    final = sorted(best.values(), key=lambda s: rank[s["ig"].lower()])[:int(pref.get("cap", 9))]
+    candidates = final
+    if not pref.get("live"):
+        final = []
     # forget posts older than 30 days
     cutoff = (NOW - timedelta(days=30)).isoformat()
     seen = {k: v for k, v in seen.items() if v.get("_ts", "9") >= cutoff}
     json.dump(seen, open(STATE, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
-    json.dump({"updated": NOW.isoformat(), "specials": final}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print("judged %d new posts, %d live specials" % (judged, len(final)))
-    for s in final:
+    json.dump({"updated": NOW.isoformat(), "specials": final, "candidates": candidates}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("judged %d new posts, %d live specials (live=%s)" % (judged, len(final), pref.get("live")))
+    for s in candidates:
         print(" -", s["biz"], "|", s["title"], "|", s["when"])
 
 
