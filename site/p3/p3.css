@@ -408,3 +408,5 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-vmedia{padding-top:22px}
 /* phones: call button gets its own full row; other buttons never break their text */
 @media(max-width:760px){#p3#p3 .p3-vacts{display:flex;flex-wrap:wrap;gap:7px}#p3#p3 .p3-vacts>a,#p3#p3 .p3-vacts>button.p3-vcf{flex:1 1 auto;white-space:nowrap;text-align:center;padding:11px 8px;font-size:14.5px;border-radius:12px!important}#p3#p3 .p3-vacts>a.p3-callbig{flex:1 1 100%;font-size:18px;padding:12px 14px}}
+/* never split a word in category tile names (theme sets break-word everywhere); names wrap at spaces or after "/" only */
+#p3#p3 .p3-ctile b{word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important;-webkit-hyphens:none!important}
