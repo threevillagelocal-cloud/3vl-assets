@@ -63,3 +63,59 @@ if(s5){var st=document.createElement('section');st.id='h2-stories';st.className=
   s5.parentNode.insertBefore(st,s5);s5.style.display='none';st.parentNode.insertBefore(band,st.nextSibling)}
 else hs.appendChild(band);
 })();
+/* Three Village Now portal banner (9/27): sits right above Happening Today (#td). */
+(function(){
+var p=location.pathname.replace(/\/+$/,'')||'/';if(p!=='/'&&p!=='/home')return;
+var css='#tvn{max-width:1140px;margin:30px auto 6px;padding:0 15px;font-family:"Radio Canada",sans-serif}'
++'#tvn a.tvn-card{position:relative;overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:center;padding:28px 30px;border-radius:26px;text-decoration:none!important;color:#fff!important;'
++'background:radial-gradient(circle at 92% 0%,rgba(143,208,255,.22),transparent 45%),radial-gradient(circle at 0% 100%,rgba(58,160,232,.32),transparent 50%),linear-gradient(150deg,#1f3a5c,#13233a 60%,#0f1a28);'
++'border:1.5px solid rgba(255,197,61,.45);box-shadow:0 20px 50px rgba(15,26,40,.25);transition:transform .2s,box-shadow .2s}'
++'#tvn a.tvn-card:hover{transform:translateY(-3px);box-shadow:0 26px 60px rgba(15,26,40,.32)}'
++'#tvn .tvn-live{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.16em;padding:6px 12px;border-radius:999px;background:#e5322d;color:#fff}'
++'#tvn .tvn-live i{width:9px;height:9px;border-radius:50%;background:#fff;animation:tvnPulse 1.6s infinite}'
++'@keyframes tvnPulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.8)}70%{box-shadow:0 0 0 8px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}'
++'#tvn .tvn-h{display:block;font-size:40px;font-weight:700;line-height:1.05;letter-spacing:-.02em;margin:12px 0 8px;color:#fff;word-break:normal}'
++'#tvn .tvn-h em{font-style:normal;color:#ffc53d}'
++'#tvn .tvn-d{display:block;font-size:17px;line-height:1.45;color:#c9d6e4;margin:0 0 16px;word-break:normal}'
++'#tvn .tvn-btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;font-size:17px;font-weight:700;padding:13px 22px;border-radius:14px;background:#ffc53d;color:#13233a;box-shadow:0 10px 24px rgba(255,197,61,.3)}'
++'#tvn .tvn-btn:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.6) 48%,transparent 62%);transform:translateX(-130%);animation:tvnShine 4.5s ease-in-out 1.2s infinite}'
++'@keyframes tvnShine{0%,70%{transform:translateX(-130%)}90%,100%{transform:translateX(130%)}}'
++'#tvn .tvn-g{display:grid;grid-template-columns:1fr 1fr;gap:12px}'
++'#tvn .tvn-t{display:flex;align-items:center;gap:12px;padding:14px;border-radius:18px;background:linear-gradient(155deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.18);box-shadow:inset 0 1px 0 rgba(255,255,255,.2)}'
++'#tvn .tvn-ic{position:relative;flex:0 0 46px;width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,var(--a),var(--b));border:1px solid rgba(255,255,255,.45);box-shadow:inset 0 2px 0 rgba(255,255,255,.5),0 8px 18px rgba(0,0,0,.25)}'
++'#tvn .tvn-ic svg{width:24px;height:24px}'
++'#tvn .tvn-t b{display:block;font-size:17px;color:#fff;line-height:1.15;white-space:nowrap}'
++'#tvn .tvn-t small{display:block;font-size:13px;color:#c9d6e4;line-height:1.3}'
++'@media(max-width:860px){#tvn a.tvn-card{grid-template-columns:1fr;gap:18px;padding:22px 18px}#tvn .tvn-h{font-size:32px}#tvn .tvn-btn{display:flex;justify-content:center}#tvn .tvn-t{padding:11px}#tvn .tvn-ic{flex-basis:40px;width:40px;height:40px}#tvn .tvn-t b{font-size:15.5px}#tvn .tvn-t small{display:none}#tvn .tvn-d{font-size:16px}#tvn .tvn-h{margin:10px 0 6px}}'
++'@media(prefers-reduced-motion:reduce){#tvn .tvn-live i,#tvn .tvn-btn:after{animation:none}}';
+function ic(a,b,path){return '<span class="tvn-ic" style="--a:'+a+';--b:'+b+'"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+path+'</svg></span>'}
+var html='<a class="tvn-card" href="/now"><div>'
++'<span class="tvn-live"><i></i>LIVE</span>'
++'<span class="tvn-h">Three Village <em>Now</em></span>'
++'<span class="tvn-d">Your live local community dashboard: events, restaurant specials, weather and alerts for Setauket, Stony Brook and Port Jefferson, today and all week.</span>'
++'<span class="tvn-btn">Enter Three Village Now &rarr;</span></div>'
++'<div class="tvn-g">'
++'<span class="tvn-t">'+ic('#5cb8f2','#1f6fb0','<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>')+'<span><b>Events</b><small>Today and this week</small></span></span>'
++'<span class="tvn-t">'+ic('#ffd76a','#f5a800','<path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 0-3 3-3 6s1 4 3 4v8"/>')+'<span><b>Eat &amp; Drink</b><small>Local specials</small></span></span>'
++'<span class="tvn-t">'+ic('#6fd6b8','#0f866c','<circle cx="9" cy="9" r="3.5"/><path d="M9 2.5v1.5M2.5 9H4M4.4 4.4l1 1M13.6 4.4l-1 1"/><path d="M9 19h9a3.5 3.5 0 0 0 0-7 5 5 0 0 0-9.6 1.4A3 3 0 0 0 9 19z"/>')+'<span><b>Weather</b><small>Live forecast</small></span></span>'
++'<span class="tvn-t">'+ic('#ff7a70','#d9362f','<path d="M12 3L2 20h20L12 3z"/><path d="M12 10v4.5"/><circle cx="12" cy="17.3" r=".6" fill="#fff"/>')+'<span><b>Alerts</b><small>Closings and warnings</small></span></span>'
++'</div></a>';
+function put(){
+  if(document.getElementById('tvn'))return true;
+  var td=document.getElementById('td'),hs=document.querySelector('.homepage-sections');if(!td&&!hs)return false;
+  var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
+  var box=document.createElement('div');box.id='tvn';box.innerHTML=html;
+  if(td)td.parentNode.insertBefore(box,td);else hs.insertBefore(box,hs.firstChild);
+  box.querySelector('a').addEventListener('click',function(){try{gtag('event','now_banner_click')}catch(e){}});
+  return true;
+}
+var n=0,t=setInterval(function(){n++;if((document.getElementById('td')&&put())||n>30){clearInterval(t);put()}},200);
+})();
+/* Homepage search box tidy-up (9/27, until the smart-search overhaul): drop the "What do you need:" label, friendlier placeholder. */
+(function(){
+var p=location.pathname.replace(/\/+$/,'')||'/';if(p!=='/'&&p!=='/home')return;
+var st=document.createElement('style');st.textContent='.search_box > .form-group.col-md-5{display:none!important}';document.head.appendChild(st);
+function ph(){var i=document.querySelector('.search_box input[name=q]');if(!i)return;
+  i.setAttribute('placeholder','Search businesses & services');i.setAttribute('aria-label','Search local businesses')}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ph);else ph();
+})();
