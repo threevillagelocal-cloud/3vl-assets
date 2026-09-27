@@ -66,10 +66,10 @@ function bar(){
 function thumb(ev,cls){var t=ev.tags[0]||'';
   return ev.img?'<img class="'+cls+'" src="'+esc(ev.img)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':
     '<span class="'+cls+' tvc-noimg" style="--tc:'+(TC[t]||'#205081')+'">'+(TI[t]||'&#11088;')+'</span>'}
-function card(ev,i){var d=ev.s;
+function card(ev,i){var d=ev.s,on=day(ev.s)<T0&&ev.e>=NOW;  /* multi-day event that started earlier and is still running */
   return '<a class="tvc-card" href="'+esc(ev.url)+'" style="--i:'+(i%12)+'"><div class="tvc-pic">'+thumb(ev,'tvc-img')+
-    '<span class="tvc-date"><b>'+d.getDate()+'</b>'+MON[d.getMonth()]+'</span>'+(ev.free?'<span class="tvc-freep">Free</span>':'')+'</div>'+
-    '<div class="tvc-cb"><p class="tvc-when">'+esc(rel(d))+' &middot; '+(ev.allday?'All day':tm(ev.s)+(ev.e>ev.s&&day(ev.e).getTime()===day(ev.s).getTime()?' to '+tm(ev.e):''))+'</p>'+
+    (on?'<span class="tvc-date tvc-now"><b>NOW</b>thru '+MON[ev.e.getMonth()]+' '+ev.e.getDate()+'</span>':'<span class="tvc-date"><b>'+d.getDate()+'</b>'+MON[d.getMonth()]+'</span>')+(ev.free?'<span class="tvc-freep">Free</span>':'')+'</div>'+
+    '<div class="tvc-cb"><p class="tvc-when">'+(on?'Now through '+esc(DOW[ev.e.getDay()]+', '+MON[ev.e.getMonth()]+' '+ev.e.getDate()):esc(rel(d))+' &middot; '+(ev.allday?'All day':tm(ev.s)+(ev.e>ev.s&&day(ev.e).getTime()===day(ev.s).getTime()?' to '+tm(ev.e):'')))+'</p>'+
     '<h3 class="tvc-title">'+esc(ev.title)+'</h3>'+(ev.venue?'<p class="tvc-where">&#128205; '+esc(ev.venue)+'</p>':'')+
     '<div class="tvc-tags">'+ev.tags.map(function(t){return '<span style="--tc:'+TC[t]+'">'+esc(t)+'</span>'}).join('')+'</div><span class="tvc-go">Details &rarr;</span></div></a>'}
 
@@ -94,8 +94,8 @@ function month(){
 function list(){
   var l=upcoming(),out='',cur='',n=0;
   if(!l.length)return '<p class="tvc-empty">No upcoming events match this filter yet.</p>';
-  l.slice(0,S.shown).forEach(function(ev,i){var k=key(ev.s);if(k!==cur){if(cur)out+='</div>';cur=k;
-      out+='<div class="tvc-lday"><h2 class="tvc-lh"><b>'+esc(rel(ev.s).split(',')[0])+'</b><span>'+DOWL[ev.s.getDay()]+', '+MONL[ev.s.getMonth()]+' '+ev.s.getDate()+'</span></h2></div><div class="tvc-cards tvc-lcards">'}
+  l.slice(0,S.shown).forEach(function(ev,i){var on=day(ev.s)<T0,k=on?'on':key(ev.s);if(k!==cur){if(cur)out+='</div>';cur=k;
+      out+='<div class="tvc-lday"><h2 class="tvc-lh">'+(on?'<b>Now</b><span>Still running</span>':'<b>'+esc(rel(ev.s).split(',')[0])+'</b><span>'+DOWL[ev.s.getDay()]+', '+MONL[ev.s.getMonth()]+' '+ev.s.getDate()+'</span>')+'</h2></div><div class="tvc-cards tvc-lcards">'}
     out+=card(ev,n++)});
   out+='</div>';
   if(l.length>S.shown)out+='<div class="tvc-moreb"><button type="button" class="tvc-loadmore">Show more events <span>('+(l.length-S.shown)+' more)</span></button></div>';

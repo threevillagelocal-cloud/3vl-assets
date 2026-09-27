@@ -141,3 +141,6 @@ html.tvc-on .content_w_sidebar>.col-md-3{order:2;width:100%;right:0}
 
 #tvl-cal#tvl-cal .tvc a.tvc-hbtn{display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:var(--gold);color:var(--ink)!important;font-weight:800;font-size:16px;padding:12px 20px;border-radius:999px;text-decoration:none!important;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:transform .15s,box-shadow .15s}
 #tvl-cal#tvl-cal .tvc a.tvc-hbtn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.3)}
+
+.tvc-date.tvc-now b{font-size:15px;letter-spacing:.06em}
+.tvc-date.tvc-now{white-space:nowrap}
