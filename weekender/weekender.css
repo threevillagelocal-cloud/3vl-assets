@@ -824,3 +824,5 @@
   .wk-parr button:disabled{opacity:.35;cursor:default;transform:none}
 }
 @media (max-width:760px){.wk-parr{display:none}}
+/* subtle divider between Top Picks and Eat & Drink */
+#wk-top #wk-eat::before{content:"";display:block;height:1px;margin:6px 0 30px;background:linear-gradient(90deg,rgba(27,47,69,0),rgba(27,47,69,.16) 15%,rgba(27,47,69,.16) 85%,rgba(27,47,69,0))}
