@@ -105,14 +105,22 @@ def main():
     accts = json.load(open(os.path.join(HERE, "ig_accounts.json"), encoding="utf-8"))
     photos = json.load(open(os.path.join(HERE, "biz_photos.json"), encoding="utf-8")) if os.path.exists(os.path.join(HERE, "biz_photos.json")) else {}
     seen = json.load(open(STATE, encoding="utf-8")) if os.path.exists(STATE) else {}
+    pref = json.load(open(os.path.join(HERE, "preference.json"), encoding="utf-8"))
+    rank = {h.lower(): i for i, h in enumerate(pref.get("order", []))}
+    accts = [a for a in accts if a["ig"].lower() in rank]      # only check places on the owner's list
+    cache_path = os.path.join(HERE, "specials_cache.json")      # last good specials per business, used if Instagram says no
+    cache = json.load(open(cache_path, encoding="utf-8")) if os.path.exists(cache_path) else {}
     since = NOW - timedelta(days=LOOKBACK_DAYS)
-    specials, judged = [], 0
+    specials, judged, missed = [], 0, 0
     for a in accts:
         h = a["ig"]
         d = ig("business_discovery.username(%s){username,name,profile_picture_url,media.limit(6){id,timestamp,media_type,media_url,thumbnail_url,permalink,caption}}" % h)
         time.sleep(0.4)
         if not d:
+            missed += 1
+            specials += cache.get(h, [])
             continue
+        n0 = len(specials)
         bd = d["business_discovery"]
         for p in (bd.get("media") or {}).get("data", []):
             ts = datetime.strptime(p["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
@@ -140,9 +148,9 @@ def main():
                              "member": a.get("group") == "member", "title": c.get("title", ""), "when": c.get("when", ""),
                              "desc": c.get("desc", ""), "expires": c.get("expires", ""), "posted": p["timestamp"],
                              "url": p["permalink"], "img": main_img, "inset": inset})
+        cache[h] = specials[n0:]
     # Owner's preference list: walk it top to bottom, first special per business, stop at the cap.
-    pref = json.load(open(os.path.join(HERE, "preference.json"), encoding="utf-8"))
-    rank = {h.lower(): i for i, h in enumerate(pref.get("order", []))}
+    specials = [s for s in specials if not s.get("expires") or s["expires"] >= TODAY.isoformat()]
     specials.sort(key=lambda s: -datetime.strptime(s["posted"], "%Y-%m-%dT%H:%M:%S%z").timestamp())
     best = {}
     for s in specials:                      # newest special per business
@@ -155,8 +163,10 @@ def main():
     # forget posts older than 30 days
     cutoff = (NOW - timedelta(days=30)).isoformat()
     seen = {k: v for k, v in seen.items() if v.get("_ts", "9") >= cutoff}
+    json.dump(cache, open(cache_path, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     json.dump(seen, open(STATE, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     json.dump({"updated": NOW.isoformat(), "specials": final, "candidates": candidates}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("Instagram unavailable for %d accounts (used last known)" % missed)
     print("judged %d new posts, %d live specials (live=%s)" % (judged, len(final), pref.get("live")))
     for s in candidates:
         print(" -", s["biz"], "|", s["title"], "|", s["when"])
