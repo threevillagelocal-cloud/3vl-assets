@@ -1,0 +1,11 @@
+.mm3 .pr3-formcard{margin-top:22px}
+.mm3-private{display:flex;gap:14px;align-items:flex-start;max-width:780px;margin:26px auto 0;background:#eef4fa;border-radius:18px;padding:16px 18px}
+.mm3-private .pr3-ic{flex:0 0 42px;width:42px;height:42px;margin:0;background:#fff;font-size:20px}
+.mm3-private b{display:block;font-size:18px;margin-bottom:2px}
+.mm3-private p{font-size:16px;line-height:1.45;color:var(--mut)}
+.mm3 .checkbox,.mm3 .radio{margin:0 0 8px}
+.mm3 .checkbox label,.mm3 .radio label{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:500;color:var(--ink);background:#fbfcfe;border:1.5px solid #cfd9e4;border-radius:12px;padding:12px 14px;cursor:pointer}
+.mm3 .checkbox input,.mm3 .radio input{position:static;margin:0;width:20px;height:20px;flex:0 0 20px;accent-color:#006fbb}
+.mm3 .form-control::placeholder{color:#8a97a5}
+.mm3-skip{max-width:780px;margin:18px auto 0!important;text-align:center;font-size:17px}
+.mm3-skip a{color:var(--blue);font-weight:700}

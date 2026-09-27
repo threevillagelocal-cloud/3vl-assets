@@ -1,18 +1,16 @@
 .pr3{--ink:#1b2f45;--ink2:#0f1a28;--blue:#006fbb;--gold:#ffc53d;--line:#e3e9f0;--mut:#55636f;font-family:'Radio Canada',sans-serif;color:var(--ink);max-width:1080px;margin:0 auto 40px;word-break:normal;overflow-wrap:normal;hyphens:none}
 .pr3 *{box-sizing:border-box;word-break:normal;overflow-wrap:normal}
 .pr3 p{margin:0}
-.pr3-hero{position:relative;overflow:hidden;border-radius:28px;padding:40px 48px 44px;background:radial-gradient(circle at 88% 8%,rgba(255,197,61,.28),transparent 42%),radial-gradient(circle at 5% 100%,rgba(58,160,232,.35),transparent 50%),linear-gradient(135deg,#1b2f45 0%,#0f1a28 100%);color:#fff;box-shadow:0 24px 60px rgba(15,26,40,.28)}
-.pr3-logo{display:inline-block;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:10px 16px;box-shadow:0 10px 30px rgba(0,0,0,.25),inset 0 1px 0 #fff;margin-bottom:26px}
-.pr3-logo img{display:block;height:74px;width:auto;max-width:100%}
-.pr3-kick{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px!important}
-.pr3 .pr3-h1{font-family:'Radio Canada',sans-serif;font-size:52px;font-weight:700;line-height:1.02;letter-spacing:-.02em;color:#fff;margin:0 0 16px;max-width:760px}
-.pr3-h1 span{color:var(--gold)}
-.pr3-dek{font-size:20px;line-height:1.5;color:rgba(255,255,255,.9);max-width:680px}
+.pr3-hero{padding:14px 0 6px;color:var(--ink);background:none;box-shadow:none;border-radius:0}
+.pr3-kick{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:10px!important}
+.pr3 .pr3-h1{font-family:'Radio Canada',sans-serif;font-size:50px;font-weight:700;line-height:1.04;letter-spacing:-.02em;color:var(--ink);margin:0 0 14px;max-width:780px}
+.pr3-h1 span{color:var(--blue);background:linear-gradient(transparent 62%,rgba(255,197,61,.55) 62%);padding:0 2px}
+.pr3-dek{font-size:20px;line-height:1.5;color:var(--mut);max-width:700px}
 .pr3-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
 .pr3 .pr3-btn{display:inline-flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;padding:15px 26px;border-radius:14px;text-decoration:none!important;white-space:nowrap;transition:transform .15s,box-shadow .15s}
 .pr3 .pr3-btn:hover{transform:translateY(-2px)}
-.pr3 .pr3-btn-gold{background:var(--gold);color:var(--ink)!important;box-shadow:0 10px 26px rgba(255,197,61,.35)}
-.pr3 .pr3-btn-glass{background:rgba(255,255,255,.12);color:#fff!important;border:1.5px solid rgba(255,255,255,.35)}
+.pr3 .pr3-btn-gold{background:var(--gold);color:var(--ink)!important;box-shadow:0 6px 16px rgba(27,47,69,.12)}
+.pr3 .pr3-btn-line{background:#fff;color:var(--ink)!important;border:1.5px solid #cfd9e4}
 .pr3 .pr3-btn-blue{background:var(--blue);color:#fff!important;box-shadow:0 10px 24px rgba(0,111,187,.3)}
 .pr3-where{margin:34px 0 0}
 .pr3-eyebrow{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:14px!important}
@@ -46,11 +44,9 @@
 @media(max-width:900px){.pr3-tiles{grid-template-columns:repeat(2,1fr)}.pr3-steps{grid-template-columns:1fr}}
 @media(max-width:600px){
 .pr3{margin-bottom:28px}
-.pr3-hero{border-radius:22px;padding:24px 20px 26px}
-.pr3-logo{padding:8px 12px;border-radius:14px;margin-bottom:20px}
-.pr3-logo img{height:46px}
+.pr3-hero{padding:4px 0 0}
 .pr3-kick{font-size:13px}
-.pr3 .pr3-h1{font-size:36px;line-height:1.05}
+.pr3 .pr3-h1{font-size:34px;line-height:1.08}
 .pr3-dek{font-size:18px}
 .pr3-btns{flex-direction:column}
 .pr3 .pr3-btn{width:100%;font-size:18px;padding:16px 18px}
