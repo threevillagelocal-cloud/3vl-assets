@@ -782,3 +782,19 @@
 #wk-top .wk-ticker.is-rot .wk-tkt span.on{display:block!important;white-space:normal!important}
 #wk-top .wk-ticker.is-rot .wk-tkt span.on *{white-space:normal!important}
 #wk-top .wk-ticker.is-rot .wk-tkt b{display:block!important;font-size:12px;letter-spacing:.04em;text-transform:uppercase;margin:0 0 2px}
+/* day headings: day name + date never break mid-word (theme sets break-word everywhere) */
+#wk-top .wk-dayh b,#wk-top .wk-dayh span{white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important}
+#wk-top .wk-dayh b{flex:0 0 auto}
+#wk-top .wk-dayh span{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:760px){#wk-top .wk-dayh{gap:8px}#wk-top .wk-dayh b{font-size:23px}#wk-top .wk-dayh span{font-size:13px}#wk-top .wk-dcount{font-size:12px;padding:4px 9px}}
+@media (max-width:760px){
+  #wk-top .wk-dayblk .wk-dayh{display:grid;grid-template-columns:minmax(0,1fr) auto auto;grid-template-areas:"dn dc dv" "dd dc dv";column-gap:10px;row-gap:0;align-items:center}
+  #wk-top .wk-dayblk .wk-dayh b{grid-area:dn;line-height:1.15}
+  #wk-top .wk-dayblk .wk-dayh span{grid-area:dd;overflow:visible;text-overflow:clip;line-height:1.3}
+  #wk-top .wk-dayblk .wk-dayh .wk-dcount{grid-area:dc;margin-left:0}
+  #wk-top .wk-dayblk .wk-dayh .wk-chev{grid-area:dv}
+}
+/* day tabs: never split a word; share the width evenly on phones */
+#wk-top .wk-tab,#wk-top .wk-tab *{white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important}
+@media (max-width:760px){#wk-top .wk-tabs{width:100%;gap:2px}#wk-top .wk-tab{flex:1 1 auto;padding:10px 4px;font-size:14px;text-align:center}}
+@media (max-width:380px){#wk-top .wk-tab{font-size:13px;padding:9px 2px}}
