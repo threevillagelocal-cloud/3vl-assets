@@ -4,7 +4,7 @@
 .pr3-hero{padding:14px 0 6px;color:var(--ink);background:none;box-shadow:none;border-radius:0}
 .pr3-kick{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:10px!important}
 .pr3 .pr3-h1{font-family:'Radio Canada',sans-serif;font-size:50px;font-weight:700;line-height:1.04;letter-spacing:-.02em;color:var(--ink);margin:0 0 14px;max-width:780px}
-.pr3-h1 span{color:var(--blue);background:linear-gradient(transparent 62%,rgba(255,197,61,.55) 62%);padding:0 2px}
+.pr3-h1 span{color:var(--blue);background:none;padding:0;text-decoration:underline;text-decoration-color:#ffc53d;text-decoration-thickness:.16em;text-underline-offset:.1em;text-decoration-skip-ink:none}
 .pr3-dek{font-size:20px;line-height:1.5;color:var(--mut);max-width:700px}
 .pr3-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
 .pr3 .pr3-btn{display:inline-flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;padding:15px 26px;border-radius:14px;text-decoration:none!important;white-space:nowrap;transition:transform .15s,box-shadow .15s}
