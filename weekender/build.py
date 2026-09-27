@@ -161,7 +161,7 @@ def build(edition, local=False, sha="master"):
           '<div class="wk-pbody"><p class="wk-pwhen">%s &middot; %s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pwhere">&#128205; %s</p>'
           '<p class="wk-pdesc">%s</p><div class="wk-tags">%s<span class="wk-price">%s</span></div>%s</div>'
           '<p class="wk-icred">%s</p></article>' % (
-            evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, *((esc(e["when"]), "Open now") if e.get("when") else (dshort(e["start"]),
+            evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, *((esc(e["when"]), "Now open") if e.get("when") else (dshort(e["start"]),
             fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"))),
             esc(e["title"]), esc(V[e["venue"]]["name"]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), actions(e), esc(e.get("credit", ""))))
     w('</div></section>')
