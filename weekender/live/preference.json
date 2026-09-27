@@ -1,7 +1,7 @@
 {
  "_how": "Owner's ranked list. Top to bottom: if a business has a current Instagram special it shows, if not we skip to the next. Max 'cap' cards. 'live': false keeps the section off until the owner approves the order.",
  "live": false,
- "cap": 9,
+ "cap": 6,
  "order": [
   "culpers1778",
   "countrycornerlongisland",
