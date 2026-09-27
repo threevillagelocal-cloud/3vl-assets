@@ -1,0 +1,14 @@
+name: 3VL social stats (manual)
+on:
+  workflow_dispatch:
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python weekender/live/social_stats.py
