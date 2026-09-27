@@ -123,11 +123,11 @@ function liveFeed(box){
   var g=box.querySelector('.tvn-g'),card=box.querySelector('a.tvn-card');if(!g||!card)return;
   var BG=IMGBASE+'img/now-glow.jpg',SW=660,SH=520;
   var st2=document.createElement('style');st2.textContent=
-   '#tvn a.tvn-card.tvn-lux{min-height:560px;padding:40px 24px 40px 56px;grid-template-columns:1fr 1.25fr;gap:10px;border:1px solid rgba(255,197,61,.3);background:linear-gradient(90deg,rgba(8,12,20,.84) 0%,rgba(8,12,20,.5) 42%,rgba(8,12,20,.22) 100%),linear-gradient(180deg,rgba(8,12,20,.2),rgba(8,12,20,0) 40%,rgba(8,12,20,.45)),url('+BG+') center/cover #0c1018}'
-  +'#tvn .tvn-lux .tvn-live{font-size:17px;padding:8px 18px}'
-  +'#tvn .tvn-lux .tvn-h{font-size:70px;line-height:.98;max-width:none;white-space:nowrap;margin:18px 0 18px}'
-  +'#tvn .tvn-lux .tvn-d{font-size:24px;line-height:1.3;color:#e6edf5;max-width:360px;margin:0 0 30px}'
-  +'#tvn .tvn-lux .tvn-btn{font-size:21px;padding:17px 30px;border-radius:999px}'
+   '#tvn a.tvn-card.tvn-lux{min-height:0;padding:26px 24px 26px 48px;grid-template-columns:1fr 1.25fr;gap:10px;border:1px solid rgba(255,197,61,.3);background:linear-gradient(90deg,rgba(8,12,20,.84) 0%,rgba(8,12,20,.5) 42%,rgba(8,12,20,.22) 100%),linear-gradient(180deg,rgba(8,12,20,.2),rgba(8,12,20,0) 40%,rgba(8,12,20,.45)),url('+BG+') center/cover #0c1018}'
+  +'#tvn .tvn-lux .tvn-live{font-size:14px;padding:6px 14px}'
+  +'#tvn .tvn-lux .tvn-h{font-size:54px;line-height:.98;max-width:none;white-space:nowrap;margin:12px 0 10px}'
+  +'#tvn .tvn-lux .tvn-d{font-size:20px;line-height:1.3;color:#e6edf5;max-width:360px;margin:0 0 18px}'
+  +'#tvn .tvn-lux .tvn-btn{font-size:18px;padding:14px 26px;border-radius:999px}'
   +'#tvn .tvn-stagew{position:relative;height:'+SH+'px}'
   +'#tvn .tvn-stage{position:absolute;left:50%;top:0;width:'+SW+'px;height:'+SH+'px;margin-left:-'+(SW/2)+'px;transform-origin:top center}'
   +'#tvn .tg{position:absolute;z-index:6;display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border-radius:999px;font-size:16px;font-weight:800;color:#006fbb;background:rgba(255,255,255,.96);box-shadow:0 10px 22px rgba(0,0,0,.35)}'
@@ -169,8 +169,8 @@ function liveFeed(box){
   +'#tvn .wx .wsf{flex:1;min-width:0;font-size:15px;font-weight:700;line-height:1.25}'
   +'#tvn .wx .wch{display:flex;gap:8px;padding:0 16px 16px}#tvn .wx .wch span{flex:1;text-align:center;padding:7px 4px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-size:13px;font-weight:800;white-space:nowrap}'
   +'@media(prefers-reduced-motion:reduce){#tvn .wx .wal i{animation:none}}'
-  +'@media(max-width:1100px){#tvn .tvn-lux .tvn-h{font-size:54px}#tvn a.tvn-card.tvn-lux{padding-left:36px}}'
-  +'@media(max-width:860px){#tvn a.tvn-card.tvn-lux{grid-template-columns:1fr!important;min-height:0;padding:26px 16px 18px;background:linear-gradient(180deg,rgba(8,12,20,.72),rgba(8,12,20,.42) 50%,rgba(8,12,20,.8)),url('+BG+') center/cover #0c1018}#tvn .tvn-lux .tvn-h{font-size:52px;max-width:none}#tvn .tvn-lux .tvn-d{font-size:19px;max-width:none;margin-bottom:20px}#tvn .tvn-lux .tvn-btn{font-size:18px}}';
+  +'@media(max-width:1100px){#tvn .tvn-lux .tvn-h{font-size:46px}#tvn a.tvn-card.tvn-lux{padding-left:36px}}'
+  +'@media(max-width:860px){#tvn a.tvn-card.tvn-lux{grid-template-columns:1fr!important;min-height:0;padding:26px 16px 18px;background:linear-gradient(180deg,rgba(8,12,20,.72),rgba(8,12,20,.42) 50%,rgba(8,12,20,.8)),url('+BG+') center/cover #0c1018}#tvn .tvn-lux .tvn-h{font-size:40px;max-width:none}#tvn .tvn-lux .tvn-d{font-size:17px;max-width:none;margin-bottom:14px}#tvn .tvn-lux .tvn-btn{font-size:17px}#tvn .tvn-stagew{margin-top:8px}}';
   function esc2(x){return String(x==null?'':x).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
   function tx(el,sel){var e=el&&el.querySelector(sel);return e?e.textContent.replace(/\s+/g,' ').trim():''}
   fetch('/now',{credentials:'same-origin'}).then(function(r){return r.text()}).then(function(h){
@@ -195,9 +195,9 @@ function liveFeed(box){
     document.head.appendChild(st2);
     var wrap=document.createElement('div');wrap.className='tvn-stagew';wrap.innerHTML=html;
     g.parentNode.replaceChild(wrap,g);card.classList.add('tvn-lux');
-    var hd=card.querySelector('.tvn-d');if(hd)hd.textContent='Your live local community dashboard';var hh=card.querySelector('.tvn-h');if(hh)hh.innerHTML='Three Village<br><em>Now</em>';
+    var hd=card.querySelector('.tvn-d');if(hd)hd.textContent='Your live local community dashboard';var hh=card.querySelector('.tvn-h');if(hh)hh.innerHTML='Three Village <em>Now</em>';
     var stage=wrap.firstChild;
-    function fit(){var w=wrap.clientWidth,k=Math.min(1,w/SW);stage.style.transform='scale('+k+')';wrap.style.height=Math.round(SH*k)+'px'}
+    function fit(){var w=wrap.clientWidth,k=Math.min(1,w/SW,(window.innerWidth<861?300:330)/SH);stage.style.transform='scale('+k+')';wrap.style.height=Math.round(SH*k)+'px'}
     fit();window.addEventListener('resize',fit);
     var TRI='<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19z"/><path d="M12 10v4.5"/><circle cx="12" cy="17" r=".8" fill="#fff"/></svg>';
     var j=function(u){return fetch(u,{headers:{'Accept':'application/geo+json'}}).then(function(r){return r.json()})};
