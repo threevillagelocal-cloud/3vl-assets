@@ -808,7 +808,9 @@
 @media (min-width:761px){
   #wk-top .wk-picks{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:18px;padding:4px 2px 14px;scrollbar-width:none}
   #wk-top .wk-picks::-webkit-scrollbar{display:none}
-  #wk-top .wk-picks > .wk-pick{flex:0 0 31%;scroll-snap-align:start}
+  #wk-top .wk-picks > .wk-pick{flex:0 0 29.5%;scroll-snap-align:start}
+  #wk-top .wk-picks .wk-acts{flex-wrap:nowrap;gap:5px}
+  #wk-top .wk-picks .wk-acts button,#wk-top .wk-picks .wk-acts a{padding:0 9px;font-size:12.5px;white-space:nowrap}
   #wk-top .wk-picks .wk-ptitle{font-size:19px!important}
   #wk-top .wk-picks .wk-pdesc{font-size:14px}
   #wk-top .wk-picks .wk-pbody{display:flex;flex-direction:column;flex:1}
