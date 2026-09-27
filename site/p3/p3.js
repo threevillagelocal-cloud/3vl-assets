@@ -198,3 +198,38 @@ if(path==='/blog'){
   new MutationObserver(function(){$$('.search_result:not([data-p3])').forEach(function(it){var p=read(it);hide(it);if(p&&!seen[p.h]){seen[p.h]=1;grid.insertAdjacentHTML('beforeend',card(p,n++))}})}).observe(document.body,{childList:true,subtree:true});
 }
 })();
+/* Member dashboard cards (9/27): promo card for everyone, Member Match card for Basic (plan 6).
+   /member-match remembers a submit on this device and skips straight to the dashboard next login. */
+(function(){
+var path=location.pathname.replace(/\/+$/,'');var K='3vl_mm_done';
+function get(){try{return localStorage.getItem(K)}catch(e){return null}}
+function set(){try{localStorage.setItem(K,'1')}catch(e){}}
+if(path==='/member-match'){
+  if(get()&&!/[?&]edit=1/.test(location.search)){location.replace('/account/home');return}
+  document.addEventListener('submit',function(e){if(e.target&&/^member_match/.test(e.target.name||''))set()},true);
+  return;
+}
+if(path!=='/account/home')return;
+var h=document.querySelector('.dashboard_home_title');if(!h||document.getElementById('dc3'))return;
+var basic=/\bsession-plan-level-6\b/.test(document.body.className),done=get();
+var css='#dc3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:4px 0 22px;font-family:"Radio Canada",sans-serif}'
++'#dc3 .dc3-c{position:relative;overflow:hidden;border-radius:20px;padding:20px 20px 18px;background:#fff;border:1px solid #e3e9f0;box-shadow:0 10px 28px rgba(27,47,69,.08);color:#1b2f45}'
++'#dc3 .dc3-c.mm{background:linear-gradient(135deg,#fff8e6,#fff);border-color:#f4d27a}'
++'#dc3 .dc3-ic{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;font-size:22px;margin-bottom:12px;background:rgba(255,255,255,.7);border:1px solid rgba(27,47,69,.08);box-shadow:inset 0 1px 0 #fff,0 6px 14px rgba(27,47,69,.1)}'
++'#dc3 .dc3-k{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#006fbb;margin:0 0 4px}'
++'#dc3 .mm .dc3-k{color:#b07800}'
++'#dc3 b{display:block;font-size:20px;line-height:1.2;margin:0 0 6px;word-break:normal}'
++'#dc3 p{font-size:16px;line-height:1.45;color:#55636f;margin:0 0 14px;word-break:normal}'
++'#dc3 a.dc3-b{display:inline-block;font-size:16px;font-weight:700;padding:11px 18px;border-radius:12px;text-decoration:none!important;background:#006fbb;color:#fff!important}'
++'#dc3 .mm a.dc3-b{background:#ffc53d;color:#1b2f45!important}'
++'#dc3 a.dc3-l{display:inline-block;margin-left:12px;font-size:15px;font-weight:700;color:#006fbb}'
++'@media(max-width:600px){#dc3 a.dc3-b{display:block;text-align:center}#dc3 a.dc3-l{display:block;margin:10px 0 0;text-align:center}}';
+var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
+var mm='';
+if(basic){mm=done
+ ?'<div class="dc3-c mm"><div class="dc3-ic">&#9989;</div><p class="dc3-k">Member Match</p><b>Thanks, you are all set</b><p>Your private Member Match details help our AI-driven search send neighbors your way. Update them anytime.</p><a class="dc3-b" href="/member-match?edit=1">Update my answers</a></div>'
+ :'<div class="dc3-c mm"><div class="dc3-ic">&#10024;</div><p class="dc3-k">New &middot; 2 minutes</p><b>Get matched with neighbors</b><p>Answer 7 quick questions so our new AI-driven search can send leads your way on the free plan. Private, never shown on your profile.</p><a class="dc3-b" href="/member-match?edit=1">Fill out Member Match</a></div>';}
+var promo='<div class="dc3-c"><div class="dc3-ic">&#128227;</div><p class="dc3-k">Free for members</p><b>Got something you want to promote?</b><p>Send us a special, an event or big news and we will help put it in front of Three Village.</p><a class="dc3-b" href="/promotion#pr3-form">Submit a promotion</a></div>';
+var box=document.createElement('div');box.id='dc3';box.innerHTML=mm+promo;
+h.insertAdjacentElement('afterend',box);
+})();
