@@ -12,7 +12,7 @@ from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 IGDIR = os.path.join(HERE, "ig")
-STATE = os.path.join(HERE, "ig_seen.json")      # post id -> classification (so each post is only judged once)
+STATE = os.path.join(HERE, "ig_seen_v2.json")      # post id -> classification (so each post is only judged once)
 OUT = os.path.join(HERE, "specials.json")
 ME, V = "17841472800565482", "v21.0"
 MODEL = "claude-haiku-4-5-20251001"
@@ -59,16 +59,19 @@ def save_img(url, name):
         return ""
 
 
-PROMPT = """You review Instagram posts from local businesses in Three Village, Long Island (Setauket, Stony Brook, Port Jefferson) for a community "what's happening" page.
+PROMPT = """You review Instagram posts from local businesses in Three Village, Long Island (Setauket, Stony Brook, Port Jefferson) for the "Eat & Drink / Local specials" section of a community page.
 Business: {name} ({category}, {town}). Posted: {posted}. Today is {today}.
 Caption:
 <<<
 {caption}
 >>>
-Decide if this post announces something a local resident could act on SOON: a food/drink special, happy hour, deal, discount, limited menu, tasting, live music, event, class, sale, or new offering.
-NOT a special: generic food photos with no offer, staff shoutouts, hiring posts, memes, holiday greetings, reviews, closed/hours-only notices, anything already over.
+Say special=true ONLY if the post announces a SPECIFIC, TIME-BOUND offer or happening a resident can go to or use in the next 14 days:
+- a food or drink special, happy hour, limited or seasonal menu item, tasting, prix fixe, themed night
+- live music, trivia, a party, class or event at the business WITH a date or recurring day
+- a sale or discount with a clear end or day
+Say special=false for: ongoing services or "call us" ads, booking/catering/holiday-party promos with no event date, "coming soon"/TBA, merch, hiring, staff or customer shoutouts, generic food photos, closures/storm/hours notices, reposts, anything already over or more than 14 days away.
 Reply with ONLY JSON:
-{{"special": true/false, "title": "short headline, max 45 chars, no emojis", "when": "short time label like 'Tue, Oct. 6 · 5-8 PM' or 'Every Friday' or 'This week'", "desc": "one friendly sentence, max 150 chars, facts from the caption only, no prices you are unsure of, no em dashes", "expires": "YYYY-MM-DD last day it applies (best guess; recurring weekly = 7 days from today)"}}"""
+{{"special": true/false, "title": "short headline, max 45 chars, no emojis", "when": "short label like 'Tue, Oct. 6 · 5-8 PM' or 'Every Friday'", "desc": "one friendly sentence, max 150 chars, facts from the caption only, no em dashes", "expires": "YYYY-MM-DD last day it applies"}}"""
 
 
 def classify(acct, post):
@@ -138,12 +141,14 @@ def main():
                              "desc": c.get("desc", ""), "expires": c.get("expires", ""), "posted": p["timestamp"],
                              "url": p["permalink"], "img": main_img, "inset": inset})
     # newest first, max 2 per business
-    specials.sort(key=lambda s: s["posted"], reverse=True)
+    specials.sort(key=lambda s: (s["member"] and not re.search(r"restaurant|bar|food|cafe|bakery|pizza|brew|wine|ice|deli|grill|kitchen", s["category"], re.I), s["posted"][::-1] and -datetime.strptime(s["posted"], "%Y-%m-%dT%H:%M:%S%z").timestamp()))
     per, final = {}, []
     for s in specials:
-        per[s["ig"]] = per.get(s["ig"], 0) + 1
-        if per[s["ig"]] <= 2:
-            final.append(s)
+        if s["ig"] in per:
+            continue
+        per[s["ig"]] = 1
+        final.append(s)
+    final = final[:14]
     # forget posts older than 30 days
     cutoff = (NOW - timedelta(days=30)).isoformat()
     seen = {k: v for k, v in seen.items() if v.get("_ts", "9") >= cutoff}
