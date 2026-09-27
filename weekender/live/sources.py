@@ -306,6 +306,36 @@ def squarespace(src, base, default_venue):
     return out
 
 
+def limehof():
+    """Long Island Music & Entertainment Hall of Fame (Stony Brook): events page is a plain HTML grid, no feed.
+    Only shows held at the museum itself (skips their off-site shows, e.g. Tilles Center)."""
+    base = "https://www.limusichalloffame.org/events/"
+    s = get(base)
+    s = s.decode("utf-8", "replace") if isinstance(s, bytes) else s
+    out, mon = [], "jan feb mar apr may jun jul aug sep oct nov dec".split()
+    for blk in s.split('<div class="gridRow')[1:]:
+        g = lambda c: clean(re.sub(r"<[^>]+>", " ", (re.search(r'<div class="%s">(.*?)</div>' % c, blk, re.S) or [None, ""])[1]))
+        d, t, title, venue = g("date"), g("time"), g("event"), g("venue")
+        m = re.match(r"([A-Za-z]{3})\w*\.?\s+(\d{1,2})", d)
+        if not m or not title or "hall of fame" not in venue.lower():
+            continue
+        mo, day = mon.index(m.group(1).lower()) + 1, int(m.group(2))
+        yr = TODAY.year + (1 if mo < TODAY.month - 2 else 0)
+        tm = re.match(r"(\d{1,2}):(\d{2})\s*([ap])m", t.lower())
+        h, mi = (int(tm.group(1)) % 12 + (12 if tm.group(3) == "p" else 0), int(tm.group(2))) if tm else (0, 0)
+        if tm and tm.group(3) == "a" and h < 8:      # site typo guard: "3:00 am" shows are afternoon shows
+            h += 12
+        start = dt.datetime(yr, mo, day, h, mi)
+        img = (re.search(r'<img src="([^"]+)"', blk) or [None, ""])[1]
+        desc = clean(re.sub(r"<[^>]+>", " ", (re.search(r'<span id="feature"[^>]*>(.*?)</span>\s*</div>', blk, re.S) or [None, ""])[1]))
+        price = g("buy")
+        if price and price.lower() != "buy tickets":
+            desc = (price + ". " + desc).strip()
+        out.append(ev("limehof", "%s-%s" % (start.strftime("%Y%m%d%H%M"), re.sub(r"[^a-z0-9]+", "-", title.lower())[:40]), title, start,
+                      start + dt.timedelta(hours=2), "The Long Island Music and Entertainment Hall of Fame", "", base, desc, img, not tm))
+    return out
+
+
 SOURCES = [
     ("Three Village Chamber", chamber3v),
     ("Port Jefferson Chamber", lambda: tribe("pjchamber", "https://portjeffchamber.com", "Port Jefferson Village")),
@@ -316,6 +346,7 @@ SOURCES = [
     ("Stony Brook Village Center", lambda: tribe("sbv", "https://stonybrookvillage.com", "Stony Brook Village Center")),
     ("Long Island Museum", lambda: tribe("lim", "https://longislandmuseum.org", "The Long Island Museum")),
     ("Ward Melville Heritage Org", lambda: tribe("wmho", "https://wmho.org", "Ward Melville Heritage Organization")),
+    ("LI Music Hall of Fame", limehof),
 ]
 
 
