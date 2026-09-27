@@ -1,14 +1,14 @@
 {
-"updated": "2026-09-26T22:41:18.316592+00:00",
+"updated": "2026-09-27T01:20:06.763539+00:00",
 "counts": {
-"Three Village Chamber": 7,
-"Port Jefferson Chamber": 27,
+"Three Village Chamber": 6,
+"Port Jefferson Chamber": 25,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 222,
 "Emma S. Clark Library": 217,
 "Stony Brook Village Center": 16,
-"Long Island Museum": 32,
+"Long Island Museum": 31,
 "Ward Melville Heritage Org": 5
 },
 "icons": {
@@ -22,60 +22,6 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
-{
-"id": "3vchamber-1912472",
-"title": "CommUniversity Day",
-"start": "2026-09-26T12:00:00",
-"end": "2026-09-26T16:00:00",
-"allday": false,
-"venue": "Stony Brook University",
-"addr": "Stony Brook University, 440 Administration Bldg., Stony Brook, NY 11733-1131",
-"url": "https://members.3vchamber.com/event-calendar/Details/communiversity-day-1912472",
-"desc": "",
-"img": "",
-"src": "3vchamber",
-"tags": [
-"arts"
-],
-"status": "Canceled"
-},
-{
-"id": "pjchamber-14858",
-"title": "Port Jefferson Country Music Festival",
-"start": "2026-09-26T12:00:00",
-"end": "2026-09-26T18:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/port-jefferson-country-music-festival/",
-"desc": "September 13th of the Festival will happen on 9/26.",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"music",
-"outdoor"
-],
-"status": "Canceled"
-},
-{
-"id": "lim-3225801",
-"title": "Blue Star Welcome Week 2026 for Military Families",
-"start": "2026-09-26T12:00:00",
-"end": "2026-10-04T17:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/blue-star-welcome-week-2026/",
-"desc": "The Long Island Museum is proud to partner with Blue Star Museums , offering free museum admission to active and retired military personnel and their family all year long. During Blue Star Welcome Week 2026 (September 26–October 4, 2026), we extend our Museum ",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/Blue-Star-Welcome-Week.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": ""
-},
 {
 "id": "pjchamber-14109",
 "title": "Cedar Beach Blues Festival",
@@ -1475,6 +1421,98 @@
 "src": "emmaclark",
 "tags": [
 "kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58893",
+"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
+"start": "2026-10-07T09:30:00",
+"end": "2026-10-07T10:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58893",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/14/2026 @ 9:30am Categories: Mommy & Me, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"kids",
+"stage",
+"arts"
+],
+"status": ""
+},
+{
+"id": "lim-3225151",
+"title": "MORNINGS@LIM: The Troubadours Concert",
+"start": "2026-10-07T11:00:00",
+"end": "2026-10-07T12:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/the-troubadours/",
+"desc": "Mornings @ LIM are free monthly sessions open to individuals living with dementia and their care partners. They offer time for creative engagement and social connection in our galleries and art studio, as well as through special music and movie programs. Music",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/06/Guitar-Player-Stock.jpg",
+"src": "lim",
+"tags": [
+"free",
+"music",
+"stage"
+],
+"status": ""
+},
+{
+"id": "emmaclark-harbormen-chorus-concert-58130",
+"title": "The Harbormen Chorus Concert",
+"start": "2026-10-07T12:30:00",
+"end": "2026-10-07T13:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/harbormen-chorus-concert-58130",
+"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 09/14/2026 @ 9:30am Registration end: 10/07",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"kids",
+"music",
+"stage"
+],
+"status": ""
+},
+{
+"id": "emmaclark-dog-treat-jars-pet-supply-drive-community-service-project-grades-3-5-5",
+"title": "Dog Treat Jars for Pet Supply Drive Community Service Project (Grades 3-5)",
+"start": "2026-10-07T16:30:00",
+"end": "2026-10-07T17:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/dog-treat-jars-pet-supply-drive-community-service-project-grades-3-5-58121",
+"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Community Service, Children.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-your-children-dont-want-it-what-do-zoom-58133",
+"title": "Your Children Don’t Want It: What to Do [ZOOM]",
+"start": "2026-10-07T18:30:00",
+"end": "2026-10-07T20:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/your-children-dont-want-it-what-do-zoom-58133",
+"desc": "Virtual Programming Mike Ivankovich will give you 15 tips & strategies designed to help you deal with your “stuff,” and hopefully help you make money when selling it. Categories: Educational Lecture, Health & Wellness, Other, Adult.",
+"img": "",
+"src": "emmaclark",
+"tags": [
+"kids",
+"stage"
 ],
 "status": ""
 }
