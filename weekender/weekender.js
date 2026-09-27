@@ -81,7 +81,8 @@ function renderLive(data){
       return '<article class="wk-sp wk-rv is-in wk-spig">'+(big?'<div class="wk-eimg"><img src="'+esc2(big)+'" alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img src="'+esc2(small)+'" alt="" loading="lazy"></span>':'')+'<span class="wk-ignew">NEW ON INSTAGRAM</span></div>':'')+
        '<div class="wk-spb"><p class="wk-spbiz">'+esc2(x.biz)+'</p><p class="wk-spt">'+esc2(x.title)+'</p>'+(x.when?'<p class="wk-spw">'+esc2(x.when)+'</p>':'')+'<p class="wk-spd">'+esc2(x.desc)+'</p>'+
        '<p class="wk-spf"><span class="wk-src wk-igb">&#9711;</span><span>via <a class="wk-biz" href="'+esc2(x.url)+'" target="_blank" rel="noopener">Instagram</a></span><a class="wk-dir" href="'+esc2(map)+'" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>'}).join('');
-    eat.insertAdjacentHTML('afterbegin',html)}
+    eat.insertAdjacentHTML('afterbegin',html);
+    [].slice.call(eat.querySelectorAll('.wk-sp'),9).forEach(function(a){a.remove()})}
   return true}
 function DAYN2x(d){return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][d.getDay()]}
 
