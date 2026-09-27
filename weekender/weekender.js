@@ -72,7 +72,7 @@ function renderLive(data){
   var cx=$('wk-cx');if(cx){var items=(data.closings||[]).filter(function(c){return new Date(c.date+'T23:59:00')>=t0});
     if(!items.length)cx.remove();else{var row=cx.querySelector('.wk-cxrow');if(row)row.innerHTML=items.map(function(c){return '<div class="wk-cxi" data-off="'+esc2(c.status)+'"><p class="wk-cxn">'+esc2(c.title)+'</p><p class="wk-cxd">'+esc2(c.note)+'</p></div>'}).join('')}}
   /* Instagram specials (ig_specials.py): newest first, replace the curated card for the same business */
-  var sp=(data.specials||[]),eat=document.querySelector('#wk-eat .wk-eat');
+  var OK=window.SPECIALS_OK||[],sp=(data.specials||[]).filter(function(x){return OK.indexOf(String(x.id))>-1}),eat=document.querySelector('#wk-eat .wk-eat');
   if(eat&&sp.length){var nm=function(x){return String(x||'').toLowerCase().replace(/&[a-z#0-9]+;/g,'').replace(/\(.*?\)/g,'').replace(/[^a-z0-9]/g,'').replace(/^the/,'')};
     var live={};sp.forEach(function(x){live[nm(x.biz)]=1});
     [].forEach.call(eat.querySelectorAll('.wk-sp'),function(a){var b=a.querySelector('.wk-spbiz');if(b&&live[nm(b.textContent)])a.remove()});
