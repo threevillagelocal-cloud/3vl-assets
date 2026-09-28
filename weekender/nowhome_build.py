@@ -5,12 +5,21 @@
 Same markup/classes as site/p3/nowhome.js, so the page looks identical; the JS only rotates the VIP order daily and refreshes stories.
 Rendered into the HTML so Google and AI crawlers (which often don't run JS) can see the business + story links."""
 import datetime, html, json, os, re, subprocess
-from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://www.threevillagelocal.com"
 IDX = "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/search/index.json"
-ET = ZoneInfo("America/New_York")
+
+
+def et_offset(dt):
+    """US Eastern UTC offset for a naive local datetime (DST: 2nd Sunday of March 2 AM to 1st Sunday of November 2 AM). No tzdata needed."""
+    def nth_sunday(y, m, n):
+        d = datetime.date(y, m, 1)
+        d += datetime.timedelta(days=(6 - d.weekday()) % 7)
+        return d + datetime.timedelta(weeks=n - 1)
+    start = datetime.datetime.combine(nth_sunday(dt.year, 3, 2), datetime.time(2))
+    end = datetime.datetime.combine(nth_sunday(dt.year, 11, 1), datetime.time(2))
+    return "-04:00" if start <= dt < end else "-05:00"
 
 ICO = {"utensils": '<path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 0-3 3-3 6s1 4 3 4v8"/>',
        "home": '<path d="M3 10.5L12 3l9 7.5M5 9v12h14V9M10 21v-6h4v6"/>',
@@ -54,7 +63,7 @@ def featured():
     except Exception:
         meta = {}
     v = [m for m in idx.get("members", []) if m.get("p") == "vip"]
-    day = int(datetime.datetime.now(ET).timestamp() // 86400)
+    day = int(datetime.datetime.now(datetime.timezone.utc).timestamp() // 86400)  # same day index as JS Date.now()/864e5
     v.sort(key=lambda x: (int(x["id"]) * 7919 + day * 104729) % 1000)  # same fair daily rotation as nowhome.js
     cards = []
     for m in v:
@@ -101,7 +110,7 @@ def explore():
 
 def _iso(s):
     dt = datetime.datetime.fromisoformat(s)
-    return dt.replace(tzinfo=ET).isoformat()
+    return dt.strftime("%Y-%m-%dT%H:%M:00") + et_offset(dt)
 
 
 def event_schema(d, img):
