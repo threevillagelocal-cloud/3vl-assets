@@ -1,12 +1,12 @@
 {
-"updated": "2026-09-28T20:15:26.849906+00:00",
+"updated": "2026-09-28T20:24:06.908006+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 46,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 221,
-"Emma S. Clark Library": 216,
+"Emma S. Clark Library": 218,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 6,
@@ -40,7 +40,8 @@
 "kids",
 "history"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "lim-3225801",
@@ -59,7 +60,8 @@
 "kids",
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "cur-spooky",
@@ -98,7 +100,8 @@
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-cooking-chef-rob-falling-greek-food-58113",
@@ -115,7 +118,8 @@
 "tags": [
 "food"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-editing-made-easy-imovie-38541",
@@ -130,7 +134,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-10/405684960_05a13d09-bb74-49fc-ae99-8318f9fe817e.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58877",
@@ -142,12 +147,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58877",
 "desc": "Themed activities that you and your child can enjoy together.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-preschool-storytime-ages-35-5-yrs-58887",
@@ -159,12 +165,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58887",
 "desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "pjchamber-14941",
@@ -181,7 +188,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-culper-spy-day-101-what-know-you-go-58114",
@@ -198,7 +206,8 @@
 "tags": [
 "history"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58892",
@@ -210,12 +219,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58892",
 "desc": "Experience sharing, group participation, and play.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-philosophy-through-literature-discussion-58115",
@@ -230,7 +240,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/187780.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-sweet-treats-our-heroes-community-service-project-grades-3-5-58120",
@@ -247,7 +258,8 @@
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-knit-cause-59655",
@@ -259,12 +271,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/knit-cause-59655",
 "desc": "",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-ai-basics-introduction-artificial-intelligence-60457",
@@ -279,7 +292,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/39288399_artificial_intelligence_vector_illustration.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "pjchamber-14820",
@@ -296,7 +310,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58902",
@@ -308,12 +323,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-18m-35-yrs-w-caregiver-58902",
 "desc": "Experience sharing, group participation, and play.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-library-walking-club-61171",
@@ -328,7 +344,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Frank%20Melville%20Park1a.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58907",
@@ -340,12 +357,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58907",
 "desc": "Experience sharing, group participation, and play.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-social-work-intern-appointments-58746",
@@ -360,7 +378,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "pjchamber-14934",
@@ -377,7 +396,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-sailing-through-stressful-times-58122",
@@ -392,7 +412,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-game-day-38288",
@@ -407,7 +428,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-11/people-having-fun-while-playing-board-game2.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "cur-stitch",
@@ -443,7 +465,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "lim-10000256",
@@ -462,7 +485,8 @@
 "kids",
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "cur-tvfm",
@@ -499,7 +523,8 @@
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-candy-land-training-creations-night-59550",
@@ -511,12 +536,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/candy-land-training-creations-night-59550",
 "desc": "",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "cur-scarecrow",
@@ -615,7 +641,8 @@
 "kids",
 "outdoor"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-history-emma-s-clark-memorial-library-walking-tour-58126",
@@ -632,7 +659,8 @@
 "tags": [
 "history"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "cur-tory",
@@ -730,7 +758,8 @@
 "history",
 "music"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-monster-week-tabletop-rpg-61435",
@@ -742,10 +771,11 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-61435",
 "desc": "",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "lim-3225658",
@@ -764,7 +794,8 @@
 "history",
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "wmho-1191",
@@ -781,7 +812,8 @@
 "tags": [
 "history"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "lim-3223856",
@@ -799,7 +831,8 @@
 "history",
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "lim-3225654",
@@ -818,7 +851,8 @@
 "history",
 "stage"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "cur-treason",
@@ -854,7 +888,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-05/Teen%20Welcome_0.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "cur-symphony",
@@ -890,7 +925,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "cur-pjfm",
@@ -928,7 +964,8 @@
 "food",
 "outdoor"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "cur-founding",
@@ -1021,7 +1058,8 @@
 "tags": [
 "music"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "limehof-202610041500-marian-mastrorilli-with-glenn-govier",
@@ -1039,7 +1077,8 @@
 "free",
 "music"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-behind-post-59552",
@@ -1051,10 +1090,11 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/behind-post-59552",
 "desc": "",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "lim-3225641",
@@ -1073,7 +1113,8 @@
 "stage",
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "cur-sedaris",
@@ -1108,7 +1149,8 @@
 "tags": [
 "outdoor"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58873",
@@ -1120,12 +1162,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58873",
 "desc": "Themed activities that you and your child can enjoy together.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-preschool-storytime-ages-35-5-yrs-58883",
@@ -1137,12 +1180,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58883",
 "desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence. We'll share lively stories & crafts that spark imagination, build early literacy skills & bring lots of smiles and giggles!",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-spooky-spider-seashell-art-58127",
@@ -1159,7 +1203,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-after-school-story-time-grades-k-2-59001",
@@ -1171,12 +1216,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/after-school-story-time-grades-k-2-59001",
 "desc": "Have fun listening to stories, creating crafts, and making new friends.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-smartphone-secrets-38569",
@@ -1191,7 +1237,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-10/5940522_3052766.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58878",
@@ -1203,12 +1250,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58878",
 "desc": "Themed activities that you and your child can enjoy together.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-preschool-storytime-ages-35-5-yrs-58888",
@@ -1220,12 +1268,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58888",
 "desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-celebrating-100-years-laughter-mel-brooks-58129",
@@ -1242,7 +1291,8 @@
 "tags": [
 "history"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-cricut-t-shirt-lottery-43470",
@@ -1259,7 +1309,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-tutus-tots-59554",
@@ -1271,12 +1322,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/tutus-tots-59554",
 "desc": "",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-ai-basics-introduction-artificial-intelligence-60458",
@@ -1291,7 +1343,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/39288399_artificial_intelligence_vector_illustration.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58893",
@@ -1303,12 +1356,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58893",
 "desc": "Experience sharing, group participation, and play.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "lim-3225151",
@@ -1327,7 +1381,8 @@
 "music",
 "stage"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-harbormen-chorus-concert-58130",
@@ -1344,7 +1399,8 @@
 "tags": [
 "music"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-dog-treat-jars-pet-supply-drive-community-service-project-grades-3-5-5",
@@ -1361,7 +1417,8 @@
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-your-children-dont-want-it-what-do-zoom-58133",
@@ -1376,7 +1433,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/344909.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "pjchamber-15013",
@@ -1393,7 +1451,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58903",
@@ -1405,12 +1464,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-18m-35-yrs-w-caregiver-58903",
 "desc": "Experience sharing, group participation, and play.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-library-walking-club-61172",
@@ -1425,7 +1485,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Frank%20Melville%20Park1a.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58908",
@@ -1437,12 +1498,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58908",
 "desc": "Experience sharing, group participation, and play.",
-"img": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 1
 },
 {
 "id": "emmaclark-social-work-intern-appointments-58747",
@@ -1457,7 +1519,8 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
 "src": "emmaclark",
 "tags": [],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-tube-bots-grades-k-5-w-caregiver-58798",
@@ -1475,7 +1538,8 @@
 "arts",
 "kids"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-cricut-t-shirt-38560",
@@ -1492,7 +1556,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "3vchamber-1919589",
@@ -1509,7 +1574,8 @@
 "tags": [
 "arts"
 ],
-"status": ""
+"status": "",
+"fb": 0
 },
 {
 "id": "emmaclark-interred-long-island-58137",
@@ -1526,7 +1592,8 @@
 "tags": [
 "history"
 ],
-"status": ""
+"status": "",
+"fb": 0
 }
 ],
 "closings": [],

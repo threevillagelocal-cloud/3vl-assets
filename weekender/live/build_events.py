@@ -18,6 +18,7 @@ ICON = {"kids": "&#129490;", "music": "&#127928;", "history": "&#128373;&#65039;
         "outdoor": "&#127795;", "arts": "&#127912;", "free": "&#127903;&#65039;"}
 
 
+LIB_FRONT = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg"   # front of the library, for library events with no photo (owner 9/28)
 # Emma S. Clark Library: tags come ONLY from the library's own categories (library feedback 9/28/2026)
 LIB_TAGS = {"Children": "kids", "Story Time": "kids", "Mommy & Me": "kids",
             "Music & Performance": "music", "History": "history", "Cooking & Tasting": "food",
@@ -69,7 +70,8 @@ def main():
             title = re.sub(r"^\s*(cancel+ed|postponed)\s*[-:]\s*", "", e["title"], flags=re.I).strip()
             out.append({"id": re.sub(r"[^a-z0-9]+", "-", e["uid"].lower())[:80], "title": title, "start": e["start"].isoformat(),
                         "end": e["end"].isoformat(), "allday": e["allday"], "venue": e["venue"], "addr": e["addr"], "url": e["url"],
-                        "desc": e["desc"][:260], "img": e["image"], "src": e["src"], "tags": tags_for(e), "status": st})
+                        "desc": e["desc"][:260], "img": e["image"] or (LIB_FRONT if e["src"] == "emmaclark" else ""), "src": e["src"], "tags": tags_for(e), "status": st,
+                        "fb": 0 if e["image"] or e["src"] != "emmaclark" else 1})   # fb=1: stand-in photo, never used for Top Things to Do
     ed = os.path.join(os.path.dirname(HERE), "2026-10-02", "weekend.json")
     if os.path.exists(ed):
         W = json.load(open(ed, encoding="utf-8"))
