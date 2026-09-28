@@ -5,7 +5,8 @@
 (function(){
 'use strict';
 var p=location.pathname.replace(/\/+$/,'')||'/';
-if(p!=='/now'&&!/[?&]nowhome=1/.test(location.search))return;
+var LIVE=false;  /* PREVIEW MODE: only shows with ?nowhome=1 until the owner approves; then set LIVE=true */
+if(!/[?&]nowhome=1/.test(location.search)&&!(LIVE&&p==='/now'))return;
 var IDX='https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/search/index.json';
 var BASE=(document.currentScript&&document.currentScript.src||'').replace(/nowhome\.js.*$/,'')||'https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/site/p3/';
 function $(s,r){return (r||document).querySelector(s)}function $$(s,r){return [].slice.call((r||document).querySelectorAll(s))}
