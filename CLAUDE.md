@@ -25,3 +25,6 @@ The guard's restore PUT strips backslashes, so CSS like content:"97" breaks. Us
 
 ## jsDelivr "Package size exceeded 50 MB" on a new pin (9/28/2026)
 A short-SHA pin (`@c51d46b03fb8`) returned "Package size exceeded the configured limit of 50 MB" instead of the file, and jsDelivr CACHES that error for that URL. The same commit worked via the FULL 40-char SHA. After every pin bump, curl each pinned file and grep for real content (not just HTTP 200). If you get the size error, pin the full SHA instead.
+
+## 3VL graphic style (owner-approved 9/28/2026) - use for share images, promos, social
+Dark blurred local photo background (Stony Brook Village street or restaurant interior, blur ~9-12px, left-heavy dark gradient). Radio Canada. Big white headline + ONE gold (#ffc53d) line + a ~38px white subline. Glass pill for info, gold pill for VIP ("★ NEIGHBOR FAVORITE"). Business photo/logo on a STRAIGHT white rounded card (never tilted); VIP card gets a gold ring + glow. NO small text, URLs, CTA buttons, chip rows, or 3VL wordmark on the graphic. Reference: site/share-img/make_mockup.py, weekender/og/share11.html.
