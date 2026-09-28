@@ -127,7 +127,7 @@ def build(edition, local=False, sha="master"):
     w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="" width="1600" height="1067"></picture>'
       % (img(d["hero"]["img"], True), img(d["hero"]["img"])))
     w('<div class="wk-hshade"></div>')
-    w('<div class="wk-hin"><div class="wk-brandrow"><h1 class="wk-hname">Three Village <span>Now</span></h1><span class="wk-livepill"><i></i>Updated Live</span></div>')
+    w('<div class="wk-hin"><div class="wk-brandrow"><h1 class="wk-hname">Three Village <span>Local</span></h1><span class="wk-livepill"><i></i>Updated Live</span></div>')
     w('<p class="wk-dek">What&rsquo;s happening in Setauket, Stony Brook and Port Jefferson right now. Events, specials, weather and local news, updated all day.</p>')
     w('<div class="wk-hstats">'
       '<div class="wk-hs"><span class="wk-hsl">Today</span><b id="wk-hdate">--</b><span class="wk-hsc" id="wk-hclock">--:--</span></div>'
