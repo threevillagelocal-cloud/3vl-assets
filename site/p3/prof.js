@@ -24,7 +24,9 @@ var cover=$('.coverPhoto');if(cover){cover.classList.add('pf-coverimg')}
   var o=document.createElement('canvas');o.width=r-l+1;o.height=b-t+1;o.getContext('2d').drawImage(c,l,t,o.width,o.height,0,0,o.width,o.height);img.onload=null;img.removeAttribute('width');img.removeAttribute('height');img.src=o.toDataURL('image/png')}catch(e){}}
   if(img.complete&&img.naturalWidth)go();else img.onload=go})($('.profile-image img',hdr));
 /* About section first in the overview tab (above Contact Information / Company Details) */
-(function(){var ab=$('.overview-tab-about-me');if(!ab)return;var fd=$('.field-about_me',ab);if(!fd||!fd.textContent.trim())return;var pane=ab.closest('.tab-pane');if(pane&&pane.firstElementChild!==ab)pane.insertBefore(ab,pane.firstElementChild)})();
+(function(){var ab=$('.overview-tab-about-me');if(!ab)return;var fd=$('.field-about_me',ab);if(!fd||!fd.textContent.trim())return;var pane=ab.closest('.tab-pane');if(pane&&pane.firstElementChild!==ab)pane.insertBefore(ab,pane.firstElementChild);
+  /* designed bios carry their own headline: drop BD's plain "About" heading */
+  var f1=[].filter.call(fd.children,function(c){return !c.classList.contains('clearfix')})[0],h=$('.about-member-blurb',ab);if(h&&f1&&(f1.tagName==='DIV'||/^H[1-3]$/.test(f1.tagName)))h.style.setProperty('display','none','important')})();
 /* Contact Information + Company Details merged into one compact "Business details" card grid */
 (function(){var pane=$('.tab-pane.active')||$('.tab-pane');if(!pane||$('.pf-facts',pane))return;
   var tvs=$$('.table-view',pane).filter(function(t){return !t.closest('.overview-tab-about-me')&&$('.table-view-group',t)});if(!tvs.length)return;
