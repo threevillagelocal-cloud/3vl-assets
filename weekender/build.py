@@ -137,7 +137,7 @@ def build(edition, local=False, sha="master"):
 
     # NAV
     w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
-      '<a href="#wk-picks">&#11088; Top Picks</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-wx">&#9728;&#65039; Weather</a>'
+      '<a href="#wk-picks">&#11088; Things to Do</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-wx">&#9728;&#65039; Weather</a>'
       '<a href="#wk-sched">&#128197; Schedule</a><a href="#wk-spy">&#128373;&#65039; Spy Day</a>'
       '<a href="#wk-next">&#128302; On the Radar</a>'
       '</div></nav>')
@@ -152,8 +152,8 @@ def build(edition, local=False, sha="master"):
             w('<div class="wk-cxi" data-off="%s"><p class="wk-cxn">%s</p><p class="wk-cxd">%s</p></div>' % (esc(it[0]), esc(it[1]), esc(it[2])))
         w('</div></section>')
 
-    # TOP PICKS
-    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Picks</span><small>If you only do %s things</small>' % {3: 'three', 4: 'four', 5: 'five', 6: 'six'}.get(len(d['picks']), 'a few') + '</h2><div class="wk-picks wk-swipe">')
+    # TOP THINGS TO DO (was "Top Picks"; renamed 9/28 so it is not mistaken for business picks)
+    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Things to Do</span><small>If you only do %s things</small>' % {3: 'three', 4: 'four', 5: 'five', 6: 'six'}.get(len(d['picks']), 'a few') + '</h2><div class="wk-picks wk-swipe">')
     for i, pid in enumerate(d["picks"]):
         e = ev[pid]
         ongoing = bool(e.get("when"))
