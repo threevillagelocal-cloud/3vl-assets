@@ -7,7 +7,7 @@ var IDX='https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/ma
 var FORCE=/[?&]tvlsearch=1/.test(location.search);
 var p=location.pathname.replace(/\/+$/,'')||'/';
 var NOW=p==='/now'||/[?&]tvlsearch=now/.test(location.search);
-if(!FORCE&&!NOW&&p!=='/'&&p!=='/home')return;
+var HOME=p==='/'||p==='/home';  /* 9/28: runs sitewide; attaches to the Now/homepage hero bar, the p3 hero search (#p3q on /categories, search results, category pages) or the old homepage box */
 var STOP={the:1,a:1,an:1,and:1,of:1,'for':1,near:1,me:1,'in':1,best:1,local:1,good:1,my:1,to:1,at:1,on:1,with:1,service:1,services:1,company:1,ny:1,no:1,not:1,wont:1,cant:1,dont:1,need:1,needs:1,help:1,want:1,find:1,get:1,someone:1,who:1,can:1,i:1,is:1,it:1,im:1,please:1};
 var TIER={vip:3,noticed:2,house:1,basic:0,claim:0};
 var data=null,loading=null;
@@ -71,8 +71,9 @@ function nowBar(){var dek=document.querySelector('.wk-hero2 .wk-dek')||document.
   dek.parentNode.insertBefore(f,dek.nextSibling);return f.querySelector('input')}
 function init(){
   var fixed=false,inp;
-  if(NOW){inp=nowBar();fixed=true}
-  else inp=document.querySelector('.search_box input[name=q]')||document.querySelector('form[action*="search_results"] input[name=q]');
+  if(NOW||document.querySelector('.wk-hero .wk-dek')){inp=nowBar();fixed=true}
+  else if(document.getElementById('p3q')){inp=document.getElementById('p3q');fixed=true}
+  else if(HOME||FORCE)inp=document.querySelector('.search_box input[name=q]')||document.querySelector('form[action*="search_results"] input[name=q]');
   if(!inp||inp.getAttribute('data-ss'))return false;
   /* retire BD's alphabetical 3-per-group suggest dropdown on this box */
   if(!fixed){var fresh=inp.cloneNode(true);fresh.classList.remove('large-autosuggest-input');fresh.setAttribute('autocomplete','off');inp.parentNode.replaceChild(fresh,inp);inp=fresh}
@@ -99,7 +100,7 @@ function init(){
     if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();sel=(sel+(e.key==='ArrowDown'?1:-1)+rows.length)%rows.length;[].forEach.call(rows,function(r,i){r.classList.toggle('on',i===sel)})}
     else if(e.key==='Enter'&&sel>-1){e.preventDefault();rows[sel].click();location.href=rows[sel].href}
     else if(e.key==='Escape'){box.hidden=true}});
-  box.addEventListener('click',function(e){var a=e.target.closest('a.ss-r');if(a){var x=items[+a.getAttribute('data-i')];if(x)track('smart_search_click',{search_term:inp.value.trim(),biz:x.r.m.n,rank:+a.getAttribute('data-i')+1,where:fixed?'now':'home'})}
+  box.addEventListener('click',function(e){var a=e.target.closest('a.ss-r');if(a){var x=items[+a.getAttribute('data-i')];if(x)track('smart_search_click',{search_term:inp.value.trim(),biz:x.r.m.n,rank:+a.getAttribute('data-i')+1,where:p})}
     else if(e.target.closest('.ss-all'))track('smart_search_all',{search_term:inp.value.trim()})});
   document.addEventListener('click',function(e){if(!host.contains(e.target)&&!box.contains(e.target))box.hidden=true});
   if(form)form.addEventListener('submit',function(){track('smart_search_submit',{search_term:inp.value.trim()})});
