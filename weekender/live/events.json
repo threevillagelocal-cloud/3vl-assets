@@ -1,12 +1,12 @@
 {
-"updated": "2026-09-28T20:10:59.960858+00:00",
+"updated": "2026-09-28T20:15:26.849906+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 46,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 221,
-"Emma S. Clark Library": 213,
+"Emma S. Clark Library": 216,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 6,
@@ -703,13 +703,13 @@
 "venue": "Emma S. Clark Library",
 "addr": "120 Main St, Setauket",
 "url": "https://www.emmaclark.org/culperspyday/",
-"desc": "Revolutionary tunes live from 12 to 2, kids' games and a spy-themed craft until 4, free popcorn, and library history tours.",
+"desc": "Live Revolutionary War and colonial music with Fairchild & Becherer on the lawn from 12 to 2, lawn games and a children's America 250 craft until 4, and library history walking tours at 10:30, 11:30, 2:30 and 3:30. Free, rain or shine.",
 "img": "",
 "src": "3vl",
 "tags": [
 "free",
-"kids",
-"music"
+"music",
+"kids"
 ],
 "status": "",
 "pick": false
