@@ -36,6 +36,14 @@ var cover=$('.coverPhoto');if(cover){cover.classList.add('pf-coverimg')}
     var v=$('.col-sm-8',g);if(!v||!v.textContent.trim()&&!v.querySelector('a,img,i'))return;
     g.classList.add('pf-fact');if(v.textContent.trim().length>90)g.classList.add('pf-wide');grid.appendChild(g)})});
   if(!grid.children.length)return;
+  /* raw URLs -> short labels (long links overflowed the tiles) */
+  $$('.pf-fact a[href^="http"]',grid).forEach(function(a){var tx=a.textContent.trim();if(!/^(https?:\/\/|www\.)/i.test(tx))return;
+    var lab=((($('.bold',a.closest('.pf-fact'))||{}).textContent)||'').toLowerCase(),host='';try{host=new URL(a.href).hostname.replace(/^www\./,'')}catch(e){}
+    a.textContent=/appoint|book|schedul/.test(lab)?'Book an appointment':/website|site/.test(lab)?'Visit website':(host||'Open link');a.setAttribute('title',a.href);a.classList.add('pf-link')});
+  /* useful facts first, long text blocks last */
+  var ord=['phone','website','address','rep_matters','booking','social','experience','affiliation','cv','credentials','awards'];
+  function rank(g){if(g.classList.contains('pf-wide'))return 99;var c=g.className;for(var i=0;i<ord.length;i++)if(c.indexOf(ord[i])>-1)return i;return 50}
+  [].slice.call(grid.children).map(function(g,i){return [rank(g),i,g]}).sort(function(a,b){return a[0]-b[0]||a[1]-b[1]}).forEach(function(x){grid.appendChild(x[2])});
   var ab=$('.overview-tab-about-me',pane);if(ab&&ab.parentNode===pane)pane.insertBefore(box,ab.nextSibling);else pane.insertBefore(box,tvs[0]);
   tvs.forEach(function(t){t.style.display='none'})})();
 /* tidy */
