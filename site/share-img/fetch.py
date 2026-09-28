@@ -30,7 +30,7 @@ while True:
     reviews += d.get("message") or []
     p = str(d.get("next_page") or "")
     if not p or not d.get("message"): break
-KEEP = ["user_id", "company", "first_name", "last_name", "city", "subscription_id", "profession_id", "filename", "image_main_file", "logo", "cover_photo", "experience", "quote", "verified", "listing_type"]
+KEEP = ["user_id", "state_code", "company", "first_name", "last_name", "city", "subscription_id", "profession_id", "filename", "image_main_file", "logo", "cover_photo", "experience", "quote", "verified", "listing_type"]
 out = []
 for u in users:
     m = {k: u.get(k) for k in KEEP}

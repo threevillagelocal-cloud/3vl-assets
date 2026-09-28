@@ -57,14 +57,16 @@ def plan_one(m, s):
     t = town(m.get("city")); lab = label(s.get("services"), m.get("category"))
     if lab and lab.lower() in name.lower():
         lab = ""  # "Setauket Frame Shop | Frame Shop..." reads badly
+    st = (m.get("state_code") or "NY").strip().upper()
+    st = st if len(st) == 2 else "NY"  # a few listings have "Suffolk County" typed in the state field
     where = (" in %s" % t) if t else ""
-    title = fit([f"{name} | {lab}{where}, NY" if t and lab else "", f"{name} | {lab}{where}" if lab else "",
-                 f"{name} | {t}, NY" if t else "", f"{name} | Three Village Local", name], 65)
+    title = fit([f"{name} | {lab}{where}, {st}" if t and lab else "", f"{name} | {lab}{where}" if lab else "",
+                 f"{name} | {t}, {st}" if t else "", f"{name} | Three Village Local", name], 65)
     og_title = fit([f"{name} | {lab}{where}" if lab else "", f"{name} | {t}" if t else "", name], 70)
     base = s.get("search_description") or ""
     if not base:
         what = (lab or m.get("category") or "local business").lower()
-        base = f"{name} is a {what} in {t or 'the Three Village area'}, NY. See photos, hours, reviews and contact info."
+        base = f"{name} is a {what} in {t + ', ' + st if t else 'the Three Village area, NY'}. See photos, hours, reviews and contact info."
     desc = clean_desc(base)
     og_desc = clean_desc(base, 150)
     return {"user_id": m["user_id"], "name": name, "seo_page_title": title, "seo_page_description": desc,
