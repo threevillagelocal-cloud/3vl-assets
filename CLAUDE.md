@@ -29,8 +29,9 @@ A short-SHA pin (`@c51d46b03fb8`) returned "Package size exceeded the configured
 ## 3VL graphic style (owner-approved 9/28/2026) - use for share images, promos, social
 Dark blurred local photo background (Stony Brook Village street or restaurant interior, blur ~9-12px, left-heavy dark gradient). Radio Canada. Big white headline + ONE gold (#ffc53d) line + a ~38px white subline. Glass pill for info, gold pill for VIP ("★ NEIGHBOR FAVORITE"). Business photo/logo on a STRAIGHT white rounded card (never tilted); VIP card gets a gold ring + glow. NO small text, URLs, CTA buttons, chip rows, or 3VL wordmark on the graphic. Reference: site/share-img/make_mockup.py, weekender/og/share11.html.
 
-## Listing share images (9/28/2026)
-Generator: site/share-img (fetch.py pulls public fields for active members -> members.json; gen.py renders out/<slug>.jpg; overrides in img/override/<user_id>.png). The images live in the SEPARATE repo threevillagelocal-cloud/3vl-share (folder l/). Never put them in 3vl-assets, because they'd push it past jsDelivr's 50 MB limit.
-BD mangles external URLs in seo_social_page_image, so each listing uses a BD 301 redirect: /share/<slug>.jpg -> jsDelivr 3vl-share@<FULL SHA>/l/<slug>.jpg. Then set the member's seo_social_page_image = https://www.threevillagelocal.com/share/<slug>.jpg. Facebook follows the redirect (verified in the Sharing Debugger on setauket-frame-shop).
-Excluded: user 5 (admin/blog author), 218 (Twinr).
-Render at 2x (2400x1260). At 1x it looked blurry in FB (owner, 9/28). When an image changes, give it a NEW /share/ path (e.g. <slug>-v2.jpg) because FB caches images by URL, then 'Scrape Again' in the Sharing Debugger.
+## Listing share images (9/28/2026) - LIVE on all listings
+Generator: site/share-img. Run order: fetch.py (members.json), fetch_seo.py (seo_src.json = rollback snapshot), seo_gen.py (seo_plan.json), gen.py (out/<slug>.jpg at 2x), then copy out/*.jpg to the 3vl-share repo folder l/ and push, then apply.py.
+Hosting: GitHub PAGES of threevillagelocal-cloud/3vl-share (https://threevillagelocal-cloud.github.io/3vl-share/l/<slug>.jpg). NOT jsDelivr, because 80 MB is over its 50 MB package limit. NOT 3vl-assets either.
+BD mangles external og URLs, so each listing uses a BD 301 redirect: /share/<slug>.jpg -> Pages URL (Frame Shop: share/setauket-frame-shop-v3.jpg). Then seo_social_page_image = https://www.threevillagelocal.com/share/<slug>.jpg plus the 4 SEO fields. apply.py is resumable (apply_log.json).
+Owner rules: town shows "Setauket" for any Setauket / East Setauket listing (never "East Setauket"). The gold line is "Since YEAR", else the specialty label (<=24 chars), else the town. Better logos go in img/override/<user_id>.png. When an image changes, use a NEW /share/ filename (FB caches by URL) and re-scrape in the FB Sharing Debugger.
+Excluded: user 5 (admin/blog author), 218 (Twinr). SEO backup: site/share-img/backups/ (gitignored, local).
