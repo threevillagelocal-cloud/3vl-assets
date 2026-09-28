@@ -11,6 +11,11 @@ os.makedirs(OUT, exist_ok=True); os.makedirs(CACHE, exist_ok=True)
 CSS = open(os.path.join(HERE, "share.css"), encoding="utf-8").read() + """
 .solo .head{width:1060px}
 .ad:not(.solo) .head{width:585px}
+.card{top:92px;width:450px;height:450px}
+.card.logo img{width:100%;height:100%;max-width:none;max-height:none;object-fit:contain}
+.tag{left:700px;top:62px}
+.vip .tag{left:700px;top:62px}
+.tag.tl,.vip .tag.tl{left:690px;top:122px}
 """
 VIP = {"1", "8"}
 EXCLUDE = {"5", "218"}  # admin/blog-author account, Twinr (app vendor)
@@ -31,7 +36,11 @@ def esc(t):
 
 def town(c):
     c = (c or "").strip()
-    return "Setauket" if c.startswith("Setauket-") else c
+    return "Setauket" if (c.startswith("Setauket") or c == "East Setauket") else c  # owner 9/28: Setauket, never "East Setauket"
+
+
+import seo_gen
+SRC = {x["user_id"]: x for x in json.load(open(os.path.join(HERE, "seo_src.json"), encoding="utf-8"))} if os.path.exists(os.path.join(HERE, "seo_src.json")) else {}
 
 
 def slug(m):
@@ -51,6 +60,18 @@ def fetch_img(url):
         return None
 
 
+def dense_bbox(mask):
+    """bbox of the real artwork: ignore rows/cols with only a few stray pixels (JPEG noise, specks, faint edges)"""
+    w, h = mask.size; px = mask.load()
+    cols = [sum(1 for y in range(0, h, 2) if px[x, y]) for x in range(w)]
+    rows = [sum(1 for x in range(0, w, 2) if px[x, y]) for y in range(h)]
+    cmin, rmin = max(2, h // 2 * .006), max(2, w // 2 * .006)
+    xs = [i for i, c in enumerate(cols) if c >= cmin]; ys = [i for i, r in enumerate(rows) if r >= rmin]
+    if not xs or not ys:
+        return mask.getbbox()
+    return (xs[0], ys[0], xs[-1] + 1, ys[-1] + 1)
+
+
 def prep(m):
     """-> (mode, data-uri); mode is 'photo', 'logo' or None"""
     ov = [os.path.join(HERE, "img", "override", "%s.%s" % (m["user_id"], e)) for e in ("png", "jpg")]
@@ -67,20 +88,24 @@ def prep(m):
         pts += [px[0, j], px[w - 1, j], px[int(w * .04), j], px[int(w * .96), j]]
     white = sum(1 for q in pts if min(q) > 232) / len(pts)
     srt = sorted(pts, key=sum); med = srt[len(srt) // 2]
-    solid = sum(1 for q in pts if max(abs(q[k] - med[k]) for k in range(3)) < 14) / len(pts)
+    solid = sum(1 for q in pts if max(abs(q[k] - med[k]) for k in range(3)) < 22) / len(pts)
     bgc = None
     if white > .6:
         ref, mode = (255, 255, 255), "logo"
-    elif solid > .7:  # logo on a solid colour: keep it whole on a card of that colour
+    elif solid > .6:  # logo on a solid colour: keep it whole on a card of that colour
         ref, mode, bgc = med, "logo", "#%02x%02x%02x" % tuple(med)
     else:
         ref, mode = None, "photo"
+        if not .8 <= w / h <= 1.25:  # wide/tall picture: show it whole instead of cropping
+            mode, bgc = "fit", "#%02x%02x%02x" % tuple(med)
     if ref:
-        d = ImageChops.difference(flat, Image.new("RGB", flat.size, tuple(ref))).convert("L").point(lambda v: 255 if v > 26 else 0)
-        bb = d.getbbox()
+        d = ImageChops.difference(flat, Image.new("RGB", flat.size, tuple(ref))).convert("L").point(lambda v: 255 if v > 40 else 0)
+        bb = dense_bbox(d)
         if bb:
             pad = int(max(bb[2] - bb[0], bb[3] - bb[1]) * .04)
             flat = flat.crop((max(0, bb[0] - pad), max(0, bb[1] - pad), min(w, bb[2] + pad), min(h, bb[3] + pad)))
+    if max(flat.size) < 900:  # small uploads: enlarge smoothly so they fill the card
+        k = 900 / max(flat.size); flat = flat.resize((round(flat.width * k), round(flat.height * k)), Image.LANCZOS)
     flat.thumbnail((1400, 1400))
     buf = io.BytesIO(); flat.save(buf, "JPEG", quality=90)
     return mode, "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode(), bgc
@@ -102,16 +127,19 @@ def page(m):
         gold = "Since " + yr
     elif vip and t:
         gold = t
-    elif t and cat:
-        gold = cat
     else:
-        gold = t or cat or "Three Village"
+        lab = seo_gen.label((SRC.get(m["user_id"]) or {}).get("services"), cat)
+        if lab and (lab.lower() in name.lower() or len(lab) > 24):
+            lab = ""
+        gold = lab or t or cat or "Three Village"
     mode, uri, bgc = prep(m)
     tag = "Come visit us!" if cat in VISIT else "Your neighbors"
     if mode == "photo":
         card = '<div class="tag">%s</div><div class="card" style="background-image:url(%s)"></div>' % (tag, uri)
+    elif mode == "fit":
+        card = '<div class="tag">%s</div><div class="card" style="background:%s url(%s) center/contain no-repeat"></div>' % (tag, bgc, uri)
     elif mode == "logo":
-        card = '<div class="tag">%s</div><div class="card logo"%s><img src="%s"></div>' % (tag, (' style="background:%s"' % bgc) if bgc else "", uri)
+        card = '<div class="tag tl">%s</div><div class="card logo"%s><img src="%s"></div>' % (tag, (' style="background:%s"' % bgc) if bgc else "", uri)
     else:
         card = ""
     stars = ('<div class="stars"><i>&#9733;&#9733;&#9733;&#9733;&#9733;</i>%.1f</div>' % m["rating"]) if (vip and m.get("rating") and card) else ""

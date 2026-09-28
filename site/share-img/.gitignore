@@ -3,3 +3,6 @@ cache/
 members.json
 __pycache__/
 seo_src.json
+apply_log.json
+backups/
+out/

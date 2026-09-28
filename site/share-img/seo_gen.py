@@ -22,7 +22,7 @@ LABEL = {
 
 def town(c):
     c = (c or "").strip()
-    return "Setauket" if c.startswith("Setauket-") else c
+    return "Setauket" if (c.startswith("Setauket") or c == "East Setauket") else c
 
 
 def label(svcs, cat):
@@ -42,7 +42,7 @@ def fit(parts, limit):
 
 def clean_desc(t, limit=158):
     t = re.sub(r"\s+", " ", (t or "").replace(" ", " ")).strip()
-    t = t.replace("Setauket-East Setauket", "Setauket").replace("Setauket- East Setauket", "Setauket")
+    t = re.sub(r"Setauket\s*-\s*East Setauket|East Setauket", "Setauket", t)
     if len(t) <= limit and re.search(r"[.!?)\"]$", t):
         return t
     cut = t[:limit] + " "
