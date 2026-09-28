@@ -1,5 +1,6 @@
 /* 3VL homepage refresh (MOCKUP): category tiles, Featured businesses row, one business band, bold headings, clean story cards. */
 (function(){
+if(document.getElementById('wk-top'))return;  /* 9/28: the homepage now shows the Three Village Local (Now) content: old homepage add-ons stand down */
 var p=location.pathname.replace(/\/+$/,'')||'/';if(p!=='/'&&p!=='/home')return;
 var hs=document.querySelector('.homepage-sections');if(!hs||document.getElementById('h2-tiles'))return;
 function $(s,r){return (r||document).querySelector(s)}function $$(s,r){return [].slice.call((r||document).querySelectorAll(s))}
@@ -69,6 +70,7 @@ else hs.appendChild(band);
 /* Three Village Now portal banner (9/27): sits right above Happening Today (#td).
    LIVE 9/27 (public launch). It replaces the Happening Today section (#td), which is hidden while the banner is on. */
 (function(){
+if(document.getElementById('wk-top'))return;  /* 9/28: the homepage now shows the Three Village Local (Now) content: old homepage add-ons stand down */
 var NOW_BANNER=true;var IMGBASE=(document.currentScript&&document.currentScript.src||'').replace(/home2\.js.*$/,'')||'https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/site/p3/';if(!NOW_BANNER&&!/[?&]tvnpreview=1/.test(location.search))return;
 var p=location.pathname.replace(/\/+$/,'')||'/';if(p!=='/'&&p!=='/home')return;
 var css='#td{display:none!important}'
@@ -219,6 +221,7 @@ var n=0,t=setInterval(function(){n++;if((document.getElementById('td')&&put())||
 })();
 /* Homepage search box tidy-up (9/27, until the smart-search overhaul): drop the "What do you need:" label, friendlier placeholder. */
 (function(){
+if(document.getElementById('wk-top'))return;  /* 9/28: the homepage now shows the Three Village Local (Now) content: old homepage add-ons stand down */
 var p=location.pathname.replace(/\/+$/,'')||'/';if(p!=='/'&&p!=='/home')return;
 var st=document.createElement('style');st.textContent='.search_box > .form-group.col-md-5{display:none!important}';document.head.appendChild(st);
 function ph(){var i=document.querySelector('.search_box input[name=q]');if(!i)return;

@@ -1,6 +1,7 @@
 /* MOCKUP: "Happening Today in Three Village" strip for the homepage.
    Data: hourly weather-proof feed weekender/live/events.json (photos, venues, cancellations) + BD /event-calendar-json (links to our own event pages) + NWS for today's weather. */
 (function(){
+if(document.getElementById('wk-top'))return;  /* 9/28: the homepage now shows the Three Village Local (Now) content: old homepage add-ons stand down */
 var p=location.pathname.replace(/\/+$/,'')||'/';if(p!=='/'&&p!=='/home')return;
 var host=document.querySelector('.homepage-sections');if(!host||document.getElementById('td'))return;
 var FEED='https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/events.json';
