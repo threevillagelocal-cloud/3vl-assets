@@ -65,8 +65,15 @@ def linkify(html_str):
     return "".join(out)
 
 
-def build(edition, local=False, sha="master"):
-    d = json.load(open(os.path.join(HERE, edition, "weekend.json"), encoding="utf-8"))
+def build(edition, local=False, sha="master", d=None, live=None):
+    """d: an already-adjusted weekend.json (the nightly job drops past items); live: weekender/live/events.json for the Event schema."""
+    if d is None:
+        d = json.load(open(os.path.join(HERE, edition, "weekend.json"), encoding="utf-8"))
+    if live is None:
+        try:
+            live = json.load(open(os.path.join(HERE, "live", "events.json"), encoding="utf-8"))
+        except Exception:
+            live = None
     vips = json.load(open(os.path.join(HERE, "vip.json"), encoding="utf-8"))
     if local:
         base = "http://127.0.0.1:8765/weekender/"
@@ -313,7 +320,7 @@ def build(edition, local=False, sha="master"):
     w('</div>')
     w('<script src="%sweekender.js%s" defer></script>' % (base, ver))
 
-    w(nhb.event_schema(d, img))  # schema.org Event list (Google event results, AI answers)
+    w(nhb.event_schema_live(live) or nhb.event_schema(d, img))  # schema.org Event list: live feed (next 2 weeks) when available, else this edition
     body = "\n".join(out)
     body = body.replace("’", "&rsquo;")
     body = linkify(body)

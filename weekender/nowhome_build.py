@@ -147,6 +147,10 @@ def event_schema(d, img):
         return ""
     data = {"@context": "https://schema.org", "@type": "ItemList", "name": "Things to do in the Three Village area this week",
             "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": ev} for i, ev in enumerate(items)]}
+    return _ld(data)
+
+
+def _ld(data):
     def clean(o):  # BD strips backslashes from post content, so the JSON must not need any escape characters
         if isinstance(o, dict):
             return {k: clean(x) for k, x in o.items()}
@@ -160,3 +164,44 @@ def event_schema(d, img):
     if "\\" in js:
         return ""  # never ship JSON that BD would corrupt
     return '<script type="application/ld+json">%s</script>' % js
+
+
+def now_et():
+    u = datetime.datetime.utcnow()
+    guess = u - datetime.timedelta(hours=4)
+    return u + datetime.timedelta(hours=-4 if et_offset(guess) == "-04:00" else -5)
+
+
+def event_schema_live(live, days=14, cap=40):
+    """Event list from the hourly live feed (weekender/live/events.json): everything not over yet that starts within `days`."""
+    if not live or not live.get("events"):
+        return ""
+    now = now_et(); horizon = now + datetime.timedelta(days=days)
+    items = []
+    for e in live["events"]:
+        try:
+            s = datetime.datetime.fromisoformat(e["start"][:19]); en = datetime.datetime.fromisoformat((e.get("end") or e["start"])[:19])
+        except Exception:
+            continue
+        if e.get("status") or en < now or s > horizon or not e.get("title"):
+            continue
+        addr = (e.get("addr") or "").split(",")
+        ev = {"@type": "Event", "name": e["title"], "description": (e.get("desc") or "")[:300],
+              "startDate": _iso(s.strftime("%Y-%m-%dT%H:%M")), "endDate": _iso(en.strftime("%Y-%m-%dT%H:%M")),
+              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled",
+              "location": {"@type": "Place", "name": e.get("venue") or "Three Village area",
+                           "address": {"@type": "PostalAddress", "streetAddress": addr[0].strip() if len(addr) > 1 else "",
+                                       "addressLocality": addr[1].strip() if len(addr) > 1 else (e.get("venue") or "Setauket"), "addressRegion": "NY", "addressCountry": "US"}}}
+        if e.get("img"):
+            ev["image"] = [e["img"]]
+        if e.get("url"):
+            ev["url"] = e["url"]
+        if "free" in (e.get("tags") or []):
+            ev["isAccessibleForFree"] = True
+        items.append((s, ev))
+    items.sort(key=lambda x: x[0])
+    items = [ev for _, ev in items[:cap]]
+    if not items:
+        return ""
+    return _ld({"@context": "https://schema.org", "@type": "ItemList", "name": "Things to do in the Three Village area",
+                "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": ev} for i, ev in enumerate(items)]})
