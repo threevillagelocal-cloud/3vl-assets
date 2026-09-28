@@ -1,0 +1,22 @@
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1200px;height:630px;overflow:hidden;background:#0c1018;font-family:'Radio Canada',sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+.ad{position:relative;width:1200px;height:630px;overflow:hidden}
+.bg{position:absolute;inset:-40px;background-position:center 60%;background-size:cover;filter:blur(9px) saturate(1.2) brightness(.95)}
+.vig{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,12,20,.88) 0%,rgba(8,12,20,.6) 48%,rgba(8,12,20,.3) 100%),linear-gradient(180deg,rgba(8,12,20,.15),rgba(8,12,20,0) 40%,rgba(8,12,20,.45))}
+.head{position:absolute;left:64px;top:0;bottom:0;width:620px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.wm{display:inline-block;background:rgba(255,255,255,.94);border-radius:18px;padding:10px 16px;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+.wm img{display:block;height:58px}
+.pill{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:30px;padding:9px 22px;border-radius:999px;background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.35)}
+.pill.gold{background:linear-gradient(180deg,#ffd76a,#ffc53d);color:#13233a;border-color:rgba(255,255,255,.5);box-shadow:0 10px 26px rgba(255,197,61,.35);letter-spacing:.08em}
+h1{font-size:96px;font-weight:700;letter-spacing:-.035em;line-height:.98;margin:26px 0 0}
+h1 span{display:block;color:#ffc53d;margin-top:6px}
+.sub{margin-top:30px;font-size:38px;font-weight:600;color:#eef3f8}
+.card{position:absolute;right:64px;top:80px;width:420px;height:470px;border-radius:28px;background:#fff center/cover;box-shadow:0 30px 60px rgba(0,0,0,.6),0 0 0 2px rgba(255,255,255,.18);overflow:hidden}
+.card.logo{top:150px;height:330px;width:450px;right:64px;display:flex;align-items:center;justify-content:center;padding:36px}
+.card.logo img{max-width:100%;max-height:100%}
+.vip .card{box-shadow:0 30px 60px rgba(0,0,0,.6),0 0 0 6px #ffc53d,0 0 40px rgba(255,197,61,.45)}
+.tag{position:absolute;z-index:5;left:710px;top:52px;padding:10px 22px;border-radius:999px;font-size:28px;font-weight:700;color:#13233a;background:#fff;box-shadow:0 12px 26px rgba(0,0,0,.4)}
+.vip .tag{left:690px;top:122px}
+.stars{position:absolute;z-index:5;right:90px;bottom:122px;padding:10px 22px;border-radius:16px;background:#13233a;border:2px solid #ffc53d;font-size:28px;font-weight:700;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.stars i{font-style:normal;color:#ffc53d;letter-spacing:3px;margin-right:8px}
