@@ -81,7 +81,7 @@ def prep(m):
         if bb:
             pad = int(max(bb[2] - bb[0], bb[3] - bb[1]) * .04)
             flat = flat.crop((max(0, bb[0] - pad), max(0, bb[1] - pad), min(w, bb[2] + pad), min(h, bb[3] + pad)))
-    flat.thumbnail((900, 900))
+    flat.thumbnail((1400, 1400))
     buf = io.BytesIO(); flat.save(buf, "JPEG", quality=90)
     return mode, "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode(), bgc
 
@@ -154,7 +154,7 @@ def main():
                 if r.get("id") == n[0]:
                     return r.get("result", {})
         cmd("Page.enable")
-        cmd("Emulation.setDeviceMetricsOverride", width=1200, height=630, deviceScaleFactor=1, mobile=False)
+        cmd("Emulation.setDeviceMetricsOverride", width=1200, height=630, deviceScaleFactor=2, mobile=False)
         tmp = os.path.join(CACHE, "_page.html"); done = []
         for i, m in enumerate(ms):
             open(tmp, "w", encoding="utf-8").write(page(m))
@@ -165,7 +165,7 @@ def main():
                     break
             time.sleep(.25)
             png = base64.b64decode(cmd("Page.captureScreenshot", format="png")["data"])
-            Image.open(io.BytesIO(png)).convert("RGB").save(os.path.join(OUT, slug(m) + ".jpg"), "JPEG", quality=84, optimize=True, progressive=True)
+            Image.open(io.BytesIO(png)).convert("RGB").save(os.path.join(OUT, slug(m) + ".jpg"), "JPEG", quality=88, optimize=True, progressive=True)
             done.append({"user_id": m["user_id"], "slug": slug(m)})
             if i % 25 == 0:
                 print(i, slug(m), flush=True)
