@@ -9,6 +9,7 @@ Rules that matter on BD:
   - post_content must contain NO backslashes (BD strips them).
   - Publish through the API only. The Froala editor strips <style>/<script>.
 """
+import nowhome_build as nhb  # 9/28: server-rendered homepage sections + Event schema
 import html, json, os, re, sys
 from datetime import datetime
 
@@ -178,6 +179,7 @@ def build(edition, local=False, sha="master"):
             esc(n["desc"]), ('<div class="wk-acts"><a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a></div>' % esc(n["url"])) if n.get("url") else "",
             ('<p class="wk-icred">%s</p>' % esc(n["credit"])) if n.get("credit") else ""))
     w('</div></section>')
+    w(nhb.featured())  # Featured Local Businesses (VIPs), right after Top Things to Do
 
     # EAT & DRINK (exterior photo + dish inset; one card per business)
     w('<section class="wk-sec" id="wk-eat"><h2 class="wk-h2"><span>Eat &amp; Drink</span><small>Local specials, updated daily</small></h2><div class="wk-eat wk-swipe">')
@@ -272,6 +274,7 @@ def build(edition, local=False, sha="master"):
         w('</div></section>')
 
     # SUBMIT + SHARE + APP
+    w(nhb.explore())  # Browse Local Businesses + Latest Local Stories, above the business CTA
     w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got something you want to promote?</p><p class="wk-subd">Three Village Local updates every day. '
       'Send us your event, menu special or promotion and we’ll put it in front of Three Village.</p>'
       '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Submit it free &rarr;</a></div>'
@@ -310,6 +313,7 @@ def build(edition, local=False, sha="master"):
     w('</div>')
     w('<script src="%sweekender.js%s" defer></script>' % (base, ver))
 
+    w(nhb.event_schema(d, img))  # schema.org Event list (Google event results, AI answers)
     body = "\n".join(out)
     body = body.replace("’", "&rsquo;")
     body = linkify(body)

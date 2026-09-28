@@ -5,8 +5,8 @@
 (function(){
 'use strict';
 var p=location.pathname.replace(/\/+$/,'')||'/';
-var LIVE=false;  /* PREVIEW MODE: only shows with ?nowhome=1 until the owner approves; then set LIVE=true */
-if(!/[?&]nowhome=1/.test(location.search)&&!(LIVE&&p==='/now'))return;
+var LIVE=true;  /* 9/28: approved. Sections are server-rendered into /now by weekender/nowhome_build.py; this script only refreshes them */
+if(!/[?&]nowhome=1/.test(location.search)&&!(LIVE&&(p==='/now'||p==='/'||p==='/home')))return;
 var IDX='https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/search/index.json';
 var BASE=(document.currentScript&&document.currentScript.src||'').replace(/nowhome\.js.*$/,'')||'https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/site/p3/';
 function $(s,r){return (r||document).querySelector(s)}function $$(s,r){return [].slice.call((r||document).querySelectorAll(s))}
@@ -49,8 +49,20 @@ var CATS=[['Restaurants','/restaurant','utensils'],['Home Services','/home-servi
 
 function head(t,small,link,lt){var l=link?'<a class="nh-more" href="'+link+'">'+lt+' &rarr;</a>':'';return '<h2 class="wk-h2"><span>'+t+'</span>'+((small||l)?'<small>'+(small?small+(l?' &middot; ':''):'')+l+'</small>':'')+'</h2>'}
 
+/* 9/28: the sections are now rendered into the page HTML by weekender/nowhome_build.py (visible to Google/AI without JS).
+   When they're present, only rotate the VIP order for today and refresh the stories; never add a second copy. */
+function refresh(){
+  var row=$('#nh-frow');if(row){var day=Math.floor(Date.now()/864e5),cs=$$('a.nh-biz',row);
+    cs.sort(function(x,y){return ((+x.getAttribute('data-id')*7919+day*104729)%1000)-((+y.getAttribute('data-id')*7919+day*104729)%1000)}).forEach(function(c){row.appendChild(c)})}
+  var sr=$('#nh-srow');if(sr)fetch('/blog').then(function(r){return r.text()}).then(function(t){var doc=new DOMParser().parseFromString(t,'text/html'),M=['Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec'];
+    var L=$$('.search_result',doc).map(function(it){var a=$('.mid_section a.h3',it),img=$('img.search_result_image',it),d=(($('.posted_meta_data span',it)||{}).textContent||'').match(/(\d+)\/(\d+)\/(\d+)/);
+      return a?{h:a.getAttribute('href'),t:a.textContent.trim(),img:img?img.getAttribute('src'):'',d:d?M[+d[1]-1]+' '+(+d[2])+', '+d[3]:'',ts:d?new Date(+d[3],+d[1]-1,+d[2]).getTime():0}:null}).filter(Boolean).sort(function(a,b){return b.ts-a.ts}).slice(0,3);
+    if(L.length&&L[0].h!==($('a.nh-story',sr)||{getAttribute:function(){return ''}}).getAttribute('href'))
+      sr.innerHTML=L.map(function(x){return '<a class="nh-story" href="'+esc(x.h)+'"><span class="nh-sim" style="background-image:url(\''+esc(x.img)+'\')"></span><span class="nh-sb">'+(x.d?'<i>'+esc(x.d)+'</i>':'')+'<b>'+esc(x.t)+'</b></span></a>'}).join('')}).catch(function(){});
+}
 function run(){
-  var main=$('.wk-main');if(!main||$('#nh-feat'))return !!main;
+  var main=$('.wk-main');if(!main)return false;
+  if($('#nh-feat')||$('#nh-explore')){refresh();bindTrack();return true}
   var st=document.createElement('style');st.textContent=CSS;document.head.appendChild(st);
 
   /* 1. Featured local businesses (VIP), after Top Things to Do */
@@ -84,8 +96,10 @@ function run(){
     if(!L.length){$('#nh-srow').previousSibling.style.display='none';return}
     $('#nh-srow').innerHTML=L.map(function(x){return '<a class="nh-story" href="'+esc(x.h)+'"><span class="nh-sim" style="background-image:url(\''+esc(x.img)+'\')"></span><span class="nh-sb">'+(x.d?'<i>'+esc(x.d)+'</i>':'')+'<b>'+esc(x.t)+'</b></span></a>'}).join('')}).catch(function(){});
 
-  document.addEventListener('click',function(e){var a=e.target.closest('#nh-feat a.nh-biz,#nh-explore a');if(!a)return;
-    track(a.classList.contains('nh-biz')?'featured_business':a.classList.contains('nh-cat')?'category':a.classList.contains('nh-story')?'story':'more',{label:a.getAttribute('data-biz')||a.textContent.trim().slice(0,60)})});
+  bindTrack();
   return true}
+function bindTrack(){if(window.__nhTrack)return;window.__nhTrack=1;
+  document.addEventListener('click',function(e){var a=e.target.closest('#nh-feat a.nh-biz,#nh-explore a');if(!a)return;
+    track(a.classList.contains('nh-biz')?'featured_business':a.classList.contains('nh-cat')?'category':a.classList.contains('nh-story')?'story':'more',{label:a.getAttribute('data-biz')||a.textContent.trim().slice(0,60)})})}
 var n=0,t=setInterval(function(){n++;if(run()||n>60)clearInterval(t)},250);
 })();
