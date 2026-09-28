@@ -1,14 +1,14 @@
 {
-"updated": "2026-09-28T06:41:21.564069+00:00",
+"updated": "2026-09-28T15:20:45.903464+00:00",
 "counts": {
 "Three Village Chamber": 4,
-"Port Jefferson Chamber": 43,
+"Port Jefferson Chamber": 46,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 221,
-"Emma S. Clark Library": 214,
+"Emma S. Clark Library": 213,
 "Stony Brook Village Center": 18,
-"Long Island Museum": 48,
+"Long Island Museum": 0,
 "Ward Melville Heritage Org": 6,
 "LI Music Hall of Fame": 6
 },
@@ -25,38 +25,20 @@
 "events": [
 {
 "id": "sbv-2302",
-"title": "The 36th Annual Scarecrow Competition",
+"title": "Vote for Your Favorite Scarecrow! The 36th Annual Scarecrow Competition",
 "start": "2026-08-19T00:00:00",
 "end": "2026-10-31T23:59:59",
 "allday": true,
 "venue": "Stony Brook Village Center",
 "addr": "111 Main St, Stony Brook, NY 11790",
 "url": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/",
-"desc": "REGISTRATION FOR THE 2026 SCARECROW COMPETITION IS NOW OPEN! Deadline for Registration has been extended to Monday, September 28th Click here to download the registration form: https://drive.google.com/file/d/1t6VmqZXkcxDkBoUDE89eMptEbI5K84JE/view?usp=sharing ",
+"desc": "Scarecrows of all shapes, sizes, and personalities will soon take over Stony Brook Village Center for the Ward Melville Heritage Organization’s (WMHO) 36th Annual Scarecrow Competition . A beloved community tradition, the competition invites visitors to stroll",
 "img": "https://stonybrookvillage.com/wp-content/uploads/2026/08/2-_DSC0710.jpg",
 "src": "sbv",
 "tags": [
 "free",
-"history"
-],
-"status": ""
-},
-{
-"id": "lim-3225801",
-"title": "Blue Star Welcome Week 2026 for Military Families",
-"start": "2026-09-26T12:00:00",
-"end": "2026-10-04T17:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/blue-star-welcome-week-2026/",
-"desc": "The Long Island Museum is proud to partner with Blue Star Museums , offering free museum admission to active and retired military personnel and their family all year long. During Blue Star Welcome Week 2026 (September 26–October 4, 2026), we extend our Museum ",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/Blue-Star-Welcome-Week.jpg",
-"src": "lim",
-"tags": [
-"free",
 "kids",
-"arts"
+"history"
 ],
 "status": ""
 },
@@ -81,23 +63,6 @@
 "status": "",
 "pick": true,
 "rank": 4
-},
-{
-"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58872",
-"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
-"start": "2026-09-28T10:30:00",
-"end": "2026-09-28T11:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58872",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Themed activities that you and your child can enjoy together. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/12/2026 @ 10:30am Categories: Story Time, Children.",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": ""
 },
 {
 "id": "emmaclark-preschool-storytime-ages-35-5-yrs-58882",
@@ -510,25 +475,6 @@
 "status": ""
 },
 {
-"id": "lim-10000256",
-"title": "Stitch & Chit-Ch(at) – FREE!",
-"start": "2026-10-02T14:00:00",
-"end": "2026-10-02T15:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/stitch/2026-10-02/",
-"desc": "Whether you knit, crochet, embroider, or hand-sew, gather at the LIM to do what you love. Bring your work-in-progress and enjoy some good company. Open to adults and children 12 and up. This program will take place in the Studio located on the East side of cam",
-"img": "https://longislandmuseum.org/wp-content/uploads/2025/12/Stitch-and-Chit-Chat.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": ""
-},
-{
 "id": "cur-tvfm",
 "title": "Three Village Farmers & Artisans Market",
 "start": "2026-10-02T15:00",
@@ -818,25 +764,6 @@
 "status": ""
 },
 {
-"id": "lim-3225658",
-"title": "Culper Spy Day – FREE!",
-"start": "2026-10-03T12:00:00",
-"end": "2026-10-03T17:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/culper-spy-day-2026/",
-"desc": "Stop by during the Three Village Historical Society and Tri-Spy Tour’s 12th Annual Culper Spy Day, celebrating the rich Revolutionary heritage of our area. Explore LIM’s The Seat of Action: Long Island in the American Revolution and Beyond exhibition and view ",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Seat-of-Action.jpg",
-"src": "lim",
-"tags": [
-"free",
-"history",
-"arts"
-],
-"status": ""
-},
-{
 "id": "wmho-1191",
 "title": "Culper Spy Day Tours at The Brewster House",
 "start": "2026-10-03T12:00:00",
@@ -850,43 +777,6 @@
 "src": "wmho",
 "tags": [
 "history"
-],
-"status": ""
-},
-{
-"id": "lim-3223856",
-"title": "Hawkins-Mount House Tours | LI250",
-"start": "2026-10-03T12:30:00",
-"end": "2026-10-03T16:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/hawkins-mount-house-tours-li250-3/",
-"desc": "As part of LIM’s America at 250 programming, join us for special tours of the historic Hawkins-Mount House! American genre painter William Sidney Mount created some of his most memorable scenes from inside an attic studio at this large, rambling 18th-century h",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/01/Mount-house-Tour-event-image.jpg",
-"src": "lim",
-"tags": [
-"history",
-"arts"
-],
-"status": ""
-},
-{
-"id": "lim-3225654",
-"title": "Long Island During the American Revolution – FREE Lecture",
-"start": "2026-10-03T13:00:00",
-"end": "2026-10-03T14:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/revolution-talk/",
-"desc": "Join former Newsday staff writer and local history author Bill Bleyer as he traces the captivating history of the events surrounding the largest engagement of the American Revolution—the 1776 Battle of Long Island, a major defeat for the colonists that could h",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Battle-of-Long-Island.jpg",
-"src": "lim",
-"tags": [
-"free",
-"history",
-"stage"
 ],
 "status": ""
 },
@@ -1129,25 +1019,6 @@
 "tags": [
 "kids",
 "stage"
-],
-"status": ""
-},
-{
-"id": "lim-3225641",
-"title": "Sunday Street Concert Series: Rory Block",
-"start": "2026-10-04T17:00:00",
-"end": "2026-10-04T18:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/rory-block/",
-"desc": "Due to an unexpected injury, this performance has been postponed indefinitely. We hope to reschedule soon. Please stay tuned! The Long Island Museum, Port Jefferson Arts Council, and WUSB-FM are proud to present an eclectic music series featuring nationally an",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Rory-Block-Cover.jpg",
-"src": "lim",
-"tags": [
-"music",
-"stage",
-"arts"
 ],
 "status": ""
 },
@@ -1400,25 +1271,6 @@
 "status": ""
 },
 {
-"id": "lim-3225151",
-"title": "MORNINGS@LIM: The Troubadours Concert",
-"start": "2026-10-07T11:00:00",
-"end": "2026-10-07T12:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/the-troubadours/",
-"desc": "Mornings @ LIM are free monthly sessions open to individuals living with dementia and their care partners. They offer time for creative engagement and social connection in our galleries and art studio, as well as through special music and movie programs. Music",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/06/Guitar-Player-Stock.jpg",
-"src": "lim",
-"tags": [
-"free",
-"music",
-"stage"
-],
-"status": ""
-},
-{
 "id": "emmaclark-harbormen-chorus-concert-58130",
 "title": "The Harbormen Chorus Concert",
 "start": "2026-10-07T12:30:00",
@@ -1469,6 +1321,23 @@
 "tags": [
 "kids",
 "stage"
+],
+"status": ""
+},
+{
+"id": "pjchamber-15013",
+"title": "Fall Blood Drive",
+"start": "2026-10-08T06:30:00",
+"end": "2026-10-08T19:00:00",
+"allday": false,
+"venue": "John T. Mather Memorial Hospital",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/fall-blood-drive/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
 ],
 "status": ""
 },
