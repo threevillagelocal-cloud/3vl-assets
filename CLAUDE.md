@@ -22,3 +22,6 @@ Guard (3vl-site-guard, every 30 min) watches post-sources/page-*.html (shortcode
 
 ## Gotcha: CSS escapes through the guard
 The guard's restore PUT strips backslashes, so CSS like content:"97" breaks. Use the literal character in page CSS (e.g. content:"↗").
+
+## jsDelivr "Package size exceeded 50 MB" on a new pin (9/28/2026)
+A short-SHA pin (`@c51d46b03fb8`) returned "Package size exceeded the configured limit of 50 MB" instead of the file, and jsDelivr CACHES that error for that URL. The same commit worked via the FULL 40-char SHA. After every pin bump, curl each pinned file and grep for real content (not just HTTP 200). If you get the size error, pin the full SHA instead.
