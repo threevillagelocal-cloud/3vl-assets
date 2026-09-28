@@ -25,6 +25,17 @@ var cover=$('.coverPhoto');if(cover){cover.classList.add('pf-coverimg')}
   if(img.complete&&img.naturalWidth)go();else img.onload=go})($('.profile-image img',hdr));
 /* About section first in the overview tab (above Contact Information / Company Details) */
 (function(){var ab=$('.overview-tab-about-me');if(!ab)return;var fd=$('.field-about_me',ab);if(!fd||!fd.textContent.trim())return;var pane=ab.closest('.tab-pane');if(pane&&pane.firstElementChild!==ab)pane.insertBefore(ab,pane.firstElementChild)})();
+/* Contact Information + Company Details merged into one compact "Business details" card grid */
+(function(){var pane=$('.tab-pane.active')||$('.tab-pane');if(!pane||$('.pf-facts',pane))return;
+  var tvs=$$('.table-view',pane).filter(function(t){return !t.closest('.overview-tab-about-me')&&$('.table-view-group',t)});if(!tvs.length)return;
+  var box=document.createElement('div');box.className='pf-facts';box.innerHTML='<h2>Business details</h2><div class="pf-fgrid"></div>';var grid=$('.pf-fgrid',box);
+  tvs.forEach(function(t){$$('.table-view-group',t).forEach(function(g){
+    if(g.classList.contains('table-display-company'))return;
+    var v=$('.col-sm-8',g);if(!v||!v.textContent.trim()&&!v.querySelector('a,img,i'))return;
+    g.classList.add('pf-fact');if(v.textContent.trim().length>90)g.classList.add('pf-wide');grid.appendChild(g)})});
+  if(!grid.children.length)return;
+  var ab=$('.overview-tab-about-me',pane);if(ab&&ab.parentNode===pane)pane.insertBefore(box,ab.nextSibling);else pane.insertBefore(box,tvs[0]);
+  tvs.forEach(function(t){t.style.display='none'})})();
 /* tidy */
 $$('.make-connection').forEach(function(e){e.style.display='none'});
 $$('.content_w_sidebar > .col-md-3 .module').forEach(function(m){if(!m.textContent.trim()&&!m.querySelector('iframe,img'))m.style.display='none'});

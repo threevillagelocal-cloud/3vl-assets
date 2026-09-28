@@ -37,3 +37,14 @@ html.pf-on .content_w_sidebar>.col-md-3 .module{border-radius:18px;border:1px so
 html.pf-on .profile-header-top-category{margin-right:10px}
 html.pf-on .member-profile-header .profile-image img{width:100%!important;height:auto!important;max-height:130px;object-fit:contain}
 @media(max-width:760px){html.pf-on .member-profile-header .profile-image img{max-width:220px!important;max-height:110px!important;margin:0 auto}html.pf-on img.pf-coverimg{border-radius:16px!important}}
+/* Business details: Contact Information + Company Details as one compact card grid */
+html.pf-on .member_profile .pf-facts{margin:8px 0 26px}
+html.pf-on .member_profile .pf-facts h2{margin:0 0 14px!important;padding:0!important}
+html.pf-on .member_profile .pf-fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+html.pf-on .member_profile .pf-fgrid .pf-fact{background:#fff;border:1px solid #e6ebf1;border-top:3px solid #f2a93b;border-radius:12px;padding:12px 14px!important;margin:0!important;display:block}
+html.pf-on .member_profile .pf-fgrid .pf-fact.pf-wide{grid-column:1/-1}
+html.pf-on .member_profile .pf-fgrid .pf-fact>div{float:none!important;width:auto!important;padding:0!important;margin:0!important;text-align:left!important}
+html.pf-on .member_profile .pf-fgrid .pf-fact .bold{font-size:11.5px!important;font-weight:700;margin:0 0 4px!important;white-space:normal}
+html.pf-on .member_profile .pf-fgrid .pf-fact .col-sm-8{color:#1b2f45;font-size:15px;line-height:1.45;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+html.pf-on .member_profile .pf-fgrid .pf-fact .click-to-call-button{padding:0;border:0;background:none}
+@media(max-width:767px){html.pf-on .member_profile .pf-fgrid{gap:0;background:#fff;border:1px solid #e6ebf1;border-top:3px solid #f2a93b;border-radius:12px;overflow:hidden}html.pf-on .member_profile .pf-fgrid .pf-fact{border:0!important;border-bottom:1px solid #eef2f6!important;border-radius:0!important;padding:10px 14px!important}html.pf-on .member_profile .pf-fgrid .pf-fact:last-child{border-bottom:0!important}html.pf-on .member_profile .pf-fgrid .pf-fact .col-sm-8{font-size:14.5px}}
