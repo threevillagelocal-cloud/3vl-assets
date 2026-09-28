@@ -52,7 +52,7 @@
 .ap3 .ap3-store{cursor:pointer;animation:ap3Glow 3.2s ease-in-out 1.4s infinite,ap3Bob 3s ease-in-out infinite}
 .ap3 .ap3-store + .ap3-store{animation-delay:1.9s,1.5s}
 .ap3 .ap3-store:hover{animation-play-state:paused}
-.ap3 .ap3-store:before{content:"97";position:absolute;top:6px;right:8px;width:20px;height:20px;border-radius:50%;background:var(--gold);color:var(--navy);font-size:12px;font-weight:800;line-height:20px;text-align:center;z-index:2;box-shadow:0 2px 6px rgba(0,0,0,.35)}
+.ap3 .ap3-store:before{content:"↗";position:absolute;top:6px;right:8px;width:20px;height:20px;border-radius:50%;background:var(--gold);color:var(--navy);font-size:12px;font-weight:800;line-height:20px;text-align:center;z-index:2;box-shadow:0 2px 6px rgba(0,0,0,.35)}
 .ap3-ic{animation:ap3Float 4s ease-in-out infinite}
 .ap3-feat:nth-child(2) .ap3-ic{animation-delay:.6s}.ap3-feat:nth-child(3) .ap3-ic{animation-delay:1.2s}.ap3-feat:nth-child(4) .ap3-ic{animation-delay:1.8s}
 .ap3-feat:hover .ap3-ic{transform:scale(1.12) rotate(-6deg);transition:transform .25s}
