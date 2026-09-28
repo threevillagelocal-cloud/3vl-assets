@@ -128,8 +128,8 @@ def build(edition, local=False, sha="master", d=None, live=None):
     w('<link rel="preload" as="image" href="%s" media="(max-width:720px)">' % img(d["hero"]["img"], True))
     ver = ("?v=%d" % int(__import__("time").time())) if local else ""
     w('<link rel="stylesheet" href="%sweekender.css%s">' % (base, ver))
-    w('<div class="wk" id="wk-top" data-start="%s" data-end="%s" data-assets="%s" data-edition="%s" data-feed="%s"%s>' % (
-        d["starts"], d["ends"], esc(base), edition, esc(feed_url), (' data-live="%slive/events.json"' % base) if local else ""))
+    w('<div class="wk" id="wk-top" data-start="%s" data-end="%s" data-assets="%s" data-edition="%s" data-feed="%s"%s data-guides="%s">' % (
+        d["starts"], d["ends"], esc(base), edition, esc(feed_url), (' data-live="%slive/events.json"' % base) if local else "", esc(json.dumps(d.get("guides", [])))))
 
     # HERO: compact live intro for Three Village Now
     w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="" width="1600" height="1067"></picture>'
@@ -168,6 +168,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
         when = esc(e["when"]) if ongoing else "%s &middot; %s" % (dshort(e["start"]), fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"))
         title = ('<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(e["url"]), esc(e["title"]))) if ongoing and e.get("url") else esc(e["title"])
         acts = actions(e)
+        g = next((x for x in d.get("guides", []) if x[0] in e["title"].lower()), None)
+        if g:  # a 3VL guide article for this event: link the title + add a guide button (9/28)
+            title = '<a href="%s">%s</a>' % (esc(g[1]), esc(e["title"]))
+            acts = acts.replace('<div class="wk-acts">', '<div class="wk-acts"><a class="wk-guide" href="%s">&#128373;&#65039; %s</a>' % (esc(g[1]), esc(g[2])), 1)
         if ongoing and e.get("url"):
             acts = re.sub(r'<button type="button" class="wk-cal"[^<]*</button>', '<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a>' % esc(e["url"]), acts)
         w('<article class="wk-pick wk-rv" %s style="--i:%d"><div class="wk-pimg"><img src="%s" alt="%s" loading="lazy" width="720" height="480">'

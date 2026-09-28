@@ -873,3 +873,8 @@ a.nh-story{flex:0 0 300px;display:flex;gap:12px;align-items:center;padding:10px;
 .nh-sb b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:15px;line-height:1.25;word-break:normal;overflow-wrap:normal}
 .nh-more{font-size:inherit;font-weight:800;color:#0a6fb5!important;text-decoration:none!important;white-space:nowrap}
 @media(max-width:600px){a.nh-biz{flex-basis:78%}a.nh-story{flex-basis:84%}a.nh-cat{font-size:14px;padding:8px 13px}.nh-cats{flex-wrap:nowrap;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:none}.nh-cats::-webkit-scrollbar{display:none}}
+/* 9/28: guide-article button on Top Things to Do cards */
+.wk-pick .wk-acts{flex-wrap:wrap}
+a.wk-guide{flex:1 0 100%;display:flex!important;align-items:center;justify-content:center;gap:6px;padding:9px 12px;border-radius:12px;background:linear-gradient(180deg,#ffd76a,#ffc53d);color:#13233a!important;font-weight:800;font-size:14px;text-decoration:none!important;white-space:nowrap;margin-bottom:6px}
+.wk-ptitle a{color:inherit!important;text-decoration:none!important}
+.wk-ptitle a:hover{text-decoration:underline!important}
