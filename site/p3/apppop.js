@@ -1,11 +1,11 @@
 /* 3VL app popup: "Your only ad today". App users only (html.tvl-inapp, set by widget 13), after ~45s of use
    (counted across pages), at most once per day per person. Shows one VIP (rotates daily) and links to their listing.
-   Preview anywhere with ?tvlpop=1 */
+   Preview anywhere with ?tvlpop=1, or one VIP with ?tvlpop=<member id | banner file name> */
 (function(){
 'use strict';
 var me=document.currentScript||document.querySelector('script[src*="apppop.js"]');
 var BASE=me?me.src.replace(/site\/p3\/apppop\.js.*$/,''):'';
-var FORCE=/[?&]tvlpop=1/.test(location.search),SECS=45;
+var FM=location.search.match(/[?&]tvlpop=([\w-]+)/),FORCE=!!FM,SECS=45;
 var SKIP=/\/(account|login|checkout|member-match|join|promotion|getmatched|register|claim|admin)/i;
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
 function today(){var d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
@@ -60,7 +60,7 @@ function show(b){
   var c=w.querySelector('.tp-call');if(c)c.addEventListener('click',function(){track('app_pop_click',{biz:b.name,biz_id:b.id,to:'call'})});
 }
 
-function load(){fetch(BASE+'weekender/banners.json').then(function(r){return r.json()}).then(function(l){if(l&&l.length)show(pick(l))}).catch(function(){})}
+function load(){fetch(BASE+'weekender/banners.json').then(function(r){return r.json()}).then(function(l){if(!l||!l.length)return;var f=FM&&FM[1]!=='1'&&l.filter(function(b){return b.id===FM[1]||b.img.indexOf('/'+FM[1]+'.')>-1})[0];show(f||pick(l))}).catch(function(){})}  /* ?tvlpop=<id or image name> previews one VIP */
 
 function go(){
   if(FORCE){load();return}
