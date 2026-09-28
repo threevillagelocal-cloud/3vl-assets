@@ -63,12 +63,14 @@ function renderLive(data){
     var sp=root.querySelector('#wk-sched .wk-h2 span');if(sp)sp.textContent='What\u2019s Up This Week';
     var aw=root.querySelector('#wk-sched .wk-allwk p.wk-dayh b');if(aw)aw.textContent='Ongoing';
   }
-  /* top picks: soonest upcoming events that have photos (curated picks first) */
+  /* top things to do: soonest upcoming events that have photos (curated picks first); the build's "Coming up" radar cards stay at the end */
+  var RAD=(function(){var b=document.querySelector('#wk-picks .wk-picks');return b?[].slice.call(b.querySelectorAll('.wk-radar')):[]})();
   var pk=$('wk-picks'),box=pk&&pk.querySelector('.wk-picks');
   if(box){var cand=evs.filter(function(e){return e.img&&!e.status&&e.e>t}).sort(function(a,b){return (b.pick?1:0)-(a.pick?1:0)||(a.rank||9)-(b.rank||9)||a.s-b.s});
-    var cur=cand.filter(function(e){return e.pick}),soon=cand.filter(function(e){return !e.pick&&e.s<new Date(t0.getTime()+3*864e5)}),pick=cur.concat(soon,cand.filter(function(e){return cur.indexOf(e)<0&&soon.indexOf(e)<0})).slice(0,Math.min(6,Math.max(3,cur.length)));
+    var cur=cand.filter(function(e){return e.pick}),soon=cand.filter(function(e){return !e.pick&&e.s<new Date(t0.getTime()+3*864e5)}),pick=cur.concat(soon,cand.filter(function(e){return cur.indexOf(e)<0&&soon.indexOf(e)<0})).slice(0,6);
     if(pick.length>=3)box.innerHTML=pick.map(function(e,i){return '<article class="wk-pick wk-rv is-in" '+attrs(e).replace('data-id="','data-id="pk-')+'><div class="wk-pimg"><img src="'+esc2(e.img)+'" alt="'+esc2(e.title)+'" loading="lazy"><span class="wk-pnum">0'+(i+1)+'</span>'+(e.ongoing?'':'<span class="wk-pstat" data-status></span>')+'</div>'+
       '<div class="wk-pbody"><p class="wk-pwhen">'+(e.ongoing?esc2(e.whenText):ds(e.s)+' &middot; '+when(e))+'</p><h3 class="wk-ptitle">'+(e.ongoing&&e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+'</h3><p class="wk-pwhere">&#128205; '+esc2(e.venue)+'</p><p class="wk-pdesc">'+esc2(e.desc)+'</p><div class="wk-tags">'+chips(e.tags)+'</div>'+(e.ongoing?acts(e).replace(/<button type="button" class="wk-cal"[^<]*<\/button>/,'<a class="wk-dir" href="'+esc2(e.url)+'" target="_blank" rel="noopener">&#128279; Details</a>'):acts(e))+'</div></article>'}).join('')}
+  if(box)RAD.forEach(function(r){if(!box.contains(r)){r.classList.add('is-in');box.appendChild(r)}});
   /* closings strip: only show items that are today or later */
   var cx=$('wk-cx');if(cx){var items=(data.closings||[]).filter(function(c){return new Date(c.date+'T23:59:00')>=t0});
     if(!items.length)cx.remove();else{var row=cx.querySelector('.wk-cxrow');if(row)row.innerHTML=items.map(function(c){return '<div class="wk-cxi" data-off="'+esc2(c.status)+'"><p class="wk-cxn">'+esc2(c.title)+'</p><p class="wk-cxd">'+esc2(c.note)+'</p></div>'}).join('')}}

@@ -138,9 +138,9 @@ def build(edition, local=False, sha="master"):
     # NAV
     w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
       '<a href="#wk-picks">&#11088; Things to Do</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-wx">&#9728;&#65039; Weather</a>'
-      '<a href="#wk-sched">&#128197; Schedule</a><a href="#wk-spy">&#128373;&#65039; Spy Day</a>'
-      '<a href="#wk-next">&#128302; On the Radar</a>'
-      '</div></nav>')
+      '<a href="#wk-sched">&#128197; Schedule</a>'
+      + (('<a class="wk-spylink" href="%s">&#128373;&#65039; Spy Day</a>' % esc(d["spy_link"])) if d.get("spy_link") else '')
+      + '</div></nav>')
     w('<div class="wk-ticker" id="wk-ticker" hidden><span class="wk-tkl"><i></i>LIVE</span><div class="wk-tkm"><div class="wk-tkt" id="wk-tkt"></div></div></div>')
 
     w('<div class="wk-grid"><div class="wk-main">')
@@ -153,7 +153,7 @@ def build(edition, local=False, sha="master"):
         w('</div></section>')
 
     # TOP THINGS TO DO (was "Top Picks"; renamed 9/28 so it is not mistaken for business picks)
-    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Things to Do</span><small>If you only do %s things</small>' % {3: 'three', 4: 'four', 5: 'five', 6: 'six'}.get(len(d['picks']), 'a few') + '</h2><div class="wk-picks wk-swipe">')
+    w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Things to Do</span><small>%s</small>' % ("This weekend &amp; coming up" if d.get("next") else "If you only do %s things" % {3: 'three', 4: 'four', 5: 'five', 6: 'six'}.get(len(d['picks']), 'a few')) + '</h2><div class="wk-picks wk-swipe">')
     for i, pid in enumerate(d["picks"]):
         e = ev[pid]
         ongoing = bool(e.get("when"))
@@ -169,6 +169,14 @@ def build(edition, local=False, sha="master"):
           '<p class="wk-icred">%s</p></article>' % (
             evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, "" if ongoing else '<span class="wk-pstat" data-status></span>',
             when, title, esc(V[e["venue"]]["name"]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), acts, esc(e.get("credit", ""))))
+    # "On the Radar" items ride at the end of the same sideways row (9/28: no separate section, no extra height)
+    for n in d.get("next", []):
+        w('<article class="wk-pick wk-radar wk-rv"><div class="wk-pimg">%s<span class="wk-pnum wk-soon">Coming up</span></div>'
+          '<div class="wk-pbody"><p class="wk-pwhen">%s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pdesc">%s</p>%s</div>%s</article>' % (
+            ('<img src="%s" alt="%s" loading="lazy" width="720" height="480">' % (img(n["img"], True), esc(n["title"]))) if n.get("img") else "",
+            esc(n["when"]), (('<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(n["url"]), esc(n["title"]))) if n.get("url") else esc(n["title"])),
+            esc(n["desc"]), ('<div class="wk-acts"><a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a></div>' % esc(n["url"])) if n.get("url") else "",
+            ('<p class="wk-icred">%s</p>' % esc(n["credit"])) if n.get("credit") else ""))
     w('</div></section>')
 
     # EAT & DRINK (exterior photo + dish inset; one card per business)
@@ -186,6 +194,8 @@ def build(edition, local=False, sha="master"):
             " wk-spfeat" if sp.get("feature") else "", pic, esc(sp["biz"]), esc(sp["title"]), esc(sp["when"]), esc(sp["desc"]),
             badge, esc(sp["srcName"]), call, gmap(sp["venue"])))
     w('</div><p class="wk-note">Own a local spot with a special? <a href="https://www.threevillagelocal.com/promotion">Send it to us</a> and we&rsquo;ll feature it free.</p></section>')
+
+    w('<div class="wk-adslot" data-slot="2"></div>')  # 9/28: moved up from between Spy Day and On the Radar
 
     # WEATHER (compact)
     w('<section class="wk-sec" id="wk-wx"><h2 class="wk-h2"><span>Weather</span><small>Live from the National Weather Service</small></h2>'
@@ -232,33 +242,34 @@ def build(edition, local=False, sha="master"):
 
     w('<div class="wk-adslot" data-slot="1"></div>')
 
-    # SPY DAY FEATURE
-    s = ev["spyday"]
-    w('<section class="wk-sec wk-spy" id="wk-spy"><div class="wk-spyin" style="--spybg:url(%s)"><p class="wk-spyk">' % img("spyday") + 'Saturday &middot; Setauket &middot; Free</p>'
-      '<h2 class="wk-spyt">Culper Spy Day <span>Field Guide</span></h2>'
-      '<p class="wk-spyd">In 1778 a handful of Setauket neighbors ran the spy ring that fed George Washington the intel he needed. '
-      'Twelve years in, their hometown throws them a party. Here is how to do the whole day.</p>'
-      '<div class="wk-cipher" id="wk-cipher" aria-label="Decoded message"><span class="wk-ciphl">Intercepted message</span><b data-plain="MEET AT THE VILLAGE GREEN AT TEN">&nbsp;</b></div>')
-    w('<button type="button" class="wk-more wk-spytog" data-more="wk-spydet">Open the full field guide &#9662;</button><div class="wk-spydet" id="wk-spydet">')
-    w('<div class="wk-trolley"><p class="wk-trh"><span>&#128651; Free hop-on, hop-off trolley</span><small>10 AM-4 PM &middot; first come, first served</small></p>'
-      '<svg class="wk-route" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true"><path id="wk-rpath" d="M20 90 C 120 10, 200 10, 300 60 S 480 110, 580 30" /></svg>'
-      '<div class="wk-bus" id="wk-bus">&#128651;</div><ol class="wk-stops">')
-    for i, t in enumerate(d["trolley"]):
-        w('<li style="--i:%d"><b>%s</b><span>%s</span></li>' % (i, esc(t["stop"]), esc(t["note"])))
-    w('</ol></div>')
-    w('</div>')
-    w('<p class="wk-spyf"><a class="wk-btn wk-btng" href="%s" target="_blank" rel="noopener">Full schedule &amp; digital map &rarr;</a>'
-      '<button type="button" class="wk-btn wk-btno wk-save" data-save="spyday" aria-pressed="false"><span class="wk-star">&#9734;</span><span class="wk-savet">Save Spy Day</span></button></p></div></section>' % s["url"])
+    if d.get("spy_feature"):  # 9/28: off - replaced by the Spy Day link in the nav
+        # SPY DAY FEATURE
+        s = ev["spyday"]
+        w('<section class="wk-sec wk-spy" id="wk-spy"><div class="wk-spyin" style="--spybg:url(%s)"><p class="wk-spyk">' % img("spyday") + 'Saturday &middot; Setauket &middot; Free</p>'
+          '<h2 class="wk-spyt">Culper Spy Day <span>Field Guide</span></h2>'
+          '<p class="wk-spyd">In 1778 a handful of Setauket neighbors ran the spy ring that fed George Washington the intel he needed. '
+          'Twelve years in, their hometown throws them a party. Here is how to do the whole day.</p>'
+          '<div class="wk-cipher" id="wk-cipher" aria-label="Decoded message"><span class="wk-ciphl">Intercepted message</span><b data-plain="MEET AT THE VILLAGE GREEN AT TEN">&nbsp;</b></div>')
+        w('<button type="button" class="wk-more wk-spytog" data-more="wk-spydet">Open the full field guide &#9662;</button><div class="wk-spydet" id="wk-spydet">')
+        w('<div class="wk-trolley"><p class="wk-trh"><span>&#128651; Free hop-on, hop-off trolley</span><small>10 AM-4 PM &middot; first come, first served</small></p>'
+          '<svg class="wk-route" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true"><path id="wk-rpath" d="M20 90 C 120 10, 200 10, 300 60 S 480 110, 580 30" /></svg>'
+          '<div class="wk-bus" id="wk-bus">&#128651;</div><ol class="wk-stops">')
+        for i, t in enumerate(d["trolley"]):
+            w('<li style="--i:%d"><b>%s</b><span>%s</span></li>' % (i, esc(t["stop"]), esc(t["note"])))
+        w('</ol></div>')
+        w('</div>')
+        w('<p class="wk-spyf"><a class="wk-btn wk-btng" href="%s" target="_blank" rel="noopener">Full schedule &amp; digital map &rarr;</a>'
+          '<button type="button" class="wk-btn wk-btno wk-save" data-save="spyday" aria-pressed="false"><span class="wk-star">&#9734;</span><span class="wk-savet">Save Spy Day</span></button></p></div></section>' % s["url"])
 
-    w('<div class="wk-adslot" data-slot="2"></div>')
 
-    # NEXT WEEKEND
-    w('<section class="wk-sec" id="wk-next"><h2 class="wk-h2"><span>On the Radar</span><small>Save the dates</small></h2><div class="wk-next wk-swipe">')
-    for n in d["next"]:
-        w('<div class="wk-nx wk-rv"%s><p class="wk-nxw">%s</p><p class="wk-nxt">%s</p><p class="wk-nxd">%s</p>%s</div>' % (
-            (' style="--nx:url(%s)"' % img(n["img"], True)) if n.get("img") else "", esc(n["when"]), esc(n["title"]), esc(n["desc"]),
-            ('<span class="wk-nxc">%s</span>' % esc(n["credit"])) if n.get("credit") else ""))
-    w('</div></section>')
+    if d.get("radar_section"):  # 9/28: off - radar items now ride at the end of Top Things to Do
+        # NEXT WEEKEND
+        w('<section class="wk-sec" id="wk-next"><h2 class="wk-h2"><span>On the Radar</span><small>Save the dates</small></h2><div class="wk-next wk-swipe">')
+        for n in d["next"]:
+            w('<div class="wk-nx wk-rv"%s><p class="wk-nxw">%s</p><p class="wk-nxt">%s</p><p class="wk-nxd">%s</p>%s</div>' % (
+                (' style="--nx:url(%s)"' % img(n["img"], True)) if n.get("img") else "", esc(n["when"]), esc(n["title"]), esc(n["desc"]),
+                ('<span class="wk-nxc">%s</span>' % esc(n["credit"])) if n.get("credit") else ""))
+        w('</div></section>')
 
     # SUBMIT + SHARE + APP
     w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got something you want to promote?</p><p class="wk-subd">Three Village Local updates every day. '

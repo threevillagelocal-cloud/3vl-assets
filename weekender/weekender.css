@@ -845,3 +845,6 @@
 @keyframes wkChevNudge{0%,70%,100%{transform:translateY(0)}80%{transform:translateY(3px)}90%{transform:translateY(-1px)}}
 @media (prefers-reduced-motion:reduce){#wk-top .wk-chev{animation:none!important}}
 /* VIP rail: full-size ads; the rail scrolls with the page until its bottom is on screen, then sticks (top set by railStick() in weekender.js) */
+/* 9/28: 'Coming up' radar cards at the end of Top Things to Do */
+.wk-pnum.wk-soon{font-size:13px!important;line-height:1!important;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px;background:#ffc53d;color:#13233a!important;-webkit-text-stroke:0;text-shadow:none;white-space:nowrap;word-break:normal}
+.wk-radar .wk-pwhen{color:#b7862a}
