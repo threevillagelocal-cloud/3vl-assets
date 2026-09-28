@@ -23,6 +23,8 @@ var cover=$('.coverPhoto');if(cover){cover.classList.add('pf-coverimg')}
   if(r<=l||b<=t||(r-l)*(b-t)>W*H*.92)return;var p=Math.round(Math.max(r-l,b-t)*.05);l=Math.max(0,l-p);t=Math.max(0,t-p);r=Math.min(W-1,r+p);b=Math.min(H-1,b+p);
   var o=document.createElement('canvas');o.width=r-l+1;o.height=b-t+1;o.getContext('2d').drawImage(c,l,t,o.width,o.height,0,0,o.width,o.height);img.onload=null;img.removeAttribute('width');img.removeAttribute('height');img.src=o.toDataURL('image/png')}catch(e){}}
   if(img.complete&&img.naturalWidth)go();else img.onload=go})($('.profile-image img',hdr));
+/* About section first in the overview tab (above Contact Information / Company Details) */
+(function(){var ab=$('.overview-tab-about-me');if(!ab)return;var fd=$('.field-about_me',ab);if(!fd||!fd.textContent.trim())return;var pane=ab.closest('.tab-pane');if(pane&&pane.firstElementChild!==ab)pane.insertBefore(ab,pane.firstElementChild)})();
 /* tidy */
 $$('.make-connection').forEach(function(e){e.style.display='none'});
 $$('.content_w_sidebar > .col-md-3 .module').forEach(function(m){if(!m.textContent.trim()&&!m.querySelector('iframe,img'))m.style.display='none'});
