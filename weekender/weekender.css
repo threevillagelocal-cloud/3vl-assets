@@ -846,7 +846,7 @@
 @media (prefers-reduced-motion:reduce){#wk-top .wk-chev{animation:none!important}}
 /* VIP rail: both ads always fit the screen height (sticky rail never taller than the window) */
 @media (min-width:1061px){
-  #wk-top .wk-railin{top:calc(var(--hdr,0px) + 12px);padding-top:14px;max-height:calc(100vh - var(--hdr,0px) - 24px)}
-  #wk-top .wk-railin .wk-adrot{width:100%;max-width:calc(((100vh - var(--hdr,0px) - 150px) / 2 - 74px) / .83333 + 20px);margin-left:auto;margin-right:auto}
+  #wk-top .wk-railin{top:calc(var(--hdr,0px) + 92px);padding-top:0;max-height:calc(100vh - var(--hdr,0px) - 104px)}
+  #wk-top .wk-railin .wk-adrot{width:100%;max-width:calc(((100vh - var(--hdr,0px) - 222px) / 2 - 74px) / .83333 + 20px);margin-left:auto;margin-right:auto}
   #wk-top .wk-adrot2{margin-top:0}
 }
