@@ -21,7 +21,7 @@ var CSS='#tvlpop{position:fixed;inset:0;z-index:2147483000;display:flex;align-it
 '#tvlpop .tp-sub{margin:9px 0 0!important;color:#dfe8f2;font-size:14.5px;line-height:1.4;font-weight:600}'+
 '#tvlpop .tp-x{position:absolute;top:12px;right:12px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.6);background:rgba(255,255,255,.22);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;font-size:28px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:0 6px 16px rgba(0,0,0,.25);z-index:2}'+
 '#tvlpop .tp-img{display:block;position:relative;background:#eef3f8}'+
-'#tvlpop .tp-img img{display:block;width:100%;height:auto;aspect-ratio:6/5;object-fit:cover}'+
+'#tvlpop .tp-img img{display:block;width:100%;height:auto;max-height:52vh;object-fit:contain;background:#fff}'+
 '#tvlpop .tp-body{padding:14px 18px 16px}'+
 '#tvlpop .tp-k{margin:0!important;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#0a6fb5}'+
 '#tvlpop .tp-name{margin:3px 0 12px!important;font-size:21px;line-height:1.15;font-weight:800;color:#1b2f45;word-break:normal;overflow-wrap:normal}'+
@@ -43,7 +43,7 @@ function show(b){
   w.innerHTML='<div class="tp-card"><button type="button" class="tp-x" aria-label="Close">&times;</button>'+
     '<div class="tp-top"><span class="tp-pill">&#9728;&#65039; Your only ad today</span>'+
     '<p class="tp-sub">One great local business, once a day. Close it and you&rsquo;re ad-free until tomorrow. Promise.</p></div>'+
-    '<a class="tp-img" href="'+esc(b.url)+'"><img src="'+esc(BASE+'weekender/'+b.img)+'" alt="'+esc(b.name)+'"></a>'+
+    '<a class="tp-img" href="'+esc(b.url)+'"><img src="'+esc(BASE+'weekender/'+b.img)+'" alt="'+esc(b.name)+'" style="aspect-ratio:'+(+b.w||6)+'/'+(+b.h||5)+'"></a>'+
     '<div class="tp-body"><p class="tp-k">Today&rsquo;s Local Spotlight</p><p class="tp-name">'+esc(b.name)+'</p>'+
     '<div class="tp-btns"><a class="tp-go" href="'+esc(b.url)+'">Check them out &rarr;</a>'+(tel?'<a class="tp-call" href="tel:'+tel+'">&#128222; Call</a>':'')+'</div>'+
     '<p class="tp-foot">Supporting local keeps Three Village thriving &#128153;</p></div></div>';
