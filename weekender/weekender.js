@@ -433,7 +433,11 @@ function pickArrows(){var sec=$('wk-picks'),row=sec&&sec.querySelector('.wk-pick
     if(im){var y=im.offsetTop+im.offsetHeight/2;L.style.top=R.style.top=y+'px'}
     L.classList.toggle('is-off',!over||row.scrollLeft<8);R.classList.toggle('is-off',!over||row.scrollLeft+row.clientWidth>=row.scrollWidth-8)}
   row.addEventListener('scroll',function(){requestAnimationFrame(upd)},{passive:true});window.addEventListener('resize',upd);setTimeout(upd,300);upd()}
-function boot(){var done=false,fin=function(){if(done)return;done=true;go()};
+function railStick(){var r=root.querySelector('.wk-railin');if(!r)return;
+  function f(){if(innerWidth<1061){r.style.top='';return}var hdr=parseFloat(getComputedStyle(root).getPropertyValue('--hdr'))||0,want=hdr+80,h=r.offsetHeight;
+    r.style.top=Math.min(want,innerHeight-h-16)+'px'}   /* tall rail: stick by its bottom edge so both ads stay fully visible */
+  f();addEventListener('resize',f);setTimeout(f,1500);setTimeout(f,5000);if(window.ResizeObserver)new ResizeObserver(f).observe(r)}
+function boot(){railStick();var done=false,fin=function(){if(done)return;done=true;go()};
   setTimeout(fin,4000);setTimeout(pickArrows,4200);
   fetch(LIVEURL+'?v='+Math.floor(Date.now()/300000),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){if(!done){try{renderLive(d)}catch(e){}fin()}}).catch(fin)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
