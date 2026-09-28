@@ -195,14 +195,28 @@ def civic_ical(src, url, default_venue, default_url):
 
 
 def emmaclark():
+    """Emma S. Clark Library RSS. Uses the library's own photo, room and categories; drops policy/registration boilerplate
+    (library feedback 9/28/2026: an adult cooking class was tagged Kids from the unattended-children notice, and
+    descriptions opened with boilerplate)."""
     t = get("https://emmaclark.librarycalendar.com/events/feed/rss")
     out = []
+    BOILER = [r"Please review the program description for any potential allergies[^.]*\.",
+              r"Children may not be left unattended\.?[^.]*\.[^.]*\.",
+              r"Registration is required\.", r"Registration is not required\.",
+              r"Registration (?:starts|end|ends|opens|closes):\s*\d{2}/\d{2}/\d{4}\s*@\s*\d{1,2}:\d{2}\s*[ap]m",
+              r"Simply supply the barcode number from your local library card to register\.",
+              r"Parents must stay in the Children'?s Library when their children are in a Children'?s program\.",
+              r"Pictures/Videos taken at or for library events.*$"]
     for item in re.findall(r"<item>(.*?)</item>", t, re.S):
         def tag(n):
             m = re.search(r"<%s[^>]*>(.*?)</%s>" % (n, n), item, re.S)
             return html.unescape(re.sub(r"^<!\[CDATA\[|\]\]>$", "", m.group(1).strip())) if m else ""
-        link, title, desc = tag("link"), tag("title"), tag("description")
-        txt = clean(desc)
+        link, title = tag("link"), tag("title")
+        raw = re.search(r"<description>(.*?)</description>", item, re.S)
+        raw = raw.group(1) if raw else ""
+        im = re.search(r'<img[^>]+src="([^"]+)"', raw)
+        image = im.group(1) if im else ""
+        txt = clean(html.unescape(re.sub(r"<!\[CDATA\[.*?\]\]>", " ", raw, flags=re.S)))   # unescape first so <p> breaks become spaces
         m = re.search(r"(\d{2}/\d{2}/\d{2})\s*@\s*(\d{1,2}:\d{2}\s*[ap]m)(?:\s*-\s*(\d{2}/\d{2}/\d{2})\s*@\s*(\d{1,2}:\d{2}\s*[ap]m))?", txt, re.I)
         allday = False
         if m:
@@ -214,19 +228,30 @@ def emmaclark():
             if not m:
                 continue
             s = e = dt.datetime.strptime(m.group(1), "%m/%d/%y"); allday = True; rest = txt[m.end():]
-        loc = ""
-        lm = re.match(r"\s*-?\s*(Off Site|[A-Z][A-Za-z0-9 '&/-]{2,40}?(?:Room|Center|Lawn|Auditorium|Lobby|Gallery)?)\s{1,}(?=[A-Z])", rest)
-        body = re.split(r"Pictures/Videos taken at or for library events", rest)[0]
-        body = clean(body, 600)
-        venue = "Emma S. Clark Memorial Library"
-        if rest.strip().startswith("Off Site"):
-            venue, body = "Off site (Emma S. Clark Library program)", clean(rest.strip()[8:].split("Pictures/Videos")[0], 600)
-        cats = re.findall(r"<category>(.*?)</category>", item)
-        if cats:
-            body = (body + " Categories: " + ", ".join(html.unescape(c) for c in cats) + ".").strip()
-        st = not allday
-        out.append(ev("emmaclark", link.rstrip("/").split("/")[-1], title, s, e, venue,
-                      "120 Main St, Setauket, NY 11733", link, body, "", allday))
+        rest = rest.strip()
+        venue, room = "Emma S. Clark Memorial Library", ""
+        if rest.startswith("Off Site"):
+            venue, rest = "Off site (Emma S. Clark Library program)", rest[8:]
+        elif rest.startswith("Virtual Programming"):
+            venue, rest = "Online (Emma S. Clark Library program)", rest[len("Virtual Programming"):]
+        else:
+            rm = re.match(r"(.{3,60}?)\s+Emma S\. Clark Memorial Library\s*", rest)
+            if rm:
+                room, rest = rm.group(1).strip(), rest[rm.end():]
+            else:
+                rest = re.sub(r"^Emma S\. Clark Memorial Library\s*", "", rest)
+        for rx in BOILER:
+            rest = re.sub(rx, " ", rest, flags=re.I | re.S)
+        rest = rest.replace("childrena little", "children a little")   # library typo, owner OK to fix (9/28)
+        body = clean(rest, 600)
+        cats = [html.unescape(c).strip() for c in re.findall(r"<category>(.*?)</category>", item)]
+        x = ev("emmaclark", link.rstrip("/").split("/")[-1], title, s, e, venue, "120 Main St, Setauket, NY 11733", link, body, image, allday)
+        if room:
+            x["room"] = room
+            x["venue"] = "%s, %s" % (venue, room) if len(venue) + len(room) < 88 else venue
+        x["cats"] = cats
+        x["reg"] = bool(re.search(r"Registration is required", txt, re.I))
+        out.append(x)
     return out
 
 

@@ -1,5 +1,5 @@
 {
-"updated": "2026-09-28T15:20:45.903464+00:00",
+"updated": "2026-09-28T20:10:59.960858+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 46,
@@ -8,7 +8,7 @@
 "Village of Port Jefferson": 221,
 "Emma S. Clark Library": 213,
 "Stony Brook Village Center": 18,
-"Long Island Museum": 0,
+"Long Island Museum": 48,
 "Ward Melville Heritage Org": 6,
 "LI Music Hall of Fame": 6
 },
@@ -43,6 +43,25 @@
 "status": ""
 },
 {
+"id": "lim-3225801",
+"title": "Blue Star Welcome Week 2026 for Military Families",
+"start": "2026-09-26T12:00:00",
+"end": "2026-10-04T17:00:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/blue-star-welcome-week-2026/",
+"desc": "The Long Island Museum is proud to partner with Blue Star Museums , offering free museum admission to active and retired military personnel and their family all year long. During Blue Star Welcome Week 2026 (September 26–October 4, 2026), we extend our Museum ",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/Blue-Star-Welcome-Week.jpg",
+"src": "lim",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
 "start": "2026-09-28T00:00",
@@ -65,55 +84,36 @@
 "rank": 4
 },
 {
-"id": "emmaclark-preschool-storytime-ages-35-5-yrs-58882",
-"title": "PreSchool Storytime Ages 3.5- 5 yrs",
-"start": "2026-09-28T11:30:00",
-"end": "2026-09-28T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58882",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun and meet some new friends. This storytime is geared to give the childrena little independence. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/12/2026 @ 11:",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"arts"
-],
-"status": ""
-},
-{
-"id": "emmaclark-cooking-chef-rob-falling-greek-food-58112",
-"title": "Cooking with Chef Rob: Falling for Greek Food",
-"start": "2026-09-28T15:00:00",
-"end": "2026-09-28T16:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/cooking-chef-rob-falling-greek-food-58112",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Please review the program description for any potential allergies before signing yourself or a loved one up for this program. Children may not be left unattended. Parents or caregivers must remai",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"food"
-],
-"status": ""
-},
-{
 "id": "emmaclark-pokemon-club-grades-2-5-58555",
 "title": "Pokémon Club (Grades 2-5)",
 "start": "2026-09-28T17:00:00",
 "end": "2026-09-28T18:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/pokemon-club-grades-2-5-58555",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Other, Children.",
-"img": "",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Pokemon%20Club.jpg",
 "src": "emmaclark",
 "tags": [
 "kids"
+],
+"status": ""
+},
+{
+"id": "emmaclark-cooking-chef-rob-falling-greek-food-58113",
+"title": "Cooking with Chef Rob: Falling for Greek Food",
+"start": "2026-09-28T18:30:00",
+"end": "2026-09-28T19:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/cooking-chef-rob-falling-greek-food-58113",
+"desc": "Chef Rob will show you how to make a meaty Greek “taco” topped with tzatziki and cool cucumber tomato relish. For dessert, he’ll prepare a sweet fall treat: cranberry apple dip served with cookies. Food samples and recipes will be provided.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/My%20Big%20Fat%20Greek%20Taco%20chef%20rob%20SEPT%202026.jpg",
+"src": "emmaclark",
+"tags": [
+"food"
 ],
 "status": ""
 },
@@ -123,15 +123,13 @@
 "start": "2026-09-28T18:30:00",
 "end": "2026-09-28T20:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Online (Emma S. Clark Library program)",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/editing-made-easy-imovie-38541",
-"desc": "Virtual Programming Registration is required. Registration starts: 09/14/2026 @ 9:30am Registration end: 09/28/2026 @ 6:29pm Learn how to use Apple’s iMovie program on your Mac. Students will learn basics of recording a movie, how to edit, add sound clips, add",
-"img": "",
+"desc": "Learn how to use Apple’s iMovie program on your Mac. Students will learn basics of recording a movie, how to edit, add sound clips, add animations and effects plus you will learn how to upload the video to YouTube. Presented by Sharper Training Solutions.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-10/405684960_05a13d09-bb74-49fc-ae99-8318f9fe817e.jpg",
 "src": "emmaclark",
-"tags": [
-"stage"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -140,10 +138,10 @@
 "start": "2026-09-29T10:30:00",
 "end": "2026-09-29T11:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58877",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Themed activities that you and your child can enjoy together. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 09/15/2026 @ 10:30am Categories: Story Time, Children.",
+"desc": "Themed activities that you and your child can enjoy together.",
 "img": "",
 "src": "emmaclark",
 "tags": [
@@ -157,10 +155,10 @@
 "start": "2026-09-29T13:15:00",
 "end": "2026-09-29T13:45:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58887",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun and meet some new friends. This storytime is geared to give the childrena little independence. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/13/2026 @ 1:1",
+"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
 "img": "",
 "src": "emmaclark",
 "tags": [
@@ -191,16 +189,14 @@
 "start": "2026-09-29T19:00:00",
 "end": "2026-09-29T20:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/culper-spy-day-101-what-know-you-go-58114",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply sup",
-"img": "",
+"desc": "Discover the stories, landscapes, and historic sites that shaped Revolutionary Long Island during this preview of Culper Spy Day presented by Kimberly Phyfe from the Three Village Historical Society. Kimberly is your welcoming guide to all things Culper Spy Da",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/culper3.jpg",
 "src": "emmaclark",
 "tags": [
-"kids",
-"history",
-"stage"
+"history"
 ],
 "status": ""
 },
@@ -210,16 +206,14 @@
 "start": "2026-09-30T09:30:00",
 "end": "2026-09-30T10:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58892",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/14/2026 @ 9:30am Categories: Mommy & Me, Children.",
+"desc": "Experience sharing, group participation, and play.",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
-"stage",
-"arts"
+"kids"
 ],
 "status": ""
 },
@@ -229,16 +223,13 @@
 "start": "2026-09-30T15:00:00",
 "end": "2026-09-30T16:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/philosophy-through-literature-discussion-58115",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 08/24/2026 @ 9:30am Registration end: 09/30",
-"img": "",
+"desc": "Join us for this philosophy discussion facilitated by Librarian Richard Arena. We’ll use literature as our starting point, centering on Hermann Hesse’s Siddhartha . We’ll explore the novel’s philosophical themes of wisdom vs. knowledge, the unity of all things",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/187780.jpg",
 "src": "emmaclark",
-"tags": [
-"kids",
-"stage"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -247,11 +238,11 @@
 "start": "2026-09-30T16:30:00",
 "end": "2026-09-30T17:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/sweet-treats-our-heroes-community-service-project-grades-3-5-58120",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Community Service, Children.",
-"img": "",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-07/CommunityServiceNew_1.png",
 "src": "emmaclark",
 "tags": [
 "kids"
@@ -264,14 +255,13 @@
 "start": "2026-09-30T17:30:00",
 "end": "2026-09-30T18:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/knit-cause-59655",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
+"desc": "",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
 "arts"
 ],
 "status": ""
@@ -282,15 +272,13 @@
 "start": "2026-09-30T19:00:00",
 "end": "2026-09-30T20:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/ai-basics-introduction-artificial-intelligence-60457",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 08/24/2026 @ 9:30am Registration end: 10/17",
-"img": "",
+"desc": "Explore what artificial intelligence is, how it works, and how it is shaping everyday life. This informative session will also highlight key considerations when using and evaluating AI-generated content. Taught by Library Trustee Stephen Ingulli and Library Op",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/39288399_artificial_intelligence_vector_illustration.jpg",
 "src": "emmaclark",
-"tags": [
-"kids"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -316,16 +304,14 @@
 "start": "2026-10-01T09:30:00",
 "end": "2026-10-01T10:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-18m-35-yrs-w-caregiver-58902",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/15/2026 @ 9:30am Categories: Mommy & Me, Children.",
+"desc": "Experience sharing, group participation, and play.",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
-"stage",
-"arts"
+"kids"
 ],
 "status": ""
 },
@@ -335,16 +321,13 @@
 "start": "2026-10-01T10:00:00",
 "end": "2026-10-01T11:15:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Library Front Lawn",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/library-walking-club-61171",
-"desc": "Library Front Lawn Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode",
-"img": "",
+"desc": "Looking for accountability and consistency on your fitness journey? Get active and connect with others at our weekly Walking Club! Join us Thursday mornings in September and October for a group walk from the library to Frank Melville Park, where participants w",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Frank%20Melville%20Park1a.jpg",
 "src": "emmaclark",
-"tags": [
-"kids",
-"outdoor"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -353,16 +336,14 @@
 "start": "2026-10-01T11:00:00",
 "end": "2026-10-01T12:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58907",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/15/2026 @ 11:00am Categories: Mommy & Me, Children.",
+"desc": "Experience sharing, group participation, and play.",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
-"stage",
-"arts"
+"kids"
 ],
 "status": ""
 },
@@ -372,15 +353,13 @@
 "start": "2026-10-01T14:00:00",
 "end": "2026-10-01T19:45:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Small Study Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58746",
-"desc": "Small Study Room Emma S. Clark Memorial Library Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical So",
-"img": "",
+"desc": "Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical Social Workers. These individuals will be on-site ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
 "src": "emmaclark",
-"tags": [
-"kids"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -406,17 +385,13 @@
 "start": "2026-10-01T19:00:00",
 "end": "2026-10-01T20:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/sailing-through-stressful-times-58122",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode number from your local library card to register. Children may not be left unattended. Par",
-"img": "",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. In this workshop, you’ll learn to recognize the signs of stress in your body and discover strategies and coping skills for getting the relief and relaxation you need. Presented by ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
 "src": "emmaclark",
-"tags": [
-"kids",
-"stage",
-"arts"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -425,16 +400,13 @@
 "start": "2026-10-02T10:00:00",
 "end": "2026-10-02T12:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/game-day-38288",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library We provide the space, tables and chairs. You bring your friends and a favorite board or card game to play. No registration required. Children may not be left unattended. Parents or caregivers mus",
-"img": "",
+"desc": "We provide the space, tables and chairs. You bring your friends and a favorite board or card game to play. No registration required.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-11/people-having-fun-while-playing-board-game2.jpg",
 "src": "emmaclark",
-"tags": [
-"kids",
-"stage"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -462,13 +434,31 @@
 "start": "2026-10-02T14:00:00",
 "end": "2026-10-02T16:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/knit-crochet-chat-58175",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Please review the program description for materials required for participation in this program. Children may not be left unattended. Parents or caregivers must remain with their children at all t",
-"img": "",
+"desc": "Please review the program description for materials required for participation in this program. Share tips, techniques, and conversation. Questions? Contact eyohannan@emmaclark.org . No registration required. No instruction will be provided. Please bring your ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-09/woman-knits-with-gray-thread-closeup_0.jpg",
 "src": "emmaclark",
 "tags": [
+"arts"
+],
+"status": ""
+},
+{
+"id": "lim-10000256",
+"title": "Stitch & Chit-Ch(at) – FREE!",
+"start": "2026-10-02T14:00:00",
+"end": "2026-10-02T15:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/stitch/2026-10-02/",
+"desc": "Whether you knit, crochet, embroider, or hand-sew, gather at the LIM to do what you love. Bring your work-in-progress and enjoy some good company. Open to adults and children 12 and up. This program will take place in the Studio located on the East side of cam",
+"img": "https://longislandmuseum.org/wp-content/uploads/2025/12/Stitch-and-Chit-Chat.jpg",
+"src": "lim",
+"tags": [
+"free",
 "kids",
 "arts"
 ],
@@ -500,11 +490,11 @@
 "start": "2026-10-02T16:45:00",
 "end": "2026-10-02T17:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/oreolympics-grades-k-5-58797",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Games, Children.",
-"img": "",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Oreolympics.png",
 "src": "emmaclark",
 "tags": [
 "kids"
@@ -517,14 +507,13 @@
 "start": "2026-10-02T18:00:00",
 "end": "2026-10-02T20:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/candy-land-training-creations-night-59550",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
+"desc": "",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
 "arts"
 ],
 "status": ""
@@ -634,16 +623,14 @@
 "start": "2026-10-03T10:30:00",
 "end": "2026-10-03T11:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Library Front Lawn",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/history-emma-s-clark-memorial-library-walking-tour-58126",
-"desc": "Library Front Lawn Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Discover the fascinating backstory of Suffolk County's oldest continuously operating library and the gem ",
-"img": "",
+"desc": "You'll learn about Emma S. Clark herself, milestones from the building's 130-year history, as well as some interesting and amusing findings from our archivist and librarian Jeff Walden. Whether you love Three Village, libraries in general, or local Long Island",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/IMG_7871.PNG",
 "src": "emmaclark",
 "tags": [
-"kids",
-"history",
-"stage"
+"history"
 ],
 "status": ""
 },
@@ -733,16 +720,15 @@
 "start": "2026-10-03T12:00:00",
 "end": "2026-10-03T14:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Library Front Lawn",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/fairchild-becherer-music-american-colonial-period-58124",
-"desc": "Library Front Lawn Emma S. Clark Memorial Library This is an outdoor program. In the case of inclement weather, the program will either be rescheduled or moved indoors to the Emma S. Clark Library's Community Room. Review event description for program-specific",
-"img": "",
+"desc": "This is an outdoor program. In the case of inclement weather, the program will either be rescheduled or moved indoors to the Emma S. Clark Library's Community Room. Review event description for program-specific guidance. Call the library for updates at 631-941",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Adam%20Maria__Culper%20Spy%20Day%20October%203%20Fairchild%20Becherer.JPG",
 "src": "emmaclark",
 "tags": [
-"kids",
-"music",
-"history"
+"history",
+"music"
 ],
 "status": ""
 },
@@ -752,14 +738,31 @@
 "start": "2026-10-03T12:00:00",
 "end": "2026-10-03T14:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Board Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-61435",
-"desc": "Board Room Emma S. Clark Memorial Library Please review the program description for any potential allergies before signing yourself or a loved one up for this program. Categories: Games, Teens & Tweens.",
+"desc": "",
 "img": "",
 "src": "emmaclark",
+"tags": [],
+"status": ""
+},
+{
+"id": "lim-3225658",
+"title": "Culper Spy Day – FREE!",
+"start": "2026-10-03T12:00:00",
+"end": "2026-10-03T17:00:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/culper-spy-day-2026/",
+"desc": "Stop by during the Three Village Historical Society and Tri-Spy Tour’s 12th Annual Culper Spy Day, celebrating the rich Revolutionary heritage of our area. Explore LIM’s The Seat of Action: Long Island in the American Revolution and Beyond exhibition and view ",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Seat-of-Action.jpg",
+"src": "lim",
 "tags": [
-"kids"
+"free",
+"history",
+"arts"
 ],
 "status": ""
 },
@@ -777,6 +780,43 @@
 "src": "wmho",
 "tags": [
 "history"
+],
+"status": ""
+},
+{
+"id": "lim-3223856",
+"title": "Hawkins-Mount House Tours | LI250",
+"start": "2026-10-03T12:30:00",
+"end": "2026-10-03T16:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/hawkins-mount-house-tours-li250-3/",
+"desc": "As part of LIM’s America at 250 programming, join us for special tours of the historic Hawkins-Mount House! American genre painter William Sidney Mount created some of his most memorable scenes from inside an attic studio at this large, rambling 18th-century h",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/01/Mount-house-Tour-event-image.jpg",
+"src": "lim",
+"tags": [
+"history",
+"arts"
+],
+"status": ""
+},
+{
+"id": "lim-3225654",
+"title": "Long Island During the American Revolution – FREE Lecture",
+"start": "2026-10-03T13:00:00",
+"end": "2026-10-03T14:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/revolution-talk/",
+"desc": "Join former Newsday staff writer and local history author Bill Bleyer as he traces the captivating history of the events surrounding the largest engagement of the American Revolution—the 1776 Battle of Long Island, a major defeat for the colonists that could h",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Battle-of-Long-Island.jpg",
+"src": "lim",
+"tags": [
+"free",
+"history",
+"stage"
 ],
 "status": ""
 },
@@ -807,16 +847,13 @@
 "start": "2026-10-03T14:30:00",
 "end": "2026-10-03T16:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/copy-welcome-teen-tween-services-department-59535",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Community Service, Educational Lecture, Teens & Tweens.",
-"img": "",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-05/Teen%20Welcome_0.jpg",
 "src": "emmaclark",
-"tags": [
-"kids",
-"stage"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -1010,15 +1047,31 @@
 "start": "2026-10-04T15:30:00",
 "end": "2026-10-04T16:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/behind-post-59552",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Community Service, Educational Lecture, Technology Class, Teens & Tweens.",
+"desc": "",
 "img": "",
 "src": "emmaclark",
+"tags": [],
+"status": ""
+},
+{
+"id": "lim-3225641",
+"title": "Sunday Street Concert Series: Rory Block",
+"start": "2026-10-04T17:00:00",
+"end": "2026-10-04T18:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/rory-block/",
+"desc": "Due to an unexpected injury, this performance has been postponed indefinitely. We hope to reschedule soon. Please stay tuned! The Long Island Museum, Port Jefferson Arts Council, and WUSB-FM are proud to present an eclectic music series featuring nationally an",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Rory-Block-Cover.jpg",
+"src": "lim",
 "tags": [
-"kids",
-"stage"
+"music",
+"stage",
+"arts"
 ],
 "status": ""
 },
@@ -1063,10 +1116,10 @@
 "start": "2026-10-05T10:30:00",
 "end": "2026-10-05T11:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58873",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Themed activities that you and your child can enjoy together. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/12/2026 @ 10:30am Categories: Story Time, Children.",
+"desc": "Themed activities that you and your child can enjoy together.",
 "img": "",
 "src": "emmaclark",
 "tags": [
@@ -1080,15 +1133,14 @@
 "start": "2026-10-05T11:30:00",
 "end": "2026-10-05T12:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58883",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun and meet some new friends. This storytime is geared to give the childrena little independence. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/12/2026 @ 11:",
+"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence. We'll share lively stories & crafts that spark imagination, build early literacy skills & bring lots of smiles and giggles!",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
-"arts"
+"kids"
 ],
 "status": ""
 },
@@ -1098,14 +1150,13 @@
 "start": "2026-10-05T15:30:00",
 "end": "2026-10-05T17:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/spooky-spider-seashell-art-58127",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 09/14/2026 @ 9:30am Registration end: 10/05",
-"img": "",
+"desc": "Get ready for Halloween with a spooky spider seashell craft, guided by renowned mixed-media artist Anna Chan. Participants of all skill levels will enjoy learning her signature technique using self-hardening sand and seashells to create a vibrant, nature-inspi",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Spooky%20Spider%20Seashell%20Art%20October%205%202026.jpeg",
 "src": "emmaclark",
 "tags": [
-"kids",
 "arts"
 ],
 "status": ""
@@ -1116,15 +1167,14 @@
 "start": "2026-10-05T16:45:00",
 "end": "2026-10-05T17:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/after-school-story-time-grades-k-2-59001",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun listening to stories, creating crafts, and making new friends. Registration is required. Registration starts: 09/21/2026 @ 9:30am Registration end: 09/21/2026 @ 4:30pm Categories: Story Time, Chil",
+"desc": "Have fun listening to stories, creating crafts, and making new friends.",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
-"arts"
+"kids"
 ],
 "status": ""
 },
@@ -1134,15 +1184,13 @@
 "start": "2026-10-05T18:30:00",
 "end": "2026-10-05T20:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Online (Emma S. Clark Library program)",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/smartphone-secrets-38569",
-"desc": "Virtual Programming Your Android and iPhone can do so much more than call and text. Learn how to customize your settings, download and manage apps, and explore accessibility features that make life easier. Whether you’re brand new to smartphones or just want t",
-"img": "",
+"desc": "Your Android and iPhone can do so much more than call and text. Learn how to customize your settings, download and manage apps, and explore accessibility features that make life easier. Whether you’re brand new to smartphones or just want to get more out of yo",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-10/5940522_3052766.jpg",
 "src": "emmaclark",
-"tags": [
-"arts"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -1151,10 +1199,10 @@
 "start": "2026-10-06T10:30:00",
 "end": "2026-10-06T11:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58878",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Themed activities that you and your child can enjoy together. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 09/15/2026 @ 10:30am Categories: Story Time, Children.",
+"desc": "Themed activities that you and your child can enjoy together.",
 "img": "",
 "src": "emmaclark",
 "tags": [
@@ -1168,10 +1216,10 @@
 "start": "2026-10-06T13:15:00",
 "end": "2026-10-06T13:45:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58888",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Have fun and meet some new friends. This storytime is geared to give the childrena little independence. Registration is required. Registration starts: 08/31/2026 @ 9:30am Registration end: 10/13/2026 @ 1:1",
+"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
 "img": "",
 "src": "emmaclark",
 "tags": [
@@ -1185,16 +1233,14 @@
 "start": "2026-10-06T14:00:00",
 "end": "2026-10-06T15:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/celebrating-100-years-laughter-mel-brooks-58129",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode number from your local library card to register. Children may not be left unattended. Par",
-"img": "",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. In celebration of Mel Brooks’s 100 th birthday year, Hollywood historian Sal St. George will explore the life and career of this Brooklyn-born comedy legend and EGOT winner. Rare f",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/mel%20brooks%202.jpg",
 "src": "emmaclark",
 "tags": [
-"kids",
-"history",
-"stage"
+"history"
 ],
 "status": ""
 },
@@ -1204,14 +1250,13 @@
 "start": "2026-10-06T14:00:00",
 "end": "2026-10-06T16:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Technology Center",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/cricut-t-shirt-lottery-43470",
-"desc": "Technology Center Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. THIS IS A LOTTERY PROGRAM. Upon registration, your name will be added to a waitlist pool from which indivi",
-"img": "",
+"desc": "Upon registration, your name will be added to a waitlist pool from which individuals will be randomly selected. Registration for lottery programming will run for 28 hours, opening at 9:30am two weeks ahead of the program start-date and then closing the next da",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/4_DTC_Infographic_2008335.png",
 "src": "emmaclark",
 "tags": [
-"kids",
 "arts"
 ],
 "status": ""
@@ -1222,14 +1267,13 @@
 "start": "2026-10-06T17:00:00",
 "end": "2026-10-06T18:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/tutus-tots-59554",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Categories: Arts & Crafts, Community Service, Teens & Tweens.",
+"desc": "",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
 "arts"
 ],
 "status": ""
@@ -1240,15 +1284,13 @@
 "start": "2026-10-06T19:00:00",
 "end": "2026-10-06T20:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/ai-basics-introduction-artificial-intelligence-60458",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 08/24/2026 @ 9:30am Registration end: 10/23",
-"img": "",
+"desc": "Explore what artificial intelligence is, how it works, and how it is shaping everyday life. This informative session will also highlight key considerations when using and evaluating AI-generated content. Taught by Library Trustee Stephen Ingulli and Library Op",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/39288399_artificial_intelligence_vector_illustration.jpg",
 "src": "emmaclark",
-"tags": [
-"kids"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -1257,16 +1299,33 @@
 "start": "2026-10-07T09:30:00",
 "end": "2026-10-07T10:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58893",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/14/2026 @ 9:30am Categories: Mommy & Me, Children.",
+"desc": "Experience sharing, group participation, and play.",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
-"stage",
-"arts"
+"kids"
+],
+"status": ""
+},
+{
+"id": "lim-3225151",
+"title": "MORNINGS@LIM: The Troubadours Concert",
+"start": "2026-10-07T11:00:00",
+"end": "2026-10-07T12:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/the-troubadours/",
+"desc": "Mornings @ LIM are free monthly sessions open to individuals living with dementia and their care partners. They offer time for creative engagement and social connection in our galleries and art studio, as well as through special music and movie programs. Music",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/06/Guitar-Player-Stock.jpg",
+"src": "lim",
+"tags": [
+"free",
+"music",
+"stage"
 ],
 "status": ""
 },
@@ -1276,16 +1335,14 @@
 "start": "2026-10-07T12:30:00",
 "end": "2026-10-07T13:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/harbormen-chorus-concert-58130",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. Registration is required. Registration starts: 09/14/2026 @ 9:30am Registration end: 10/07",
-"img": "",
+"desc": "The Harbormen Chorus brings its Barbershop harmonies to the Library! These a cappella singers will perform tunes from Vaudeville, Doo-Wop, Motown, Disney films, The Beach Boys, The Beatles, Elvis Presley, Neil Diamond, and more. Join us for sing-a-long fun!",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/HarbormenChorus_Feb8-2025.jpeg",
 "src": "emmaclark",
 "tags": [
-"kids",
-"music",
-"stage"
+"music"
 ],
 "status": ""
 },
@@ -1295,11 +1352,11 @@
 "start": "2026-10-07T16:30:00",
 "end": "2026-10-07T17:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/dog-treat-jars-pet-supply-drive-community-service-project-grades-3-5-58121",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Community Service, Children.",
-"img": "",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-07/CommunityServiceNew_1.png",
 "src": "emmaclark",
 "tags": [
 "kids"
@@ -1312,16 +1369,13 @@
 "start": "2026-10-07T18:30:00",
 "end": "2026-10-07T20:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Online (Emma S. Clark Library program)",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/your-children-dont-want-it-what-do-zoom-58133",
-"desc": "Virtual Programming Mike Ivankovich will give you 15 tips & strategies designed to help you deal with your “stuff,” and hopefully help you make money when selling it. Categories: Educational Lecture, Health & Wellness, Other, Adult.",
-"img": "",
+"desc": "Mike Ivankovich will give you 15 tips & strategies designed to help you deal with your “stuff,” and hopefully help you make money when selling it.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/344909.jpg",
 "src": "emmaclark",
-"tags": [
-"kids",
-"stage"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -1347,16 +1401,14 @@
 "start": "2026-10-08T09:30:00",
 "end": "2026-10-08T10:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-18m-35-yrs-w-caregiver-58903",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/15/2026 @ 9:30am Categories: Mommy & Me, Children.",
+"desc": "Experience sharing, group participation, and play.",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
-"stage",
-"arts"
+"kids"
 ],
 "status": ""
 },
@@ -1366,16 +1418,13 @@
 "start": "2026-10-08T10:00:00",
 "end": "2026-10-08T11:15:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Library Front Lawn",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/library-walking-club-61172",
-"desc": "Library Front Lawn Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode",
-"img": "",
+"desc": "Looking for accountability and consistency on your fitness journey? Get active and connect with others at our weekly Walking Club! Join us Thursday mornings in September and October for a group walk from the library to Frank Melville Park, where participants w",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Frank%20Melville%20Park1a.jpg",
 "src": "emmaclark",
-"tags": [
-"kids",
-"outdoor"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -1384,16 +1433,14 @@
 "start": "2026-10-08T11:00:00",
 "end": "2026-10-08T12:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58908",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/15/2026 @ 11:00am Categories: Mommy & Me, Children.",
+"desc": "Experience sharing, group participation, and play.",
 "img": "",
 "src": "emmaclark",
 "tags": [
-"kids",
-"stage",
-"arts"
+"kids"
 ],
 "status": ""
 },
@@ -1403,15 +1450,13 @@
 "start": "2026-10-08T14:00:00",
 "end": "2026-10-08T19:45:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Small Study Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58747",
-"desc": "Small Study Room Emma S. Clark Memorial Library Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical So",
-"img": "",
+"desc": "Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical Social Workers. These individuals will be on-site ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
 "src": "emmaclark",
-"tags": [
-"kids"
-],
+"tags": [],
 "status": ""
 },
 {
@@ -1420,15 +1465,15 @@
 "start": "2026-10-08T16:30:00",
 "end": "2026-10-08T17:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Children's Library",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/tube-bots-grades-k-5-w-caregiver-58798",
-"desc": "Children's Library Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Arts & Crafts, Children.",
-"img": "",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/IMG_9717.jpeg",
 "src": "emmaclark",
 "tags": [
-"kids",
-"arts"
+"arts",
+"kids"
 ],
 "status": ""
 },
@@ -1438,14 +1483,13 @@
 "start": "2026-10-08T18:00:00",
 "end": "2026-10-08T20:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Technology Center",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/cricut-t-shirt-38560",
-"desc": "Technology Center Emma S. Clark Memorial Library In this beginner class, you will learn how to use the Cricut machine to create a customized T-shirt. Please note: Each participant MUST bring ONE PLAIN WHITE COTTON T-SHIRT (LONG OR SHORT-SLEEVE) with them to de",
-"img": "",
+"desc": "In this beginner class, you will learn how to use the Cricut machine to create a customized T-shirt. Please note: Each participant MUST bring ONE PLAIN WHITE COTTON T-SHIRT (LONG OR SHORT-SLEEVE) with them to design . All other materials will be provided. Taug",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/4_DTC_Infographic_2008335.png",
 "src": "emmaclark",
 "tags": [
-"kids",
 "arts"
 ],
 "status": ""
@@ -1473,16 +1517,14 @@
 "start": "2026-10-08T19:00:00",
 "end": "2026-10-08T20:30:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library",
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/interred-long-island-58137",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode number from your local library card to register. Children may not be left unattended. Par",
-"img": "",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Long Island is the final resting place for many people of consequence. Celebrities, politicians, sports figures, artists, authors, and crime kingpins are among the many important a",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/815_LongIsland.jpg",
 "src": "emmaclark",
 "tags": [
-"kids",
-"history",
-"stage"
+"history"
 ],
 "status": ""
 }

@@ -18,7 +18,22 @@ ICON = {"kids": "&#129490;", "music": "&#127928;", "history": "&#128373;&#65039;
         "outdoor": "&#127795;", "arts": "&#127912;", "free": "&#127903;&#65039;"}
 
 
+# Emma S. Clark Library: tags come ONLY from the library's own categories (library feedback 9/28/2026)
+LIB_TAGS = {"Children": "kids", "Story Time": "kids", "Mommy & Me": "kids",
+            "Music & Performance": "music", "History": "history", "Cooking & Tasting": "food",
+            "Movie": "stage", "Arts & Crafts": "arts"}
+
+
 def tags_for(e):
+    if e.get("src") == "emmaclark" and "cats" in e:
+        t = []
+        for c in e["cats"]:
+            k = LIB_TAGS.get(c)
+            if k and k not in t:
+                t.append(k)
+        if re.search(r"free", e["title"] + " " + e["desc"], re.I):
+            t.insert(0, "free")
+        return t[:3]
     blob = (e["title"] + " " + e["desc"]).lower()
     t = [k for k, rx in TAGS if re.search(rx, blob)]
     if re.search(r"\bfree\b", blob):
