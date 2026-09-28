@@ -1,15 +1,15 @@
 {
-"updated": "2026-09-28T00:33:56.978924+00:00",
+"updated": "2026-09-28T01:11:51.001960+00:00",
 "counts": {
 "Three Village Chamber": 4,
-"Port Jefferson Chamber": 24,
+"Port Jefferson Chamber": 45,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 222,
 "Emma S. Clark Library": 214,
-"Stony Brook Village Center": 16,
-"Long Island Museum": 30,
-"Ward Melville Heritage Org": 5,
+"Stony Brook Village Center": 18,
+"Long Island Museum": 50,
+"Ward Melville Heritage Org": 6,
 "LI Music Hall of Fame": 6
 },
 "icons": {
@@ -24,9 +24,65 @@
 },
 "events": [
 {
+"id": "sbv-2302",
+"title": "The 36th Annual Scarecrow Competition",
+"start": "2026-08-19T00:00:00",
+"end": "2026-10-31T23:59:59",
+"allday": true,
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/",
+"desc": "REGISTRATION FOR THE 2026 SCARECROW COMPETITION IS NOW OPEN! Deadline for Registration has been extended to Monday, September 28th Click here to download the registration form: https://drive.google.com/file/d/1t6VmqZXkcxDkBoUDE89eMptEbI5K84JE/view?usp=sharing ",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/08/2-_DSC0710.jpg",
+"src": "sbv",
+"tags": [
+"free",
+"history"
+],
+"status": ""
+},
+{
+"id": "sbv-2319",
+"title": "LIMEHOF Music Doc Film Festival- September 25th – 27th",
+"start": "2026-09-25T00:00:00",
+"end": "2026-09-27T23:59:59",
+"allday": true,
+"venue": "The Long Island Music and Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/limehof-music-doc-film-festival-september-25th-27th/",
+"desc": "This year’s festival will feature 40+ outstanding feature and short music documentaries, with many screenings accompanied by filmmaker Q&As and live performances, presented in two theaters throughout the weekend at the main LIMEHOF museum. Our music documentar",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/08/LIMEHOF_MusicDoc3.jpg",
+"src": "sbv",
+"tags": [
+"music",
+"stage",
+"outdoor"
+],
+"status": ""
+},
+{
+"id": "lim-3225801",
+"title": "Blue Star Welcome Week 2026 for Military Families",
+"start": "2026-09-26T12:00:00",
+"end": "2026-10-04T17:00:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/blue-star-welcome-week-2026/",
+"desc": "The Long Island Museum is proud to partner with Blue Star Museums , offering free museum admission to active and retired military personnel and their family all year long. During Blue Star Welcome Week 2026 (September 26–October 4, 2026), we extend our Museum ",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/Blue-Star-Welcome-Week.jpg",
+"src": "lim",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": ""
+},
+{
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-09-28T00:00",
+"start": "2026-09-27T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
@@ -44,6 +100,60 @@
 "status": "",
 "pick": true,
 "rank": 4
+},
+{
+"id": "pjchamber-14109",
+"title": "Cedar Beach Blues Festival",
+"start": "2026-09-27T00:00:00",
+"end": "2026-09-27T23:59:59",
+"allday": true,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "101 East Broadway, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/cedar-beach-blues-festival/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"music",
+"outdoor"
+],
+"status": ""
+},
+{
+"id": "portjeff-1093",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-09-27T00:00:00",
+"end": "2026-09-27T00:00:00",
+"allday": true,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1093",
+"desc": "This Sunday's Farmer's Market has been closed due to impending weather. See you next week on 10/3",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "Canceled"
+},
+{
+"id": "lim-3225616",
+"title": "Carriage House Salon Series: Songs of the Gilded Age for Violin and Piano",
+"start": "2026-09-27T15:00:00",
+"end": "2026-09-27T16:15:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/gilded-age-songs/",
+"desc": "A new collaboration between Long Island Museum and Long Island Chamber Music, the series aims to embrace the early American tradition of intimate living room salons of the Gilded Age. The Carriage House Salon Series pairs world-class chamber music inside Long ",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Carriage-House-Salon-Series.jpg",
+"src": "lim",
+"tags": [
+"music",
+"history"
+],
+"status": ""
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58872",
@@ -1431,151 +1541,6 @@
 "src": "emmaclark",
 "tags": [
 "kids",
-"stage"
-],
-"status": ""
-},
-{
-"id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58903",
-"title": "Parent Toddler Workshop (18m - 3.5 yrs w/ caregiver)",
-"start": "2026-10-08T09:30:00",
-"end": "2026-10-08T10:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-18m-35-yrs-w-caregiver-58903",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/15/2026 @ 9:30am Categories: Mommy & Me, Children.",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"stage",
-"arts"
-],
-"status": ""
-},
-{
-"id": "emmaclark-library-walking-club-61172",
-"title": "Library Walking Club",
-"start": "2026-10-08T10:00:00",
-"end": "2026-10-08T11:15:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/library-walking-club-61172",
-"desc": "Library Front Lawn Emma S. Clark Memorial Library Children may not be left unattended. Parents or caregivers must remain with their children at all times. REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": ""
-},
-{
-"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58908",
-"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
-"start": "2026-10-08T11:00:00",
-"end": "2026-10-08T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58908",
-"desc": "Children's Program Room Emma S. Clark Memorial Library Experience sharing, group participation, and play. Registration is required. Registration starts: 09/02/2026 @ 9:30am Registration end: 10/15/2026 @ 11:00am Categories: Mommy & Me, Children.",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"stage",
-"arts"
-],
-"status": ""
-},
-{
-"id": "emmaclark-social-work-intern-appointments-58747",
-"title": "Social Work Intern Appointments",
-"start": "2026-10-08T14:00:00",
-"end": "2026-10-08T19:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58747",
-"desc": "Small Study Room Emma S. Clark Memorial Library Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical So",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": ""
-},
-{
-"id": "emmaclark-tube-bots-grades-k-5-w-caregiver-58798",
-"title": "Tube Bots (Grades K-5 w/ caregiver)",
-"start": "2026-10-08T16:30:00",
-"end": "2026-10-08T17:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/tube-bots-grades-k-5-w-caregiver-58798",
-"desc": "Children's Library Emma S. Clark Memorial Library Parents must stay in the Children's Library when their children are in a Children's program. Categories: Arts & Crafts, Children.",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"arts"
-],
-"status": ""
-},
-{
-"id": "emmaclark-cricut-t-shirt-38560",
-"title": "Cricut: T-Shirt [LOTTERY]",
-"start": "2026-10-08T18:00:00",
-"end": "2026-10-08T20:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/cricut-t-shirt-38560",
-"desc": "Technology Center Emma S. Clark Memorial Library In this beginner class, you will learn how to use the Cricut machine to create a customized T-shirt. Please note: Each participant MUST bring ONE PLAIN WHITE COTTON T-SHIRT (LONG OR SHORT-SLEEVE) with them to de",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"arts"
-],
-"status": ""
-},
-{
-"id": "3vchamber-1919589",
-"title": "Reboli Center Fall Paint Party",
-"start": "2026-10-08T18:30:00",
-"end": "2026-10-08T20:00:00",
-"allday": false,
-"venue": "Reboli Center for Art and History",
-"addr": "64 Main Street, Stony Brook, NY 11790",
-"url": "https://members.3vchamber.com/event-calendar/Details/reboli-center-fall-paint-party-1919589",
-"desc": "",
-"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_1125,w_900,x_0,y_0/q_auto/f_auto/q_auto/v1788975451/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/f76d0627221f4cb584e93064fe0e3206/Insta-Post-RC-FALL-PAINT-PARTY-2026.png",
-"src": "3vchamber",
-"tags": [
-"arts"
-],
-"status": ""
-},
-{
-"id": "emmaclark-interred-long-island-58137",
-"title": "Interred on Long Island",
-"start": "2026-10-08T19:00:00",
-"end": "2026-10-08T20:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/interred-long-island-58137",
-"desc": "Vincent R. O'Leary Community Room Emma S. Clark Memorial Library REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Simply supply the barcode number from your local library card to register. Children may not be left unattended. Par",
-"img": "",
-"src": "emmaclark",
-"tags": [
-"kids",
-"history",
 "stage"
 ],
 "status": ""

@@ -60,7 +60,7 @@ def ev(src, uid, title, start, end=None, venue="", addr="", url="", desc="", ima
 # ---------- sources ----------
 def tribe(src, base, default_venue=""):
     out, page = [], 1
-    start = TODAY.isoformat()
+    start = (TODAY - dt.timedelta(days=45)).isoformat()   # reach back so multi-day events already underway are included
     while page < 6:
         u = "%s/wp-json/tribe/events/v1/events?per_page=50&page=%d&start_date=%s" % (base, page, start)
         try:

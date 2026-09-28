@@ -43,7 +43,8 @@ def main():
             continue
         counts[name] = len(got)
         for e in got:
-            if not (today <= e["start"].date() <= horizon):
+            end = e.get("end") or e["start"]
+            if not (e["start"].date() <= horizon and max(e["start"], end).date() >= today):   # upcoming, or started earlier and still running
                 continue
             if re.search(r"country house", e["title"] + " " + e["venue"], re.I):   # never promote (owner request)
                 continue
