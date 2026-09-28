@@ -53,14 +53,14 @@ function renderLive(data){
     $$('.wk-dayblk',sec).forEach(function(b){b.remove()});
     var anchor=root.querySelector('#wk-sched .wk-allwk')||$('wk-nomatch');
     Object.keys(days).sort().forEach(function(k,di){var D=days[k],isT=k===dkey(t0),isTm=k===dkey(new Date(t0.getTime()+864e5));
-      var h='<div class="wk-dayblk'+(di?' is-collapsed':'')+'" data-day="'+k+'"><p class="wk-dayh" role="button" tabindex="0" aria-expanded="'+(di?'false':'true')+'"><b>'+(isT?'Today':isTm?'Tomorrow':DAYN2x(D.d))+'</b><span>'+ds(D.d)+'</span><i class="wk-dcount">'+D.l.length+' event'+(D.l.length===1?'':'s')+'</i><em class="wk-chev" aria-hidden="true"></em></p><ol class="wk-tl">';
+      var h=(di?'':'<p class="wk-daytip">&#128073; Tap a day to see what&rsquo;s up</p>')+'<div class="wk-dayblk is-collapsed" data-day="'+k+'"><p class="wk-dayh" role="button" tabindex="0" aria-expanded="false"><b>'+(isT?'Today':isTm?'Tomorrow':DAYN2x(D.d))+'</b><span>'+ds(D.d)+'</span><i class="wk-dcount">'+D.l.length+' event'+(D.l.length===1?'':'s')+'</i><em class="wk-chev" aria-hidden="true"></em></p><ol class="wk-tl">';
       D.l.forEach(function(e){var th=e.img?'<img src="'+esc2(e.img)+'" alt="" loading="lazy" width="120" height="120">':'<span class="wk-ticon">'+(IC[(e.tags.filter(function(x){return x!=='free'})[0])||'arts']||'&#9733;')+'</span>';
         h+='<li class="wk-ev" '+attrs(e)+'><div class="wk-evt"><b>'+when(e)+'</b><span>'+(md(e)?thru(e):e.allday?'':'to '+tm(e.e))+'</span></div><div class="wk-evc"><div class="wk-evthumb">'+th+'</div><div class="wk-evbody">'+
           '<p class="wk-evtitle">'+(e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+' <span class="wk-pstat" data-status></span></p><p class="wk-evwhere">'+esc2(e.venue)+'</p>'+
           (e.desc?'<p class="wk-evdesc" tabindex="0">'+esc2(e.desc)+'</p>':'')+'<div class="wk-tags">'+chips(e.tags)+'<span class="wk-wxchip"></span></div></div>'+acts(e)+'</div></li>'});
       h+='</ol></div>';anchor.insertAdjacentHTML('beforebegin',h)});
     var sm=root.querySelector('#wk-sched .wk-h2 small');if(sm)sm.innerHTML='Updated '+tm(new Date(data.updated))+' &middot; tap &#9734; to save';
-    var sp=root.querySelector('#wk-sched .wk-h2 span');if(sp)sp.textContent='What\u2019s On This Week';
+    var sp=root.querySelector('#wk-sched .wk-h2 span');if(sp)sp.textContent='What\u2019s Up This Week';
     var aw=root.querySelector('#wk-sched .wk-allwk p.wk-dayh b');if(aw)aw.textContent='Ongoing';
   }
   /* top picks: soonest upcoming events that have photos (curated picks first) */
@@ -253,7 +253,7 @@ function applyFilter(){var shown=0;
   $$('.wk-dayblk').forEach(function(b){var any=b.querySelectorAll('.wk-ev:not(.is-hidden)').length;b.classList.toggle('is-hidden',!any);
     var c=b.querySelector('.wk-dcount');if(c)c.textContent=any+' event'+(any===1?'':'s')});
   if(fDay!==lastDay){lastDay=fDay;var vis=$$('.wk-dayblk').filter(function(b){return !b.classList.contains('is-hidden')});
-    vis.forEach(function(b,i){setOpen(b,fDay!=='all'||i===0)})}
+    vis.forEach(function(b){setOpen(b,fDay!=='all')})}
   $$('.wk-aw').forEach(function(a){a.classList.toggle('is-hidden',fTag!=='all'&&(' '+a.getAttribute('data-tags')+' ').indexOf(' '+fTag+' ')<0)});
   var c=$('wk-shown');if(c)c.textContent='Showing '+shown+' event'+(shown===1?'':'s')+(fDay==='wknd'?' this weekend':fDay!=='all'?' '+((root.querySelector('.wk-tab.is-on')||{}).textContent||'').toLowerCase():' this week')+(fTag!=='all'?' tagged '+fTag:'');
   var nm=$('wk-nomatch');if(nm)nm.hidden=shown>0;

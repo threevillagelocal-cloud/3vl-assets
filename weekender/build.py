@@ -204,7 +204,7 @@ def build(edition, local=False, sha="master"):
     w('</div></section>')
 
     # SCHEDULE
-    w('<section class="wk-sec" id="wk-sched"><h2 class="wk-h2"><span>The Full Schedule</span><em class="wk-h2r"><small>Tap &#9734; to save to My Plans</small><a class="wk-calbtn" href="https://www.threevillagelocal.com/events-calendar">&#128197; Full calendar &rarr;</a></em></h2>')
+    w('<section class="wk-sec" id="wk-sched"><h2 class="wk-h2"><span>What&rsquo;s Up This Week</span><em class="wk-h2r"><small>Tap &#9734; to save to My Plans</small><a class="wk-calbtn" href="https://www.threevillagelocal.com/events-calendar">&#128197; Full calendar &rarr;</a></em></h2>')
     w('<div class="wk-tabs" role="tablist"><button type="button" class="wk-tab is-on" data-day="all">All</button>'
       '<button type="button" class="wk-tab" data-day="fri">Fri <small>10/2</small></button><button type="button" class="wk-tab" data-day="sat">Sat <small>10/3</small></button>'
       '<button type="button" class="wk-tab" data-day="sun">Sun <small>10/4</small></button><span class="wk-tabink"></span></div>')

@@ -833,3 +833,14 @@
 @media (max-width:760px){.wk-parr{display:none}}
 /* subtle divider between Top Picks and Eat & Drink */
 #wk-top #wk-eat::before{content:"";display:block;height:1px;margin:6px 0 30px;background:linear-gradient(90deg,rgba(27,47,69,0),rgba(27,47,69,.16) 15%,rgba(27,47,69,.16) 85%,rgba(27,47,69,0))}
+/* What's Up This Week: every day starts closed; day rows look like big tappable buttons */
+#wk-top .wk-daytip{margin:4px 0 2px!important;font-size:14px;font-weight:700;color:var(--mut)}
+#wk-top .wk-dayblk .wk-dayh{margin:10px 0 0!important;padding:12px 14px!important;background:#fff;border:1px solid var(--line)!important;border-radius:16px;box-shadow:0 6px 18px rgba(27,47,69,.07);transition:transform .2s,box-shadow .2s,border-color .2s}
+#wk-top .wk-dayblk .wk-dayh:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(27,47,69,.12);border-color:var(--gold)!important}
+#wk-top .wk-dayblk:not(.is-collapsed) .wk-dayh{border-color:var(--gold)!important;border-radius:16px 16px 0 0;box-shadow:none}
+#wk-top .wk-dayblk:not(.is-collapsed) .wk-tl{padding-top:8px}
+#wk-top .wk-chev{width:36px;height:36px;flex:0 0 36px;background:linear-gradient(180deg,#ffd76a,#ffc53d);box-shadow:0 4px 12px rgba(255,197,61,.45)}
+#wk-top .wk-dayblk.is-collapsed .wk-chev{animation:wkChevNudge 2.8s ease-in-out infinite}
+#wk-top .wk-dayblk.is-collapsed ~ .wk-dayblk.is-collapsed .wk-chev{animation:none}
+@keyframes wkChevNudge{0%,70%,100%{transform:translateY(0)}80%{transform:translateY(3px)}90%{transform:translateY(-1px)}}
+@media (prefers-reduced-motion:reduce){#wk-top .wk-chev{animation:none!important}}
