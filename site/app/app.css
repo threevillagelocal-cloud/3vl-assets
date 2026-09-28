@@ -1,0 +1,47 @@
+.ap3{--ink:#1b2f45;--navy:#13233a;--blue:#006fbb;--gold:#ffc53d;--line:#e3e9f0;--mut:#55636f;font-family:'Radio Canada',sans-serif;color:var(--ink);max-width:1120px;margin:0 auto 50px;word-break:normal;overflow-wrap:normal;hyphens:none}
+.ap3 *{box-sizing:border-box;word-break:normal;overflow-wrap:normal}
+.ap3 p{margin:0}
+.ap3-hero{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;padding:14px 0 0}
+.ap3-kick{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:10px!important}
+.ap3 .ap3-h1{font-family:'Radio Canada',sans-serif;font-size:54px;font-weight:700;line-height:1.04;letter-spacing:-.02em;color:var(--ink);margin:0 0 14px}
+.ap3-h1 span{color:var(--blue);text-decoration:underline;text-decoration-color:#ffc53d;text-decoration-thickness:.16em;text-underline-offset:.1em;text-decoration-skip-ink:none;white-space:nowrap}
+.ap3-dek{font-size:20px;line-height:1.5;color:var(--mut);max-width:560px}
+.ap3-btns{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0 0}
+.ap3 .ap3-store{position:relative;display:flex;align-items:center;justify-content:center;width:220px;height:68px;border-radius:16px;background:#000;border:1px solid rgba(255,255,255,.25);box-shadow:0 12px 28px rgba(15,34,56,.25),inset 0 1px 0 rgba(255,255,255,.12);overflow:hidden;text-decoration:none!important;animation:ap3Glow 3.2s ease-in-out 1.4s infinite;transition:transform .25s cubic-bezier(.2,.8,.2,1.3),box-shadow .25s,border-color .25s}
+.ap3 .ap3-store + .ap3-store{animation-delay:1.9s}
+.ap3 .ap3-store img{display:block;height:60px;width:auto;max-width:205px;margin:0;border:0;box-shadow:none}
+.ap3 .ap3-store:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.3) 48%,transparent 62%);transform:translateX(-120%);animation:ap3Shine 5s ease-in-out 2s infinite;pointer-events:none}
+.ap3 .ap3-store + .ap3-store:after{animation-delay:2.6s}
+.ap3 .ap3-store:hover{transform:translateY(-4px) scale(1.03);border-color:#f2a93b;box-shadow:0 20px 40px rgba(15,34,56,.35),0 0 0 4px rgba(242,169,59,.4)}
+.ap3-free{display:flex;align-items:center;gap:10px;margin:18px 0 0!important;font-size:17px;font-weight:600;color:var(--ink)}
+.ap3-check{display:inline-flex;align-items:center;justify-content:center;flex:0 0 28px;width:28px;height:28px;border-radius:50%;background:linear-gradient(180deg,#ffd76a,#ffc53d);color:var(--navy);font-size:15px;font-weight:800;box-shadow:0 4px 10px rgba(255,197,61,.4)}
+.ap3-art{position:relative;height:560px}
+.ap3-glow{position:absolute;inset:6% 4%;border-radius:50%;background:radial-gradient(circle at 50% 45%,rgba(0,111,187,.22),rgba(255,197,61,.16) 45%,transparent 70%);filter:blur(10px)}
+.ap3-phone{position:absolute;left:50%;top:10px;width:262px;height:540px;margin-left:-131px;border-radius:44px;padding:11px;background:linear-gradient(160deg,#2b3a4f,#0b111a);box-shadow:0 34px 70px rgba(15,26,40,.45),inset 0 0 0 2px rgba(255,255,255,.18);z-index:3}
+.ap3-phone img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;border-radius:34px}
+.ap3-notch{position:absolute;left:50%;top:20px;width:86px;height:22px;margin-left:-43px;border-radius:14px;background:#0b111a;z-index:2}
+.ap3-card{position:absolute;width:176px;border-radius:20px;overflow:hidden;box-shadow:0 24px 50px rgba(15,26,40,.35),0 0 0 2px rgba(255,255,255,.7);z-index:2}
+.ap3-card img{display:block;width:100%;height:auto}
+.ap3-pick{left:0;top:90px;transform:rotate(-6deg)}
+.ap3-eat{right:0;top:150px;transform:rotate(6deg)}
+.ap3-tag{position:absolute;z-index:4;display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;font-size:14px;font-weight:700;color:var(--navy);background:rgba(255,255,255,.95);box-shadow:0 8px 20px rgba(15,26,40,.2);white-space:nowrap}
+.ap3-t1{left:6px;top:58px;transform:rotate(-6deg)}
+.ap3-t2{right:10px;top:118px;transform:rotate(6deg)}
+.ap3-feats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:36px 0 0}
+.ap3-feat{display:flex;align-items:flex-start;gap:12px;background:rgba(255,255,255,.8);border:1px solid rgba(27,47,69,.08);border-radius:18px;padding:16px;box-shadow:0 8px 22px rgba(27,47,69,.07),inset 0 1px 0 #fff}
+.ap3-feat b{display:block;font-size:17px;line-height:1.2;color:var(--ink);margin:2px 0 4px}
+.ap3-feat em{display:block;font-style:normal;font-size:14.5px;line-height:1.4;color:var(--mut)}
+.ap3-ic{display:flex;align-items:center;justify-content:center;flex:0 0 46px;width:46px;height:46px;border-radius:14px;font-size:22px;background:linear-gradient(145deg,#ffffff,#e8f1fa);border:1px solid rgba(27,47,69,.08);box-shadow:inset 0 1px 0 #fff,0 6px 14px rgba(27,47,69,.1)}
+.ap3-end{margin:40px 0 0;padding:32px 20px;text-align:center;border-radius:26px;background:radial-gradient(circle at 85% 0%,rgba(255,197,61,.16),transparent 45%),linear-gradient(160deg,#f3f7fb,#e8eff7);border:1px solid var(--line)}
+.ap3-endh{font-size:30px;font-weight:700;line-height:1.15;color:var(--ink)}
+.ap3-endd{font-size:17px;color:var(--mut);margin-top:6px!important}
+.ap3-btns-sm{justify-content:center}
+.ap3-free-c{justify-content:center}
+@keyframes ap3Glow{0%,100%{box-shadow:0 12px 28px rgba(15,34,56,.25),0 0 0 0 rgba(242,169,59,0)}50%{box-shadow:0 12px 28px rgba(15,34,56,.25),0 0 0 6px rgba(242,169,59,.22)}}
+@keyframes ap3Shine{0%,70%{transform:translateX(-120%)}85%,100%{transform:translateX(120%)}}
+#tvl-appfoot{display:none!important}
+@media (max-width:960px){.ap3-hero{grid-template-columns:1fr;text-align:center}.ap3-dek{margin:0 auto}.ap3-btns{justify-content:center}.ap3-free{justify-content:center}.ap3-art{height:520px;max-width:520px;width:100%;margin:0 auto}.ap3-feats{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.ap3 .ap3-h1{font-size:38px}.ap3-dek{font-size:17.5px}.ap3-btns{flex-direction:column;align-items:center;gap:12px}.ap3 .ap3-store{width:250px;height:76px}.ap3 .ap3-store img{height:66px;max-width:230px}.ap3-free{font-size:15.5px;text-align:left}
+  .ap3-art{height:440px}.ap3-phone{width:210px;height:432px;margin-left:-105px;border-radius:36px;padding:9px}.ap3-phone img{border-radius:28px}.ap3-card{width:126px}.ap3-pick{top:110px;left:-4px}.ap3-eat{top:160px;right:-4px}.ap3-tag{font-size:12.5px;padding:6px 10px}.ap3-t1{top:74px;left:0}.ap3-t2{top:128px;right:0}
+  .ap3-feats{grid-template-columns:1fr}.ap3-endh{font-size:24px}}
+@media (prefers-reduced-motion:reduce){.ap3 .ap3-store,.ap3 .ap3-store:after{animation:none!important}}
