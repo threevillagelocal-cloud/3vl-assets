@@ -17,9 +17,9 @@
 .ap3-check{display:inline-flex;align-items:center;justify-content:center;flex:0 0 28px;width:28px;height:28px;border-radius:50%;background:linear-gradient(180deg,#ffd76a,#ffc53d);color:var(--navy);font-size:15px;font-weight:800;box-shadow:0 4px 10px rgba(255,197,61,.4)}
 .ap3-art{position:relative;height:560px}
 .ap3-glow{position:absolute;inset:6% 4%;border-radius:50%;background:radial-gradient(circle at 50% 45%,rgba(0,111,187,.22),rgba(255,197,61,.16) 45%,transparent 70%);filter:blur(10px)}
-.ap3-phone{position:absolute;left:50%;top:10px;width:262px;height:540px;margin-left:-131px;border-radius:44px;padding:11px;background:linear-gradient(160deg,#2b3a4f,#0b111a);box-shadow:0 34px 70px rgba(15,26,40,.45),inset 0 0 0 2px rgba(255,255,255,.18);z-index:3}
+.ap3-phone{position:absolute;left:50%;top:30px;width:262px;height:470px;margin-left:-131px;border-radius:44px;padding:11px;background:linear-gradient(160deg,#2b3a4f,#0b111a);box-shadow:0 34px 70px rgba(15,26,40,.45),inset 0 0 0 2px rgba(255,255,255,.18);z-index:3}
 .ap3-phone img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;border-radius:34px}
-.ap3-notch{position:absolute;left:50%;top:20px;width:86px;height:22px;margin-left:-43px;border-radius:14px;background:#0b111a;z-index:2}
+.ap3-notch{display:none;position:absolute;left:50%;top:20px;width:86px;height:22px;margin-left:-43px;border-radius:14px;background:#0b111a;z-index:2}
 .ap3-card{position:absolute;width:176px;border-radius:20px;overflow:hidden;box-shadow:0 24px 50px rgba(15,26,40,.35),0 0 0 2px rgba(255,255,255,.7);z-index:2}
 .ap3-card img{display:block;width:100%;height:auto}
 .ap3-pick{left:0;top:90px;transform:rotate(-6deg)}
@@ -42,6 +42,7 @@
 #tvl-appfoot{display:none!important}
 @media (max-width:960px){.ap3-hero{grid-template-columns:1fr;text-align:center}.ap3-dek{margin:0 auto}.ap3-btns{justify-content:center}.ap3-free{justify-content:center}.ap3-art{height:520px;max-width:520px;width:100%;margin:0 auto}.ap3-feats{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.ap3 .ap3-h1{font-size:38px}.ap3-dek{font-size:17.5px}.ap3-btns{flex-direction:column;align-items:center;gap:12px}.ap3 .ap3-store{width:250px;height:76px}.ap3 .ap3-store img{height:66px;max-width:230px}.ap3-free{font-size:15.5px;text-align:left}
-  .ap3-art{height:440px}.ap3-phone{width:210px;height:432px;margin-left:-105px;border-radius:36px;padding:9px}.ap3-phone img{border-radius:28px}.ap3-card{width:126px}.ap3-pick{top:110px;left:-4px}.ap3-eat{top:160px;right:-4px}.ap3-tag{font-size:12.5px;padding:6px 10px}.ap3-t1{top:74px;left:0}.ap3-t2{top:128px;right:0}
+  .ap3-art{height:440px}.ap3-phone{width:210px;height:376px;margin-left:-105px;border-radius:36px;padding:9px}.ap3-phone img{border-radius:28px}.ap3-card{width:126px}.ap3-pick{top:110px;left:-4px}.ap3-eat{top:160px;right:-4px}.ap3-tag{font-size:12.5px;padding:6px 10px}.ap3-t1{top:74px;left:0}.ap3-t2{top:128px;right:0}
   .ap3-feats{grid-template-columns:1fr}.ap3-endh{font-size:24px}}
 @media (prefers-reduced-motion:reduce){.ap3 .ap3-store,.ap3 .ap3-store:after{animation:none!important}}
+.ap3-nw{white-space:nowrap}
