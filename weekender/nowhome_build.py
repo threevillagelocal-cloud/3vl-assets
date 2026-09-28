@@ -123,16 +123,16 @@ def event_schema(d, img):
         v = V.get(e.get("venue"), {})
         ongoing = bool(e.get("when"))
         ev = {"@type": "Event", "name": e["title"], "description": e.get("desc", ""),
-              "startDate": _iso(d["starts"] + "T00:00") if ongoing and d.get("starts") else _iso(e["start"]),
+              "startDate": _iso(d["starts"][:16] if "T" in d["starts"] else d["starts"] + "T00:00") if ongoing and d.get("starts") else _iso(e["start"][:16]),
               "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
               "eventStatus": "https://schema.org/EventScheduled",
               "location": {"@type": "Place", "name": v.get("name") or e.get("venue", ""),
                            "address": {"@type": "PostalAddress", "streetAddress": (v.get("addr") or "").split(",")[0].strip(),
                                        "addressLocality": (v.get("addr") or ",").split(",")[-1].strip() or "Setauket", "addressRegion": "NY", "addressCountry": "US"}}}
         if e.get("end") and not ongoing:
-            ev["endDate"] = _iso(e["end"])
+            ev["endDate"] = _iso(e["end"][:16])
         if ongoing and e.get("until"):
-            ev["endDate"] = _iso(e["until"] + ("T23:59" if "T" not in e["until"] else ""))
+            ev["endDate"] = _iso(e["until"][:16] if "T" in e["until"] else e["until"] + "T23:59")
         if e.get("img"):
             ev["image"] = [img(e["img"])]
         if e.get("url"):
