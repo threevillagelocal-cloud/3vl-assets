@@ -261,13 +261,13 @@ def build(edition, local=False, sha="master"):
     w('</div></section>')
 
     # SUBMIT + SHARE + APP
-    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got something you want to promote?</p><p class="wk-subd">Three Village Now updates every day. '
+    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got something you want to promote?</p><p class="wk-subd">Three Village Local updates every day. '
       'Send us your event, menu special or promotion and we’ll put it in front of Three Village.</p>'
       '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Submit it free &rarr;</a></div>'
       '<div class="wk-share"><p class="wk-subt">Send this to your crew</p><div class="wk-shb">'
-      '<button type="button" class="wk-btn wk-btnw" id="wk-share">&#128172; Share Three Village Now</button>'
+      '<button type="button" class="wk-btn wk-btnw" id="wk-share">&#128172; Share Three Village Local</button>'
       '<button type="button" class="wk-btn wk-btnw" id="wk-share2">&#11088; Share my plan</button></div></div>'
-      '<div class="wk-app"><p class="wk-subt">Get Three Village Now on your phone</p><p class="wk-subd">The free Three Village Local app puts today&rsquo;s events, local specials and neighbor-rated businesses right on your phone.</p>'
+      '<div class="wk-app"><p class="wk-subt">Get Three Village Local on your phone</p><p class="wk-subd">The free Three Village Local app puts today&rsquo;s events, local specials and neighbor-rated businesses right on your phone.</p>'
       '<div class="wk-appb"><a href="https://apps.apple.com/us/app/three-village-local/id6746367200" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/badges/app-store-badge.png" alt="Download on the App Store" width="142" height="50"></a>'
       '<a href="https://play.google.com/store/apps/details?id=com.threevillagelocal.app&amp;hl=en_US" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/badges/google-play-badge.png" alt="Get it on Google Play" width="168" height="50"></a></div></div></section>')
     w('<p class="wk-foot">Plans change. Check with the organizer before you head out. Sources: organizer websites, TBR News Media, and local business pages on Facebook.</p>')
