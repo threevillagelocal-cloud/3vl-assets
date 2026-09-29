@@ -1,0 +1,150 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Three Village Local - Join Your Neighbors</title>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:8.5in 11in;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
+.pg{width:8.5in;height:11in;position:relative;overflow:hidden;background:#fff;page-break-after:always;break-after:page}
+.pg:last-child{page-break-after:auto;break-after:auto}
+.navy{color:#13263b}.gold{color:#d49400}
+.hand{font-family:"Caveat",cursive;font-weight:700}
+.top{position:absolute;left:44px;right:44px;top:34px;display:flex;justify-content:space-between;align-items:center}
+.wm{font-size:22px;font-weight:700;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+.wm i{font-style:normal;width:30px;height:30px;border-radius:50%;background:#13263b;color:#ffc53d;display:grid;place-items:center;font-size:17px}
+.wm b{color:#d49400}
+.towns{font-size:14px;font-weight:600;color:#4c5f75;background:#eef3f8;border-radius:999px;padding:7px 14px}
+/* FRONT */
+.hd{position:absolute;left:44px;right:44px;top:92px}
+h1{font-size:60px;line-height:1;font-weight:700;letter-spacing:-.03em;color:#13263b}
+h1 .u{position:relative;display:inline-block;color:#13263b}
+h1 .u:after{content:"";position:absolute;left:-4px;right:-6px;bottom:4px;height:16px;background:#ffc53d;opacity:.75;z-index:-1;border-radius:4px;transform:rotate(-1deg)}
+.note{position:absolute;right:6px;top:4px;transform:rotate(-4deg);font-size:30px;color:#d49400;text-align:center;line-height:.95}
+.note:after{content:"";display:block;margin:4px auto 0;width:120px;height:14px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 14'><path d='M2 9 C30 2 70 2 118 8' stroke='%23d49400' stroke-width='3' fill='none' stroke-linecap='round'/></svg>") center/contain no-repeat}
+.sub{margin-top:16px;font-size:19px;line-height:1.42;color:#3a4d63;font-weight:500;max-width:640px}
+.mosaic{position:absolute;left:44px;top:318px;width:728px;height:420px}
+.ph{position:absolute;background:#fff;padding:7px 7px 34px;border-radius:10px;box-shadow:0 10px 26px rgba(19,38,59,.18),0 1px 3px rgba(19,38,59,.12)}
+.ph .im{width:100%;height:100%;border-radius:5px;background-size:cover;background-position:center}
+.ph .cp{position:absolute;left:0;right:0;bottom:3px;text-align:center;font-family:"Caveat",cursive;font-weight:700;font-size:21px;color:#13263b}
+.p1{left:0;top:0;width:300px;height:236px}
+.p2{left:0;top:250px;width:210px;height:170px}
+.p3{left:224px;top:250px;width:210px;height:170px}
+.p4{left:316px;top:0;width:200px;height:236px}
+.p5{left:420px;top:250px;width:150px;height:170px}
+.phone{position:absolute;right:0;top:-8px;width:196px;height:412px;background:#0c1520;border-radius:32px;padding:8px;box-shadow:0 18px 40px rgba(19,38,59,.35);z-index:3}
+.phone .sc{width:100%;height:100%;border-radius:25px;overflow:hidden;background:#1b2f45;padding-top:24px;position:relative}
+.phone .sc img{width:100%;display:block}
+.phone .nt{position:absolute;top:13px;left:50%;transform:translateX(-50%);width:58px;height:16px;background:#0c1520;border-radius:9px;z-index:2}
+.quote{position:absolute;z-index:4;background:#fff;border-radius:16px;padding:12px 16px 11px;box-shadow:0 12px 30px rgba(19,38,59,.22);border-left:5px solid #ffc53d}
+.quote .s{color:#e8a400;font-size:15px;letter-spacing:2px}
+.quote p{font-size:15.5px;line-height:1.3;font-weight:600;color:#13263b;margin:3px 0 4px}
+.quote small{font-size:13px;color:#5b6d82;font-weight:600}
+.q1{left:464px;top:590px;width:300px}
+.stats{position:absolute;left:44px;right:44px;top:772px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.st{border-radius:16px;background:#eef3f8;padding:12px 16px;display:flex;align-items:center;gap:12px}
+.st .ic{flex:0 0 44px;height:44px;border-radius:50%;background:#13263b;display:grid;place-items:center}
+.st .ic svg{width:22px;height:22px;stroke:#ffc53d;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.st b{display:block;font-size:28px;font-weight:700;letter-spacing:-.02em;line-height:1}
+.st span{display:block;font-size:14px;font-weight:600;color:#4c5f75;line-height:1.2;margin-top:3px}
+.cta{position:absolute;left:44px;right:44px;bottom:36px;height:150px;border-radius:22px;background:#13263b;color:#fff;display:flex;align-items:center;gap:22px;padding:0 20px 0 32px}
+.cta .t{flex:1}
+.cta .t b{display:block;font-size:34px;font-weight:700;letter-spacing:-.02em;line-height:1.05}
+.cta .t b em{font-style:normal;color:#ffc53d}
+.cta .t span{display:block;font-size:17px;color:#d5deea;font-weight:500;margin-top:8px}
+.cta .t .hand{font-size:24px;color:#ffc53d;margin-top:4px;display:block}
+.qrw{background:#fff;border-radius:14px;padding:9px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.qr{width:100px;height:100px}.qr svg{width:100%;height:100%}
+.qrw small{font-size:11px;font-weight:700;letter-spacing:.18em;color:#13263b}
+/* BACK */
+h2{font-size:40px;line-height:1.04;font-weight:700;letter-spacing:-.025em}
+.bk{position:absolute;left:44px;right:44px;top:84px}
+.bk .lead{font-size:17px;color:#3a4d63;font-weight:500;margin-top:8px}
+.ben{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:14px}
+.b1{background:#eef3f8;border-radius:16px;padding:12px 13px;display:grid;grid-template-columns:40px 1fr;column-gap:11px;align-items:start}.b1 .ic{grid-row:span 2}
+.b1 .ic{width:40px;height:40px;border-radius:50%;background:#ffc53d;display:grid;place-items:center}
+.b1 .ic svg{width:20px;height:20px;stroke:#13263b;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.b1 h3{font-size:17px;font-weight:700;line-height:1.15;margin-bottom:3px}
+.b1 p{font-size:13.5px;line-height:1.33;color:#3f5268;font-weight:500}
+.sec{display:flex;align-items:baseline;gap:12px;margin:18px 0 9px}
+.sec h4{font-size:22px;font-weight:700;letter-spacing:-.01em}
+.sec .hand{font-size:24px;color:#d49400}
+.wall{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}
+.lg{height:58px;background:#fff;border:1px solid #e2e9f1;border-radius:10px;display:grid;place-items:center;padding:5px}
+.lg{overflow:hidden}.lg img{max-width:100%;max-height:48px;object-fit:contain;border-radius:4px}
+.row2{display:grid;grid-template-columns:1.2fr 1fr;gap:14px;margin-top:16px}
+.steps{display:flex;flex-direction:column;gap:7px}
+.step{display:flex;align-items:center;gap:12px;background:#eef3f8;border-radius:14px;padding:7px 12px}
+.step .n{flex:0 0 36px;height:36px;border-radius:50%;background:#13263b;color:#ffc53d;font-weight:700;font-size:18px;display:grid;place-items:center}
+.step b{display:block;font-size:16px;line-height:1.15}
+.step span{display:block;font-size:13px;color:#4c5f75;font-weight:500}
+.q2{position:relative;background:#fff;border-radius:16px;padding:14px 16px;box-shadow:0 10px 26px rgba(19,38,59,.16);border-left:5px solid #ffc53d;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.q2 .s{color:#e8a400;font-size:16px;letter-spacing:2px}
+.q2 p{font-size:17px;line-height:1.32;font-weight:600;margin:5px 0 6px}
+.q2 small{font-size:13px;color:#5b6d82;font-weight:600}
+.foot{position:absolute;left:44px;right:44px;bottom:36px;height:132px;border-radius:22px;background:#13263b;color:#fff;display:flex;align-items:center;gap:20px;padding:0 20px 0 30px}
+.foot .t{flex:1}
+.foot .hand{font-size:30px;color:#ffc53d;line-height:1}
+.foot b{display:block;font-size:17px;font-weight:600;color:#fff;margin-top:6px}
+.foot span{display:block;font-size:15px;color:#d5deea;margin-top:3px}
+.foot .qr{width:88px;height:88px}
+</style></head><body>
+
+<!-- FRONT -->
+<section class="pg">
+  <div class="top"><div class="wm"><i>★</i>Three Village <b>Local</b></div><div class="towns">Setauket · Stony Brook · Port Jefferson</div></div>
+  <div class="hd">
+    <h1>Your neighbors are<br>looking for <span class="u">you.</span></h1>
+    <div class="note hand">By neighbors,<br>for neighbors</div>
+    <p class="sub">Three Village Local connects the people of Setauket, Stony Brook and Port Jefferson with the local businesses they love. Join the community and let your neighbors find you.</p>
+  </div>
+  <div class="mosaic">
+    <div class="ph p1"><div class="im" style="background-image:url('{sbv}')"></div><div class="cp">Stony Brook Village</div></div>
+    <div class="ph p4"><div class="im" style="background-image:url('{crowd}')"></div><div class="cp">Art in the Park</div></div>
+    <div class="ph p2"><div class="im" style="background-image:url('{cc}')"></div><div class="cp">East Setauket</div></div>
+    <div class="ph p3"><div class="im" style="background-image:url('{scare}')"></div><div class="cp">Scarecrow season</div></div>
+    <div class="phone"><div class="nt"></div><div class="sc"><img src="{HOME}"></div></div>
+  </div>
+  <div class="quote q1"><div class="s">★★★★★</div><p>"We love Kai Li as our local Chinese food place! We are never disappointed."</p><small>Christine, reviewing Kai Li Kitchen</small></div>
+  <div class="stats">
+    <div class="st"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12s3.5-7 9-7 9 7 9 7-3.5 7-9 7-9-7-9-7z"/><circle cx="12" cy="12" r="3"/></svg></div><div><b>10,000+</b><span>neighbors visit every month</span></div></div>
+    <div class="st"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></div><div><b>100K+</b><span>social media views a month</span></div></div>
+    <div class="st"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><div><b>280+</b><span>local businesses already on board</span></div></div>
+  </div>
+  <div class="cta">
+    <div class="t"><b>Join your <em>neighbors.</em></b><span>Scan to list your business in about 5 minutes.</span><span class="hand">ThreeVillageLocal.com/join</span></div>
+    <div class="qrw"><div class="qr">{QR}</div><small>SCAN ME</small></div>
+  </div>
+</section>
+
+<!-- BACK -->
+<section class="pg">
+  <div class="top"><div class="wm"><i>★</i>Three Village <b>Local</b></div><div class="towns">Local eyes, not random clicks</div></div>
+  <div class="bk">
+    <h2>Why local businesses <span class="gold">love it here</span></h2>
+    <p class="lead">Our website, free app and social media put you in front of the people down the street.</p>
+    <div class="ben">
+      <div class="b1"><div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3>On our website + free app</h3><p>Neighbors search us every day on the web, iPhone and Android.</p></div>
+      <div class="b1"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .7-5.3 4.7 1.6 7L12 17.3 5.7 21l1.6-7L2 9.2l7-.7z"/></svg></div><h3>Rated by neighbors</h3><p>Real reviews from real locals build trust before they walk in.</p></div>
+      <div class="b1"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h3l6 5V5L7 10H4a1 1 0 0 0-1 1z"/><path d="M17 8a5 5 0 0 1 0 8"/></svg></div><h3>Shared on social media</h3><p>Spotlights on our local Facebook and Instagram pages.</p></div>
+      <div class="b1"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div><h3>Easier to find on Google</h3><p>Links back to your website help more people discover you.</p></div>
+      <div class="b1"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><h3>Your events, front + center</h3><p>Share events and specials on our live community calendar.</p></div>
+      <div class="b1"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="3"/><path d="M16 10l6-3v10l-6-3"/></svg></div><h3>Stories about you</h3><p>Articles, videos and drone photos that tell your story.</p></div>
+    </div>
+    <div class="sec"><h4>Your neighbors are already here</h4><span class="hand">join 280+ local businesses!</span></div>
+    <div class="wall">{LOGOS}</div>
+    <div class="row2">
+      <div class="steps">
+        <div class="step"><div class="n">1</div><div><b>Scan the code</b><span>It takes about 5 minutes</span></div></div>
+        <div class="step"><div class="n">2</div><div><b>Tell us about your business</b><span>Photos, hours, what makes you special</span></div></div>
+        <div class="step"><div class="n">3</div><div><b>We help you shine</b><span>We'll help set it up and spread the word</span></div></div>
+      </div>
+      <div class="q2"><div class="s">★★★★★</div><p>"It is the ONLY place I will bring my vehicles. Friendly, knowledgeable, and great service."</p><small>John M, reviewing Smitty's Garage</small></div>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="t"><div class="hand">Questions? I'd love to help you get started.</div><b>Matt, Three Village Local</b><span>threevillagelocal@gmail.com  ·  ThreeVillageLocal.com/join</span></div>
+    <div class="qrw"><div class="qr">{QR}</div><small>SCAN ME</small></div>
+  </div>
+</section>
+</body></html>
