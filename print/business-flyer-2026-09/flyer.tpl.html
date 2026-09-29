@@ -1,0 +1,152 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Three Village Local - Business Flyer</title>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:8.5in 11in;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#0b1522;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:"Radio Canada",system-ui,sans-serif;color:#fff}
+.pg{width:8.5in;height:11in;position:relative;overflow:hidden;page-break-after:always;break-after:page}
+.pg:last-child{page-break-after:auto;break-after:auto}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.shade{position:absolute;inset:0}
+.in{position:relative;height:100%;padding:44px 50px 40px}
+.gold{color:#ffc53d}
+.pill{display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 16px;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+.pill.g{background:linear-gradient(180deg,#ffd466,#ffc53d);color:#0e1a29;box-shadow:0 6px 18px rgba(255,197,61,.35)}
+.pill.gl{background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.4);color:#fff;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:15px}
+/* front */
+.f .shade{background:linear-gradient(100deg,rgba(8,14,24,.92) 0%,rgba(8,14,24,.7) 48%,rgba(8,14,24,.35) 100%),linear-gradient(180deg,rgba(8,14,24,0) 55%,rgba(8,14,24,.9) 100%)}
+.brand{font-size:24px;font-weight:700;letter-spacing:-.01em;margin:22px 0 6px;opacity:.95}
+h1{font-size:60px;line-height:1.02;font-weight:700;letter-spacing:-.025em;margin:0 0 16px}
+.sub{font-size:19px;line-height:1.4;max-width:690px;color:#e6edf5;font-weight:500}
+.phones{position:absolute;left:0;right:0;top:380px;height:390px}
+.ph{position:absolute;background:#0a0f16;border-radius:34px;padding:8px;box-shadow:0 26px 60px rgba(0,0,0,.55),0 0 0 1.5px rgba(255,255,255,.18)}
+.ph .sc{width:100%;height:100%;border-radius:27px;overflow:hidden;position:relative;background:#fff;padding-top:26px}.ph .sc:before{content:"";position:absolute;left:0;right:0;top:0;height:26px;background:#1b2f45}
+.ph .sc img{width:100%;display:block}
+.ph .nt{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:62px;height:17px;background:#0a0f16;border-radius:10px;z-index:2}
+.ph.a{left:80px;top:30px;width:182px;height:360px}
+.ph.b{left:302px;top:0;width:212px;height:392px;z-index:2;box-shadow:0 30px 70px rgba(0,0,0,.6),0 0 0 2px #ffc53d,0 0 40px rgba(255,197,61,.28)}
+.ph.c{left:554px;top:30px;width:182px;height:360px}
+.cap{position:absolute;z-index:3;background:#fff;color:#0e1a29;border-radius:14px;padding:9px 14px;font-weight:700;font-size:15px;line-height:1.2;box-shadow:0 12px 28px rgba(0,0,0,.4);display:flex;align-items:center;gap:9px;white-space:nowrap}
+.cap i{font-style:normal;width:28px;height:28px;border-radius:50%;background:#ffc53d;display:grid;place-items:center;flex:0 0 28px}
+.cap svg{width:16px;height:16px;stroke:#0e1a29;fill:none;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+.stats{position:absolute;left:50px;right:50px;top:790px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.st{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.28);border-radius:18px;padding:12px 16px}
+.st b{display:block;font-size:32px;font-weight:700;letter-spacing:-.02em;color:#ffc53d;line-height:1.05}
+.st span{display:block;font-size:15px;font-weight:600;color:#e6edf5;line-height:1.25;margin-top:2px}
+.cta{position:absolute;left:50px;right:50px;bottom:34px;height:112px;background:#fff;border-radius:22px;display:flex;align-items:center;gap:22px;padding:0 16px 0 28px;color:#0e1a29;box-shadow:0 20px 50px rgba(0,0,0,.45),0 0 0 3px #ffc53d}
+.cta .t{flex:1}
+.cta .t b{display:block;font-size:31px;font-weight:700;letter-spacing:-.02em;line-height:1.05}
+.cta .t span{display:block;font-size:17px;font-weight:600;color:#44546a;margin-top:6px}
+.cta .t em{font-style:normal;color:#b07d00}
+.qr{width:94px;height:94px;flex:0 0 94px}
+.qr svg{width:100%;height:100%}
+.scan{writing-mode:vertical-rl;transform:rotate(180deg);font-size:12px;font-weight:700;letter-spacing:.22em;color:#0e1a29;text-transform:uppercase}
+/* back */
+.b .shade{background:linear-gradient(180deg,rgba(9,17,28,.82) 0%,rgba(9,17,28,.93) 30%,rgba(9,17,28,.97) 100%)}
+.b .in{padding:34px 46px 30px}
+h2{font-size:42px;line-height:1.02;font-weight:700;letter-spacing:-.02em;margin:12px 0 6px}
+.lead{font-size:17px;color:#d9e2ec;font-weight:500;line-height:1.4;max-width:640px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.card{background:#fff;color:#0e1a29;border-radius:18px;padding:13px 15px;display:flex;gap:13px;align-items:flex-start;box-shadow:0 12px 26px rgba(0,0,0,.35)}
+.ic{flex:0 0 42px;width:42px;height:42px;border-radius:12px;background:#0e1a29;display:grid;place-items:center}
+.ic svg{width:22px;height:22px;stroke:#ffc53d;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:18px;font-weight:700;letter-spacing:-.01em;line-height:1.15;margin-bottom:3px}
+.card p{font-size:14px;line-height:1.35;color:#3d4d61;font-weight:500}
+.sec{display:flex;align-items:center;gap:12px;margin:20px 0 12px;font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#ffc53d}
+.sec:after{content:"";flex:1;height:1.5px;background:linear-gradient(90deg,rgba(255,197,61,.6),rgba(255,197,61,0))}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.step{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.24);border-radius:16px;padding:9px 13px;display:flex;gap:12px;align-items:center}
+.step .n{flex:0 0 38px;height:38px;border-radius:50%;background:linear-gradient(180deg,#ffd466,#ffc53d);color:#0e1a29;font-weight:700;font-size:20px;display:grid;place-items:center}
+.step b{display:block;font-size:17px;line-height:1.15}
+.step span{display:block;font-size:13.5px;color:#d0dae6;font-weight:500;line-height:1.3;margin-top:2px}
+.plans{display:grid;grid-template-columns:1fr 1fr 1.12fr;gap:12px;align-items:stretch}
+.pl{background:#fff;color:#0e1a29;border-radius:18px;padding:13px 15px 11px;position:relative;box-shadow:0 12px 26px rgba(0,0,0,.35)}
+.pl.v{box-shadow:0 0 0 3px #ffc53d,0 0 30px rgba(255,197,61,.35),0 12px 26px rgba(0,0,0,.35)}
+.pl .tag{position:absolute;top:-12px;left:14px;height:24px;padding:0 11px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;background:#0e1a29;color:#fff}
+.pl.v .tag{background:linear-gradient(180deg,#ffd466,#ffc53d);color:#0e1a29}
+.pl h4{font-size:18px;font-weight:700;margin-top:4px}
+.pr{font-size:31px;font-weight:700;letter-spacing:-.02em;line-height:1.05;margin:2px 0 6px}
+.pr small{font-size:15px;font-weight:600;color:#5b6b7f;letter-spacing:0}
+.pl ul{list-style:none}
+.pl li{font-size:13.5px;line-height:1.3;font-weight:500;color:#33445a;padding-left:18px;position:relative;margin-top:4px}
+.pl li:before{content:"✓";position:absolute;left:0;color:#0f866c;font-weight:700}
+.pl.v li:before{color:#b07d00}
+.trust{display:flex;justify-content:center;gap:22px;margin-top:14px;font-size:14.5px;font-weight:600;color:#d9e2ec}
+.trust span:before{content:"✓ ";color:#ffc53d;font-weight:700}
+.foot{position:absolute;left:46px;right:46px;bottom:28px;height:112px;background:#fff;border-radius:20px;color:#0e1a29;display:flex;align-items:center;gap:20px;padding:0 14px 0 26px;box-shadow:0 0 0 3px #ffc53d,0 16px 40px rgba(0,0,0,.45)}
+.foot .t{flex:1}
+.foot b{display:block;font-size:26px;font-weight:700;letter-spacing:-.02em;line-height:1.05}
+.foot span{display:block;font-size:15px;font-weight:600;color:#44546a;margin-top:4px}
+.foot .tr{font-size:14px;color:#0e1a29;margin-top:4px}.foot .tr i{font-style:normal;color:#b07d00;font-weight:700;margin-left:6px}.foot .tr i:first-child{margin-left:0}
+.foot .qr{width:82px;height:82px;flex:0 0 82px}
+</style></head><body>
+
+<!-- FRONT -->
+<section class="pg f">
+  <div class="bg" style="background-image:url('{BGF}')"></div><div class="shade"></div>
+  <div class="in">
+    <span class="pill g">★ For local businesses</span>&nbsp; <span class="pill gl">Setauket · Stony Brook · Port Jefferson</span>
+    <p class="brand">Three Village <span class="gold">Local</span></p>
+    <h1>Get your business<br><span class="gold">seen by the neighbors.</span></h1>
+    <p class="sub">The local promotion platform for the Three Village area. Our website, free app and social media, all working for you.</p>
+  </div>
+  <div class="phones">
+    <div class="ph a"><div class="nt"></div><div class="sc"><img src="{VIP}"></div></div>
+    <div class="ph b"><div class="nt"></div><div class="sc"><img src="{HOME}"></div></div>
+    <div class="ph c"><div class="nt"></div><div class="sc"><img src="{PROF}"></div></div>
+    <div class="cap" style="left:40px;top:-8px"><i><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></i>Found on the website + app</div>
+    <div class="cap" style="left:470px;top:318px"><i><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></i>One-tap call + directions</div>
+    <div class="cap" style="left:560px;top:-8px"><i><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .7-5.3 4.7 1.6 7L12 17.3 5.7 21l1.6-7L2 9.2l7-.7z"/></svg></i>Rated by neighbors</div>
+  </div>
+  <div class="stats">
+    <div class="st"><b>10,000+</b><span>monthly website + app visitors</span></div>
+    <div class="st"><b>100K+</b><span>monthly social media views</span></div>
+    <div class="st"><b>9,500+</b><span>local Facebook + IG followers</span></div>
+  </div>
+  <div class="cta">
+    <div class="t"><b>Get listed <em>FREE</em> in 5 minutes.</b><span>Scan the code or visit ThreeVillageLocal.com/join</span></div>
+    <div class="scan">Scan me</div>
+    <div class="qr">{QR}</div>
+  </div>
+</section>
+
+<!-- BACK -->
+<section class="pg b">
+  <div class="bg" style="background-image:url('{BGB}')"></div><div class="shade"></div>
+  <div class="in">
+    <span class="pill g">★ Why businesses join</span>
+    <h2>Everything working<br><span class="gold">for your business.</span></h2>
+    <p class="lead">Local eyes, not random clicks. Our audience is your neighbors.</p>
+    <div class="grid">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><div><h3>On the website + free app</h3><p>Neighbors search us every day. You show up on the web and on iPhone + Android.</p></div></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .7-5.3 4.7 1.6 7L12 17.3 5.7 21l1.6-7L2 9.2l7-.7z"/></svg></div><div><h3>Rated by your neighbors</h3><p>Real reviews from real locals build trust before customers walk in.</p></div></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h3l6 5V5L7 10H4a1 1 0 0 0-1 1z"/><path d="M17 8a5 5 0 0 1 0 8M20 5a9 9 0 0 1 0 14"/></svg></div><div><h3>Promoted on social media</h3><p>Spotlights shared with 9,500+ local followers and 100K+ monthly views.</p></div></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div><div><h3>Rank higher on Google</h3><p>SEO backlinks to your website and social pages help more people find you.</p></div></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><div><h3>Share your events</h3><p>Post events to our live calendar and homepage, seen all week.</p></div></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="3"/><path d="M16 10l6-3v10l-6-3"/></svg></div><div><h3>Video, drone + articles</h3><p>VIPs get video promotion, drone photos, a custom article and a monthly app push.</p></div></div>
+    </div>
+
+    <div class="sec">Easy as 1-2-3</div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><b>Scan the code</b><span>Takes about 5 minutes</span></div></div>
+      <div class="step"><div class="n">2</div><div><b>Pick your plan</b><span>Start free, upgrade anytime</span></div></div>
+      <div class="step"><div class="n">3</div><div><b>We help set it up</b><span>Photos, text + categories</span></div></div>
+    </div>
+
+    <div class="sec">Plans</div>
+    <div class="plans">
+      <div class="pl"><div class="tag">Be listed</div><h4>Just the Basics</h4><div class="pr">$0</div><ul><li>Website + app listing</li><li>Photo, contact + map</li><li>Category placement</li><li>Free, forever</li></ul></div>
+      <div class="pl"><div class="tag">Most popular</div><h4>Getting Noticed</h4><div class="pr">$32<small> /month</small></div><ul><li>Priority placement</li><li>Logo + 5 photos</li><li>Post your events</li><li>Spotlights + SEO backlinks</li></ul></div>
+      <div class="pl v"><div class="tag">★ Only 3 per category</div><h4>Three Village VIP</h4><div class="pr">$115<small> /month</small></div><ul><li>Top of search + banner ads</li><li>Video, drone + article</li><li>Monthly push to phones</li><li>$500+/mo in marketing value</li></ul></div>
+    </div>
+    
+  </div>
+  <div class="foot">
+    <div class="t"><b>Join your neighbors today.</b><span>ThreeVillageLocal.com/join  ·  threevillagelocal@gmail.com</span><span class="tr"><i>✓</i> Month to month <i>✓</i> No contract <i>✓</i> Cancel anytime</span></div>
+    <div class="scan">Scan me</div>
+    <div class="qr">{QR}</div>
+  </div>
+</section>
+</body></html>
