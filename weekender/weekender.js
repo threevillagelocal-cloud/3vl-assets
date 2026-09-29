@@ -116,7 +116,7 @@ function countdown(){var c=$('wk-count'),l=$('wk-cl'),t=now(),target,label;if(!c
 function heroLive(){var t=now(),d=$('wk-hdate'),c=$('wk-hclock');
   if(d)d.textContent=t.toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric'});
   if(c)c.textContent=tm(t);
-  var live=LIST.filter(function(e){return t>=e.start&&t<e.end}),next=LIST.filter(function(e){return e.start>t})[0],n=$('wk-hnow'),x=$('wk-hnext');
+  var live=LIST.filter(function(e){return isLive(e,t)}),next=LIST.filter(function(e){return e.start>t})[0],n=$('wk-hnow'),x=$('wk-hnext');
   if(n)n.textContent=live.length?live.length+(live.length===1?' event':' events'):'Quiet now';
   if(x)x.textContent=next?'Next: '+next.title.slice(0,34)+(next.title.length>34?'...':'')+(next.start.toDateString()===t.toDateString()?' at '+tm(next.start):', '+ds(next.start)):'See the full schedule';}
 function heroWx(){fetch('https://api.weather.gov/points/'+LAT+','+LON).then(function(r){return r.json()}).then(function(p){return fetch(p.properties.forecastHourly)}).then(function(r){return r.json()}).then(function(d){
@@ -133,10 +133,15 @@ function sunset(date){var rad=Math.PI/180,day=Math.floor((Date.UTC(date.getFullY
   ha=Math.acos(Math.cos(90.833*rad)/(Math.cos(LAT*rad)*Math.cos(dec))-Math.tan(LAT*rad)*Math.tan(dec))/rad,
   mins=720-4*(LON-ha)-eq;var d=new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate())+mins*60000);return d}
 
+/* "happening now": one-day events use their real start/end. Events that run for days or weeks are only live during
+   their daily hours (the start/end clock times when given, else 10 AM to 6 PM), never overnight (owner 9/28/2026). */
+function isLive(e,t){if(!(t>=e.start&&t<e.end))return false;if(e.end-e.start<=864e5*1.1)return true;
+  var m=t.getHours()*60+t.getMinutes(),a=e.start.getHours()*60+e.start.getMinutes(),b=e.end.getHours()*60+e.end.getMinutes();
+  if(a===0||b<=a){a=600;b=1080}return m>=a&&m<b}
 /* ---------- status chips: live / soon / done ---------- */
 function statuses(){var t=now();
   LIST.forEach(function(e){var txt='',cls='';
-    if(t>=e.start&&t<e.end){txt='Happening now';cls='is-now'}
+    if(isLive(e,t)){txt='Happening now';cls='is-now'}
     else if(e.start>t&&e.start-t<3*3600e3){var m=Math.round((e.start-t)/60000);txt='Starts in '+(m>=60?Math.floor(m/60)+'h '+(m%60)+'m':m+' min');cls='is-soon'}
     else if(t>=e.end&&t-e.end<12*3600e3){txt='Wrapped';cls='is-done'}
     $$('[data-id="'+e.id+'"] [data-status]').forEach(function(s){s.textContent=txt;s.className='wk-pstat '+cls});
@@ -145,7 +150,7 @@ function statuses(){var t=now();
 /* ---------- happening now panel ---------- */
 function nowPanel(){var b=$('wk-nowb'),c=$('wk-clock');if(!b)return;var t=now();
   c.textContent=tm(t).replace(' ',' ');
-  var live=LIST.filter(function(e){return t>=e.start&&t<e.end}),next=LIST.filter(function(e){return e.start>t}).slice(0,live.length?2:4);
+  var live=LIST.filter(function(e){return isLive(e,t)}),next=LIST.filter(function(e){return e.start>t}).slice(0,live.length?2:4);
   var h='';
   function row(e,isLive){var p=isLive?Math.round((t-e.start)/(e.end-e.start)*100):0,lbl;
     if(isLive){var left=Math.round((e.end-t)/60000);lbl=(left>=60?Math.floor(left/60)+'h':left+'m')+'<br><small style="font-size:8px">left</small>'}
