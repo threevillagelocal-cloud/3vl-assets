@@ -31,6 +31,9 @@ function indexEvents(){EV={};
 /* ---------- LIVE DATA: rebuild schedule, picks and closings from the hourly events.json ---------- */
 var LIVEURL=root.getAttribute('data-live')||'https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/events.json';
 var TAGL={free:'Free',kids:'Kids',outdoor:'Outdoor',music:'Music',history:'History',food:'Food',arts:'Arts',stage:'On Stage'};
+function sm(u,w){u=String(u||'');if(!u||/wsrv\.nl|\.svg(\?|$)|^data:|cdn\.jsdelivr\.net\/gh\/threevillagelocal-cloud\/.*\.webp$/i.test(u))return u;if(u.charAt(0)==='/'&&u.charAt(1)!=='/')u=location.origin+u;
+  return /^https?:/i.test(u)?'https://wsrv.nl/?url='+encodeURIComponent(u)+'&w='+w+'&we&output=webp&q=75':u}  /* small WebP copy via wsrv.nl; some originals are 6 MB */
+function smi(u,w){var s=sm(u,w),q=function(x){return String(x).replace(/&/g,'&amp;').replace(/"/g,'&quot;')};return s===u?'src="'+q(u)+'"':'src="'+q(s)+'" data-o="'+q(u)+'" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=\'\'}"'}  /* <img> attrs; falls back to the original if wsrv fails */
 function esc2(x){return String(x||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function dkey(d){return 'd'+d.getFullYear()+('0'+(d.getMonth()+1)).slice(-2)+('0'+d.getDate()).slice(-2)}
 function renderLive(data){
@@ -54,7 +57,7 @@ function renderLive(data){
     var anchor=root.querySelector('#wk-sched .wk-allwk')||$('wk-nomatch');
     Object.keys(days).sort().forEach(function(k,di){var D=days[k],isT=k===dkey(t0),isTm=k===dkey(new Date(t0.getTime()+864e5));
       var h=(di?'':'<p class="wk-daytip">&#128073; Tap a day to see what&rsquo;s up</p>')+'<div class="wk-dayblk is-collapsed" data-day="'+k+'"><p class="wk-dayh" role="button" tabindex="0" aria-expanded="false"><b>'+(isT?'Today':isTm?'Tomorrow':DAYN2x(D.d))+'</b><span>'+ds(D.d)+'</span><i class="wk-dcount">'+D.l.length+' event'+(D.l.length===1?'':'s')+'</i><em class="wk-chev" aria-hidden="true"></em></p><ol class="wk-tl">';
-      D.l.forEach(function(e){var th=e.img?'<img src="'+esc2(e.img)+'" alt="" loading="lazy" width="120" height="120">':'<span class="wk-ticon">'+(IC[(e.tags.filter(function(x){return x!=='free'})[0])||'arts']||'&#9733;')+'</span>';
+      D.l.forEach(function(e){var th=e.img?'<img '+smi(e.img,360)+' alt="" loading="lazy" width="120" height="120">':'<span class="wk-ticon">'+(IC[(e.tags.filter(function(x){return x!=='free'})[0])||'arts']||'&#9733;')+'</span>';
         h+='<li class="wk-ev" '+attrs(e)+'><div class="wk-evt"><b>'+when(e)+'</b><span>'+(md(e)?thru(e):e.allday?'':'to '+tm(e.e))+'</span></div><div class="wk-evc"><div class="wk-evthumb">'+th+'</div><div class="wk-evbody">'+
           '<p class="wk-evtitle">'+(e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+' <span class="wk-pstat" data-status></span></p><p class="wk-evwhere">'+esc2(e.venue)+'</p>'+
           (e.desc?'<p class="wk-evdesc" tabindex="0">'+esc2(e.desc)+'</p>':'')+'<div class="wk-tags">'+chips(e.tags)+'<span class="wk-wxchip"></span></div></div>'+acts(e)+'</div></li>'});
@@ -68,7 +71,7 @@ function renderLive(data){
   var pk=$('wk-picks'),box=pk&&pk.querySelector('.wk-picks');
   if(box){var cand=evs.filter(function(e){return e.img&&!e.fb&&!e.status&&e.e>t}).sort(function(a,b){return (b.pick?1:0)-(a.pick?1:0)||(a.rank||9)-(b.rank||9)||a.s-b.s});
     var cur=cand.filter(function(e){return e.pick}),soon=cand.filter(function(e){return !e.pick&&e.s<new Date(t0.getTime()+3*864e5)}),pick=cur.concat(soon,cand.filter(function(e){return cur.indexOf(e)<0&&soon.indexOf(e)<0})).slice(0,6);
-    if(pick.length>=3)box.innerHTML=pick.map(function(e,i){return '<article class="wk-pick wk-rv is-in" '+attrs(e).replace('data-id="','data-id="pk-')+'><div class="wk-pimg"><img src="'+esc2(e.img)+'" alt="'+esc2(e.title)+'" loading="lazy"><span class="wk-pnum">0'+(i+1)+'</span>'+(e.ongoing?'':'<span class="wk-pstat" data-status></span>')+'</div>'+
+    if(pick.length>=3)box.innerHTML=pick.map(function(e,i){return '<article class="wk-pick wk-rv is-in" '+attrs(e).replace('data-id="','data-id="pk-')+'><div class="wk-pimg"><img '+smi(e.img,900)+' alt="'+esc2(e.title)+'" loading="lazy"><span class="wk-pnum">0'+(i+1)+'</span>'+(e.ongoing?'':'<span class="wk-pstat" data-status></span>')+'</div>'+
       '<div class="wk-pbody"><p class="wk-pwhen">'+(e.ongoing?esc2(e.whenText):ds(e.s)+' &middot; '+when(e))+'</p><h3 class="wk-ptitle">'+(e.ongoing&&e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+'</h3><p class="wk-pwhere">&#128205; '+esc2(e.venue)+'</p><p class="wk-pdesc">'+esc2(e.desc)+'</p><div class="wk-tags">'+chips(e.tags)+'</div>'+(e.ongoing?acts(e).replace(/<button type="button" class="wk-cal"[^<]*<\/button>/,'<a class="wk-dir" href="'+esc2(e.url)+'" target="_blank" rel="noopener">&#128279; Details</a>'):acts(e))+'</div></article>'}).join('')}
   if(box)RAD.forEach(function(r){if(!box.contains(r)){r.classList.add('is-in');box.appendChild(r)}});
   /* 3VL guide articles (weekend.json guides via #wk-top data-guides): link matching Top Things to Do cards (9/28) */
@@ -89,7 +92,7 @@ function renderLive(data){
     var card=function(x,old){var big=x.img||x.inset,small=x.img?x.inset:'',ob=old&&old.querySelector('.wk-spbiz');
       var map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(x.biz.replace(/\s*\(.*?\)/,'')+', '+(x.town||'Three Village')+', NY');
       var t=document.createElement('div');
-      t.innerHTML='<article class="wk-sp wk-rv is-in">'+(big?'<div class="wk-eimg"><img src="'+esc2(big)+'" alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img src="'+esc2(small)+'" alt="" loading="lazy"></span>':'')+'</div>':'')+
+      t.innerHTML='<article class="wk-sp wk-rv is-in">'+(big?'<div class="wk-eimg"><img '+smi(big,800)+' alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img '+smi(small,300)+' alt="" loading="lazy"></span>':'')+'</div>':'')+
        '<div class="wk-spb"><p class="wk-spbiz">'+(ob?ob.innerHTML:esc2(x.biz.replace(/\s*\(.*?\)/,'')))+'</p><p class="wk-spt">'+esc2(x.title)+'</p>'+(x.when?'<p class="wk-spw">'+esc2(x.when)+'</p>':'')+'<p class="wk-spd">'+esc2(x.desc)+'</p>'+
        '<p class="wk-spf"><span class="wk-src wk-igb">&#9711;</span><span>via <a class="wk-biz" href="'+esc2(x.url)+'" target="_blank" rel="noopener">Instagram</a></span><a class="wk-dir" href="'+esc2(map)+'" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>';
       return t.firstChild};
@@ -155,7 +158,7 @@ function nowPanel(){var b=$('wk-nowb'),c=$('wk-clock');if(!b)return;var t=now();
   function row(e,isLive){var p=isLive?Math.round((t-e.start)/(e.end-e.start)*100):0,lbl;
     if(isLive){var left=Math.round((e.end-t)/60000);lbl=(left>=60?Math.floor(left/60)+'h':left+'m')+'<br><small style="font-size:8px">left</small>'}
     else{var d=Math.round((e.start-t)/60000);lbl=d<60?d+'m':d<1440?Math.floor(d/60)+'h':ds(e.start).split(', ')[1]}
-    var pic=e.img?'<img src="'+e.img+'" alt="" loading="lazy">':'<span class="wk-nowico">'+(TAGI[e.tags.filter(function(t){return t!=="free"&&t!=="outdoor"})[0]||e.tags[0]]||'&#9733;')+'</span>';
+    var pic=e.img?'<img '+smi(e.img,240)+' alt="" loading="lazy">':'<span class="wk-nowico">'+(TAGI[e.tags.filter(function(t){return t!=="free"&&t!=="outdoor"})[0]||e.tags[0]]||'&#9733;')+'</span>';
     return '<a class="wk-nowi" href="#'+e.el.id+'" data-jump="'+e.id+'"><span class="wk-nowpic">'+pic+'</span><span class="wk-nowtx"><b>'+e.title+'</b><small>'+e.venue+' &middot; '+(isLive?'until '+tm(e.end):ds(e.start)+', '+tm(e.start))+'</small></span><span class="wk-nowbar" style="--p:'+p+'"><span>'+lbl+'</span></span></a>'}
   if(live.length){h+='<p class="wk-nowsub">&#9679; On right now &middot; '+live.length+'</p>';live.slice(0,4).forEach(function(e){h+=row(e,true)});if(live.length>4)h+='<a class="wk-nowmore" href="#wk-sched">+ '+(live.length-4)+' more happening now &rarr;</a>'}
   if(next.length){h+='<p class="wk-nowsub">'+(t<START?'Coming up':'Up next')+'</p>';next.forEach(function(e){h+=row(e,false)})}
@@ -172,7 +175,7 @@ function drawFeed(items){var ol=$('wk-flist'),tk=$('wk-tkt');if(!ol&&!tk)return;
   items.sort(function(a,b){return(b.t>a.t)?1:-1});
   if(ol)ol.innerHTML=items.slice(0,14).map(function(it,i){var key=it.who+it.text,isNew=!firstLoad&&!seen[key];seen[key]=1;
     var host='';try{host=it.url?new URL(it.url).hostname:''}catch(e){}var logo=it.logo||(host&&!/facebook\.com$/.test(host)&&it.src!=='nws'?'https://www.google.com/s2/favicons?sz=64&domain='+host:'');
-    return '<li class="wk-fi'+(isNew?' is-new':'')+'" style="animation-delay:'+(i*60)+'ms"><span class="wk-fic s-'+it.src+(logo?' has-logo':'')+'">'+(logo?'<img src="'+logo+'" alt="" loading="lazy">':(ICONS[it.src]||'&#8226;'))+'</span><div><p class="wk-fw"><b>'+it.who+'</b> &middot; <span data-ago="'+it.t+'">'+ago(it.t)+'</span></p><p class="wk-ft">'+(it.url?'<a href="'+it.url+'" target="_blank" rel="noopener">'+it.text+'</a>':it.text)+'</p></div></li>'}).join('');
+    return '<li class="wk-fi'+(isNew?' is-new':'')+'" style="animation-delay:'+(i*60)+'ms"><span class="wk-fic s-'+it.src+(logo?' has-logo':'')+'">'+(logo?'<img '+smi(logo,120)+' alt="" loading="lazy">':(ICONS[it.src]||'&#8226;'))+'</span><div><p class="wk-fw"><b>'+it.who+'</b> &middot; <span data-ago="'+it.t+'">'+ago(it.t)+'</span></p><p class="wk-ft">'+(it.url?'<a href="'+it.url+'" target="_blank" rel="noopener">'+it.text+'</a>':it.text)+'</p></div></li>'}).join('');
   store.set('wkFeedSeen',seen);firstLoad=false;
   /* ticker only runs for big news: breaking items in feed.json or an active NWS warning */
   var big=items.filter(function(it){return it.breaking||(it.src==='nws'&&/Warning|Emergency/i.test(it.text))});

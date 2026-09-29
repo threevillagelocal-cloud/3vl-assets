@@ -8,6 +8,9 @@ var TC={'Kids & Family':'#3aa0e8','Music':'#d9534f','History':'#205081','Food & 
 var TI={'Kids & Family':'&#129490;','Music':'&#127925;','History':'&#128373;&#65039;','Food & Drink':'&#127822;','Arts & Stage':'&#127917;','Outdoors':'&#127795;','Learning':'&#128218;'};
 var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],MONL=['January','February','March','April','May','June','July','August','September','October','November','December'];
 var DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],DOWL=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+function sm(u,w){u=String(u||'');if(!u||/wsrv\.nl|\.svg(\?|$)|^data:|cdn\.jsdelivr\.net\/gh\/threevillagelocal-cloud\/.*\.webp$/i.test(u))return u;if(u.charAt(0)==='/'&&u.charAt(1)!=='/')u=location.origin+u;
+  return /^https?:/i.test(u)?'https://wsrv.nl/?url='+encodeURIComponent(u)+'&w='+w+'&we&output=webp&q=75':u}  /* small WebP copy via wsrv.nl; some originals are 6 MB */
+function smi(u,w){var s=sm(u,w),q=function(x){return String(x).replace(/&/g,'&amp;').replace(/"/g,'&quot;')};return s===u?'src="'+q(u)+'"':'src="'+q(s)+'" data-o="'+q(u)+'" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=\'\'}"'}  /* <img> attrs; falls back to the original if wsrv fails */
 function day(d){return new Date(d.getFullYear(),d.getMonth(),d.getDate())}
 function key(d){return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
 function tm(d){var h=d.getHours(),m=d.getMinutes(),a=h>=12?'PM':'AM';h=h%12||12;return h+(m?':'+(m<10?'0':'')+m:'')+' '+a}
@@ -54,7 +57,7 @@ function hero(){
   var fri=new Date(sat.getTime()-864e5),sun=new Date(sat.getTime()+864e5);
   up.forEach(function(ev){var d=day(ev.s);if(d>=fri&&d<=sun)wk++;if(ev.free)fr++});
   var pics=up.filter(function(ev){return ev.img&&ev.img.indexOf('/events-cal/img/')<0}).slice(0,60),seen={},pp=[];pics.forEach(function(ev){if(!seen[ev.img]&&pp.length<6){seen[ev.img]=1;pp.push(ev.img)}});
-  return '<header class="tvc-hero"><div class="tvc-mosaic">'+pp.map(function(u){return '<span style="background-image:url(\''+esc(u)+'\')"></span>'}).join('')+'</div>'+
+  return '<header class="tvc-hero"><div class="tvc-mosaic">'+pp.map(function(u){return '<span style="background-image:url(\''+esc(sm(u,560))+'\')"></span>'}).join('')+'</div>'+
     '<div class="tvc-hin"><span class="tvc-live"><i></i>LIVE &middot; Updated daily</span>'+
     '<h1 class="tvc-h1">Three Village <em>Events</em></h1>'+
     '<p class="tvc-sub">Everything happening in Stony Brook, Setauket, Port Jefferson and nearby, gathered every morning from local organizers.</p>'+
@@ -67,7 +70,7 @@ function bar(){
     '<button type="button" class="tvc-chip tvc-free'+(S.free?' is-on':'')+'" data-free="1"><i>&#127903;&#65039;</i>Free</button></div></div>'}
 
 function thumb(ev,cls){var t=ev.tags[0]||'';
-  return ev.img?'<img class="'+cls+'" src="'+esc(ev.img)+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">':
+  return ev.img?'<img class="'+cls+'" src="'+esc(sm(ev.img,640))+'" data-o="'+esc(ev.img)+'" alt="" loading="lazy" onerror="if(this.dataset.o&&this.src!==this.dataset.o){this.src=this.dataset.o}else{this.style.display=\'none\'}">':
     '<span class="'+cls+' tvc-noimg" style="--tc:'+(TC[t]||'#205081')+'">'+(TI[t]||'&#11088;')+'</span>'}
 function card(ev,i){var d=ev.s,on=day(ev.s)<T0&&ev.e>=NOW;  /* multi-day event that started earlier and is still running */
   return '<a class="tvc-card" href="'+esc(ev.url)+'" style="--i:'+(i%12)+'"><div class="tvc-pic">'+thumb(ev,'tvc-img')+
