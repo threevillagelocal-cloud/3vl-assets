@@ -1,14 +1,14 @@
 {
-"updated": "2026-09-28T21:51:41.697176+00:00",
+"updated": "2026-09-29T01:47:45.517859+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 46,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 221,
-"Emma S. Clark Library": 218,
+"Emma S. Clark Library": 215,
 "Stony Brook Village Center": 18,
-"Long Island Museum": 48,
+"Long Island Museum": 47,
 "Ward Melville Heritage Org": 6,
 "LI Music Hall of Fame": 6
 },
@@ -66,7 +66,7 @@
 {
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-09-28T00:00",
+"start": "2026-09-29T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
@@ -84,58 +84,6 @@
 "status": "",
 "pick": true,
 "rank": 4
-},
-{
-"id": "emmaclark-pokemon-club-grades-2-5-58555",
-"title": "Pokémon Club (Grades 2-5)",
-"start": "2026-09-28T17:00:00",
-"end": "2026-09-28T18:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/pokemon-club-grades-2-5-58555",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Pokemon%20Club.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 0
-},
-{
-"id": "emmaclark-cooking-chef-rob-falling-greek-food-58113",
-"title": "Cooking with Chef Rob: Falling for Greek Food",
-"start": "2026-09-28T18:30:00",
-"end": "2026-09-28T19:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/cooking-chef-rob-falling-greek-food-58113",
-"desc": "Chef Rob will show you how to make a meaty Greek “taco” topped with tzatziki and cool cucumber tomato relish. For dessert, he’ll prepare a sweet fall treat: cranberry apple dip served with cookies. Food samples and recipes will be provided.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/My%20Big%20Fat%20Greek%20Taco%20chef%20rob%20SEPT%202026.jpg",
-"src": "emmaclark",
-"tags": [
-"food"
-],
-"status": "",
-"fb": 0
-},
-{
-"id": "emmaclark-editing-made-easy-imovie-38541",
-"title": "Editing Made Easy with iMovie [ZOOM]",
-"start": "2026-09-28T18:30:00",
-"end": "2026-09-28T20:00:00",
-"allday": false,
-"venue": "Online (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/editing-made-easy-imovie-38541",
-"desc": "Learn how to use Apple’s iMovie program on your Mac. Students will learn basics of recording a movie, how to edit, add sound clips, add animations and effects plus you will learn how to upload the video to YouTube. Presented by Sharper Training Solutions.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-10/405684960_05a13d09-bb74-49fc-ae99-8318f9fe817e.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58877",
@@ -1594,6 +1542,114 @@
 ],
 "status": "",
 "fb": 0
+},
+{
+"id": "pjchamber-14181",
+"title": "2026 Port Jeff Self-Guided Fall Art Walk",
+"start": "2026-10-09T00:00:00",
+"end": "2026-11-06T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
+"desc": "We are currently accepting artist applications for our 2026 Port Jeff Fall Art Walk Self-Guided Tour which will be from October 9-November 6, 2026. – DOWNLOAD APPLICATION – ARTIST PAYMENT",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor",
+"arts"
+],
+"status": "",
+"fb": 0
+},
+{
+"id": "emmaclark-time-baby-newborn-15-mos-w-caregiver-58863",
+"title": "Time For Baby (Newborn - 15 mos w/ caregiver)",
+"start": "2026-10-09T10:00:00",
+"end": "2026-10-09T10:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/time-baby-newborn-15-mos-w-caregiver-58863",
+"desc": "We will learn songs, rhymes, and finger plays.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1
+},
+{
+"id": "emmaclark-game-day-38289",
+"title": "Game Day",
+"start": "2026-10-09T10:00:00",
+"end": "2026-10-09T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/game-day-38289",
+"desc": "We provide the space, tables and chairs. You bring your friends and a favorite board or card game to play. No registration required.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-11/people-having-fun-while-playing-board-game2.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0
+},
+{
+"id": "emmaclark-time-baby-16-mos-24-mos-w-caregiver-58860",
+"title": "Time For Baby (16 mos. - 24 mos. w/ caregiver)",
+"start": "2026-10-09T11:00:00",
+"end": "2026-10-09T11:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/time-baby-16-mos-24-mos-w-caregiver-58860",
+"desc": "There will be music, dancing, and games to enjoy with your baby.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1
+},
+{
+"id": "lim-3225059",
+"title": "America on Screen: The Day We Walked on the Moon",
+"start": "2026-10-09T14:00:00",
+"end": "2026-10-09T15:00:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/america-on-screen-the-day-we-walked-on-the-moon/",
+"desc": "Join us on select Friday afternoons for a special film series commemorating America’s 250th: Anniversary: America on Screen . Enjoy screenings of Smithsonian Channel programs that explore the people, places, and stories that shaped America. The Day We Walked t",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/06/The_Day_We_Walked_on_the_Moon_episode_3840_2160_GEG502849_Episodic_Artwork-1-scaled.jpg",
+"src": "lim",
+"tags": [
+"stage",
+"outdoor"
+],
+"status": "",
+"fb": 0
+},
+{
+"id": "emmaclark-life-sized-candy-land-ages-3-7-w-caregiver-58810",
+"title": "LIFE-SIZED CANDY LAND (Ages 3-7 w/ caregiver)",
+"start": "2026-10-09T18:00:00",
+"end": "2026-10-09T20:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/life-sized-candy-land-ages-3-7-w-caregiver-58810",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1
 }
 ],
 "closings": [],
