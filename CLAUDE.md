@@ -17,6 +17,7 @@ Guard (3vl-site-guard, every 30 min) watches post-sources/page-*.html (shortcode
 ## Event timing rules (owner, 2026-09-27) - /events calendar (tvl-cal.js) and /now (weekender.js)
 - An event disappears as soon as its end time passes. An event with no end time is treated as 2 hours long, or as the whole day if it's all-day.
 - Multi-day events show their date range (e.g. "Sep 26 - Oct 4"; plain hyphen, never an em dash).
+- "Happening now" (homepage weekender.js isLive): a one-day event is live between its start and end. An event running for days or weeks is live only during its daily hours (the start/end clock times, or 10 AM-6 PM if it has none), never overnight (owner 9/28/2026).
 - Ongoing events that started earlier roll forward: they're listed under Today with "Now through <end>" (/events) or "Ongoing, thru <end>" (/now).
 - Sources: 10 feeds incl. LI Music & Entertainment Hall of Fame (limehof, HTML grid scrape; museum shows only).
 
