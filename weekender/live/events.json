@@ -1,5 +1,5 @@
 {
-"updated": "2026-09-29T15:41:47.603166+00:00",
+"updated": "2026-09-29T20:41:14.352776+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 46,
@@ -8,7 +8,7 @@
 "Village of Port Jefferson": 221,
 "Emma S. Clark Library": 219,
 "Stony Brook Village Center": 18,
-"Long Island Museum": 47,
+"Long Island Museum": 48,
 "Ward Melville Heritage Org": 6,
 "LI Music Hall of Fame": 6
 },
@@ -84,24 +84,6 @@
 "status": "",
 "pick": true,
 "rank": 4
-},
-{
-"id": "emmaclark-preschool-storytime-ages-35-5-yrs-58887",
-"title": "PreSchool Storytime Ages 3.5- 5 yrs",
-"start": "2026-09-29T13:15:00",
-"end": "2026-09-29T13:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58887",
-"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1
 },
 {
 "id": "pjchamber-14941",
@@ -1073,7 +1055,7 @@
 "venue": "Port Jefferson Village",
 "addr": "",
 "url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
-"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd/ If you would like to create a scarecrow, please read the below criteria and fill out the participant form: – APPLICATION – CRITERIA VOTE FOR YOUR FAVORITE SC",
+"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd! VOTE FOR YOUR FAVORITE SCARECROW!",
 "img": "",
 "src": "pjchamber",
 "tags": [
