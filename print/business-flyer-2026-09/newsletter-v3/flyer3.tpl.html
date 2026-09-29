@@ -1,0 +1,195 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Three Village Local - Business Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,600;1,700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<style>
+@page{size:8.5in 11in;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
+.pg{width:8.5in;height:11in;position:relative;overflow:hidden;background:#fff;page-break-after:always;break-after:page}
+.pg:last-child{page-break-after:auto;break-after:auto}
+.serif{font-family:"Playfair Display",Georgia,serif}
+.gold{color:#d49400}
+.navy{background:#13263b;color:#fff}
+.hand{font-family:"Caveat",cursive;font-weight:700}
+/* masthead */
+.mast{position:absolute;left:0;right:0;top:0;height:168px;background:#13263b;color:#fff;text-align:center;padding-top:16px}
+.mast .dl{display:flex;justify-content:space-between;padding:0 40px;font-size:11.5px;font-weight:700;letter-spacing:.22em;color:#aebdd0;text-transform:uppercase}
+.mast h1{font-size:62px;font-weight:700;letter-spacing:.06em;line-height:1;margin-top:10px}
+.mast h1 b{color:#ffc53d;font-weight:700}
+.mast .rule{margin:10px auto 0;width:700px;height:2px;background:linear-gradient(90deg,transparent,#ffc53d 15%,#ffc53d 85%,transparent)}
+.mast .ed{font-family:"Playfair Display",serif;font-style:italic;font-weight:600;font-size:28px;margin-top:8px;letter-spacing:.01em}
+.gstrip{position:absolute;left:0;right:0;top:168px;height:6px;background:#ffc53d}
+/* hero */
+.hero{position:absolute;left:0;right:0;top:174px;height:356px;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center 60%;filter:saturate(.9)}
+.hero .wash{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.72),rgba(255,255,255,.84))}
+.laptop{position:absolute;left:150px;top:16px;width:520px}
+.laptop .scr{background:#0c1520;border-radius:14px 14px 0 0;padding:10px 10px 12px;box-shadow:0 16px 40px rgba(19,38,59,.28)}
+.laptop .scr img{display:block;width:100%;height:292px;object-fit:cover;object-position:top;border-radius:3px}
+.laptop .base{height:14px;background:linear-gradient(180deg,#d6dde6,#aab6c4);border-radius:0 0 12px 12px;margin:0 -34px;position:relative}
+.laptop .base:after{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:90px;height:6px;background:#9aa7b6;border-radius:0 0 8px 8px}
+.phone{position:absolute;width:150px;height:312px;background:#0c1520;border-radius:26px;padding:6px;box-shadow:0 16px 36px rgba(19,38,59,.35);z-index:2}
+.phone .sc{width:100%;height:100%;border-radius:21px;overflow:hidden;background:#1b2f45;padding-top:18px;position:relative}
+.phone .sc img{width:100%;display:block}
+.phone .nt{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:44px;height:12px;background:#0c1520;border-radius:7px;z-index:2}
+.ph1{left:40px;top:30px}
+.ph2{right:44px;top:30px}
+.soc{position:absolute;right:210px;top:12px;display:flex;flex-direction:column;gap:10px;z-index:3}
+.callout{position:absolute;z-index:3;left:44px;bottom:12px;transform:rotate(-3deg);font-size:28px;color:#13263b;background:#ffc53d;padding:2px 14px 4px;border-radius:8px;box-shadow:0 6px 14px rgba(19,38,59,.2)}
+/* banner */
+.banner{position:absolute;left:0;right:0;top:530px;height:74px;background:#13263b;text-align:center;padding-top:12px}
+.banner h2{font-size:23px;letter-spacing:.14em;font-weight:700;color:#ffc53d;text-transform:uppercase}
+.banner p{font-size:13.5px;color:#dce4ee;font-weight:500;margin-top:5px}
+/* two-column body */
+.cols{position:absolute;left:44px;right:44px;top:620px;display:grid;grid-template-columns:1fr 1fr;column-gap:34px;row-gap:14px}
+.it{display:flex;gap:12px;align-items:flex-start}
+.it .ic{flex:0 0 38px;height:38px;border-radius:50%;background:#ffc53d;display:grid;place-items:center}
+.it .ic svg{width:19px;height:19px;stroke:#13263b;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.it h3{font-size:17px;font-weight:700;line-height:1.15}
+.it p{font-size:13.2px;line-height:1.33;color:#3f5268;font-weight:500;margin-top:2px}
+.divider{position:absolute;left:408px;top:630px;width:1px;height:196px;background:#dfe6ee}
+/* bottom */
+.bot{position:absolute;left:44px;right:44px;bottom:26px;height:158px;border-top:2px solid #13263b;display:flex;align-items:center;gap:22px;padding-top:12px}
+.qrbox{display:flex;align-items:center;gap:8px}
+.qr{width:112px;height:112px}.qr svg{width:100%;height:100%}
+.scan{writing-mode:vertical-rl;transform:rotate(180deg);background:#13263b;color:#ffc53d;font-weight:700;letter-spacing:.3em;font-size:14px;padding:10px 6px;border-radius:6px}
+.bc{flex:1;text-align:center}
+.claim{display:inline-block;font-family:"Playfair Display",serif;font-style:italic;font-weight:700;font-size:26px;color:#13263b}
+.claim span{display:inline-block;background:#13263b;color:#ffc53d;font-family:"Radio Canada",sans-serif;font-style:normal;font-size:19px;letter-spacing:.12em;padding:5px 14px;border-radius:8px;margin-left:8px;vertical-align:4px}
+.url{font-size:46px;font-weight:700;letter-spacing:-.01em;color:#13263b;margin-top:6px;line-height:1}
+.url b{color:#d49400}
+.facts{font-size:12.5px;white-space:nowrap;color:#4c5f75;font-weight:600;margin-top:8px;letter-spacing:.02em}
+.facts i{font-style:normal;color:#d49400;margin:0 6px}
+/* BACK */
+.top2{position:absolute;left:0;right:0;top:0;height:170px;background:#13263b;display:flex;align-items:center;gap:26px;padding:0 44px}
+.top2 .qrw{background:#fff;border-radius:12px;padding:8px;text-align:center}
+.top2 .qrw small{display:block;font-size:11px;font-weight:700;letter-spacing:.22em;color:#13263b;margin-bottom:4px}
+.top2 .qr{width:104px;height:104px}
+.top2 h2{flex:1;font-size:30px;line-height:1.08;font-weight:700;color:#fff;letter-spacing:.01em;text-transform:uppercase}
+.top2 h2 b{color:#ffc53d;font-weight:700}
+.checks{display:flex;flex-direction:column;gap:9px}
+.ck{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:700;color:#fff}
+.ck i{width:28px;height:28px;border-radius:7px;background:#ffc53d;display:grid;place-items:center;font-style:normal;color:#13263b;font-size:18px}
+.gs2{position:absolute;left:0;right:0;top:170px;height:6px;background:#ffc53d}
+.find{position:absolute;left:44px;right:44px;top:198px;height:300px;display:grid;grid-template-columns:250px 1fr;gap:14px}
+.pics{display:grid;grid-template-rows:1fr 1fr;gap:10px}
+.pics div{border-radius:12px;background-size:cover;background-position:center}
+.fbox{background:#eef3f8;border-radius:14px;padding:18px 22px;border-left:6px solid #ffc53d}
+.fbox h3{font-family:"Playfair Display",serif;font-size:25px;font-weight:800;line-height:1.1}
+.fbox h3 span{color:#d49400}
+.fbox ul{list-style:none;margin-top:10px;display:grid;gap:6px}
+.fbox li{font-size:15px;font-weight:600;line-height:1.3;padding-left:24px;position:relative}
+.fbox li:before{content:"★";position:absolute;left:0;top:0;color:#d49400}
+.fbox li em{font-style:normal;font-weight:500;color:#4c5f75}
+.spot{position:absolute;left:44px;top:520px;width:470px}
+.spot .hd{background:#13263b;color:#fff;border-radius:10px;padding:10px 16px;display:flex;align-items:center;gap:10px}
+.spot .hd svg{width:24px;height:24px;stroke:#ffc53d;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.spot .hd h3{font-size:21px;font-weight:700;letter-spacing:.01em}
+.spot .hd h3 b{color:#ffc53d}
+.art{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.art p{font-size:13.2px;line-height:1.45;color:#2f4258;font-weight:500;margin-bottom:8px}
+.art > div:first-child p:first-child:first-letter{font-family:"Playfair Display",serif;font-weight:800;font-size:40px;float:left;line-height:.9;margin:4px 6px 0 0;color:#13263b}
+.shot{margin-top:4px;position:relative}
+.shot .lap{background:#0c1520;border-radius:8px 8px 0 0;padding:5px}
+.shot .lap img{display:block;width:100%;height:108px;object-fit:cover;object-position:top}
+.shot .lb{height:7px;background:linear-gradient(180deg,#d6dde6,#aab6c4);border-radius:0 0 6px 6px;margin:0 -12px}
+.shot small{display:block;font-size:11.5px;color:#5b6d82;font-weight:600;margin-top:6px;text-align:center}
+.why{position:absolute;right:44px;top:520px;width:232px;height:388px;border:3px solid #13263b;border-radius:14px;padding:20px 18px;background:#fff}
+.why h3{font-family:"Playfair Display",serif;font-size:36px;line-height:.92;font-weight:800;color:#13263b}
+.why h3 i{display:block;font-size:22px;font-style:italic;font-weight:600;color:#d49400;margin-bottom:2px}
+.why p{font-size:13.6px;line-height:1.42;color:#2f4258;font-weight:500;margin-top:10px}
+.why .sig{font-size:24px;color:#d49400;margin-top:8px}
+.foot2{position:absolute;left:44px;right:44px;bottom:28px;height:112px;text-align:center;border-top:2px solid #13263b;border-bottom:2px solid #13263b;display:flex;flex-direction:column;justify-content:center}
+.foot2 .url{font-size:54px;margin:0}
+.foot2 .fl{font-size:14px;font-weight:600;color:#4c5f75;margin-top:8px;display:flex;justify-content:center;align-items:center;gap:8px}
+.foot2 .fl svg{width:18px;height:18px}
+</style></head><body>
+
+<!-- FRONT -->
+<section class="pg">
+  <div class="mast">
+    <div class="dl"><span>Setauket · Stony Brook · Port Jefferson</span><span>Business Edition · Fall 2026</span></div>
+    <h1>THREE VILLAGE <b>LOCAL</b></h1>
+    <div class="rule"></div>
+    <div class="ed">Business Registration</div>
+  </div>
+  <div class="gstrip"></div>
+  <div class="hero">
+    <div class="bg" style="background-image:url('{sbv}')"></div><div class="wash"></div>
+    <div class="laptop"><div class="scr"><img src="{d_home}"></div><div class="base"></div></div>
+    <div class="phone ph1"><div class="nt"></div><div class="sc"><img src="{m_home}"></div></div>
+    <div class="phone ph2"><div class="nt"></div><div class="sc"><img src="{m_vip}"></div></div>
+    <div class="callout hand">All-new for 2026!</div>
+  </div>
+  <div class="banner">
+    <h2>Sign up now to create your business listing</h2>
+    <p>We feature local businesses across our website, free app and social media, reaching thousands of neighbors every week.</p>
+  </div>
+  <div class="cols">
+    <div class="it"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><div><h3>Increased Local Exposure</h3><p>Be discovered by residents searching for trusted local businesses on our website and free app.</p></div></div>
+    <div class="it"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="12" cy="12" r="3.2"/><path d="M8 5l1.5-2h5L16 5"/></svg></div><div><h3>Showcase Your Business</h3><p>Share your story, services, photos, hours and links in one beautiful place.</p></div></div>
+    <div class="it"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .7-5.3 4.7 1.6 7L12 17.3 5.7 21l1.6-7L2 9.2l7-.7z"/></svg></div><div><h3>Rated by Your Neighbors</h3><p>Real reviews from real locals help new customers choose you with confidence.</p></div></div>
+    <div class="it"><div class="ic"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></div><div><h3>Boost Your Online Visibility</h3><p>Backlinks to your website and social pages help more people find you on Google.</p></div></div>
+    <div class="it"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h3l6 5V5L7 10H4a1 1 0 0 0-1 1z"/><path d="M17 8a5 5 0 0 1 0 8"/></svg></div><div><h3>Featured on Social Media</h3><p>Spotlights, stories and specials shared with our local Facebook and Instagram community.</p></div></div>
+    <div class="it"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></div><div><h3>Support Local, Stay Local</h3><p>A platform built by locals, for locals. Strong small businesses make a strong community.</p></div></div>
+  </div>
+  <div class="divider"></div>
+  <div class="bot">
+    <div class="qrbox"><div class="qr">{QR}</div><div class="scan">SCAN</div></div>
+    <div class="bc">
+      <div class="claim">Claim your <span>LISTING TODAY</span></div>
+      <div class="url">ThreeVillage<b>Local</b>.com</div>
+      <div class="facts">10,000+ monthly visitors <i>★</i> 100K+ monthly social views <i>★</i> 280+ local businesses</div>
+    </div>
+  </div>
+</section>
+
+<!-- BACK -->
+<section class="pg">
+  <div class="top2">
+    <div class="qrw"><small>SCAN HERE</small><div class="qr">{QR}</div></div>
+    <h2>More than just a website -<br><b>it's a community hub</b></h2>
+    <div class="checks"><div class="ck"><i>✓</i>Get Listed</div><div class="ck"><i>✓</i>Get Featured</div><div class="ck"><i>✓</i>Get Found</div></div>
+  </div>
+  <div class="gs2"></div>
+  <div class="find">
+    <div class="pics"><div style="background-image:url('{sbvgreen}')"></div><div style="background-image:url('{po}')"></div></div>
+    <div class="fbox">
+      <h3>Here's what you'll find at <span>ThreeVillageLocal.com</span></h3>
+      <ul>
+        <li>A live homepage <em>of what's happening today, updated all day</em></li>
+        <li>Local business directory <em>with reviews from neighbors</em></li>
+        <li>Community events calendar <em>with 230+ local events</em></li>
+        <li>Restaurant specials <em>and things to do this weekend</em></li>
+        <li>Local stories, spotlights <em>and interviews</em></li>
+        <li>Three Village VIP program <em>for extra exposure and support</em></li>
+        <li>A free app <em>for iPhone and Android</em></li>
+      </ul>
+    </div>
+  </div>
+  <div class="spot">
+    <div class="hd"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg><h3>Three Village <b>Business Spotlights</b></h3></div>
+    <div class="art">
+      <div>
+        <p>Our Business Spotlight program is all about celebrating the people who make the Three Village area special. Each week we shine a light on local businesses, sharing their stories, highlighting their services and helping neighbors get to know the faces behind the storefronts.</p>
+        <p>Whether you're a family-run shop, a solo entrepreneur or a growing team, a spotlight connects you with the community in a genuine way.</p>
+      </div>
+      <div>
+        <p>Every spotlight is shared across our website, app, Facebook and Instagram, with professional write-ups and photos that build trust.</p>
+        <div class="shot"><div class="lap"><img src="{d_spot}"></div><div class="lb"></div><small>Recent spotlight: Roseland School of Dance</small></div>
+      </div>
+    </div>
+  </div>
+  <div class="why">
+    <h3><i>here's</i>Why It Matters</h3>
+    <p>We're bringing local back. Whether you're a small business, a creative, a nonprofit or someone who loves where they live, this platform is for you.</p>
+    <p>Together we're growing a network that shines a light on the people behind the businesses and helps our whole community thrive.</p>
+    <div class="sig hand">- Matt</div>
+  </div>
+  <div class="foot2">
+    <div class="url">ThreeVillage<b>Local</b>.com</div>
+    <div class="fl"><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#1877f2"/><path d="M15.5 8H14c-.6 0-1 .4-1 1v1.5h2.5l-.4 2.5H13V20h-2.6v-7H8.5v-2.5h1.9V8.7C10.4 6.8 11.5 5.5 13.6 5.5h1.9z" fill="#fff"/></svg><svg viewBox="0 0 24 24"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".5" stop-color="#d62976"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><rect x="6" y="6" width="12" height="12" rx="3.5" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="2.8" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16" cy="8" r="1" fill="#fff"/></svg>Follow Three Village Local on Facebook + Instagram  ·  threevillagelocal@gmail.com</div>
+  </div>
+</section>
+</body></html>
