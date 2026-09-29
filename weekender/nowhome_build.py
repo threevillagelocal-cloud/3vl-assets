@@ -4,21 +4,37 @@
   - schema.org Event JSON-LD for this edition's events
 Same markup/classes as site/p3/nowhome.js, so the page looks identical; the JS only rotates the VIP order daily and refreshes stories.
 Rendered into the HTML so Google and AI crawlers (which often don't run JS) can see the business + story links."""
-import datetime, html, json, os, re, subprocess, urllib.parse
+import datetime, html, json, os, re, subprocess, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://www.threevillagelocal.com"
 IDX = "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/search/index.json"
 
 
+_have = {}
+
+
 def sm(u, w):
-    """Small WebP copy via wsrv.nl (BD logos run up to 440 KB; shown at 64px). nowhome.js swaps back to the original if wsrv is down."""
-    u = (u or "").strip()
-    if not u or "wsrv.nl" in u or u.lower().endswith(".svg") or (u.startswith("https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/") and u.endswith(".webp")):  # ours, already optimized
+    """Our small WebP copy (3vl-share/t/gen.py, every 30 min; BD logos run up to 440 KB but show at 64px).
+    Same name rule as sm() in the site JS. Falls back to the original when the copy isn't there yet."""
+    u = html.unescape((u or "").strip())
+    if (not u or u.lower().endswith(".svg") or "wsrv.nl" in u or "threevillagelocal-cloud.github.io" in u
+            or (u.startswith("https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/") and u.endswith(".webp"))):
         return u
     if u.startswith("/") and not u.startswith("//"):
         u = SITE + u
-    return "https://wsrv.nl/?url=%s&w=%d&we&output=webp&q=75" % (urllib.parse.quote(u, safe=""), w) if u.startswith("http") else u
+    if not u.startswith("http"):
+        return u
+    h = 0x811C9DC5
+    for b in u.encode("utf-8"):
+        h = ((h ^ b) * 0x01000193) & 0xFFFFFFFF
+    t = "https://threevillagelocal-cloud.github.io/3vl-share/t/%08x-%d.webp" % (h, 800 if w > 400 else 360)
+    if t not in _have:
+        try:
+            _have[t] = urllib.request.urlopen(urllib.request.Request(t, method="HEAD"), timeout=15).status == 200
+        except Exception:
+            _have[t] = False
+    return t if _have[t] else u
 
 def et_offset(dt):
     """US Eastern UTC offset for a naive local datetime (DST: 2nd Sunday of March 2 AM to 1st Sunday of November 2 AM). No tzdata needed."""
@@ -80,9 +96,9 @@ def featured():
         r, n = mt.get("rating"), mt.get("reviews")
         line = (('<span class="nh-st">&#9733; %.1f</span>' % float(r)) + ("(%s) &middot; " % n if n else "&middot; ")) if r else ""
         line += esc(town(m.get("t")) or m.get("c") or "")
-        cards.append('<a class="nh-biz" href="%s" data-biz="%s" data-id="%s"><span class="nh-logo" style="background-image:url(\'%s\')"></span>'
+        cards.append('<a class="nh-biz" href="%s" data-biz="%s" data-id="%s"><span class="nh-logo" style="background-image:url(\'%s\')" data-bgo="%s"></span>'
                      '<span class="nh-t"><b class="nh-n">%s</b><span class="nh-m">%s</span><span class="nh-vip">&#9733; VIP</span></span></a>' % (
-                         esc(m["u"]), esc(m["n"]), esc(m["id"]), esc(sm(m.get("l"), 200)), esc(m["n"]), line))
+                         esc(m["u"]), esc(m["n"]), esc(m["id"]), esc(sm(m.get("l"), 200)), esc(m.get("l")), esc(m["n"]), line))
     if not cards:
         return ""
     return ('<section class="wk-sec nh-sec" id="nh-feat">' + head("Featured Local Businesses", "Neighbors who support Three Village Local", "/search_results", "See all businesses")
@@ -109,8 +125,8 @@ def stories(n=3):
 def explore():
     chips = "".join('<a class="nh-cat" href="%s"><svg viewBox="0 0 24 24">%s</svg>%s</a>' % (u, ICO[i], esc(t)) for t, u, i in CATS)
     st = stories()
-    srow = "".join('<a class="nh-story" href="%s"><span class="nh-sim" style="background-image:url(\'%s\')"></span><span class="nh-sb">%s<b>%s</b></span></a>' % (
-        esc(x["h"]), esc(sm(x["img"], 300)), ("<i>%s</i>" % esc(x["d"])) if x["d"] else "", esc(x["t"])) for x in st)
+    srow = "".join('<a class="nh-story" href="%s"><span class="nh-sim" style="background-image:url(\'%s\')" data-bgo="%s"></span><span class="nh-sb">%s<b>%s</b></span></a>' % (
+        esc(x["h"]), esc(sm(x["img"], 300)), esc(x["img"]), ("<i>%s</i>" % esc(x["d"])) if x["d"] else "", esc(x["t"])) for x in st)
     return ('<section class="wk-sec nh-sec" id="nh-explore">' + head("Browse Local Businesses")
             + '<div class="nh-cats">' + chips + '<a class="nh-cat nh-allc" href="/categories">All categories &rarr;</a></div>'
             + ('<div style="height:38px"></div>' + head("Latest Local Stories", "", "/blog", "All stories") + '<div class="nh-row" id="nh-srow">' + srow + "</div>" if srow else "")

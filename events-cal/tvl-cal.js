@@ -8,9 +8,12 @@ var TC={'Kids & Family':'#3aa0e8','Music':'#d9534f','History':'#205081','Food & 
 var TI={'Kids & Family':'&#129490;','Music':'&#127925;','History':'&#128373;&#65039;','Food & Drink':'&#127822;','Arts & Stage':'&#127917;','Outdoors':'&#127795;','Learning':'&#128218;'};
 var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],MONL=['January','February','March','April','May','June','July','August','September','October','November','December'];
 var DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],DOWL=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-function sm(u,w){u=String(u||'');if(!u||/wsrv\.nl|\.svg(\?|$)|^data:|cdn\.jsdelivr\.net\/gh\/threevillagelocal-cloud\/.*\.webp$/i.test(u))return u;if(u.charAt(0)==='/'&&u.charAt(1)!=='/')u=location.origin+u;
-  return /^https?:/i.test(u)?'https://wsrv.nl/?url='+encodeURIComponent(u)+'&w='+w+'&we&output=webp&q=75':u}  /* small WebP copy via wsrv.nl; some originals are 6 MB */
-function smi(u,w){var s=sm(u,w),q=function(x){return String(x).replace(/&/g,'&amp;').replace(/"/g,'&quot;')};return s===u?'src="'+q(u)+'"':'src="'+q(s)+'" data-o="'+q(u)+'" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=\'\'}"'}  /* <img> attrs; falls back to the original if wsrv fails */
+function fnv(s){s=unescape(encodeURIComponent(s));for(var h=0x811c9dc5,i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),0x01000193)>>>0;return ('0000000'+h.toString(16)).slice(-8)}
+function sm(u,w){u=String(u||'');if(!u||/\.svg(\?|$)|^data:|wsrv\.nl|google\.com\/s2\/favicons|threevillagelocal-cloud\.github\.io|cdn\.jsdelivr\.net\/gh\/threevillagelocal-cloud\/.*\.webp$/i.test(u))return u;if(u.charAt(0)==='/'&&u.charAt(1)!=='/')u=location.origin+u;
+  return /^https?:/i.test(u)?'https://threevillagelocal-cloud.github.io/3vl-share/t/'+fnv(u)+'-'+(w>400?800:360)+'.webp':u}  /* our small WebP copy (3vl-share/t/gen.py makes them every 30 min); some originals are 6 MB */
+function bgfix(root){[].forEach.call((root||document).querySelectorAll('[data-bgo]'),function(el){var m=(el.getAttribute('style')||'').match(/url\('([^']+)'\)/);if(!m||m[1]===el.getAttribute('data-bgo'))return;
+  var i=new Image();i.onerror=function(){el.style.backgroundImage="url('"+el.getAttribute('data-bgo')+"')"};i.src=m[1]})}  /* background photo whose copy isn't made yet: use the original */
+function smi(u,w){var s=sm(u,w),q=function(x){return String(x).replace(/&/g,'&amp;').replace(/"/g,'&quot;')};return s===u?'src="'+q(u)+'"':'src="'+q(s)+'" data-o="'+q(u)+'" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=\'\'}"'}  /* <img> attrs; falls back to the original if the copy is missing */
 function day(d){return new Date(d.getFullYear(),d.getMonth(),d.getDate())}
 function key(d){return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
 function tm(d){var h=d.getHours(),m=d.getMinutes(),a=h>=12?'PM':'AM';h=h%12||12;return h+(m?':'+(m<10?'0':'')+m:'')+' '+a}
@@ -57,7 +60,7 @@ function hero(){
   var fri=new Date(sat.getTime()-864e5),sun=new Date(sat.getTime()+864e5);
   up.forEach(function(ev){var d=day(ev.s);if(d>=fri&&d<=sun)wk++;if(ev.free)fr++});
   var pics=up.filter(function(ev){return ev.img&&ev.img.indexOf('/events-cal/img/')<0}).slice(0,60),seen={},pp=[];pics.forEach(function(ev){if(!seen[ev.img]&&pp.length<6){seen[ev.img]=1;pp.push(ev.img)}});
-  return '<header class="tvc-hero"><div class="tvc-mosaic">'+pp.map(function(u){return '<span style="background-image:url(\''+esc(sm(u,560))+'\')"></span>'}).join('')+'</div>'+
+  return '<header class="tvc-hero"><div class="tvc-mosaic">'+pp.map(function(u){return '<span style="background-image:url(\''+esc(sm(u,560))+'\')" data-bgo="'+esc(u)+'"></span>'}).join('')+'</div>'+
     '<div class="tvc-hin"><span class="tvc-live"><i></i>LIVE &middot; Updated daily</span>'+
     '<h1 class="tvc-h1">Three Village <em>Events</em></h1>'+
     '<p class="tvc-sub">Everything happening in Stony Brook, Setauket, Port Jefferson and nearby, gathered every morning from local organizers.</p>'+
@@ -110,7 +113,7 @@ function list(){
 function render(){
   R.innerHTML='<section class="tvc">'+hero()+bar()+'<div class="tvc-body">'+(S.view==='month'?month():list())+'</div>'+
     '<p class="tvc-foot">Listings come from local organizers, including the Emma S. Clark Library, the Long Island Museum, Stony Brook Village, WMHO, both Chambers of Commerce, the Village of Port Jefferson and the Town of Brookhaven. Plans change, so check with the organizer before you go. <a href="/about/contact">Tell us about an event &rarr;</a></p></section>';
-  reveal()}
+  reveal();bgfix(R)}
 function reveal(){if(!('IntersectionObserver' in window)){R.querySelectorAll('.tvc-card').forEach(function(c){c.classList.add('is-in')});return}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -5% 0px'});
   R.querySelectorAll('.tvc-card').forEach(function(c){io.observe(c)})}

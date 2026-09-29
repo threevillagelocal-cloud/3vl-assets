@@ -31,9 +31,12 @@ function indexEvents(){EV={};
 /* ---------- LIVE DATA: rebuild schedule, picks and closings from the hourly events.json ---------- */
 var LIVEURL=root.getAttribute('data-live')||'https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/events.json';
 var TAGL={free:'Free',kids:'Kids',outdoor:'Outdoor',music:'Music',history:'History',food:'Food',arts:'Arts',stage:'On Stage'};
-function sm(u,w){u=String(u||'');if(!u||/wsrv\.nl|\.svg(\?|$)|^data:|cdn\.jsdelivr\.net\/gh\/threevillagelocal-cloud\/.*\.webp$/i.test(u))return u;if(u.charAt(0)==='/'&&u.charAt(1)!=='/')u=location.origin+u;
-  return /^https?:/i.test(u)?'https://wsrv.nl/?url='+encodeURIComponent(u)+'&w='+w+'&we&output=webp&q=75':u}  /* small WebP copy via wsrv.nl; some originals are 6 MB */
-function smi(u,w){var s=sm(u,w),q=function(x){return String(x).replace(/&/g,'&amp;').replace(/"/g,'&quot;')};return s===u?'src="'+q(u)+'"':'src="'+q(s)+'" data-o="'+q(u)+'" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=\'\'}"'}  /* <img> attrs; falls back to the original if wsrv fails */
+function fnv(s){s=unescape(encodeURIComponent(s));for(var h=0x811c9dc5,i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),0x01000193)>>>0;return ('0000000'+h.toString(16)).slice(-8)}
+function sm(u,w){u=String(u||'');if(!u||/\.svg(\?|$)|^data:|wsrv\.nl|google\.com\/s2\/favicons|threevillagelocal-cloud\.github\.io|cdn\.jsdelivr\.net\/gh\/threevillagelocal-cloud\/.*\.webp$/i.test(u))return u;if(u.charAt(0)==='/'&&u.charAt(1)!=='/')u=location.origin+u;
+  return /^https?:/i.test(u)?'https://threevillagelocal-cloud.github.io/3vl-share/t/'+fnv(u)+'-'+(w>400?800:360)+'.webp':u}  /* our small WebP copy (3vl-share/t/gen.py makes them every 30 min); some originals are 6 MB */
+function bgfix(root){[].forEach.call((root||document).querySelectorAll('[data-bgo]'),function(el){var m=(el.getAttribute('style')||'').match(/url\('([^']+)'\)/);if(!m||m[1]===el.getAttribute('data-bgo'))return;
+  var i=new Image();i.onerror=function(){el.style.backgroundImage="url('"+el.getAttribute('data-bgo')+"')"};i.src=m[1]})}  /* background photo whose copy isn't made yet: use the original */
+function smi(u,w){var s=sm(u,w),q=function(x){return String(x).replace(/&/g,'&amp;').replace(/"/g,'&quot;')};return s===u?'src="'+q(u)+'"':'src="'+q(s)+'" data-o="'+q(u)+'" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=\'\'}"'}  /* <img> attrs; falls back to the original if the copy is missing */
 function esc2(x){return String(x||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function dkey(d){return 'd'+d.getFullYear()+('0'+(d.getMonth()+1)).slice(-2)+('0'+d.getDate()).slice(-2)}
 function renderLive(data){
