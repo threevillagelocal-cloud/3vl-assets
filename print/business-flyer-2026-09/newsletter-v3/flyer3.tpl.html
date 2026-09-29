@@ -42,7 +42,7 @@ body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
 .banner h2{font-size:23px;letter-spacing:.14em;font-weight:700;color:#ffc53d;text-transform:uppercase}
 .banner p{font-size:13.5px;color:#dce4ee;font-weight:500;margin-top:5px}
 /* two-column body */
-.cols{position:absolute;left:44px;right:44px;top:620px;display:grid;grid-template-columns:1fr 1fr;column-gap:34px;row-gap:14px}
+.cols{position:absolute;left:44px;right:44px;top:616px;display:grid;grid-template-columns:1fr 1fr;column-gap:34px;row-gap:14px}
 .it{display:flex;gap:12px;align-items:flex-start}
 .it .ic{flex:0 0 38px;height:38px;border-radius:50%;background:#ffc53d;display:grid;place-items:center}
 .it .ic svg{width:19px;height:19px;stroke:#13263b;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
@@ -50,15 +50,17 @@ body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
 .it p{font-size:13.2px;line-height:1.33;color:#3f5268;font-weight:500;margin-top:2px}
 .divider{position:absolute;left:408px;top:630px;width:1px;height:196px;background:#dfe6ee}
 /* bottom */
-.bot{position:absolute;left:44px;right:44px;bottom:26px;height:158px;border-top:2px solid #13263b;display:flex;align-items:center;gap:22px;padding-top:12px}
+.bot{position:absolute;left:44px;right:44px;bottom:22px;height:170px;border-top:2px solid #13263b;display:flex;align-items:center;gap:22px;padding-top:12px}
 .qrbox{display:flex;align-items:center;gap:8px}
 .qr{width:112px;height:112px}.qr svg{width:100%;height:100%}
 .scan{writing-mode:vertical-rl;transform:rotate(180deg);background:#13263b;color:#ffc53d;font-weight:700;letter-spacing:.3em;font-size:14px;padding:10px 6px;border-radius:6px}
 .bc{flex:1;text-align:center}
-.claim{display:inline-block;font-family:"Playfair Display",serif;font-style:italic;font-weight:700;font-size:26px;color:#13263b}
+.claim{display:inline-block;font-family:"Playfair Display",serif;font-style:italic;font-weight:700;font-size:23px;color:#13263b}
 .claim span{display:inline-block;background:#13263b;color:#ffc53d;font-family:"Radio Canada",sans-serif;font-style:normal;font-size:19px;letter-spacing:.12em;padding:5px 14px;border-radius:8px;margin-left:8px;vertical-align:4px}
-.url{font-size:46px;font-weight:700;letter-spacing:-.01em;color:#13263b;margin-top:6px;line-height:1}
+.url{font-size:42px;font-weight:700;letter-spacing:-.01em;color:#13263b;margin-top:6px;line-height:1}
 .url b{color:#d49400}
+.avail{font-size:14px;font-weight:700;color:#13263b;margin-top:8px;letter-spacing:.01em}.avail b{font-weight:600;color:#4c5f75}
+.apps{display:flex;justify-content:center;gap:10px;margin-top:6px}.apps img{height:40px;display:block}.apps img.gp{height:40px}
 .facts{font-size:12.5px;white-space:nowrap;color:#4c5f75;font-weight:600;margin-top:8px;letter-spacing:.02em}
 .facts i{font-style:normal;color:#d49400;margin:0 6px}
 /* BACK */
@@ -72,7 +74,7 @@ body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
 .ck{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:700;color:#fff}
 .ck i{width:28px;height:28px;border-radius:7px;background:#ffc53d;display:grid;place-items:center;font-style:normal;color:#13263b;font-size:18px}
 .gs2{position:absolute;left:0;right:0;top:170px;height:6px;background:#ffc53d}
-.find{position:absolute;left:44px;right:44px;top:198px;height:300px;display:grid;grid-template-columns:250px 1fr;gap:14px}
+.find{position:absolute;left:44px;right:44px;top:194px;height:300px;display:grid;grid-template-columns:250px 1fr;gap:14px}
 .pics{display:grid;grid-template-rows:1fr 1fr;gap:10px}
 .pics div{border-radius:12px;background-size:cover;background-position:center}
 .fbox{background:#eef3f8;border-radius:14px;padding:18px 22px;border-left:6px solid #ffc53d}
@@ -82,7 +84,7 @@ body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
 .fbox li{font-size:15px;font-weight:600;line-height:1.3;padding-left:24px;position:relative}
 .fbox li:before{content:"★";position:absolute;left:0;top:0;color:#d49400}
 .fbox li em{font-style:normal;font-weight:500;color:#4c5f75}
-.spot{position:absolute;left:44px;top:520px;width:470px}
+.spot{position:absolute;left:44px;top:512px;width:470px}
 .spot .hd{background:#13263b;color:#fff;border-radius:10px;padding:10px 16px;display:flex;align-items:center;gap:10px}
 .spot .hd svg{width:24px;height:24px;stroke:#ffc53d;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .spot .hd h3{font-size:21px;font-weight:700;letter-spacing:.01em}
@@ -95,14 +97,14 @@ body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
 .shot .lap img{display:block;width:100%;height:108px;object-fit:cover;object-position:top}
 .shot .lb{height:7px;background:linear-gradient(180deg,#d6dde6,#aab6c4);border-radius:0 0 6px 6px;margin:0 -12px}
 .shot small{display:block;font-size:11.5px;color:#5b6d82;font-weight:600;margin-top:6px;text-align:center}
-.why{position:absolute;right:44px;top:520px;width:232px;height:388px;border:3px solid #13263b;border-radius:14px;padding:20px 18px;background:#fff}
+.why{position:absolute;right:44px;top:512px;width:232px;height:388px;border:3px solid #13263b;border-radius:14px;padding:20px 18px;background:#fff}
 .why h3{font-family:"Playfair Display",serif;font-size:36px;line-height:.92;font-weight:800;color:#13263b}
 .why h3 i{display:block;font-size:22px;font-style:italic;font-weight:600;color:#d49400;margin-bottom:2px}
 .why p{font-size:13.6px;line-height:1.42;color:#2f4258;font-weight:500;margin-top:10px}
 .why .sig{font-size:24px;color:#d49400;margin-top:8px}
-.foot2{position:absolute;left:44px;right:44px;bottom:28px;height:112px;text-align:center;border-top:2px solid #13263b;border-bottom:2px solid #13263b;display:flex;flex-direction:column;justify-content:center}
-.foot2 .url{font-size:54px;margin:0}
-.foot2 .fl{font-size:14px;font-weight:600;color:#4c5f75;margin-top:8px;display:flex;justify-content:center;align-items:center;gap:8px}
+.foot2{position:absolute;left:44px;right:44px;bottom:20px;height:128px;text-align:center;border-top:2px solid #13263b;border-bottom:2px solid #13263b;display:flex;flex-direction:column;justify-content:center}
+.foot2 .url{font-size:44px;margin:0}.fl2{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:6px}.fl2 span{font-size:14px;font-weight:700;color:#13263b}.apps.sm{margin:0}.apps.sm img{height:34px}
+.foot2 .fl{font-size:13px;font-weight:600;color:#4c5f75;margin-top:6px;display:flex;justify-content:center;align-items:center;gap:8px}
 .foot2 .fl svg{width:18px;height:18px}
 </style></head><body>
 
@@ -124,7 +126,7 @@ body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
   </div>
   <div class="banner">
     <h2>Sign up now to create your business listing</h2>
-    <p>We feature local businesses across our website, free app and social media, reaching thousands of neighbors every week.</p>
+    <p>Website + free app + social media: 10,000+ monthly visitors, 100K+ monthly social views, 280+ local businesses.</p>
   </div>
   <div class="cols">
     <div class="it"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><div><h3>Increased Local Exposure</h3><p>Be discovered by residents searching for trusted local businesses on our website and free app.</p></div></div>
@@ -140,7 +142,7 @@ body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
     <div class="bc">
       <div class="claim">Claim your <span>LISTING TODAY</span></div>
       <div class="url">ThreeVillage<b>Local</b>.com</div>
-      <div class="facts">10,000+ monthly visitors <i>★</i> 100K+ monthly social views <i>★</i> 280+ local businesses</div>
+      <div class="avail">Get the free app <b>- available on the Apple and Google app stores</b></div><div class="apps"><img src="{AS}" alt="Download on the App Store"><img src="{GP}" alt="Get it on Google Play" class="gp"></div>
     </div>
   </div>
 </section>
@@ -189,7 +191,7 @@ body{font-family:"Radio Canada",system-ui,sans-serif;color:#13263b}
   </div>
   <div class="foot2">
     <div class="url">ThreeVillage<b>Local</b>.com</div>
-    <div class="fl"><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#1877f2"/><path d="M15.5 8H14c-.6 0-1 .4-1 1v1.5h2.5l-.4 2.5H13V20h-2.6v-7H8.5v-2.5h1.9V8.7C10.4 6.8 11.5 5.5 13.6 5.5h1.9z" fill="#fff"/></svg><svg viewBox="0 0 24 24"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".5" stop-color="#d62976"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><rect x="6" y="6" width="12" height="12" rx="3.5" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="2.8" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16" cy="8" r="1" fill="#fff"/></svg>Follow Three Village Local on Facebook + Instagram  ·  threevillagelocal@gmail.com</div>
+    <div class="fl2"><div class="apps sm"><img src="{AS}" alt="Download on the App Store"><img src="{GP}" alt="Get it on Google Play" class="gp"></div><span>Free app for iPhone + Android</span></div><div class="fl"><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#1877f2"/><path d="M15.5 8H14c-.6 0-1 .4-1 1v1.5h2.5l-.4 2.5H13V20h-2.6v-7H8.5v-2.5h1.9V8.7C10.4 6.8 11.5 5.5 13.6 5.5h1.9z" fill="#fff"/></svg><svg viewBox="0 0 24 24"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".5" stop-color="#d62976"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig)"/><rect x="6" y="6" width="12" height="12" rx="3.5" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="2.8" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16" cy="8" r="1" fill="#fff"/></svg>Follow Three Village Local on Facebook + Instagram  ·  threevillagelocal@gmail.com</div>
   </div>
 </section>
 </body></html>
