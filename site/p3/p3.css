@@ -424,3 +424,4 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 #p3#p3 .p3-csub.p3-hit{border-color:#c99d4a;background:#fbf3e2}
 #p3#p3 .p3-csub.p3-call{background:#1b2f45;border-color:#1b2f45;color:#fff}
 @media (max-width:767px){#p3#p3 .p3-cw.p3-open{grid-column:1/-1}#p3#p3 .p3-csub{font-size:14px;padding:9px 12px}}
+#p3#p3 .p3-cn{display:inline-block;min-width:20px;margin-left:4px;padding:1px 6px;border-radius:999px;background:#f3ede0;color:#8a6a2a;font-size:12px;font-weight:800;text-align:center}

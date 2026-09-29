@@ -168,6 +168,10 @@ if(path==='/categories'){
   $$('.category_filter_module,.categories-panel').forEach(function(e){e.style.display='none'});
   $$('h1,h2').forEach(function(x){if(/Businesses by Category/.test(x.textContent)&&!root.contains(x))x.style.display='none'});
   var none=$('#p3none');
+  /* hide specialties with no businesses (counts published nightly by 3vl-site-guard member-db); on failure keep them all */
+  try{fetch('https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/search/subcats.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).then(function(d){if(!d||!d.counts)return;var C=d.counts;
+    $$('.p3-cw').forEach(function(w){var live=0;$$('.p3-csub[data-s]',w).forEach(function(a){var k=(a.getAttribute('href')||'').replace(/\/+$/,'').split('/').pop(),n=C[k]||0;if(!n){a.remove();return}live++;a.insertAdjacentHTML('beforeend',' <span class="p3-cn">'+n+'</span>')});
+      var b=$('.p3-cdd',w),sm=$('.p3-ctile small',w);if(!$('.p3-csub[data-s]',w)){if(b){b.nextElementSibling.remove();b.remove()}if(sm)sm.textContent='Browse all'}else if(sm)sm.textContent=live+' specialt'+(live===1?'y':'ies')})}).catch(function(){})}catch(x){}
   function cdd(b,open){var d=b.nextElementSibling;b.setAttribute('aria-expanded',open?'true':'false');b.closest('.p3-cw').classList.toggle('p3-open',open);if(d)d.hidden=!open}
   root.addEventListener('click',function(e){var b=e.target.closest('.p3-cdd');if(!b)return;e.preventDefault();var open=b.getAttribute('aria-expanded')!=='true';cdd(b,open);try{if(open&&window.gtag)window.gtag('event','category_specialties_open',{category:b.closest('.p3-cw').querySelector('b').textContent})}catch(x){}});
   $('#p3q').addEventListener('input',function(){var q=this.value.toLowerCase().trim(),n=0;$$('.p3-cw').forEach(function(t){var ok=!q||t.getAttribute('data-n').indexOf(q)>=0;t.style.display=ok?'':'none';if(ok)n++;var hit=0;$$('.p3-csub[data-s]',t).forEach(function(a){var m=q.length>2&&a.getAttribute('data-s').indexOf(q)>=0;a.classList.toggle('p3-hit',m);if(m)hit=1});var b=$('.p3-cdd',t);if(b)cdd(b,!!(hit&&q))});
