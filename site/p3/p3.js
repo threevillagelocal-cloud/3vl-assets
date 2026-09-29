@@ -78,6 +78,24 @@ if(isResults){
     '<p class="p3-sub">Local businesses rated by your neighbors. Call, get directions or see the full profile.</p></div><span class="p3-credit">Photo: Iracaz, CC BY-SA 3.0</span></header>'+
     '<div class="p3-vlist" id="p3vl"></div><h2 class="p3-more" id="p3more" hidden>More local businesses</h2><div class="p3-rgrid" id="p3rg"></div>';
   var first=$('.member_results.search_result');var root=mount(h,first.closest('[itemprop="mainEntity"]')||first);
+  /* specialty row under the hero on category + specialty pages (data: search/subcats.json, published nightly by 3vl-site-guard member-db) */
+  (function(){var segs=path.split('/').filter(Boolean);if(q||segs.length!==1)return;var cur=segs[0];
+    try{fetch('https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/search/subcats.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).then(function(d){
+      if(!d||!d.cats)return;var top=d.cats[cur]?cur:(d.sub||{})[cur];var c=top&&d.cats[top];if(!c||!c.s||c.s.length<2)return;
+      var tw=(c.n||'').replace(/s$/,'').toLowerCase();
+      function short(n){var l=n.toLowerCase(),e=[' '+tw,' '+tw+'s'];for(var k=0;k<e.length;k++){if(tw&&l.length>e[k].length+2&&l.slice(-e[k].length)===e[k])return n.slice(0,n.length-e[k].length)}return n}
+      var chip=function(href,label,n,on){return '<a class="p3-spc'+(on?' on':'')+'" href="'+esc(href)+'"'+(on?' aria-current="page"':'')+'>'+esc(label)+(n?' <span>'+n+'</span>':'')+'</a>'};
+      var html='<nav class="p3-specs" aria-label="'+esc(c.n)+' specialties"><button type="button" class="p3-sarr p3-sl" aria-label="Scroll left">&lsaquo;</button><div class="p3-strack">'+
+        chip('/'+top,'All '+c.n,0,cur===top)+c.s.map(function(x){return chip('/'+x[0],short(x[1]),x[2],cur===x[0])}).join('')+
+        '</div><button type="button" class="p3-sarr p3-sr" aria-label="Scroll right">&rsaquo;</button></nav>';
+      var hero=$('.p3-phero',root);if(!hero)return;hero.insertAdjacentHTML('afterend',html);
+      var nav=$('.p3-specs',root),tr=$('.p3-strack',nav),on=$('.p3-spc.on',tr);
+      function upd(){nav.classList.toggle('p3-cl',tr.scrollLeft>4);nav.classList.toggle('p3-cr',tr.scrollLeft+tr.clientWidth<tr.scrollWidth-4)}
+      if(on&&on.previousElementSibling)tr.scrollLeft=on.offsetLeft-tr.offsetLeft-40;
+      tr.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();
+      nav.addEventListener('click',function(e){var b=e.target.closest('.p3-sarr');if(b){tr.scrollBy({left:(b.classList.contains('p3-sl')?-1:1)*tr.clientWidth*.7,behavior:'smooth'});return}
+        var a=e.target.closest('.p3-spc');try{if(a&&window.gtag)window.gtag('event','category_specialty_click',{category:c.n,specialty:a.textContent.trim()})}catch(x){}});
+    }).catch(function(){})}catch(x){}})();
   var VL=$('#p3vl'),RG=$('#p3rg'),MORE=$('#p3more'),nRest=0;
   function hideChrome(){$$('.feature_results_header,.post-search-result-count-container,.member-search-result-count-container,.member-search-result-filters,.views,.sort-members-select').forEach(function(e){if(!root.contains(e))e.style.display='none'});
     if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none';
@@ -162,19 +180,13 @@ if(path==='/categories'){
     '<form class="p3-search p3-hsearch" action="/search_results" method="get"><span>&#128269;</span><input id="p3q" name="q" autocomplete="off" placeholder="What are you looking for? Try &quot;pizza&quot;, &quot;plumber&quot;, &quot;dentist&quot;&hellip;"></form></div>'+
     '<span class="p3-credit">Photo: Shixart1985, CC BY 2.0</span></header>'+
     '<div class="p3-chips">'+quick.map(function(q){return '<a class="p3-chip" href="'+esc(q.h)+'">'+esc(q.n)+'</a>'}).join('')+'</div>'+
-    '<div class="p3-cgrid">'+cats.map(function(c,i){var id='p3cs'+i;return '<div class="p3-cw" data-n="'+esc((c.n+' '+c.subs.map(function(s){return s.n}).join(' ')).toLowerCase())+'">'+'<a class="p3-ctile" href="'+esc(c.h)+'" style="--c:'+c.c+';--i:'+(i%12)+'"><span class="p3-cic">'+iconFor(c.slug)+'</span><span class="p3-ctx"><b>'+esc(c.n).replace(/\//g,'/<wbr>')+'</b><small>'+(c.subs.length?c.subs.length+' specialt'+(c.subs.length===1?'y':'ies'):'Browse all')+'</small></span><em>&rarr;</em></a>'+(c.subs.length?'<button type="button" class="p3-cdd" aria-expanded="false" aria-controls="'+id+'">See specialties <i>&#9662;</i></button>'+'<div class="p3-csubs" id="'+id+'" hidden>'+c.subs.map(function(s){return '<a class="p3-csub" data-s="'+esc(s.n.toLowerCase())+'" href="'+esc(s.h)+'">'+esc(s.n)+'</a>'}).join('')+'<a class="p3-csub p3-call" href="'+esc(c.h)+'">All '+esc(c.n)+' &rarr;</a></div>':'')+'</div>'}).join('')+'</div>'+
+    '<div class="p3-cgrid">'+cats.map(function(c,i){return '<a class="p3-ctile" href="'+esc(c.h)+'" data-n="'+esc((c.n+' '+c.subs.map(function(s){return s.n}).join(' ')).toLowerCase())+'" style="--c:'+c.c+';--i:'+(i%12)+'"><span class="p3-cic">'+iconFor(c.slug)+'</span><span class="p3-ctx"><b>'+esc(c.n).replace(/\//g,'/<wbr>')+'</b><small>'+(c.subs.length?c.subs.length+' specialt'+(c.subs.length===1?'y':'ies'):'Browse all')+'</small></span><em>&rarr;</em></a>'}).join('')+'</div>'+
     '<p class="p3-none" id="p3none"></p>';
   var anchor=$('.category_filter_module')||panels[0];var root=mount(h,anchor);
   $$('.category_filter_module,.categories-panel').forEach(function(e){e.style.display='none'});
   $$('h1,h2').forEach(function(x){if(/Businesses by Category/.test(x.textContent)&&!root.contains(x))x.style.display='none'});
   var none=$('#p3none');
-  /* hide specialties with no businesses (counts published nightly by 3vl-site-guard member-db); on failure keep them all */
-  try{fetch('https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/search/subcats.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).then(function(d){if(!d||!d.counts)return;var C=d.counts;
-    $$('.p3-cw').forEach(function(w){var live=0;$$('.p3-csub[data-s]',w).forEach(function(a){var k=(a.getAttribute('href')||'').replace(/\/+$/,'').split('/').pop(),n=C[k]||0;if(!n){a.remove();return}live++;a.insertAdjacentHTML('beforeend',' <span class="p3-cn">'+n+'</span>')});
-      var b=$('.p3-cdd',w),sm=$('.p3-ctile small',w);if(!$('.p3-csub[data-s]',w)){if(b){b.nextElementSibling.remove();b.remove()}if(sm)sm.textContent='Browse all'}else if(sm)sm.textContent=live+' specialt'+(live===1?'y':'ies')})}).catch(function(){})}catch(x){}
-  function cdd(b,open){var d=b.nextElementSibling;b.setAttribute('aria-expanded',open?'true':'false');b.closest('.p3-cw').classList.toggle('p3-open',open);if(d)d.hidden=!open}
-  root.addEventListener('click',function(e){var b=e.target.closest('.p3-cdd');if(!b)return;e.preventDefault();var open=b.getAttribute('aria-expanded')!=='true';cdd(b,open);try{if(open&&window.gtag)window.gtag('event','category_specialties_open',{category:b.closest('.p3-cw').querySelector('b').textContent})}catch(x){}});
-  $('#p3q').addEventListener('input',function(){var q=this.value.toLowerCase().trim(),n=0;$$('.p3-cw').forEach(function(t){var ok=!q||t.getAttribute('data-n').indexOf(q)>=0;t.style.display=ok?'':'none';if(ok)n++;var hit=0;$$('.p3-csub[data-s]',t).forEach(function(a){var m=q.length>2&&a.getAttribute('data-s').indexOf(q)>=0;a.classList.toggle('p3-hit',m);if(m)hit=1});var b=$('.p3-cdd',t);if(b)cdd(b,!!(hit&&q))});
+  $('#p3q').addEventListener('input',function(){var q=this.value.toLowerCase().trim(),n=0;$$('.p3-ctile').forEach(function(t){var ok=!q||t.getAttribute('data-n').indexOf(q)>=0;t.style.display=ok?'':'none';if(ok)n++});
     none.innerHTML=q&&!n?'No category matches &ldquo;'+esc(this.value)+'&rdquo;. <a href="/search_results?q='+encodeURIComponent(this.value)+'">Search every business for it &rarr;</a>':''});
 }
 
