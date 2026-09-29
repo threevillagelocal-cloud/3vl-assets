@@ -410,3 +410,17 @@ html.p3-on .content_w_sidebar{display:flex;flex-wrap:wrap}
 @media(max-width:760px){#p3#p3 .p3-vacts{display:flex;flex-wrap:wrap;gap:7px}#p3#p3 .p3-vacts>a,#p3#p3 .p3-vacts>button.p3-vcf{flex:1 1 auto;white-space:nowrap;text-align:center;padding:11px 8px;font-size:14.5px;border-radius:12px!important}#p3#p3 .p3-vacts>a.p3-callbig{flex:1 1 100%;font-size:18px;padding:12px 14px}}
 /* never split a word in category tile names (theme sets break-word everywhere); names wrap at spaces or after "/" only */
 #p3#p3 .p3-ctile b{word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important;-webkit-hyphens:none!important}
+/* categories: sub-category dropdown under each tile (restored 9/29/2026) */
+.p3-cgrid{align-items:start}
+.p3-cw{display:flex;flex-direction:column;min-width:0}
+#p3#p3 .p3-cdd{margin:6px 4px 0;align-self:flex-start;background:none;border:0;padding:6px 10px;border-radius:999px;font:700 13px/1.2 inherit;font-family:inherit;color:#1b2f45;cursor:pointer;white-space:nowrap}
+#p3#p3 .p3-cdd:hover,#p3#p3 .p3-cw.p3-open .p3-cdd{background:#f3ede0}
+#p3#p3 .p3-cdd i{display:inline-block;font-style:normal;margin-left:4px;transition:transform .25s}
+#p3#p3 .p3-cw.p3-open .p3-cdd i{transform:rotate(180deg)}
+#p3#p3 .p3-csubs{display:flex;flex-wrap:wrap;gap:8px;padding:10px 4px 6px}
+#p3#p3 .p3-csubs[hidden]{display:none}
+#p3#p3 .p3-csub{display:inline-block;padding:8px 12px;border-radius:999px;background:#fff;border:1px solid #e7ebf0;color:#1b2f45;font-size:14px;font-weight:600;line-height:1.25;text-decoration:none;word-break:normal;overflow-wrap:normal;hyphens:none;white-space:normal}
+#p3#p3 .p3-csub:hover{border-color:#d9b36a;background:#fbf8f1}
+#p3#p3 .p3-csub.p3-hit{border-color:#c99d4a;background:#fbf3e2}
+#p3#p3 .p3-csub.p3-call{background:#1b2f45;border-color:#1b2f45;color:#fff}
+@media (max-width:767px){#p3#p3 .p3-cw.p3-open{grid-column:1/-1}#p3#p3 .p3-csub{font-size:14px;padding:9px 12px}}
