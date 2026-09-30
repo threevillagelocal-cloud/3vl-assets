@@ -49,3 +49,8 @@ tvl-cal.js, weekender.js, nowhome.js and nowhome_build.py pass external/BD-hoste
 
 ## Membership plan header toggle (9/29/2026)
 If profiles show no site header, check each plan's `page_header` with getMembershipPlan (1 = hide header). Plan 6 "Just The Basics" had it on, which hid the navbar on 214 profiles. The owner fixed it in the BD admin (ww2.managemydirectory.com/admin, not /admin on the site). No API tool can update plans.
+
+## Category specialty chips + long-URL forward (9/29/2026)
+- Category and specialty pages (/attorney, /estate-planning-attorney) show specialty chips under the hero (p3.js, BUSINESS RESULTS block). The chips wrap to at most 2 lines, followed by "+ N more". The owner rejected a sideways-scrolling row and the /categories tile dropdowns.
+- The data comes from search/subcats.json, which 3vl-site-guard member-db publishes nightly (only specialties that have live businesses). New specialties appear automatically the next morning.
+- Widget 13 starts with an inline script that forwards /united-states-of-america/... and /new-york/... to the short URL (BD already canonicalizes them there). BD STRIPS BACKSLASHES from widget code at render time, even though the API shows them. Never use regex escapes in inline widget JS; use string ops, or put the code in a pinned 3vl-assets file.
