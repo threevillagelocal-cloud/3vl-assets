@@ -35,7 +35,8 @@ Generator: site/share-img. Run order: fetch.py (members.json), fetch_seo.py (seo
 Hosting: GitHub PAGES of threevillagelocal-cloud/3vl-share (https://threevillagelocal-cloud.github.io/3vl-share/l/<slug>.jpg). NOT jsDelivr, because 80 MB is over its 50 MB package limit. NOT 3vl-assets either.
 BD mangles external og URLs, so each listing uses a BD 301 redirect: /share/<slug>.jpg -> Pages URL (Frame Shop: share/setauket-frame-shop-v3.jpg). Then seo_social_page_image = https://www.threevillagelocal.com/share/<slug>.jpg plus the 4 SEO fields. apply.py is resumable (apply_log.json).
 Owner rules: town shows "Setauket" for any Setauket / East Setauket listing (never "East Setauket"). The gold line is "Since YEAR", else the specialty label (<=24 chars), else the town. Better logos go in img/override/<user_id>.png. When an image changes, use a NEW /share/ filename (FB caches by URL) and re-scrape in the FB Sharing Debugger.
-Excluded: user 5 (admin/blog author), 218 (Twinr). SEO backup: site/share-img/backups/ (gitignored, local).
+Excluded: user 5 (admin/blog author), 218 (Twinr).
+CUSTOM PREMIUM share images (paying members, owner-made, 9/30/2026): 554 Savera (share/savera-wood-floor-refinishing-v1.jpg). Never overwrite these with gen.py/apply.py output: pass explicit user_ids that leave them out, and add each new custom one to this list. SEO backup: site/share-img/backups/ (gitignored, local).
 
 ## HOMEPAGE = the Three Village Local (Now) page (switched 9/28/2026)
 - threevillagelocal.com/ shows widget 17 "3VL Page Now" through Design Settings > Homepage: Section 1 = "Custom Content 10" (contains only [widget=3VL Page Now]). The hero is hidden ("Hide Entire Hero Section"), and sections 2-5 are None. The BD home page record (seo_id 1) content field is IGNORED by BD. Its content_css keeps .homepage-section-1 transparent.
