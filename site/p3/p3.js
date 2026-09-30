@@ -86,7 +86,7 @@ if(isResults){
       function short(n){var l=n.toLowerCase(),e=[' '+tw,' '+tw+'s'];for(var k=0;k<e.length;k++){if(tw&&l.length>e[k].length+2&&l.slice(-e[k].length)===e[k])return n.slice(0,n.length-e[k].length)}return n}
       var chip=function(href,label,n,on){return '<a class="p3-spc'+(on?' on':'')+'" href="'+esc(href)+'"'+(on?' aria-current="page"':'')+'>'+esc(label)+(n?' <span>'+n+'</span>':'')+'</a>'};
       var html='<nav class="p3-specs" aria-label="'+esc(c.n)+' specialties"><div class="p3-strack">'+
-        chip('/'+top,'All '+c.n,0,cur===top)+c.s.map(function(x){return chip('/'+x[0],short(x[1]),x[2],cur===x[0])}).join('')+
+        chip('/'+top,'All',0,cur===top)+c.s.map(function(x){return chip('/'+x[0],short(x[1]),x[2],cur===x[0])}).join('')+
         '<button type="button" class="p3-smore" hidden></button></div></nav>';
       var hero=$('.p3-phero',root);if(!hero)return;hero.insertAdjacentHTML('afterend',html);
       var nav=$('.p3-specs',root),tr=$('.p3-strack',nav),more=$('.p3-smore',tr),chips=[].slice.call(tr.querySelectorAll('.p3-spc')),open=false;
