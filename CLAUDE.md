@@ -81,3 +81,13 @@ Before: on a slow first visit the header showed Times-style text for 2-4s, no lo
 - Logo: BD's logo file is 111 KB at 1350x420. The block swaps in live/hdr/logo-540.webp (35 KB, same picture) with CSS `content:url()` and preloads it. If the owner changes the logo in BD, regenerate logo-540.webp (build_hdr.py) or the old logo keeps showing.
 - Cost: first paint is about 0.2s later on a 3 Mbps connection (the files are fetched first), in exchange for a complete header. Finished pages are pixel-identical apart from logo resampling.
 - gstatic font URLs carry a version (radiocanada/v26, quicksand/v37). They keep working if Google bumps the version; nothing to do unless the fonts are changed in BD Design Settings.
+
+## Smart search: the results page must match the suggestions (owner, 10/1/2026)
+Owner: typing "toothache" suggested dentists, but pressing Enter said no results (same for "leaky faucet"). Cause: the suggestions came from our engine, Enter went to BD's literal keyword search. Fixed 10/1:
+- ONE engine, in p3.js (`window.tvlSS`: load, search, norm, STOP, ok). smartsearch.js (the search box) only draws the dropdown and calls it. Never copy the matching rules into a second file again.
+- /search_results?q=... is now built by p3.js from the same engine and index (same cards as category pages; VIPs featured first, then best match first). BD's own keyword results are NOT used for keyword searches. Category pages (/attorney etc.) still restyle BD's list.
+- Slow index: our page frame shows at once and the cards drop in ("Finding the best local matches..." appears only after 0.6s). No match: our own message with a link to /categories. Index cannot load: BD's own list if it has one (`&bd=1`), else a try-again message.
+- Index = 3vl-assets/search/index.json (3vl-site-guard member-db, nightly; manual: `gh workflow run member-db.yml -f mode=build`). It now carries ph (phone), a (street), z (zip) for the cards; BD already shows these publicly in its results.
+- Matching rules tightened 10/1: a word WE add as a meaning (SYN, e.g. toothache -> dentist dental) must start a word; inside-word and one-typo matches apply only to what the visitor typed, and a typo match must keep the first letter (otherwise "dental" matched "rental" and "accidental"); matches under 30% of the top score are dropped.
+- Test tool pattern (throwaway): type the query in the homepage box with puppeteer, read the dropdown names, press Enter, read the names on the results page; they must be the same set. Checked live for toothache, leaky faucet, pizza, plumber, lawyer on desktop and phone.
+- GA4: smart_search_results (search_term, results) fires on the results page; results:0 = searches we have no match for (worth reviewing to add SYN words).
