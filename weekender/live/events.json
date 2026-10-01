@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-01T08:45:22.755420+00:00",
+"updated": "2026-10-01T14:22:22.614482+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 44,
@@ -41,7 +41,8 @@
 "history"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": ""
 },
 {
 "id": "lim-3225801",
@@ -61,7 +62,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/blue-star-welcome-week-2026-for-military-families"
 },
 {
 "id": "cur-spooky",
@@ -83,6 +85,7 @@
 ],
 "status": "",
 "pick": true,
+"page": "https://www.threevillagelocal.com/olde-towne-gardens",
 "rank": 4
 },
 {
@@ -101,7 +104,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": ""
 },
 {
 "id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58902",
@@ -119,7 +123,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-18m-3-5-yrs-w-caregiver"
 },
 {
 "id": "emmaclark-library-walking-club-61171",
@@ -135,7 +140,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/library-walking-club"
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58907",
@@ -153,7 +159,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-ages-18m-3-5-yrs-w-caregiver-278"
 },
 {
 "id": "emmaclark-social-work-intern-appointments-58746",
@@ -169,7 +176,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments"
 },
 {
 "id": "pjchamber-14934",
@@ -187,7 +195,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/chamber-friends-family-sunset-cruise"
 },
 {
 "id": "emmaclark-sailing-through-stressful-times-58122",
@@ -203,7 +212,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/sailing-through-stressful-times"
 },
 {
 "id": "emmaclark-game-day-38288",
@@ -219,7 +229,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/game-day"
 },
 {
 "id": "cur-stitch",
@@ -238,7 +249,8 @@
 "arts"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free"
 },
 {
 "id": "emmaclark-knit-crochet-chat-58175",
@@ -256,7 +268,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/knit-crochet-chat"
 },
 {
 "id": "lim-10000256",
@@ -276,7 +289,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free"
 },
 {
 "id": "cur-tvfm",
@@ -296,7 +310,8 @@
 "food"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "emmaclark-oreolympics-grades-k-5-58797",
@@ -314,7 +329,8 @@
 "kids"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/oreolympics-grades-k-5"
 },
 {
 "id": "emmaclark-candy-land-training-creations-night-59550",
@@ -332,7 +348,8 @@
 "arts"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/candy-land-training-creations-night"
 },
 {
 "id": "cur-scarecrow",
@@ -352,7 +369,8 @@
 "kids"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "cur-brewster",
@@ -371,7 +389,8 @@
 "kids"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "cur-patriots",
@@ -391,7 +410,8 @@
 "kids"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "cur-spyday",
@@ -412,6 +432,7 @@
 ],
 "status": "",
 "pick": true,
+"page": "https://www.threevillagelocal.com/events/culper-spy-day",
 "rank": 1
 },
 {
@@ -432,7 +453,8 @@
 "outdoor"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/nature-walks"
 },
 {
 "id": "emmaclark-history-emma-s-clark-memorial-library-walking-tour-58126",
@@ -450,7 +472,8 @@
 "history"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/the-history-of-emma-s-clark-memorial-library-walking-tour"
 },
 {
 "id": "cur-tory",
@@ -469,7 +492,8 @@
 "kids"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "cur-blues",
@@ -490,6 +514,7 @@
 ],
 "status": "",
 "pick": true,
+"page": "https://www.threevillagelocal.com/events/cedar-beach-blues-on-the-harbor",
 "rank": 2
 },
 {
@@ -510,7 +535,8 @@
 "kids"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "cur-emmalawn",
@@ -530,7 +556,8 @@
 "kids"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "emmaclark-fairchild-becherer-music-american-colonial-period-58124",
@@ -549,7 +576,8 @@
 "music"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/fairchild-becherer-music-of-the-american-colonial-period"
 },
 {
 "id": "emmaclark-monster-week-tabletop-rpg-61435",
@@ -565,7 +593,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/monster-of-the-week-a-tabletop-rpg"
 },
 {
 "id": "lim-3225658",
@@ -585,7 +614,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/culper-spy-day-free"
 },
 {
 "id": "wmho-1191",
@@ -603,7 +633,8 @@
 "history"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/culper-spy-day-tours-at-the-brewster-house"
 },
 {
 "id": "lim-3223856",
@@ -622,7 +653,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/hawkins-mount-house-tours-li250"
 },
 {
 "id": "lim-3225654",
@@ -642,7 +674,8 @@
 "stage"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/long-island-during-the-american-revolution-free-lecture"
 },
 {
 "id": "cur-treason",
@@ -663,6 +696,7 @@
 ],
 "status": "",
 "pick": true,
+"page": "https://www.threevillagelocal.com/events/treasons-trial-a-culper-spy-story",
 "rank": 3
 },
 {
@@ -679,7 +713,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/date-change-welcome-to-the-teen-tween-services-department"
 },
 {
 "id": "cur-symphony",
@@ -698,7 +733,8 @@
 "stage"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "pjchamber-14989",
@@ -716,7 +752,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/18th-annual-soles-for-all-souls"
 },
 {
 "id": "cur-pjfm",
@@ -736,7 +773,8 @@
 "food"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "portjeff-1094",
@@ -755,7 +793,8 @@
 "outdoor"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market"
 },
 {
 "id": "cur-founding",
@@ -773,7 +812,8 @@
 "history"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "cur-limsun",
@@ -793,7 +833,8 @@
 "kids"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "cur-gristmill",
@@ -813,7 +854,8 @@
 "outdoor"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "cur-limehof",
@@ -831,7 +873,8 @@
 "music"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "sbv-2369",
@@ -849,7 +892,8 @@
 "music"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-performance-by-by-marian-mastrorilli-with-glenn-govier-at-the-long-island-music-and-entertainment-hall-of-fame"
 },
 {
 "id": "limehof-202610041500-marian-mastrorilli-with-glenn-govier",
@@ -868,7 +912,8 @@
 "music"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/marian-mastrorilli-with-glenn-govier"
 },
 {
 "id": "emmaclark-behind-post-59552",
@@ -884,7 +929,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/behind-the-post"
 },
 {
 "id": "lim-3225641",
@@ -904,7 +950,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/sunday-street-concert-series-rory-block"
 },
 {
 "id": "cur-sedaris",
@@ -922,7 +969,8 @@
 "stage"
 ],
 "status": "",
-"pick": false
+"pick": false,
+"page": ""
 },
 {
 "id": "pjchamber-14726",
@@ -940,7 +988,8 @@
 "outdoor"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58873",
@@ -958,7 +1007,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-302"
 },
 {
 "id": "emmaclark-preschool-storytime-ages-35-5-yrs-58883",
@@ -976,7 +1026,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-303"
 },
 {
 "id": "emmaclark-spooky-spider-seashell-art-58127",
@@ -994,7 +1045,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/spooky-spider-seashell-art"
 },
 {
 "id": "emmaclark-after-school-story-time-grades-k-2-59001",
@@ -1012,7 +1064,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/after-school-story-time-grades-k-2"
 },
 {
 "id": "emmaclark-smartphone-secrets-38569",
@@ -1028,7 +1081,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/smartphone-secrets-unlocking-the-power-in-your-pocket-zoom"
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58878",
@@ -1046,7 +1100,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-307"
 },
 {
 "id": "emmaclark-preschool-storytime-ages-35-5-yrs-58888",
@@ -1064,7 +1119,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-308"
 },
 {
 "id": "emmaclark-celebrating-100-years-laughter-mel-brooks-58129",
@@ -1082,7 +1138,8 @@
 "history"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/celebrating-100-years-of-laughter-with-mel-brooks"
 },
 {
 "id": "emmaclark-cricut-t-shirt-lottery-43470",
@@ -1100,7 +1157,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/cricut-t-shirt-lottery"
 },
 {
 "id": "emmaclark-tutus-tots-59554",
@@ -1118,7 +1176,8 @@
 "arts"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tutus-for-tots"
 },
 {
 "id": "emmaclark-ai-basics-introduction-artificial-intelligence-60458",
@@ -1134,7 +1193,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/ai-basics-an-introduction-to-artificial-intelligence-312"
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58893",
@@ -1152,7 +1212,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-ages-18m-3-5-yrs-w-caregiver-313"
 },
 {
 "id": "lim-3225151",
@@ -1172,7 +1233,8 @@
 "stage"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/mornings-lim-the-troubadours-concert"
 },
 {
 "id": "emmaclark-harbormen-chorus-concert-58130",
@@ -1190,7 +1252,8 @@
 "music"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/the-harbormen-chorus-concert"
 },
 {
 "id": "emmaclark-dog-treat-jars-pet-supply-drive-community-service-project-grades-3-5-5",
@@ -1208,7 +1271,8 @@
 "kids"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/dog-treat-jars-for-pet-supply-drive-community-service-project-grades-3-5"
 },
 {
 "id": "emmaclark-your-children-dont-want-it-what-do-zoom-58133",
@@ -1224,7 +1288,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/your-children-dont-want-it-what-to-do-zoom"
 },
 {
 "id": "pjchamber-15013",
@@ -1242,7 +1307,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/fall-blood-drive"
 },
 {
 "id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58903",
@@ -1260,7 +1326,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-18m-3-5-yrs-w-caregiver-318"
 },
 {
 "id": "emmaclark-library-walking-club-61172",
@@ -1276,7 +1343,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/library-walking-club-319"
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58908",
@@ -1294,7 +1362,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-ages-18m-3-5-yrs-w-caregiver-320"
 },
 {
 "id": "emmaclark-social-work-intern-appointments-58747",
@@ -1310,7 +1379,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments-321"
 },
 {
 "id": "emmaclark-tube-bots-grades-k-5-w-caregiver-58798",
@@ -1329,7 +1399,8 @@
 "kids"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/tube-bots-grades-k-5-w-caregiver"
 },
 {
 "id": "emmaclark-cricut-t-shirt-38560",
@@ -1347,7 +1418,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/cricut-t-shirt-lottery-323"
 },
 {
 "id": "3vchamber-1919589",
@@ -1365,7 +1437,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/reboli-center-fall-paint-party"
 },
 {
 "id": "emmaclark-interred-long-island-58137",
@@ -1383,7 +1456,8 @@
 "history"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/interred-on-long-island"
 },
 {
 "id": "pjchamber-14181",
@@ -1402,7 +1476,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
 },
 {
 "id": "emmaclark-time-baby-newborn-15-mos-w-caregiver-58863",
@@ -1420,7 +1495,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/time-for-baby-newborn-15-mos-w-caregiver"
 },
 {
 "id": "emmaclark-game-day-38289",
@@ -1436,7 +1512,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/game-day-329"
 },
 {
 "id": "emmaclark-time-baby-16-mos-24-mos-w-caregiver-58860",
@@ -1454,7 +1531,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/time-for-baby-16-mos-24-mos-w-caregiver"
 },
 {
 "id": "lim-3225059",
@@ -1473,7 +1551,8 @@
 "outdoor"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/america-on-screen-the-day-we-walked-on-the-moon"
 },
 {
 "id": "emmaclark-life-sized-candy-land-ages-3-7-w-caregiver-58810",
@@ -1491,7 +1570,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/life-sized-candy-land-ages-3-7-w-caregiver"
 },
 {
 "id": "portjeff-1134",
@@ -1509,7 +1589,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/hill-climb-reception-to-follow"
 },
 {
 "id": "pjchamber-14946",
@@ -1529,7 +1610,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/free-breast-cancer-screening-paint-port-pink"
 },
 {
 "id": "brookhaven-5101",
@@ -1548,7 +1630,8 @@
 "kids"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/junior-environmental-stewards"
 },
 {
 "id": "emmaclark-america-250-historical-gravestones-cleaning-59556",
@@ -1566,7 +1649,8 @@
 "history"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/america-250-historical-gravestones-cleaning-334"
 },
 {
 "id": "pjchamber-14961",
@@ -1584,7 +1668,8 @@
 "outdoor"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/witches-warlocks-weekend"
 },
 {
 "id": "iloveportjeff-6a1eb46489ca3256acdb4fe0",
@@ -1603,7 +1688,8 @@
 "arts"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/witches-warlocks-weekend-out"
 },
 {
 "id": "emmaclark-leaf-buddies-ages-3-11-w-caregiver-58808",
@@ -1622,7 +1708,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/leaf-buddies-ages-3-11-w-caregiver"
 },
 {
 "id": "emmaclark-beautiful-beagles-59557",
@@ -1640,7 +1727,8 @@
 "arts"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/beautiful-beagles"
 },
 {
 "id": "emmaclark-bring-your-own-adult-halloween-candy-art-challenge-59558",
@@ -1659,7 +1747,8 @@
 "kids"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/bring-your-own-adult-halloween-candy-art-challenge"
 },
 {
 "id": "portjeff-1095",
@@ -1678,7 +1767,8 @@
 "outdoor"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-470"
 },
 {
 "id": "emmaclark-adulting-high-schoolers-say-yes-college-essay-60667",
@@ -1694,7 +1784,8 @@
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/adulting-for-high-schoolers-say-yes-to-the-college-essay"
 },
 {
 "id": "emmaclark-tote-bags-library-drives-59559",
@@ -1712,7 +1803,8 @@
 "arts"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tote-bags-for-library-drives-341"
 },
 {
 "id": "emmaclark-spooky-trivia-and-snacks-59560",
@@ -1730,7 +1822,8 @@
 "food"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/spooky-trivia-and-snacks"
 },
 {
 "id": "emmaclark-diy-custom-embroidery-59674",
@@ -1748,7 +1841,8 @@
 "arts"
 ],
 "status": "",
-"fb": 1
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/diy-custom-embroidery"
 },
 {
 "id": "limehof-202610111500-blue-light-effect",
@@ -1767,11 +1861,115 @@
 "music"
 ],
 "status": "",
-"fb": 0
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/blue-light-effect"
 }
 ],
 "closings": [],
-"specials": [],
+"specials": [
+{
+"id": "17949077496274961",
+"biz": "The Country Corner",
+"ig": "countrycornerlongisland",
+"town": "East Setauket",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Culper Spy Day in East Setauket",
+"when": "Sat, Oct. 3 · 11 AM",
+"desc": "Join for lunch with a view of the Brewster Family Home, drink specials and great food.",
+"expires": "2026-10-03",
+"posted": "2026-09-25T13:03:40+0000",
+"url": "https://www.instagram.com/p/Ddtg7O2RP4e/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17949077496274961.jpg",
+"page": "https://www.threevillagelocal.com/country-corner"
+},
+{
+"id": "18117132107090064",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Fall Comfort Food Specials",
+"when": "This week",
+"desc": "Country Chicken Sliders, Baby Back Ribs, Chicken Pot Pie & Cowboy Soup.",
+"expires": "2026-10-04",
+"posted": "2026-09-25T00:56:15+0000",
+"url": "https://www.instagram.com/p/DdsOQJSDWi2/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18117132107090064.jpg",
+"page": "https://www.threevillagelocal.com/tommys-place"
+},
+{
+"id": "18056356766797842",
+"biz": "Black Pearl Seafood Chophouse",
+"ig": "blackpearlportjeff",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Race Weekend at Black Pearl",
+"when": "Fri-Sun, Oct 2-4",
+"desc": "Live music and dining during race weekend. Boats arrive Sat with brunch at 1 PM, fleet departs Sun at noon.",
+"expires": "2026-10-04",
+"posted": "2026-10-01T13:00:52+0000",
+"url": "https://www.instagram.com/p/Dd898VkDHeI/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18056356766797842.jpg",
+"page": ""
+},
+{
+"id": "17960111250235779",
+"biz": "RUVO Kitchen & Wine Bar",
+"ig": "ruvorestaurant",
+"town": "Port Jefferson",
+"category": "Restaurant/Wine Bar",
+"member": false,
+"title": "Autumn Table at Ruvo",
+"when": "Every Thursday · 4 PM–close",
+"desc": "Complimentary pumpkin beer or fall sangria with your entrée every Thursday.",
+"expires": "2026-10-14",
+"posted": "2026-10-01T13:30:05+0000",
+"url": "https://www.instagram.com/reel/Dd9BVuMPPbv/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17960111250235779.jpg",
+"page": ""
+},
+{
+"id": "18114880313055054",
+"biz": "Burgerology",
+"ig": "burgerologyusa",
+"town": "Stony Brook",
+"category": "Restaurant",
+"member": false,
+"title": "Wicked Potion Punch",
+"when": "Limited time",
+"desc": "Halloween-themed drink served in a smoking cauldron with glowing LED ice cubes.",
+"expires": "2026-10-31",
+"posted": "2026-09-29T23:37:43+0000",
+"url": "https://www.instagram.com/reel/Dd48-xyg-eS/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18114880313055054.jpg",
+"page": ""
+},
+{
+"id": "18029801909856158",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Oktoberfest at Schnitzels",
+"when": "Ongoing through October",
+"desc": "Giant Bavarian pretzels with beer cheese and mustard paired with German brews.",
+"expires": "2026-10-15",
+"posted": "2026-09-29T22:23:43+0000",
+"url": "https://www.instagram.com/p/Dd40vvhBMLC/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18029801909856158.jpg",
+"page": "https://www.threevillagelocal.com/schnitzels"
+}
+],
 "eatOrder": [
 "Culpers 1778",
 "The Country Corner",
