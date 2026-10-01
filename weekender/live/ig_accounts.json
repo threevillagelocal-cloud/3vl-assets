@@ -181,15 +181,6 @@
   "group": "food"
  },
  {
-  "name": "The Bench Bar & Grill",
-  "town": "Stony Brook",
-  "category": "Bar/Restaurant",
-  "ig": "thebenchbarandgrill",
-  "source": "https://thebenchbar.com/",
-  "note": "",
-  "group": "food"
- },
- {
   "name": "Eastern Pavilion",
   "town": "Setauket",
   "category": "Restaurant (Asian)",
