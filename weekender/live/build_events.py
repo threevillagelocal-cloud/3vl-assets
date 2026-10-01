@@ -90,6 +90,30 @@ def page_for(pages, title, start):
     return exact[0][2] if len(exact) == 1 else ""
 
 
+_LISTINGS = {}
+
+
+def listing_for(name):
+    """3VL profile URL for a business name ('' if it has no listing): nightly search index + weekender/biz_links.json."""
+    nm = lambda x: re.sub(r"[^a-z0-9]", "", re.sub(r"%s(.*?%s)|&[a-z#0-9]+;" % ("\\", "\\"), "", x.lower()).replace("the ", ""))
+    if not _LISTINGS:
+        root = os.path.dirname(HERE)
+        try:
+            for k, u in json.load(open(os.path.join(root, "biz_links.json"), encoding="utf-8")).items():
+                if "threevillagelocal.com" in u:
+                    _LISTINGS[nm(k.replace("&#x27;", "").replace("&rsquo;", ""))] = u
+            for m in json.load(open(os.path.join(os.path.dirname(root), "search", "index.json"), encoding="utf-8")).get("members", []):
+                _LISTINGS.setdefault(nm(m["n"]), m["u"])
+        except Exception as ex:
+            print("listings unavailable: %s" % ex)
+        _LISTINGS.setdefault("", "")
+    k = nm(name.replace("'", "").replace("\u2019", ""))
+    if k in _LISTINGS:
+        return _LISTINGS[k]
+    near = [u for kk, u in _LISTINGS.items() if kk and len(k) >= 6 and len(kk) >= 6 and (k in kk or kk in k)]
+    return near[0] if len(near) == 1 else ""
+
+
 def status_for(title):
     m = re.search(r"\b(cancel+ed|postponed|rescheduled)\b", title, re.I)
     return m.group(1).capitalize().replace("Cancelled", "Canceled") if m else ""
@@ -173,6 +197,7 @@ def main():
                 continue
             if s.get("inset"):
                 s["inset"] = igbase + s["inset"]
+            s["page"] = listing_for(s.get("biz", ""))   # the business's 3VL profile; the card falls back to the Instagram post
             specials.append(s)
     # Owner's ranked list for the Eat & Drink cards (names, top to bottom); /now orders its cards by this
     pref = json.load(open(os.path.join(HERE, "preference.json"), encoding="utf-8"))

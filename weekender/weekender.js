@@ -96,8 +96,8 @@ function renderLive(data){
     var card=function(x,old){var big=x.img||x.inset,small=x.img?x.inset:'',ob=old&&old.querySelector('.wk-spbiz');
       var map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(x.biz.replace(/\s*\(.*?\)/,'')+', '+(x.town||'Three Village')+', NY');
       var t=document.createElement('div');
-      t.innerHTML='<article class="wk-sp wk-rv is-in">'+(big?'<div class="wk-eimg"><img '+smi(big,800)+' alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img '+smi(small,300)+' alt="" loading="lazy"></span>':'')+'</div>':'')+
-       '<div class="wk-spb"><p class="wk-spbiz">'+(ob?ob.innerHTML:esc2(x.biz.replace(/\s*\(.*?\)/,'')))+'</p><p class="wk-spt">'+esc2(x.title)+'</p>'+(x.when?'<p class="wk-spw">'+esc2(x.when)+'</p>':'')+'<p class="wk-spd">'+esc2(x.desc)+'</p>'+
+      t.innerHTML='<article class="wk-sp wk-rv is-in"'+(x.page?' data-href="'+esc2(x.page)+'"':'')+'>'+(big?'<div class="wk-eimg"><img '+smi(big,800)+' alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img '+smi(small,300)+' alt="" loading="lazy"></span>':'')+'</div>':'')+
+       '<div class="wk-spb"><p class="wk-spbiz">'+(ob?ob.innerHTML:x.page?'<a class="wk-biz" href="'+esc2(x.page)+'">'+esc2(x.biz.replace(/\s*\(.*?\)/,''))+'</a>':esc2(x.biz.replace(/\s*\(.*?\)/,'')))+'</p><p class="wk-spt">'+esc2(x.title)+'</p>'+(x.when?'<p class="wk-spw">'+esc2(x.when)+'</p>':'')+'<p class="wk-spd">'+esc2(x.desc)+'</p>'+
        '<p class="wk-spf"><span class="wk-src wk-igb">&#9711;</span><span>via <a class="wk-biz" href="'+esc2(x.url)+'" target="_blank" rel="noopener">Instagram</a></span><a class="wk-dir" href="'+esc2(map)+'" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>';
       return t.firstChild};
     order.forEach(function(n){var k=nm(n);if(used[k])return;used[k]=1;if(ig[k])out.push(card(ig[k],cur[k]));else if(cur[k])out.push(cur[k])});
@@ -459,7 +459,7 @@ function railStick(){var r=root.querySelector('.wk-railin');if(!r)return;
 /* ---------- 10/1: the whole card is a link, and cut-off text gets a "More" button ---------- */
 function cardLinks(){root.addEventListener('click',function(e){if(e.target.closest('a,button,input,label'))return;var c=e.target.closest('.wk-pick,.wk-sp');if(!c)return;
   if(window.getSelection&&String(window.getSelection()).length)return;
-  var a=c.querySelector('.wk-ptitle a,.wk-spbiz a'),u=c.getAttribute('data-href')||(a&&a.href);if(!u)return;
+  var a=c.querySelector('.wk-ptitle a,.wk-spbiz a')||c.querySelector('.wk-spf a.wk-biz'),u=c.getAttribute('data-href')||(a&&a.href);if(!u)return;
   var ours=u.charAt(0)==='/'||u.indexOf('threevillagelocal.com')>-1;
   track('card_click',{card:c.classList.contains('wk-sp')?'eat':'todo',link:u});
   if(ours)location.href=u;else window.open(u,'_blank','noopener')})}
