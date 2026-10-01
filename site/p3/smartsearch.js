@@ -1,44 +1,19 @@
 /* 3VL smart search: instant, relevance-ranked business results under the homepage search box.
    Index = search/index.json (built nightly from BD members + Member Match + AI neighbor words by 3vl-site-guard member-db).
-   Ranking: best match first; paid plans only break ties (and get a badge). Enter / "See all" still runs BD's normal search. */
+   Ranking: best match first; paid plans only break ties (and get a badge). Enter / "See all" goes to /search_results?q=..., where p3.js
+   shows the SAME matches from the same engine (BD's own keyword search is not used for keyword searches any more, 10/1/2026).
+   Served from 3vl-share/live (run site/publish_live.py after editing). */
 (function(){
 'use strict';
-var IDX='https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/search/index.json';
 var FORCE=/[?&]tvlsearch=1/.test(location.search);
 var p=location.pathname.replace(/\/+$/,'')||'/';
 var NOW=p==='/now'||/[?&]tvlsearch=now/.test(location.search);
 var HOME=p==='/'||p==='/home';  /* 9/28: runs sitewide; attaches to the Now/homepage hero bar, the p3 hero search (#p3q on /categories, search results, category pages) or the old homepage box */
-var STOP={the:1,a:1,an:1,and:1,of:1,'for':1,near:1,me:1,'in':1,best:1,local:1,good:1,my:1,to:1,at:1,on:1,with:1,service:1,services:1,company:1,ny:1,no:1,not:1,wont:1,cant:1,dont:1,need:1,needs:1,help:1,want:1,find:1,get:1,someone:1,who:1,can:1,i:1,is:1,it:1,im:1,please:1};
-var TIER={vip:3,noticed:2,house:1,basic:0,claim:0};
-var data=null,loading=null;
+/* The matching engine lives in p3.js (window.tvlSS) so this box and the keyword results page always agree (10/1/2026). */
+var SS=null;
 function track(n,o){try{if(window.gtag)window.gtag('event',n,o)}catch(e){}}
 function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function norm(s){return String(s||'').toLowerCase().replace(/&amp;/g,'&').replace(/[’']/g,'').replace(/[^a-z0-9&]+/g,' ').trim()}
-function stem(w){if(w.length<=4)return w;w=w.replace(/ies$/,'y').replace(/(ers|er|ing|es|s)$/,'');return w.length>=3?w:w}
-var SYN={ac:'hvac air conditioning',hvac:'hvac heating cooling air conditioning',lawyer:'attorney lawyer law',attorney:'attorney lawyer law',vet:'veterinarian veterinary animal hospital',doctor:'doctor physician medical',mechanic:'auto repair mechanic',car:'auto car',haircut:'hair salon barber haircut',barber:'barber hair',kids:'kids children',cpa:'accounting tax cpa',accountant:'accounting tax accountant',realtor:'real estate realtor',movers:'moving movers',daycare:'preschool childcare daycare',toothache:'dentist dental',tooth:'dentist dental',teeth:'dentist dental',hot:'water heater hot',wasp:'pest exterminator',bees:'pest exterminator',mice:'pest exterminator rodent',rats:'pest exterminator rodent',ants:'pest exterminator',termites:'pest exterminator termite',bugs:'pest exterminator',sprinkler:'irrigation sprinkler lawn',faucet:'plumber faucet',leak:'leak plumber roof',outlet:'electrician',breaker:'electrician',wiring:'electrician',lawn:'lawn landscaping',mow:'lawn landscaping',snow:'snow plowing removal',ticks:'tick mosquito spray',mosquitoes:'mosquito spray',taxes:'tax accounting'};
-function load(){if(data||loading)return loading;loading=fetch(IDX+'?v='+Math.floor(Date.now()/36e5)).then(function(r){return r.json()}).then(function(j){
-  data=(j.members||[]).map(function(m){return {m:m,name:norm(m.n),cat:norm(m.c+' '+(m.s||[]).join(' ')),terms:(m.k||[]).map(norm),desc:norm(m.d),town:norm(m.t)}});return data}).catch(function(){loading=null});return loading}
-function lev1(a,b){if(Math.abs(a.length-b.length)>1)return false;var i=0,j=0,e=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){i++;j++;continue}if(++e>1)return false;if(a.length>b.length)i++;else if(b.length>a.length)j++;else{i++;j++}}return e+(a.length-i)+(b.length-j)<=1}
-function wordHit(w,text){if(!text)return 0;if(w.length<=3)return (' '+text+' ').indexOf(' '+w+' ')>-1?2:0;if((' '+text+' ').indexOf(' '+w)>-1)return 2;if(w.length>=5&&text.indexOf(w)>-1)return 1;
-  if(w.length>=5){var ws=text.split(' ');for(var i=0;i<ws.length;i++)if(ws[i].length>=4&&lev1(stem(w),stem(ws[i])))return 1}return 0}
-function has(text,q){return q.length<=3?(' '+text+' ').indexOf(' '+q+' ')>-1:q.length<=4?(' '+text).indexOf(' '+q)>-1:text.indexOf(q)>-1}
-function score(r,q,words){var s=0,sh=q.length<=3;
-  if(r.name===q)s+=400;else if(!sh&&r.name.indexOf(q)===0)s+=220;else if(sh?has(r.name,q):(' '+r.name).indexOf(' '+q)>-1)s+=sh?180:150;
-  if(q.length>2){for(var i=0;i<r.terms.length;i++){if(r.terms[i]===q){s+=160;break}if(has(r.terms[i],q)){s+=90;break}}
-    if(has(r.cat,q))s+=110}
-  var all=true,hits=0;words.forEach(function(w){var best=0;[w].concat(SYN[w]?SYN[w].split(' '):[]).forEach(function(v){var ws=stem(v),b=Math.max(wordHit(ws,r.name)*45,wordHit(ws,r.cat)*35);
-    for(var i=0;i<r.terms.length&&b<60;i++)b=Math.max(b,wordHit(ws,r.terms[i])*30);
-    if(!b)b=wordHit(ws,r.desc)*8+wordHit(ws,r.town)*10;if(b>best)best=b});
-    if(best)hits++;else all=false;s+=best});r._all=all;
-  if(words.length>1&&all)s+=40;if(!all&&words.length>1)s*=.55;
-  return s}
-function search(qraw){var q=norm(qraw);if(q.length<2||!data)return [];
-  var words=q.split(' ').filter(function(w){return w&&!STOP[w]});if(!words.length)words=[q];
-  var out=[];data.forEach(function(r){var s=score(r,q,words);if(s>=28)out.push({r:r,s:s})});
-  if(words.length>1&&out.some(function(x){return x.r._all}))out=out.filter(function(x){return x.r._all});
-  out.sort(function(a,b){return b.s-a.s||(TIER[b.r.m.p]||0)-(TIER[a.r.m.p]||0)||(b.r.m.l?1:0)-(a.r.m.l?1:0)||a.r.m.n.localeCompare(b.r.m.n)});
-  return out.slice(0,7)}
-function hl(text,q){var t=esc(text),ws=norm(q).split(' ').filter(function(w){return w.length>1&&!STOP[w]});
+function hl(text,q){var t=esc(text),ws=SS.norm(q).split(' ').filter(function(w){return w.length>1&&!SS.STOP[w]});
   ws.forEach(function(w){t=t.replace(new RegExp('('+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'),'<b>$1</b>')});return t}
 var CSS='#tvlss{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:9999;background:#fff;border:1px solid #e3e9f0;border-radius:18px;box-shadow:0 24px 60px rgba(15,26,40,.25);overflow:hidden;text-align:left;font-family:inherit}'+
 '#tvlss[hidden]{display:none}'+
@@ -70,6 +45,7 @@ function nowBar(){var dek=document.querySelector('.wk-hero2 .wk-dek')||document.
     '<input type="search" name="q" autocomplete="off" aria-label="Search local businesses" placeholder="Search local businesses">'+'<button type="submit">Search</button>';
   dek.parentNode.insertBefore(f,dek.nextSibling);return f.querySelector('input')}
 function init(){
+  SS=SS||window.tvlSS;if(!SS)return false;
   var fixed=false,inp;
   if(NOW||document.querySelector('.wk-hero .wk-dek')){inp=nowBar();fixed=true}
   else if(document.getElementById('p3q')){inp=document.getElementById('p3q');fixed=true}
@@ -86,7 +62,7 @@ function init(){
   if(fixed){box.className='ss-fix';document.body.appendChild(box);window.addEventListener('scroll',place,{passive:true});window.addEventListener('resize',place)}else host.appendChild(box);
   var sel=-1,items=[],tmr;
   function render(){var q=inp.value.trim();if(q.length<2){box.hidden=true;return}
-    load().then(function(){var res=search(q);items=res;sel=-1;
+    SS.load().then(function(){var res=SS.search(q);items=res;sel=-1;
       var h='<p class="ss-h">Best matches in Three Village</p>';
       if(!res.length)h+='<p class="ss-none">No quick match. Press Enter to search everything.</p>';
       res.forEach(function(x,i){var m=x.r.m,ini=(m.n||'?').replace(/^the\s+/i,'').charAt(0).toUpperCase(),meta=[m.c,String(m.t||'').replace(/^(East\s+)?Setauket.*$/i,'Setauket')].filter(Boolean).join(' \u00b7 ');
@@ -94,7 +70,7 @@ function init(){
           '<span class="ss-t"><span class="ss-n">'+hl(m.n,q)+'</span><span class="ss-m">'+esc(meta)+'</span></span>'+(m.p==='vip'?'<span class="ss-b ss-vip">&#11088; VIP</span>':m.p==='noticed'?'<span class="ss-b ss-gn">Featured</span>':'')+'</a>'});
       h+='<a class="ss-all" href="/search_results?q='+encodeURIComponent(q)+'">See all results for &ldquo;'+esc(q)+'&rdquo; &rarr;</a>';
       box.innerHTML=h;box.hidden=false;place()})}
-  inp.addEventListener('focus',load);
+  inp.addEventListener('focus',SS.load);
   inp.addEventListener('input',function(){clearTimeout(tmr);tmr=setTimeout(render,90)});
   inp.addEventListener('keydown',function(e){var rows=box.querySelectorAll('a.ss-r');if(box.hidden||!rows.length)return;
     if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();sel=(sel+(e.key==='ArrowDown'?1:-1)+rows.length)%rows.length;[].forEach.call(rows,function(r,i){r.classList.toggle('on',i===sel)})}
