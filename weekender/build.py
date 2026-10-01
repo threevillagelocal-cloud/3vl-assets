@@ -15,6 +15,7 @@ from datetime import datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = "threevillagelocal-cloud/3vl-assets"
+CAL = "https://www.threevillagelocal.com/events-calendar"   # where a card goes when its event has no page of its own (10/1)
 
 def esc(s):
     return html.escape(str(s), quote=True)
@@ -76,7 +77,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
             live = None
     vips = json.load(open(os.path.join(HERE, "vip.json"), encoding="utf-8"))
     if local:
-        base = "http://127.0.0.1:8765/weekender/"
+        base = "http://127.0.0.1:%s/weekender/" % os.environ.get("WK_PORT", "8765")
     else:
         base = "https://cdn.jsdelivr.net/gh/%s@%s/weekender/" % (REPO, sha)
     ed = base + edition + "/"
@@ -166,27 +167,31 @@ def build(edition, local=False, sha="master", d=None, live=None):
         e = ev[pid]
         ongoing = bool(e.get("when"))
         when = esc(e["when"]) if ongoing else "%s &middot; %s" % (dshort(e["start"]), fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"))
-        title = ('<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(e["url"]), esc(e["title"]))) if ongoing and e.get("url") else esc(e["title"])
+        page = e.get("page") or CAL   # 10/1: every card links to a page on our own site (weekend.json "page"), the organizer stays on the Details button
+        title = '<a href="%s">%s</a>' % (esc(page), esc(e["title"]))
         acts = actions(e)
         g = next((x for x in d.get("guides", []) if x[0] in e["title"].lower()), None)
         if g:  # a 3VL guide article for this event: link the title + add a guide button (9/28)
+            page = g[1]
             title = '<a href="%s">%s</a>' % (esc(g[1]), esc(e["title"]))
             acts = acts.replace('<div class="wk-acts">', '<div class="wk-acts"><a class="wk-guide" href="%s">&#128373;&#65039; %s</a>' % (esc(g[1]), esc(g[2])), 1)
         if ongoing and e.get("url"):
             acts = re.sub(r'<button type="button" class="wk-cal"[^<]*</button>', '<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a>' % esc(e["url"]), acts)
-        w('<article class="wk-pick wk-rv" %s style="--i:%d"><div class="wk-pimg"><img src="%s" alt="%s" loading="lazy" width="720" height="480">'
+        w('<article class="wk-pick wk-rv" data-href="%s" %s style="--i:%d"><div class="wk-pimg"><img src="%s" alt="%s" loading="lazy" width="720" height="480">'
           '<span class="wk-pnum">%02d</span>%s</div>'
           '<div class="wk-pbody"><p class="wk-pwhen">%s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pwhere">&#128205; %s</p>'
           '<p class="wk-pdesc">%s</p><div class="wk-tags">%s<span class="wk-price">%s</span></div>%s</div>'
           '<p class="wk-icred">%s</p></article>' % (
-            evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, "" if ongoing else '<span class="wk-pstat" data-status></span>',
+            esc(page), evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, "" if ongoing else '<span class="wk-pstat" data-status></span>',
             when, title, esc(V[e["venue"]]["name"]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), acts, esc(e.get("credit", ""))))
     # "On the Radar" items ride at the end of the same sideways row (9/28: no separate section, no extra height)
     for n in d.get("next", []):
-        w('<article class="wk-pick wk-radar wk-rv"><div class="wk-pimg">%s<span class="wk-pnum wk-soon">Coming up</span></div>'
+        npage = n.get("page") or n.get("url") or CAL
+        nours = "threevillagelocal.com" in npage or npage.startswith("/")
+        w('<article class="wk-pick wk-radar wk-rv" data-href="%s"><div class="wk-pimg">%s<span class="wk-pnum wk-soon">Coming up</span></div>'
           '<div class="wk-pbody"><p class="wk-pwhen">%s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pdesc">%s</p>%s</div>%s</article>' % (
-            ('<img src="%s" alt="%s" loading="lazy" width="720" height="480">' % (img(n["img"], True), esc(n["title"]))) if n.get("img") else "",
-            esc(n["when"]), (('<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(n["url"]), esc(n["title"]))) if n.get("url") else esc(n["title"])),
+            esc(npage), ('<img src="%s" alt="%s" loading="lazy" width="720" height="480">' % (img(n["img"], True), esc(n["title"]))) if n.get("img") else "",
+            esc(n["when"]), '<a href="%s"%s>%s</a>' % (esc(npage), "" if nours else ' target="_blank" rel="noopener"', esc(n["title"])),
             esc(n["desc"]), ('<div class="wk-acts"><a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a></div>' % esc(n["url"])) if n.get("url") else "",
             ('<p class="wk-icred">%s</p>' % esc(n["credit"])) if n.get("credit") else ""))
     w('</div></section>')

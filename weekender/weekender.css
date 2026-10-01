@@ -878,3 +878,8 @@ a.nh-story{flex:0 0 300px;display:flex;gap:12px;align-items:center;padding:10px;
 a.wk-guide{flex:1 0 100%;display:flex!important;align-items:center;justify-content:center;gap:6px;padding:9px 12px;border-radius:12px;background:linear-gradient(180deg,#ffd76a,#ffc53d);color:#13233a!important;font-weight:800;font-size:14px;text-decoration:none!important;white-space:nowrap;margin-bottom:6px}
 .wk-ptitle a{color:inherit!important;text-decoration:none!important}
 .wk-ptitle a:hover{text-decoration:underline!important}
+
+/* 10/1: the whole Things to Do / Eat & Drink card is a link; "More" opens cut-off text */
+.wk-pick[data-href],.wk-sp{cursor:pointer}
+.wk-pick .wk-pdesc.is-open,.wk-sp .wk-spd.is-open{display:block!important;-webkit-line-clamp:unset!important;overflow:visible!important}
+#wk-top button.wk-mo{align-self:flex-start;background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:2px 0!important;margin:0!important;min-height:0;font:inherit;font-size:13px;font-weight:800;color:var(--orange)!important;cursor:pointer;text-decoration:underline;text-underline-offset:2px}

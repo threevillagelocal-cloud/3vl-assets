@@ -239,7 +239,8 @@
    "hot": true,
    "desc": "The 12th annual celebration of Washington's spy ring, right where it happened. George Washington raises the flag at 10, then it's musket drills, invisible ink, a spy musical, an encampment, and a free hop-on trolley to 10 historic sites.",
    "url": "https://www.tvhs.org/culper-spy-day",
-   "src": "tvhs.org"
+   "src": "tvhs.org",
+   "page": "https://www.threevillagelocal.com/events/culper-spy-day"
   },
   {
    "id": "blues",
@@ -258,7 +259,8 @@
    "hot": true,
    "desc": "36 years strong and pushed back a week by the nor'easter. Two stages of New York blues on the waterfront. Bring a chair. If it rains, it moves into the Port Jefferson Village Center.",
    "url": "https://www.gpjac.org/general-6",
-   "src": "gpjac.org"
+   "src": "gpjac.org",
+   "page": "https://www.threevillagelocal.com/events/cedar-beach-blues-on-the-harbor"
   },
   {
    "id": "treason",
@@ -278,7 +280,8 @@
    "extra": "Second show at 4:30 PM",
    "desc": "World premiere of a brand-new play with music about how Washington's spy ring was born, set in the powder keg of May 1776. Two shows only, 2:30 and 4:30.",
    "url": "https://theatrethree.com/special_events/treasons-trial/",
-   "src": "theatrethree.com"
+   "src": "theatrethree.com",
+   "page": "https://www.threevillagelocal.com/events/treasons-trial-a-culper-spy-story"
   },
   {
    "id": "emmalawn",
@@ -506,7 +509,8 @@
    "credit": "Photo: Olde Towne Gardens",
    "url": "https://theoldetownegardens.com/spooky-village/",
    "member": "olde-towne-gardens",
-   "until": "2026-10-31T23:59"
+   "until": "2026-10-31T23:59",
+   "page": "https://www.threevillagelocal.com/olde-towne-gardens"
   },
   {
    "id": "cabaret",
@@ -631,28 +635,32 @@
    "title": "Port Jefferson Hill Climb",
    "desc": "Rescheduled from the storm. Antique cars retrace the 1910 climb up East Broadway.",
    "img": "r-hill",
-   "credit": "Photo: Joe Ross, CC BY-SA 2.0"
+   "credit": "Photo: Joe Ross, CC BY-SA 2.0",
+   "page": "https://www.threevillagelocal.com/events/hill-climb-reception-to-follow"
   },
   {
    "when": "Oct. 10-11",
    "title": "Witches & Warlocks Weekend",
    "desc": "Spell jars, haunted harbor cruises and mischief all over Port Jeff.",
    "img": "r-witch",
-   "credit": "Vintage postcard, public domain"
+   "credit": "Vintage postcard, public domain",
+   "page": "https://www.threevillagelocal.com/events/witches-warlocks-weekend"
   },
   {
    "when": "Oct. 15-17",
    "title": "Art of the Guitar Festival",
    "desc": "The John Monteleone festival returns to The Jazz Loft in Stony Brook.",
    "img": "r-guitar",
-   "credit": "Photo: christina rutz, CC BY 2.0"
+   "credit": "Photo: christina rutz, CC BY 2.0",
+   "page": "https://www.threevillagelocal.com/events/john-monteleone-art-of-the-guitar-festival"
   },
   {
    "when": "Thu, Oct. 22",
    "title": "Ixchel Tequila Dinner",
    "desc": "Five courses, five agave pours and mariachi at Ixchel in East Setauket. Spots are limited.",
    "img": "r-agave",
-   "credit": "Photo: Tomascastelazo, CC BY-SA 4.0"
+   "credit": "Photo: Tomascastelazo, CC BY-SA 4.0",
+   "page": "https://www.threevillagelocal.com/ixchel-mexican-cuisine"
   }
  ],
  "trolley": [

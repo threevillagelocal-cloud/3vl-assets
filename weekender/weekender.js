@@ -30,6 +30,7 @@ function indexEvents(){EV={};
 
 /* ---------- LIVE DATA: rebuild schedule, picks and closings from the hourly events.json ---------- */
 var LIVEURL=root.getAttribute('data-live')||'https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/events.json';
+var CALP='https://www.threevillagelocal.com/events-calendar';  /* where a Things to Do card goes when its event has no page of its own */
 var TAGL={free:'Free',kids:'Kids',outdoor:'Outdoor',music:'Music',history:'History',food:'Food',arts:'Arts',stage:'On Stage'};
 function fnv(s){s=unescape(encodeURIComponent(s));for(var h=0x811c9dc5,i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),0x01000193)>>>0;return ('0000000'+h.toString(16)).slice(-8)}
 function sm(u,w){u=String(u||'');if(!u||/\.svg(\?|$)|^data:|wsrv\.nl|google\.com\/s2\/favicons|threevillagelocal-cloud\.github\.io|cdn\.jsdelivr\.net\/gh\/threevillagelocal-cloud\/.*\.webp$/i.test(u))return u;if(u.charAt(0)==='/'&&u.charAt(1)!=='/')u=location.origin+u;
@@ -74,13 +75,13 @@ function renderLive(data){
   var pk=$('wk-picks'),box=pk&&pk.querySelector('.wk-picks');
   if(box){var cand=evs.filter(function(e){return e.img&&!e.fb&&!e.status&&e.e>t}).sort(function(a,b){return (b.pick?1:0)-(a.pick?1:0)||(a.rank||9)-(b.rank||9)||a.s-b.s});
     var cur=cand.filter(function(e){return e.pick}),soon=cand.filter(function(e){return !e.pick&&e.s<new Date(t0.getTime()+3*864e5)}),pick=cur.concat(soon,cand.filter(function(e){return cur.indexOf(e)<0&&soon.indexOf(e)<0})).slice(0,6);
-    if(pick.length>=3)box.innerHTML=pick.map(function(e,i){return '<article class="wk-pick wk-rv is-in" '+attrs(e).replace('data-id="','data-id="pk-')+'><div class="wk-pimg"><img '+smi(e.img,900)+' alt="'+esc2(e.title)+'" loading="lazy"><span class="wk-pnum">0'+(i+1)+'</span>'+(e.ongoing?'':'<span class="wk-pstat" data-status></span>')+'</div>'+
-      '<div class="wk-pbody"><p class="wk-pwhen">'+(e.ongoing?esc2(e.whenText):ds(e.s)+' &middot; '+when(e))+'</p><h3 class="wk-ptitle">'+(e.ongoing&&e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+'</h3><p class="wk-pwhere">&#128205; '+esc2(e.venue)+'</p><p class="wk-pdesc">'+esc2(e.desc)+'</p><div class="wk-tags">'+chips(e.tags)+'</div>'+(e.ongoing?acts(e).replace(/<button type="button" class="wk-cal"[^<]*<\/button>/,'<a class="wk-dir" href="'+esc2(e.url)+'" target="_blank" rel="noopener">&#128279; Details</a>'):acts(e))+'</div></article>'}).join('')}
+    if(pick.length>=3)box.innerHTML=pick.map(function(e,i){return '<article class="wk-pick wk-rv is-in" data-href="'+esc2(e.page||CALP)+'" '+attrs(e).replace('data-id="','data-id="pk-')+'><div class="wk-pimg"><img '+smi(e.img,900)+' alt="'+esc2(e.title)+'" loading="lazy"><span class="wk-pnum">0'+(i+1)+'</span>'+(e.ongoing?'':'<span class="wk-pstat" data-status></span>')+'</div>'+
+      '<div class="wk-pbody"><p class="wk-pwhen">'+(e.ongoing?esc2(e.whenText):ds(e.s)+' &middot; '+when(e))+'</p><h3 class="wk-ptitle"><a href="'+esc2(e.page||CALP)+'">'+esc2(e.title)+'</a></h3><p class="wk-pwhere">&#128205; '+esc2(e.venue)+'</p><p class="wk-pdesc">'+esc2(e.desc)+'</p><div class="wk-tags">'+chips(e.tags)+'</div>'+(e.ongoing?acts(e).replace(/<button type="button" class="wk-cal"[^<]*<\/button>/,'<a class="wk-dir" href="'+esc2(e.url)+'" target="_blank" rel="noopener">&#128279; Details</a>'):acts(e))+'</div></article>'}).join('')}
   if(box)RAD.forEach(function(r){if(!box.contains(r)){r.classList.add('is-in');box.appendChild(r)}});
   /* 3VL guide articles (weekend.json guides via #wk-top data-guides): link matching Top Things to Do cards (9/28) */
   (function(){var G=[];try{G=JSON.parse((document.getElementById('wk-top')||{getAttribute:function(){return '[]'}}).getAttribute('data-guides')||'[]')}catch(e){}
     if(!G.length||!box)return;[].forEach.call(box.querySelectorAll('.wk-pick'),function(c){var h=c.querySelector('.wk-ptitle');if(!h||c.querySelector('.wk-guide'))return;var tt=h.textContent.toLowerCase();
-      G.forEach(function(g){if(tt.indexOf(g[0])<0)return;h.innerHTML='<a href="'+g[1]+'">'+esc2(h.textContent)+'</a>';var a=c.querySelector('.wk-acts');
+      G.forEach(function(g){if(tt.indexOf(g[0])<0)return;c.setAttribute('data-href',g[1]);h.innerHTML='<a href="'+g[1]+'">'+esc2(h.textContent)+'</a>';var a=c.querySelector('.wk-acts');
         var l=document.createElement('a');l.className='wk-guide';l.href=g[1];l.innerHTML='&#128373;&#65039; '+esc2(g[2]);if(a)a.insertBefore(l,a.firstChild);else c.querySelector('.wk-pbody').appendChild(l)})})})();
   /* closings strip: only show items that are today or later */
   var cx=$('wk-cx');if(cx){var items=(data.closings||[]).filter(function(c){return new Date(c.date+'T23:59:00')>=t0});
@@ -455,7 +456,20 @@ function railStick(){var r=root.querySelector('.wk-railin');if(!r)return;
   function f(){if(innerWidth<1061){r.style.top='';return}var hdr=parseFloat(getComputedStyle(root).getPropertyValue('--hdr'))||0,want=hdr+80,h=r.offsetHeight;
     r.style.top=Math.min(want,innerHeight-h-16)+'px'}   /* tall rail: stick by its bottom edge so both ads stay fully visible */
   f();addEventListener('resize',f);setTimeout(f,1500);setTimeout(f,5000);if(window.ResizeObserver)new ResizeObserver(f).observe(r)}
-function boot(){railStick();var done=false,fin=function(){if(done)return;done=true;go()};
+/* ---------- 10/1: the whole card is a link, and cut-off text gets a "More" button ---------- */
+function cardLinks(){root.addEventListener('click',function(e){if(e.target.closest('a,button,input,label'))return;var c=e.target.closest('.wk-pick,.wk-sp');if(!c)return;
+  if(window.getSelection&&String(window.getSelection()).length)return;
+  var a=c.querySelector('.wk-ptitle a,.wk-spbiz a'),u=c.getAttribute('data-href')||(a&&a.href);if(!u)return;
+  var ours=u.charAt(0)==='/'||u.indexOf('threevillagelocal.com')>-1;
+  track('card_click',{card:c.classList.contains('wk-sp')?'eat':'todo',link:u});
+  if(ours)location.href=u;else window.open(u,'_blank','noopener')})}
+function moreBtns(){$$('.wk-pdesc,.wk-spd').forEach(function(p){if(p.classList.contains('is-open'))return;var b=p.nextElementSibling;b=b&&b.classList.contains('wk-mo')?b:null;
+  var cut=p.scrollHeight>p.clientHeight+3;
+  if(cut&&!b){b=document.createElement('button');b.type='button';b.className='wk-mo';b.textContent='More';b.setAttribute('aria-expanded','false');
+    b.addEventListener('click',function(){var o=p.classList.toggle('is-open');b.textContent=o?'Less':'More';b.setAttribute('aria-expanded',o?'true':'false')});p.parentNode.insertBefore(b,p.nextSibling)}
+  else if(!cut&&b)b.remove()})}
+function boot(){railStick();cardLinks();setTimeout(moreBtns,1500);setTimeout(moreBtns,4700);addEventListener('resize',function(){clearTimeout(moreBtns.t);moreBtns.t=setTimeout(moreBtns,200)});
+  var done=false,fin=function(){if(done)return;done=true;go();setTimeout(moreBtns,80)};
   setTimeout(fin,4000);setTimeout(pickArrows,4200);
   fetch(LIVEURL+'?v='+Math.floor(Date.now()/300000),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){if(!done){try{renderLive(d)}catch(e){}fin()}}).catch(fin)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();

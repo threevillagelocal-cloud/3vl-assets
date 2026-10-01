@@ -32,7 +32,7 @@ def tags_for(e):
             k = LIB_TAGS.get(c)
             if k and k not in t:
                 t.append(k)
-        if re.search(r"free", e["title"] + " " + e["desc"], re.I):
+        if re.search(r"\bfree\b", e["title"] + " " + e["desc"], re.I):
             t.insert(0, "free")
         return t[:3]
     blob = (e["title"] + " " + e["desc"]).lower()
@@ -40,6 +40,54 @@ def tags_for(e):
     if re.search(r"\bfree\b", blob):
         t.insert(0, "free")
     return t[:3] or ["arts"]
+
+
+SITE = "https://www.threevillagelocal.com"
+
+
+def _norm(t):
+    return re.sub(r"[^a-z0-9]", "", re.sub(r"\b(the|a|an|annual|\d+(st|nd|rd|th))\b", "", t.lower()))
+
+
+def event_pages():
+    """Our own /events pages, from the site's public calendar feed: [(normalized title, 'YYYY-MM-DD' Eastern, url)].
+    Lets every homepage card link to the event's page on threevillagelocal.com (10/1/2026). Empty list on any error."""
+    import html, urllib.request
+    try:
+        req = urllib.request.Request(SITE + "/event-calendar-json", headers={"User-Agent": "Mozilla/5.0 (3VL events)"})
+        rows = json.load(urllib.request.urlopen(req, timeout=40)).get("result") or []
+    except Exception as ex:
+        print("event pages unavailable: %s" % ex)
+        return []
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo("America/New_York")
+    except Exception:
+        tz = None
+    out = []
+    for r in rows:
+        try:
+            d = dt.datetime.fromtimestamp(int(r["start"]) / 1000, dt.timezone.utc)
+            d = d.astimezone(tz) if tz else d - dt.timedelta(hours=4 if 3 < d.month < 11 else 5)
+            u = r["url"]
+            out.append((_norm(html.unescape(r["title"])), d.strftime("%Y-%m-%d"), ("https:" + u) if u.startswith("//") else u))
+        except Exception:
+            continue
+    return out
+
+
+def page_for(pages, title, start):
+    """Same title on the same day; else a longer/shorter version of the title that day; else the only page with that exact title."""
+    n, day = _norm(title), start[:10]
+    same = [p for p in pages if p[1] == day]
+    for p in same:
+        if p[0] == n:
+            return p[2]
+    near = [p for p in same if len(n) >= 8 and len(p[0]) >= 8 and (n in p[0] or p[0] in n)]
+    if near:
+        return min(near, key=lambda p: abs(len(p[0]) - len(n)))[2]
+    exact = [p for p in pages if p[0] == n]
+    return exact[0][2] if len(exact) == 1 else ""
 
 
 def status_for(title):
@@ -81,14 +129,14 @@ def main():
             out.insert(0, {"id": "cur-" + e["id"], "title": e["title"], "start": e["start"], "end": e["end"], "allday": False,
                            "venue": v.get("name", ""), "addr": v.get("addr", ""), "url": e.get("url", ""), "desc": e["desc"],
                            "img": (base + e["img"] + "-720.webp") if e.get("img") else "", "src": "3vl", "tags": e["tags"][:3],
-                           "status": e.get("status", ""), "pick": e["id"] in W.get("picks", [])})
+                           "status": e.get("status", ""), "pick": e["id"] in W.get("picks", []), "page": e.get("page", "")})
         for a in W.get("allweekend", []):
             if a["id"] in W.get("picks", []):
                 v = W["venues"].get(a["venue"], {})
                 out.insert(0, {"id": "cur-" + a["id"], "title": a["title"], "start": dt.date.today().isoformat() + "T00:00", "end": a.get("until") or W.get("ends", ""),
                                "allday": True, "ongoing": True, "whenText": a["when"], "venue": v.get("name", ""), "addr": v.get("addr", ""),
                                "url": a.get("url", ""), "desc": a["desc"], "img": (base + a["img"] + "-720.webp") if a.get("img") else "",
-                               "src": "3vl", "tags": a["tags"][:3], "status": "", "pick": True})
+                               "src": "3vl", "tags": a["tags"][:3], "status": "", "pick": True, "page": a.get("page", "")})
         for o in out:
             if o.get("pick"):
                 o["rank"] = W["picks"].index(o["id"][4:]) + 1 if o["id"][4:] in W["picks"] else 9
@@ -109,6 +157,11 @@ def main():
         seen.add(k)
         final.append(e)
     final.sort(key=lambda x: x["start"])
+    # each event's page on our own site (weekend.json "page" wins for hand-picked items); the homepage cards link there
+    pages = event_pages()
+    for e in final:
+        e["page"] = e.get("page") or page_for(pages, e["title"], e["start"])
+    print("events with a 3VL page: %d of %d" % (sum(1 for e in final if e["page"]), len(final)))
     # Instagram specials (written by ig_specials.py); images live next to this file in ig/
     spath = os.path.join(HERE, "specials.json")
     specials = []
