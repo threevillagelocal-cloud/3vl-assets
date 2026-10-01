@@ -1,7 +1,15 @@
 /* Three Village Events: premium calendar + list for /events-calendar and /events (BD).
    Data: BD's /event-calendar-json (titles, times, links) + #tvl-cal-data (photo, venue, tags, free; written daily by 3vl-site-guard). */
 (function(){
-var R=document.getElementById('tvl-cal');if(!R||R.getAttribute('data-ready'))return;R.setAttribute('data-ready','1');
+if(window.__tvc)return;window.__tvc=1;
+/* Start the moment the page content has been read (not after the whole page loads), and ask for the event list right away,
+   so BD's plain layout is never shown. Works from the page HEAD or from the block on the page (10/1/2026). */
+var H=document.documentElement,ran=false,mo=null;
+var FEED=fetch('/event-calendar-json',{credentials:'same-origin'}).then(function(r){return r.json()});FEED.catch(function(){});
+function parsed(){var m=document.getElementById('main-content');return document.readyState!=='loading'||!!(m&&m.nextElementSibling)}
+function tick(){if(ran||!parsed())return;ran=true;if(mo)mo.disconnect();boot()}
+function boot(){
+var R=document.getElementById('tvl-cal');if(!R||R.getAttribute('data-ready')){H.classList.add('tvc-done');return}R.setAttribute('data-ready','1');
 var META={};try{META=JSON.parse((document.getElementById('tvl-cal-data')||{}).textContent||'{}')}catch(e){}
 var TAGS=['Kids & Family','Music','History','Food & Drink','Arts & Stage','Outdoors','Learning'];
 var TC={'Kids & Family':'#3aa0e8','Music':'#d9534f','History':'#205081','Food & Drink':'#f0ad4e','Arts & Stage':'#8e5bd6','Outdoors':'#0f866c','Learning':'#006fbb'};
@@ -37,7 +45,7 @@ function hideNative(){
   document.documentElement.classList.add('tvc-on')}
 
 function load(){
-  fetch('/event-calendar-json',{credentials:'same-origin'}).then(function(r){return r.json()}).then(function(d){
+  FEED.then(function(d){
     var list=d.result||d||[];
     list.forEach(function(x){var m=META[x.id]||{},s=new Date(+x.start),e=new Date(+x.end||+x.start);
       var url=String(x.url||'');if(url.indexOf('//')===0)url=location.protocol+url;
@@ -47,7 +55,7 @@ function load(){
     EV.sort(function(a,b){return a.s-b.s});
     EV.forEach(function(ev){var d0=day(ev.s),d1=day(ev.e),span=Math.round((d1-d0)/864e5);if(span<0)span=0;if(span>62)span=62;
       for(var i=0;i<=span;i++){var k=key(new Date(d0.getTime()+i*864e5+3600e3));(BY[k]=BY[k]||[]).push(ev)}});
-    hideNative();render()}).catch(function(){R.innerHTML=''})}
+    hideNative();render()}).catch(function(){R.innerHTML='';H.classList.add('tvc-done')})}
 
 function pass(ev){return (!S.tag||ev.tags.indexOf(S.tag)>=0)&&(!S.free||ev.free)}
 function evsOn(d){var l=(BY[key(d)]||[]).filter(pass);return key(d)===key(T0)?l.filter(function(ev){return ev.e>=NOW}):l}  /* today: hide events that already ended */
@@ -127,5 +135,10 @@ R.addEventListener('click',function(e){var b=e.target.closest('button');if(!b||!
     var p=document.getElementById('tvc-day');if(p&&window.innerWidth<900)p.scrollIntoView({behavior:'smooth',block:'start'});return}
   if(b.classList.contains('tvc-loadmore')){S.shown+=36;render();return}});
 
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load);else load();
+load();
+/* BD's own scripts un-hide a few of its controls when the page finishes; hide them again */
+function again(){if(H.classList.contains('tvc-on'))hideNative()}
+document.addEventListener('DOMContentLoaded',again);window.addEventListener('load',again);
+}
+tick();if(!ran){mo=new MutationObserver(tick);mo.observe(H,{childList:true,subtree:true});document.addEventListener('DOMContentLoaded',tick)}
 })();

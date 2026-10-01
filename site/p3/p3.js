@@ -1,7 +1,20 @@
 /* 3VL premium page styles (Categories + Blog). Loaded sitewide from widget 13; acts only on its own pages.
    Business search results + Deals are NOT enabled here. */
 (function(){
+if(window.__p3)return;window.__p3=1;
 var me=document.currentScript;var BASE=me?me.src.replace(/p3\.js.*$/,''):'';
+/* Start the moment the page content has been read (not after the whole page loads), so BD's plain layout is never shown.
+   Works from the page HEAD or from widget 13; whichever copy arrives first runs, the other does nothing (10/1/2026). */
+var H=document.documentElement,cssOk=false,ran=false,mo=null;
+function parsed(){var m=document.getElementById('main-content');return document.readyState!=='loading'||!!(m&&m.nextElementSibling)}
+function tick(){if(ran||!cssOk||!parsed())return;ran=true;if(mo)mo.disconnect();try{main()}finally{H.classList.add('p3-done')}}
+(function(){var href=BASE+'p3.css',l=null;[].forEach.call(document.querySelectorAll('link[rel="stylesheet"]'),function(x){if(x.href===href)l=x});
+  function ok(){cssOk=true;tick()}
+  if(l&&l.sheet)return ok();
+  if(!l){l=document.createElement('link');l.rel='stylesheet';l.href=href;(document.head||H).appendChild(l)}
+  l.addEventListener('load',ok);l.addEventListener('error',ok);setTimeout(ok,3000)})();
+if(!ran){mo=new MutationObserver(tick);mo.observe(H,{childList:true,subtree:true});document.addEventListener('DOMContentLoaded',tick)}
+function main(){
 var path=location.pathname.replace(/\/+$/,'')||'/';
 var SEARCH_ON=true;   /* business results: approved + live 9/26 */
 var isResults=SEARCH_ON&&!!document.querySelector('.member_results.search_result');
@@ -105,7 +118,7 @@ if(isResults){
     if(h1&&!root.contains(h1))(h1.closest('.feature_results_header')||h1).style.display='none';
     var more=document.querySelector('.clickToLoadMoreContainer');
     if(more&&more.parentNode!==root){root.appendChild(more);more.classList.add('p3-loadmore')}}
-  hideChrome();
+  hideChrome();document.addEventListener('DOMContentLoaded',hideChrome);window.addEventListener('load',hideChrome);
   /* seamless auto-load: when the end of our list comes near, press BD's load-more for the visitor */
   var sent=document.createElement('div');sent.className='p3-sentinel';sent.innerHTML='<span>Loading more businesses&hellip;</span>';root.appendChild(sent);
   var busy=false;
@@ -214,15 +227,19 @@ if(path==='/blog'){
     '<div class="p3-bgrid" id="p3grid">'+rest.map(card).join('')+'</div>';
   var root=mount(h,items[0].closest('[itemprop="mainEntity"]')||items[0]);
   items.forEach(hide);
-  $$('.feature_results_header,.post-search-result-count-container,.views').forEach(function(e){if(!root.contains(e))e.style.display='none'});
+  function hideTop(){$$('.feature_results_header,.post-search-result-count-container,.views').forEach(function(e){if(!root.contains(e))e.style.display='none'})}
+  hideTop();document.addEventListener('DOMContentLoaded',hideTop);window.addEventListener('load',hideTop);
   /* BD loads more posts as you scroll: turn each new one into a card */
   var grid=$('#p3grid'),seen={},n=rest.length;posts.forEach(function(p){seen[p.h]=1});
   new MutationObserver(function(){$$('.search_result:not([data-p3])').forEach(function(it){var p=read(it);hide(it);if(p&&!seen[p.h]){seen[p.h]=1;grid.insertAdjacentHTML('beforeend',card(p,n++))}})}).observe(document.body,{childList:true,subtree:true});
+}
 }
 })();
 /* Member dashboard cards (9/27): promo card for everyone, Member Match card for Basic (plan 6).
    /member-match remembers a submit on this device and skips straight to the dashboard next login. */
 (function(){
+if(window.__p3b)return;window.__p3b=1;
+function run(){
 var path=location.pathname.replace(/\/+$/,'');var K='3vl_mm_done';
 function get(){try{return localStorage.getItem(K)}catch(e){return null}}
 function set(){try{localStorage.setItem(K,'1')}catch(e){}}
@@ -266,4 +283,6 @@ if(basic){mm=done
 var promo='<div class="dc3-c"><div class="dc3-ic">&#128227;</div><p class="dc3-k">Free for members</p><b>Got something you want to promote?</b><p>Send us a special, an event or big news and we will help put it in front of Three Village.</p><a class="dc3-b" href="/promotion#pr3-form">Submit a promotion</a></div>';
 var box=document.createElement('div');box.id='dc3';box.innerHTML=mm+promo;
 h.insertAdjacentElement('afterend',box);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
 })();
