@@ -1,0 +1,8 @@
+<!-- 3VL instant design (10/1/2026): starts the new page design from the HEAD so the plain BD layout is never shown. Files: 3vl-share/live (published by 3vl-assets/site/publish_live.py). Do not remove. -->
+<link rel="preload" as="script" href="https://threevillagelocal-cloud.github.io/3vl-share/live/p3/p3.js" fetchpriority="high">
+<link rel="preload" as="style" href="https://threevillagelocal-cloud.github.io/3vl-share/live/p3/p3.css" fetchpriority="high">
+<script>(function(){var p=location.pathname,h=document.documentElement,B='https://threevillagelocal-cloud.github.io/3vl-share/live/';while(p.length>1&&p.charAt(p.length-1)==='/')p=p.slice(0,-1);function js(u){var s=document.createElement('script');s.async=true;s.fetchPriority='high';s.src=B+u;document.head.appendChild(s)}if(p==='/categories'||(p==='/blog'&&location.search.indexOf('q=')<0))h.classList.add('tvl-w3');if(p==='/events'||p==='/events-calendar'){h.classList.add('tvl-wc');try{window.__tvlFeed=fetch('/event-calendar-json',{credentials:'same-origin'}).then(function(r){return r.json()});window.__tvlFeed.catch(function(){})}catch(e){}js('events-cal/tvl-cal.js')}js('p3/p3.js')})()</script>
+<style>@keyframes tvlshow{to{opacity:1}}
+html.tvl-w3:not(.p3-on):not(.p3-done) #first_container>.container,html.tvl-wc:not(.tvc-on):not(.tvc-done) #first_container>.container{opacity:0;animation:tvlshow .2s linear 6s forwards}
+html:not(.p3-on):not(.p3-done) .content_w_sidebar.member_results:has(.search_result){opacity:0;animation:tvlshow .2s linear 6s forwards}</style>
+<!-- /3VL instant design -->
