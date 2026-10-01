@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-01T14:57:15.493710+00:00",
+"updated": "2026-10-01T16:19:52.124285+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 221,
-"Emma S. Clark Library": 211,
+"Emma S. Clark Library": 209,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 6,
@@ -106,42 +106,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "emmaclark-library-walking-club-61171",
-"title": "Library Walking Club",
-"start": "2026-10-01T10:00:00",
-"end": "2026-10-01T11:15:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Library Front Lawn",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/library-walking-club-61171",
-"desc": "Looking for accountability and consistency on your fitness journey? Get active and connect with others at our weekly Walking Club! Join us Thursday mornings in September and October for a group walk from the library to Frank Melville Park, where participants w",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Frank%20Melville%20Park1a.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/library-walking-club"
-},
-{
-"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58907",
-"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
-"start": "2026-10-01T11:00:00",
-"end": "2026-10-01T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58907",
-"desc": "Experience sharing, group participation, and play.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-ages-18m-3-5-yrs-w-caregiver-278"
 },
 {
 "id": "emmaclark-social-work-intern-appointments-58746",
