@@ -23,6 +23,9 @@ FILES = [   # (source in 3vl-assets, destination under 3vl-share/live)
     ("site/p3/img/now-glow.jpg", "p3/img/now-glow.jpg"),
     ("events-cal/tvl-cal.js", "events-cal/tvl-cal.js"),
     ("events-cal/tvl-cal.css", "events-cal/tvl-cal.css"),
+    ("site/hdr/tvl-bi.woff2", "hdr/tvl-bi.woff2"),      # header icons (subset fonts, see site/hdr/build_hdr.py)
+    ("site/hdr/tvl-fa.woff2", "hdr/tvl-fa.woff2"),
+    ("site/hdr/logo-540.webp", "hdr/logo-540.webp"),    # small copy of the site logo
 ]
 
 
