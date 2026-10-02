@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-01T21:46:41.584880+00:00",
+"updated": "2026-10-02T01:35:52.877009+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 221,
-"Emma S. Clark Library": 209,
+"Emma S. Clark Library": 207,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 6,
@@ -68,7 +68,7 @@
 {
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-01T00:00",
+"start": "2026-10-02T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
@@ -87,78 +87,6 @@
 "pick": true,
 "page": "https://www.threevillagelocal.com/olde-towne-gardens",
 "rank": 4
-},
-{
-"id": "pjchamber-14820",
-"title": "PSEG Long Island Business First",
-"start": "2026-10-01T09:00:00",
-"end": "2026-10-01T11:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/pseg-long-island-business-first/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "emmaclark-social-work-intern-appointments-58746",
-"title": "Social Work Intern Appointments",
-"start": "2026-10-01T14:00:00",
-"end": "2026-10-01T19:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Small Study Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58746",
-"desc": "Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical Social Workers. These individuals will be on-site ",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments"
-},
-{
-"id": "pjchamber-14934",
-"title": "Chamber Friends & Family Sunset Cruise",
-"start": "2026-10-01T18:00:00",
-"end": "2026-10-01T19:30:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/chamber-friends-family-sunset-cruise/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/chamber-friends-family-sunset-cruise"
-},
-{
-"id": "emmaclark-sailing-through-stressful-times-58122",
-"title": "Sailing Through Stressful Times",
-"start": "2026-10-01T19:00:00",
-"end": "2026-10-01T20:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/sailing-through-stressful-times-58122",
-"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. In this workshop, you’ll learn to recognize the signs of stress in your body and discover strategies and coping skills for getting the relief and relaxation you need. Presented by ",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/sailing-through-stressful-times"
 },
 {
 "id": "emmaclark-game-day-38288",
@@ -1808,6 +1736,100 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/blue-light-effect"
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58874",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-10-12T10:30:00",
+"end": "2026-10-12T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58874",
+"desc": "Themed activities that you and your child can enjoy together.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-344"
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-58884",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-10-12T11:30:00",
+"end": "2026-10-12T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58884",
+"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence. We'll share lively stories & crafts that spark imagination, build early literacy skills & bring lots of smiles and giggles!",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-345"
+},
+{
+"id": "emmaclark-fall-fun-day-families-w-children-ages-3-11-yrs-59718",
+"title": "Fall Fun Day (Families w/ Children Ages 3-11 yrs.)",
+"start": "2026-10-12T14:30:00",
+"end": "2026-10-12T16:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/fall-fun-day-families-w-children-ages-3-11-yrs-59718",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-08/Fall%20Fun%20Day%202026.png",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/fall-fun-day-families-w-children-ages-3-11-yrs"
+},
+{
+"id": "emmaclark-volunteer-hobbs-farm-59563",
+"title": "Volunteer at Hobbs Farm",
+"start": "2026-10-12T15:00:00",
+"end": "2026-10-12T17:00:00",
+"allday": false,
+"venue": "Off site (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/volunteer-hobbs-farm-59563",
+"desc": "This program is taking place offsite, not in the Library. If minors are attending the program, a parent/guardian who is 18 years old or older must stay with the minor at all times. Minors are not allowed to be dropped off at offsite programs without a parent/g",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-05/000561-0067-000054.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/volunteer-at-hobbs-farm"
+},
+{
+"id": "emmaclark-volunteer-hobbs-farm-community-service-grades-3-5-58125",
+"title": "Volunteer at Hobbs Farm for Community Service (Grades 3-5)",
+"start": "2026-10-12T15:00:00",
+"end": "2026-10-12T17:00:00",
+"allday": false,
+"venue": "Off site (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/volunteer-hobbs-farm-community-service-grades-3-5-58125",
+"desc": "This program is taking place offsite, not in the Library. If minors are attending the program, a parent/guardian who is 18 years old or older must stay with the minor at all times. Minors are not allowed to be dropped off at offsite programs without a parent/g",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-07/CommunityServiceNew_3.png",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/volunteer-at-hobbs-farm-for-community-service-grades-3-5"
 }
 ],
 "closings": [],
