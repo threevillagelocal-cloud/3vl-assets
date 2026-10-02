@@ -186,6 +186,9 @@ def main():
     pages = event_pages()
     for e in final:
         e["page"] = e.get("page") or page_for(pages, e["title"], e["start"])
+        # owner 10/2/2026: Stony Brook Village's long-running scarecrow voting event has no page of ours; its card goes to their page
+        if not e["page"] and e.get("src") == "sbv" and re.search(r"scarecrow competition", e["title"], re.I):
+            e["page"] = e.get("url", "")
     print("events with a 3VL page: %d of %d" % (sum(1 for e in final if e["page"]), len(final)))
     # Instagram specials (written by ig_specials.py); images live next to this file in ig/
     spath = os.path.join(HERE, "specials.json")
