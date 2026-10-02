@@ -61,6 +61,32 @@ def adjust(d, now):
     return dropped
 
 
+def warm(body, ed, sha):
+    """Fetch every pinned CDN file the page uses (and the edition's card photos the live feed swaps in) so the CDN has them
+    before visitors arrive. Returns the URLs that still fail after retries."""
+    import time, urllib.request
+    urls = set(re.findall(r"https://cdn[.]jsdelivr[.]net/gh/[^\s\"')<>]+", body))
+    base = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@%s/weekender/" % sha
+    edir = os.path.join(HERE, ed)
+    urls |= {base + ed + "/" + f for f in os.listdir(edir) if f.endswith("-720.webp")}
+    bad = []
+    for u in sorted(urls):
+        u = u.replace("&amp;", "&")
+        for attempt in range(4):
+            try:
+                req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (3VL publish warm-up)"})
+                with urllib.request.urlopen(req, timeout=40) as r:
+                    if r.status == 200 and len(r.read()) > 0:
+                        break
+            except Exception:
+                pass
+            time.sleep(3 + attempt * 4)
+        else:
+            bad.append(u)
+    print("CDN warm-up: %d files, %d not available" % (len(urls), len(bad)))
+    return bad
+
+
 def main():
     sha, out = sys.argv[1], sys.argv[2]
     ed = latest_edition()
@@ -76,6 +102,9 @@ def main():
         print("ABORT: backslash in body (BD would strip it)"); sys.exit(1)
     if body == old:
         print("UNCHANGED"); return
+    bad = warm(body, ed, sha)
+    if bad:   # never publish a page whose photos/scripts the CDN cannot serve yet (10/2/2026: visitors saw broken images for a minute after a publish)
+        print("ABORT: %d files not yet available on the CDN, e.g. %s" % (len(bad), bad[0])); sys.exit(1)
     open(out, "w", encoding="utf-8").write(body)
     print("CHANGED", len(body), "chars")
 

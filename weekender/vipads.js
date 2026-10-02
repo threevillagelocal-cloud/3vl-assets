@@ -59,6 +59,7 @@ function build(list,side){
   h+='<a class="vipx-foot" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a>';
   box.innerHTML=h;if(side.after&&side.after.nextSibling)side.el.insertBefore(box,side.after.nextSibling);else if(side.after)side.el.appendChild(box);else side.el.insertBefore(box,side.el.firstChild);
   if(box.offsetWidth<290)box.classList.add('vipx-sm');
+  box.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='IMG'||t.getAttribute('data-rt')||!t.getAttribute('src'))return;t.setAttribute('data-rt','1');setTimeout(function(){var s=t.getAttribute('src');t.src=s+(s.indexOf('?')<0?'?':'&')+'r=1'},1500)},true);
   var dur=6500,seen={},units=[];
   function showing(except){return units.filter(function(x){return x!==except&&x.idx>=0}).map(function(x){return gkey(list[x.idx])})}
   Array.prototype.forEach.call(box.querySelectorAll('.vipx-unit'),function(el,u){

@@ -5,6 +5,8 @@ var root=document.getElementById('wk-top');if(!root)return;
 var $=function(id){return document.getElementById(id)};
 var $$=function(sel,el){return Array.prototype.slice.call((el||root).querySelectorAll(sel))};
 var LAT=40.9387,LON=-73.1182;
+/* a photo that fails to load (e.g. the CDN is still fetching a just-published file) gets one more try */
+root.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='IMG'||t.getAttribute('data-rt')||t.hasAttribute('onerror')||!t.getAttribute('src'))return;t.setAttribute('data-rt','1');setTimeout(function(){var s=t.getAttribute('src');t.src=s+(s.indexOf('?')<0?'?':'&')+'r=1'},1500)},true);
 var START=new Date(root.getAttribute('data-start')),END=new Date(root.getAttribute('data-end'));
 var DAYS={fri:null,sat:null,sun:null};
 var DAYC={fri:'#ff8a3d',sat:'#ffc145',sun:'#4dd6c1'};
