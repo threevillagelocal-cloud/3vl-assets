@@ -7,7 +7,7 @@ Each <img> keeps the original in data-o and falls back to it if the copy is ever
 The first card's photo loads at once (no lazy, high priority) and the first two cards skip the fade-in,
 so the top of the page is not held back. Copies are made here, pushed to 3vl-share and confirmed served
 BEFORE the page is changed. gen.py keeps them alive afterwards (it reads data-o / data-w from the live page)."""
-import json, os, re, subprocess, sys, time, urllib.parse, urllib.request
+import html, json, os, re, subprocess, sys, time, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SHARE_T = os.path.normpath(os.path.join(HERE, "..", "..", "3vl-share", "t"))
@@ -39,6 +39,47 @@ def setattr_(tag, name, val):
     if attr(tag, name) is not None:
         return re.sub(r'(\s%s=")[^"]*(")' % name, lambda m: m.group(1) + val + m.group(2), tag, count=1)
     return tag[:-1] + ' %s="%s">' % (name, val)
+
+
+def homes_ld(content):
+    """Search-engine data for the cards (schema.org ItemList of Offers), read from the card text itself. No backslashes: BD strips them."""
+    def txt(card, cls):
+        m = re.search(r'class="%s">([^<]*)<' % cls, card)
+        return html.unescape(m.group(1)).strip() if m else ""
+    items = []
+    for card in re.split(r'class="bdai-listing-card(?: bdai-reveal)?"', content)[1:]:
+        title, price = txt(card, "bdai-listing-card-title"), re.sub(r"[^\d]", "", txt(card, "bdai-listing-price"))
+        link = re.search(r'<a href="([^"]+)"', card)
+        if not title or not price or not link:
+            continue
+        street, _, rest = title.partition("|")
+        mz = re.match(r"\s*(.*?)\s*(\d{5})\s*$", rest)
+        home = {"@type": "SingleFamilyResidence", "name": title.replace(" | ", ", "),
+                "address": {"@type": "PostalAddress", "streetAddress": street.strip(), "addressRegion": "NY", "addressCountry": "US"}}
+        if mz:
+            home["address"]["addressLocality"], home["address"]["postalCode"] = mz.group(1), mz.group(2)
+        det = txt(card, "bdai-listing-address")
+        for key, pat in (("numberOfBedrooms", r"([\d.]+)\s*Bed"), ("numberOfBathroomsTotal", r"([\d.]+)\s*Bath")):
+            m = re.search(pat, det)
+            if m:
+                home[key] = float(m.group(1)) if "." in m.group(1) else int(m.group(1))
+        m = re.search(r"([\d,]+)\s*SqFt", det)
+        if m:
+            home["floorSize"] = {"@type": "QuantitativeValue", "value": int(m.group(1).replace(",", "")), "unitCode": "FTK"}
+        m = re.search(r'<img[^>]+>', card)
+        pic = m and (attr(m.group(0), "data-o") or attr(m.group(0), "src"))
+        if pic:
+            home["image"] = html.unescape(pic)
+        offer = {"@type": "Offer", "price": int(price), "priceCurrency": "USD", "url": html.unescape(link.group(1)), "itemOffered": home}
+        agent, firm = txt(card, "bdai-realtor-name"), txt(card, "bdai-realtor-company")
+        if agent:
+            offer["offeredBy"] = {"@type": "RealEstateAgent", "name": agent + (" - " + firm if firm else "")}
+        items.append({"@type": "ListItem", "position": len(items) + 1, "item": offer})
+    if not items:
+        return ""
+    ld = json.dumps({"@context": "https://schema.org", "@type": "ItemList", "name": "Homes for sale this week in the Three Village area",
+                     "numberOfItems": len(items), "itemListElement": items}, ensure_ascii=False, separators=(",", ":"))
+    return "" if "\\" in ld else '<script type="application/ld+json">' + ld + "</script>"
 
 
 def main():
@@ -78,9 +119,23 @@ def main():
     # first two cards: no fade-in
     if 'class="bdai-listing-card"' not in new:
         new = new.replace('class="bdai-listing-card bdai-reveal"', 'class="bdai-listing-card"', 2)
+    # image descriptions: the address on the house photo, the agent's name on the headshot
+    parts = re.split(r'(class="bdai-listing-card(?: bdai-reveal)?")', new)   # [before, sep, card, sep, card, ...]
+    for i in range(2, len(parts), 2):
+        t = re.search(r'class="bdai-listing-card-title">([^<]*)<', parts[i])
+        n = re.search(r'class="bdai-realtor-name">([^<]*)<', parts[i])
+        if t:
+            parts[i] = parts[i].replace('alt="house front"', 'alt="%s, home for sale"' % t.group(1).replace(" | ", ", ").replace('"', "").strip(), 1)
+        if n:
+            parts[i] = parts[i].replace('alt="agent headshot"', 'alt="%s"' % n.group(1).replace('"', "").strip(), 1)
+    new = "".join(parts)
     cards = new.count('class="bdai-listing-card bdai-reveal"') + new.count('class="bdai-listing-card"')
     print("cards %d | photos pointed at copies %d | copies to make %d" % (cards, new.count(' data-o="'), len(need)))
-    if new == content and page.get("content_head"):
+    # head: the first house photo starts downloading with the page itself, plus the search-engine data for every card
+    top = re.search(re.escape(BASE) + r"[0-9a-f]{8}-800\.webp", new)
+    head = ('<link rel="preload" as="image" href="%s" fetchpriority="high">' % top.group(0) if top else "") + homes_ld(new)
+    print("search data: %d homes" % head.count('"ListItem"'))
+    if new == content and (page.get("content_head") or "").strip() == head:
         print("nothing to change")
         return
     if DRY:
@@ -112,9 +167,6 @@ def main():
         time.sleep(15)
     if bad:
         sys.exit("ABORT: copies not served, page left unchanged: %s" % bad[:3])
-    # the first house photo starts downloading with the page itself
-    top = re.search(re.escape(BASE) + r"[0-9a-f]{8}-800\.webp", new)
-    head = '<link rel="preload" as="image" href="%s" fetchpriority="high">' % top.group(0) if top else ""
     res = api("list_seo/update", {"seo_id": 43, "content": new, "content_head": head}, "PUT")
     print("page update:", res.get("status"), str(res.get("message"))[:120])
     print("NOW: refresh the site cache (web pages) and check the live page.")
