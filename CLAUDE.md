@@ -109,3 +109,10 @@ Known and left alone (BD platform behavior, not fixable by API): the sitemap lis
 - A weekend.json event can carry "pick_until" (e.g. "2026-10-02T17:00"): the card leaves Top Things to Do at that time even though the event runs longer (the schedule keeps it until its real end). build_events.py passes it to the feed as "pu"; weekender.js and nightly.py honor it. The card order on the live page comes from the feed (raw.githubusercontent, cached ~5 min), so after changing weekend.json "picks" also run `gh workflow run events-live.yml`.
 - Section title is "What's Happening This Week" (was "What's Up This Week").
 - Instagram 4:5 graphic for the weekly listings post: social/listings-ig/ig.html (needs the house jpgs + village-hero.jpg beside it; render 1080x1350 at 2x in headless Chrome). The owner wants a CTA pill on this one ("See all N homes -> link in bio").
+
+## Homepage section order + menu wording (owner, 10/2/2026)
+- Order in the main column: Top Things to Do, Eat & Drink, Featured Local Businesses, (ad slot 2), What's Happening This Week, (ad slot 1), homes-for-sale strip, Latest Local Stories, Weather, Browse Local Businesses, promote/app box. build.py still WRITES the blocks in their old order and then rearranges them with the ORDER list near the end of the main column (markers M[...]); to move a section, edit ORDER only.
+- nowhome_build.explore() was split into browse() (#nh-explore) and stories_sec() (#nh-stories).
+- The "Ongoing / All Weekend" block under the schedule was removed (owner). allweekend items still feed Top Things to Do picks.
+- weekender.js rewrites the schedule heading at runtime (renderLive), so a title change must be made in BOTH build.py and weekender.js. Always check the RENDERED page (headless), not just the HTML.
+- Main menu (BD menu 52) labels: Home, Find a Local Business (/categories), Things to Do (events dropdown), Local Stories (/blog), Get the App. Owner approved dropping "Search Members" (item 330) but the delete was blocked in-session; the owner has to remove or hide it. "Homes for Sale" is NOT in the menu yet (owner: not just yet).
