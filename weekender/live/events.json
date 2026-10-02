@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-02T15:44:00.659644+00:00",
+"updated": "2026-10-02T15:53:04.404725+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 44,
@@ -42,7 +42,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/"
 },
 {
 "id": "lim-3225801",
@@ -185,7 +185,7 @@
 ],
 "status": "",
 "pick": true,
-"page": "https://www.threevillagelocal.com/events/three-village-farmers-artisans-market",
+"page": "https://www.threevillagelocal.com/three-village-farmers-market",
 "pu": "2026-10-02T17:00",
 "rank": 1
 },
