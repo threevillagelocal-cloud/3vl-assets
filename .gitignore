@@ -6,3 +6,6 @@ weekender/t_*.html
 weekender/vipads-test.html
 site/t_*.html
 __pycache__/
+
+# internal working notes: private, never commit (repo is public)
+CLAUDE.md
