@@ -136,3 +136,6 @@ Owner on the farmers market: "should have one general page with all of their inf
 - Apply the same idea to any other weekly/recurring event the owner features: one evergreen page, linked each week.
 - Feed events with no page of ours can be sent to the organizer's page only when the owner says so. Done for the Stony Brook Village scarecrow voting event (build_events.py, right after page_for).
 - Spy Day on the Library Lawn links to the library's own post (owner confirmed that is fine).
+
+## Weekly "What's happening this weekend" social graphic (10/2/2026)
+Template: social/weekend-post/wk.html (4:5, 1080x1350, same premium style as social/listings-ig/ig.html): date pill, white "What's happening" + gold "this weekend in town", subline, gold pill "ThreeVillageLocal.com", four event photos from that week's weekender/<edition>/ folder (convert the .webp to .jpg beside the html, plus village-hero.jpg). Render in headless Chrome at 2x and downsize. The owner asked for a CTA on these social graphics, so the "no CTA / no URL" rule in the graphic style section does not apply to them. Never auto-post; hand the owner the image and a caption.
