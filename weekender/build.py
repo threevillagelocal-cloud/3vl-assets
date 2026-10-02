@@ -76,6 +76,9 @@ def build(edition, local=False, sha="master", d=None, live=None):
         except Exception:
             live = None
     vips = json.load(open(os.path.join(HERE, "vip.json"), encoding="utf-8"))
+    nopage = [e["id"] for e in d["events"] if not e.get("page")]
+    if nopage:  # owner rule 10/1 + 10/2/2026: every event card links to a page on our own site
+        print("WARNING: hand-picked events with no page on our site (their cards fall back to /events-calendar):", ", ".join(nopage), file=sys.stderr)
     if local:
         base = "http://127.0.0.1:%s/weekender/" % os.environ.get("WK_PORT", "8765")
     else:
