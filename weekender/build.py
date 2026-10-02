@@ -146,13 +146,14 @@ def build(edition, local=False, sha="master", d=None, live=None):
 
     # NAV
     w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
-      '<a href="#wk-picks">&#11088; Things to Do</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-wx">&#9728;&#65039; Weather</a>'
-      '<a href="#wk-sched">&#128197; Schedule</a>'
+      '<a href="#wk-picks">&#11088; Things to Do</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-sched">&#128197; Schedule</a>'
+      '<a href="#wk-wx">&#9728;&#65039; Weather</a>'
       + (('<a class="wk-spylink" href="%s">&#128373;&#65039; Spy Day</a>' % esc(d["spy_link"])) if d.get("spy_link") else '')
       + '</div></nav>')
     w('<div class="wk-ticker" id="wk-ticker" hidden><span class="wk-tkl"><i></i>LIVE</span><div class="wk-tkm"><div class="wk-tkt" id="wk-tkt"></div></div></div>')
 
     w('<div class="wk-grid"><div class="wk-main">')
+    M = {}  # where each homepage section starts in "out" (see SECTION ORDER below)
     cx = d.get("closings")
     if cx:
         w('<section class="wk-sec wk-cxsec" id="wk-cx"><div class="wk-cxhead"><span class="wk-live"><i></i>STORM</span>'
@@ -161,6 +162,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
             w('<div class="wk-cxi" data-off="%s"><p class="wk-cxn">%s</p><p class="wk-cxd">%s</p></div>' % (esc(it[0]), esc(it[1]), esc(it[2])))
         w('</div></section>')
 
+    M["picks"] = len(out)
     # TOP THINGS TO DO (was "Top Picks"; renamed 9/28 so it is not mistaken for business picks)
     w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2"><span>Top Things to Do</span><small>%s</small>' % ("This weekend &amp; coming up" if d.get("next") else "If you only do %s things" % {3: 'three', 4: 'four', 5: 'five', 6: 'six'}.get(len(d['picks']), 'a few')) + '</h2><div class="wk-picks wk-swipe">')
     for i, pid in enumerate(d["picks"]):
@@ -195,8 +197,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
             esc(n["desc"]), ('<div class="wk-acts"><a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a></div>' % esc(n["url"])) if n.get("url") else "",
             ('<p class="wk-icred">%s</p>' % esc(n["credit"])) if n.get("credit") else ""))
     w('</div></section>')
+    M["feat"] = len(out)
     w(nhb.featured())  # Featured Local Businesses (VIPs), right after Top Things to Do
 
+    M["eat"] = len(out)
     # EAT & DRINK (exterior photo + dish inset; one card per business)
     w('<section class="wk-sec" id="wk-eat"><h2 class="wk-h2"><span>Eat &amp; Drink</span><small>Local specials, updated daily</small></h2><div class="wk-eat wk-swipe">')
     for sp in d["specials"]:
@@ -213,6 +217,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
             badge, esc(sp["srcName"]), call, gmap(sp["venue"])))
     w('</div><p class="wk-note">Own a local spot with a special? <a href="https://www.threevillagelocal.com/promotion">Send it to us</a> and we&rsquo;ll feature it free.</p></section>')
 
+    M["homes"] = len(out)
     # HOMES FOR SALE strip (10/2/2026): links to the weekly /locallistings page. Data: weekender/homes.json (bump count/thumbs when that page is updated).
     try:
         hm = json.load(open(os.path.join(HERE, "homes.json"), encoding="utf-8"))
@@ -224,8 +229,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
           '<span class="wk-hmbtn">See the listings &rarr;</span></a></div>' % (
             hm["url"], "".join('<img src="%s" alt="" width="80" height="60" loading="lazy">' % (base + t) for t in hm["thumbs"]), hm["count"]))
 
+    M["ad2"] = len(out)
     w('<div class="wk-adslot" data-slot="2"></div>')  # 9/28: moved up from between Spy Day and On the Radar
 
+    M["wx"] = len(out)
     # WEATHER (compact)
     w('<section class="wk-sec" id="wk-wx"><h2 class="wk-h2"><span>Weather</span><small>Live from the National Weather Service</small></h2>'
       '<p class="wk-verdict" id="wk-verdict">&#9728;&#65039; Loading the forecast&hellip;</p><div class="wk-wx">')
@@ -242,6 +249,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
           '<span title="Sunset">&#127749; <b class="wk-set">--</b></span></div><p class="wk-wcred">%s</p></div>' % (DAYNAME[k][:3], esc(bg.get("credit", ""))))
     w('</div></section>')
 
+    M["sched"] = len(out)
     # SCHEDULE
     w('<section class="wk-sec" id="wk-sched"><h2 class="wk-h2"><span>What&rsquo;s Happening This Week</span><em class="wk-h2r"><small>Tap &#9734; to save to My Plans</small><a class="wk-calbtn" href="https://www.threevillagelocal.com/events-calendar">&#128197; Full calendar &rarr;</a></em></h2>')
     w('<div class="wk-tabs" role="tablist"><button type="button" class="wk-tab is-on" data-day="all">All</button>'
@@ -269,8 +277,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
             " ".join(a["tags"]), esc(a["when"]), esc(a["title"]), esc(V[a["venue"]]["name"]), esc(a["desc"]), tagchips(a["tags"])))
     w('</div></div><p class="wk-nomatch" id="wk-nomatch" hidden>Nothing matches that combo. Try another filter.</p></section>')
 
+    M["ad1"] = len(out)
     w('<div class="wk-adslot" data-slot="1"></div>')
 
+    M["extra"] = len(out)
     if d.get("spy_feature"):  # 9/28: off - replaced by the Spy Day link in the nav
         # SPY DAY FEATURE
         s = ev["spyday"]
@@ -301,7 +311,11 @@ def build(edition, local=False, sha="master", d=None, live=None):
         w('</div></section>')
 
     # SUBMIT + SHARE + APP
-    w(nhb.explore())  # Browse Local Businesses + Latest Local Stories, above the business CTA
+    M["browse"] = len(out)
+    w(nhb.browse())   # Browse Local Businesses
+    M["stories"] = len(out)
+    w(nhb.stories_sec())  # Latest Local Stories
+    M["cta"] = len(out)
     w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got something you want to promote?</p><p class="wk-subd">Three Village Local updates every day. '
       'Send us your event, menu special or promotion and we’ll put it in front of Three Village.</p>'
       '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Submit it free &rarr;</a></div>'
@@ -312,6 +326,14 @@ def build(edition, local=False, sha="master", d=None, live=None):
       '<div class="wk-appb"><a href="https://apps.apple.com/us/app/three-village-local/id6746367200" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/badges/app-store-badge.png" alt="Download on the App Store" width="142" height="50"></a>'
       '<a href="https://play.google.com/store/apps/details?id=com.threevillagelocal.app&amp;hl=en_US" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/badges/google-play-badge.png" alt="Get it on Google Play" width="168" height="50"></a></div></div></section>')
     w('<p class="wk-foot">Plans change. Check with the organizer before you head out. Sources: organizer websites, TBR News Media, and local business pages on Facebook.</p>')
+
+    # SECTION ORDER (owner, 10/2/2026): the blocks above are written in their old order, then put in this order.
+    M["end"] = len(out)
+    names = sorted((k for k in M if k != "end"), key=lambda k: M[k])
+    seg = {k: out[M[k]:M[names[i + 1]] if i + 1 < len(names) else M["end"]] for i, k in enumerate(names)}
+    ORDER = ["picks", "eat", "feat", "ad2", "sched", "ad1", "homes", "stories", "wx", "extra", "browse", "cta"]
+    assert sorted(ORDER) == sorted(names), "section list out of sync"
+    out[M[names[0]]:M["end"]] = [x for k in ORDER for x in seg[k]]
 
     w('</div>')  # /wk-main
 

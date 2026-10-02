@@ -122,15 +122,20 @@ def stories(n=3):
     return out[:n]
 
 
-def explore():
+def browse():
     chips = "".join('<a class="nh-cat" href="%s"><svg viewBox="0 0 24 24">%s</svg>%s</a>' % (u, ICO[i], esc(t)) for t, u, i in CATS)
+    return ('<section class="wk-sec nh-sec" id="nh-explore">' + head("Browse Local Businesses")
+            + '<div class="nh-cats">' + chips + '<a class="nh-cat nh-allc" href="/categories">All categories &rarr;</a></div></section>')
+
+
+def stories_sec():
     st = stories()
     srow = "".join('<a class="nh-story" href="%s"><span class="nh-sim" style="background-image:url(\'%s\')" data-bgo="%s"></span><span class="nh-sb">%s<b>%s</b></span></a>' % (
         esc(x["h"]), esc(sm(x["img"], 300)), esc(x["img"]), ("<i>%s</i>" % esc(x["d"])) if x["d"] else "", esc(x["t"])) for x in st)
-    return ('<section class="wk-sec nh-sec" id="nh-explore">' + head("Browse Local Businesses")
-            + '<div class="nh-cats">' + chips + '<a class="nh-cat nh-allc" href="/categories">All categories &rarr;</a></div>'
-            + ('<div style="height:38px"></div>' + head("Latest Local Stories", "", "/blog", "All stories") + '<div class="nh-row" id="nh-srow">' + srow + "</div>" if srow else "")
-            + "</section>")
+    if not srow:
+        return ""
+    return ('<section class="wk-sec nh-sec" id="nh-stories">' + head("Latest Local Stories", "", "/blog", "All stories")
+            + '<div class="nh-row" id="nh-srow">' + srow + "</div></section>")
 
 
 def _iso(s):
