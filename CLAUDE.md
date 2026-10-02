@@ -128,3 +128,11 @@ The 10/2 edition went out with 15 hand-picked events and no "page", so their car
 2. Otherwise create one the same way events_sync.py does (ES.ev(...) -> ES.post_data(e) -> POST /api/v2/data_posts/create with data_id 8, data_type 20, user_id 43, post_status 1), using only the organizer-sourced text already in weekend.json. Town is "Setauket", never "East Setauket". Replace ">the organizer</a>" in post_content with the real organizer name and check the auto "Good for" tags (they are guessed from words and can be wrong).
 3. Set "page" in weekend.json, push, run `gh workflow run events-live.yml` (3vl-assets) and `gh workflow run events-sync.yml -f mode=pages` (3vl-site-guard), then republish widget 17.
 Library (Emma Clark) events: link to the library's own existing post; do not create house-account pages for them.
+
+## Recurring events get ONE general page (owner, 10/2/2026)
+Owner on the farmers market: "should have one general page with all of their info and remaining dates and times and just link to that page each week."
+- Three Village Farmers & Artisans Market: web page seo_id 483, https://www.threevillagelocal.com/three-village-farmers-market (plain content page, classes .tvfm-*, CSS in its content_css). Each week's weekend.json market event sets "page" to this URL. Do NOT create a new event post for it every Friday. Keep the "Remaining 2026 market dates" list current (season: Fridays 3-6 PM through October 30, 2026; source tvhs.org/farmers-market). When the season ends, change the page to say so rather than deleting it.
+- Event post 521 (10/2 only) stays for that day's calendar and links to the general page.
+- Apply the same idea to any other weekly/recurring event the owner features: one evergreen page, linked each week.
+- Feed events with no page of ours can be sent to the organizer's page only when the owner says so. Done for the Stony Brook Village scarecrow voting event (build_events.py, right after page_for).
+- Spy Day on the Library Lawn links to the library's own post (owner confirmed that is fine).
