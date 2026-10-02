@@ -136,8 +136,8 @@ def build(edition, local=False, sha="master", d=None, live=None):
         d["starts"], d["ends"], esc(base), edition, esc(feed_url), (' data-live="%slive/events.json"' % base) if local else "", esc(json.dumps(d.get("guides", [])))))
 
     # HERO: compact live intro for Three Village Now
-    w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="" width="1600" height="1067" fetchpriority="high"></picture>'
-      % (img(d["hero"]["img"], True), img(d["hero"]["img"])))
+    w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="%s" width="1600" height="1067" fetchpriority="high"></picture>'
+      % (img(d["hero"]["img"], True), img(d["hero"]["img"]), esc(d["hero"].get("alt") or "Three Village, Long Island this week")))
     w('<div class="wk-hshade"></div>')
     w('<div class="wk-hin"><div class="wk-brandrow"><h1 class="wk-hname">Three Village <span>Local</span></h1><span class="wk-livepill"><i></i>Updated Live</span></div>')
     w('<p class="wk-dek">What&rsquo;s happening in Setauket, Stony Brook and Port Jefferson right now. Events, specials, weather and local news, updated all day.</p>')
@@ -212,7 +212,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
         pic = ('<div class="wk-eimg">%s<img src="%s" alt="%s" loading="lazy">%s</div>' % (
             ('<picture><source media="(min-width:761px)" srcset="%s"></picture>' % img(sp["extwide"])) if False else "",
             img(sp["extwide"] if (sp.get("feature") and sp.get("extwide")) else main, True), esc(sp["biz"]),
-            ('<span class="wk-dish"><img src="%s" alt="" loading="lazy"></span>' % img(sp["dish"], True)) if sp.get("dish") else "")) if main else ""
+            ('<span class="wk-dish"><img src="%s" alt="%s" loading="lazy"></span>' % (img(sp["dish"], True), esc("Food at " + sp["biz"]))) if sp.get("dish") else "")) if main else ""
         call = ('<a class="wk-call" href="tel:%s">&#128222; Call</a>' % re.sub(r"\D", "", sp["phone"])) if sp.get("phone") else ''
         w('<article class="wk-sp wk-rv%s">%s<div class="wk-spb"><p class="wk-spbiz">%s</p><p class="wk-spt">%s</p><p class="wk-spw">%s</p>'
           '<p class="wk-spd">%s</p><p class="wk-spf">%s<span>via %s</span>%s<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>' % (
@@ -230,7 +230,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
         w('<div class="wk-sec wk-homesw"><a class="wk-homes" href="%s"><span class="wk-hmth">%s</span>'
           '<span class="wk-hmtx"><b>New homes for sale this week</b><small>%d local listings<i> in Setauket and Stony Brook</i>, updated every Friday</small></span>'
           '<span class="wk-hmbtn">See the listings &rarr;</span></a></div>' % (
-            hm["url"], "".join('<img src="%s" alt="" width="80" height="60" loading="lazy">' % (base + t) for t in hm["thumbs"]), hm["count"]))
+            hm["url"], "".join('<img src="%s" alt="Home for sale in the Three Village area" width="80" height="60" loading="lazy">' % (base + t) for t in hm["thumbs"]), hm["count"]))
 
     M["ad2"] = len(out)
     w('<div class="wk-adslot" data-slot="2"></div>')  # 9/28: moved up from between Spy Day and On the Radar
@@ -241,9 +241,9 @@ def build(edition, local=False, sha="master", d=None, live=None):
       '<p class="wk-verdict" id="wk-verdict">&#9728;&#65039; Loading the forecast&hellip;</p><div class="wk-wx">')
     for k in ("fri", "sat", "sun"):
         bg = d.get("wxbg", {}).get(k, {})
-        w('<div class="wk-wd" data-day="%s"><div class="wk-wbg"%s><img class="wk-wph" src="%s" alt="" loading="lazy"><div class="wk-wfx"></div></div>'
+        w('<div class="wk-wd" data-day="%s"><div class="wk-wbg"%s><img class="wk-wph" src="%s" alt="%s" loading="lazy"><div class="wk-wfx"></div></div>'
           '<p class="wk-wloc"><span class="wk-wlive" hidden><i></i>LIVE</span><span class="wk-wcam">&#127909;</span> %s <b class="wk-wclk"></b></p>' % (
-            k, (' data-cam="%s"' % bg["cam"]) if bg.get("cam") else "", img(bg.get("photo", "hero"), True), esc(bg.get("loc", ""))))
+            k, (' data-cam="%s"' % bg["cam"]) if bg.get("cam") else "", img(bg.get("photo", "hero"), True), esc(bg.get("loc", "") or "Three Village"), esc(bg.get("loc", ""))))
         w('<div class="wk-wrow"><div class="wk-wleft"><p class="wk-wdn">%s</p><div class="wk-wicon"></div></div>'
           '<div class="wk-wm"><p class="wk-wt"><b class="wk-hi">--</b>&deg;<span class="wk-lo">--</span>&deg;</p><p class="wk-ws">Forecast coming soon</p></div>'
           '<div class="wk-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" class="wk-rtrk"/><circle cx="60" cy="60" r="50" class="wk-rfil" transform="rotate(-90 60 60)"/></svg>'
