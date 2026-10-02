@@ -33,7 +33,9 @@ for name, src, cps in (('tvl-bi', 'bi.woff2', sorted({bimap[x] for x in useb})),
     uni = ','.join('U+%04X' % c for c in cps)
     subprocess.check_call([sys.executable, '-m', 'fontTools.subset', src, '--unicodes=' + uni, '--flavor=woff2', '--output-file=' + name + '.woff2',
                            '--no-hinting', '--desubroutinize', '--layout-features=', '--notdef-outline', '--name-IDs=', '--glyph-names'])
-    out[name] = {'range': uni, 'bytes': os.path.getsize(name + '.woff2'), 'n': len(cps)}
+    # U+0020 must lead the unicode-range in the HEAD block: without the space character the browser treats BD's
+    # full icon font as the "first available font" and downloads it (131 KB + 76 KB) on every page (10/2/2026)
+    out[name] = {'range': 'U+0020,' + uni, 'bytes': os.path.getsize(name + '.woff2'), 'n': len(cps)}
     print(name, out[name]['n'], 'icons', out[name]['bytes'], 'bytes')
 json.dump(out, open('subsets.json', 'w'), indent=1)
 im = Image.open('logo.png'); print('logo', im.size, im.mode)
