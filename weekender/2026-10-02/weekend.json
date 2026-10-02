@@ -211,6 +211,7 @@
   },
   {
    "id": "stitch",
+   "page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free",
    "title": "Stitch & Chit-Chat",
    "start": "2026-10-02T14:00",
    "end": "2026-10-02T15:30",
@@ -288,6 +289,7 @@
   },
   {
    "id": "emmalawn",
+   "page": "https://www.threevillagelocal.com/events/fairchild-becherer-music-of-the-american-colonial-period",
    "title": "Spy Day on the Library Lawn",
    "start": "2026-10-03T12:00",
    "end": "2026-10-03T16:00",
@@ -305,6 +307,7 @@
   },
   {
    "id": "limspy",
+   "page": "https://www.threevillagelocal.com/events/culper-spy-day-free",
    "title": "Free Day at the Long Island Museum",
    "start": "2026-10-03T12:00",
    "end": "2026-10-03T17:00",
@@ -323,6 +326,7 @@
   },
   {
    "id": "patriots",
+   "page": "https://www.threevillagelocal.com/events/patriots-rock-living-history",
    "title": "Patriots Rock Living History",
    "start": "2026-10-03T10:00",
    "end": "2026-10-03T15:00",
@@ -340,6 +344,7 @@
   },
   {
    "id": "brewster",
+   "page": "https://www.threevillagelocal.com/events/culper-spy-day-tours-at-the-brewster-house",
    "title": "Brewster House Spy Tours",
    "start": "2026-10-03T10:00",
    "end": "2026-10-03T16:00",
@@ -355,6 +360,7 @@
   },
   {
    "id": "tory",
+   "page": "https://www.threevillagelocal.com/events/big-bill-the-tory",
    "title": "Big Bill the Tory",
    "start": "2026-10-03T11:00",
    "end": "2026-10-03T15:00",
@@ -370,6 +376,7 @@
   },
   {
    "id": "scarecrow",
+   "page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
    "title": "Scarecrow Competition Opens",
    "start": "2026-10-03T10:00",
    "end": "2026-10-03T18:00",
@@ -388,6 +395,7 @@
   },
   {
    "id": "symphony",
+   "page": "https://www.threevillagelocal.com/events/stony-brook-symphony-orchestra",
    "title": "Stony Brook Symphony Orchestra",
    "start": "2026-10-03T19:30",
    "end": "2026-10-03T21:30",
@@ -403,6 +411,7 @@
   },
   {
    "id": "pjfm",
+   "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market",
    "title": "Port Jefferson Farmers Market",
    "start": "2026-10-04T09:00",
    "end": "2026-10-04T14:00",
@@ -419,6 +428,7 @@
   },
   {
    "id": "limsun",
+   "page": "https://www.threevillagelocal.com/events/free-sunday-at-the-long-island-museum",
    "title": "Free Sunday at the Long Island Museum",
    "start": "2026-10-04T12:00",
    "end": "2026-10-04T17:00",
@@ -435,6 +445,7 @@
   },
   {
    "id": "founding",
+   "page": "https://www.threevillagelocal.com/events/founding-families-exhibit",
    "title": "Founding Families Exhibit",
    "start": "2026-10-04T12:00",
    "end": "2026-10-04T16:00",
@@ -449,6 +460,7 @@
   },
   {
    "id": "gristmill",
+   "page": "https://www.threevillagelocal.com/events/stony-brook-grist-mill-tours",
    "title": "Stony Brook Grist Mill Tours",
    "start": "2026-10-04T13:00",
    "end": "2026-10-04T16:00",
@@ -465,6 +477,7 @@
   },
   {
    "id": "limehof",
+   "page": "https://www.threevillagelocal.com/events/marian-mastrorilli-with-glenn-govier",
    "title": "Marian Mastrorilli Live",
    "start": "2026-10-04T15:00",
    "end": "2026-10-04T16:00",
@@ -479,6 +492,7 @@
   },
   {
    "id": "sedaris",
+   "page": "https://www.threevillagelocal.com/events/an-evening-with-david-sedaris",
    "title": "An Evening with David Sedaris",
    "start": "2026-10-04T19:00",
    "end": "2026-10-04T21:00",
