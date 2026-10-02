@@ -6,6 +6,13 @@ root.classList.add('js');
 function $(s,r){return (r||document).querySelector(s)}function $$(s,r){return [].slice.call((r||document).querySelectorAll(s))}
 function track(a,o){try{if(window.gtag)window.gtag('event','spyday_click',Object.assign({action:a},o||{}))}catch(e){}}
 
+/* card photos (data-bg) load as they come near the screen; before 10/2 all 24 downloaded up front (2+ MB on a phone) */
+var bgs=$$('[data-bg]',root),setbg=function(e){if(e.hasAttribute('data-bg')){e.style.backgroundImage="url('"+e.getAttribute('data-bg')+"')";e.removeAttribute('data-bg')}};
+if('IntersectionObserver' in window){var bo=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){setbg(x.target);bo.unobserve(x.target)}})},{rootMargin:'800px 0px'});
+  bgs.forEach(function(e){bo.observe(e)});
+  root.addEventListener('click',function(){bgs.forEach(setbg)},{once:true})}   /* anything opened by a tap gets its photo too */
+else bgs.forEach(setbg);
+
 /* countdown to the 10 AM flag raising */
 var cd=$('#spy-count');
 if(cd){var T=new Date(cd.getAttribute('data-target')).getTime(),end=T+6*36e5;
