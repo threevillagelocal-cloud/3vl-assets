@@ -1498,5 +1498,173 @@
 "desc": "Happy hour 4-close with daily food specials including Prime Rib $24, steaks, seafood, sandwiches from $2-$24.",
 "expires": "2026-10-14",
 "_ts": "2026-09-30T14:18:41+0000"
+},
+"18044301530821720": {
+"special": false,
+"title": "N/A",
+"when": "N/A",
+"desc": "N/A",
+"expires": "N/A",
+"_ts": "2026-10-02T16:25:56+0000"
+},
+"17997226202826254": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-01T15:09:34+0000"
+},
+"18117371683949994": {
+"special": false,
+"title": "Fall Menu at Tommy's Place",
+"when": "Ongoing",
+"desc": "Seasonal fall flavors including butternut squash soup, burrata crostinis, and chipotle chicken salad.",
+"expires": "2026-10-16",
+"_ts": "2026-10-01T23:50:37+0000"
+},
+"18100354376162106": {
+"special": false,
+"title": "Thanksgiving Pre-Orders Now Open",
+"when": "Ongoing",
+"desc": "Place holiday cheese board and custom orders ahead for Thanksgiving via their website.",
+"expires": "2026-11-27",
+"_ts": "2026-10-01T22:40:02+0000"
+},
+"17993730161842363": {
+"special": false,
+"title": "Little Cheese Shop Nominated for Best of Long Island",
+"when": "Voting through Dec 15",
+"desc": "Community voting recognition for Best Grilled Cheese, Best BLT, and Best Healthy Eatery.",
+"expires": "2026-12-15",
+"_ts": "2026-10-01T14:47:43+0000"
+},
+"17880818445534638": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-01T18:31:50+0000"
+},
+"18109679189596201": {
+"special": true,
+"title": "Margarita Towers $30 during Football",
+"when": "Every Sunday",
+"desc": "Enjoy $30 margarita towers while watching football games on Sundays.",
+"expires": "2026-10-16",
+"_ts": "2026-10-01T16:30:01+0000"
+},
+"18635026507016646": {
+"special": false,
+"title": "Mexican Street Corn",
+"when": "Ongoing",
+"desc": "Char-grilled corn with garlic aioli, smoky chili, cotija and cilantro.",
+"expires": "2026-10-16",
+"_ts": "2026-10-01T14:47:16+0000"
+},
+"18124968607894302": {
+"special": false,
+"title": "Se-Port Deli & Caterers",
+"when": "N/A",
+"desc": "Generic gameday post with hashtags. No specific offer, event, or date announced.",
+"expires": "2026-10-02",
+"_ts": "2026-10-02T14:20:55+0000"
+},
+"18191514199398868": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-02T14:15:42+0000"
+},
+"17982954207107362": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-01T15:42:00+0000"
+},
+"18104967374225721": {
+"special": true,
+"title": "Live Music All Month at Ruvo",
+"when": "Every night in October",
+"desc": "Live music all month long at Ruvo's Greenlawn and Port Jefferson locations.",
+"expires": "2026-10-31",
+"_ts": "2026-10-02T13:00:02+0000"
+},
+"18165160786489388": {
+"special": true,
+"title": "Happy Hour Drinks & Food",
+"when": "Every Friday · 3-6 PM",
+"desc": "Enjoy drinks and food specials at Nantuckets in Port Jefferson during Friday happy hour.",
+"expires": "2026-10-16",
+"_ts": "2026-10-02T16:03:07+0000"
+},
+"18126510971507064": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-02T15:33:42+0000"
+},
+"18204189751335346": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-01T15:32:47+0000"
+},
+"18593264023067367": {
+"special": true,
+"title": "Poker Run Weekend with Live Music",
+"when": "Today-Sun, Oct. 4",
+"desc": "Live music with Tradewinds kicks off Poker Run weekend tonight through Sunday.",
+"expires": "2026-10-04",
+"_ts": "2026-10-02T13:01:22+0000"
+},
+"18197818402379924": {
+"special": false,
+"title": "Danfords Hotel & Marina",
+"when": "Ongoing",
+"desc": "Hotel, marina, dining and harbor views in Port Jefferson.",
+"expires": "2026-10-02",
+"_ts": "2026-10-02T04:00:21+0000"
+},
+"18098409767431215": {
+"special": false,
+"title": "Danfords Hotel & Marina",
+"when": "N/A",
+"desc": "Promotional post about coastal getaway destination with no specific offer or event date.",
+"expires": "2026-10-02",
+"_ts": "2026-10-02T04:00:18+0000"
+},
+"18097223750639649": {
+"special": false,
+"title": "Fall Getaway at Danfords",
+"when": "Ongoing",
+"desc": "Enjoy coffee, harbor walks, and a weekend escape in Port Jefferson at Danfords Hotel & Marina.",
+"expires": "2026-10-16",
+"_ts": "2026-10-01T18:03:15+0000"
+},
+"18100186061267459": {
+"special": true,
+"title": "Drunken Parrot Cocktail & Live Music",
+"when": "Fri, Oct. 4 · 6 PM",
+"desc": "Try the Drunken Parrot tropical cocktail and enjoy live music starting at 6PM.",
+"expires": "2026-10-04",
+"_ts": "2026-10-02T15:02:52+0000"
+},
+"18175253083444132": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-02T15:10:48+0000"
 }
 }
