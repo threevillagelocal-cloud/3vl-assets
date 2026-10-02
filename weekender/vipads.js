@@ -47,7 +47,7 @@ function build(list,side){
   var st=document.createElement('style');st.textContent=css+'#vipx .vipx-unit+.vipx-unit{margin-top:18px;padding-top:16px;border-top:1px dashed #e3e9f0}';document.head.appendChild(st);
   var box=document.createElement('div');box.id='vipx';box.className='module';
   /* two stacked rotators on desktop pages with room; one on phones or short pages */
-  var N=(innerWidth>=992&&document.documentElement.scrollHeight>2400&&list.length>=6)?2:1;
+  var N=(innerWidth>=992&&(document.documentElement.scrollHeight>2400||location.pathname==='/categories')&&list.length>=6)?2:1;
   var h='<p class="vipx-h"><span>VIP</span>Local businesses we love</p>';
   for(var u=0;u<N;u++){
     h+='<div class="vipx-unit"><div class="vipx-rot">';
