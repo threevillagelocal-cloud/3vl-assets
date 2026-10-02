@@ -136,7 +136,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
         d["starts"], d["ends"], esc(base), edition, esc(feed_url), (' data-live="%slive/events.json"' % base) if local else "", esc(json.dumps(d.get("guides", [])))))
 
     # HERO: compact live intro for Three Village Now
-    w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="" width="1600" height="1067"></picture>'
+    w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="" width="1600" height="1067" fetchpriority="high"></picture>'
       % (img(d["hero"]["img"], True), img(d["hero"]["img"])))
     w('<div class="wk-hshade"></div>')
     w('<div class="wk-hin"><div class="wk-brandrow"><h1 class="wk-hname">Three Village <span>Local</span></h1><span class="wk-livepill"><i></i>Updated Live</span></div>')
@@ -342,11 +342,12 @@ def build(edition, local=False, sha="master", d=None, live=None):
       '<div class="wk-adrot" id="wk-adrot">')
     banners = json.load(open(os.path.join(HERE, "banners.json"), encoding="utf-8"))
     for i, v in enumerate(banners):
-        w('<div class="wk-ad%s" data-vip="%s" data-group="%s" aria-hidden="%s"><a class="wk-adpic" href="%s" data-vip="%s" style="--bgimg:url(%s)">'
-          '<img src="%s" alt="%s" loading="%s" width="%d" height="%d"></a>'
+        # 10/2/2026 speed: banners carry data-src; weekender.js loads only the one showing and the next (they used to all download at once)
+        w('<div class="wk-ad%s" data-vip="%s" data-group="%s" aria-hidden="%s"><a class="wk-adpic" href="%s" data-vip="%s">'
+          '<img data-src="%s" alt="%s" width="%d" height="%d"></a>'
           '<div class="wk-adbtns"><a class="wk-adcall" href="tel:%s" data-vip="%s">&#128222; Call</a><a class="wk-adview" href="%s" data-vip="%s">View on 3VL &rarr;</a></div></div>' % (
-            " is-on" if i == 0 else "", esc(v["name"]), esc(v.get("group", v["id"])), "false" if i == 0 else "true", v["url"], esc(v["name"]), base + v["img"],
-            base + v["img"], esc(v["name"]) + " ad", "eager" if i == 0 else "lazy", v["w"], v["h"], v["phone"], esc(v["name"]), v["url"], esc(v["name"])))
+            " is-on" if i == 0 else "", esc(v["name"]), esc(v.get("group", v["id"])), "false" if i == 0 else "true", v["url"], esc(v["name"]),
+            base + v["img"], esc(v["name"]) + " ad", v["w"], v["h"], v["phone"], esc(v["name"]), v["url"], esc(v["name"])))
     w('<div class="wk-adprog"><i id="wk-adbar"></i></div><div class="wk-addots" id="wk-addots"></div></div>')
     w('<div class="wk-adrot2" id="wk-adrot2"></div>')
     w('<a class="wk-railcta" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a></div></aside>')

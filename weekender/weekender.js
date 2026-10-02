@@ -42,7 +42,8 @@ function esc2(x){return String(x||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
 function dkey(d){return 'd'+d.getFullYear()+('0'+(d.getMonth()+1)).slice(-2)+('0'+d.getDate()).slice(-2)}
 function renderLive(data){
   var t=now(),t0=new Date(t.getFullYear(),t.getMonth(),t.getDate()),end=new Date(t0.getTime()+(9-((t0.getDay()+6)%7>4?0:0))*864e5),IC=data.icons||{};
-  var evs=(data.events||[]).map(function(e){e.s=new Date(e.start);e.e=new Date(e.end||e.start);if(e.e<=e.s)e.e=new Date(e.s.getTime()+(e.allday?864e5:5400e3));return e})
+  var AB=root.getAttribute('data-assets')||'',MB='https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/';
+  var evs=(data.events||[]).map(function(e){if(AB&&e.img&&e.img.indexOf(MB)===0)e.img=AB+e.img.slice(MB.length);e.s=new Date(e.start);e.e=new Date(e.end||e.start);if(e.e<=e.s)e.e=new Date(e.s.getTime()+(e.allday?864e5:5400e3));return e})
     .filter(function(e){return e.e>t&&e.s<end}).sort(function(a,b){return a.s-b.s});
   if(!evs.length)return false;
   var gm=function(e){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent((e.venue||'')+', '+(e.addr||''))};
@@ -323,11 +324,13 @@ function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(
   var slots=$$('.wk-adslot');var r2=$('wk-adrot2');if(r2&&innerWidth>1060)slots.unshift(r2);var clones=slots.map(function(s,n){var w=document.createElement('div');w.className='wk-adrot';s.appendChild(w);
     ads.forEach(function(a){var c=a.cloneNode(true);c.classList.remove('is-on');var lb=document.createElement('span');lb.className='wk-adlabel';lb.textContent='3VL VIP';c.appendChild(lb);w.appendChild(c)});return $$('.wk-ad',w)});
   if(dots)dots.innerHTML=ads.map(function(a,i){return '<button type="button" aria-label="Show ad '+(i+1)+'"></button>'}).join('');
-  function show(n){idx=(n+ads.length)%ads.length;ads.forEach(function(a,i){a.classList.toggle('is-on',i===idx);a.setAttribute('aria-hidden',i!==idx)});
+  function ld(a){if(!a)return;var im=a.querySelector('img[data-src]');if(!im)return;var u=im.getAttribute('data-src');im.removeAttribute('data-src');im.src=u;var pc=a.querySelector('.wk-adpic');if(pc)pc.style.setProperty('--bgimg','url('+u+')')}
+  function show(n){idx=(n+ads.length)%ads.length;if(rot.offsetParent!==null){ld(ads[idx]);ld(ads[(idx+1)%ads.length])}ads.forEach(function(a,i){a.classList.toggle('is-on',i===idx);a.setAttribute('aria-hidden',i!==idx)});
     var usedG=[(ads[idx].getAttribute('data-group')||ads[idx].getAttribute('data-vip'))];
     clones.forEach(function(cs,k){var m=(idx+k*4+3)%cs.length,guard=0;
       while(guard<cs.length&&usedG.indexOf(cs[m].getAttribute('data-group')||cs[m].getAttribute('data-vip'))>=0){m=(m+1)%cs.length;guard++}
       usedG.push(cs[m].getAttribute('data-group')||cs[m].getAttribute('data-vip'));
+      var vis=cs[m].parentNode.offsetParent!==null;if(vis){ld(cs[m]);ld(cs[(m+1)%cs.length])}
       cs.forEach(function(a,i){a.classList.toggle('is-on',i===m)})});
     if(dots)$$('button',dots).forEach(function(b,i){b.classList.toggle('is-on',i===idx)});t0=performance.now();
     var name=ads[idx].getAttribute('data-vip');if(!seenV[name]&&rot.offsetParent){seenV[name]=1;track('vip_ad_view',{vip:name,placement:'weekender_rail'})}}

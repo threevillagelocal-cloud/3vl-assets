@@ -51,7 +51,7 @@ function build(list,side){
   var h='<p class="vipx-h"><span>VIP</span>Local businesses we love</p>';
   for(var u=0;u<N;u++){
     h+='<div class="vipx-unit"><div class="vipx-rot">';
-    list.forEach(function(v,i){h+='<div class="vipx-ad" data-vip="'+v.name+'"><a href="'+v.url+'" data-vip="'+v.name+'" style="--b:url('+BASE+v.img+')"><img src="'+BASE+v.img+'" alt="'+v.name+' ad" width="'+v.w+'" height="'+v.h+'" loading="lazy"></a></div>'});
+    list.forEach(function(v,i){h+='<div class="vipx-ad" data-vip="'+v.name+'"><a href="'+v.url+'" data-vip="'+v.name+'"><img data-src="'+BASE+v.img+'" alt="'+v.name+' ad" width="'+v.w+'" height="'+v.h+'"></a></div>'});
     h+='<button type="button" class="vipx-nav vipx-prev" aria-label="Previous ad">&#8249;</button><button type="button" class="vipx-nav vipx-next" aria-label="Next ad">&#8250;</button><div class="vipx-glare"></div><div class="vipx-bar"><i></i></div></div><div class="vipx-btns"><a class="vipx-call" href="#">&#128222; Call</a><a class="vipx-view" href="#">View on 3VL &rarr;</a></div>';
     if(N===1){h+='<div class="vipx-dots">';list.forEach(function(){h+='<b></b>'});h+='</div>'}
     h+='</div>';
@@ -65,8 +65,9 @@ function build(list,side){
     var U={el:el,ads:el.querySelectorAll('.vipx-ad'),dots:el.querySelectorAll('.vipx-dots b'),bar:el.querySelector('.vipx-bar i'),call:el.querySelector('.vipx-call'),view:el.querySelector('.vipx-view'),idx:-1,t0:0,paused:false};
     U.show=function(n,dir){dir=dir||1;var k=(n+list.length)%list.length,busy=showing(U),guard=0;
       while(busy.indexOf(gkey(list[k]))>=0&&guard<list.length){k=(k+dir+list.length)%list.length;guard++}
+      [k,(k+1)%list.length].forEach(function(q){var im=U.ads[q].querySelector('img[data-src]');if(im){var s=im.getAttribute('data-src');im.removeAttribute('data-src');im.src=s;im.parentNode.style.setProperty('--b','url('+s+')')}});
       U.idx=k;for(var i=0;i<U.ads.length;i++){U.ads[i].className='vipx-ad'+(i===k?' on':'');if(U.dots[i])U.dots[i].className=i===k?'on':''}
-      var img=U.ads[k].querySelector('img');if(img)img.loading='eager';
+      
       var v=list[k];U.call.href='tel:'+v.phone;U.call.setAttribute('data-vip',v.name);U.view.href=v.url;U.view.setAttribute('data-vip',v.name);U.t0=performance.now();
       var key=v.name+'#'+u;if(!seen[key]){var r=el.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0){seen[key]=1;track('vip_ad_view',{vip:v.name,placement:PLACE+(N>1?'_'+(u+1):'')})}}};
     var rot=el.querySelector('.vipx-rot');
