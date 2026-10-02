@@ -45,7 +45,7 @@ def adjust(d, now):
     ev = {e["id"]: e for e in d["events"] + d["allweekend"] if "start" in e}
 
     def over(e):
-        end = e.get("until") or e.get("end") or e.get("start")
+        end = e.get("pick_until") or e.get("until") or e.get("end") or e.get("start")
         end = end if "T" in end else end + "T23:59"
         return datetime.datetime.fromisoformat(end[:16]) < now
     before = len(d["picks"])

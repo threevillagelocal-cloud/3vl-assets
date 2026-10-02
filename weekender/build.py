@@ -213,6 +213,17 @@ def build(edition, local=False, sha="master", d=None, live=None):
             badge, esc(sp["srcName"]), call, gmap(sp["venue"])))
     w('</div><p class="wk-note">Own a local spot with a special? <a href="https://www.threevillagelocal.com/promotion">Send it to us</a> and we&rsquo;ll feature it free.</p></section>')
 
+    # HOMES FOR SALE strip (10/2/2026): links to the weekly /locallistings page. Data: weekender/homes.json (bump count/thumbs when that page is updated).
+    try:
+        hm = json.load(open(os.path.join(HERE, "homes.json"), encoding="utf-8"))
+    except Exception:
+        hm = None
+    if hm and (hm.get("live") or local):
+        w('<div class="wk-sec wk-homesw"><a class="wk-homes" href="%s"><span class="wk-hmth">%s</span>'
+          '<span class="wk-hmtx"><b>New homes for sale this week</b><small>%d local listings<i> in Setauket and Stony Brook</i>, updated every Friday</small></span>'
+          '<span class="wk-hmbtn">See the listings &rarr;</span></a></div>' % (
+            hm["url"], "".join('<img src="%s" alt="" width="80" height="60" loading="lazy">' % (base + t) for t in hm["thumbs"]), hm["count"]))
+
     w('<div class="wk-adslot" data-slot="2"></div>')  # 9/28: moved up from between Spy Day and On the Radar
 
     # WEATHER (compact)

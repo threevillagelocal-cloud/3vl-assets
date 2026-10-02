@@ -153,7 +153,8 @@ def main():
             out.insert(0, {"id": "cur-" + e["id"], "title": e["title"], "start": e["start"], "end": e["end"], "allday": False,
                            "venue": v.get("name", ""), "addr": v.get("addr", ""), "url": e.get("url", ""), "desc": e["desc"],
                            "img": (base + e["img"] + "-720.webp") if e.get("img") else "", "src": "3vl", "tags": e["tags"][:3],
-                           "status": e.get("status", ""), "pick": e["id"] in W.get("picks", []), "page": e.get("page", "")})
+                           "status": e.get("status", ""), "pick": e["id"] in W.get("picks", []), "page": e.get("page", ""),
+                           "pu": e.get("pick_until", "")})   # pu: when the card leaves Top Things to Do (before the event ends)
         for a in W.get("allweekend", []):
             if a["id"] in W.get("picks", []):
                 v = W["venues"].get(a["venue"], {})

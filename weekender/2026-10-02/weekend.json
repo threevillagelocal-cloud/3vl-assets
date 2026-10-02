@@ -20,6 +20,7 @@
   "sun": "2026-10-04"
  },
  "picks": [
+  "tvfm",
   "spyday",
   "blues",
   "treason",
@@ -193,6 +194,7 @@
    "title": "Three Village Farmers & Artisans Market",
    "start": "2026-10-02T15:00",
    "end": "2026-10-02T18:00",
+   "pick_until": "2026-10-02T17:00",
    "venue": "tvhs",
    "price": "Free",
    "tags": [

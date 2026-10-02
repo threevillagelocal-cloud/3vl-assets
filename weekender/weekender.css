@@ -883,3 +883,25 @@ a.wk-guide{flex:1 0 100%;display:flex!important;align-items:center;justify-conte
 .wk-pick[data-href],.wk-sp{cursor:pointer}
 .wk-pick .wk-pdesc.is-open,.wk-sp .wk-spd.is-open{display:block!important;-webkit-line-clamp:unset!important;overflow:visible!important}
 #wk-top button.wk-mo{align-self:flex-start;background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:2px 0!important;margin:0!important;min-height:0;font:inherit;font-size:13px;font-weight:800;color:var(--orange)!important;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+
+/* ---------- HOMES FOR SALE strip (10/2/2026) ---------- */
+#wk-top .wk-homesw{padding-top:22px;padding-bottom:0}
+#wk-top a.wk-homes{display:flex;align-items:center;gap:18px;padding:14px 18px;border-radius:20px;background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 22px rgba(27,47,69,.07);color:var(--ink)!important;transition:transform .2s ease,box-shadow .2s ease}
+#wk-top a.wk-homes:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(27,47,69,.12)}
+#wk-top .wk-hmth{display:flex;flex:none}
+#wk-top .wk-hmth img{width:80px;height:60px;object-fit:cover;border-radius:12px;border:3px solid #fff;box-shadow:0 4px 10px rgba(27,47,69,.18);margin-left:-22px}
+#wk-top .wk-hmth img:first-child{margin-left:0}
+#wk-top .wk-hmtx{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+#wk-top .wk-hmtx b{font-family:var(--disp);font-weight:700;font-size:20px;line-height:1.15;letter-spacing:-.01em}
+#wk-top .wk-hmtx small{font-size:14px;color:var(--mut);font-weight:600}
+#wk-top .wk-hmtx small i{font-style:normal}
+#wk-top .wk-hmbtn{flex:none;display:inline-flex;align-items:center;padding:10px 18px;border-radius:999px;background:#006fbb;color:#fff;font-size:14px;font-weight:800;white-space:nowrap;box-shadow:0 6px 16px rgba(0,111,187,.25)}
+@media (max-width:760px){
+  #wk-top a.wk-homes{flex-wrap:wrap;gap:12px 14px;padding:14px}
+  #wk-top .wk-hmth img{width:52px!important;height:40px!important;margin-left:-24px!important;border-width:2px;border-radius:10px}
+  #wk-top .wk-hmth img:first-child{margin-left:0!important}
+  #wk-top .wk-hmtx b{font-size:17px}
+  #wk-top .wk-hmtx small{font-size:13px}
+  #wk-top .wk-hmtx small i{display:none}
+  #wk-top .wk-hmbtn{width:100%;justify-content:center}
+}
