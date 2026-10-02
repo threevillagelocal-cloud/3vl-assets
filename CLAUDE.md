@@ -116,3 +116,8 @@ Known and left alone (BD platform behavior, not fixable by API): the sitemap lis
 - The "Ongoing / All Weekend" block under the schedule was removed (owner). allweekend items still feed Top Things to Do picks.
 - weekender.js rewrites the schedule heading at runtime (renderLive), so a title change must be made in BOTH build.py and weekender.js. Always check the RENDERED page (headless), not just the HTML.
 - Main menu (BD menu 52) labels: Home, Find a Local Business (/categories), Things to Do (events dropdown), Local Stories (/blog), Get the App. Owner approved dropping "Search Members" (item 330) but the delete was blocked in-session; the owner has to remove or hide it. "Homes for Sale" is NOT in the menu yet (owner: not just yet).
+
+## /categories side column (owner, 10/2/2026)
+- Always TWO stacked VIP banners on desktop, and no "Join Our Community" box (BD's .member-join-offer sidebar module) on this page. Both are done in site/p3/p3.js, CATEGORIES block: a style hides the box, and catFit() pads the grid so the page reaches 2410px, because the pinned weekender/vipads.js only draws its second banner when the page is taller than 2400px (on wide screens this page was ~2300px, so it showed one).
+- weekender/vipads.js in the repo now also forces two banners on /categories by path, but the site loads vipads.js from an old SHA pin in widget 13, so that change only takes effect when that pin is bumped. Once it is, catFit() can go.
+- Phones keep one banner (by design). When checking p3.js changes in headless Chrome, turn the cache off (Network.setCacheDisabled) or the old file is served for up to 10 minutes.
