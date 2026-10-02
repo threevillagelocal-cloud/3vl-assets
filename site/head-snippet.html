@@ -4,5 +4,7 @@
 <script>(function(){var p=location.pathname,h=document.documentElement,B='https://threevillagelocal-cloud.github.io/3vl-share/live/';while(p.length>1&&p.charAt(p.length-1)==='/')p=p.slice(0,-1);function js(u){var s=document.createElement('script');s.async=true;s.fetchPriority='high';s.src=B+u;document.head.appendChild(s)}if(p==='/categories'||(p==='/blog'&&location.search.indexOf('q=')<0))h.classList.add('tvl-w3');if(p==='/events'||p==='/events-calendar'){h.classList.add('tvl-wc');try{window.__tvlFeed=fetch('/event-calendar-json',{credentials:'same-origin'}).then(function(r){return r.json()});window.__tvlFeed.catch(function(){})}catch(e){}js('events-cal/tvl-cal.js')}js('p3/p3.js')})()</script>
 <style>@keyframes tvlshow{to{opacity:1}}
 html.tvl-w3:not(.p3-on):not(.p3-done) #first_container>.container,html.tvl-wc:not(.tvc-on):not(.tvc-done) #first_container>.container{opacity:0;animation:tvlshow .2s linear 6s forwards}
-html:not(.p3-on):not(.p3-done) .content_w_sidebar.member_results:has(.search_result){opacity:0;animation:tvlshow .2s linear 6s forwards}</style>
+html:not(.p3-on):not(.p3-done) .content_w_sidebar.member_results:has(.search_result){opacity:0;animation:tvlshow .2s linear 6s forwards}
+/* BD's old sidebar banner ads are retired (the VIP rotator replaces them): hidden from the start so their 1-2 MB PNGs never download */
+a:has(> img[src*="/images/banner-ads/"]),a:has(> img[alt="Banner Ad"]){display:none!important}</style>
 <!-- /3VL instant design -->
