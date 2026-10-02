@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-02T08:24:16.792271+00:00",
+"updated": "2026-10-02T14:22:13.447162+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 44,
@@ -86,7 +86,7 @@
 "status": "",
 "pick": true,
 "page": "https://www.threevillagelocal.com/olde-towne-gardens",
-"rank": 4
+"rank": 5
 },
 {
 "id": "emmaclark-game-day-38288",
@@ -123,7 +123,8 @@
 ],
 "status": "",
 "pick": false,
-"page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free"
+"page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free",
+"pu": ""
 },
 {
 "id": "emmaclark-knit-crochet-chat-58175",
@@ -183,8 +184,10 @@
 "food"
 ],
 "status": "",
-"pick": false,
-"page": ""
+"pick": true,
+"page": "",
+"pu": "2026-10-02T17:00",
+"rank": 1
 },
 {
 "id": "emmaclark-oreolympics-grades-k-5-58797",
@@ -243,7 +246,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "cur-brewster",
@@ -263,7 +267,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "cur-patriots",
@@ -284,7 +289,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "cur-spyday",
@@ -306,7 +312,8 @@
 "status": "",
 "pick": true,
 "page": "https://www.threevillagelocal.com/events/culper-spy-day",
-"rank": 1
+"pu": "",
+"rank": 2
 },
 {
 "id": "brookhaven-5096",
@@ -366,7 +373,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "cur-blues",
@@ -388,7 +396,8 @@
 "status": "",
 "pick": true,
 "page": "https://www.threevillagelocal.com/events/cedar-beach-blues-on-the-harbor",
-"rank": 2
+"pu": "",
+"rank": 3
 },
 {
 "id": "cur-limspy",
@@ -409,7 +418,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "cur-emmalawn",
@@ -430,7 +440,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "emmaclark-fairchild-becherer-music-american-colonial-period-58124",
@@ -570,7 +581,8 @@
 "status": "",
 "pick": true,
 "page": "https://www.threevillagelocal.com/events/treasons-trial-a-culper-spy-story",
-"rank": 3
+"pu": "",
+"rank": 4
 },
 {
 "id": "emmaclark-copy-welcome-teen-tween-services-department-59535",
@@ -607,7 +619,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "pjchamber-14989",
@@ -647,7 +660,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "portjeff-1094",
@@ -686,7 +700,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "cur-limsun",
@@ -707,7 +722,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "cur-gristmill",
@@ -728,7 +744,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "cur-limehof",
@@ -747,7 +764,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "sbv-2369",
@@ -843,7 +861,8 @@
 ],
 "status": "",
 "pick": false,
-"page": ""
+"page": "",
+"pu": ""
 },
 {
 "id": "pjchamber-14726",
