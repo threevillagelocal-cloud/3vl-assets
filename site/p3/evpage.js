@@ -1,5 +1,6 @@
 /* Three Village Local: event detail pages (/events/<slug>) in the premium look, plus the "next step" block
-   on event pages and blog posts. PREVIEW build 10/2/2026 (not loaded by the site yet).
+   on event pages and blog posts. Live since 10/2/2026: loaded from the HEAD code ("3VL instant design" block) on /events/<slug> and /blog/<slug>;
+   BD's own event layout stays hidden (html.tvl-we) until this has drawn. Publish with site/publish_live.py.
    Rebuilds BD's event template in place: one photo, one set of facts, one row of actions. Starts as soon as
    #post-content has been read (same pattern as p3.js). */
 (function(){
@@ -7,7 +8,14 @@ if(window.__tvlEv)return;
 var path=location.pathname.replace(/\/+$/,'');
 var isEvent=/^\/events\/[^\/]+$/.test(path),isPost=/^\/blog\/[^\/]+$/.test(path);
 if(!isEvent&&!isPost)return;
-var H=document.documentElement,FEED='https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/events.json';
+var H=document.documentElement,BASE='https://threevillagelocal-cloud.github.io/3vl-share/live/p3/';
+/* the styles ride along with this file; the new layout is shown only once they are in (or after 2.5s) */
+var cssOK=false,cssWait=[];
+(function(){var l=document.createElement('link');l.rel='stylesheet';l.href=BASE+'evpage.css';
+  function done(){if(cssOK)return;cssOK=true;cssWait.forEach(function(f){f()});cssWait=[]}
+  l.onload=done;l.onerror=done;setTimeout(done,2500);(document.head||H).appendChild(l)})();
+function whenCss(f){if(cssOK)f();else cssWait.push(f)}
+var FEED='https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/events.json';
 function $(s,r){return (r||document).querySelector(s)}function $$(s,r){return [].slice.call((r||document).querySelectorAll(s))}
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function fnv(s){s=unescape(encodeURIComponent(s));for(var h=0x811c9dc5,i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),0x01000193)>>>0;return ('0000000'+h.toString(16)).slice(-8)}
@@ -81,7 +89,7 @@ function buildEvent(){
     if(navigator.share){navigator.share({title:title,url:u}).catch(function(){})}
     else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){b.textContent='Link copied';setTimeout(function(){b.innerHTML=SHARE+' Share'},2200)})}});
   nextBlock(root,{kick:'Keep exploring',title:'More happening in Three Village',skip:title});
-  H.classList.add('ev-on');
+  whenCss(function(){H.classList.add('ev-on')});
   return true;
 }
 function buildPost(){

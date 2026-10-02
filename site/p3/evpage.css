@@ -1,4 +1,5 @@
-/* Three Village Local: event detail pages + "next step" block (see evpage.js). PREVIEW build 10/2/2026. */
+/* Three Village Local: event detail pages + "next step" block (see evpage.js). Live since 10/2/2026. */
+html.tvl-we:not(.ev-on) #ev{opacity:0}
 #ev{--navy:#1b2f45;--navy2:#0f1f31;--gold:#f2a93b;--ink:#1d2b3a;--mut:#5b6b7c;--line:#dde5ee;font-family:'tvl-rc','Radio Canada',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);margin:0 0 24px}
 #ev *{box-sizing:border-box}
 .ev-hero{position:relative;border-radius:20px;overflow:hidden;background:linear-gradient(135deg,#1b2f45 0%,#0f1f31 60%,#27405c 100%);min-height:340px;display:flex;align-items:flex-end;box-shadow:0 14px 34px rgba(15,31,49,.18)}
