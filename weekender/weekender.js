@@ -67,7 +67,7 @@ function renderLive(data){
           (e.desc?'<p class="wk-evdesc" tabindex="0">'+esc2(e.desc)+'</p>':'')+'<div class="wk-tags">'+chips(e.tags)+'<span class="wk-wxchip"></span></div></div>'+acts(e)+'</div></li>'});
       h+='</ol></div>';anchor.insertAdjacentHTML('beforebegin',h)});
     var sm=root.querySelector('#wk-sched .wk-h2 small');if(sm)sm.innerHTML='Updated '+tm(new Date(data.updated))+' &middot; tap &#9734; to save';
-    var sp=root.querySelector('#wk-sched .wk-h2 span');if(sp)sp.textContent='What\u2019s Up This Week';
+    var sp=root.querySelector('#wk-sched .wk-h2 span');if(sp)sp.textContent='What\u2019s Happening This Week';
     var aw=root.querySelector('#wk-sched .wk-allwk p.wk-dayh b');if(aw)aw.textContent='Ongoing';
   }
   /* top things to do: soonest upcoming events that have photos (curated picks first); the build's "Coming up" radar cards stay at the end */

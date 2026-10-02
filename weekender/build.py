@@ -271,11 +271,8 @@ def build(edition, local=False, sha="master", d=None, live=None):
                 evattrs(e), fmt_time(e["start"]), "to " + fmt_time(e["end"]), thumb, esc(e["title"]), esc(V[e["venue"]]["name"]),
                 esc(V[e["venue"]]["addr"].split(", ")[-1]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), actions(e)))
         w('</ol></div>')
-    w('<div class="wk-allwk"><p class="wk-dayh"><b>All Weekend</b><span>Anytime Fri-Sun</span></p><div class="wk-allg">')
-    for a in d["allweekend"]:
-        w('<div class="wk-aw wk-rv" data-tags="%s"><p class="wk-awwhen">%s</p><p class="wk-awt">%s</p><p class="wk-evwhere">%s</p><p class="wk-evdesc">%s</p><div class="wk-tags">%s</div></div>' % (
-            " ".join(a["tags"]), esc(a["when"]), esc(a["title"]), esc(V[a["venue"]]["name"]), esc(a["desc"]), tagchips(a["tags"])))
-    w('</div></div><p class="wk-nomatch" id="wk-nomatch" hidden>Nothing matches that combo. Try another filter.</p></section>')
+    # 10/2/2026 (owner): the "Ongoing / All Weekend" block under the schedule was removed. allweekend items still feed Top Things to Do picks.
+    w('<p class="wk-nomatch" id="wk-nomatch" hidden>Nothing matches that combo. Try another filter.</p></section>')
 
     M["ad1"] = len(out)
     w('<div class="wk-adslot" data-slot="1"></div>')
