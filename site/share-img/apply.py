@@ -9,7 +9,7 @@ import gen
 HERE = os.path.dirname(os.path.abspath(__file__))
 KEY = key(); SITE = "https://www.threevillagelocal.com"
 PAGES = "https://threevillagelocal-cloud.github.io/3vl-share/l/"
-SPECIAL = {"282": "share/setauket-frame-shop-v3.jpg"}  # FB already cached older frame-shop URLs
+SPECIAL = {"282": "share/setauket-frame-shop-v3.jpg", "272": "share/northshore-properties-realty-v2.jpg", "301": "share/tina-lollo-v2.jpg", "261": "share/frank-prinzevalli-v2.jpg", "287": "share/evan-teich-v2.jpg", "233": "share/eric-sinensky-v2.jpg", "276": "share/jodi-fein-v2.jpg", "298": "share/howard-hanna-coach-realtors-v2.jpg", "435": "share/kristin-bodkin-v2.jpg"}  # FB already cached older frame-shop URLs
 
 
 def call(method, path, data):
