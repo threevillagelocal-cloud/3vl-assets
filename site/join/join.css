@@ -69,4 +69,4 @@
 @media(prefers-reduced-motion:reduce){.jn3 .jn3-btn-gold:after{animation:none}}
 .jn3-q:last-child:nth-child(odd){grid-column:1/-1}
 .jn3 .jn3-nw{white-space:nowrap!important;display:inline-block}
-.jn3-sp{background:#fff8ea;border:1px solid #f4d27a;border-radius:12px;padding:10px 12px!important;margin:0 0 10px!important}.jn3-sp b{color:#1b2f45}
+.jn3-sp{background:#fff8ea;border:1px solid #f4d27a;border-radius:12px;padding:10px 12px 10px 38px!important;margin:0 0 10px!important;color:#1d2b3a!important;background-position:12px 12px}.jn3-sp b{color:#1b2f45!important}.jn3-sp:before{left:12px!important;top:12px!important}

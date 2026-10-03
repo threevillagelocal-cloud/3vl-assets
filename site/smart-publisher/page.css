@@ -43,3 +43,4 @@
 #sp3 .sp-preview{border:1px solid var(--line);border-radius:16px;padding:18px;margin:0 0 18px;background:#fafcfe}
 #sp3 .sp-hide{display:none!important}
 @media(max-width:700px){#sp3 .sp-steps{grid-template-columns:1fr 1fr}#sp3 .sp-hero{padding:26px 20px}#sp3 .sp-hero h1{font-size:30px}#sp3 .sp-card{padding:20px}}
+#sp3 .sp-btns{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 0}#sp3 .sp-up{background:#f2a93b;color:#1b2f45;box-shadow:0 10px 24px rgba(242,169,59,.35)}#sp3 .sp-ghost{background:#fff;color:#1b2f45;border:1px solid #dde5ee}

@@ -39,8 +39,19 @@ def block(inner, pad="34px 28px 6px"):
     return '<tr><td style="padding:%s">%s</td></tr>' % (pad, inner)
 
 
+def short_name(n):
+    """'Team Passamenti at Better Homes and Gardens Real Estate Realty Connect' -> 'Team Passamenti' (agent/brokerage style names)."""
+    n = (n or "").strip()
+    for sep in (": ", " at ", " - ", " | ", ", "):
+        if sep in n and len(n) > 34:
+            head = n.split(sep)[0].strip()
+            if len(head.split()) >= 2:   # never cut down to one word ("Summer", "Prudential")
+                return head
+    return n
+
+
 def build(r, pick, has_banner, base, has_search):
-    co = esc(r["company"] or "your business")
+    co = esc(short_name(r["company"]) or "your business")
     first = esc(r["first"]) if r["first"] and r["first"].lower() not in ("info", "admin", "office") else ""
     plan = r["plan"]
     rows = []
@@ -96,14 +107,15 @@ def build(r, pick, has_banner, base, has_search):
         rows.append(block(btxt + pic(base + "bz-%s.jpg" % r["id"], "VIP banner spot on Three Village Local", SITE + "/categories") + cta))
     # Smart Publisher (owner 10/3/2026: only send once it is live; "no coming soon")
     if plan in VIP:
-        perk = "<b>Included in your VIP plan:</b> 4 pages a month, plus promotion on our social media. It is ready now."
+        perk = "<b>Included in your VIP plan:</b> a page every two weeks, plus promotion on our social media. It is ready now."
         pcta = '<div style="padding-top:4px">%s</div>' % btn(SITE + "/smart-publisher", "Open Smart Publisher &rarr;")
     elif plan in GN:
         perk = "<b>Included in your Getting Noticed plan:</b> 1 page a month. It is ready now."
         pcta = '<div style="padding-top:4px">%s</div>' % btn(SITE + "/smart-publisher", "Open Smart Publisher &rarr;")
     else:
-        perk = "<b>Included with Getting Noticed (1 page a month) and VIP (4 a month).</b> Upgrade and you can use it today."
-        pcta = '<div style="padding-top:4px">%s</div>' % btn(SITE + "/join", "See the plans &rarr;")
+        perk = "<b>Included with Getting Noticed (1 page a month) and VIP (one every two weeks).</b> Upgrade and you can use it today."
+        pcta = ('<div style="padding-top:4px">%s</div><p style="margin:12px 0 0;font:14px %s"><a href="%s/join" style="color:#fff;font-weight:bold">See the plans</a></p>'
+                % (btn(SITE + "/checkout/2", "Upgrade now &rarr;"), FONT, SITE))
     rows.append('<tr><td style="padding:34px 28px 6px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:%s;border-radius:18px">'
                 '<tr><td style="padding:26px 22px">%s%s%s<img src="%spublisher.jpg" width="500" alt="3VL Smart Publisher" style="display:block;width:100%%;height:auto;border-radius:12px;border:0;margin:0 0 16px">%s%s</td></tr></table></td></tr>'
                 % (NAVY, kicker("New &middot; Ready now", GOLD), h2("3VL Smart Publisher", "#fff"),
