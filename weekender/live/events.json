@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-02T23:38:37.021775+00:00",
+"updated": "2026-10-03T00:24:59.419378+00:00",
 "counts": {
 "Three Village Chamber": 4,
-"Port Jefferson Chamber": 44,
+"Port Jefferson Chamber": 43,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": 11,
 "Village of Port Jefferson": 220,
-"Emma S. Clark Library": 204,
+"Emma S. Clark Library": 203,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 6,
@@ -66,29 +66,6 @@
 "page": "https://www.threevillagelocal.com/events/blue-star-welcome-week-2026-for-military-families"
 },
 {
-"id": "cur-spooky",
-"title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-02T00:00",
-"end": "2026-10-31T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Running until Oct. 31",
-"venue": "Olde Towne Gardens",
-"addr": "360 Old Town Rd, East Setauket",
-"url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949. Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, hay bale play area, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/spooky-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/olde-towne-gardens",
-"rank": 5
-},
-{
 "id": "cur-stitch",
 "title": "Stitch & Chit-Chat",
 "start": "2026-10-02T14:00",
@@ -108,27 +85,6 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free",
 "pu": ""
-},
-{
-"id": "lim-10000256",
-"title": "Stitch & Chit-Ch(at) – FREE!",
-"start": "2026-10-02T14:00:00",
-"end": "2026-10-02T15:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/stitch/2026-10-02/",
-"desc": "Whether you knit, crochet, embroider, or hand-sew, gather at the LIM to do what you love. Bring your work-in-progress and enjoy some good company. Open to adults and children 12 and up. This program will take place in the Studio located on the East side of cam",
-"img": "https://longislandmuseum.org/wp-content/uploads/2025/12/Stitch-and-Chit-Chat.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "cur-tvfm",
@@ -154,23 +110,27 @@
 "rank": 1
 },
 {
-"id": "emmaclark-candy-land-training-creations-night-59550",
-"title": "Candy Land Training & Creations Night",
-"start": "2026-10-02T18:00:00",
-"end": "2026-10-02T20:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/candy-land-training-creations-night-59550",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-10-03T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Running until Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949. Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, hay bale play area, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/spooky-720.webp",
+"src": "3vl",
 "tags": [
-"arts"
+"kids",
+"outdoor"
 ],
 "status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/candy-land-training-creations-night"
+"pick": true,
+"page": "https://www.threevillagelocal.com/olde-towne-gardens",
+"rank": 5
 },
 {
 "id": "cur-scarecrow",
@@ -1794,6 +1754,63 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/volunteer-at-hobbs-farm-for-community-service-grades-3-5"
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58879",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-10-13T10:30:00",
+"end": "2026-10-13T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58879",
+"desc": "Themed activities that you and your child can enjoy together.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-349"
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-58889",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-10-13T13:15:00",
+"end": "2026-10-13T13:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58889",
+"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-350"
+},
+{
+"id": "emmaclark-marias-mexican-cooking-flautas-de-pollo-58139",
+"title": "Maria’s Mexican Cooking: Flautas de Pollo",
+"start": "2026-10-13T18:30:00",
+"end": "2026-10-13T19:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/marias-mexican-cooking-flautas-de-pollo-58139",
+"desc": "Join us for this cooking demonstration in celebration of Hispanic Heritage Month. On the menu are authentic Mexican taquitos dorados, also known as Flautas. These are rolled tortillas filled with delicious ingredients and finished with amazing toppings. Presen",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/PHILIP_GROIA_LOGO_7DFF9A89.png",
+"src": "emmaclark",
+"tags": [
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/marias-mexican-cooking-flautas-de-pollo"
 }
 ],
 "closings": [],
