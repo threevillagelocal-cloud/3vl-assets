@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-03T21:08:06.999131+00:00",
+"updated": "2026-10-03T23:45:47.864835+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 43,
@@ -10,7 +10,7 @@
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 6,
-"LI Music Hall of Fame": 6
+"LI Music Hall of Fame": 7
 },
 "icons": {
 "kids": "&#129490;",
@@ -411,6 +411,25 @@
 "page": "https://www.threevillagelocal.com/events/treasons-trial-a-culper-spy-story",
 "pu": "",
 "rank": 4
+},
+{
+"id": "limehof-202610031500-mirian-conti",
+"title": "Mirian Conti",
+"start": "2026-10-03T15:00:00",
+"end": "2026-10-03T17:00:00",
+"allday": false,
+"venue": "The Long Island Music and Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook, NY 11790",
+"url": "https://www.limusichalloffame.org/events/",
+"desc": "Free with Admission.",
+"img": "https://www.limusichalloffame.org/wp-content/uploads/2026/10/CONTI.jpg",
+"src": "limehof",
+"tags": [
+"free"
+],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "cur-symphony",
