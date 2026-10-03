@@ -1,0 +1,50 @@
+#nl3{--navy:#1b2f45;--navy2:#0f1f31;--gold:#f2a93b;--ink:#1d2b3a;--mut:#5b6b7c;font-family:'Radio Canada',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);margin:0 auto 40px;max-width:1180px}
+#nl3 *{box-sizing:border-box}
+/* hero: blurred village photo, white + gold headline, the real email on a phone (no plain navy box) */
+#nl3 .nl-hero{position:relative;display:flex;align-items:center;gap:40px;padding:56px 56px 56px;border-radius:24px;overflow:hidden;
+  background:linear-gradient(90deg,rgba(10,22,36,.92) 0%,rgba(10,22,36,.78) 48%,rgba(10,22,36,.4) 100%),url('https://threevillagelocal-cloud.github.io/3vl-share/site/newsletter/hero-bg.jpg') center/cover;color:#fff}
+#nl3 .nl-htx{flex:1 1 560px;min-width:0}
+#nl3 .nl-k{display:inline-block;margin:0 0 18px;padding:8px 18px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);font-weight:700;font-size:15px;color:#fff}
+#nl3 h1{margin:0 0 16px;font-size:46px;line-height:1.08;font-weight:800;letter-spacing:-.5px;color:#fff}
+#nl3 h1 span{color:var(--gold)}
+#nl3 .nl-lead{margin:0 0 26px;font-size:18px;line-height:1.6;color:#e3eaf2;max-width:560px}
+#nl3 .nl-phone{flex:0 0 300px;text-align:center}
+#nl3 .nl-phone img{width:300px;height:auto;display:inline-block;filter:drop-shadow(0 24px 40px rgba(0,0,0,.45))}
+/* sign-up card holds BD's own newsletter form (moved in by the script) */
+#nl3 .nl-card{background:#fff;border-radius:18px;padding:22px 22px 14px;max-width:520px;box-shadow:0 18px 40px rgba(0,0,0,.28);color:var(--ink)}
+#nl3 .nl-ct{margin:0 0 12px;font-weight:800;font-size:19px;color:var(--navy)}
+#nl3 .nl-card form{margin:0}
+#nl3 .nl-card .form-group{margin:0 0 10px}
+#nl3 .nl-card label{display:none}
+#nl3 .nl-card input[type=text],#nl3 .nl-card input[type=email]{width:100%;height:50px;border-radius:12px;border:1.5px solid #d3dce6;padding:0 16px;font-size:16px;box-shadow:none;font-family:inherit}
+#nl3 .nl-card input[type=text]:focus,#nl3 .nl-card input[type=email]:focus{border-color:var(--gold);outline:0;box-shadow:0 0 0 3px rgba(242,169,59,.25)}
+#nl3 .nl-card .btn,#nl3 .nl-card button[type=submit]{width:100%;height:52px;border:0;border-radius:999px;background:var(--gold)!important;color:var(--navy)!important;font-weight:800;font-size:17px;font-family:inherit;box-shadow:none}
+#nl3 .nl-card .btn:hover,#nl3 .nl-card button[type=submit]:hover{filter:brightness(.95)}
+#nl3 .nl-card .checkbox,#nl3 .nl-card .help-block{font-size:13px;color:var(--mut)}
+#nl3 .nl-fine{margin:10px 0 0;font-size:13px;color:var(--mut);text-align:center}
+/* what's inside */
+#nl3 .nl-inside{padding:44px 8px 10px}
+#nl3 .nl-inside h2{margin:0 0 20px;font-size:30px;font-weight:800;color:var(--navy);text-align:center}
+#nl3 .nl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+#nl3 .nl-it{background:#fff;border:1px solid #e3e9f0;border-radius:18px;padding:22px 20px;box-shadow:0 6px 18px rgba(27,47,69,.06)}
+#nl3 .nl-ic{display:block;font-size:30px;margin-bottom:10px}
+#nl3 .nl-it b{display:block;font-size:18px;color:var(--navy);margin-bottom:6px}
+#nl3 .nl-it p{margin:0;font-size:15px;line-height:1.55;color:var(--mut)}
+#nl3 .nl-again{margin:34px 8px 0;padding:24px;border-radius:18px;background:#fff;border:2px solid var(--gold);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+#nl3 .nl-again p{margin:0;font-size:18px;font-weight:700;color:var(--navy)}
+#nl3 .nl-btn{display:inline-block;padding:14px 26px;border-radius:999px;background:var(--navy);color:#fff!important;font-weight:800;text-decoration:none!important;white-space:nowrap}
+@media (max-width:900px){
+  #nl3 .nl-hero{flex-direction:column;align-items:stretch;padding:34px 20px 0;gap:10px}
+  #nl3 h1{font-size:34px}
+  #nl3 .nl-lead{font-size:16px}
+  #nl3 .nl-card{max-width:none}
+  #nl3 .nl-phone{flex:none;margin-top:18px}
+  #nl3 .nl-phone img{width:240px;margin-bottom:-120px}
+  #nl3 .nl-hero{padding-bottom:0;max-height:none}
+  #nl3 .nl-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  #nl3 .nl-grid{grid-template-columns:1fr}
+  #nl3 .nl-again{flex-direction:column;align-items:stretch;text-align:center}
+}
+@media (max-width:380px){#nl3 .nl-card .btn,#nl3 .nl-card button[type=submit]{font-size:15px}#nl3 .nl-fine{font-size:12px}}
