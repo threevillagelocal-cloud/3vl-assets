@@ -122,6 +122,31 @@ def main():
              ".bi{flex:0 0 84px;height:84px;border-radius:22px;background:rgba(242,169,59,.18);display:flex;align-items:center;justify-content:center;font-size:44px}"
              ".bn b{display:block;color:#fff;font-size:42px;font-weight:800;line-height:1.15}.bn i{display:block;font-style:normal;color:#cfd9e4;font-size:30px;margin-top:6px}"),
              "ig-benefits.jpg")
+        # 5c. same benefits post on a white background (owner 10/3/2026: the dark ones started to look alike)
+        litem = ("<div class='bn'><span class='bi'>%s</span><div><b>%s</b><i>%s</i></div></div>")
+        litems = "".join(litem % x for x in (
+            ("&#127881;", "This weekend&rsquo;s best events", "Hand-picked from 10 local sources"),
+            ("&#127869;&#65039;", "Food specials you never see", "Pulled from local restaurants&rsquo; posts"),
+            ("&#127969;", "The newest homes for sale", "In the Three Village school district"),
+            ("&#11088;", "What&rsquo;s opening in town", "New spots, new menus, local stories")))
+        light = ("<!doctype html><html><head><meta charset='utf-8'>%s<style>html,body{margin:0;width:1080px;height:1350px;overflow:hidden;background:#fff;font-family:'Radio Canada',sans-serif}"
+                 ".top{position:absolute;left:0;right:0;top:0;height:14px;background:linear-gradient(90deg,#1b2f45 0 70%%,#f2a93b 70%% 100%%)}"
+                 ".glow{position:absolute;right:-180px;top:-200px;width:620px;height:620px;border-radius:50%%;background:radial-gradient(circle,rgba(242,169,59,.18),rgba(242,169,59,0) 70%%)}"
+                 ".pill{display:inline-block;border-radius:999px;font-weight:800}"
+                 "h1{margin:34px 0 0;color:#1b2f45;font-weight:800;font-size:84px;line-height:1.04;letter-spacing:-.5px}"
+                 "h1 span{display:inline;white-space:nowrap;font-size:66px;color:#1b2f45;padding:0 6px;background:linear-gradient(transparent 58%%,rgba(242,169,59,.6) 58%%,rgba(242,169,59,.6) 92%%,transparent 92%%)}"
+                 ".bn{display:flex;align-items:center;gap:28px;padding:20px 30px;margin:0 0 16px;border-radius:26px;background:#f5f7fa;border:1px solid #e3e9f0}"
+                 ".bi{flex:0 0 84px;height:84px;border-radius:22px;background:#fff4e0;display:flex;align-items:center;justify-content:center;font-size:44px}"
+                 ".bn b{display:block;color:#1b2f45;font-size:42px;font-weight:800;line-height:1.15}.bn i{display:block;font-style:normal;color:#5b6b7c;font-size:30px;margin-top:6px}"
+                 "</style></head><body><div class='top'></div><div class='glow'></div>"
+                 "<div style='position:absolute;left:80px;right:80px;top:86px'><span class='pill' style='font-size:30px;padding:12px 28px;background:#1b2f45;color:#fff'>&#9993;&#65039; Three Village Weekly &middot; <span style='color:#f2a93b'>free</span></span>"
+                 "<h1>Stop finding out<br>on Sunday night.<br><span style='line-height:1.5'>Get it first, every week.</span></h1></div>"
+                 "<div style='position:absolute;left:80px;right:80px;top:500px'>%s</div>"
+                 "<div style='position:absolute;left:0;right:0;bottom:64px;text-align:center'>"
+                 "<p style='font-size:30px;margin:0 0 22px;color:#5b6b7c;font-weight:600'>Free &middot; 2-minute read &middot; made in Three&nbsp;Village</p>"
+                 "<span class='pill' style='font-size:40px;padding:22px 52px;white-space:nowrap;background:#1b2f45;color:#fff'>Sign up free &middot; <span style='color:#f2a93b'>link in bio</span></span></div>"
+                 "</body></html>") % (FONT, litems)
+        snap(1080, 1350, light, "ig-benefits-light.jpg")
         # 6. Instagram story 1080x1920
         snap(1080, 1920, page(1080, 1920,
              "<div style='position:absolute;left:0;right:0;top:250px;text-align:center'><span class='pill glass' style='font-size:34px;padding:14px 32px'>&#9993;&#65039; Three Village Weekly &middot; free</span>"
