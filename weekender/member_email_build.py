@@ -124,7 +124,7 @@ def build(r, pick, has_banner, base, has_search):
                    base, p(perk, 15, "#fff", 14), pcta))
     # checklist
     rows.append('<tr><td style="padding:34px 28px 6px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:#fff;border:2px solid %s;border-radius:16px"><tr><td style="padding:24px 22px">'
-                '%s%s%s%s<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:0 10px 8px 0">%s</td><td style="padding:0 0 8px">%s</td></tr></table></td></tr></table></td></tr>'
+                '%s%s%s%s<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:0 0 8px">%s</td></tr></table></td></tr></table></td></tr>'
                 % (GOLD, kicker("Two quick things"), h2("Make the most of the new site"),
                    p("<b style=\"color:%s\">1. Freshen up your listing.</b> Log in and update your photos, hours, description and services. Complete "
                      "listings show up more in smart search and get more calls." % NAVY, 15),
@@ -132,7 +132,7 @@ def build(r, pick, has_banner, base, has_search):
                      "from <b>admin@threevillagelocal.com</b>, and the subject line tells you it is a lead. Some members have missed these, so please "
                      "add that address to your contacts or safe senders list and check your spam folder once in a while. Every lead is also in "
                      "your dashboard." % NAVY, 15, mb=18),
-                   btn(SITE + "/login", "Log in and update &rarr;", NAVY, "#fff"), btn(SITE + "/account/leads", "See my leads &rarr;")))
+                   btn(SITE + "/login", "Log in and update &rarr;", NAVY, "#fff")))
     # app
     badges = base.replace("member-2026-10/", "2026-10-02/")
     rows.append('<tr><td align="center" style="padding:30px 28px 0">%s<a href="%s/app"><img src="%sapp-store.png" width="120" alt="Download on the App Store" style="border:0;margin:0 4px"></a>'
