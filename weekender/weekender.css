@@ -1,6 +1,6 @@
 /* The Weekender: Three Village Local weekend dashboard. Scoped to #wk-top so BD theme CSS can't leak in or out. */
 
-.wk{--ink:#1b2f45;--ink2:#205081;--ink3:#006fbb;--cream:#eef4fa;--paper:#ffffff;--orange:#006fbb;--gold:#f0ad4e;--teal:#0f866c;--rose:#d9534f;--line:#e3e9f0;--mut:#6b7785;
+.wk{--ink:#1b2f45;--ink2:#205081;--ink3:#006fbb;--cream:#eef4fa;--paper:#ffffff;--orange:#006fbb;--gold:#f0ad4e;--teal:#0f866c;--rose:#d9534f;--line:#e3e9f0;--mut:#66717e;
   --fri:#f0ad4e;--sat:#3aa0e8;--sun:#1fb58f;--disp:'Radio Canada',sans-serif;font-family:'Radio Canada',sans-serif;
   color:var(--ink);font-size:16px;line-height:1.5;max-width:1180px;margin:0 auto;position:relative}
 #wk-top *{box-sizing:border-box}
@@ -78,7 +78,7 @@
 /* ---------- TAGS / BUTTONS ---------- */
 .wk-tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px}
 .wk-tag{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:#eef2f6;color:#3b4a5c}
-.wk-tag[data-t=free]{background:#dcf2ec;color:#0f866c}.wk-tag[data-t=kids]{background:#fdf1dc;color:#8a5a12}.wk-tag[data-t=outdoor]{background:#dcecf9;color:#006fbb}
+.wk-tag[data-t=free]{background:#dcf2ec;color:#0d7760}.wk-tag[data-t=kids]{background:#fdf1dc;color:#8a5a12}.wk-tag[data-t=outdoor]{background:#dcecf9;color:#006fbb}
 .wk-tag[data-t=music]{background:#e0ecf8;color:#205081}.wk-tag[data-t=history]{background:#f9e3e2;color:#b23b37}.wk-tag[data-t=food]{background:#fdf1dc;color:#8a5a12}.wk-tag[data-t=stage]{background:#e6ebf1;color:#1b2f45}
 .wk-price{font-size:12px;font-weight:800;color:var(--ink);margin-left:2px}
 .wk-wxchip{font-size:11px;font-weight:800;border-radius:999px}
@@ -119,7 +119,7 @@
 .wk-pwhere{font-size:14px;color:var(--mut);font-weight:600}
 .wk-pdesc{font-size:15px;margin-top:8px!important;color:#334155}
 .wk-pick:not(:first-child) .wk-pdesc{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.wk-icred{position:absolute;right:10px;top:calc(100% - 22px);font-size:10px;color:#9ca3af}
+.wk-icred{position:absolute;right:10px;top:calc(100% - 22px);font-size:10px;color:#70757e}
 .wk-pick .wk-icred{position:static;padding:0 20px 10px;text-align:right}
 
 /* ---------- LIVE ---------- */
@@ -607,7 +607,7 @@
 .wk-brand2 .wk-b2{color:var(--gold);position:relative}
 .wk-brand2 .wk-b2::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--gold),transparent);animation:wkUnder 2.8s ease-in-out infinite}
 @keyframes wkUnder{0%{transform:scaleX(.2);transform-origin:left;opacity:.4}50%{transform:scaleX(1);opacity:1}100%{transform:scaleX(.2);transform-origin:right;opacity:.4}}
-.wk-livepill{display:inline-flex;align-items:center;gap:8px;background:#e5322d;color:#fff;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:9px 14px;border-radius:999px;box-shadow:0 0 0 0 rgba(229,50,45,.6);animation:wkLiveGlow 2s infinite}
+.wk-livepill{display:inline-flex;align-items:center;gap:8px;background:#de302c;color:#fff;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:9px 14px;border-radius:999px;box-shadow:0 0 0 0 rgba(229,50,45,.6);animation:wkLiveGlow 2s infinite}
 .wk-livepill i{width:9px;height:9px;border-radius:50%;background:#fff;animation:wkPulse 1.4s infinite}
 @keyframes wkLiveGlow{0%{box-shadow:0 0 0 0 rgba(229,50,45,.55)}70%{box-shadow:0 0 0 14px rgba(229,50,45,0)}100%{box-shadow:0 0 0 0 rgba(229,50,45,0)}}
 .wk-kick{margin-top:14px!important}
@@ -854,7 +854,7 @@
 /* VIP rail: full-size ads; the rail scrolls with the page until its bottom is on screen, then sticks (top set by railStick() in weekender.js) */
 /* 9/28: 'Coming up' radar cards at the end of Top Things to Do */
 .wk-pnum.wk-soon{font-size:13px!important;line-height:1!important;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px;background:#ffc53d;color:#13233a!important;-webkit-text-stroke:0;text-shadow:none;white-space:nowrap;word-break:normal}
-.wk-radar .wk-pwhen{color:#b7862a}
+.wk-radar .wk-pwhen{color:#966e22}
 
 /* 9/28: homepage sections rendered into the page (Featured Local Businesses, Browse, Latest Stories); same rules as site/p3/nowhome.js */
 .nh-sec{margin:34px 0 0}
@@ -876,7 +876,7 @@ a.nh-cat.nh-allc{background:#14263b;color:#fff!important;border-color:#14263b}
 a.nh-story{flex:0 0 300px;display:flex;gap:12px;align-items:center;padding:10px;border-radius:16px;background:#fff;border:1px solid #e6ebf1;text-decoration:none!important;color:#14263b!important;box-shadow:0 6px 18px rgba(20,38,59,.06)}
 .nh-sim{flex:0 0 96px;width:96px;height:64px;border-radius:10px;background:#dfe6ee center/cover no-repeat}
 .nh-sb{min-width:0}
-.nh-sb i{display:block;font-style:normal;font-size:12px;font-weight:700;color:#b7862a;margin-bottom:3px}
+.nh-sb i{display:block;font-style:normal;font-size:12px;font-weight:700;color:#966e22;margin-bottom:3px}
 .nh-sb b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:15px;line-height:1.25;word-break:normal;overflow-wrap:normal}
 .nh-more{font-size:inherit;font-weight:800;color:#0a6fb5!important;text-decoration:none!important;white-space:nowrap}
 @media(max-width:600px){a.nh-biz{flex-basis:78%}a.nh-story{flex-basis:84%}a.nh-cat{font-size:14px;padding:8px 13px}.nh-cats{flex-wrap:nowrap;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:none}.nh-cats::-webkit-scrollbar{display:none}}
@@ -912,3 +912,6 @@ a.wk-guide{flex:1 0 100%;display:flex!important;align-items:center;justify-conte
   #wk-top .wk-hmtx small i{display:none}
   #wk-top .wk-hmbtn{width:100%;justify-content:center}
 }
+
+/* 10/3/2026 contrast (owner approved): link inside grey notes */
+.wk-note a{color:#3074ae}
