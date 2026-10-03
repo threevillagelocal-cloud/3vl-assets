@@ -91,8 +91,9 @@ def build(r, pick, has_banner, base, has_search):
                 + p("This is a sample we made for %s, shown in the VIP spot on our business directory. VIP members get a custom banner that "
                     "rotates across the website, the homepage and the app, with one-tap Call and View buttons." % co))
         cta = '<div style="padding-top:16px">%s</div>' % btn(SITE + "/join", "See the VIP plan &rarr;", NAVY, "#fff")
-    if os.path.exists(os.path.join(SHARE, "email", base.rstrip("/").split("/")[-1], "b-%s.jpg" % r["id"])):
-        rows.append(block(btxt + pic(base + "b-%s.jpg" % r["id"], "VIP banner spot on Three Village Local", SITE + "/categories") + cta))
+    # bz- = close crop around the banner spot only (no neighboring banner, so never a competitor in someone's email)
+    if os.path.exists(os.path.join(SHARE, "email", base.rstrip("/").split("/")[-1], "bz-%s.jpg" % r["id"])):
+        rows.append(block(btxt + pic(base + "bz-%s.jpg" % r["id"], "VIP banner spot on Three Village Local", SITE + "/categories") + cta))
     # Smart Publisher (owner 10/3/2026: only send once it is live; "no coming soon")
     if plan in VIP:
         perk = "<b>Included in your VIP plan:</b> 4 pages a month, plus promotion on our social media. It is ready now."
