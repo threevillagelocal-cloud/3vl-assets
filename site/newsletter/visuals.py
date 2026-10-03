@@ -39,6 +39,8 @@ def page(w, h, inner, extra_css=""):
 def main():
     ed = sys.argv[1] if len(sys.argv) > 1 else sorted(x for x in os.listdir(os.path.join(ASSETS, "weekender", "email")) if x[:2] == "20")[-1]
     email = os.path.join(ASSETS, "weekender", "email", ed, "email.html")
+    if os.path.exists(os.path.join(HERE, "evergreen.html")):   # owner 10/3: a timeless sample, not a dated event
+        email = os.path.join(HERE, "evergreen.html")
     os.makedirs(OUT, exist_ok=True)
     prof = tempfile.mkdtemp(prefix="nlvis-")
     p = subprocess.Popen([r"C:\Program Files\Google\Chrome\Application\chrome.exe", "--headless=new", "--disable-gpu", "--hide-scrollbars", "--remote-debugging-port=%d" % PORT,
