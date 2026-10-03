@@ -1,0 +1,45 @@
+#sp3{--navy:#1b2f45;--navy2:#0f1f31;--gold:#f2a93b;--ink:#1d2b3a;--mut:#5b6b7c;--line:#dde5ee;--blue:#006fbb;max-width:980px;margin:10px auto 60px;font-family:'Radio Canada','tvl-rc',system-ui,sans-serif;color:var(--ink)}
+#sp3 *{box-sizing:border-box}
+#sp3 .sp-hero{border-radius:22px;padding:34px 30px;background:radial-gradient(circle at 88% 0,rgba(242,169,59,.3),transparent 45%),linear-gradient(140deg,#1b2f45,#0f1f31);color:#fff}
+#sp3 .sp-k{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+#sp3 .sp-hero h1{font-size:38px;line-height:1.12;margin:0 0 10px;color:#fff;font-weight:800}
+#sp3 .sp-hero h1 span{color:var(--gold)}
+#sp3 .sp-lead{font-size:18px;line-height:1.5;color:#d6e1ec;margin:0 0 18px;max-width:640px}
+#sp3 .sp-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+#sp3 .sp-st{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px}
+#sp3 .sp-st em{display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--gold);color:var(--navy);font-style:normal;font-weight:700;align-items:center;justify-content:center;margin-bottom:8px}
+#sp3 .sp-st b{display:block;font-size:16px;margin-bottom:4px;color:#fff}
+#sp3 .sp-st span{font-size:14px;color:#cfdbe7;line-height:1.4}
+#sp3 .sp-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;margin:18px 0 0;box-shadow:0 8px 24px rgba(27,47,69,.06)}
+#sp3 .sp-card[hidden]{display:none}
+#sp3 .sp-card h2{font-size:24px;margin:0 0 4px;color:var(--navy);font-weight:800}
+#sp3 .sp-sub{color:var(--mut);margin:0 0 18px;font-size:16px}
+#sp3 .sp-usage{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#f6f9fc;border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:0 0 20px;font-size:15px}
+#sp3 .sp-usage:empty{display:none}
+#sp3 .sp-usage b{color:var(--navy)}
+#sp3 form .form-group{margin:0 0 16px}
+#sp3 form label{display:block;font-weight:700;font-size:15px;margin:0 0 6px;color:var(--navy)}
+#sp3 form .form-control{width:100%;font:16px 'Radio Canada','tvl-rc',system-ui,sans-serif;padding:12px 14px;border:1px solid #cfd9e3;border-radius:12px;background:#fff;height:auto;box-shadow:none}
+#sp3 form .form-control:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(242,169,59,.25);outline:0}
+#sp3 form textarea.form-control{min-height:130px}
+#sp3 form .radio,#sp3 form .radio-inline{display:inline-block;margin:0 8px 8px 0;padding:0}
+#sp3 form .radio label,#sp3 form .radio-inline label,#sp3 form label.radio-inline{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--line);border-radius:12px;padding:10px 14px;font-weight:600;cursor:pointer;margin:0}
+#sp3 form.fv-form{margin:0!important;width:100%!important;max-width:none!important}
+#sp3 form .radio input[type=radio]{position:static!important;flex:0 0 auto;width:18px!important;height:18px!important;margin:0!important;padding:0!important;box-shadow:none!important;border:0!important;accent-color:#f2a93b}
+#sp3 form .sp-on{border-color:var(--gold)!important;background:#fff8ea}
+#sp3 form input[type=file]{padding:14px;border:2px dashed #cfd9e3;border-radius:14px;width:100%;background:#fafcfe}
+#sp3 form .sp-go,#sp3 form .btn-primary{width:100%;font:700 18px 'Radio Canada','tvl-rc',sans-serif;padding:16px;border:0;border-radius:14px;background:var(--gold)!important;color:var(--navy)!important;box-shadow:0 10px 24px rgba(242,169,59,.35)}
+#sp3 .sp-note{display:flex;gap:10px;align-items:flex-start;background:#eef6ff;border:1px solid #cfe3f7;border-radius:14px;padding:14px 16px;margin:20px 0 0;font-size:15px;line-height:1.45}
+#sp3 .sp-lock{background:#f6f8fa}
+#sp3 .sp-ic{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;font-size:22px;margin-bottom:12px;background:#fff;border:1px solid var(--line)}
+#sp3 .sp-k2{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8a96a3;margin:0 0 6px}
+#sp3 .sp-pill{display:inline-block;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:#fff3dc;color:#9a5d00;margin:0 0 10px}
+#sp3 .sp-lock p{font-size:16px;line-height:1.5;color:#55636f}
+#sp3 .sp-btn{display:inline-block;font-size:16px;font-weight:700;padding:13px 22px;border-radius:12px;text-decoration:none;background:var(--blue);color:#fff}
+#sp3 .sp-small{font-size:14px;color:var(--mut);margin-top:12px}
+#sp3 .sp-small a,#sp3 .sp-help a{color:var(--blue);font-weight:700}
+#sp3 .sp-help{margin:18px 0 0;padding:14px 18px;border-radius:14px;background:#fff;border:1px solid var(--line);font-size:15px;color:var(--mut)}
+#sp3 .sp-help b{color:var(--navy)}
+#sp3 .sp-preview{border:1px solid var(--line);border-radius:16px;padding:18px;margin:0 0 18px;background:#fafcfe}
+#sp3 .sp-hide{display:none!important}
+@media(max-width:700px){#sp3 .sp-steps{grid-template-columns:1fr 1fr}#sp3 .sp-hero{padding:26px 20px}#sp3 .sp-hero h1{font-size:30px}#sp3 .sp-card{padding:20px}}

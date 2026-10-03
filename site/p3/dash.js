@@ -1,4 +1,4 @@
-/* Three Village Local: member dashboard (/account/home) in the premium look (10/2/2026).
+﻿/* Three Village Local: member dashboard (/account/home) in the premium look (10/2/2026).
    Restyles BD's own dashboard in place: welcome header, quick actions, cleaner publishing tiles (only the post types the
    site uses), card panels, and a compact "add our badge to your website" box instead of the 950px badge.
    Loaded by p3.js on /account/home. Safe to fail: if anything is missing, BD's own layout stays. */
@@ -84,7 +84,7 @@ function run(){
   var old=dc3&&$$('.dc3-c',dc3).filter(function(c){return !c.classList.contains('mm')})[0];
   if(old){var sp=document.createElement('div');sp.className='td-sp'+(paid?'':' locked');
     sp.innerHTML=paid
-      ?'<div class="td-spic">&#10024;</div><p class="td-k">New &middot; 3VL Smart Publisher</p><b>Promote something in minutes</b><p>Tell us the basics about your event, special or news. We write it, design it and publish it on Three Village Local when you choose.</p><a class="td-spb" href="/promotion#pr3-form">Open Smart Publisher</a>'
+      ?'<div class="td-spic">&#10024;</div><p class="td-k">New &middot; 3VL Smart Publisher</p><b>Promote something in minutes</b><p>Tell us the basics about your event, special or news. We write it, design it and publish it on Three Village Local when you choose.</p><a class="td-spb" href="/smart-publisher">Open Smart Publisher</a>'
       :'<div class="td-spic">&#128274;</div><p class="td-k">3VL Smart Publisher</p><span class="td-pill">Getting Noticed and VIP members</span><b>Your own page about your event or special, written for you</b><p>Give us the basics, our smart publishing tool writes and designs the page, and it goes live on Three Village Local when you choose, with an option to promote it on our social media.</p><a class="td-spb" href="/join">See the plans</a><p class="td-free">Free members can still send us a tip anytime: <a href="/promotion#pr3-form">submit a promotion</a> and our team decides what to feature.</p>';
     old.parentNode.replaceChild(sp,old)}
   (dc3||title).insertAdjacentElement('afterend',q);

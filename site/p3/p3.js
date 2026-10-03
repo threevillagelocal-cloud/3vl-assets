@@ -390,7 +390,11 @@ var mm='';
 if(basic){mm=done
  ?'<div class="dc3-c mm"><div class="dc3-ic">&#9989;</div><p class="dc3-k">Member Match</p><b>Thanks, you are all set</b><p>Your private Member Match details help our AI-driven search send neighbors your way. Update them anytime.</p><a class="dc3-b" href="/member-match?edit=1">Update my answers</a></div>'
  :'<div class="dc3-c mm"><div class="dc3-ic">&#10024;</div><p class="dc3-k">New &middot; 2 minutes</p><b>Get matched with neighbors</b><p>Answer 7 quick questions so our new AI-driven search can send leads your way on the free plan. Private, never shown on your profile.</p><a class="dc3-b" href="/member-match?edit=1">Fill out Member Match</a></div>';}
-var promo='<div class="dc3-c"><div class="dc3-ic">&#128227;</div><p class="dc3-k">Free for members</p><b>Got something you want to promote?</b><p>Send us a special, an event or big news and we will help put it in front of Three Village.</p><a class="dc3-b" href="/promotion#pr3-form">Submit a promotion</a></div>';
+/* 3VL Smart Publisher (live 10/3/2026): paid plans (VIP 1/8, Getting Noticed 2) open it; others get the free tip form plus the upgrade line */
+var spm=document.body.className.match(/session-plan-level-(\d+)/),spp=spm?spm[1]:'',spPaid=spp==='1'||spp==='8'||spp==='2';
+var promo=spPaid
+ ?'<div class="dc3-c"><div class="dc3-ic">&#10024;</div><p class="dc3-k">New &middot; 3VL Smart Publisher</p><b>Promote something in minutes</b><p>Tell us the basics about your event, special or news. We write it, design it and publish it on Three Village Local when you choose. '+(spp==='2'?'1 page a month on your plan.':'4 pages a month on your plan.')+'</p><a class="dc3-b" href="/smart-publisher">Open Smart Publisher</a></div>'
+ :'<div class="dc3-c"><div class="dc3-ic">&#128227;</div><p class="dc3-k">Free for members</p><b>Got something you want to promote?</b><p>Send us a special, an event or big news and we will help put it in front of Three Village. Want us to write and publish a full page for you? That is 3VL Smart Publisher, included with Getting Noticed and VIP.</p><a class="dc3-b" href="/promotion#pr3-form">Submit a promotion</a> <a href="/smart-publisher" style="margin-left:10px;font-weight:700">About Smart Publisher &rarr;</a></div>';
 var box=document.createElement('div');box.id='dc3';box.innerHTML=mm+promo;
 h.insertAdjacentElement('afterend',box);
 }

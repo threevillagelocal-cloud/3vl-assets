@@ -93,20 +93,20 @@ def build(r, pick, has_banner, base, has_search):
         cta = '<div style="padding-top:16px">%s</div>' % btn(SITE + "/join", "See the VIP plan &rarr;", NAVY, "#fff")
     if os.path.exists(os.path.join(SHARE, "email", base.rstrip("/").split("/")[-1], "b-%s.jpg" % r["id"])):
         rows.append(block(btxt + pic(base + "b-%s.jpg" % r["id"], "VIP banner spot on Three Village Local", SITE + "/categories") + cta))
-    # Smart Publisher (coming soon)
+    # Smart Publisher (owner 10/3/2026: only send once it is live; "no coming soon")
     if plan in VIP:
-        perk = "<b>Included in your VIP plan:</b> 4 pages a month, plus promotion on our social media. We will email you the moment it opens."
-        pcta = ""
+        perk = "<b>Included in your VIP plan:</b> 4 pages a month, plus promotion on our social media. It is ready now."
+        pcta = '<div style="padding-top:4px">%s</div>' % btn(SITE + "/smart-publisher", "Open Smart Publisher &rarr;")
     elif plan in GN:
-        perk = "<b>Included in your Getting Noticed plan:</b> 1 page a month. We will email you the moment it opens."
-        pcta = ""
+        perk = "<b>Included in your Getting Noticed plan:</b> 1 page a month. It is ready now."
+        pcta = '<div style="padding-top:4px">%s</div>' % btn(SITE + "/smart-publisher", "Open Smart Publisher &rarr;")
     else:
-        perk = "<b>A perk for Getting Noticed (1 page a month) and VIP (4 a month) members.</b>"
+        perk = "<b>Included with Getting Noticed (1 page a month) and VIP (4 a month).</b> Upgrade and you can use it today."
         pcta = '<div style="padding-top:4px">%s</div>' % btn(SITE + "/join", "See the plans &rarr;")
     rows.append('<tr><td style="padding:34px 28px 6px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:%s;border-radius:18px">'
                 '<tr><td style="padding:26px 22px">%s%s%s<img src="%spublisher.jpg" width="500" alt="3VL Smart Publisher" style="display:block;width:100%%;height:auto;border-radius:12px;border:0;margin:0 0 16px">%s%s</td></tr></table></td></tr>'
-                % (NAVY, kicker("Coming soon &middot; Members only", GOLD), h2("3VL Smart Publisher", "#fff"),
-                   p("Have an event, a special or news? Give us the basics. Our smart publishing tool writes and designs a polished page about it "
+                % (NAVY, kicker("New &middot; Ready now", GOLD), h2("3VL Smart Publisher", "#fff"),
+                   p("Have an event, a special or news? Give us the basics in about 2 minutes. Our smart publishing tool writes and designs a polished page about it "
                      "on Three Village Local, you preview and approve it, and it goes live when you choose.", 16, "#dbe4ee"),
                    base, p(perk, 15, "#fff", 14), pcta))
     # checklist
