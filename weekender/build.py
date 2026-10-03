@@ -350,7 +350,12 @@ def build(edition, local=False, sha="master", d=None, live=None):
             base + v["img"], esc(v["name"]) + " ad", v["w"], v["h"], v["phone"], esc(v["name"]), v["url"], esc(v["name"])))
     w('<div class="wk-adprog"><i id="wk-adbar"></i></div><div class="wk-addots" id="wk-addots"></div></div>')
     w('<div class="wk-adrot2" id="wk-adrot2"></div>')
-    w('<a class="wk-railcta" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a></div></aside>')
+    w('<a class="wk-railcta" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a></div>')
+    # second pair further down (owner 10/2/2026: "too much room there to not take advantage of"); desktop only, follows the reader
+    # down the page; weekender.js fills the two slots and loads their banners only once they are near the screen
+    w('<div class="wk-railin wk-rail2" id="wk-rail2"><p class="wk-railh"><span>&#11088; VIP</span> More local favorites</p>'
+      '<div class="wk-adslot wk-rslot"></div><div class="wk-adslot wk-rslot"></div>'
+      '<a class="wk-railcta" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a></div></aside>')
 
     w('</div>')  # /wk-grid
 

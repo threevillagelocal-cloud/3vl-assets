@@ -320,11 +320,20 @@ function spread(arr,key,gap){var best=arr.slice();
   return best}
 
 function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(!ads.length)return;
+  /* competitors never share a page (owner 10/2/2026: e.g. the two orthopedic practices): one business per group per page view,
+     picked at random so each gets its share across visitors; a business with two designs keeps both */
+  var pickG={};ads.forEach(function(a){var g=a.getAttribute('data-group'),v=a.getAttribute('data-vip');if(!g)return;(pickG[g]=pickG[g]||[]);if(pickG[g].indexOf(v)<0)pickG[g].push(v)});
+  Object.keys(pickG).forEach(function(g){pickG[g]=pickG[g][Math.floor(Math.random()*pickG[g].length)]});
+  ads=ads.filter(function(a){var g=a.getAttribute('data-group');if(!g||pickG[g]===a.getAttribute('data-vip'))return true;a.parentNode.removeChild(a);return false});
   ads=spread(ads,function(a){return a.getAttribute('data-group')||a.getAttribute('data-vip')},3);
   ads.forEach(function(a){rot.appendChild(a)});
   var idx=0,dur=6500,t0=0,paused=false,bar=$('wk-adbar'),dots=$('wk-addots'),seenV={};
   var slots=$$('.wk-adslot');var r2=$('wk-adrot2');if(r2&&innerWidth>1060)slots.unshift(r2);var clones=slots.map(function(s,n){var w=document.createElement('div');w.className='wk-adrot';s.appendChild(w);
     ads.forEach(function(a){var c=a.cloneNode(true);c.classList.remove('is-on');var lb=document.createElement('span');lb.className='wk-adlabel';lb.textContent='3VL VIP';c.appendChild(lb);w.appendChild(c)});return $$('.wk-ad',w)});
+  /* lower rail pair: no banner downloads until the reader scrolls close to it (it starts just below the first screen) */
+  $$('.wk-rslot').forEach(function(s){if(!('IntersectionObserver' in window))return;s.setAttribute('data-far','1');
+    var io=new IntersectionObserver(function(en){if(!en[0].isIntersecting)return;io.disconnect();s.removeAttribute('data-far');
+      var on=s.querySelector('.wk-ad.is-on');if(on){ld(on);ld(on.nextElementSibling&&on.nextElementSibling.classList.contains('wk-ad')?on.nextElementSibling:s.querySelector('.wk-ad'))}},{rootMargin:'100px 0px'});io.observe(s)});
   if(dots)dots.innerHTML=ads.map(function(a,i){return '<button type="button" aria-label="Show ad '+(i+1)+'"></button>'}).join('');
   function ld(a){if(!a)return;var im=a.querySelector('img[data-src]');if(!im)return;var u=im.getAttribute('data-src');im.removeAttribute('data-src');im.src=u;var pc=a.querySelector('.wk-adpic');if(pc)pc.style.setProperty('--bgimg','url('+u+')')}
   function show(n){idx=(n+ads.length)%ads.length;if(rot.offsetParent!==null){ld(ads[idx]);ld(ads[(idx+1)%ads.length])}ads.forEach(function(a,i){a.classList.toggle('is-on',i===idx);a.setAttribute('aria-hidden',i!==idx)});
@@ -332,7 +341,7 @@ function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(
     clones.forEach(function(cs,k){var m=(idx+k*4+3)%cs.length,guard=0;
       while(guard<cs.length&&usedG.indexOf(cs[m].getAttribute('data-group')||cs[m].getAttribute('data-vip'))>=0){m=(m+1)%cs.length;guard++}
       usedG.push(cs[m].getAttribute('data-group')||cs[m].getAttribute('data-vip'));
-      var vis=cs[m].parentNode.offsetParent!==null;if(vis){ld(cs[m]);ld(cs[(m+1)%cs.length])}
+      var vis=cs[m].parentNode.offsetParent!==null&&!cs[m].parentNode.parentNode.hasAttribute('data-far');if(vis){ld(cs[m]);ld(cs[(m+1)%cs.length])}
       cs.forEach(function(a,i){a.classList.toggle('is-on',i===m)})});
     if(dots)$$('button',dots).forEach(function(b,i){b.classList.toggle('is-on',i===idx)});t0=performance.now();
     var name=ads[idx].getAttribute('data-vip');if(!seenV[name]&&rot.offsetParent){seenV[name]=1;track('vip_ad_view',{vip:name,placement:'weekender_rail'})}}

@@ -42,6 +42,10 @@ function spread(arr,key,gap){var best=arr.slice();
     if(out.length===arr.length){var wrapOk=true,n=out.length;for(var a=0;a<n&&wrapOk;a++)for(var d=1;d<=gap;d++){if(n>gap*2&&key(out[a])===key(out[(a+d)%n])){wrapOk=false;break}}if(wrapOk)return out;best=out}}
   return best}
 function build(list,side){
+  /* competitors never share a page (owner 10/2/2026): one business per group per page view, picked at random */
+  var pg={};list.forEach(function(v){if(!v.group)return;(pg[v.group]=pg[v.group]||[]);if(pg[v.group].indexOf(v.name)<0)pg[v.group].push(v.name)});
+  Object.keys(pg).forEach(function(g){pg[g]=pg[g][Math.floor(Math.random()*pg[g].length)]});
+  list=list.filter(function(v){return !v.group||pg[v.group]===v.name});
   list=spread(list,function(v){return v.group||v.id},3);
   var gkey=function(v){return v.group||v.id};
   var st=document.createElement('style');st.textContent=css+'#vipx .vipx-unit+.vipx-unit{margin-top:18px;padding-top:16px;border-top:1px dashed #e3e9f0}';document.head.appendChild(st);
