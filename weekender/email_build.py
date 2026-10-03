@@ -77,6 +77,17 @@ def when(e):
     return "%s, %s %d &middot; %s" % (d.strftime("%a"), d.strftime("%b"), d.day, h)
 
 
+def biz_link(name):
+    """The business's own 3VL profile (same map the homepage Eat & Drink cards use)."""
+    try:
+        links = json.load(open(os.path.join(HERE, "biz_links.json"), encoding="utf-8"))
+    except Exception:
+        return ""
+    key = lambda s: re.sub(r"[^a-z0-9]", "", html.unescape(s).lower().replace("’", "'"))
+    want = key(name)
+    return next((u for k, u in links.items() if key(k) == want), "")
+
+
 def short(t, n=110):
     """One-line description: cut at a word boundary."""
     t = re.sub(r"\s+", " ", t or "").strip()
@@ -140,12 +151,13 @@ def main():
 
     o = []
     w = o.append
-    pre = "%s, plus %s and more happening in Three Village this weekend." % (lead["title"], " and ".join(e["title"] for e in picks if e is not lead)[:110])
+    others = [e["title"].split(":")[0] for e in picks if e is not lead][:2]   # whole titles only, never cut mid-word
+    pre = "%s, %s, local specials and new homes for sale this weekend in Three Village." % (lead["title"], " and ".join(others))
     w('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>This Week in Three Village</title></head>')
     w('<body style="margin:0;padding:0;background:%s">' % BG)
     w('<div style="display:none;max-height:0;overflow:hidden;opacity:0">%s</div>' % esc(pre))
     w('<table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:%s"><tr><td align="center" style="padding:18px 10px">' % BG)
-    w('<table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="width:100%%;max-width:600px;background:#f7f9fb;border-radius:18px;overflow:hidden">')
+    w('<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#f7f9fb;border-radius:18px;overflow:hidden">')
     # masthead
     w('<tr><td style="background:%s;padding:20px 28px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0"><tr>'
       '<td width="56"><img src="%s" width="48" height="48" alt="Three Village Local" style="display:block;border:0"></td>'
@@ -170,7 +182,7 @@ def main():
     w(section("Eat &amp; drink specials", "Local spots"))
     for i, s in enumerate(d["specials"][:2]):
         img = pic(s.get("ext") or s.get("img"), "eat-%d" % i, w=130, h=150)
-        w(row(img, esc(s["when"]), s["biz"], esc(s["title"]), short(s["desc"]), s.get("page") or SITE, "See the spot"))
+        w(row(img, esc(s["when"]), s["biz"], esc(s["title"]), short(s["desc"]), s.get("page") or biz_link(s["biz"]) or SITE, "See the spot"))
     # homes
     try:
         hm = json.load(open(os.path.join(HERE, "homes.json"), encoding="utf-8"))
