@@ -12,7 +12,7 @@ function go(){
   slot.appendChild(box);
   var nm=f.querySelector('input[name=first_name]');if(nm)nm.setAttribute('placeholder','First name');
   var em=f.querySelector('input[name=email]');if(em)em.setAttribute('placeholder','Email address');
-  var b=f.querySelector('[type=submit],button');if(b){if(b.tagName==='INPUT')b.value='Send me the weekly email';else b.textContent='Send me the weekly email'}
+  var b=f.querySelector('[type=submit],button');if(b){if(b.tagName==='INPUT')b.value='Sign me up';else b.textContent='Sign me up'}
   f.addEventListener('submit',function(){try{gtag('event','newsletter_signup',{source:'newsletter_page'})}catch(e){}});
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();

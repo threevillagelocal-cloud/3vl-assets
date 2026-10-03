@@ -93,20 +93,20 @@ def main():
         snap(1600, 700, page(1600, 700, ""), "hero-bg.jpg", q=72)
         # 4. share image 1200x630
         snap(1200, 630, page(1200, 630,
-             "<div style='position:absolute;left:70px;top:150px;width:640px'><span class='pill glass' style='font-size:24px;padding:10px 22px'>&#9993;&#65039; Free weekly email</span>"
+             "<div style='position:absolute;left:70px;top:150px;width:640px'><span class='pill glass' style='font-size:24px;padding:10px 22px'>&#9993;&#65039; Three Village Weekly &middot; free</span>"
              "<h1 style='font-size:70px;margin-top:26px'>The best of<br>Three Village<span>in your inbox</span></h1>"
              "<p class='sub' style='font-size:30px;margin:22px 0 0;text-wrap:balance'>Events, food specials and local news.<br>Every week, free.</p></div>"
              "<div class='ph' style='position:absolute;right:90px;top:40px;transform:rotate(0deg)'><div class='scr'></div></div>", phone_css(330, S)), "og.jpg")
         # 5. Instagram post 1080x1350
         snap(1080, 1350, page(1080, 1350,
-             "<div style='position:absolute;left:0;right:0;top:86px;text-align:center'><span class='pill glass' style='font-size:30px;padding:12px 28px'>&#9993;&#65039; Free weekly email</span>"
+             "<div style='position:absolute;left:0;right:0;top:86px;text-align:center'><span class='pill glass' style='font-size:30px;padding:12px 28px'>&#9993;&#65039; Three Village Weekly &middot; free</span>"
              "<h1 style='font-size:86px;margin-top:30px'>Never miss a weekend<span>in Three Village</span></h1></div>"
              "<div class='ph' style='position:absolute;left:50%;top:470px;transform:translateX(-50%)'><div class='scr'></div></div>"
              "<div style='position:absolute;left:0;right:0;bottom:70px;text-align:center'><span class='pill gold' style='font-size:38px;padding:20px 44px'>Sign up free &middot; link in bio</span></div>",
              phone_css(330, S) + ".ph{height:640px!important}"), "ig-post.jpg")
         # 6. Instagram story 1080x1920
         snap(1080, 1920, page(1080, 1920,
-             "<div style='position:absolute;left:0;right:0;top:250px;text-align:center'><span class='pill glass' style='font-size:34px;padding:14px 32px'>&#9993;&#65039; Free weekly email</span>"
+             "<div style='position:absolute;left:0;right:0;top:250px;text-align:center'><span class='pill glass' style='font-size:34px;padding:14px 32px'>&#9993;&#65039; Three Village Weekly &middot; free</span>"
              "<h1 style='font-size:100px;margin-top:36px'>The best of<br>Three Village<span>every week</span></h1>"
              "<p class='sub' style='font-size:40px;margin:30px 60px 0'>Events, food specials and local news<br>in one short email.</p></div>"
              "<div class='ph' style='position:absolute;left:50%;top:930px;transform:translateX(-50%)'><div class='scr'></div></div>"

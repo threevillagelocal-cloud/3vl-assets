@@ -35,9 +35,9 @@ def main():
     live = "--live" in sys.argv
     pg = call("GET", "list_seo/get?property=filename&property_value=newsletter").get("message")
     page = dict(seo_type="content", filename="newsletter", nickname="Newsletter sign-up",
-                title="Free Weekly Email: The Best of Three Village | Three Village Local", h1="",
-                meta_desc="Get what's happening in Setauket, Stony Brook and Port Jefferson every week: events, food specials, new businesses and homes for sale. Free.",
-                facebook_title="The best of Three Village, in your inbox every week",
+                title="Three Village Weekly: Free Email with the Best of Three Village | Three Village Local", h1="",
+                meta_desc="Three Village Weekly: get what's happening in Setauket, Stony Brook and Port Jefferson every week: events, food specials, new businesses and homes for sale. Free.",
+                facebook_title="Three Village Weekly: the best of Three Village in your inbox",
                 facebook_desc="Events, food specials and local news from Setauket, Stony Brook and Port Jefferson. Free weekly email.",
                 facebook_image="https://www.threevillagelocal.com/share/newsletter-og.jpg",
                 content="[widget=%s][form=newsletter_modal_signup]" % NAME, show_form="0" if live else "1")

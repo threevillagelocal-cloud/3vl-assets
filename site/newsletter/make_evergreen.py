@@ -27,7 +27,7 @@ h2{margin:0 0 12px;font-size:20px;color:#1b2f45}
 .card div{padding:12px 14px}.card b{display:block;font-size:16px;color:#1b2f45}.card span{font-size:13px;color:#5b6b7c}
 .homes{display:flex;gap:8px;align-items:center;background:#fff;border-radius:14px;padding:10px;border:1px solid #dde5ee}.homes img{width:58px;height:58px;border-radius:10px;object-fit:cover}
 .homes b{font-size:14px;color:#1b2f45;margin-left:4px}</style></head><body>
-<div class="m"><img src="LOGO"><div><b>Three Village <span>Local</span></b><i>Your week in Three Village</i></div></div>
+<div class="m"><img src="LOGO"><div><b>Three Village <span>Local</span></b><i>Three Village Weekly</i></div></div>
 <div class="hero"><div><span class="pill">THIS WEEK</span><h1>What&rsquo;s happening in Setauket, Stony Brook &amp; Port Jeff</h1></div></div>
 <div class="sec"><p class="k">THIS WEEKEND</p><h2>Top things to do</h2>
 <div class="row"><img src="WIMGpjharbor-720.webp"><div><b>By the harbor</b><span>Music, festivals and waterfront fun</span></div></div>

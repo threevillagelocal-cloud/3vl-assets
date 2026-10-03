@@ -166,7 +166,7 @@ def main():
     w = o.append
     others = [e["title"].split(":")[0] for e in picks if e is not lead][:2]   # whole titles only, never cut mid-word
     pre = "%s, %s, local specials and new homes for sale this weekend in Three Village." % (lead["title"], " and ".join(others))
-    w('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>This Week in Three Village</title></head>')
+    w('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Three Village Weekly</title></head>')
     w('<body style="margin:0;padding:0;background:%s">' % BG)
     w('<div style="display:none;max-height:0;overflow:hidden;opacity:0">%s</div>' % esc(pre))
     w('<table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:%s"><tr><td align="center" style="padding:18px 10px">' % BG)
@@ -175,7 +175,7 @@ def main():
     w('<tr><td style="background:%s;padding:20px 28px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0"><tr>'
       '<td width="56"><img src="%s" width="48" height="48" alt="Three Village Local" style="display:block;border:0"></td>'
       '<td style="padding-left:12px"><p style="margin:0;font:bold 20px %s;color:#fff">Three Village <span style="color:%s">Local</span></p>'
-      '<p style="margin:2px 0 0;font:13px %s;color:#c9d6e3">This Week in Three Village &middot; %s</p></td></tr></table></td></tr>' % (
+      '<p style="margin:2px 0 0;font:13px %s;color:#c9d6e3">Three Village Weekly &middot; %s</p></td></tr></table></td></tr>' % (
         NAVY, P.get(os.path.join(ASSETS, "badges", "3vl-logo-160.png"), "logo", w=48, logo=True), FONT, GOLD, FONT, rng))
     # hero
     hero = pic(lead["img"], "hero", w=600, h=320)
@@ -264,7 +264,7 @@ def main():
     name = "email-vip-%s.html" % VIP_ID if VIP_ID else "email.html"
     open(os.path.join(out, name), "w", encoding="utf-8").write(body)
     rest = [e["title"] for e in picks if e is not lead]
-    subj = "This weekend in Three Village: %s, %s and more" % (lead["title"], rest[0] if rest else "")
+    subj = "Three Village Weekly: %s, %s and more" % (lead["title"], rest[0] if rest else "")
     open(os.path.join(out, "subject.txt"), "w", encoding="utf-8").write(subj + "\n")
     print("%s %d KB, %d pictures | subject: %s" % (name, len(body) // 1024, P.n, subj))
 
