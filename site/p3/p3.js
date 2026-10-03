@@ -400,3 +400,11 @@ h.insertAdjacentElement('afterend',box);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();
 })();
+
+/* NEWSLETTER (owner 10/3/2026): BD's sidebar "Join Our Newsletter" box opened a pop-up; it now links to the /newsletter page */
+(function(){function nl(){[].forEach.call(document.querySelectorAll('.module.newsletter-sign-up-form'),function(m){if(m.getAttribute('data-nl'))return;m.setAttribute('data-nl','1');
+  var h=m.querySelector('h2');if(h)h.textContent='Three Village Weekly';
+  var a=m.querySelector('a[data-target="#newsletter_subscribe_modal"]');if(!a)return;a.removeAttribute('data-toggle');a.removeAttribute('data-target');a.setAttribute('href','/newsletter');a.innerHTML='Sign up free &rarr;';
+  if(!m.querySelector('.p3-nlsub')){var p=document.createElement('p');p.className='p3-nlsub';p.textContent='The best of Three Village in your inbox every'+String.fromCharCode(160)+'week.';a.parentNode.insertBefore(p,a)}
+  a.addEventListener('click',function(){try{gtag('event','newsletter_link_click',{from:'sidebar'})}catch(e){}})})}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',nl);else nl();window.addEventListener('load',nl)})();

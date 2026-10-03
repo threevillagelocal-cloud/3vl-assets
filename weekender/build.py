@@ -235,6 +235,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
           '<span class="wk-hmtx"><b>New homes for sale this week</b><small>%d local listings<i> in Setauket and Stony Brook</i>, updated every Friday</small></span>'
           '<span class="wk-hmbtn">See the listings &rarr;</span></a></div>' % (
             hm["url"], "".join('<img src="%s" alt="Home for sale in the Three Village area" width="80" height="60" loading="lazy">' % (base + t) for t in hm["thumbs"]), hm["count"]))
+    # NEWSLETTER strip (owner 10/3/2026): sign-ups go to the /newsletter page
+    w('<div class="wk-sec wk-homesw wk-nlw"><a class="wk-homes wk-nl" href="https://www.threevillagelocal.com/newsletter"><span class="wk-nlic" aria-hidden="true">&#9993;&#65039;</span>'
+      '<span class="wk-hmtx"><b>Get Three Village Weekly</b><small>The best of Three Village in your inbox every week, free</small></span>'
+      '<span class="wk-hmbtn">Sign up free &rarr;</span></a></div>')
 
     M["ad2"] = len(out)
     w('<div class="wk-adslot" data-slot="2"></div>')  # 9/28: moved up from between Spy Day and On the Radar

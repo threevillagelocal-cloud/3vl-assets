@@ -915,3 +915,6 @@ a.wk-guide{flex:1 0 100%;display:flex!important;align-items:center;justify-conte
 
 /* 10/3/2026 contrast (owner approved): link inside grey notes */
 .wk-note a{color:#3074ae}
+
+/* newsletter strip (10/3/2026) */
+.wk-nlw{padding-top:14px}.wk-nl .wk-nlic{flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:16px;background:#fff4e0;font-size:28px}
