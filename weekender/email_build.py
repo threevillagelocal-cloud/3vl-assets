@@ -77,6 +77,14 @@ def when(e):
     return "%s, %s %d &middot; %s" % (d.strftime("%a"), d.strftime("%b"), d.day, h)
 
 
+def short(t, n=110):
+    """One-line description: cut at a word boundary."""
+    t = re.sub(r"\s+", " ", t or "").strip()
+    if len(t) <= n:
+        return t
+    return t[:n].rsplit(" ", 1)[0].rstrip(",.;:") + "..."
+
+
 def btn(href, label, bg=GOLD, fg=NAVY):
     return ('<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-radius:999px;background:%s">'
             '<a href="%s" style="display:inline-block;padding:13px 24px;font:bold 15px %s;color:%s;text-decoration:none;border-radius:999px">%s</a>'
@@ -153,16 +161,16 @@ def main():
         btn(lead_href, (guide[2] if guide else "See the details") + " &rarr;")))
     # top things to do
     w(section("Top things to do", "This weekend"))
-    for i, e in enumerate(p for p in picks if p is not lead):
+    for i, e in enumerate([p for p in picks if p is not lead][:3]):   # short version (owner 10/2): 3 picks, one-line descriptions
         href = e.get("page") or SITE
         w(row(pic(e["img"], "pick-%d" % i, w=130, h=150), when(e), e["title"], "&#128205; " + esc(V.get(e["venue"], {}).get("name", "")) + (" &middot; " + esc(e["price"]) if e.get("price") else ""),
-              e["desc"], href, "Details"))
+              short(e["desc"]), href, "Details"))
     w('<tr><td align="center" style="padding:14px 28px 4px">%s</td></tr>' % btn(SITE + "/events-calendar", "See the full calendar &rarr;", bg=NAVY, fg="#fff"))
     # eat & drink
     w(section("Eat &amp; drink specials", "Local spots"))
-    for i, s in enumerate(d["specials"][:3]):
+    for i, s in enumerate(d["specials"][:2]):
         img = pic(s.get("ext") or s.get("img"), "eat-%d" % i, w=130, h=150)
-        w(row(img, esc(s["when"]), s["biz"], esc(s["title"]), s["desc"][:170] + ("..." if len(s["desc"]) > 170 else ""), s.get("page") or SITE, "See the spot"))
+        w(row(img, esc(s["when"]), s["biz"], esc(s["title"]), short(s["desc"]), s.get("page") or SITE, "See the spot"))
     # homes
     try:
         hm = json.load(open(os.path.join(HERE, "homes.json"), encoding="utf-8"))
@@ -179,7 +187,7 @@ def main():
     # featured businesses (VIP members, rotating weekly)
     vips = json.load(open(os.path.join(HERE, "vip.json"), encoding="utf-8"))
     wk = datetime.date.fromisoformat(ed).isocalendar()[1]
-    vips = sorted(vips, key=lambda v: (int(v["id"]) * 7919 + wk * 104729) % 1000)[:4]
+    vips = sorted(vips, key=lambda v: (int(v["id"]) * 7919 + wk * 104729) % 1000)[:2]
     w(section("Local businesses we love", "Featured"))
     cells = []
     for i, v in enumerate(vips):
@@ -191,31 +199,20 @@ def main():
                          LINE, ('<img src="%s" width="120" alt="%s" style="display:block;max-width:120px;height:auto;border:0">' % (logo, esc(v["name"]))) if logo else "",
                          FONT, NAVY, esc(v["name"]), FONT, esc(v.get("cat", "")), FONT, INK, esc(v.get("tag", "")), esc(v["url"]), FONT,
                          ('<br><a href="tel:%s" style="font:bold 14px %s;color:%s;text-decoration:none">&#128222; Call</a>' % (tel, FONT, NAVY)) if tel else ""))
-    w('<tr><td style="padding:4px 20px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0"><tr>%s</tr><tr>%s</tr></table></td></tr>' % ("".join(cells[:2]), "".join(cells[2:4])))
+    w('<tr><td style="padding:4px 20px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0"><tr>%s</tr></table></td></tr>' % "".join(cells[:2]))
     # stories
-    st = stories()
-    if st:
-        w(section("Latest local stories", "From the blog"))
-        cells = []
-        for i, p in enumerate(st):   # blog images are 1200x630 graphics: shown whole, side by side, title underneath
-            img = p["post_image"]
-            img = P.get(SITE + img if img.startswith("/") else img, "story-%d" % i, w=260, h=137)
-            href, title = SITE + "/" + p["post_filename"], html.unescape(p["post_title"])
-            cells.append('<td width="50%%" valign="top" style="padding:8px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:#fff;border:1px solid %s;border-radius:14px">'
-                         '<tr><td style="padding:0"><a href="%s"><img src="%s" width="260" alt="%s" style="display:block;width:100%%;height:auto;border-radius:14px 14px 0 0;border:0"></a></td></tr>'
-                         '<tr><td style="padding:12px 14px 14px"><p style="margin:0 0 8px;font:bold 15px/1.35 %s;color:%s"><a href="%s" style="color:%s;text-decoration:none">%s</a></p>'
-                         '<a href="%s" style="font:bold 14px %s;color:#0b63b6;text-decoration:none">Read the story &rarr;</a></td></tr></table></td>' % (
-                             LINE, esc(href), img, esc(title), FONT, NAVY, esc(href), NAVY, esc(title), esc(href), FONT))
-        w('<tr><td style="padding:4px 20px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0"><tr>%s</tr></table></td></tr>' % "".join(cells))
-    # for businesses + app
-    w('<tr><td style="padding:30px 28px 6px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:#fff;border:2px solid %s;border-radius:16px">'
-      '<tr><td style="padding:22px 22px 24px"><p style="margin:0 0 4px;font:bold 12px %s;letter-spacing:2px;text-transform:uppercase;color:#b36b00">For local businesses</p>'
-      '<p style="margin:0 0 8px;font:bold 20px/1.3 %s;color:%s">Have an event, a special or news?</p>'
-      '<p style="margin:0 0 16px;font:15px/1.55 %s;color:%s">Send it to us and we will share it with the neighborhood for free, on the website, the app and in this email.</p>%s</td></tr></table></td></tr>' % (
-        GOLD, FONT, FONT, NAVY, FONT, INK, btn(SITE + "/promotion", "Send it in &rarr;", bg=NAVY, fg="#fff")))
-    w('<tr><td align="center" style="padding:26px 28px 6px"><p style="margin:0 0 12px;font:bold 16px %s;color:%s">Everything in Three Village, on your phone</p>'
-      '<a href="%s/app"><img src="%s" width="150" alt="Download on the App Store" style="border:0;margin:0 4px"></a><a href="%s/app"><img src="%s" width="150" alt="Get it on Google Play" style="border:0;margin:0 4px"></a></td></tr>' % (
-        FONT, NAVY, SITE, P.get(os.path.join(ASSETS, "badges", "app-store-badge-v2.png"), "app-store", w=150, logo=True), SITE,
+    st = stories(1)
+    if st:   # short version: one story, as a single line
+        p = st[0]; href, title = SITE + "/" + p["post_filename"], html.unescape(p["post_title"])
+        w('<tr><td style="padding:26px 28px 4px"><p style="margin:0 0 4px;font:bold 12px %s;letter-spacing:2px;text-transform:uppercase;color:#b36b00">Latest local story</p>'
+          '<p style="margin:0;font:bold 18px/1.35 %s"><a href="%s" style="color:%s;text-decoration:none">%s &rarr;</a></p></td></tr>' % (FONT, FONT, esc(href), NAVY, esc(title)))
+    # for businesses + app: folded into one compact strip
+    w('<tr><td style="padding:26px 28px 4px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:#fff;border:1px solid %s;border-radius:14px">'
+      '<tr><td style="padding:16px 18px;font:15px/1.5 %s;color:%s"><b style="color:%s">Have an event, a special or news?</b> Send it to us and we will share it with the neighborhood. '
+      '<a href="%s/promotion" style="color:#0b63b6;font-weight:bold;text-decoration:none">Send it in &rarr;</a></td></tr></table></td></tr>' % (LINE, FONT, INK, NAVY, SITE))
+    w('<tr><td align="center" style="padding:18px 28px 0">'
+      '<a href="%s/app"><img src="%s" width="120" alt="Download on the App Store" style="border:0;margin:0 4px"></a><a href="%s/app"><img src="%s" width="120" alt="Get it on Google Play" style="border:0;margin:0 4px"></a></td></tr>' % (
+        SITE, P.get(os.path.join(ASSETS, "badges", "app-store-badge-v2.png"), "app-store", w=150, logo=True), SITE,
         P.get(os.path.join(ASSETS, "badges", "google-play-badge-v2.png"), "google-play", w=150, logo=True)))
     # footer
     w('<tr><td style="padding:26px 28px 28px;text-align:center"><p style="margin:0 0 6px;font:13px/1.6 %s;color:%s">You are getting this because you are a Three Village Local member business or you signed up for our newsletter.</p>'
