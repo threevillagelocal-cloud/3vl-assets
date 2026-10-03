@@ -1,10 +1,10 @@
 {
-"updated": "2026-10-03T12:27:53.485122+00:00",
+"updated": "2026-10-03T15:16:20.732675+00:00",
 "counts": {
 "Three Village Chamber": 4,
 "Port Jefferson Chamber": 43,
 "I Love Port Jeff": 3,
-"Town of Brookhaven (local)": 11,
+"Town of Brookhaven (local)": 10,
 "Village of Port Jefferson": 220,
 "Emma S. Clark Library": 203,
 "Stony Brook Village Center": 18,
@@ -219,27 +219,6 @@
 "page": "https://www.threevillagelocal.com/events/culper-spy-day",
 "pu": "",
 "rank": 2
-},
-{
-"id": "brookhaven-5096",
-"title": "Nature Walks",
-"start": "2026-10-03T10:00:00",
-"end": "2026-10-03T11:00:00",
-"allday": false,
-"venue": "West Meadow Beach",
-"addr": "West Meadow Beach - 100 Trustees Road Stony Brook NY 11790",
-"url": "https://www.brookhavenny.gov/calendar.aspx?EID=5096",
-"desc": "Nature Walks Join us for a guided walk along the beach trail. We will explore the unique ecosystem and learn about varying habitats as the seasons change. All programs are FREE. Registration is required. Please put program name and date in subject line of emai",
-"img": "",
-"src": "brookhaven",
-"tags": [
-"free",
-"kids",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/nature-walks"
 },
 {
 "id": "emmaclark-history-emma-s-clark-memorial-library-walking-tour-58126",
@@ -465,6 +444,27 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/long-island-during-the-american-revolution-free-lecture"
+},
+{
+"id": "brookhaven-5098",
+"title": "Nature Walks",
+"start": "2026-10-03T14:00:00",
+"end": "2026-10-03T15:00:00",
+"allday": false,
+"venue": "Cedar Beach",
+"addr": "Cedar Beach - 244 Harbor Beach Road Mt. Sinai NY 11766",
+"url": "https://www.brookhavenny.gov/calendar.aspx?EID=5098",
+"desc": "Nature Walks Join us for a guided walk along the beach trail. We will explore the unique ecosystem and learn about varying habitats as the seasons change. All programs are FREE. Registration is required. Please put program name and date in subject line of emai",
+"img": "",
+"src": "brookhaven",
+"tags": [
+"free",
+"kids",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/nature-walks-483"
 },
 {
 "id": "cur-treason",
@@ -1816,20 +1816,37 @@
 "closings": [],
 "specials": [
 {
-"id": "18593264023067367",
+"id": "17895179811609684",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Fall Cocktails & Mocktails Launch",
+"when": "Now available",
+"desc": "Try 5 new signature fall cocktails plus 2 mocktails at Tommy's Place in Port Jefferson.",
+"expires": "2026-10-17",
+"posted": "2026-10-03T00:24:01+0000",
+"url": "https://www.instagram.com/p/DeAw7HmDUy4/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17895179811609684.jpg",
+"page": "https://www.threevillagelocal.com/tommys-place"
+},
+{
+"id": "18073680299765743",
 "biz": "Black Pearl Seafood Chophouse",
 "ig": "blackpearlportjeff",
 "town": "Port Jefferson",
 "category": "Restaurant",
 "member": false,
-"title": "Poker Run Weekend with Live Music",
-"when": "Today-Sun, Oct. 4",
-"desc": "Live music with Tradewinds kicks off Poker Run weekend tonight through Sunday.",
-"expires": "2026-10-04",
-"posted": "2026-10-02T13:01:22+0000",
-"url": "https://www.instagram.com/p/Dd_iunrih9j/",
+"title": "Poker Run Weekend at Black Pearl",
+"when": "Sat, Oct. 3 - Sun, Oct. 4",
+"desc": "National Powerboat Association fleet weekend with live music, food, and drinks. Brunch Saturday at 1 PM, party Sunday at 6 PM.",
+"expires": "2026-10-05",
+"posted": "2026-10-03T13:01:35+0000",
+"url": "https://www.instagram.com/reel/DeCHh1MkdE0/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18593264023067367.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18073680299765743.jpg",
 "page": "https://www.threevillagelocal.com/black-pearl-seafood-chophouse"
 },
 {
@@ -1899,23 +1916,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17906645451480591.jpg",
 "page": "https://www.threevillagelocal.com/mirabelle-restaurant-tavern"
-},
-{
-"id": "18165160786489388",
-"biz": "Nantuckets",
-"ig": "nantucketspjefferson",
-"town": "Port Jefferson",
-"category": "Restaurant (Seafood)",
-"member": false,
-"title": "Happy Hour Drinks & Food",
-"when": "Every Friday · 3-6 PM",
-"desc": "Enjoy drinks and food specials at Nantuckets in Port Jefferson during Friday happy hour.",
-"expires": "2026-10-16",
-"posted": "2026-10-02T16:03:07+0000",
-"url": "https://www.instagram.com/p/Dd_3htDDK6n/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18165160786489388.jpg",
-"page": "https://www.threevillagelocal.com/nantuckets"
 }
 ],
 "eatOrder": [

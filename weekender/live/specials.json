@@ -1,21 +1,37 @@
 {
- "updated": "2026-10-02T16:49:07.795208+00:00",
+ "updated": "2026-10-03T15:14:08.819809+00:00",
  "specials": [
   {
-   "id": "18593264023067367",
+   "id": "17895179811609684",
+   "biz": "Tommy's Place",
+   "ig": "tommysplaceportjeff_",
+   "town": "Port Jefferson",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Fall Cocktails & Mocktails Launch",
+   "when": "Now available",
+   "desc": "Try 5 new signature fall cocktails plus 2 mocktails at Tommy's Place in Port Jefferson.",
+   "expires": "2026-10-17",
+   "posted": "2026-10-03T00:24:01+0000",
+   "url": "https://www.instagram.com/p/DeAw7HmDUy4/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+   "inset": "ig/p17895179811609684.jpg"
+  },
+  {
+   "id": "18073680299765743",
    "biz": "Black Pearl Seafood Chophouse",
    "ig": "blackpearlportjeff",
    "town": "Port Jefferson",
    "category": "Restaurant",
    "member": false,
-   "title": "Poker Run Weekend with Live Music",
-   "when": "Today-Sun, Oct. 4",
-   "desc": "Live music with Tradewinds kicks off Poker Run weekend tonight through Sunday.",
-   "expires": "2026-10-04",
-   "posted": "2026-10-02T13:01:22+0000",
-   "url": "https://www.instagram.com/p/Dd_iunrih9j/",
+   "title": "Poker Run Weekend at Black Pearl",
+   "when": "Sat, Oct. 3 - Sun, Oct. 4",
+   "desc": "National Powerboat Association fleet weekend with live music, food, and drinks. Brunch Saturday at 1 PM, party Sunday at 6 PM.",
+   "expires": "2026-10-05",
+   "posted": "2026-10-03T13:01:35+0000",
+   "url": "https://www.instagram.com/reel/DeCHh1MkdE0/",
    "img": "",
-   "inset": "ig/p18593264023067367.jpg"
+   "inset": "ig/p18073680299765743.jpg"
   },
   {
    "id": "18104967374225721",
@@ -80,40 +96,40 @@
    "url": "https://www.instagram.com/p/Dd6nyGAF3R8/",
    "img": "",
    "inset": "ig/p17906645451480591.jpg"
-  },
-  {
-   "id": "18165160786489388",
-   "biz": "Nantuckets",
-   "ig": "nantucketspjefferson",
-   "town": "Port Jefferson",
-   "category": "Restaurant (Seafood)",
-   "member": false,
-   "title": "Happy Hour Drinks & Food",
-   "when": "Every Friday · 3-6 PM",
-   "desc": "Enjoy drinks and food specials at Nantuckets in Port Jefferson during Friday happy hour.",
-   "expires": "2026-10-16",
-   "posted": "2026-10-02T16:03:07+0000",
-   "url": "https://www.instagram.com/p/Dd_3htDDK6n/",
-   "img": "",
-   "inset": "ig/p18165160786489388.jpg"
   }
  ],
  "candidates": [
   {
-   "id": "18593264023067367",
+   "id": "17895179811609684",
+   "biz": "Tommy's Place",
+   "ig": "tommysplaceportjeff_",
+   "town": "Port Jefferson",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Fall Cocktails & Mocktails Launch",
+   "when": "Now available",
+   "desc": "Try 5 new signature fall cocktails plus 2 mocktails at Tommy's Place in Port Jefferson.",
+   "expires": "2026-10-17",
+   "posted": "2026-10-03T00:24:01+0000",
+   "url": "https://www.instagram.com/p/DeAw7HmDUy4/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+   "inset": "ig/p17895179811609684.jpg"
+  },
+  {
+   "id": "18073680299765743",
    "biz": "Black Pearl Seafood Chophouse",
    "ig": "blackpearlportjeff",
    "town": "Port Jefferson",
    "category": "Restaurant",
    "member": false,
-   "title": "Poker Run Weekend with Live Music",
-   "when": "Today-Sun, Oct. 4",
-   "desc": "Live music with Tradewinds kicks off Poker Run weekend tonight through Sunday.",
-   "expires": "2026-10-04",
-   "posted": "2026-10-02T13:01:22+0000",
-   "url": "https://www.instagram.com/p/Dd_iunrih9j/",
+   "title": "Poker Run Weekend at Black Pearl",
+   "when": "Sat, Oct. 3 - Sun, Oct. 4",
+   "desc": "National Powerboat Association fleet weekend with live music, food, and drinks. Brunch Saturday at 1 PM, party Sunday at 6 PM.",
+   "expires": "2026-10-05",
+   "posted": "2026-10-03T13:01:35+0000",
+   "url": "https://www.instagram.com/reel/DeCHh1MkdE0/",
    "img": "",
-   "inset": "ig/p18593264023067367.jpg"
+   "inset": "ig/p18073680299765743.jpg"
   },
   {
    "id": "18104967374225721",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/p/Dd6nyGAF3R8/",
    "img": "",
    "inset": "ig/p17906645451480591.jpg"
-  },
-  {
-   "id": "18165160786489388",
-   "biz": "Nantuckets",
-   "ig": "nantucketspjefferson",
-   "town": "Port Jefferson",
-   "category": "Restaurant (Seafood)",
-   "member": false,
-   "title": "Happy Hour Drinks & Food",
-   "when": "Every Friday · 3-6 PM",
-   "desc": "Enjoy drinks and food specials at Nantuckets in Port Jefferson during Friday happy hour.",
-   "expires": "2026-10-16",
-   "posted": "2026-10-02T16:03:07+0000",
-   "url": "https://www.instagram.com/p/Dd_3htDDK6n/",
-   "img": "",
-   "inset": "ig/p18165160786489388.jpg"
   }
  ]
 }

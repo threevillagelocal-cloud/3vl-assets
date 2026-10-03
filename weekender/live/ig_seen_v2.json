@@ -1666,5 +1666,117 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-02T15:10:48+0000"
+},
+"17895179811609684": {
+"special": true,
+"title": "Fall Cocktails & Mocktails Launch",
+"when": "Now available",
+"desc": "Try 5 new signature fall cocktails plus 2 mocktails at Tommy's Place in Port Jefferson.",
+"expires": "2026-10-17",
+"_ts": "2026-10-03T00:24:01+0000"
+},
+"18340988335248081": {
+"special": false,
+"title": "Culpers 1778 Steaks & Cocktails",
+"when": "Tonight",
+"desc": "Join Culpers 1778 for steaks, cocktails and dinner after exploring Setauket history.",
+"expires": "2026-10-03",
+"_ts": "2026-10-03T15:13:50+0000"
+},
+"18103635809006054": {
+"special": false,
+"title": "Hirosaki - Stony Brook Japanese Restaurant",
+"when": "Ongoing",
+"desc": "Fresh Japanese dishes, live hibachi, cocktails, and happy hour at Stony Brook's favorite destination.",
+"expires": "2026-10-17",
+"_ts": "2026-10-02T21:00:43+0000"
+},
+"17908140729484404": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-02T21:39:58+0000"
+},
+"17934646269401040": {
+"special": false,
+"title": "Robinson's Tea Room New Menu",
+"when": "Starting this week",
+"desc": "New menu and tea flavors launching this week at Robinson's Tea Room in Stony Brook.",
+"expires": "2026-10-03",
+"_ts": "2026-10-02T21:04:38+0000"
+},
+"18130813969781684": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-03T15:10:37+0000"
+},
+"18342346558255021": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-02T17:36:19+0000"
+},
+"17969593557189591": {
+"special": true,
+"title": "End of Season Sale at Ralph's",
+"when": "Until Oct. 25",
+"desc": "End of season sale on ice cream and Italian ices while supplies last before closing.",
+"expires": "2026-10-25",
+"_ts": "2026-10-02T18:26:26+0000"
+},
+"18097974644421686": {
+"special": false,
+"title": "Bone-In Ribeye",
+"when": "Ongoing",
+"desc": "Rich flavor and perfect sear ribeye steak available at PJ Lobster House.",
+"expires": "2026-10-17",
+"_ts": "2026-10-02T17:07:08+0000"
+},
+"18073680299765743": {
+"special": true,
+"title": "Poker Run Weekend at Black Pearl",
+"when": "Sat, Oct. 3 - Sun, Oct. 4",
+"desc": "National Powerboat Association fleet weekend with live music, food, and drinks. Brunch Saturday at 1 PM, party Sunday at 6 PM.",
+"expires": "2026-10-05",
+"_ts": "2026-10-03T13:01:35+0000"
+},
+"17965655829193953": {
+"special": true,
+"title": "Live Music & DJ Night",
+"when": "Fri, Oct. 3 · 6 PM onwards",
+"desc": "Tradewinds live 6-9 PM, then DJ Cleveland at 9 PM for Powerboat Poker Run Rally weekend.",
+"expires": "2026-10-03",
+"_ts": "2026-10-02T16:53:33+0000"
+},
+"18145781947600801": {
+"special": false,
+"title": "The Whiskey Barrel - Friday Night",
+"when": "Fri, Oct. 3",
+"desc": "Cold drinks and great food to kick off your weekend at The Whiskey Barrel.",
+"expires": "2026-10-03",
+"_ts": "2026-10-02T19:11:00+0000"
+},
+"17959771527224516": {
+"special": true,
+"title": "Bananas Foster French Roast Brunch",
+"when": "Sat, Oct. 5 · 11 AM–4 PM",
+"desc": "Bananas Foster French Roast topped with coconut syrup and coconut flakes this Saturday brunch.",
+"expires": "2026-10-05",
+"_ts": "2026-10-03T12:01:38+0000"
+},
+"18129572494814971": {
+"special": true,
+"title": "Witches & Warlocks Bar Crawl",
+"when": "Sat, Oct. 10 · 5-10 PM",
+"desc": "Join 13 stops across Port Jeff. $55 includes 5 drink tokens. 21+ with valid ID.",
+"expires": "2026-10-10",
+"_ts": "2026-10-02T17:01:55+0000"
 }
 }
