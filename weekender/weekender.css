@@ -78,7 +78,7 @@
 /* ---------- TAGS / BUTTONS ---------- */
 .wk-tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px}
 .wk-tag{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:#eef2f6;color:#3b4a5c}
-.wk-tag[data-t=free]{background:#dcf2ec;color:#0d7760}.wk-tag[data-t=kids]{background:#fdf1dc;color:#8a5a12}.wk-tag[data-t=outdoor]{background:#dcecf9;color:#006fbb}
+.wk-tag[data-t=free]{background:#dcf2ec;color:#0d7760}.wk-tag[data-t=kids]{background:#fdf1dc;color:#8a5a12}.wk-tag[data-t=outdoor]{background:#dcecf9;color:#006bb4}
 .wk-tag[data-t=music]{background:#e0ecf8;color:#205081}.wk-tag[data-t=history]{background:#f9e3e2;color:#b23b37}.wk-tag[data-t=food]{background:#fdf1dc;color:#8a5a12}.wk-tag[data-t=stage]{background:#e6ebf1;color:#1b2f45}
 .wk-price{font-size:12px;font-weight:800;color:var(--ink);margin-left:2px}
 .wk-wxchip{font-size:11px;font-weight:800;border-radius:999px}
