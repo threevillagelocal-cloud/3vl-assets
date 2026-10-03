@@ -19,7 +19,8 @@ FILES = [   # (source in 3vl-assets, destination under 3vl-share/live)
     ("site/p3/p3.css", "p3/p3.css"),
     ("site/p3/smartsearch.js", "p3/smartsearch.js"),
     ("site/p3/evpage.js", "p3/evpage.js"),             # event pages + next-step block (loads evpage.css itself)
-    ("site/p3/evpage.css", "p3/evpage.css"),   # search box; needs p3.js (window.tvlSS)
+    ("site/p3/evpage.css", "p3/evpage.css"),
+    ("site/p3/dash.js", "p3/dash.js"),                 # member dashboard restyle (loaded by p3.js on /account/home)   # search box; needs p3.js (window.tvlSS)
     ("site/p3/vip_meta.json", "p3/vip_meta.json"),
     ("site/p3/img/cafe-hero.jpg", "p3/img/cafe-hero.jpg"),
     ("site/p3/img/village-hero.jpg", "p3/img/village-hero.jpg"),
