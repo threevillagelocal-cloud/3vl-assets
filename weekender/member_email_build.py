@@ -6,7 +6,7 @@ made for them), and the Smart Publisher perk for Getting Noticed and VIP. Not a 
 reads  <private dir>/recipients.json (addresses: PRIVATE, never in this repo) and search_picks.json,
        pictures in 3vl-share/email/<name>/ (member_shots.py, member_visuals.py)
 writes <private dir>/out/<id>.html + <id>.subject.txt   (nothing is sent from here)"""
-import html, json, os, sys
+import html, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.dirname(HERE)
@@ -64,12 +64,12 @@ def build(r, pick, has_banner, base, has_search):
     # intro
     hi = ("Hi %s," % first) if first else "Hello,"
     rows.append('<tr><td style="background:%s;padding:30px 28px 8px">%s'
-                '<h1 style="margin:0 0 14px;font:bold 31px/1.15 %s;color:#fff">The new Three Village Local is here</h1>%s%s</td></tr>'
+                '<h1 style="margin:0 0 14px;font:bold 31px/1.15 %s;color:#fff">The new Three Village Local website and app are here</h1>%s%s</td></tr>'
                 % (NAVY2, kicker("Inside look for " + co, GOLD), FONT,
                    p(hi, 16, "#dbe4ee", 10),
-                   p("We rebuilt Three Village Local from the ground up: a premium new design on every page, a much smarter search, and new ways "
-                     "to put your business in front of neighbors. You are one of the businesses that make this site what it is, so here is "
-                     "a first look at what it means for <b style=\"color:#fff\">%s</b>." % co, 16, "#dbe4ee", 18)))
+                   p("We rebuilt the Three Village Local website and app from the ground up: a premium new design on every page, a much smarter "
+                     "search, and new ways to put your business in front of neighbors. You are one of the businesses that make Three Village Local "
+                     "what it is, so here is a first look at what it means for <b style=\"color:#fff\">%s</b>." % co, 16, "#dbe4ee", 18)))
     rows.append('<tr><td style="background:%s;padding:0 28px 30px"><a href="%s/"><img src="%shero.jpg" width="544" alt="The new Three Village Local on a computer and a phone" '
                 'style="display:block;width:100%%;height:auto;border-radius:14px;border:0"></a>'
                 '<p style="margin:14px 0 0;font:14px/1.5 %s;color:#aebdcc">Faster pages, a cleaner look, and it works beautifully on phones.</p></td></tr>'
@@ -144,13 +144,16 @@ def build(r, pick, has_banner, base, has_search):
                 % (p("Questions, or want help with your listing? Just reply to this email.", 14, NAVY, 10),
                    p("You are getting this because %s is a member of Three Village Local. Prefer not to get member updates? Reply &ldquo;unsubscribe&rdquo; and we will take you off." % co, 13, MUT, 6),
                    p(MAILING_ADDRESS + ' &middot; <a href="%s" style="color:%s">threevillagelocal.com</a>' % (SITE, MUT), 13, MUT, 0)))
-    pre = "A first look at the new Three Village Local: smart search, a premium redesign and new member perks for %s." % co
+    pre = "A first look at the new Three Village Local website and app: smart search, a premium redesign and new member perks for %s." % co
     body = ('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Member update</title></head>'
             '<body style="margin:0;padding:0;background:%s"><div style="display:none;max-height:0;overflow:hidden;opacity:0">%s</div>'
             '<table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:%s"><tr><td align="center" style="padding:18px 10px">'
             '<table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="width:100%%;max-width:600px;background:#f7f9fb;border-radius:18px;overflow:hidden">'
             '%s</table></td></tr></table></body></html>') % (BG, pre, BG, "".join(rows))
-    subject = "%s: a first look at the new Three Village Local" % html.unescape(co)
+    # also set the old bgcolor attribute wherever a cell/table has a background, so light text never lands on white
+    # in mail apps that drop CSS backgrounds
+    body = re.sub(r'<(td|table)([^>]*?) style="background:(#[0-9a-fA-F]{6})', r'<\1\2 bgcolor="\3" style="background:\3', body)
+    subject = "%s: a first look at the new Three Village Local website and app" % html.unescape(co)
     return body, subject
 
 

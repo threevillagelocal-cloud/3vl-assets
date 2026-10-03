@@ -10,7 +10,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.dirname(os.path.dirname(HERE))
 SHARE = os.path.join(os.path.dirname(ASSETS), "3vl-share")
 sys.path.insert(0, os.path.join(ASSETS, "weekender"))
-from email_build import esc, btn, FONT, NAVY, NAVY2, GOLD, INK, MUT, LINE, BG, MAILING_ADDRESS
+from email_build import solid_bg, esc, btn, FONT, NAVY, NAVY2, GOLD, INK, MUT, LINE, BG, MAILING_ADDRESS
 from member_email_build import p, kicker, h2, short_name
 
 SITE = "https://www.threevillagelocal.com"
@@ -78,6 +78,7 @@ def build(r, claim, base):
             '<table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:%s"><tr><td align="center" style="padding:18px 10px">'
             '<table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="width:100%%;max-width:600px;background:#f7f9fb;border-radius:18px;overflow:hidden">'
             '%s</table></td></tr></table></body></html>') % (BG, pre, BG, "".join(rows))
+    body = solid_bg(body)
     subject = "%s, your page on Three Village Local is ready" % html.unescape(co)
     return body, subject
 

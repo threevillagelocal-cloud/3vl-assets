@@ -19,6 +19,12 @@ FONT = "'Helvetica Neue',Helvetica,Arial,sans-serif"
 MAILING_ADDRESS = "Three Village Local &middot; Setauket, NY 11733"   # TODO owner: a full postal address is required by law in marketing email
 
 
+def solid_bg(body):
+    """Also set the old bgcolor attribute wherever a cell/table has a CSS background, so light text never lands on white
+    in mail apps that drop CSS backgrounds (owner saw white-on-white 10/3/2026)."""
+    return re.sub(r'<(td|table)([^>]*?) style="background:(#[0-9a-fA-F]{6})', r'<\1\2 bgcolor="\3" style="background:\3', body)
+
+
 def esc(s):
     return html.escape(str(s or ""), quote=True)
 
@@ -252,7 +258,7 @@ def main():
     w('<tr><td style="padding:26px 28px 28px;text-align:center"><p style="margin:0 0 6px;font:13px/1.6 %s;color:%s">You are getting this because you are a Three Village Local member business or you signed up for our newsletter.</p>'
       '<p style="margin:0;font:13px/1.6 %s;color:%s">%s &middot; <a href="%s" style="color:%s">threevillagelocal.com</a></p></td></tr>' % (FONT, MUT, FONT, MUT, MAILING_ADDRESS, SITE, MUT))
     w('</table></td></tr></table></body></html>')
-    body = "".join(o)
+    body = solid_bg("".join(o))
     out = os.path.join(HERE, "email", ed)
     os.makedirs(out, exist_ok=True)
     name = "email-vip-%s.html" % VIP_ID if VIP_ID else "email.html"
