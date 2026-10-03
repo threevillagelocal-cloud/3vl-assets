@@ -11,6 +11,12 @@ function go(){
   var vip=plan==='1'||plan==='8',gn=plan==='2';
   var q=new URLSearchParams(location.search),ref=q.get('ref'),act=q.get('do');
   function show(id){['sp-new','sp-review','sp-lock'].forEach(function(x){var e=document.getElementById(x);if(e)e.hidden=(x!==id)})}
+  /* option chips: BD's logged-in styles position the native radios absolutely (owner screenshot 10/3), so hide them with
+     inline !important (beats any stylesheet) and let the whole label act as the pill */
+  [].forEach.call(document.querySelectorAll('form .radio input[type=radio]'),function(i){if(!i.form||(i.form!==fNew&&i.form!==fRev))return;
+    [['position','absolute'],['opacity','0'],['width','1px'],['height','1px'],['margin','0'],['padding','0'],['border','0'],['left','0'],['top','0'],['pointer-events','none']].forEach(function(p){i.style.setProperty(p[0],p[1],'important')});
+    var l=i.closest('label');if(l){l.classList.add('sp-chip');l.style.setProperty('position','relative','important')}
+    var d=i.closest('.radio');if(d){d.style.setProperty('display','inline-block','important');d.style.setProperty('margin','0 8px 8px 0','important')}});
   if(fRev){document.getElementById('sp-reviewslot').appendChild(fRev)}
   if(fNew){document.getElementById('sp-formslot').appendChild(fNew)}
   if(ref&&fRev){

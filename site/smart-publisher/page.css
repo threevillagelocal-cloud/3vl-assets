@@ -1,15 +1,15 @@
 #sp3{--navy:#1b2f45;--navy2:#0f1f31;--gold:#f2a93b;--ink:#1d2b3a;--mut:#5b6b7c;--line:#dde5ee;--blue:#006fbb;max-width:980px;margin:10px auto 60px;font-family:'Radio Canada','tvl-rc',system-ui,sans-serif;color:var(--ink)}
 #sp3 *{box-sizing:border-box}
-#sp3 .sp-hero{border-radius:22px;padding:34px 30px;background:radial-gradient(circle at 88% 0,rgba(242,169,59,.3),transparent 45%),linear-gradient(140deg,#1b2f45,#0f1f31);color:#fff}
+#sp3 .sp-hero{position:relative;overflow:hidden;border-radius:22px;min-height:450px;padding:58px 44px;display:flex;align-items:center;background:#0f1f31 url('https://threevillagelocal-cloud.github.io/3vl-share/site/smart-publisher/hero-wide.jpg') center/cover no-repeat;color:#fff;box-shadow:0 18px 40px rgba(15,31,49,.18)}#sp3 .sp-htx{max-width:50%;position:relative;z-index:1}#sp3 .sp-ipad{display:none}
 #sp3 .sp-k{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
 #sp3 .sp-hero h1{font-size:38px;line-height:1.12;margin:0 0 10px;color:#fff;font-weight:800}
 #sp3 .sp-hero h1 span{color:var(--gold)}
-#sp3 .sp-lead{font-size:18px;line-height:1.5;color:#d6e1ec;margin:0 0 18px;max-width:640px}
-#sp3 .sp-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-#sp3 .sp-st{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px}
+#sp3 .sp-lead{font-size:18px;line-height:1.5;color:#d6e1ec;margin:0;max-width:640px}
+#sp3 .sp-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 0}
+#sp3 .sp-st{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 6px 18px rgba(27,47,69,.05)}
 #sp3 .sp-st em{display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--gold);color:var(--navy);font-style:normal;font-weight:700;align-items:center;justify-content:center;margin-bottom:8px}
-#sp3 .sp-st b{display:block;font-size:16px;margin-bottom:4px;color:#fff}
-#sp3 .sp-st span{font-size:14px;color:#cfdbe7;line-height:1.4}
+#sp3 .sp-st b{display:block;font-size:16px;margin-bottom:4px;color:var(--navy)}
+#sp3 .sp-st span{font-size:14px;color:var(--mut);line-height:1.4}
 #sp3 .sp-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;margin:18px 0 0;box-shadow:0 8px 24px rgba(27,47,69,.06)}
 #sp3 .sp-card[hidden]{display:none}
 #sp3 .sp-card h2{font-size:24px;margin:0 0 4px;color:var(--navy);font-weight:800}
@@ -26,6 +26,11 @@
 #sp3 form .radio label,#sp3 form .radio-inline label,#sp3 form label.radio-inline{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--line);border-radius:12px;padding:10px 14px;font-weight:600;cursor:pointer;margin:0}
 #sp3 form.fv-form{margin:0!important;width:100%!important;max-width:none!important}
 #sp3 form .radio input[type=radio]{position:static!important;flex:0 0 auto;width:18px!important;height:18px!important;margin:0!important;padding:0!important;box-shadow:none!important;border:0!important;accent-color:#f2a93b}
+#sp3 form label.sp-chip{display:inline-flex!important;align-items:center;gap:8px;min-height:44px;padding:10px 16px!important;margin:0!important;border:2px solid #dde5ee!important;border-radius:999px!important;background:#fff;font-weight:600!important;font-size:15px!important;color:#1b2f45!important;cursor:pointer;transition:border-color .15s,background .15s}
+#sp3 form label.sp-chip:before{content:"";width:16px;height:16px;border-radius:50%;border:2px solid #b8c4d0;box-sizing:border-box;flex:0 0 auto}
+#sp3 form label.sp-chip:hover{border-color:#f2c46f!important}
+#sp3 form label.sp-chip.sp-on{border-color:#f2a93b!important;background:#fff8ea}
+#sp3 form label.sp-chip.sp-on:before{border:5px solid #f2a93b}
 #sp3 form .sp-on{border-color:var(--gold)!important;background:#fff8ea}
 #sp3 form input[type=file]{padding:14px;border:2px dashed #cfd9e3;border-radius:14px;width:100%;background:#fafcfe}
 #sp3 form .sp-go,#sp3 form .btn-primary{width:100%;font:700 18px 'Radio Canada','tvl-rc',sans-serif;padding:16px;border:0;border-radius:14px;background:var(--gold)!important;color:var(--navy)!important;box-shadow:0 10px 24px rgba(242,169,59,.35)}
@@ -44,3 +49,4 @@
 #sp3 .sp-hide{display:none!important}
 @media(max-width:700px){#sp3 .sp-steps{grid-template-columns:1fr 1fr}#sp3 .sp-hero{padding:26px 20px}#sp3 .sp-hero h1{font-size:30px}#sp3 .sp-card{padding:20px}}
 #sp3 .sp-btns{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 0}#sp3 .sp-up{background:#f2a93b;color:#1b2f45;box-shadow:0 10px 24px rgba(242,169,59,.35)}#sp3 .sp-ghost{background:#fff;color:#1b2f45;border:1px solid #dde5ee}
+@media(max-width:760px){#sp3 .sp-hero{display:block;min-height:0;padding:30px 22px 0;background-image:url('https://threevillagelocal-cloud.github.io/3vl-share/site/smart-publisher/hero-bg.jpg')}#sp3 .sp-htx{max-width:none}#sp3 .sp-ipad{display:block;width:100%;max-width:420px;height:auto;margin:18px auto -6px}}
