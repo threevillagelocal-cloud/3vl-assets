@@ -199,7 +199,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
         nours = "threevillagelocal.com" in npage or npage.startswith("/")
         w('<article class="wk-pick wk-radar wk-rv" data-href="%s"><div class="wk-pimg">%s<span class="wk-pnum wk-soon">Coming up</span></div>'
           '<div class="wk-pbody"><p class="wk-pwhen">%s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pdesc">%s</p>%s</div>%s</article>' % (
-            esc(npage), ('<img src="%s" alt="%s" loading="lazy" width="720" height="480">' % (img(n["img"], True), esc(n["title"]))) if n.get("img") else "",
+            esc(npage), ('<img %s alt="%s" loading="lazy" width="720" height="480">' % (rset(n["img"], "280px"), esc(n["title"]))) if n.get("img") else "",
             esc(n["when"]), '<a href="%s"%s>%s</a>' % (esc(npage), "" if nours else ' target="_blank" rel="noopener"', esc(n["title"])),
             esc(n["desc"]), ('<div class="wk-acts"><a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a></div>' % esc(n["url"])) if n.get("url") else "",
             ('<p class="wk-icred">%s</p>' % esc(n["credit"])) if n.get("credit") else ""))
