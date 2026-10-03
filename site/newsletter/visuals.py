@@ -104,6 +104,24 @@ def main():
              "<div class='ph' style='position:absolute;left:50%;top:470px;transform:translateX(-50%)'><div class='scr'></div></div>"
              "<div style='position:absolute;left:0;right:0;bottom:70px;text-align:center'><span class='pill gold' style='font-size:38px;padding:20px 44px'>Sign up free &middot; link in bio</span></div>",
              phone_css(330, S) + ".ph{height:640px!important}"), "ig-post.jpg")
+        # 5b. Instagram post with the benefits (owner 10/3/2026: "not the typical newsletter" copy)
+        item = ("<div class='bn'><span class='bi'>%s</span><div><b>%s</b><i>%s</i></div></div>")
+        items = "".join(item % x for x in (
+            ("&#127881;", "This weekend&rsquo;s best events", "Hand-picked from 10 local sources"),
+            ("&#127869;&#65039;", "Food specials you never see", "Pulled from local restaurants&rsquo; posts"),
+            ("&#127969;", "The newest homes for sale", "In the Three Village school district"),
+            ("&#11088;", "What&rsquo;s opening in town", "New spots, new menus, local stories")))
+        snap(1080, 1350, page(1080, 1350,
+             "<div style='position:absolute;left:80px;right:80px;top:84px'><span class='pill glass' style='font-size:30px;padding:12px 28px'>&#9993;&#65039; Three Village Weekly &middot; free</span>"
+             "<h1 style='font-size:82px;margin-top:34px'>Stop finding out<br>on Sunday night.<span>Get it first, every week.</span></h1></div>"
+             "<div style='position:absolute;left:80px;right:80px;top:520px'>" + items + "</div>"
+             "<div style='position:absolute;left:0;right:0;bottom:64px;text-align:center'>"
+             "<p class='sub' style='font-size:30px;margin:0 0 22px'>Free &middot; 2-minute read &middot; made in Three&nbsp;Village</p>"
+             "<span class='pill gold' style='font-size:40px;padding:22px 52px;white-space:nowrap'>Sign up free &middot; link in bio</span></div>",
+             ".bn{display:flex;align-items:center;gap:28px;padding:20px 30px;margin:0 0 16px;border-radius:26px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}"
+             ".bi{flex:0 0 84px;height:84px;border-radius:22px;background:rgba(242,169,59,.18);display:flex;align-items:center;justify-content:center;font-size:44px}"
+             ".bn b{display:block;color:#fff;font-size:42px;font-weight:800;line-height:1.15}.bn i{display:block;font-style:normal;color:#cfd9e4;font-size:30px;margin-top:6px}"),
+             "ig-benefits.jpg")
         # 6. Instagram story 1080x1920
         snap(1080, 1920, page(1080, 1920,
              "<div style='position:absolute;left:0;right:0;top:250px;text-align:center'><span class='pill glass' style='font-size:34px;padding:14px 32px'>&#9993;&#65039; Three Village Weekly &middot; free</span>"
