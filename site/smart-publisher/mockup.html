@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3VL Smart Publisher (preview)</title>
+<link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1b2f45;--navy2:#0f1f31;--gold:#f2a93b;--ink:#1d2b3a;--mut:#5b6b7c;--line:#dde5ee;--blue:#006fbb}
+*{box-sizing:border-box}body{margin:0;background:#eef2f6;font-family:'Radio Canada',system-ui,sans-serif;color:var(--ink)}
+.wrap{max-width:980px;margin:0 auto;padding:24px 16px 60px}
+.lab{font:700 12px/1 'Radio Canada';letter-spacing:.14em;text-transform:uppercase;color:#8a96a3;margin:34px 0 10px}
+/* dashboard cards */
+.dc{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.c{position:relative;overflow:hidden;border-radius:20px;padding:20px;background:#fff;border:1px solid #e3e9f0;box-shadow:0 10px 28px rgba(27,47,69,.08)}
+.c.sp{background:linear-gradient(140deg,#1b2f45,#0f1f31);color:#fff;border:0}
+.c.sp:after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(242,169,59,.35),transparent 70%)}
+.ic{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:14px;font-size:22px;margin-bottom:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
+.k{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+.c b{display:block;font-size:21px;line-height:1.2;margin:0 0 6px}
+.c p{font-size:16px;line-height:1.45;margin:0 0 14px;color:#55636f}.c.sp p{color:#cfdbe7}
+.meter{display:flex;align-items:center;gap:10px;font-size:14px;color:#cfdbe7;margin:0 0 14px}.meter i{flex:1;height:8px;border-radius:9px;background:rgba(255,255,255,.15);overflow:hidden}.meter i:before{content:"";display:block;height:100%;width:25%;background:var(--gold);border-radius:9px}
+.btn{display:inline-block;font-size:16px;font-weight:700;padding:12px 20px;border-radius:12px;text-decoration:none;background:var(--gold);color:var(--navy)}
+.btn.blue{background:var(--blue);color:#fff}.btn.ghost{background:#fff;color:var(--navy);border:1px solid var(--line)}
+.c.lock{background:#f6f8fa}
+.c.lock .ic{background:#fff;border-color:var(--line)}
+.c.lock .k{color:#8a96a3}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:#fff3dc;color:#9a5d00;margin:0 0 10px}
+.small{font-size:14px;color:var(--mut);margin-top:10px}.small a{color:var(--blue);font-weight:700}
+/* portal page */
+.hero{border-radius:22px;padding:34px 30px;background:radial-gradient(circle at 88% 0,rgba(242,169,59,.3),transparent 45%),linear-gradient(140deg,#1b2f45,#0f1f31);color:#fff}
+.hero .k{margin-bottom:10px}.hero h1{font-size:38px;line-height:1.12;margin:0 0 10px}.hero h1 span{color:var(--gold)}.hero p{font-size:18px;line-height:1.5;color:#d6e1ec;margin:0 0 18px;max-width:640px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 0}
+.st{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px}.st em{display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--gold);color:var(--navy);font-style:normal;font-weight:700;align-items:center;justify-content:center;margin-bottom:8px}.st b{display:block;font-size:16px;margin-bottom:4px}.st span{font-size:14px;color:#cfdbe7;line-height:1.4}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;margin:18px 0 0;box-shadow:0 8px 24px rgba(27,47,69,.06)}
+.card h2{font-size:24px;margin:0 0 4px;color:var(--navy)}.card .sub{color:var(--mut);margin:0 0 18px}
+.usage{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#f6f9fc;border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:0 0 20px;font-size:15px}.usage b{color:var(--navy)}
+.types{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 0 18px}
+.t{border:2px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;font-weight:700;font-size:15px;color:var(--navy);cursor:pointer}.t span{display:block;font-size:24px;margin-bottom:6px}.t.on{border-color:var(--gold);background:#fff8ea}
+label{display:block;font-weight:700;font-size:15px;margin:14px 0 6px;color:var(--navy)}label small{font-weight:400;color:var(--mut)}
+input,textarea,select{width:100%;font:16px 'Radio Canada',sans-serif;padding:12px 14px;border:1px solid #cfd9e3;border-radius:12px;background:#fff}
+textarea{min-height:120px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.drop{border:2px dashed #cfd9e3;border-radius:14px;padding:18px;text-align:center;color:var(--mut)}
+.opt{display:flex;gap:10px;flex-wrap:wrap}.opt div{border:2px solid var(--line);border-radius:12px;padding:10px 14px;font-weight:600;font-size:15px}.opt div.on{border-color:var(--gold);background:#fff8ea}
+.note{display:flex;gap:10px;align-items:flex-start;background:#eef6ff;border:1px solid #cfe3f7;border-radius:14px;padding:14px 16px;margin:20px 0;font-size:15px;line-height:1.45}
+.go{width:100%;font:700 18px 'Radio Canada';padding:16px;border:0;border-radius:14px;background:var(--gold);color:var(--navy)}
+/* join perk */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.plan{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}.plan h3{margin:0 0 4px;font-size:22px;color:var(--navy)}.plan .pr{font-size:28px;font-weight:700;margin:0 0 12px}
+.plan li{margin:0 0 8px;font-size:15px;line-height:1.4;list-style:none;padding-left:26px;position:relative}.plan li:before{content:"\2713";position:absolute;left:0;color:#1a9a5b;font-weight:700}
+.plan li.new{background:#fff8ea;border:1px solid #f4d27a;border-radius:12px;padding:10px 12px 10px 38px}.plan li.new:before{content:"\2728";left:12px;top:9px}
+.plan li.new b{color:var(--navy)}
+@media(max-width:700px){.steps,.types{grid-template-columns:1fr 1fr}.row,.plans{grid-template-columns:1fr}.hero h1{font-size:30px}.btn{display:block;text-align:center}}
+</style></head><body><div class="wrap">
+
+<p class="lab">1. Member dashboard: Getting Noticed and VIP members see this</p>
+<div class="dc">
+ <div class="c sp"><div class="ic">&#10024;</div><p class="k">New &middot; 3VL Smart Publisher</p><b>Promote something in minutes</b>
+ <p>Tell us the basics about your event, special or news. We write it, design it and publish it on Three Village Local when you choose.</p>
+ <div class="meter">1 of 4 used this month <i></i></div>
+ <a class="btn" href="#">Open Smart Publisher</a></div>
+</div>
+
+<p class="lab">2. Member dashboard: free members see it locked</p>
+<div class="dc">
+ <div class="c lock"><div class="ic">&#128274;</div><p class="k">3VL Smart Publisher</p><span class="pill">Getting Noticed and VIP members</span><b>Your own page about your event or special, written for you</b>
+ <p>Give us the basics, our smart publishing tool writes and designs the page, and it goes live on Three Village Local when you choose, with an option to promote it on our social media.</p>
+ <a class="btn blue" href="#">See the plans</a>
+ <p class="small">Free members can still send us a tip anytime: <a href="#">submit a promotion</a> and our team decides what to feature.</p></div>
+</div>
+
+<p class="lab">3. The Smart Publisher page (paid members)</p>
+<div class="hero"><p class="k">3VL Smart Publisher &middot; Members only</p>
+ <h1>You give us the basics.<br><span>We take it from there.</span></h1>
+ <p>Your event, special or announcement becomes a polished page on Three Village Local, the local guide your neighbors already use. You preview it, approve it, and choose when it goes live.</p>
+ <div class="steps"><div class="st"><em>1</em><b>Share the basics</b><span>What, when, where, a photo.</span></div><div class="st"><em>2</em><b>We write and design it</b><span>Usually within 30 minutes.</span></div><div class="st"><em>3</em><b>You approve</b><span>Preview it and ask for any edits.</span></div><div class="st"><em>4</em><b>It goes live</b><span>On your date, on the website and app, plus social if you choose.</span></div></div>
+</div>
+<div class="card"><h2>What would you like to promote?</h2><p class="sub">Takes about 2 minutes. You will see a preview before anything is published.</p>
+ <div class="usage"><span><b>Team Passamenti</b> &middot; VIP</span><span>1 of 4 posts used this month</span></div>
+ <div class="types"><div class="t on"><span>&#128197;</span>Event</div><div class="t"><span>&#127991;&#65039;</span>Special or sale</div><div class="t"><span>&#128227;</span>News or announcement</div><div class="t"><span>&#10024;</span>Something else</div></div>
+ <label>Give it a title</label><input placeholder="Fall Open House at 4 Bud Court">
+ <label>Tell us the basics <small>(a few sentences is plenty, we will write the rest)</small></label><textarea placeholder="What is happening, who it is for, anything people should know or bring."></textarea>
+ <div class="row"><div><label>Date</label><input placeholder="Sat, Oct 10"></div><div><label>Time</label><input placeholder="1 PM to 3 PM"></div></div>
+ <label>Where <small>(leave blank to use your business address)</small></label><input placeholder="4 Bud Ct, Setauket">
+ <label>Link for details or tickets <small>(optional)</small></label><input placeholder="https://">
+ <label>Photos or a flyer <small>(up to 3)</small></label><div class="drop">&#128247; Tap to add photos</div>
+ <label>When should it go live?</label><div class="opt"><div class="on">As soon as I approve it</div><div>On a date I pick</div></div>
+ <label>Promote it on Three Village Local social media?</label><div class="opt"><div class="on">Yes, please</div><div>Website and app only</div></div>
+ <div class="note">&#128064; <span><b>Nothing goes live without your OK.</b> We will email you a preview with two buttons: <i>Looks good, publish it</i> or <i>Request changes</i>.</span></div>
+ <button class="go">Create my page &rarr;</button>
+</div>
+
+<p class="lab">4. Join page: new perk line on the two paid plans</p>
+<div class="plans">
+ <div class="plan"><h3>Getting Noticed</h3><p class="pr">$32/month</p><ul>
+  <li class="new"><b>NEW: 3VL Smart Publisher.</b> 1 instant page a month about your event, special or news. You give us the basics, we write, design and publish it when you choose.</li>
+  <li>Priority placement above free listings</li><li>Category spotlights and newsletter mentions</li><li>Post your events on the site and app</li></ul></div>
+ <div class="plan"><h3>&#11088; Three Village VIP</h3><p class="pr">$115/month</p><ul>
+  <li class="new"><b>NEW: 3VL Smart Publisher, 4 a month.</b> Instant pages about your events, specials and news, written and designed for you, plus promotion on our social media.</li>
+  <li>Banner ads on pages across the whole website</li><li>One app push notification every month</li><li>Video promotion production included</li></ul></div>
+</div>
+</div></body></html>
