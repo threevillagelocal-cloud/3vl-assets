@@ -385,7 +385,7 @@
 #wk-top .wk-adcall{background:var(--ink3);color:#fff}
 #wk-top .wk-adview{background:var(--cream);color:var(--ink);border:1px solid #d6e3f0}
 .wk-adprog{position:absolute;left:0;right:0;bottom:64px;height:3px;background:rgba(27,47,69,.12);z-index:2}
-.wk-adprog i{display:block;height:100%;width:0;background:var(--gold)}
+.wk-adprog i{display:block;height:100%;width:100%;transform:scaleX(0);transform-origin:0 0;background:var(--gold)}
 .wk-addots{position:absolute;left:0;right:0;top:10px;display:flex;justify-content:center;gap:4px;z-index:2}
 #wk-top .wk-addots button{width:6px;height:6px;padding:0;border:0;border-radius:6px;background:rgba(255,255,255,.4);transition:width .3s,background .3s}
 #wk-top .wk-addots button.is-on{width:18px;background:#fff}

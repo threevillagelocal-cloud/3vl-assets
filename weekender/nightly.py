@@ -68,7 +68,7 @@ def warm(body, ed, sha):
     urls = set(re.findall(r"https://cdn[.]jsdelivr[.]net/gh/[^\s\"')<>]+", body))
     base = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@%s/weekender/" % sha
     edir = os.path.join(HERE, ed)
-    urls |= {base + ed + "/" + f for f in os.listdir(edir) if f.endswith("-720.webp")}
+    urls |= {base + ed + "/" + f for f in os.listdir(edir) if f.endswith(("-720.webp", "-540.webp", "-360.webp"))}
     urls = {u for u in urls if not u.endswith("/")}   # folder addresses (data-assets) are not files
     bad = []
     for u in sorted(urls):

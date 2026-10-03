@@ -90,6 +90,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
     def img(name, small=False):
         return ed + name + ("-720" if small else "") + ".webp"
 
+    def rset(name, sizes):   # 10/3/2026 speed: offer the -360/-540 copies (weekender/sizes.py); -720 stays the fallback
+        b = ed + name
+        return 'src="%s-720.webp" srcset="%s-360.webp 360w, %s-540.webp 540w, %s-720.webp 720w" sizes="%s" onerror="if(this.srcset)this.removeAttribute(&quot;srcset&quot;)"' % (b, b, b, b, sizes)
+
     def day_of(iso):
         for k, v in d["days"].items():
             if iso.startswith(v):
@@ -182,12 +186,12 @@ def build(edition, local=False, sha="master", d=None, live=None):
             acts = acts.replace('<div class="wk-acts">', '<div class="wk-acts"><a class="wk-guide" href="%s">&#128373;&#65039; %s</a>' % (esc(g[1]), esc(g[2])), 1)
         if ongoing and e.get("url"):
             acts = re.sub(r'<button type="button" class="wk-cal"[^<]*</button>', '<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a>' % esc(e["url"]), acts)
-        w('<article class="wk-pick wk-rv" data-href="%s" %s style="--i:%d"><div class="wk-pimg"><img src="%s" alt="%s" loading="lazy" width="720" height="480">'
+        w('<article class="wk-pick wk-rv" data-href="%s" %s style="--i:%d"><div class="wk-pimg"><img %s alt="%s" loading="lazy" width="720" height="480">'
           '<span class="wk-pnum">%02d</span>%s</div>'
           '<div class="wk-pbody"><p class="wk-pwhen">%s</p><h3 class="wk-ptitle">%s</h3><p class="wk-pwhere">&#128205; %s</p>'
           '<p class="wk-pdesc">%s</p><div class="wk-tags">%s<span class="wk-price">%s</span></div>%s</div>'
           '<p class="wk-icred">%s</p></article>' % (
-            esc(page), evattrs(e), i, img(e["img"], True), esc(e["title"]), i + 1, "" if ongoing else '<span class="wk-pstat" data-status></span>',
+            esc(page), evattrs(e), i, rset(e["img"], "280px"), esc(e["title"]), i + 1, "" if ongoing else '<span class="wk-pstat" data-status></span>',
             when, title, esc(V[e["venue"]]["name"]), esc(e["desc"]), tagchips(e["tags"]), esc(e["price"]), acts, esc(e.get("credit", ""))))
     # "On the Radar" items ride at the end of the same sideways row (9/28: no separate section, no extra height)
     for n in d.get("next", []):
@@ -209,10 +213,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
     for sp in d["specials"]:
         badge = '<span class="wk-src wk-fb">f</span>' if sp["src"] == "facebook" else '<span class="wk-src wk-web">&#127760;</span>'
         main = sp.get("ext") or sp.get("img")
-        pic = ('<div class="wk-eimg">%s<img src="%s" alt="%s" loading="lazy">%s</div>' % (
+        pic = ('<div class="wk-eimg">%s<img %s alt="%s" loading="lazy">%s</div>' % (
             ('<picture><source media="(min-width:761px)" srcset="%s"></picture>' % img(sp["extwide"])) if False else "",
-            img(sp["extwide"] if (sp.get("feature") and sp.get("extwide")) else main, True), esc(sp["biz"]),
-            ('<span class="wk-dish"><img src="%s" alt="%s" loading="lazy"></span>' % (img(sp["dish"], True), esc("Food at " + sp["biz"]))) if sp.get("dish") else "")) if main else ""
+            rset(sp["extwide"] if (sp.get("feature") and sp.get("extwide")) else main, "(max-width:760px) 280px, 470px"), esc(sp["biz"]),
+            ('<span class="wk-dish"><img %s alt="%s" loading="lazy"></span>' % (rset(sp["dish"], "96px"), esc("Food at " + sp["biz"]))) if sp.get("dish") else "")) if main else ""
         call = ('<a class="wk-call" href="tel:%s">&#128222; Call</a>' % re.sub(r"\D", "", sp["phone"])) if sp.get("phone") else ''
         w('<article class="wk-sp wk-rv%s">%s<div class="wk-spb"><p class="wk-spbiz">%s</p><p class="wk-spt">%s</p><p class="wk-spw">%s</p>'
           '<p class="wk-spd">%s</p><p class="wk-spf">%s<span>via %s</span>%s<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>' % (
@@ -255,9 +259,9 @@ def build(edition, local=False, sha="master", d=None, live=None):
     M["sched"] = len(out)
     # SCHEDULE
     w('<section class="wk-sec" id="wk-sched"><h2 class="wk-h2"><span>What&rsquo;s Happening This Week</span><em class="wk-h2r"><small>Tap &#9734; to save to My Plans</small><a class="wk-calbtn" href="https://www.threevillagelocal.com/events-calendar">&#128197; Full calendar &rarr;</a></em></h2>')
-    w('<div class="wk-tabs" role="tablist"><button type="button" class="wk-tab is-on" data-day="all">All</button>'
-      '<button type="button" class="wk-tab" data-day="fri">Fri <small>10/2</small></button><button type="button" class="wk-tab" data-day="sat">Sat <small>10/3</small></button>'
-      '<button type="button" class="wk-tab" data-day="sun">Sun <small>10/4</small></button><span class="wk-tabink"></span></div>')
+    w('<div class="wk-tabs" role="tablist"><button type="button" role="tab" class="wk-tab is-on" data-day="all">All</button>'
+      '<button type="button" role="tab" class="wk-tab" data-day="fri">Fri <small>10/2</small></button><button type="button" role="tab" class="wk-tab" data-day="sat">Sat <small>10/3</small></button>'
+      '<button type="button" role="tab" class="wk-tab" data-day="sun">Sun <small>10/4</small></button><span class="wk-tabink" aria-hidden="true"></span></div>')
     w('<div class="wk-chips"><button type="button" class="wk-chip is-on" data-tag="all">Everything</button>')
     for t in ("free", "kids", "outdoor", "music", "history", "food", "stage"):
         w('<button type="button" class="wk-chip" data-tag="%s">%s %s</button>' % (t, ICON[t], TAGS[t]))
@@ -323,8 +327,8 @@ def build(edition, local=False, sha="master", d=None, live=None):
       '<button type="button" class="wk-btn wk-btnw" id="wk-share">&#128172; Share Three Village Local</button>'
       '<button type="button" class="wk-btn wk-btnw" id="wk-share2">&#11088; Share my plan</button></div></div>'
       '<div class="wk-app"><p class="wk-subt">Get Three Village Local on your phone</p><p class="wk-subd">The free Three Village Local app puts today&rsquo;s events, local specials and neighbor-rated businesses right on your phone.</p>'
-      '<div class="wk-appb"><a href="https://apps.apple.com/us/app/three-village-local/id6746367200" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/badges/app-store-badge.png" alt="Download on the App Store" width="142" height="50"></a>'
-      '<a href="https://play.google.com/store/apps/details?id=com.threevillagelocal.app&amp;hl=en_US" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/badges/google-play-badge.png" alt="Get it on Google Play" width="168" height="50"></a></div></div></section>')
+      '<div class="wk-appb"><a href="https://apps.apple.com/us/app/three-village-local/id6746367200" target="_blank" rel="noopener"><img src="' + base[:-len("weekender/")] + 'badges/app-store-badge-400.webp" alt="Download on the App Store" width="142" height="50"></a>'
+      '<a href="https://play.google.com/store/apps/details?id=com.threevillagelocal.app&amp;hl=en_US" target="_blank" rel="noopener"><img src="' + base[:-len("weekender/")] + 'badges/google-play-badge-470.webp" alt="Get it on Google Play" width="168" height="50"></a></div></div></section>')
     w('<p class="wk-foot">Plans change. Check with the organizer before you head out. Sources: organizer websites, TBR News Media, and local business pages on Facebook.</p>')
 
     # SECTION ORDER (owner, 10/2/2026): the blocks above are written in their old order, then put in this order.
@@ -343,10 +347,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
     banners = json.load(open(os.path.join(HERE, "banners.json"), encoding="utf-8"))
     for i, v in enumerate(banners):
         # 10/2/2026 speed: banners carry data-src; weekender.js loads only the one showing and the next (they used to all download at once)
-        w('<div class="wk-ad%s" data-vip="%s" data-group="%s" aria-hidden="%s"><a class="wk-adpic" href="%s" data-vip="%s">'
+        w('<div class="wk-ad%s" data-vip="%s" data-group="%s" aria-hidden="%s"%s><a class="wk-adpic" href="%s" data-vip="%s">'
           '<img data-src="%s" alt="%s" width="%d" height="%d"></a>'
           '<div class="wk-adbtns"><a class="wk-adcall" href="tel:%s" data-vip="%s">&#128222; Call</a><a class="wk-adview" href="%s" data-vip="%s">View on 3VL &rarr;</a></div></div>' % (
-            " is-on" if i == 0 else "", esc(v["name"]), esc(v.get("group", v["id"])), "false" if i == 0 else "true", v["url"], esc(v["name"]),
+            " is-on" if i == 0 else "", esc(v["name"]), esc(v.get("group", v["id"])), "false" if i == 0 else "true", "" if i == 0 else " inert", v["url"], esc(v["name"]),
             base + v["img"], esc(v["name"]) + " ad", v["w"], v["h"], v["phone"], esc(v["name"]), v["url"], esc(v["name"])))
     w('<div class="wk-adprog"><i id="wk-adbar"></i></div><div class="wk-addots" id="wk-addots"></div></div>')
     w('<div class="wk-adrot2" id="wk-adrot2"></div>')
@@ -361,7 +365,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
 
     # MY WEEKEND DRAWER
     w('<button type="button" class="wk-fab" id="wk-fab" aria-controls="wk-drawer" aria-expanded="false"><span class="wk-star">&#9733;</span> My Plans <b id="wk-fabn">0</b></button>'
-      '<div class="wk-drawer" id="wk-drawer" aria-hidden="true"><div class="wk-drin"><div class="wk-drh"><p>&#11088; My Plans</p><button type="button" id="wk-drx" aria-label="Close">&times;</button></div>'
+      '<div class="wk-drawer" id="wk-drawer" aria-hidden="true" inert><div class="wk-drin"><div class="wk-drh"><p>&#11088; My Plans</p><button type="button" id="wk-drx" aria-label="Close">&times;</button></div>'
       '<div id="wk-drlist"></div><div class="wk-drf"><button type="button" class="wk-btn wk-btng" id="wk-calall">&#128197; Add all to my calendar</button>'
       '<button type="button" class="wk-btn wk-btno" id="wk-share3">&#128172; Share my plan</button></div></div></div>')
     w('<a href="#wk-top" class="wk-totop" id="wk-totop" aria-label="Back to top">&#8593;</a><div class="wk-toast" id="wk-toast" role="status"></div>')
