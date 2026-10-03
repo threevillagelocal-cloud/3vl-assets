@@ -135,8 +135,15 @@ def stories(n=2):
         return []
 
 
+VIP_ID = ""   # set by --vip <member id>: personalized version for that VIP
+
+
 def main():
-    ed = sys.argv[1] if len(sys.argv) > 1 else latest_edition()
+    global VIP_ID
+    args = sys.argv[1:]
+    if "--vip" in args:
+        i = args.index("--vip"); VIP_ID = args[i + 1]; del args[i:i + 2]
+    ed = args[0] if args else latest_edition()
     d = json.load(open(os.path.join(HERE, ed, "weekend.json"), encoding="utf-8"))
     P = Pics(ed)
     ev = {e["id"]: e for e in d["events"] + d.get("allweekend", [])}
@@ -196,22 +203,37 @@ def main():
           '<p style="margin:0 0 14px;font:bold 22px/1.25 %s;color:#fff">%d new homes for sale this week in Setauket and Stony Brook</p>'
           '<table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0"><tr>%s</tr></table></td></tr>'
           '<tr><td style="padding:12px 20px 22px">%s</td></tr></table></td></tr>' % (NAVY, FONT, GOLD, FONT, hm["count"], th, btn(hm["url"], "See all %d homes &rarr;" % hm["count"])))
-    # featured businesses (VIP members, rotating weekly)
-    vips = json.load(open(os.path.join(HERE, "vip.json"), encoding="utf-8"))
-    wk = datetime.date.fromisoformat(ed).isocalendar()[1]
-    vips = sorted(vips, key=lambda v: (int(v["id"]) * 7919 + wk * 104729) % 1000)[:2]
-    w(section("Local businesses we love", "Featured"))
-    cells = []
-    for i, v in enumerate(vips):
-        logo = P.get(os.path.join(HERE, v["logo"]), "vip-%s" % v["id"], w=120, logo=True) if v.get("logo") and os.path.exists(os.path.join(HERE, v["logo"])) else ""
-        tel = re.sub(r"\D", "", v.get("phone", ""))
-        cells.append('<td width="50%%" valign="top" style="padding:8px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:#fff;border:1px solid %s;border-radius:14px">'
-                     '<tr><td style="padding:16px">%s<p style="margin:10px 0 2px;font:bold 16px/1.3 %s;color:%s">%s</p><p style="margin:0 0 6px;font:12px %s;color:#b36b00;text-transform:uppercase;letter-spacing:1px;font-weight:bold">%s</p>'
-                     '<p style="margin:0 0 10px;font:13px/1.45 %s;color:%s">%s</p><a href="%s" style="font:bold 14px %s;color:#0b63b6;text-decoration:none">View on 3VL &rarr;</a>%s</td></tr></table></td>' % (
-                         LINE, ('<img src="%s" width="120" alt="%s" style="display:block;max-width:120px;height:auto;border:0">' % (logo, esc(v["name"]))) if logo else "",
-                         FONT, NAVY, esc(v["name"]), FONT, esc(v.get("cat", "")), FONT, INK, esc(v.get("tag", "")), esc(v["url"]), FONT,
-                         ('<br><a href="tel:%s" style="font:bold 14px %s;color:%s;text-decoration:none">&#128222; Call</a>' % (tel, FONT, NAVY)) if tel else ""))
-    w('<tr><td style="padding:4px 20px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0"><tr>%s</tr></table></td></tr>' % "".join(cells[:2]))
+    # VIP banner spotlight (owner 10/2: replaces "Local businesses we love").
+    # VIP version: a picture of THEIR banner running on a live page (weekender/vip_shots.py).
+    # Everyone else: one VIP banner, rotating weekly, never the owner's own (Coltrain, 122).
+    banners = json.load(open(os.path.join(HERE, "banners.json"), encoding="utf-8"))
+    if VIP_ID:
+        mine = next(b for b in banners if b["id"] == VIP_ID)
+        shot = P.base + "vip-shot-%s.jpg" % VIP_ID
+        w('<tr><td style="padding:30px 28px 6px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:%s;border-radius:16px">'
+          '<tr><td style="padding:22px 20px 14px"><p style="margin:0 0 4px;font:bold 12px %s;letter-spacing:2px;text-transform:uppercase;color:%s">Your VIP banner</p>'
+          '<p style="margin:0 0 6px;font:bold 22px/1.25 %s;color:#fff">Your banner is live on Three Village Local</p>'
+          '<p style="margin:0 0 14px;font:15px/1.5 %s;color:#dbe4ee">Here is %s running on our site this week. It rotates across our pages and the app, with one-tap Call and View buttons for your neighbors.</p>'
+          '<a href="%s"><img src="%s" width="560" alt="%s banner on Three Village Local" style="display:block;width:100%%;height:auto;border-radius:12px;border:0"></a></td></tr></table></td></tr>' % (
+              NAVY, FONT, GOLD, FONT, FONT, esc(mine["name"]) + "&#39;s banner", SITE + "/categories", shot, esc(mine["name"])))
+    else:
+        wk = datetime.date.fromisoformat(ed).isocalendar()[1]
+        pool = sorted([b for b in banners if b["id"] != "122"], key=lambda b: (int(b["id"]) * 7919 + len(b["img"]) * 31 + wk * 104729) % 1000)
+        b = pool[0]
+        bimg = P.get(os.path.join(HERE, b["img"]), "banner-" + b["img"].split("/")[-1].split(".")[0], w=300)
+        w(section("Local business spotlight", "VIP member"))
+        w('<tr><td style="padding:12px 28px 6px"><a href="%s"><img src="%s" width="544" alt="%s" style="display:block;width:100%%;height:auto;border-radius:14px;border:0"></a>'
+          '<p style="margin:12px 0 0;font:14px/1.5 %s;color:%s"><b style="color:%s">%s</b> &middot; <a href="%s" style="color:#0b63b6;font-weight:bold;text-decoration:none">View on 3VL &rarr;</a></p>'
+          '<p style="margin:6px 0 0;font:13px/1.5 %s;color:%s">VIP members get banner ads like this across Three Village Local and the app. <a href="%s/join" style="color:#0b63b6;font-weight:bold;text-decoration:none">See the plans &rarr;</a></p></td></tr>' % (
+              esc(b["url"]), bimg, esc(b["name"]), FONT, INK, NAVY, esc(b["name"]), esc(b["url"]), FONT, MUT, SITE))
+    # members: update your listing + check your leads (owner 10/2)
+    w('<tr><td style="padding:30px 28px 6px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:#fff;border:2px solid %s;border-radius:16px">'
+      '<tr><td style="padding:22px 22px 22px"><p style="margin:0 0 4px;font:bold 12px %s;letter-spacing:2px;text-transform:uppercase;color:#b36b00">For our member businesses</p>'
+      '<p style="margin:0 0 8px;font:bold 20px/1.3 %s;color:%s">Our new look is live. Make your listing shine.</p>'
+      '<p style="margin:0 0 12px;font:15px/1.55 %s;color:%s">Three Village Local just got a full redesign. Log in and update your photos, hours, description and services so neighbors see the best version of your business. Complete listings show up more in search and get more calls.</p>'
+      '<p style="margin:0 0 16px;font:15px/1.55 %s;color:%s"><b style="color:%s">Check your leads.</b> When a neighbor reaches out through Three Village Local we email you right away from <b>admin@threevillagelocal.com</b>, and the subject line tells you it is a lead. Some members have missed these, so please add that address to your contacts or safe senders list and check your spam folder once in a while. You can also see every lead in your dashboard.</p>'
+      '<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right:10px">%s</td><td>%s</td></tr></table></td></tr></table></td></tr>' % (
+          GOLD, FONT, FONT, NAVY, FONT, INK, FONT, INK, NAVY, btn(SITE + "/login", "Log in and update &rarr;", bg=NAVY, fg="#fff"), btn(SITE + "/account/leads", "See my leads &rarr;")))
     # stories
     st = stories(1)
     if st:   # short version: one story, as a single line
@@ -233,11 +255,12 @@ def main():
     body = "".join(o)
     out = os.path.join(HERE, "email", ed)
     os.makedirs(out, exist_ok=True)
-    open(os.path.join(out, "email.html"), "w", encoding="utf-8").write(body)
+    name = "email-vip-%s.html" % VIP_ID if VIP_ID else "email.html"
+    open(os.path.join(out, name), "w", encoding="utf-8").write(body)
     rest = [e["title"] for e in picks if e is not lead]
     subj = "This weekend in Three Village: %s, %s and more" % (lead["title"], rest[0] if rest else "")
     open(os.path.join(out, "subject.txt"), "w", encoding="utf-8").write(subj + "\n")
-    print("email.html %d KB, %d pictures | subject: %s" % (len(body) // 1024, P.n, subj))
+    print("%s %d KB, %d pictures | subject: %s" % (name, len(body) // 1024, P.n, subj))
 
 
 if __name__ == "__main__":
