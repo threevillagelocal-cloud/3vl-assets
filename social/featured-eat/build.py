@@ -138,8 +138,8 @@ def main():
         for fmt, bump in (("post", 0), ("story", 2)):
             fs = (21 if len(h) > 26 else 24 if len(h) > 20 else 27) + bump
             cards[fmt] += ('<div class="c"><div class="p" style="background-image:url(%s);background-position:%s">'
-                           '<span class="stamp" style="font-size:%dpx"><b>@</b>%s</span></div>'
-                           '<div class="t"><b>%s</b><i>%s</i></div></div>') % (img, pos, fs, html.escape(h), html.escape(name), html.escape(sub))
+                           '</div>'
+                           '<div class="t"><b>%s</b><i>%s</i></div></div>') % (img, pos, html.escape(name), html.escape(sub))
     shutil.copy(os.path.join(HERE, "village-hero.jpg"), os.path.join(out, "bg.jpg"))
     prof = tempfile.mkdtemp(prefix="feat-chrome-")
     for fmt, (w, hgt) in (("post", (1080, 1350)), ("story", (1080, 1920))):
@@ -164,7 +164,7 @@ def main():
     lines = ["🔥 LIVE ON OUR HOMEPAGE RIGHT NOW! These local spots just landed on the Three Village Local homepage. Go check out what they've got this week 👇", ""]
     for i, m in enumerate(meta):
         bit = m["title"] + (" (" + m["when"] + ")" if m["when"] and len(m["when"]) < 40 else "")
-        lines.append("%s @%s - %s" % (icons[i % len(icons)], m["ig"], bit))
+        lines.append("%s %s - %s" % (icons[i % len(icons)], m["name"], bit))  # owner 10/4: no @handles, the tags show them
     lines += ["", "Go show some love to our local spots 💛 See all the specials at the link in bio.", "",
               "#ThreeVillageLocal #StonyBrook #Setauket #PortJefferson #EatLocal #LongIslandEats #SupportLocal"]
     open(os.path.join(out, "caption.txt"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
