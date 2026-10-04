@@ -1,5 +1,4 @@
-// 3VL nightly site check (owner 10/4/2026: "we need a nightly check of the entire site to make sure things are working and
-// loading properly"). Loads every important page like a visitor (scrolls, waits), and checks that the content really
+// 3VL nightly site check. Loads every important page like a visitor (scrolls, waits), and checks that the content really
 // appears: category lists load ALL their businesses, homepage sections are filled, events/blog render, no script errors,
 // no broken images, no sideways scrolling on phones. Writes out/report.json; never changes the site.
 // Usage: node check.js [--quick]
