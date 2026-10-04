@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-04T05:41:23.296835+00:00",
+"updated": "2026-10-04T12:14:38.288768+00:00",
 "counts": {
 "Three Village Chamber": 3,
 "Port Jefferson Chamber": 41,
@@ -380,8 +380,8 @@
 "allday": false,
 "venue": "Jeanne Garant Harborfront Park",
 "addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1094",
-"desc": "",
+"url": "https://www.portjeffny.gov/calendar.aspx",
+"desc": "https://www.portjeffny.gov/m/calendar/event/detail/1094",
 "img": "",
 "src": "portjeff",
 "tags": [
@@ -1182,8 +1182,8 @@
 "allday": false,
 "venue": "Village Center",
 "addr": "Village Center - 101A Robert T. Strong Way Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1134",
-"desc": "",
+"url": "https://www.portjeffny.gov/calendar.aspx",
+"desc": "https://www.portjeffny.gov/m/calendar/event/detail/1134",
 "img": "",
 "src": "portjeff",
 "tags": [
@@ -1359,8 +1359,8 @@
 "allday": false,
 "venue": "Jeanne Garant Harborfront Park",
 "addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1095",
-"desc": "",
+"url": "https://www.portjeffny.gov/calendar.aspx",
+"desc": "https://www.portjeffny.gov/m/calendar/event/detail/1095",
 "img": "",
 "src": "portjeff",
 "tags": [
