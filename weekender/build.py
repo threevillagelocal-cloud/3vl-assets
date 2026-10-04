@@ -17,6 +17,27 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = "threevillagelocal-cloud/3vl-assets"
 CAL = "https://www.threevillagelocal.com/events-calendar"   # where a card goes when its event has no page of its own (10/1)
 
+
+def _active_ids():
+    """Listed members right now (nightly search index only holds active listings). None if the index can't be read."""
+    try:
+        return {str(m["id"]) for m in json.load(open(os.path.join(os.path.dirname(HERE), "search", "index.json"), encoding="utf-8"))["members"]}
+    except Exception:
+        return None
+
+
+def _only_active(items):
+    """Skip VIPs whose listing is not active (past due, on hold, cancelled): their profile shows 'unavailable', so the homepage
+    must not promote it. They come back by themselves once the listing is active again (10/4/2026)."""
+    ids = _active_ids()
+    if not ids:
+        return items
+    keep = [v for v in items if str(v.get("id")) in ids]
+    gone = [v.get("name") for v in items if str(v.get("id")) not in ids]
+    if gone:
+        print("NOTE: not promoting inactive listings:", ", ".join(gone), file=sys.stderr)
+    return keep
+
 def esc(s):
     return html.escape(str(s), quote=True)
 
@@ -75,7 +96,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
             live = json.load(open(os.path.join(HERE, "live", "events.json"), encoding="utf-8"))
         except Exception:
             live = None
-    vips = json.load(open(os.path.join(HERE, "vip.json"), encoding="utf-8"))
+    vips = _only_active(json.load(open(os.path.join(HERE, "vip.json"), encoding="utf-8")))
     nopage = [e["id"] for e in d["events"] if not e.get("page")]
     if nopage:  # owner rule 10/1 + 10/2/2026: every event card links to a page on our own site
         print("WARNING: hand-picked events with no page on our site (their cards fall back to /events-calendar):", ", ".join(nopage), file=sys.stderr)
@@ -348,7 +369,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
     # VIP RAIL
     w('<aside class="wk-rail" aria-label="Three Village Local VIP members"><div class="wk-railin"><p class="wk-railh"><span>&#11088; VIP</span> Local businesses we love</p>'
       '<div class="wk-adrot" id="wk-adrot">')
-    banners = json.load(open(os.path.join(HERE, "banners.json"), encoding="utf-8"))
+    banners = _only_active(json.load(open(os.path.join(HERE, "banners.json"), encoding="utf-8")))
     for i, v in enumerate(banners):
         # 10/2/2026 speed: banners carry data-src; weekender.js loads only the one showing and the next (they used to all download at once)
         w('<div class="wk-ad%s" data-vip="%s" data-group="%s" aria-hidden="%s"%s><a class="wk-adpic" href="%s" data-vip="%s">'
