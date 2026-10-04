@@ -1,15 +1,15 @@
 {
-"updated": "2026-10-04T03:07:17.396266+00:00",
+"updated": "2026-10-04T05:41:23.296835+00:00",
 "counts": {
 "Three Village Chamber": 3,
-"Port Jefferson Chamber": 43,
+"Port Jefferson Chamber": 41,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": 9,
 "Village of Port Jefferson": 219,
 "Emma S. Clark Library": 194,
-"Stony Brook Village Center": 18,
-"Long Island Museum": 47,
-"Ward Melville Heritage Org": 6,
+"Stony Brook Village Center": 17,
+"Long Island Museum": 46,
+"Ward Melville Heritage Org": 5,
 "LI Music Hall of Fame": 6
 },
 "icons": {
@@ -23,27 +23,6 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
-{
-"id": "sbv-2302",
-"title": "Vote for Your Favorite Scarecrow! The 36th Annual Scarecrow Competition",
-"start": "2026-08-19T00:00:00",
-"end": "2026-10-31T23:59:59",
-"allday": true,
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook, NY 11790",
-"url": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/",
-"desc": "Scarecrows of all shapes, sizes, and personalities will soon take over Stony Brook Village Center for the Ward Melville Heritage Organization’s (WMHO) 36th Annual Scarecrow Competition . A beloved community tradition, the competition invites visitors to stroll",
-"img": "https://stonybrookvillage.com/wp-content/uploads/2026/08/2-_DSC0710.jpg",
-"src": "sbv",
-"tags": [
-"free",
-"kids",
-"history"
-],
-"status": "",
-"fb": 0,
-"page": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/"
-},
 {
 "id": "lim-3225801",
 "title": "Blue Star Welcome Week 2026 for Military Families",
@@ -108,29 +87,6 @@
 "page": "https://www.threevillagelocal.com/three-village-farmers-market",
 "pu": "2026-10-02T17:00",
 "rank": 1
-},
-{
-"id": "cur-spooky",
-"title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-03T00:00",
-"end": "2026-10-31T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Running until Oct. 31",
-"venue": "Olde Towne Gardens",
-"addr": "360 Old Town Rd, East Setauket",
-"url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949. Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, hay bale play area, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/spooky-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/olde-towne-gardens",
-"rank": 5
 },
 {
 "id": "cur-scarecrow",
@@ -309,87 +265,6 @@
 "pu": ""
 },
 {
-"id": "lim-3225658",
-"title": "Culper Spy Day – FREE!",
-"start": "2026-10-03T12:00:00",
-"end": "2026-10-03T17:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/culper-spy-day-2026/",
-"desc": "Stop by during the Three Village Historical Society and Tri-Spy Tour’s 12th Annual Culper Spy Day, celebrating the rich Revolutionary heritage of our area. Explore LIM’s The Seat of Action: Long Island in the American Revolution and Beyond exhibition and view ",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Seat-of-Action.jpg",
-"src": "lim",
-"tags": [
-"free",
-"history",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "wmho-1191",
-"title": "Culper Spy Day Tours at The Brewster House",
-"start": "2026-10-03T12:00:00",
-"end": "2026-10-03T16:00:00",
-"allday": false,
-"venue": "Brewster House",
-"addr": "18 Runs Rd, East Setauket, NY 11733",
-"url": "https://wmho.org/event/li-250-event-at-the-brewster-house/",
-"desc": "Experience history firsthand with the Ward Melville Heritage Organization during special tours of The Brewster House (c.1665). Saturday, October 3rd, 2026 from 12pm-4pm. $5 admission. For additional information, please call 631-751-2244. This location is an of",
-"img": "",
-"src": "wmho",
-"tags": [
-"history"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "lim-3223856",
-"title": "Hawkins-Mount House Tours | LI250",
-"start": "2026-10-03T12:30:00",
-"end": "2026-10-03T16:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/hawkins-mount-house-tours-li250-3/",
-"desc": "As part of LIM’s America at 250 programming, join us for special tours of the historic Hawkins-Mount House! American genre painter William Sidney Mount created some of his most memorable scenes from inside an attic studio at this large, rambling 18th-century h",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/01/Mount-house-Tour-event-image.jpg",
-"src": "lim",
-"tags": [
-"history",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "lim-3225654",
-"title": "Long Island During the American Revolution – FREE Lecture",
-"start": "2026-10-03T13:00:00",
-"end": "2026-10-03T14:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/revolution-talk/",
-"desc": "Join former Newsday staff writer and local history author Bill Bleyer as he traces the captivating history of the events surrounding the largest engagement of the American Revolution—the 1776 Battle of Long Island, a major defeat for the colonists that could h",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Battle-of-Long-Island.jpg",
-"src": "lim",
-"tags": [
-"free",
-"history",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-treason",
 "title": "Treason's Trial: A Culper Spy Story",
 "start": "2026-10-03T14:30",
@@ -434,6 +309,29 @@
 "pu": ""
 },
 {
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-10-04T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Running until Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949. Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, hay bale play area, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/spooky-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": true,
+"page": "https://www.threevillagelocal.com/olde-towne-gardens",
+"rank": 5
+},
+{
 "id": "pjchamber-14989",
 "title": "18th Annual Soles For All Souls",
 "start": "2026-10-04T00:00:00",
@@ -450,7 +348,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/18th-annual-soles-for-all-souls"
+"page": ""
 },
 {
 "id": "cur-pjfm",
@@ -1717,6 +1615,101 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/marias-mexican-cooking-flautas-de-pollo"
+},
+{
+"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58894",
+"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
+"start": "2026-10-14T09:30:00",
+"end": "2026-10-14T10:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58894",
+"desc": "Experience sharing, group participation, and play.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-ages-18m-3-5-yrs-w-caregiver-352"
+},
+{
+"id": "emmaclark-edgar-allan-poe-literature-silver-screen-58142",
+"title": "Edgar Allan Poe: From Literature to Silver Screen!",
+"start": "2026-10-14T14:00:00",
+"end": "2026-10-14T15:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/edgar-allan-poe-literature-silver-screen-58142",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Watch some short films based on Poe's work and learn about the actors and directors who made a career bringing Poe's stories to life. Presented by Keith Crocker. Image courtesy of ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/poe_film_crop3.jpg",
+"src": "emmaclark",
+"tags": [
+"history",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/edgar-allan-poe-from-literature-to-silver-screen"
+},
+{
+"id": "emmaclark-crafts-r-fun-fall-gnome-grades-k-5-58549",
+"title": "Crafts R Fun: Fall Gnome (Grades K-5)",
+"start": "2026-10-14T17:30:00",
+"end": "2026-10-14T18:15:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/crafts-r-fun-fall-gnome-grades-k-5-58549",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/crafts-r-fun-fall-gnome-grades-k-5"
+},
+{
+"id": "emmaclark-knit-cause-59649",
+"title": "Knit for a Cause",
+"start": "2026-10-14T17:30:00",
+"end": "2026-10-14T18:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Board Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/knit-cause-59649",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/knit-for-a-cause-355"
+},
+{
+"id": "emmaclark-evening-book-discussion-58173",
+"title": "Evening Book Discussion",
+"start": "2026-10-14T19:30:00",
+"end": "2026-10-14T20:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/evening-book-discussion-58173",
+"desc": "m. in the Vincent R. O’Leary Community Room. Copies of the book are available to borrow at the Circulation Desk. No registration required. Book pickup starts 9/9",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/img2.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/evening-book-discussion"
 }
 ],
 "closings": [],
