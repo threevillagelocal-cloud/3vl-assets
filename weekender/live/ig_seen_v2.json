@@ -1778,5 +1778,53 @@
 "desc": "Join 13 stops across Port Jeff. $55 includes 5 drink tokens. 21+ with valid ID.",
 "expires": "2026-10-10",
 "_ts": "2026-10-02T17:01:55+0000"
+},
+"17921455176223830": {
+"special": true,
+"title": "Elbling Wine by the Glass",
+"when": "Limited time",
+"desc": "Crisp German white from Mosel available by the glass for Oktoberfest season.",
+"expires": "2026-10-17",
+"_ts": "2026-10-03T19:07:54+0000"
+},
+"17901400521376865": {
+"special": true,
+"title": "Culper Spy Day at Culpers 1778",
+"when": "Today, Oct. 3",
+"desc": "Celebrate Culper Spy Day with steaks and cocktails in historic Setauket. Reservations available for tonight.",
+"expires": "2026-10-03",
+"_ts": "2026-10-03T15:19:46+0000"
+},
+"18180088777380597": {
+"special": false,
+"title": "Burgerology Catering",
+"when": "Ongoing",
+"desc": "Book catering for your party, game day or event. Call to place your order.",
+"expires": "2026-10-03",
+"_ts": "2026-10-03T17:10:54+0000"
+},
+"18031868912887756": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-03T19:57:02+0000"
+},
+"17922734175428282": {
+"special": false,
+"title": "The Whiskey Barrel",
+"when": "",
+"desc": "Generic promotion for whiskey selection with no specific offer, discount, or event date mentioned.",
+"expires": "",
+"_ts": "2026-10-03T19:14:16+0000"
+},
+"17994683973031034": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-03T17:19:39+0000"
 }
 }

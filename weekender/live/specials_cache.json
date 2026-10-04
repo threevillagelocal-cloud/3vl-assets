@@ -1,6 +1,23 @@
 {
 "countrycornerlongisland": [],
-"madiranthewinebar_eastsetauket": [],
+"madiranthewinebar_eastsetauket": [
+{
+"id": "17921455176223830",
+"biz": "Madiran The Wine Bar",
+"ig": "madiranthewinebar_eastsetauket",
+"town": "East Setauket",
+"category": "Wine Bar",
+"member": false,
+"title": "Elbling Wine by the Glass",
+"when": "Limited time",
+"desc": "Crisp German white from Mosel available by the glass for Oktoberfest season.",
+"expires": "2026-10-17",
+"posted": "2026-10-03T19:07:54+0000",
+"url": "https://www.instagram.com/p/DeCxdK9pLCf/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
+"inset": "ig/p17921455176223830.jpg"
+}
+],
 "tommysplaceportjeff_": [
 {
 "id": "17895179811609684",
@@ -21,7 +38,24 @@
 ],
 "ixchelmexicancuisine": [],
 "djsclamshackstonybrook": [],
-"culpers1778": [],
+"culpers1778": [
+{
+"id": "17901400521376865",
+"biz": "Culpers 1778",
+"ig": "culpers1778",
+"town": "East Setauket",
+"category": "Restaurant/Steakhouse",
+"member": false,
+"title": "Culper Spy Day at Culpers 1778",
+"when": "Today, Oct. 3",
+"desc": "Celebrate Culper Spy Day with steaks and cocktails in historic Setauket. Reservations available for tonight.",
+"expires": "2026-10-03",
+"posted": "2026-10-03T15:19:46+0000",
+"url": "https://www.instagram.com/p/DeCXUFEPX6o/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
+"inset": "ig/p17901400521376865.jpg"
+}
+],
 "levelupkitchenny": [],
 "littlecheeseshop": [],
 "hirosakiny": [],
