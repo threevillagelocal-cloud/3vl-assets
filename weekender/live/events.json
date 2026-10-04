@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-04T15:59:25.431344+00:00",
+"updated": "2026-10-04T17:27:05.262574+00:00",
 "counts": {
 "Three Village Chamber": 3,
-"Port Jefferson Chamber": 41,
+"Port Jefferson Chamber": 0,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": 9,
 "Village of Port Jefferson": 219,
@@ -332,25 +332,6 @@
 "rank": 5
 },
 {
-"id": "pjchamber-14989",
-"title": "18th Annual Soles For All Souls",
-"start": "2026-10-04T00:00:00",
-"end": "2026-10-04T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/18th-annual-soles-for-all-souls/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-pjfm",
 "title": "Port Jefferson Farmers Market",
 "start": "2026-10-04T09:00",
@@ -572,25 +553,6 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/an-evening-with-david-sedaris",
 "pu": ""
-},
-{
-"id": "pjchamber-14726",
-"title": "2026 Port Jefferson Scarecrow Walk",
-"start": "2026-10-05T00:00:00",
-"end": "2026-11-02T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
-"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd! VOTE FOR YOUR FAVORITE SCARECROW!",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58873",
@@ -893,25 +855,6 @@
 "page": "https://www.threevillagelocal.com/events/your-children-dont-want-it-what-to-do-zoom"
 },
 {
-"id": "pjchamber-15013",
-"title": "Fall Blood Drive",
-"start": "2026-10-08T06:30:00",
-"end": "2026-10-08T19:00:00",
-"allday": false,
-"venue": "John T. Mather Memorial Hospital",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/fall-blood-drive/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/fall-blood-drive"
-},
-{
 "id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58903",
 "title": "Parent Toddler Workshop (18m - 3.5 yrs w/ caregiver)",
 "start": "2026-10-08T09:30:00",
@@ -1061,26 +1004,6 @@
 "page": "https://www.threevillagelocal.com/events/interred-on-long-island"
 },
 {
-"id": "pjchamber-14181",
-"title": "2026 Port Jeff Self-Guided Fall Art Walk",
-"start": "2026-10-09T00:00:00",
-"end": "2026-11-06T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
-{
 "id": "emmaclark-time-baby-newborn-15-mos-w-caregiver-58863",
 "title": "Time For Baby (Newborn - 15 mos w/ caregiver)",
 "start": "2026-10-09T10:00:00",
@@ -1194,27 +1117,6 @@
 "page": "https://www.threevillagelocal.com/events/hill-climb-reception-to-follow"
 },
 {
-"id": "pjchamber-14946",
-"title": "Free Breast Cancer Screening – Paint Port Pink",
-"start": "2026-10-10T09:00:00",
-"end": "2026-10-10T12:00:00",
-"allday": false,
-"venue": "Middle Island Fire Department",
-"addr": "31 Arnold Drive, Middle Island, NY, 11953",
-"url": "https://portjeffchamber.com/events-calendar/free-breast-cancer-screening-paint-port-pink/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"free",
-"stage",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/free-breast-cancer-screening-paint-port-pink"
-},
-{
 "id": "brookhaven-5101",
 "title": "Junior Environmental Stewards",
 "start": "2026-10-10T10:00:00",
@@ -1252,25 +1154,6 @@
 "status": "",
 "fb": 1,
 "page": "https://www.threevillagelocal.com/events/america-250-historical-gravestones-cleaning-334"
-},
-{
-"id": "pjchamber-14961",
-"title": "Witches & Warlocks Weekend",
-"start": "2026-10-10T11:00:00",
-"end": "2026-10-11T18:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/witches-warlocks-weekend/",
-"desc": "October 10th & 11th 11am-6pm Witches & Warlocks Weekend transforms Port Jefferson into a village-wide fall experience, with something to discover around every corner. Rather than one traditional festival area, the fun stretches throughout the village—giving yo",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/witches-warlocks-weekend"
 },
 {
 "id": "iloveportjeff-6a1eb46489ca3256acdb4fe0",
