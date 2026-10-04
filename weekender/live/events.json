@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-04T12:14:38.288768+00:00",
+"updated": "2026-10-04T15:59:25.431344+00:00",
 "counts": {
 "Three Village Chamber": 3,
 "Port Jefferson Chamber": 41,
@@ -1798,6 +1798,23 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18109679189596201.jpg",
 "page": "https://www.threevillagelocal.com/burgerology"
+},
+{
+"id": "17906645451480591",
+"biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
+"ig": "threevillageinn",
+"town": "Stony Brook",
+"category": "Restaurant/Inn",
+"member": false,
+"title": "Happy Hour at Mirabelle Tavern",
+"when": "Every Wednesday & Thursday · 4-6 PM",
+"desc": "50% off cocktails, wine and beer at the bar.",
+"expires": "2026-10-14",
+"posted": "2026-09-30T15:10:46+0000",
+"url": "https://www.instagram.com/p/Dd6nyGAF3R8/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17906645451480591.jpg",
+"page": "https://www.threevillagelocal.com/mirabelle-restaurant-tavern"
 }
 ],
 "eatOrder": [

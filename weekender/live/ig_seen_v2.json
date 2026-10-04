@@ -1826,5 +1826,45 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-03T17:19:39+0000"
+},
+"18135841063631032": {
+"special": false,
+"title": "Burgerology Returning to Patchogue",
+"when": "Coming Soon",
+"desc": "Burgerology announces return to Patchogue with a new location, no specific date provided yet.",
+"expires": "2026-10-04",
+"_ts": "2026-10-04T15:57:57+0000"
+},
+"18112517788871636": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-04T13:18:18+0000"
+},
+"18623568274030369": {
+"special": false,
+"title": "PJ Lobster House Sunday Dinner",
+"when": "Ongoing",
+"desc": "Dine in, pickup, or delivery available. No specific time-bound offer or event date announced.",
+"expires": "2026-10-04",
+"_ts": "2026-10-04T14:46:37+0000"
+},
+"18109923269234883": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-04T15:32:48+0000"
+},
+"18107119046191646": {
+"special": false,
+"title": "Game Day Takeout & Delivery",
+"when": "Ongoing",
+"desc": "Order game-day favorites like wings, calzones, and mozzarella sticks for takeout or delivery.",
+"expires": "2026-10-04",
+"_ts": "2026-10-04T15:28:29+0000"
 }
 }
