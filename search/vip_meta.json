@@ -16,7 +16,8 @@
   "web": "https://www.longislandrealestatecouple.com",
   "fb": "https://www.facebook.com/longislandrealestatecouple",
   "ig": "https://www.instagram.com/longislandrealestatecouple",
-  "pay": ""
+  "pay": "",
+  "pri": 0
  },
  "78": {
   "verified": true,
@@ -33,7 +34,8 @@
   "web": "https://www.girardwmg.com/",
   "fb": "https://www.facebook.com/girardwmg",
   "ig": "",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "112": {
   "verified": true,
@@ -52,7 +54,8 @@
   "web": "https://www.danielgale.com/odwyerbrainardteam",
   "fb": "https://www.facebook.com/theodwyerbrainardteam",
   "ig": "https://www.instagram.com/theodwyerbrainardteam",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "115": {
   "verified": true,
@@ -66,7 +69,8 @@
   "web": "https://www.KGRCONTRACTING.COM",
   "fb": "https://facebook.com/KGRcontractingcorp",
   "ig": "https://www.instagram.com/KGRcontractingcorp",
-  "pay": "Visa/Mastercard Check Cash Financing available"
+  "pay": "Visa/Mastercard Check Cash Financing available",
+  "pri": 1
  },
  "122": {
   "verified": true,
@@ -84,7 +88,8 @@
   "web": "https://www.coltrain.com/",
   "fb": "",
   "ig": "",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "137": {
   "verified": true,
@@ -99,7 +104,8 @@
   "web": "https://southardestateplanning.com/",
   "fb": "",
   "ig": "https://www.instagram.com/southardestateplanning/",
-  "pay": "Checks, E-Checks, Credit Card"
+  "pay": "Checks, E-Checks, Credit Card",
+  "pri": 1
  },
  "138": {
   "verified": true,
@@ -113,7 +119,8 @@
   "web": "https://www.zumapay.com",
   "fb": "",
   "ig": "",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "142": {
   "verified": true,
@@ -129,7 +136,8 @@
   "web": "https://aronicaplanthealthcare.com/",
   "fb": "https://www.facebook.com/aronicaplanthealthcare/",
   "ig": "https://www.instagram.com/aronicaplanthealthcare/?hl=en",
-  "pay": "Check, Major Credit Cards, Zelle and Venmo"
+  "pay": "Check, Major Credit Cards, Zelle and Venmo",
+  "pri": 1
  },
  "143": {
   "verified": true,
@@ -143,7 +151,8 @@
   "web": "https://www.emmaclark.org/",
   "fb": "https://www.facebook.com/EmmaClarkLibrary/",
   "ig": "https://www.instagram.com/emmaclarklibrary/",
-  "pay": "Most items are free! For all others, we accept cash, check, or credit card."
+  "pay": "Most items are free! For all others, we accept cash, check, or credit card.",
+  "pri": 1
  },
  "151": {
   "verified": true,
@@ -158,7 +167,8 @@
   "web": "http://www.magicrestoration.com",
   "fb": "http://www.facebook.com/magichomerestoration",
   "ig": "http://www.instagram.com/magichomerestoration",
-  "pay": "Cash Credit Check Venmo PayPal Cashapp"
+  "pay": "Cash Credit Check Venmo PayPal Cashapp",
+  "pri": 1
  },
  "217": {
   "verified": true,
@@ -174,7 +184,8 @@
   "web": "https://www.jlwfinancialservices.com/",
   "fb": "https://www.facebook.com/profile.php?id=100091849448935",
   "ig": "",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "228": {
   "verified": true,
@@ -191,7 +202,8 @@
   "web": "https://www.raupplaw.com/",
   "fb": "https://www.facebook.com/Amy.C.Raupp.Attorney",
   "ig": "",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "240": {
   "verified": true,
@@ -205,7 +217,8 @@
   "web": "",
   "fb": "",
   "ig": "",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "299": {
   "verified": true,
@@ -223,7 +236,8 @@
   "web": "https://www.northshoreinjurylawyer.com",
   "fb": "https://www.facebook.com/thenorthshoreinjurylawyer",
   "ig": "https://www.instagram.com/northshoreinjurylawyer",
-  "pay": "Contingency fee Retainer, a legal fee is only paid upon the successful resolution of your case."
+  "pay": "Contingency fee Retainer, a legal fee is only paid upon the successful resolution of your case.",
+  "pri": 1
  },
  "364": {
   "verified": false,
@@ -237,7 +251,8 @@
   "web": "https://www.hartorthopedics.com",
   "fb": "https://www.facebook.com/DrJeffreyDHart",
   "ig": "https://www.instagram.com/dr.jeffreydhart/",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "484": {
   "verified": false,
@@ -252,7 +267,8 @@
   "web": "",
   "fb": "",
   "ig": "",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "499": {
   "verified": false,
@@ -266,7 +282,8 @@
   "web": "https://oali.com/",
   "fb": "https://www.facebook.com/OrthopedicAssociatesofLongIsland",
   "ig": "https://www.instagram.com/orthopedicassociatesli/",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "528": {
   "verified": false,
@@ -280,7 +297,8 @@
   "web": "https://www.rollinghillspm.com/",
   "fb": "",
   "ig": "",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "552": {
   "verified": true,
@@ -294,7 +312,8 @@
   "web": "https://www.strongstrains.com",
   "fb": "https://www.facebook.com/profile.php?id=61577219799105",
   "ig": "https://www.instagram.com/strongstrainsli/",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  },
  "684": {
   "verified": false,
@@ -313,6 +332,7 @@
   "web": "",
   "fb": "",
   "ig": "http://www.instagram.com/victor_stabile",
-  "pay": ""
+  "pay": "",
+  "pri": 1
  }
 }
