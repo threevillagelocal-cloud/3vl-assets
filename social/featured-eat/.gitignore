@@ -1,0 +1,4 @@
+node_modules/
+out/*/*.html
+out/*/p*.jpg
+out/*/bg.jpg

@@ -1,0 +1,5 @@
+{
+ "_how": "Optional per-place tweaks keyed by Instagram handle: name (shorter display name), sub (card subtitle), photo (repo-relative path), pos (CSS background-position).",
+ "ralphsitalianicesstonybrook": {"name": "Ralph's Italian Ices"},
+ "tommysplaceportjeff_": {"pos": "50% 55%"}
+}
