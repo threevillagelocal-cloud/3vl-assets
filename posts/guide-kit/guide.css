@@ -182,3 +182,5 @@
 .gk-light .gk-meter h3{color:#fff}.gk-light .gk-meter .gk-p{color:#e3d6c4}
 /* BD blog pages force img position/size: keep the hero photo as a background layer */
 .gk .gk-hero>img.gk-hbg{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;margin:0!important;object-fit:cover!important;border-radius:0!important}
+/* BD prints the post title as the page h1 right above our designed hero: keep it for Google and screen readers, hide it visually */
+body:has(#gk-top) .post-detail-body h1:not(.gk-h1){position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;margin:0!important;padding:0!important}
