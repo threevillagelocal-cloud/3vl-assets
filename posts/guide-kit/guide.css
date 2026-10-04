@@ -180,3 +180,5 @@
 .gk-light[data-ch]::before{-webkit-text-stroke:2px rgba(176,109,0,.22)}
 .gk-sec[data-ch] .gk-h2{max-width:calc(100% - 110px)}
 .gk-light .gk-meter h3{color:#fff}.gk-light .gk-meter .gk-p{color:#e3d6c4}
+/* BD blog pages force img position/size: keep the hero photo as a background layer */
+.gk .gk-hero>img.gk-hbg{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;margin:0!important;object-fit:cover!important;border-radius:0!important}
