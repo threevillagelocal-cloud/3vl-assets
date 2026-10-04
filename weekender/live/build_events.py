@@ -49,6 +49,38 @@ def _norm(t):
     return re.sub(r"[^a-z0-9]", "", re.sub(r"\b(the|a|an|annual|\d+(st|nd|rd|th))\b", "", t.lower()))
 
 
+
+_GENERIC = {"market", "farmers", "outdoor", "summer", "live", "music", "event", "events", "night", "family", "library", "village",
+            "street", "center", "centre", "performance", "concert", "festival", "local", "weekend", "annual", "museum", "school"}
+
+
+def _toks(t):
+    return {w for w in re.findall(r"[a-z]{4,}", (t or "").lower())} - {"with", "from", "this", "that", "free"}
+
+
+def _merge_aliases(events):
+    """SEO audit 10/4/2026: the same occurrence imported from two calendars under different names (e.g. "Port Jefferson Farmers
+    Market" + "Outdoor Summer Farmers Market", or three Marian Mastrorilli listings) showed up twice in the cards and in Google's
+    event data. Same start minute, different source, and the same place (2+ shared venue words) or a shared distinctive title
+    word -> keep the first (curated 3VL copy sorts first). Same-source pairs are left alone (libraries list real parallel events)."""
+    keep = []
+    for e in sorted(events, key=lambda x: (x["start"][:16], x["src"] != "3vl", not x.get("page"))):
+        dup = False
+        for k in keep:
+            if k["start"][:16] != e["start"][:16] or k.get("src") == e.get("src"):
+                continue
+            vt = _toks(k.get("venue")) & _toks(e.get("venue"))
+            tt = {w for w in _toks(k["title"]) & _toks(e["title"]) if len(w) >= 6 and w not in _GENERIC}
+            if len(vt) >= 2 or tt:
+                dup = True
+                break
+        if not dup:
+            keep.append(e)
+    gone = len(events) - len(keep)
+    if gone:
+        print("merged %d duplicate event listing(s) from other calendars" % gone)
+    return keep
+
 def event_pages():
     """Our own /events pages, from the site's public calendar feed: [(normalized title, 'YYYY-MM-DD' Eastern, url)].
     Lets every homepage card link to the event's page on threevillagelocal.com (10/1/2026). Empty list on any error."""
@@ -181,6 +213,7 @@ def main():
             continue
         seen.add(k)
         final.append(e)
+    final = _merge_aliases(final)
     final.sort(key=lambda x: x["start"])
     # each event's page on our own site (weekend.json "page" wins for hand-picked items); the homepage cards link there
     pages = event_pages()
