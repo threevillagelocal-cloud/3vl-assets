@@ -571,21 +571,6 @@
  ],
  "specials": [
   {
-   "biz": "The Country Corner",
-   "venue": "countrycorner",
-   "title": "Culper Spy Day Lunch & Brunch",
-   "when": "Sat, Oct. 3 · Open 11 AM",
-   "desc": "Suffolk's oldest continuously running tavern (the old McDowell Saloon, ca. 1904) opens at 11 for Spy Day, with brunch from 11 to 2, craft beer and a view of the Brewster family home. Stop in before or after the festivities.",
-   "src": "facebook",
-   "srcName": "The Country Corner",
-   "img": "cc-spyday",
-   "img2": "cc-saloon",
-   "phone": "",
-   "ext": "cc-ext",
-   "dish": "cc-spyday",
-   "logo": "cc-logo"
-  },
-  {
    "biz": "DJ’s Clam Shack",
    "venue": "djs",
    "title": "Lobster Rolls & Fresh Seafood",
@@ -601,7 +586,7 @@
    "biz": "Madiran The Wine Bar",
    "venue": "madiran",
    "title": "Happy Hour Is Back",
-   "when": "Fri, 4-6 PM",
+   "when": "Tue-Fri, 4-6 PM",
    "desc": "A special happy hour menu at the award-winning wine bar, running Tuesday through Friday.",
    "src": "website",
    "srcName": "madiranthewinebar.com",
@@ -609,18 +594,6 @@
    "img": "madiran",
    "ext": "madiran-ext",
    "dish": "madiran"
-  },
-  {
-   "biz": "Culpers 1778",
-   "venue": "culpers",
-   "title": "Spy Day Lunch Specials",
-   "when": "Sat, Oct. 3",
-   "desc": "The restaurant named for the ring itself. Reservations recommended.",
-   "src": "website",
-   "srcName": "tvhs.org",
-   "img": "culpers",
-   "ext": "culpers-ext",
-   "dish": "culpers"
   },
   {
    "biz": "Tommy's Place",
