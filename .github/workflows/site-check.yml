@@ -1,0 +1,38 @@
+name: Nightly site check
+
+# Every night: loads every important page like a visitor and checks it really works (category lists load all businesses,
+# homepage sections filled, events/blog render, no script errors, no broken images, no sideways scrolling on phones).
+# Public repo = free Actions minutes. Writes sitecheck/latest.json; 3vl-site-guard emails the owner when something fails.
+on:
+  schedule:
+    - cron: "15 6 * * *"   # ~2:15 AM ET
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Check the site
+        working-directory: sitecheck
+        run: |
+          npm install --silent --no-audit --no-fund
+          node check.js
+          cp out/report.json latest.json
+      - name: Save the report
+        run: |
+          git config user.name "3VL site check"
+          git config user.email "actions@users.noreply.github.com"
+          git add sitecheck/latest.json
+          git diff --cached --quiet || (git commit -qm "Site check $(date -u +%F)" && for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done)
