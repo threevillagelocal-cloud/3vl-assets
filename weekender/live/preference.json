@@ -1,7 +1,7 @@
 {
  "_how": "Owner's ranked list. Top to bottom: if a business has a current Instagram special it shows, if not we skip to the next. Max 'cap' cards. 'live': false keeps the section off until the owner approves the order.",
  "live": true,
- "cap": 6,
+ "cap": 8,
  "order": [
   "culpers1778",
   "countrycornerlongisland",
@@ -11,9 +11,10 @@
   "djsclamshackstonybrook",
   "blackpearlportjeff",
   "ruvorestaurant",
+  "eatschnitzels",
+  "ralphsitalianicesstonybrook",
   "thesteamroomrestaurant",
   "burgerologyusa",
-  "eatschnitzels",
   "seportdelicatessen",
   "thestudy.bytoast",
   "littlecheeseshop",
@@ -47,7 +48,6 @@
   "robinsonstearoom",
   "secretgardentearoom",
   "premierepastryshop",
-  "ralphsitalianicesstonybrook",
   "kilwins_port_jeff",
   "portjefficecream"
  ]
