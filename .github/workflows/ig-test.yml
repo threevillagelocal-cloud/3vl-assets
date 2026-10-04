@@ -1,6 +1,9 @@
 name: Instagram connection test (manual)
 on:
   workflow_dispatch:
+    inputs:
+      script:
+        default: ig_test.py
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -12,4 +15,4 @@ jobs:
       - name: Test Instagram Business Discovery
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
-        run: python weekender/live/ig_test.py
+        run: python weekender/live/${{ inputs.script || 'ig_test.py' }}
