@@ -4,6 +4,8 @@ on:
     inputs:
       script:
         default: ig_test.py
+      handles:
+        default: ""
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -15,4 +17,11 @@ jobs:
       - name: Test Instagram Business Discovery
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_HANDLES: ${{ inputs.handles }}
         run: python weekender/live/${{ inputs.script || 'ig_test.py' }}
+      - uses: actions/upload-artifact@v4
+        if: ${{ inputs.script == 'ig_photos.py' }}
+        with:
+          name: igpull
+          path: igpull
+          retention-days: 3
