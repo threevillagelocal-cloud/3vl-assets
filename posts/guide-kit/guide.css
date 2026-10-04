@@ -154,3 +154,29 @@
 @media(prefers-reduced-motion:reduce){.gk-hbg,.gk-leaves i,.gk-dot,.gk-card .gk-logo,.gk-next em{animation:none!important}.gk-leaves{display:none}}
 @media(max-width:520px){.gk .gk-pcred{top:8px;bottom:auto}.gk-hero{min-height:520px}#gk-map{height:340px}.gk-count b{font-size:20px}}
 @media print{.gk-nav,.gk-finder,#gk-mylist,.gk-prog,.gk-heart,.gk-leaves,.gk-mapwrap,.gk-next{display:none!important}.gk{background:#fff;color:#000}.gk-pre{opacity:1;transform:none}}
+
+/* light sections: alternate with dark so the page has a clear rhythm (owner 10/4/2026) */
+.gk-sec.gk-light{background:#f7f2ea;color:#1d2433;border-top:0}
+.gk-light .gk-h2,.gk-light h3{color:#13233a}
+.gk-light .gk-p,.gk-light .gk-card p{color:#3c4556}
+.gk .gk-light .gk-label{color:#b06d00}
+.gk-light .gk-card{background:#fff;border-color:#eadfcc;box-shadow:0 10px 30px rgba(60,40,10,.08)}
+.gk-light .gk-card:hover{box-shadow:0 22px 44px rgba(60,40,10,.16)}
+.gk .gk-light .gk-where{color:#6b7383}
+.gk-light .gk-facts span{background:#f3ece0;color:#3c4556}
+.gk-light .gk-facts .gk-free{background:#dff5ea;color:#0d7760}
+.gk-light .gk-cact a{background:#13233a;color:#fff!important}
+.gk-light .gk-cact a.gk-3vl{background:#ffc53d;color:#13233a!important}
+.gk .gk-light .gk-member{color:#b06d00}
+.gk .gk-light .gk-cred{color:#8a93a3!important}
+.gk-light .gk-tip{background:#fff;border-color:#eadfcc}.gk-light .gk-tip b{color:#13233a}.gk-light .gk-tip span{color:#3c4556}
+.gk-light .gk-next{color:#13233a;background:linear-gradient(90deg,rgba(255,197,61,.22),rgba(255,197,61,.05));border-color:#e0b04a}
+.gk-light .gk-next small,.gk-light .gk-next em{color:#b06d00}
+.gk-light a{color:#b06d00}
+.gk-light .gk-card.is-match{box-shadow:0 0 0 3px #ffc53d,0 18px 40px rgba(255,170,40,.25)}
+/* chapter number */
+.gk-sec[data-ch]{position:relative}
+.gk-sec[data-ch]::before{content:attr(data-ch);position:absolute;right:clamp(14px,4vw,40px);top:clamp(10px,2.5vw,22px);font-size:clamp(64px,11vw,120px);font-weight:700;line-height:1;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px rgba(255,197,61,.28);pointer-events:none}
+.gk-light[data-ch]::before{-webkit-text-stroke:2px rgba(176,109,0,.22)}
+.gk-sec[data-ch] .gk-h2{max-width:calc(100% - 110px)}
+.gk-light .gk-meter h3{color:#fff}.gk-light .gk-meter .gk-p{color:#e3d6c4}
