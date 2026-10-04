@@ -88,7 +88,7 @@ async function checkPage(browser, item) {
       if (kind === 'home') { o.eat = q('#wk-eat .wk-sp'); o.picks = q('#wk-top .wk-pick, #wk-top article, #wk-top .wk-card'); o.top = !!document.getElementById('wk-top'); o.secs = q('.wk-sec') }
       if (kind === 'events') { o.cards = q('.tvc-cards > *, .tvc-card, .tvc-ev'); o.tvc = /tvc-(on|done)/.test(document.documentElement.className + ' ' + document.body.className) }
       if (kind === 'blog') o.cards = q('.p3-bcard, .p3-bgrid > *');
-      if (kind === 'categories') o.tiles = q('#p3grid > *, .p3-cat, .p3-tile');
+      if (kind === 'categories') o.tiles = q('.p3-ctile, .p3-cgrid > *');
       if (kind === 'event') o.ev = !!document.getElementById('ev') || q('.ev-on, #ev-next') > 0;
       if (kind === 'profile') o.h1 = (document.querySelector('h1') || {}).textContent || '';
       return o;
