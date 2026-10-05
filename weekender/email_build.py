@@ -184,6 +184,21 @@ def main():
       '<h1 style="margin:0 0 10px;font:bold 30px/1.15 %s;color:#fff">%s</h1><p style="margin:0 0 18px;font:16px/1.55 %s;color:#dbe4ee">%s</p>%s</td></tr>' % (
         NAVY2, GOLD, NAVY, FONT, when(lead) + " &middot; " + esc(lead["price"]), FONT, esc(lead["title"]), FONT, esc(lead["desc"]),
         btn(lead_href, (guide[2] if guide else "See the details") + " &rarr;")))
+    # featured guides (weekender/email_features.json, owner 10/5/2026): pinned until their "until" date
+    feats = []
+    try:
+        today = datetime.date.today().isoformat()
+        feats = [f for f in json.load(open(os.path.join(HERE, "email_features.json"), encoding="utf-8")) if f.get("until", "9999") >= today]
+    except Exception as ex:
+        print("  features skipped:", ex)
+    for k, f in enumerate(feats):
+        im = P.get(os.path.join(ASSETS, f["img"]), "feature-%d" % k, w=600, h=315)
+        w('<tr><td style="padding:30px 28px 4px"><p style="margin:0 0 6px;font:bold 12px %s;letter-spacing:2px;text-transform:uppercase;color:#b36b00">Featured guide</p>'
+          '<a href="%s"><img src="%s" width="544" alt="%s" style="display:block;width:100%%;height:auto;border-radius:14px;border:0"></a>'
+          '<p style="margin:14px 0 6px;font:bold 21px/1.3 %s"><a href="%s" style="color:%s;text-decoration:none">%s</a></p>'
+          '<p style="margin:0 0 14px;font:15px/1.55 %s;color:%s">%s</p>%s</td></tr>' % (
+              FONT, esc(f["url"]), im, esc(f["title"]), FONT, esc(f["url"]), NAVY, esc(f["title"]), FONT, INK, esc(f["blurb"]),
+              btn(f["url"], esc(f.get("button", "Read it")) + " &rarr;")))
     # top things to do
     w(section("Top things to do", "This weekend"))
     for i, e in enumerate([p for p in picks if p is not lead][:3]):   # short version (owner 10/2): 3 picks, one-line descriptions
@@ -242,6 +257,7 @@ def main():
           GOLD, FONT, FONT, NAVY, FONT, INK, FONT, INK, NAVY, btn(SITE + "/login", "Log in and update &rarr;", bg=NAVY, fg="#fff"), btn(SITE + "/account/leads", "See my leads &rarr;")))
     # stories
     st = stories(1)
+    st = [x for x in st if not any(f["url"].endswith(x.get("post_filename", "~~")) for f in feats)]   # no repeat of a featured guide
     if st:   # short version: one story, as a single line
         p = st[0]; href, title = SITE + "/" + p["post_filename"], html.unescape(p["post_title"])
         w('<tr><td style="padding:26px 28px 4px"><p style="margin:0 0 4px;font:bold 12px %s;letter-spacing:2px;text-transform:uppercase;color:#b36b00">Latest local story</p>'
