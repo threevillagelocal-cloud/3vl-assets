@@ -166,7 +166,7 @@ def main():
             end = e.get("end") or e["start"]
             if not (e["start"].date() <= horizon and max(e["start"], end).date() >= today):   # upcoming, or started earlier and still running
                 continue
-            if re.search(r"country house|bench bar", e["title"] + " " + e["venue"], re.I):   # never promote (owner requests: Country House; The Bench Bar & Grill 10/1/2026)
+            if re.search(r"country house|bench bar|home ?baked by julia", e["title"] + " " + e["venue"], re.I):   # never promote (owner requests: Country House; The Bench Bar & Grill 10/1/2026; Homebaked By Julia 10/5/2026)
                 continue
             if re.search(r"meeting|work session|advisory council|board of trustees|zoning board|planning board|delayed opening|library closed", e["title"], re.I):
                 continue
