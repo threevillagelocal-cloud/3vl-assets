@@ -1,0 +1,12 @@
+[
+ {"slug":"restaurant","url":"/restaurant","seo_id":45,"title":"Restaurants","hook":"Where the locals eat","sub":"65 local spots in Setauket, Stony Brook &amp; Port Jeff","feature":[292,25,31,46,105,64],"ring":[292]},
+ {"slug":"real-estate-services","url":"/real-estate-services","seo_id":61,"title":"Real Estate","hook":"Agents who know the neighborhood","sub":"38 local agents and teams","feature":[71,112,684,193,272,99],"ring":[71,112,684,193,272],"og_size":96},
+ {"slug":"home-services","url":"/home-services","seo_id":58,"title":"Home Services","hook":"Trusted local pros","sub":"34 neighbors who fix, build and care for your home","feature":[115,142,151,474,528,262],"ring":[115,142,151,474,528,262],"og_size":80},
+ {"slug":"medical-services","url":"/medical-services","seo_id":52,"title":"Doctors &amp; Medical","hook":"Care close to home","sub":"22 local practices","feature":[364,499,91,147,186,85],"ring":[364,499],"og_size":74,"ig_size":104,"story_size":120},
+ {"slug":"financial-services","url":"/financial-services","seo_id":51,"title":"Financial Services","hook":"Local experts for your money","sub":"13 local advisors, accountants and lenders","feature":[78,122,217,240,77,116],"ring":[78,122,217,240],"og_size":72,"ig_size":100,"story_size":116},
+ {"slug":"attorney","url":"/attorney","seo_id":44,"title":"Attorneys","hook":"Local lawyers you can call today","sub":"8 local law firms","feature":[137,228,299,149,152,236],"ring":[137,228,299,149]},
+ {"slug":"beauty-personal-care","url":"/beauty-personal-care","seo_id":63,"title":"Beauty &amp; Personal Care","hook":"Look and feel your best","sub":"12 local salons, spas and studios","feature":[173,685,89,120,161,243],"ring":[173,685],"og_size":66,"ig_size":92,"story_size":108},
+ {"slug":"shopping","url":"/shopping","seo_id":60,"title":"Shop Local","hook":"One-of-a-kind local shops","sub":"19 shops around Three Village","feature":[552,106,155,160,190,191],"ring":[552]},
+ {"slug":"fitness-sports","url":"/fitness-sports","seo_id":64,"title":"Sports &amp; Fitness","hook":"Get moving, close to home","sub":"17 gyms, leagues and studios","feature":[88,97,121,154,163,164],"ring":[],"og_size":76,"ig_size":106,"story_size":122},
+ {"slug":"education","url":"/education","seo_id":50,"title":"Education","hook":"Tutors, classes and more","sub":"12 local programs for every age","feature":[296,63,247,87,75,304],"ring":[296]}
+]

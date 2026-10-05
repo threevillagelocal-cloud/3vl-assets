@@ -17,13 +17,13 @@ def card(im, w, h):
     return durl(im.resize((w * 2, h * 2)))
 CSS = """*{box-sizing:border-box;margin:0;padding:0}html,body{overflow:hidden;background:#0c1018;font-family:'Radio Canada',sans-serif;color:#fff}
 .c{position:relative;overflow:hidden}.bg{position:absolute;inset:-20px;background:url(BG) center/cover;filter:saturate(1.1)}
-.vig{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,14,26,.9) 0%,rgba(8,14,26,.72) 45%,rgba(8,14,26,.35) 100%)}
+.vig{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,26,52,.92) 0%,rgba(12,34,68,.74) 45%,rgba(12,34,68,.38) 100%)}
 .pill{display:inline-block;font-weight:700;letter-spacing:.06em;padding:10px 22px;border-radius:999px;background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.35)}
 .gold{display:inline-block;font-weight:700;padding:12px 26px;border-radius:999px;background:linear-gradient(180deg,#ffd76a,#ffc53d);color:#13233a;box-shadow:0 10px 26px rgba(255,197,61,.35)}
-h1{font-weight:700;letter-spacing:-.035em;line-height:.95;text-shadow:0 4px 24px rgba(0,0,0,.55)}h1 span{display:block;color:#ffc53d}
+h1{font-weight:700;letter-spacing:-.035em;line-height:.95;text-shadow:0 4px 24px rgba(0,0,0,.55)}h1 span{display:block;color:#8ec5ff}
 .sub{font-weight:600;color:#eef3f8;text-shadow:0 3px 14px rgba(0,0,0,.6)}
 .k{position:absolute;border-radius:26px;background:#fff center/cover;box-shadow:0 30px 60px rgba(0,0,0,.55);border:7px solid #fff}
-.k.v{box-shadow:0 30px 60px rgba(0,0,0,.55),0 0 0 6px #ffc53d,0 0 40px rgba(255,197,61,.45)}"""
+.k.v{box-shadow:0 30px 60px rgba(0,0,0,.55),0 0 0 6px #8ec5ff,0 0 40px rgba(142,197,255,.4)}"""
 T = {
  "og": (1200, 630, """<div class="c" style="width:1200px;height:630px"><div class="bg"></div><div class="vig"></div>
 <div style="position:absolute;left:62px;top:0;bottom:0;width:640px;display:flex;flex-direction:column;justify-content:center">
@@ -33,7 +33,7 @@ T = {
 <div class="k v" style="right:60px;top:70px;width:340px;height:250px;background-image:url(@@CARD1@@)"></div>
 <div class="k" style="right:110px;top:345px;width:290px;height:215px;background-image:url(@@CARD2@@)"></div></div>""",
   [(340, 250, hero), (290, 215, mums)]),
- "ig": (1080, 1350, """<div class="c" style="width:1080px;height:1350px"><div class="bg"></div><div class="vig" style="background:linear-gradient(180deg,rgba(8,14,26,.88) 0%,rgba(8,14,26,.6) 50%,rgba(8,14,26,.9) 100%)"></div>
+ "ig": (1080, 1350, """<div class="c" style="width:1080px;height:1350px"><div class="bg"></div><div class="vig" style="background:linear-gradient(180deg,rgba(10,26,52,.9) 0%,rgba(12,34,68,.62) 50%,rgba(10,26,52,.92) 100%)"></div>
 <div style="position:absolute;left:70px;right:70px;top:80px"><span class="pill" style="font-size:30px">&#127810; THE 2026 FALL GUIDE</span>
 <h1 style="font-size:124px;margin-top:30px">Fall in<br>Three Village<span style="font-size:82px;margin-top:18px">Pumpkins, hayrides &amp; festivals</span></h1></div>
 <div class="k v" style="left:70px;top:720px;width:470px;height:360px;background-image:url(@@CARD1@@)"></div>
@@ -41,7 +41,7 @@ T = {
 <div style="position:absolute;left:70px;right:70px;bottom:80px;display:flex;justify-content:space-between;align-items:center">
 <div class="sub" style="font-size:40px">30+ picks near Setauket</div><span class="gold" style="font-size:34px">Link in bio &rarr;</span></div></div>""",
   [(470, 360, hero), (400, 320, pj)]),
- "story": (1080, 1920, """<div class="c" style="width:1080px;height:1920px"><div class="bg"></div><div class="vig" style="background:linear-gradient(180deg,rgba(8,14,26,.85) 0%,rgba(8,14,26,.55) 55%,rgba(8,14,26,.92) 100%)"></div>
+ "story": (1080, 1920, """<div class="c" style="width:1080px;height:1920px"><div class="bg"></div><div class="vig" style="background:linear-gradient(180deg,rgba(10,26,52,.88) 0%,rgba(12,34,68,.56) 55%,rgba(10,26,52,.94) 100%)"></div>
 <div style="position:absolute;left:80px;right:80px;top:250px"><span class="pill" style="font-size:34px">&#127810; THE 2026 FALL GUIDE</span>
 <h1 style="font-size:150px;margin-top:36px">Fall in<br>Three Village<span style="font-size:96px;margin-top:22px">Pumpkins, hayrides &amp; festivals</span></h1></div>
 <div class="k v" style="left:80px;top:1040px;width:560px;height:420px;background-image:url(@@CARD1@@)"></div>
