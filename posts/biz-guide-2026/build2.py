@@ -85,13 +85,11 @@ faq_ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "main
     {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]})
 
 body = """<div class="bx" id="bx-top">
-<header class="bx-hero"><img src="IMGhero-1600.webp" srcset="IMGhero-900.webp 900w, IMGhero-1600.webp 1600w" sizes="(max-width:900px) 100vw, 900px" alt="Shops in Stony Brook Village" width="1600" height="927" fetchpriority="high"><div class="bx-hin"><p class="bx-kick">For local business owners</p><h2>The Business Owner's Toolkit</h2><p>Local pros who help Three Village businesses save money and run smarter.</p></div></header>
+<header class="bx-head"><p class="bx-kick">For local business owners &middot; Three Village</p><h2>The Business Owner's Toolkit</h2><p class="bx-sub">Local pros who help you save money and run smarter.</p></header>
 
-<p class="bx-lead">Running a business in Setauket, Stony Brook or Port Jefferson means wearing every hat. You don't have to. Here are the neighbors who handle payroll, taxes, insurance, planning, legal and tech, plus free help most owners never use.</p>
+<p class="bx-lead">Fall is the perfect time of year to make changes in your business. Get your payroll, books, insurance and plans in order now, and you walk into <b>2027</b> ready to grow instead of scrambling. These are the Three Village neighbors who can help, plus free resources most owners never use. <span>Reach out this fall and start the new year ahead.</span></p>
 
 <nav class="bx-nav" aria-label="Jump to">NAV</nav>
-
-<div class="bx-check" id="bx-check"><div class="bx-ch"><b>Quick money check</b><span id="bx-n">0 of 6</span></div>CHECKS</div>
 
 GROUPS
 
@@ -101,33 +99,29 @@ GROUPS
 
 <section class="bx-faq"><h3>Quick answers</h3>@@FAQ@@</section>
 
-<p class="bx-src">Business details from each business's Three Village Local profile. Free resources checked October 5, 2026. General information, not tax, legal or financial advice. Hero photo: Stony Brook Village shops by Iracaz, CC BY-SA 3.0, via Wikimedia Commons.</p>
+<p class="bx-src">Business details from each business's Three Village Local profile. Free resources checked October 5, 2026. General information, not tax, legal or financial advice.</p>
 </div>
-<script>(function(){var r=document.getElementById('bx-check');if(!r)return;var K='bx-check-2026',s={};try{s=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
-var bs=[].slice.call(r.querySelectorAll('input')),n=document.getElementById('bx-n');
-function up(){var d=bs.filter(function(b){return b.checked}).length;n.textContent=d===bs.length?'All done!':d+' of '+bs.length}
-bs.forEach(function(b){b.checked=!!s[b.getAttribute('data-k')];b.addEventListener('change',function(){s[b.getAttribute('data-k')]=b.checked;try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}up()})});up()})();</script>
+<script>(function(){var r=document.getElementById('bx-top');if(!r)return;r.classList.add('bx-js');var rows=[].slice.call(r.querySelectorAll('.bx-row'));if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){rows.forEach(function(x){x.classList.add('bx-in')});return}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target,sib=[].slice.call(el.parentNode.querySelectorAll('.bx-row'));el.style.transitionDelay=(sib.indexOf(el)*90)+'ms';el.classList.add('bx-in');io.unobserve(el)})},{rootMargin:'0px 0px -8% 0px'});rows.forEach(function(x){io.observe(x)})})();</script>
 <script type="application/ld+json">FAQLD</script>
 <style>
 #post-content .post-image-container,#post-content .post-image-container + hr{display:none!important}
 .bx{--n:#13233a;--b:#1f5fae;--m:#5c6b80;--l:#e6ebf2;max-width:780px;margin:0 auto;color:var(--n);font-family:'tvl-rc','Radio Canada',system-ui,sans-serif}
 .bx *{box-sizing:border-box}.bx p{margin:0!important}
-.bx-hero{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:16/8;min-height:240px;background:#13233a}
-.bx-hero img{position:absolute!important;inset:0;width:100%!important;height:100%!important;object-fit:cover;max-width:none!important}
-.bx-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,25,44,.88) 0%,rgba(13,25,44,.35) 60%,rgba(13,25,44,.1) 100%)}
-.bx-hin{position:absolute;left:0;right:0;bottom:0;padding:22px 24px;z-index:1;color:#fff}
-.bx-kick{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8ec5ff}
-.bx-hin h2{font-size:clamp(28px,5vw,40px);line-height:1.08;margin:6px 0 6px!important;color:#fff;font-weight:700}
-.bx .bx-hin p:last-child{font-size:16px;color:#dbe6f3}
-.bx .bx-lead{font-size:17px;line-height:1.6;margin:20px 2px 16px!important;color:#2b3a4f}
+body:has(#bx-top) .post-detail-body h1{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important}
+.bx-head{padding:4px 2px 0;border-left:5px solid var(--b);padding-left:16px;margin:4px 0 16px}
+.bx .bx-kick{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--b)}
+.bx-head h2{font-size:clamp(28px,4.6vw,38px);line-height:1.08;margin:4px 0 4px!important;color:var(--n);font-weight:700}
+.bx .bx-sub{font-size:16px;color:var(--m)}
+.bx .bx-lead{font-size:19px;font-weight:600;line-height:1.55;margin:0 2px 16px!important;color:var(--n)}.bx-lead b{color:var(--b)}.bx-lead span{display:block;margin-top:8px;color:var(--b)}
+.bx-js .bx-row{opacity:0;transform:translateY(18px) scale(.985);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1),box-shadow .2s}
+.bx-js .bx-row.bx-in{opacity:1;transform:none}
+.bx-row:hover{transform:translateY(-2px)!important;box-shadow:0 10px 24px rgba(19,35,58,.1)}
+.bx-in .bx-logo{animation:bxpop .6s ease both;animation-delay:inherit}
+@keyframes bxpop{0%{transform:scale(.6);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+.bx-fav{animation:bxglow 2.6s ease-in-out infinite}@keyframes bxglow{50%{color:#d08a00}}
+@media (prefers-reduced-motion:reduce){.bx-js .bx-row{opacity:1;transform:none;transition:none}.bx-in .bx-logo,.bx-fav{animation:none}}
 .bx-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
 .bx-nav a{font-size:13.5px;font-weight:600;color:var(--b);background:#eef4fb;border-radius:999px;padding:7px 13px;text-decoration:none;white-space:nowrap}
-.bx-check{border:1px solid var(--l);border-radius:16px;padding:14px 16px 6px;margin:0 0 26px;background:#fbfcfe}
-.bx-ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}.bx-ch b{font-size:16px}#bx-n{font-size:13px;font-weight:700;color:var(--b)}
-.bx-ck{display:flex;align-items:center;gap:12px;padding:9px 0;border-top:1px solid #eef2f7;cursor:pointer;font-size:15px}
-.bx-ck input{position:absolute;opacity:0;pointer-events:none}.bx-ck i{flex:0 0 22px;height:22px;border-radius:7px;border:2px solid #a9bbd2;display:flex;align-items:center;justify-content:center}
-.bx-ck input:checked+i{background:var(--b);border-color:var(--b)}.bx-ck input:checked+i:after{content:"\\2713";color:#fff;font-size:13px;font-weight:800;font-style:normal}
-.bx-ck input:checked~span{color:var(--m);text-decoration:line-through}.bx-ck input:focus-visible+i{outline:3px solid #8ec5ff;outline-offset:2px}
 .bx-grp{margin:0 0 24px;scroll-margin-top:80px}
 .bx-grp h3{display:flex;align-items:center;gap:10px;font-size:21px;margin:0 0 4px;color:var(--n)}.bx-grp h3 span{font-size:20px}
 .bx .bx-why{font-size:14.5px;color:var(--m);margin:0 0 10px!important}
@@ -147,7 +141,7 @@ bs.forEach(function(b){b.checked=!!s[b.getAttribute('data-k')];b.addEventListene
 .bx-faq h3{font-size:19px;margin:0 0 8px}.bx-q{border-top:1px solid var(--l);padding:10px 2px}.bx-q summary{cursor:pointer;font-weight:700;font-size:15.5px}
 .bx .bx-q p{font-size:14.5px;color:#3f4e62;line-height:1.5;margin-top:6px!important}
 .bx .bx-src{font-size:12px;color:var(--m);margin-top:18px!important;line-height:1.5}
-@media(max-width:560px){.bx-row{flex-wrap:wrap}.bx-btns{width:100%;padding-left:60px}.bx-btns a{flex:1;text-align:center}.bx-hero{aspect-ratio:auto;min-height:250px}}
+@media(max-width:560px){.bx-row{flex-wrap:wrap}.bx-btns{width:100%;padding-left:60px}.bx-btns a{flex:1;text-align:center}}
 </style>""".replace("IMG", IMG).replace("NAV", nav).replace("CHECKS", checks).replace("GROUPS", groups).replace("FREE", "".join(FREE)).replace("FAQLD", faq_ld).replace("@@FAQ@@", faq)
 
 open(os.path.join(HERE, "post2.html"), "w", encoding="utf-8").write(body)
