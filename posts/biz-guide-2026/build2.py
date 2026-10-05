@@ -30,7 +30,7 @@ def row(name, what, town, phone=None, profile=None, logo=None, fav=False, web=No
 
 
 GROUPS = [
-    ("payroll", "&#128176;", "Payroll &amp; HR", "Stop doing payroll at midnight. Let a local pro handle pay runs, filings and HR paperwork.", [
+    ("payroll", "&#128176;", "Payroll &amp; HR", "Still with one of the big national payroll companies? Switch to a local pro, save money and get a real person who knows your name and answers the phone.", [
         row("Zuma Payroll (TJ Sirani)", "Payroll and HR compliance for 1 to 10,000 employees. TJ is a Three Village resident of almost 40 years.", "Melville", "631-525-6201", "tj-sirani-at-zuma-payroll", L + "limage-138-61-photo.png", True)]),
     ("money", "&#129534;", "Taxes &amp; bookkeeping", "Clean books all year make tax time a quick review instead of a scramble.", [
         row("JLW Accounting and Tax Services", "Management accounting and tax preparation for small, new and growing businesses.", "Setauket", "631-338-8858", "jlw-accounting-and-tax-services", P + "pimage-217-340-photo.jpg", True),
