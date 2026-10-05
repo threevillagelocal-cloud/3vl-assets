@@ -87,7 +87,7 @@ faq_ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "main
 body = """<div class="bx" id="bx-top">
 <header class="bx-head"><div class="bx-ht"><p class="bx-kick">Your neighbors in business</p><h2>The Business Owner's Toolkit</h2><p class="bx-sub">Local pros who help you save money and run smarter.</p></div><img class="bx-hlogo" src="https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-540.webp" alt="Three Village Local, your neighbors in business" width="540" height="168"></header>
 
-<p class="bx-lead">Fall is the perfect time to get your business <span class="bx-nw">ready for <b>2027</b>.</span></p><p class="bx-lead2">Reach out to these local pros this fall and start the new year ahead.</p>
+<p class="bx-lead">Don't wait for January. Get your business <span class="bx-nw">ready for <b>2027</b> now.</span></p><p class="bx-lead2">Year-end calendars fill up fast. Lock in trusted neighbors for payroll, taxes and insurance while there's still time, and start the new year ahead.</p>
 
 <nav class="bx-nav" aria-label="Jump to">NAV</nav>
 
