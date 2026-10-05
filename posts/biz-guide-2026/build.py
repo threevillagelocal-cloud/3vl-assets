@@ -50,51 +50,51 @@ def section(sid, ch, label, title, intro, cards, nxt=None, light=False):
 L = SITE + "logos/profile/"
 P = SITE + "pictures/profile/"
 
-payroll = [card("zuma", "Zuma Payroll (TJ Sirani)", "pay", "payroll", "Payroll &amp; HR", "175 Broadhollow Rd, Melville &middot; 631-525-6201",
+payroll = [card("zuma", "Zuma Payroll (TJ Sirani)", "pay", "payroll", "Payroll &amp; HR", "175 Broadhollow Rd, Melville &middot; <span class='bz-ph'>631-525-6201</span>",
                 "Payroll and HR compliance for companies with 1 to 10,000 employees, run by TJ Sirani, a Three Village resident for almost 40 years. Hand off pay runs, payroll tax filings and HR paperwork to someone you can actually call, so you can get back to running the business.",
                 ["&#128188; 1 to 10,000 employees", "&#127968; Three Village resident"], "tj-sirani-at-zuma-payroll", L + "limage-138-61-photo.png", "631-525-6201", "https://www.zumapay.com", "&#11088; Neighbor favorite")]
 
-money = [card("jlw", "JLW Accounting and Tax Services", "tax books", "tax", "Accounting &amp; tax", "690 Route 25A, Setauket &middot; 631-338-8858",
+money = [card("jlw", "JLW Accounting and Tax Services", "tax books", "tax", "Accounting &amp; tax", "690 Route 25A, Setauket &middot; <span class='bz-ph'>631-338-8858</span>",
               "Judi Wallace's Setauket firm specializes in management accounting for small, new and growing businesses, plus tax preparation. Good numbers all year means fewer surprises at tax time.",
               ["&#129534; Tax preparation", "&#128200; Small business accounting"], "jlw-accounting-and-tax-services", P + "pimage-217-340-photo.jpg", "631-338-8858", "https://www.jlwfinancialservices.com/", "&#11088; Neighbor favorite"),
-         card("jm", "JM Management Solutions", "books", "books", "Bookkeeping", "135 Mulford St, Patchogue &middot; 631-987-1532",
+         card("jm", "JM Management Solutions", "books", "books", "Bookkeeping", "135 Mulford St, Patchogue &middot; <span class='bz-ph'>631-987-1532</span>",
               "Bookkeeping by a local company for small to mid-sized businesses. Clean, reconciled books every month make loans, taxes and big decisions a lot easier.",
               ["&#128210; Monthly bookkeeping", "&#127970; Small to mid-sized businesses"], "jm-management-solutions-inc", L + "limage-240-52-photo.webp", "631-987-1532", None, "&#11088; Neighbor favorite")]
 
-insure = [card("gh", "GH Insurance Co.", "ins", "insure", "Insurance", "Wading River &middot; 631-602-0422",
+insure = [card("gh", "GH Insurance Co.", "ins", "insure", "Insurance", "Wading River &middot; <span class='bz-ph'>631-602-0422</span>",
                "A local agent consulting across all lines: home, business, life and employee benefits. One conversation can cover your shop, your vehicles and your team's benefits.",
                ["&#127970; Business", "&#128101; Employee benefits"], "gh-insurance-co", None, "631-602-0422", "https://www.ghinsuranceco.com", "On Three Village Local"),
-          card("cd", "CD Insurance Agency", "ins", "insure2", "Insurance broker", "300 Wheeler Rd, Hauppauge &middot; 631-582-4400",
+          card("cd", "CD Insurance Agency", "ins", "insure2", "Insurance broker", "300 Wheeler Rd, Hauppauge &middot; <span class='bz-ph'>631-582-4400</span>",
                "An independent broker that shops your coverage for the best pricing across home, auto, business and life, plus group benefits.",
                ["&#128269; Shops multiple carriers", "&#128101; Group benefits"], "cd-insurance-agency-inc", None, "631-582-4400", "https://www.cdinsagency.com", "On Three Village Local"),
-          card("assured", "AssuredPartners (Oren Wiener)", "ins", "insure", "Property &amp; casualty", "100 Baylis Rd, Melville &middot; 631-844-5236",
+          card("assured", "AssuredPartners (Oren Wiener)", "ins", "insure", "Property &amp; casualty", "100 Baylis Rd, Melville &middot; <span class='bz-ph'>631-844-5236</span>",
                "Property and casualty insurance focused on the right protection at the right price, a good call for buildings, equipment and liability.",
                ["&#127970; Property", "&#9878;&#65039; Liability"], "assured-partners-oren-wiener", None, "631-844-5236", "https://www.assuredpartners.com/orenwiener/", "On Three Village Local"),
-          card("statefarm", "Ed Reilly State Farm Agency", "ins", "insure2", "Insurance", "190 N Belle Mead Rd, Setauket &middot; 631-941-7194",
+          card("statefarm", "Ed Reilly State Farm Agency", "ins", "insure2", "Insurance", "190 N Belle Mead Rd, Setauket &middot; <span class='bz-ph'>631-941-7194</span>",
                "A Setauket agency right in town for business, auto, home and life coverage. Stop in and talk it through face to face.",
                ["&#128205; Right in Setauket", "&#128663; Business auto"], "state-farm", None, "631-941-7194", "https://www.edinsetauket.com", "On Three Village Local")]
 
-plan = [card("girard", "Girard Wealth Management Group", "plan", "wealth", "Planning", "376 Mark Tree Rd, Setauket &middot; 631-527-0205",
+plan = [card("girard", "Girard Wealth Management Group", "plan", "wealth", "Planning", "376 Mark Tree Rd, Setauket &middot; <span class='bz-ph'>631-527-0205</span>",
              "Frank Girard (CFP&reg;, ChFC&reg;, CLU&reg;) lives and works in Three Village and brings 25 years of experience. Business owners: ask about retirement plans for you and your team and how they fit your bigger financial picture.",
              ["&#127891; CFP&reg;, ChFC&reg;, CLU&reg;", "&#128197; 25 years"], "girard-wealth-management-group", L + "limage-78-159-photo.webp", "631-527-0205", "https://www.girardwmg.com/", "&#11088; Neighbor favorite"),
-        card("sandpiper", "Sandpiper Wealth", "plan", "wealth", "Planning", "Setauket &middot; 917-697-3747",
+        card("sandpiper", "Sandpiper Wealth", "plan", "wealth", "Planning", "Setauket &middot; <span class='bz-ph'>917-697-3747</span>",
              "Fee-based financial planning in Setauket for ambitious people who want their finances to line up with their goals.",
              ["&#129517; Fee-based planning"], "sandpiper-wealth-llc", None, "917-697-3747", "https://www.sandpiperwealth.com", "On Three Village Local")]
 
-legal = [card("raupp", "Raupp Law PC", "legal", "legal", "Estate &amp; elder law", "9 Carlton Ave, Setauket &middot; 631-769-4440",
+legal = [card("raupp", "Raupp Law PC", "legal", "legal", "Estate &amp; elder law", "9 Carlton Ave, Setauket &middot; <span class='bz-ph'>631-769-4440</span>",
               "Amy C. Raupp, Esq. is an experienced estate planning and elder law attorney in Setauket. A good plan protects your family and what you have built.",
               ["&#128220; Estate planning", "&#128106; Elder law"], "raupp-law-pc", L + "limage-228-310-photo.png", "631-769-4440", "https://www.raupplaw.com/", "&#11088; Neighbor favorite"),
-         card("southard", "Southard Estate Planning", "legal", "legal", "Estate planning", "175 Main St, Setauket &middot; 631-818-1725",
+         card("southard", "Southard Estate Planning", "legal", "legal", "Estate planning", "175 Main St, Setauket &middot; <span class='bz-ph'>631-818-1725</span>",
               "Katherine Southard focuses on wills, trusts, probate and estate planning for Three Village families, including what happens to your business down the road.",
               ["&#128220; Wills &amp; trusts", "&#127970; Planning ahead"], "southard-estate-planning", L + "limage-137-223-photo.png", "631-818-1725", "https://southardestateplanning.com/", "&#11088; Neighbor favorite"),
-         card("intellectulaw", "Intellectulaw (P.B. Tufariello)", "legal", "legal", "Business law", "25 Little Harbor Rd, Mount Sinai &middot; 631-476-8734",
+         card("intellectulaw", "Intellectulaw (P.B. Tufariello)", "legal", "legal", "Business law", "25 Little Harbor Rd, Mount Sinai &middot; <span class='bz-ph'>631-476-8734</span>",
               "Patents, trademarks and copyrights, business agreements and litigation. Protect your name and your ideas before someone else does.",
               ["&#8482;&#65039; Trademarks", "&#128221; Business agreements"], "intellectulaw-the-law-offices-of-p-b-tufariello-p-c", None, "631-476-8734", "https://www.intellectulaw.com/", "On Three Village Local")]
 
-tech = [card("cmit", "CMIT Solutions of North Suffolk", "tech", "it", "IT &amp; cybersecurity", "2100 Nesconset Hwy, Stony Brook &middot; 631-204-3060",
+tech = [card("cmit", "CMIT Solutions of North Suffolk", "tech", "it", "IT &amp; cybersecurity", "2100 Nesconset Hwy, Stony Brook &middot; <span class='bz-ph'>631-204-3060</span>",
              "Computer, IT, cybersecurity, cloud and AI solutions for small and mid-sized businesses, with local support backed by a nationwide team.",
              ["&#128274; Cybersecurity", "&#9729;&#65039; Cloud"], "cmit-solutions-of-north-suffolk", None, "631-204-3060", "https://cmitsolutions.com/suffolk-ny-1250/", "On Three Village Local"),
-        card("prosyscon", "ProSysCon Computer Technologies", "tech", "it", "IT support", "286 Main St, East Setauket &middot; 631-546-5706",
+        card("prosyscon", "ProSysCon Computer Technologies", "tech", "it", "IT support", "286 Main St, East Setauket &middot; <span class='bz-ph'>631-546-5706</span>",
              "IT support and computer services for businesses in East Setauket and across Long Island.",
              ["&#128187; IT support"], "prosyscon-computer-technologies-inc", None, "631-546-5706", "https://www.prosyscon.com", "On Three Village Local")]
 
@@ -152,7 +152,7 @@ body = """<link rel="stylesheet" href="GKBASE/guide.css"><div class="gk" id="gk-
   <img class="gk-hbg" src="IMGhero-1600.webp" srcset="IMGhero-900.webp 900w, IMGhero-1600.webp 1600w" sizes="100vw" alt="Shops along the walkway in Stony Brook Village" width="1600" height="927" fetchpriority="high">
   <div class="gk-hshade"></div>
   <div class="gk-hin">
-    <p class="gk-kick"><span class="gk-dot"></span>For Three Village business owners</p>
+    <p class="gk-kick"><span class="gk-dot"></span>For local business owners</p>
     <h2 class="gk-h1">The Business Owner's Toolkit <span>Save money with neighbors you can call</span></h2>
     <p class="gk-dek">Payroll, taxes, bookkeeping, insurance, planning, legal and tech: the local pros who help Setauket, Stony Brook and Port Jefferson businesses run smarter, plus the free help most owners never use. Tap what you need and we will bring the right people to the top.</p>
     <div class="gk-chips"><span>&#128188; 15 local pros</span><span>&#9989; Money-saving checklist</span><span>&#127379; Free help you can use today</span><span>&#128205; All close to home</span></div>
@@ -234,6 +234,7 @@ bs.forEach(function(b){b.checked=!!s[b.getAttribute('data-k')];b.addEventListene
 #post-content .post-image-container,#post-content .post-image-container + hr{display:none!important}
 .bz-check{background:#fff;border:1px solid #e3e9f0;border-radius:18px;padding:20px 18px;box-shadow:0 6px 22px rgba(19,35,58,.06)}
 .bz-prog{display:flex;align-items:center;gap:14px;margin-bottom:12px}.bz-bar{flex:1;height:10px;border-radius:99px;background:#e8eef6;overflow:hidden}.bz-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#1f5fae,#3d8bff);border-radius:99px;transition:width .4s}
+.bz-ph{white-space:nowrap}
 #bz-n{font-weight:700;color:#13233a;font-size:14px;white-space:nowrap}
 .bz-ck{display:flex;gap:14px;align-items:flex-start;padding:13px 4px;border-top:1px solid #eef2f7;cursor:pointer}
 .bz-ck input{position:absolute;opacity:0;pointer-events:none}
