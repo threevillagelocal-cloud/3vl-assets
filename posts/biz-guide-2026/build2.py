@@ -85,7 +85,7 @@ faq_ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "main
     {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]})
 
 body = """<div class="bx" id="bx-top">
-<header class="bx-head"><p class="bx-kick">For local business owners &middot; Three Village</p><h2>The Business Owner's Toolkit</h2><p class="bx-sub">Local pros who help you save money and run smarter.</p></header>
+<header class="bx-head"><p class="bx-kick">For local business owners</p><h2>The Business Owner's Toolkit</h2><p class="bx-sub">Local pros who help you save money and run smarter.</p></header>
 
 <p class="bx-lead">Fall is the perfect time of year to make changes in your business. Get your payroll, books, insurance and plans in order now, and you walk into <b>2027</b> ready to grow instead of scrambling. These are the Three Village neighbors who can help, plus free resources most owners never use. <span>Reach out this fall and start the new year ahead.</span></p>
 
