@@ -38,7 +38,7 @@ CSS = """*{box-sizing:border-box;margin:0;padding:0}html,body{overflow:hidden;fo
 .c{position:relative;overflow:hidden}.ph{position:absolute;inset:0;background-size:cover;background-position:center}
 .hey{font-family:'Permanent Marker',cursive;color:#ffc53d;transform:rotate(-2deg);display:inline-block;text-shadow:0 3px 12px rgba(0,0,0,.45)}
 h1{font-weight:700;line-height:1;letter-spacing:-.025em;text-shadow:0 6px 26px rgba(0,0,0,.45)}
-h1 u{text-decoration:none;background:linear-gradient(transparent 80%,#ffc53d 80%)}
+h1 span{display:block}h1 .big{white-space:nowrap;font-weight:800;letter-spacing:-.035em;line-height:.95;margin-bottom:8px}h1 u{text-decoration:none;background:linear-gradient(transparent 80%,#ffc53d 80%)}
 .sub{font-weight:700;text-shadow:0 3px 14px rgba(0,0,0,.5)}
 .chips{display:flex;flex-wrap:wrap}
 .chip{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#13233a;font-weight:700;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.25)}
@@ -47,24 +47,21 @@ h1 u{text-decoration:none;background:linear-gradient(transparent 80%,#ffc53d 80%
 
 IG = """<div class="c" style="width:1080px;height:1350px"><div class="ph" style="background-image:url(PH)"></div>
 <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,25,44,.86) 0%,rgba(13,25,44,.55) 30%,rgba(13,25,44,0) 48%,rgba(13,25,44,0) 58%,rgba(13,25,44,.82) 84%,rgba(13,25,44,.92) 100%)"></div>
-<div style="position:absolute;left:64px;right:64px;top:60px"><span class="hey" style="font-size:50px">Hey business owners!</span>
-<h1 style="font-size:100px;margin-top:12px">Help is <u>right here</u><br>in Three Village.</h1></div>
+<div style="position:absolute;left:64px;right:64px;top:60px"><h1><span class="big" style="font-size:118px">Business owners,</span><span style="font-size:76px">help is <u>right here</u><br>in Three Village.</span></h1></div>
 <div style="position:absolute;left:64px;right:64px;bottom:150px"><p class="sub" style="font-size:38px;margin-bottom:22px">Trusted local pros for every part of your business</p>
 <div class="chips" style="gap:12px">CHIPS</div></div>
 <div style="position:absolute;left:64px;right:64px;bottom:52px;display:flex;justify-content:space-between;align-items:center"><span class="pin" style="font-size:28px;padding:12px 22px">&#128205; Setauket &middot; Stony Brook &middot; Port Jeff</span><span class="cta" style="font-size:32px;padding:14px 28px">Link in bio &rarr;</span></div></div>"""
 
 STORY = """<div class="c" style="width:1080px;height:1920px"><div class="ph" style="background-image:url(PH)"></div>
 <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,25,44,.86) 0%,rgba(13,25,44,.55) 26%,rgba(13,25,44,0) 42%,rgba(13,25,44,0) 66%,rgba(13,25,44,.85) 82%,rgba(13,25,44,.94) 100%)"></div>
-<div style="position:absolute;left:64px;right:64px;top:200px"><span class="hey" style="font-size:56px">Hey business owners!</span>
-<h1 style="font-size:112px;margin-top:14px">Help is <u>right here</u><br>in Three Village.</h1></div>
+<div style="position:absolute;left:64px;right:64px;top:200px"><h1><span class="big" style="font-size:114px">Business owners,</span><span style="font-size:82px">help is <u>right here</u><br>in Three Village.</span></h1></div>
 <div style="position:absolute;left:64px;right:64px;bottom:250px"><p class="sub" style="font-size:42px;margin-bottom:24px">Trusted local pros for every part of your&nbsp;business</p>
 <div class="chips" style="gap:14px">CHIPS</div></div>
 <div style="position:absolute;left:0;right:0;bottom:120px;text-align:center"><span class="cta" style="font-size:42px;padding:18px 38px">Tap to meet them &rarr;</span></div></div>"""
 
 OG = """<div class="c" style="width:1200px;height:630px"><div class="ph" style="background-image:url(PH);left:420px"></div>
 <div style="position:absolute;left:0;top:0;bottom:0;width:760px;background:linear-gradient(90deg,#13233a 0%,#13233a 62%,rgba(19,35,58,0) 100%)"></div>
-<div style="position:absolute;left:56px;top:54px;width:640px"><span class="hey" style="font-size:36px">Hey business owners!</span>
-<h1 style="font-size:70px;margin-top:10px">Help is <u>right here</u><br>in Three Village.</h1>
+<div style="position:absolute;left:56px;top:54px;width:640px"><h1><span class="big" style="font-size:76px">Business owners,</span><span style="font-size:54px">help is <u>right here</u><br>in Three Village.</span></h1>
 <p class="sub" style="font-size:28px;margin:16px 0 20px">Trusted local pros for every part of your&nbsp;business</p>
 <div class="chips" style="gap:9px;max-width:660px">CHIPS</div></div></div>"""
 
@@ -77,7 +74,7 @@ def render(name, frag, w, h, chip_px, ph):
     png = t.replace(".html", ".png")
     subprocess.run([CHROME, "--headless=new", "--user-data-dir=" + os.path.join(tempfile.gettempdir(), "bz3-chrome"), "--disable-gpu", "--hide-scrollbars",
                     "--force-device-scale-factor=2", "--window-size=%d,%d" % (w, h), "--virtual-time-budget=8000", "--screenshot=" + png, "file:///" + t.replace("\\", "/")], capture_output=True)
-    Image.open(png).convert("RGB").crop((0, 0, w * 2, h * 2)).resize((w, h), Image.LANCZOS).save(os.path.join(OUT, "biz-%s-v3.jpg" % name), quality=90)
+    Image.open(png).convert("RGB").crop((0, 0, w * 2, h * 2)).resize((w, h), Image.LANCZOS).save(os.path.join(OUT, "biz-%s-v4.jpg" % name), quality=90)
     print("ok", name)
 
 
