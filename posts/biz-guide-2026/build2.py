@@ -87,7 +87,7 @@ faq_ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage", "main
 body = """<div class="bx" id="bx-top">
 <header class="bx-head"><div class="bx-ht"><p class="bx-kick">Your neighbors in business</p><h2>The Business Owner's Toolkit</h2><p class="bx-sub">Local pros who help you save money and run smarter.</p></div><img class="bx-hlogo" src="https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-540.webp" alt="Three Village Local, your neighbors in business" width="540" height="168"></header>
 
-<p class="bx-lead">Fall is the perfect time of year to make changes in your business. Get your payroll, books, insurance and plans in order now, and you walk into <b>2027</b> ready to grow instead of scrambling. These are the Three Village neighbors who can help, plus free resources most owners never use. <span>Reach out this fall and start the new year ahead.</span></p>
+<p class="bx-lead">Fall is the perfect time to get your business <span class="bx-nw">ready for <b>2027</b>.</span></p><p class="bx-lead2">Reach out to these local pros this fall and start the new year ahead.</p>
 
 <nav class="bx-nav" aria-label="Jump to">NAV</nav>
 
@@ -114,7 +114,8 @@ body:has(#bx-top) .post-detail-body h1{position:absolute!important;width:1px!imp
 .bx .bx-kick{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#ffc53d}
 .bx-head h2{font-size:clamp(26px,4.4vw,36px);line-height:1.08;margin:5px 0 5px!important;color:#fff!important;font-weight:700}
 .bx .bx-sub{font-size:15.5px;color:#c9d8ea}
-.bx .bx-lead{font-size:19px;font-weight:600;line-height:1.55;margin:0 2px 16px!important;color:var(--n)}.bx-lead b{color:var(--b)}.bx-lead span{display:block;margin-top:8px;color:var(--b)}
+.bx .bx-lead{font-size:clamp(24px,3.8vw,31px);font-weight:700;line-height:1.2;letter-spacing:-.01em;margin:6px 2px 6px!important;color:var(--n)}.bx-lead b{color:var(--b)}.bx-lead{text-wrap:balance}.bx-nw{white-space:nowrap}
+.bx .bx-lead2{font-size:17px;color:#3f4e62;margin:0 2px 18px!important}
 .bx-js .bx-row{opacity:0;transform:translateY(18px) scale(.985);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1),box-shadow .2s}
 .bx-js .bx-row.bx-in{opacity:1;transform:none}
 .bx-row:hover{transform:translateY(-2px)!important;box-shadow:0 10px 24px rgba(19,35,58,.1)}
