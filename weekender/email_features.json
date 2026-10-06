@@ -51,5 +51,116 @@
   "until": "2026-10-14",
   "note": "owner pick 10/6/2026",
   "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/checkmate/front-email.jpg"
+ },
+ {
+  "kind": "lineup",
+  "until": "2026-10-11",
+  "title": "Your weekend, day by day",
+  "days": [
+   {
+    "day": "All weekend",
+    "items": [
+     {
+      "t": "Port Jefferson Scarecrow Walk",
+      "when": "Any time, through Nov 2",
+      "where": "East Main St, Port Jefferson",
+      "url": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk",
+      "free": true
+     },
+     {
+      "t": "Port Jeff Fall Art Walk (starts Friday)",
+      "when": "Self-guided, through Nov 6",
+      "where": "Port Jefferson Village",
+      "url": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk",
+      "free": true
+     },
+     {
+      "t": "Cabaret at Theatre Three",
+      "when": "Running through Oct 25",
+      "where": "412 Main St, Port Jefferson",
+      "url": "https://theatrethree.com/shows/cabaret/"
+     }
+    ]
+   },
+   {
+    "day": "Friday, Oct 9",
+    "items": [
+     {
+      "t": "Three Village Farmers & Artisans Market",
+      "when": "3-6 PM",
+      "where": "Three Village Historical Society, East Setauket",
+      "url": "https://www.threevillagelocal.com/three-village-farmers-market",
+      "free": true
+     },
+     {
+      "t": "Haunted Hayrides at Benner's Farm",
+      "when": "6-9 PM (also Sat), tickets in advance only",
+      "where": "East Setauket",
+      "url": "https://www.eventcreate.com/e/hauntedhayridesbennersfarm2026"
+     }
+    ]
+   },
+   {
+    "day": "Saturday, Oct 10",
+    "items": [
+     {
+      "t": "Witches & Warlocks Weekend, day 1",
+      "when": "11 AM-6 PM, Night Market at Danfords 7-9 PM",
+      "where": "Port Jefferson Village",
+      "url": "https://www.threevillagelocal.com/events/witches-warlocks-weekend",
+      "free": true
+     },
+     {
+      "t": "Port Jefferson Vintage Hill Climb",
+      "when": "8 AM-noon",
+      "where": "Port Jefferson Village Center",
+      "url": "https://www.threevillagelocal.com/events/hill-climb-reception-to-follow"
+     },
+     {
+      "t": "Barnyard visits & pumpkin picking at Benner's Farm",
+      "when": "Noon-4 PM (also Sun)",
+      "where": "East Setauket",
+      "url": "https://www.bennersfarm.com/calendar.html"
+     },
+     {
+      "t": "The Hot Sardines (live jazz)",
+      "when": "8 PM, $66-$76",
+      "where": "Staller Center, Stony Brook University",
+      "url": "https://stallercenter.showare.com/eventperformances.asp?evt=462"
+     }
+    ]
+   },
+   {
+    "day": "Sunday, Oct 11",
+    "items": [
+     {
+      "t": "Witches & Warlocks Weekend, day 2",
+      "when": "11 AM-6 PM, kids' book reading 10 AM at Founders Park",
+      "where": "Port Jefferson Village",
+      "url": "https://www.threevillagelocal.com/events/witches-warlocks-weekend",
+      "free": true
+     },
+     {
+      "t": "Port Jefferson Farmers Market",
+      "when": "9 AM-2 PM",
+      "where": "Harborfront Park, Port Jefferson",
+      "url": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-470",
+      "free": true
+     },
+     {
+      "t": "Seawolves women's soccer vs. William & Mary",
+      "when": "1 PM",
+      "where": "LaValle Stadium, Stony Brook University",
+      "url": "https://stonybrookathletics.com/sports/womens-soccer/schedule/2026"
+     },
+     {
+      "t": "Emerson Legacy Concert",
+      "when": "5 PM, $56-$60",
+      "where": "Staller Center, Stony Brook University",
+      "url": "https://stallercenter.showare.com/eventperformances.asp?evt=464"
+     }
+    ]
+   }
+  ]
  }
 ]
