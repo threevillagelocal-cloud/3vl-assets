@@ -15,6 +15,12 @@
 .rv-why div{background:#fff;border:1px solid #e2e8f0;border-top:3px solid #1d5fbf;border-radius:14px;padding:16px}
 .rv-why b{display:block;font-size:17px;margin-bottom:4px}.rv-why span{font-size:15px;color:#4a5a70}
 .rv-note{margin:0 0 14px;color:#4a5a70}
+.rv-plan .rv-note{font-size:17px;color:#3d4d63;max-width:760px}
+.rv-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;counter-reset:st}
+.rv-steps li{counter-increment:st;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px 18px}
+.rv-steps li b{display:flex;align-items:center;gap:10px;font-size:18px;margin-bottom:4px}
+.rv-steps li b:before{content:counter(st);width:30px;height:30px;border-radius:50%;background:#1d5fbf;color:#fff;font-size:15px;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.rv-steps li span{font-size:15px;color:#4a5a70}
 .rv-q{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .rv-q li{display:flex;gap:14px;align-items:flex-start;background:#f3f7fd;border-radius:14px;padding:16px 18px}
 .rv-q li>span{flex:none;width:40px;height:40px;border-radius:50%;background:#1d5fbf;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
