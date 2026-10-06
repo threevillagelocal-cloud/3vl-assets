@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-06T10:05:50.175976+00:00",
+"updated": "2026-10-06T13:50:53.660822+00:00",
 "counts": {
 "Three Village Chamber": 3,
 "Port Jefferson Chamber": 40,
@@ -7,9 +7,9 @@
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 218,
 "Emma S. Clark Library": 228,
-"Stony Brook Village Center": 17,
+"Stony Brook Village Center": 15,
 "Long Island Museum": 47,
-"Ward Melville Heritage Org": 5,
+"Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 5
 },
 "icons": {
@@ -1924,12 +1924,29 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17906645451480591.jpg",
 "page": "https://www.threevillagelocal.com/mirabelle-restaurant-tavern"
+},
+{
+"id": "wd-eat.namkeen-20261006",
+"biz": "Namkeen Hot Chicken",
+"ig": "eat.namkeen",
+"town": "Stony Brook",
+"category": "Restaurant",
+"member": true,
+"title": "Tender Tuesday: $11.99 combo",
+"when": "Today, Tuesday",
+"desc": "2-tender combo plus a drink for $11.99. Dine-in only.",
+"expires": "2026-10-06",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
+"url": "",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 }
 ],
 "eatOrder": [
 "Culpers 1778",
 "The Country Corner",
 "Tommy's Place",
+"Namkeen Hot Chicken",
 "Madiran The Wine Bar",
 "Ixchel Mexican Cuisine",
 "DJ's Clam Shack (Stony Brook)",
