@@ -638,5 +638,41 @@
   "note": "",
   "group": "member",
   "member": "Getting Noticed"
+ },
+ {
+  "name": "Setauket Pastaria",
+  "town": "East Setauket",
+  "category": "Restaurant",
+  "ig": "setauketpastaria",
+  "source": "https://setauketpastaria.com (handle on their site)",
+  "note": "Rte 347 corridor ('South Setauket' area). Added 10/5/2026 owner OK.",
+  "group": "food"
+ },
+ {
+  "name": "O Sole Mio",
+  "town": "Stony Brook",
+  "category": "Restaurant",
+  "ig": "osolemiostonybrook",
+  "source": "IG title match; 2194 Nesconset Hwy",
+  "note": "Rte 347 corridor ('South Setauket' area). Added 10/5/2026.",
+  "group": "food"
+ },
+ {
+  "name": "Tao's Bao & Dim Sum",
+  "town": "Stony Brook",
+  "category": "Restaurant",
+  "ig": "taosbao",
+  "source": "IG title match; 2460 Nesconset Hwy (taosdimsum.com)",
+  "note": "Rte 347 corridor. Low post count. Added 10/5/2026.",
+  "group": "food"
+ },
+ {
+  "name": "Enology Wine Bar & Bistro",
+  "town": "St. James",
+  "category": "Wine Bar",
+  "ig": "enologywinebar",
+  "source": "https://enologywinebar.com (handle on their site)",
+  "note": "St. James, light expansion: first and only St. James spot for now (owner 10/5/2026 'start lightly').",
+  "group": "food"
  }
 ]
