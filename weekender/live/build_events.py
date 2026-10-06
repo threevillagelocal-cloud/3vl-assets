@@ -232,10 +232,23 @@ def main():
         for s in json.load(open(spath, encoding="utf-8")).get("specials", []):
             if (s.get("expires") or "9999") < today:
                 continue
-            if s.get("inset"):
+            if s.get("inset") and not s["inset"].startswith("http"):
                 s["inset"] = igbase + s["inset"]
             s["page"] = listing_for(s.get("biz", ""))   # the business's 3VL profile; the card falls back to the Instagram post
             specials.append(s)
+    # Standing weekly deals (weekly_deals.json, e.g. a member's day-by-day flyer, owner 10/6/2026): today's deal joins the specials
+    wpath = os.path.join(HERE, "weekly_deals.json")
+    if os.path.exists(wpath):
+        from zoneinfo import ZoneInfo
+        now_et = dt.datetime.now(ZoneInfo("America/New_York"))
+        for w in json.load(open(wpath, encoding="utf-8")):
+            d = (w.get("days") or {}).get(str(now_et.weekday()))
+            if not d or any(s.get("biz") == w["biz"] for s in specials):
+                continue
+            specials.append({"id": "wd-%s-%s" % (w["ig"], now_et.strftime("%Y%m%d")), "biz": w["biz"], "ig": w["ig"], "town": w.get("town", ""),
+                             "category": w.get("category", ""), "member": w.get("member", False), "title": d["title"], "when": "Today, " + now_et.strftime("%A"),
+                             "desc": d["desc"], "expires": now_et.strftime("%Y-%m-%d"), "img": d.get("img", ""), "inset": d.get("img", ""),
+                             "url": "", "page": listing_for(w["biz"])})
     # Owner's ranked list for the Eat & Drink cards (names, top to bottom); /now orders its cards by this
     pref = json.load(open(os.path.join(HERE, "preference.json"), encoding="utf-8"))
     names = {x["ig"].lower(): x["name"] for x in json.load(open(os.path.join(HERE, "ig_accounts.json"), encoding="utf-8"))}

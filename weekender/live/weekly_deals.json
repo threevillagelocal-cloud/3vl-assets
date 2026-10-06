@@ -1,0 +1,48 @@
+[
+ {
+  "biz": "Namkeen Hot Chicken",
+  "ig": "eat.namkeen",
+  "town": "Stony Brook",
+  "category": "Restaurant",
+  "member": true,
+  "source": "Weekly deals flyer emailed by the Stony Brook store 10/5/2026",
+  "note": "Dine-in only, in store only",
+  "days": {
+   "0": {
+    "title": "Melt Monday: free fries",
+    "desc": "Buy any sandwich (Nashville, Tikkaville, Tikka Melt and more) and get fries free. Dine-in only.",
+    "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp"
+   },
+   "1": {
+    "title": "Tender Tuesday: $11.99 combo",
+    "desc": "2-tender combo plus a drink for $11.99. Dine-in only.",
+    "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp"
+   },
+   "2": {
+    "title": "Wing Wednesday: $9.99",
+    "desc": "8-piece wings or 12-piece chicken bites for $9.99. Dine-in only.",
+    "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp"
+   },
+   "3": {
+    "title": "Smash Thursday: $9.99 meal",
+    "desc": "Classic smash burger meal for $9.99. Dine-in only.",
+    "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp"
+   },
+   "4": {
+    "title": "Family Friday: free shake",
+    "desc": "Buy 2 meals and get a free shake. Dine-in only.",
+    "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp"
+   },
+   "5": {
+    "title": "Late Night Saturday: 15% off",
+    "desc": "15% off your entire order after 8 PM. Dine-in only.",
+    "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp"
+   },
+   "6": {
+    "title": "Sunday Feast: 15% off",
+    "desc": "15% off all meals every Sunday. Dine-in only.",
+    "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp"
+   }
+  }
+ }
+]

@@ -108,6 +108,7 @@ def main():
     pref = json.load(open(os.path.join(HERE, "preference.json"), encoding="utf-8"))
     rank = {h.lower(): i for i, h in enumerate(pref.get("order", []))}
     accts = [a for a in accts if a["ig"].lower() in rank]      # only check places on the owner's list
+    accts = [a for a in accts if not a.get("noscan")]          # e.g. chain brand accounts: their deals come from weekly_deals.json
     cache_path = os.path.join(HERE, "specials_cache.json")      # last good specials per business, used if Instagram says no
     cache = json.load(open(cache_path, encoding="utf-8")) if os.path.exists(cache_path) else {}
     since = NOW - timedelta(days=LOOKBACK_DAYS)

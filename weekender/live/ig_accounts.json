@@ -674,5 +674,16 @@
   "source": "https://enologywinebar.com (handle on their site)",
   "note": "St. James, light expansion: first and only St. James spot for now (owner 10/5/2026 'start lightly').",
   "group": "food"
+ },
+ {
+  "name": "Namkeen Hot Chicken",
+  "town": "Stony Brook",
+  "category": "Restaurant",
+  "ig": "eat.namkeen",
+  "source": "3VL member 687 (joined 10/5/2026)",
+  "note": "Brand-wide IG (10 locations) so not scanned; Stony Brook weekly deals come from weekly_deals.json",
+  "group": "member",
+  "member": "Just The Basics",
+  "noscan": true
  }
 ]
