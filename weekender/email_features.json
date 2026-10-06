@@ -23,7 +23,13 @@
   },
   "until": "2026-10-11",
   "note": "owner 10/5/2026: hype it",
-  "subject": "🧙 Witches & Warlocks takes over Port Jeff"
+  "subject": "🧙 Witches & Warlocks takes over Port Jeff",
+  "short": "All of Port Jeff turns witchy Saturday and Sunday. Come in costume (if you dare)!",
+  "bullets_short": [
+   "<b>Sat:</b> Headless Horseman, the Witches Quest, free totes at Chandler Square at 11 AM (first 100)",
+   "<b>Sat night:</b> &ldquo;Thriller&rdquo; at dusk, then the Night Market at Danfords, 7-9 PM",
+   "<b>Sun:</b> Witches Quest + a kids&rsquo; book reading at Founder&rsquo;s Park, 10 AM"
+  ]
  },
  {
   "title": "The 2026 Three Village Fall Guide",
@@ -32,6 +38,8 @@
   "img": "posts/fall-2026/share/fall-og-v2.jpg",
   "button": "Open the fall guide",
   "until": "2026-11-06",
-  "note": "owner 10/5/2026: link the fall guide in the next weekly email"
+  "note": "owner 10/5/2026: link the fall guide in the next weekly email",
+  "short": "Every pumpkin patch, hayride and festival near you",
+  "thumb": "https://threevillagelocal-cloud.github.io/3vl-share/fall-2026/pumpkin6-640.webp"
  }
 ]
