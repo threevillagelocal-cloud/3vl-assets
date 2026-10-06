@@ -164,22 +164,6 @@
 "url": "https://www.instagram.com/reel/Dd48-xyg-eS/",
 "img": "",
 "inset": "ig/p18114880313055054.jpg"
-},
-{
-"id": "18114160769516701",
-"biz": "Burgerology",
-"ig": "burgerologyusa",
-"town": "Stony Brook",
-"category": "Restaurant",
-"member": false,
-"title": "Pumpkin Pie Milkshake",
-"when": "Available now, limited time",
-"desc": "Try the new Pumpkin Pie Milkshake at Burgerology, available for a limited time this fall.",
-"expires": "2026-10-31",
-"posted": "2026-09-29T13:13:43+0000",
-"url": "https://www.instagram.com/reel/Dd30-F9R-M3/",
-"img": "",
-"inset": "ig/p18114160769516701.jpg"
 }
 ],
 "ep_restaurant": [],
@@ -224,6 +208,22 @@
 "seportdelicatessen": [],
 "toastcoffeeandkitchen": [
 {
+"id": "18090078149229582",
+"biz": "Toast Coffee + Kitchen",
+"ig": "toastcoffeeandkitchen",
+"town": "Port Jefferson Station",
+"category": "Cafe/Brunch",
+"member": false,
+"title": "Halloween Twilight-Inspired Drinks",
+"when": "October only",
+"desc": "Try Mocha Loca Latte and Midnight Sun Mimosa inspired by Twilight. Available through October.",
+"expires": "2026-10-31",
+"posted": "2026-10-06T16:29:48+0000",
+"url": "https://www.instagram.com/reel/DeKNn26Rm8W/",
+"img": "",
+"inset": "ig/p18090078149229582.jpg"
+},
+{
 "id": "18157413349503508",
 "biz": "Toast Coffee + Kitchen",
 "ig": "toastcoffeeandkitchen",
@@ -262,7 +262,24 @@
 ],
 "fifthseasonrestaurant": [],
 "pastapasta_portjeff": [],
-"pjlobsterhouse": [],
+"pjlobsterhouse": [
+{
+"id": "18094605377369609",
+"biz": "PJ Lobster House",
+"ig": "pjlobsterhouse",
+"town": "Port Jefferson",
+"category": "Restaurant (Seafood)",
+"member": false,
+"title": "Taco Tuesday - Cajun Swordfish Tacodilla",
+"when": "Every Tuesday",
+"desc": "Try the Cajun Swordfish Tacodilla. Order online for $6 delivery within 8 miles, no credit card fee.",
+"expires": "2026-10-13",
+"posted": "2026-10-06T16:01:16+0000",
+"url": "https://www.instagram.com/p/DeKKeQvOERc/",
+"img": "",
+"inset": "ig/p18094605377369609.jpg"
+}
+],
 "ruvorestaurant": [
 {
 "id": "18104967374225721",
@@ -418,20 +435,20 @@
 "thesteamroomrestaurant": [],
 "castawayspj": [
 {
-"id": "17959771527224516",
+"id": "18150216559547976",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
 "town": "Port Jefferson",
 "category": "Restaurant",
 "member": false,
-"title": "Bananas Foster French Roast Brunch",
-"when": "Sat, Oct. 5 · 11 AM–4 PM",
-"desc": "Bananas Foster French Roast topped with coconut syrup and coconut flakes this Saturday brunch.",
-"expires": "2026-10-05",
-"posted": "2026-10-03T12:01:38+0000",
-"url": "https://www.instagram.com/reel/DeCAqsfDlLo/",
+"title": "Witches & Warlocks Bar Crawl",
+"when": "Sat, Oct. 10 · 5-10 PM",
+"desc": "13-bar Halloween crawl featuring Castaways. $55 includes 5 drink tokens. 21+",
+"expires": "2026-10-10",
+"posted": "2026-10-06T15:00:52+0000",
+"url": "https://www.instagram.com/p/DeKDpfikQU8/",
 "img": "",
-"inset": "ig/p17959771527224516.jpg"
+"inset": "ig/p18150216559547976.jpg"
 },
 {
 "id": "18129572494814971",
@@ -474,7 +491,24 @@
 }
 ],
 "portjefficecream": [],
-"slurp_ramen_usa": [],
+"slurp_ramen_usa": [
+{
+"id": "18126404707848834",
+"biz": "Slurp Ramen",
+"ig": "slurp_ramen_usa",
+"town": "Port Jefferson",
+"category": "Restaurant (Ramen)",
+"member": false,
+"title": "25% Off to Support Volleyball",
+"when": "Sun, Oct. 11 · 11 AM-1 PM",
+"desc": "25% of orders support Port Jeff Varsity Volleyball. Dine in or take-out (excludes UberEats).",
+"expires": "2026-10-11",
+"posted": "2026-10-06T15:20:09+0000",
+"url": "https://www.instagram.com/p/DeKF3KGFuLm/",
+"img": "",
+"inset": "ig/p18126404707848834.jpg"
+}
+],
 "tara.inn": [
 {
 "id": "18097840004554578",

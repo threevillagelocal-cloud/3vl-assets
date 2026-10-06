@@ -1990,5 +1990,109 @@
 "desc": "Try new Pumpkin Shake and Pumpkin Spice Fudge, plus Pumpkin Pie Ice Cream made with real pumpkin.",
 "expires": "2026-11-30",
 "_ts": "2026-10-05T13:40:33+0000"
+},
+"18472752382119723": {
+"special": false,
+"title": "Hirosaki - Japanese & Hibachi",
+"when": "Ongoing",
+"desc": "Stony Brook's destination for happy hour, live hibachi, cocktails, and modern Japanese dishes.",
+"expires": "2026-10-06",
+"_ts": "2026-10-06T11:00:18+0000"
+},
+"18126567532841851": {
+"special": false,
+"title": "Fall/Winter Menu Arrives",
+"when": "Wed, Oct. 14",
+"desc": "New fall/winter menu launches Wednesday, October 14th. Make reservations via their bio link.",
+"expires": "2026-10-14",
+"_ts": "2026-10-06T17:12:09+0000"
+},
+"18097115540207113": {
+"special": false,
+"title": "Bombay Chicken Sandwich",
+"when": "Ongoing",
+"desc": "Gluten-free sandwich with curry chicken salad, cabbage, apricot, carrot, and garlic aioli.",
+"expires": "2026-10-06",
+"_ts": "2026-10-06T16:07:50+0000"
+},
+"18196513849390137": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-06T12:58:21+0000"
+},
+"18130617130772949": {
+"special": false,
+"title": "Se-Port Deli & Caterers",
+"when": "",
+"desc": "Generic food photo post with no specific offer or event announced.",
+"expires": "",
+"_ts": "2026-10-06T12:56:50+0000"
+},
+"18372407506210404": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-06T12:53:47+0000"
+},
+"18183252832421313": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-06T12:52:39+0000"
+},
+"18097381142656583": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-06T12:50:06+0000"
+},
+"18090078149229582": {
+"special": true,
+"title": "Halloween Twilight-Inspired Drinks",
+"when": "October only",
+"desc": "Try Mocha Loca Latte and Midnight Sun Mimosa inspired by Twilight. Available through October.",
+"expires": "2026-10-31",
+"_ts": "2026-10-06T16:29:48+0000"
+},
+"18094605377369609": {
+"special": true,
+"title": "Taco Tuesday - Cajun Swordfish Tacodilla",
+"when": "Every Tuesday",
+"desc": "Try the Cajun Swordfish Tacodilla. Order online for $6 delivery within 8 miles, no credit card fee.",
+"expires": "2026-10-13",
+"_ts": "2026-10-06T16:01:16+0000"
+},
+"18219928495331176": {
+"special": false,
+"title": "Tuna Tartare",
+"when": "Ongoing",
+"desc": "Artfully arranged tuna tartare on a crisp base offers a refined taste experience.",
+"expires": "2026-10-06",
+"_ts": "2026-10-06T15:33:29+0000"
+},
+"18150216559547976": {
+"special": true,
+"title": "Witches & Warlocks Bar Crawl",
+"when": "Sat, Oct. 10 · 5-10 PM",
+"desc": "13-bar Halloween crawl featuring Castaways. $55 includes 5 drink tokens. 21+",
+"expires": "2026-10-10",
+"_ts": "2026-10-06T15:00:52+0000"
+},
+"18126404707848834": {
+"special": true,
+"title": "25% Off to Support Volleyball",
+"when": "Sun, Oct. 11 · 11 AM-1 PM",
+"desc": "25% of orders support Port Jeff Varsity Volleyball. Dine in or take-out (excludes UberEats).",
+"expires": "2026-10-11",
+"_ts": "2026-10-06T15:20:09+0000"
 }
 }
