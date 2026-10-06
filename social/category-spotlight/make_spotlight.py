@@ -11,7 +11,7 @@ PH = r"C:\Users\Matt\Documents\3vl-private\spotlight-photos"
 TOWNS = ["Setauket", "Stony Brook", "Port Jeff"]
 CATS = [  # slug, marker line, headline before "right here.", count, background photo, three photos
  ("restaurant", "Hey neighbor, hungry?", "The best restaurants in Three Village are", 65, "pex-room", ["pex-paella", "pex-pancakes", "pex-spaghetti"]),
- ("real-estate-services", "Hey neighbor, thinking of moving?", "The best local agents in Three Village are", 38, "7415063", ["8364960", "8470803", "34134899"]),
+ ("real-estate-services", "Hey neighbor, thinking of moving?", "The best local agents in Three Village are", 38, "7415055", ["12700529", "8293698", "8730048"]),
  ("home-services", "Hey neighbor, need a hand?", "The best home pros in Three Village are", 34, "5767799", ["4030055", "3999647", "36884223"]),
  ("medical-services", "Hey neighbor, feeling under the weather?", "The best local doctors in Three Village are", 22, "7579823", ["7578806", "14235198", "4506073"]),
  ("financial-services", "Hey neighbor, got big plans?", "The best money pros in Three Village are", 13, "8441812", ["29094497", "7680748", "7477711"]),
@@ -30,11 +30,11 @@ def fit(pid, w, h, pop=1.18):
     else: nh = int(W / r); im = im.crop((0, (H - nh) // 2, W, (H - nh) // 2 + nh))
     im = ImageEnhance.Color(im.resize((w, h), Image.LANCZOS)).enhance(pop).filter(ImageFilter.UnsharpMask(radius=1.6, percent=55, threshold=2))
     return enc(ImageEnhance.Contrast(im).enhance(1.05))
-def bg(pid, w, h):
+def bg(pid, w, h, soft=130):
     im = photo(pid); Wb, Hb = im.size; r = w / h
     if Wb / Hb > r: nw = int(Hb * r); im = im.crop(((Wb - nw) // 2, 0, (Wb - nw) // 2 + nw, Hb))
     else: nh = int(Wb / r); im = im.crop((0, (Hb - nh) // 2, Wb, (Hb - nh) // 2 + nh))
-    im = ImageEnhance.Color(im.resize((w, h), Image.LANCZOS)).enhance(1.15).filter(ImageFilter.GaussianBlur(w / 130))
+    im = ImageEnhance.Color(im.resize((w, h), Image.LANCZOS)).enhance(1.15).filter(ImageFilter.GaussianBlur(w / soft))
     return enc(im, 80)
 CSS = """*{box-sizing:border-box;margin:0;padding:0}html,body{overflow:hidden;font-family:'Radio Canada',sans-serif;color:#fff}
 .bg{position:absolute;inset:0;background:center/cover}
@@ -63,7 +63,7 @@ def layouts(c):
         bg(bgp, 1080, 1920), hey, H, card(ph[0], TOWNS[0], 60, 780, 465, 310, 34), card(ph[1], TOWNS[1], 555, 780, 465, 310, 34), card(ph[2], TOWNS[2], 230, 1150, 620, 400, 34), n)),
      "og": (1200, 630, """<div class="bg" style="background-image:url(%s)"></div><div class="sh" style="background:linear-gradient(90deg,rgba(20,14,10,.78) 0%%,rgba(20,14,10,.45) 50%%,rgba(20,14,10,.2) 100%%)"></div>
 <div style="position:absolute;left:56px;top:0;bottom:0;width:560px;display:flex;flex-direction:column;justify-content:center"><div class="hey" style="font-size:34px">%s</div><h1 style="font-size:66px;margin-top:10px">%s</h1></div>
-%s%s""" % (bg(bgp, 1200, 630), hey, H, card(ph[0], TOWNS[0], 640, 60, 250, 190, 21), card(ph[1], TOWNS[1], 905, 150, 250, 190, 21))),
+%s%s""" % (bg(bgp, 1200, 630, 260 if slug == "real-estate-services" else 130), hey, H, card(ph[0], TOWNS[0], 640, 60, 250, 190, 21), card(ph[1], TOWNS[1], 905, 150, 250, 190, 21))),
     }
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 p = subprocess.Popen([CHROME, "--headless=new", "--disable-gpu", "--remote-debugging-port=9386", "--remote-allow-origins=http://127.0.0.1:9386", "--user-data-dir=C:/Users/Matt/AppData/Local/Temp/claude-chrome-profile-spot", "--hide-scrollbars", "about:blank"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
