@@ -1,9 +1,37 @@
 [
- {"title": "The 2026 Three Village Fall Guide",
+ {
+  "kind": "spotlight",
+  "match": "witches & warlocks",
+  "title": "Witches & Warlocks Weekend takes over Port Jeff",
+  "kicker": "This weekend's big one",
+  "blurb": "All of Port Jefferson village turns witchy on Saturday and Sunday, October 10-11. Come in costume (if you dare) and wander the whole village: shops, restaurants and the harbor all join in.",
+  "bullets": [
+   "<b>Saturday:</b> the Headless Horseman rides in, the Witches Quest runs all over town, and the first 100 people at Chandler Square at 11 AM get a limited-edition tote",
+   "<b>Saturday night:</b> a &ldquo;Thriller&rdquo; gathering in Chandler Square at dusk, then the Witches &amp; Warlocks Night Market at Danfords, 7-9 PM",
+   "<b>Sunday:</b> the Witches Quest continues, plus a children&rsquo;s book reading with author Shawn Keane at Founder&rsquo;s Park, 10 AM",
+   "<b>Extras (some ticketed):</b> a bar crawl at 13 restaurants, haunted tiki cruises, a haunted history walk, tarot and tea leaf readings, a paddleboard rave and a costume contest"
+  ],
+  "img": "social/witches-2026/ww-email.jpg",
+  "url": "https://www.iloveportjeff.com/witches-and-warlocks-weekend",
+  "button": "See the full schedule",
+  "page": "https://www.threevillagelocal.com/events/witches-warlocks-weekend",
+  "cal": {
+   "title": "Witches & Warlocks Weekend",
+   "start": "20261010T110000",
+   "end": "20261011T180000",
+   "where": "Port Jefferson Village, NY"
+  },
+  "until": "2026-10-11",
+  "note": "owner 10/5/2026: hype it",
+  "subject": "🧙 Witches & Warlocks takes over Port Jeff"
+ },
+ {
+  "title": "The 2026 Three Village Fall Guide",
   "blurb": "Every pumpkin patch, hayride, scarecrow walk and fall festival near Setauket, Stony Brook and Port Jefferson, checked against this year's schedules. Plan your fall day and grab the free printable.",
   "url": "https://www.threevillagelocal.com/blog/fall-in-three-village-2026-guide",
   "img": "posts/fall-2026/share/fall-og-v2.jpg",
   "button": "Open the fall guide",
   "until": "2026-11-06",
-  "note": "owner 10/5/2026: link the fall guide in the next weekly email"}
+  "note": "owner 10/5/2026: link the fall guide in the next weekly email"
+ }
 ]
