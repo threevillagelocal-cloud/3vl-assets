@@ -54,6 +54,13 @@ def adjust(d, now):
     keep = []
     for n in d.get("next", []):
         ld = fix_year(last_day(n.get("when", ""), y), datetime.date.fromisoformat(d["starts"][:10]))
+        fd = fix_year(last_day(re.split(r"\s*[-–]\s*", n.get("when", ""))[0], y), datetime.date.fromisoformat(d["starts"][:10]))
+        # owner 10/5/2026 ("we need current confirmed things to do"): a coming-up card shows only when it starts within 8 days
+        # and links to a real event page (restaurant promos belong in Eat & Drink, never Top Things to Do)
+        if fd is not None and (fd - now.date()).days > 8:
+            continue
+        if "/events/" not in n.get("page", "") and not n.get("confirmed"):
+            continue
         if ld is None or ld >= now.date():
             keep.append(n)
     dropped = before - len(d["picks"]), len(d.get("next", [])) - len(keep)
