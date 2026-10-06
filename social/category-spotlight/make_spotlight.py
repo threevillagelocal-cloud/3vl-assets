@@ -11,7 +11,7 @@ PH = r"C:\Users\Matt\Documents\3vl-private\spotlight-photos"
 TOWNS = ["Setauket", "Stony Brook", "Port Jeff"]
 CATS = [  # slug, marker line, headline before "right here.", count, background photo, three photos
  ("restaurant", "Hey neighbor, hungry?", "The best restaurants in Three Village are", 65, "pex-room", ["pex-paella", "pex-pancakes", "pex-spaghetti"]),
- ("real-estate-services", "Hey neighbor, thinking of moving?", "The best local agents in Three Village are", 38, "7415055", ["12700529", "8293698", "8730048"]),
+ ("real-estate-services", "Hey neighbor, thinking of moving?", "The best local real estate agents in Three Village are", 38, "7415055", ["12700529", "8293698", "8730048"]),
  ("home-services", "Hey neighbor, need a hand?", "The best home pros in Three Village are", 34, "5767799", ["4030055", "3999647", "36884223"]),
  ("medical-services", "Hey neighbor, feeling under the weather?", "The best local doctors in Three Village are", 22, "7579823", ["7578806", "14235198", "4506073"]),
  ("financial-services", "Hey neighbor, got big plans?", "The best money pros in Three Village are", 13, "8441812", ["29094497", "7680748", "7477711"]),
@@ -51,19 +51,20 @@ def card(pid, town, x, y, w, ph, fs):
             '<span class="loc" style="font-size:%dpx">&#128205; %s</span></div></div>') % (x, y, w, ph, fit(pid, (w - 24) * 2, ph * 2), fs, town)
 def layouts(c):
     slug, hey, head, n, bgp, ph = c
-    H = '%s <u>right here.</u>' % head
+    H = '%s <u>right here.</u>' % head.replace('real estate', 'real&nbsp;estate')
+    big = len(head) <= 45  # longer headlines get slightly smaller type so they clear the photos
     return {
      "ig": (1080, 1350, """<div class="bg" style="background-image:url(%s)"></div><div class="sh"></div>
-<div style="position:absolute;left:64px;right:64px;top:58px"><div class="hey" style="font-size:44px">%s</div><h1 style="font-size:94px;margin-top:12px">%s</h1></div>
+<div style="position:absolute;left:64px;right:64px;top:58px"><div class="hey" style="font-size:44px">%s</div><h1 style="font-size:%dpx;margin-top:12px">%s</h1></div>
 %s%s%s<div style="position:absolute;left:0;right:0;bottom:56px;text-align:center"><span class="cta" style="font-size:36px">See all %d &rarr; link in bio</span></div>""" % (
-        bg(bgp, 1080, 1350), hey, H, card(ph[0], TOWNS[0], 48, 500, 478, 318, 27), card(ph[1], TOWNS[1], 554, 500, 478, 318, 27), card(ph[2], TOWNS[2], 250, 860, 580, 330, 27), n)),
+        bg(bgp, 1080, 1350), hey, 94 if big else 80, H, card(ph[0], TOWNS[0], 48, 500, 478, 318, 27), card(ph[1], TOWNS[1], 554, 500, 478, 318, 27), card(ph[2], TOWNS[2], 250, 860, 580, 330, 27), n)),
      "story": (1080, 1920, """<div class="bg" style="background-image:url(%s)"></div><div class="sh"></div>
-<div style="position:absolute;left:70px;right:70px;top:170px"><div class="hey" style="font-size:52px">%s</div><h1 style="font-size:112px;margin-top:16px">%s</h1></div>
+<div style="position:absolute;left:70px;right:70px;top:170px"><div class="hey" style="font-size:52px">%s</div><h1 style="font-size:%dpx;margin-top:16px">%s</h1></div>
 %s%s%s<div style="position:absolute;left:0;right:0;bottom:110px;text-align:center"><span class="cta" style="font-size:42px">Tap the link to see all %d</span></div>""" % (
-        bg(bgp, 1080, 1920), hey, H, card(ph[0], TOWNS[0], 60, 780, 465, 310, 34), card(ph[1], TOWNS[1], 555, 780, 465, 310, 34), card(ph[2], TOWNS[2], 230, 1150, 620, 400, 34), n)),
+        bg(bgp, 1080, 1920), hey, 112 if big else 100, H, card(ph[0], TOWNS[0], 60, 780, 465, 310, 34), card(ph[1], TOWNS[1], 555, 780, 465, 310, 34), card(ph[2], TOWNS[2], 230, 1150, 620, 400, 34), n)),
      "og": (1200, 630, """<div class="bg" style="background-image:url(%s)"></div><div class="sh" style="background:linear-gradient(90deg,rgba(20,14,10,.78) 0%%,rgba(20,14,10,.45) 50%%,rgba(20,14,10,.2) 100%%)"></div>
-<div style="position:absolute;left:56px;top:0;bottom:0;width:560px;display:flex;flex-direction:column;justify-content:center"><div class="hey" style="font-size:34px">%s</div><h1 style="font-size:66px;margin-top:10px">%s</h1></div>
-%s%s""" % (bg(bgp, 1200, 630, 260 if slug == "real-estate-services" else 130), hey, H, card(ph[0], TOWNS[0], 640, 60, 250, 190, 21), card(ph[1], TOWNS[1], 905, 150, 250, 190, 21))),
+<div style="position:absolute;left:56px;top:0;bottom:0;width:560px;display:flex;flex-direction:column;justify-content:center"><div class="hey" style="font-size:34px">%s</div><h1 style="font-size:%dpx;margin-top:10px">%s</h1></div>
+%s%s""" % (bg(bgp, 1200, 630, 260 if slug == "real-estate-services" else 130), hey, 66 if big else 58, H, card(ph[0], TOWNS[0], 640, 60, 250, 190, 21), card(ph[1], TOWNS[1], 905, 150, 250, 190, 21))),
     }
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 p = subprocess.Popen([CHROME, "--headless=new", "--disable-gpu", "--remote-debugging-port=9386", "--remote-allow-origins=http://127.0.0.1:9386", "--user-data-dir=C:/Users/Matt/AppData/Local/Temp/claude-chrome-profile-spot", "--hide-scrollbars", "about:blank"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
