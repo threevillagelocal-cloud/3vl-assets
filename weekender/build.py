@@ -174,8 +174,8 @@ def build(edition, local=False, sha="master", d=None, live=None):
 
     # NAV
     w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
-      '<a href="#wk-picks">&#11088; Things to Do</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-sched">&#128197; Schedule</a>'
-      '<a href="#wk-wx">&#9728;&#65039; Weather</a>'
+      '<a href="#wk-picks">&#11088; Things to Do</a><a href="#wk-wx">&#9728;&#65039; Weather</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-sched">&#128197; Schedule</a>'
+      ''
       + (('<a class="wk-spylink" href="%s">&#128373;&#65039; Spy Day</a>' % esc(d["spy_link"])) if d.get("spy_link") else '')
       + '</div></nav>')
     w('<div class="wk-ticker" id="wk-ticker" hidden><span class="wk-tkl"><i></i>LIVE</span><div class="wk-tkm"><div class="wk-tkt" id="wk-tkt"></div></div></div>')
@@ -251,7 +251,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
         hm = json.load(open(os.path.join(HERE, "homes.json"), encoding="utf-8"))
     except Exception:
         hm = None
-    if hm and (hm.get("live") or local):
+    # owner 10/5/2026: the listings page is only refreshed weekly, so the strip shows Friday-Sunday only (nightly rebuild ~3 AM ET adds/removes it)
+    import zoneinfo
+    wkend = datetime.datetime.now(zoneinfo.ZoneInfo("America/New_York")).weekday() in (4, 5, 6)
+    if hm and (hm.get("live") or local) and wkend:
         w('<div class="wk-sec wk-homesw"><a class="wk-homes" href="%s"><span class="wk-hmth">%s</span>'
           '<span class="wk-hmtx"><b>New homes for sale this week</b><small>%d local listings<i> in Setauket and Stony Brook</i>, updated every Friday</small></span>'
           '<span class="wk-hmbtn">See the listings &rarr;</span></a></div>' % (
@@ -360,7 +363,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
     M["end"] = len(out)
     names = sorted((k for k in M if k != "end"), key=lambda k: M[k])
     seg = {k: out[M[k]:M[names[i + 1]] if i + 1 < len(names) else M["end"]] for i, k in enumerate(names)}
-    ORDER = ["picks", "eat", "feat", "ad2", "sched", "ad1", "homes", "stories", "wx", "extra", "browse", "cta"]
+    ORDER = ["picks", "wx", "eat", "feat", "ad2", "sched", "ad1", "homes", "stories", "extra", "browse", "cta"]  # 10/5/2026 owner: weather above Eat & Drink
     assert sorted(ORDER) == sorted(names), "section list out of sync"
     out[M[names[0]]:M["end"]] = [x for k in ORDER for x in seg[k]]
 
