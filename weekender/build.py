@@ -253,7 +253,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
         hm = None
     # owner 10/5/2026: the listings page is only refreshed weekly, so the strip shows Friday-Sunday only (nightly rebuild ~3 AM ET adds/removes it)
     import zoneinfo
-    wkend = datetime.datetime.now(zoneinfo.ZoneInfo("America/New_York")).weekday() in (4, 5, 6)
+    wkend = datetime.now(zoneinfo.ZoneInfo("America/New_York")).weekday() in (4, 5, 6)
     if hm and (hm.get("live") or local) and wkend:
         w('<div class="wk-sec wk-homesw"><a class="wk-homes" href="%s"><span class="wk-hmth">%s</span>'
           '<span class="wk-hmtx"><b>New homes for sale this week</b><small>%d local listings<i> in Setauket and Stony Brook</i>, updated every Friday</small></span>'
