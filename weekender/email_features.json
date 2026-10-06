@@ -162,5 +162,15 @@
     ]
    }
   ]
+ },
+ {
+  "kind": "offer",
+  "biz": "Namkeen Hot Chicken",
+  "big": "10% OFF at Namkeen",
+  "line": "Nashville hot chicken with a South Asian kick on Stony Brook Road. Just mention <b>&ldquo;Three Village Local&rdquo;</b> when you order to get 10% off.",
+  "how": "See Namkeen",
+  "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp",
+  "url": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+  "until": "2026-10-14"
  }
 ]
