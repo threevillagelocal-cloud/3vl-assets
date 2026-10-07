@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-06T21:35:00.472854+00:00",
+"updated": "2026-10-07T01:25:27.953242+00:00",
 "counts": {
 "Three Village Chamber": 6,
-"Port Jefferson Chamber": 40,
+"Port Jefferson Chamber": 39,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 218,
-"Emma S. Clark Library": 231,
+"Emma S. Clark Library": 308,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
@@ -435,7 +435,7 @@
 {
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-06T00:00",
+"start": "2026-10-07T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
@@ -454,42 +454,6 @@
 "pick": true,
 "page": "https://www.threevillagelocal.com/olde-towne-gardens",
 "rank": 5
-},
-{
-"id": "emmaclark-tutus-tots-59554",
-"title": "Tutus for Tots",
-"start": "2026-10-06T17:00:00",
-"end": "2026-10-06T18:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/tutus-tots-59554",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/tutus-for-tots"
-},
-{
-"id": "emmaclark-ai-basics-introduction-artificial-intelligence-60458",
-"title": "AI Basics: An Introduction to Artificial Intelligence",
-"start": "2026-10-06T19:00:00",
-"end": "2026-10-06T20:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/ai-basics-introduction-artificial-intelligence-60458",
-"desc": "Explore what artificial intelligence is, how it works, and how it is shaping everyday life. This informative session will also highlight key considerations when using and evaluating AI-generated content. Taught by Library Trustee Stephen Ingulli and Library Op",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/39288399_artificial_intelligence_vector_illustration.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/ai-basics-an-introduction-to-artificial-intelligence-312"
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58893",
@@ -1743,6 +1707,307 @@
 "status": "",
 "fb": 1,
 "page": "https://www.threevillagelocal.com/events/murder-mystery-night"
+},
+{
+"id": "pjchamber-14608",
+"title": "2026 Port Jefferson Harvest Festival",
+"start": "2026-10-17T00:00:00",
+"end": "2026-10-18T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-2026/",
+"desc": "Port Jefferson Harvest Festival Get A Pass! Full Festival Schedule Featured Festival Activities & Events Learn More Learn More Learn More Learn More",
+"img": "https://i0.wp.com/portjeffchamber.com/wp-content/uploads/2026/07/568667910_1478921650325849_67070424497474992_n.jpg?fit=2048%2C1536&ssl=1",
+"src": "pjchamber",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-harvest-festival"
+},
+{
+"id": "3vchamber-1922571",
+"title": "Walk to End Alzheimer's -use QR code to register and for more information",
+"start": "2026-10-17T09:00:00",
+"end": "2026-10-17T11:00:00",
+"allday": false,
+"venue": "Suffolk County Farm",
+"addr": "Yapank",
+"url": "https://members.3vchamber.com/event-calendar/Details/walk-to-end-alzheimer-s-use-qr-code-to-register-and-for-more-information-1922571",
+"desc": "use QR code to register and for more information",
+"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_1165,w_900,x_0,y_0/q_auto/f_auto/q_auto/v1789137109/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/71cef7995b1047a7bb67a2af37a2dd76/alzheimerz-event-flyer.jpg",
+"src": "3vchamber",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/walk-to-end-alzheimers-use-qr-code-to-register-and-for-more-information"
+},
+{
+"id": "portjeff-1149",
+"title": "38th Outdoor Country Auction",
+"start": "2026-10-17T09:00:00",
+"end": "2026-10-17T23:59:00",
+"allday": false,
+"venue": "Mather Museum",
+"addr": "Port Jefferson",
+"url": "https://www.portjeffny.gov/calendar.aspx",
+"desc": "https://www.portjeffny.gov/m/calendar/event/detail/1149 This event is held at the Mather Museum - Port Jefferson NY 11777.",
+"img": "",
+"src": "portjeff",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/38th-outdoor-country-auction"
+},
+{
+"id": "emmaclark-cat-toy-take-make-great-give-back-grades-3-5-34765",
+"title": "Cat Toy \"Take & Make\" - The Great Give Back (Grades 3-5)",
+"start": "2026-10-17T09:30:00",
+"end": "2026-10-17T10:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/cat-toy-take-make-great-give-back-grades-3-5-34765",
+"desc": "Help support our furry friends! As part of The Great Give Back , create a dog or cat toy at home while earning 1 hour of community service credit. Reserve your kit starting Thursday, October 1, then come in and pick it up. Return it to the Children's Library b",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/cat-toy-take-make-the-great-give-back-grades-3-5"
+},
+{
+"id": "emmaclark-dog-toy-take-make-great-give-back-grades-3-5-34766",
+"title": "Dog Toy \"Take & Make\" - The Great Give Back (Grades 3-5)",
+"start": "2026-10-17T09:30:00",
+"end": "2026-10-17T21:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Pick Up at Children's Reference desk",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/dog-toy-take-make-great-give-back-grades-3-5-34766",
+"desc": "Help support our furry friends! As part of The Great Give Back , create a dog or cat toy at home while earning 1 hour of community service credit. Reserve your kit starting Thursday, October 1, then come in and pick it up. Return it to the Children's Library b",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/dog-toy-take-make-the-great-give-back-grades-3-5"
+},
+{
+"id": "3vchamber-1949588",
+"title": "Stony Brook Fire Department's Annual Fire Prevention Day and Open House",
+"start": "2026-10-17T10:00:00",
+"end": "2026-10-17T14:00:00",
+"allday": false,
+"venue": "Stony Brook Fire Department",
+"addr": "147 Main Street, Stony Brook, 11790",
+"url": "https://members.3vchamber.com/event-calendar/Details/stony-brook-fire-department-s-annual-fire-prevention-day-and-open-house-1949588",
+"desc": "Description Stop in and meet your local fire fighters and visit vendors",
+"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_518,w_800,x_0,y_0/q_auto/f_auto/q_auto/v1791312042/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/ced02003bae44482b3c5a39aa4b65265/FIRE-DEPT-png-10-16-26.png",
+"src": "3vchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "emmaclark-how-relieve-stress-writing-58147",
+"title": "How to Relieve Stress by Writing",
+"start": "2026-10-17T10:30:00",
+"end": "2026-10-17T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/how-relieve-stress-writing-58147",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Join us for stress relieving games, writing exercises, and word prompts. Learn how you can use your feelings, experiences and memories as constructive tools to improve your writing",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/1597.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/how-to-relieve-stress-by-writing"
+},
+{
+"id": "emmaclark-monster-week-tabletop-rpg-61436",
+"title": "Monster of the Week: A Tabletop RPG",
+"start": "2026-10-17T12:00:00",
+"end": "2026-10-17T14:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Board Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-61436",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/monster-of-the-week-a-tabletop-rpg-380"
+},
+{
+"id": "pjchamber-14831",
+"title": "Port Jefferson Harvest Festival Costumed Dog Parade",
+"start": "2026-10-17T12:30:00",
+"end": "2026-10-17T13:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-costumed-dog-parade/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-costumed-dog-parade"
+},
+{
+"id": "emmaclark-ai-basics-introduction-artificial-intelligence-60460",
+"title": "AI Basics: An Introduction to Artificial Intelligence",
+"start": "2026-10-17T13:00:00",
+"end": "2026-10-17T15:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/ai-basics-introduction-artificial-intelligence-60460",
+"desc": "Explore what artificial intelligence is, how it works, and how it is shaping everyday life. This informative session will also highlight key considerations when using and evaluating AI-generated content. Taught by Library Trustee Stephen Ingulli and Library Op",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/39288399_artificial_intelligence_vector_illustration.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/ai-basics-an-introduction-to-artificial-intelligence-382"
+},
+{
+"id": "pjchamber-14966",
+"title": "Basket Raffles – First Presbyterian Church of Port Jefferson",
+"start": "2026-10-17T13:30:00",
+"end": "2026-10-17T15:30:00",
+"allday": false,
+"venue": "Coram Fire Department",
+"addr": "303 Middle Country Road, Coram, NY, 11727",
+"url": "https://portjeffchamber.com/events-calendar/basket-raffles-first-presbyterian-church-of-port-jefferson/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/basket-raffles-first-presbyterian-church-of-port-jefferson"
+},
+{
+"id": "lim-3225310",
+"title": "Special Screening of “Walk with Frank”with Frank Romeo",
+"start": "2026-10-17T13:30:00",
+"end": "2026-10-17T15:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/walkwithfrank/",
+"desc": "Join us for a special screening of Walk With Frank (2021), followed by a Q&A with Frank Romeo, who will share his personal journey and decades of advocacy on behalf of veterans and those living with PTSD. In addition to the discussion, Frank will exhibit artwo",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/07/A-Walk-with-Frank.jpg",
+"src": "lim",
+"tags": [
+"stage",
+"outdoor",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/special-screening-of-walk-with-frank-with-frank-romeo"
+},
+{
+"id": "emmaclark-crafternoon-ages-3-11-yrs-w-caregiver-59707",
+"title": "Crafternoon (Ages 3-11 yrs. w/ caregiver)",
+"start": "2026-10-17T14:00:00",
+"end": "2026-10-17T15:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/crafternoon-ages-3-11-yrs-w-caregiver-59707",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-01/Crafternoon%20Collage.png",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/crafternoon-ages-3-11-yrs-w-caregiver"
+},
+{
+"id": "pjchamber-14993",
+"title": "Hugh Stinkfoot and the Spooky Terrible Day!",
+"start": "2026-10-17T15:00:00",
+"end": "2026-10-18T17:00:00",
+"allday": false,
+"venue": "The Performing Arts Studio",
+"addr": "224 E. Main St, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/hugh-stinkfoot-and-the-spooky-terrible-day/",
+"desc": "CLICK HERE TO PURCHASE TICKETS! $5 per child aged 12 & under $10 per person ages 13+",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/hugh-stinkfoot-and-the-spooky-terrible-day"
+},
+{
+"id": "3vchamber-1949549",
+"title": "32nd Annual Spirits Graveyard Tour",
+"start": "2026-10-17T17:00:00",
+"end": "2026-10-17T19:00:00",
+"allday": false,
+"venue": "Three Village Historical Society",
+"addr": "93 North Country Road, East Setauket, NY 11733",
+"url": "https://members.3vchamber.com/event-calendar/Details/32nd-annual-spirits-graveyard-tour-1949549",
+"desc": "",
+"img": "",
+"src": "3vchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "sbv-2373",
+"title": "Live Performance by Albert Bouchard’s Imaginos Band at the Long Island Music and Entertainment Hall of Fame",
+"start": "2026-10-17T20:00:00",
+"end": "2026-10-17T21:00:00",
+"allday": false,
+"venue": "The Long Island Music and Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/live-performance-by-albert-bouchards-imaginos-band-at-the-long-island-music-and-entertainment-hall-of-fame/",
+"desc": "Albert Bouchard’s Imaginos Band Saturday, October 17, 2026 8pm (Doors open at 7:30pm) Albert Bouchard is a founding and former member of the multi-platinum album selling band Blue Oyster Cult. Best known as the driving drumming force behind classic album track",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/09/Screenshot-2026-09-22-112512.png",
+"src": "sbv",
+"tags": [
+"music"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-performance-by-albert-bouchards-imaginos-band-at-the-long-island-music-and-entertainment-hall-of-fame"
 }
 ],
 "closings": [],
@@ -1780,23 +2045,6 @@
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17921455176223830.jpg",
 "page": "https://www.threevillagelocal.com/madiran-the-wine-bar"
-},
-{
-"id": "17907903513577355",
-"biz": "Schnitzels",
-"ig": "eatschnitzels",
-"town": "Stony Brook",
-"category": "Restaurant/Gastropub",
-"member": false,
-"title": "Oktoberfest Music Bingo",
-"when": "Mon, Oct. 6 · 7 PM",
-"desc": "Music bingo with prizes, giveaways, and happy hour pricing for lederhosen/dirndl wearers.",
-"expires": "2026-10-06",
-"posted": "2026-10-04T20:22:40+0000",
-"url": "https://www.instagram.com/p/DeFe5G-oMAT/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17907903513577355.jpg",
-"page": "https://www.threevillagelocal.com/schnitzels"
 },
 {
 "id": "17969593557189591",
