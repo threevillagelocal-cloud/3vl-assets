@@ -184,3 +184,17 @@
 .gk .gk-hero>img.gk-hbg{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;margin:0!important;object-fit:cover!important;border-radius:0!important}
 /* BD prints the post title as the page h1 right above our designed hero: keep it for Google and screen readers, hide it visually */
 body:has(#gk-top) .post-detail-body h1:not(.gk-h1){position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;margin:0!important;padding:0!important}
+
+/* whole-card links, hover polish, heart pop (owner 10/6/2026: "this page needs animations on these tiles") */
+.gk-card.gk-link{cursor:pointer}
+.gk-card.gk-link .gk-cimg{transition:filter .35s}
+.gk-card.gk-link:hover .gk-cimg{filter:saturate(1.18) brightness(1.06)}
+.gk-card.gk-link:hover{border-color:#ffc53d}
+.gk-card.gk-link:active{transform:scale(.985)}
+.gk-card.gk-link:focus-visible{outline:3px solid #1d5fbf;outline-offset:3px}
+.gk-cact a.gk-go{background:#1d5fbf;color:#fff!important}
+.gk-cact a.gk-go::after{content:" \2192";display:inline-block;transition:transform .2s}
+.gk-card.gk-link:hover .gk-cact a.gk-go::after{transform:translateX(4px)}
+.gk-heart.gk-pop{animation:gk-pop .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes gk-pop{0%{transform:scale(1)}40%{transform:scale(1.4)}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.gk-heart.gk-pop{animation:none}.gk-card.gk-link:active{transform:none}}

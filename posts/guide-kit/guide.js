@@ -128,6 +128,22 @@ var rv=$$('.gk-rv',root);
 if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
   var ro=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('is-in');ro.unobserve(x.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   rv.forEach(function(e){e.classList.add('gk-pre');ro.observe(e)})}
+/* owner 10/6/2026: cards slide in one after another; whole card opens its own page (data-go = url, or "date|url;date|url" for
+   multi-date events -> the next date still ahead); heart pops */
+$$('.gk-grid',root).forEach(function(g){$$('.gk-card.gk-pre',g).forEach(function(c,i){c.style.transitionDelay=(i%3)*110+'ms';
+  c.addEventListener('transitionend',function f(){c.style.transitionDelay='';c.removeEventListener('transitionend',f)})})});
+var today=new Date();today.setHours(0,0,0,0);
+$$('.gk-card[data-go]',root).forEach(function(c){var g=c.getAttribute('data-go'),u=g;
+  if(g.indexOf('|')>-1){var ps=g.split(';').map(function(x){return x.split('|')});u=ps[ps.length-1][1];
+    for(var j=0;j<ps.length;j++){if(new Date(ps[j][0]+'T23:59:00')>=today){u=ps[j][1];break}}}
+  var ext=/^https?:/.test(u)&&u.indexOf('threevillagelocal.com')<0;
+  c.classList.add('gk-link');c.setAttribute('tabindex','0');c.setAttribute('role','link');
+  var a=c.querySelector('.gk-go');if(a)a.setAttribute('href',u);
+  function go(e){if(e.target.closest('a,button,input,label,select'))return;
+    try{if(window.gtag)window.gtag('event','guide_card_click',{card:c.id})}catch(_){}
+    if(ext)window.open(u,'_blank','noopener');else location.href=u}
+  c.addEventListener('click',go);c.addEventListener('keydown',function(e){if(e.key==='Enter')go(e)})});
+root.addEventListener('click',function(e){var h=e.target.closest&&e.target.closest('.gk-heart');if(h){h.classList.remove('gk-pop');void h.offsetWidth;h.classList.add('gk-pop')}});
 /* "next up" teasers */
 $$('.gk-next',root).forEach(function(n){n.addEventListener('click',function(){var t=document.getElementById(n.getAttribute('data-to'));if(t){t.scrollIntoView({behavior:'smooth'});track('next',{to:n.getAttribute('data-to')})}})});
 })();
