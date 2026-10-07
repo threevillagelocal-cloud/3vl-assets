@@ -8,13 +8,18 @@ import sys
 VER = sys.argv[1] if len(sys.argv) > 1 else "v3"
 SRC = {"v3": (r"C:\Users\Matt\Desktop\drone\0424 (2).mp4", 220, "Setauket Village Green"),
        "v3b": (r"C:\Users\Matt\Desktop\drone\videos\0404 (2)(1).mp4", 2556, "Stony Brook Harbor"),
-       "v4": (r"C:\Users\Matt\Documents\3vl-private\spotlight-photos\29564275.jpg", 0, "")}[VER]
+       "v4": (r"C:\Users\Matt\Documents\3vl-private\spotlight-photos\29564275.jpg", 0, ""),
+       "v5": (r"C:\Users\Matt\Documents\3vl-private\spotlight-photos\34512766.jpg", 0, "")}[VER]   # v5: hay bales + pumpkins (Pexels 34512766), big caps
 if SRC[0].lower().endswith(".jpg"):   # still photo (v4: owner 10/6 "hayrides in a pumpkin patch scene", Pexels 29564275, free license)
     photo = Image.open(SRC[0]).convert("RGB")
 else:
     c = cv2.VideoCapture(SRC[0]); c.set(cv2.CAP_PROP_POS_FRAMES, SRC[1]); ok, fr = c.read()
     photo = Image.fromarray(cv2.cvtColor(fr, cv2.COLOR_BGR2RGB))
 photo = ImageEnhance.Color(photo).enhance(1.12); photo = ImageEnhance.Contrast(photo).enhance(1.05)
+if VER == "v5":   # owner 10/6: fall festive -> warm golden grade
+    photo = ImageEnhance.Color(photo).enhance(1.15)
+    r_, g_, b_ = photo.split()
+    photo = Image.merge("RGB", (r_.point(lambda v: min(255, int(v * 1.06))), g_.point(lambda v: min(255, int(v * 1.01))), b_.point(lambda v: int(v * .9))))
 LOGO = r"C:\Users\Matt\Desktop\3VL logo - blue and white\C - white star, navy background.png"
 def durl(im, fmt="JPEG", q=88):
     b = io.BytesIO(); (im.convert("RGB") if fmt == "JPEG" else im).save(b, fmt, quality=q); return "data:image/%s;base64," % fmt.lower() + base64.b64encode(b.getvalue()).decode()
@@ -47,6 +52,22 @@ T = {
 @@CRDIV2@@
 <div style="position:absolute;left:80px;right:80px;bottom:300px;text-align:center"><div class="sub" style="font-size:46px;margin-bottom:28px">30+ fall picks near home</div><span class="pill" style="font-size:42px">Tap the link for the full guide</span></div></div>"""),
 }
+if VER == "v5":   # owner 10/6: "big bold headlines. use caps."
+    CSS += """.cap{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.005em;line-height:.9;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.cap em{display:block;font-style:normal;color:#8ec5ff}.tag{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;text-shadow:0 3px 14px rgba(0,0,0,.6)}"""
+    T = {
+     "ig": (1080, 1350, .5, """<div class="c" style="width:1080px;height:1350px;background-image:url(@@BG@@)"><div class="sh" style="background:linear-gradient(180deg,rgba(13,31,58,.78) 0%,rgba(13,31,58,.42) 34%,rgba(13,31,58,0) 52%,rgba(13,31,58,0) 72%,rgba(13,31,58,.78) 100%)"></div>
+<div class="lk" style="left:64px;top:56px"><img src="@@LG@@" width="86" height="86"><div><b style="font-size:36px">Three Village Local</b><span style="font-size:18px">Your neighbors in business</span></div></div>
+<h1 class="cap" style="position:absolute;left:62px;right:40px;top:186px;font-size:150px">Fall in<em>Three Village</em></h1>
+<div class="tag" style="position:absolute;left:66px;top:486px;font-size:40px;color:#fff">Pumpkins &middot; Hayrides &middot; Festivals</div>
+<div style="position:absolute;left:64px;right:64px;bottom:66px;display:flex;justify-content:space-between;align-items:center">
+<div class="tag" style="font-size:38px;color:#fff">30+ fall picks near home</div><span class="pill" style="font-size:34px">Link in bio &rarr;</span></div></div>"""),
+     "story": (1080, 1920, .5, """<div class="c" style="width:1080px;height:1920px;background-image:url(@@BG@@)"><div class="sh" style="background:linear-gradient(180deg,rgba(13,31,58,.78) 0%,rgba(13,31,58,.4) 30%,rgba(13,31,58,0) 46%,rgba(13,31,58,0) 70%,rgba(13,31,58,.82) 100%)"></div>
+<div class="lk" style="left:80px;top:240px"><img src="@@LG@@" width="100" height="100"><div><b style="font-size:42px">Three Village Local</b><span style="font-size:20px">Your neighbors in business</span></div></div>
+<h1 class="cap" style="position:absolute;left:76px;right:40px;top:400px;font-size:150px">Fall in<em>Three Village</em></h1>
+<div class="tag" style="position:absolute;left:80px;top:700px;font-size:46px;color:#fff">Pumpkins &middot; Hayrides &middot; Festivals</div>
+<div style="position:absolute;left:80px;right:80px;bottom:300px;text-align:center"><div class="tag" style="font-size:46px;margin-bottom:28px;color:#fff">30+ fall picks near home</div><span class="pill" style="font-size:42px">Tap the link for the full guide</span></div></div>"""),
+    }
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 p = subprocess.Popen([CHROME, "--headless=new", "--disable-gpu", "--remote-debugging-port=9394", "--remote-allow-origins=http://127.0.0.1:9394", "--user-data-dir=C:/Users/Matt/AppData/Local/Temp/claude-chrome-profile-fall3", "--hide-scrollbars", "about:blank"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 try:
@@ -61,7 +82,7 @@ try:
             if r.get("id") == n[0]: return r.get("result", {})
     cmd("Page.enable")
     for k, (w, h, cx, body) in T.items():
-        html = ("<html><head><meta charset=utf-8><link href='https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600;700&display=swap' rel=stylesheet><style>" + CSS + "</style></head><body>"
+        html = ("<html><head><meta charset=utf-8><link href='https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600;700&family=Oswald:wght@600;700&display=swap' rel=stylesheet><style>" + CSS + "</style></head><body>"
                 + body.replace("@@LG@@", LG).replace("@@CRDIV1@@", ('<div class="cr" style="right:30px;top:640px;font-size:20px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@CRDIV2@@", ('<div class="cr" style="right:40px;top:1180px;font-size:24px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@BG@@", durl(crop(photo, w, h, cx))) + "<script>document.fonts.ready.then(function(){document.title='ready'})</script></body></html>")
         fn = os.path.join(HERE, k + "-" + VER + ".html"); open(fn, "w", encoding="utf-8").write(html)
         cmd("Emulation.setDeviceMetricsOverride", width=w, height=h, deviceScaleFactor=2, mobile=False)
