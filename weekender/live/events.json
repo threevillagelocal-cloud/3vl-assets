@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-07T02:02:25.164697+00:00",
+"updated": "2026-10-07T08:32:54.809462+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 39,
@@ -2098,18 +2098,18 @@
 "page": "https://www.threevillagelocal.com/mirabelle-restaurant-tavern"
 },
 {
-"id": "wd-eat.namkeen-20261006",
+"id": "wd-eat.namkeen-20261007",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Tender Tuesday: $11.99 combo",
-"when": "Today, Tuesday",
-"desc": "2-tender combo plus a drink for $11.99. Dine-in only.",
-"expires": "2026-10-06",
-"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
+"title": "Wing Wednesday: $9.99",
+"when": "Today, Wednesday",
+"desc": "8-piece wings or 12-piece chicken bites for $9.99. Dine-in only.",
+"expires": "2026-10-07",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
 "url": "",
 "page": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 }
