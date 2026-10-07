@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 HERE = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.dirname(os.path.dirname(HERE))
 SHARE = os.path.join(os.path.dirname(ASSETS), "3vl-share")
-PRIV = r"C:\Users\Matt\Documents\3vl-private\claim-email\recipients.json"
+PRIV = os.environ.get("CLAIM_RECIPIENTS") or r"C:\Users\Matt\Documents\3vl-private\claim-email\recipients.json"
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 SITE = "https://www.threevillagelocal.com/"
 PHOTO = os.path.join(ASSETS, "site", "p3", "img", "village-hero.jpg")
