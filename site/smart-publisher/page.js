@@ -1,6 +1,6 @@
 <script>
 /* 3VL Smart Publisher page (/smart-publisher). Members-only page; this script picks the view:
-   paid plan (VIP 1/8, Getting Noticed 2) -> the form; other plans -> locked card; ?ref=...&do=approve|changes -> review form.
+   paid plan (VIP 1/8, Featured 2) -> the form; other plans -> locked card; ?ref=...&do=approve|changes -> review form.
    The real plan + monthly-limit check happens server side (3vl-site-guard smart_publisher.py). */
 (function(){
 function go(){
@@ -30,7 +30,7 @@ function go(){
     return}
   if(!vip&&!gn){show('sp-lock');if(fNew)fNew.classList.add('sp-hide');return}
   show('sp-new');
-  var u=document.getElementById('sp-usage');if(u)u.innerHTML='<span><b>'+(vip?'VIP':'Getting Noticed')+'</b> member</span><span>'+(vip?'2 pages a month (one every two weeks), plus social media':'1 page a month')+'</span>';
+  var u=document.getElementById('sp-usage');if(u)u.innerHTML='<span><b>'+(vip?'VIP':'Featured')+'</b> member</span><span>'+(vip?'2 pages a month (one every two weeks), plus social media':'1 page a month')+'</span>';
   /* social promotion is a VIP extra */
   var soc=fNew.querySelector('[name=sp_social]');if(soc&&!vip){var g=soc.closest('.form-group');if(g)g.classList.add('sp-hide')}
   /* go-live date only when "On a date I pick" */

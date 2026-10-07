@@ -1,6 +1,6 @@
 """Member update email (owner 10/2/2026): an insider email to each member business, one at a time, about the upgrades:
 the redesign, smart search (with a search that brings up THEIR business), the VIP banner spot (their own banner, or a sample
-made for them), and the Smart Publisher perk for Getting Noticed and VIP. Not a "what's happening" newsletter.
+made for them), and the Smart Publisher perk for Featured and VIP. Not a "what's happening" newsletter.
 
     python weekender/member_email_build.py <name> <private dir> [id ...]
 reads  <private dir>/recipients.json (addresses: PRIVATE, never in this repo) and search_picks.json,
@@ -110,10 +110,10 @@ def build(r, pick, has_banner, base, has_search):
         perk = "<b>Included in your VIP plan:</b> a page every two weeks, plus promotion on our social media. It is ready now."
         pcta = '<div style="padding-top:4px">%s</div>' % btn(SITE + "/smart-publisher", "Open Smart Publisher &rarr;")
     elif plan in GN:
-        perk = "<b>Included in your Getting Noticed plan:</b> 1 page a month. It is ready now."
+        perk = "<b>Included in your Featured plan:</b> 1 page a month. It is ready now."
         pcta = '<div style="padding-top:4px">%s</div>' % btn(SITE + "/smart-publisher", "Open Smart Publisher &rarr;")
     else:
-        perk = "<b>Included with Getting Noticed (1 page a month) and VIP (one every two weeks).</b> Upgrade and you can use it today."
+        perk = "<b>Included with Featured (1 page a month) and VIP (one every two weeks).</b> Upgrade and you can use it today."
         pcta = ('<div style="padding-top:4px">%s</div><p style="margin:12px 0 0;font:14px %s"><a href="%s/join" style="color:#fff;font-weight:bold">See the plans</a></p>'
                 % (btn(SITE + "/checkout/2", "Upgrade now &rarr;"), FONT, SITE))
     rows.append('<tr><td style="padding:34px 28px 6px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="background:%s;border-radius:18px">'
