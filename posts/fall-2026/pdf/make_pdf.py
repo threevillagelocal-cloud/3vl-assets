@@ -17,7 +17,7 @@ def item(t, when, where, note=""):
 
 P1 = "".join([
  '<h3>&#127875; Farms close to home</h3>',
- item("Benner's Farm open weekends", "Oct 3, 4, 17, 18 &middot; 12-4 PM", "56 Gnarled Hollow Rd, East Setauket", "Farm animals &amp; pumpkins. $12 adults, $10 kids. Website also lists Oct 11: check first."),
+ item("Benner's Farm open weekends", "Oct 10, 11, 17, 18 &middot; 12-4 PM", "56 Gnarled Hollow Rd, East Setauket", "Farm animals &amp; pumpkins. $12 adults, $10 kids. Website also lists Oct 11: check first."),
  item("Benner's Haunted Hayrides", "Oct 9, 10, 16, 17, 30 &middot; 6-9 PM", "Benner's Farm, East Setauket", "$17/person, online tickets only. First hour is Not-So-Spooky."),
  item("AnnMarie's Farm Stand", "Tue-Sun 12-5:30 (Sun to 5)", "72 N Country Rd, Setauket", "Organic farm produce since 1994."),
  '<h3>&#127806; Village festivals</h3>',
