@@ -30,6 +30,8 @@ def crop(im, w, h, cx=.46, cy=.5):
     return im.resize((w * 2, h * 2), Image.LANCZOS)
 lg = Image.open(LOGO).convert("RGBA"); lg.thumbnail((240, 240)); mask = Image.new("L", lg.size, 0)
 from PIL import ImageDraw; ImageDraw.Draw(mask).ellipse((0, 0, lg.size[0] - 1, lg.size[1] - 1), fill=255); lg.putalpha(mask); LG = durl(lg, "PNG")
+# official 3VL lockup (owner 10/6: "use one of these"): white version for dark tops
+_lk = Image.open(r"C:\Users\Matt\Desktop\three village local 2\logo\group (44).png").convert("RGBA"); _lk.thumbnail((1100, 1100)); LOCK = durl(_lk, "PNG")
 CSS = """*{box-sizing:border-box;margin:0;padding:0}html,body{overflow:hidden;font-family:'Radio Canada',sans-serif;color:#fff}
 .c{position:relative;overflow:hidden;background:#13294b center/cover}
 .sh{position:absolute;inset:0}
@@ -57,15 +59,15 @@ if VER == "v5":   # owner 10/6: "big bold headlines. use caps."
 .cap em{display:block;font-style:normal;color:#8ec5ff}.tag{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;text-shadow:0 3px 14px rgba(0,0,0,.6)}"""
     T = {
      "ig": (1080, 1350, .5, """<div class="c" style="width:1080px;height:1350px;background-image:url(@@BG@@)"><div class="sh" style="background:linear-gradient(180deg,rgba(13,31,58,.78) 0%,rgba(13,31,58,.42) 34%,rgba(13,31,58,0) 52%,rgba(13,31,58,0) 72%,rgba(13,31,58,.78) 100%)"></div>
-<div class="lk" style="left:64px;top:56px"><img src="@@LG@@" width="86" height="86"><div><b style="font-size:36px">Three Village Local</b><span style="font-size:18px">Your neighbors in business</span></div></div>
-<h1 class="cap" style="position:absolute;left:62px;right:40px;top:186px;font-size:150px">Fall in<em>Three Village</em></h1>
-<div class="tag" style="position:absolute;left:66px;top:486px;font-size:40px;color:#fff">Pumpkins &middot; Hayrides &middot; Festivals</div>
+<img src="@@LOCK@@" style="position:absolute;left:52px;top:44px;width:430px;height:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.45))">
+<h1 class="cap" style="position:absolute;left:62px;right:40px;top:226px;font-size:150px">Fall in<em>Three Village</em></h1>
+<div class="tag" style="position:absolute;left:66px;top:526px;font-size:40px;color:#fff">Pumpkins &middot; Hayrides &middot; Festivals</div>
 <div style="position:absolute;left:64px;right:64px;bottom:66px;display:flex;justify-content:space-between;align-items:center">
 <div class="tag" style="font-size:38px;color:#fff">30+ fall picks near home</div><span class="pill" style="font-size:34px">Link in bio &rarr;</span></div></div>"""),
      "story": (1080, 1920, .5, """<div class="c" style="width:1080px;height:1920px;background-image:url(@@BG@@)"><div class="sh" style="background:linear-gradient(180deg,rgba(13,31,58,.78) 0%,rgba(13,31,58,.4) 30%,rgba(13,31,58,0) 46%,rgba(13,31,58,0) 70%,rgba(13,31,58,.82) 100%)"></div>
-<div class="lk" style="left:80px;top:240px"><img src="@@LG@@" width="100" height="100"><div><b style="font-size:42px">Three Village Local</b><span style="font-size:20px">Your neighbors in business</span></div></div>
-<h1 class="cap" style="position:absolute;left:76px;right:40px;top:400px;font-size:150px">Fall in<em>Three Village</em></h1>
-<div class="tag" style="position:absolute;left:80px;top:700px;font-size:46px;color:#fff">Pumpkins &middot; Hayrides &middot; Festivals</div>
+<img src="@@LOCK@@" style="position:absolute;left:66px;top:220px;width:500px;height:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.45))">
+<h1 class="cap" style="position:absolute;left:76px;right:40px;top:440px;font-size:150px">Fall in<em>Three Village</em></h1>
+<div class="tag" style="position:absolute;left:80px;top:740px;font-size:46px;color:#fff">Pumpkins &middot; Hayrides &middot; Festivals</div>
 <div style="position:absolute;left:80px;right:80px;bottom:300px;text-align:center"><div class="tag" style="font-size:46px;margin-bottom:28px;color:#fff">30+ fall picks near home</div><span class="pill" style="font-size:42px">Tap the link for the full guide</span></div></div>"""),
     }
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
@@ -83,7 +85,7 @@ try:
     cmd("Page.enable")
     for k, (w, h, cx, body) in T.items():
         html = ("<html><head><meta charset=utf-8><link href='https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600;700&family=Oswald:wght@600;700&display=swap' rel=stylesheet><style>" + CSS + "</style></head><body>"
-                + body.replace("@@LG@@", LG).replace("@@CRDIV1@@", ('<div class="cr" style="right:30px;top:640px;font-size:20px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@CRDIV2@@", ('<div class="cr" style="right:40px;top:1180px;font-size:24px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@BG@@", durl(crop(photo, w, h, cx))) + "<script>document.fonts.ready.then(function(){document.title='ready'})</script></body></html>")
+                + body.replace("@@LG@@", LG).replace("@@LOCK@@", LOCK).replace("@@CRDIV1@@", ('<div class="cr" style="right:30px;top:640px;font-size:20px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@CRDIV2@@", ('<div class="cr" style="right:40px;top:1180px;font-size:24px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@BG@@", durl(crop(photo, w, h, cx))) + "<script>document.fonts.ready.then(function(){document.title='ready'})</script></body></html>")
         fn = os.path.join(HERE, k + "-" + VER + ".html"); open(fn, "w", encoding="utf-8").write(html)
         cmd("Emulation.setDeviceMetricsOverride", width=w, height=h, deviceScaleFactor=2, mobile=False)
         cmd("Page.navigate", url="file:///" + fn.replace("\\", "/"))
