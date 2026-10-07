@@ -55,8 +55,8 @@ T = {
 <div style="position:absolute;left:80px;right:80px;bottom:300px;text-align:center"><div class="sub" style="font-size:46px;margin-bottom:28px">30+ fall picks near home</div><span class="pill" style="font-size:42px">Tap the link for the full guide</span></div></div>"""),
 }
 if VER == "v5":   # owner 10/6: "big bold headlines. use caps."
-    CSS += """.cap{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.005em;line-height:.9;text-shadow:0 6px 30px rgba(0,0,0,.55)}
-.cap em{display:block;font-style:normal;color:#8ec5ff}.tag{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;text-shadow:0 3px 14px rgba(0,0,0,.6)}"""
+    CSS += """.cap{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.03em;line-height:.95;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.cap em{display:block;font-style:normal;color:#fff}.tag{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;text-shadow:0 3px 14px rgba(0,0,0,.6)}"""
     T = {
      "ig": (1080, 1350, .5, """<div class="c" style="width:1080px;height:1350px;background-image:url(@@BG@@)"><div class="sh" style="background:linear-gradient(180deg,rgba(13,31,58,.78) 0%,rgba(13,31,58,.42) 34%,rgba(13,31,58,0) 52%,rgba(13,31,58,0) 72%,rgba(13,31,58,.78) 100%)"></div>
 <img src="@@LOCK@@" style="position:absolute;left:52px;top:44px;width:430px;height:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.45))">
@@ -84,8 +84,8 @@ try:
             if r.get("id") == n[0]: return r.get("result", {})
     cmd("Page.enable")
     for k, (w, h, cx, body) in T.items():
-        html = ("<html><head><meta charset=utf-8><link href='https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600;700&family=Oswald:wght@600;700&display=swap' rel=stylesheet><style>" + CSS + "</style></head><body>"
-                + body.replace("@@LG@@", LG).replace("@@LOCK@@", LOCK).replace("@@CRDIV1@@", ('<div class="cr" style="right:30px;top:640px;font-size:20px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@CRDIV2@@", ('<div class="cr" style="right:40px;top:1180px;font-size:24px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@BG@@", durl(crop(photo, w, h, cx))) + "<script>document.fonts.ready.then(function(){document.title='ready'})</script></body></html>")
+        html = ("<html><head><meta charset=utf-8><link href='https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600;700&family=Oswald:wght@600;700&family=Anton&display=swap' rel=stylesheet><style>" + CSS + "</style></head><body>"
+                + body.replace("@@LG@@", LG).replace("@@LOCK@@", LOCK).replace("@@CRDIV1@@", ('<div class="cr" style="right:30px;top:640px;font-size:20px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@CRDIV2@@", ('<div class="cr" style="right:40px;top:1180px;font-size:24px">' + SRC[2] + " &middot; 3VL drone</div>") if SRC[2] else "").replace("@@BG@@", durl(crop(photo.crop((int(photo.width*.28), 0, int(photo.width*.97), int(photo.height*.555))) if VER == "v5" else photo, w, h, cx))) + "<script>document.fonts.ready.then(function(){document.title='ready'})</script></body></html>")
         fn = os.path.join(HERE, k + "-" + VER + ".html"); open(fn, "w", encoding="utf-8").write(html)
         cmd("Emulation.setDeviceMetricsOverride", width=w, height=h, deviceScaleFactor=2, mobile=False)
         cmd("Page.navigate", url="file:///" + fn.replace("\\", "/"))
