@@ -348,9 +348,9 @@ def build(edition, local=False, sha="master", d=None, live=None):
     M["stories"] = len(out)
     w(nhb.stories_sec())  # Latest Local Stories
     M["cta"] = len(out)
-    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Got something you want to promote?</p><p class="wk-subd">Three Village Local updates every day. '
-      'Send us your event, menu special or promotion and we’ll put it in front of Three Village.</p>'
-      '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Submit it free &rarr;</a></div>'
+    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Want your business in the spotlight?</p><p class="wk-subd">Three Village Local is updated every day and seen by thousands of neighbors. '
+      'Send us your event, special or big news and we’ll put it in front of your neighbors.</p>'
+      '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Get featured &rarr;</a></div>'
       '<div class="wk-share"><p class="wk-subt">Send this to your crew</p><div class="wk-shb">'
       '<button type="button" class="wk-btn wk-btnw" id="wk-share">&#128172; Share Three Village Local</button>'
       '<button type="button" class="wk-btn wk-btnw" id="wk-share2">&#11088; Share my plan</button></div></div>'
