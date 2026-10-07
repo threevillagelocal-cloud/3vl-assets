@@ -348,9 +348,9 @@ def build(edition, local=False, sha="master", d=None, live=None):
     M["stories"] = len(out)
     w(nhb.stories_sec())  # Latest Local Stories
     M["cta"] = len(out)
-    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Want your business in the spotlight?</p><p class="wk-subd">Three Village Local is updated every day and seen by thousands of neighbors. '
-      'Send us your event, special or big news and we’ll put it in front of your neighbors.</p>'
-      '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Get featured &rarr;</a></div>'
+    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Submit an event, business special or promotion</p><p class="wk-subd">Three Village Local is updated every day and seen by thousands of neighbors. '
+      'Send us your event, special or promotion and we’ll put it in front of your neighbors.</p>'
+      '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Submit it &rarr;</a><p style="margin:14px 0 0;font-size:14px;color:#dbe6f3">Own a local business? <a href="https://www.threevillagelocal.com/join" style="display:inline-block;margin-left:6px;padding:6px 14px;border:1px solid rgba(255,255,255,.6);border-radius:999px;color:#fff;font-weight:700;text-decoration:none">Join here &rarr;</a></p></div>'
       '<div class="wk-share"><p class="wk-subt">Send this to your crew</p><div class="wk-shb">'
       '<button type="button" class="wk-btn wk-btnw" id="wk-share">&#128172; Share Three Village Local</button>'
       '<button type="button" class="wk-btn wk-btnw" id="wk-share2">&#11088; Share my plan</button></div></div>'
