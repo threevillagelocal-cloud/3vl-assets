@@ -2,6 +2,22 @@
 "countrycornerlongisland": [],
 "madiranthewinebar_eastsetauket": [
 {
+"id": "18165795172468445",
+"biz": "Madiran The Wine Bar",
+"ig": "madiranthewinebar_eastsetauket",
+"town": "East Setauket",
+"category": "Wine Bar",
+"member": false,
+"title": "The Jazz Loft Live Music",
+"when": "Thu, Oct. 8 · 7-9 PM",
+"desc": "Live jazz with Tom, Steve, and Billy. Reservations recommended.",
+"expires": "2026-10-08",
+"posted": "2026-10-07T14:13:30+0000",
+"url": "https://www.instagram.com/p/DeMi9wXitSk/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
+"inset": "ig/p18165795172468445.jpg"
+},
+{
 "id": "17921455176223830",
 "biz": "Madiran The Wine Bar",
 "ig": "madiranthewinebar_eastsetauket",
@@ -19,6 +35,22 @@
 }
 ],
 "tommysplaceportjeff_": [
+{
+"id": "18190137262400311",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Chipotle Chicken Salad Sandwich",
+"when": "This week",
+"desc": "Shredded chicken, chipotle sauce, Fontina, lettuce & tomato on Texas toast with fries.",
+"expires": "2026-10-13",
+"posted": "2026-10-06T18:43:27+0000",
+"url": "https://www.instagram.com/p/DeKdINkmqCD/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "ig/p18190137262400311.jpg"
+},
 {
 "id": "17895179811609684",
 "biz": "Tommy's Place",
@@ -40,65 +72,65 @@
 "djsclamshackstonybrook": [],
 "culpers1778": [],
 "levelupkitchenny": [],
-"littlecheeseshop": [],
+"littlecheeseshop": [
+{
+"id": "18633139252010772",
+"biz": "Little Cheese Shop",
+"ig": "littlecheeseshop",
+"town": "Stony Brook",
+"category": "Cheese Shop/Cafe",
+"member": false,
+"title": "Vote for Little Cheese's Scarecrow #106",
+"when": "Stony Brook Village competition (ongoing)",
+"desc": "Vote for The Gouda Guardian scarecrow in the annual competition. Multiple scarecrows to see.",
+"expires": "2026-10-21",
+"posted": "2026-10-06T21:38:16+0000",
+"url": "https://www.instagram.com/p/DeKxIkyD_hc/",
+"img": "",
+"inset": "ig/p18633139252010772.jpg"
+}
+],
 "hirosakiny": [],
 "lucastonybrook": [],
 "crazybeansrestaurant": [],
-"eatschnitzels": [
-{
-"id": "17907903513577355",
-"biz": "Schnitzels",
-"ig": "eatschnitzels",
-"town": "Stony Brook",
-"category": "Restaurant/Gastropub",
-"member": false,
-"title": "Oktoberfest Music Bingo",
-"when": "Mon, Oct. 6 · 7 PM",
-"desc": "Music bingo with prizes, giveaways, and happy hour pricing for lederhosen/dirndl wearers.",
-"expires": "2026-10-06",
-"posted": "2026-10-04T20:22:40+0000",
-"url": "https://www.instagram.com/p/DeFe5G-oMAT/",
-"img": "",
-"inset": "ig/p17907903513577355.jpg"
-},
-{
-"id": "18029801909856158",
-"biz": "Schnitzels",
-"ig": "eatschnitzels",
-"town": "Stony Brook",
-"category": "Restaurant/Gastropub",
-"member": false,
-"title": "Oktoberfest at Schnitzels",
-"when": "Ongoing through October",
-"desc": "Giant Bavarian pretzels with beer cheese and mustard paired with German brews.",
-"expires": "2026-10-15",
-"posted": "2026-09-29T22:23:43+0000",
-"url": "https://www.instagram.com/p/Dd40vvhBMLC/",
-"img": "",
-"inset": "ig/p18029801909856158.jpg"
-}
-],
+"eatschnitzels": [],
 "robinsonstearoom": [],
 "premierepastryshop": [],
 "threevillageinn": [
 {
-"id": "17906645451480591",
+"id": "18483879619129257",
 "biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
 "ig": "threevillageinn",
 "town": "Stony Brook",
 "category": "Restaurant/Inn",
 "member": false,
-"title": "Happy Hour at Mirabelle Tavern",
-"when": "Every Wednesday & Thursday · 4-6 PM",
-"desc": "50% off cocktails, wine and beer at the bar.",
-"expires": "2026-10-14",
-"posted": "2026-09-30T15:10:46+0000",
-"url": "https://www.instagram.com/p/Dd6nyGAF3R8/",
+"title": "Prix Fixe Lunch & Dinner",
+"when": "This week (Mon-Sun, Oct 7-13)",
+"desc": "Two-course lunch for $24, three-course dinner for $46. Closed Mon & Tues.",
+"expires": "2026-10-13",
+"posted": "2026-10-07T15:12:33+0000",
+"url": "https://www.instagram.com/p/DeMpjWrl0TQ/",
 "img": "",
-"inset": "ig/p17906645451480591.jpg"
+"inset": "ig/p18483879619129257.jpg"
 }
 ],
 "ralphsitalianicesstonybrook": [
+{
+"id": "18106747217224206",
+"biz": "Ralph's Famous Italian Ices & Ice Cream",
+"ig": "ralphsitalianicesstonybrook",
+"town": "Stony Brook",
+"category": "Ice Cream",
+"member": false,
+"title": "Twister Tuesday: Buy 1 Get 1 FREE",
+"when": "Every Tuesday",
+"desc": "Buy one get one free on ice cream and Italian ices at Ralph's every Twister Tuesday.",
+"expires": "2026-10-14",
+"posted": "2026-10-06T17:31:29+0000",
+"url": "https://www.instagram.com/reel/DeKUoODBa-4/",
+"img": "",
+"inset": "ig/p18106747217224206.jpg"
+},
 {
 "id": "17969593557189591",
 "biz": "Ralph's Famous Italian Ices & Ice Cream",
@@ -114,22 +146,6 @@
 "url": "https://www.instagram.com/reel/DeAHoIXBKo6/",
 "img": "",
 "inset": "ig/p17969593557189591.jpg"
-},
-{
-"id": "18222401701337755",
-"biz": "Ralph's Famous Italian Ices & Ice Cream",
-"ig": "ralphsitalianicesstonybrook",
-"town": "Stony Brook",
-"category": "Ice Cream",
-"member": false,
-"title": "Twister Tuesdays: Buy 1 Get 1 FREE",
-"when": "Every Tuesday",
-"desc": "Buy one item, get one free on Tuesdays. Bring a friend to Ralph's Famous Italian Ices & Ice Cream.",
-"expires": "2026-10-14",
-"posted": "2026-09-29T17:31:00+0000",
-"url": "https://www.instagram.com/reel/Dd4TA0YpmTo/",
-"img": "",
-"inset": "ig/p18222401701337755.jpg"
 }
 ],
 "burgerologyusa": [
@@ -148,46 +164,46 @@
 "url": "https://www.instagram.com/reel/Dd9jo9aNcmG/",
 "img": "",
 "inset": "ig/p18109679189596201.jpg"
-},
-{
-"id": "18114880313055054",
-"biz": "Burgerology",
-"ig": "burgerologyusa",
-"town": "Stony Brook",
-"category": "Restaurant",
-"member": false,
-"title": "Wicked Potion Punch",
-"when": "Limited time",
-"desc": "Halloween-themed drink served in a smoking cauldron with glowing LED ice cubes.",
-"expires": "2026-10-31",
-"posted": "2026-09-29T23:37:43+0000",
-"url": "https://www.instagram.com/reel/Dd48-xyg-eS/",
-"img": "",
-"inset": "ig/p18114880313055054.jpg"
 }
 ],
 "ep_restaurant": [],
 "tajcrownofindia": [],
-"rctaqueria": [
+"rctaqueria": [],
+"thestudy.bytoast": [
 {
-"id": "18106809092626209",
-"biz": "Right Coast Taqueria",
-"ig": "rctaqueria",
+"id": "18121416112857675",
+"biz": "The Study by Toast",
+"ig": "thestudy.bytoast",
 "town": "East Setauket",
-"category": "Restaurant",
+"category": "Coffee House",
 "member": false,
-"title": "National Taco Day Special",
-"when": "Tue, Oct. 6",
-"desc": "Pick any 3 specialty tacos for $12 or build your own with chicken, pork, or beef for $10.",
-"expires": "2026-10-06",
-"posted": "2026-10-05T19:22:54+0000",
-"url": "https://www.instagram.com/p/DeH80TTM8Ta/",
+"title": "Golden Hour Cocktails & Bites",
+"when": "Wed-Sat, 4-7 PM",
+"desc": "Enjoy $10 cocktails and delicious bites during Golden Hour. Live music on Saturdays and Sundays.",
+"expires": "2026-10-20",
+"posted": "2026-10-07T17:10:00+0000",
+"url": "https://www.instagram.com/p/DeM22cKRQHZ/",
 "img": "",
-"inset": "ig/p18106809092626209.jpg"
+"inset": "ig/p18121416112857675.jpg"
 }
 ],
-"thestudy.bytoast": [],
 "breakroomny": [
+{
+"id": "18080087426422651",
+"biz": "Break Room Cafe",
+"ig": "breakroomny",
+"town": "East Setauket",
+"category": "Cafe",
+"member": false,
+"title": "Limited-Time Pulled Pork Sandwich",
+"when": "Now",
+"desc": "Try pulled pork, BBQ sauce, melted cheddar, and pickles on brioche with house-cut fries.",
+"expires": "2026-10-21",
+"posted": "2026-10-07T15:15:02+0000",
+"url": "https://www.instagram.com/p/DeMqFuXDiGo/",
+"img": "",
+"inset": "ig/p18080087426422651.jpg"
+},
 {
 "id": "17918683176243017",
 "biz": "Break Room Cafe",
@@ -222,22 +238,6 @@
 "url": "https://www.instagram.com/reel/DeKNn26Rm8W/",
 "img": "",
 "inset": "ig/p18090078149229582.jpg"
-},
-{
-"id": "18157413349503508",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Halloween Drinks at Toast Locations",
-"when": "October 1-31, 2026",
-"desc": "Spooky seasonal drinks available all month at Toast locations including Port Jefferson with Addams Family-inspired beverages.",
-"expires": "2026-10-31",
-"posted": "2026-09-30T14:13:17+0000",
-"url": "https://www.instagram.com/p/Dd6hcL3kXPJ/",
-"img": "",
-"inset": "ig/p18157413349503508.jpg"
 }
 ],
 "prohibitionportjefferson": [],
@@ -435,6 +435,22 @@
 "thesteamroomrestaurant": [],
 "castawayspj": [
 {
+"id": "18127411960867747",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Happy Hour at Castaways",
+"when": "Wed, Oct. 7 · 4-6 PM",
+"desc": "Happy hour at the inside bar, high tops, and lounge with mussels, sliders, and cold beer.",
+"expires": "2026-10-07",
+"posted": "2026-10-07T17:01:36+0000",
+"url": "https://www.instagram.com/reel/DeM2NaPkQYg/",
+"img": "",
+"inset": "ig/p18127411960867747.jpg"
+},
+{
 "id": "18150216559547976",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -449,22 +465,6 @@
 "url": "https://www.instagram.com/p/DeKDpfikQU8/",
 "img": "",
 "inset": "ig/p18150216559547976.jpg"
-},
-{
-"id": "18129572494814971",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Witches & Warlocks Bar Crawl",
-"when": "Sat, Oct. 10 · 5-10 PM",
-"desc": "Join 13 stops across Port Jeff. $55 includes 5 drink tokens. 21+ with valid ID.",
-"expires": "2026-10-10",
-"posted": "2026-10-02T17:01:55+0000",
-"url": "https://www.instagram.com/p/Dd_-Ut2DKWx/",
-"img": "",
-"inset": "ig/p18129572494814971.jpg"
 }
 ],
 "salsasalsa_portjeff": [],
@@ -473,6 +473,22 @@
 "oldfieldspj": [],
 "secretgardentearoom": [],
 "kilwins_port_jeff": [
+{
+"id": "18045608615819421",
+"biz": "Kilwins Port Jefferson",
+"ig": "kilwins_port_jeff",
+"town": "Port Jefferson",
+"category": "Chocolate/Ice Cream",
+"member": false,
+"title": "Fall & Halloween Treats Menu",
+"when": "Now through season",
+"desc": "Try seasonal fall and Halloween treats including pumpkin desserts, shakes, and fudge while available.",
+"expires": "2026-10-31",
+"posted": "2026-10-06T22:30:32+0000",
+"url": "https://www.instagram.com/p/DeK3DtEjJ53/",
+"img": "",
+"inset": "ig/p18045608615819421.jpg"
+},
 {
 "id": "18430460974157157",
 "biz": "Kilwins Port Jefferson",
@@ -511,20 +527,20 @@
 ],
 "tara.inn": [
 {
-"id": "18097840004554578",
+"id": "17966715234181852",
 "biz": "Tara Inn",
 "ig": "tara.inn",
 "town": "Port Jefferson",
 "category": "Bar/Pub",
 "member": false,
-"title": "Wednesday Specials & Happy Hour",
-"when": "Every Wednesday",
-"desc": "Happy hour 4-close with daily food specials including Prime Rib $24, steaks, seafood, sandwiches from $2-$24.",
-"expires": "2026-10-14",
-"posted": "2026-09-30T14:18:41+0000",
-"url": "https://www.instagram.com/p/Dd6iDeUDo0t/",
+"title": "Wednesday Specials at Tara Inn",
+"when": "Wed, Oct. 7",
+"desc": "Prime rib, lobster, shrimp basket, burgers and more at daily special prices.",
+"expires": "2026-10-07",
+"posted": "2026-10-07T14:38:56+0000",
+"url": "https://www.instagram.com/p/DeMl8ImjHI9/",
 "img": "",
-"inset": "ig/p18097840004554578.jpg"
+"inset": "ig/p17966715234181852.jpg"
 }
 ]
 }

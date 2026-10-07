@@ -2094,5 +2094,125 @@
 "desc": "25% of orders support Port Jeff Varsity Volleyball. Dine in or take-out (excludes UberEats).",
 "expires": "2026-10-11",
 "_ts": "2026-10-06T15:20:09+0000"
+},
+"18165795172468445": {
+"special": true,
+"title": "The Jazz Loft Live Music",
+"when": "Thu, Oct. 8 · 7-9 PM",
+"desc": "Live jazz with Tom, Steve, and Billy. Reservations recommended.",
+"expires": "2026-10-08",
+"_ts": "2026-10-07T14:13:30+0000"
+},
+"18190137262400311": {
+"special": true,
+"title": "Chipotle Chicken Salad Sandwich",
+"when": "This week",
+"desc": "Shredded chicken, chipotle sauce, Fontina, lettuce & tomato on Texas toast with fries.",
+"expires": "2026-10-13",
+"_ts": "2026-10-06T18:43:27+0000"
+},
+"18633139252010772": {
+"special": true,
+"title": "Vote for Little Cheese's Scarecrow #106",
+"when": "Stony Brook Village competition (ongoing)",
+"desc": "Vote for The Gouda Guardian scarecrow in the annual competition. Multiple scarecrows to see.",
+"expires": "2026-10-21",
+"_ts": "2026-10-06T21:38:16+0000"
+},
+"17962658454206724": {
+"special": false,
+"title": "Robinson's Tea Room",
+"when": "Ongoing",
+"desc": "Fresh scones, lunch options, and 50+ teas daily. Walk in or call 631-751-1232.",
+"expires": "2026-10-07",
+"_ts": "2026-10-06T21:02:42+0000"
+},
+"18483879619129257": {
+"special": true,
+"title": "Prix Fixe Lunch & Dinner",
+"when": "This week (Mon-Sun, Oct 7-13)",
+"desc": "Two-course lunch for $24, three-course dinner for $46. Closed Mon & Tues.",
+"expires": "2026-10-13",
+"_ts": "2026-10-07T15:12:33+0000"
+},
+"18106747217224206": {
+"special": true,
+"title": "Twister Tuesday: Buy 1 Get 1 FREE",
+"when": "Every Tuesday",
+"desc": "Buy one get one free on ice cream and Italian ices at Ralph's every Twister Tuesday.",
+"expires": "2026-10-14",
+"_ts": "2026-10-06T17:31:29+0000"
+},
+"18121416112857675": {
+"special": true,
+"title": "Golden Hour Cocktails & Bites",
+"when": "Wed-Sat, 4-7 PM",
+"desc": "Enjoy $10 cocktails and delicious bites during Golden Hour. Live music on Saturdays and Sundays.",
+"expires": "2026-10-20",
+"_ts": "2026-10-07T17:10:00+0000"
+},
+"18080087426422651": {
+"special": true,
+"title": "Limited-Time Pulled Pork Sandwich",
+"when": "Now",
+"desc": "Try pulled pork, BBQ sauce, melted cheddar, and pickles on brioche with house-cut fries.",
+"expires": "2026-10-21",
+"_ts": "2026-10-07T15:15:02+0000"
+},
+"17910848337478335": {
+"special": false,
+"title": "Endless Summer Steak & Eggs",
+"when": "Ongoing",
+"desc": "Espresso-rubbed flat iron with eggs, sweet potato chorizo hash, and chimichurri.",
+"expires": "2026-10-07",
+"_ts": "2026-10-07T14:31:25+0000"
+},
+"18116807209807480": {
+"special": false,
+"title": "Pasta Pasta",
+"when": "",
+"desc": "No specific offer or event details provided in post.",
+"expires": "",
+"_ts": "2026-10-07T11:37:49+0000"
+},
+"18128926942845478": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-07T15:32:32+0000"
+},
+"18127411960867747": {
+"special": true,
+"title": "Happy Hour at Castaways",
+"when": "Wed, Oct. 7 · 4-6 PM",
+"desc": "Happy hour at the inside bar, high tops, and lounge with mussels, sliders, and cold beer.",
+"expires": "2026-10-07",
+"_ts": "2026-10-07T17:01:36+0000"
+},
+"17912346450472294": {
+"special": false,
+"title": "Girls Night Out Package",
+"when": "By reservation",
+"desc": "Reserve a group of 6-12 for 2 hours in the lounge with bites and 2 drinks each for $50/person.",
+"expires": "2026-10-21",
+"_ts": "2026-10-06T18:01:29+0000"
+},
+"18045608615819421": {
+"special": true,
+"title": "Fall & Halloween Treats Menu",
+"when": "Now through season",
+"desc": "Try seasonal fall and Halloween treats including pumpkin desserts, shakes, and fudge while available.",
+"expires": "2026-10-31",
+"_ts": "2026-10-06T22:30:32+0000"
+},
+"17966715234181852": {
+"special": true,
+"title": "Wednesday Specials at Tara Inn",
+"when": "Wed, Oct. 7",
+"desc": "Prime rib, lobster, shrimp basket, burgers and more at daily special prices.",
+"expires": "2026-10-07",
+"_ts": "2026-10-07T14:38:56+0000"
 }
 }
