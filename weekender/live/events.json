@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-07T21:55:58.943035+00:00",
+"updated": "2026-10-08T01:48:28.824526+00:00",
 "counts": {
 "Three Village Chamber": 6,
-"Port Jefferson Chamber": 39,
+"Port Jefferson Chamber": 38,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 218,
-"Emma S. Clark Library": 313,
+"Village of Port Jefferson": 217,
+"Emma S. Clark Library": 312,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
@@ -435,7 +435,7 @@
 {
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-07T00:00",
+"start": "2026-10-08T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
@@ -454,44 +454,6 @@
 "pick": true,
 "page": "https://www.threevillagelocal.com/olde-towne-gardens",
 "rank": 5
-},
-{
-"id": "lim-3225151",
-"title": "MORNINGS@LIM: The Troubadours Concert",
-"start": "2026-10-07T11:00:00",
-"end": "2026-10-07T12:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/the-troubadours/",
-"desc": "Mornings @ LIM are free monthly sessions open to individuals living with dementia and their care partners. They offer time for creative engagement and social connection in our galleries and art studio, as well as through special music and movie programs. Music",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/06/Guitar-Player-Stock.jpg",
-"src": "lim",
-"tags": [
-"free",
-"music",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "emmaclark-your-children-dont-want-it-what-do-zoom-58133",
-"title": "Your Children Don’t Want It: What to Do [ZOOM]",
-"start": "2026-10-07T18:30:00",
-"end": "2026-10-07T20:00:00",
-"allday": false,
-"venue": "Online (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/your-children-dont-want-it-what-do-zoom-58133",
-"desc": "Mike Ivankovich will give you 15 tips & strategies designed to help you deal with your “stuff,” and hopefully help you make money when selling it.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/344909.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/your-children-dont-want-it-what-to-do-zoom"
 },
 {
 "id": "pjchamber-15013",
@@ -783,8 +745,8 @@
 "allday": false,
 "venue": "Village Center",
 "addr": "Village Center - 101A Robert T. Strong Way Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx",
-"desc": "https://www.portjeffny.gov/m/calendar/event/detail/1134",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1134",
+"desc": "",
 "img": "",
 "src": "portjeff",
 "tags": [
@@ -920,8 +882,8 @@
 "allday": false,
 "venue": "Jeanne Garant Harborfront Park",
 "addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx",
-"desc": "https://www.portjeffny.gov/m/calendar/event/detail/1095",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1095",
+"desc": "",
 "img": "",
 "src": "portjeff",
 "tags": [
@@ -1697,8 +1659,8 @@
 "allday": false,
 "venue": "Mather Museum",
 "addr": "Port Jefferson",
-"url": "https://www.portjeffny.gov/calendar.aspx",
-"desc": "https://www.portjeffny.gov/m/calendar/event/detail/1149 This event is held at the Mather Museum - Port Jefferson NY 11777.",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1149",
+"desc": "This event is held at the Mather Museum - Port Jefferson NY 11777.",
 "img": "",
 "src": "portjeff",
 "tags": [
@@ -1951,6 +1913,142 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/live-performance-by-albert-bouchards-imaginos-band-at-the-long-island-music-and-entertainment-hall-of-fame"
+},
+{
+"id": "pjchamber-14824",
+"title": "Port Jefferson Harvest Festival Pie Baking Contest",
+"start": "2026-10-18T00:00:00",
+"end": "2026-10-18T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-pie-baking-contest/",
+"desc": "PORT JEFFERSON HARVEST FEST PIE BAKING CONTEST Contest Rules Register Online & Pay Fill Form Out To Sign Up (If paying Cash the day-of) Name (Required) First Last Email (Required) Phone Number (Required) gform.initializeOnLoaded( function() {gformInitSpinner( ",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-pie-baking-contest"
+},
+{
+"id": "portjeff-1096",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-10-18T09:00:00",
+"end": "2026-10-18T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1096",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-474"
+},
+{
+"id": "portjeff-1150",
+"title": "38th Outdoor Country Auction",
+"start": "2026-10-18T09:00:00",
+"end": "2026-10-18T23:59:00",
+"allday": false,
+"venue": "Mather Museum",
+"addr": "Port Jefferson",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1150",
+"desc": "This event is held at the Mather Museum - Port Jefferson NY 11777.",
+"img": "",
+"src": "portjeff",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/38th-outdoor-country-auction-475"
+},
+{
+"id": "emmaclark-copy-stitching-circle-59568",
+"title": "The Stitching Circle",
+"start": "2026-10-18T10:30:00",
+"end": "2026-10-18T12:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/copy-stitching-circle-59568",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-09/Screenshot%202025-09-16%20183024.jpg",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/the-stitching-circle"
+},
+{
+"id": "lim-3225661",
+"title": "Cartoons of New York in the Revolution",
+"start": "2026-10-18T13:00:00",
+"end": "2026-10-18T14:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/cartoons-of-new-york/",
+"desc": "Laugh and learn about some of the fascinating—and often surprising—events of the American Revolution in New York through the witty, satirical cartoons of the period. Explore how British and American artists used humor, caricature, and political satire to comme",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Political-cartoon.jpg",
+"src": "lim",
+"tags": [
+"history",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/cartoons-of-new-york-in-the-revolution"
+},
+{
+"id": "emmaclark-book-movie-club-scary-stories-tell-dark-59570",
+"title": "Book & Movie Club: Scary Stories to Tell in the Dark",
+"start": "2026-10-18T13:30:00",
+"end": "2026-10-18T16:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/book-movie-club-scary-stories-tell-dark-59570",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/cover.jpg",
+"src": "emmaclark",
+"tags": [
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/book-movie-club-scary-stories-to-tell-in-the-dark"
+},
+{
+"id": "sbv-2377",
+"title": "Live Performance by Mountain Maidens at the Long Island Music and Entertainment Hall of Fame",
+"start": "2026-10-18T15:00:00",
+"end": "2026-10-18T16:00:00",
+"allday": false,
+"venue": "The Long Island Music and Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/live-performance-by-mountain-maidens-at-the-long-island-music-and-entertainment-hall-of-fame/",
+"desc": "The LIMEHOF is excited about the return of the Mountain Maidens. These three dynamic voices, blended in splendid ancient and modern harmonies will lift your spirit, excite your senses and warm your heart. An Afternoon of Folk, Irish and Acoustic Covers in Sple",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/09/Mountain-Maidens-HOF.jpeg",
+"src": "sbv",
+"tags": [
+"free",
+"music"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-performance-by-mountain-maidens-at-the-long-island-music-and-entertainment-hall-of-fame"
 }
 ],
 "closings": [],
