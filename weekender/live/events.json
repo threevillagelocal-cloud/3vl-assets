@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-08T08:49:41.980317+00:00",
+"updated": "2026-10-08T15:32:23.329552+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 38,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 217,
-"Emma S. Clark Library": 312,
+"Village of Port Jefferson": 218,
+"Emma S. Clark Library": 310,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
@@ -473,42 +473,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/fall-blood-drive"
-},
-{
-"id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58903",
-"title": "Parent Toddler Workshop (18m - 3.5 yrs w/ caregiver)",
-"start": "2026-10-08T09:30:00",
-"end": "2026-10-08T10:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-18m-35-yrs-w-caregiver-58903",
-"desc": "Experience sharing, group participation, and play.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-18m-3-5-yrs-w-caregiver-318"
-},
-{
-"id": "emmaclark-library-walking-club-61172",
-"title": "Library Walking Club",
-"start": "2026-10-08T10:00:00",
-"end": "2026-10-08T11:15:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Library Front Lawn",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/library-walking-club-61172",
-"desc": "Looking for accountability and consistency on your fitness journey? Get active and connect with others at our weekly Walking Club! Join us Thursday mornings in September and October for a group walk from the library to Frank Melville Park, where participants w",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Frank%20Melville%20Park1a.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/library-walking-club-319"
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-58908",

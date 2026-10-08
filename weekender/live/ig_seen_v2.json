@@ -2214,5 +2214,117 @@
 "desc": "Prime rib, lobster, shrimp basket, burgers and more at daily special prices.",
 "expires": "2026-10-07",
 "_ts": "2026-10-07T14:38:56+0000"
+},
+"18159635593508036": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-07T18:06:15+0000"
+},
+"17906330307587030": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-08T14:23:32+0000"
+},
+"18161487409496591": {
+"special": false,
+"title": "Duck Breast - New Seasonal Menu Item",
+"when": "Now",
+"desc": "Tender duck breast with celery root, pear, macadamia nut, and red wine jus.",
+"expires": "2026-10-22",
+"_ts": "2026-10-07T22:39:36+0000"
+},
+"17924557194204295": {
+"special": true,
+"title": "New Seasonal Teas & Flavors",
+"when": "This Weekend",
+"desc": "Robinson's Tea Room unveils festive fall teas, scones, and beverages for dine-in or takeout.",
+"expires": "2026-10-12",
+"_ts": "2026-10-07T18:55:15+0000"
+},
+"17908972224561406": {
+"special": false,
+"title": "Three Village Inn Staycation",
+"when": "Ongoing",
+"desc": "Book a cozy staycation at Three Village Inn in Stony Brook village.",
+"expires": "2026-10-22",
+"_ts": "2026-10-08T13:17:13+0000"
+},
+"18097375211544601": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-07T20:19:50+0000"
+},
+"18499008388102448": {
+"special": false,
+"_ts": "2026-10-07T20:19:08+0000"
+},
+"18091385864479990": {
+"special": false,
+"_ts": "2026-10-07T20:18:12+0000"
+},
+"18128958175790875": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-07T20:17:26+0000"
+},
+"18034365863893539": {
+"special": false,
+"_ts": "2026-10-07T20:16:55+0000"
+},
+"17898818010403132": {
+"special": false,
+"_ts": "2026-10-07T20:15:25+0000"
+},
+"18066352928780379": {
+"special": false,
+"title": "Halloween Decorations & Fall Cocktails",
+"when": "Ongoing",
+"desc": "Prohibition is decorated for Halloween with fall cocktails and Halloween specials coming soon.",
+"expires": "2026-10-08",
+"_ts": "2026-10-08T00:24:56+0000"
+},
+"17916476448259129": {
+"special": true,
+"title": "Happy Hour at The Whiskey Barrel",
+"when": "Today until 6 PM",
+"desc": "Skip cooking tonight. Grab a cold drink and food at The Whiskey Barrel's happy hour.",
+"expires": "2026-10-08",
+"_ts": "2026-10-07T18:13:33+0000"
+},
+"18157729165531593": {
+"special": false,
+"title": "Crab Legs",
+"when": "Ongoing",
+"desc": "Crab legs available for $20 at The Steam Room in Port Jefferson.",
+"expires": "2026-10-22",
+"_ts": "2026-10-08T11:03:57+0000"
+},
+"18095682431129095": {
+"special": false,
+"title": "Castaways Lunch",
+"when": "Today · 12 PM",
+"desc": "Burgers, seafood, sandwiches and more. Book your table on Resy.",
+"expires": "2026-10-08",
+"_ts": "2026-10-08T15:02:09+0000"
+},
+"17870430369647410": {
+"special": false,
+"title": "Halloween Treats Available",
+"when": "Ongoing",
+"desc": "Festive Halloween treats including Buckeye Monsters available for party planning and celebrations.",
+"expires": "2026-10-31",
+"_ts": "2026-10-07T22:20:25+0000"
 }
 }
