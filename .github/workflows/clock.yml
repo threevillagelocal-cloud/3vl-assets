@@ -1,0 +1,34 @@
+name: 3VL clock
+
+# GitHub's own schedules have been running 4-8 hours late for our account (10/7/2026: the 7:40 AM specials ran at 1:57 PM,
+# the "every 30 min" site guard ran ~5 times a day). This job keeps time itself instead: it stays awake up to ~5h40m,
+# then starts a fresh copy of itself (workflow_dispatch from GITHUB_TOKEN is allowed to start runs). Public repo = free minutes.
+#   - Instagram specials at 8:00, 11:00 and 3:00 PM ET (starts ig-specials.yml)
+#   - site guard tick every 30 min, 7 AM-10 PM ET (pushes 3vl-site-guard data/clock/tick.txt -> "BD site guard" runs)
+# The hourly cron below only restarts the clock if the chain ever breaks; a second copy just waits its turn (concurrency).
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: clock
+  cancel-in-progress: false
+
+jobs:
+  clock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - name: Keep time
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GUARD_DEPLOY_KEY: ${{ secrets.GUARD_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh && printf '%s\n' "$GUARD_DEPLOY_KEY" > ~/.ssh/guard && chmod 600 ~/.ssh/guard
+          python3 weekender/live/clock.py

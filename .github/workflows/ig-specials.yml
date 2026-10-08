@@ -1,8 +1,7 @@
-name: Three Village Now - Instagram specials (every 3 hours)
+name: Three Village Now - Instagram specials
 
+# Started by the 3VL clock (clock.yml) at 8:00, 11:00 and 3:00 PM ET. GitHub schedules ran hours late, so no cron here.
 on:
-  schedule:
-    - cron: "40 11 * * *"   # once a day, 7:40a ET
   workflow_dispatch:
 
 permissions:
@@ -34,3 +33,15 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add weekender/live
           git diff --cached --quiet || (git commit -m "Instagram specials $(date -u +%F-%H%M)" && git pull --rebase -q && git push)
+      - name: Tell the site guard (homepage feature notices)
+        env:
+          GUARD_DEPLOY_KEY: ${{ secrets.GUARD_DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh && printf '%s
+' "$GUARD_DEPLOY_KEY" > ~/.ssh/guard && chmod 600 ~/.ssh/guard
+          export GIT_SSH_COMMAND="ssh -i ~/.ssh/guard -o StrictHostKeyChecking=accept-new"
+          git clone -q --depth 1 git@github.com:threevillagelocal-cloud/3vl-site-guard.git /tmp/guard && cd /tmp/guard
+          git config user.name "3VL specials" && git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/featured && date -u +%FT%TZ > data/featured/ping.txt
+          git add data/featured/ping.txt && git commit -qm "specials refreshed"
+          for i in 1 2 3 4; do git pull -q --rebase && git push -q && exit 0; sleep 10; done
