@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-08T01:48:28.824526+00:00",
+"updated": "2026-10-08T08:49:41.980317+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 38,
@@ -2156,18 +2156,18 @@
 "page": "https://www.threevillagelocal.com/little-cheese"
 },
 {
-"id": "wd-eat.namkeen-20261007",
+"id": "wd-eat.namkeen-20261008",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Wing Wednesday: $9.99",
-"when": "Today, Wednesday",
-"desc": "8-piece wings or 12-piece chicken bites for $9.99. Dine-in only.",
-"expires": "2026-10-07",
-"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
+"title": "Smash Thursday: $9.99 meal",
+"when": "Today, Thursday",
+"desc": "Classic smash burger meal for $9.99. Dine-in only.",
+"expires": "2026-10-08",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
 "url": "",
 "page": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 }
