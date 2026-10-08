@@ -89,6 +89,15 @@ function renderLive(data){
   /* closings strip: only show items that are today or later */
   var cx=$('wk-cx');if(cx){var items=(data.closings||[]).filter(function(c){return new Date(c.date+'T23:59:00')>=t0});
     if(!items.length)cx.remove();else{var row=cx.querySelector('.wk-cxrow');if(row)row.innerHTML=items.map(function(c){return '<div class="wk-cxi" data-off="'+esc2(c.status)+'"><p class="wk-cxn">'+esc2(c.title)+'</p><p class="wk-cxd">'+esc2(c.note)+'</p></div>'}).join('')}}
+  /* Port Jefferson Ferry strip (live/ferry.py): same look as the storm closings strip, only when the ferry posts a SERVICE alert
+     (cancellations, delays, weather, schedule changes) or the schedule marks cancelled trips. Nothing shows on a normal day. */
+  (function(){var f=data.ferry,old=$('wk-ferry');if(old)old.remove();if(!f||!((f.alerts||[]).length||f.cancellations))return;
+    var items=(f.alerts||[]).map(function(a){return [/cancel|suspend|not running|no service/i.test(a.title+' '+a.text)?'Cancelled':'Alert',a.title,a.text,a.link||f.url]});
+    if(f.cancellations&&!items.some(function(x){return x[0]==='Cancelled'}))items.unshift(['Cancelled','Some ferry trips are cancelled today','Check the schedule before you head to the dock.',f.url]);
+    var s=document.createElement('section');s.className='wk-sec wk-cxsec';s.id='wk-ferry';
+    s.innerHTML='<div class="wk-cxhead"><span class="wk-live wk-ferryp"><i></i>FERRY</span><p><b>Port Jefferson Ferry</b> service update</p><a class="wk-cxall" href="'+esc2(f.url)+'" target="_blank" rel="noopener">Ferry schedule &rarr;</a></div>'+
+      '<div class="wk-cxrow wk-swipe">'+items.map(function(x){return '<a class="wk-cxi" data-off="'+esc2(x[0])+'" href="'+esc2(x[3])+'" target="_blank" rel="noopener"><p class="wk-cxn">'+esc2(x[1])+'</p>'+(x[2]?'<p class="wk-cxd">'+esc2(x[2])+'</p>':'')+'</a>'}).join('')+'</div>';
+    var main=document.querySelector('#wk-top .wk-main'),first=$('wk-cx')||$('wk-picks');if(main){if(first&&first.parentNode===main)main.insertBefore(s,first);else main.insertBefore(s,main.firstChild)}})();
   /* Eat & Drink: walk the owner's ranked list (data.eatOrder). Each place shows its Instagram special if it has one,
      else this week's hand-picked card, else it is skipped. Hand-picked places not on the list go last. Max data.eatCap. */
   var eat=document.querySelector('#wk-eat .wk-eat'),order=data.eatOrder||[];

@@ -918,3 +918,8 @@ a.wk-guide{flex:1 0 100%;display:flex!important;align-items:center;justify-conte
 
 /* newsletter strip (10/3/2026) */
 .wk-nlw{padding-top:14px}.wk-nl .wk-nlic{flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:16px;background:#fff4e0;font-size:28px}
+/* Port Jefferson Ferry strip (weekender.js, live/ferry.py) */
+.wk-live.wk-ferryp{background:#205081;color:#fff}
+#wk-ferry .wk-cxi{display:block;text-decoration:none;position:relative;overflow:hidden}
+#wk-ferry .wk-cxi[data-off="Alert"]::after{background:#205081}
+#wk-ferry .wk-cxrow > *:only-child{flex-basis:100%;max-width:560px}

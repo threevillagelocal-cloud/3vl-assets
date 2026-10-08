@@ -90,6 +90,7 @@ def main():
             specials()
         if "tick" in acts:
             tick(now)
+            sh("gh workflow run events-live.yml -R %s" % REPO, check=True)   # events feed + Port Jefferson Ferry alerts every 30 min
     if time.time() - start < 600:                  # safety: never restart in a tight loop; the hourly cron picks it up
         print("run ended after %d s: not restarting" % (time.time() - start)); return
     r = sh("gh workflow run clock.yml -R %s" % REPO, check=True)
