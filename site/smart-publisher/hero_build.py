@@ -11,7 +11,8 @@ from PIL import Image
 HERE = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.dirname(os.path.dirname(HERE))
 OUT = os.path.join(os.path.dirname(ASSETS), "3vl-share", "site", "smart-publisher")
-ARTICLE = "https://www.threevillagelocal.com/events/treasons-trial-a-culper-spy-story"
+# a generic sample event on the iPad (sample/event.html), not a real event or business
+ARTICLE = "file:///" + os.path.join(HERE, "sample", "event.html").replace("\\", "/")
 PHOTO = os.path.join(ASSETS, "site", "p3", "img", "village-hero.jpg")
 
 HTML = """<!doctype html><html><head><meta charset="utf-8"><style>
