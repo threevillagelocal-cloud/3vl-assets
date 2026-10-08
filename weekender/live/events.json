@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-08T21:59:58.104461+00:00",
+"updated": "2026-10-08T22:54:10.149131+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 38,
@@ -2145,5 +2145,11 @@
 "Kilwins Port Jefferson",
 "Port Jefferson Ice Cream Cafe"
 ],
-"eatCap": 6
+"eatCap": 6,
+"ferry": {
+"checked": "2026-10-08T22:53:21+00:00",
+"alerts": [],
+"cancellations": false,
+"url": "https://www.88844ferry.com/schedule"
+}
 }
