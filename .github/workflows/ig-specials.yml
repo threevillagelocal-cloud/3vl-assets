@@ -37,8 +37,7 @@ jobs:
         env:
           GUARD_DEPLOY_KEY: ${{ secrets.GUARD_DEPLOY_KEY }}
         run: |
-          mkdir -p ~/.ssh && printf '%s
-' "$GUARD_DEPLOY_KEY" > ~/.ssh/guard && chmod 600 ~/.ssh/guard
+          mkdir -p ~/.ssh && printf '%s\n' "$GUARD_DEPLOY_KEY" > ~/.ssh/guard && chmod 600 ~/.ssh/guard
           export GIT_SSH_COMMAND="ssh -i ~/.ssh/guard -o StrictHostKeyChecking=accept-new"
           git clone -q --depth 1 git@github.com:threevillagelocal-cloud/3vl-site-guard.git /tmp/guard && cd /tmp/guard
           git config user.name "3VL specials" && git config user.email "actions@users.noreply.github.com"

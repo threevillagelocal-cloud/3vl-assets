@@ -21,12 +21,23 @@ function go(){
   if(fNew){document.getElementById('sp-formslot').appendChild(fNew)}
   if(ref&&fRev){
     show('sp-review');
+    /* email buttons land here: jump past the intro straight to the Publish / changes box */
+    setTimeout(function(){var r=document.getElementById('sp-review');if(r)r.scrollIntoView({block:'start',behavior:'smooth'})},400);
     fRev.querySelector('[name=sp_ref]').value=ref;
     fRev.querySelector('[name=sp_decision]').value=act==='changes'?'changes':'approve';
     var ta=fRev.querySelector('[name=comments]'),grp=ta&&(ta.closest('.form-group')||ta.parentNode),btn=fRev.querySelector('[type=submit],button');
     if(act==='changes'){document.getElementById('sp-rh').textContent='What should we change?';document.getElementById('sp-rs').textContent='Tell us what to fix and we will send you a new preview, usually within 30 minutes.';if(ta)ta.required=true;if(btn){btn.textContent='Send my changes';btn.value='Send my changes'}}
     else{document.getElementById('sp-rh').textContent='Publish your page?';document.getElementById('sp-rs').textContent='Tap the button and we will publish it on the date you chose. You will get an email when it is live.';if(grp)grp.classList.add('sp-hide');if(btn){btn.textContent='Yes, publish it';btn.value='Yes, publish it'}}
     if(fNew)fNew.classList.add('sp-hide');
+    /* one tap: an Approve button from our email (signed ref "REF.signature") approves right away, no login and no second
+       click. Unsigned links still show the button. Once per browser session so a refresh does not resubmit. */
+    if(act!=='changes'&&ref.indexOf('.')>0&&btn){
+      var done=false;try{done=sessionStorage.getItem('sp-ok-'+ref)==='1'}catch(e){}
+      document.getElementById('sp-rh').textContent=done?'Thanks, you already approved this.':'Approving...';
+      document.getElementById('sp-rs').textContent=done?'We have it. You will get an email as soon as it is live.':'One moment while we record your approval.';
+      fRev.classList.add('sp-hide');
+      if(!done){try{sessionStorage.setItem('sp-ok-'+ref,'1')}catch(e){}setTimeout(function(){btn.click()},600)}
+    }
     return}
   if(!vip&&!gn){show('sp-lock');if(fNew)fNew.classList.add('sp-hide');return}
   show('sp-new');
