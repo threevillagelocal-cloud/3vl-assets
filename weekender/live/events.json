@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-08T16:22:58.377900+00:00",
+"updated": "2026-10-08T19:02:09.205936+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 38,
@@ -2016,20 +2016,20 @@
 "page": "https://www.threevillagelocal.com/tommys-place"
 },
 {
-"id": "18165795172468445",
+"id": "18128984891490777",
 "biz": "Madiran The Wine Bar",
 "ig": "madiranthewinebar_eastsetauket",
 "town": "East Setauket",
 "category": "Wine Bar",
 "member": false,
-"title": "The Jazz Loft Live Music",
-"when": "Thu, Oct. 8 · 7-9 PM",
-"desc": "Live jazz with Tom, Steve, and Billy. Reservations recommended.",
-"expires": "2026-10-08",
-"posted": "2026-10-07T14:13:30+0000",
-"url": "https://www.instagram.com/p/DeMi9wXitSk/",
+"title": "Jazz Performance at Madiran",
+"when": "Tue, Oct. 13 · 7-9 PM",
+"desc": "Mind blowing jazz with Dave Lobenstein, John Marshall, and Steve Salerno performing live.",
+"expires": "2026-10-13",
+"posted": "2026-10-08T16:24:18+0000",
+"url": "https://www.instagram.com/p/DePWf0PCezl/",
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18165795172468445.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18128984891490777.jpg",
 "page": "https://www.threevillagelocal.com/madiran-the-wine-bar"
 },
 {
@@ -2050,20 +2050,20 @@
 "page": "https://www.threevillagelocal.com/ralphs-italian-ices-stony-brook"
 },
 {
-"id": "18109679189596201",
+"id": "17959059378221185",
 "biz": "Burgerology",
 "ig": "burgerologyusa",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": false,
-"title": "Margarita Towers $30 during Football",
-"when": "Every Sunday",
-"desc": "Enjoy $30 margarita towers while watching football games on Sundays.",
-"expires": "2026-10-16",
-"posted": "2026-10-01T16:30:01+0000",
-"url": "https://www.instagram.com/reel/Dd9jo9aNcmG/",
+"title": "50% Off Appetizers - Game Day Special",
+"when": "This week",
+"desc": "Bring your Season Pass and get 50% off any appetizer during this week's games at Burgerology.",
+"expires": "2026-10-14",
+"posted": "2026-10-08T16:25:06+0000",
+"url": "https://www.instagram.com/reel/DePW7OMt_KS/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18109679189596201.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17959059378221185.jpg",
 "page": "https://www.threevillagelocal.com/burgerology"
 },
 {

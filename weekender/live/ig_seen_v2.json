@@ -2326,5 +2326,53 @@
 "desc": "Festive Halloween treats including Buckeye Monsters available for party planning and celebrations.",
 "expires": "2026-10-31",
 "_ts": "2026-10-07T22:20:25+0000"
+},
+"18128984891490777": {
+"special": true,
+"title": "Jazz Performance at Madiran",
+"when": "Tue, Oct. 13 · 7-9 PM",
+"desc": "Mind blowing jazz with Dave Lobenstein, John Marshall, and Steve Salerno performing live.",
+"expires": "2026-10-13",
+"_ts": "2026-10-08T16:24:18+0000"
+},
+"18097517972643109": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-08T17:00:08+0000"
+},
+"17959059378221185": {
+"special": true,
+"title": "50% Off Appetizers - Game Day Special",
+"when": "This week",
+"desc": "Bring your Season Pass and get 50% off any appetizer during this week's games at Burgerology.",
+"expires": "2026-10-14",
+"_ts": "2026-10-08T16:25:06+0000"
+},
+"17995700001040062": {
+"special": true,
+"title": "Secret Menu: Fall French Toast & Pistachio Latte",
+"when": "Through October 31",
+"desc": "Try limited-time fall favorites: pumpkin French toast trio and honey-vanilla-pistachio latte.",
+"expires": "2026-10-31",
+"_ts": "2026-10-08T16:34:03+0000"
+},
+"18142297897609826": {
+"special": false,
+"title": "Nantuckets Catering Services",
+"when": "Ongoing",
+"desc": "Catering available for birthdays, corporate events, baby showers and other occasions.",
+"expires": "2026-10-08",
+"_ts": "2026-10-08T15:32:19+0000"
+},
+"18031726805676579": {
+"special": true,
+"title": "Witches & Warlocks Bar Crawl",
+"when": "Sat, Oct. 10 · 5-10 PM",
+"desc": "Join the Halloween bar crawl with 5 drink tokens for $55 per person (21+). Tickets in bio.",
+"expires": "2026-10-10",
+"_ts": "2026-10-08T19:00:45+0000"
 }
 }
