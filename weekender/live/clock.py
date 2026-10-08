@@ -81,7 +81,8 @@ def main():
     catch_up(dt.datetime.now(ET))
     while True:
         at, acts = events_after(dt.datetime.now(ET))
-        if at.timestamp() - start > RUN_FOR:
+        if at.timestamp() - start > RUN_FOR:      # next event is past this run's lifetime (overnight): wait out the run, then hand over
+            time.sleep(max(0, start + RUN_FOR - time.time()))
             break
         time.sleep(max(0, at.timestamp() - time.time()))
         now = dt.datetime.now(ET)
@@ -89,6 +90,8 @@ def main():
             specials()
         if "tick" in acts:
             tick(now)
+    if time.time() - start < 600:                  # safety: never restart in a tight loop; the hourly cron picks it up
+        print("run ended after %d s: not restarting" % (time.time() - start)); return
     r = sh("gh workflow run clock.yml -R %s" % REPO, check=True)
     print("next clock started" if r.returncode == 0 else "could not restart the clock (the hourly cron will)")
 
