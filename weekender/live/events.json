@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-09T14:00:49.059807+00:00",
+"updated": "2026-10-09T14:31:29.599764+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 38,
@@ -474,25 +474,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
-{
-"id": "emmaclark-time-baby-newborn-15-mos-w-caregiver-58863",
-"title": "Time For Baby (Newborn - 15 mos w/ caregiver)",
-"start": "2026-10-09T10:00:00",
-"end": "2026-10-09T10:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/time-baby-newborn-15-mos-w-caregiver-58863",
-"desc": "We will learn songs, rhymes, and finger plays.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/time-for-baby-newborn-15-mos-w-caregiver"
 },
 {
 "id": "emmaclark-game-day-38289",
@@ -2107,7 +2088,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-09T14:00:14+00:00",
+"checked": "2026-10-09T14:30:14+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
