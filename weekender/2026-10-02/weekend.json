@@ -186,6 +186,10 @@
     40.91917,
     -73.0771
    ]
+  },
+  "schnitzels": {
+   "name": "Schnitzels",
+   "addr": "77 Main Street, Stony Brook"
   }
  },
  "events": [
@@ -506,6 +510,22 @@
    "desc": "The humorist brings new stories and his famous Q&A to the Staller Main Stage.",
    "url": "https://stallercenter.showare.com/eventperformances.asp?evt=463",
    "src": "stallercenter.com"
+  },
+  {
+   "id": "kidtoberfest",
+   "title": "Kidtoberfest at Schnitzels",
+   "start": "2026-10-11T10:00",
+   "end": "2026-10-11T16:00",
+   "page": "https://www.threevillagelocal.com/events/kidtoberfest-at-schnitzels",
+   "venue": "schnitzels",
+   "tags": [
+    "kids",
+    "food"
+   ],
+   "img": "kidtoberfest",
+   "desc": "Face painting, pretzel making, games and family fun in Stony Brook Village. Reservations required: call 631-675-1478.",
+   "url": "https://www.facebook.com/events/1337097338315289/",
+   "src": "facebook.com/schnitzels"
   }
  ],
  "allweekend": [
