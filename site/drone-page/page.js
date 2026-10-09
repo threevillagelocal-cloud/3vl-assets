@@ -2,6 +2,7 @@
 function go(){var r=document.getElementById('tvd');if(!r||r.getAttribute('data-on'))return;r.setAttribute('data-on','1');r.classList.add('js');
  var slot=document.getElementById('tvd-form-slot'),f=document.querySelector('form[name^="drone_services"]');
  if(slot&&f){var box=f.closest('.form-container')||f.parentNode;slot.appendChild(f);if(box&&box!==document.body&&!box.querySelector('form')&&box.textContent.trim()==='')box.style.display='none'}
+ var sl=[].slice.call(r.querySelectorAll('.tvd-sl')),si=0;if(sl.length>1&&!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(function(){sl[si].classList.remove('on');si=(si+1)%sl.length;sl[si].classList.add('on')},6000);
  var rv=[].slice.call(r.querySelectorAll('.tvd-rv'));
  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -40px 0px'});rv.forEach(function(e){io.observe(e)})}else rv.forEach(function(e){e.classList.add('in')});
  var lb=document.getElementById('tvd-lb'),li=lb.querySelector('img');

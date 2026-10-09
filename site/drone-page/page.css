@@ -2,7 +2,7 @@
 .tvd *{box-sizing:border-box}.tvd{overflow-x:clip}
 .tvd h1,.tvd h2,.tvd h3{font-family:inherit;color:var(--navy);margin:0;letter-spacing:-.02em}
 .tvd-hero{position:relative;min-height:600px;border-radius:26px;overflow:hidden;display:flex;align-items:flex-end;margin:10px 0 0;background:#0d1c33}
-.tvd-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tvd-show{position:absolute;inset:0}.tvd-sl{position:absolute;inset:0;background:#0d1c33 center/cover no-repeat;opacity:0;transform:scale(1.06);transition:opacity 1.6s ease,transform 9s ease-out}.tvd-sl.on{opacity:1;transform:scale(1)}
 .tvd-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,22,44,.15) 0%,rgba(9,22,44,.35) 45%,rgba(9,22,44,.88) 100%)}
 .tvd-hin{position:relative;padding:48px 52px;max-width:760px;color:#fff}
 .tvd-kick{display:inline-block;margin:0 0 16px;padding:7px 15px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
@@ -33,7 +33,7 @@
 .tvd-card li:before{content:"✓";position:absolute;left:0;top:7px;width:22px;height:22px;border-radius:50%;background:var(--gold);color:#13233a;font-size:13px;font-weight:800;text-align:center;line-height:22px}
 .tvd-wide{display:block;text-align:center}
 .tvd-note{margin:14px 0 0;font-size:14px;color:#b9c8dc;text-align:center}
-.tvd-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:220px;gap:14px}
+.tvd-grid{display:grid;grid-template-columns:2fr 1fr;grid-auto-rows:240px;gap:14px}
 .tvd-ph{position:relative;padding:0!important;border:0!important;border-radius:18px!important;width:100%;height:100%;box-shadow:none!important;overflow:hidden;cursor:zoom-in;background:#dde5ee}
 .tvd-ph img{width:100%!important;height:100%!important;max-width:none;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .tvd-ph:hover img{transform:scale(1.06)}
@@ -80,6 +80,6 @@
 .tvd.js .tvd-rv.in{opacity:1;transform:none}
 .tvd-hin>*{animation:tvdup .8s cubic-bezier(.2,.7,.2,1) both}.tvd-hin>:nth-child(2){animation-delay:.1s}.tvd-hin>:nth-child(3){animation-delay:.2s}.tvd-hin>:nth-child(4){animation-delay:.3s}.tvd-hin>:nth-child(5){animation-delay:.4s}
 @keyframes tvdup{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-@media(max-width:900px){.tvd-pk,.tvd-bk{grid-template-columns:1fr}.tvd-trust{grid-template-columns:1fr 1fr}.tvd-grid{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.tvd-big{grid-column:span 2;grid-row:span 1}.tvd-steps{grid-template-columns:1fr}}
+@media(max-width:900px){.tvd-pk,.tvd-bk{grid-template-columns:1fr}.tvd-trust{grid-template-columns:1fr 1fr}.tvd-grid{grid-template-columns:1fr 1fr;grid-auto-rows:190px}.tvd-big{grid-column:span 2;grid-row:span 1}.tvd-steps{grid-template-columns:1fr}}
 @media(max-width:600px){.tvd{font-size:16px}.tvd-hero{min-height:560px;border-radius:18px}.tvd-hin{padding:26px 22px}.tvd-hero h1{font-size:40px}.tvd-sub{font-size:17px}.tvd h2{font-size:30px}.tvd-sec{padding-top:50px}.tvd-card{padding:28px 22px}.tvd-price{font-size:64px}.tvd-formbox{padding:22px 18px}.tvd-trust div{padding:14px}}
 @media(prefers-reduced-motion:reduce){.tvd *{animation:none!important;transition:none!important}.tvd.js .tvd-rv{opacity:1;transform:none}}
