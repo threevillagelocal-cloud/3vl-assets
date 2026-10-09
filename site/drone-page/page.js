@@ -9,7 +9,7 @@ function go(){var r=document.getElementById('tvd');if(!r||r.getAttribute('data-o
  lb.addEventListener('click',function(){lb.hidden=true;li.src=''});
  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.hidden=true});
  var fl=r.querySelector('.tvd-float'),bk=document.getElementById('tvd-book'),hero=r.querySelector('.tvd-hero');
- function sc(){var h=hero.getBoundingClientRect().bottom<0,b=bk.getBoundingClientRect();fl.classList.toggle('on',h&&!(b.top<innerHeight&&b.bottom>0))}
+ function sc(){var h=hero.getBoundingClientRect().bottom<0,b=bk.getBoundingClientRect();fl.classList.toggle('on',h&&b.top>innerHeight)}
  addEventListener('scroll',sc,{passive:true});sc();
  [].forEach.call(r.querySelectorAll('a[href^="#tvd-"]'),function(a){a.addEventListener('click',function(e){var t=document.getElementById(a.getAttribute('href').slice(1));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});try{if(window.gtag)gtag('event','drone_page_click',{target:a.getAttribute('href')})}catch(x){}}})});
  if(f)f.addEventListener('submit',function(){try{if(window.gtag)gtag('event','drone_booking_submit')}catch(x){}});
