@@ -1,16 +1,16 @@
 {
-"updated": "2026-10-09T14:31:29.599764+00:00",
+"updated": "2026-10-09T15:00:57.555108+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 38,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 217,
-"Emma S. Clark Library": 305,
+"Emma S. Clark Library": 313,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
-"LI Music Hall of Fame": 5
+"LI Music Hall of Fame": 4
 },
 "icons": {
 "kids": "&#129490;",
@@ -780,26 +780,6 @@
 "status": "",
 "fb": 1,
 "page": "https://www.threevillagelocal.com/events/diy-custom-embroidery"
-},
-{
-"id": "limehof-202610111500-blue-light-effect",
-"title": "Blue Light Effect",
-"start": "2026-10-11T15:00:00",
-"end": "2026-10-11T17:00:00",
-"allday": false,
-"venue": "The Long Island Music and Entertainment Hall of Fame",
-"addr": "97 Main St, Stony Brook, NY 11790",
-"url": "https://www.limusichalloffame.org/events/",
-"desc": "Free with Admission. Blue Light Effect are an original rock band from Port Jefferson Station, NY. The band combines a combination of powerful music, and powerful vocals that will leave their songs stuck in your head. Blue Light Effect were formed in 2021 by gu",
-"img": "https://www.limusichalloffame.org/wp-content/uploads/2026/09/Blue-Light-Effect.jpg",
-"src": "limehof",
-"tags": [
-"free",
-"music"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/blue-light-effect"
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58874",
@@ -2088,7 +2068,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-09T14:30:14+00:00",
+"checked": "2026-10-09T15:00:15+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
