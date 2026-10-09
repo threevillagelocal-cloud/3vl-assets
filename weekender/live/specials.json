@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-08T19:00:13.061590+00:00",
+ "updated": "2026-10-09T00:35:51.484856+00:00",
  "specials": [
+  {
+   "id": "18099322592380488",
+   "biz": "Culpers 1778",
+   "ig": "culpers1778",
+   "town": "East Setauket",
+   "category": "Restaurant/Steakhouse",
+   "member": false,
+   "title": "Thursday Nights at Culpers 1778",
+   "when": "Every Thursday",
+   "desc": "Prime steaks, fresh seafood, and handcrafted cocktails. Reserve your table through their bio.",
+   "expires": "2026-10-22",
+   "posted": "2026-10-08T19:05:18+0000",
+   "url": "https://www.instagram.com/reel/DePpGtRp1qJ/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
+   "inset": "ig/p18099322592380488.jpg"
+  },
   {
    "id": "18190137262400311",
    "biz": "Tommy's Place",
@@ -80,26 +96,26 @@
    "url": "https://www.instagram.com/p/DeM22cKRQHZ/",
    "img": "",
    "inset": "ig/p18121416112857675.jpg"
-  },
-  {
-   "id": "18633139252010772",
-   "biz": "Little Cheese Shop",
-   "ig": "littlecheeseshop",
-   "town": "Stony Brook",
-   "category": "Cheese Shop/Cafe",
-   "member": false,
-   "title": "Vote for Little Cheese's Scarecrow #106",
-   "when": "Stony Brook Village competition (ongoing)",
-   "desc": "Vote for The Gouda Guardian scarecrow in the annual competition. Multiple scarecrows to see.",
-   "expires": "2026-10-21",
-   "posted": "2026-10-06T21:38:16+0000",
-   "url": "https://www.instagram.com/p/DeKxIkyD_hc/",
-   "img": "",
-   "inset": "ig/p18633139252010772.jpg"
   }
  ],
  "candidates": [
   {
+   "id": "18099322592380488",
+   "biz": "Culpers 1778",
+   "ig": "culpers1778",
+   "town": "East Setauket",
+   "category": "Restaurant/Steakhouse",
+   "member": false,
+   "title": "Thursday Nights at Culpers 1778",
+   "when": "Every Thursday",
+   "desc": "Prime steaks, fresh seafood, and handcrafted cocktails. Reserve your table through their bio.",
+   "expires": "2026-10-22",
+   "posted": "2026-10-08T19:05:18+0000",
+   "url": "https://www.instagram.com/reel/DePpGtRp1qJ/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
+   "inset": "ig/p18099322592380488.jpg"
+  },
+  {
    "id": "18190137262400311",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/p/DeM22cKRQHZ/",
    "img": "",
    "inset": "ig/p18121416112857675.jpg"
-  },
-  {
-   "id": "18633139252010772",
-   "biz": "Little Cheese Shop",
-   "ig": "littlecheeseshop",
-   "town": "Stony Brook",
-   "category": "Cheese Shop/Cafe",
-   "member": false,
-   "title": "Vote for Little Cheese's Scarecrow #106",
-   "when": "Stony Brook Village competition (ongoing)",
-   "desc": "Vote for The Gouda Guardian scarecrow in the annual competition. Multiple scarecrows to see.",
-   "expires": "2026-10-21",
-   "posted": "2026-10-06T21:38:16+0000",
-   "url": "https://www.instagram.com/p/DeKxIkyD_hc/",
-   "img": "",
-   "inset": "ig/p18633139252010772.jpg"
   }
  ]
 }

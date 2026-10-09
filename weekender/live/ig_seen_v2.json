@@ -2374,5 +2374,37 @@
 "desc": "Join the Halloween bar crawl with 5 drink tokens for $55 per person (21+). Tickets in bio.",
 "expires": "2026-10-10",
 "_ts": "2026-10-08T19:00:45+0000"
+},
+"18184852252423327": {
+"special": false,
+"title": "N/A",
+"when": "N/A",
+"desc": "N/A",
+"expires": "N/A",
+"_ts": "2026-10-09T00:29:34+0000"
+},
+"18099322592380488": {
+"special": true,
+"title": "Thursday Nights at Culpers 1778",
+"when": "Every Thursday",
+"desc": "Prime steaks, fresh seafood, and handcrafted cocktails. Reserve your table through their bio.",
+"expires": "2026-10-22",
+"_ts": "2026-10-08T19:05:18+0000"
+},
+"17997905928010178": {
+"special": false,
+"title": "New Fall Cocktails at Prohibition",
+"when": "Ongoing",
+"desc": "New seasonal cocktails now available with some standard favorites remaining on the menu.",
+"expires": "2026-10-08",
+"_ts": "2026-10-08T22:09:31+0000"
+},
+"18081474245382981": {
+"special": true,
+"title": "Fall Cocktails Launch",
+"when": "Starting today",
+"desc": "New seasonal cocktails arrive at The Whiskey Barrel with fall flavors and vibes.",
+"expires": "2026-10-22",
+"_ts": "2026-10-08T19:09:19+0000"
 }
 }
