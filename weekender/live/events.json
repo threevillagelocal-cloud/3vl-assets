@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-09T19:00:46.887665+00:00",
+"updated": "2026-10-09T19:30:47.569227+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 38,
@@ -7,7 +7,7 @@
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 217,
 "Emma S. Clark Library": 323,
-"Stony Brook Village Center": 15,
+"Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 4
@@ -2053,7 +2053,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-09T19:00:14+00:00",
+"checked": "2026-10-09T19:30:13+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
