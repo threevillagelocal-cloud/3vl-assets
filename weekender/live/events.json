@@ -1,11 +1,11 @@
 {
-"updated": "2026-10-09T02:00:36.171172+00:00",
+"updated": "2026-10-09T08:53:16.743293+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 38,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 218,
+"Village of Port Jefferson": 217,
 "Emma S. Clark Library": 305,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 47,
@@ -2041,18 +2041,18 @@
 "page": "https://www.threevillagelocal.com/the-study-by-toast"
 },
 {
-"id": "wd-eat.namkeen-20261008",
+"id": "wd-eat.namkeen-20261009",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Smash Thursday: $9.99 meal",
-"when": "Today, Thursday",
-"desc": "Classic smash burger meal for $9.99. Dine-in only.",
-"expires": "2026-10-08",
-"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
+"title": "Family Friday: free shake",
+"when": "Today, Friday",
+"desc": "Buy 2 meals and get a free shake. Dine-in only.",
+"expires": "2026-10-09",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
 "url": "",
 "page": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 }
@@ -2107,7 +2107,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-09T01:59:56+00:00",
+"checked": "2026-10-09T08:52:39+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
