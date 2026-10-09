@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-09T15:30:46.776471+00:00",
+"updated": "2026-10-09T16:01:00.918725+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 38,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 217,
-"Emma S. Clark Library": 321,
+"Emma S. Clark Library": 323,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
@@ -474,23 +474,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
-{
-"id": "emmaclark-game-day-38289",
-"title": "Game Day",
-"start": "2026-10-09T10:00:00",
-"end": "2026-10-09T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/game-day-38289",
-"desc": "We provide the space, tables and chairs. You bring your friends and a favorite board or card game to play. No registration required.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-11/people-having-fun-while-playing-board-game2.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/game-day-329"
 },
 {
 "id": "lim-3225059",
@@ -2070,7 +2053,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-09T15:30:12+00:00",
+"checked": "2026-10-09T16:00:12+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
