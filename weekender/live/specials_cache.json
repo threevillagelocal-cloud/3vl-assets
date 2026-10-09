@@ -18,22 +18,6 @@
 "inset": "ig/p18128984891490777.jpg"
 },
 {
-"id": "18165795172468445",
-"biz": "Madiran The Wine Bar",
-"ig": "madiranthewinebar_eastsetauket",
-"town": "East Setauket",
-"category": "Wine Bar",
-"member": false,
-"title": "The Jazz Loft Live Music",
-"when": "Thu, Oct. 8 · 7-9 PM",
-"desc": "Live jazz with Tom, Steve, and Billy. Reservations recommended.",
-"expires": "2026-10-08",
-"posted": "2026-10-07T14:13:30+0000",
-"url": "https://www.instagram.com/p/DeMi9wXitSk/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-"inset": "ig/p18165795172468445.jpg"
-},
-{
 "id": "17921455176223830",
 "biz": "Madiran The Wine Bar",
 "ig": "madiranthewinebar_eastsetauket",
@@ -366,20 +350,36 @@
 ],
 "nantucketspjefferson": [
 {
-"id": "18165160786489388",
+"id": "18157262452515195",
 "biz": "Nantuckets",
 "ig": "nantucketspjefferson",
 "town": "Port Jefferson",
 "category": "Restaurant (Seafood)",
 "member": false,
-"title": "Happy Hour Drinks & Food",
-"when": "Every Friday · 3-6 PM",
-"desc": "Enjoy drinks and food specials at Nantuckets in Port Jefferson during Friday happy hour.",
-"expires": "2026-10-16",
-"posted": "2026-10-02T16:03:07+0000",
-"url": "https://www.instagram.com/p/Dd_3htDDK6n/",
+"title": "Happy Hour at Nantuckets",
+"when": "Ongoing",
+"desc": "Grab drinks and food during happy hour at this Port Jefferson seafood restaurant.",
+"expires": "2026-10-23",
+"posted": "2026-10-09T11:03:29+0000",
+"url": "https://www.instagram.com/p/DeRWycqF2Il/",
 "img": "",
-"inset": "ig/p18165160786489388.jpg"
+"inset": "ig/p18157262452515195.jpg"
+},
+{
+"id": "18184440502420219",
+"biz": "Nantuckets",
+"ig": "nantucketspjefferson",
+"town": "Port Jefferson",
+"category": "Restaurant (Seafood)",
+"member": false,
+"title": "Oyster Week at Nantuckets",
+"when": "Oct 9-15",
+"desc": "Oysters starting at $1 each in different types and styles during Long Island Oyster Week.",
+"expires": "2026-10-15",
+"posted": "2026-10-09T01:02:29+0000",
+"url": "https://www.instagram.com/p/DeQSB96DCN1/",
+"img": "",
+"inset": "ig/p18184440502420219.jpg"
 }
 ],
 "blackpearlportjeff": [
@@ -497,25 +497,26 @@
 "url": "https://www.instagram.com/p/DePppH0hLGq/",
 "img": "",
 "inset": "ig/p18081474245382981.jpg"
-},
-{
-"id": "17916476448259129",
-"biz": "The Whiskey Barrel",
-"ig": "thewhiskeybarrelportjeff",
-"town": "Port Jefferson",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Happy Hour at The Whiskey Barrel",
-"when": "Today until 6 PM",
-"desc": "Skip cooking tonight. Grab a cold drink and food at The Whiskey Barrel's happy hour.",
-"expires": "2026-10-08",
-"posted": "2026-10-07T18:13:33+0000",
-"url": "https://www.instagram.com/p/DeM-ePHBBNv/",
-"img": "",
-"inset": "ig/p17916476448259129.jpg"
 }
 ],
-"thesteamroomrestaurant": [],
+"thesteamroomrestaurant": [
+{
+"id": "17887275831653267",
+"biz": "The Steam Room",
+"ig": "thesteamroomrestaurant",
+"town": "Port Jefferson",
+"category": "Restaurant (Seafood)",
+"member": false,
+"title": "Happy Hour at The Steam Room",
+"when": "Recurring (time not specified)",
+"desc": "Enjoy $20 Corona buckets, $5 margaritas and tropical drinks like Piña Colada, Mai Tai, Strawberry Daiquiri and Bahama Mama.",
+"expires": "2026-10-23",
+"posted": "2026-10-09T10:02:43+0000",
+"url": "https://www.instagram.com/p/DeRP2m8l8sW/",
+"img": "",
+"inset": "ig/p17887275831653267.jpg"
+}
+],
 "castawayspj": [
 {
 "id": "18031726805676579",

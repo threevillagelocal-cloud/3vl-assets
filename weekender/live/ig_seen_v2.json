@@ -2406,5 +2406,33 @@
 "desc": "New seasonal cocktails arrive at The Whiskey Barrel with fall flavors and vibes.",
 "expires": "2026-10-22",
 "_ts": "2026-10-08T19:09:19+0000"
+},
+"18096792566399406": {
+"special": false,
+"_ts": "2026-10-09T05:03:18+0000"
+},
+"18157262452515195": {
+"special": true,
+"title": "Happy Hour at Nantuckets",
+"when": "Ongoing",
+"desc": "Grab drinks and food during happy hour at this Port Jefferson seafood restaurant.",
+"expires": "2026-10-23",
+"_ts": "2026-10-09T11:03:29+0000"
+},
+"18184440502420219": {
+"special": true,
+"title": "Oyster Week at Nantuckets",
+"when": "Oct 9-15",
+"desc": "Oysters starting at $1 each in different types and styles during Long Island Oyster Week.",
+"expires": "2026-10-15",
+"_ts": "2026-10-09T01:02:29+0000"
+},
+"17887275831653267": {
+"special": true,
+"title": "Happy Hour at The Steam Room",
+"when": "Recurring (time not specified)",
+"desc": "Enjoy $20 Corona buckets, $5 margaritas and tropical drinks like Piña Colada, Mai Tai, Strawberry Daiquiri and Bahama Mama.",
+"expires": "2026-10-23",
+"_ts": "2026-10-09T10:02:43+0000"
 }
 }

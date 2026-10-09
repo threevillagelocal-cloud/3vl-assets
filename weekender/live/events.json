@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-09T11:30:45.927428+00:00",
+"updated": "2026-10-09T11:47:46.257072+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 38,
@@ -2007,6 +2007,23 @@
 "page": "https://www.threevillagelocal.com/ralphs-italian-ices-stony-brook"
 },
 {
+"id": "17887275831653267",
+"biz": "The Steam Room",
+"ig": "thesteamroomrestaurant",
+"town": "Port Jefferson",
+"category": "Restaurant (Seafood)",
+"member": false,
+"title": "Happy Hour at The Steam Room",
+"when": "Recurring (time not specified)",
+"desc": "Enjoy $20 Corona buckets, $5 margaritas and tropical drinks like Piña Colada, Mai Tai, Strawberry Daiquiri and Bahama Mama.",
+"expires": "2026-10-23",
+"posted": "2026-10-09T10:02:43+0000",
+"url": "https://www.instagram.com/p/DeRP2m8l8sW/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17887275831653267.jpg",
+"page": "https://www.threevillagelocal.com/the-steam-room"
+},
+{
 "id": "17959059378221185",
 "biz": "Burgerology",
 "ig": "burgerologyusa",
@@ -2022,23 +2039,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17959059378221185.jpg",
 "page": "https://www.threevillagelocal.com/burgerology"
-},
-{
-"id": "18121416112857675",
-"biz": "The Study by Toast",
-"ig": "thestudy.bytoast",
-"town": "East Setauket",
-"category": "Coffee House",
-"member": false,
-"title": "Golden Hour Cocktails & Bites",
-"when": "Wed-Sat, 4-7 PM",
-"desc": "Enjoy $10 cocktails and delicious bites during Golden Hour. Live music on Saturdays and Sundays.",
-"expires": "2026-10-20",
-"posted": "2026-10-07T17:10:00+0000",
-"url": "https://www.instagram.com/p/DeM22cKRQHZ/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18121416112857675.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast"
 },
 {
 "id": "wd-eat.namkeen-20261009",
