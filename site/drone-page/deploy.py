@@ -12,7 +12,7 @@ API = "https://www.threevillagelocal.com/api/v2/"
 NAME = "3VL Page Drone"
 SEO_ID = 41
 TITLE = "Drone Photography for Realtors on Long Island | $120 Listing Package | Three Village Local"
-DESC = ("Aerial photos and video for your listings from a local FAA-certified, insured drone pilot. $120 listing package: "
+DESC = ("Aerial photos and video for your listings from a local FAA-certified, insured drone pilot. The Listing Package, typically $199, now $120: "
         "5-10 edited aerial photos plus video clips. Book online for Setauket, Stony Brook, Port Jefferson and all of Suffolk and Nassau.")
 
 
