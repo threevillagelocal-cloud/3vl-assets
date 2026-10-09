@@ -41,7 +41,11 @@ def pick():
     accts = {a["ig"].lower(): a for a in load(os.path.join(LIVE, "ig_accounts.json"), [])}
     by_name = {nm(a["name"]): a for a in accts.values()}
     ig = {}
-    for s in load(os.path.join(LIVE, "specials.json"), {}).get("specials", []):
+    # the homepage's own feed: Instagram specials PLUS today's standing weekly deals (weekly_deals.json, e.g. Namkeen),
+    # merged by build_events.py (specials.json alone misses the weekly deals).
+    for s in load(os.path.join(LIVE, "events.json"), {}).get("specials", []) or load(os.path.join(LIVE, "specials.json"), {}).get("specials", []):
+        if str(s.get("id", "")).startswith("wd-"):   # a day-by-day deal flyer: the kit runs all week, so say that, not today's deal
+            s = dict(s, title="A new deal every day", when="Daily deals all week")
         ig.setdefault(nm(s["biz"]), s)
     ed = latest_edition()
     hand = {}
@@ -63,7 +67,31 @@ def pick():
     for k, s in hand.items():
         if k not in used and k in by_name:
             out.append(("hand", by_name[k], s))
-    return out[: int(pref.get("cap", 6))]
+    return verify_live(out, int(pref.get("cap", 6)))
+
+
+def verify_live(cands, cap):   # cap kept for callers; the homepage already applied it
+    """The kit must match what the live homepage shows right now. Read the Eat & Drink names off
+    threevillagelocal.com (live_eat.js) and use exactly those, in that order. Stop if one can't be built."""
+    if not os.path.isdir(os.path.join(HERE, "node_modules")):
+        subprocess.run("npm install --silent --no-audit --no-fund", shell=True, cwd=HERE, check=True)
+    try:
+        r = subprocess.run(["node", os.path.join(HERE, "live_eat.js")], capture_output=True, text=True, timeout=180, check=True)
+        live = json.loads(r.stdout or "[]")
+    except Exception as ex:
+        sys.exit("Could not read the live homepage Eat & Drink section, not building a kit that might not match it: %s" % ex)
+    if not live:
+        sys.exit("The live homepage Eat & Drink section is empty right now; no kit built.")
+    pool = {nm(a["name"]): (kind, a, s) for kind, a, s in cands}
+    out, missing = [], []
+    for n in live:
+        k = nm(n)
+        hit = pool.get(k) or next((v for kk, v in pool.items() if kk.startswith(k) or k.startswith(kk)), None)
+        (out.append(hit) if hit else missing.append(n))
+    if missing:
+        sys.exit("On the homepage but not buildable for the kit (add to ig_accounts.json / overrides): " + ", ".join(missing))
+    print("Matches the live homepage:", ", ".join(live))
+    return out
 
 
 def photo(kind, a, s, ov):
