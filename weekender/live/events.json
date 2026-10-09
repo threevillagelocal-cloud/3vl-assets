@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-09T15:10:56.696396+00:00",
+"updated": "2026-10-09T15:13:22.707798+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 38,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 217,
-"Emma S. Clark Library": 315,
+"Emma S. Clark Library": 316,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
@@ -706,6 +706,27 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-470"
+},
+{
+"id": "cur-kidtoberfest",
+"title": "Kidtoberfest at Schnitzels",
+"start": "2026-10-11T10:00",
+"end": "2026-10-11T16:00",
+"allday": false,
+"venue": "Schnitzels",
+"addr": "77 Main Street, Stony Brook",
+"url": "https://www.facebook.com/events/1337097338315289/",
+"desc": "Face painting, pretzel making, games and family fun in Stony Brook Village. Reservations required: call 631-675-1478.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/kidtoberfest-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"food"
+],
+"status": "",
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/kidtoberfest-at-schnitzels",
+"pu": ""
 },
 {
 "id": "emmaclark-adulting-high-schoolers-say-yes-college-essay-60667",
@@ -2068,7 +2089,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-09T15:10:16+00:00",
+"checked": "2026-10-09T15:12:45+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
