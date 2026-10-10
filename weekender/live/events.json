@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-09T23:30:47.647069+00:00",
+"updated": "2026-10-10T00:00:47.432022+00:00",
 "counts": {
 "Three Village Chamber": 5,
-"Port Jefferson Chamber": 38,
+"Port Jefferson Chamber": 37,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 217,
-"Emma S. Clark Library": 323,
+"Emma S. Clark Library": 322,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
@@ -433,29 +433,6 @@
 "page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
 },
 {
-"id": "cur-spooky",
-"title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-09T00:00",
-"end": "2026-10-31T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Running until Oct. 31",
-"venue": "Olde Towne Gardens",
-"addr": "360 Old Town Rd, East Setauket",
-"url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949. Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, hay bale play area, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/spooky-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/olde-towne-gardens",
-"rank": 5
-},
-{
 "id": "pjchamber-14181",
 "title": "2026 Port Jeff Self-Guided Fall Art Walk",
 "start": "2026-10-09T00:00:00",
@@ -476,43 +453,27 @@
 "page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
 },
 {
-"id": "lim-3225059",
-"title": "America on Screen: The Day We Walked on the Moon",
-"start": "2026-10-09T14:00:00",
-"end": "2026-10-09T15:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/america-on-screen-the-day-we-walked-on-the-moon/",
-"desc": "Join us on select Friday afternoons for a special film series commemorating America’s 250th: Anniversary: America on Screen . Enjoy screenings of Smithsonian Channel programs that explore the people, places, and stories that shaped America. The Day We Walked t",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/06/The_Day_We_Walked_on_the_Moon_episode_3840_2160_GEG502849_Episodic_Artwork-1-scaled.jpg",
-"src": "lim",
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-10-10T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Running until Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949. Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, hay bale play area, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/spooky-720.webp",
+"src": "3vl",
 "tags": [
-"stage",
+"kids",
 "outdoor"
 ],
 "status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "emmaclark-life-sized-candy-land-ages-3-7-w-caregiver-58810",
-"title": "LIFE-SIZED CANDY LAND (Ages 3-7 w/ caregiver)",
-"start": "2026-10-09T18:00:00",
-"end": "2026-10-09T20:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/life-sized-candy-land-ages-3-7-w-caregiver-58810",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/life-sized-candy-land-ages-3-7-w-caregiver"
+"pick": true,
+"page": "https://www.threevillagelocal.com/olde-towne-gardens",
+"rank": 5
 },
 {
 "id": "portjeff-1134",
@@ -1880,6 +1841,42 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/laughter-yoga"
+},
+{
+"id": "emmaclark-sprouts-friends-babies-5-yrs-w-caregiver-58997",
+"title": "Sprouts & Friends (Babies- 5 yrs. w/ caregiver)",
+"start": "2026-10-20T13:00:00",
+"end": "2026-10-20T13:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/sprouts-friends-babies-5-yrs-w-caregiver-58997",
+"desc": "Enjoy some music and movement with Miss Kristin.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/sprouts-friends-babies-5-yrs-w-caregiver"
+},
+{
+"id": "emmaclark-grow-your-own-microgreens-zoom-58150",
+"title": "Grow Your Own Microgreens [ZOOM]",
+"start": "2026-10-20T19:00:00",
+"end": "2026-10-20T20:00:00",
+"allday": false,
+"venue": "Online (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/grow-your-own-microgreens-zoom-58150",
+"desc": "Summer is over and the gardening season is winding down, but if you want to ensure a steady supply of year-round, home-grown goodness, then microgreens are for you! This program will introduce you to the benefits of growing (and eating) microgreens, provide yo",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/2591.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/grow-your-own-microgreens-zoom"
 }
 ],
 "closings": [],
@@ -2053,7 +2050,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-09T23:30:11+00:00",
+"checked": "2026-10-10T00:00:12+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
