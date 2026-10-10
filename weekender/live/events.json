@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-10T21:31:02.748472+00:00",
+"updated": "2026-10-10T22:00:43.081433+00:00",
 "counts": {
 "Three Village Chamber": 5,
-"Port Jefferson Chamber": 37,
+"Port Jefferson Chamber": 0,
 "I Love Port Jeff": 3,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 216,
@@ -414,45 +414,6 @@
 "pu": ""
 },
 {
-"id": "pjchamber-14726",
-"title": "2026 Port Jefferson Scarecrow Walk",
-"start": "2026-10-05T00:00:00",
-"end": "2026-11-02T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
-"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd! var...",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
-},
-{
-"id": "pjchamber-14181",
-"title": "2026 Port Jeff Self-Guided Fall Art Walk",
-"start": "2026-10-09T00:00:00",
-"end": "2026-11-06T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
-{
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
 "start": "2026-10-10T00:00",
@@ -476,44 +437,24 @@
 "rank": 5
 },
 {
-"id": "pjchamber-14946",
-"title": "Free Breast Cancer Screening – Paint Port Pink",
-"start": "2026-10-10T09:00:00",
-"end": "2026-10-10T12:00:00",
+"id": "iloveportjeff-6a1eb46489ca3256acdb4fe0",
+"title": "Witches & Warlocks Weekend Out",
+"start": "2026-10-10T11:00:00",
+"end": "2026-10-11T21:00:00",
 "allday": false,
-"venue": "Middle Island Fire Department",
-"addr": "31 Arnold Drive, Middle Island, NY, 11953",
-"url": "https://portjeffchamber.com/events-calendar/free-breast-cancer-screening-paint-port-pink/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://www.iloveportjeff.com/events/witches-and-warlocks-weekend",
+"desc": "On October 10th and 11th, witches will descend upon the village for an all-day celebration of mystery, magic, and moonlit mischief. From spell jar workshops to haunted harbor cruises, the streets of Port Jefferson will be alive with strange sightings and shado",
+"img": "https://images.squarespace-cdn.com/content/v1/6849b4cd4d4fd13a7a9784e5/1749764118144-N0G1TBWY4COXGI5KW5M1/witch%27s-day-out-port-jeff.png",
+"src": "iloveportjeff",
 "tags": [
-"free",
-"stage",
+"outdoor",
 "arts"
 ],
 "status": "",
 "fb": 0,
-"page": ""
-},
-{
-"id": "pjchamber-14961",
-"title": "Witches & Warlocks Weekend",
-"start": "2026-10-10T11:00:00",
-"end": "2026-10-11T18:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/witches-warlocks-weekend/",
-"desc": "October 10th & 11th 11am-6pm Witches & Warlocks Weekend transforms Port Jefferson into a village-wide fall experience, with something to discover around every corner. Rather than one traditional festival area, the fun stretches throughout the village—giving yo",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/witches-warlocks-weekend"
+"page": "https://www.threevillagelocal.com/events/witches-warlocks-weekend-out"
 },
 {
 "id": "portjeff-1095",
@@ -1067,25 +1008,6 @@
 "page": "https://www.threevillagelocal.com/events/colonial-tavern-tasting-at-the-three-village-inn"
 },
 {
-"id": "pjchamber-14950",
-"title": "EmpowerHER",
-"start": "2026-10-15T18:30:00",
-"end": "2026-10-15T20:00:00",
-"allday": false,
-"venue": "the meadow club",
-"addr": "1147 Route 112, Port Jefferson Station, NY, 11776",
-"url": "https://portjeffchamber.com/events-calendar/empowerher/",
-"desc": "Join Mather Hospital for a program on women’s health issues, presented by members of the Katz Institute for Women’s Health Conquering heart and metabolic challenges in menopause- Kristen O’Brien, MD Decoding your menopausal mind: A toolkit for emotional resili",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/empowerher"
-},
-{
 "id": "emmaclark-ai-basics-introduction-artificial-intelligence-60459",
 "title": "AI Basics: An Introduction to Artificial Intelligence",
 "start": "2026-10-15T19:00:00",
@@ -1256,23 +1178,23 @@
 "page": "https://www.threevillagelocal.com/events/murder-mystery-night"
 },
 {
-"id": "pjchamber-14608",
-"title": "2026 Port Jefferson Harvest Festival",
+"id": "portjeff-1155",
+"title": "Harvest Festival",
 "start": "2026-10-17T00:00:00",
-"end": "2026-10-18T23:59:59",
+"end": "2026-10-17T00:00:00",
 "allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-2026/",
-"desc": "Port Jefferson Harvest Festival Get A Pass! Full Festival Schedule Featured Festival Activities & Events Learn More Learn More Learn More Learn More",
-"img": "https://i0.wp.com/portjeffchamber.com/wp-content/uploads/2026/07/568667910_1478921650325849_67070424497474992_n.jpg?fit=2048%2C1536&ssl=1",
-"src": "pjchamber",
+"venue": "Port Jefferson",
+"addr": "Port Jefferson",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1155",
+"desc": "Please visit the Port Jefferson Chamber of Commerce's website for more info - Port Jefferson NY 11777.",
+"img": "",
+"src": "portjeff",
 "tags": [
 "outdoor"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-harvest-festival"
+"page": "https://www.threevillagelocal.com/events/harvest-festival"
 },
 {
 "id": "3vchamber-1922571",
@@ -1404,25 +1326,6 @@
 "page": "https://www.threevillagelocal.com/events/monster-of-the-week-a-tabletop-rpg-380"
 },
 {
-"id": "pjchamber-14831",
-"title": "Port Jefferson Harvest Festival Costumed Dog Parade",
-"start": "2026-10-17T12:30:00",
-"end": "2026-10-17T13:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-costumed-dog-parade/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-costumed-dog-parade"
-},
-{
 "id": "emmaclark-ai-basics-introduction-artificial-intelligence-60460",
 "title": "AI Basics: An Introduction to Artificial Intelligence",
 "start": "2026-10-17T13:00:00",
@@ -1438,25 +1341,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/ai-basics-an-introduction-to-artificial-intelligence-382"
-},
-{
-"id": "pjchamber-14966",
-"title": "Basket Raffles – First Presbyterian Church of Port Jefferson",
-"start": "2026-10-17T13:30:00",
-"end": "2026-10-17T15:30:00",
-"allday": false,
-"venue": "Coram Fire Department",
-"addr": "303 Middle Country Road, Coram, NY, 11727",
-"url": "https://portjeffchamber.com/events-calendar/basket-raffles-first-presbyterian-church-of-port-jefferson/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/basket-raffles-first-presbyterian-church-of-port-jefferson"
 },
 {
 "id": "lim-3225310",
@@ -1500,25 +1384,6 @@
 "page": "https://www.threevillagelocal.com/events/crafternoon-ages-3-11-yrs-w-caregiver"
 },
 {
-"id": "pjchamber-14993",
-"title": "Hugh Stinkfoot and the Spooky Terrible Day!",
-"start": "2026-10-17T15:00:00",
-"end": "2026-10-18T17:00:00",
-"allday": false,
-"venue": "The Performing Arts Studio",
-"addr": "224 E. Main St, Port Jefferson, NY, 11777",
-"url": "https://portjeffchamber.com/events-calendar/hugh-stinkfoot-and-the-spooky-terrible-day/",
-"desc": "CLICK HERE TO PURCHASE TICKETS! $5 per child aged 12 & under $10 per person ages 13+",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/hugh-stinkfoot-and-the-spooky-terrible-day"
-},
-{
 "id": "3vchamber-1949549",
 "title": "32nd Annual Spirits Graveyard Tour",
 "start": "2026-10-17T17:00:00",
@@ -1557,23 +1422,23 @@
 "page": "https://www.threevillagelocal.com/events/live-performance-by-albert-bouchards-imaginos-band-at-the-long-island-music-and-entertainment-hall-of-fame"
 },
 {
-"id": "pjchamber-14824",
-"title": "Port Jefferson Harvest Festival Pie Baking Contest",
+"id": "portjeff-1156",
+"title": "Harvest Festival",
 "start": "2026-10-18T00:00:00",
-"end": "2026-10-18T23:59:59",
+"end": "2026-10-18T00:00:00",
 "allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-pie-baking-contest/",
-"desc": "PORT JEFFERSON HARVEST FEST PIE BAKING CONTEST Contest Rules Register Online & Pay Fill Form Out To Sign Up (If paying Cash the day-of) Name (Required) First Last Email (Required) Phone Number (Required) gform.initializeOnLoaded( function() {gformInitSpinner( ",
+"venue": "Port Jefferson",
+"addr": "Port Jefferson",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1156",
+"desc": "Please visit the Port Jefferson Chamber of Commerce's website for more info - Port Jefferson NY 11777.",
 "img": "",
-"src": "pjchamber",
+"src": "portjeff",
 "tags": [
 "outdoor"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-pie-baking-contest"
+"page": "https://www.threevillagelocal.com/events/harvest-festival-473"
 },
 {
 "id": "portjeff-1096",
@@ -1953,7 +1818,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-10T21:30:19+00:00",
+"checked": "2026-10-10T22:00:11+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
