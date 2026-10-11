@@ -159,6 +159,17 @@ def main():
             best[s["ig"]] = s
     final = sorted(best.values(), key=lambda s: rank[s["ig"].lower()])[:int(pref.get("cap", 9))]
     candidates = final
+    # owner 10/10/2026: the homepage features the top 6, a "See all specials" page shows every current one (same cards).
+    # Up to 2 per place, owner's ranked order, then newest; skip_all = handles or words the owner keeps off that page.
+    skip = [x.lower() for x in pref.get("skip_all", [])]
+    per, every, titles = {}, [], set()
+    for s in sorted(specials, key=lambda s: rank[s["ig"].lower()]):
+        txt = (s["ig"] + " " + s.get("title", "") + " " + s.get("desc", "")).lower()
+        key = (s["ig"], s.get("title", "").strip().lower())
+        if any(w in txt for w in skip) or key in titles or per.get(s["ig"], 0) >= 2:
+            continue
+        titles.add(key); per[s["ig"]] = per.get(s["ig"], 0) + 1
+        every.append(s)
     if not pref.get("live"):
         final = []
     # forget posts older than 30 days
@@ -166,7 +177,8 @@ def main():
     seen = {k: v for k, v in seen.items() if v.get("_ts", "9") >= cutoff}
     json.dump(cache, open(cache_path, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     json.dump(seen, open(STATE, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
-    json.dump({"updated": NOW.isoformat(), "specials": final, "candidates": candidates}, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump({"updated": NOW.isoformat(), "specials": final, "candidates": candidates, "all": every if pref.get("live") else []},
+              open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("Instagram unavailable for %d accounts (used last known)" % missed)
     print("judged %d new posts, %d live specials (live=%s)" % (judged, len(final), pref.get("live")))
     for s in candidates:

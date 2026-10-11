@@ -225,17 +225,21 @@ def main():
     print("events with a 3VL page: %d of %d" % (sum(1 for e in final if e["page"]), len(final)))
     # Instagram specials (written by ig_specials.py); images live next to this file in ig/
     spath = os.path.join(HERE, "specials.json")
-    specials = []
+    specials, specials_all = [], []
     if os.path.exists(spath):
         igbase = "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/"
         today = dt.date.today().isoformat()
-        for s in json.load(open(spath, encoding="utf-8")).get("specials", []):
-            if (s.get("expires") or "9999") < today:
-                continue
-            if s.get("inset") and not s["inset"].startswith("http"):
-                s["inset"] = igbase + s["inset"]
-            s["page"] = listing_for(s.get("biz", ""))   # the business's 3VL profile; the card falls back to the Instagram post
-            specials.append(s)
+        sj = json.load(open(spath, encoding="utf-8"))
+        for lst, out in ((sj.get("specials", []), specials), (sj.get("all", []), specials_all)):
+            for s in lst:
+                if (s.get("expires") or "9999") < today:
+                    continue
+                if s.get("inset") and not s["inset"].startswith("http"):
+                    s["inset"] = igbase + s["inset"]
+                s["page"] = listing_for(s.get("biz", ""))   # the business's 3VL profile; the card falls back to the Instagram post
+                if re.search(r"(?i)not specified|unspecified|unknown", s.get("when") or ""):
+                    s["when"] = ""                           # e.g. "Recurring (time not specified)": no tag beats a robotic one
+                out.append(s)
     # Standing weekly deals (weekly_deals.json, e.g. a member's day-by-day flyer, owner 10/6/2026): today's deal joins the specials
     wpath = os.path.join(HERE, "weekly_deals.json")
     if os.path.exists(wpath):
@@ -249,13 +253,22 @@ def main():
                              "category": w.get("category", ""), "member": w.get("member", False), "title": d["title"], "when": "Today, " + now_et.strftime("%A"),
                              "desc": d["desc"], "expires": now_et.strftime("%Y-%m-%d"), "img": d.get("img", ""), "inset": d.get("img", ""),
                              "url": "", "page": listing_for(w["biz"])})
+            if not any(s.get("biz") == w["biz"] for s in specials_all):
+                specials_all.append(specials[-1])
     # Owner's ranked list for the Eat & Drink cards (names, top to bottom); /now orders its cards by this
     pref = json.load(open(os.path.join(HERE, "preference.json"), encoding="utf-8"))
     names = {x["ig"].lower(): x["name"] for x in json.load(open(os.path.join(HERE, "ig_accounts.json"), encoding="utf-8"))}
     eat_order = [names[h.lower()] for h in pref.get("order", []) if h.lower() in names]
+    # "See all specials" page (owner 10/10/2026): every current special, owner's ranked order; homepage specials always included
+    for s in specials:
+        if not any(x.get("id") == s.get("id") for x in specials_all):
+            specials_all.append(s)
+    rk = {n.lower(): i for i, n in enumerate(eat_order)}
+    specials_all.sort(key=lambda s: rk.get((s.get("biz") or "").lower(), 999))
     if not pref.get("live"):
-        specials = []
-    data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings, "specials": specials, "eatOrder": eat_order, "eatCap": int(pref.get("cap", 9))}
+        specials, specials_all = [], []
+    data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings, "specials": specials,
+            "specialsAll": specials_all, "eatOrder": eat_order, "eatCap": int(pref.get("cap", 9))}
     fpath = os.path.join(HERE, "ferry.json")   # Port Jefferson Ferry service alerts (ferry.py); the homepage strip only shows service alerts
     if os.path.exists(fpath):
         data["ferry"] = json.load(open(fpath, encoding="utf-8"))

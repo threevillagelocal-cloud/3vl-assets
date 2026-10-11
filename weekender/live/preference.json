@@ -49,5 +49,11 @@
   "premierepastryshop",
   "kilwins_port_jeff",
   "portjefficecream"
- ]
+ ],
+ "skip_all": [
+  "ronkonkoma",
+  "vote for",
+  "scarecrow #"
+ ],
+ "_skip_all": "Kept off the See all specials page: specials at other towns' locations and vote/contest posts (owner 10/10/2026)."
 }

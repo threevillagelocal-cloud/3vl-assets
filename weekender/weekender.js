@@ -112,7 +112,10 @@ function renderLive(data){
        '<div class="wk-spb"><p class="wk-spbiz">'+(ob?ob.innerHTML:x.page?'<a class="wk-biz" href="'+esc2(x.page)+'">'+esc2(x.biz.replace(/\s*\(.*?\)/,''))+'</a>':esc2(x.biz.replace(/\s*\(.*?\)/,'')))+'</p><p class="wk-spt">'+esc2(x.title)+'</p>'+(x.when?'<p class="wk-spw">'+esc2(x.when)+'</p>':'')+'<p class="wk-spd">'+esc2(x.desc)+'</p>'+
        '<p class="wk-spf"><span class="wk-src wk-igb">&#9711;</span><span>via <a class="wk-biz" href="'+esc2(x.url)+'" target="_blank" rel="noopener">Instagram</a></span><a class="wk-dir" href="'+esc2(map)+'" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>';
       return t.firstChild};
-    order.forEach(function(n){var k=nm(n);if(used[k])return;used[k]=1;if(ig[k])out.push(card(ig[k],cur[k]));else if(cur[k])out.push(cur[k])});
+    /* owner 10/10/2026 "refresh the 6": places with a current special come first (ranked order); last week's hand-picked
+       cards only fill slots that are left */
+    order.forEach(function(n){var k=nm(n);if(used[k]||!ig[k])return;used[k]=1;out.push(card(ig[k],cur[k]))});
+    order.forEach(function(n){var k=nm(n);if(used[k]||!cur[k])return;used[k]=1;out.push(cur[k])});
     Object.keys(cur).forEach(function(k){if(!used[k])out.push(cur[k])});
     out=out.slice(0,data.eatCap||9);eat.innerHTML='';out.forEach(function(a){eat.appendChild(a)})}
   return true}
