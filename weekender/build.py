@@ -231,8 +231,9 @@ def build(edition, local=False, sha="master", d=None, live=None):
     M["eat"] = len(out)
     # EAT & DRINK (exterior photo + dish inset; one card per business)
     # owner 10/10/2026: top 6 here, a "See all specials" button next to the heading opens every current special
-    w('<section class="wk-sec" id="wk-eat"><h2 class="wk-h2"><span>Eat &amp; Drink</span><em class="wk-h2r"><small>Local specials, updated daily</small>'
-      '<a class="wk-calbtn" href="https://www.threevillagelocal.com/restaurant-specials">&#127869;&#65039; See all specials &rarr;</a></em></h2><div class="wk-eat wk-swipe">')
+    w('<section class="wk-sec" id="wk-eat"><h2 class="wk-h2" style="justify-content:flex-start;align-items:center"><span>Eat &amp; Drink</span><em class="wk-h2r">'
+      '<a class="wk-calbtn" href="https://www.threevillagelocal.com/restaurant-specials">&#127869;&#65039; See all specials &rarr;</a>'
+      '<small>Local specials, updated daily</small></em></h2><div class="wk-eat wk-swipe">')
     for sp in d["specials"]:
         badge = '<span class="wk-src wk-fb">f</span>' if sp["src"] == "facebook" else '<span class="wk-src wk-web">&#127760;</span>'
         main = sp.get("ext") or sp.get("img")
