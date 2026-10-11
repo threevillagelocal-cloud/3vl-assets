@@ -7,7 +7,7 @@ free weekly-email feature for listings claimed by Friday, Oct 23.
     python site/claim-email/reminders.py <r1|final> <name> <private dir> [id ...]
 reads  <private dir>/recipients.json + claims.json (PRIVATE); pictures from 3vl-share/email/<name>/
 writes <private dir>/out-<kind>/<id>.html + <id>.subject.txt   (nothing is sent here)"""
-import html, json, os, sys
+import hashlib, html, json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -54,10 +54,24 @@ def bonus_box(co, last=False):
                p("Claim your page by <b>%s</b> and we&rsquo;ll feature <b>%s</b> in our weekly email to Three Village residents, free." % (DEADLINE, co), 15, INK, 0)))
 
 
+def reply_yes(co):
+    """Lowest-effort yes: they reply, we set up the login for them."""
+    return ('<tr><td style="padding:18px 28px 4px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" '
+            'style="background:#eef5fc;border:1px solid %s;border-radius:14px"><tr><td style="padding:16px 20px">%s%s</td></tr></table></td></tr>'
+            % (LINE, p("<b>Short on time? Reply YES.</b>", 16, NAVY, 6),
+               p("Just reply <b>YES</b> to this email and we&rsquo;ll set up the login for %s and send it to you. Nothing else to do." % co, 15, INK, 0)))
+
+
+def code(email):
+    """Private per-recipient code (same as news-monitor email_clicks.py), sent as utm_term."""
+    return "r" + hashlib.sha256(email.strip().lower().encode()).hexdigest()[:8]
+
+
 def build(kind, r, claim, base, utm):
     co = esc(short_name(r["company"]) or "your business")
     first = esc(r["first"]) if r["first"] and r["first"].lower() not in GENERIC else ""
     hi = ("Hi %s," % first) if first else "Hello,"
+    utm += "&utm_term=" + code(r["email"])
     page = "%s/%s?%s" % (SITE, r["filename"], utm)
     claim = claim + "&" + utm
     rows = [masthead()]
@@ -69,8 +83,9 @@ def build(kind, r, claim, base, utm):
         rows.append('<tr><td align="center" style="padding:0 28px 18px">%s<p style="margin:12px 0 0;font:bold 14px %s;color:%s">'
                     'Free &middot; About a minute &middot; No credit card</p></td></tr>' % (center_btn(claim, "Claim my free page &rarr;"), FONT, NAVY))
         rows.append('<tr><td style="padding:0 28px 6px"><a href="%s"><img src="%sclaim-%s.gif" width="544" alt="Your page for %s, live on Three Village Local" '
-                    'style="display:block;width:100%%;height:auto;border-radius:14px;border:0"></a></td></tr>' % (esc(page), base, r["id"], co))
+                    'style="display:block;width:100%%;height:auto;border-radius:14px;border:0"></a></td></tr>' % (esc(claim), base, r["id"], co))
         rows.append(bonus_box(co))
+        rows.append(reply_yes(co))
         rows.append('<tr><td style="padding:24px 28px 4px">%s<table role="presentation" cellpadding="0" cellspacing="0" border="0">%s%s%s</table></td></tr>'
                     % (h2("Claiming is easy"),
                        tick("Tap <b style=\"color:%s\">Claim my free page</b>." % NAVY),
@@ -83,16 +98,22 @@ def build(kind, r, claim, base, utm):
         subject = "%s, your Three Village Local page is still waiting for you" % html.unescape(co)
         title = "Your page is waiting"
     else:
-        rows.append('<tr><td style="padding:30px 28px 6px">%s<h1 style="margin:0 0 14px;font:bold 28px/1.2 %s;color:%s">Last reminder: your page is still unclaimed</h1>%s%s%s</td></tr>'
-                    % (kicker("For " + co), FONT, NAVY, p(hi, 16, INK, 10),
-                       p("This is our last email about it. Your page for <b>%s</b> stays up either way, but only you can update it, add photos "
-                         "or fix anything we got wrong." % co, 16, INK, 14),
-                       p("It&rsquo;s free and takes about a minute. No credit card.", 16, INK, 6)))
-        rows.append('<tr><td style="padding:10px 28px 6px"><a href="%s"><img src="%sclaim-%s.jpg" width="544" alt="Your page for %s, live on Three Village Local" '
-                    'style="display:block;width:100%%;height:auto;border-radius:14px;border:0"></a></td></tr>' % (esc(page), base, r["id"], co))
-        rows.append(bonus_box(co, last=True))
-        rows.append('<tr><td align="center" style="padding:22px 28px 6px">%s</td></tr>' % center_btn(claim, "Claim my free page &rarr;"))
-        pre = "Last reminder: claim your free page on Three Village Local. Free, about a minute."
+        # last reminder = a short personal note (no masthead, no big picture): reads like a person, not a campaign
+        link = 'color:%s;font-weight:bold' % NAVY
+        rows = ['<tr><td style="padding:30px 28px 6px;background:#fff">%s%s%s%s%s%s</td></tr>'
+                % (p(hi, 16, INK, 14),
+                   p("Quick last note from me. A couple of weeks ago we put up a free page for <b>%s</b> on Three Village Local, and neighbors are "
+                     "already finding it. It stays up either way, but only you can update it, add photos or fix anything we got wrong." % co, 16, INK, 14),
+                   p("Two easy ways to take it over:", 16, INK, 8),
+                   p('1. <a href="%s" style="%s">Claim it here</a> (free, about a minute, no credit card), or' % (esc(claim), link), 16, INK, 6),
+                   p("2. Just reply <b>YES</b> and we&rsquo;ll set up the login for you.", 16, INK, 14),
+                   p("Claim by <b>%s</b> and we&rsquo;ll also feature %s in our weekly email to Three Village residents, free." % (DEADLINE, co), 16, INK, 0))]
+        rows.append('<tr><td align="center" style="padding:16px 28px 6px;background:#fff">%s</td></tr>' % center_btn(claim, "Claim my free page &rarr;"))
+        rows.append('<tr><td style="padding:16px 28px 10px;background:#fff">%s%s</td></tr>'
+                    % (p("Thanks, and thanks for being part of the neighborhood.", 16, INK, 10),
+                       p('Matt<br><span style="color:%s">Founder, Three Village Local</span><br>'
+                         '<a href="%s" style="color:%s">See your page as customers see it</a>' % (MUT, esc(page), NAVY), 15, INK, 0)))
+        pre = "Last note: claim your free page, or just reply YES and we'll set it up for you."
         subject = "%s: last reminder about your free page" % html.unescape(co)
         title = "Last reminder"
     rows.append(footer(co))
