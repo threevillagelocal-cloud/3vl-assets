@@ -1,7 +1,7 @@
 """Claim email follow-ups (owner 10/3/2026): to "Waiting to claim" listings that still have not claimed.
   r1    = Tue Oct 13: "Your page is still waiting for you" (iPad picture again, free + 1 minute up top, the weekly-email bonus)
   final = Tue Oct 20: last reminder, three short lines, one button
-Unclaimed pages get removed; claiming by the deadline also gets the
+Last reminder: pages nobody claims are taken down; claiming by the deadline also gets the
 free weekly-email feature for listings claimed by Friday, Oct 23.
 
     python site/claim-email/reminders.py <r1|final> <name> <private dir> [id ...]
@@ -79,8 +79,7 @@ def build(kind, r, claim, base, utm):
         rows.append('<tr><td style="padding:30px 28px 6px">%s<h1 style="margin:0 0 14px;font:bold 30px/1.2 %s;color:%s">Your page is ready. It just needs you.</h1>%s%s</td></tr>'
                     % (kicker("For " + co), FONT, NAVY, p(hi, 16, INK, 10),
                        p("Earlier this month we built a page for <b>%s</b> on Three Village Local. It&rsquo;s live and neighbors can already find it, but right now "
-                         "the details are whatever we put up. Claim it and it&rsquo;s yours to update. Pages that stay unclaimed get removed from "
-                         "Three Village Local, so claim yours to keep it." % co, 16, INK, 16)))
+                         "the details are whatever we put up. Claim it and it&rsquo;s yours to update." % co, 16, INK, 16)))
         rows.append('<tr><td align="center" style="padding:0 28px 18px">%s<p style="margin:12px 0 0;font:bold 14px %s;color:%s">'
                     'Free &middot; About a minute &middot; No credit card</p></td></tr>' % (center_btn(claim, "Claim my free page &rarr;"), FONT, NAVY))
         rows.append('<tr><td style="padding:0 28px 6px"><a href="%s"><img src="%sclaim-%s.gif" width="544" alt="Your page for %s, live on Three Village Local" '
@@ -101,12 +100,11 @@ def build(kind, r, claim, base, utm):
     else:
         # last reminder = a short personal note (no masthead, no big picture): reads like a person, not a campaign
         link = 'color:%s;font-weight:bold' % NAVY
-        rows = ['<tr><td style="padding:30px 28px 6px;background:#fff">%s%s%s%s%s%s</td></tr>'
+        rows = ['<tr><td style="padding:30px 28px 6px;background:#fff">%s%s%s%s%s</td></tr>'
                 % (p(hi, 16, INK, 14),
                    p("Quick last note from me. A couple of weeks ago we put up a free page for <b>%s</b> on Three Village Local, and neighbors are "
-                     "already finding it. This is our last email about it: pages that stay unclaimed get removed from Three Village Local. "
-                     "If you want to keep yours, claim it now." % co, 16, INK, 14),
-                   p("Two easy ways to take it over:", 16, INK, 8),
+                     "already finding it. Since we haven&rsquo;t heard back, we&rsquo;ll assume you&rsquo;d rather not have it up, and we&rsquo;ll take it "
+                     "down soon. No hard feelings at all! If you would like to keep it, it only takes a minute:" % co, 16, INK, 14),
                    p('1. <a href="%s" style="%s">Claim it here</a> (free, about a minute, no credit card), or' % (esc(claim), link), 16, INK, 6),
                    p("2. Just reply <b>YES</b> and we&rsquo;ll set up the login for you.", 16, INK, 14),
                    p("Claim by <b>%s</b> and we&rsquo;ll also feature %s in our weekly email to Three Village residents, free." % (DEADLINE, co), 16, INK, 0))]
