@@ -186,7 +186,7 @@ def main():
         base = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/%s/" % ed_name
         for e in W["events"]:
             v = W["venues"].get(e["venue"], {})
-            out.insert(0, {"id": "cur-" + e["id"], "title": e["title"], "start": e["start"], "end": e["end"], "allday": False,
+            out.insert(0, {"id": "cur-" + e["id"], "title": e["title"], "start": e["start"], "end": e["end"], "allday": bool(e.get("allday")),
                            "venue": v.get("name", ""), "addr": v.get("addr", ""), "url": e.get("url", ""), "desc": e["desc"],
                            "img": (base + e["img"] + "-720.webp") if e.get("img") else "", "src": "3vl", "tags": e["tags"][:3],
                            "status": e.get("status", ""), "pick": e["id"] in W.get("picks", []), "page": e.get("page", ""),
