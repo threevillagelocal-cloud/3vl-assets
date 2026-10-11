@@ -11,7 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ASSETS = os.path.dirname(os.path.dirname(HERE))
 SHARE = os.path.join(os.path.dirname(ASSETS), "3vl-share")
 PRIV = os.environ.get("CLAIM_RECIPIENTS") or r"C:\Users\Matt\Documents\3vl-private\claim-email\recipients.json"
-CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+CHROME = os.environ.get("CHROME") or r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 SITE = "https://www.threevillagelocal.com/"
 PHOTO = os.path.join(ASSETS, "site", "p3", "img", "village-hero.jpg")
 W, H = 1200, 760            # picture size (shown at 600 wide in the email)
@@ -21,7 +21,8 @@ PORT = 9391
 
 
 def font(sz):
-    for p in (os.path.join(ASSETS, "site", "share-img", "RadioCanada-Bold.ttf"), "C:/Windows/Fonts/segoeuib.ttf"):
+    for p in (os.path.join(ASSETS, "site", "share-img", "RadioCanada-Bold.ttf"), "C:/Windows/Fonts/segoeuib.ttf",
+              "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"):
         if os.path.exists(p):
             return ImageFont.truetype(p, sz)
     return ImageFont.load_default()
