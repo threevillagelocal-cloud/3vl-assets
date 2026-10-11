@@ -1,7 +1,7 @@
 """Claim email follow-ups (owner 10/3/2026): to "Waiting to claim" listings that still have not claimed.
   r1    = Tue Oct 13: "Your page is still waiting for you" (iPad picture again, free + 1 minute up top, the weekly-email bonus)
   final = Tue Oct 20: last reminder, three short lines, one button
-Honest urgency only: the page stays up either way (owner: no deletion threat); what they lose is control of it, and the
+Honest urgency only (no deletion threat unless removal is real policy); what they lose is control of the page, and the
 free weekly-email feature for listings claimed by Friday, Oct 23.
 
     python site/claim-email/reminders.py <r1|final> <name> <private dir> [id ...]
@@ -103,7 +103,7 @@ def build(kind, r, claim, base, utm):
         rows = ['<tr><td style="padding:30px 28px 6px;background:#fff">%s%s%s%s%s%s</td></tr>'
                 % (p(hi, 16, INK, 14),
                    p("Quick last note from me. A couple of weeks ago we put up a free page for <b>%s</b> on Three Village Local, and neighbors are "
-                     "already finding it. It stays up either way, but only you can update it, add photos or fix anything we got wrong." % co, 16, INK, 14),
+                     "already finding it. Right now the details are whatever we put up, and only you can update it, add photos or fix anything we got wrong." % co, 16, INK, 14),
                    p("Two easy ways to take it over:", 16, INK, 8),
                    p('1. <a href="%s" style="%s">Claim it here</a> (free, about a minute, no credit card), or' % (esc(claim), link), 16, INK, 6),
                    p("2. Just reply <b>YES</b> and we&rsquo;ll set up the login for you.", 16, INK, 14),
