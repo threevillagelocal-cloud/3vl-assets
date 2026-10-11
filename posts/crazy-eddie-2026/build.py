@@ -51,7 +51,7 @@ w('<section class="ce-sec" id="ce-store"><p class="ce-label">Our store</p><h2 cl
   'It was one of the chain&#39;s first Long Island stores, along with Carle Place and Syosset.</p></div></div>'
   '<div class="ce-tn ce-rv"><div><b>Then</b>Crazy Eddie, 1010 Smithtown Bypass: TVs, VCRs, stereos, car audio, records and tapes.</div>'
   '<div><b>Now</b>Tesla Smithtown, right next door at 1000 Nesconset Highway. Electronics never really left this stretch of 347.</div></div></section>'
-  % lazy("storefront-illustration", "A Crazy Eddie electronics storefront in the 1980s", "(max-width:760px) 92vw, 860px"))
+  % lazy("storefront-1980s", "A Crazy Eddie electronics storefront in the 1980s", "(max-width:760px) 92vw, 860px"))
 
 # 2. HOW IT STARTED
 w('<section class="ce-sec" id="ce-story"><p class="ce-label">How it started</p><h2 class="ce-h2">From one Brooklyn shop to 43 stores</h2>'
