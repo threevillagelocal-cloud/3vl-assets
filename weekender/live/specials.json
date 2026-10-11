@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T01:30:25.078325+00:00",
+ "updated": "2026-10-11T12:00:11.544461+00:00",
  "specials": [
   {
    "id": "18099322592380488",
@@ -358,22 +358,6 @@
    "inset": "ig/p17933421897147765.jpg"
   },
   {
-   "id": "18154536379460513",
-   "biz": "PJ Lobster House",
-   "ig": "pjlobsterhouse",
-   "town": "Port Jefferson",
-   "category": "Restaurant (Seafood)",
-   "member": false,
-   "title": "Witches & Warlocks Bar Crawl",
-   "when": "Fri, Oct. 10 · 5 PM",
-   "desc": "Join the bar crawl at PJ Lobster House with drinks and food. Tickets required.",
-   "expires": "2026-10-10",
-   "posted": "2026-10-09T15:22:53+0000",
-   "url": "https://www.instagram.com/p/DeR0j4-Fazc/",
-   "img": "",
-   "inset": "ig/p18154536379460513.jpg"
-  },
-  {
    "id": "18094605377369609",
    "biz": "PJ Lobster House",
    "ig": "pjlobsterhouse",
@@ -420,38 +404,6 @@
    "url": "https://www.instagram.com/p/DeQSB96DCN1/",
    "img": "",
    "inset": "ig/p18184440502420219.jpg"
-  },
-  {
-   "id": "17922426342439533",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Witches & Warlocks Bar Crawl",
-   "when": "Today, Oct. 10 · 5-10 PM",
-   "desc": "Join the Halloween bar crawl at Castaways. Stop by for a drink between 5 and 10 PM tonight.",
-   "expires": "2026-10-10",
-   "posted": "2026-10-10T14:00:53+0000",
-   "url": "https://www.instagram.com/p/DeUP9CEir0_/",
-   "img": "",
-   "inset": "ig/p17922426342439533.jpg"
-  },
-  {
-   "id": "18641834701045814",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Happy Hour & Live Music",
-   "when": "Today (Fri, Oct 10) · 12-6 PM + 6 PM",
-   "desc": "Happy hour noon to 6 PM, then live music from 6 PM at Castaways.",
-   "expires": "2026-10-10",
-   "posted": "2026-10-09T15:01:19+0000",
-   "url": "https://www.instagram.com/p/DeRyE39Copd/",
-   "img": "",
-   "inset": "ig/p18641834701045814.jpg"
   },
   {
    "id": "18081474245382981",
