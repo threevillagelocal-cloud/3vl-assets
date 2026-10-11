@@ -265,6 +265,23 @@ def main():
             specials_all.append(s)
     rk = {n.lower(): i for i, n in enumerate(eat_order)}
     specials_all.sort(key=lambda s: rk.get((s.get("biz") or "").lower(), 999))
+    # ROTATE (owner 10/11/2026: "they have been in that spot for a long time. we need to ROTATE"): every day the list of
+    # places with a current special starts a few places further down the owner's ranked order, so the homepage 6 and the
+    # top of the See-all page change daily. Same order all day (Eastern date).
+    first, places = {}, []
+    for s in specials_all:
+        k = (s.get("biz") or "").lower()
+        if k not in first:
+            first[k] = s; places.append(k)
+    if places:
+        from zoneinfo import ZoneInfo
+        step = max(1, int(pref.get("rotate_step", 3)))
+        off = ((dt.datetime.now(ZoneInfo("America/New_York")).date().toordinal() + 1) * step) % len(places)
+        places = places[off:] + places[:off]
+        pos = {k: i for i, k in enumerate(places)}
+        specials = [first[k] for k in places][:int(pref.get("cap", 9))]
+        specials_all.sort(key=lambda s: pos.get((s.get("biz") or "").lower(), 999))
+        eat_order = [first[k]["biz"] for k in places] + [n for n in eat_order if n.lower() not in pos]
     if not pref.get("live"):
         specials, specials_all = [], []
     data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings, "specials": specials,
