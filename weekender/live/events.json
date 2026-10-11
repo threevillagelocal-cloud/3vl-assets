@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-11T19:01:00.441194+00:00",
+"updated": "2026-10-11T19:02:16.053407+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -1660,6 +1660,23 @@
 "page": "https://www.threevillagelocal.com/nantuckets"
 },
 {
+"id": "18028678862857521",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Sunday Brunch at Castaways",
+"when": "Sunday, Oct. 12 · 12 PM",
+"desc": "Try the Quinoa Parfait with yogurt, toasted quinoa, berries, coconut and honey.",
+"expires": "2026-10-12",
+"posted": "2026-10-11T15:01:28+0000",
+"url": "https://www.instagram.com/reel/DeW7m1Uj_Q6/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18028678862857521.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood"
+},
+{
 "id": "18081474245382981",
 "biz": "The Whiskey Barrel",
 "ig": "thewhiskeybarrelportjeff",
@@ -1907,6 +1924,7 @@
 "Po' Boy Brewery",
 "PJ Lobster House",
 "Nantuckets",
+"Castaways Steak & Seafood",
 "The Whiskey Barrel",
 "Right Coast Taqueria",
 "Slurp Ramen",
@@ -1929,7 +1947,6 @@
 "Prohibition Port Jefferson",
 "Port Jeff Brewing Company",
 "Fifth Season Restaurant",
-"Castaways Steak & Seafood",
 "Old Fields Port Jefferson",
 "Tara Inn",
 "Hirosaki",

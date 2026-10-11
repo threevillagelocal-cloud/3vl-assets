@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T15:00:12.622360+00:00",
+ "updated": "2026-10-11T19:00:15.194187+00:00",
  "specials": [
   {
    "id": "18099322592380488",
@@ -404,6 +404,22 @@
    "url": "https://www.instagram.com/p/DeQSB96DCN1/",
    "img": "",
    "inset": "ig/p18184440502420219.jpg"
+  },
+  {
+   "id": "18028678862857521",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Sunday Brunch at Castaways",
+   "when": "Sunday, Oct. 12 · 12 PM",
+   "desc": "Try the Quinoa Parfait with yogurt, toasted quinoa, berries, coconut and honey.",
+   "expires": "2026-10-12",
+   "posted": "2026-10-11T15:01:28+0000",
+   "url": "https://www.instagram.com/reel/DeW7m1Uj_Q6/",
+   "img": "",
+   "inset": "ig/p18028678862857521.jpg"
   },
   {
    "id": "18081474245382981",

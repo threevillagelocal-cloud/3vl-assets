@@ -2654,5 +2654,13 @@
 "18112829693273525": {
 "special": false,
 "_ts": "2026-10-11T12:07:16+0000"
+},
+"18028678862857521": {
+"special": true,
+"title": "Sunday Brunch at Castaways",
+"when": "Sunday, Oct. 12 · 12 PM",
+"desc": "Try the Quinoa Parfait with yogurt, toasted quinoa, berries, coconut and honey.",
+"expires": "2026-10-12",
+"_ts": "2026-10-11T15:01:28+0000"
 }
 }
