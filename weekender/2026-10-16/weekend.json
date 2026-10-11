@@ -204,7 +204,8 @@
    ],
    "desc": "Dogs in costume parade through the village as part of the Harvest Festival.",
    "url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-costumed-dog-parade/",
-   "src": "portjeffchamber.com"
+   "src": "portjeffchamber.com",
+   "price": "See details"
   },
   {
    "id": "stinkfoot",
@@ -235,7 +236,8 @@
    "img": "imaginos",
    "desc": "A founding member of Blue Oyster Cult plays the Long Island Music & Entertainment Hall of Fame. Doors at 7:30.",
    "url": "https://stonybrookvillage.com/event/live-performance-by-albert-bouchards-imaginos-band-at-the-long-island-music-and-entertainment-hall-of-fame/",
-   "src": "stonybrookvillage.com"
+   "src": "stonybrookvillage.com",
+   "price": "See details"
   },
   {
    "id": "maidens",
@@ -267,7 +269,8 @@
    "desc": "Home bakers enter their pies at the Harvest Festival. Sign up online.",
    "url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-pie-baking-contest/",
    "src": "portjeffchamber.com",
-   "allday": true
+   "allday": true,
+   "price": "See details"
   }
  ],
  "allweekend": [
@@ -321,7 +324,8 @@
    ],
    "desc": "Theatre Three's mainstage run of the Kander and Ebb classic.",
    "img": "cabaret",
-   "url": "https://theatrethree.com/mainstage_shows/cabaret/"
+   "url": "https://theatrethree.com/mainstage_shows/cabaret/",
+   "price": "See details"
   },
   {
    "id": "elephant",
@@ -337,7 +341,8 @@
    ],
    "desc": "Mo Willems' best friends in a musical made for first-time theatergoers.",
    "img": "elephant",
-   "url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/"
+   "url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/",
+   "price": "See details"
   }
  ],
  "specials": [],
