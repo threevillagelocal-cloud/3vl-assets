@@ -1,0 +1,143 @@
+/* A Three Village Throwback: Crazy Eddie (2026). Scoped to .ce. No backslashes (BD strips them). */
+.ce{--ink:#0f2a4f;--ink2:#1d5fbf;--mut:#5b6b7c;--line:#e3e9f0;--soft:#f3f7fd;--gold:#ffc53d;--red:#e2352b;
+  font-family:'tvl-rc','Radio Canada',system-ui,sans-serif;color:#1d2b3a;font-size:17px;line-height:1.65;max-width:860px;margin:0 auto}
+.ce *{box-sizing:border-box}
+.ce p{margin:0 0 16px!important}
+.ce img{max-width:100%;height:auto;display:block}
+.ce a{color:var(--ink2);font-weight:700}
+#post-content .post-image-container,#post-content .post-image-container + hr{display:none!important}
+
+/* progress bar */
+.ce-prog{position:fixed;left:0;top:0;height:4px;width:0;background:linear-gradient(90deg,var(--ink2),var(--gold));z-index:9999;transition:width .1s linear}
+
+/* HERO: a VHS tape playing an old commercial */
+.ce-hero{position:relative;border-radius:22px;overflow:hidden;background:#05070b;color:#fff;margin:4px 0 22px;min-height:440px;display:flex;align-items:flex-end;box-shadow:0 18px 44px rgba(15,42,79,.22)}
+.ce-hbg{position:absolute;inset:0;width:100%!important;height:100%!important;object-fit:cover;filter:saturate(1.15) contrast(1.05);animation:ceFlick 6s infinite}
+.ce-hshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,7,11,.15) 0%,rgba(5,7,11,.25) 45%,rgba(5,7,11,.88) 100%)}
+.ce-scan{position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 3px);mix-blend-mode:overlay}
+.ce-track{position:absolute;left:0;right:0;height:18px;top:-20px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.18),transparent);animation:ceTrack 7s linear infinite;pointer-events:none}
+.ce-osd{position:absolute;top:16px;left:18px;right:18px;display:flex;justify-content:space-between;font:700 15px/1 'Courier New',monospace;color:#7CFC9A;text-shadow:0 0 6px rgba(124,252,154,.7);letter-spacing:.06em}
+.ce-osd b{color:#ff5a4e;text-shadow:0 0 6px rgba(255,90,78,.8)}
+.ce-rec::before{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;background:#ff3b30;margin-right:7px;vertical-align:middle;animation:ceBlink 1.2s steps(2) infinite}
+.ce-hin{position:relative;padding:30px 30px 40px;width:100%}
+.ce-kick{display:inline-block;margin:0 0 12px!important;padding:5px 12px;border-radius:999px;background:var(--gold);color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.ce-h1{font-size:46px!important;line-height:1.02!important;margin:0 0 12px!important;color:#fff!important;font-weight:800!important;letter-spacing:-.02em;text-wrap:balance;border:0!important;padding:0!important}
+.ce-h1 span{display:inline-block;color:var(--gold);animation:ceShake 3.2s ease-in-out infinite;transform-origin:50% 60%}
+.ce-dek{font-size:18px;color:#dbe6f3;max-width:640px;margin:0 0 16px!important}
+.ce-chips{display:flex;flex-wrap:wrap;gap:8px}
+.ce-chips span{padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);font-size:13.5px;font-weight:700;backdrop-filter:blur(4px)}
+.ce-cred{position:absolute;right:14px;bottom:8px;margin:0!important;font-size:11px;color:rgba(255,255,255,.55)}
+
+/* jump nav */
+.ce-nav{position:sticky;top:0;z-index:50;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);padding:10px 2px;margin:0 0 18px;border-bottom:1px solid var(--line)}
+.ce-nav::-webkit-scrollbar{display:none}
+.ce-nav a{flex:0 0 auto;padding:7px 13px;border-radius:999px;background:var(--soft);color:var(--ink)!important;font-size:13.5px;font-weight:800;text-decoration:none!important;white-space:nowrap;transition:background .2s,color .2s}
+.ce-nav a.on{background:var(--ink);color:#fff!important}
+
+/* sections */
+.ce-sec{margin:0 0 38px;scroll-margin-top:64px}
+.ce-label{margin:0 0 4px!important;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)}
+.ce-h2{font-size:31px!important;line-height:1.15!important;margin:0 0 14px!important;color:var(--ink)!important;font-weight:800!important;letter-spacing:-.015em;border:0!important;padding:0!important;text-wrap:balance}
+.ce-lead{font-size:20px;color:#2a3a4d}
+.ce-lead::first-letter{float:left;font-size:62px;line-height:.86;font-weight:800;color:var(--ink2);margin:6px 10px 0 0}
+
+/* the local store card */
+.ce-local{position:relative;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 10px 28px rgba(15,42,79,.08);margin:6px 0 20px}
+.ce-local figure{margin:0;position:relative}
+.ce-local figure img{width:100%!important;height:auto!important;aspect-ratio:2146/733;object-fit:cover}
+.ce-local figcaption{position:absolute;left:12px;bottom:10px;padding:5px 10px;border-radius:8px;background:rgba(5,7,11,.72);color:#fff;font-size:12.5px;max-width:calc(100% - 24px)}
+.ce-localb{padding:18px 20px 6px}
+.ce-pin{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.ce-pin span{padding:5px 11px;border-radius:999px;background:var(--soft);color:var(--ink);font-size:13px;font-weight:800}
+.ce-pin span.y{background:#fff5d6;color:#7a5600}
+
+/* then / now slider */
+.ce-tn{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 16px}
+.ce-tn div{border-radius:14px;padding:14px 16px;background:var(--soft)}
+.ce-tn b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);margin-bottom:4px}
+
+/* timeline */
+.ce-tl{position:relative;margin:8px 0 0;padding:0 0 0 28px;list-style:none}
+.ce-tl::before{content:'';position:absolute;left:9px;top:6px;bottom:6px;width:3px;border-radius:3px;background:linear-gradient(180deg,var(--ink2),var(--gold),var(--red))}
+.ce-tl li{position:relative;margin:0 0 16px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.ce-tl li::before{content:'';position:absolute;left:-25px;top:18px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--ink2)}
+.ce-tl li.hot::before{border-color:var(--red)}
+.ce-tl li.home{border-color:#ffd46b;background:#fffaf0}
+.ce-tl li.home::before{border-color:var(--gold);background:var(--gold)}
+.ce-yr{display:inline-block;font-weight:800;color:var(--ink);font-size:18px;margin-right:6px}
+.ce-tl p{margin:2px 0 0!important;font-size:15.5px}
+
+/* commercials */
+.ce-tv{position:relative;max-width:600px;margin-left:auto!important;margin-right:auto!important;border-radius:22px;padding:16px;background:linear-gradient(145deg,#3b2a1c,#20160e);box-shadow:0 16px 36px rgba(0,0,0,.28),inset 0 2px 0 rgba(255,255,255,.08);margin:6px 0 10px}
+.ce-screen{position:relative;border-radius:16px;overflow:hidden;background:#000;aspect-ratio:4/3}
+.ce-screen img,.ce-screen iframe{position:absolute;inset:0;width:100%!important;height:100%!important;object-fit:cover;border:0}
+.ce-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;background:rgba(0,0,0,.25);border:0;cursor:pointer;color:#fff;font:800 16px 'tvl-rc','Radio Canada',sans-serif;letter-spacing:.04em;width:100%}
+.ce-play i{width:78px;height:78px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(226,53,43,.5);transition:transform .2s}
+.ce-play:hover i{transform:scale(1.08)}
+.ce-play i::after{content:'';margin-left:6px;border-left:24px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent}
+.ce-knobs{display:flex;justify-content:space-between;align-items:center;padding:10px 6px 0;color:#c9b59c;font:700 12px 'Courier New',monospace;letter-spacing:.1em}
+.ce-knobs span::before{content:'';display:inline-block;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#d9c7ad,#6d5841);margin-right:6px;vertical-align:middle}
+.ce-tvcap{font-size:14px;color:var(--mut);margin:0 0 18px!important;text-align:center}
+.ce-quote{position:relative;margin:18px 0 22px;padding:22px 22px 18px 26px;border-radius:18px;background:var(--ink);color:#fff}
+.ce-quote p{margin:0!important;font-size:24px;line-height:1.25;font-weight:800}
+.ce-quote p span{color:var(--gold)}
+.ce-quote small{display:block;margin-top:8px;color:#b9c8dc;font-size:13px}
+.ce-reel{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 10px}
+.ce-reel figure{margin:0;border-radius:14px;overflow:hidden;position:relative;background:#000;aspect-ratio:4/3}
+.ce-reel img{width:100%!important;height:100%!important;object-fit:cover;transition:transform .5s}
+.ce-reel figure:hover img{transform:scale(1.06)}
+.ce-reel figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 8px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.8));color:#fff;font-size:12.5px;font-weight:700}
+
+/* scandal */
+.ce-dark{border-radius:22px;padding:24px 22px 8px;background:#0b1220;color:#dbe6f3;position:relative;overflow:hidden}
+.ce-dark::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.025) 0 12px,transparent 12px 24px);pointer-events:none}
+.ce-dark>*{position:relative}
+.ce-dark .ce-h2{color:#fff!important}
+.ce-dark .ce-label{color:var(--gold)}
+.ce-dark a{color:#8ec5ff}
+.ce-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 20px}
+.ce-stat{border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 14px 12px;background:rgba(255,255,255,.04)}
+.ce-stat b{display:block;font-size:30px;line-height:1;color:#fff;font-weight:800}
+.ce-stat small{display:block;margin-top:6px;font-size:13px;color:#b9c8dc;line-height:1.35}
+.ce-tape{display:inline-block;padding:3px 10px;background:var(--gold);color:#111;font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;transform:rotate(-2deg);margin:0 0 10px}
+
+/* memories + share */
+.ce-mem{border-radius:20px;padding:22px;background:linear-gradient(135deg,#eef5ff,#fff);border:1px solid #d6e5fb}
+.ce-mem .ce-h2{font-size:26px!important}
+.ce-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.ce-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:var(--ink2);color:#fff!important;font-weight:800;font-size:15px;text-decoration:none!important;border:0;cursor:pointer;font-family:inherit}
+.ce-btn.alt{background:#fff;color:var(--ink)!important;border:1.5px solid var(--line)}
+.ce-more{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.ce-more a{display:block;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:#fff;color:var(--ink)!important;text-decoration:none!important;transition:transform .2s,box-shadow .2s}
+.ce-more a:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,42,79,.1)}
+.ce-more small{display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+.ce-src{font-size:13px;color:var(--mut)}
+.ce-src a{font-weight:600}
+.ce-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;transition:all .3s;z-index:9999;pointer-events:none}
+.ce-toast.on{opacity:1;transform:translateX(-50%)}
+
+/* reveal */
+.ce.js .ce-rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
+.ce.js .ce-rv.in{opacity:1;transform:none}
+
+@keyframes ceShake{0%,72%,100%{transform:none}74%{transform:rotate(-4deg) scale(1.06)}76%{transform:rotate(4deg) scale(1.08)}78%{transform:rotate(-3deg) scale(1.06)}80%{transform:rotate(2deg)}82%{transform:none}}
+@keyframes ceTrack{0%{top:-20px}100%{top:110%}}
+@keyframes ceBlink{50%{opacity:0}}
+@keyframes ceFlick{0%,96%,100%{filter:saturate(1.15) contrast(1.05)}97%{filter:saturate(1.3) contrast(1.25) brightness(1.15)}98%{filter:saturate(.9)}}
+
+@media(max-width:760px){
+  .ce{font-size:16.5px}
+  .ce-hero{min-height:420px;border-radius:18px}
+  .ce-hin{padding:52px 18px 36px}
+  .ce-local figcaption{position:static;max-width:none;border-radius:0;background:#0b1220;font-size:12px}
+  .ce-h1{font-size:34px!important}
+  .ce-dek{font-size:16px}
+  .ce-h2{font-size:25px!important}
+  .ce-lead{font-size:18px}
+  .ce-tn,.ce-more{grid-template-columns:1fr}
+  .ce-stats{grid-template-columns:1fr 1fr}
+  .ce-reel{grid-template-columns:1fr 1fr}
+  .ce-quote p{font-size:20px}
+  .ce-osd{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){.ce-h1 span,.ce-track,.ce-hbg,.ce-rec::before{animation:none!important}.ce.js .ce-rv{opacity:1;transform:none}}
