@@ -30,4 +30,16 @@ jobs:
           git config user.name "3VL events bot"
           git config user.email "actions@users.noreply.github.com"
           git add weekender/live/events.json weekender/live/ferry.json
-          git diff --cached --quiet || (git commit -m "events: hourly refresh $(date -u +%FT%H:%MZ)" && git pull --rebase -q && git push)
+          git diff --cached --quiet && exit 0
+          git commit -qm "events: hourly refresh $(date -u +%FT%H:%MZ)"
+          # ig-specials.yml also writes events.json: on a rebase conflict rebuild it on top of the latest (with its specials)
+          for i in 1 2 3 4; do
+            if git pull --rebase -q; then git push -q && exit 0
+            else
+              git checkout --theirs weekender/live/events.json && python weekender/live/build_events.py && git add weekender/live/events.json \
+                && GIT_EDITOR=true git rebase --continue && git push -q && exit 0
+              git rebase --abort 2>/dev/null || true
+            fi
+            sleep 10
+          done
+          exit 1
