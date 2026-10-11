@@ -176,10 +176,14 @@ def main():
                         "end": e["end"].isoformat(), "allday": e["allday"], "venue": e["venue"], "addr": e["addr"], "url": e["url"],
                         "desc": e["desc"][:260], "img": e["image"] or (LIB_FRONT if e["src"] == "emmaclark" else ""), "src": e["src"], "tags": tags_for(e), "status": st,
                         "fb": 0 if e["image"] or e["src"] != "emmaclark" else 1})   # fb=1: stand-in photo, never used for Top Things to Do
-    ed = os.path.join(os.path.dirname(HERE), "2026-10-02", "weekend.json")
+    # the NEWEST weekly edition (was hard-wired to 2026-10-02, so a new edition never reached the live feed: 10/11/2026)
+    eds = sorted(x for x in os.listdir(os.path.dirname(HERE)) if re.fullmatch(r"\d{4}-\d{2}-\d{2}", x)
+                 and os.path.exists(os.path.join(os.path.dirname(HERE), x, "weekend.json")))
+    ed_name = eds[-1] if eds else "2026-10-02"
+    ed = os.path.join(os.path.dirname(HERE), ed_name, "weekend.json")
     if os.path.exists(ed):
         W = json.load(open(ed, encoding="utf-8"))
-        base = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-02/"
+        base = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/%s/" % ed_name
         for e in W["events"]:
             v = W["venues"].get(e["venue"], {})
             out.insert(0, {"id": "cur-" + e["id"], "title": e["title"], "start": e["start"], "end": e["end"], "allday": False,
