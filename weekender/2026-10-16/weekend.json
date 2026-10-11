@@ -1,0 +1,376 @@
+{
+ "edition": "2026-10-16",
+ "brand": "The Weekender",
+ "range": "Oct 16-18, 2026",
+ "starts": "2026-10-16T17:00:00-04:00",
+ "ends": "2026-10-18T23:59:00-04:00",
+ "slug": "",
+ "headline": [
+  "Harvest Fest",
+  "& Fall in the Village"
+ ],
+ "dek": "The Harvest Festival takes over Port Jefferson, Stony Brook's firefighters open their doors, and the Music Hall of Fame has two shows. Here's everything worth doing in Three Village this week, updated live.",
+ "hero": {
+  "img": "hero-harvest",
+  "credit": "Port Jefferson Harvest Festival. Photo: Greater Port Jefferson Chamber of Commerce",
+  "alt": "Pumpkins and antique tractors at the Port Jefferson Harvest Festival"
+ },
+ "days": {
+  "fri": "2026-10-16",
+  "sat": "2026-10-17",
+  "sun": "2026-10-18"
+ },
+ "picks": [
+  "filmlim",
+  "harvest",
+  "firehouse",
+  "imaginos",
+  "maidens",
+  "tvfm"
+ ],
+ "venues": {
+  "tvhs": {
+   "name": "Three Village Historical Society",
+   "addr": "93 N. Country Rd, East Setauket",
+   "ll": [
+    40.93391,
+    -73.11775
+   ]
+  },
+  "lim": {
+   "name": "The Long Island Museum",
+   "addr": "1200 Route 25A, Stony Brook",
+   "ll": [
+    40.93029,
+    -73.11519
+   ]
+  },
+  "limehof": {
+   "name": "LI Music & Entertainment Hall of Fame",
+   "addr": "97 Main St, Stony Brook",
+   "ll": [
+    40.91707,
+    -73.1463
+   ]
+  },
+  "sbv": {
+   "name": "Stony Brook Village Center",
+   "addr": "111 Main St, Stony Brook",
+   "ll": [
+    40.91742,
+    -73.14738
+   ]
+  },
+  "sbfd": {
+   "name": "Stony Brook Fire Department",
+   "addr": "147 Main St, Stony Brook",
+   "ll": [
+    40.9188,
+    -73.1442
+   ]
+  },
+  "pjv": {
+   "name": "Port Jefferson Village",
+   "addr": "Port Jefferson",
+   "ll": [
+    40.9465,
+    -73.0693
+   ]
+  },
+  "pas": {
+   "name": "The Performing Arts Studio",
+   "addr": "224 E. Main St, Port Jefferson",
+   "ll": [
+    40.9462,
+    -73.0655
+   ]
+  },
+  "mather": {
+   "name": "Mather House Museum",
+   "addr": "115 Prospect St, Port Jefferson",
+   "ll": [
+    40.9436,
+    -73.0662
+   ]
+  },
+  "theatre3": {
+   "name": "Theatre Three",
+   "addr": "412 Main St, Port Jefferson",
+   "ll": [
+    40.94366,
+    -73.06754
+   ]
+  },
+  "otg": {
+   "name": "Olde Towne Gardens",
+   "addr": "360 Old Town Rd, East Setauket",
+   "ll": [
+    40.91917,
+    -73.0771
+   ]
+  },
+  "eastmain": {
+   "name": "East Main Street",
+   "addr": "East Main St, Port Jefferson",
+   "ll": [
+    40.9463,
+    -73.0663
+   ]
+  }
+ },
+ "events": [
+  {
+   "id": "filmlim",
+   "title": "FILM@LIM: A New York Minute",
+   "start": "2026-10-15T19:00",
+   "end": "2026-10-15T21:00",
+   "page": "https://www.threevillagelocal.com/events/film-lim-a-new-york-minute-shorts-about-nyc",
+   "venue": "lim",
+   "price": "Free",
+   "tags": [
+    "free",
+    "arts"
+   ],
+   "img": "filmlim",
+   "desc": "A free back-to-back screening of short films about New York City, from the Long Island Museum and the Port Jefferson Arts Council, with a guest talk.",
+   "url": "https://longislandmuseum.org/event/a-new-york-minute/",
+   "src": "longislandmuseum.org"
+  },
+  {
+   "id": "tvfm",
+   "title": "Three Village Farmers & Artisans Market",
+   "start": "2026-10-16T15:00",
+   "end": "2026-10-16T18:00",
+   "page": "https://www.threevillagelocal.com/three-village-farmers-market",
+   "venue": "tvhs",
+   "price": "Free",
+   "tags": [
+    "free",
+    "outdoor",
+    "food",
+    "kids"
+   ],
+   "img": "tvfm",
+   "desc": "Farmers, bakers and makers on the historical society lawn, Fridays 3 to 6 PM through Oct. 30.",
+   "url": "https://www.tvhs.org/farmers-market",
+   "src": "tvhs.org"
+  },
+  {
+   "id": "harvest",
+   "title": "Port Jefferson Harvest Festival",
+   "start": "2026-10-17T00:00",
+   "end": "2026-10-18T23:59",
+   "page": "https://www.threevillagelocal.com/events/2026-port-jefferson-harvest-festival",
+   "venue": "pjv",
+   "price": "Activity passes online",
+   "tags": [
+    "outdoor",
+    "kids",
+    "food"
+   ],
+   "img": "harvest",
+   "desc": "The Port Jefferson Chamber's two-day fall festival in the village, with a costumed dog parade Saturday at 12:30 and a pie baking contest Sunday.",
+   "url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-2026/",
+   "src": "portjeffchamber.com",
+   "allday": true
+  },
+  {
+   "id": "firehouse",
+   "title": "Fire Prevention Day & Open House",
+   "start": "2026-10-17T10:00",
+   "end": "2026-10-17T14:00",
+   "page": "https://www.threevillagelocal.com/events/stony-brook-fire-departments-annual-fire-prevention-day-and-open-house",
+   "venue": "sbfd",
+   "price": "Open house",
+   "tags": [
+    "kids",
+    "outdoor"
+   ],
+   "img": "firehouse",
+   "desc": "Meet Stony Brook's firefighters, see live demonstrations and the trucks, and visit vendors from Suffolk County and the Town of Brookhaven.",
+   "url": "https://members.3vchamber.com/event-calendar/Details/stony-brook-fire-department-s-annual-fire-prevention-day-and-open-house-1949588",
+   "src": "3vchamber.com"
+  },
+  {
+   "id": "dogparade",
+   "title": "Harvest Festival Costumed Dog Parade",
+   "start": "2026-10-17T12:30",
+   "end": "2026-10-17T13:00",
+   "page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-costumed-dog-parade",
+   "venue": "pjv",
+   "tags": [
+    "outdoor",
+    "kids"
+   ],
+   "desc": "Dogs in costume parade through the village as part of the Harvest Festival.",
+   "url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-costumed-dog-parade/",
+   "src": "portjeffchamber.com"
+  },
+  {
+   "id": "stinkfoot",
+   "title": "Hugh Stinkfoot and the Spooky Terrible Day!",
+   "start": "2026-10-17T15:00",
+   "end": "2026-10-18T17:00",
+   "page": "https://www.threevillagelocal.com/events/hugh-stinkfoot-and-the-spooky-terrible-day",
+   "venue": "pas",
+   "price": "$5 kids 12 and under, $10 ages 13+",
+   "tags": [
+    "kids",
+    "stage"
+   ],
+   "desc": "A spooky family show at The Performing Arts Studio.",
+   "url": "https://portjeffchamber.com/events-calendar/hugh-stinkfoot-and-the-spooky-terrible-day/",
+   "src": "portjeffchamber.com"
+  },
+  {
+   "id": "imaginos",
+   "title": "Albert Bouchard's Imaginos Band",
+   "start": "2026-10-17T20:00",
+   "end": "2026-10-17T21:00",
+   "page": "https://www.threevillagelocal.com/events/live-performance-by-albert-bouchards-imaginos-band-at-the-long-island-music-and-entertainment-hall-of-fame",
+   "venue": "limehof",
+   "tags": [
+    "music"
+   ],
+   "img": "imaginos",
+   "desc": "A founding member of Blue Oyster Cult plays the Long Island Music & Entertainment Hall of Fame. Doors at 7:30.",
+   "url": "https://stonybrookvillage.com/event/live-performance-by-albert-bouchards-imaginos-band-at-the-long-island-music-and-entertainment-hall-of-fame/",
+   "src": "stonybrookvillage.com"
+  },
+  {
+   "id": "maidens",
+   "title": "Mountain Maidens at the Hall of Fame",
+   "start": "2026-10-18T15:00",
+   "end": "2026-10-18T16:00",
+   "page": "https://www.threevillagelocal.com/events/live-performance-by-mountain-maidens-at-the-long-island-music-and-entertainment-hall-of-fame",
+   "venue": "limehof",
+   "price": "Free",
+   "tags": [
+    "free",
+    "music"
+   ],
+   "img": "maidens",
+   "desc": "Three voices, ancient and modern harmonies: the Mountain Maidens return to the Long Island Music & Entertainment Hall of Fame.",
+   "url": "https://stonybrookvillage.com/event/live-performance-by-mountain-maidens-at-the-long-island-music-and-entertainment-hall-of-fame/",
+   "src": "stonybrookvillage.com"
+  },
+  {
+   "id": "piecontest",
+   "title": "Harvest Festival Pie Baking Contest",
+   "start": "2026-10-18T00:00",
+   "end": "2026-10-18T23:59",
+   "page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-pie-baking-contest",
+   "venue": "pjv",
+   "tags": [
+    "food"
+   ],
+   "desc": "Home bakers enter their pies at the Harvest Festival. Sign up online.",
+   "url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-pie-baking-contest/",
+   "src": "portjeffchamber.com",
+   "allday": true
+  }
+ ],
+ "allweekend": [
+  {
+   "id": "spooky",
+   "title": "Spooky Village at Olde Towne Gardens",
+   "venue": "otg",
+   "when": "Running until Oct. 31",
+   "start": "2026-10-17T00:00",
+   "end": "2026-10-17T23:59",
+   "until": "2026-10-31",
+   "price": "Pay at the gate",
+   "tags": [
+    "kids",
+    "outdoor"
+   ],
+   "desc": "A family Halloween village at a garden center that's been in East Setauket since 1949: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
+   "img": "spooky",
+   "credit": "Photo: Olde Towne Gardens",
+   "url": "https://theoldetownegardens.com/spooky-village/",
+   "member": "olde-towne-gardens"
+  },
+  {
+   "id": "scarecrow",
+   "title": "Stony Brook Village Scarecrows",
+   "venue": "sbv",
+   "when": "Vote through Oct. 25",
+   "start": "2026-10-17T00:00",
+   "end": "2026-10-17T23:59",
+   "until": "2026-10-25",
+   "price": "Free",
+   "tags": [
+    "free",
+    "kids",
+    "outdoor"
+   ],
+   "desc": "The 36th annual scarecrows line Stony Brook Village. Grab a ballot in any shop and vote for your favorite.",
+   "img": "scarecrow",
+   "url": "https://www.threevillagelocal.com/events/scarecrow-competition-opens"
+  },
+  {
+   "id": "cabaret",
+   "title": "Cabaret",
+   "venue": "theatre3",
+   "when": "Through Oct. 25",
+   "start": "2026-10-17T00:00",
+   "end": "2026-10-17T23:59",
+   "until": "2026-10-25",
+   "tags": [
+    "stage"
+   ],
+   "desc": "Theatre Three's mainstage run of the Kander and Ebb classic.",
+   "img": "cabaret",
+   "url": "https://theatrethree.com/mainstage_shows/cabaret/"
+  },
+  {
+   "id": "elephant",
+   "title": "Elephant & Piggie's We Are in a Play!",
+   "venue": "theatre3",
+   "when": "Through Oct. 24",
+   "start": "2026-10-17T00:00",
+   "end": "2026-10-17T23:59",
+   "until": "2026-10-24",
+   "tags": [
+    "kids",
+    "stage"
+   ],
+   "desc": "Mo Willems' best friends in a musical made for first-time theatergoers.",
+   "img": "elephant",
+   "url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/"
+  }
+ ],
+ "specials": [],
+ "next": [
+  {
+   "when": "Sun, Oct. 18",
+   "title": "Cartoons of New York in the Revolution",
+   "desc": "Laugh and learn about the American Revolution in New York through the satirical cartoons of the period, at the Long Island Museum.",
+   "img": "cartoons",
+   "credit": "Image: The Long Island Museum",
+   "page": "https://www.threevillagelocal.com/events/cartoons-of-new-york-in-the-revolution"
+  }
+ ],
+ "trolley": [],
+ "wxbg": {
+  "fri": {
+   "loc": "Stony Brook Village Green",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_1",
+   "photo": "sbvgreen",
+   "credit": "Live cam: Stony Brook Village Center"
+  },
+  "sat": {
+   "loc": "Port Jefferson Harbor",
+   "photo": "pjharbor",
+   "credit": "Photo: Traitor, CC BY-SA 3.0"
+  },
+  "sun": {
+   "loc": "Stony Brook Harbor",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_2",
+   "photo": "sbharbor2",
+   "credit": "Live cam: Stony Brook Village Center"
+  }
+ },
+ "closings": null,
+ "guides": []
+}
