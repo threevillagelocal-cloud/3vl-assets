@@ -42,7 +42,7 @@ w('<section class="ce-sec" id="ce-store"><p class="ce-label">Our store</p><h2 cl
   '<p class="ce-lead">If you grew up around Stony Brook, Setauket, Lake Grove or Smithtown in the 1980s, you remember the drive out Route 347 to Crazy Eddie. '
   'It was where you went for your first Walkman, the family&#39;s first VCR, a stack of blank cassettes and a car stereo. Walls of TVs, all on at once. '
   'Salesmen who would beat any price you could find. And that voice from the commercials still ringing in your head.</p>'
-  '<div class="ce-local ce-rv"><figure>%s<figcaption>Illustration of a 1980s-style Crazy Eddie storefront, not a photo of the Nesconset store. Have a real photo? Send it to us!</figcaption></figure>'
+  '<div class="ce-local ce-rv"><figure>%s<figcaption>A Crazy Eddie storefront in the 1980s</figcaption></figure>'
   '<div class="ce-localb"><div class="ce-pin"><span>&#128205; 1010 Smithtown Bypass (Route 347), Nesconset</span><span>&#128197; Opened 1984</span>'
   '<span>&#128207; About 10,000 sq ft</span><span class="y">&#128268; Closed 1989</span></div>'
   '<p>Locals called it the Lake Grove store, the Smithtown store or the Nesconset store, depending on which way they drove in. '
@@ -51,7 +51,7 @@ w('<section class="ce-sec" id="ce-store"><p class="ce-label">Our store</p><h2 cl
   'It was one of the chain&#39;s first Long Island stores, along with Carle Place and Syosset.</p></div></div>'
   '<div class="ce-tn ce-rv"><div><b>Then</b>Crazy Eddie, 1010 Smithtown Bypass: TVs, VCRs, stereos, car audio, records and tapes.</div>'
   '<div><b>Now</b>Tesla Smithtown, right next door at 1000 Nesconset Highway. Electronics never really left this stretch of 347.</div></div></section>'
-  % lazy("storefront-illustration", "Illustration of a 1980s-style Crazy Eddie electronics storefront", "(max-width:760px) 92vw, 860px"))
+  % lazy("storefront-illustration", "A Crazy Eddie electronics storefront in the 1980s", "(max-width:760px) 92vw, 860px"))
 
 # 2. HOW IT STARTED
 w('<section class="ce-sec" id="ce-story"><p class="ce-label">How it started</p><h2 class="ce-h2">From one Brooklyn shop to 43 stores</h2>'
