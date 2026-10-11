@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-11T14:02:03.207115+00:00",
+"updated": "2026-10-11T14:07:13.955997+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -829,7 +829,7 @@
 "title": "Port Jefferson Harvest Festival",
 "start": "2026-10-17T00:00",
 "end": "2026-10-18T23:59",
-"allday": false,
+"allday": true,
 "venue": "Port Jefferson Village",
 "addr": "Port Jefferson",
 "url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-2026/",
@@ -1143,7 +1143,7 @@
 "title": "Harvest Festival Pie Baking Contest",
 "start": "2026-10-18T00:00",
 "end": "2026-10-18T23:59",
-"allday": false,
+"allday": true,
 "venue": "Port Jefferson Village",
 "addr": "Port Jefferson",
 "url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-pie-baking-contest/",
@@ -2022,7 +2022,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-11T14:01:19+00:00",
+"checked": "2026-10-11T14:06:32+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
