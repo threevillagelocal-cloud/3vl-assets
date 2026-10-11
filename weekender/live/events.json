@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-11T02:01:41.971647+00:00",
+"updated": "2026-10-11T08:41:20.609789+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -10,7 +10,7 @@
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
-"LI Music Hall of Fame": "error: <urlopen error timed out>"
+"LI Music Hall of Fame": 4
 },
 "icons": {
 "kids": "&#129490;",
@@ -1940,18 +1940,18 @@
 "page": "https://www.threevillagelocal.com/burgerology"
 },
 {
-"id": "wd-eat.namkeen-20261010",
+"id": "wd-eat.namkeen-20261011",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Late Night Saturday: 15% off",
-"when": "Today, Saturday",
-"desc": "15% off your entire order after 8 PM. Dine-in only.",
-"expires": "2026-10-10",
-"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
+"title": "Sunday Feast: 15% off",
+"when": "Today, Sunday",
+"desc": "15% off all meals every Sunday. Dine-in only.",
+"expires": "2026-10-11",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp",
 "url": "",
 "page": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 }
@@ -1992,18 +1992,18 @@
 "page": "https://www.threevillagelocal.com/tommys-place"
 },
 {
-"id": "wd-eat.namkeen-20261010",
+"id": "wd-eat.namkeen-20261011",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Late Night Saturday: 15% off",
-"when": "Today, Saturday",
-"desc": "15% off your entire order after 8 PM. Dine-in only.",
-"expires": "2026-10-10",
-"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
+"title": "Sunday Feast: 15% off",
+"when": "Today, Sunday",
+"desc": "15% off all meals every Sunday. Dine-in only.",
+"expires": "2026-10-11",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp",
 "url": "",
 "page": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
@@ -2432,7 +2432,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-11T02:00:13+00:00",
+"checked": "2026-10-11T08:40:35+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
