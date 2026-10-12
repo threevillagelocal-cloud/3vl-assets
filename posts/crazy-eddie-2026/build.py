@@ -119,9 +119,9 @@ w('<section class="ce-sec" id="ce-today"><p class="ce-label">The spot today</p><
 w('<section class="ce-sec" id="ce-mem"><div class="ce-mem ce-rv"><p class="ce-label">Your turn</p><h2 class="ce-h2">Did you shop at the Crazy Eddie on 347?</h2>'
   '<p>Did you buy your first VCR there, get a car stereo put in, or work the sales floor? We&#39;d love to hear your memories, and we&#39;re especially looking for a '
   '<b>real photo of the Nesconset store</b> to add to this story.</p>'
-  '<div class="ce-btns"><a class="ce-btn" href="mailto:hello@threevillagelocal.com?subject=My%%20Crazy%%20Eddie%%20memory">&#9993;&#65039; Share a memory or photo</a>'
+  '<div class="ce-btns"><a class="ce-btn" href="mailto:hello@threevillagelocal.com?subject=My%20Crazy%20Eddie%20memory">&#9993;&#65039; Share a memory or photo</a>'
   '<button type="button" class="ce-btn alt" data-share>&#128279; Send this to a friend</button></div></div>'
-  '<div class="ce-more"><a href="https://www.threevillagelocal.com/blog/a-three-village-throwback-cooky%%E2%%80%%99s-steak-pub-in-stony-brook"><small>Another throwback</small>Cooky&#39;s Steak Pub in Stony Brook</a>'
+  '<div class="ce-more"><a href="https://www.threevillagelocal.com/blog/a-three-village-throwback-cooky%E2%80%99s-steak-pub-in-stony-brook"><small>Another throwback</small>Cooky&#39;s Steak Pub in Stony Brook</a>'
   '<a href="https://www.threevillagelocal.com/blog"><small>Local stories</small>More from Three Village Local</a></div></section>')
 
 w('<p class="ce-src">Sources: Crazy Eddie, Inc. annual reports (1985, 1986, 1988) and 1984 IPO prospectus, via Sam E. Antar&#39;s <a href="https://whitecollarfraud.com/crazy-eddie/the-fall-of-crazy-eddie/" rel="nofollow">whitecollarfraud.com</a>; '
