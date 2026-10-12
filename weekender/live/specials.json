@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T15:00:16.881732+00:00",
+ "updated": "2026-10-12T19:00:11.649039+00:00",
  "specials": [
   {
    "id": "18099322592380488",
@@ -82,20 +82,20 @@
    "inset": "ig/p17887275831653267.jpg"
   },
   {
-   "id": "17900498451602344",
+   "id": "18078461687547213",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
    "town": "Stony Brook",
    "category": "Restaurant",
    "member": false,
-   "title": "Boozy Pumpkin Spice Latte",
-   "when": "Available now",
-   "desc": "Burgerology's boozy take on PSL is available at all locations this fall season.",
-   "expires": "2026-11-11",
-   "posted": "2026-10-11T19:39:17+0000",
-   "url": "https://www.instagram.com/p/DeXbPIHuo1v/",
+   "title": "Open Interviews at Burgerology Patchogue",
+   "when": "Wed & Thu, Oct 14–15 · 10:30 AM–8 PM",
+   "desc": "All positions hiring. No appointment needed—bring your resume to 76 W Main St., Patchogue.",
+   "expires": "2026-10-15",
+   "posted": "2026-10-12T15:16:44+0000",
+   "url": "https://www.instagram.com/p/DeZiBbnRoxq/",
    "img": "",
-   "inset": "ig/p17900498451602344.jpg"
+   "inset": "ig/p18078461687547213.jpg"
   }
  ],
  "candidates": [
@@ -180,20 +180,20 @@
    "inset": "ig/p17887275831653267.jpg"
   },
   {
-   "id": "17900498451602344",
+   "id": "18078461687547213",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
    "town": "Stony Brook",
    "category": "Restaurant",
    "member": false,
-   "title": "Boozy Pumpkin Spice Latte",
-   "when": "Available now",
-   "desc": "Burgerology's boozy take on PSL is available at all locations this fall season.",
-   "expires": "2026-11-11",
-   "posted": "2026-10-11T19:39:17+0000",
-   "url": "https://www.instagram.com/p/DeXbPIHuo1v/",
+   "title": "Open Interviews at Burgerology Patchogue",
+   "when": "Wed & Thu, Oct 14–15 · 10:30 AM–8 PM",
+   "desc": "All positions hiring. No appointment needed—bring your resume to 76 W Main St., Patchogue.",
+   "expires": "2026-10-15",
+   "posted": "2026-10-12T15:16:44+0000",
+   "url": "https://www.instagram.com/p/DeZiBbnRoxq/",
    "img": "",
-   "inset": "ig/p17900498451602344.jpg"
+   "inset": "ig/p18078461687547213.jpg"
   }
  ],
  "all": [
@@ -294,6 +294,22 @@
    "inset": "ig/p17887275831653267.jpg"
   },
   {
+   "id": "18078461687547213",
+   "biz": "Burgerology",
+   "ig": "burgerologyusa",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Open Interviews at Burgerology Patchogue",
+   "when": "Wed & Thu, Oct 14–15 · 10:30 AM–8 PM",
+   "desc": "All positions hiring. No appointment needed—bring your resume to 76 W Main St., Patchogue.",
+   "expires": "2026-10-15",
+   "posted": "2026-10-12T15:16:44+0000",
+   "url": "https://www.instagram.com/p/DeZiBbnRoxq/",
+   "img": "",
+   "inset": "ig/p18078461687547213.jpg"
+  },
+  {
    "id": "17900498451602344",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
@@ -308,22 +324,6 @@
    "url": "https://www.instagram.com/p/DeXbPIHuo1v/",
    "img": "",
    "inset": "ig/p17900498451602344.jpg"
-  },
-  {
-   "id": "17959059378221185",
-   "biz": "Burgerology",
-   "ig": "burgerologyusa",
-   "town": "Stony Brook",
-   "category": "Restaurant",
-   "member": false,
-   "title": "50% Off Appetizers - Game Day Special",
-   "when": "This week",
-   "desc": "Bring your Season Pass and get 50% off any appetizer during this week's games at Burgerology.",
-   "expires": "2026-10-14",
-   "posted": "2026-10-08T16:25:06+0000",
-   "url": "https://www.instagram.com/reel/DePW7OMt_KS/",
-   "img": "",
-   "inset": "ig/p17959059378221185.jpg"
   },
   {
    "id": "18121416112857675",
@@ -420,6 +420,22 @@
    "url": "https://www.instagram.com/p/DeQSB96DCN1/",
    "img": "",
    "inset": "ig/p18184440502420219.jpg"
+  },
+  {
+   "id": "18137250499725845",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Happy Hour at Castaways",
+   "when": "Today, Oct. 12 · 4-6 PM",
+   "desc": "Happy hour at the inside bar, high tops, and lounge Monday 4-6 PM.",
+   "expires": "2026-10-12",
+   "posted": "2026-10-12T16:00:52+0000",
+   "url": "https://www.instagram.com/p/DeZnRgTirBU/",
+   "img": "",
+   "inset": "ig/p18137250499725845.jpg"
   },
   {
    "id": "18028678862857521",

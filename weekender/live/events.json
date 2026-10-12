@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-12T19:01:20.486429+00:00",
+"updated": "2026-10-12T19:02:55.624359+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -1398,20 +1398,20 @@
 "closings": [],
 "specials": [
 {
-"id": "17900498451602344",
+"id": "18078461687547213",
 "biz": "Burgerology",
 "ig": "burgerologyusa",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": false,
-"title": "Boozy Pumpkin Spice Latte",
-"when": "Available now",
-"desc": "Burgerology's boozy take on PSL is available at all locations this fall season.",
-"expires": "2026-11-11",
-"posted": "2026-10-11T19:39:17+0000",
-"url": "https://www.instagram.com/p/DeXbPIHuo1v/",
+"title": "Open Interviews at Burgerology Patchogue",
+"when": "Wed & Thu, Oct 14–15 · 10:30 AM–8 PM",
+"desc": "All positions hiring. No appointment needed—bring your resume to 76 W Main St., Patchogue.",
+"expires": "2026-10-15",
+"posted": "2026-10-12T15:16:44+0000",
+"url": "https://www.instagram.com/p/DeZiBbnRoxq/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17900498451602344.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18078461687547213.jpg",
 "page": "https://www.threevillagelocal.com/burgerology"
 },
 {
@@ -1502,6 +1502,23 @@
 ],
 "specialsAll": [
 {
+"id": "18078461687547213",
+"biz": "Burgerology",
+"ig": "burgerologyusa",
+"town": "Stony Brook",
+"category": "Restaurant",
+"member": false,
+"title": "Open Interviews at Burgerology Patchogue",
+"when": "Wed & Thu, Oct 14–15 · 10:30 AM–8 PM",
+"desc": "All positions hiring. No appointment needed—bring your resume to 76 W Main St., Patchogue.",
+"expires": "2026-10-15",
+"posted": "2026-10-12T15:16:44+0000",
+"url": "https://www.instagram.com/p/DeZiBbnRoxq/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18078461687547213.jpg",
+"page": "https://www.threevillagelocal.com/burgerology"
+},
+{
 "id": "17900498451602344",
 "biz": "Burgerology",
 "ig": "burgerologyusa",
@@ -1516,23 +1533,6 @@
 "url": "https://www.instagram.com/p/DeXbPIHuo1v/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17900498451602344.jpg",
-"page": "https://www.threevillagelocal.com/burgerology"
-},
-{
-"id": "17959059378221185",
-"biz": "Burgerology",
-"ig": "burgerologyusa",
-"town": "Stony Brook",
-"category": "Restaurant",
-"member": false,
-"title": "50% Off Appetizers - Game Day Special",
-"when": "This week",
-"desc": "Bring your Season Pass and get 50% off any appetizer during this week's games at Burgerology.",
-"expires": "2026-10-14",
-"posted": "2026-10-08T16:25:06+0000",
-"url": "https://www.instagram.com/reel/DePW7OMt_KS/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17959059378221185.jpg",
 "page": "https://www.threevillagelocal.com/burgerology"
 },
 {
@@ -1636,6 +1636,23 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18184440502420219.jpg",
 "page": "https://www.threevillagelocal.com/nantuckets"
+},
+{
+"id": "18137250499725845",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Happy Hour at Castaways",
+"when": "Today, Oct. 12 · 4-6 PM",
+"desc": "Happy hour at the inside bar, high tops, and lounge Monday 4-6 PM.",
+"expires": "2026-10-12",
+"posted": "2026-10-12T16:00:52+0000",
+"url": "https://www.instagram.com/p/DeZnRgTirBU/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18137250499725845.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood"
 },
 {
 "id": "18028678862857521",
