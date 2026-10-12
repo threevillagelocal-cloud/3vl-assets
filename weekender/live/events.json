@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-12T15:02:43.823595+00:00",
+"updated": "2026-10-12T15:07:10.794430+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -1827,23 +1827,6 @@
 "page": "https://www.threevillagelocal.com/kilwins-port-jefferson"
 },
 {
-"id": "18430460974157157",
-"biz": "Kilwins Port Jefferson",
-"ig": "kilwins_port_jeff",
-"town": "Port Jefferson",
-"category": "Chocolate/Ice Cream",
-"member": false,
-"title": "New Pumpkin Treats at Kilwins",
-"when": "Now through fall season",
-"desc": "Try new Pumpkin Shake and Pumpkin Spice Fudge, plus Pumpkin Pie Ice Cream made with real pumpkin.",
-"expires": "2026-11-30",
-"posted": "2026-10-05T13:40:33+0000",
-"url": "https://www.instagram.com/p/DeHVnkYDHbV/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18430460974157157.jpg",
-"page": "https://www.threevillagelocal.com/kilwins-port-jefferson"
-},
-{
 "id": "18099322592380488",
 "biz": "Culpers 1778",
 "ig": "culpers1778",
@@ -1911,20 +1894,20 @@
 "page": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
 {
-"id": "18128984891490777",
+"id": "18038377886838371",
 "biz": "Madiran The Wine Bar",
 "ig": "madiranthewinebar_eastsetauket",
 "town": "East Setauket",
 "category": "Wine Bar",
 "member": false,
-"title": "Jazz Performance at Madiran",
-"when": "Tue, Oct. 13 · 7-9 PM",
-"desc": "Mind blowing jazz with Dave Lobenstein, John Marshall, and Steve Salerno performing live.",
-"expires": "2026-10-13",
-"posted": "2026-10-08T16:24:18+0000",
-"url": "https://www.instagram.com/p/DePWf0PCezl/",
+"title": "Live Music: Al Marino, James Miceli & Jerry Mac",
+"when": "Wed, Oct. 12 · 7-9 PM",
+"desc": "Al Marino on guitar, James Miceli on sax, and Jerry Mac on bass perform tonight.",
+"expires": "2026-10-12",
+"posted": "2026-10-12T13:07:30+0000",
+"url": "https://www.instagram.com/p/DeZTXg2Cm3H/",
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18128984891490777.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18038377886838371.jpg",
 "page": "https://www.threevillagelocal.com/madiran-the-wine-bar"
 },
 {
