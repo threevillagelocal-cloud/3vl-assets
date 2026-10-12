@@ -6,7 +6,7 @@ from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
 SPECIALS = {(8, 0), (11, 0), (15, 0)}          # Instagram specials refresh (ET)
-TICK_FROM, TICK_TO = (7, 0), (22, 0)           # site guard every 30 min in this window (ET), inclusive
+TICK_FROM, TICK_TO = (6, 30), (22, 0)          # site guard every 30 min in this window (ET), inclusive; 6:30 = fresh data before the 7:05 briefing
 RUN_FOR = 5 * 3600 + 35 * 60                   # leave room under the 355-minute job limit
 REPO = os.environ.get("GITHUB_REPOSITORY", "threevillagelocal-cloud/3vl-assets")
 GUARD = "/tmp/guard"
