@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-12T14:31:20.222553+00:00",
+"updated": "2026-10-12T15:02:43.823595+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 216,
-"Emma S. Clark Library": 311,
+"Emma S. Clark Library": 310,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
@@ -61,25 +61,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
-{
-"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-58874",
-"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
-"start": "2026-10-12T10:30:00",
-"end": "2026-10-12T11:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-58874",
-"desc": "Themed activities that you and your child can enjoy together.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-344"
 },
 {
 "id": "emmaclark-preschool-storytime-ages-35-5-yrs-58884",
@@ -2031,7 +2012,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-12T14:30:18+00:00",
+"checked": "2026-10-12T15:00:18+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
