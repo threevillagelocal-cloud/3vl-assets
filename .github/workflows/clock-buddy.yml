@@ -1,0 +1,27 @@
+name: 3VL clock buddy
+
+# Runs next to the 3VL clock and restarts it within 5 min if GitHub kills it (see weekender/live/buddy.py).
+# The clock restarts the buddy on every tick, so either one can bring the other back. Public repo = free minutes.
+on:
+  schedule:
+    - cron: "37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: clock-buddy
+  cancel-in-progress: false
+
+jobs:
+  buddy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - name: Watch the clock
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 weekender/live/buddy.py

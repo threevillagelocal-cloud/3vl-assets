@@ -3,6 +3,7 @@ Sleeps until each event, fires it, and before the job's time limit starts a fres
     python3 weekender/live/clock.py [--plan]   (--plan prints the next 24 hours of events and exits)"""
 import datetime as dt, os, subprocess, sys, time
 from zoneinfo import ZoneInfo
+from buddy import ensure                       # the buddy restarts this clock if GitHub kills it; the clock restarts the buddy
 
 ET = ZoneInfo("America/New_York")
 SPECIALS = {(8, 0), (11, 0), (15, 0)}          # Instagram specials refresh (ET)
@@ -79,6 +80,7 @@ def main():
         return
     start = time.time()
     catch_up(dt.datetime.now(ET))
+    ensure("clock-buddy.yml")
     while True:
         at, acts = events_after(dt.datetime.now(ET))
         if at.timestamp() - start > RUN_FOR:      # next event is past this run's lifetime (overnight): wait out the run, then hand over
@@ -91,6 +93,7 @@ def main():
         if "tick" in acts:
             tick(now)
             sh("gh workflow run events-live.yml -R %s" % REPO, check=True)   # events feed + Port Jefferson Ferry alerts every 30 min
+            ensure("clock-buddy.yml")
     if time.time() - start < 600:                  # safety: never restart in a tight loop; the hourly cron picks it up
         print("run ended after %d s: not restarting" % (time.time() - start)); return
     r = sh("gh workflow run clock.yml -R %s" % REPO, check=True)
