@@ -2662,5 +2662,49 @@
 "desc": "Try the Quinoa Parfait with yogurt, toasted quinoa, berries, coconut and honey.",
 "expires": "2026-10-12",
 "_ts": "2026-10-11T15:01:28+0000"
+},
+"18642589981024887": {
+"special": false,
+"title": "Saintsbury Pratt Vineyard Pinot Noir",
+"when": "Not specified",
+"desc": "Wine feature post showcasing a 2021 Sonoma Coast Pinot Noir with music reference.",
+"expires": "2026-10-12",
+"_ts": "2026-10-12T01:57:51+0000"
+},
+"18130391350827520": {
+"special": false,
+"title": "Premium Pour: Morgan Twelve Clones Pinot Noir",
+"when": "Ongoing",
+"desc": "Featured wine pour at $25/6oz with pairing suggestions including burrata risotto and pumpkin ravioli.",
+"expires": "2026-10-12",
+"_ts": "2026-10-11T19:50:56+0000"
+},
+"18117802858952870": {
+"special": true,
+"title": "Wicked Wrap & Limited-Time Specials",
+"when": "While available",
+"desc": "Fried chicken, mozzarella, fried jalapeños, lettuce, tomato & chipotle sauce in spinach tortilla with fries.",
+"expires": "2026-10-26",
+"_ts": "2026-10-11T19:43:15+0000"
+},
+"17900498451602344": {
+"special": true,
+"title": "Boozy Pumpkin Spice Latte",
+"when": "Available now",
+"desc": "Burgerology's boozy take on PSL is available at all locations this fall season.",
+"expires": "2026-11-11",
+"_ts": "2026-10-11T19:39:17+0000"
+},
+"18336531259273312": {
+"special": false,
+"_ts": "2026-10-11T19:16:37+0000"
+},
+"17912012589519209": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-11T19:13:52+0000"
 }
 }

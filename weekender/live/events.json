@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-12T12:00:46.454638+00:00",
+"updated": "2026-10-12T12:02:55.204970+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -10,7 +10,7 @@
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
-"LI Music Hall of Fame": "error: HTTP Error 500: Internal Server Error"
+"LI Music Hall of Fame": 4
 },
 "icons": {
 "kids": "&#129490;",
@@ -1436,20 +1436,20 @@
 "closings": [],
 "specials": [
 {
-"id": "17959059378221185",
+"id": "17900498451602344",
 "biz": "Burgerology",
 "ig": "burgerologyusa",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": false,
-"title": "50% Off Appetizers - Game Day Special",
-"when": "This week",
-"desc": "Bring your Season Pass and get 50% off any appetizer during this week's games at Burgerology.",
-"expires": "2026-10-14",
-"posted": "2026-10-08T16:25:06+0000",
-"url": "https://www.instagram.com/reel/DePW7OMt_KS/",
+"title": "Boozy Pumpkin Spice Latte",
+"when": "Available now",
+"desc": "Burgerology's boozy take on PSL is available at all locations this fall season.",
+"expires": "2026-11-11",
+"posted": "2026-10-11T19:39:17+0000",
+"url": "https://www.instagram.com/p/DeXbPIHuo1v/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17959059378221185.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17900498451602344.jpg",
 "page": "https://www.threevillagelocal.com/burgerology"
 },
 {
@@ -1540,6 +1540,23 @@
 ],
 "specialsAll": [
 {
+"id": "17900498451602344",
+"biz": "Burgerology",
+"ig": "burgerologyusa",
+"town": "Stony Brook",
+"category": "Restaurant",
+"member": false,
+"title": "Boozy Pumpkin Spice Latte",
+"when": "Available now",
+"desc": "Burgerology's boozy take on PSL is available at all locations this fall season.",
+"expires": "2026-11-11",
+"posted": "2026-10-11T19:39:17+0000",
+"url": "https://www.instagram.com/p/DeXbPIHuo1v/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17900498451602344.jpg",
+"page": "https://www.threevillagelocal.com/burgerology"
+},
+{
 "id": "17959059378221185",
 "biz": "Burgerology",
 "ig": "burgerologyusa",
@@ -1605,23 +1622,6 @@
 "url": "https://www.instagram.com/p/DeSgrwJynM-/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17959248594011698.jpg",
-"page": "https://www.threevillagelocal.com/po-boy-brewery"
-},
-{
-"id": "17933421897147765",
-"biz": "Po' Boy Brewery",
-"ig": "poboybeerandcider",
-"town": "Port Jefferson Station",
-"category": "Brewery/Cidery",
-"member": false,
-"title": "Paranormal Tuesdays",
-"when": "Every Tuesday",
-"desc": "Paranormal Tuesdays event begins this week at Po' Boy Brewery.",
-"expires": "2026-10-12",
-"posted": "2026-10-04T19:19:26+0000",
-"url": "https://www.instagram.com/p/DeFXpi5yjuX/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17933421897147765.jpg",
 "page": "https://www.threevillagelocal.com/po-boy-brewery"
 },
 {
@@ -1878,6 +1878,23 @@
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18099322592380488.jpg",
 "page": "https://www.threevillagelocal.com/culpers-1778"
+},
+{
+"id": "18117802858952870",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Wicked Wrap & Limited-Time Specials",
+"when": "While available",
+"desc": "Fried chicken, mozzarella, fried jalapeños, lettuce, tomato & chipotle sauce in spinach tortilla with fries.",
+"expires": "2026-10-26",
+"posted": "2026-10-11T19:43:15+0000",
+"url": "https://www.instagram.com/p/DeXb8kOGifk/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18117802858952870.jpg",
+"page": "https://www.threevillagelocal.com/tommys-place"
 },
 {
 "id": "18190137262400311",
