@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-12T21:01:09.919271+00:00",
+"updated": "2026-10-12T23:01:05.481869+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -1937,7 +1937,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-12T21:00:16+00:00",
+"checked": "2026-10-12T23:00:14+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
