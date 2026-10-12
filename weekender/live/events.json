@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-12T11:00:54.257250+00:00",
+"updated": "2026-10-12T11:30:47.573448+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -10,7 +10,7 @@
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
-"LI Music Hall of Fame": "error: HTTP Error 500: Internal Server Error"
+"LI Music Hall of Fame": 4
 },
 "icons": {
 "kids": "&#129490;",
@@ -2014,7 +2014,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-12T11:00:13+00:00",
+"checked": "2026-10-12T11:30:14+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
