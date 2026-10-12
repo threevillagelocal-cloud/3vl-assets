@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-12T15:31:14.390206+00:00",
+"updated": "2026-10-12T16:01:05.163046+00:00",
 "counts": {
 "Three Village Chamber": 5,
-"Port Jefferson Chamber": 36,
+"Port Jefferson Chamber": 0,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 216,
-"Emma S. Clark Library": 310,
+"Emma S. Clark Library": 309,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
@@ -23,64 +23,6 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
-{
-"id": "pjchamber-14726",
-"title": "2026 Port Jefferson Scarecrow Walk",
-"start": "2026-10-05T00:00:00",
-"end": "2026-11-02T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
-"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd! var...",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
-},
-{
-"id": "pjchamber-14181",
-"title": "2026 Port Jeff Self-Guided Fall Art Walk",
-"start": "2026-10-09T00:00:00",
-"end": "2026-11-06T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
-{
-"id": "emmaclark-preschool-storytime-ages-35-5-yrs-58884",
-"title": "PreSchool Storytime Ages 3.5- 5 yrs",
-"start": "2026-10-12T11:30:00",
-"end": "2026-10-12T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-58884",
-"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence. We'll share lively stories & crafts that spark imagination, build early literacy skills & bring lots of smiles and giggles!",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-345"
-},
 {
 "id": "emmaclark-fall-fun-day-families-w-children-ages-3-11-yrs-59718",
 "title": "Fall Fun Day (Families w/ Children Ages 3-11 yrs.)",
@@ -480,25 +422,6 @@
 "page": "https://www.threevillagelocal.com/events/colonial-tavern-tasting-at-the-three-village-inn"
 },
 {
-"id": "pjchamber-14950",
-"title": "EmpowerHER",
-"start": "2026-10-15T18:30:00",
-"end": "2026-10-15T20:00:00",
-"allday": false,
-"venue": "the meadow club",
-"addr": "1147 Route 112, Port Jefferson Station, NY, 11776",
-"url": "https://portjeffchamber.com/events-calendar/empowerher/",
-"desc": "Join Mather Hospital for a program on women’s health issues, presented by members of the Katz Institute for Women’s Health Conquering heart and metabolic challenges in menopause- Kristen O’Brien, MD Decoding your menopausal mind: A toolkit for emotional resili",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/empowerher"
-},
-{
 "id": "cur-filmlim",
 "title": "FILM@LIM: A New York Minute",
 "start": "2026-10-15T19:00",
@@ -886,25 +809,6 @@
 "page": "https://www.threevillagelocal.com/events/ai-basics-an-introduction-to-artificial-intelligence-382"
 },
 {
-"id": "pjchamber-14966",
-"title": "Basket Raffles – First Presbyterian Church of Port Jefferson",
-"start": "2026-10-17T13:30:00",
-"end": "2026-10-17T15:30:00",
-"allday": false,
-"venue": "Coram Fire Department",
-"addr": "303 Middle Country Road, Coram, NY, 11727",
-"url": "https://portjeffchamber.com/events-calendar/basket-raffles-first-presbyterian-church-of-port-jefferson/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/basket-raffles-first-presbyterian-church-of-port-jefferson"
-},
-{
 "id": "lim-3225310",
 "title": "Special Screening of “Walk with Frank”with Frank Romeo",
 "start": "2026-10-17T13:30:00",
@@ -1260,7 +1164,7 @@
 "venue": "Holiday Inn Express Stony Brook",
 "addr": "3131 Nesconset Highway, Centereach, NY 11720",
 "url": "https://members.3vchamber.com/event-calendar/Details/meet-the-candidates-for-the-november-election-1926284",
-"desc": "",
+"desc": "registration begins at 11:30. Program begins at noon.",
 "img": "",
 "src": "3vchamber",
 "tags": [
@@ -1995,7 +1899,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-12T15:30:15+00:00",
+"checked": "2026-10-12T16:00:13+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
