@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-12T19:02:55.624359+00:00",
+"updated": "2026-10-12T21:01:09.919271+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 216,
-"Emma S. Clark Library": 309,
+"Emma S. Clark Library": 306,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 3,
@@ -61,62 +61,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
-{
-"id": "emmaclark-fall-fun-day-families-w-children-ages-3-11-yrs-59718",
-"title": "Fall Fun Day (Families w/ Children Ages 3-11 yrs.)",
-"start": "2026-10-12T14:30:00",
-"end": "2026-10-12T16:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/fall-fun-day-families-w-children-ages-3-11-yrs-59718",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-08/Fall%20Fun%20Day%202026.png",
-"src": "emmaclark",
-"tags": [
-"arts",
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/fall-fun-day-families-w-children-ages-3-11-yrs"
-},
-{
-"id": "emmaclark-volunteer-hobbs-farm-59563",
-"title": "Volunteer at Hobbs Farm",
-"start": "2026-10-12T15:00:00",
-"end": "2026-10-12T17:00:00",
-"allday": false,
-"venue": "Off site (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/volunteer-hobbs-farm-59563",
-"desc": "This program is taking place offsite, not in the Library. If minors are attending the program, a parent/guardian who is 18 years old or older must stay with the minor at all times. Minors are not allowed to be dropped off at offsite programs without a parent/g",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-05/000561-0067-000054.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/volunteer-at-hobbs-farm"
-},
-{
-"id": "emmaclark-volunteer-hobbs-farm-community-service-grades-3-5-58125",
-"title": "Volunteer at Hobbs Farm for Community Service (Grades 3-5)",
-"start": "2026-10-12T15:00:00",
-"end": "2026-10-12T17:00:00",
-"allday": false,
-"venue": "Off site (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/volunteer-hobbs-farm-community-service-grades-3-5-58125",
-"desc": "This program is taking place offsite, not in the Library. If minors are attending the program, a parent/guardian who is 18 years old or older must stay with the minor at all times. Minors are not allowed to be dropped off at offsite programs without a parent/g",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-07/CommunityServiceNew_3.png",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/volunteer-at-hobbs-farm-for-community-service-grades-3-5"
 },
 {
 "id": "lim-10000285",
@@ -1993,7 +1937,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-12T19:00:14+00:00",
+"checked": "2026-10-12T21:00:16+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
