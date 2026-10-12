@@ -42,6 +42,13 @@ def specials():
     print("specials started" if r.returncode == 0 else "specials could not start")
 
 
+def guard_due(now):
+    """Owner 10/12/2026 (GitHub minutes): site guard, watchdog and the events/ferry feed run every 2 hours, not every 30 min.
+    6:30 AM (fresh data for the 7:05 briefing), then 9, 11 AM, 1, 3, 5, 7, 9 PM ET."""
+    hm = (now.hour, now.minute)
+    return hm == (6, 30) or (now.minute == 0 and now.hour % 2 == 1 and 9 <= now.hour <= 21)
+
+
 def tick(now):
     if not os.path.isdir(GUARD):
         sh("git clone -q --depth 1 git@github.com:threevillagelocal-cloud/3vl-site-guard.git %s" % GUARD, check=True)
@@ -91,8 +98,9 @@ def main():
         if "specials" in acts:
             specials()
         if "tick" in acts:
-            tick(now)
-            sh("gh workflow run events-live.yml -R %s" % REPO, check=True)   # events feed + Port Jefferson Ferry alerts every 30 min
+            if guard_due(now):   # owner 10/12/2026: site guard, watchdog AND events/ferry feed every 2 hours
+                tick(now)
+                sh("gh workflow run events-live.yml -R %s" % REPO, check=True)   # events feed + Port Jefferson Ferry alerts
             ensure("clock-buddy.yml")
     if time.time() - start < 600:                  # safety: never restart in a tight loop; the hourly cron picks it up
         print("run ended after %d s: not restarting" % (time.time() - start)); return
