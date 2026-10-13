@@ -1,0 +1,59 @@
+{
+ "when": "2026-10-13T22:37:03+00:00",
+ "flagged": [],
+ "nights": [
+  {
+   "when": "2026-10-13T22:37:03+00:00",
+   "pages": {
+    "https://www.threevillagelocal.com/": {
+     "score": 67,
+     "lcp": 4.9,
+     "tbt": 590,
+     "mb": 2.44
+    },
+    "https://www.threevillagelocal.com/this-weekend": {
+     "score": 94,
+     "lcp": 1.4,
+     "tbt": 256,
+     "mb": 1.9
+    },
+    "https://www.threevillagelocal.com/categories": {
+     "score": 70,
+     "lcp": 5.2,
+     "tbt": 238,
+     "mb": 1.38
+    },
+    "https://coltrain.com/": {
+     "score": 39,
+     "lcp": 17.1,
+     "tbt": 895,
+     "mb": 2.35
+    },
+    "https://coltrain.com/heloc": {
+     "score": 44,
+     "lcp": 15.3,
+     "tbt": 592,
+     "mb": 2.06
+    },
+    "https://coltrain.com/expressequity": {
+     "score": 95,
+     "lcp": 1.9,
+     "tbt": 220,
+     "mb": 0.83
+    },
+    "https://www.sbna-li.com/": {
+     "score": 100,
+     "lcp": 1.1,
+     "tbt": 24,
+     "mb": 3.38
+    },
+    "https://www.sbna-li.com/guest": {
+     "score": 100,
+     "lcp": 1.1,
+     "tbt": 32,
+     "mb": 0.44
+    }
+   }
+  }
+ ]
+}
