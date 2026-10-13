@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-13T21:01:09.651847+00:00",
+"updated": "2026-10-13T22:37:54.042730+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -1872,8 +1872,15 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-13T21:00:19+00:00",
-"alerts": [],
+"checked": "2026-10-13T22:36:54+00:00",
+"alerts": [
+{
+"title": "PT Barnum Elevator Out of Service",
+"text": "At this time the PT Barnum's elevator is under repair, more info and affected departures available by clicking below.",
+"link": "/info/elevator-alert",
+"published": "2026-10-13T22:10:29.201Z"
+}
+],
 "cancellations": true,
 "url": "https://www.88844ferry.com/schedule"
 }
