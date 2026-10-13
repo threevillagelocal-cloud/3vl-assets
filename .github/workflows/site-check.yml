@@ -18,7 +18,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -30,9 +30,13 @@ jobs:
           npm install --silent --no-audit --no-fund
           node check.js
           cp out/report.json latest.json
+      - name: Speed check (3VL, Coltrain, SBNA key pages)
+        continue-on-error: true
+        timeout-minutes: 25
+        run: python3 sitecheck/speed.py
       - name: Save the report
         run: |
           git config user.name "3VL site check"
           git config user.email "actions@users.noreply.github.com"
-          git add sitecheck/latest.json
+          git add sitecheck/latest.json sitecheck/speed.json
           git diff --cached --quiet || (git commit -qm "Site check $(date -u +%F)" && for i in 1 2 3; do git pull --rebase --autostash -q && git push -q && break; sleep 5; done)
