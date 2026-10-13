@@ -509,15 +509,14 @@ function moreBtns(){$$('.wk-pdesc,.wk-spd').forEach(function(p){if(p.classList.c
    Each one makes the phone redraw every frame. Loops now wait until the page has loaded and pause while off screen.
    One-time entrance animations are untouched, so nothing shows later than before. */
 function calm(){if(!document.getAnimations||!('IntersectionObserver' in window))return;
-  var started=false,seen=[],vis=[],io=new IntersectionObserver(function(en){en.forEach(function(e){var i=seen.indexOf(e.target);if(i>=0)vis[i]=e.isIntersecting});apply()},{rootMargin:'80px 0px'});
-  function box(t){return t.ownerSVGElement||t}
-  function loops(){return document.getAnimations().filter(function(a){var t=a.effect&&a.effect.target;return t&&root.contains(t)&&a.effect.getTiming().iterations===Infinity})}
-  function apply(){loops().forEach(function(a){var b=box(a.effect.target),i=seen.indexOf(b);
-    if(i<0){seen.push(b);vis.push(false);io.observe(b);i=seen.length-1}
-    var on=started&&vis[i]&&!document.hidden;if(on&&a.playState==='paused')a.play();else if(!on&&a.playState==='running')a.pause()})}
-  apply();var k=0,tk=setInterval(function(){apply();if(++k>8)clearInterval(tk)},4000);
-  document.addEventListener('visibilitychange',apply);
-  var go2=function(){setTimeout(function(){started=true;apply()},1200)};
+  var started=false,list=[],boxes=[],vis=[],io=new IntersectionObserver(function(en){en.forEach(function(e){var i=boxes.indexOf(e.target);if(i>=0)vis[i]=e.isIntersecting});set()},{rootMargin:'80px 0px'});
+  function set(){var hid=document.hidden;list.forEach(function(x){var on=started&&vis[x.b]&&!hid;if(on&&x.a.playState==='paused')x.a.play();else if(!on&&x.a.playState==='running')x.a.pause()})}
+  function scan(){document.getAnimations().forEach(function(a){var t=a.effect&&a.effect.target;if(!t||a.effect.getTiming().iterations!==Infinity||!root.contains(t))return;
+    for(var j=0;j<list.length;j++)if(list[j].a===a)return;var bx=t.ownerSVGElement||t,i=boxes.indexOf(bx);
+    if(i<0){boxes.push(bx);vis.push(false);io.observe(bx);i=boxes.length-1}list.push({a:a,b:i})});set()}
+  scan();setTimeout(scan,2500);
+  document.addEventListener('visibilitychange',set);
+  var go2=function(){setTimeout(function(){started=true;scan();setTimeout(scan,6000)},1200)};
   if(document.readyState==='complete')go2();else addEventListener('load',go2)}
 function boot(){calm();railStick();cardLinks();setTimeout(moreBtns,1500);setTimeout(moreBtns,4700);addEventListener('resize',function(){clearTimeout(moreBtns.t);moreBtns.t=setTimeout(moreBtns,200)});
   var done=false,fin=function(){if(done)return;done=true;go();setTimeout(moreBtns,80)};
