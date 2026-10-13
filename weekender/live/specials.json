@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T00:19:29.908736+00:00",
+ "updated": "2026-10-13T12:00:15.165936+00:00",
  "specials": [
   {
    "id": "18099322592380488",
@@ -32,22 +32,6 @@
    "url": "https://www.instagram.com/p/DeXb8kOGifk/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
    "inset": "ig/p18117802858952870.jpg"
-  },
-  {
-   "id": "18038377886838371",
-   "biz": "Madiran The Wine Bar",
-   "ig": "madiranthewinebar_eastsetauket",
-   "town": "East Setauket",
-   "category": "Wine Bar",
-   "member": false,
-   "title": "Live Music: Al Marino, James Miceli & Jerry Mac",
-   "when": "Wed, Oct. 12 · 7-9 PM",
-   "desc": "Al Marino on guitar, James Miceli on sax, and Jerry Mac on bass perform tonight.",
-   "expires": "2026-10-12",
-   "posted": "2026-10-12T13:07:30+0000",
-   "url": "https://www.instagram.com/p/DeZTXg2Cm3H/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-   "inset": "ig/p18038377886838371.jpg"
   },
   {
    "id": "18106747217224206",
@@ -96,6 +80,22 @@
    "url": "https://www.instagram.com/p/DeZiBbnRoxq/",
    "img": "",
    "inset": "ig/p18078461687547213.jpg"
+  },
+  {
+   "id": "18121416112857675",
+   "biz": "The Study by Toast",
+   "ig": "thestudy.bytoast",
+   "town": "East Setauket",
+   "category": "Coffee House",
+   "member": false,
+   "title": "Golden Hour Cocktails & Bites",
+   "when": "Wed-Sat, 4-7 PM",
+   "desc": "Enjoy $10 cocktails and delicious bites during Golden Hour. Live music on Saturdays and Sundays.",
+   "expires": "2026-10-20",
+   "posted": "2026-10-07T17:10:00+0000",
+   "url": "https://www.instagram.com/p/DeM22cKRQHZ/",
+   "img": "",
+   "inset": "ig/p18121416112857675.jpg"
   }
  ],
  "candidates": [
@@ -132,22 +132,6 @@
    "inset": "ig/p18117802858952870.jpg"
   },
   {
-   "id": "18038377886838371",
-   "biz": "Madiran The Wine Bar",
-   "ig": "madiranthewinebar_eastsetauket",
-   "town": "East Setauket",
-   "category": "Wine Bar",
-   "member": false,
-   "title": "Live Music: Al Marino, James Miceli & Jerry Mac",
-   "when": "Wed, Oct. 12 · 7-9 PM",
-   "desc": "Al Marino on guitar, James Miceli on sax, and Jerry Mac on bass perform tonight.",
-   "expires": "2026-10-12",
-   "posted": "2026-10-12T13:07:30+0000",
-   "url": "https://www.instagram.com/p/DeZTXg2Cm3H/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-   "inset": "ig/p18038377886838371.jpg"
-  },
-  {
    "id": "18106747217224206",
    "biz": "Ralph's Famous Italian Ices & Ice Cream",
    "ig": "ralphsitalianicesstonybrook",
@@ -194,6 +178,22 @@
    "url": "https://www.instagram.com/p/DeZiBbnRoxq/",
    "img": "",
    "inset": "ig/p18078461687547213.jpg"
+  },
+  {
+   "id": "18121416112857675",
+   "biz": "The Study by Toast",
+   "ig": "thestudy.bytoast",
+   "town": "East Setauket",
+   "category": "Coffee House",
+   "member": false,
+   "title": "Golden Hour Cocktails & Bites",
+   "when": "Wed-Sat, 4-7 PM",
+   "desc": "Enjoy $10 cocktails and delicious bites during Golden Hour. Live music on Saturdays and Sundays.",
+   "expires": "2026-10-20",
+   "posted": "2026-10-07T17:10:00+0000",
+   "url": "https://www.instagram.com/p/DeM22cKRQHZ/",
+   "img": "",
+   "inset": "ig/p18121416112857675.jpg"
   }
  ],
  "all": [
@@ -244,22 +244,6 @@
    "url": "https://www.instagram.com/p/DeKdINkmqCD/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
    "inset": "ig/p18190137262400311.jpg"
-  },
-  {
-   "id": "18038377886838371",
-   "biz": "Madiran The Wine Bar",
-   "ig": "madiranthewinebar_eastsetauket",
-   "town": "East Setauket",
-   "category": "Wine Bar",
-   "member": false,
-   "title": "Live Music: Al Marino, James Miceli & Jerry Mac",
-   "when": "Wed, Oct. 12 · 7-9 PM",
-   "desc": "Al Marino on guitar, James Miceli on sax, and Jerry Mac on bass perform tonight.",
-   "expires": "2026-10-12",
-   "posted": "2026-10-12T13:07:30+0000",
-   "url": "https://www.instagram.com/p/DeZTXg2Cm3H/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-   "inset": "ig/p18038377886838371.jpg"
   },
   {
    "id": "18106747217224206",
@@ -422,38 +406,6 @@
    "inset": "ig/p18184440502420219.jpg"
   },
   {
-   "id": "18137250499725845",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Happy Hour at Castaways",
-   "when": "Today, Oct. 12 · 4-6 PM",
-   "desc": "Happy hour at the inside bar, high tops, and lounge Monday 4-6 PM.",
-   "expires": "2026-10-12",
-   "posted": "2026-10-12T16:00:52+0000",
-   "url": "https://www.instagram.com/p/DeZnRgTirBU/",
-   "img": "",
-   "inset": "ig/p18137250499725845.jpg"
-  },
-  {
-   "id": "18028678862857521",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Sunday Brunch at Castaways",
-   "when": "Sunday, Oct. 12 · 12 PM",
-   "desc": "Try the Quinoa Parfait with yogurt, toasted quinoa, berries, coconut and honey.",
-   "expires": "2026-10-12",
-   "posted": "2026-10-11T15:01:28+0000",
-   "url": "https://www.instagram.com/reel/DeW7m1Uj_Q6/",
-   "img": "",
-   "inset": "ig/p18028678862857521.jpg"
-  },
-  {
    "id": "18081474245382981",
    "biz": "The Whiskey Barrel",
    "ig": "thewhiskeybarrelportjeff",
@@ -502,22 +454,6 @@
    "inset": "ig/p18393198076166609.jpg"
   },
   {
-   "id": "17868198207663464",
-   "biz": "The Pie of Port Jeff",
-   "ig": "thepie216",
-   "town": "Port Jefferson",
-   "category": "Pizza",
-   "member": false,
-   "title": "Seasonal Sangrias",
-   "when": "Long weekend",
-   "desc": "Try Blood Orange & Pomegranate or Apple Pie seasonal sangrias this long weekend.",
-   "expires": "2026-10-12",
-   "posted": "2026-10-09T14:31:51+0000",
-   "url": "https://www.instagram.com/p/DeRuhYeNmO6/",
-   "img": "",
-   "inset": "ig/p17868198207663464.jpg"
-  },
-  {
    "id": "17995700001040062",
    "biz": "Toast Coffee + Kitchen",
    "ig": "toastcoffeeandkitchen",
@@ -564,22 +500,6 @@
    "url": "https://www.instagram.com/p/DeMqFuXDiGo/",
    "img": "",
    "inset": "ig/p18080087426422651.jpg"
-  },
-  {
-   "id": "17924557194204295",
-   "biz": "Robinson's Tea Room",
-   "ig": "robinsonstearoom",
-   "town": "Stony Brook",
-   "category": "Tea Room",
-   "member": false,
-   "title": "New Seasonal Teas & Flavors",
-   "when": "This Weekend",
-   "desc": "Robinson's Tea Room unveils festive fall teas, scones, and beverages for dine-in or takeout.",
-   "expires": "2026-10-12",
-   "posted": "2026-10-07T18:55:15+0000",
-   "url": "https://www.instagram.com/p/DeNDRiCoIAn/",
-   "img": "",
-   "inset": "ig/p17924557194204295.jpg"
   },
   {
    "id": "18045608615819421",
