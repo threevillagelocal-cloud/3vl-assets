@@ -1,11 +1,11 @@
 {
-"updated": "2026-10-13T00:21:25.420568+00:00",
+"updated": "2026-10-13T01:00:56.207414+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Village of Port Jefferson": 216,
 "Emma S. Clark Library": 306,
 "Stony Brook Village Center": 18,
 "Long Island Museum": 47,
@@ -660,6 +660,25 @@
 "page": "https://www.threevillagelocal.com/events/walk-to-end-alzheimers-use-qr-code-to-register-and-for-more-information"
 },
 {
+"id": "portjeff-1149",
+"title": "38th Outdoor Country Auction",
+"start": "2026-10-17T09:00:00",
+"end": "2026-10-17T23:59:00",
+"allday": false,
+"venue": "Mather Museum",
+"addr": "Port Jefferson",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1149",
+"desc": "This event is held at the Mather Museum - Port Jefferson NY 11777.",
+"img": "",
+"src": "portjeff",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/38th-outdoor-country-auction"
+},
+{
 "id": "emmaclark-cat-toy-take-make-great-give-back-grades-3-5-34765",
 "title": "Cat Toy \"Take & Make\" - The Great Give Back (Grades 3-5)",
 "start": "2026-10-17T09:30:00",
@@ -735,25 +754,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/how-to-relieve-stress-by-writing"
-},
-{
-"id": "iloveportjeff-6ab01ba7d25d7853b1e2fee2",
-"title": "Harvest Festival",
-"start": "2026-10-17T12:00:00",
-"end": "2026-10-18T17:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://www.iloveportjeff.com/events/harvest-festival",
-"desc": "Celebrate fall in Port Jefferson with two days of seasonal fun for the whole family, including hay rides, a pumpkin patch, costumed dog parade, games, contests, and more. Stroll the village, support local businesses, and enjoy everything that makes fall in Por",
-"img": "https://images.squarespace-cdn.com/content/v1/6849b4cd4d4fd13a7a9784e5/1789926526754-VT41234KDLHFFB7ATZVV/unsplash-image-bqVfC6348qU.jpg",
-"src": "iloveportjeff",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/harvest-festival"
 },
 {
 "id": "emmaclark-monster-week-tabletop-rpg-61436",
@@ -950,6 +950,45 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-pie-baking-contest",
 "pu": ""
+},
+{
+"id": "portjeff-1096",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-10-18T09:00:00",
+"end": "2026-10-18T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1096",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-474"
+},
+{
+"id": "portjeff-1150",
+"title": "38th Outdoor Country Auction",
+"start": "2026-10-18T09:00:00",
+"end": "2026-10-18T23:59:00",
+"allday": false,
+"venue": "Mather Museum",
+"addr": "Port Jefferson",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1150",
+"desc": "This event is held at the Mather Museum - Port Jefferson NY 11777.",
+"img": "",
+"src": "portjeff",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/38th-outdoor-country-auction-475"
 },
 {
 "id": "emmaclark-copy-stitching-circle-59568",
@@ -1905,7 +1944,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-12T23:00:14+00:00",
+"checked": "2026-10-13T01:00:17+00:00",
 "alerts": [],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule"
