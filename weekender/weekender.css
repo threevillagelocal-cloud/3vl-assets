@@ -925,3 +925,7 @@ a.wk-guide{flex:1 0 100%;display:flex!important;align-items:center;justify-conte
 #wk-ferry .wk-cxi[data-off="Alert"]::after{background:#205081}
 #wk-ferry .wk-cxrow > *:only-child{flex-basis:100%;max-width:560px}
 
+
+/* 10/13/2026: smartsearch.js adds its search bar between the intro and the stats row after first paint, which pushed the stats down ~70px (layout shift). Hold that space until the bar arrives. */
+.wk-hin>.wk-dek+.wk-hstats{margin-top:92px}
+@media (max-width:720px){.wk-hin>.wk-dek+.wk-hstats{margin-top:88px}}
