@@ -83,15 +83,24 @@ def main():
     out = os.path.join(SHARE, "email", name)
     os.makedirs(out, exist_ok=True)
     prof = tempfile.mkdtemp(prefix="claimshot-")
-    p = subprocess.Popen([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--remote-debugging-port=%d" % PORT,
-                          "--remote-allow-origins=http://127.0.0.1:%d" % PORT, "--user-data-dir=" + prof, "about:blank"],
-                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    def launch():
+        return subprocess.Popen([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--no-sandbox", "--remote-debugging-port=%d" % PORT,
+                                 "--remote-allow-origins=http://127.0.0.1:%d" % PORT, "--user-data-dir=" + prof, "about:blank"],
+                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    p = launch()
     try:
-        for _ in range(80):
+        # 10/13/2026: Chrome took >20 s to start on the runner, pg was never set and every invite picture was skipped.
+        # Wait up to 90 s, relaunch once halfway, and fail with a clear message instead of a NameError.
+        pg = None
+        for k in range(360):
             try:
                 pg = [t for t in json.load(urllib.request.urlopen("http://127.0.0.1:%d/json" % PORT)) if t["type"] == "page"][0]; break
             except Exception:
+                if k == 180 and p.poll() is not None:
+                    p = launch()
                 time.sleep(.25)
+        if pg is None:
+            sys.exit("Chrome did not start within 90 s; no pictures made")
         ws = websocket.create_connection(pg["webSocketDebuggerUrl"], timeout=120); n = [0]
 
         def cmd(m, **pa):
