@@ -357,10 +357,16 @@ function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(
       usedG.push(cs[m].getAttribute('data-group')||cs[m].getAttribute('data-vip'));
       var vis=cs[m].parentNode.offsetParent!==null&&!cs[m].parentNode.parentNode.hasAttribute('data-far');if(vis){ld(cs[m]);ld(cs[(m+1)%cs.length])}
       cs.forEach(function(a,i){a.classList.toggle('is-on',i===m);a.setAttribute('aria-hidden',i!==m);a.inert=i!==m})});
-    if(dots)$$('button',dots).forEach(function(b,i){b.classList.toggle('is-on',i===idx)});t0=performance.now();
+    if(dots)$$('button',dots).forEach(function(b,i){b.classList.toggle('is-on',i===idx)});run();
     var name=ads[idx].getAttribute('data-vip');if(!seenV[name]&&rot.offsetParent){seenV[name]=1;track('vip_ad_view',{vip:name,placement:'weekender_rail'})}}
-  var bp=0;function loop(ts){if(document.hidden){requestAnimationFrame(loop);return}if(!paused){var p=(ts-t0)/dur;bp=Math.min(1,p);if(bar)bar.style.transform='scaleX('+bp+')';if(p>=1)show(idx+1)}else{t0=ts-bp*dur}requestAnimationFrame(loop)}
-  rot.addEventListener('mouseenter',function(){paused=true});rot.addEventListener('mouseleave',function(){paused=false});
+  /* 10/13/2026 speed: the progress bar is a CSS animation now. The old requestAnimationFrame loop restyled it every frame
+     (~30 repaints a second, forever), the biggest cost on a phone. Same look: bar fills over dur, then the next ad shows. */
+  var tmr=0;function hold(){var p=paused||document.hidden;if(bar)bar.style.animationPlayState=p?'paused':'running'}
+  function run(){if(bar){bar.style.animation='none';void bar.offsetWidth;bar.style.animation='wkBar '+dur+'ms linear forwards';hold()}
+    else{clearTimeout(tmr);tmr=setTimeout(function(){if(!paused&&!document.hidden)show(idx+1);else run()},dur)}}
+  if(bar)bar.addEventListener('animationend',function(){show(idx+1)});
+  document.addEventListener('visibilitychange',hold);
+  rot.addEventListener('mouseenter',function(){paused=true;hold()});rot.addEventListener('mouseleave',function(){paused=false;hold()});
   var gl=document.createElement('div');gl.className='wk-adglare';rot.appendChild(gl);
   rot.insertAdjacentHTML('beforeend','<button type="button" class="wk-adnav wk-adprev" aria-label="Previous ad">&#8249;</button><button type="button" class="wk-adnav wk-adnext" aria-label="Next ad">&#8250;</button>');
   rot.querySelector('.wk-adprev').addEventListener('click',function(e){e.preventDefault();show(idx-1)});
@@ -372,7 +378,7 @@ function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(
     rot.addEventListener('mouseleave',function(){rot.classList.remove('lift');rot.style.setProperty('--rx','0deg');rot.style.setProperty('--ry','0deg')})}
   if(dots)dots.addEventListener('click',function(e){var b=e.target.closest('button');if(b)show($$('button',dots).indexOf(b))});
   root.addEventListener('click',function(e){var a=e.target.closest('[data-vip]');if(a&&a.tagName==='A')track('vip_ad_click',{vip:a.getAttribute('data-vip'),link:a.className})});
-  requestAnimationFrame(function(){show(0);requestAnimationFrame(loop)})}
+  requestAnimationFrame(function(){show(0)})}
 
 /* ---------- map ---------- */
 function map(){var box=$('wk-lmap');if(!box)return;var started=false;
@@ -499,7 +505,21 @@ function moreBtns(){$$('.wk-pdesc,.wk-spd').forEach(function(p){if(p.classList.c
   if(cut&&!b){b=document.createElement('button');b.type='button';b.className='wk-mo';b.textContent='More';b.setAttribute('aria-expanded','false');
     b.addEventListener('click',function(){var o=p.classList.toggle('is-open');b.textContent=o?'Less':'More';b.setAttribute('aria-expanded',o?'true':'false')});p.parentNode.insertBefore(b,p.nextSibling)}
   else if(!cut&&b)b.remove()})}
-function boot(){railStick();cardLinks();setTimeout(moreBtns,1500);setTimeout(moreBtns,4700);addEventListener('resize',function(){clearTimeout(moreBtns.t);moreBtns.t=setTimeout(moreBtns,200)});
+/* 10/13/2026 speed: ~30 decorative animations loop forever (pulses, weather icons, photo pans), most of them off screen.
+   Each one makes the phone redraw every frame. Loops now wait until the page has loaded and pause while off screen.
+   One-time entrance animations are untouched, so nothing shows later than before. */
+function calm(){if(!document.getAnimations||!('IntersectionObserver' in window))return;
+  var started=false,seen=[],vis=[],io=new IntersectionObserver(function(en){en.forEach(function(e){var i=seen.indexOf(e.target);if(i>=0)vis[i]=e.isIntersecting});apply()},{rootMargin:'80px 0px'});
+  function box(t){return t.ownerSVGElement||t}
+  function loops(){return document.getAnimations().filter(function(a){var t=a.effect&&a.effect.target;return t&&root.contains(t)&&a.effect.getTiming().iterations===Infinity})}
+  function apply(){loops().forEach(function(a){var b=box(a.effect.target),i=seen.indexOf(b);
+    if(i<0){seen.push(b);vis.push(false);io.observe(b);i=seen.length-1}
+    var on=started&&vis[i]&&!document.hidden;if(on&&a.playState==='paused')a.play();else if(!on&&a.playState==='running')a.pause()})}
+  apply();var k=0,tk=setInterval(function(){apply();if(++k>8)clearInterval(tk)},4000);
+  document.addEventListener('visibilitychange',apply);
+  var go2=function(){setTimeout(function(){started=true;apply()},1200)};
+  if(document.readyState==='complete')go2();else addEventListener('load',go2)}
+function boot(){calm();railStick();cardLinks();setTimeout(moreBtns,1500);setTimeout(moreBtns,4700);addEventListener('resize',function(){clearTimeout(moreBtns.t);moreBtns.t=setTimeout(moreBtns,200)});
   var done=false,fin=function(){if(done)return;done=true;go();setTimeout(moreBtns,80)};
   setTimeout(fin,4000);setTimeout(pickArrows,4200);
   fetch(LIVEURL+'?v='+Math.floor(Date.now()/300000),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){if(!done){try{renderLive(d)}catch(e){}fin()}}).catch(fin)}
