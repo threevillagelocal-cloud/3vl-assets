@@ -37,7 +37,7 @@ jobs:
           # events.json is also rebuilt every 30 min by events-live.yml, so a rebase can conflict on it (every run failed
           # 10/9-10/10 this way). On a conflict keep our specials and rebuild the feed on top of the latest sources.
           for i in 1 2 3 4; do
-            if git pull --rebase -q; then git push -q && exit 0
+            if git pull --rebase --autostash -q; then git push -q && exit 0
             else
               git checkout --theirs weekender/live/events.json && python weekender/live/build_events.py && git add weekender/live/events.json \
                 && GIT_EDITOR=true git rebase --continue && git push -q && exit 0
@@ -56,4 +56,4 @@ jobs:
           git config user.name "3VL specials" && git config user.email "actions@users.noreply.github.com"
           mkdir -p data/featured && date -u +%FT%TZ > data/featured/ping.txt
           git add data/featured/ping.txt && git commit -qm "specials refreshed"
-          for i in 1 2 3 4; do git pull -q --rebase && git push -q && exit 0; sleep 10; done
+          for i in 1 2 3 4; do git pull -q --rebase --autostash && git push -q && exit 0; sleep 10; done
