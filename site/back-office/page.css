@@ -120,6 +120,7 @@
 @keyframes boUp{to{opacity:1;transform:none}}
 @keyframes boZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
 @keyframes boFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (min-width:1001px){#bo .bo-gal>.bo-tile:nth-last-child(-n+2):not(.big){grid-column:span 2}}
 @media (max-width:1000px){.bo-gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:210px}.bo-tile.big{grid-row:span 1}}
 @media (max-width:700px){
  .bo-hero{grid-template-columns:1fr;gap:20px;padding-top:14px}
