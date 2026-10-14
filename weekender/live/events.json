@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-14T19:02:28.302327+00:00",
+"updated": "2026-10-14T21:01:09.169644+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 216,
-"Emma S. Clark Library": 350,
+"Emma S. Clark Library": 349,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -81,27 +81,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/free-museum-docent-training-session-536"
-},
-{
-"id": "emmaclark-edgar-allan-poe-literature-silver-screen-58142",
-"title": "Edgar Allan Poe: From Literature to Silver Screen!",
-"start": "2026-10-14T14:00:00",
-"end": "2026-10-14T15:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/edgar-allan-poe-literature-silver-screen-58142",
-"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Watch some short films based on Poe's work and learn about the actors and directors who made a career bringing Poe's stories to life. Presented by Keith Crocker. Image courtesy of ",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/poe_film_crop3.jpg",
-"src": "emmaclark",
-"tags": [
-"history",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/edgar-allan-poe-from-literature-to-silver-screen"
+"page": ""
 },
 {
 "id": "emmaclark-crafts-r-fun-fall-gnome-grades-k-5-58549",
@@ -1912,7 +1892,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-14T19:00:19+00:00",
+"checked": "2026-10-14T21:00:14+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
