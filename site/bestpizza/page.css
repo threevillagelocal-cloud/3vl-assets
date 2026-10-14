@@ -1,0 +1,32 @@
+.pagehead{display:none;}
+.bp{--navy:#13233a;--blue:#1f5fae;--line:#dbe4ef;--soft:#f3f7fc;--gold:#ffc53d;font-family:'Radio Canada',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:var(--navy);max-width:760px;margin:0 auto 40px;padding:0 16px;}
+.bp-hero{margin:16px -16px 0;}
+.bp-hero-img{display:block;width:100% !important;height:auto !important;max-height:420px;object-fit:cover;border-radius:0;}
+@media(min-width:760px){.bp-hero{margin:20px 0 0;}.bp-hero-img{border-radius:20px;}}
+.bp-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 14px 40px rgba(19,35,58,.10);padding:22px 20px 20px;margin:-40px 8px 0;text-align:center;}
+.bp-pill{display:inline-block;background:var(--blue);color:#fff;font-weight:700;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;border-radius:999px;padding:6px 14px;}
+.bp-h1{font-size:30px;line-height:1.12;font-weight:800;letter-spacing:-.5px;margin:12px 0 8px;color:var(--navy);}
+.bp-h1 span{box-shadow:inset 0 -.32em 0 var(--gold);}
+.bp-sub{font-size:16px;line-height:1.5;color:#4a586b;margin:0 auto;max-width:520px;}
+.bp-form{margin-top:22px;}
+.bp-form .form-group{margin-bottom:18px;text-align:left;}
+.bp-form label{font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--navy);margin-bottom:8px;display:block;}
+.bp-input{width:100%;border:1.5px solid var(--line) !important;border-radius:12px !important;padding:14px 16px !important;font-size:17px !important;height:auto !important;background:#fff;box-sizing:border-box;}
+.bp-input:focus{outline:none;border-color:var(--blue) !important;box-shadow:0 0 0 3px rgba(31,95,174,.15) !important;}
+.bp-form small,.bp-form .help-block{font-size:13px;color:#5b6b7c;margin-top:6px;display:block;text-transform:none;font-weight:400;letter-spacing:0;}
+.bp-submit{background:var(--blue) !important;color:#fff !important;border:none !important;font-weight:800 !important;font-size:18px !important;padding:16px !important;border-radius:14px !important;margin-top:4px;box-shadow:0 8px 20px rgba(31,95,174,.25);}
+.bp-submit:hover{background:#174e93 !important;}
+.bp-foot{text-align:center;font-size:15px;color:#4a586b;margin:22px 0 0;}
+@media(min-width:760px){.bp-h1{font-size:40px;}.bp-card{padding:30px 34px 26px;margin:-60px 40px 0;}}
+.bp-form .form-group:has(.bp-radio){display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.bp-form .form-group:has(.bp-radio) > label{grid-column:1/-1;margin-bottom:2px;}
+.bp-form .radio{margin:0 !important;}
+.bp-form .radio label{display:flex !important;align-items:center;gap:10px;min-height:58px;height:100%;box-sizing:border-box;margin:0 !important;padding:12px 14px !important;border:1.5px solid var(--line);border-radius:14px;background:#fff;font-size:16px !important;font-weight:700 !important;letter-spacing:0 !important;text-transform:none !important;line-height:1.25;color:var(--navy);cursor:pointer;transition:border-color .15s,background .15s,box-shadow .15s;}
+.bp-form .radio label:hover{border-color:#9cc0ea;}
+.bp-form .radio input.bp-radio{position:static !important;margin:0 !important;flex:none;width:22px;height:22px;accent-color:var(--blue);}
+.bp-form .radio label:has(input:checked){border-color:var(--blue);background:var(--soft);box-shadow:0 0 0 3px rgba(31,95,174,.15);}
+.bp-form .radio:last-of-type{grid-column:1/-1;}
+.bp-form form:not(:has(input[value="other"]:checked)) .form-group:has(input[name="write_in"]){display:none;}
+.bp-form .required{color:var(--blue);}
+@media(max-width:340px){.bp-form .form-group:has(.bp-radio){grid-template-columns:1fr;}}
+.bp-form label:empty{display:none;}
