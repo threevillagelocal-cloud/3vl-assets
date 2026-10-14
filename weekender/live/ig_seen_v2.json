@@ -2854,5 +2854,41 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-13T18:49:58+0000"
+},
+"18009207956779013": {
+"special": true,
+"title": "Bewitched Burger Limited Special",
+"when": "While supplies last",
+"desc": "Try the stacked Bewitched Burger at Tommy's Place before this limited-time special disappears.",
+"expires": "2026-10-27",
+"_ts": "2026-10-13T23:22:41+0000"
+},
+"17960859435218619": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-13T23:21:16+0000"
+},
+"17998939884010057": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-13T19:42:35+0000"
+},
+"18024366122866829": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-13T19:01:26+0000"
+},
+"17868625734659869": {
+"special": false,
+"_ts": "2026-10-13T20:23:38+0000"
 }
 }

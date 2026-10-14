@@ -3,6 +3,22 @@
 "madiranthewinebar_eastsetauket": [],
 "tommysplaceportjeff_": [
 {
+"id": "18009207956779013",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Bewitched Burger Limited Special",
+"when": "While supplies last",
+"desc": "Try the stacked Bewitched Burger at Tommy's Place before this limited-time special disappears.",
+"expires": "2026-10-27",
+"posted": "2026-10-13T23:22:41+0000",
+"url": "https://www.instagram.com/p/Dec-pg9Db9f/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "ig/p18009207956779013.jpg"
+},
+{
 "id": "18117802858952870",
 "biz": "Tommy's Place",
 "ig": "tommysplaceportjeff_",
@@ -40,48 +56,14 @@
 }
 ],
 "levelupkitchenny": [],
-"littlecheeseshop": [
-{
-"id": "18633139252010772",
-"biz": "Little Cheese Shop",
-"ig": "littlecheeseshop",
-"town": "Stony Brook",
-"category": "Cheese Shop/Cafe",
-"member": false,
-"title": "Vote for Little Cheese's Scarecrow #106",
-"when": "Stony Brook Village competition (ongoing)",
-"desc": "Vote for The Gouda Guardian scarecrow in the annual competition. Multiple scarecrows to see.",
-"expires": "2026-10-21",
-"posted": "2026-10-06T21:38:16+0000",
-"url": "https://www.instagram.com/p/DeKxIkyD_hc/",
-"img": "",
-"inset": "ig/p18633139252010772.jpg"
-}
-],
+"littlecheeseshop": [],
 "hirosakiny": [],
 "lucastonybrook": [],
 "crazybeansrestaurant": [],
 "eatschnitzels": [],
 "robinsonstearoom": [],
 "premierepastryshop": [],
-"threevillageinn": [
-{
-"id": "18483879619129257",
-"biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
-"ig": "threevillageinn",
-"town": "Stony Brook",
-"category": "Restaurant/Inn",
-"member": false,
-"title": "Prix Fixe Lunch & Dinner",
-"when": "This week (Mon-Sun, Oct 7-13)",
-"desc": "Two-course lunch for $24, three-course dinner for $46. Closed Mon & Tues.",
-"expires": "2026-10-13",
-"posted": "2026-10-07T15:12:33+0000",
-"url": "https://www.instagram.com/p/DeMpjWrl0TQ/",
-"img": "",
-"inset": "ig/p18483879619129257.jpg"
-}
-],
+"threevillageinn": [],
 "ralphsitalianicesstonybrook": [],
 "burgerologyusa": [
 {
@@ -488,24 +470,7 @@
 "thepie216": [],
 "oldfieldspj": [],
 "secretgardentearoom": [],
-"kilwins_port_jeff": [
-{
-"id": "18045608615819421",
-"biz": "Kilwins Port Jefferson",
-"ig": "kilwins_port_jeff",
-"town": "Port Jefferson",
-"category": "Chocolate/Ice Cream",
-"member": false,
-"title": "Fall & Halloween Treats Menu",
-"when": "Now through season",
-"desc": "Try seasonal fall and Halloween treats including pumpkin desserts, shakes, and fudge while available.",
-"expires": "2026-10-31",
-"posted": "2026-10-06T22:30:32+0000",
-"url": "https://www.instagram.com/p/DeK3DtEjJ53/",
-"img": "",
-"inset": "ig/p18045608615819421.jpg"
-}
-],
+"kilwins_port_jeff": [],
 "portjefficecream": [],
 "slurp_ramen_usa": [
 {
