@@ -21,11 +21,11 @@ def rd(f):
 page = {"content": rd("content.html"), "content_css": rd("page.css"), "enable_hero_section": "0",
         "title": "Vote: Best Pizza in Three Village 2026 | Three Village Local", "meta_desc": DESC,
         "facebook_title": "Who makes the best pizza in Three Village? Vote now", "facebook_desc": DESC}
-SHARE_SRC = "https://threevillagelocal-cloud.github.io/3vl-share/site/bestpizza/share-v1.jpg"
-red = call("GET", "redirect_301/get?property=old_filename&property_value=share/bestpizza-v1.jpg").get("message")
+SHARE_SRC = "https://threevillagelocal-cloud.github.io/3vl-share/site/bestpizza/share-v2.jpg"
+red = call("GET", "redirect_301/get?property=old_filename&property_value=share/bestpizza-v2.jpg").get("message")
 if not (isinstance(red, list) and red):
-    print("redirect", call("POST", "redirect_301/create", {"old_filename": "share/bestpizza-v1.jpg", "new_filename": SHARE_SRC}).get("status"))
-page["facebook_image"] = "https://www.threevillagelocal.com/share/bestpizza-v1.jpg"
+    print("redirect", call("POST", "redirect_301/create", {"old_filename": "share/bestpizza-v2.jpg", "new_filename": SHARE_SRC}).get("status"))
+page["facebook_image"] = "https://www.threevillagelocal.com/share/bestpizza-v2.jpg"
 ex = call("GET", "list_seo/get?property=filename&property_value=" + SLUG).get("message")
 ex = [x for x in ex if x.get("filename") == SLUG] if isinstance(ex, list) else []
 r = call("PUT", "list_seo/update", dict(page, seo_id=ex[0]["seo_id"])) if ex else \
