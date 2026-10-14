@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-14T15:01:34.167913+00:00",
+"updated": "2026-10-14T15:07:16.129605+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -10,7 +10,7 @@
 "Stony Brook Village Center": 15,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
-"LI Music Hall of Fame": "error: HTTP Error 500: Internal Server Error"
+"LI Music Hall of Fame": 4
 },
 "icons": {
 "kids": "&#129490;",
