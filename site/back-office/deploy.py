@@ -12,7 +12,7 @@ API = "https://www.threevillagelocal.com/api/v2/"
 NAME = "3VL Page Back Office"
 SLUG = "back-office"
 TITLE = "The Back Office: Local Pros for Business Owners | Three Village Local"
-DESC = ("Accountants, payroll, insurance, business lending, legal, IT, marketing, electricians, plumbers, contractors, security, "
+DESC = ("Accountants, payroll, insurance, business lending, IT, marketing, electricians, plumbers, contractors, security, "
         "cleaning and more: trusted local pros for business owners in Setauket, Stony Brook and Port Jefferson. Free printable guide.")
 SHARE_SRC = "https://threevillagelocal-cloud.github.io/3vl-share/site/back-office/share-v3.jpg"
 
