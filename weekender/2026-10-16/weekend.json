@@ -26,7 +26,8 @@
   "firehouse",
   "imaginos",
   "maidens",
-  "tvfm"
+  "tvfm",
+  "paddle"
  ],
  "venues": {
   "tvhs": {
@@ -115,6 +116,14 @@
    "ll": [
     40.9463,
     -73.0663
+   ]
+  },
+  "sbharbor": {
+   "name": "Stony Brook Harbor Kayak & Paddleboard Rentals",
+   "addr": "51 Shore Rd, Stony Brook",
+   "ll": [
+    40.9195,
+    -73.149
    ]
   }
  },
@@ -240,6 +249,22 @@
    "price": "See details"
   },
   {
+   "id": "piecontest",
+   "title": "Harvest Festival Pie Baking Contest",
+   "start": "2026-10-18T00:00",
+   "end": "2026-10-18T23:59",
+   "page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-pie-baking-contest",
+   "venue": "pjv",
+   "tags": [
+    "food"
+   ],
+   "desc": "Home bakers enter their pies at the Harvest Festival. Sign up online.",
+   "url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-pie-baking-contest/",
+   "src": "portjeffchamber.com",
+   "allday": true,
+   "price": "See details"
+  },
+  {
    "id": "maidens",
    "title": "Mountain Maidens at the Hall of Fame",
    "start": "2026-10-18T15:00",
@@ -257,20 +282,20 @@
    "src": "stonybrookvillage.com"
   },
   {
-   "id": "piecontest",
-   "title": "Harvest Festival Pie Baking Contest",
-   "start": "2026-10-18T00:00",
-   "end": "2026-10-18T23:59",
-   "page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-pie-baking-contest",
-   "venue": "pjv",
+   "id": "paddle",
+   "title": "Witches & Warlocks Sunset Paddle",
+   "start": "2026-10-18T16:30",
+   "end": "2026-10-18T18:10",
+   "page": "https://www.threevillagelocal.com/events/witches-warlocks-sunset-paddle",
+   "venue": "sbharbor",
+   "price": "$50 with rental, $20 bring your own",
    "tags": [
-    "food"
+    "outdoor"
    ],
-   "desc": "Home bakers enter their pies at the Harvest Festival. Sign up online.",
-   "url": "https://portjeffchamber.com/events-calendar/port-jefferson-harvest-festival-pie-baking-contest/",
-   "src": "portjeffchamber.com",
-   "allday": true,
-   "price": "See details"
+   "img": "paddle",
+   "desc": "Costumed sunset paddle on Stony Brook Harbor, 4:30 PM to sunset. Kayaks and paddleboards welcome, refreshments from Schnitzels, part of proceeds to Sweet Briar Nature Center. Text 631-834-3130 to reserve.",
+   "url": "https://www.facebook.com/SBHarborrentals/posts/pfbid0myF9N2NThNfR9FZ16p1sotE7tQ6qDSQKsd7Xp23ki5kCUjca6QCVpw1sDDPstUoal",
+   "src": "facebook.com/SBHarborrentals"
   }
  ],
  "allweekend": [
