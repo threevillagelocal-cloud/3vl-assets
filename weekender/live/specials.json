@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T15:00:21.496706+00:00",
+ "updated": "2026-10-14T19:00:19.150812+00:00",
  "specials": [
   {
    "id": "18099322592380488",
@@ -66,22 +66,6 @@
    "inset": "ig/p18078461687547213.jpg"
   },
   {
-   "id": "18121416112857675",
-   "biz": "The Study by Toast",
-   "ig": "thestudy.bytoast",
-   "town": "East Setauket",
-   "category": "Coffee House",
-   "member": false,
-   "title": "Golden Hour Cocktails & Bites",
-   "when": "Wed-Sat, 4-7 PM",
-   "desc": "Enjoy $10 cocktails and delicious bites during Golden Hour. Live music on Saturdays and Sundays.",
-   "expires": "2026-10-20",
-   "posted": "2026-10-07T17:10:00+0000",
-   "url": "https://www.instagram.com/p/DeM22cKRQHZ/",
-   "img": "",
-   "inset": "ig/p18121416112857675.jpg"
-  },
-  {
    "id": "17959248594011698",
    "biz": "Po' Boy Brewery",
    "ig": "poboybeerandcider",
@@ -96,6 +80,22 @@
    "url": "https://www.instagram.com/p/DeSgrwJynM-/",
    "img": "",
    "inset": "ig/p17959248594011698.jpg"
+  },
+  {
+   "id": "18117715669788260",
+   "biz": "Fifth Season Restaurant",
+   "ig": "fifthseasonrestaurant",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Wednesday Night Special",
+   "when": "Every Wednesday",
+   "desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
+   "expires": "2026-10-20",
+   "posted": "2026-10-14T18:27:21+0000",
+   "url": "https://www.instagram.com/reel/DefBZHAgmqC/",
+   "img": "",
+   "inset": "ig/p18117715669788260.jpg"
   }
  ],
  "candidates": [
@@ -164,22 +164,6 @@
    "inset": "ig/p18078461687547213.jpg"
   },
   {
-   "id": "18121416112857675",
-   "biz": "The Study by Toast",
-   "ig": "thestudy.bytoast",
-   "town": "East Setauket",
-   "category": "Coffee House",
-   "member": false,
-   "title": "Golden Hour Cocktails & Bites",
-   "when": "Wed-Sat, 4-7 PM",
-   "desc": "Enjoy $10 cocktails and delicious bites during Golden Hour. Live music on Saturdays and Sundays.",
-   "expires": "2026-10-20",
-   "posted": "2026-10-07T17:10:00+0000",
-   "url": "https://www.instagram.com/p/DeM22cKRQHZ/",
-   "img": "",
-   "inset": "ig/p18121416112857675.jpg"
-  },
-  {
    "id": "17959248594011698",
    "biz": "Po' Boy Brewery",
    "ig": "poboybeerandcider",
@@ -194,6 +178,22 @@
    "url": "https://www.instagram.com/p/DeSgrwJynM-/",
    "img": "",
    "inset": "ig/p17959248594011698.jpg"
+  },
+  {
+   "id": "18117715669788260",
+   "biz": "Fifth Season Restaurant",
+   "ig": "fifthseasonrestaurant",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Wednesday Night Special",
+   "when": "Every Wednesday",
+   "desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
+   "expires": "2026-10-20",
+   "posted": "2026-10-14T18:27:21+0000",
+   "url": "https://www.instagram.com/reel/DefBZHAgmqC/",
+   "img": "",
+   "inset": "ig/p18117715669788260.jpg"
   }
  ],
  "all": [
@@ -294,22 +294,6 @@
    "inset": "ig/p17900498451602344.jpg"
   },
   {
-   "id": "18121416112857675",
-   "biz": "The Study by Toast",
-   "ig": "thestudy.bytoast",
-   "town": "East Setauket",
-   "category": "Coffee House",
-   "member": false,
-   "title": "Golden Hour Cocktails & Bites",
-   "when": "Wed-Sat, 4-7 PM",
-   "desc": "Enjoy $10 cocktails and delicious bites during Golden Hour. Live music on Saturdays and Sundays.",
-   "expires": "2026-10-20",
-   "posted": "2026-10-07T17:10:00+0000",
-   "url": "https://www.instagram.com/p/DeM22cKRQHZ/",
-   "img": "",
-   "inset": "ig/p18121416112857675.jpg"
-  },
-  {
    "id": "17959248594011698",
    "biz": "Po' Boy Brewery",
    "ig": "poboybeerandcider",
@@ -324,6 +308,22 @@
    "url": "https://www.instagram.com/p/DeSgrwJynM-/",
    "img": "",
    "inset": "ig/p17959248594011698.jpg"
+  },
+  {
+   "id": "18117715669788260",
+   "biz": "Fifth Season Restaurant",
+   "ig": "fifthseasonrestaurant",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Wednesday Night Special",
+   "when": "Every Wednesday",
+   "desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
+   "expires": "2026-10-20",
+   "posted": "2026-10-14T18:27:21+0000",
+   "url": "https://www.instagram.com/reel/DefBZHAgmqC/",
+   "img": "",
+   "inset": "ig/p18117715669788260.jpg"
   },
   {
    "id": "18157262452515195",
@@ -356,6 +356,22 @@
    "url": "https://www.instagram.com/p/DeQSB96DCN1/",
    "img": "",
    "inset": "ig/p18184440502420219.jpg"
+  },
+  {
+   "id": "18081011885365219",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Happy Hour – 50% Off All Drinks",
+   "when": "Mon & Wed 4–6PM, Thu–Sun 12–6PM",
+   "desc": "Half off all drinks including top shelf, plus food specials at the bar, high tops and lounge.",
+   "expires": "2026-10-20",
+   "posted": "2026-10-14T16:21:04+0000",
+   "url": "https://www.instagram.com/p/DeezHcVipQ6/",
+   "img": "",
+   "inset": "ig/p18081011885365219.jpg"
   },
   {
    "id": "18081474245382981",
@@ -436,22 +452,6 @@
    "url": "https://www.instagram.com/p/DePX6JbEQ3g/",
    "img": "",
    "inset": "ig/p17995700001040062.jpg"
-  },
-  {
-   "id": "18080087426422651",
-   "biz": "Break Room Cafe",
-   "ig": "breakroomny",
-   "town": "East Setauket",
-   "category": "Cafe",
-   "member": false,
-   "title": "Limited-Time Pulled Pork Sandwich",
-   "when": "Now",
-   "desc": "Try pulled pork, BBQ sauce, melted cheddar, and pickles on brioche with house-cut fries.",
-   "expires": "2026-10-21",
-   "posted": "2026-10-07T15:15:02+0000",
-   "url": "https://www.instagram.com/p/DeMqFuXDiGo/",
-   "img": "",
-   "inset": "ig/p18080087426422651.jpg"
   }
  ]
 }

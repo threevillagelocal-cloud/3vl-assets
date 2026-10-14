@@ -2914,5 +2914,45 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-14T14:02:00+0000"
+},
+"18092116067478114": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-14T15:30:02+0000"
+},
+"18129967099834792": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-14T16:38:29+0000"
+},
+"18117715669788260": {
+"special": true,
+"title": "Wednesday Night Special",
+"when": "Every Wednesday",
+"desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
+"expires": "2026-10-20",
+"_ts": "2026-10-14T18:27:21+0000"
+},
+"17931002478165864": {
+"special": false,
+"title": "Castaways Steak & Seafood",
+"when": "Daily from 4 PM",
+"desc": "Cozy dinner spot in Port Jefferson. Reserve your table on Resy.",
+"expires": "2026-10-14",
+"_ts": "2026-10-14T18:01:51+0000"
+},
+"18081011885365219": {
+"special": true,
+"title": "Happy Hour – 50% Off All Drinks",
+"when": "Mon & Wed 4–6PM, Thu–Sun 12–6PM",
+"desc": "Half off all drinks including top shelf, plus food specials at the bar, high tops and lounge.",
+"expires": "2026-10-20",
+"_ts": "2026-10-14T16:21:04+0000"
 }
 }
