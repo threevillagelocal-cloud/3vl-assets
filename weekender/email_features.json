@@ -51,29 +51,150 @@
   "until": "2026-10-18",
   "title": "Your weekend, day by day",
   "days": [
-   {"day": "All weekend", "items": [
-    {"t": "Spooky Village at Olde Towne Gardens", "when": "Through Oct 31", "where": "Old Town Rd, East Setauket", "url": "https://theoldetownegardens.com/spooky-village/"},
-    {"t": "Stony Brook Village Scarecrows (vote for your favorite)", "when": "Through Oct 25", "where": "Stony Brook Village Center", "url": "https://www.threevillagelocal.com/events/scarecrow-competition-opens", "free": true},
-    {"t": "Port Jefferson Scarecrow Walk", "when": "Through Nov 2", "where": "East Main St, Port Jefferson", "url": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk", "free": true},
-    {"t": "Cabaret at Theatre Three", "when": "Through Oct 25", "where": "Port Jefferson", "url": "https://theatrethree.com/mainstage_shows/cabaret/"},
-    {"t": "Elephant & Piggie's We Are in a Play! (kids)", "when": "Through Oct 24", "where": "Theatre Three, Port Jefferson", "url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/"}
-   ]},
-   {"day": "Friday, Oct 16", "items": [
-    {"t": "Three Village Farmers & Artisans Market", "when": "3-6 PM", "where": "Three Village Historical Society, East Setauket", "url": "https://www.threevillagelocal.com/three-village-farmers-market", "free": true}
-   ]},
-   {"day": "Saturday, Oct 17", "items": [
-    {"t": "Port Jefferson Harvest Festival, day 1", "when": "All day", "where": "Port Jefferson Village", "url": "https://www.threevillagelocal.com/events/2026-port-jefferson-harvest-festival"},
-    {"t": "Fire Prevention Day & Open House", "when": "10 AM-2 PM", "where": "Stony Brook Fire Department, Main St", "url": "https://www.threevillagelocal.com/events/stony-brook-fire-departments-annual-fire-prevention-day-and-open-house", "free": true},
-    {"t": "Harvest Festival Costumed Dog Parade", "when": "12:30 PM", "where": "Port Jefferson Village", "url": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-costumed-dog-parade"},
-    {"t": "Hugh Stinkfoot and the Spooky Terrible Day! (kids)", "when": "3 PM (also Sun)", "where": "The Performing Arts Studio, Port Jefferson", "url": "https://www.threevillagelocal.com/events/hugh-stinkfoot-and-the-spooky-terrible-day"},
-    {"t": "Albert Bouchard's Imaginos Band (Blue Oyster Cult founder)", "when": "8 PM, doors 7:30", "where": "LI Music & Entertainment Hall of Fame, Stony Brook", "url": "https://www.threevillagelocal.com/events/live-performance-by-albert-bouchards-imaginos-band-at-the-long-island-music-and-entertainment-hall-of-fame"}
-   ]},
-   {"day": "Sunday, Oct 18", "items": [
-    {"t": "Port Jefferson Harvest Festival, day 2 + Pie Baking Contest", "when": "All day", "where": "Port Jefferson Village", "url": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-pie-baking-contest"},
-    {"t": "Cartoons of New York in the Revolution", "when": "1-2:30 PM", "where": "The Long Island Museum, Stony Brook", "url": "https://www.threevillagelocal.com/events/cartoons-of-new-york-in-the-revolution"},
-    {"t": "Mountain Maidens", "when": "3 PM", "where": "LI Music & Entertainment Hall of Fame, Stony Brook", "url": "https://www.threevillagelocal.com/events/live-performance-by-mountain-maidens-at-the-long-island-music-and-entertainment-hall-of-fame", "free": true},
-    {"t": "Witches & Warlocks Sunset Paddle (come in costume)", "when": "4:30 PM to sunset", "where": "Stony Brook Harbor", "url": "https://www.threevillagelocal.com/events/witches-warlocks-sunset-paddle"}
-   ]}
+   {
+    "day": "All weekend",
+    "items": [
+     {
+      "t": "Spooky Village at Olde Towne Gardens",
+      "when": "Through Oct 31",
+      "where": "Old Town Rd, East Setauket",
+      "url": "https://theoldetownegardens.com/spooky-village/"
+     },
+     {
+      "t": "Stony Brook Village Scarecrows (vote for your favorite)",
+      "when": "Through Oct 25",
+      "where": "Stony Brook Village Center",
+      "url": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
+      "free": true
+     },
+     {
+      "t": "Port Jefferson Scarecrow Walk",
+      "when": "Through Nov 2",
+      "where": "East Main St, Port Jefferson",
+      "url": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk",
+      "free": true
+     },
+     {
+      "t": "Cabaret at Theatre Three",
+      "when": "Through Oct 25",
+      "where": "Port Jefferson",
+      "url": "https://theatrethree.com/mainstage_shows/cabaret/"
+     },
+     {
+      "t": "Elephant & Piggie's We Are in a Play! (kids)",
+      "when": "Through Oct 24",
+      "where": "Theatre Three, Port Jefferson",
+      "url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/"
+     }
+    ]
+   },
+   {
+    "day": "Friday, Oct 16",
+    "items": [
+     {
+      "t": "Three Village Farmers & Artisans Market",
+      "when": "3-6 PM",
+      "where": "Three Village Historical Society, East Setauket",
+      "url": "https://www.threevillagelocal.com/three-village-farmers-market",
+      "free": true
+     }
+    ]
+   },
+   {
+    "day": "Saturday, Oct 17",
+    "items": [
+     {
+      "t": "Port Jefferson Harvest Festival, day 1",
+      "when": "All day",
+      "where": "Port Jefferson Village",
+      "url": "https://www.threevillagelocal.com/events/2026-port-jefferson-harvest-festival"
+     },
+     {
+      "t": "Fire Prevention Day & Open House",
+      "when": "10 AM-2 PM",
+      "where": "Stony Brook Fire Department, Main St",
+      "url": "https://www.threevillagelocal.com/events/stony-brook-fire-departments-annual-fire-prevention-day-and-open-house",
+      "free": true
+     },
+     {
+      "t": "Harvest Festival Costumed Dog Parade",
+      "when": "12:30 PM",
+      "where": "Port Jefferson Village",
+      "url": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-costumed-dog-parade"
+     },
+     {
+      "t": "Hugh Stinkfoot and the Spooky Terrible Day! (kids)",
+      "when": "3 PM (also Sun)",
+      "where": "The Performing Arts Studio, Port Jefferson",
+      "url": "https://www.threevillagelocal.com/events/hugh-stinkfoot-and-the-spooky-terrible-day"
+     },
+     {
+      "t": "Albert Bouchard's Imaginos Band (Blue Oyster Cult founder)",
+      "when": "8 PM, doors 7:30",
+      "where": "LI Music & Entertainment Hall of Fame, Stony Brook",
+      "url": "https://www.threevillagelocal.com/events/live-performance-by-albert-bouchards-imaginos-band-at-the-long-island-music-and-entertainment-hall-of-fame"
+     }
+    ]
+   },
+   {
+    "day": "Sunday, Oct 18",
+    "items": [
+     {
+      "t": "Port Jefferson Harvest Festival, day 2 + Pie Baking Contest",
+      "when": "All day",
+      "where": "Port Jefferson Village",
+      "url": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-pie-baking-contest"
+     },
+     {
+      "t": "Cartoons of New York in the Revolution",
+      "when": "1-2:30 PM",
+      "where": "The Long Island Museum, Stony Brook",
+      "url": "https://www.threevillagelocal.com/events/cartoons-of-new-york-in-the-revolution"
+     },
+     {
+      "t": "Mountain Maidens",
+      "when": "3 PM",
+      "where": "LI Music & Entertainment Hall of Fame, Stony Brook",
+      "url": "https://www.threevillagelocal.com/events/live-performance-by-mountain-maidens-at-the-long-island-music-and-entertainment-hall-of-fame",
+      "free": true
+     },
+     {
+      "t": "Witches & Warlocks Sunset Paddle (come in costume)",
+      "when": "4:30 PM to sunset",
+      "where": "Stony Brook Harbor",
+      "url": "https://www.threevillagelocal.com/events/witches-warlocks-sunset-paddle"
+     }
+    ]
+   }
   ]
+ },
+ {
+  "kind": "eat",
+  "biz": "Luca",
+  "title": "Housemade pasta in Stony Brook Village",
+  "town": "Stony Brook",
+  "when": "New on Three Village Local",
+  "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/luca/pasta-800.jpg",
+  "page": "https://www.threevillagelocal.com/luca",
+  "until": "2026-10-18",
+  "note": "owner 10/15/2026: promote Luca in Eat & Drink"
+ },
+ {
+  "kind": "vip_skip",
+  "ids": [
+   "364"
+  ],
+  "until": "2026-10-18",
+  "note": "owner 10/15/2026: swap Hart Orthopedics out (two ortho banners side by side)"
+ },
+ {
+  "kind": "gem",
+  "biz": "DJ's Clam Shack",
+  "town": "1007 Route 25A, Stony Brook",
+  "why": "A real East Coast clam shack right on 25A, from the DJ's family that was featured on Diners, Drive-Ins & Dives. Go for the overstuffed Maine lobster roll, garlic-steamed littlenecks with jalape&ntilde;os, conch fritters or a basket of fried clam strips. Takeout and catering trays too.",
+  "url": "https://www.threevillagelocal.com/djs-clam-shack",
+  "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/2026-10-02/djs-ext.webp",
+  "until": "2026-10-18",
+  "note": "owner pick 10/15/2026"
  }
 ]
