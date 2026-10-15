@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-15T21:01:07.904278+00:00",
+"updated": "2026-10-15T23:00:36.662012+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 215,
-"Emma S. Clark Library": 343,
+"Emma S. Clark Library": 341,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -98,42 +98,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "emmaclark-bark-readers-5th-grade-59713",
-"title": "BARK (For Readers Up to 5th Grade)",
-"start": "2026-10-15T16:30:00",
-"end": "2026-10-15T17:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/bark-readers-5th-grade-59713",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-01/BARK2.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/bark-for-readers-up-to-5th-grade"
-},
-{
-"id": "emmaclark-intro-maps-and-compass-navigation-59565",
-"title": "Intro to Maps and Compass Navigation",
-"start": "2026-10-15T17:00:00",
-"end": "2026-10-15T18:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/intro-maps-and-compass-navigation-59565",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/intro-to-maps-and-compass-navigation"
 },
 {
 "id": "sbv-2366",
@@ -1888,7 +1852,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-15T21:00:18+00:00",
+"checked": "2026-10-15T22:59:48+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
