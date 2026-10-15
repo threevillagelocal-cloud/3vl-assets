@@ -5,7 +5,7 @@ name: Nightly site check
 # Public repo = free Actions minutes. Writes sitecheck/latest.json; 3vl-site-guard emails the owner when something fails.
 on:
   schedule:
-    - cron: "15 6 * * *"   # ~2:15 AM ET
+    - cron: "15 6 * * 1,4"   # ~2:15 AM ET Mon + Thu (owner 10/15/2026: was nightly; cut BD bandwidth)
   workflow_dispatch: {}
 
 permissions:
