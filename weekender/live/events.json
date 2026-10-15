@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-14T23:01:13.731042+00:00",
+"updated": "2026-10-15T00:27:19.581579+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -61,44 +61,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
-{
-"id": "lim-10000286",
-"title": "Free Museum Docent Training Session",
-"start": "2026-10-14T13:30:00",
-"end": "2026-10-14T16:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/docent-training/2026-10-14/",
-"desc": "Share Your Passion for History, Art & Community– Become a Museum Docent! The Long Island Museum is looking for volunteers who are interested in sharing their love of history, art, and community with others! There are so many ways to make a difference at LIM, i",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/10/Website-event-form-photos-1.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"history"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "emmaclark-evening-book-discussion-58173",
-"title": "Evening Book Discussion",
-"start": "2026-10-14T19:30:00",
-"end": "2026-10-14T20:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/evening-book-discussion-58173",
-"desc": "m. in the Vincent R. O’Leary Community Room. Copies of the book are available to borrow at the Circulation Desk. No registration required. Book pickup starts 9/9",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/img2.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/evening-book-discussion"
 },
 {
 "id": "emmaclark-parent-toddler-workshop-18m-35-yrs-w-caregiver-58904",
@@ -1407,6 +1369,66 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/port-jefferson-chowder-crawl"
+},
+{
+"id": "portjeff-1097",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-10-25T09:00:00",
+"end": "2026-10-25T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1097",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-478"
+},
+{
+"id": "sbv-2437",
+"title": "Halloween Cat Arrangement Workshop at Village Florist & Events",
+"start": "2026-10-25T13:00:00",
+"end": "2026-10-25T15:00:00",
+"allday": false,
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/halloween-cat-arrangement-workshop-at-village-florist-events/",
+"desc": "Get Your Spook On! 👻 Add a little spooky charm to your fall with a Halloween Cat Arrangement Workshop at Village Florist & Events! Join Village Florist and Events on Sunday, October 25, at 1 PM to create a festive, cat-themed floral arrangement perfect to brin",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/10/our-camera-roll-in-sbvc.png",
+"src": "sbv",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/halloween-cat-arrangement-workshop-at-village-florist-events"
+},
+{
+"id": "sbv-2381",
+"title": "Live Performance by Last Charge of the Light Horse at the Long Island Music and Entertainment Hall of Fame",
+"start": "2026-10-25T15:00:00",
+"end": "2026-10-25T16:00:00",
+"allday": false,
+"venue": "The Long Island Music and Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/live-performance-by-last-charge-of-the-light-horse-at-the-long-island-music-and-entertainment-hall-of-fame/",
+"desc": "Songwriter Jean-Paul Vest has seen the Washington Senators play baseball. He’s broken his right thumb, baled hay, driven a forklift, learned algebra in French, walked in the painted desert, and been stung in the head by a large, angry hornet. His music sounds ",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/09/Last-Charge-of-the-Light-Horse-2.png",
+"src": "sbv",
+"tags": [
+"kids",
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-performance-by-last-charge-of-the-light-horse-at-the-long-island-music-and-entertainment-hall-of-fame"
 }
 ],
 "closings": [],
@@ -1853,7 +1875,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-14T23:00:16+00:00",
+"checked": "2026-10-15T00:26:14+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
