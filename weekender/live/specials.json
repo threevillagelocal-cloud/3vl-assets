@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T19:00:19.150812+00:00",
+ "updated": "2026-10-15T12:00:13.980493+00:00",
  "specials": [
   {
    "id": "18099322592380488",
@@ -16,6 +16,22 @@
    "url": "https://www.instagram.com/reel/DePpGtRp1qJ/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
    "inset": "ig/p18099322592380488.jpg"
+  },
+  {
+   "id": "18117578293785434",
+   "biz": "The Country Corner",
+   "ig": "countrycornerlongisland",
+   "town": "East Setauket",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Live Music: Down Port Band",
+   "when": "Sat, Oct. 17 · 6:30 PM",
+   "desc": "Catch Down Port Band performing live at The Country Corner.",
+   "expires": "2026-10-17",
+   "posted": "2026-10-15T02:24:14+0000",
+   "url": "https://www.instagram.com/p/Def4HLpNu5Y/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+   "inset": "ig/p18117578293785434.jpg"
   },
   {
    "id": "18009207956779013",
@@ -66,36 +82,20 @@
    "inset": "ig/p18078461687547213.jpg"
   },
   {
-   "id": "17959248594011698",
-   "biz": "Po' Boy Brewery",
-   "ig": "poboybeerandcider",
-   "town": "Port Jefferson Station",
-   "category": "Brewery/Cidery",
+   "id": "18025189280879518",
+   "biz": "The Study by Toast",
+   "ig": "thestudy.bytoast",
+   "town": "East Setauket",
+   "category": "Coffee House",
    "member": false,
-   "title": "Po'Boy Halloween Costume Party",
-   "when": "Fri, Oct. 30 · 7 PM–Midnight",
-   "desc": "Come in costume for all-night Happy Hour pricing. Costume contest with prizes up to $100.",
-   "expires": "2026-10-30",
-   "posted": "2026-10-09T21:48:30+0000",
-   "url": "https://www.instagram.com/p/DeSgrwJynM-/",
+   "title": "The Study by Toast 1-Year Anniversary",
+   "when": "Fri, Oct. 16 · 12 PM-2 PM",
+   "desc": "Free Darth Chocolate Cookie with purchase, meet Turnip the screech owl, first 100 guests get free tote bag.",
+   "expires": "2026-10-16",
+   "posted": "2026-10-14T23:17:45+0000",
+   "url": "https://www.instagram.com/p/DefitEwRkj6/",
    "img": "",
-   "inset": "ig/p17959248594011698.jpg"
-  },
-  {
-   "id": "18117715669788260",
-   "biz": "Fifth Season Restaurant",
-   "ig": "fifthseasonrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Wednesday Night Special",
-   "when": "Every Wednesday",
-   "desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
-   "expires": "2026-10-20",
-   "posted": "2026-10-14T18:27:21+0000",
-   "url": "https://www.instagram.com/reel/DefBZHAgmqC/",
-   "img": "",
-   "inset": "ig/p18117715669788260.jpg"
+   "inset": "ig/p18025189280879518.jpg"
   }
  ],
  "candidates": [
@@ -116,6 +116,22 @@
    "inset": "ig/p18099322592380488.jpg"
   },
   {
+   "id": "18117578293785434",
+   "biz": "The Country Corner",
+   "ig": "countrycornerlongisland",
+   "town": "East Setauket",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Live Music: Down Port Band",
+   "when": "Sat, Oct. 17 · 6:30 PM",
+   "desc": "Catch Down Port Band performing live at The Country Corner.",
+   "expires": "2026-10-17",
+   "posted": "2026-10-15T02:24:14+0000",
+   "url": "https://www.instagram.com/p/Def4HLpNu5Y/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+   "inset": "ig/p18117578293785434.jpg"
+  },
+  {
    "id": "18009207956779013",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -164,36 +180,20 @@
    "inset": "ig/p18078461687547213.jpg"
   },
   {
-   "id": "17959248594011698",
-   "biz": "Po' Boy Brewery",
-   "ig": "poboybeerandcider",
-   "town": "Port Jefferson Station",
-   "category": "Brewery/Cidery",
+   "id": "18025189280879518",
+   "biz": "The Study by Toast",
+   "ig": "thestudy.bytoast",
+   "town": "East Setauket",
+   "category": "Coffee House",
    "member": false,
-   "title": "Po'Boy Halloween Costume Party",
-   "when": "Fri, Oct. 30 · 7 PM–Midnight",
-   "desc": "Come in costume for all-night Happy Hour pricing. Costume contest with prizes up to $100.",
-   "expires": "2026-10-30",
-   "posted": "2026-10-09T21:48:30+0000",
-   "url": "https://www.instagram.com/p/DeSgrwJynM-/",
+   "title": "The Study by Toast 1-Year Anniversary",
+   "when": "Fri, Oct. 16 · 12 PM-2 PM",
+   "desc": "Free Darth Chocolate Cookie with purchase, meet Turnip the screech owl, first 100 guests get free tote bag.",
+   "expires": "2026-10-16",
+   "posted": "2026-10-14T23:17:45+0000",
+   "url": "https://www.instagram.com/p/DefitEwRkj6/",
    "img": "",
-   "inset": "ig/p17959248594011698.jpg"
-  },
-  {
-   "id": "18117715669788260",
-   "biz": "Fifth Season Restaurant",
-   "ig": "fifthseasonrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Wednesday Night Special",
-   "when": "Every Wednesday",
-   "desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
-   "expires": "2026-10-20",
-   "posted": "2026-10-14T18:27:21+0000",
-   "url": "https://www.instagram.com/reel/DefBZHAgmqC/",
-   "img": "",
-   "inset": "ig/p18117715669788260.jpg"
+   "inset": "ig/p18025189280879518.jpg"
   }
  ],
  "all": [
@@ -212,6 +212,22 @@
    "url": "https://www.instagram.com/reel/DePpGtRp1qJ/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
    "inset": "ig/p18099322592380488.jpg"
+  },
+  {
+   "id": "18117578293785434",
+   "biz": "The Country Corner",
+   "ig": "countrycornerlongisland",
+   "town": "East Setauket",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Live Music: Down Port Band",
+   "when": "Sat, Oct. 17 · 6:30 PM",
+   "desc": "Catch Down Port Band performing live at The Country Corner.",
+   "expires": "2026-10-17",
+   "posted": "2026-10-15T02:24:14+0000",
+   "url": "https://www.instagram.com/p/Def4HLpNu5Y/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+   "inset": "ig/p18117578293785434.jpg"
   },
   {
    "id": "18009207956779013",
@@ -294,6 +310,22 @@
    "inset": "ig/p17900498451602344.jpg"
   },
   {
+   "id": "18025189280879518",
+   "biz": "The Study by Toast",
+   "ig": "thestudy.bytoast",
+   "town": "East Setauket",
+   "category": "Coffee House",
+   "member": false,
+   "title": "The Study by Toast 1-Year Anniversary",
+   "when": "Fri, Oct. 16 · 12 PM-2 PM",
+   "desc": "Free Darth Chocolate Cookie with purchase, meet Turnip the screech owl, first 100 guests get free tote bag.",
+   "expires": "2026-10-16",
+   "posted": "2026-10-14T23:17:45+0000",
+   "url": "https://www.instagram.com/p/DefitEwRkj6/",
+   "img": "",
+   "inset": "ig/p18025189280879518.jpg"
+  },
+  {
    "id": "17959248594011698",
    "biz": "Po' Boy Brewery",
    "ig": "poboybeerandcider",
@@ -372,6 +404,22 @@
    "url": "https://www.instagram.com/p/DeezHcVipQ6/",
    "img": "",
    "inset": "ig/p18081011885365219.jpg"
+  },
+  {
+   "id": "17895980562416730",
+   "biz": "The Whiskey Barrel",
+   "ig": "thewhiskeybarrelportjeff",
+   "town": "Port Jefferson",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Trivia Night at The Whiskey Barrel",
+   "when": "Thu, Oct. 15 · 8 PM",
+   "desc": "Join trivia night tonight at 8 PM. Enjoy golden pierogies with bacon and sour cream.",
+   "expires": "2026-10-15",
+   "posted": "2026-10-14T20:48:06+0000",
+   "url": "https://www.instagram.com/p/DefRtU0gcdg/",
+   "img": "",
+   "inset": "ig/p17895980562416730.jpg"
   },
   {
    "id": "18081474245382981",

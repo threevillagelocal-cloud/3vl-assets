@@ -2954,5 +2954,93 @@
 "desc": "Half off all drinks including top shelf, plus food specials at the bar, high tops and lounge.",
 "expires": "2026-10-20",
 "_ts": "2026-10-14T16:21:04+0000"
+},
+"18117578293785434": {
+"special": true,
+"title": "Live Music: Down Port Band",
+"when": "Sat, Oct. 17 · 6:30 PM",
+"desc": "Catch Down Port Band performing live at The Country Corner.",
+"expires": "2026-10-17",
+"_ts": "2026-10-15T02:24:14+0000"
+},
+"18462560104184064": {
+"special": false,
+"title": "Date Night at Culpers 1778",
+"when": "Ongoing",
+"desc": "Restaurant promotion encouraging reservations for a special evening out.",
+"expires": "2026-10-15",
+"_ts": "2026-10-14T20:45:19+0000"
+},
+"17910455985303116": {
+"special": false,
+"title": "Dry Aged New York Strip",
+"when": "Lunch & Dinner Hours",
+"desc": "Bold, savory NY strip with blistered tomatoes, aged vincotto, and porcini dust.",
+"expires": "2026-10-15",
+"_ts": "2026-10-15T00:51:55+0000"
+},
+"18142127500719833": {
+"special": false,
+"title": "Oktoberfest Tasting Dinner",
+"when": "Tue, Oct. 27 · 6 PM & 7 PM",
+"desc": "Five-course German dinner with optional beer and wine pairings. $60 per person, +$35 for pairings.",
+"expires": "2026-10-27",
+"_ts": "2026-10-14T22:07:20+0000"
+},
+"18025189280879518": {
+"special": true,
+"title": "The Study by Toast 1-Year Anniversary",
+"when": "Fri, Oct. 16 · 12 PM-2 PM",
+"desc": "Free Darth Chocolate Cookie with purchase, meet Turnip the screech owl, first 100 guests get free tote bag.",
+"expires": "2026-10-16",
+"_ts": "2026-10-14T23:17:45+0000"
+},
+"17975996520140607": {
+"special": false,
+"_ts": "2026-10-14T23:08:20+0000"
+},
+"18097099085394989": {
+"special": false,
+"_ts": "2026-10-14T22:53:29+0000"
+},
+"18129159464508983": {
+"special": false,
+"_ts": "2026-10-14T22:42:29+0000"
+},
+"17989212954059168": {
+"special": false,
+"_ts": "2026-10-14T22:41:57+0000"
+},
+"18213241066360750": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-14T22:41:06+0000"
+},
+"18126288608493714": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-14T22:38:29+0000"
+},
+"17895980562416730": {
+"special": true,
+"title": "Trivia Night at The Whiskey Barrel",
+"when": "Thu, Oct. 15 · 8 PM",
+"desc": "Join trivia night tonight at 8 PM. Enjoy golden pierogies with bacon and sour cream.",
+"expires": "2026-10-15",
+"_ts": "2026-10-14T20:48:06+0000"
+},
+"18021788225868902": {
+"special": false,
+"title": "Long Island Restaurant Week",
+"when": "Nov 1-8, 2026",
+"desc": "Special dinner menu for $48/person. More than 14 days away.",
+"expires": "2026-11-08",
+"_ts": "2026-10-14T21:00:38+0000"
 }
 }
