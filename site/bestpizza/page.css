@@ -25,8 +25,7 @@
 .bp-form .radio label:hover{border-color:#9cc0ea;}
 .bp-form .radio input.bp-radio{position:static !important;margin:0 !important;flex:none;width:22px;height:22px;accent-color:var(--blue);}
 .bp-form .radio label:has(input:checked){border-color:var(--blue);background:var(--soft);box-shadow:0 0 0 3px rgba(31,95,174,.15);}
-.bp-form .radio:last-of-type{grid-column:1/-1;}
-.bp-form form:not(:has(input[value="other"]:checked)) .form-group:has(input[name="write_in"]){display:none;}
+.bp-form .form-group:has(input[name="write_in"]){display:none;}
 .bp-form .required{color:var(--blue);}
 @media(max-width:340px){.bp-form .form-group:has(.bp-radio){grid-template-columns:1fr;}}
 .bp-form label:empty{display:none;}
