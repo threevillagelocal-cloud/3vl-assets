@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-15T15:01:01.681813+00:00",
+"updated": "2026-10-15T15:02:57.172953+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -1736,6 +1736,23 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18184440502420219.jpg",
 "page": "https://www.threevillagelocal.com/nantuckets"
+},
+{
+"id": "18446451835130348",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Happy Hour at Castaways",
+"when": "Every Thursday · 12-6 PM",
+"desc": "Cold drinks and crispy bites at the inside bar, high tops, or lounge.",
+"expires": "2026-10-22",
+"posted": "2026-10-15T13:01:33+0000",
+"url": "https://www.instagram.com/p/DehBI6sCuoE/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18446451835130348.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood"
 },
 {
 "id": "18081011885365219",

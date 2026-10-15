@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T12:00:13.980493+00:00",
+ "updated": "2026-10-15T15:00:14.700050+00:00",
  "specials": [
   {
    "id": "18099322592380488",
@@ -388,6 +388,22 @@
    "url": "https://www.instagram.com/p/DeQSB96DCN1/",
    "img": "",
    "inset": "ig/p18184440502420219.jpg"
+  },
+  {
+   "id": "18446451835130348",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Happy Hour at Castaways",
+   "when": "Every Thursday · 12-6 PM",
+   "desc": "Cold drinks and crispy bites at the inside bar, high tops, or lounge.",
+   "expires": "2026-10-22",
+   "posted": "2026-10-15T13:01:33+0000",
+   "url": "https://www.instagram.com/p/DehBI6sCuoE/",
+   "img": "",
+   "inset": "ig/p18446451835130348.jpg"
   },
   {
    "id": "18081011885365219",

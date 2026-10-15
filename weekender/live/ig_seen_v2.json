@@ -3042,5 +3042,21 @@
 "desc": "Special dinner menu for $48/person. More than 14 days away.",
 "expires": "2026-11-08",
 "_ts": "2026-10-14T21:00:38+0000"
+},
+"18116585051585331": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-15T13:32:10+0000"
+},
+"18446451835130348": {
+"special": true,
+"title": "Happy Hour at Castaways",
+"when": "Every Thursday · 12-6 PM",
+"desc": "Cold drinks and crispy bites at the inside bar, high tops, or lounge.",
+"expires": "2026-10-22",
+"_ts": "2026-10-15T13:01:33+0000"
 }
 }
