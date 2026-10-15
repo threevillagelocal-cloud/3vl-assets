@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-15T00:27:19.581579+00:00",
+"updated": "2026-10-15T01:01:00.951973+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 216,
-"Emma S. Clark Library": 347,
+"Emma S. Clark Library": 346,
 "Stony Brook Village Center": 15,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -1875,7 +1875,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-15T00:26:14+00:00",
+"checked": "2026-10-15T01:00:14+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
