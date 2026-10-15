@@ -8,7 +8,7 @@ H = [h.strip() for h in (os.environ.get("IG_HANDLES") or "").split(",") if h.str
 OUT = "igpull"; os.makedirs(OUT, exist_ok=True)
 idx = []
 for h in H:
-    q = "business_discovery.username(%s){username,name,media.limit(20){id,timestamp,media_type,media_url,permalink,caption,children{media_type,media_url}}}" % h
+    q = "business_discovery.username(%s){username,name,media.limit(%s){id,timestamp,media_type,media_url,permalink,caption,children{media_type,media_url}}}" % (h, os.environ.get("IG_LIMIT", "20"))
     try:
         d = json.load(urllib.request.urlopen("https://graph.facebook.com/%s/%s?%s" % (V, ME, urllib.parse.urlencode({"fields": q, "access_token": T})), timeout=40))
     except urllib.error.HTTPError as e:
