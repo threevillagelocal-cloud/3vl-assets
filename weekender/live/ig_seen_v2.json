@@ -3058,5 +3058,17 @@
 "desc": "Cold drinks and crispy bites at the inside bar, high tops, or lounge.",
 "expires": "2026-10-22",
 "_ts": "2026-10-15T13:01:33+0000"
+},
+"18118179379992698": {
+"special": false,
+"_ts": "2026-10-15T18:52:44+0000"
+},
+"18104634956631034": {
+"special": true,
+"title": "Butternut Squash Soup & Sauerbraten",
+"when": "Today, Oct. 15",
+"desc": "Butternut squash soup and sauerbraten available today at Tara Inn.",
+"expires": "2026-10-15",
+"_ts": "2026-10-15T15:59:45+0000"
 }
 }

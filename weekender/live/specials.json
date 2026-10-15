@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T15:00:14.700050+00:00",
+ "updated": "2026-10-15T19:00:16.670485+00:00",
  "specials": [
   {
    "id": "18099322592380488",
@@ -454,6 +454,22 @@
    "inset": "ig/p18081474245382981.jpg"
   },
   {
+   "id": "18104634956631034",
+   "biz": "Tara Inn",
+   "ig": "tara.inn",
+   "town": "Port Jefferson",
+   "category": "Bar/Pub",
+   "member": false,
+   "title": "Butternut Squash Soup & Sauerbraten",
+   "when": "Today, Oct. 15",
+   "desc": "Butternut squash soup and sauerbraten available today at Tara Inn.",
+   "expires": "2026-10-15",
+   "posted": "2026-10-15T15:59:45+0000",
+   "url": "https://www.instagram.com/p/DehVi_4jZWV/",
+   "img": "",
+   "inset": "ig/p18104634956631034.jpg"
+  },
+  {
    "id": "18020655815927579",
    "biz": "Right Coast Taqueria",
    "ig": "rctaqueria",
@@ -500,22 +516,6 @@
    "url": "https://www.instagram.com/reel/DecUiWyOGvW/",
    "img": "",
    "inset": "ig/p18100984226300493.jpg"
-  },
-  {
-   "id": "17995700001040062",
-   "biz": "Toast Coffee + Kitchen",
-   "ig": "toastcoffeeandkitchen",
-   "town": "Port Jefferson Station",
-   "category": "Cafe/Brunch",
-   "member": false,
-   "title": "Secret Menu: Fall French Toast & Pistachio Latte",
-   "when": "Through October 31",
-   "desc": "Try limited-time fall favorites: pumpkin French toast trio and honey-vanilla-pistachio latte.",
-   "expires": "2026-10-31",
-   "posted": "2026-10-08T16:34:03+0000",
-   "url": "https://www.instagram.com/p/DePX6JbEQ3g/",
-   "img": "",
-   "inset": "ig/p17995700001040062.jpg"
   }
  ]
 }
