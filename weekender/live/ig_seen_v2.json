@@ -3158,5 +3158,13 @@
 "desc": "Caramel-coated apples dipped in white chocolate with spooky mummy decoration.",
 "expires": "2026-10-31",
 "_ts": "2026-10-15T22:02:35+0000"
+},
+"18094045229657335": {
+"special": false,
+"title": "Día de los Muertos Ofrenda",
+"when": "Ongoing",
+"desc": "Community ofrenda honoring loved ones. Bring photos, notes, or keepsakes to share.",
+"expires": "2026-10-16",
+"_ts": "2026-10-16T04:05:42+0000"
 }
 }
