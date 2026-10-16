@@ -73,7 +73,7 @@ function build(list,side){
       [k,(k+1)%list.length].forEach(function(q){var im=U.ads[q].querySelector('img[data-src]');if(im){var s=im.getAttribute('data-src');im.removeAttribute('data-src');im.src=s;im.parentNode.style.setProperty('--b','url('+s+')')}});
       U.idx=k;for(var i=0;i<U.ads.length;i++){U.ads[i].className='vipx-ad'+(i===k?' on':'');if(U.dots[i])U.dots[i].className=i===k?'on':''}
       
-      var v=list[k];U.call.href='tel:'+v.phone;U.call.setAttribute('data-vip',v.name);U.view.href=v.url;U.view.setAttribute('data-vip',v.name);U.t0=performance.now();
+      var v=list[k];if(v.phone){U.call.style.display='';U.call.href='tel:'+v.phone}else{U.call.style.display='none';U.call.removeAttribute('href')}U.call.setAttribute('data-vip',v.name);U.view.href=v.url;U.view.setAttribute('data-vip',v.name);U.t0=performance.now();
       var key=v.name+'#'+u;if(!seen[key]){var r=el.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0){seen[key]=1;track('vip_ad_view',{vip:v.name,placement:PLACE+(N>1?'_'+(u+1):'')})}}};
     var rot=el.querySelector('.vipx-rot');
     el.addEventListener('mouseenter',function(){U.paused=true});el.addEventListener('mouseleave',function(){U.paused=false});

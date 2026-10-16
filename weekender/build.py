@@ -383,9 +383,12 @@ def build(edition, local=False, sha="master", d=None, live=None):
         # 10/2/2026 speed: banners carry data-src; weekender.js loads only the one showing and the next (they used to all download at once)
         w('<div class="wk-ad%s" data-vip="%s" data-group="%s" aria-hidden="%s"%s><a class="wk-adpic" href="%s" data-vip="%s">'
           '<img data-src="%s" alt="%s" width="%d" height="%d"></a>'
-          '<div class="wk-adbtns"><a class="wk-adcall" href="tel:%s" data-vip="%s">&#128222; Call</a><a class="wk-adview" href="%s" data-vip="%s">View on 3VL &rarr;</a></div></div>' % (
+          '<div class="wk-adbtns">%s<a class="wk-adview" href="%s" data-vip="%s">View on 3VL &rarr;</a></div></div>' % (
             " is-on" if i == 0 else "", esc(v["name"]), esc(v.get("group", v["id"])), "false" if i == 0 else "true", "" if i == 0 else " inert", v["url"], esc(v["name"]),
-            base + v["img"], esc(v["name"]) + " ad", v["w"], v["h"], v["phone"], esc(v["name"]), v["url"], esc(v["name"])))
+            base + v["img"], esc(v["name"]) + " ad", v["w"], v["h"],
+            # no phone = no Call button (owner 10/16/2026: his own number must not appear anywhere)
+            ('<a class="wk-adcall" href="tel:%s" data-vip="%s">&#128222; Call</a>' % (v["phone"], esc(v["name"]))) if v.get("phone") else "",
+            v["url"], esc(v["name"])))
     w('<div class="wk-adprog"><i id="wk-adbar"></i></div><div class="wk-addots" id="wk-addots"></div></div>')
     w('<div class="wk-adrot2" id="wk-adrot2"></div>')
     w('<a class="wk-railcta" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a></div>')
