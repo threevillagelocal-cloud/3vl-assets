@@ -11,8 +11,8 @@ H = {"X-Api-Key": key(), "User-Agent": "Mozilla/5.0 3VL", "Content-Type": "appli
 API = "https://www.threevillagelocal.com/api/v2/"
 NAME = "3VL Page Drone"
 SEO_ID = 41
-TITLE = "Drone Photography for Realtors on Long Island | $120 Listing Package | Three Village Local"
-DESC = ("Aerial photos and video for your listings from a local FAA-certified, insured drone pilot. The Listing Package, typically $199, now $120: "
+TITLE = "Drone Photography for Realtors on Long Island | $149 Listing Package | Three Village Local"
+DESC = ("Aerial photos and video for your listings from a local FAA-certified, insured drone pilot. The Listing Package, typically $199, now $149: "
         "5-10 edited aerial photos plus video clips. Book online for Setauket, Stony Brook, Port Jefferson and all of Suffolk and Nassau.")
 
 
@@ -37,7 +37,7 @@ def main():
         print("widget create", call("POST", "data_widgets/create", dict(w, widget_name=NAME, widget_viewport="front")).get("status"))
     r = call("PUT", "list_seo/update", {"seo_id": SEO_ID, "content": "[widget=%s][form=drone_services]" % NAME, "content_css": " ",
                                         "enable_hero_section": "0", "title": TITLE, "meta_desc": DESC,
-                                        "facebook_title": "Drone Photography for Realtors: $120 Listing Package", "facebook_desc": DESC,
+                                        "facebook_title": "Drone Photography for Realtors: $149 Listing Package", "facebook_desc": DESC,
                                         "facebook_image": "https://threevillagelocal-cloud.github.io/3vl-share/site/drone/hero-poster.webp"})
     print("page", r.get("status"), r.get("message") if r.get("status") != "success" else "")
     try:
