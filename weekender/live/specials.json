@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T15:00:15.342439+00:00",
+ "updated": "2026-10-16T19:00:15.987500+00:00",
  "specials": [
   {
    "id": "18117578293785434",
@@ -18,20 +18,36 @@
    "inset": "ig/p18117578293785434.jpg"
   },
   {
-   "id": "18009207956779013",
+   "id": "18078146048554378",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
    "town": "Port Jefferson",
    "category": "Bar/Restaurant",
    "member": false,
-   "title": "Bewitched Burger Limited Special",
-   "when": "While supplies last",
-   "desc": "Try the stacked Bewitched Burger at Tommy's Place before this limited-time special disappears.",
-   "expires": "2026-10-27",
-   "posted": "2026-10-13T23:22:41+0000",
-   "url": "https://www.instagram.com/p/Dec-pg9Db9f/",
+   "title": "New Fall Comfort Food Specials",
+   "when": "Starting today",
+   "desc": "Seafood Stuffed Shells, London Broil, Beef Nachos, and Creamy Chicken Marsala Gnocchi Soup.",
+   "expires": "2026-10-30",
+   "posted": "2026-10-16T16:54:26+0000",
+   "url": "https://www.instagram.com/p/DekAme2FB4E/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18009207956779013.jpg"
+   "inset": "ig/p18078146048554378.jpg"
+  },
+  {
+   "id": "18074660135743458",
+   "biz": "DJ's Clam Shack (Stony Brook)",
+   "ig": "djsclamshackstonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Fall & Winter Lunch Specials",
+   "when": "Daily, 11:30 AM - 4 PM",
+   "desc": "Philly cheesesteak, chicken fingers, or smashburger with fries/coleslaw and soda for $11.50.",
+   "expires": "2026-10-30",
+   "posted": "2026-10-16T16:35:54+0000",
+   "url": "https://www.instagram.com/p/Dej-Kdlv3BJ/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
+   "inset": "ig/p18074660135743458.jpg"
   },
   {
    "id": "17900498451602344",
@@ -80,22 +96,6 @@
    "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
    "img": "",
    "inset": "ig/p18223576354341630.jpg"
-  },
-  {
-   "id": "18117715669788260",
-   "biz": "Fifth Season Restaurant",
-   "ig": "fifthseasonrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Wednesday Night Special",
-   "when": "Every Wednesday",
-   "desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
-   "expires": "2026-10-20",
-   "posted": "2026-10-14T18:27:21+0000",
-   "url": "https://www.instagram.com/reel/DefBZHAgmqC/",
-   "img": "",
-   "inset": "ig/p18117715669788260.jpg"
   }
  ],
  "candidates": [
@@ -116,20 +116,36 @@
    "inset": "ig/p18117578293785434.jpg"
   },
   {
-   "id": "18009207956779013",
+   "id": "18078146048554378",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
    "town": "Port Jefferson",
    "category": "Bar/Restaurant",
    "member": false,
-   "title": "Bewitched Burger Limited Special",
-   "when": "While supplies last",
-   "desc": "Try the stacked Bewitched Burger at Tommy's Place before this limited-time special disappears.",
-   "expires": "2026-10-27",
-   "posted": "2026-10-13T23:22:41+0000",
-   "url": "https://www.instagram.com/p/Dec-pg9Db9f/",
+   "title": "New Fall Comfort Food Specials",
+   "when": "Starting today",
+   "desc": "Seafood Stuffed Shells, London Broil, Beef Nachos, and Creamy Chicken Marsala Gnocchi Soup.",
+   "expires": "2026-10-30",
+   "posted": "2026-10-16T16:54:26+0000",
+   "url": "https://www.instagram.com/p/DekAme2FB4E/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18009207956779013.jpg"
+   "inset": "ig/p18078146048554378.jpg"
+  },
+  {
+   "id": "18074660135743458",
+   "biz": "DJ's Clam Shack (Stony Brook)",
+   "ig": "djsclamshackstonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Fall & Winter Lunch Specials",
+   "when": "Daily, 11:30 AM - 4 PM",
+   "desc": "Philly cheesesteak, chicken fingers, or smashburger with fries/coleslaw and soda for $11.50.",
+   "expires": "2026-10-30",
+   "posted": "2026-10-16T16:35:54+0000",
+   "url": "https://www.instagram.com/p/Dej-Kdlv3BJ/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
+   "inset": "ig/p18074660135743458.jpg"
   },
   {
    "id": "17900498451602344",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
    "img": "",
    "inset": "ig/p18223576354341630.jpg"
-  },
-  {
-   "id": "18117715669788260",
-   "biz": "Fifth Season Restaurant",
-   "ig": "fifthseasonrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Wednesday Night Special",
-   "when": "Every Wednesday",
-   "desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
-   "expires": "2026-10-20",
-   "posted": "2026-10-14T18:27:21+0000",
-   "url": "https://www.instagram.com/reel/DefBZHAgmqC/",
-   "img": "",
-   "inset": "ig/p18117715669788260.jpg"
   }
  ],
  "all": [
@@ -214,6 +214,22 @@
    "inset": "ig/p18117578293785434.jpg"
   },
   {
+   "id": "18078146048554378",
+   "biz": "Tommy's Place",
+   "ig": "tommysplaceportjeff_",
+   "town": "Port Jefferson",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "New Fall Comfort Food Specials",
+   "when": "Starting today",
+   "desc": "Seafood Stuffed Shells, London Broil, Beef Nachos, and Creamy Chicken Marsala Gnocchi Soup.",
+   "expires": "2026-10-30",
+   "posted": "2026-10-16T16:54:26+0000",
+   "url": "https://www.instagram.com/p/DekAme2FB4E/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+   "inset": "ig/p18078146048554378.jpg"
+  },
+  {
    "id": "18009207956779013",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -230,20 +246,20 @@
    "inset": "ig/p18009207956779013.jpg"
   },
   {
-   "id": "18117802858952870",
-   "biz": "Tommy's Place",
-   "ig": "tommysplaceportjeff_",
-   "town": "Port Jefferson",
-   "category": "Bar/Restaurant",
+   "id": "18074660135743458",
+   "biz": "DJ's Clam Shack (Stony Brook)",
+   "ig": "djsclamshackstonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
    "member": false,
-   "title": "Wicked Wrap & Limited-Time Specials",
-   "when": "While available",
-   "desc": "Fried chicken, mozzarella, fried jalapeños, lettuce, tomato & chipotle sauce in spinach tortilla with fries.",
-   "expires": "2026-10-26",
-   "posted": "2026-10-11T19:43:15+0000",
-   "url": "https://www.instagram.com/p/DeXb8kOGifk/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18117802858952870.jpg"
+   "title": "Fall & Winter Lunch Specials",
+   "when": "Daily, 11:30 AM - 4 PM",
+   "desc": "Philly cheesesteak, chicken fingers, or smashburger with fries/coleslaw and soda for $11.50.",
+   "expires": "2026-10-30",
+   "posted": "2026-10-16T16:35:54+0000",
+   "url": "https://www.instagram.com/p/Dej-Kdlv3BJ/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
+   "inset": "ig/p18074660135743458.jpg"
   },
   {
    "id": "17900498451602344",
@@ -310,6 +326,22 @@
    "inset": "ig/p18097934228639515.jpg"
   },
   {
+   "id": "18045318959847467",
+   "biz": "Fifth Season Restaurant",
+   "ig": "fifthseasonrestaurant",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Friday Happy Hour at The Fifth",
+   "when": "Every Friday",
+   "desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
+   "expires": "2026-10-23",
+   "posted": "2026-10-16T16:39:54+0000",
+   "url": "https://www.instagram.com/reel/Dej-smegwuG/",
+   "img": "",
+   "inset": "ig/p18045318959847467.jpg"
+  },
+  {
    "id": "18117715669788260",
    "biz": "Fifth Season Restaurant",
    "ig": "fifthseasonrestaurant",
@@ -372,22 +404,6 @@
    "url": "https://www.instagram.com/p/DeiEH7EPyyT/",
    "img": "",
    "inset": "ig/p17882169600535369.jpg"
-  },
-  {
-   "id": "18393198076166609",
-   "biz": "Slurp Ramen",
-   "ig": "slurp_ramen_usa",
-   "town": "Port Jefferson",
-   "category": "Restaurant (Ramen)",
-   "member": false,
-   "title": "ISSEI Mochi Gummies Now at Slurp Ramen",
-   "when": "Limited time",
-   "desc": "Try new fruity mochi gummies (mango, strawberry, yuzu, peach) - gluten free, plant based, no gelatin.",
-   "expires": "2026-10-24",
-   "posted": "2026-10-09T15:38:17+0000",
-   "url": "https://www.instagram.com/p/DeR2Kt5hcm9/",
-   "img": "",
-   "inset": "ig/p18393198076166609.jpg"
   },
   {
    "id": "18100984226300493",

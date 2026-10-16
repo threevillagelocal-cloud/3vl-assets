@@ -20,6 +20,22 @@
 "madiranthewinebar_eastsetauket": [],
 "tommysplaceportjeff_": [
 {
+"id": "18078146048554378",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "New Fall Comfort Food Specials",
+"when": "Starting today",
+"desc": "Seafood Stuffed Shells, London Broil, Beef Nachos, and Creamy Chicken Marsala Gnocchi Soup.",
+"expires": "2026-10-30",
+"posted": "2026-10-16T16:54:26+0000",
+"url": "https://www.instagram.com/p/DekAme2FB4E/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "ig/p18078146048554378.jpg"
+},
+{
 "id": "18009207956779013",
 "biz": "Tommy's Place",
 "ig": "tommysplaceportjeff_",
@@ -53,7 +69,24 @@
 }
 ],
 "ixchelmexicancuisine": [],
-"djsclamshackstonybrook": [],
+"djsclamshackstonybrook": [
+{
+"id": "18074660135743458",
+"biz": "DJ's Clam Shack (Stony Brook)",
+"ig": "djsclamshackstonybrook",
+"town": "Stony Brook",
+"category": "Restaurant",
+"member": false,
+"title": "Fall & Winter Lunch Specials",
+"when": "Daily, 11:30 AM - 4 PM",
+"desc": "Philly cheesesteak, chicken fingers, or smashburger with fries/coleslaw and soda for $11.50.",
+"expires": "2026-10-30",
+"posted": "2026-10-16T16:35:54+0000",
+"url": "https://www.instagram.com/p/Dej-Kdlv3BJ/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
+"inset": "ig/p18074660135743458.jpg"
+}
+],
 "culpers1778": [],
 "levelupkitchenny": [],
 "littlecheeseshop": [],
@@ -138,22 +171,6 @@
 "url": "https://www.instagram.com/p/DeZbupGkZGY/",
 "img": "",
 "inset": "ig/p18002503688808113.jpg"
-},
-{
-"id": "18110203772333626",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Trivia Nights at Toast Ronkonkoma",
-"when": "Every Thursday, starting Oct. 15 · 4:30 PM",
-"desc": "Join trivia nights with brain teasers, food, drinks, and friendly competition.",
-"expires": "2026-10-24",
-"posted": "2026-10-09T17:21:08+0000",
-"url": "https://www.instagram.com/p/DeSBtPAvyuh/",
-"img": "",
-"inset": "ig/p18110203772333626.jpg"
 }
 ],
 "prohibitionportjefferson": [],
@@ -209,6 +226,22 @@
 }
 ],
 "fifthseasonrestaurant": [
+{
+"id": "18045318959847467",
+"biz": "Fifth Season Restaurant",
+"ig": "fifthseasonrestaurant",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Friday Happy Hour at The Fifth",
+"when": "Every Friday",
+"desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
+"expires": "2026-10-23",
+"posted": "2026-10-16T16:39:54+0000",
+"url": "https://www.instagram.com/reel/Dej-smegwuG/",
+"img": "",
+"inset": "ig/p18045318959847467.jpg"
+},
 {
 "id": "18117715669788260",
 "biz": "Fifth Season Restaurant",
@@ -439,23 +472,6 @@
 }
 ],
 "portjefficecream": [],
-"slurp_ramen_usa": [
-{
-"id": "18393198076166609",
-"biz": "Slurp Ramen",
-"ig": "slurp_ramen_usa",
-"town": "Port Jefferson",
-"category": "Restaurant (Ramen)",
-"member": false,
-"title": "ISSEI Mochi Gummies Now at Slurp Ramen",
-"when": "Limited time",
-"desc": "Try new fruity mochi gummies (mango, strawberry, yuzu, peach) - gluten free, plant based, no gelatin.",
-"expires": "2026-10-24",
-"posted": "2026-10-09T15:38:17+0000",
-"url": "https://www.instagram.com/p/DeR2Kt5hcm9/",
-"img": "",
-"inset": "ig/p18393198076166609.jpg"
-}
-],
+"slurp_ramen_usa": [],
 "tara.inn": []
 }

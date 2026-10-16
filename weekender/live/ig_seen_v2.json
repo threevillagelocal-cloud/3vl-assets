@@ -3198,5 +3198,93 @@
 "desc": "Grilled chicken with white cheddar, tomato, avocado, and chipotle aioli plus crispy fries.",
 "expires": "2026-10-16",
 "_ts": "2026-10-16T14:33:22+0000"
+},
+"18179713699443003": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-16T17:37:18+0000"
+},
+"18078146048554378": {
+"special": true,
+"title": "New Fall Comfort Food Specials",
+"when": "Starting today",
+"desc": "Seafood Stuffed Shells, London Broil, Beef Nachos, and Creamy Chicken Marsala Gnocchi Soup.",
+"expires": "2026-10-30",
+"_ts": "2026-10-16T16:54:26+0000"
+},
+"18074660135743458": {
+"special": true,
+"title": "Fall & Winter Lunch Specials",
+"when": "Daily, 11:30 AM - 4 PM",
+"desc": "Philly cheesesteak, chicken fingers, or smashburger with fries/coleslaw and soda for $11.50.",
+"expires": "2026-10-30",
+"_ts": "2026-10-16T16:35:54+0000"
+},
+"17981984127121126": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-16T16:07:39+0000"
+},
+"17917891095536415": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-16T16:12:00+0000"
+},
+"17959764270255273": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-16T16:39:49+0000"
+},
+"18475202458138856": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-16T18:02:37+0000"
+},
+"18131409322615492": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-16T15:19:41+0000"
+},
+"18045318959847467": {
+"special": true,
+"title": "Friday Happy Hour at The Fifth",
+"when": "Every Friday",
+"desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
+"expires": "2026-10-23",
+"_ts": "2026-10-16T16:39:54+0000"
+},
+"18117577075811018": {
+"special": false,
+"title": "Happy Hour at Nantuckets",
+"when": "Not specified",
+"desc": "Happy hour drinks and food offered, but no specific times or days are mentioned in the post.",
+"expires": "2026-10-16",
+"_ts": "2026-10-16T16:03:25+0000"
+},
+"17912738508493048": {
+"special": false,
+"title": "Seafood Risotto Balls",
+"when": "Ongoing",
+"desc": "Bay scallops and shrimp risotto balls with lobster cream sauce.",
+"expires": "2026-10-16",
+"_ts": "2026-10-16T15:02:19+0000"
 }
 }
