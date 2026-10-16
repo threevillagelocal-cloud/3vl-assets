@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-16T21:01:02.501122+00:00",
+"updated": "2026-10-16T23:01:01.579428+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 214,
-"Emma S. Clark Library": 335,
+"Emma S. Clark Library": 334,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
@@ -127,26 +127,6 @@
 "page": "https://www.threevillagelocal.com/three-village-farmers-market",
 "pu": "",
 "rank": 6
-},
-{
-"id": "emmaclark-family-night-spooky-seashell-spider-families-w-children-grades-k-5-591",
-"title": "Family Night: Spooky Seashell Spider (Families w/ Children in Grades K-5)",
-"start": "2026-10-16T18:00:00",
-"end": "2026-10-16T19:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/family-night-spooky-seashell-spider-families-w-children-grades-k-5-59169",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-08/Spider.jpg",
-"src": "emmaclark",
-"tags": [
-"arts",
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/family-night-spooky-seashell-spider-families-w-children-in-grades-k-5"
 },
 {
 "id": "emmaclark-murder-mystery-night-59566",
@@ -1656,7 +1636,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-16T21:00:15+00:00",
+"checked": "2026-10-16T23:00:12+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
