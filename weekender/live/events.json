@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-16T15:01:05.303151+00:00",
+"updated": "2026-10-16T15:02:56.345942+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -1286,6 +1286,23 @@
 "closings": [],
 "specials": [
 {
+"id": "18117715669788260",
+"biz": "Fifth Season Restaurant",
+"ig": "fifthseasonrestaurant",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Wednesday Night Special",
+"when": "Every Wednesday",
+"desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
+"expires": "2026-10-20",
+"posted": "2026-10-14T18:27:21+0000",
+"url": "https://www.instagram.com/reel/DefBZHAgmqC/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18117715669788260.jpg",
+"page": "https://www.threevillagelocal.com/the-fifth-season"
+},
+{
 "id": "18446451835130348",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -1318,23 +1335,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17882169600535369.jpg",
 "page": "https://www.threevillagelocal.com/the-whiskey-barrel"
-},
-{
-"id": "18020655815927579",
-"biz": "Right Coast Taqueria",
-"ig": "rctaqueria",
-"town": "East Setauket",
-"category": "Restaurant",
-"member": false,
-"title": "Harvest Burrito",
-"when": "Limited time",
-"desc": "Roasted sweet potato, squash, carrots, Brussels sprouts, corn, seasoned rice, spicy maple aioli.",
-"expires": "2026-10-24",
-"posted": "2026-10-09T12:58:22+0000",
-"url": "https://www.instagram.com/reel/DeRj6fJMfd8/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18020655815927579.jpg",
-"page": "https://www.threevillagelocal.com/right-coast-taqueria"
 },
 {
 "id": "18393198076166609",
@@ -1390,6 +1390,23 @@
 ],
 "specialsAll": [
 {
+"id": "18117715669788260",
+"biz": "Fifth Season Restaurant",
+"ig": "fifthseasonrestaurant",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Wednesday Night Special",
+"when": "Every Wednesday",
+"desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
+"expires": "2026-10-20",
+"posted": "2026-10-14T18:27:21+0000",
+"url": "https://www.instagram.com/reel/DefBZHAgmqC/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18117715669788260.jpg",
+"page": "https://www.threevillagelocal.com/the-fifth-season"
+},
+{
 "id": "18446451835130348",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -1439,23 +1456,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17882169600535369.jpg",
 "page": "https://www.threevillagelocal.com/the-whiskey-barrel"
-},
-{
-"id": "18020655815927579",
-"biz": "Right Coast Taqueria",
-"ig": "rctaqueria",
-"town": "East Setauket",
-"category": "Restaurant",
-"member": false,
-"title": "Harvest Burrito",
-"when": "Limited time",
-"desc": "Roasted sweet potato, squash, carrots, Brussels sprouts, corn, seasoned rice, spicy maple aioli.",
-"expires": "2026-10-24",
-"posted": "2026-10-09T12:58:22+0000",
-"url": "https://www.instagram.com/reel/DeRj6fJMfd8/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18020655815927579.jpg",
-"page": "https://www.threevillagelocal.com/right-coast-taqueria"
 },
 {
 "id": "18393198076166609",
@@ -1642,29 +1642,12 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18097934228639515.jpg",
 "page": "https://www.threevillagelocal.com/po-boy-brewery"
-},
-{
-"id": "18117715669788260",
-"biz": "Fifth Season Restaurant",
-"ig": "fifthseasonrestaurant",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Wednesday Night Special",
-"when": "Every Wednesday",
-"desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
-"expires": "2026-10-20",
-"posted": "2026-10-14T18:27:21+0000",
-"url": "https://www.instagram.com/reel/DefBZHAgmqC/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18117715669788260.jpg",
-"page": "https://www.threevillagelocal.com/the-fifth-season"
 }
 ],
 "eatOrder": [
+"Fifth Season Restaurant",
 "Castaways Steak & Seafood",
 "The Whiskey Barrel",
-"Right Coast Taqueria",
 "Slurp Ramen",
 "Toast Coffee + Kitchen",
 "Kilwins Port Jefferson",
@@ -1674,7 +1657,6 @@
 "Burgerology",
 "The Study by Toast",
 "Po' Boy Brewery",
-"Fifth Season Restaurant",
 "Culpers 1778",
 "Madiran The Wine Bar",
 "Ixchel Mexican Cuisine",
@@ -1693,6 +1675,7 @@
 "Nantuckets",
 "Old Fields Port Jefferson",
 "Tara Inn",
+"Right Coast Taqueria",
 "Hirosaki",
 "Eastern Pavilion",
 "Taj Crown of India",
