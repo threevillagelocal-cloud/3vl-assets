@@ -49,19 +49,20 @@ def guard_due(now):
     return hm == (6, 30) or (now.minute == 0 and now.hour % 2 == 1 and 9 <= now.hour <= 21)
 
 
-def tick(now):
+def tick(now, name="tick.txt", msg="clock tick"):
+    """Push data/clock/<name> to 3vl-site-guard; each file starts the workflows that watch it."""
     if not os.path.isdir(GUARD):
         sh("git clone -q --depth 1 git@github.com:threevillagelocal-cloud/3vl-site-guard.git %s" % GUARD, check=True)
         sh('git config user.name "3VL clock" && git config user.email "actions@users.noreply.github.com"', cwd=GUARD)
     for i in range(4):
         sh("git pull -q --rebase", cwd=GUARD)
         os.makedirs(os.path.join(GUARD, "data", "clock"), exist_ok=True)
-        open(os.path.join(GUARD, "data", "clock", "tick.txt"), "w").write(now.isoformat() + "\n")
-        sh("git add data/clock/tick.txt && git commit -qm 'clock tick %s'" % now.strftime("%H:%M ET"), cwd=GUARD)
+        open(os.path.join(GUARD, "data", "clock", name), "w").write(now.isoformat() + "\n")
+        sh("git add data/clock/%s && git commit -qm '%s %s'" % (name, msg, now.strftime("%H:%M ET")), cwd=GUARD)
         if sh("git push -q", cwd=GUARD).returncode == 0:
-            print("tick", now.strftime("%H:%M")); return
+            print(msg, now.strftime("%H:%M")); return
         time.sleep(10)
-    print("tick could not be pushed")
+    print(msg, "could not be pushed")
 
 
 def catch_up(now):
@@ -98,6 +99,8 @@ def main():
         if "specials" in acts:
             specials()
         if "tick" in acts:
+            if now.weekday() == 4 and (now.hour, now.minute) == (7, 0):   # owner 10/16/2026: weekly email preview Fri 7 AM (GitHub's cron runs hours late)
+                tick(now, "weekly.txt", "weekly email build")
             if guard_due(now):   # owner 10/12/2026: site guard, watchdog AND events/ferry feed every 2 hours
                 tick(now)
                 sh("gh workflow run events-live.yml -R %s" % REPO, check=True)   # events feed + Port Jefferson Ferry alerts
