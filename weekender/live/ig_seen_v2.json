@@ -3070,5 +3070,93 @@
 "desc": "Butternut squash soup and sauerbraten available today at Tara Inn.",
 "expires": "2026-10-15",
 "_ts": "2026-10-15T15:59:45+0000"
+},
+"18114059207143070": {
+"special": false,
+"title": "Event Hosting at Luca",
+"when": "Ongoing",
+"desc": "Customized event menus and catering available for celebrations and gatherings. Call 631-675-0435 to inquire.",
+"expires": "2026-10-15",
+"_ts": "2026-10-15T19:44:19+0000"
+},
+"18134810281641075": {
+"special": false,
+"title": "Football Season Specials",
+"when": "This week",
+"desc": "100 oz Modelo beer special during football games with food and company.",
+"expires": "2026-10-22",
+"_ts": "2026-10-15T20:15:16+0000"
+},
+"17922201324441947": {
+"special": false,
+"title": "Se-Port Deli & Caterers",
+"when": "",
+"desc": "No specific offer or event announced in this post.",
+"expires": "2026-10-15",
+"_ts": "2026-10-15T19:21:01+0000"
+},
+"18049979072819564": {
+"special": false,
+"title": "Se-Port Deli & Caterers",
+"when": "",
+"desc": "No specific offer or event announced in this post.",
+"expires": "",
+"_ts": "2026-10-15T19:20:05+0000"
+},
+"18286511038288842": {
+"special": false,
+"_ts": "2026-10-15T19:19:28+0000"
+},
+"18123924358965652": {
+"special": false,
+"_ts": "2026-10-15T19:18:58+0000"
+},
+"18132278239773295": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-15T19:09:24+0000"
+},
+"17929228515421341": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-15T19:07:25+0000"
+},
+"18223576354341630": {
+"special": true,
+"title": "Halloween Costume Party & Contest",
+"when": "Oct 29 (in 2 weeks)",
+"desc": "Wear a costume for happy hour prices all night. Vote on top 3 costumes to win gift cards up to $100.",
+"expires": "2026-10-29",
+"_ts": "2026-10-15T22:55:32+0000"
+},
+"18097934228639515": {
+"special": true,
+"title": "Halloween Costume Party & Happy Hour",
+"when": "Wed, Oct. 29 · All Night",
+"desc": "Wear a costume for happy hour prices all night + vote on costumes for gift card prizes up to $100.",
+"expires": "2026-10-29",
+"_ts": "2026-10-15T22:35:01+0000"
+},
+"17882169600535369": {
+"special": true,
+"title": "Thursday Night Karaoke",
+"when": "Every Thursday · 10 PM",
+"desc": "Sign up at 9:30 PM to take the mic at The Whiskey Barrel in Port Jefferson.",
+"expires": "2026-10-22",
+"_ts": "2026-10-15T22:47:38+0000"
+},
+"17946567318348098": {
+"special": true,
+"title": "Mummy Caramel Apples",
+"when": "Now through Halloween",
+"desc": "Caramel-coated apples dipped in white chocolate with spooky mummy decoration.",
+"expires": "2026-10-31",
+"_ts": "2026-10-15T22:02:35+0000"
 }
 }

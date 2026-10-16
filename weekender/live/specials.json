@@ -1,22 +1,6 @@
 {
- "updated": "2026-10-15T19:00:16.670485+00:00",
+ "updated": "2026-10-16T00:57:30.473230+00:00",
  "specials": [
-  {
-   "id": "18099322592380488",
-   "biz": "Culpers 1778",
-   "ig": "culpers1778",
-   "town": "East Setauket",
-   "category": "Restaurant/Steakhouse",
-   "member": false,
-   "title": "Thursday Nights at Culpers 1778",
-   "when": "Every Thursday",
-   "desc": "Prime steaks, fresh seafood, and handcrafted cocktails. Reserve your table through their bio.",
-   "expires": "2026-10-22",
-   "posted": "2026-10-08T19:05:18+0000",
-   "url": "https://www.instagram.com/reel/DePpGtRp1qJ/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
-   "inset": "ig/p18099322592380488.jpg"
-  },
   {
    "id": "18117578293785434",
    "biz": "The Country Corner",
@@ -96,26 +80,26 @@
    "url": "https://www.instagram.com/p/DefitEwRkj6/",
    "img": "",
    "inset": "ig/p18025189280879518.jpg"
+  },
+  {
+   "id": "18223576354341630",
+   "biz": "Po' Boy Brewery",
+   "ig": "poboybeerandcider",
+   "town": "Port Jefferson Station",
+   "category": "Brewery/Cidery",
+   "member": false,
+   "title": "Halloween Costume Party & Contest",
+   "when": "Oct 29 (in 2 weeks)",
+   "desc": "Wear a costume for happy hour prices all night. Vote on top 3 costumes to win gift cards up to $100.",
+   "expires": "2026-10-29",
+   "posted": "2026-10-15T22:55:32+0000",
+   "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
+   "img": "",
+   "inset": "ig/p18223576354341630.jpg"
   }
  ],
  "candidates": [
   {
-   "id": "18099322592380488",
-   "biz": "Culpers 1778",
-   "ig": "culpers1778",
-   "town": "East Setauket",
-   "category": "Restaurant/Steakhouse",
-   "member": false,
-   "title": "Thursday Nights at Culpers 1778",
-   "when": "Every Thursday",
-   "desc": "Prime steaks, fresh seafood, and handcrafted cocktails. Reserve your table through their bio.",
-   "expires": "2026-10-22",
-   "posted": "2026-10-08T19:05:18+0000",
-   "url": "https://www.instagram.com/reel/DePpGtRp1qJ/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
-   "inset": "ig/p18099322592380488.jpg"
-  },
-  {
    "id": "18117578293785434",
    "biz": "The Country Corner",
    "ig": "countrycornerlongisland",
@@ -194,25 +178,25 @@
    "url": "https://www.instagram.com/p/DefitEwRkj6/",
    "img": "",
    "inset": "ig/p18025189280879518.jpg"
+  },
+  {
+   "id": "18223576354341630",
+   "biz": "Po' Boy Brewery",
+   "ig": "poboybeerandcider",
+   "town": "Port Jefferson Station",
+   "category": "Brewery/Cidery",
+   "member": false,
+   "title": "Halloween Costume Party & Contest",
+   "when": "Oct 29 (in 2 weeks)",
+   "desc": "Wear a costume for happy hour prices all night. Vote on top 3 costumes to win gift cards up to $100.",
+   "expires": "2026-10-29",
+   "posted": "2026-10-15T22:55:32+0000",
+   "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
+   "img": "",
+   "inset": "ig/p18223576354341630.jpg"
   }
  ],
  "all": [
-  {
-   "id": "18099322592380488",
-   "biz": "Culpers 1778",
-   "ig": "culpers1778",
-   "town": "East Setauket",
-   "category": "Restaurant/Steakhouse",
-   "member": false,
-   "title": "Thursday Nights at Culpers 1778",
-   "when": "Every Thursday",
-   "desc": "Prime steaks, fresh seafood, and handcrafted cocktails. Reserve your table through their bio.",
-   "expires": "2026-10-22",
-   "posted": "2026-10-08T19:05:18+0000",
-   "url": "https://www.instagram.com/reel/DePpGtRp1qJ/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
-   "inset": "ig/p18099322592380488.jpg"
-  },
   {
    "id": "18117578293785434",
    "biz": "The Country Corner",
@@ -326,20 +310,36 @@
    "inset": "ig/p18025189280879518.jpg"
   },
   {
-   "id": "17959248594011698",
+   "id": "18223576354341630",
    "biz": "Po' Boy Brewery",
    "ig": "poboybeerandcider",
    "town": "Port Jefferson Station",
    "category": "Brewery/Cidery",
    "member": false,
-   "title": "Po'Boy Halloween Costume Party",
-   "when": "Fri, Oct. 30 · 7 PM–Midnight",
-   "desc": "Come in costume for all-night Happy Hour pricing. Costume contest with prizes up to $100.",
-   "expires": "2026-10-30",
-   "posted": "2026-10-09T21:48:30+0000",
-   "url": "https://www.instagram.com/p/DeSgrwJynM-/",
+   "title": "Halloween Costume Party & Contest",
+   "when": "Oct 29 (in 2 weeks)",
+   "desc": "Wear a costume for happy hour prices all night. Vote on top 3 costumes to win gift cards up to $100.",
+   "expires": "2026-10-29",
+   "posted": "2026-10-15T22:55:32+0000",
+   "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
    "img": "",
-   "inset": "ig/p17959248594011698.jpg"
+   "inset": "ig/p18223576354341630.jpg"
+  },
+  {
+   "id": "18097934228639515",
+   "biz": "Po' Boy Brewery",
+   "ig": "poboybeerandcider",
+   "town": "Port Jefferson Station",
+   "category": "Brewery/Cidery",
+   "member": false,
+   "title": "Halloween Costume Party & Happy Hour",
+   "when": "Wed, Oct. 29 · All Night",
+   "desc": "Wear a costume for happy hour prices all night + vote on costumes for gift card prizes up to $100.",
+   "expires": "2026-10-29",
+   "posted": "2026-10-15T22:35:01+0000",
+   "url": "https://www.instagram.com/reel/DeiCvsxyyY0/",
+   "img": "",
+   "inset": "ig/p18097934228639515.jpg"
   },
   {
    "id": "18117715669788260",
@@ -422,6 +422,22 @@
    "inset": "ig/p18081011885365219.jpg"
   },
   {
+   "id": "17882169600535369",
+   "biz": "The Whiskey Barrel",
+   "ig": "thewhiskeybarrelportjeff",
+   "town": "Port Jefferson",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Thursday Night Karaoke",
+   "when": "Every Thursday · 10 PM",
+   "desc": "Sign up at 9:30 PM to take the mic at The Whiskey Barrel in Port Jefferson.",
+   "expires": "2026-10-22",
+   "posted": "2026-10-15T22:47:38+0000",
+   "url": "https://www.instagram.com/p/DeiEH7EPyyT/",
+   "img": "",
+   "inset": "ig/p17882169600535369.jpg"
+  },
+  {
    "id": "17895980562416730",
    "biz": "The Whiskey Barrel",
    "ig": "thewhiskeybarrelportjeff",
@@ -436,22 +452,6 @@
    "url": "https://www.instagram.com/p/DefRtU0gcdg/",
    "img": "",
    "inset": "ig/p17895980562416730.jpg"
-  },
-  {
-   "id": "18081474245382981",
-   "biz": "The Whiskey Barrel",
-   "ig": "thewhiskeybarrelportjeff",
-   "town": "Port Jefferson",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "Fall Cocktails Launch",
-   "when": "Starting today",
-   "desc": "New seasonal cocktails arrive at The Whiskey Barrel with fall flavors and vibes.",
-   "expires": "2026-10-22",
-   "posted": "2026-10-08T19:09:19+0000",
-   "url": "https://www.instagram.com/p/DePppH0hLGq/",
-   "img": "",
-   "inset": "ig/p18081474245382981.jpg"
   },
   {
    "id": "18104634956631034",
@@ -516,6 +516,22 @@
    "url": "https://www.instagram.com/reel/DecUiWyOGvW/",
    "img": "",
    "inset": "ig/p18100984226300493.jpg"
+  },
+  {
+   "id": "17946567318348098",
+   "biz": "Kilwins Port Jefferson",
+   "ig": "kilwins_port_jeff",
+   "town": "Port Jefferson",
+   "category": "Chocolate/Ice Cream",
+   "member": false,
+   "title": "Mummy Caramel Apples",
+   "when": "Now through Halloween",
+   "desc": "Caramel-coated apples dipped in white chocolate with spooky mummy decoration.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-15T22:02:35+0000",
+   "url": "https://www.instagram.com/reel/Deh_ABAExaG/",
+   "img": "",
+   "inset": "ig/p17946567318348098.jpg"
   }
  ]
 }
