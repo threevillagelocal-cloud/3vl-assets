@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T15:00:13.799374+00:00",
+ "updated": "2026-10-17T23:14:09.356168+00:00",
  "specials": [
   {
    "id": "18117578293785434",
@@ -66,6 +66,22 @@
    "inset": "ig/p17900498451602344.jpg"
   },
   {
+   "id": "17931655359410036",
+   "biz": "Little Cheese Shop",
+   "ig": "littlecheeseshop",
+   "town": "Stony Brook",
+   "category": "Cheese Shop/Cafe",
+   "member": false,
+   "title": "Spooky Cheese Workshop",
+   "when": "Fri, Oct. 23",
+   "desc": "Join a themed cheese workshop. Tickets available on their website.",
+   "expires": "2026-10-23",
+   "posted": "2026-10-17T17:53:01+0000",
+   "url": "https://www.instagram.com/p/Demr3dLufAE/",
+   "img": "",
+   "inset": "ig/p17931655359410036.jpg"
+  },
+  {
    "id": "18223576354341630",
    "biz": "Po' Boy Brewery",
    "ig": "poboybeerandcider",
@@ -80,22 +96,6 @@
    "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
    "img": "",
    "inset": "ig/p18223576354341630.jpg"
-  },
-  {
-   "id": "18045318959847467",
-   "biz": "Fifth Season Restaurant",
-   "ig": "fifthseasonrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Friday Happy Hour at The Fifth",
-   "when": "Every Friday",
-   "desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
-   "expires": "2026-10-23",
-   "posted": "2026-10-16T16:39:54+0000",
-   "url": "https://www.instagram.com/reel/Dej-smegwuG/",
-   "img": "",
-   "inset": "ig/p18045318959847467.jpg"
   }
  ],
  "candidates": [
@@ -164,6 +164,22 @@
    "inset": "ig/p17900498451602344.jpg"
   },
   {
+   "id": "17931655359410036",
+   "biz": "Little Cheese Shop",
+   "ig": "littlecheeseshop",
+   "town": "Stony Brook",
+   "category": "Cheese Shop/Cafe",
+   "member": false,
+   "title": "Spooky Cheese Workshop",
+   "when": "Fri, Oct. 23",
+   "desc": "Join a themed cheese workshop. Tickets available on their website.",
+   "expires": "2026-10-23",
+   "posted": "2026-10-17T17:53:01+0000",
+   "url": "https://www.instagram.com/p/Demr3dLufAE/",
+   "img": "",
+   "inset": "ig/p17931655359410036.jpg"
+  },
+  {
    "id": "18223576354341630",
    "biz": "Po' Boy Brewery",
    "ig": "poboybeerandcider",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
    "img": "",
    "inset": "ig/p18223576354341630.jpg"
-  },
-  {
-   "id": "18045318959847467",
-   "biz": "Fifth Season Restaurant",
-   "ig": "fifthseasonrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Friday Happy Hour at The Fifth",
-   "when": "Every Friday",
-   "desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
-   "expires": "2026-10-23",
-   "posted": "2026-10-16T16:39:54+0000",
-   "url": "https://www.instagram.com/reel/Dej-smegwuG/",
-   "img": "",
-   "inset": "ig/p18045318959847467.jpg"
   }
  ],
  "all": [
@@ -276,6 +276,22 @@
    "url": "https://www.instagram.com/p/DeXbPIHuo1v/",
    "img": "",
    "inset": "ig/p17900498451602344.jpg"
+  },
+  {
+   "id": "17931655359410036",
+   "biz": "Little Cheese Shop",
+   "ig": "littlecheeseshop",
+   "town": "Stony Brook",
+   "category": "Cheese Shop/Cafe",
+   "member": false,
+   "title": "Spooky Cheese Workshop",
+   "when": "Fri, Oct. 23",
+   "desc": "Join a themed cheese workshop. Tickets available on their website.",
+   "expires": "2026-10-23",
+   "posted": "2026-10-17T17:53:01+0000",
+   "url": "https://www.instagram.com/p/Demr3dLufAE/",
+   "img": "",
+   "inset": "ig/p17931655359410036.jpg"
   },
   {
    "id": "18223576354341630",
@@ -390,6 +406,22 @@
    "inset": "ig/p17882169600535369.jpg"
   },
   {
+   "id": "18263565073307789",
+   "biz": "Danfords Hotel & Marina",
+   "ig": "danfordshotelandmarina",
+   "town": "Port Jefferson",
+   "category": "Hotel/Event Venue",
+   "member": false,
+   "title": "Port Jefferson Harvest Fest",
+   "when": "This weekend",
+   "desc": "Local vendors, food, and entertainment celebrate autumn in the village this weekend.",
+   "expires": "2026-10-19",
+   "posted": "2026-10-17T16:42:16+0000",
+   "url": "https://www.instagram.com/p/Demj_Z2F4uJ/",
+   "img": "",
+   "inset": "ig/p18263565073307789.jpg"
+  },
+  {
    "id": "18100984226300493",
    "biz": "Toast Coffee + Kitchen",
    "ig": "toastcoffeeandkitchen",
@@ -404,6 +436,22 @@
    "url": "https://www.instagram.com/reel/DecUiWyOGvW/",
    "img": "",
    "inset": "ig/p18100984226300493.jpg"
+  },
+  {
+   "id": "18113767961172883",
+   "biz": "Premiere Pastry Shop",
+   "ig": "premierepastryshop",
+   "town": "Stony Brook",
+   "category": "Bakery",
+   "member": false,
+   "title": "Halloween Cakesicles Now Available",
+   "when": "Through October 31",
+   "desc": "Seasonal Halloween-themed cakesicles are available now at Premiere Pastry Shop.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-17T17:21:51+0000",
+   "url": "https://www.instagram.com/p/DemoZPHCNWS/",
+   "img": "",
+   "inset": "ig/p18113767961172883.jpg"
   },
   {
    "id": "17946567318348098",
