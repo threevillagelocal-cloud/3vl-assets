@@ -154,7 +154,7 @@ def status_for(title):
 def main():
     today = dt.date.today()
     horizon = today + dt.timedelta(days=10)
-    out, counts = [], {}
+    out, counts, held = [], {}, []
     for name, fn in S.SOURCES:
         try:
             got = fn()
@@ -166,7 +166,10 @@ def main():
             end = e.get("end") or e["start"]
             if not (e["start"].date() <= horizon and max(e["start"], end).date() >= today):   # upcoming, or started earlier and still running
                 continue
-            if re.search(r"country house|bench bar|home ?baked by julia|elaine'?s restaurant", e["title"] + " " + e["venue"], re.I):   # never promote (owner requests: Country House; The Bench Bar & Grill 10/1/2026; Homebaked By Julia 10/5/2026)
+            hit = re.search(r"country house|bench|home ?baked by julia|elaine'?s", e["title"] + " " + e["venue"], re.I)
+            if hit:   # never promote (owner requests: Country House; The Bench Bar & Grill 10/1/2026; Homebaked By Julia 10/5/2026; Elaine's)
+                # owner 10/16/2026: hold these for HIS approval instead of silently dropping them (he may let some through)
+                held.append({"title": e["title"], "venue": e["venue"], "start": e["start"].isoformat(), "url": e["url"], "matched": hit.group(0)})
                 continue
             if re.search(r"meeting|work session|advisory council|board of trustees|zoning board|planning board|delayed opening|library closed", e["title"], re.I):
                 continue
@@ -294,7 +297,13 @@ def main():
     if os.path.exists(fpath):
         data["ferry"] = json.load(open(fpath, encoding="utf-8"))
     json.dump(data, open(os.path.join(HERE, "events.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
-    print(counts, len(final))
+    # events kept OFF the site because they match the never-promote list; the owner reviews these and may OK some (10/16/2026)
+    seen, hl = set(), []
+    for h in held:
+        if (h["title"], h["start"][:10]) not in seen:
+            seen.add((h["title"], h["start"][:10])); hl.append(h)
+    json.dump({"updated": dt.datetime.now().isoformat(timespec="minutes"), "held": hl}, open(os.path.join(HERE, "held_for_owner.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(counts, len(final), "held for owner:", len(hl))
 
 
 if __name__ == "__main__":
