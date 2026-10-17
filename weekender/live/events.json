@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-17T17:00:51.825818+00:00",
+"updated": "2026-10-17T19:01:11.245274+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 214,
-"Emma S. Clark Library": 331,
+"Emma S. Clark Library": 329,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
@@ -298,23 +298,6 @@
 "rank": 3
 },
 {
-"id": "emmaclark-monster-week-tabletop-rpg-61436",
-"title": "Monster of the Week: A Tabletop RPG",
-"start": "2026-10-17T12:00:00",
-"end": "2026-10-17T14:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Board Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-61436",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/monster-of-the-week-a-tabletop-rpg-380"
-},
-{
 "id": "cur-dogparade",
 "title": "Harvest Festival Costumed Dog Parade",
 "start": "2026-10-17T12:30",
@@ -334,23 +317,6 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/port-jefferson-harvest-festival-costumed-dog-parade",
 "pu": ""
-},
-{
-"id": "emmaclark-ai-basics-introduction-artificial-intelligence-60460",
-"title": "AI Basics: An Introduction to Artificial Intelligence",
-"start": "2026-10-17T13:00:00",
-"end": "2026-10-17T15:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/ai-basics-introduction-artificial-intelligence-60460",
-"desc": "Explore what artificial intelligence is, how it works, and how it is shaping everyday life. This informative session will also highlight key considerations when using and evaluating AI-generated content. Taught by Library Trustee Stephen Ingulli and Library Op",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/39288399_artificial_intelligence_vector_illustration.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/ai-basics-an-introduction-to-artificial-intelligence-382"
 },
 {
 "id": "pjchamber-14966",
@@ -411,6 +377,23 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/crafternoon-ages-3-11-yrs-w-caregiver"
+},
+{
+"id": "emmaclark-monster-week-tabletop-rpg-59669",
+"title": "Monster of the Week: A Tabletop RPG",
+"start": "2026-10-17T14:00:00",
+"end": "2026-10-17T15:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Board Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-59669",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": ""
 },
 {
 "id": "cur-stinkfoot",
@@ -1705,7 +1688,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-17T17:00:13+00:00",
+"checked": "2026-10-17T19:00:14+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
