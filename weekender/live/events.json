@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-17T13:01:04.384596+00:00",
+"updated": "2026-10-17T15:00:53.099447+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 214,
-"Emma S. Clark Library": 333,
+"Emma S. Clark Library": 332,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
@@ -235,7 +235,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/walk-to-end-alzheimers-use-qr-code-to-register-and-for-more-information"
+"page": ""
 },
 {
 "id": "portjeff-1149",
@@ -255,25 +255,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/38th-outdoor-country-auction"
-},
-{
-"id": "emmaclark-cat-toy-take-make-great-give-back-grades-3-5-34765",
-"title": "Cat Toy \"Take & Make\" - The Great Give Back (Grades 3-5)",
-"start": "2026-10-17T09:30:00",
-"end": "2026-10-17T10:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/cat-toy-take-make-great-give-back-grades-3-5-34765",
-"desc": "Help support our furry friends! As part of The Great Give Back , create a dog or cat toy at home while earning 1 hour of community service credit. Reserve your kit starting Thursday, October 1, then come in and pick it up. Return it to the Children's Library b",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/cat-toy-take-make-the-great-give-back-grades-3-5"
 },
 {
 "id": "emmaclark-dog-toy-take-make-great-give-back-grades-3-5-34766",
@@ -1741,7 +1722,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-17T13:00:12+00:00",
+"checked": "2026-10-17T15:00:13+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
