@@ -64,3 +64,7 @@ document.addEventListener('click',function(e){var a=e.target.closest('.member_pr
   fit();var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(fit,200)});
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit)})();
 })();
+/* premium profile v2 preview: ?v=2 loads the new layout (files live on 3vl-share, no pin needed) */
+(function(){try{if(new URLSearchParams(location.search).get('v')!=='2'||!document.querySelector('.member_profile'))return;
+  var B='https://threevillagelocal-cloud.github.io/3vl-share/live/p3/',q='?t='+Date.now(),l=document.createElement('link');l.rel='stylesheet';l.href=B+'prof2.css'+q;document.head.appendChild(l);
+  var s=document.createElement('script');s.src=B+'prof2.js'+q;s.async=true;document.body.appendChild(s)}catch(e){}})();
