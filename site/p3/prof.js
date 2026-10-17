@@ -51,13 +51,16 @@ $$('.make-connection').forEach(function(e){e.style.display='none'});
 $$('.content_w_sidebar > .col-md-3 .module').forEach(function(m){if(!m.textContent.trim()&&!m.querySelector('iframe,img'))m.style.display='none'});
 document.addEventListener('click',function(e){var a=e.target.closest('.member_profile [data-act], .member_profile .btn-send_message_action, .member_profile .btn-write_a_review_for, .member_profile a.weblink');if(!a)return;
   track(a.getAttribute('data-act')||(a.classList.contains('weblink')?'website':a.classList.contains('btn-write_a_review_for')?'review':'message'))});
-/* never split a word in a designed bio (10/16/2026: "KGR CONTRA-CTING" on phones). Words stay whole; any big headline
-   that is then wider than the screen is shrunk step by step until its longest word fits. */
-(function(){var fd=$('.field-about_me');if(!fd)return;
-  function fit(){$$('*',fd).forEach(function(el){var cs=getComputedStyle(el),fs=parseFloat(cs.fontSize);
-    if(fs<20||!el.textContent.trim()||cs.display==='inline')return;
-    el.style.removeProperty('font-size');fs=parseFloat(getComputedStyle(el).fontSize);var n=0;
-    while(el.scrollWidth>el.clientWidth+1&&fs>16&&n<30){fs=fs*0.94;el.style.setProperty('font-size',fs.toFixed(1)+'px','important');n++}})}
+/* never split a word in a designed bio (10/16/2026: "KGR CONTRA-CTING" on phones). Words stay whole; a big headline whose
+   LONGEST WORD is wider than its box is scaled down just enough for that word to fit (measured with canvas, nothing else shrinks). */
+(function(){var fd=$('.field-about_me');if(!fd)return;var cv=document.createElement('canvas').getContext('2d');
+  function own(el){var t='';for(var i=0;i<el.childNodes.length;i++){var n=el.childNodes[i];if(n.nodeType===3)t+=n.nodeValue+' ';else if(n.nodeType===1&&getComputedStyle(n).display==='inline')t+=n.textContent+' '}return t.trim()}
+  function fit(){$$('*',fd).forEach(function(el){var cs=getComputedStyle(el);if(cs.display==='inline')return;var txt=own(el);if(!txt)return;
+    if(el.getAttribute('data-fs0')===null)el.setAttribute('data-fs0',el.style.getPropertyValue('font-size')||'');var f0=el.getAttribute('data-fs0');if(f0)el.style.setProperty('font-size',f0);else el.style.removeProperty('font-size');cs=getComputedStyle(el);var fs=parseFloat(cs.fontSize);if(fs<18)return;
+    var avail=el.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);if(avail<=0)return;
+    cv.font=cs.fontStyle+' '+cs.fontWeight+' '+fs+'px '+cs.fontFamily;var ls=parseFloat(cs.letterSpacing)||0,tt=cs.textTransform==='uppercase';
+    var w=0;txt.split(/\s+/).forEach(function(x){if(tt)x=x.toUpperCase();var m=cv.measureText(x).width+ls*x.length;if(m>w)w=m});
+    if(w>avail){var n=Math.max(16,fs*avail/w*0.97);el.style.setProperty('font-size',n.toFixed(1)+'px','important')}})}
   fit();var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(fit,200)});
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit)})();
 })();
