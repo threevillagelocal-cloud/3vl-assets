@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-16T23:01:01.579428+00:00",
+"updated": "2026-10-17T00:19:43.376616+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -85,27 +85,6 @@
 "rank": 1
 },
 {
-"id": "lim-10000257",
-"title": "Stitch & Chit-Ch(at) – FREE!",
-"start": "2026-10-16T14:00:00",
-"end": "2026-10-16T15:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/stitch/2026-10-16/",
-"desc": "Whether you knit, crochet, embroider, or hand-sew, gather at the LIM to do what you love. Bring your work-in-progress and enjoy some good company. Open to adults and children 12 and up. This program will take place in the Studio located on the East side of cam",
-"img": "https://longislandmuseum.org/wp-content/uploads/2025/12/Stitch-and-Chit-Chat.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-tvfm",
 "title": "Three Village Farmers & Artisans Market",
 "start": "2026-10-16T15:00",
@@ -127,23 +106,6 @@
 "page": "https://www.threevillagelocal.com/three-village-farmers-market",
 "pu": "",
 "rank": 6
-},
-{
-"id": "emmaclark-murder-mystery-night-59566",
-"title": "Murder Mystery Night",
-"start": "2026-10-16T19:00:00",
-"end": "2026-10-16T20:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/murder-mystery-night-59566",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/murder-mystery-night"
 },
 {
 "id": "cur-harvest",
@@ -1206,27 +1168,83 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/introduction-to-microsoft-word"
+},
+{
+"id": "emmaclark-stretch-your-imagination-ages-2-4-w-caregiver-58812",
+"title": "Stretch Your Imagination (Ages 2-4 w/ caregiver)",
+"start": "2026-10-27T10:00:00",
+"end": "2026-10-27T10:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/stretch-your-imagination-ages-2-4-w-caregiver-58812",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-10/Stretch%20Toddlers.png",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/stretch-your-imagination-ages-2-4-w-caregiver"
+},
+{
+"id": "emmaclark-aarp-defensive-driving-course-38139",
+"title": "AARP Defensive Driving Course",
+"start": "2026-10-27T10:00:00",
+"end": "2026-10-27T13:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/aarp-defensive-driving-course-38139",
+"desc": "This 6-hour course for those age 50 and up qualifies licensed drivers to receive a reduction of up to four points on their driver’s license or a 10% deduction on collision and liability auto insurance rates for a period of three years. Some insurance companies",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-05/AARP_logo_screen_0.PNG",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "lim-3225806",
+"title": "Smithsonian National Youth Summit 2026",
+"start": "2026-10-27T16:00:00",
+"end": "2026-10-27T18:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/youth-summit/",
+"desc": "CALLING ALL TEEN LEADERS! The National Youth Summit brings middle and high school students together with scholars, teachers, policy experts, and activists in a national conversation about important events in America’s past that have relevance to the nation’s p",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/National-Youth-Submit-2026.jpg",
+"src": "lim",
+"tags": [
+"kids",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/smithsonian-national-youth-summit-2026"
+},
+{
+"id": "emmaclark-word-38619",
+"title": "Introduction to Microsoft Word",
+"start": "2026-10-27T18:30:00",
+"end": "2026-10-27T20:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Technology Center",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/word-38619",
+"desc": "This three-part class introduces Microsoft Word, or “Word” as it is commonly known. This popular software application allows you to write letters and resumés, create invitations, flyers and much more! Taught by Visual Communications and Technology Librarian Je",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/word%20class_0.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/introduction-to-microsoft-word-425"
 }
 ],
 "closings": [],
 "specials": [
-{
-"id": "18223576354341630",
-"biz": "Po' Boy Brewery",
-"ig": "poboybeerandcider",
-"town": "Port Jefferson Station",
-"category": "Brewery/Cidery",
-"member": false,
-"title": "Halloween Costume Party & Contest",
-"when": "Oct 29 (in 2 weeks)",
-"desc": "Wear a costume for happy hour prices all night. Vote on top 3 costumes to win gift cards up to $100.",
-"expires": "2026-10-29",
-"posted": "2026-10-15T22:55:32+0000",
-"url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18223576354341630.jpg",
-"page": "https://www.threevillagelocal.com/po-boy-brewery"
-},
 {
 "id": "18045318959847467",
 "biz": "Fifth Season Restaurant",
@@ -1311,43 +1329,26 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17946567318348098.jpg",
 "page": "https://www.threevillagelocal.com/kilwins-port-jefferson"
+},
+{
+"id": "18117578293785434",
+"biz": "The Country Corner",
+"ig": "countrycornerlongisland",
+"town": "East Setauket",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Live Music: Down Port Band",
+"when": "Sat, Oct. 17 · 6:30 PM",
+"desc": "Catch Down Port Band performing live at The Country Corner.",
+"expires": "2026-10-17",
+"posted": "2026-10-15T02:24:14+0000",
+"url": "https://www.instagram.com/p/Def4HLpNu5Y/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18117578293785434.jpg",
+"page": "https://www.threevillagelocal.com/country-corner"
 }
 ],
 "specialsAll": [
-{
-"id": "18223576354341630",
-"biz": "Po' Boy Brewery",
-"ig": "poboybeerandcider",
-"town": "Port Jefferson Station",
-"category": "Brewery/Cidery",
-"member": false,
-"title": "Halloween Costume Party & Contest",
-"when": "Oct 29 (in 2 weeks)",
-"desc": "Wear a costume for happy hour prices all night. Vote on top 3 costumes to win gift cards up to $100.",
-"expires": "2026-10-29",
-"posted": "2026-10-15T22:55:32+0000",
-"url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18223576354341630.jpg",
-"page": "https://www.threevillagelocal.com/po-boy-brewery"
-},
-{
-"id": "18097934228639515",
-"biz": "Po' Boy Brewery",
-"ig": "poboybeerandcider",
-"town": "Port Jefferson Station",
-"category": "Brewery/Cidery",
-"member": false,
-"title": "Halloween Costume Party & Happy Hour",
-"when": "Wed, Oct. 29 · All Night",
-"desc": "Wear a costume for happy hour prices all night + vote on costumes for gift card prizes up to $100.",
-"expires": "2026-10-29",
-"posted": "2026-10-15T22:35:01+0000",
-"url": "https://www.instagram.com/reel/DeiCvsxyyY0/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18097934228639515.jpg",
-"page": "https://www.threevillagelocal.com/po-boy-brewery"
-},
 {
 "id": "18045318959847467",
 "biz": "Fifth Season Restaurant",
@@ -1569,25 +1570,41 @@
 "page": "https://www.threevillagelocal.com/burgerology"
 },
 {
-"id": "18025189280879518",
-"biz": "The Study by Toast",
-"ig": "thestudy.bytoast",
-"town": "East Setauket",
-"category": "Coffee House",
+"id": "18223576354341630",
+"biz": "Po' Boy Brewery",
+"ig": "poboybeerandcider",
+"town": "Port Jefferson Station",
+"category": "Brewery/Cidery",
 "member": false,
-"title": "The Study by Toast 1-Year Anniversary",
-"when": "Fri, Oct. 16 · 12 PM-2 PM",
-"desc": "Free Darth Chocolate Cookie with purchase, meet Turnip the screech owl, first 100 guests get free tote bag.",
-"expires": "2026-10-16",
-"posted": "2026-10-14T23:17:45+0000",
-"url": "https://www.instagram.com/p/DefitEwRkj6/",
+"title": "Halloween Costume Party & Contest",
+"when": "Oct 29 (in 2 weeks)",
+"desc": "Wear a costume for happy hour prices all night. Vote on top 3 costumes to win gift cards up to $100.",
+"expires": "2026-10-29",
+"posted": "2026-10-15T22:55:32+0000",
+"url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18025189280879518.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast"
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18223576354341630.jpg",
+"page": "https://www.threevillagelocal.com/po-boy-brewery"
+},
+{
+"id": "18097934228639515",
+"biz": "Po' Boy Brewery",
+"ig": "poboybeerandcider",
+"town": "Port Jefferson Station",
+"category": "Brewery/Cidery",
+"member": false,
+"title": "Halloween Costume Party & Happy Hour",
+"when": "Wed, Oct. 29 · All Night",
+"desc": "Wear a costume for happy hour prices all night + vote on costumes for gift card prizes up to $100.",
+"expires": "2026-10-29",
+"posted": "2026-10-15T22:35:01+0000",
+"url": "https://www.instagram.com/reel/DeiCvsxyyY0/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18097934228639515.jpg",
+"page": "https://www.threevillagelocal.com/po-boy-brewery"
 }
 ],
 "eatOrder": [
-"Po' Boy Brewery",
 "Fifth Season Restaurant",
 "Castaways Steak & Seafood",
 "The Whiskey Barrel",
@@ -1598,7 +1615,7 @@
 "Namkeen Hot Chicken",
 "DJ's Clam Shack (Stony Brook)",
 "Burgerology",
-"The Study by Toast",
+"Po' Boy Brewery",
 "Culpers 1778",
 "Madiran The Wine Bar",
 "Ixchel Mexican Cuisine",
@@ -1606,6 +1623,7 @@
 "Ralph's Famous Italian Ices & Ice Cream",
 "The Steam Room",
 "Se-Port Deli & Caterers",
+"The Study by Toast",
 "Little Cheese Shop",
 "Luca Restaurant",
 "Three Village Inn / Mirabelle Restaurant & Tavern",
@@ -1636,7 +1654,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-16T23:00:12+00:00",
+"checked": "2026-10-17T00:18:53+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
