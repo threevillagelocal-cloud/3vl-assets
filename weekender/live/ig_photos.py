@@ -8,11 +8,18 @@ H = [h.strip() for h in (os.environ.get("IG_HANDLES") or "").split(",") if h.str
 OUT = "igpull"; os.makedirs(OUT, exist_ok=True)
 idx = []
 for h in H:
-    q = "business_discovery.username(%s){username,name,media.limit(%s){id,timestamp,media_type,media_url,permalink,caption,children{media_type,media_url}}}" % (h, os.environ.get("IG_LIMIT", "20"))
-    try:
-        d = json.load(urllib.request.urlopen("https://graph.facebook.com/%s/%s?%s" % (V, ME, urllib.parse.urlencode({"fields": q, "access_token": T})), timeout=40))
-    except urllib.error.HTTPError as e:
-        print("NO", h, json.load(e).get("error", {}).get("message", "")[:90]); continue
+    d = None
+    for lim in (os.environ.get("IG_LIMIT", "20"), "25", "12"):   # big accounts: "Please reduce the amount of data" -> ask for fewer posts
+        q = "business_discovery.username(%s){username,name,media.limit(%s){id,timestamp,media_type,media_url,permalink,caption,children{media_type,media_url}}}" % (h, lim)
+        try:
+            d = json.load(urllib.request.urlopen("https://graph.facebook.com/%s/%s?%s" % (V, ME, urllib.parse.urlencode({"fields": q, "access_token": T})), timeout=40))
+            break
+        except urllib.error.HTTPError as e:
+            msg = json.load(e).get("error", {}).get("message", "")[:90]
+            if "reduce the amount" not in msg:
+                print("NO", h, msg); break
+    if d is None:
+        print("NO", h, "too much data even at 12 posts"); continue
     bd = d.get("business_discovery", {}); n = 0
     for m in bd.get("media", {}).get("data", []):
         url = m.get("media_url") if m.get("media_type") == "IMAGE" else None
