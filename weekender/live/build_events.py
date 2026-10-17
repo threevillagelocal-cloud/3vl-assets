@@ -195,12 +195,17 @@ def main():
                            "status": e.get("status", ""), "pick": e["id"] in W.get("picks", []), "page": e.get("page", ""),
                            "pu": e.get("pick_until", "")})   # pu: when the card leaves Top Things to Do (before the event ends)
         for a in W.get("allweekend", []):
-            if a["id"] in W.get("picks", []):
+            # ALL ongoing attractions go in the feed, not just the hand-picked ones: Stony Brook Village scarecrows were missing
+            # from /this-weekend and the weekend post on 10/16/2026 because only picked allweekend items were added
+            if True:
                 v = W["venues"].get(a["venue"], {})
-                out.insert(0, {"id": "cur-" + a["id"], "title": a["title"], "start": dt.date.today().isoformat() + "T00:00", "end": a.get("until") or W.get("ends", ""),
+                until = a.get("until") or W.get("ends", "")
+                if until and "T" not in until:
+                    until += "T23:59"
+                out.insert(0, {"id": "cur-" + a["id"], "title": a["title"], "start": dt.date.today().isoformat() + "T00:00", "end": until,
                                "allday": True, "ongoing": True, "whenText": a["when"], "venue": v.get("name", ""), "addr": v.get("addr", ""),
                                "url": a.get("url", ""), "desc": a["desc"], "img": (base + a["img"] + "-720.webp") if a.get("img") else "",
-                               "src": "3vl", "tags": a["tags"][:3], "status": "", "pick": True, "page": a.get("page", "")})
+                               "src": "3vl", "tags": a["tags"][:3], "status": "", "pick": a["id"] in W.get("picks", []), "page": a.get("page", "")})
         for o in out:
             if o.get("pick"):
                 o["rank"] = W["picks"].index(o["id"][4:]) + 1 if o["id"][4:] in W["picks"] else 9
