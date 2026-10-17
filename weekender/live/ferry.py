@@ -68,7 +68,10 @@ def main():
             continue   # festival/event promos are not service alerts
         if any(x["title"] == title for x in out["alerts"]):
             continue
-        out["alerts"].append({"title": title, "text": body[:240], "link": a.get("primaryLinkUrl") or SITE + "/schedule",
+        link = (a.get("primaryLinkUrl") or "").strip() or SITE + "/schedule"
+        if link.startswith("/"):
+            link = SITE + link   # the ferry site gives relative links ("/info/elevator-alert"); on our page they 404'd (10/16/2026)
+        out["alerts"].append({"title": title, "text": body[:240], "link": link,
                               "published": a.get("publishedAt", "")})
     # the legend shows the cancelled icon once per terminal; more icons than legends = cancelled departures on the schedule
     legends = sched.count("= Cancelled")
