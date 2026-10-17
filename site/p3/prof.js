@@ -51,4 +51,13 @@ $$('.make-connection').forEach(function(e){e.style.display='none'});
 $$('.content_w_sidebar > .col-md-3 .module').forEach(function(m){if(!m.textContent.trim()&&!m.querySelector('iframe,img'))m.style.display='none'});
 document.addEventListener('click',function(e){var a=e.target.closest('.member_profile [data-act], .member_profile .btn-send_message_action, .member_profile .btn-write_a_review_for, .member_profile a.weblink');if(!a)return;
   track(a.getAttribute('data-act')||(a.classList.contains('weblink')?'website':a.classList.contains('btn-write_a_review_for')?'review':'message'))});
+/* never split a word in a designed bio (10/16/2026: "KGR CONTRA-CTING" on phones). Words stay whole; any big headline
+   that is then wider than the screen is shrunk step by step until its longest word fits. */
+(function(){var fd=$('.field-about_me');if(!fd)return;
+  function fit(){$$('*',fd).forEach(function(el){var cs=getComputedStyle(el),fs=parseFloat(cs.fontSize);
+    if(fs<20||!el.textContent.trim()||cs.display==='inline')return;
+    el.style.removeProperty('font-size');fs=parseFloat(getComputedStyle(el).fontSize);var n=0;
+    while(el.scrollWidth>el.clientWidth+1&&fs>16&&n<30){fs=fs*0.94;el.style.setProperty('font-size',fs.toFixed(1)+'px','important');n++}})}
+  fit();var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(fit,200)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit)})();
 })();
