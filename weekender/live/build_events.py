@@ -166,8 +166,8 @@ def main():
             end = e.get("end") or e["start"]
             if not (e["start"].date() <= horizon and max(e["start"], end).date() >= today):   # upcoming, or started earlier and still running
                 continue
-            hit = re.search(r"country house|bench|home ?baked by julia|elaine'?s", e["title"] + " " + e["venue"], re.I)
-            if hit:   # never promote (owner requests: Country House; The Bench Bar & Grill 10/1/2026; Homebaked By Julia 10/5/2026; Elaine's)
+            hit = re.search(r"country house|bench|home ?baked by julia|elaine'?s|home ?kingdom", e["title"] + " " + e["venue"], re.I)
+            if hit:   # never promote (owner requests: Country House; The Bench Bar & Grill 10/1/2026; Homebaked By Julia 10/5/2026; Elaine's; Home Kingdom 10/17/2026)
                 # owner 10/16/2026: hold these for HIS approval instead of silently dropping them (he may let some through)
                 held.append({"title": e["title"], "venue": e["venue"], "start": e["start"].isoformat(), "url": e["url"], "matched": hit.group(0)})
                 continue
