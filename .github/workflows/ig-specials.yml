@@ -39,7 +39,9 @@ jobs:
           for i in 1 2 3 4; do
             if git pull --rebase --autostash -q; then git push -q && exit 0
             else
-              git checkout --theirs weekender/live/events.json && python weekender/live/build_events.py && git add weekender/live/events.json \
+              # 10/17/2026: other generated files (ferry.json, held_for_owner.json...) can conflict too: take ours for every one
+              for f in $(git diff --name-only --diff-filter=U); do git checkout --theirs "$f" && git add "$f"; done
+              python weekender/live/build_events.py && git add weekender/live \
                 && GIT_EDITOR=true git rebase --continue && git push -q && exit 0
               git rebase --abort 2>/dev/null || true
             fi
