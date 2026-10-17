@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-17T06:52:23.852164+00:00",
+"updated": "2026-10-17T10:31:12.479553+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
@@ -1741,7 +1741,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-17T06:51:26+00:00",
+"checked": "2026-10-17T10:30:15+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
