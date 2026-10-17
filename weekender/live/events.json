@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-17T01:46:45.474879+00:00",
+"updated": "2026-10-17T03:07:50.826669+00:00",
 "counts": {
 "Three Village Chamber": 5,
-"Port Jefferson Chamber": 36,
+"Port Jefferson Chamber": 0,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 214,
@@ -23,45 +23,6 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
-{
-"id": "pjchamber-14726",
-"title": "2026 Port Jefferson Scarecrow Walk",
-"start": "2026-10-05T00:00:00",
-"end": "2026-11-02T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
-"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd! var...",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
-},
-{
-"id": "pjchamber-14181",
-"title": "2026 Port Jeff Self-Guided Fall Art Walk",
-"start": "2026-10-09T00:00:00",
-"end": "2026-11-06T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
 {
 "id": "cur-filmlim",
 "title": "FILM@LIM: A New York Minute",
@@ -129,6 +90,94 @@
 "page": "https://www.threevillagelocal.com/events/2026-port-jefferson-harvest-festival",
 "pu": "",
 "rank": 2
+},
+{
+"id": "cur-elephant",
+"title": "Elephant & Piggie's We Are in a Play!",
+"start": "2026-10-17T00:00",
+"end": "2026-10-24T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Through Oct. 24",
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/",
+"desc": "Mo Willems' best friends in a musical made for first-time theatergoers.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/elephant-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"stage"
+],
+"status": "",
+"pick": false,
+"page": ""
+},
+{
+"id": "cur-cabaret",
+"title": "Cabaret",
+"start": "2026-10-17T00:00",
+"end": "2026-10-25T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Through Oct. 25",
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://theatrethree.com/mainstage_shows/cabaret/",
+"desc": "Theatre Three's mainstage run of the Kander and Ebb classic.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/cabaret-720.webp",
+"src": "3vl",
+"tags": [
+"stage"
+],
+"status": "",
+"pick": false,
+"page": ""
+},
+{
+"id": "cur-scarecrow",
+"title": "Stony Brook Village Scarecrows",
+"start": "2026-10-17T00:00",
+"end": "2026-10-25T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Vote through Oct. 25",
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook",
+"url": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
+"desc": "The 36th annual scarecrows line Stony Brook Village. Grab a ballot in any shop and vote for your favorite.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/scarecrow-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": false,
+"page": ""
+},
+{
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-10-17T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Running until Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/spooky-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": false,
+"page": ""
 },
 {
 "id": "3vchamber-1922571",
@@ -299,25 +348,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/ai-basics-an-introduction-to-artificial-intelligence-382"
-},
-{
-"id": "pjchamber-14966",
-"title": "Basket Raffles – First Presbyterian Church of Port Jefferson",
-"start": "2026-10-17T13:30:00",
-"end": "2026-10-17T15:30:00",
-"allday": false,
-"venue": "Coram Fire Department",
-"addr": "303 Middle Country Road, Coram, NY, 11727",
-"url": "https://portjeffchamber.com/events-calendar/basket-raffles-first-presbyterian-church-of-port-jefferson/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/basket-raffles-first-presbyterian-church-of-port-jefferson"
 },
 {
 "id": "lim-3225310",
@@ -1036,25 +1066,6 @@
 "page": "https://www.threevillagelocal.com/events/storytime-around-the-world-ages-3-8-yrs"
 },
 {
-"id": "pjchamber-14774",
-"title": "Port Jefferson Chowder Crawl",
-"start": "2026-10-24T12:00:00",
-"end": "2026-10-24T15:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/port-jefferson-chowder-crawl/",
-"desc": "CLICK HERE TO PURCHASE TICKETS! Participating Locations: Barito Tacos & Cocktails Castaways Steak & Seafood Curry Club at SaGhar Dark Horse Coffee & Kitchen Ditch La Cova Pasta Pasta PJ Lobster House Nantuckets The Canopy Club The Steam Room The Whiskey Barrel",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"food"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/port-jefferson-chowder-crawl"
-},
-{
 "id": "portjeff-1097",
 "title": "Outdoor Summer Farmers Market",
 "start": "2026-10-25T09:00:00",
@@ -1654,7 +1665,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-17T01:45:54+00:00",
+"checked": "2026-10-17T03:07:00+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
