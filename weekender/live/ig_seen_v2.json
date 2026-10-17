@@ -3302,5 +3302,21 @@
 "desc": "Elevated classic featuring Australian Wagyu with potato fondant and peppercorn sauce.",
 "expires": "2026-10-24",
 "_ts": "2026-10-16T21:01:43+0000"
+},
+"18502688491100263": {
+"special": false,
+"title": "Hirosaki - Japanese & Hibachi",
+"when": "Ongoing",
+"desc": "Stony Brook's destination for happy hour, live hibachi, cocktails, and modern Japanese dishes.",
+"expires": "2026-10-17",
+"_ts": "2026-10-17T14:00:47+0000"
+},
+"18638894698016587": {
+"special": true,
+"title": "Breakfast Burrito Brunch",
+"when": "Sat, Oct. 18 · 12-4 PM",
+"desc": "Eggs, chorizo, bacon, cheddar-jack, pico, potatoes with hash browns or salad.",
+"expires": "2026-10-18",
+"_ts": "2026-10-17T13:01:00+0000"
 }
 }
