@@ -29,6 +29,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GUARD_DEPLOY_KEY: ${{ secrets.GUARD_DEPLOY_KEY }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}   # news radar reads local businesses' Instagram captions (never printed)
         run: |
           mkdir -p ~/.ssh && printf '%s\n' "$GUARD_DEPLOY_KEY" > ~/.ssh/guard && chmod 600 ~/.ssh/guard
           python3 weekender/live/clock.py

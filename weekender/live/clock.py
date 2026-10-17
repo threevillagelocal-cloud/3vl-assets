@@ -65,6 +65,30 @@ def tick(now, name="tick.txt", msg="clock tick"):
     print(msg, "could not be pushed")
 
 
+def radar(now):
+    """Owner 10/17/2026 "news as it happens": news_radar.py every tick (30 min); new finds go to 3vl-site-guard
+    data/news_radar/, whose news-radar-mail workflow emails the owner. Runs in this public-repo job (no extra minutes)."""
+    if not os.path.isdir(GUARD):
+        sh("git clone -q --depth 1 git@github.com:threevillagelocal-cloud/3vl-site-guard.git %s" % GUARD, check=True)
+        sh('git config user.name "3VL clock" && git config user.email "actions@users.noreply.github.com"', cwd=GUARD)
+    sh("git pull -q --rebase --autostash")                       # latest radar code without restarting the clock
+    sh("git pull -q --rebase --autostash", cwd=GUARD)
+    try:
+        r = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "news_radar.py"), "--guard", GUARD],
+                           capture_output=True, text=True, timeout=300)
+        print("radar:", (r.stdout or "").strip().splitlines()[-1:] or r.stderr[-200:])
+    except subprocess.TimeoutExpired:
+        print("radar: timed out"); return
+    sh("git checkout -q -- weekender/live/ferry.json 2>/dev/null")  # ferry.py rewrites it; the events feed job owns it
+    if sh("git status --porcelain data/news_radar", cwd=GUARD).stdout.strip():
+        sh("git add data/news_radar && git commit -qm 'news radar %s'" % now.strftime("%H:%M ET"), cwd=GUARD)
+        for i in range(4):
+            if sh("git push -q", cwd=GUARD).returncode == 0:
+                return
+            sh("git pull -q --rebase --autostash", cwd=GUARD); time.sleep(5)
+        print("radar: could not push")
+
+
 def catch_up(now):
     """A restarted clock runs a missed specials refresh right away (last run > 4.5 h ago, daytime)."""
     if not ((7, 30) <= (now.hour, now.minute) <= (21, 0)):
@@ -104,6 +128,10 @@ def main():
             if guard_due(now):   # owner 10/12/2026: site guard, watchdog AND events/ferry feed every 2 hours
                 tick(now)
                 sh("gh workflow run events-live.yml -R %s" % REPO, check=True)   # events feed + Port Jefferson Ferry alerts
+            try:
+                radar(now)
+            except Exception as e:                    # the radar must never stop the clock
+                print("radar error:", type(e).__name__)
             ensure("clock-buddy.yml")
     if time.time() - start < 600:                  # safety: never restart in a tight loop; the hourly cron picks it up
         print("run ended after %d s: not restarting" % (time.time() - start)); return
