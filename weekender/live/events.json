@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-17T19:01:11.245274+00:00",
+"updated": "2026-10-17T20:30:06.490536+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 214,
-"Emma S. Clark Library": 329,
+"Emma S. Clark Library": 327,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
@@ -335,7 +335,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/basket-raffles-first-presbyterian-church-of-port-jefferson"
+"page": ""
 },
 {
 "id": "lim-3225310",
@@ -356,37 +356,17 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/special-screening-of-walk-with-frank-with-frank-romeo"
+"page": ""
 },
 {
-"id": "emmaclark-crafternoon-ages-3-11-yrs-w-caregiver-59707",
-"title": "Crafternoon (Ages 3-11 yrs. w/ caregiver)",
-"start": "2026-10-17T14:00:00",
-"end": "2026-10-17T15:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/crafternoon-ages-3-11-yrs-w-caregiver-59707",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-01/Crafternoon%20Collage.png",
-"src": "emmaclark",
-"tags": [
-"arts",
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/crafternoon-ages-3-11-yrs-w-caregiver"
-},
-{
-"id": "emmaclark-monster-week-tabletop-rpg-59669",
+"id": "emmaclark-monster-week-tabletop-rpg-61444",
 "title": "Monster of the Week: A Tabletop RPG",
-"start": "2026-10-17T14:00:00",
-"end": "2026-10-17T15:30:00",
+"start": "2026-10-17T14:30:00",
+"end": "2026-10-17T16:30:00",
 "allday": false,
 "venue": "Emma S. Clark Memorial Library, Board Room",
 "addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-59669",
+"url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-61444",
 "desc": "",
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
@@ -1688,7 +1668,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-17T19:00:14+00:00",
+"checked": "2026-10-17T20:29:12+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
