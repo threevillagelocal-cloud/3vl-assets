@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T12:00:13.430608+00:00",
+ "updated": "2026-10-18T15:00:15.340258+00:00",
  "specials": [
   {
    "id": "18078146048554378",
@@ -340,6 +340,22 @@
    "url": "https://www.instagram.com/reel/DefBZHAgmqC/",
    "img": "",
    "inset": "ig/p18117715669788260.jpg"
+  },
+  {
+   "id": "18134822992761307",
+   "biz": "Nantuckets",
+   "ig": "nantucketspjefferson",
+   "town": "Port Jefferson",
+   "category": "Restaurant (Seafood)",
+   "member": false,
+   "title": "Winter Prix Fixe Menu",
+   "when": "Now available",
+   "desc": "Enjoy a winter prix fixe menu starting at $42 plus tax with delicious options.",
+   "expires": "2026-11-01",
+   "posted": "2026-10-18T13:02:41+0000",
+   "url": "https://www.instagram.com/p/DeovmBCl5FQ/",
+   "img": "",
+   "inset": "ig/p18134822992761307.jpg"
   },
   {
    "id": "18638894698016587",
