@@ -3402,5 +3402,21 @@
 "desc": "Book the lounge for 2 hours with drinks and lite bites for groups of 6-12.",
 "expires": "2026-10-31",
 "_ts": "2026-10-17T19:02:02+0000"
+},
+"18122401276938699": {
+"special": false,
+"title": "Halloween at Danfords Hotel & Marina",
+"when": "Not specified",
+"desc": "Festive Halloween nights and fall activities at the harborfront venue, but no specific event date or offer listed.",
+"expires": "2026-10-18",
+"_ts": "2026-10-18T04:00:15+0000"
+},
+"17971539903141484": {
+"special": false,
+"title": "Old Fields Port Jefferson",
+"when": "",
+"desc": "Generic dinner invitation with no specific offer, date, or time-bound special announced.",
+"expires": "",
+"_ts": "2026-10-18T04:37:30+0000"
 }
 }

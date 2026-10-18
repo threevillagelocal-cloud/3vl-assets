@@ -1,22 +1,6 @@
 {
- "updated": "2026-10-17T23:14:09.356168+00:00",
+ "updated": "2026-10-18T12:00:13.430608+00:00",
  "specials": [
-  {
-   "id": "18117578293785434",
-   "biz": "The Country Corner",
-   "ig": "countrycornerlongisland",
-   "town": "East Setauket",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "Live Music: Down Port Band",
-   "when": "Sat, Oct. 17 · 6:30 PM",
-   "desc": "Catch Down Port Band performing live at The Country Corner.",
-   "expires": "2026-10-17",
-   "posted": "2026-10-15T02:24:14+0000",
-   "url": "https://www.instagram.com/p/Def4HLpNu5Y/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
-   "inset": "ig/p18117578293785434.jpg"
-  },
   {
    "id": "18078146048554378",
    "biz": "Tommy's Place",
@@ -96,26 +80,26 @@
    "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
    "img": "",
    "inset": "ig/p18223576354341630.jpg"
+  },
+  {
+   "id": "18045318959847467",
+   "biz": "Fifth Season Restaurant",
+   "ig": "fifthseasonrestaurant",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Friday Happy Hour at The Fifth",
+   "when": "Every Friday",
+   "desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
+   "expires": "2026-10-23",
+   "posted": "2026-10-16T16:39:54+0000",
+   "url": "https://www.instagram.com/reel/Dej-smegwuG/",
+   "img": "",
+   "inset": "ig/p18045318959847467.jpg"
   }
  ],
  "candidates": [
   {
-   "id": "18117578293785434",
-   "biz": "The Country Corner",
-   "ig": "countrycornerlongisland",
-   "town": "East Setauket",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "Live Music: Down Port Band",
-   "when": "Sat, Oct. 17 · 6:30 PM",
-   "desc": "Catch Down Port Band performing live at The Country Corner.",
-   "expires": "2026-10-17",
-   "posted": "2026-10-15T02:24:14+0000",
-   "url": "https://www.instagram.com/p/Def4HLpNu5Y/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
-   "inset": "ig/p18117578293785434.jpg"
-  },
-  {
    "id": "18078146048554378",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -194,25 +178,25 @@
    "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
    "img": "",
    "inset": "ig/p18223576354341630.jpg"
+  },
+  {
+   "id": "18045318959847467",
+   "biz": "Fifth Season Restaurant",
+   "ig": "fifthseasonrestaurant",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Friday Happy Hour at The Fifth",
+   "when": "Every Friday",
+   "desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
+   "expires": "2026-10-23",
+   "posted": "2026-10-16T16:39:54+0000",
+   "url": "https://www.instagram.com/reel/Dej-smegwuG/",
+   "img": "",
+   "inset": "ig/p18045318959847467.jpg"
   }
  ],
  "all": [
-  {
-   "id": "18117578293785434",
-   "biz": "The Country Corner",
-   "ig": "countrycornerlongisland",
-   "town": "East Setauket",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "Live Music: Down Port Band",
-   "when": "Sat, Oct. 17 · 6:30 PM",
-   "desc": "Catch Down Port Band performing live at The Country Corner.",
-   "expires": "2026-10-17",
-   "posted": "2026-10-15T02:24:14+0000",
-   "url": "https://www.instagram.com/p/Def4HLpNu5Y/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
-   "inset": "ig/p18117578293785434.jpg"
-  },
   {
    "id": "18078146048554378",
    "biz": "Tommy's Place",
