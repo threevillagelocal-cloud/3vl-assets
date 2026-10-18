@@ -47,7 +47,7 @@ def keep(m, who, since):
 def main():
     since = datetime.now(timezone.utc) - timedelta(days=DAYS)
     accts = json.load(open(os.path.join(os.path.dirname(__file__), "ig_accounts.json"), encoding="utf-8"))
-    handles = [a["ig"] for a in accts] + [h.strip().lstrip("@") for h in os.environ.get("IG_HANDLES", "").split(",") if h.strip()]
+    handles = ([] if os.environ.get("IG_ONLY") else [a["ig"] for a in accts]) + [h.strip().lstrip("@") for h in os.environ.get("IG_HANDLES", "").split(",") if h.strip()]
     seen, hits, errs = set(), [], []
     fields = "caption,timestamp,permalink,media_type,media_url,thumbnail_url,children{media_url}"
     for h in handles:
