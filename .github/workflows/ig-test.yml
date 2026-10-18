@@ -21,7 +21,7 @@ jobs:
           IG_LIMIT: "60"
         run: python weekender/live/${{ inputs.script || 'ig_test.py' }}
       - uses: actions/upload-artifact@v4
-        if: ${{ inputs.script == 'ig_photos.py' }}
+        if: ${{ inputs.script == 'ig_photos.py' || inputs.script == 'ig_events.py' }}
         with:
           name: igpull
           path: igpull
