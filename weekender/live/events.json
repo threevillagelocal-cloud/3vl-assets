@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-18T15:47:31.394492+00:00",
+"updated": "2026-10-18T17:00:47.095872+00:00",
 "counts": {
 "Three Village Chamber": 2,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 212,
-"Emma S. Clark Library": 325,
+"Emma S. Clark Library": 324,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 49,
 "Ward Melville Heritage Org": 3,
@@ -380,25 +380,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/38th-outdoor-country-auction-475"
-},
-{
-"id": "emmaclark-copy-stitching-circle-59568",
-"title": "The Stitching Circle",
-"start": "2026-10-18T10:30:00",
-"end": "2026-10-18T12:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/copy-stitching-circle-59568",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-09/Screenshot%202025-09-16%20183024.jpg",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/the-stitching-circle"
 },
 {
 "id": "lim-3225661",
@@ -1673,7 +1654,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-18T15:46:41+00:00",
+"checked": "2026-10-18T17:00:12+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
