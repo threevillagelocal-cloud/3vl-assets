@@ -1,11 +1,11 @@
 {
-"updated": "2026-10-18T17:00:47.095872+00:00",
+"updated": "2026-10-18T18:35:23.049699+00:00",
 "counts": {
 "Three Village Chamber": 2,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 212,
+"Village of Port Jefferson": 211,
 "Emma S. Clark Library": 324,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 49,
@@ -343,26 +343,6 @@
 "page": ""
 },
 {
-"id": "portjeff-1096",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-10-18T09:00:00",
-"end": "2026-10-18T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1096",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-474"
-},
-{
 "id": "portjeff-1150",
 "title": "38th Outdoor Country Auction",
 "start": "2026-10-18T09:00:00",
@@ -399,7 +379,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/cartoons-of-new-york-in-the-revolution"
+"page": ""
 },
 {
 "id": "emmaclark-book-movie-club-scary-stories-tell-dark-59570",
@@ -1654,7 +1634,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-18T17:00:12+00:00",
+"checked": "2026-10-18T18:34:48+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
