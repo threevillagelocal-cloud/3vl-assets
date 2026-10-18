@@ -11,7 +11,7 @@ Rules that matter on BD:
 """
 import nowhome_build as nhb  # 9/28: server-rendered homepage sections + Event schema
 import html, json, os, re, sys
-from datetime import datetime
+from datetime import datetime, timedelta
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = "threevillagelocal-cloud/3vl-assets"
@@ -199,7 +199,13 @@ def build(edition, local=False, sha="master", d=None, live=None):
     for i, pid in enumerate(d["picks"]):
         e = ev[pid]
         ongoing = bool(e.get("when"))
-        when = esc(e["when"]) if ongoing else "%s &middot; %s" % (dshort(e["start"]), fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"))
+        last = (datetime.fromisoformat(e["end"]) - timedelta(hours=6)).date().isoformat() if e.get("end") else e["start"][:10]
+        if ongoing:
+            when = esc(e["when"])
+        elif last > e["start"][:10]:   # owner 10/18/2026: multi-day events show both dates, e.g. "Sat, Oct 17 - Sun, Oct 18"
+            when = "%s - %s" % (dshort(e["start"]), dshort(last))
+        else:
+            when = "%s &middot; %s" % (dshort(e["start"]), fmt_time(e["start"]) + ("" if not e.get("extra") else " &amp; 4:30 PM"))
         page = e.get("page") or CAL   # 10/1: every card links to a page on our own site (weekend.json "page"), the organizer stays on the Details button
         title = '<a href="%s">%s</a>' % (esc(page), esc(e["title"]))
         acts = actions(e)

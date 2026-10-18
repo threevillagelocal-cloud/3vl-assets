@@ -53,8 +53,9 @@ function renderLive(data){
   var chips=function(tg){return tg.map(function(x){return '<span class="wk-tag" data-t="'+x+'">'+(TAGL[x]||x)+'</span>'}).join('')};
   var attrs=function(e){var d=e.s,wk=(d.getDay()===0||d.getDay()===6||(d.getDay()===5&&d.getHours()>=15));
     return 'data-id="'+esc2(e.id)+'" data-day="'+dkey(d)+'" data-wknd="'+(wk?1:0)+'" data-start="'+e.s.toISOString()+'" data-end="'+e.e.toISOString()+'" data-tags="'+esc2(e.tags.join(' '))+'" data-title="'+esc2(e.title)+'" data-venue="'+esc2(e.venue)+'" data-addr="'+esc2(e.addr)+'" data-img="'+esc2(e.img)+'"'+(e.status?' data-off="'+esc2(e.status)+'"':'')};
-  var md=function(e){return e.e-e.s>864e5*1.1},thru=function(e){return 'thru '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][e.e.getMonth()]+' '+e.e.getDate()};
-  var when=function(e){return e.s<t0?'Ongoing':e.allday?'All day':tm(e.s)};
+  /* owner 10/18/2026: multi-day events show their real dates ("Sat, Oct 17 - Sun, Oct 18"), never "Ongoing". An end before 6 AM counts as the night before */
+  var lastDay=function(e){return new Date(e.e.getTime()-216e5)},multi=function(e){return dkey(e.s)!==dkey(lastDay(e))&&lastDay(e)>e.s},span=function(e){return ds(e.s)+' - '+ds(lastDay(e))};
+  var when=function(e){return e.allday?'All day':tm(e.s)};
   /* schedule: tabs + one block per day */
   var sec=$('wk-sched');if(sec){
     var days={};evs.forEach(function(e){if(e.ongoing)return;var sd=e.s<t0?t0:e.s,k=dkey(sd);(days[k]=days[k]||{d:new Date(sd.getFullYear(),sd.getMonth(),sd.getDate()),l:[]}).l.push(e)});  /* ongoing events roll forward into Today */
@@ -65,7 +66,7 @@ function renderLive(data){
     Object.keys(days).sort().forEach(function(k,di){var D=days[k],isT=k===dkey(t0),isTm=k===dkey(new Date(t0.getTime()+864e5));
       var h=(di?'':'<p class="wk-daytip">&#128073; Tap a day to see what&rsquo;s up</p>')+'<div class="wk-dayblk is-collapsed" data-day="'+k+'"><p class="wk-dayh" role="button" tabindex="0" aria-expanded="false"><b>'+(isT?'Today':isTm?'Tomorrow':DAYN2x(D.d))+'</b><span>'+ds(D.d)+'</span><i class="wk-dcount">'+D.l.length+' event'+(D.l.length===1?'':'s')+'</i><em class="wk-chev" aria-hidden="true"></em></p><ol class="wk-tl">';
       D.l.forEach(function(e){var th=e.img?'<img '+smi(e.img,360)+' alt="" loading="lazy" width="120" height="120">':'<span class="wk-ticon">'+(IC[(e.tags.filter(function(x){return x!=='free'})[0])||'arts']||'&#9733;')+'</span>';
-        h+='<li class="wk-ev" '+attrs(e)+'><div class="wk-evt"><b>'+when(e)+'</b><span>'+(md(e)?thru(e):e.allday?'':'to '+tm(e.e))+'</span></div><div class="wk-evc"><div class="wk-evthumb">'+th+'</div><div class="wk-evbody">'+
+        h+='<li class="wk-ev" '+attrs(e)+'><div class="wk-evt"><b>'+when(e)+'</b><span>'+(multi(e)?span(e):e.allday?'':'to '+tm(e.e))+'</span></div><div class="wk-evc"><div class="wk-evthumb">'+th+'</div><div class="wk-evbody">'+
           '<p class="wk-evtitle">'+(e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+' <span class="wk-pstat" data-status></span></p><p class="wk-evwhere">'+esc2(e.venue)+'</p>'+
           (e.desc?'<p class="wk-evdesc" tabindex="0">'+esc2(e.desc)+'</p>':'')+'<div class="wk-tags">'+chips(e.tags)+'<span class="wk-wxchip"></span></div></div>'+acts(e)+'</div></li>'});
       h+='</ol></div>';anchor.insertAdjacentHTML('beforebegin',h)});
@@ -79,7 +80,7 @@ function renderLive(data){
   if(box){var cand=evs.filter(function(e){return e.img&&!e.fb&&!e.status&&(e.pu?new Date(e.pu):e.e)>t}).sort(function(a,b){return (b.pick?1:0)-(a.pick?1:0)||(a.rank||9)-(b.rank||9)||a.s-b.s});
     var cur=cand.filter(function(e){return e.pick}),soon=cand.filter(function(e){return !e.pick&&e.s<new Date(t0.getTime()+3*864e5)}),pick=cur.concat(soon,cand.filter(function(e){return cur.indexOf(e)<0&&soon.indexOf(e)<0})).slice(0,6);
     if(pick.length>=3)box.innerHTML=pick.map(function(e,i){return '<article class="wk-pick wk-rv is-in" data-href="'+esc2(e.page||CALP)+'" '+attrs(e).replace('data-id="','data-id="pk-')+'><div class="wk-pimg"><img '+smi(e.img,900,'280px')+' alt="'+esc2(e.title)+'" loading="lazy"><span class="wk-pnum">0'+(i+1)+'</span>'+(e.ongoing?'':'<span class="wk-pstat" data-status></span>')+'</div>'+
-      '<div class="wk-pbody"><p class="wk-pwhen">'+(e.ongoing?esc2(e.whenText):ds(e.s)+' &middot; '+when(e))+'</p><h3 class="wk-ptitle"><a href="'+esc2(e.page||CALP)+'">'+esc2(e.title)+'</a></h3><p class="wk-pwhere">&#128205; '+esc2(e.venue)+'</p><p class="wk-pdesc">'+esc2(e.desc)+'</p><div class="wk-tags">'+chips(e.tags)+'</div>'+(e.ongoing?acts(e).replace(/<button type="button" class="wk-cal"[^<]*<\/button>/,'<a class="wk-dir" href="'+esc2(e.url)+'" target="_blank" rel="noopener">&#128279; Details</a>'):acts(e))+'</div></article>'}).join('')}
+      '<div class="wk-pbody"><p class="wk-pwhen">'+(e.ongoing?esc2(e.whenText):multi(e)?span(e):ds(e.s)+' &middot; '+when(e))+'</p><h3 class="wk-ptitle"><a href="'+esc2(e.page||CALP)+'">'+esc2(e.title)+'</a></h3><p class="wk-pwhere">&#128205; '+esc2(e.venue)+'</p><p class="wk-pdesc">'+esc2(e.desc)+'</p><div class="wk-tags">'+chips(e.tags)+'</div>'+(e.ongoing?acts(e).replace(/<button type="button" class="wk-cal"[^<]*<\/button>/,'<a class="wk-dir" href="'+esc2(e.url)+'" target="_blank" rel="noopener">&#128279; Details</a>'):acts(e))+'</div></article>'}).join('')}
   if(box)RAD.forEach(function(r){if(!box.contains(r)){r.classList.add('is-in');box.appendChild(r)}});
   /* 3VL guide articles (weekend.json guides via #wk-top data-guides): link matching Top Things to Do cards (9/28) */
   (function(){var G=[];try{G=JSON.parse((document.getElementById('wk-top')||{getAttribute:function(){return '[]'}}).getAttribute('data-guides')||'[]')}catch(e){}
