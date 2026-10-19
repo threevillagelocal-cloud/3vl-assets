@@ -343,7 +343,9 @@ function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(
   ads=spread(ads,function(a){return a.getAttribute('data-group')||a.getAttribute('data-vip')},3);
   ads.forEach(function(a){rot.appendChild(a)});
   var idx=0,dur=6500,t0=0,paused=false,bar=$('wk-adbar'),dots=$('wk-addots'),seenV={};
-  var slots=$$('.wk-adslot');var r2=$('wk-adrot2');if(r2&&innerWidth>1060)slots.unshift(r2);var clones=slots.map(function(s,n){var w=document.createElement('div');w.className='wk-adrot';s.appendChild(w);
+  var slots=$$('.wk-adslot');var r2=$('wk-adrot2');if(r2&&innerWidth>1060)slots.unshift(r2);
+  /* iPad / tablet (owner 10/18/2026): two smaller banners side by side in each in-page slot */
+  if(window.matchMedia&&matchMedia('(min-width:640px) and (max-width:1060px) and (pointer:coarse)').matches)slots=slots.reduce(function(a,s){a.push(s);if(!s.classList.contains('wk-rslot')&&s!==r2)a.push(s);return a},[]);var clones=slots.map(function(s,n){var w=document.createElement('div');w.className='wk-adrot';s.appendChild(w);
     ads.forEach(function(a){var c=a.cloneNode(true);c.classList.remove('is-on');var lb=document.createElement('span');lb.className='wk-adlabel';lb.textContent='3VL VIP';c.appendChild(lb);w.appendChild(c)});return $$('.wk-ad',w)});
   /* lower rail pair: no banner downloads until the reader scrolls close to it (it starts just below the first screen) */
   $$('.wk-rslot').forEach(function(s){if(!('IntersectionObserver' in window))return;s.setAttribute('data-far','1');

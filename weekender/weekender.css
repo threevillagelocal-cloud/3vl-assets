@@ -929,3 +929,22 @@ a.wk-guide{flex:1 0 100%;display:flex!important;align-items:center;justify-conte
 /* 10/13/2026: smartsearch.js adds its search bar between the intro and the stats row after first paint, which pushed the stats down ~70px (layout shift). Hold that space until the bar arrives. */
 .wk-hin>.wk-dek+.wk-hstats{margin-top:92px}
 @media (max-width:720px){.wk-hin>.wk-dek+.wk-hstats{margin-top:88px}}
+
+/* iPad / tablet touch screens only (owner 10/18/2026, iPad mini demo): phones and computers untouched */
+#wk-top img{-webkit-user-drag:none;-webkit-touch-callout:none}
+@media (min-width:640px) and (max-width:1060px) and (pointer:coarse){
+  #wk-top .wk-picks > .wk-pick{flex:0 0 46%!important}
+  #wk-top .wk-pimg{aspect-ratio:16/10!important;min-height:0!important;flex:0 0 auto!important}
+  #wk-top .wk-picks .wk-ptitle{font-size:22px!important}
+  #wk-top .wk-picks .wk-pdesc{font-size:16px!important;line-height:1.45}
+  #wk-top .wk-picks .wk-pwhen,#wk-top .wk-picks .wk-pwhere{font-size:14px!important}
+  #wk-top .wk-picks .wk-acts{flex-wrap:nowrap;gap:6px}
+  #wk-top .wk-picks .wk-acts button,#wk-top .wk-picks .wk-acts a{font-size:14.5px!important;padding:0 12px!important;white-space:nowrap}
+  #wk-top .wk-wx > *{flex:0 0 46%!important}
+  #wk-top .wk-eat.wk-swipe > .wk-sp{flex:0 0 46%!important}
+  #wk-top .wk-adslot:not(.wk-rslot){display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+  #wk-top .wk-adslot:not(.wk-rslot) .wk-adrot{max-width:none;margin:0}
+}
+@media (min-width:761px) and (max-width:1060px) and (pointer:coarse){
+  #wk-top .wk-picks > .wk-pick{flex:0 0 38%!important}
+}
