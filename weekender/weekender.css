@@ -949,3 +949,7 @@ a.wk-guide{flex:1 0 100%;display:flex!important;align-items:center;justify-conte
 @media (min-width:761px) and (max-width:1060px) and (pointer:coarse){
   #wk-top .wk-picks > .wk-pick{flex:0 0 38%!important}
 }
+/* iPad: rows only move sideways; a long press + drag must not float the whole row up/down (owner 10/18/2026) */
+#wk-top .wk-swipe,#wk-top .wk-wx{overflow-y:hidden!important;overscroll-behavior:contain;touch-action:pan-x pan-y}
+#wk-top .wk-eat.wk-swipe{-webkit-overflow-scrolling:auto}
+@media (hover:none){#wk-top .wk-sp:hover{transform:none}#wk-top .wk-sp:hover .wk-eimg img{transform:none}}
