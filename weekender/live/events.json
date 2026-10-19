@@ -1,16 +1,16 @@
 {
-"updated": "2026-10-18T23:00:50.600495+00:00",
+"updated": "2026-10-19T01:00:51.291897+00:00",
 "counts": {
 "Three Village Chamber": 2,
 "Port Jefferson Chamber": 36,
-"I Love Port Jeff": 2,
+"I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 211,
 "Emma S. Clark Library": 323,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 49,
 "Ward Melville Heritage Org": 3,
-"LI Music Hall of Fame": 4
+"LI Music Hall of Fame": 3
 },
 "icons": {
 "kids": "&#129490;",
@@ -153,25 +153,6 @@
 "rank": 3
 },
 {
-"id": "iloveportjeff-6ab01ba7d25d7853b1e2fee2",
-"title": "Harvest Festival",
-"start": "2026-10-17T12:00:00",
-"end": "2026-10-18T17:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://www.iloveportjeff.com/events/harvest-festival",
-"desc": "Celebrate fall in Port Jefferson with two days of seasonal fun for the whole family, including hay rides, a pumpkin patch, costumed dog parade, games, contests, and more. Stroll the village, support local businesses, and enjoy everything that makes fall in Por",
-"img": "https://images.squarespace-cdn.com/content/v1/6849b4cd4d4fd13a7a9784e5/1789926526754-VT41234KDLHFFB7ATZVV/unsplash-image-bqVfC6348qU.jpg",
-"src": "iloveportjeff",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-dogparade",
 "title": "Harvest Festival Costumed Dog Parade",
 "start": "2026-10-17T12:30",
@@ -255,133 +236,6 @@
 "pu": ""
 },
 {
-"id": "cur-elephant",
-"title": "Elephant & Piggie's We Are in a Play!",
-"start": "2026-10-18T00:00",
-"end": "2026-10-24T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Through Oct. 24",
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson",
-"url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/",
-"desc": "Mo Willems' best friends in a musical made for first-time theatergoers.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/elephant-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"stage"
-],
-"status": "",
-"pick": false,
-"page": ""
-},
-{
-"id": "cur-cabaret",
-"title": "Cabaret",
-"start": "2026-10-18T00:00",
-"end": "2026-10-25T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Through Oct. 25",
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson",
-"url": "https://theatrethree.com/mainstage_shows/cabaret/",
-"desc": "Theatre Three's mainstage run of the Kander and Ebb classic.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/cabaret-720.webp",
-"src": "3vl",
-"tags": [
-"stage"
-],
-"status": "",
-"pick": false,
-"page": ""
-},
-{
-"id": "cur-scarecrow",
-"title": "Stony Brook Village Scarecrows",
-"start": "2026-10-18T00:00",
-"end": "2026-10-25T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Vote through Oct. 25",
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook",
-"url": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
-"desc": "The 36th annual scarecrows line Stony Brook Village. Grab a ballot in any shop and vote for your favorite.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/scarecrow-720.webp",
-"src": "3vl",
-"tags": [
-"free",
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": false,
-"page": ""
-},
-{
-"id": "cur-spooky",
-"title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-18T00:00",
-"end": "2026-10-31T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Running until Oct. 31",
-"venue": "Olde Towne Gardens",
-"addr": "360 Old Town Rd, East Setauket",
-"url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/spooky-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": false,
-"page": ""
-},
-{
-"id": "portjeff-1150",
-"title": "38th Outdoor Country Auction",
-"start": "2026-10-18T09:00:00",
-"end": "2026-10-18T23:59:00",
-"allday": false,
-"venue": "Mather Museum",
-"addr": "Port Jefferson",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1150",
-"desc": "This event is held at the Mather Museum - Port Jefferson NY 11777.",
-"img": "",
-"src": "portjeff",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/38th-outdoor-country-auction-475"
-},
-{
-"id": "lim-3225661",
-"title": "Cartoons of New York in the Revolution",
-"start": "2026-10-18T13:00:00",
-"end": "2026-10-18T14:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/cartoons-of-new-york/",
-"desc": "Laugh and learn about some of the fascinating—and often surprising—events of the American Revolution in New York through the witty, satirical cartoons of the period. Explore how British and American artists used humor, caricature, and political satire to comme",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Political-cartoon.jpg",
-"src": "lim",
-"tags": [
-"history",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-maidens",
 "title": "Mountain Maidens at the Hall of Fame",
 "start": "2026-10-18T15:00",
@@ -423,6 +277,94 @@
 "page": "https://www.threevillagelocal.com/events/witches-warlocks-sunset-paddle",
 "pu": "",
 "rank": 7
+},
+{
+"id": "cur-elephant",
+"title": "Elephant & Piggie's We Are in a Play!",
+"start": "2026-10-19T00:00",
+"end": "2026-10-24T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Through Oct. 24",
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/",
+"desc": "Mo Willems' best friends in a musical made for first-time theatergoers.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/elephant-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"stage"
+],
+"status": "",
+"pick": false,
+"page": ""
+},
+{
+"id": "cur-cabaret",
+"title": "Cabaret",
+"start": "2026-10-19T00:00",
+"end": "2026-10-25T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Through Oct. 25",
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://theatrethree.com/mainstage_shows/cabaret/",
+"desc": "Theatre Three's mainstage run of the Kander and Ebb classic.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/cabaret-720.webp",
+"src": "3vl",
+"tags": [
+"stage"
+],
+"status": "",
+"pick": false,
+"page": ""
+},
+{
+"id": "cur-scarecrow",
+"title": "Stony Brook Village Scarecrows",
+"start": "2026-10-19T00:00",
+"end": "2026-10-25T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Vote through Oct. 25",
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook",
+"url": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
+"desc": "The 36th annual scarecrows line Stony Brook Village. Grab a ballot in any shop and vote for your favorite.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/scarecrow-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": false,
+"page": ""
+},
+{
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-10-19T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Running until Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-16/spooky-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
 },
 {
 "id": "emmaclark-pokemon-club-grades-2-5-58556",
@@ -1152,6 +1094,139 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/introduction-to-microsoft-word-429"
+},
+{
+"id": "sbv-2344",
+"title": "Hidden Beneath the Floorboards Walking Tour",
+"start": "2026-10-29T00:00:00",
+"end": "2026-10-30T23:59:59",
+"allday": true,
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/hidden-beneath-the-floorboards-walking-tour/",
+"desc": "The Ward Melville Heritage Organization (WMHO) is excited to announce the return of its captivating walking tour, Hidden Beneath the Floorboards , this October in Stony Brook Village . Hidden Beneath the Floorboards leads you through a hauntingly historic walk",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/09/WMHO-Walking-Tour-scaled.jpg",
+"src": "sbv",
+"tags": [
+"history",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/hidden-beneath-the-floorboards-walking-tour"
+},
+{
+"id": "emmaclark-library-walking-club-61175",
+"title": "Library Walking Club",
+"start": "2026-10-29T10:00:00",
+"end": "2026-10-29T11:15:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Library Front Lawn",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/library-walking-club-61175",
+"desc": "Looking for accountability and consistency on your fitness journey? Get active and connect with others at our weekly Walking Club! Join us Thursday mornings in September and October for a group walk from the library to Frank Melville Park, where participants w",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Frank%20Melville%20Park1a.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/library-walking-club-431"
+},
+{
+"id": "emmaclark-social-work-intern-appointments-58750",
+"title": "Social Work Intern Appointments",
+"start": "2026-10-29T14:00:00",
+"end": "2026-10-29T19:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Small Study Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58750",
+"desc": "Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical Social Workers. These individuals will be on-site ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments-432"
+},
+{
+"id": "emmaclark-spooky-brush-head-figures-grades-1-5-58799",
+"title": "Spooky Brush Head Figures (Grades 1-5)",
+"start": "2026-10-29T17:00:00",
+"end": "2026-10-29T17:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/spooky-brush-head-figures-grades-1-5-58799",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Spooky-Brush-Head-Figures.jpg",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/spooky-brush-head-figures-grades-1-5"
+},
+{
+"id": "emmaclark-cricut-bookmark-38586",
+"title": "Cricut: Bookmark [LOTTERY]",
+"start": "2026-10-29T18:00:00",
+"end": "2026-10-29T20:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Technology Center",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/cricut-bookmark-38586",
+"desc": "In this beginner class, you’ll learn how to use Cricut Design Space to create a bookmark that is not only functional, but also beautifully customized to suit your style or theme. All materials provided. Taught by Librarian Brieanne Kocka. [Tech Center] Upon re",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/4_DTC_Infographic_2008335.png",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/cricut-bookmark-lottery"
+},
+{
+"id": "emmaclark-movie-night-nightmare-christmas-59577",
+"title": "Movie Night: The Nightmare Before Christmas",
+"start": "2026-10-29T18:00:00",
+"end": "2026-10-29T20:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/movie-night-nightmare-christmas-59577",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"stage"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/movie-night-the-nightmare-before-christmas"
+},
+{
+"id": "lim-3225647",
+"title": "Fall into Art: Make a Painted Leaf Mobile Workshop",
+"start": "2026-10-29T18:00:00",
+"end": "2026-10-29T19:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/leaf-mobile/",
+"desc": "Get creative at the Museum’s Studio with this fun fall workshop! Craft a beautiful painted leaf mobile. Perfect for ages 7 and up, this fall nature-inspired art project results in a stunning, personalized room decoration that dances gently in the autumn breeze",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Painted-Leaves.jpg",
+"src": "lim",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/fall-into-art-make-a-painted-leaf-mobile-workshop"
 }
 ],
 "closings": [],
@@ -1514,23 +1589,6 @@
 "page": "https://www.threevillagelocal.com/nantuckets"
 },
 {
-"id": "18638894698016587",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Breakfast Burrito Brunch",
-"when": "Sat, Oct. 18 · 12-4 PM",
-"desc": "Eggs, chorizo, bacon, cheddar-jack, pico, potatoes with hash browns or salad.",
-"expires": "2026-10-18",
-"posted": "2026-10-17T13:01:00+0000",
-"url": "https://www.instagram.com/reel/DemKn4RjQ01/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18638894698016587.jpg",
-"page": "https://www.threevillagelocal.com/castaways-steak-seafood"
-},
-{
 "id": "18446451835130348",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -1615,7 +1673,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-18T23:00:14+00:00",
+"checked": "2026-10-19T01:00:14+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
