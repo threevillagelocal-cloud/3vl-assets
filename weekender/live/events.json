@@ -1,7 +1,7 @@
 {
-"updated": "2026-10-19T19:02:18.682343+00:00",
+"updated": "2026-10-19T19:48:09.723103+00:00",
 "counts": {
-"Three Village Chamber": 2,
+"Three Village Chamber": 4,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
@@ -23,6 +23,25 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
+{
+"id": "3vchamber-1963370",
+"title": "Annual Scarecrow Competition",
+"start": "2026-10-03T00:00:00",
+"end": "2026-10-25T20:00:00",
+"allday": true,
+"venue": "Three Village area",
+"addr": "",
+"url": "https://members.3vchamber.com/event-calendar/Details/annual-scarecrow-competition-1963370",
+"desc": "Grab a ballot from any shop or restaurant",
+"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_518,w_800,x_0,y_0/q_auto/f_auto/c_limit,w_720/q_auto/v1792438314/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/fbb5b5ea4cb64aa18e6c9de4564c8bac/Scarecrow-COMP-png-2026.png",
+"src": "3vchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
 {
 "id": "pjchamber-14726",
 "title": "2026 Port Jefferson Scarecrow Walk",
@@ -1690,7 +1709,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-19T19:00:17+00:00",
+"checked": "2026-10-19T19:47:26+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
