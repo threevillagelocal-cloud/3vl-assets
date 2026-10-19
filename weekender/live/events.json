@@ -1,14 +1,14 @@
 {
-"updated": "2026-10-19T21:00:52.356738+00:00",
+"updated": "2026-10-19T23:02:16.248022+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 36,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
-"Emma S. Clark Library": 324,
+"Emma S. Clark Library": 323,
 "Stony Brook Village Center": 14,
-"Long Island Museum": 49,
+"Long Island Museum": 0,
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 3
 },
@@ -384,25 +384,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "emmaclark-pokemon-club-grades-2-5-58556",
-"title": "Pokémon Club (Grades 2-5)",
-"start": "2026-10-19T17:00:00",
-"end": "2026-10-19T18:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/pokemon-club-grades-2-5-58556",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Pokemon%20Club.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/pok%C3%A9mon-club-grades-2-5-393"
 },
 {
 "id": "emmaclark-best-apps-healthy-lifestyle-38542",
@@ -1010,26 +991,6 @@
 "page": ""
 },
 {
-"id": "lim-3225806",
-"title": "Smithsonian National Youth Summit 2026",
-"start": "2026-10-27T16:00:00",
-"end": "2026-10-27T18:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/youth-summit/",
-"desc": "CALLING ALL TEEN LEADERS! The National Youth Summit brings middle and high school students together with scholars, teachers, policy experts, and activists in a national conversation about important events in America’s past that have relevance to the nation’s p",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/National-Youth-Submit-2026.jpg",
-"src": "lim",
-"tags": [
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/smithsonian-national-youth-summit-2026"
-},
-{
 "id": "emmaclark-word-38619",
 "title": "Introduction to Microsoft Word",
 "start": "2026-10-27T18:30:00",
@@ -1225,27 +1186,6 @@
 "status": "",
 "fb": 1,
 "page": "https://www.threevillagelocal.com/events/movie-night-the-nightmare-before-christmas"
-},
-{
-"id": "lim-3225647",
-"title": "Fall into Art: Make a Painted Leaf Mobile Workshop",
-"start": "2026-10-29T18:00:00",
-"end": "2026-10-29T19:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/leaf-mobile/",
-"desc": "Get creative at the Museum’s Studio with this fun fall workshop! Craft a beautiful painted leaf mobile. Perfect for ages 7 and up, this fall nature-inspired art project results in a stunning, personalized room decoration that dances gently in the autumn breeze",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Painted-Leaves.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/fall-into-art-make-a-painted-leaf-mobile-workshop"
 }
 ],
 "closings": [],
@@ -1709,7 +1649,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-19T21:00:16+00:00",
+"checked": "2026-10-19T23:00:15+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
