@@ -3602,5 +3602,21 @@
 "desc": "Happy hour runs 4-6 PM at the inside bar, high tops and lounge with dinner from 4-9 PM.",
 "expires": "2026-10-26",
 "_ts": "2026-10-19T18:01:14+0000"
+},
+"18638145631057388": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-19T19:25:41+0000"
+},
+"18161323057501919": {
+"special": false,
+"title": "Buckeye Monsters",
+"when": "Ongoing",
+"desc": "Creamy peanut butter and rich milk chocolate Halloween treats available now.",
+"expires": "2026-10-19",
+"_ts": "2026-10-19T22:09:07+0000"
 }
 }
