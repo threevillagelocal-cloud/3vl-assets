@@ -33,22 +33,6 @@
 "url": "https://www.instagram.com/p/Dec-pg9Db9f/",
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
 "inset": "ig/p18009207956779013.jpg"
-},
-{
-"id": "18117802858952870",
-"biz": "Tommy's Place",
-"ig": "tommysplaceportjeff_",
-"town": "Port Jefferson",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Wicked Wrap & Limited-Time Specials",
-"when": "While available",
-"desc": "Fried chicken, mozzarella, fried jalapeños, lettuce, tomato & chipotle sauce in spinach tortilla with fries.",
-"expires": "2026-10-26",
-"posted": "2026-10-11T19:43:15+0000",
-"url": "https://www.instagram.com/p/DeXb8kOGifk/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-"inset": "ig/p18117802858952870.jpg"
 }
 ],
 "ixchelmexicancuisine": [],
@@ -115,24 +99,7 @@
 ],
 "threevillageinn": [],
 "ralphsitalianicesstonybrook": [],
-"burgerologyusa": [
-{
-"id": "17900498451602344",
-"biz": "Burgerology",
-"ig": "burgerologyusa",
-"town": "Stony Brook",
-"category": "Restaurant",
-"member": false,
-"title": "Boozy Pumpkin Spice Latte",
-"when": "Available now",
-"desc": "Burgerology's boozy take on PSL is available at all locations this fall season.",
-"expires": "2026-11-11",
-"posted": "2026-10-11T19:39:17+0000",
-"url": "https://www.instagram.com/p/DeXbPIHuo1v/",
-"img": "",
-"inset": "ig/p17900498451602344.jpg"
-}
-],
+"burgerologyusa": [],
 "ep_restaurant": [],
 "tajcrownofindia": [],
 "rctaqueria": [],
@@ -155,22 +122,6 @@
 "url": "https://www.instagram.com/reel/DecUiWyOGvW/",
 "img": "",
 "inset": "ig/p18100984226300493.jpg"
-},
-{
-"id": "18002503688808113",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Ronktoberfest at Toast Ronkonkoma",
-"when": "Oct. 15-18",
-"desc": "Featured Bavarian Street Brat Sandwich with bratwurst, Swiss cheese, sauerkraut, beer mustard, and crispy onions on pretzel roll.",
-"expires": "2026-10-18",
-"posted": "2026-10-12T14:19:50+0000",
-"url": "https://www.instagram.com/p/DeZbupGkZGY/",
-"img": "",
-"inset": "ig/p18002503688808113.jpg"
 }
 ],
 "prohibitionportjefferson": [],
@@ -433,22 +384,6 @@
 ],
 "thesteamroomrestaurant": [],
 "castawayspj": [
-{
-"id": "18638894698016587",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Breakfast Burrito Brunch",
-"when": "Sat, Oct. 18 · 12-4 PM",
-"desc": "Eggs, chorizo, bacon, cheddar-jack, pico, potatoes with hash browns or salad.",
-"expires": "2026-10-18",
-"posted": "2026-10-17T13:01:00+0000",
-"url": "https://www.instagram.com/reel/DemKn4RjQ01/",
-"img": "",
-"inset": "ig/p18638894698016587.jpg"
-},
 {
 "id": "18446451835130348",
 "biz": "Castaways Steak & Seafood",
