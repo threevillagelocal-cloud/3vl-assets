@@ -334,6 +334,11 @@ function spread(arr,key,gap){var best=arr.slice();
     if(out.length===arr.length){var wrapOk=true,n=out.length;for(var a=0;a<n&&wrapOk;a++)for(var d=1;d<=gap;d++){if(n>gap*2&&key(out[a])===key(out[(a+d)%n])){wrapOk=false;break}}if(wrapOk)return out;best=out}}
   return best}
 
+/* iPad/iPhone: a long press must not lift photos or cards out of the page (owner 10/18/2026) */
+function noDrag(){var top=document.getElementById('wk-top');if(!top||top.getAttribute('data-nd'))return;top.setAttribute('data-nd','1');
+  function fix(){[].forEach.call(top.querySelectorAll('img,a'),function(e){e.setAttribute('draggable','false')})}
+  fix();setTimeout(fix,1500);setTimeout(fix,5000);
+  top.addEventListener('dragstart',function(e){e.preventDefault()},true)}
 function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(!ads.length)return;
   /* competitors never share a page (owner 10/2/2026: e.g. the two orthopedic practices): one business per group per page view,
      picked at random so each gets its share across visitors; a business with two designs keeps both */
@@ -472,7 +477,7 @@ function go(){hdr();window.addEventListener('scroll',hdr,{passive:true});
   var ca=$('wk-calall');if(ca)ca.addEventListener('click',function(){var l=saved.map(function(id){return EV[id]}).filter(Boolean);if(l.length)ics(l);else toast('Save a few events first')});
   ['wk-share'].forEach(function(id){var b=$(id);if(b)b.addEventListener('click',function(){share('Everything happening in Three Village this weekend:')})});
   ['wk-share2','wk-share3'].forEach(function(id){var b=$(id);if(b)b.addEventListener('click',function(){share(planText())})});
-  syncSaved();vip();cipher();compact();trolley();video();reveal();spy();swipeHints();
+  syncSaved();noDrag();vip();cipher();compact();trolley();video();reveal();spy();swipeHints();
 }
 function swipeHints(){$$('.wk-swipe,.wk-wx').forEach(function(row){if(row.nextElementSibling&&row.nextElementSibling.classList.contains('wk-swh'))return;
   var kids=[].filter.call(row.children,function(c){return c.offsetWidth>0});if(kids.length<2)return;
