@@ -3558,5 +3558,21 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-18T22:00:34+0000"
+},
+"18110078588184328": {
+"special": true,
+"title": "Live Music: Ray Anderson & Steve Salerno",
+"when": "Wed, Oct. 19 · 7-9 PM",
+"desc": "Catch Ray Anderson and Steve Salerno performing at the wine bar tonight.",
+"expires": "2026-10-19",
+"_ts": "2026-10-19T14:41:59+0000"
+},
+"18384649183233226": {
+"special": true,
+"title": "Halloween Seasonal Drinks at Toast",
+"when": "Limited time",
+"desc": "Try It's Alive Latte and Red Rum Cocktail before these spooky seasonal favorites disappear.",
+"expires": "2026-10-31",
+"_ts": "2026-10-19T13:28:23+0000"
 }
 }
