@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-20T17:01:04.164717+00:00",
+"updated": "2026-10-20T19:00:59.045526+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 39,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
-"Emma S. Clark Library": 323,
+"Emma S. Clark Library": 322,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 3,
@@ -384,25 +384,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "emmaclark-sprouts-friends-babies-5-yrs-w-caregiver-58997",
-"title": "Sprouts & Friends (Babies- 5 yrs. w/ caregiver)",
-"start": "2026-10-20T13:00:00",
-"end": "2026-10-20T13:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/sprouts-friends-babies-5-yrs-w-caregiver-58997",
-"desc": "Enjoy some music and movement with Miss Kristin.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/sprouts-friends-babies-5-yrs-w-caregiver"
 },
 {
 "id": "emmaclark-grow-your-own-microgreens-zoom-58150",
@@ -1793,7 +1774,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-20T17:00:20+00:00",
+"checked": "2026-10-20T19:00:16+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
