@@ -59,6 +59,7 @@ VIP = '''
       <span class="tvp-chip tvp-c3">&#128222; Tap to call</span>
       <div class="tvp-vphone"><div class="tvp-notch"></div><div class="tvp-vscreen">
         <div class="tvp-url">&#128274; threevillagelocal.com/%(profile_path)s</div>
+        <div class="tvp-pop"><img src="@@ICON@@" alt=""><div><p><b>Three Village Local</b><span>now</span></p><p><b>Weekly Specials at %(name)s</b></p><p>%(special)s and more this week. Tap to see them.</p></div></div>
         <div class="tvp-vscroll">
           <div class="tvp-vcover" style="background-image:url(%(I)shero.webp)"><span class="tvp-vrib">&#9733; VIP</span></div>
           <div class="tvp-vhead"><div class="tvp-vlogo"><img src="%(I)slogo.webp" alt=""></div>
@@ -207,6 +208,14 @@ CSS = '''
 .tvp-vscroll{padding-top:84px;animation:tvpScroll 26s ease-in-out 1s infinite}
 .tvp-vstage:hover .tvp-vscroll{animation-play-state:paused}
 @keyframes tvpScroll{0%,8%{transform:translateY(0)}46%,54%{transform:translateY(var(--tvp-d,-900px))}92%,100%{transform:translateY(0)}}
+.tvp-pop{position:absolute;z-index:5;top:48px;left:8px;right:8px;display:flex;gap:9px;align-items:flex-start;background:rgba(250,250,252,.97);border-radius:18px;padding:10px 11px;box-shadow:0 12px 30px rgba(0,0,0,.28);opacity:0;transform:translateY(-120%);animation:tvpPop 13s ease-in-out 2s infinite}
+.tvp-pop img{width:32px;height:32px;border-radius:8px;flex:0 0 auto;margin:0!important}
+.tvp-pop div{flex:1;min-width:0}
+.tvp-pop p{margin:0!important;font-size:11.5px!important;line-height:1.3;color:#111!important}
+.tvp-pop p:first-child{display:flex;justify-content:space-between;color:#666!important;font-size:10.5px!important}
+.tvp-pop p:first-child b{color:#666;font-weight:600}
+.tvp-pop p:nth-child(2) b{font-size:13px}
+@keyframes tvpPop{0%{opacity:0;transform:translateY(-120%)}5%,38%{opacity:1;transform:translateY(0)}45%,100%{opacity:0;transform:translateY(-120%)}}
 .tvp-vcover{position:relative;height:170px;background:center/cover}
 .tvp-vrib{position:absolute;right:12px;top:12px;background:linear-gradient(135deg,#ffd76a,#e0a51b);color:#3a2700;font-weight:900;font-size:12px;padding:5px 12px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.25)}
 .tvp-vhead{text-align:center;padding:0 16px;margin-top:-46px;position:relative}
