@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-20T15:02:03.580653+00:00",
+"updated": "2026-10-20T16:49:46.553080+00:00",
 "counts": {
 "Three Village Chamber": 6,
-"Port Jefferson Chamber": 36,
+"Port Jefferson Chamber": 39,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
@@ -1755,7 +1755,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-20T15:00:17+00:00",
+"checked": "2026-10-20T16:49:08+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
