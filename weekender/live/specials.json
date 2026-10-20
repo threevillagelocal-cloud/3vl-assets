@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T15:00:13.758489+00:00",
+ "updated": "2026-10-20T19:00:15.714405+00:00",
  "specials": [
   {
    "id": "18078146048554378",
@@ -342,6 +342,22 @@
    "inset": "ig/p18134822992761307.jpg"
   },
   {
+   "id": "18078304106726827",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Soup Season Opens",
+   "when": "Starting tomorrow, Oct. 21",
+   "desc": "Lobster Bisque, Seafood Chowder, or Soup of the Day. Open from 4 PM.",
+   "expires": "2026-11-03",
+   "posted": "2026-10-20T18:01:43+0000",
+   "url": "https://www.instagram.com/reel/DeubY58kpkL/",
+   "img": "",
+   "inset": "ig/p18078304106726827.jpg"
+  },
+  {
    "id": "17913234690501916",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
@@ -404,22 +420,6 @@
    "url": "https://www.instagram.com/reel/DerXT9Txane/",
    "img": "",
    "inset": "ig/p18384649183233226.jpg"
-  },
-  {
-   "id": "18100984226300493",
-   "biz": "Toast Coffee + Kitchen",
-   "ig": "toastcoffeeandkitchen",
-   "town": "Port Jefferson Station",
-   "category": "Cafe/Brunch",
-   "member": false,
-   "title": "Addams Family Halloween Drinks",
-   "when": "Through October",
-   "desc": "Try the Dirt Nap Iced Latte or Morticia's Black Widow Potion at Toast Port Jefferson Station.",
-   "expires": "2026-10-31",
-   "posted": "2026-10-13T17:19:51+0000",
-   "url": "https://www.instagram.com/reel/DecUiWyOGvW/",
-   "img": "",
-   "inset": "ig/p18100984226300493.jpg"
   },
   {
    "id": "18113767961172883",

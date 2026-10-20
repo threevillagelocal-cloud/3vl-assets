@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-20T19:00:59.045526+00:00",
+"updated": "2026-10-20T19:02:24.713593+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 39,
@@ -1349,20 +1349,20 @@
 "page": "https://www.threevillagelocal.com/nantuckets"
 },
 {
-"id": "17913234690501916",
+"id": "18078304106726827",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
 "town": "Port Jefferson",
 "category": "Restaurant",
 "member": false,
-"title": "Happy Hour at Castaways",
-"when": "Every Monday · 4-6 PM",
-"desc": "Happy hour runs 4-6 PM at the inside bar, high tops and lounge with dinner from 4-9 PM.",
-"expires": "2026-10-26",
-"posted": "2026-10-19T18:01:14+0000",
-"url": "https://www.instagram.com/p/Der2nmBCtdf/",
+"title": "Soup Season Opens",
+"when": "Starting tomorrow, Oct. 21",
+"desc": "Lobster Bisque, Seafood Chowder, or Soup of the Day. Open from 4 PM.",
+"expires": "2026-11-03",
+"posted": "2026-10-20T18:01:43+0000",
+"url": "https://www.instagram.com/reel/DeubY58kpkL/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17913234690501916.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18078304106726827.jpg",
 "page": "https://www.threevillagelocal.com/castaways-steak-seafood"
 },
 {
@@ -1453,6 +1453,23 @@
 "page": "https://www.threevillagelocal.com/nantuckets"
 },
 {
+"id": "18078304106726827",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Soup Season Opens",
+"when": "Starting tomorrow, Oct. 21",
+"desc": "Lobster Bisque, Seafood Chowder, or Soup of the Day. Open from 4 PM.",
+"expires": "2026-11-03",
+"posted": "2026-10-20T18:01:43+0000",
+"url": "https://www.instagram.com/reel/DeubY58kpkL/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18078304106726827.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood"
+},
+{
 "id": "17913234690501916",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -1518,23 +1535,6 @@
 "url": "https://www.instagram.com/reel/DerXT9Txane/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18384649183233226.jpg",
-"page": "https://www.threevillagelocal.com/toast-coffee-kitchen"
-},
-{
-"id": "18100984226300493",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Addams Family Halloween Drinks",
-"when": "Through October",
-"desc": "Try the Dirt Nap Iced Latte or Morticia's Black Widow Potion at Toast Port Jefferson Station.",
-"expires": "2026-10-31",
-"posted": "2026-10-13T17:19:51+0000",
-"url": "https://www.instagram.com/reel/DecUiWyOGvW/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18100984226300493.jpg",
 "page": "https://www.threevillagelocal.com/toast-coffee-kitchen"
 },
 {

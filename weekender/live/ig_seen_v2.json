@@ -3646,5 +3646,33 @@
 "18141809722720480": {
 "special": false,
 "_ts": "2026-10-20T14:59:42+0000"
+},
+"18157410445556634": {
+"special": false,
+"title": "A2 Mozzarella Blocks Available",
+"when": "Ongoing",
+"desc": "Regenerative, organic A2 mozzarella blocks from grassfed cows perfect for homemade mozzarella sticks.",
+"expires": "2026-10-20",
+"_ts": "2026-10-20T15:10:15+0000"
+},
+"17909174493603179": {
+"special": false,
+"_ts": "2026-10-20T16:19:45+0000"
+},
+"18061180484795109": {
+"special": false,
+"title": "Oysters Rockefeller",
+"when": "Ongoing",
+"desc": "Fresh Oysters Rockefeller available to enjoy in-house or order online.",
+"expires": "2026-10-20",
+"_ts": "2026-10-20T15:44:30+0000"
+},
+"18078304106726827": {
+"special": true,
+"title": "Soup Season Opens",
+"when": "Starting tomorrow, Oct. 21",
+"desc": "Lobster Bisque, Seafood Chowder, or Soup of the Day. Open from 4 PM.",
+"expires": "2026-11-03",
+"_ts": "2026-10-20T18:01:43+0000"
 }
 }
