@@ -54,14 +54,14 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
     <ul class="tvs-trust">
       <li><b>5 spots</b>that is it</li>
       <li><b>Weekly</b>specials everywhere</li>
-      <li><b>Promo video</b>included</li>
+      <li><b>Push alerts</b>to every mobile app user</li>
     </ul>
   </div>
   <div class="tvs-float tvs-f1 tvs-up" aria-hidden="true">
     <div class="tvs-fic">&#127837;</div><div><b>Tonight's special is live</b><span>Website, mobile app, Instagram + Facebook</span></div>
   </div>
   <div class="tvs-float tvs-f2 tvs-up" aria-hidden="true">
-    <div class="tvs-fic tvs-ficg">&#9733;</div><div><b>Featured in Eat &amp; Drink</b><span>Top of the homepage today</span></div>
+    <div class="tvs-fic tvs-ficg">&#128276;</div><div><b>Push sent to every mobile app user</b><span>"Tonight: your special, your table"</span></div>
   </div>
 </section>
 
@@ -93,6 +93,10 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
     <div class="tvs-nt tvs-up"><span>&#127968;</span><b>Homepage + mobile app</b><p>A regular top spot in Eat &amp; Drink on our homepage and in the free mobile app.</p></div>
     <div class="tvs-nt tvs-up"><span>&#128232;</span><b>Weekly newsletter</b><p>Your specials in the Friday email locals read to plan their weekend.</p></div>
     <div class="tvs-nt tvs-up"><span>&#127881;</span><b>Events + holidays</b><p>Wine nights, live music, Mother's Day, Restaurant Week, pushed on our calendar and social.</p></div>
+    <div class="tvs-nt tvs-up"><span>&#128276;</span><b>Monthly push notification</b><p>Your restaurant sent straight to the phone of every 3VL mobile app user, once a month.</p></div>
+    <div class="tvs-nt tvs-up"><span>&#128205;</span><b>Google profile tune-up</b><p>We fix your hours, photos, menu link and categories so you win "near me" searches.</p></div>
+    <div class="tvs-nt tvs-up"><span>&#128197;</span><b>Seasonal guides</b><p>A spot in our fall, holiday and summer guides that neighbors save and share.</p></div>
+    <div class="tvs-nt tvs-up"><span>&#127991;&#65039;</span><b>Partner window decal + review cards</b><p>A "3VL Restaurant Partner" decal and table cards that turn happy diners into Google reviews.</p></div>
     <div class="tvs-nt tvs-up"><span>&#129302;</span><b>Google + AI search</b><p>When neighbors ask Google or ChatGPT where to eat, our pages help put you in the answer.</p></div>
     <div class="tvs-nt tvs-up tvs-ntstar"><span>&#127909;</span><b>Your promo video</b><p>Filmed at your restaurant, edited by us, shared across 3VL and yours to keep.</p></div>
   </div>
@@ -115,11 +119,37 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
 
 ''' + section(src, 'tvs-sec tvs-work') + '''
 
+<section class="tvs-sec tvr-math">
+  <div class="tvs-head tvs-up">
+    <p class="tvs-eyebrow">Do the math</p>
+    <h2>Over $1,100 a month in marketing. For $@@PRICE@@.</h2>
+    <p>Here is what each piece would cost on its own. As a Restaurant Partner you get all of it, every month.</p>
+  </div>
+  <div class="tvr-stack tvs-up">
+    <ul>
+      <li class="tvs-up"><span>VIP listing with top placement</span><b>$115/mo</b></li>
+      <li class="tvs-up"><span>Weekly specials on our website, mobile app and social</span><b>$150/mo</b></li>
+      <li class="tvs-up"><span>Custom posts + a Reel every month on Instagram and Facebook</span><b>$299/mo</b></li>
+      <li class="tvs-up"><span>Featured in the Friday newsletter</span><b>$100/mo</b></li>
+      <li class="tvs-up"><span>Regular top spot in Eat &amp; Drink on the homepage and mobile app</span><b>$150/mo</b></li>
+      <li class="tvs-up"><span>Monthly push notification to every mobile app user</span><b>$150/mo</b></li>
+      <li class="tvs-up"><span>Event, holiday and seasonal guide promotion</span><b>$100/mo</b></li>
+      <li class="tvs-up"><span>Monthly report: views, clicks and reach</span><b>$50/mo</b></li>
+      <li class="tvs-up"><span>Google profile tune-up</span><b>$199 one time</b></li>
+      <li class="tvs-up"><span>Partner window decal + review table cards</span><b>$99 one time</b></li>
+      <li class="tvs-up"><span>Promo video filmed at your restaurant</span><b>$1,200 one time</b></li>
+    </ul>
+    <div class="tvr-tot"><span>Total value</span><s>$1,114/mo + $1,498 one time</s></div>
+    <div class="tvr-you"><span>Your price</span><b>$@@PRICE@@<small>/mo</small></b></div>
+    <p class="tvr-pay">About two extra tables a week covers it. Everything after that is profit.</p>
+  </div>
+</section>
+
 <section class="tvs-sec tvs-bundles" id="tvs-bundles">
   <div class="tvs-head tvs-up">
     <p class="tvs-eyebrow">One plan, one price</p>
     <h2>Restaurant Partner</h2>
-    <p>Everything above in one monthly plan. No setup fee.</p>
+    <p>Everything above in one monthly plan. No setup fee. No hidden costs.</p>
   </div>
   <div class="tvs-cards tvr-one">
     <article class="tvs-card tvs-pop tvs-up" data-b="rest">
@@ -134,6 +164,10 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
         <li>Featured in the Friday newsletter</li>
         <li>Regular top spot in Eat &amp; Drink on the homepage and mobile app</li>
         <li>Custom posts + a Reel every month on Instagram and Facebook</li>
+        <li>Monthly push notification to every mobile app user</li>
+        <li>Google profile tune-up</li>
+        <li>Seasonal guide placement</li>
+        <li>Partner window decal + review table cards</li>
         <li>Event and holiday promotion</li>
         <li>Monthly report: views, clicks and reach</li>
         <li class="tvs-star">Promo video filmed at your restaurant</li>
@@ -149,6 +183,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
   <div class="tvs-qs tvs-up">
     <details><summary>Why only 5 restaurants?</summary><p>So it stays worth it. Five partners means each one is seen often, and neighbors get a short list of places we stand behind instead of an ad for everyone.</p></details>
     <details><summary>What happens when the 5 spots are taken?</summary><p>The plan closes. Restaurants can join the waitlist, and when a spot opens the next one on the list gets the first call.</p></details>
+    <details><summary>What is the push notification?</summary><p>Once a month we send an alert about your restaurant straight to the phone of everyone who has the Three Village Local mobile app. It is the fastest way to fill tables on a slow night.</p></details>
     <details><summary>How do I send my specials?</summary><p>Text or email us a photo and a line about it. We write it up, design it and post it. You approve before it goes out.</p></details>
     <details><summary>Who films the promo video?</summary><p>Our team comes to your restaurant at a time that works for you, films, edits and posts it. You keep the video to use anywhere.</p></details>
     <details><summary>I am already a VIP member. Do I pay for both?</summary><p>No. Your VIP membership rolls into the partnership.</p></details>
@@ -201,10 +236,18 @@ CSS = '''
 .tvr-dots i{width:34px;height:34px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(255,197,61,.25)}
 .tvr-dots i.tvr-taken{background:rgba(255,255,255,.18);box-shadow:none}
 .tvr-count p{margin:0 0 14px!important;color:#fff!important;font-size:18px}
+.tvr-stack{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px 30px;box-shadow:0 16px 40px rgba(19,41,75,.06)}
+.tvr-stack ul{list-style:none;margin:0;padding:0}
+.tvr-stack li{display:flex;justify-content:space-between;gap:18px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+.tvr-stack li b{color:var(--navy);white-space:nowrap}
+.tvr-tot,.tvr-you{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding-top:16px}
+.tvr-tot span{font-weight:800;color:var(--mut)}.tvr-tot s{color:var(--mut);font-weight:700;font-size:17px}
+.tvr-you span{font-weight:800;color:var(--navy);font-size:20px}.tvr-you b{color:var(--blue);font-size:44px;line-height:1}.tvr-you small{font-size:18px}
+.tvr-pay{margin:14px 0 0!important;padding:12px 16px;border-radius:14px;background:#fff7e0;color:#5a4410!important;font-weight:700;text-align:center}
 .tvr-one{grid-template-columns:minmax(0,520px)!important;justify-content:center}
 @media (max-width:900px){.tvs-ngrid{grid-template-columns:repeat(2,1fr)}.tvs-tlist{grid-template-columns:1fr 1fr;row-gap:26px}.tvs-tlist:before{display:none}
  .tvr-sbox{flex-direction:column;align-items:flex-start;padding:28px 24px}.tvr-count{text-align:left}.tvr-dots{justify-content:flex-start}}
-@media (max-width:520px){.tvs-ngrid{gap:10px}.tvs-nt{padding:16px 14px}.tvs-tlist{grid-template-columns:1fr}.tvr-sbox h2{font-size:27px}.tvr-dots i{width:28px;height:28px}
+@media (max-width:520px){.tvr-stack{padding:18px 16px}.tvr-stack li{font-size:14.5px;flex-direction:column;gap:2px}.tvr-tot,.tvr-you{flex-direction:column;gap:4px}.tvs-ngrid{gap:10px}.tvs-nt{padding:16px 14px}.tvs-tlist{grid-template-columns:1fr}.tvr-sbox h2{font-size:27px}.tvr-dots i{width:28px;height:28px}
  .tvs-rp .tvs-hphoto{background-image:url('@@IMG@@hero-720.webp')}}
 '''.replace("@@IMG@@", IMG)
 
