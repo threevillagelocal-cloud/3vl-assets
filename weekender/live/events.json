@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-20T21:32:33.509718+00:00",
+"updated": "2026-10-20T23:01:07.151039+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 39,
@@ -1183,13 +1183,13 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/movie-night-nightmare-christmas-59577",
 "desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-10/MV5BNmYxOTAzZWYtOGI3Yi00ODc3LTk5ZjYtZTY0MzVkZTg3YmRiXkEyXkFqcGc%40._V1_.jpg",
 "src": "emmaclark",
 "tags": [
 "stage"
 ],
 "status": "",
-"fb": 1,
+"fb": 0,
 "page": "https://www.threevillagelocal.com/events/movie-night-the-nightmare-before-christmas"
 },
 {
@@ -1774,7 +1774,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-20T21:31:48+00:00",
+"checked": "2026-10-20T23:00:15+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
