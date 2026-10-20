@@ -58,7 +58,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
     </ul>
   </div>
   <div class="tvs-float tvs-f1 tvs-up" aria-hidden="true">
-    <div class="tvs-fic">&#127837;</div><div><b>Tonight's special is live</b><span>Website, app, Instagram + Facebook</span></div>
+    <div class="tvs-fic">&#127837;</div><div><b>Tonight's special is live</b><span>Website, mobile app, Instagram + Facebook</span></div>
   </div>
   <div class="tvs-float tvs-f2 tvs-up" aria-hidden="true">
     <div class="tvs-fic tvs-ficg">&#9733;</div><div><b>Featured in Eat &amp; Drink</b><span>Top of the homepage today</span></div>
@@ -84,13 +84,13 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
   <div class="tvs-head tvs-up">
     <p class="tvs-eyebrow">Everything in one plan</p>
     <h2>Every way neighbors decide where to eat. Covered.</h2>
-    <p>Locals check our app, our homepage, our Instagram and our Friday email to figure out dinner. As a Restaurant Partner you are in all of them, every week.</p>
+    <p>Locals check our mobile app, our homepage, our Instagram and our Friday email to figure out dinner. As a Restaurant Partner you are in all of them, every week.</p>
   </div>
   <div class="tvs-ngrid">
     <div class="tvs-nt tvs-up"><span>&#11088;</span><b>VIP listing</b><p>Top of the Restaurants page with a premium profile, menu, photos and order links.</p></div>
-    <div class="tvs-nt tvs-up"><span>&#127869;&#65039;</span><b>Weekly specials, everywhere</b><p>Text us your specials. They go on our website, the app's Eat &amp; Drink and social.</p></div>
+    <div class="tvs-nt tvs-up"><span>&#127869;&#65039;</span><b>Weekly specials, everywhere</b><p>Text us your specials. They go on our website, the mobile app's Eat &amp; Drink and social.</p></div>
     <div class="tvs-nt tvs-up"><span>&#128241;</span><b>Social media posts</b><p>Custom posts and a Reel every month on our Instagram and Facebook.</p></div>
-    <div class="tvs-nt tvs-up"><span>&#127968;</span><b>Homepage + app</b><p>A regular top spot in Eat &amp; Drink on our homepage and in the free app.</p></div>
+    <div class="tvs-nt tvs-up"><span>&#127968;</span><b>Homepage + mobile app</b><p>A regular top spot in Eat &amp; Drink on our homepage and in the free mobile app.</p></div>
     <div class="tvs-nt tvs-up"><span>&#128232;</span><b>Weekly newsletter</b><p>Your specials in the Friday email locals read to plan their weekend.</p></div>
     <div class="tvs-nt tvs-up"><span>&#127881;</span><b>Events + holidays</b><p>Wine nights, live music, Mother's Day, Restaurant Week, pushed on our calendar and social.</p></div>
     <div class="tvs-nt tvs-up"><span>&#129302;</span><b>Google + AI search</b><p>When neighbors ask Google or ChatGPT where to eat, our pages help put you in the answer.</p></div>
@@ -105,7 +105,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
   </div>
   <ol class="tvs-tlist">
     <li class="tvs-up"><em>Monday</em><b>Text us your specials</b><p>A photo and a line is plenty. We write it up and make it look great.</p></li>
-    <li class="tvs-up"><em>Tuesday</em><b>They are everywhere</b><p>Website, app, Instagram and Facebook, all pointing to you.</p></li>
+    <li class="tvs-up"><em>Tuesday</em><b>They are everywhere</b><p>Website, mobile app, Instagram and Facebook, all pointing to you.</p></li>
     <li class="tvs-up"><em>Friday</em><b>In the weekly email</b><p>Right when locals are deciding where to go this weekend.</p></li>
     <li class="tvs-up"><em>Every month</em><b>New content + a report</b><p>Fresh posts and a Reel, plus a simple report of views and clicks.</p></li>
   </ol>
@@ -130,9 +130,9 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
       <p class="tvs-mo">per month, 6-month partnership</p>
       <ul>
         <li>VIP listing with top placement</li>
-        <li>Weekly specials on our website, app and social</li>
+        <li>Weekly specials on our website, mobile app and social</li>
         <li>Featured in the Friday newsletter</li>
-        <li>Regular top spot in Eat &amp; Drink on the homepage and app</li>
+        <li>Regular top spot in Eat &amp; Drink on the homepage and mobile app</li>
         <li>Custom posts + a Reel every month on Instagram and Facebook</li>
         <li>Event and holiday promotion</li>
         <li>Monthly report: views, clicks and reach</li>
