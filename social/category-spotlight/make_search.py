@@ -98,7 +98,7 @@ h1{position:absolute;left:44px;width:640px;top:136px;color:#fff;font-size:44px;l
 
 FORMATS = {   # W, H, logo h, headline top/size, bar top, dropdown top, cta bottom, shade stops
     "ig": dict(W=1080, H=1350, PH=760, LH=104, HT=530, HS=64, BT=700, DT=850, CB=42, T1=14, T2=30, T3=50),
-    "story": dict(W=1080, H=1920, PH=1100, LH=116, HT=860, HS=70, BT=1060, DT=1214, CB=150, T1=10, T2=30, T3=52),
+    "story": dict(W=1080, H=1920, PH=1100, LH=116, HT=880, HS=64, BT=1060, DT=1214, CB=150, T1=10, T2=30, T3=52),
 }
 
 
