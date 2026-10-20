@@ -3626,5 +3626,25 @@
 "desc": "Stony Brook's destination for fresh sushi, hibachi, cocktails, and happy hour.",
 "expires": "2026-10-20",
 "_ts": "2026-10-20T11:00:12+0000"
+},
+"18504007429100687": {
+"special": true,
+"title": "Taco Tuesday Specials",
+"when": "Every Tuesday",
+"desc": "3 specialty tacos for $12 or 3 tacos for $10 on Tuesdays.",
+"expires": "2026-10-27",
+"_ts": "2026-10-20T12:23:26+0000"
+},
+"17936397948400476": {
+"special": false,
+"title": "The Study by Toast accepts Wolfie Bucks",
+"when": "Ongoing",
+"desc": "Now accepting Stony Brook University campus cards at this East Setauket coffee shop and study spot.",
+"expires": "2026-10-20",
+"_ts": "2026-10-20T13:42:27+0000"
+},
+"18141809722720480": {
+"special": false,
+"_ts": "2026-10-20T14:59:42+0000"
 }
 }

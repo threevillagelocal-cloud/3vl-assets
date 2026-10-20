@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-20T15:01:02.028330+00:00",
+"updated": "2026-10-20T15:02:03.580653+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 36,
@@ -1364,6 +1364,23 @@
 "page": "https://www.threevillagelocal.com/the-whiskey-barrel"
 },
 {
+"id": "18504007429100687",
+"biz": "Right Coast Taqueria",
+"ig": "rctaqueria",
+"town": "East Setauket",
+"category": "Restaurant",
+"member": false,
+"title": "Taco Tuesday Specials",
+"when": "Every Tuesday",
+"desc": "3 specialty tacos for $12 or 3 tacos for $10 on Tuesdays.",
+"expires": "2026-10-27",
+"posted": "2026-10-20T12:23:26+0000",
+"url": "https://www.instagram.com/p/Det0xLPFpkQ/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18504007429100687.jpg",
+"page": "https://www.threevillagelocal.com/right-coast-taqueria"
+},
+{
 "id": "18384649183233226",
 "biz": "Toast Coffee + Kitchen",
 "ig": "toastcoffeeandkitchen",
@@ -1396,23 +1413,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18113767961172883.jpg",
 "page": "https://www.threevillagelocal.com/premiere-pastry-shop"
-},
-{
-"id": "17946567318348098",
-"biz": "Kilwins Port Jefferson",
-"ig": "kilwins_port_jeff",
-"town": "Port Jefferson",
-"category": "Chocolate/Ice Cream",
-"member": false,
-"title": "Mummy Caramel Apples",
-"when": "Now through Halloween",
-"desc": "Caramel-coated apples dipped in white chocolate with spooky mummy decoration.",
-"expires": "2026-10-31",
-"posted": "2026-10-15T22:02:35+0000",
-"url": "https://www.instagram.com/reel/Deh_ABAExaG/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17946567318348098.jpg",
-"page": "https://www.threevillagelocal.com/kilwins-port-jefferson"
 }
 ],
 "specialsAll": [
@@ -1466,6 +1466,23 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17882169600535369.jpg",
 "page": "https://www.threevillagelocal.com/the-whiskey-barrel"
+},
+{
+"id": "18504007429100687",
+"biz": "Right Coast Taqueria",
+"ig": "rctaqueria",
+"town": "East Setauket",
+"category": "Restaurant",
+"member": false,
+"title": "Taco Tuesday Specials",
+"when": "Every Tuesday",
+"desc": "3 specialty tacos for $12 or 3 tacos for $10 on Tuesdays.",
+"expires": "2026-10-27",
+"posted": "2026-10-20T12:23:26+0000",
+"url": "https://www.instagram.com/p/Det0xLPFpkQ/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18504007429100687.jpg",
+"page": "https://www.threevillagelocal.com/right-coast-taqueria"
 },
 {
 "id": "18384649183233226",
@@ -1692,6 +1709,7 @@
 "Nantuckets",
 "Castaways Steak & Seafood",
 "The Whiskey Barrel",
+"Right Coast Taqueria",
 "Toast Coffee + Kitchen",
 "Premiere Pastry Shop",
 "Kilwins Port Jefferson",
@@ -1719,7 +1737,6 @@
 "PJ Lobster House",
 "Old Fields Port Jefferson",
 "Tara Inn",
-"Right Coast Taqueria",
 "Hirosaki",
 "Eastern Pavilion",
 "Taj Crown of India",
