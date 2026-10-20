@@ -189,6 +189,8 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
 
 ''' + section(src, 'tvs-sec tvs-book') + '''
 
+<a class="tvs-newbiz tvs-up" href="/services"><span class="tvs-nbi">&#128188;</span><span><b>Want more than the Restaurant Partner plan?</b>See our full menu of business services: websites, social media marketing, video, drone and more.</span><em>Full services menu &rarr;</em></a>
+
 <a class="tvs-sticky" href="#tvs-book">@@CTA@@</a>
 <script>(function(){var n=0,t=setInterval(function(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value='rest_partner';clearInterval(t)}if(++n>40)clearInterval(t)},250)})();</script>
 </div>'''
