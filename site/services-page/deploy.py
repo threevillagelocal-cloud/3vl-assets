@@ -16,6 +16,8 @@ SLUG = "services" if LIVE else "preview-services"
 TITLE = "Websites, Google, AI Search & Marketing for Local Businesses | Three Village Local"
 DESC = ("Websites, Google profile setup, AI search, video and drone for local businesses, built by the Three Village Local team "
         "and launched in front of 100,000+ neighbors. Members save, VIPs save the most.")
+FB_TITLE = "We build it. Then we tell the whole town."
+FB_IMAGE = "https://threevillagelocal-cloud.github.io/3vl-share/site/back-office/hero-1080.webp"
 
 
 def call(method, path, data=None):
@@ -39,8 +41,8 @@ def main():
         r = call("POST", "data_widgets/create", dict(w, widget_name=NAME, widget_viewport="front"))
         print("widget create", r.get("status"), (r.get("message") or {}).get("widget_id"))
     page = {"content": "[widget=%s][form=services_inquiry]" % NAME, "content_css": " ", "enable_hero_section": "0",
-            "title": TITLE, "meta_desc": DESC, "facebook_title": "We build it. Then we tell the whole town.", "facebook_desc": DESC,
-            "facebook_image": "https://threevillagelocal-cloud.github.io/3vl-share/site/back-office/hero-1080.webp",
+            "title": TITLE, "meta_desc": DESC, "facebook_title": FB_TITLE, "facebook_desc": DESC,
+            "facebook_image": FB_IMAGE,
             "show_form": "0" if LIVE else "1"}
     ex = call("GET", "list_seo/get?property=filename&property_value=" + SLUG).get("message")
     ex = [x for x in ex if x.get("filename") == SLUG] if isinstance(ex, list) else []
