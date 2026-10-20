@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-20T16:49:46.553080+00:00",
+"updated": "2026-10-20T17:01:04.164717+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 39,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
-"Emma S. Clark Library": 321,
+"Emma S. Clark Library": 323,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 3,
@@ -494,6 +494,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/cat-treat-bundles-for-pet-supply-drive-community-service-project-grades-3-5"
+},
+{
+"id": "emmaclark-knit-cause-59650",
+"title": "Knit for a Cause",
+"start": "2026-10-21T17:00:00",
+"end": "2026-10-21T18:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/knit-cause-59650",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/knit-for-a-cause-402"
 },
 {
 "id": "emmaclark-library-walking-club-61174",
@@ -1009,6 +1028,25 @@
 "status": "",
 "fb": 0,
 "page": ""
+},
+{
+"id": "emmaclark-knit-cause-59651",
+"title": "Knit for a Cause",
+"start": "2026-10-28T17:00:00",
+"end": "2026-10-28T18:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/knit-cause-59651",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/knit-for-a-cause-426"
 },
 {
 "id": "emmaclark-useful-technology-caregivers-58167",
@@ -1755,7 +1793,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-20T16:49:08+00:00",
+"checked": "2026-10-20T17:00:20+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
