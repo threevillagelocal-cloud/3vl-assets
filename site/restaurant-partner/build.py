@@ -18,7 +18,7 @@ D.NAME = "3VL Page Restaurant Partner"
 D.SLUG = "restaurants" if D.LIVE else "preview-restaurants"
 D.TITLE = "Restaurant Partner: Promotion for Stony Brook, Setauket & Port Jefferson Restaurants | Three Village Local"
 D.DESC = ("The all-in-one restaurant promotion platform for Stony Brook, Setauket and Port Jefferson: VIP listing, weekly specials, "
-          "social media, homepage, app, newsletter and a promo video. Only 5 restaurants.")
+          "social media, homepage, mobile app, newsletter and a promo video. Only 5 restaurants.")
 
 D.FB_TITLE = "Where should we eat tonight? Make the answer you."
 D.FB_IMAGE = IMG + "hero-1080.webp"
