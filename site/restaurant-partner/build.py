@@ -86,19 +86,20 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
     <h2>Every way neighbors decide where to eat. Covered.</h2>
     <p>Locals check our mobile app, our homepage, our Instagram and our Friday email to figure out dinner. As a Restaurant Partner you are in all of them, every week.</p>
   </div>
+  <div class="tvr-feat">
+    <div class="tvs-nt tvs-up tvs-ntstar"><span>&#128276;</span><b>Monthly mobile app push notification</b><p>Once a month your restaurant goes straight to the phone of every Three Village Local mobile app user. The fastest way to fill tables tonight.</p></div>
+    <div class="tvs-nt tvs-up tvs-ntstar"><span>&#127869;&#65039;</span><b>Weekly specials on our website, mobile app and social</b><p>Text us your specials. They go on our website, the mobile app's Eat &amp; Drink, Instagram and Facebook every week.</p></div>
+    <div class="tvs-nt tvs-up tvs-ntstar"><span>&#127909;</span><b>Your promo video</b><p>Filmed at your restaurant, edited by us, shared across Three Village Local and yours to keep.</p></div>
+  </div>
   <div class="tvs-ngrid">
     <div class="tvs-nt tvs-up"><span>&#11088;</span><b>VIP listing</b><p>Top of the Restaurants page with a premium profile, menu, photos and order links.</p></div>
-    <div class="tvs-nt tvs-up"><span>&#127869;&#65039;</span><b>Weekly specials, everywhere</b><p>Text us your specials. They go on our website, the mobile app's Eat &amp; Drink and social.</p></div>
     <div class="tvs-nt tvs-up"><span>&#128241;</span><b>Social media posts</b><p>Custom posts and a Reel every month on our Instagram and Facebook.</p></div>
     <div class="tvs-nt tvs-up"><span>&#127968;</span><b>Homepage + mobile app</b><p>A regular top spot in Eat &amp; Drink on our homepage and in the free mobile app.</p></div>
     <div class="tvs-nt tvs-up"><span>&#128232;</span><b>Weekly newsletter</b><p>Your specials in the Friday email locals read to plan their weekend.</p></div>
     <div class="tvs-nt tvs-up"><span>&#127881;</span><b>Events + holidays</b><p>Wine nights, live music, Mother's Day, Restaurant Week, pushed on our calendar and social.</p></div>
-    <div class="tvs-nt tvs-up"><span>&#128276;</span><b>Monthly push notification</b><p>Your restaurant sent straight to the phone of every 3VL mobile app user, once a month.</p></div>
-    <div class="tvs-nt tvs-up"><span>&#128205;</span><b>Google profile tune-up</b><p>We fix your hours, photos, menu link and categories so you win "near me" searches.</p></div>
     <div class="tvs-nt tvs-up"><span>&#128197;</span><b>Seasonal guides</b><p>A spot in our fall, holiday and summer guides that neighbors save and share.</p></div>
     <div class="tvs-nt tvs-up"><span>&#127991;&#65039;</span><b>Partner window decal + review cards</b><p>A "3VL Restaurant Partner" decal and table cards that turn happy diners into Google reviews.</p></div>
     <div class="tvs-nt tvs-up"><span>&#129302;</span><b>Google + AI search</b><p>When neighbors ask Google or ChatGPT where to eat, our pages help put you in the answer.</p></div>
-    <div class="tvs-nt tvs-up tvs-ntstar"><span>&#127909;</span><b>Your promo video</b><p>Filmed at your restaurant, edited by us, shared across 3VL and yours to keep.</p></div>
   </div>
 </section>
 
@@ -111,7 +112,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
     <li class="tvs-up"><em>Monday</em><b>Text us your specials</b><p>A photo and a line is plenty. We write it up and make it look great.</p></li>
     <li class="tvs-up"><em>Tuesday</em><b>They are everywhere</b><p>Website, mobile app, Instagram and Facebook, all pointing to you.</p></li>
     <li class="tvs-up"><em>Friday</em><b>In the weekly email</b><p>Right when locals are deciding where to go this weekend.</p></li>
-    <li class="tvs-up"><em>Every month</em><b>New content + a report</b><p>Fresh posts and a Reel, plus a simple report of views and clicks.</p></li>
+    <li class="tvs-up"><em>Every month</em><b>Your push + new content</b><p>A push notification to every mobile app user, plus fresh posts and a Reel.</p></li>
   </ol>
 </section>
 
@@ -122,24 +123,22 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
 <section class="tvs-sec tvr-math">
   <div class="tvs-head tvs-up">
     <p class="tvs-eyebrow">Do the math</p>
-    <h2>Over $1,100 a month in marketing. For $@@PRICE@@.</h2>
+    <h2>Over $1,000 a month in marketing. For $@@PRICE@@.</h2>
     <p>Here is what each piece would cost on its own. As a Restaurant Partner you get all of it, every month.</p>
   </div>
   <div class="tvr-stack tvs-up">
     <ul>
-      <li class="tvs-up"><span>VIP listing with top placement</span><b>$115/mo</b></li>
-      <li class="tvs-up"><span>Weekly specials on our website, mobile app and social</span><b>$150/mo</b></li>
-      <li class="tvs-up"><span>Custom posts + a Reel every month on Instagram and Facebook</span><b>$299/mo</b></li>
-      <li class="tvs-up"><span>Featured in the Friday newsletter</span><b>$100/mo</b></li>
-      <li class="tvs-up"><span>Regular top spot in Eat &amp; Drink on the homepage and mobile app</span><b>$150/mo</b></li>
-      <li class="tvs-up"><span>Monthly push notification to every mobile app user</span><b>$150/mo</b></li>
-      <li class="tvs-up"><span>Event, holiday and seasonal guide promotion</span><b>$100/mo</b></li>
-      <li class="tvs-up"><span>Monthly report: views, clicks and reach</span><b>$50/mo</b></li>
-      <li class="tvs-up"><span>Google profile tune-up</span><b>$199 one time</b></li>
-      <li class="tvs-up"><span>Partner window decal + review table cards</span><b>$99 one time</b></li>
-      <li class="tvs-up"><span>Promo video filmed at your restaurant</span><b>$1,200 one time</b></li>
+      <li class="tvs-up tvr-hl"><span>Monthly push notification to every mobile app user</span><b>$150/mo</b></li>
+      <li class="tvs-up tvr-hl"><span>Weekly specials on our website, mobile app and social</span><b>$150/mo</b></li>
+      <li class="tvs-up tvr-hl"><span>Promo video filmed at your restaurant</span><b>$1,200 one time</b></li>
+      <li class="tvs-up "><span>VIP listing with top placement</span><b>$115/mo</b></li>
+      <li class="tvs-up "><span>Custom posts + a Reel every month on Instagram and Facebook</span><b>$299/mo</b></li>
+      <li class="tvs-up "><span>Featured in the Friday newsletter</span><b>$100/mo</b></li>
+      <li class="tvs-up "><span>Regular top spot in Eat &amp; Drink on the homepage and mobile app</span><b>$150/mo</b></li>
+      <li class="tvs-up "><span>Event, holiday and seasonal guide promotion</span><b>$100/mo</b></li>
+      <li class="tvs-up "><span>Partner window decal + review table cards</span><b>$99 one time</b></li>
     </ul>
-    <div class="tvr-tot"><span>Total value</span><s>$1,114/mo + $1,498 one time</s></div>
+    <div class="tvr-tot"><span>Total value</span><s>$1,064/mo + $1,299 one time</s></div>
     <div class="tvr-you"><span>Your price</span><b>$@@PRICE@@<small>/mo</small></b></div>
     <p class="tvr-pay">About two extra tables a week covers it. Everything after that is profit.</p>
   </div>
@@ -159,18 +158,15 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
       <p class="tvs-price"><sup>$</sup><b>@@PRICE@@</b></p>
       <p class="tvs-mo">per month, 6-month partnership</p>
       <ul>
+        <li class="tvs-star">Monthly push notification to every mobile app user</li>
+        <li class="tvs-star">Weekly specials on our website, mobile app and social</li>
+        <li class="tvs-star">Promo video filmed at your restaurant</li>
         <li>VIP listing with top placement</li>
-        <li>Weekly specials on our website, mobile app and social</li>
         <li>Featured in the Friday newsletter</li>
         <li>Regular top spot in Eat &amp; Drink on the homepage and mobile app</li>
         <li>Custom posts + a Reel every month on Instagram and Facebook</li>
-        <li>Monthly push notification to every mobile app user</li>
-        <li>Google profile tune-up</li>
-        <li>Seasonal guide placement</li>
+        <li>Event, holiday and seasonal guide promotion</li>
         <li>Partner window decal + review table cards</li>
-        <li>Event and holiday promotion</li>
-        <li>Monthly report: views, clicks and reach</li>
-        <li class="tvs-star">Promo video filmed at your restaurant</li>
       </ul>
       <a class="tvs-btn tvs-blue tvs-wide" href="#tvs-book" data-pick="rest_partner">@@CTA@@</a>
     </article>
@@ -244,8 +240,13 @@ CSS = '''
 .tvr-tot span{font-weight:800;color:var(--mut)}.tvr-tot s{color:var(--mut);font-weight:700;font-size:17px}
 .tvr-you span{font-weight:800;color:var(--navy);font-size:20px}.tvr-you b{color:var(--blue);font-size:44px;line-height:1}.tvr-you small{font-size:18px}
 .tvr-pay{margin:14px 0 0!important;padding:12px 16px;border-radius:14px;background:#fff7e0;color:#5a4410!important;font-weight:700;text-align:center}
+.tvr-feat{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px}
+.tvr-feat .tvs-nt{padding:26px 24px}.tvr-feat .tvs-nt span{font-size:34px}.tvr-feat .tvs-nt b{font-size:19px}.tvr-feat .tvs-nt p{font-size:15px!important}
+.tvr-stack li.tvr-hl{background:#eef4fd;margin:0 -14px;padding:11px 14px;border-radius:12px;border-bottom:0;font-weight:700;color:var(--navy)}
+.tvr-stack li.tvr-hl+li.tvr-hl{margin-top:6px}
+.tvr-stack li.tvr-hl span:before{content:"★ ";color:#e0a51b}
 .tvr-one{grid-template-columns:minmax(0,520px)!important;justify-content:center}
-@media (max-width:900px){.tvs-ngrid{grid-template-columns:repeat(2,1fr)}.tvs-tlist{grid-template-columns:1fr 1fr;row-gap:26px}.tvs-tlist:before{display:none}
+@media (max-width:900px){.tvr-feat{grid-template-columns:1fr}.tvs-ngrid{grid-template-columns:repeat(2,1fr)}.tvs-tlist{grid-template-columns:1fr 1fr;row-gap:26px}.tvs-tlist:before{display:none}
  .tvr-sbox{flex-direction:column;align-items:flex-start;padding:28px 24px}.tvr-count{text-align:left}.tvr-dots{justify-content:flex-start}}
 @media (max-width:520px){.tvr-stack{padding:18px 16px}.tvr-stack li{font-size:14.5px;flex-direction:column;gap:2px}.tvr-tot,.tvr-you{flex-direction:column;gap:4px}.tvs-ngrid{gap:10px}.tvs-nt{padding:16px 14px}.tvs-tlist{grid-template-columns:1fr}.tvr-sbox h2{font-size:27px}.tvr-dots i{width:28px;height:28px}
  .tvs-rp .tvs-hphoto{background-image:url('@@IMG@@hero-720.webp')}}
