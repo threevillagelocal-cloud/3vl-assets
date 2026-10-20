@@ -34,6 +34,52 @@ keep = "\n\n".join(section(R, c) for c in ("tvs-sec tvr-spots", "tvs-sec tvs-nee
 keep = keep.replace("<h2>Claim one of the 5 spots.</h2>", "<h2>Claim %s's spot.</h2>" % C["short"])
 
 P = dict(C, I=I, CTA=B.cta, LEFT=B.left_txt)
+
+ICON = "https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png"
+gal = "".join('<i style="background-image:url(%s%s.webp)"></i>' % (I, g) for g in C.get("gallery", []))
+hrs = "".join("<p><span>%s</span><b>%s</b></p>" % (a, b) for a, b in C.get("hours", []))
+chips = "".join("<em>%s</em>" % x for x in C.get("extras", []))
+VIP = '''
+<section class="tvs-sec tvp-vip" id="tvp-vip">
+  <div class="tvp-vwrap">
+    <div class="tvp-vtxt tvs-up">
+      <p class="tvs-eyebrow">&#11088; Your VIP listing</p>
+      <h2>The best-looking page for %(short)s in town.</h2>
+      <p>Your VIP listing sits at the top of the Restaurants page with a gold VIP ring, your photos, this week's specials and one-tap buttons to call, get directions or order. It is what neighbors see when they search for where to eat.</p>
+      <ul class="tvp-vlist">
+        <li><b>Top of the Restaurants page</b>Above every free listing</li>
+        <li><b>Specials built in</b>Updated every week</li>
+        <li><b>Tap to call, map, order</b>Straight from their phone</li>
+        <li><b>On the website and mobile app</b>Same page, everywhere</li>
+      </ul>
+    </div>
+    <div class="tvp-vstage tvs-up" aria-hidden="true">
+      <span class="tvp-chip tvp-c1">&#9733; Top of Restaurants</span>
+      <span class="tvp-chip tvp-c2">&#127869;&#65039; This week's specials</span>
+      <span class="tvp-chip tvp-c3">&#128222; Tap to call</span>
+      <div class="tvp-vphone"><div class="tvp-notch"></div><div class="tvp-vscreen">
+        <div class="tvp-url">&#128274; threevillagelocal.com/%(profile_path)s</div>
+        <div class="tvp-vscroll">
+          <div class="tvp-vcover" style="background-image:url(%(I)shero.webp)"><span class="tvp-vrib">&#9733; VIP</span></div>
+          <div class="tvp-vhead"><div class="tvp-vlogo"><img src="%(I)slogo.webp" alt=""></div>
+            <p class="tvp-vname">%(name)s</p><p class="tvp-vcat">%(category)s &middot; %(town)s</p>
+            <p class="tvp-vbadge">&#9733; Three Village Local VIP</p></div>
+          <div class="tvp-vbtns"><span>&#128222;<b>Call</b></span><span>&#128205;<b>Directions</b></span><span>&#127760;<b>Website</b></span><span>&#128717;&#65039;<b>Order</b></span></div>
+          <div class="tvp-vspec"><div style="background-image:url(%(I)spenne.webp)"></div><p><em>This week's special</em><b>%(special)s</b><span>%(special_note)s</span></p></div>
+          <p class="tvp-vh">Photos</p><div class="tvp-vgal">@@GAL@@</div>
+          <p class="tvp-vh">About</p><p class="tvp-vabout">%(about)s</p>
+          <div class="tvp-vchips">@@CHIPS@@</div>
+          <p class="tvp-vh">Hours</p><div class="tvp-vhrs">@@HRS@@</div>
+          <p class="tvp-vh">Location</p><div class="tvp-vmap"><span>&#128205;</span><b>%(address)s</b></div>
+          <a class="tvp-vcall">&#128222; %(phone)s</a>
+          <div class="tvp-vfoot"><img src="@@ICON@@" alt="">Also on the Three Village Local mobile app</div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+''' % P
+VIP = VIP.replace("@@GAL@@", gal).replace("@@HRS@@", hrs).replace("@@CHIPS@@", chips).replace("@@ICON@@", ICON)
 HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
 
 <section class="tvs-hero">
@@ -55,6 +101,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
   </div>
 </section>
 
+@@VIP@@
 <section class="tvs-sec tvp-yours" id="tvp-yours">
   <div class="tvs-head tvs-up">
     <p class="tvs-eyebrow">Your restaurant, our reach</p>
@@ -137,10 +184,66 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
 <a class="tvs-newbiz tvs-up" href="/services"><span class="tvs-nbi">&#128188;</span><span><b>Want more than the Restaurant Partner plan?</b>See our full menu of business services: websites, social media marketing, video, drone and more.</span><em>Full services menu &rarr;</em></a>
 
 <a class="tvs-sticky" href="#tvs-book">%s</a>
+<script>(function(){function d(){var s=document.querySelector('.tvp-vscroll'),c=document.querySelector('.tvp-vscreen');if(s&&c)s.style.setProperty('--tvp-d',(c.clientHeight-s.scrollHeight)+'px')}window.addEventListener('load',d);setTimeout(d,1500)})();</script>
 <script>(function(){var n=0,t=setInterval(function(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value='rest_partner';clearInterval(t)}if(++n>40)clearInterval(t)},250)})();</script>
 </div>''' % B.cta
 
+HTML = HTML.replace("@@VIP@@", VIP)
+
 CSS = '''
+.tvp-vwrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;max-width:1080px;margin:0 auto}
+.tvp-vtxt h2{color:var(--navy);font-size:38px;line-height:1.1;margin:8px 0 14px}
+.tvp-vtxt>p{color:var(--mut);font-size:17px}
+.tvp-vlist{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tvp-vlist li{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;color:var(--mut);font-size:14px}
+.tvp-vlist b{display:block;color:var(--navy);font-size:15.5px;margin-bottom:2px}
+.tvp-vstage{position:relative;display:flex;justify-content:center;padding:30px 0;perspective:1400px}
+.tvp-vstage:before{content:"";position:absolute;width:420px;height:420px;max-width:100%;border-radius:50%;background:radial-gradient(circle,rgba(255,197,61,.45),rgba(29,95,191,.12) 55%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(10px)}
+.tvp-vphone{position:relative;width:320px;height:650px;border-radius:52px;background:linear-gradient(145deg,#2a3242,#0b1018);padding:12px;box-shadow:0 50px 90px rgba(13,35,70,.35),inset 0 0 0 2px #3a4456;transform:rotateY(-12deg) rotateX(4deg);transition:transform .6s}
+.tvp-vstage:hover .tvp-vphone{transform:rotateY(0) rotateX(0)}
+.tvp-notch{position:absolute;top:22px;left:50%;transform:translateX(-50%);width:96px;height:26px;border-radius:20px;background:#05080d;z-index:3}
+.tvp-vscreen{position:relative;height:100%;border-radius:42px;overflow:hidden;background:#f5f7fb}
+.tvp-url{position:absolute;top:0;left:0;right:0;z-index:2;padding:56px 14px 8px;background:rgba(245,247,251,.95);font-size:11px;color:#556;text-align:center;border-bottom:1px solid #e3e8ef;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tvp-vscroll{padding-top:84px;animation:tvpScroll 26s ease-in-out 1s infinite}
+.tvp-vstage:hover .tvp-vscroll{animation-play-state:paused}
+@keyframes tvpScroll{0%,8%{transform:translateY(0)}46%,54%{transform:translateY(var(--tvp-d,-900px))}92%,100%{transform:translateY(0)}}
+.tvp-vcover{position:relative;height:170px;background:center/cover}
+.tvp-vrib{position:absolute;right:12px;top:12px;background:linear-gradient(135deg,#ffd76a,#e0a51b);color:#3a2700;font-weight:900;font-size:12px;padding:5px 12px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.tvp-vhead{text-align:center;padding:0 16px;margin-top:-46px;position:relative}
+.tvp-vlogo{width:92px;height:92px;margin:0 auto;border-radius:50%;background:#fff;padding:6px;box-shadow:0 0 0 4px #ffc53d,0 0 24px rgba(255,197,61,.8),0 8px 20px rgba(0,0,0,.2);animation:tvpGlow 2.4s ease-in-out infinite}
+.tvp-vlogo img{width:100%;height:100%;object-fit:contain;border-radius:50%;margin:0!important}
+@keyframes tvpGlow{50%{box-shadow:0 0 0 4px #ffc53d,0 0 38px rgba(255,197,61,1),0 8px 20px rgba(0,0,0,.2)}}
+.tvp-vname{margin:10px 0 0!important;font-weight:900;font-size:22px!important;color:#13233a!important}
+.tvp-vcat{margin:2px 0 8px!important;color:#5d6876!important;font-size:12.5px!important}
+.tvp-vbadge{display:inline-block;margin:0!important;background:#13233a;color:#ffc53d!important;font-weight:800;font-size:11.5px!important;padding:5px 12px;border-radius:999px}
+.tvp-vbtns{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:14px 12px 4px}
+.tvp-vbtns span{background:#fff;border:1px solid #e3e8ef;border-radius:12px;text-align:center;padding:8px 2px;font-size:17px}
+.tvp-vbtns b{display:block;font-size:10.5px;color:#1d5fbf;margin-top:2px}
+.tvp-vspec{display:flex;gap:10px;margin:12px;padding:10px;border-radius:14px;background:linear-gradient(135deg,#fff7e0,#fff);border:1px solid #f3dc9a}
+.tvp-vspec div{width:72px;height:72px;border-radius:10px;background:center/cover;flex:0 0 auto}
+.tvp-vspec p{margin:0!important;font-size:12px!important;color:#333!important;line-height:1.35}
+.tvp-vspec em{display:block;font-style:normal;color:#b07a00;font-weight:800;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em}
+.tvp-vspec b{display:block;color:#13233a;font-size:15px}
+.tvp-vh{margin:16px 14px 8px!important;font-weight:800;color:#13233a!important;font-size:14px!important}
+.tvp-vgal{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:0 12px}
+.tvp-vgal i{aspect-ratio:1;border-radius:8px;background:center/cover}
+.tvp-vabout{margin:0 14px!important;font-size:12.5px!important;color:#444!important;line-height:1.5}
+.tvp-vchips{display:flex;flex-wrap:wrap;gap:6px;padding:10px 14px 0}
+.tvp-vchips em{font-style:normal;font-size:11px;font-weight:700;color:#1d5fbf;background:#e8f0fb;border-radius:999px;padding:4px 10px}
+.tvp-vhrs{margin:0 14px;background:#fff;border:1px solid #e3e8ef;border-radius:12px;padding:6px 12px}
+.tvp-vhrs p{display:flex;justify-content:space-between;margin:0!important;padding:5px 0;font-size:12px!important;color:#444!important;border-bottom:1px solid #f0f2f6}
+.tvp-vhrs p:last-child{border:0}
+.tvp-vmap{position:relative;margin:0 12px;height:120px;border-radius:12px;background:linear-gradient(135deg,#dfe9d8 25%,#cfdfc6 25%,#cfdfc6 50%,#dfe9d8 50%,#dfe9d8 75%,#cfdfc6 75%);background-size:40px 40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.tvp-vmap span{font-size:30px}
+.tvp-vmap b{background:#fff;font-size:11px;color:#13233a;padding:4px 10px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.tvp-vcall{display:block;margin:14px 12px 0;text-align:center;background:#1d5fbf;color:#fff!important;font-weight:800;font-size:14px;border-radius:999px;padding:12px}
+.tvp-vfoot{display:flex;align-items:center;justify-content:center;gap:8px;padding:16px 12px 30px;font-size:11px;color:#5d6876}
+.tvp-vfoot img{width:22px;height:22px;border-radius:6px;margin:0!important}
+.tvp-chip{position:absolute;z-index:4;background:#fff;border-radius:999px;padding:10px 16px;font-weight:800;font-size:14px;color:#13233a;box-shadow:0 14px 30px rgba(13,35,70,.18);animation:tvpFloat 5s ease-in-out infinite;white-space:nowrap}
+.tvp-c1{top:70px;left:0}.tvp-c2{top:46%;right:-6px;animation-delay:1.2s}.tvp-c3{bottom:80px;left:14px;animation-delay:2.4s}
+@keyframes tvpFloat{50%{transform:translateY(-10px)}}
+@media (max-width:900px){.tvp-vwrap{grid-template-columns:1fr}.tvp-vtxt{text-align:center}.tvp-vlist{text-align:left}}
+@media (max-width:520px){.tvp-vtxt h2{font-size:29px}.tvp-vlist{grid-template-columns:1fr}.tvp-vphone{width:290px;height:600px;transform:none}.tvp-chip{font-size:12px;padding:8px 12px}.tvp-c1{left:-4px}.tvp-c2,.tvp-c3{display:none}}
 .tvp .tvs-hphoto{background-image:url('@@I@@hero.webp')!important;background-position:50% 40%}
 .tvp-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;max-width:1000px;margin:0 auto 64px}
 .tvp-flip>*:first-child{order:2}
