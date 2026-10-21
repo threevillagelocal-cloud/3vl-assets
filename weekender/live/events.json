@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-21T17:00:58.125790+00:00",
+"updated": "2026-10-21T18:33:56.625860+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 39,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
-"Emma S. Clark Library": 320,
+"Emma S. Clark Library": 319,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 3,
@@ -402,26 +402,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/meet-the-candidates-for-the-november-election"
-},
-{
-"id": "emmaclark-abbott-and-costello-meet-frankenstein-58153",
-"title": "Abbott and Costello Meet Frankenstein",
-"start": "2026-10-21T12:15:00",
-"end": "2026-10-21T13:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/abbott-and-costello-meet-frankenstein-58153",
-"desc": "In the spirit of Halloween, film historian Larry Wolff will discuss the making of this 1948 classic, share surprising facts about the actors and production, and play hilarious film clips. You’ll also get to view his books and memorabilia. Image courtesy of the",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/default%20%287%29.jpg",
-"src": "emmaclark",
-"tags": [
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/abbott-and-costello-meet-frankenstein"
+"page": ""
 },
 {
 "id": "emmaclark-cat-treat-bundles-pet-supply-drive-community-service-project-grades-3-",
@@ -1852,7 +1833,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-21T17:00:20+00:00",
+"checked": "2026-10-21T18:33:18+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
