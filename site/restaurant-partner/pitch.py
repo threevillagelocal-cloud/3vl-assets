@@ -286,9 +286,9 @@ CSS = '''
 .tvp-notch{position:absolute;top:22px;left:50%;transform:translateX(-50%);width:96px;height:26px;border-radius:20px;background:#05080d;z-index:3}
 .tvp-vscreen{position:relative;height:100%;border-radius:42px;overflow:hidden;background:#f5f7fb}
 .tvp-url{position:absolute;top:0;left:0;right:0;z-index:2;padding:56px 14px 8px;background:rgba(245,247,251,.95);font-size:11px;color:#556;text-align:center;border-bottom:1px solid #e3e8ef;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tvp-vscroll{padding-top:84px;animation:tvpScroll 48s linear infinite}
+.tvp-vscroll{padding-top:84px;animation:tvpScroll 50s linear infinite}
 .tvp-vstage:hover .tvp-vscroll{animation-play-state:paused}
-@keyframes tvpScroll{0%,9%{transform:translateY(0);opacity:1}88%,95%{transform:translateY(var(--tvp-d,-1800px));opacity:1}97%{transform:translateY(var(--tvp-d,-1800px));opacity:0}98%{transform:translateY(0);opacity:0}100%{transform:translateY(0);opacity:1}}
+@keyframes tvpScroll{0%,4%{transform:translateY(0);animation-timing-function:linear}86%{transform:translateY(var(--tvp-d,-1800px));animation-timing-function:ease-in-out}96%,100%{transform:translateY(0)}}
 .tvp-vdish{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:0 12px}
 .tvp-vdish i{position:relative;aspect-ratio:3/4;border-radius:12px;background:center/cover;overflow:hidden}
 .tvp-vdish b{position:absolute;left:0;right:0;bottom:0;padding:16px 6px 6px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.7));color:#fff;font-size:10.5px;font-style:normal}
