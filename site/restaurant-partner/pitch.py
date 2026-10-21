@@ -51,7 +51,8 @@ keep = keep.replace("<h2>Claim one of the 5 spots.</h2>", "<h2>Rather talk it th
 FILES = dict({"special": "penne", "dish1": "g-pizza", "dish2": "burrata", "dish3": "g-knots", "dining": "dining", "video": "owner-480",
               "push": "pizza", "mail": "calamari"}, **C.get("files", {}))
 DISH = C.get("dishes", ["Pizza", "Burrata", "Garlic knots"])
-P = dict(C, I=I, CTA=B.cta, LEFT=B.left_txt, D1=DISH[0], D2=DISH[1], D3=DISH[2], dining_label=C.get("dining_label", "Inside the dining room"),
+POSS = C["short"] if re.search(r"'s$|s'$", C["short"]) else C["short"] + "'s"   # Tommy's -> Tommy's, not Tommy's's
+P = dict(C, I=I, CTA=B.cta, LEFT=B.left_txt, poss=POSS, D1=DISH[0], D2=DISH[1], D3=DISH[2], dining_label=C.get("dining_label", "Inside the dining room"),
          **{"F_" + k: v for k, v in FILES.items()})
 
 ICON = "https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png"
@@ -79,7 +80,7 @@ VIP = '''
         <div class="tvp-pm"><span>&#127881;</span><b>Events + seasonal guides</b><p>Wine nights, holidays, Restaurant Week</p></div>
         <div class="tvp-pm"><span>&#127991;&#65039;</span><b>Partner decal + review cards</b><p>Turn happy diners into Google reviews</p></div>
       </div>
-      <a class="tvp-pcta" href="#tvs-book">Claim %(short)s's spot &rarr;</a>
+      <a class="tvp-pcta" href="#tvs-book">Claim %(poss)s spot &rarr;</a>
     </div>
     <div class="tvp-vstage tvs-up" aria-hidden="true">
       <span class="tvp-chip tvp-c1">&#9733; Top of Restaurants</span>
@@ -126,7 +127,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
     <p class="tvs-sub">The <b>Three Village Local Restaurant Partner</b> program puts %(short)s on their phones, in their feeds, in their inbox and on our homepage, every single week. <b>Not ads. Not a listing. A front-row seat in your own town.</b> Open to just 5 restaurants in Stony Brook, Setauket and Port Jefferson. When the spots are gone, the program closes.</p>
     <div class="tvp-meter"><div class="tvp-mdots">@@HDOTS@@</div><p><b>%(LEFT)s</b>First come, first served</p></div>
     <div class="tvs-ctas">
-      <a class="tvs-btn tvs-blue" href="#tvs-book">Claim %(short)s's spot</a>
+      <a class="tvs-btn tvs-blue" href="#tvs-book">Claim %(poss)s spot</a>
       <a class="tvs-btn tvs-ghost" href="#tvp-vip">See what you get</a>
     </div>
   </div>
