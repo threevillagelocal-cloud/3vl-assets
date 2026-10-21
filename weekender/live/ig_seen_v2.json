@@ -15,14 +15,6 @@
 "expires": "2026-10-31",
 "_ts": "2026-09-22T13:31:33+0000"
 },
-"17879890482626648": {
-"special": true,
-"title": "Butternut Squash Soup Available Now",
-"when": "Every Day",
-"desc": "Seasonal butternut squash soup is now available. Open daily at 11am.",
-"expires": "2026-10-11",
-"_ts": "2026-09-21T07:45:48+0000"
-},
 "18050928416813278": {
 "special": false,
 "_ts": "2026-09-27T15:13:15+0000"
@@ -134,14 +126,6 @@
 "desc": "Limited Halloween-themed cheese from Jasper Hill Farm at the shop while supplies last.",
 "expires": "2026-10-11",
 "_ts": "2026-09-25T14:05:01+0000"
-},
-"17872882752650519": {
-"special": false,
-"title": "Halloween Cheese Board Workshop",
-"when": "Fri, Oct. 30",
-"desc": "Learn to style a spooky cheese board and explore candy-cheese pairings at this limited-spot workshop.",
-"expires": "2026-10-30",
-"_ts": "2026-09-21T00:19:04+0000"
 },
 "18130638007748327": {
 "special": false,
@@ -3674,5 +3658,73 @@
 "desc": "Lobster Bisque, Seafood Chowder, or Soup of the Day. Open from 4 PM.",
 "expires": "2026-11-03",
 "_ts": "2026-10-20T18:01:43+0000"
+},
+"18124063798934600": {
+"special": true,
+"title": "London Broil Special",
+"when": "Limited time",
+"desc": "London Broil comfort meal on the specials menu for a limited time this fall.",
+"expires": "2026-11-04",
+"_ts": "2026-10-21T00:56:46+0000"
+},
+"18027113510913497": {
+"special": false,
+"title": "New Maine Cheeses Now in Stock",
+"when": "Available now",
+"desc": "Limited supply of Opus 42 and Rockweed cheeses from Lakins Farmstead Cheese in Maine.",
+"expires": "2026-10-21",
+"_ts": "2026-10-20T20:42:51+0000"
+},
+"18127412185916800": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-21T11:35:07+0000"
+},
+"17906048265657466": {
+"special": false,
+"title": "Witches Potion Punch Cocktail",
+"when": "Ongoing",
+"desc": "New Halloween cocktail available at Burgerology. Spooky and mysterious drink to get into the spirit.",
+"expires": "2026-10-31",
+"_ts": "2026-10-20T20:41:59+0000"
+},
+"18109095848186290": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-21T11:24:57+0000"
+},
+"18080423606425406": {
+"special": false,
+"_ts": "2026-10-20T22:15:57+0000"
+},
+"17959517340254859": {
+"special": true,
+"title": "Soup & Sandwich Combo",
+"when": "Daily, 11am - 5pm",
+"desc": "Choose any half sandwich with a cup of soup for $14.",
+"expires": "2026-11-04",
+"_ts": "2026-10-21T11:03:54+0000"
+},
+"17963374023211130": {
+"special": true,
+"title": "Taco Tuesday: 3 for $10",
+"when": "Every Tuesday",
+"desc": "Crispy shrimp, mahi mahi, or chipotle chicken tacos with green cabbage, pico de gallo, and chipotle crema.",
+"expires": "2026-10-27",
+"_ts": "2026-10-20T19:33:06+0000"
+},
+"18041321483838169": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-20T20:01:02+0000"
 }
 }
