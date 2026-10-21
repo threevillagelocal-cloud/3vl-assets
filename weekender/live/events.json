@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-21T15:02:18.037675+00:00",
+"updated": "2026-10-21T17:00:58.125790+00:00",
 "counts": {
 "Three Village Chamber": 6,
 "Port Jefferson Chamber": 39,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
-"Emma S. Clark Library": 321,
+"Emma S. Clark Library": 320,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 3,
@@ -384,23 +384,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "emmaclark-one-one-medicare-telephone-counseling-58177",
-"title": "One-on-One Medicare Telephone Counseling",
-"start": "2026-10-21T10:00:00",
-"end": "2026-10-21T12:30:00",
-"allday": false,
-"venue": "Online (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/one-one-medicare-telephone-counseling-58177",
-"desc": "To schedule an appointment with a HIICAP volunteer, call Cassidy at 631-941-4080 ext. 116 , or email cassidy@emmaclark.org .",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/one-on-one-medicare-telephone-counseling"
 },
 {
 "id": "3vchamber-1926284",
@@ -1869,7 +1852,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-21T15:00:17+00:00",
+"checked": "2026-10-21T17:00:20+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
