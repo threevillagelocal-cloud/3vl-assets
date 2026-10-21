@@ -45,6 +45,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
   <div class="tvs-hfade"></div>
   <div class="tvs-hin tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Restaurant Partner &middot; only 5 restaurants</p>
+    <p class="tvr-lead">All of your marketing in one local plan.</p>
     <h1>Where should we eat tonight?<br><span>Make the answer you.</span></h1>
     <p class="tvs-sub">The all-in-one restaurant promotion platform for Stony Brook, Setauket and Port Jefferson. Your specials, your food and your story in front of the whole town, every week.</p>
     <div class="tvs-ctas">
@@ -248,6 +249,8 @@ CSS = '''
 .tvr-stack li.tvr-hl+li.tvr-hl{margin-top:6px}
 .tvr-stack li.tvr-hl span:before{content:"★ ";color:#e0a51b}
 .tvr-one{grid-template-columns:minmax(0,520px)!important;justify-content:center}
+.tvr-lead{margin:0 0 10px!important;font-size:24px!important;line-height:1.2;font-weight:800;color:#966e22!important;letter-spacing:.01em}
+@media (max-width:520px){.tvr-lead{font-size:19px!important}}
 @media (max-width:900px){.tvr-feat{grid-template-columns:1fr}.tvs-ngrid{grid-template-columns:repeat(2,1fr)}.tvs-tlist{grid-template-columns:1fr 1fr;row-gap:26px}.tvs-tlist:before{display:none}
  .tvr-sbox{flex-direction:column;align-items:flex-start;padding:28px 24px}.tvr-count{text-align:left}.tvr-dots{justify-content:flex-start}}
 @media (max-width:520px){.tvr-stack{padding:18px 16px}.tvr-stack li{font-size:14.5px;flex-direction:column;gap:2px}.tvr-tot,.tvr-you{flex-direction:column;gap:4px}.tvs-ngrid{gap:10px}.tvs-nt{padding:16px 14px}.tvs-tlist{grid-template-columns:1fr}.tvr-sbox h2{font-size:27px}.tvr-dots i{width:28px;height:28px}

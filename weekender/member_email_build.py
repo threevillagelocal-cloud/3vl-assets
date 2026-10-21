@@ -15,7 +15,7 @@ sys.path.insert(0, HERE)
 from email_build import esc, btn, FONT, NAVY, NAVY2, GOLD, INK, MUT, LINE, BG, MAILING_ADDRESS   # same look as the weekly email
 
 SITE = "https://www.threevillagelocal.com"
-VIP, GN = {"1", "8"}, {"2"}
+VIP, GN = {"1", "8", "9"}, {"2"}   # 9 = Restaurant Partner
 
 
 def p(t, size=16, color=INK, mb=14, extra=""):

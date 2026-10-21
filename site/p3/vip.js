@@ -4,7 +4,7 @@ var CHECK='<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="
 var STAR='<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.2l2 4.3 4.7.5-3.5 3.2 1 4.6L8 11.5 3.8 13.8l1-4.6L1.3 6l4.7-.5z" fill="#13294b"/></svg>';
 function badges(){
   var mp=document.querySelector('.member_profile');if(!mp||mp.classList.contains('p3-hastiers'))return;
-  var vip=mp.classList.contains('level_1')||mp.classList.contains('level_8'),feat=mp.classList.contains('level_2');
+  var vip=mp.classList.contains('level_1')||mp.classList.contains('level_8')||mp.classList.contains('level_9'),feat=mp.classList.contains('level_2');
   var h1=mp.querySelector('.member-profile-header h1');if(!h1||(!vip&&!feat))return;
   var ver=!!document.querySelector('img[alt="Verified Member"]');
   var b=document.createElement('div');b.className='p3-tiers';

@@ -45,7 +45,7 @@ DEAL = ('<section class="tvs-sec tvp-deal" id="tvs-bundles"><div class="tvp-dgri
         '</div><div class="tvp-dplan">' + plan + '</div></div></section>')
 keep = "\n\n".join([section(R, "tvs-sec tvr-spots"), DEAL, section(R, "tvs-sec tvs-faq"), section(R, "tvs-sec tvs-book")])
 keep = keep.replace('<p class="tvs-cname">Restaurant Partner</p>', '<p class="tvs-cname">Three Village Local Restaurant Partner</p>')
-keep = keep.replace("<h2>Claim one of the 5 spots.</h2>", "<h2>Claim %s's spot.</h2>" % C["short"])
+keep = keep.replace("<h2>Claim one of the 5 spots.</h2>", "<h2>Rather talk it through first?</h2>")
 
 P = dict(C, I=I, CTA=B.cta, LEFT=B.left_txt)
 
@@ -116,6 +116,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
   <div class="tvs-hfade"></div>
   <div class="tvs-hin tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Private invitation for %(name)s</p>
+    <p class="tvr-lead">All of your marketing in one local plan.</p>
     <h1>Only 5 restaurants<br><span>get this. One spot could be yours.</span></h1>
     <p class="tvs-sub">The <b>Three Village Local Restaurant Partner</b> program is not a listing. It is premium local marketing that puts %(short)s in front of your neighbors in Stony Brook, Setauket and Port Jefferson every single week: push alerts to their phones, your specials on every channel, and a promo video. Open to just 5 restaurants. When the spots are gone, the program closes.</p>
     <div class="tvp-meter"><div class="tvp-mdots">@@HDOTS@@</div><p><b>%(LEFT)s</b>First come, first served</p></div>
@@ -174,10 +175,24 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
 
 <a class="tvs-sticky" href="#tvs-book">%s</a>
 <script>(function(){function d(){var s=document.querySelector('.tvp-vscroll'),c=document.querySelector('.tvp-vscreen');if(s&&c)s.style.setProperty('--tvp-d',(c.clientHeight-s.scrollHeight)+'px')}window.addEventListener('load',d);setTimeout(d,1500)})();</script>
-<script>(function(){var n=0,t=setInterval(function(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value='rest_partner';clearInterval(t)}if(++n>40)clearInterval(t)},250)})();</script>
+<script>(function(){var n=0,t=setInterval(function(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value='rest_partner';var g=s.closest('.form-group')||s.parentNode;g.style.display='none';clearInterval(t)}if(++n>40)clearInterval(t)},250)})();</script>
 </div>''' % B.cta
 
 HTML = HTML.replace("@@VIP@@", VIP).replace("@@HDOTS@@", B.dots)
+
+# "Claim" buttons go straight to the paid sign-up (BD plan 9, /checkout/restaurant-partner); the form stays for anyone who wants to talk first
+CHECKOUT = "/checkout/restaurant-partner"
+
+
+def _claim(m):
+    tag = m.group(0)
+    if "Claim" not in m.group(2):
+        return tag
+    return tag.replace('href="#tvs-book"', 'href="%s"' % CHECKOUT, 1).replace(' data-pick="rest_partner"', '')
+
+
+import re
+HTML = re.sub(r'(<a [^>]*href="#tvs-book"[^>]*>)(.*?)</a>', _claim, HTML)
 
 # exclusivity band right under the hero: what only 5 restaurants get
 BAND = '''<section class="tvs-sec tvp-band tvs-up" aria-label="What Restaurant Partners get">

@@ -17,7 +17,7 @@ CSS = open(os.path.join(HERE, "share.css"), encoding="utf-8").read() + """
 .vip .tag{left:700px;top:62px}
 .tag.tl,.vip .tag.tl{left:690px;top:122px}
 """
-VIP = {"1", "8"}
+VIP = {"1", "8", "9"}   # 9 = Restaurant Partner
 EXCLUDE = {"5", "218"}  # admin/blog-author account, Twinr (app vendor)
 VISIT = {"Restaurant", "Shopping - Retail", "Beauty & Personal Care", "Sports & Fitness", "Nightlife", "Farmstand/Agriculture",
          "Pet Services", "Automotive", "Arts & Entertainment", "Hotels & Travel", "Events & Entertainment", "Health & Wellness"}

@@ -26,7 +26,7 @@ def u(x):
 
 
 vips = []
-for sub in (1, 8):
+for sub in (1, 8, 9):   # 9 = Restaurant Partner (VIP perks included)
     m = api("/api/v2/user/get?limit=100&property=subscription_id&property_value=%d" % sub).get("message") or []
     vips += [x for x in m if str(x.get("active")) == "2"]
 
