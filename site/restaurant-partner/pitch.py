@@ -29,8 +29,19 @@ def section(src, cls):
 
 
 R = B.HTML
-keep = "\n\n".join(section(R, c) for c in ("tvs-sec tvr-spots", "tvs-sec tvs-need", "tvs-sec tvr-math", "tvs-sec tvs-bundles",
-                                            "tvs-sec tvs-faq", "tvs-sec tvs-book"))
+
+
+def inner(sec):
+    return sec[sec.index(">") + 1:sec.rindex("</section>")]
+
+
+math = inner(section(R, "tvs-sec tvr-math"))
+plan = inner(section(R, "tvs-sec tvs-bundles"))
+plan = plan[plan.index('<div class="tvs-cards'):]  # its "One plan, one price" header repeats the math header
+DEAL = ('<section class="tvs-sec tvp-deal" id="tvs-bundles"><div class="tvp-dgrid"><div class="tvp-dmath">' + math +
+        '</div><div class="tvp-dplan">' + plan + '</div></div></section>')
+keep = "\n\n".join([section(R, "tvs-sec tvr-spots"), DEAL, section(R, "tvs-sec tvs-faq"), section(R, "tvs-sec tvs-book")])
+keep = keep.replace('<p class="tvs-cname">Restaurant Partner</p>', '<p class="tvs-cname">Three Village Local Restaurant Partner</p>')
 keep = keep.replace("<h2>Claim one of the 5 spots.</h2>", "<h2>Claim %s's spot.</h2>" % C["short"])
 
 P = dict(C, I=I, CTA=B.cta, LEFT=B.left_txt)
@@ -48,17 +59,17 @@ VIP = '''
       <h2>Everything %(short)s gets as a Three Village Local Restaurant Partner.</h2>
       <p>Over $1,000 a month in marketing aimed at one audience: the neighbors who live minutes from %(short)s. The listing on the phone is the smallest part. Only 5 restaurants will ever have all of this.</p>
       <div class="tvp-pk3">
-        <div class="tvp-pk"><span class="tvp-pi">&#128276;</span><div><em>Headliner</em><b>Monthly push notification</b><p>%(short)s on the lock screen of every Three Village Local mobile app user.</p></div><i>$150/mo value</i></div>
-        <div class="tvp-pk"><span class="tvp-pi">&#127869;&#65039;</span><div><em>Headliner</em><b>Weekly specials, everywhere</b><p>Our website, the mobile app, Instagram and Facebook, every single week.</p></div><i>$150/mo value</i></div>
-        <div class="tvp-pk"><span class="tvp-pi">&#127909;</span><div><em>Headliner</em><b>Your promo video</b><p>Filmed at %(short)s, edited by us, shared everywhere and yours to keep.</p></div><i>$1,200 value</i></div>
+        <div class="tvp-pk"><span class="tvp-pi">&#128276;</span><div><em>Headliner</em><b>Monthly push notification</b><p>%(short)s on the lock screen of every Three Village Local mobile app user.</p></div></div>
+        <div class="tvp-pk"><span class="tvp-pi">&#127869;&#65039;</span><div><em>Headliner</em><b>Weekly specials, everywhere</b><p>Our website, the mobile app, Instagram and Facebook, every single week.</p></div></div>
+        <div class="tvp-pk"><span class="tvp-pi">&#127909;</span><div><em>Headliner</em><b>Your promo video</b><p>Filmed at %(short)s, edited by us, shared everywhere and yours to keep.</p></div></div>
       </div>
       <div class="tvp-pk6">
-        <div class="tvp-pm"><span>&#11088;</span><b>VIP listing</b><p>Top of the Restaurants page, like the phone</p><i>$115/mo</i></div>
-        <div class="tvp-pm"><span>&#128241;</span><b>Posts + a Reel monthly</b><p>Custom content on our Instagram and Facebook</p><i>$299/mo</i></div>
-        <div class="tvp-pm"><span>&#127968;</span><b>Top spot in Eat &amp; Drink</b><p>Homepage and mobile app</p><i>$150/mo</i></div>
-        <div class="tvp-pm"><span>&#128232;</span><b>Friday newsletter</b><p>Where locals plan the weekend</p><i>$100/mo</i></div>
-        <div class="tvp-pm"><span>&#127881;</span><b>Events + seasonal guides</b><p>Wine nights, holidays, Restaurant Week</p><i>$100/mo</i></div>
-        <div class="tvp-pm"><span>&#127991;&#65039;</span><b>Partner decal + review cards</b><p>Turn happy diners into Google reviews</p><i>$99 value</i></div>
+        <div class="tvp-pm"><span>&#11088;</span><b>VIP listing</b><p>Top of the Restaurants page, like the phone</p></div>
+        <div class="tvp-pm"><span>&#128241;</span><b>Posts + a Reel monthly</b><p>Custom content on our Instagram and Facebook</p></div>
+        <div class="tvp-pm"><span>&#127968;</span><b>Top spot in Eat &amp; Drink</b><p>Homepage and mobile app</p></div>
+        <div class="tvp-pm"><span>&#128232;</span><b>Friday newsletter</b><p>Where locals plan the weekend</p></div>
+        <div class="tvp-pm"><span>&#127881;</span><b>Events + seasonal guides</b><p>Wine nights, holidays, Restaurant Week</p></div>
+        <div class="tvp-pm"><span>&#127991;&#65039;</span><b>Partner decal + review cards</b><p>Turn happy diners into Google reviews</p></div>
       </div>
       <a class="tvp-pcta" href="#tvs-book">Claim %(short)s's spot &rarr;</a>
     </div>
@@ -115,77 +126,41 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
 @@VIP@@
 <section class="tvs-sec tvp-yours" id="tvp-yours">
   <div class="tvs-head tvs-up">
-    <p class="tvs-eyebrow">Your restaurant, our reach</p>
-    <h2>Here is %(short)s on Three Village Local.</h2>
-    <p>Real examples built from your photos. As a Restaurant Partner, this is what goes out for you every week and every month.</p>
+    <p class="tvs-eyebrow">Built from your photos</p>
+    <h2>Here is %(short)s in front of the neighbors.</h2>
+    <p>Real examples of what goes out for you every week and every month.</p>
   </div>
-
-  <div class="tvp-row tvs-up">
-    <div class="tvp-phone" aria-hidden="true">
-      <div class="tvp-lock"><p class="tvp-time">5:42</p><p class="tvp-date">Friday</p>
-        <div class="tvp-notif"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png" alt=""><div><p><b>Three Village Local</b><span>now</span></p><p><b>%(push_title)s</b></p><p>%(push)s</p></div><img class="tvp-nthumb" src="%(I)spizza.webp" alt=""></div>
-      </div>
+  <div class="tvp-tiles">
+    <div class="tvp-tile tvs-up">
+      <div class="tvp-mock" style="--s:.6" aria-hidden="true"><div class="tvp-phone">
+        <div class="tvp-lock"><p class="tvp-time">5:42</p><p class="tvp-date">Friday</p>
+          <div class="tvp-notif"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png" alt=""><div><p><b>Three Village Local</b><span>now</span></p><p><b>%(push_title)s</b></p><p>%(push)s</p></div><img class="tvp-nthumb" src="%(I)spizza.webp" alt=""></div>
+        </div>
+      </div></div>
+      <p class="tvp-tag">Every month</p><h3>Push to every phone</h3><p>On the lock screen of every Three Village Local mobile app user.</p>
     </div>
-    <div class="tvp-txt">
-      <p class="tvp-tag">&#11088; Every month</p>
-      <h3>Your push notification</h3>
-      <p>Once a month, %(short)s lands on the lock screen of every Three Village Local mobile app user, right when they are deciding where to eat.</p>
+    <div class="tvp-tile tvs-up">
+      <div class="tvp-mock" style="--s:.62" aria-hidden="true"><div class="tvp-ig">
+        <div class="tvp-igtop"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png" alt=""><b>threevillagelocal</b></div>
+        <div class="tvp-igpic" style="background-image:url('%(I)spenne.webp')">
+          <div class="tvp-igfade"></div>
+          <div class="tvp-igt"><p class="tvp-ig1">THIS WEEK AT</p><p class="tvp-ig2">%(name_caps)s</p><p class="tvp-ig3">%(special)s</p><p class="tvp-ig4">&#128205; %(town)s</p></div>
+        </div>
+        <div class="tvp-igbar">&#9825; &nbsp;&#128172; &nbsp;&#10148;</div>
+      </div></div>
+      <p class="tvp-tag">Every week</p><h3>Your specials, everywhere</h3><p>Instagram, Facebook, our website and the mobile app's Eat &amp; Drink.</p>
     </div>
-  </div>
-
-  <div class="tvp-row tvp-flip tvs-up">
-    <div class="tvp-ig" aria-hidden="true">
-      <div class="tvp-igtop"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png" alt=""><b>threevillagelocal</b></div>
-      <div class="tvp-igpic" style="background-image:url('%(I)spenne.webp')">
-        <div class="tvp-igfade"></div>
-        <div class="tvp-igt"><p class="tvp-ig1">THIS WEEK AT</p><p class="tvp-ig2">%(name_caps)s</p><p class="tvp-ig3">%(special)s</p><p class="tvp-ig4">&#128205; %(town)s</p></div>
-      </div>
-      <div class="tvp-igbar">&#9825; &nbsp;&#128172; &nbsp;&#10148;</div>
+    <div class="tvp-tile tvs-up">
+      <div class="tvp-mock tvp-mmid" style="--s:.64" aria-hidden="true"><div class="tvp-mail">
+        <p class="tvp-mh">Three Village Weekly <span>Friday</span></p>
+        <p class="tvp-mt">Where to eat this weekend</p>
+        <div class="tvp-mi"><img src="%(I)scalamari.webp" alt=""><div><b>%(name)s</b><p>%(special_note)s</p><span>See this week's specials</span></div></div>
+      </div></div>
+      <p class="tvp-tag">Every Friday</p><h3>The weekly newsletter</h3><p>In the email locals read to plan their weekend.</p>
     </div>
-    <div class="tvp-txt">
-      <p class="tvp-tag">&#11088; Every week</p>
-      <h3>Your weekly specials, everywhere</h3>
-      <p>Text us your specials and we turn them into posts like this for our Instagram and Facebook, plus the website, the mobile app and the Friday newsletter.</p>
-    </div>
-  </div>
-
-  <div class="tvp-row tvs-up">
-    <div class="tvp-card" aria-hidden="true">
-      <p class="tvp-ch">&#127869;&#65039; Eat &amp; Drink <span>Today</span></p>
-      <div class="tvp-cimg" style="background-image:url('%(I)sburrata.webp')"><span>Partner</span></div>
-      <p class="tvp-cn">%(name)s</p>
-      <p class="tvp-cs">%(special_note)s</p>
-      <p class="tvp-ct">%(town)s &middot; See specials &rarr;</p>
-    </div>
-    <div class="tvp-txt">
-      <p class="tvp-tag">Homepage + mobile app</p>
-      <h3>A regular top spot in Eat &amp; Drink</h3>
-      <p>The first thing neighbors see when they open our homepage or the mobile app to figure out dinner.</p>
-    </div>
-  </div>
-
-  <div class="tvp-row tvp-flip tvs-up">
-    <div class="tvp-mail" aria-hidden="true">
-      <p class="tvp-mh">Three Village Weekly <span>Friday</span></p>
-      <p class="tvp-mt">Where to eat this weekend</p>
-      <div class="tvp-mi"><img src="%(I)scalamari.webp" alt=""><div><b>%(name)s</b><p>%(special_note)s</p><span>See this week's specials</span></div></div>
-    </div>
-    <div class="tvp-txt">
-      <p class="tvp-tag">Every Friday</p>
-      <h3>In the weekly newsletter</h3>
-      <p>Your specials in the email locals read to plan their weekend.</p>
-    </div>
-  </div>
-
-  <div class="tvp-row tvs-up">
-    <div class="tvp-two" aria-hidden="true">
-      <img src="%(I)swelcome.webp" alt="">
-      <div class="tvp-vid" style="background-image:url('%(I)sowner.webp')"><span>&#9654;</span><p>Your promo video</p></div>
-    </div>
-    <div class="tvp-txt">
-      <p class="tvp-tag">&#11088; Included</p>
-      <h3>Your welcome post and promo video</h3>
-      <p>A welcome announcement to the whole town, and a promo video filmed at %(short)s, edited by us and yours to keep.</p>
+    <div class="tvp-tile tvs-up">
+      <div class="tvp-mock" style="--s:.92" aria-hidden="true"><div class="tvp-vid" style="background-image:url('%(I)sowner.webp')"><span>&#9654;</span><p>Your promo video</p></div></div>
+      <p class="tvp-tag">Included</p><h3>Your promo video</h3><p>Filmed at %(short)s, edited by us, yours to keep.</p>
     </div>
   </div>
 </section>
@@ -394,6 +369,21 @@ CSS = '''
 .tvp-vid{position:relative;width:200px;aspect-ratio:9/16;border-radius:18px;background:center/cover;box-shadow:0 20px 44px rgba(13,35,70,.18);overflow:hidden}
 .tvp-vid span{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--blue);font-size:22px;display:flex;align-items:center;justify-content:center;padding-left:4px}
 .tvp-vid p{position:absolute;left:0;right:0;bottom:0;margin:0!important;padding:30px 10px 12px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.75));color:#fff!important;font-weight:800;text-align:center;font-size:14px!important}
+.tvp-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;max-width:1120px;margin:0 auto}
+.tvp-tile{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px 16px 18px;text-align:center;box-shadow:0 14px 34px rgba(13,35,70,.07)}
+.tvp-mock{--k:1;position:relative;height:340px;border-radius:16px;background:linear-gradient(160deg,#eef4fd,#f8fafc);overflow:hidden;display:flex;justify-content:center;align-items:flex-start;padding-top:12px;margin-bottom:14px;box-sizing:border-box}
+.tvp-mock>*{flex:0 0 auto;transform:scale(calc(var(--s) * var(--k)));transform-origin:top center;margin:0!important}
+.tvp-mmid{align-items:center;padding-top:0}.tvp-mmid>*{transform-origin:center}
+.tvp-tile h3{color:var(--navy);font-size:19px;margin:8px 0 4px}
+.tvp-tile>p:not(.tvp-tag){margin:0!important;color:var(--mut);font-size:14px!important;line-height:1.45}
+.tvp-deal .tvp-dgrid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:start;max-width:1120px;margin:0 auto}
+.tvp-deal .tvs-head{text-align:left;margin-left:0;max-width:none}
+.tvp-deal .tvr-stack{max-width:none;margin:0}
+.tvp-deal .tvp-dplan{position:sticky;top:80px}
+.tvp-deal .tvs-cards{display:block!important;margin:0}
+.tvp-deal .tvs-card{max-width:none}
+@media (max-width:980px){.tvp-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.tvp-deal .tvp-dgrid{grid-template-columns:1fr}.tvp-deal .tvp-dplan{position:static}.tvp-deal .tvs-head{text-align:center}}
+@media (max-width:520px){.tvp-tiles{gap:10px}.tvp-tile{padding:10px 10px 14px;border-radius:18px}.tvp-mock{--k:.72;height:250px;margin-bottom:10px}.tvp-mmid{--k:.6}.tvp-tile h3{font-size:16px}.tvp-tile>p:not(.tvp-tag){font-size:13px!important}}
 @media (max-width:820px){.tvp-row{grid-template-columns:1fr;gap:22px;margin-bottom:48px}.tvp-flip>*:first-child{order:0}.tvp-txt{text-align:center}}
 @media (max-width:420px){.tvp-ig,.tvp-mail{width:100%}.tvp-two>img,.tvp-vid{width:150px}.tvp-phone{width:290px;height:540px}.tvp-lock{padding:40px 8px 0}.tvp-notif .tvp-nthumb{display:none}}
 '''.replace("@@I@@", I)
