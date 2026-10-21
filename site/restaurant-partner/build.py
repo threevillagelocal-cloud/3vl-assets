@@ -52,6 +52,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
       <a class="tvs-btn tvs-blue" href="#tvs-inc">See what is included</a>
       <a class="tvs-btn tvs-ghost" href="#tvs-book">@@CTA@@</a>
     </div>
+    <p class="tvr-note">Already listed on Three Village Local? <a href="/login?login_direct_url=%2Faccount%2Fupgrade%3Frp%3D1">Log in and upgrade</a></p>
     <ul class="tvs-trust">
       <li><b>5 spots</b>that is it</li>
       <li><b>Weekly</b>specials everywhere</li>
@@ -249,6 +250,7 @@ CSS = '''
 .tvr-stack li.tvr-hl+li.tvr-hl{margin-top:6px}
 .tvr-stack li.tvr-hl span:before{content:"★ ";color:#e0a51b}
 .tvr-one{grid-template-columns:minmax(0,520px)!important;justify-content:center}
+.tvr-note{margin:-6px 0 18px!important;color:var(--mut)!important;font-size:14.5px!important;font-weight:600}.tvr-note a{color:var(--blue);font-weight:800}
 .tvr-lead{margin:0 0 10px!important;font-size:24px!important;line-height:1.2;font-weight:800;color:#966e22!important;letter-spacing:.01em}
 @media (max-width:520px){.tvr-lead{font-size:19px!important}}
 @media (max-width:900px){.tvr-feat{grid-template-columns:1fr}.tvs-ngrid{grid-template-columns:repeat(2,1fr)}.tvs-tlist{grid-template-columns:1fr 1fr;row-gap:26px}.tvs-tlist:before{display:none}

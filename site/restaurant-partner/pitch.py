@@ -182,6 +182,24 @@ HTML = HTML.replace("@@VIP@@", VIP).replace("@@HDOTS@@", B.dots)
 
 # "Claim" buttons go straight to the paid sign-up (BD plan 9, /checkout/restaurant-partner); the form stays for anyone who wants to talk first
 CHECKOUT = "/checkout/restaurant-partner"
+# Restaurants already on Three Village Local never sign up twice (owner 10/20/2026). Config "user_id" decides the path:
+#   unclaimed listing (plan 5) -> the same checkout with their claim code, so the payment claims THEIR listing
+#   claimed listing (has a login) -> log in, then /account/upgrade?rp=1 (Restaurant Partner preselected)
+import re
+NOTE = ""
+if C.get("user_id"):
+    import urllib.request
+    u = (D.call("GET", "user/get?property=user_id&property_value=%s" % C["user_id"]).get("message") or [{}])[0]
+    if str(u.get("subscription_id")) == "5":
+        prof = urllib.request.urlopen("https://www.threevillagelocal.com/" + u["filename"], timeout=60).read().decode("utf-8", "ignore")
+        CHECKOUT += "?claim=" + re.search(r'/join\?claim=([0-9a-f]{32})', prof).group(1)
+        NOTE = "Your listing is already on Three Village Local. This upgrades it, no new sign-up."
+    elif str(u.get("subscription_id")) in ("6", "2", "1", "8"):
+        CHECKOUT = "/login?login_direct_url=%2Faccount%2Fupgrade%3Frp%3D1"
+        NOTE = "You already have a Three Village Local login. Log in and upgrade in one step."
+    elif str(u.get("subscription_id")) == "9":
+        NOTE = "%s is already a Restaurant Partner." % C["short"]
+    print("claim path:", u.get("subscription_id"), CHECKOUT)
 
 
 def _claim(m):
@@ -191,8 +209,13 @@ def _claim(m):
     return tag.replace('href="#tvs-book"', 'href="%s"' % CHECKOUT, 1).replace(' data-pick="rest_partner"', '')
 
 
-import re
 HTML = re.sub(r'(<a [^>]*href="#tvs-book"[^>]*>)(.*?)</a>', _claim, HTML)
+UPG = "/login?login_direct_url=%2Faccount%2Fupgrade%3Frp%3D1"
+NOTE_HTML = ('<p class="tvp-note">&#10003; %s</p>' % NOTE if NOTE else
+             '<p class="tvp-note">Already listed on Three Village Local? <a href="%s">Log in and upgrade</a></p>' % UPG)
+HTML = HTML.replace('<a class="tvs-btn tvs-ghost" href="#tvp-vip">See what you get</a>\n    </div>',
+                    '<a class="tvs-btn tvs-ghost" href="#tvp-vip">See what you get</a>\n    </div>\n    ' + NOTE_HTML, 1)
+assert NOTE_HTML in HTML
 
 # exclusivity band right under the hero: what only 5 restaurants get
 BAND = '''<section class="tvs-sec tvp-band tvs-up" aria-label="What Restaurant Partners get">
@@ -271,6 +294,7 @@ CSS = '''
 .tvp-vvid b{position:absolute;left:0;right:0;bottom:0;padding:22px 10px 9px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.75));color:#fff;font-size:12px;text-align:center}
 .tvp-vduo{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:12px 12px 0}
 .tvp-vduo i{aspect-ratio:4/5;border-radius:12px;background:center/cover}
+.tvp-note{margin:14px 0 0!important;color:var(--mut)!important;font-size:14.5px!important;font-weight:600}.tvp-note a{color:var(--blue);font-weight:800}
 .tvp-meter{display:flex;align-items:center;gap:14px;margin:0 0 24px;padding:12px 16px;border-radius:16px;background:#0f2a52;width:max-content;max-width:100%;box-sizing:border-box}
 .tvp-mdots{display:flex;gap:7px}
 .tvp-mdots i{width:20px;height:20px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(255,197,61,.25);animation:tvpDot 2.4s ease-in-out infinite}
