@@ -20,6 +20,9 @@ D.TITLE = "%s x Three Village Local: Restaurant Partner" % C["name"]
 D.DESC = "What Three Village Local would do for %s as one of only 5 Restaurant Partners." % C["name"]
 D.FB_TITLE = "Made for %s" % C["name"]
 D.FB_IMAGE = I + "hero.webp"
+# hero is a CSS background, so the browser finds it late: preload the right size (hero-720 / hero-1200 / owner-480 are made from hero.webp / owner.webp)
+D.HEAD = ('<link rel="preload" as="image" href="%shero-720.webp" media="(max-width:760px)" fetchpriority="high">'
+          '<link rel="preload" as="image" href="%shero-1200.webp" media="(min-width:761px)" fetchpriority="high">' % (I, I))
 
 
 def section(src, cls):
@@ -81,7 +84,7 @@ VIP = '''
         <div class="tvp-url">&#128274; threevillagelocal.com/%(profile_path)s</div>
         <div class="tvp-pop"><img src="@@ICON@@" alt=""><div><p><b>Three Village Local</b><span>now</span></p><p><b>Weekly Specials at %(name)s</b></p><p>%(special)s and more this week. Tap to see them.</p></div></div>
         <div class="tvp-vscroll">
-          <div class="tvp-vcover" style="background-image:url(%(I)shero.webp)"><span class="tvp-vrib">&#9733; VIP</span></div>
+          <div class="tvp-vcover" style="background-image:url(%(I)shero-720.webp)"><span class="tvp-vrib">&#9733; VIP</span></div>
           <div class="tvp-vhead"><div class="tvp-vlogo"><img src="%(I)slogo.webp" alt=""></div>
             <p class="tvp-vname">%(name)s</p><p class="tvp-vcat">%(category)s &middot; %(town)s</p>
             <p class="tvp-vbadge">&#9733; Three Village Local VIP</p></div>
@@ -91,7 +94,7 @@ VIP = '''
           <div class="tvp-vdish"><i style="background-image:url(%(I)sg-pizza.webp)"><b>Pizza</b></i><i style="background-image:url(%(I)sburrata.webp)"><b>Burrata</b></i><i style="background-image:url(%(I)sg-knots.webp)"><b>Garlic knots</b></i></div>
           <div class="tvp-vbig" style="background-image:url(%(I)sdining.webp)"><span>Inside the dining room</span></div>
           <p class="tvp-vh">Photos</p><div class="tvp-vgal">@@GAL@@</div>
-          <div class="tvp-vvid" style="background-image:url(%(I)sowner.webp)"><span>&#9654;</span><b>Watch: a night at %(short)s</b></div>
+          <div class="tvp-vvid" style="background-image:url(%(I)sowner-480.webp)"><span>&#9654;</span><b>Watch: a night at %(short)s</b></div>
           <p class="tvp-vh">About</p><p class="tvp-vabout">%(about)s</p>
           <div class="tvp-vchips">@@CHIPS@@</div>
 
@@ -159,7 +162,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
       <p class="tvp-tag">Every Friday</p><h3>The weekly newsletter</h3><p>In the email locals read to plan their weekend.</p>
     </div>
     <div class="tvp-tile tvs-up">
-      <div class="tvp-mock" style="--s:.92" aria-hidden="true"><div class="tvp-vid" style="background-image:url('%(I)sowner.webp')"><span>&#9654;</span><p>Your promo video</p></div></div>
+      <div class="tvp-mock" style="--s:.92" aria-hidden="true"><div class="tvp-vid" style="background-image:url('%(I)sowner-480.webp')"><span>&#9654;</span><p>Your promo video</p></div></div>
       <p class="tvp-tag">Included</p><h3>Your promo video</h3><p>Filmed at %(short)s, edited by us, yours to keep.</p>
     </div>
   </div>
@@ -317,7 +320,8 @@ CSS = '''
 @keyframes tvpFloat{50%{transform:translateY(-10px)}}
 @media (max-width:900px){.tvp-vwrap{grid-template-columns:1fr}.tvp-vtxt{text-align:center}.tvp-pk3,.tvp-pk6{text-align:left}.tvp-vstage{position:relative;top:0;order:-1}}
 @media (max-width:520px){.tvp-vtxt h2{font-size:28px}.tvp-pk6{grid-template-columns:1fr}.tvp-pk{padding:16px 14px;gap:12px}.tvp-pk div{padding-right:0}.tvp-pk{flex-wrap:wrap}.tvp-pk div{flex:1 1 calc(100% - 70px)}.tvp-pk i{position:static;display:inline-block;margin:0 0 0 58px}.tvp-pk:after{display:none}.tvp-pi{width:46px;height:46px;font-size:22px}.tvp-pk b{font-size:17px}.tvp-vphone{width:290px;height:600px;transform:none}.tvp-chip{font-size:12px;padding:8px 12px}.tvp-c1{left:-4px}.tvp-c2,.tvp-c3{display:none}}
-.tvp .tvs-hphoto{background-image:url('@@I@@hero.webp')!important;background-position:50% 40%}
+.tvp .tvs-hphoto{background-image:url('@@I@@hero-1200.webp')!important;background-position:50% 40%}
+@media (max-width:760px){.tvp .tvs-hphoto{background-image:url('@@I@@hero-720.webp')!important}}
 .tvp-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;max-width:1000px;margin:0 auto 64px}
 .tvp-flip>*:first-child{order:2}
 .tvp-txt h3{color:var(--navy);font-size:28px;margin:6px 0 10px}

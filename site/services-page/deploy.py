@@ -18,6 +18,7 @@ DESC = ("Websites, Google profile setup, AI search, video and drone for local bu
         "and launched in front of 100,000+ neighbors. Members save, VIPs save the most.")
 FB_TITLE = "We build it. Then we tell the whole town."
 FB_IMAGE = "https://threevillagelocal-cloud.github.io/3vl-share/site/back-office/hero-1080.webp"
+HEAD = ""          # optional page <head> code, e.g. a hero image preload
 
 
 def call(method, path, data=None):
@@ -44,6 +45,8 @@ def main():
             "title": TITLE, "meta_desc": DESC, "facebook_title": FB_TITLE, "facebook_desc": DESC,
             "facebook_image": FB_IMAGE,
             "show_form": "0" if LIVE else "1"}
+    if HEAD:
+        page["content_head"] = HEAD
     ex = call("GET", "list_seo/get?property=filename&property_value=" + SLUG).get("message")
     ex = [x for x in ex if x.get("filename") == SLUG] if isinstance(ex, list) else []
     if ex:
