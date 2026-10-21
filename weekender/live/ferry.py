@@ -73,10 +73,20 @@ def main():
             link = SITE + link   # the ferry site gives relative links ("/info/elevator-alert"); on our page they 404'd (10/16/2026)
         out["alerts"].append({"title": title, "text": body[:240], "link": link,
                               "published": a.get("publishedAt", "")})
-    # the legend shows the cancelled icon once per terminal; more icons than legends = cancelled departures on the schedule
-    legends = sched.count("= Cancelled")
-    if sched and sched.count(CANCEL_ICON) > legends:
-        out["cancellations"] = True
+    # The same octagon icon marks both "Cancelled" and "Rescheduled" departures (10/21/2026: 18 rescheduled trips
+    # showed as "Cancelled" on our homepage). Read the label right after each icon; the legend ("= Cancelled") is skipped.
+    cancelled = rescheduled = 0
+    for m in re.finditer(re.escape(CANCEL_ICON), sched):
+        after = sched[m.end():m.end() + 300]
+        if "= Cancelled" in after:
+            continue
+        r, c = after.find("Rescheduled"), after.find("Cancel")
+        if r != -1 and (c == -1 or r < c):
+            rescheduled += 1
+        elif c != -1:
+            cancelled += 1
+    out["cancellations"] = cancelled > 0
+    out["rescheduled"] = rescheduled > 0
     json.dump(out, open(os.path.join(HERE, "ferry.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print("ferry: %d service alert(s), cancellations=%s" % (len(out["alerts"]), out["cancellations"]))
 

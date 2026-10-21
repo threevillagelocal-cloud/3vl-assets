@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-21T19:00:18+00:00",
+ "checked": "2026-10-21T20:54:50+00:00",
  "alerts": [
   {
    "title": "PT Barnum Elevator Out of Service",
@@ -8,6 +8,7 @@
    "published": "2026-10-13T22:10:29.201Z"
   }
  ],
- "cancellations": true,
- "url": "https://www.88844ferry.com/schedule"
+ "cancellations": false,
+ "url": "https://www.88844ferry.com/schedule",
+ "rescheduled": true
 }
