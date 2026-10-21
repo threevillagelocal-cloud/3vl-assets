@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T15:00:14.186888+00:00",
+ "updated": "2026-10-21T19:00:15.274518+00:00",
  "specials": [
   {
    "id": "18124063798934600",
@@ -32,6 +32,22 @@
    "url": "https://www.instagram.com/p/Dej-Kdlv3BJ/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
    "inset": "ig/p18074660135743458.jpg"
+  },
+  {
+   "id": "18150886438536933",
+   "biz": "Ralph's Famous Italian Ices & Ice Cream",
+   "ig": "ralphsitalianicesstonybrook",
+   "town": "Stony Brook",
+   "category": "Ice Cream",
+   "member": false,
+   "title": "Final Day: Seasonal Closure This Sunday",
+   "when": "Sun, Oct. 24",
+   "desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
+   "expires": "2026-10-24",
+   "posted": "2026-10-21T16:38:20+0000",
+   "url": "https://www.instagram.com/reel/Dew1638vYIE/",
+   "img": "",
+   "inset": "ig/p18150886438536933.jpg"
   },
   {
    "id": "17959517340254859",
@@ -80,22 +96,6 @@
    "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
    "img": "",
    "inset": "ig/p18223576354341630.jpg"
-  },
-  {
-   "id": "18045318959847467",
-   "biz": "Fifth Season Restaurant",
-   "ig": "fifthseasonrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Friday Happy Hour at The Fifth",
-   "when": "Every Friday",
-   "desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
-   "expires": "2026-10-23",
-   "posted": "2026-10-16T16:39:54+0000",
-   "url": "https://www.instagram.com/reel/Dej-smegwuG/",
-   "img": "",
-   "inset": "ig/p18045318959847467.jpg"
   }
  ],
  "candidates": [
@@ -132,6 +132,22 @@
    "inset": "ig/p18074660135743458.jpg"
   },
   {
+   "id": "18150886438536933",
+   "biz": "Ralph's Famous Italian Ices & Ice Cream",
+   "ig": "ralphsitalianicesstonybrook",
+   "town": "Stony Brook",
+   "category": "Ice Cream",
+   "member": false,
+   "title": "Final Day: Seasonal Closure This Sunday",
+   "when": "Sun, Oct. 24",
+   "desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
+   "expires": "2026-10-24",
+   "posted": "2026-10-21T16:38:20+0000",
+   "url": "https://www.instagram.com/reel/Dew1638vYIE/",
+   "img": "",
+   "inset": "ig/p18150886438536933.jpg"
+  },
+  {
    "id": "17959517340254859",
    "biz": "The Steam Room",
    "ig": "thesteamroomrestaurant",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
    "img": "",
    "inset": "ig/p18223576354341630.jpg"
-  },
-  {
-   "id": "18045318959847467",
-   "biz": "Fifth Season Restaurant",
-   "ig": "fifthseasonrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Friday Happy Hour at The Fifth",
-   "when": "Every Friday",
-   "desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
-   "expires": "2026-10-23",
-   "posted": "2026-10-16T16:39:54+0000",
-   "url": "https://www.instagram.com/reel/Dej-smegwuG/",
-   "img": "",
-   "inset": "ig/p18045318959847467.jpg"
   }
  ],
  "all": [
@@ -244,6 +244,22 @@
    "url": "https://www.instagram.com/p/Dej-Kdlv3BJ/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
    "inset": "ig/p18074660135743458.jpg"
+  },
+  {
+   "id": "18150886438536933",
+   "biz": "Ralph's Famous Italian Ices & Ice Cream",
+   "ig": "ralphsitalianicesstonybrook",
+   "town": "Stony Brook",
+   "category": "Ice Cream",
+   "member": false,
+   "title": "Final Day: Seasonal Closure This Sunday",
+   "when": "Sun, Oct. 24",
+   "desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
+   "expires": "2026-10-24",
+   "posted": "2026-10-21T16:38:20+0000",
+   "url": "https://www.instagram.com/reel/Dew1638vYIE/",
+   "img": "",
+   "inset": "ig/p18150886438536933.jpg"
   },
   {
    "id": "17959517340254859",
@@ -358,6 +374,22 @@
    "inset": "ig/p18134822992761307.jpg"
   },
   {
+   "id": "18122996332941910",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Happy Hour at Castaways",
+   "when": "Today, Oct. 21 · 4-6 PM",
+   "desc": "Half off all drinks (including top shelf) plus food specials at the bar, high tops and lounge.",
+   "expires": "2026-10-21",
+   "posted": "2026-10-21T15:02:24+0000",
+   "url": "https://www.instagram.com/reel/Dewrm9ZgqxX/",
+   "img": "",
+   "inset": "ig/p18122996332941910.jpg"
+  },
+  {
    "id": "18078304106726827",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
@@ -372,22 +404,6 @@
    "url": "https://www.instagram.com/reel/DeubY58kpkL/",
    "img": "",
    "inset": "ig/p18078304106726827.jpg"
-  },
-  {
-   "id": "17913234690501916",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Happy Hour at Castaways",
-   "when": "Every Monday · 4-6 PM",
-   "desc": "Happy hour runs 4-6 PM at the inside bar, high tops and lounge with dinner from 4-9 PM.",
-   "expires": "2026-10-26",
-   "posted": "2026-10-19T18:01:14+0000",
-   "url": "https://www.instagram.com/p/Der2nmBCtdf/",
-   "img": "",
-   "inset": "ig/p17913234690501916.jpg"
   },
   {
    "id": "17882169600535369",

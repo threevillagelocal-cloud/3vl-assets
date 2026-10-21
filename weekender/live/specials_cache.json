@@ -98,7 +98,24 @@
 }
 ],
 "threevillageinn": [],
-"ralphsitalianicesstonybrook": [],
+"ralphsitalianicesstonybrook": [
+{
+"id": "18150886438536933",
+"biz": "Ralph's Famous Italian Ices & Ice Cream",
+"ig": "ralphsitalianicesstonybrook",
+"town": "Stony Brook",
+"category": "Ice Cream",
+"member": false,
+"title": "Final Day: Seasonal Closure This Sunday",
+"when": "Sun, Oct. 24",
+"desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
+"expires": "2026-10-24",
+"posted": "2026-10-21T16:38:20+0000",
+"url": "https://www.instagram.com/reel/Dew1638vYIE/",
+"img": "",
+"inset": "ig/p18150886438536933.jpg"
+}
+],
 "burgerologyusa": [],
 "ep_restaurant": [],
 "tajcrownofindia": [],
@@ -401,6 +418,22 @@
 }
 ],
 "castawayspj": [
+{
+"id": "18122996332941910",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Happy Hour at Castaways",
+"when": "Today, Oct. 21 · 4-6 PM",
+"desc": "Half off all drinks (including top shelf) plus food specials at the bar, high tops and lounge.",
+"expires": "2026-10-21",
+"posted": "2026-10-21T15:02:24+0000",
+"url": "https://www.instagram.com/reel/Dewrm9ZgqxX/",
+"img": "",
+"inset": "ig/p18122996332941910.jpg"
+},
 {
 "id": "18078304106726827",
 "biz": "Castaways Steak & Seafood",
