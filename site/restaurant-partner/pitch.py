@@ -44,15 +44,23 @@ VIP = '''
 <section class="tvs-sec tvp-vip" id="tvp-vip">
   <div class="tvp-vwrap">
     <div class="tvp-vtxt tvs-up">
-      <p class="tvs-eyebrow">&#11088; Partner perk #1 of 9</p>
-      <h2>%(short)s, front and center in Three Village.</h2>
-      <p>Every Restaurant Partner gets a VIP listing at the top of the Restaurants page: gold VIP ring, your photos, this week's specials and one-tap buttons to call, get directions or order. Only 5 restaurants will ever look like this on Three Village Local.</p>
-      <ul class="tvp-vlist">
-        <li><b>Top of the Restaurants page</b>Above every free listing</li>
-        <li><b>Specials built in</b>Updated every week</li>
-        <li><b>Tap to call, map, order</b>Straight from their phone</li>
-        <li><b>On the website and mobile app</b>Same page, everywhere</li>
-      </ul>
+      <p class="tvs-eyebrow">&#11088; Premium local marketing, not a listing</p>
+      <h2>Everything %(short)s gets as a Three Village Local Restaurant Partner.</h2>
+      <p>Over $1,000 a month in marketing aimed at one audience: the neighbors who live minutes from %(short)s. The listing on the phone is the smallest part. Only 5 restaurants will ever have all of this.</p>
+      <div class="tvp-pk3">
+        <div class="tvp-pk"><span class="tvp-pi">&#128276;</span><div><em>Headliner</em><b>Monthly push notification</b><p>%(short)s on the lock screen of every Three Village Local mobile app user.</p></div><i>$150/mo value</i></div>
+        <div class="tvp-pk"><span class="tvp-pi">&#127869;&#65039;</span><div><em>Headliner</em><b>Weekly specials, everywhere</b><p>Our website, the mobile app, Instagram and Facebook, every single week.</p></div><i>$150/mo value</i></div>
+        <div class="tvp-pk"><span class="tvp-pi">&#127909;</span><div><em>Headliner</em><b>Your promo video</b><p>Filmed at %(short)s, edited by us, shared everywhere and yours to keep.</p></div><i>$1,200 value</i></div>
+      </div>
+      <div class="tvp-pk6">
+        <div class="tvp-pm"><span>&#11088;</span><b>VIP listing</b><p>Top of the Restaurants page, like the phone</p><i>$115/mo</i></div>
+        <div class="tvp-pm"><span>&#128241;</span><b>Posts + a Reel monthly</b><p>Custom content on our Instagram and Facebook</p><i>$299/mo</i></div>
+        <div class="tvp-pm"><span>&#127968;</span><b>Top spot in Eat &amp; Drink</b><p>Homepage and mobile app</p><i>$150/mo</i></div>
+        <div class="tvp-pm"><span>&#128232;</span><b>Friday newsletter</b><p>Where locals plan the weekend</p><i>$100/mo</i></div>
+        <div class="tvp-pm"><span>&#127881;</span><b>Events + seasonal guides</b><p>Wine nights, holidays, Restaurant Week</p><i>$100/mo</i></div>
+        <div class="tvp-pm"><span>&#127991;&#65039;</span><b>Partner decal + review cards</b><p>Turn happy diners into Google reviews</p><i>$99 value</i></div>
+      </div>
+      <a class="tvp-pcta" href="#tvs-book">Claim %(short)s's spot &rarr;</a>
     </div>
     <div class="tvp-vstage tvs-up" aria-hidden="true">
       <span class="tvp-chip tvp-c1">&#9733; Top of Restaurants</span>
@@ -94,8 +102,8 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
   <div class="tvs-hfade"></div>
   <div class="tvs-hin tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Private invitation for %(name)s</p>
-    <h1>Only 5 restaurants<br><span>get this. One spot is yours.</span></h1>
-    <p class="tvs-sub"><b>Restaurant Partner</b> is a new marketing program from Three Village Local, open to just 5 restaurants in Stony Brook, Setauket and Port Jefferson. Push alerts to every mobile app user, your specials everywhere every week, and a promo video. When the 5 spots are gone, the program closes.</p>
+    <h1>Only 5 restaurants<br><span>get this. One spot could be yours.</span></h1>
+    <p class="tvs-sub">The <b>Three Village Local Restaurant Partner</b> program is not a listing. It is premium local marketing that puts %(short)s in front of your neighbors in Stony Brook, Setauket and Port Jefferson every single week: push alerts to their phones, your specials on every channel, and a promo video. Open to just 5 restaurants. When the spots are gone, the program closes.</p>
     <div class="tvp-meter"><div class="tvp-mdots">@@HDOTS@@</div><p><b>%(LEFT)s</b>First come, first served</p></div>
     <div class="tvs-ctas">
       <a class="tvs-btn tvs-blue" href="#tvs-book">Claim %(short)s's spot</a>
@@ -195,7 +203,7 @@ HTML = HTML.replace("@@VIP@@", VIP).replace("@@HDOTS@@", B.dots)
 
 # exclusivity band right under the hero: what only 5 restaurants get
 BAND = '''<section class="tvs-sec tvp-band tvs-up" aria-label="What Restaurant Partners get">
-  <p class="tvp-bh">What only 5 restaurants will get</p>
+  <p class="tvp-bh">Premium local marketing. Not just a listing.</p>
   <ul>
     <li><span>&#128276;</span><b>Monthly push alert</b>to every mobile app user</li>
     <li><span>&#127869;&#65039;</span><b>Weekly specials</b>website, mobile app, Instagram, Facebook</li>
@@ -209,15 +217,48 @@ HTML = HTML.replace('<section class="tvs-sec tvp-vip"', BAND + '<section class="
 # move the "5 restaurants, that is it" box up, right after the VIP phone
 spots = section(HTML, "tvs-sec tvr-spots")
 HTML = HTML.replace(spots, "", 1).replace('<section class="tvs-sec tvp-yours"', spots + '\n<section class="tvs-sec tvp-yours"', 1)
+# our reach, right after the perks (owner: "show them what we bring to the table")
+ri = B.src.index('<div class="tvs-reach')
+rj = B.src.index('</section>', ri)
+reach = B.src[ri:rj].rstrip()
+assert reach.endswith('</div>')
+reach = reach.replace('<h3>The audience behind every post</h3>', '<h3>The audience behind every %s post</h3>' % C["short"])
+REACH = """<section class="tvs-sec tvp-reach" id="tvp-reach">
+  <div class="tvs-head tvs-up">
+    <p class="tvs-eyebrow">Our reach</p>
+    <h2>What we bring to the table.</h2>
+    <p>Three Village Local is where neighbors in Stony Brook, Setauket and Port Jefferson go to decide what to do and where to eat. This is not ads to strangers miles away. As a Restaurant Partner, %s is in front of the people who can be at your table tonight, every week.</p>
+  </div>
+  %s
+</section>
+""" % (C["short"], reach)
+HTML = HTML.replace('<section class="tvs-sec tvr-spots', REACH + '<section class="tvs-sec tvr-spots', 1)
 
 CSS = '''
-.tvp-vwrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;max-width:1080px;margin:0 auto}
-.tvp-vtxt h2{color:var(--navy);font-size:38px;line-height:1.1;margin:8px 0 14px}
+.tvp-vwrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:start;max-width:1080px;margin:0 auto}
+.tvp-vtxt h2{color:var(--navy);font-size:36px;line-height:1.1;margin:8px 0 12px}
+.tvp-pk3{display:grid;gap:12px;margin:22px 0 12px}
+.tvp-pk{position:relative;display:flex;gap:16px;align-items:flex-start;padding:20px 20px 20px 18px;border-radius:20px;background:linear-gradient(125deg,#0b2246 0%,#13336a 55%,#1d4f91 100%);box-shadow:0 18px 40px rgba(13,35,70,.22),inset 0 0 0 1px rgba(255,197,61,.35);overflow:hidden}
+.tvp-pk:after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(255,197,61,.22),transparent 70%)}
+.tvp-pi{flex:0 0 auto;width:54px;height:54px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;background:linear-gradient(135deg,#ffd76a,#e0a51b);box-shadow:0 8px 18px rgba(224,165,27,.35)}
+.tvp-pk div{flex:1;min-width:0;padding-right:96px}
+.tvp-pk em{display:inline-block;font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#ffc53d}
+.tvp-pk b{display:block;color:#fff;font-size:19px;margin:2px 0 4px}
+.tvp-pk p{margin:0!important;color:#cfe0f7!important;font-size:14.5px!important;line-height:1.45}
+.tvp-pk i{position:absolute;right:16px;top:18px;font-style:normal;font-size:12px;font-weight:800;color:#2a1c00;background:#ffc53d;border-radius:999px;padding:4px 10px;z-index:1}
+.tvp-pk6{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tvp-pm{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 14px 14px 58px;box-shadow:0 8px 22px rgba(13,35,70,.06);transition:transform .2s,box-shadow .2s}
+.tvp-pm:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(13,35,70,.12)}
+.tvp-pm span{position:absolute;left:12px;top:14px;width:36px;height:36px;border-radius:11px;background:#eef4fd;display:flex;align-items:center;justify-content:center;font-size:18px}
+.tvp-pm b{display:block;color:var(--navy);font-size:15px;line-height:1.25}
+.tvp-pm p{margin:2px 0 6px!important;color:var(--mut)!important;font-size:13px!important;line-height:1.35}
+.tvp-pm i{font-style:normal;font-size:11.5px;font-weight:800;color:#966e22}
+.tvp-pcta{display:inline-block;margin-top:18px;background:var(--blue);color:#fff!important;font-weight:800;border-radius:999px;padding:14px 26px;box-shadow:0 12px 26px rgba(29,95,191,.3);text-decoration:none!important}
 .tvp-vtxt>p{color:var(--mut);font-size:17px}
 .tvp-vlist{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .tvp-vlist li{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;color:var(--mut);font-size:14px}
 .tvp-vlist b{display:block;color:var(--navy);font-size:15.5px;margin-bottom:2px}
-.tvp-vstage{position:relative;display:flex;justify-content:center;padding:30px 0;perspective:1400px}
+.tvp-vstage{position:sticky;top:70px;display:flex;justify-content:center;padding:30px 0;perspective:1400px}
 .tvp-vstage:before{content:"";position:absolute;width:420px;height:420px;max-width:100%;border-radius:50%;background:radial-gradient(circle,rgba(255,197,61,.45),rgba(29,95,191,.12) 55%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(10px)}
 .tvp-vphone{position:relative;width:320px;height:650px;border-radius:52px;background:linear-gradient(145deg,#2a3242,#0b1018);padding:12px;box-shadow:0 50px 90px rgba(13,35,70,.35),inset 0 0 0 2px #3a4456;transform:rotateY(-12deg) rotateX(4deg);transition:transform .6s}
 .tvp-vstage:hover .tvp-vphone{transform:rotateY(0) rotateX(0)}
@@ -299,8 +340,8 @@ CSS = '''
 .tvp-chip{position:absolute;z-index:4;background:#fff;border-radius:999px;padding:10px 16px;font-weight:800;font-size:14px;color:#13233a;box-shadow:0 14px 30px rgba(13,35,70,.18);animation:tvpFloat 5s ease-in-out infinite;white-space:nowrap}
 .tvp-c1{top:70px;left:0}.tvp-c2{top:46%;right:-6px;animation-delay:1.2s}.tvp-c3{bottom:80px;left:14px;animation-delay:2.4s}
 @keyframes tvpFloat{50%{transform:translateY(-10px)}}
-@media (max-width:900px){.tvp-vwrap{grid-template-columns:1fr}.tvp-vtxt{text-align:center}.tvp-vlist{text-align:left}}
-@media (max-width:520px){.tvp-vtxt h2{font-size:29px}.tvp-vlist{grid-template-columns:1fr}.tvp-vphone{width:290px;height:600px;transform:none}.tvp-chip{font-size:12px;padding:8px 12px}.tvp-c1{left:-4px}.tvp-c2,.tvp-c3{display:none}}
+@media (max-width:900px){.tvp-vwrap{grid-template-columns:1fr}.tvp-vtxt{text-align:center}.tvp-pk3,.tvp-pk6{text-align:left}.tvp-vstage{position:relative;top:0;order:-1}}
+@media (max-width:520px){.tvp-vtxt h2{font-size:28px}.tvp-pk6{grid-template-columns:1fr}.tvp-pk{padding:16px 14px;gap:12px}.tvp-pk div{padding-right:0}.tvp-pk{flex-wrap:wrap}.tvp-pk div{flex:1 1 calc(100% - 70px)}.tvp-pk i{position:static;display:inline-block;margin:0 0 0 58px}.tvp-pk:after{display:none}.tvp-pi{width:46px;height:46px;font-size:22px}.tvp-pk b{font-size:17px}.tvp-vphone{width:290px;height:600px;transform:none}.tvp-chip{font-size:12px;padding:8px 12px}.tvp-c1{left:-4px}.tvp-c2,.tvp-c3{display:none}}
 .tvp .tvs-hphoto{background-image:url('@@I@@hero.webp')!important;background-position:50% 40%}
 .tvp-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;max-width:1000px;margin:0 auto 64px}
 .tvp-flip>*:first-child{order:2}
