@@ -37,7 +37,8 @@ def card(key, tag, name, one, items, featured=False):
     return '''<article class="tvw-card%s tvs-up">
   %s<p class="tvw-tag">%s</p>
   <h3>%s</h3><p class="tvw-one">%s</p>
-  <div class="tvw-price"><span class="tvw-m"><b>$%s</b> setup</span><span class="tvw-r"><b>$%s</b> setup</span><em>+ $%s/mo</em></div>
+  <div class="tvw-price"><span class="tvw-m"><b>$%s</b> to start</span><span class="tvw-r"><b>$%s</b> to start</span></div>
+  <p class="tvw-then">Includes your first month. Then <b>$%s/mo</b>.</p>
   <p class="tvw-save"><span class="tvw-m">Member founding price. Regular $%s.</span><span class="tvw-r">3VL members pay $%s.</span></p>
   <ul>%s</ul>
   <a class="tvs-btn %s tvs-wide tvw-pay" data-m="%s" data-r="%s" href="%s">Start now &rarr;</a>
@@ -96,7 +97,7 @@ HTML = '''<div class="tvs tvs-nb tvw" id="tvs">
     <p><b>AI-Ready</b> means AI can find you. <b>AI-Powered</b> means AI works for you. Both are designed, built and hosted by us.</p></div>
   <label class="tvw-toggle tvs-up"><input type="checkbox" id="tvw-mem" checked> <span>I'm a Three Village Local member</span></label>
   <div class="tvw-cards">@@READY@@@@POWERED@@</div>
-  <p class="tvs-fine tvs-up">Setup is a one-time fee; the monthly plan covers hosting, security, updates and support, month to month after launch. Your domain is registered in your name (usually $10 to $20 a year, paid to the registrar). <b>Need more?</b> Own Your Market adds weekly content, an online shop and a quarterly refresh: <a href="#tvs-book">ask us</a>.</p>
+  <p class="tvs-fine tvs-up">Your start-up fee includes your first month. After that, the monthly plan covers hosting, security, updates and support, month to month. Your domain is registered in your name (usually $10 to $20 a year, paid to the registrar). <b>Need more?</b> Own Your Market adds weekly content, an online shop and a quarterly refresh: <a href="#tvs-book">ask us</a>.</p>
 </section>
 
 <section class="tvs-sec tvw-why">
@@ -213,6 +214,7 @@ CSS = '''
 .tvw-price span{font-size:16px;color:var(--mut)}.tvw-price b{font-size:42px;color:var(--navy);line-height:1}
 .tvw-feat .tvw-price span{color:#cfe0f7}.tvw-feat .tvw-price b{color:#fff}
 .tvw-price em{font-style:normal;font-weight:800;font-size:20px;color:var(--blue)}.tvw-feat .tvw-price em{color:var(--gold)}
+.tvw-then{margin:6px 0 0!important;font-size:15px!important;color:var(--mut)!important}.tvw-then b{color:var(--blue)}.tvw-feat .tvw-then{color:#cfe0f7!important}.tvw-feat .tvw-then b{color:var(--gold)}
 .tvw-save{margin:6px 0 16px!important;font-size:14px!important;font-weight:700;color:#966e22!important}.tvw-feat .tvw-save{color:#ffd76a!important}
 .tvw .tvw-r{display:none}.tvw.tvw-reg .tvw-r{display:inline}.tvw.tvw-reg .tvw-m{display:none}
 .tvw-card ul{list-style:none;margin:0 0 20px;padding:0;flex:1}
