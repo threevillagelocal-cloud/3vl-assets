@@ -373,6 +373,7 @@ CSS = '''
 .tvp-tile{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px 16px 18px;text-align:center;box-shadow:0 14px 34px rgba(13,35,70,.07)}
 .tvp-mock{--k:1;position:relative;height:340px;border-radius:16px;background:linear-gradient(160deg,#eef4fd,#f8fafc);overflow:hidden;display:flex;justify-content:center;align-items:flex-start;padding-top:12px;margin-bottom:14px;box-sizing:border-box}
 .tvp-mock>*{flex:0 0 auto;transform:scale(calc(var(--s) * var(--k)));transform-origin:top center;margin:0!important}
+.tvp-mock .tvp-ig{width:340px!important}.tvp-mock .tvp-mail{width:360px!important}.tvp-mock .tvp-phone{width:290px!important;height:560px!important}
 .tvp-mmid{align-items:center;padding-top:0}.tvp-mmid>*{transform-origin:center}
 .tvp-tile h3{color:var(--navy);font-size:19px;margin:8px 0 4px}
 .tvp-tile>p:not(.tvp-tag){margin:0!important;color:var(--mut);font-size:14px!important;line-height:1.45}
