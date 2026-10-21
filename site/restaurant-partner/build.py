@@ -125,7 +125,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
 <section class="tvs-sec tvr-math">
   <div class="tvs-head tvs-up">
     <p class="tvs-eyebrow">Do the math</p>
-    <h2>Over $1,000 a month in marketing. For $@@PRICE@@.</h2>
+    <h2>Over $1,000 a month in value. For $@@PRICE@@.</h2>
     <p>Here is what each piece would cost on its own. As a Restaurant Partner you get all of it, every month.</p>
   </div>
   <div class="tvr-stack tvs-up">
