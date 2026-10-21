@@ -47,7 +47,12 @@ keep = "\n\n".join([section(R, "tvs-sec tvr-spots"), DEAL, section(R, "tvs-sec t
 keep = keep.replace('<p class="tvs-cname">Restaurant Partner</p>', '<p class="tvs-cname">Three Village Local Restaurant Partner</p>')
 keep = keep.replace("<h2>Claim one of the 5 spots.</h2>", "<h2>Rather talk it through first?</h2>")
 
-P = dict(C, I=I, CTA=B.cta, LEFT=B.left_txt)
+# photo slots: O Sole Mio's folder uses dish-named files; newer restaurants use the generic names (config "files" overrides)
+FILES = dict({"special": "penne", "dish1": "g-pizza", "dish2": "burrata", "dish3": "g-knots", "dining": "dining", "video": "owner-480",
+              "push": "pizza", "mail": "calamari"}, **C.get("files", {}))
+DISH = C.get("dishes", ["Pizza", "Burrata", "Garlic knots"])
+P = dict(C, I=I, CTA=B.cta, LEFT=B.left_txt, D1=DISH[0], D2=DISH[1], D3=DISH[2], dining_label=C.get("dining_label", "Inside the dining room"),
+         **{"F_" + k: v for k, v in FILES.items()})
 
 ICON = "https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png"
 gal = "".join('<i style="background-image:url(%s%s.webp)"></i>' % (I, g)
@@ -58,9 +63,9 @@ VIP = '''
 <section class="tvs-sec tvp-vip" id="tvp-vip">
   <div class="tvp-vwrap">
     <div class="tvp-vtxt tvs-up">
-      <p class="tvs-eyebrow">&#11088; Premium local marketing, not a listing</p>
+      <p class="tvs-eyebrow">&#11088; A front-row seat in your own town</p>
       <h2>Everything %(short)s gets as a Three Village Local Restaurant Partner.</h2>
-      <p>Over $1,000 a month in marketing aimed at one audience: the neighbors who live minutes from %(short)s. The listing on the phone is the smallest part. Only 5 restaurants will ever have all of this.</p>
+      <p>Your restaurant everywhere your neighbors look: their phones, their feeds, their inbox and our homepage. All of it aimed at one audience: the neighbors who live minutes from %(short)s. The listing on the phone is the smallest part. Only 5 restaurants will ever have all of this.</p>
       <div class="tvp-pk3">
         <div class="tvp-pk"><span class="tvp-pi">&#128276;</span><div><em>Headliner</em><b>Monthly push notification</b><p>%(short)s on the lock screen of every Three Village Local mobile app user.</p></div></div>
         <div class="tvp-pk"><span class="tvp-pi">&#127869;&#65039;</span><div><em>Headliner</em><b>Weekly specials, everywhere</b><p>Our website, the mobile app, Instagram and Facebook, every single week.</p></div></div>
@@ -89,12 +94,12 @@ VIP = '''
             <p class="tvp-vname">%(name)s</p><p class="tvp-vcat">%(category)s &middot; %(town)s</p>
             <p class="tvp-vbadge">&#9733; Three Village Local VIP</p></div>
           <div class="tvp-vbtns"><span>&#128222;<b>Call</b></span><span>&#128205;<b>Directions</b></span><span>&#127760;<b>Website</b></span><span>&#128717;&#65039;<b>Order</b></span></div>
-          <div class="tvp-vspec"><div style="background-image:url(%(I)spenne.webp)"></div><p><em>This week's special</em><b>%(special)s</b><span>%(special_note)s</span></p></div>
+          <div class="tvp-vspec"><div style="background-image:url(%(I)s%(F_special)s.webp)"></div><p><em>This week's special</em><b>%(special)s</b><span>%(special_note)s</span></p></div>
           <p class="tvp-vh">Popular dishes</p>
-          <div class="tvp-vdish"><i style="background-image:url(%(I)sg-pizza.webp)"><b>Pizza</b></i><i style="background-image:url(%(I)sburrata.webp)"><b>Burrata</b></i><i style="background-image:url(%(I)sg-knots.webp)"><b>Garlic knots</b></i></div>
-          <div class="tvp-vbig" style="background-image:url(%(I)sdining.webp)"><span>Inside the dining room</span></div>
+          <div class="tvp-vdish"><i style="background-image:url(%(I)s%(F_dish1)s.webp)"><b>%(D1)s</b></i><i style="background-image:url(%(I)s%(F_dish2)s.webp)"><b>%(D2)s</b></i><i style="background-image:url(%(I)s%(F_dish3)s.webp)"><b>%(D3)s</b></i></div>
+          <div class="tvp-vbig" style="background-image:url(%(I)s%(F_dining)s.webp)"><span>%(dining_label)s</span></div>
           <p class="tvp-vh">Photos</p><div class="tvp-vgal">@@GAL@@</div>
-          <div class="tvp-vvid" style="background-image:url(%(I)sowner-480.webp)"><span>&#9654;</span><b>Watch: a night at %(short)s</b></div>
+          <div class="tvp-vvid" style="background-image:url(%(I)s%(F_video)s.webp)"><span>&#9654;</span><b>Watch: a night at %(short)s</b></div>
           <p class="tvp-vh">About</p><p class="tvp-vabout">%(about)s</p>
           <div class="tvp-vchips">@@CHIPS@@</div>
 
@@ -118,7 +123,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
     <p class="tvs-kick"><span class="tvs-dot"></span>Private invitation for %(name)s</p>
     <p class="tvr-lead">All of your marketing in one local plan.</p>
     <h1>Only 5 restaurants<br><span>get this. One spot could be yours.</span></h1>
-    <p class="tvs-sub">The <b>Three Village Local Restaurant Partner</b> program is not a listing. It is premium local marketing that puts %(short)s in front of your neighbors in Stony Brook, Setauket and Port Jefferson every single week: push alerts to their phones, your specials on every channel, and a promo video. Open to just 5 restaurants. When the spots are gone, the program closes.</p>
+    <p class="tvs-sub">The <b>Three Village Local Restaurant Partner</b> program puts %(short)s everywhere your neighbors look: their phones, their feeds, their inbox and our homepage, every single week. <b>Not ads. Not a listing. A front-row seat in your own town.</b> Open to just 5 restaurants in Stony Brook, Setauket and Port Jefferson. When the spots are gone, the program closes.</p>
     <div class="tvp-meter"><div class="tvp-mdots">@@HDOTS@@</div><p><b>%(LEFT)s</b>First come, first served</p></div>
     <div class="tvs-ctas">
       <a class="tvs-btn tvs-blue" href="#tvs-book">Claim %(short)s's spot</a>
@@ -138,7 +143,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
     <div class="tvp-tile tvs-up">
       <div class="tvp-mock tvp-mpush" style="--s:.6" aria-hidden="true"><div class="tvp-phone">
         <div class="tvp-lock"><p class="tvp-time">5:42</p><p class="tvp-date">Friday</p>
-          <div class="tvp-notif"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png" alt=""><div><p><b>Three Village Local</b><span>now</span></p><p><b>%(push_title)s</b></p><p>%(push)s</p></div><img class="tvp-nthumb" src="%(I)spizza.webp" alt=""></div>
+          <div class="tvp-notif"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png" alt=""><div><p><b>Three Village Local</b><span>now</span></p><p><b>%(push_title)s</b></p><p>%(push)s</p></div><img class="tvp-nthumb" src="%(I)s%(F_push)s.webp" alt=""></div>
         </div>
       </div></div>
       <p class="tvp-tag">Every month</p><h3>Push to every phone</h3><p>On the lock screen of every Three Village Local mobile app user.</p>
@@ -146,7 +151,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
     <div class="tvp-tile tvs-up">
       <div class="tvp-mock" style="--s:.62" aria-hidden="true"><div class="tvp-ig">
         <div class="tvp-igtop"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png" alt=""><b>threevillagelocal</b></div>
-        <div class="tvp-igpic" style="background-image:url('%(I)spenne.webp')">
+        <div class="tvp-igpic" style="background-image:url('%(I)s%(F_special)s.webp')">
           <div class="tvp-igfade"></div>
           <div class="tvp-igt"><p class="tvp-ig1">THIS WEEK AT</p><p class="tvp-ig2">%(name_caps)s</p><p class="tvp-ig3">%(special)s</p><p class="tvp-ig4">&#128205; %(town)s</p></div>
         </div>
@@ -158,12 +163,12 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
       <div class="tvp-mock tvp-mmid" style="--s:.64" aria-hidden="true"><div class="tvp-mail">
         <p class="tvp-mh">Three Village Weekly <span>Friday</span></p>
         <p class="tvp-mt">Where to eat this weekend</p>
-        <div class="tvp-mi"><img src="%(I)scalamari.webp" alt=""><div><b>%(name)s</b><p>%(special_note)s</p><span>See this week's specials</span></div></div>
+        <div class="tvp-mi"><img src="%(I)s%(F_mail)s.webp" alt=""><div><b>%(name)s</b><p>%(special_note)s</p><span>See this week's specials</span></div></div>
       </div></div>
       <p class="tvp-tag">Every Friday</p><h3>The weekly newsletter</h3><p>In the email locals read to plan their weekend.</p>
     </div>
     <div class="tvp-tile tvs-up">
-      <div class="tvp-mock" style="--s:.92" aria-hidden="true"><div class="tvp-vid" style="background-image:url('%(I)sowner-480.webp')"><span>&#9654;</span><p>Your promo video</p></div></div>
+      <div class="tvp-mock" style="--s:.92" aria-hidden="true"><div class="tvp-vid" style="background-image:url('%(I)s%(F_video)s.webp')"><span>&#9654;</span><p>Your promo video</p></div></div>
       <p class="tvp-tag">Included</p><h3>Your promo video</h3><p>Filmed at %(short)s, edited by us, yours to keep.</p>
     </div>
   </div>
@@ -219,7 +224,7 @@ assert NOTE_HTML in HTML
 
 # exclusivity band right under the hero: what only 5 restaurants get
 BAND = '''<section class="tvs-sec tvp-band tvs-up" aria-label="What Restaurant Partners get">
-  <p class="tvp-bh">Premium local marketing. Not just a listing.</p>
+  <p class="tvp-bh">Not ads. Not a listing. A front-row seat in your own town.</p>
   <ul>
     <li><span>&#128276;</span><b>Monthly push alert</b>to every mobile app user</li>
     <li><span>&#127869;&#65039;</span><b>Weekly specials</b>website, mobile app, Instagram, Facebook</li>
