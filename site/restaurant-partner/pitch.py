@@ -5,7 +5,7 @@ promo video), then the full Restaurant Partner offer from build.py.
 Config lives OUTSIDE this public repo (3vl-private/pitches/<slug>.json):
   {"slug", "name", "short", "town", "special", "special_note", "push", "img": base url with hero/pizza/penne/burrata/owner/welcome/calamari/dining .webp}
 Builds widget "3VL Pitch <name>" + hidden page /for-<slug> (noindex)."""
-import json, os, sys
+import json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import build as B
@@ -13,7 +13,7 @@ D = B.D
 
 C = json.load(open(sys.argv[1], encoding="utf-8"))
 I = C["img"]
-D.NAME = "3VL Pitch " + C["name"]
+D.NAME = "3VL Pitch " + re.sub(r"[^A-Za-z0-9 &-]", "", C["name"])   # an apostrophe breaks the [widget=] shortcode
 D.SLUG = "for-" + C["slug"]
 D.LIVE = False
 D.TITLE = "%s x Three Village Local: Restaurant Partner" % C["name"]
