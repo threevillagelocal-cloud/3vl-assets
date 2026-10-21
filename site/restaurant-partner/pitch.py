@@ -132,7 +132,7 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
   </div>
   <div class="tvp-tiles">
     <div class="tvp-tile tvs-up">
-      <div class="tvp-mock" style="--s:.6" aria-hidden="true"><div class="tvp-phone">
+      <div class="tvp-mock tvp-mpush" style="--s:.6" aria-hidden="true"><div class="tvp-phone">
         <div class="tvp-lock"><p class="tvp-time">5:42</p><p class="tvp-date">Friday</p>
           <div class="tvp-notif"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png" alt=""><div><p><b>Three Village Local</b><span>now</span></p><p><b>%(push_title)s</b></p><p>%(push)s</p></div><img class="tvp-nthumb" src="%(I)spizza.webp" alt=""></div>
         </div>
@@ -374,6 +374,13 @@ CSS = '''
 .tvp-mock{--k:1;position:relative;height:340px;border-radius:16px;background:linear-gradient(160deg,#eef4fd,#f8fafc);overflow:hidden;display:flex;justify-content:center;align-items:flex-start;padding-top:12px;margin-bottom:14px;box-sizing:border-box}
 .tvp-mock>*{flex:0 0 auto;transform:scale(calc(var(--s) * var(--k)));transform-origin:top center;margin:0!important}
 .tvp-mock .tvp-ig{width:340px!important}.tvp-mock .tvp-mail{width:360px!important}.tvp-mock .tvp-phone{width:290px!important;height:560px!important}
+.tvp-mpush{overflow:visible;z-index:2;clip-path:inset(-200px -200px 0 -200px)}
+.tvp-mpush .tvp-lock{position:relative}
+.tvp-mpush .tvp-notif{position:relative;z-index:3;transform-origin:50% 50%;animation:tvpPush 5.5s cubic-bezier(.2,.9,.25,1.2) .4s infinite both;will-change:transform}
+.tvp-mpush .tvp-notif:after{content:"";position:absolute;inset:-3px;border-radius:22px;box-shadow:0 0 0 0 rgba(255,197,61,.9);animation:tvpRing 5.5s ease-out .4s infinite;pointer-events:none}
+@keyframes tvpPush{0%{opacity:0;transform:translateY(-70px) scale(.85)}10%{opacity:1;transform:translateY(0) scale(1)}22%,62%{transform:translateY(26px) scale(1.32) rotate(-2deg);box-shadow:0 34px 60px rgba(0,0,0,.45),0 0 0 2px rgba(255,197,61,.9);background:#fff}74%,90%{opacity:1;transform:translateY(0) scale(1);box-shadow:0 6px 16px rgba(0,0,0,.2)}100%{opacity:0;transform:translateY(-20px) scale(.95)}}
+@keyframes tvpRing{0%,18%{box-shadow:0 0 0 0 rgba(255,197,61,.9)}40%{box-shadow:0 0 0 26px rgba(255,197,61,0)}100%{box-shadow:0 0 0 0 rgba(255,197,61,0)}}
+@media (prefers-reduced-motion:reduce){.tvp-mpush .tvp-notif,.tvp-mpush .tvp-notif:after{animation:none}}
 .tvp-mmid{align-items:center;padding-top:0}.tvp-mmid>*{transform-origin:center}
 .tvp-tile h3{color:var(--navy);font-size:19px;margin:8px 0 4px}
 .tvp-tile>p:not(.tvp-tag){margin:0!important;color:var(--mut);font-size:14px!important;line-height:1.45}
