@@ -31,6 +31,9 @@ book = section(src, "tvs-sec tvs-book").replace("<h2>Book your free 15-minute ca
     .replace("<p>Tell us a little about your business.", "<p>Book a free consultation. Tell us a little about your business and we will reach out to set up a time.")
 
 
+START = "/website-start?plan="   # Start now -> project brief -> checkout (owner 10/21)
+
+
 def card(key, tag, name, one, items, featured=False):
     m, r = P["web-%s-member" % key], P["web-%s-regular" % key]
     lis = "".join("<li>%s</li>" % i for i in items)
@@ -45,7 +48,7 @@ def card(key, tag, name, one, items, featured=False):
   <a class="tvw-consult" href="#tvs-book">Or book a free consultation</a>
 </article>''' % (" tvw-feat" if featured else "", '<span class="tvw-pop">Most popular</span>' if featured else "", tag,
                  name, one, "{:,}".format(m[0]), "{:,}".format(r[0]), m[1], "{:,}".format(r[0]), "{:,}".format(m[0]), lis,
-                 "tvs-white" if featured else "tvs-blue", m[2], r[2], m[2])
+                 "tvs-white" if featured else "tvs-blue", START + "web-%s-member" % key, START + "web-%s-regular" % key, START + "web-%s-member" % key)
 
 
 READY = card("ready", "AI-Ready", "AI can find you.", "Built so Google and AI assistants understand and recommend your business.", [

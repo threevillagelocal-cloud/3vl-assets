@@ -19,6 +19,7 @@ DESC = ("Websites, Google profile setup, AI search, video and drone for local bu
 FB_TITLE = "We build it. Then we tell the whole town."
 FB_IMAGE = "https://threevillagelocal-cloud.github.io/3vl-share/site/back-office/hero-1080.webp"
 HEAD = ""          # optional page <head> code, e.g. a hero image preload
+FORM = "services_inquiry"   # BD form shortcode placed after the widget ("" = none)
 
 
 def call(method, path, data=None):
@@ -41,7 +42,7 @@ def main():
     else:
         r = call("POST", "data_widgets/create", dict(w, widget_name=NAME, widget_viewport="front"))
         print("widget create", r.get("status"), (r.get("message") or {}).get("widget_id"))
-    page = {"content": "[widget=%s][form=services_inquiry]" % NAME, "content_css": " ", "enable_hero_section": "0",
+    page = {"content": "[widget=%s]" % NAME + ("[form=%s]" % FORM if FORM else ""), "content_css": " ", "enable_hero_section": "0",
             "title": TITLE, "meta_desc": DESC, "facebook_title": FB_TITLE, "facebook_desc": DESC,
             "facebook_image": FB_IMAGE,
             "show_form": "0" if LIVE else "1"}
