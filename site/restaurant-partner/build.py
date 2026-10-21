@@ -204,7 +204,7 @@ HTML = HTML.replace("<h2>Book your free 15-minute call.</h2>",
 HTML = HTML.replace("<p>Tell us a little about your business.",
                     "<p>Tell us about your restaurant." if not FULL else "<p>Tell us about your restaurant and we will call you when a spot opens.")
 HTML = HTML.replace("Social media, done for you. In every bundle.", "Social media, done for you.")
-HTML = HTML.replace("<h2>Your content, posted twice.</h2>", "<h2>Your food, in front of the whole town.</h2>")
+HTML = HTML.replace("<h2>Your content, seen all over town.</h2>", "<h2>Your food, in front of the whole town.</h2>")
 HTML = HTML.replace("<p>We create it and post it on your pages. Then Three Village Local shares it on our Instagram, Facebook, mobile app and website. Your followers see it, and so does the whole town.</p>",
                     "<p>We create the posts and share them on Three Village Local's Instagram, Facebook, mobile app and website. Your regulars see it, and so does everyone deciding where to eat tonight.</p>")
 HTML = HTML.replace("?subject=Services", "?subject=Restaurant%20Partner")
