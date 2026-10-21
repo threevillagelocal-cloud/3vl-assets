@@ -45,9 +45,9 @@ HTML = '''<div class="tvs tvs-nb tvs-rp" id="tvs">
   <div class="tvs-hfade"></div>
   <div class="tvs-hin tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Restaurant Partner &middot; only 5 restaurants</p>
-    <p class="tvr-lead">All of your marketing in one local plan.</p>
+    <p class="tvr-lead">Your restaurant, everywhere your neighbors look.</p>
     <h1>Where should we eat tonight?<br><span>Make the answer you.</span></h1>
-    <p class="tvs-sub">Your restaurant everywhere your neighbors look: their phones, their feeds, their inbox and our homepage, every week, across Stony Brook, Setauket and Port Jefferson. <b>Not ads. Not a listing. A front-row seat in your own town.</b></p>
+    <p class="tvs-sub">On their phones, in their feeds, in their inbox and on our homepage, every week, across Stony Brook, Setauket and Port Jefferson. <b>Not ads. Not a listing. A front-row seat in your own town.</b></p>
     <div class="tvs-ctas">
       <a class="tvs-btn tvs-blue" href="#tvs-inc">See what is included</a>
       <a class="tvs-btn tvs-ghost" href="#tvs-book">@@CTA@@</a>

@@ -121,9 +121,9 @@ HTML = '''<div class="tvs tvs-nb tvs-rp tvp" id="tvs">
   <div class="tvs-hfade"></div>
   <div class="tvs-hin tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Private invitation for %(name)s</p>
-    <p class="tvr-lead">All of your marketing in one local plan.</p>
+    <p class="tvr-lead">Your restaurant, everywhere your neighbors look.</p>
     <h1>Only 5 restaurants<br><span>get this. One spot could be yours.</span></h1>
-    <p class="tvs-sub">The <b>Three Village Local Restaurant Partner</b> program puts %(short)s everywhere your neighbors look: their phones, their feeds, their inbox and our homepage, every single week. <b>Not ads. Not a listing. A front-row seat in your own town.</b> Open to just 5 restaurants in Stony Brook, Setauket and Port Jefferson. When the spots are gone, the program closes.</p>
+    <p class="tvs-sub">The <b>Three Village Local Restaurant Partner</b> program puts %(short)s on their phones, in their feeds, in their inbox and on our homepage, every single week. <b>Not ads. Not a listing. A front-row seat in your own town.</b> Open to just 5 restaurants in Stony Brook, Setauket and Port Jefferson. When the spots are gone, the program closes.</p>
     <div class="tvp-meter"><div class="tvp-mdots">@@HDOTS@@</div><p><b>%(LEFT)s</b>First come, first served</p></div>
     <div class="tvs-ctas">
       <a class="tvs-btn tvs-blue" href="#tvs-book">Claim %(short)s's spot</a>
