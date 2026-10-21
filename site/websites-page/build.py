@@ -1,4 +1,4 @@
-"""Websites landing page (owner 10/21/2026): AI-Ready vs AI-Powered websites, member pricing, pay now (Stripe) or book a consultation.
+"""Websites landing page (owner 10/21/2026): AI-Ready vs AI-Powered websites, member pricing. "Get started" = brief form -> free consultation -> owner invoices (owner 10/21: no payment on the site).
 Same look as /services (shares page.css / page.js and its booking form section).
     python site/websites-page/build.py          -> widget "3VL Page Websites" + hidden preview /preview-websites
     python site/websites-page/build.py --live   -> /websites (indexable)
@@ -31,7 +31,7 @@ book = section(src, "tvs-sec tvs-book").replace("<h2>Book your free 15-minute ca
     .replace("<p>Tell us a little about your business.", "<p>Book a free consultation. Tell us a little about your business and we will reach out to set up a time.")
 
 
-START = "/website-start?plan="   # Start now -> project brief -> checkout (owner 10/21)
+START = "/website-start?plan="   # Get started -> project brief -> consultation, invoice after (owner 10/21)
 
 
 def card(key, tag, name, one, items, featured=False):
@@ -44,7 +44,7 @@ def card(key, tag, name, one, items, featured=False):
   <p class="tvw-then">Includes your first month. Then <b>$%s/mo</b>.</p>
   <p class="tvw-save"><span class="tvw-m">Member founding price. Regular $%s.</span><span class="tvw-r">3VL members pay $%s.</span></p>
   <ul>%s</ul>
-  <a class="tvs-btn %s tvs-wide tvw-pay" data-m="%s" data-r="%s" href="%s">Start now &rarr;</a>
+  <a class="tvs-btn %s tvs-wide tvw-pay" data-m="%s" data-r="%s" href="%s">Get started &rarr;</a>
   <a class="tvw-consult" href="#tvs-book">Or book a free consultation</a>
 </article>''' % (" tvw-feat" if featured else "", '<span class="tvw-pop">Most popular</span>' if featured else "", tag,
                  name, one, "{:,}".format(m[0]), "{:,}".format(r[0]), m[1], "{:,}".format(r[0]), "{:,}".format(m[0]), lis,
@@ -125,23 +125,30 @@ HTML = '''<div class="tvs tvs-nb tvw" id="tvs">
   </div>
 </section>
 
-<section class="tvs-sec tvw-cmp tvs-up">
-  <div class="tvs-head"><p class="tvs-eyebrow">Compare</p><h2>How we stack up.</h2></div>
-  <div class="tvw-tbl"><table>
-    <tr><th></th><th>DIY builder</th><th>$0-down rental</th><th>Typical agency</th><th class="us">Three Village Local</th></tr>
-    <tr><td>Done for you</td><td class="n">No</td><td>Yes</td><td>Yes</td><td class="us">Yes</td></tr>
-    <tr><td>You own your site and domain</td><td>Yes</td><td class="n">No</td><td>Sometimes</td><td class="us">Always</td></tr>
-    <tr><td>Built for AI search</td><td class="n">Rarely</td><td class="n">Rarely</td><td>Extra cost</td><td class="us">Included</td></tr>
-    <tr><td>AI assistant for customers</td><td>Extra app</td><td class="n">No</td><td>Extra cost</td><td class="us">AI-Powered</td></tr>
-    <tr><td>Promotion to local customers</td><td class="n">No</td><td class="n">No</td><td class="n">No</td><td class="us">Included</td></tr>
-  </table></div>
+<section class="tvs-sec tvw-vs">
+  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Side by side</p><h2>A template website vs. a Three Village Local website.</h2><p class="tvs-lede">Template services (Wix, Squarespace, GoDaddy and the monthly website rentals) get you online. We build the site that gets you found.</p></div>
+  <div class="tvw-vs-grid">
+    <div class="tvw-vs-hd tvs-up"><span></span><b class="t">Template website</b><b class="u">Three Village Local</b></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">Design</p><div class="tvw-vs-t"><span>&#10005;</span>A template thousands of other businesses use</div><div class="tvw-vs-u"><span>&#10003;</span>Custom-designed for your business</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">Who does the work</p><div class="tvw-vs-t"><span>&#10005;</span>You build it, or pay extra for help</div><div class="tvw-vs-u"><span>&#10003;</span>We write, build and launch it for you</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">The words on your site</p><div class="tvw-vs-t"><span>&#10005;</span>You write them</div><div class="tvw-vs-u"><span>&#10003;</span>We write them the way customers search</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">Can AI read it?</p><div class="tvw-vs-t"><span>&#10005;</span>Often buried in page-builder code</div><div class="tvw-vs-u"><span>&#10003;</span>Clean code Google and AI can read</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">Your business details labeled for search and AI</p><div class="tvw-vs-t"><span>&#10005;</span>Usually missing</div><div class="tvw-vs-u"><span>&#10003;</span>Services, hours, area and reviews labeled</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">A page for every service, plus FAQs</p><div class="tvw-vs-t"><span>&#10005;</span>One generic services page</div><div class="tvw-vs-u"><span>&#10003;</span>Built in, written for you</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">Speed on phones</p><div class="tvw-vs-t"><span>&#10005;</span>Heavy templates, often slow</div><div class="tvw-vs-u"><span>&#10003;</span>Built fast, mobile-first</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">Hosting, domain and updates</p><div class="tvw-vs-t"><span>&#10005;</span>Separate bills, logins and DIY updates</div><div class="tvw-vs-u"><span>&#10003;</span>All included, domain in your name</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">AI chat assistant</p><div class="tvw-vs-t"><span>&#10005;</span>A paid add-on app</div><div class="tvw-vs-u"><span>&#10003;</span>Included with AI-Powered</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">Fresh blog posts and updates</p><div class="tvw-vs-t"><span>&#10005;</span>You write them</div><div class="tvw-vs-u"><span>&#10003;</span>Written and posted for you (AI-Powered)</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">Promotion to local customers</p><div class="tvw-vs-t"><span>&#10005;</span>None</div><div class="tvw-vs-u"><span>&#10003;</span>Launch spotlight on Three Village Local + 3 months Featured</div></div>
+    <div class="tvw-vs-row tvs-up"><p class="tvw-vs-k">Help when you need it</p><div class="tvw-vs-t"><span>&#10005;</span>A support ticket or chatbot</div><div class="tvw-vs-u"><span>&#10003;</span>A local neighbor who picks up</div></div>
+  </div>
 </section>
 
 <section class="tvs-sec tvs-tl">
   <div class="tvs-head tvs-up"><p class="tvs-eyebrow">How it works</p><h2>From sign-up to launch.</h2></div>
   <ol class="tvs-tlist">
-    <li class="tvs-up"><em>Step 1</em><b>Start now or book a call</b><p>Pay securely online, or talk it through with us first.</p></li>
-    <li class="tvs-up"><em>Step 2</em><b>A quick kickoff</b><p>A short call about your business, your services and your photos. We do the writing.</p></li>
+    <li class="tvs-up"><em>Step 1</em><b>Tell us about your business</b><p>A quick brief online: your services, your style, your logo and photos.</p></li>
+    <li class="tvs-up"><em>Step 2</em><b>Free consultation</b><p>We talk it through, confirm the right plan and send your invoice. We do the writing.</p></li>
     <li class="tvs-up"><em>Step 3</em><b>Your preview</b><p>We build your site and send you a private preview to review.</p></li>
     <li class="tvs-up"><em>Step 4</em><b>Launch day</b><p>You go live, and we announce your new site across Three Village Local.</p></li>
   </ol>
@@ -174,6 +181,19 @@ var n=0,iv=setInterval(function(){var s=document.querySelector('#tvs-form-slot s
 </div>'''.replace("@@READY@@", READY).replace("@@POWERED@@", POWERED).replace("@@BOOK@@", book)
 
 CSS = '''
+.tvw-vs-grid{display:grid;gap:10px;max-width:980px;margin:0 auto}
+.tvw-vs-hd,.tvw-vs-row{display:grid;grid-template-columns:1.1fr 1fr 1.15fr;gap:10px;align-items:stretch}
+.tvw-vs-hd b{padding:14px 16px;border-radius:16px 16px 0 0;font-size:15px;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.tvw-vs-hd .t{background:#eef1f5;color:#66717e}.tvw-vs-hd .u{background:var(--navy);color:#fff}
+.tvw-vs-k{margin:0!important;align-self:center;font-weight:800;color:var(--navy);font-size:16px}
+.tvw-vs-t,.tvw-vs-u{display:flex;gap:10px;align-items:flex-start;padding:14px 16px;border-radius:14px;font-size:15.5px;line-height:1.4}
+.tvw-vs-t{background:#f5f7fa;color:#66717e}
+.tvw-vs-u{background:#eef4fd;color:var(--navy);font-weight:700;box-shadow:inset 0 0 0 1px #cfe0f7}
+.tvw-vs-t span,.tvw-vs-u span{flex:none;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;margin-top:1px}
+.tvw-vs-t span{background:#dfe4ea;color:#8a94a1}.tvw-vs-u span{background:var(--blue);color:#fff}
+@media (max-width:720px){.tvw-vs-hd{display:none}.tvw-vs-row{grid-template-columns:1fr;gap:6px;padding:14px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.tvw-vs-k{font-size:16.5px;margin-bottom:2px!important}.tvw-vs-t{padding:4px 2px;background:none;font-size:14.5px}.tvw-vs-u{padding:10px 12px;font-size:15px}}
+
 .tvw-thanks{margin:12px 0 0;padding:16px 20px;border-radius:16px;background:#e8f7ef;border:1px solid #9bd8b6;color:#0d5a3a;font-size:16px}
 .tvw-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:center;margin:14px 0 0;padding:44px 44px;border-radius:28px;background:linear-gradient(135deg,#f6f9fd,#fff 60%);border:1px solid var(--line)}
 .tvw-hero h1{font-size:52px;line-height:1.04;font-weight:800;margin-bottom:16px}
