@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-21T19:02:13.780202+00:00",
+"updated": "2026-10-21T20:55:57.556750+00:00",
 "counts": {
 "Three Village Chamber": 6,
-"Port Jefferson Chamber": 39,
+"Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
@@ -10,7 +10,7 @@
 "Stony Brook Village Center": 14,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 3,
-"LI Music Hall of Fame": 3
+"LI Music Hall of Fame": 5
 },
 "icons": {
 "kids": "&#129490;",
@@ -1850,7 +1850,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-21T19:00:18+00:00",
+"checked": "2026-10-21T20:55:17+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
@@ -1859,7 +1859,8 @@
 "published": "2026-10-13T22:10:29.201Z"
 }
 ],
-"cancellations": true,
-"url": "https://www.88844ferry.com/schedule"
+"cancellations": false,
+"url": "https://www.88844ferry.com/schedule",
+"rescheduled": true
 }
 }
