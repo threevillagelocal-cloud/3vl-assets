@@ -154,6 +154,9 @@ def status_for(title):
 def special_label(s):
     """Short tag for an Eat & Drink card (owner 10/21/2026: say if it's a special, music, etc.)."""
     t = " ".join([s.get("title") or "", s.get("desc") or ""]).lower()
+    ti = (s.get("title") or "").lower()
+    if re.search(r"karaoke|trivia|party|contest|workshop|class|tasting|bingo|comedy|paint", ti) and not re.search(r"happy hour|live music|jazz", ti):
+        return "Event"
     if re.search(r"\blive music\b|\bjazz\b|\bacoustic\b|\bband\b|\bdj\b|\bperforming live\b|\blive performance\b|\bsinger\b", t):
         return "Live music"
     if re.search(r"happy hour", t):
@@ -294,6 +297,15 @@ def main():
     # ROTATE (owner 10/11/2026: "they have been in that spot for a long time. we need to ROTATE"): every day the list of
     # places with a current special starts a few places further down the owner's ranked order, so the homepage 6 and the
     # top of the See-all page change daily. Same order all day (Eastern date).
+    # PINNED weekly highlights (owner 10/21/2026: Madiran live music as a weekly highlight): weekender/live/pinned.json,
+    # each {ig, biz, town, title, when, desc, img, url, expires, label}; shown first on the homepage until it expires.
+    try:
+        pinned = [p for p in json.load(open(os.path.join(HERE, "pinned.json"), encoding="utf-8")) if p.get("expires", "9999") >= today.isoformat()]
+    except Exception:
+        pinned = []
+    for p in reversed(pinned):
+        specials_all = [x for x in specials_all if (x.get("biz") or "").lower() != p["biz"].lower()]
+        specials_all.insert(0, dict(p, pinned=True))
     first, places = {}, []
     for s in specials_all:
         k = (s.get("biz") or "").lower()
@@ -304,11 +316,16 @@ def main():
         step = max(1, int(pref.get("rotate_step", 3)))
         off = ((dt.datetime.now(ZoneInfo("America/New_York")).date().toordinal() + 1) * step) % len(places)
         places = places[off:] + places[:off]
+        pin_keys = [p["biz"].lower() for p in pinned]
+        places = [k for k in pin_keys if k in first] + [k for k in places if k not in pin_keys]
+        # Port Jefferson STATION is never featured on the homepage unless the owner says so (owner 10/21/2026); only PJ village 11777.
+        if not pref.get("allow_pjs"):
+            places = [k for k in places if "port jefferson station" not in (first[k].get("town") or "").lower()]
         # TOWN MIX (owner 10/21/2026: "too much port jefferson... 2 or 3 max pj. try for 2"): homepage cards take at most
         # pj_max Port Jefferson / PJ Station places, then fill with Setauket / Stony Brook first; a 3rd PJ only if needed.
         cap_n, pj_max = int(pref.get("cap", 9)), int(pref.get("pj_max", 2))
         is_pj = lambda k: "port jeff" in (first[k].get("town") or "").lower()
-        chosen = [k for k in places if not is_pj(k)]
+        chosen = [k for k in places if not is_pj(k)]   # pinned places are first in places, so they are always kept
         pj = [k for k in places if is_pj(k)]
         need_pj = max(min(pj_max, len(pj)), cap_n - len(chosen))
         pick_set = set(chosen[:cap_n - min(need_pj, len(pj))] + pj[:need_pj])
@@ -324,7 +341,7 @@ def main():
                 own = s.get("img") or s.get("inset") or ""
                 s["img"] = "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/" + e["file"]
                 s["inset"] = own
-            s["label"] = special_label(s)
+            s["label"] = s.get("label") or special_label(s)
         specials_all.sort(key=lambda s: pos.get((s.get("biz") or "").lower(), 999))
         eat_order = [first[k]["biz"] for k in places] + [n for n in eat_order if n.lower() not in pos]
     if not pref.get("live"):
