@@ -100,7 +100,7 @@ WORK = '''<section class="tvs-sec tvs-work" id="tvs-work">
       </ul>
     </div>
     <figure class="tvs-vphone tvw-phfig tvs-up">
-      <div class="tvw-phone"><div class="tvw-phone-screen"><img src="''' + SHARE + '''phone-home.webp" alt="Three Village Local homepage on a phone" width="780" height="5400" loading="lazy" decoding="async"></div><span class="tvw-phone-island"></span></div>
+      <div class="tvw-phone"><div class="tvw-phone-screen"><div class="tvw-phone-bar"><span>9:41</span><span class="tvw-phone-sig">&#9679;&#9679;&#9679; &#9646;</span></div><div class="tvw-phone-view"><img src="''' + SHARE + '''phone-home.webp" alt="Three Village Local homepage on a phone" width="780" height="5400" loading="lazy" decoding="async"></div></div><span class="tvw-phone-island"></span></div>
       <figcaption>Three Village Local on a phone, <b>built by our team</b></figcaption>
     </figure>
   </div>
@@ -133,6 +133,8 @@ h = re.sub(r'\n    <a class="tvs-newlink"[^\n]*</a>', "", h)
 h = cut(h, "tvs-sec tvs-social")                  # "Your content, seen all over town" (social media service)
 h = swap(h, "tvs-sec tvs-work", WORK)              # promo video + social posts -> real websites + phone
 h = swap(h, "tvs-sec tvs-bundles", BUNDLES)        # social bundles -> the 2 website packages
+h = cut(h, "tvs-founding")                        # owner 10/22: remove the founding clients box
+h = cut(h, "tvs-stats")                           # owner 10/22: remove the 4-number stats strip
 h = re.sub(r'<a class="tvs-newbiz[^\n]*</a>\n\n', "", h)
 h = rep(h, "<p>We pick the right bundle together and map out your first month.</p>", "<p>We pick the right package together and map out your site.</p>")
 h = rep(h, "<p>No long contracts. Bundles are a one-time build, and monthly plans are month to month.</p>",
@@ -152,14 +154,18 @@ document.addEventListener('click',function(e){if(e.target.closest&&e.target.clos
 CSS = '''
 .tvw-two{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-width:820px;margin-left:auto;margin-right:auto}
 .tvw-phfig{display:flex;flex-direction:column;align-items:center}
-.tvw-phone{position:relative;width:280px;padding:11px;border-radius:50px;background:linear-gradient(145deg,#2a3242,#0a0d13);box-shadow:0 40px 70px -24px rgba(9,30,66,.5),0 0 0 2px #3a4456 inset,0 0 0 1px #11151c}
-.tvw-phone-screen{position:relative;aspect-ratio:390/844;overflow:hidden;border-radius:39px;background:#fff}
-.tvw-phone-screen img{display:block;width:100%;height:auto;animation:tvwPh 34s ease-in-out infinite}
-.tvw-phone-island{position:absolute;top:22px;left:50%;width:86px;height:24px;margin-left:-43px;border-radius:20px;background:#05070b}
-@keyframes tvwPh{0%,6%{transform:translateY(0)}46%,54%{transform:translateY(-68.7%)}94%,100%{transform:translateY(0)}}
+.tvs-wtop:has(.tvw-phfig){grid-template-columns:1fr 290px;max-width:960px}
+.tvw-phone{position:relative;width:270px;padding:10px;border-radius:48px;background:linear-gradient(145deg,#2a3242,#0a0d13);box-shadow:0 36px 64px -24px rgba(9,30,66,.5),0 0 0 2px #3a4456 inset,0 0 0 1px #11151c}
+.tvw-phone-screen{position:relative;aspect-ratio:390/844;overflow:hidden;border-radius:38px;background:#13294b;display:flex;flex-direction:column}
+.tvw-phone-bar{flex:none;height:40px;display:flex;align-items:center;justify-content:space-between;padding:6px 26px 0;color:#fff;font:600 12px/1 -apple-system,Segoe UI,sans-serif}
+.tvw-phone-sig{font-size:8px;letter-spacing:1px}
+.tvw-phone-view{position:relative;flex:1;overflow:hidden;background:#fff}
+.tvw-phone-view img{display:block!important;width:100%!important;max-width:none!important;height:auto!important;max-height:none!important;aspect-ratio:780/5400;object-fit:fill;animation:tvwPh 34s ease-in-out infinite}
+.tvw-phone-island{position:absolute;top:19px;left:50%;width:80px;height:23px;margin-left:-40px;border-radius:20px;background:#05070b}
+@keyframes tvwPh{0%,6%{transform:translateY(0)}46%,54%{transform:translateY(-70%)}94%,100%{transform:translateY(0)}}
 .tvw-sites .tvs-mqt img{border-radius:12px;box-shadow:0 14px 30px -14px rgba(9,30,66,.35);border:1px solid #dfe6f0;background:#fff}
-@media (prefers-reduced-motion:reduce){.tvw-phone-screen img{animation:none}}
-@media (max-width:760px){.tvw-two{grid-template-columns:1fr!important}.tvw-phone{width:240px}}
+@media (prefers-reduced-motion:reduce){.tvw-phone-view img{animation:none}}
+@media (max-width:760px){.tvw-two{grid-template-columns:1fr!important}.tvs-wtop:has(.tvw-phfig){grid-template-columns:1fr}.tvw-phone{width:240px}}
 '''
 
 _rd = D.rd
