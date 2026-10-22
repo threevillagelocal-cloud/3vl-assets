@@ -117,6 +117,10 @@ def photo(kind, a, s, ov):
     cands = []
     if ov.get("photo"):
         cands.append(os.path.join(ROOT, ov["photo"]))
+    # owner 10/21/2026: pinned highlights use their designed card; everyone else uses the edited EXTERIOR (weekender/ext)
+    if s.get("pinned") and s.get("img"):
+        cands.append(_live(s["img"]) if "/weekender/live/" in s["img"] else os.path.join(WK, s["img"].split("/weekender/", 1)[-1]))
+    cands.append(os.path.join(WK, "ext", "%s.jpg" % (a.get("ig") or "").lower()))
     if kind == "ig" and s.get("inset"):
         cands.append(_live(s["inset"]))
     if kind == "hand":
@@ -140,7 +144,10 @@ def subtitle(s, a):
     t = s.get("title", "")
     t = re.sub(r"\s+(at|@)\s+.*$", "", t, flags=re.I)          # "Oktoberfest at Schnitzels" -> "Oktoberfest"
     t = re.sub(r"\s+(launch|is back|returns)$", "", t, flags=re.I)
-    return t
+    if s.get("pinned") and s.get("when"):
+        t = s["when"].split(",")[0]
+    lb = s.get("label")   # owner 10/21/2026: say whether it's a special, live music, an event...
+    return ("%s · %s" % (lb, t)) if lb else t
 
 
 def short_name(a):

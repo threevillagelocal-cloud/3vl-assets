@@ -343,7 +343,7 @@ def main():
         ext = json.load(open(os.path.join(HERE, "..", "ext", "ext.json"), encoding="utf-8")) if os.path.exists(os.path.join(HERE, "..", "ext", "ext.json")) else {}
         for s in specials:
             e = ext.get((s.get("ig") or "").lower())
-            if e:
+            if e and not s.get("pinned"):   # pinned highlights keep their designed card
                 own = s.get("img") or s.get("inset") or ""
                 s["img"] = "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/" + e["file"]
                 s["inset"] = own
