@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-22T02:47:05.303121+00:00",
+"updated": "2026-10-22T02:48:34.637924+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1381,7 +1381,7 @@
 "biz": "Madiran The Wine Bar",
 "town": "East Setauket",
 "title": "Live Music This Week",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-22.jpg",
+"inset": "",
 "url": "http://madiranthewinebar.com/events.html",
 "label": "Live music",
 "source": "madiranthewinebar.com/events.html + Madiran IG post 10/21/2026",
@@ -1390,7 +1390,7 @@
 "expires": "2026-10-24",
 "when": "Thu to Sat, Oct 22-24, from 7 PM",
 "desc": "Thu Oct 22, 7-9 PM: Tim Siciliano on solo guitar. Fri Oct 23, 7-10 PM: Jim Lowe on keys and vocals. Sat Oct 24, 7-10 PM: Tim Siciliano on solo guitar.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-22.jpg",
 "pinned": true
 },
 {
@@ -1856,7 +1856,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-22T02:46:31+00:00",
+"checked": "2026-10-22T02:47:56+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
