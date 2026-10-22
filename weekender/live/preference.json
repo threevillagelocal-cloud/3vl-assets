@@ -55,5 +55,9 @@
   "vote for",
   "scarecrow #"
  ],
- "_skip_all": "Kept off the See all specials page: specials at other towns' locations and vote/contest posts (owner 10/10/2026)."
+ "_skip_all": "Kept off the See all specials page: specials at other towns' locations and vote/contest posts (owner 10/10/2026).",
+ "always": [
+  "eat.namkeen"
+ ],
+ "_always": "Owner 10/21/2026: always on the homepage when they have a current special or daily deal (after pinned highlights)."
 }

@@ -318,6 +318,9 @@ def main():
         off = ((dt.datetime.now(ZoneInfo("America/New_York")).date().toordinal() + 1) * step) % len(places)
         places = places[off:] + places[:off]
         pin_keys = [p["biz"].lower() for p in pinned]
+        # "always" (preference.json, owner picks e.g. Namkeen 10/21/2026): these places go right after the pinned ones whenever they have a current special/deal
+        names_by_ig = {x["ig"].lower(): x["name"].lower() for x in json.load(open(os.path.join(HERE, "ig_accounts.json"), encoding="utf-8"))}
+        pin_keys += [names_by_ig[h.lower()] for h in pref.get("always", []) if h.lower() in names_by_ig and names_by_ig[h.lower()] not in pin_keys]
         places = [k for k in pin_keys if k in first] + [k for k in places if k not in pin_keys]
         # Port Jefferson STATION is never featured on the homepage unless the owner says so (owner 10/21/2026); only PJ village 11777.
         if not pref.get("allow_pjs"):
