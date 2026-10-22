@@ -13,6 +13,8 @@ import deploy as D
 
 LINKS = json.load(open("C:/Users/Matt/Documents/3vl-private/website-offer/stripe.json"))
 PR = {k: (v["setup"], v["monthly"]) for k, v in LINKS.items()}
+PR["web-ready-regular"] = (1499, 59)     # owner 10/22: anchor regular price so member pricing reads as a real deal
+PR["web-powered-regular"] = (2499, 129)
 
 D.NAME = "3VL Page Websites" if D.LIVE else "3VL Page Websites Preview"   # preview has its own widget so it never changes the live page
 D.SLUG = "websites" if D.LIVE else "preview-websites"
@@ -120,7 +122,14 @@ BUNDLES = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
   </div>
   <div class="tvs-cards tvw-two">
 ''' + READY + POWERED + '''  </div>
-  <p class="tvs-fine tvs-up">Your start-up fee includes your first month. After that, the monthly plan covers hosting, security, updates and support, month to month. Your domain is registered in your name.</p>
+  <p class="tvs-fine tvs-up"><b>Half to start, the rest only when you love it.</b> Your start-up fee includes your first month. After that, the monthly plan covers hosting, security, updates and support, month to month. Your domain is registered in your name.</p>
+</section>'''
+
+ADDS_SEC = '''<section class="tvs-sec tvw-adds" id="tvw-adds">
+  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Add-ons</p><h2>More we can build for you.</h2>
+    <p>Add any of these to your package, now or later. Same local team, same care.</p></div>
+  <div class="tvw-add-grid"><div class="tvw-add tvs-up"><span>&#129302;</span><b>AI chat assistant</b><p>Answers customer questions 24/7 on your site and sends you the lead.</p></div><div class="tvw-add tvs-up"><span>&#128197;</span><b>Online booking</b><p>Appointments, reservations or quote requests that land in your calendar.</p></div><div class="tvw-add tvs-up"><span>&#128722;</span><b>Online store + payments</b><p>Sell products, gift cards or deposits with Stripe, Square or Shopify.</p></div><div class="tvw-add tvs-up"><span>&#9993;&#65039;</span><b>Email on your domain</b><p>you@yourbusiness.com, set up with Google Workspace.</p></div><div class="tvw-add tvs-up"><span>&#128260;</span><b>Site rescue + move</b><p>Move off Wix, Squarespace or GoDaddy and fix what was holding you back.</p></div><div class="tvw-add tvs-up"><span>&#9889;</span><b>Speed tune-up</b><p>Make a slow site load fast on phones, scored on Google's own test.</p></div><div class="tvw-add tvs-up"><span>&#128200;</span><b>Lead tracking + reports</b><p>See where calls and form leads come from, in plain English each month.</p></div><div class="tvw-add tvs-up"><span>&#127919;</span><b>Ad landing pages</b><p>Pages built for Google and Facebook ads, with conversion tracking.</p></div><div class="tvw-add tvs-up"><span>&#11088;</span><b>Reviews showcase</b><p>Your best Google reviews shown on your site, updated automatically.</p></div><div class="tvw-add tvs-up"><span>&#129518;</span><b>Custom tools</b><p>Quote estimators, calculators, menus, event calendars and more.</p></div><div class="tvw-add tvs-up"><span>&#128240;</span><b>Newsletter signup</b><p>Grow an email list of local customers right from your site.</p></div><div class="tvw-add tvs-up"><span>&#9855;</span><b>Accessibility upgrades</b><p>Easier to use for everyone, built to modern accessibility standards.</p></div></div>
+  <p class="tvs-fine tvs-up">Pricing depends on what you need. <a href="#tvs-book">Ask us on your free call.</a></p>
 </section>'''
 
 AI_SEC = '''<section class="tvs-sec tvw-ai" id="tvw-ai">
@@ -137,7 +146,7 @@ AI_SEC = '''<section class="tvs-sec tvw-ai" id="tvw-ai">
         <p class="tvw-ai-empty">No services. No hours. No town. Nothing to recommend.</p></div>
     </div>
     <div class="tvw-ai-card tvw-ai-good">
-      <p class="tvw-ai-lab"><span>&#10003;</span>A site built by Three Village Local</p>
+      <p class="tvw-ai-lab"><span>&#10003;</span>A site built by Three Village Local <i class="tvw-ex">Example</i></p>
       <div class="tvw-ai-win"><div class="tvw-ai-bar"><i></i><i></i><i></i><em>What an AI crawler sees</em></div>
         <ul class="tvw-ai-read">
           <li><b>Business</b>Your Business, Setauket, NY</li>
@@ -160,6 +169,7 @@ AI_SEC = '''<section class="tvs-sec tvw-ai" id="tvw-ai">
       <span><b>Fast on every phone</b>Hosted on a global edge network, built to pass Core Web Vitals</span>
     </div>
   </div>
+  <div class="tvw-check tvs-up"><div><b>Free: find out what AI says about your business today.</b><span>We ask ChatGPT, Gemini and Google's AI about you and send you the answers. No cost, no obligation.</span></div><a class="tvs-btn tvs-blue" href="#tvs-book">Get my free AI check</a></div>
   <div class="tvw-logos tvs-up"><p>Built to be found on</p><div class="tvw-logo-row"><span class="tvw-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>Google</span><span class="tvw-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M19.527 4.799c1.212 2.608.937 5.678-.405 8.173-1.101 2.047-2.744 3.74-4.098 5.614-.619.858-1.244 1.75-1.669 2.727-.141.325-.263.658-.383.992-.121.333-.224.673-.34 1.008-.109.314-.236.684-.627.687h-.007c-.466-.001-.579-.53-.695-.887-.284-.874-.581-1.713-1.019-2.525-.51-.944-1.145-1.817-1.79-2.671L19.527 4.799zM8.545 7.705l-3.959 4.707c.724 1.54 1.821 2.863 2.871 4.18.247.31.494.622.737.936l4.984-5.925-.029.01c-1.741.601-3.691-.291-4.392-1.987a3.377 3.377 0 0 1-.209-.716c-.063-.437-.077-.761-.004-1.198l.001-.007zM5.492 3.149l-.003.004c-1.947 2.466-2.281 5.88-1.117 8.77l4.785-5.689-.058-.05-3.607-3.035zM14.661.436l-3.838 4.563a.295.295 0 0 1 .027-.01c1.6-.551 3.403.15 4.22 1.626.176.319.323.683.377 1.045.068.446.085.773.012 1.22l-.003.016 3.836-4.561A8.382 8.382 0 0 0 14.67.439l-.009-.003zM9.466 5.868L14.162.285l-.047-.012A8.31 8.31 0 0 0 11.986 0a8.439 8.439 0 0 0-6.169 2.766l-.016.018 3.665 3.084z"/></svg>Google Maps</span><span class="tvw-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#10A37F" d="M12 1.5l2.3 6.2 6.2 2.3-6.2 2.3L12 18.5l-2.3-6.2L3.5 10l6.2-2.3zM19 15l1 2.6 2.5 1-2.5.9-1 2.6-.9-2.6-2.6-.9 2.6-1z"/></svg>ChatGPT</span><span class="tvw-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#8E75B2" d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"/></svg>Gemini</span><span class="tvw-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1FB8CD" d="M22.3977 7.0896h-2.3106V.0676l-7.5094 6.3542V.1577h-1.1554v6.1966L4.4904 0v7.0896H1.6023v10.3976h2.8882V24l6.932-6.3591v6.2005h1.1554v-6.0469l6.9318 6.1807v-6.4879h2.8882V7.0896zm-3.4657-4.531v4.531h-5.355l5.355-4.531zm-13.2862.0676 4.8691 4.4634H5.6458V2.6262zM2.7576 16.332V8.245h7.8476l-6.1149 6.1147v1.9723H2.7576zm2.8882 5.0404v-3.8852h.0001v-2.6488l5.7763-5.7764v7.0111l-5.7764 5.2993zm12.7086.0248-5.7766-5.1509V9.0618l5.7766 5.7766v6.5588zm2.8882-5.0652h-1.733v-1.9723L13.3948 8.245h7.8478v8.087z"/></svg>Perplexity</span><span class="tvw-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#D97757" d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg>Claude</span><span class="tvw-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#111111" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>Siri &amp; Apple Maps</span></div></div>
 </section>'''
 
@@ -169,12 +179,19 @@ h = src
 h = rep(h, "Websites + Google + AI search + Social + Video + Drone + Marketing", "Websites + Google + AI search + Hosting")
 h = rep(h, "Your website, Google, AI search, social media, video and marketing, built by one local team to work as one. Then we launch it in front of the whole town on Three Village Local.",
         "Modern websites optimized to be found and recommended by AI assistants like ChatGPT and Google, designed, built and hosted by one local team. Then we launch them to the whole town on Three Village Local.")
-h = rep(h, 'href="#tvs-bundles">See the bundles</a>', 'href="#tvs-bundles">See the packages</a>')
+NL = chr(10)
+h = rep(h, '<a class="tvs-btn tvs-blue" href="#tvs-bundles">See the bundles</a>' + NL + '      <a class="tvs-btn tvs-ghost" href="#tvs-book">Book a free call</a>',
+        '<a class="tvs-btn tvs-blue" href="#tvs-book">Get my free AI check</a>' + NL + '      <a class="tvs-btn tvs-ghost" href="#tvs-bundles">See the packages</a>')
+h = rep(h, '<a class="tvs-sticky" href="#tvs-book">Book a free call</a>', '<a class="tvs-sticky" href="#tvs-book">Get my free AI check</a>')
+h = rep(h, '<h2>Book your free 15-minute call.</h2>', '<h2>Get your free AI visibility check.</h2>')
+h = rep(h, '<p>Tell us a little about your business. We will reach out within one business day.</p>', '<p>Tell us your business name. We will ask ChatGPT, Gemini and Google&#39;s AI about your business and send you exactly what they say, then walk you through it on a free 15-minute call. No cost, no obligation.</p>')
 h = re.sub(r'\n    <a class="tvs-newlink"[^\n]*</a>', "", h)
 h = cut(h, "tvs-sec tvs-social")                  # "Your content, seen all over town" (social media service)
 h = swap(h, "tvs-sec tvs-work", WORK)              # promo video + social posts -> real websites + phone
 h = swap(h, "tvs-sec tvs-bundles", BUNDLES)        # social bundles -> the 2 website packages
 h = cut(h, "tvs-founding")                        # owner 10/22: remove the founding clients box
+i, _ = sec(h, "tvs-sec tvs-vs")
+h = h[:i] + ADDS_SEC + chr(10) * 2 + h[i:]      # owner 10/22: extra website tech services
 h = cut(h, "tvs-stats")                           # owner 10/22: remove the 4-number stats strip
 i, _ = sec(h, "tvs-sec tvs-show")
 h = h[:i] + AI_SEC + chr(10) * 2 + h[i:]                  # owner 10/22: AI-findable message + template-site scripts + our tech
@@ -182,7 +199,7 @@ h = re.sub(r'<a class="tvs-newbiz[^\n]*</a>\n\n', "", h)
 h = rep(h, "<p>We pick the right bundle together and map out your first month.</p>", "<p>We pick the right package together and map out your site.</p>")
 h = rep(h, "<p>No long contracts. Bundles are a one-time build, and monthly plans are month to month.</p>",
         "<p>No long contracts. Your site is a one-time build, and the monthly plan is month to month.</p>")
-h = rep(h, "<p>Half to start, the rest at launch once you love it.</p>", "<p>After your free consultation we send one simple invoice. Your start-up fee includes your first month.</p>")
+h = rep(h, "<p>Half to start, the rest at launch once you love it.</p>", "<p>Half of your start-up fee to begin, and the rest only when you love your new site. Your start-up fee includes your first month.</p>")
 h = rep(h, "<p>No. Anyone can book. Members save on every bundle, and VIP members save the most.</p>", "<p>No. Anyone can book. Three Village Local members get member pricing on both packages.</p>")
 h = rep(h, "mailto:hello@threevillagelocal.com?subject=Services", "mailto:hello@threevillagelocal.com?subject=Websites")
 for m in re.finditer(r".{60}[Bb]undle.{40}", h): print("LEFT:", m.group(0))
@@ -190,11 +207,23 @@ HTML = h
 
 PRICES = ("var P={webready:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},webpowered:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},"
                     % (PR["web-ready-regular"] + PR["web-ready-member"] * 3 + PR["web-powered-regular"] + PR["web-powered-member"] * 3))
-GOJS = '''<script>(function(){function upd(){var b=document.querySelector('#tvs .tvs-tiers button.on'),m=!b||b.getAttribute('data-t')!=='all';
+GOJS = '''<script>(function(){var n0=0,iv=setInterval(function(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value='web_consult';var g=s.closest('.form-group')||s.parentNode;g.style.display='none';clearInterval(iv)}if(++n0>40)clearInterval(iv)},250);function upd(){var b=document.querySelector('#tvs .tvs-tiers button.on'),m=!b||b.getAttribute('data-t')!=='all';
 [].forEach.call(document.querySelectorAll('#tvs .tvw-go'),function(a){a.href=m?a.getAttribute('data-m'):a.getAttribute('data-r')})}
 document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('#tvs .tvs-tiers button'))setTimeout(upd,0)});upd()})();</script>'''
 
 CSS = '''
+.tvw-add-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1040px;margin:0 auto}
+.tvw-add{background:#fff;border:1px solid #dfe6f0;border-radius:16px;padding:18px 18px 16px;box-shadow:0 10px 26px -18px rgba(13,35,70,.35)}
+.tvw-add span{display:inline-flex;width:40px;height:40px;border-radius:12px;align-items:center;justify-content:center;font-size:20px;background:linear-gradient(135deg,#e8f1ff,#f3f7ff);margin-bottom:10px}
+.tvw-add b{display:block;color:var(--navy);font-size:16px;margin-bottom:4px}.tvw-add p{margin:0!important;font-size:14px;color:var(--mut);line-height:1.45}
+@media (max-width:980px){.tvw-add-grid{grid-template-columns:repeat(2,1fr)}}@media (max-width:520px){.tvw-add-grid{grid-template-columns:1fr}}
+
+.tvw-ex{font-style:normal;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8a5a00;background:#fff3d6;border-radius:999px;padding:3px 9px;margin-left:4px}
+.tvw-check{display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:980px;margin:30px auto 0;padding:20px 24px;border-radius:18px;background:linear-gradient(120deg,#eaf3ff,#f4f8ff);border:1px solid #cfe0f7}
+.tvw-check b{display:block;font-size:19px;color:var(--navy);margin-bottom:4px}.tvw-check span{font-size:15px;color:var(--mut)}
+.tvw-check .tvs-btn{flex:none}
+@media (max-width:760px){.tvw-check{flex-direction:column;align-items:flex-start}}
+
 .tvw-ai-cmp{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:980px;margin:6px auto 0}
 .tvw-ai-lab{display:flex;align-items:center;gap:9px;font-weight:800;font-size:16px;color:var(--navy);margin:0 0 10px!important}
 .tvw-ai-lab span{display:inline-flex;width:24px;height:24px;border-radius:50%;align-items:center;justify-content:center;color:#fff;font-size:13px}
