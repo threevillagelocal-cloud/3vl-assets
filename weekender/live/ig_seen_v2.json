@@ -7,14 +7,6 @@
 "expires": "2026-10-03",
 "_ts": "2026-09-25T13:03:40+0000"
 },
-"18090456401270334": {
-"special": false,
-"title": "Halloween Day Event",
-"when": "Sat, Oct. 31, 2026",
-"desc": "Halloween celebration planned, but no specific offer, time, or details provided.",
-"expires": "2026-10-31",
-"_ts": "2026-09-22T13:31:33+0000"
-},
 "18050928416813278": {
 "special": false,
 "_ts": "2026-09-27T15:13:15+0000"
@@ -235,14 +227,6 @@
 "expires": "",
 "_ts": "2026-09-23T16:10:00+0000"
 },
-"18370003897246671": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-22T14:43:16+0000"
-},
 "17906671416487684": {
 "special": false,
 "title": "",
@@ -415,14 +399,6 @@
 "expires": "",
 "_ts": "2026-09-24T20:30:54+0000"
 },
-"17911383012530879": {
-"special": true,
-"title": "Pick of the Patch Spritz Flight",
-"when": "Now through fall season",
-"desc": "Try four seasonal spritz flavors: Hugo, Aperol, Fig, and Lemon Honey Sage.",
-"expires": "2026-11-20",
-"_ts": "2026-09-22T14:43:16+0000"
-},
 "18011806151974118": {
 "special": true,
 "title": "New Fall Ciders & Lagers This Week",
@@ -446,14 +422,6 @@
 "desc": "Come in for classic French onion or creamy lobster bisque to warm up during the nor'easter.",
 "expires": "2026-09-27",
 "_ts": "2026-09-25T16:58:54+0000"
-},
-"17954849292252939": {
-"special": false,
-"title": "Fall Cocktail Lineup",
-"when": "Ongoing",
-"desc": "New fall cocktails available, ranging from citrusy to indulgent options that pair with menu items.",
-"expires": "2026-09-27",
-"_ts": "2026-09-22T13:27:49+0000"
 },
 "18026906888911921": {
 "special": false,
@@ -654,14 +622,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-24T22:23:26+0000"
-},
-"17941662861350067": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-22T13:15:28+0000"
 },
 "18073885922721393": {
 "special": false,
@@ -930,14 +890,6 @@
 "18113238938017092": {
 "special": false,
 "_ts": "2026-09-23T14:05:23+0000"
-},
-"18127205707865927": {
-"special": false,
-"_ts": "2026-09-22T14:34:21+0000"
-},
-"18095596259432896": {
-"special": false,
-"_ts": "2026-09-22T12:34:14+0000"
 },
 "17987123550100225": {
 "special": false,
@@ -3758,5 +3710,21 @@
 "desc": "Try Kilwins' new fall pumpkin shake made with real pumpkin while supplies last.",
 "expires": "2026-11-30",
 "_ts": "2026-10-21T22:31:03+0000"
+},
+"18338906227275645": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-22T14:12:55+0000"
+},
+"18106290422527803": {
+"special": false,
+"title": "Churro Fries",
+"when": "Ongoing",
+"desc": "Cinnamon sugar coated churro fries served with caramel sauce for dipping.",
+"expires": "2026-10-22",
+"_ts": "2026-10-22T13:53:35+0000"
 }
 }
