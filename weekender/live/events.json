@@ -1,14 +1,14 @@
 {
-"updated": "2026-10-22T19:04:07.826904+00:00",
+"updated": "2026-10-22T21:01:00.296519+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
-"Emma S. Clark Library": 315,
+"Emma S. Clark Library": 338,
 "Stony Brook Village Center": 14,
-"Long Island Museum": 48,
+"Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 8
 },
@@ -384,23 +384,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "emmaclark-streaming-101-cutting-cord-38627",
-"title": "Streaming 101: Cutting the Cord",
-"start": "2026-10-22T14:00:00",
-"end": "2026-10-22T15:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/streaming-101-cutting-cord-38627",
-"desc": "Learn about various streaming devices such as Amazon’s Fire Stick, Roku & Chromecast. During this program, you will learn about the different types of streaming devices (hardware) and apps (software) that offer the type of programming that best fits your needs",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/cuttting%20the%20cord%20pic_2.png",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/streaming-101-cutting-the-cord"
 },
 {
 "id": "emmaclark-social-work-intern-appointments-58749",
@@ -2044,13 +2027,13 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-22T19:00:16+00:00",
+"checked": "2026-10-22T21:00:15+00:00",
 "alerts": [
 {
 "title": "Departure Cancellations - Thursday October 22",
-"text": "The following departures have been cancelled Thur. 10/22: Departing Port Jefferson - 7:00 AM, 10:00 AM & 1:15 PM. Departing Bridgeport - 8:30 AM, 11:45 AM, 2:45 PM.",
+"text": "The following departures have been cancelled Thur. 10/22: Departing Port Jefferson - 7:00 AM, 10:00 AM, 1:15 PM & 4:30 PM. Departing Bridgeport - 8:30 AM, 11:45 AM, 2:45 PM & 6:15 PM",
 "link": "https://www.88844ferry.com/schedule",
-"published": "2026-10-22T15:53:14.827Z"
+"published": "2026-10-22T20:10:32.835Z"
 }
 ],
 "cancellations": true,
