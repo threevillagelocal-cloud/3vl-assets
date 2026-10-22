@@ -300,8 +300,9 @@ def main():
     # PINNED weekly highlights (owner 10/21/2026: Madiran live music as a weekly highlight): weekender/live/pinned.json,
     # each {ig, biz, town, title, when, desc, img, url, expires, label}; shown first on the homepage until it expires.
     try:
-        pinned = [p for p in json.load(open(os.path.join(HERE, "pinned.json"), encoding="utf-8")) if p.get("expires", "9999") >= today.isoformat()]
-    except Exception:
+        pinned = [p for p in json.load(open(os.path.join(HERE, "pinned.json"), encoding="utf-8")) if p.get("expires", "9999") >= dt.date.today().isoformat()]
+    except Exception as ex:
+        print("pinned.json:", ex)
         pinned = []
     for p in reversed(pinned):
         specials_all = [x for x in specials_all if (x.get("biz") or "").lower() != p["biz"].lower()]
