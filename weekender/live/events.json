@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-22T15:02:35.657415+00:00",
+"updated": "2026-10-22T17:01:05.574269+00:00",
 "counts": {
 "Three Village Chamber": 5,
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
-"Emma S. Clark Library": 316,
+"Emma S. Clark Library": 315,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 3,
@@ -384,23 +384,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "emmaclark-library-walking-club-61174",
-"title": "Library Walking Club",
-"start": "2026-10-22T10:00:00",
-"end": "2026-10-22T11:15:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Library Front Lawn",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/library-walking-club-61174",
-"desc": "Looking for accountability and consistency on your fitness journey? Get active and connect with others at our weekly Walking Club! Join us Thursday mornings in September and October for a group walk from the library to Frank Melville Park, where participants w",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Frank%20Melville%20Park1a.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/library-walking-club-403"
 },
 {
 "id": "emmaclark-streaming-101-cutting-cord-38627",
@@ -1409,7 +1392,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/emmett-hughes"
 }
 ],
 "closings": [],
@@ -2023,13 +2006,13 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-22T15:00:16+00:00",
+"checked": "2026-10-22T17:00:19+00:00",
 "alerts": [
 {
 "title": "Departure Cancellations - Thursday October 22",
-"text": "The following departures have been cancelled Thur. 10/22: Departing Port Jefferson - 7:00 AM & 10:00 AM. Departing Bridgeport - 8:30 AM & 11:45 AM.",
+"text": "The following departures have been cancelled Thur. 10/22: Departing Port Jefferson - 7:00 AM, 10:00 AM & 1:15 PM. Departing Bridgeport - 8:30 AM, 11:45 AM, 2:45 PM.",
 "link": "https://www.88844ferry.com/schedule",
-"published": "2026-10-22T13:57:21.323Z"
+"published": "2026-10-22T15:53:14.827Z"
 }
 ],
 "cancellations": true,
