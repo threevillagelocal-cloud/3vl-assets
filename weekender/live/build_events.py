@@ -151,6 +151,18 @@ def status_for(title):
     return m.group(1).capitalize().replace("Cancelled", "Canceled") if m else ""
 
 
+def special_label(s):
+    """Short tag for an Eat & Drink card (owner 10/21/2026: say if it's a special, music, etc.)."""
+    t = " ".join([s.get("title") or "", s.get("desc") or ""]).lower()
+    if re.search(r"\blive music\b|\bjazz\b|\bacoustic\b|\bband\b|\bdj\b|\bperforming live\b|\blive performance\b|\bsinger\b", t):
+        return "Live music"
+    if re.search(r"happy hour", t):
+        return "Happy hour"
+    if re.search(r"karaoke|trivia|party|contest|workshop|class|tasting|bingo|comedy|paint", t):
+        return "Event"
+    return "Special"
+
+
 def main():
     today = dt.date.today()
     horizon = today + dt.timedelta(days=10)
@@ -167,6 +179,8 @@ def main():
             if not (e["start"].date() <= horizon and max(e["start"], end).date() >= today):   # upcoming, or started earlier and still running
                 continue
             hit = re.search(r"country house|bench|home ?baked by julia|elaine'?s|home ?kingdom", e["title"] + " " + e["venue"], re.I)
+            if hit and re.search(r"rotary", e["title"] + " " + (e.get("desc") or ""), re.I):
+                hit = None   # owner 10/21/2026: always feature Three Village Rotary events, even at Elaine's
             if hit:   # never promote (owner requests: Country House; The Bench Bar & Grill 10/1/2026; Homebaked By Julia 10/5/2026; Elaine's; Home Kingdom 10/17/2026)
                 # owner 10/16/2026: hold these for HIS approval instead of silently dropping them (he may let some through)
                 held.append({"title": e["title"], "venue": e["venue"], "start": e["start"].isoformat(), "url": e["url"], "matched": hit.group(0)})
@@ -290,8 +304,27 @@ def main():
         step = max(1, int(pref.get("rotate_step", 3)))
         off = ((dt.datetime.now(ZoneInfo("America/New_York")).date().toordinal() + 1) * step) % len(places)
         places = places[off:] + places[:off]
+        # TOWN MIX (owner 10/21/2026: "too much port jefferson... 2 or 3 max pj. try for 2"): homepage cards take at most
+        # pj_max Port Jefferson / PJ Station places, then fill with Setauket / Stony Brook first; a 3rd PJ only if needed.
+        cap_n, pj_max = int(pref.get("cap", 9)), int(pref.get("pj_max", 2))
+        is_pj = lambda k: "port jeff" in (first[k].get("town") or "").lower()
+        chosen = [k for k in places if not is_pj(k)]
+        pj = [k for k in places if is_pj(k)]
+        need_pj = max(min(pj_max, len(pj)), cap_n - len(chosen))
+        pick_set = set(chosen[:cap_n - min(need_pj, len(pj))] + pj[:need_pj])
+        places = [k for k in places if k in pick_set] + [k for k in places if k not in pick_set]
         pos = {k: i for i, k in enumerate(places)}
-        specials = [first[k] for k in places][:int(pref.get("cap", 9))]
+        specials = [dict(first[k]) for k in places][:cap_n]
+        # Homepage cards (owner 10/21/2026): the big photo is the restaurant's edited EXTERIOR (weekender/ext), the post's own
+        # image becomes the small inset; each card is labeled Live music / Happy hour / Event / Special.
+        ext = json.load(open(os.path.join(HERE, "..", "ext", "ext.json"), encoding="utf-8")) if os.path.exists(os.path.join(HERE, "..", "ext", "ext.json")) else {}
+        for s in specials:
+            e = ext.get((s.get("ig") or "").lower())
+            if e:
+                own = s.get("img") or s.get("inset") or ""
+                s["img"] = "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/" + e["file"]
+                s["inset"] = own
+            s["label"] = special_label(s)
         specials_all.sort(key=lambda s: pos.get((s.get("biz") or "").lower(), 999))
         eat_order = [first[k]["biz"] for k in places] + [n for n in eat_order if n.lower() not in pos]
     if not pref.get("live"):
