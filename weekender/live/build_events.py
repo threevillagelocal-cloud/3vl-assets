@@ -317,6 +317,21 @@ def main():
         step = max(1, int(pref.get("rotate_step", 3)))
         off = ((dt.datetime.now(ZoneInfo("America/New_York")).date().toordinal() + 1) * step) % len(places)
         places = places[off:] + places[:off]
+        # WEEKLY MIX (owner 10/21/2026: "mix up all new businesses every week"): the lineup is set per week (Thursday to
+        # Wednesday, matching the Thursday reel) and favors places that were NOT in last week's lineup. Within the week the
+        # same places stay (a place drops only when its special ends). State: weekender/live/eat_week.json.
+        wk_path = os.path.join(HERE, "eat_week.json")
+        try:
+            wk = json.load(open(wk_path, encoding="utf-8"))
+        except Exception:
+            wk = {}
+        today_et = dt.datetime.now(ZoneInfo("America/New_York")).date()
+        week_id = (today_et - dt.timedelta(days=(today_et.weekday() - 3) % 7)).isoformat()   # most recent Thursday
+        if (wk.get("week") or "") < week_id:   # new week (a later stored week = seeded ahead, keep it)
+            wk = {"week": week_id, "lineup": [], "prev": wk.get("lineup", []) if wk.get("week") else wk.get("prev", [])}
+        prev = set(wk.get("prev", []))
+        keep = [k for k in wk.get("lineup", []) if k in first]
+        places = keep + [k for k in places if k not in keep and k not in prev] + [k for k in places if k not in keep and k in prev]
         pin_keys = [p["biz"].lower() for p in pinned]
         # "always" (preference.json, owner picks e.g. Namkeen 10/21/2026): these places go right after the pinned ones whenever they have a current special/deal
         names_by_ig = {x["ig"].lower(): x["name"].lower() for x in json.load(open(os.path.join(HERE, "ig_accounts.json"), encoding="utf-8"))}
@@ -338,6 +353,8 @@ def main():
         places = [k for k in places if k in pick_set] + [k for k in places if k not in pick_set]
         pos = {k: i for i, k in enumerate(places)}
         specials = [dict(first[k]) for k in places][:cap_n]
+        wk["lineup"] = [k for k in places][:cap_n]
+        json.dump(wk, open(wk_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
         # Homepage cards (owner 10/21/2026): the big photo is the restaurant's edited EXTERIOR (weekender/ext), the post's own
         # image becomes the small inset; each card is labeled Live music / Happy hour / Event / Special.
         ext = json.load(open(os.path.join(HERE, "..", "ext", "ext.json"), encoding="utf-8")) if os.path.exists(os.path.join(HERE, "..", "ext", "ext.json")) else {}
