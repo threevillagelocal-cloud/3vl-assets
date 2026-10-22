@@ -173,7 +173,7 @@ def main():
     for fmt, (w, hgt) in (("post", (1080, 1350)), ("story", (1080, 1920))):
         t = open(os.path.join(HERE, "tpl-%s.html" % fmt), encoding="utf-8").read()
         page = os.path.join(out, fmt + ".html")
-        open(page, "w", encoding="utf-8").write(t.replace("{{CARDS}}", cards[fmt]).replace("{{BG}}", "bg.jpg"))
+        open(page, "w", encoding="utf-8").write(t.replace("{{CARDS}}", cards[fmt]).replace("{{BG}}", "bg.jpg").replace("{{DATE_M}}", datetime.date.fromisoformat(day).strftime("%b")).replace("{{DATE_D}}", str(datetime.date.fromisoformat(day).day)))
         png = os.path.join(out, fmt + "@2x.png")
         render(page, png, w, hgt, prof)
         Image.open(png).convert("RGB").resize((w, hgt), Image.LANCZOS).save(os.path.join(out, fmt + ".jpg"), quality=92)
