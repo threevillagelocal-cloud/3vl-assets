@@ -3,6 +3,22 @@
 "madiranthewinebar_eastsetauket": [],
 "tommysplaceportjeff_": [
 {
+"id": "18217945741349180",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Seafood Stuffed Shells Special",
+"when": "Now",
+"desc": "Seafood Stuffed Shells featured on the specials menu at Tommy's Place.",
+"expires": "2026-11-05",
+"posted": "2026-10-22T00:17:50+0000",
+"url": "https://www.instagram.com/p/DexrUa_jZH0/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "ig/p18217945741349180.jpg"
+},
+{
 "id": "18124063798934600",
 "biz": "Tommy's Place",
 "ig": "tommysplaceportjeff_",
@@ -77,7 +93,24 @@
 "hirosakiny": [],
 "lucastonybrook": [],
 "crazybeansrestaurant": [],
-"eatschnitzels": [],
+"eatschnitzels": [
+{
+"id": "18074576285727806",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "The Dip Schnitz Limited Menu Item",
+"when": "Limited time",
+"desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
+"expires": "2026-11-21",
+"posted": "2026-10-21T21:25:57+0000",
+"url": "https://www.instagram.com/p/DexXoFJhJhr/",
+"img": "",
+"inset": "ig/p18074576285727806.jpg"
+}
+],
 "robinsonstearoom": [],
 "premierepastryshop": [
 {
@@ -97,7 +130,24 @@
 "inset": "ig/p18113767961172883.jpg"
 }
 ],
-"threevillageinn": [],
+"threevillageinn": [
+{
+"id": "18110244839627398",
+"biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
+"ig": "threevillageinn",
+"town": "Stony Brook",
+"category": "Restaurant/Inn",
+"member": false,
+"title": "Long Island Restaurant Week",
+"when": "Nov 1-8 (Closed Mon & Tue)",
+"desc": "Special dining event at Three Village Inn & Mirabelle. Reserve your table via their bio link.",
+"expires": "2026-11-08",
+"posted": "2026-10-21T19:34:57+0000",
+"url": "https://www.instagram.com/p/DexKtUMl7va/",
+"img": "",
+"inset": "ig/p18110244839627398.jpg"
+}
+],
 "ralphsitalianicesstonybrook": [
 {
 "id": "18150886438536933",
@@ -419,20 +469,20 @@
 ],
 "castawayspj": [
 {
-"id": "18122996332941910",
+"id": "18154222495572399",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
 "town": "Port Jefferson",
 "category": "Restaurant",
 "member": false,
-"title": "Happy Hour at Castaways",
-"when": "Today, Oct. 21 · 4-6 PM",
-"desc": "Half off all drinks (including top shelf) plus food specials at the bar, high tops and lounge.",
-"expires": "2026-10-21",
-"posted": "2026-10-21T15:02:24+0000",
-"url": "https://www.instagram.com/reel/Dewrm9ZgqxX/",
+"title": "Long Island Restaurant Week Prix Fixe",
+"when": "Nov 1–8, 2026",
+"desc": "Special dinner menu at $48 per person. Reserve on Resy or call (888) 624-6106.",
+"expires": "2026-11-08",
+"posted": "2026-10-21T21:01:03+0000",
+"url": "https://www.instagram.com/p/DexUuZoChTJ/",
 "img": "",
-"inset": "ig/p18122996332941910.jpg"
+"inset": "ig/p18154222495572399.jpg"
 },
 {
 "id": "18078304106726827",
@@ -473,6 +523,22 @@
 "oldfieldspj": [],
 "secretgardentearoom": [],
 "kilwins_port_jeff": [
+{
+"id": "18120258622975718",
+"biz": "Kilwins Port Jefferson",
+"ig": "kilwins_port_jeff",
+"town": "Port Jefferson",
+"category": "Chocolate/Ice Cream",
+"member": false,
+"title": "NEW Pumpkin Shake with Real Pumpkin",
+"when": "Now - Seasonal",
+"desc": "Try Kilwins' new fall pumpkin shake made with real pumpkin while supplies last.",
+"expires": "2026-11-30",
+"posted": "2026-10-21T22:31:03+0000",
+"url": "https://www.instagram.com/reel/Dexe_YMkQNQ/",
+"img": "",
+"inset": "ig/p18120258622975718.jpg"
+},
 {
 "id": "17946567318348098",
 "biz": "Kilwins Port Jefferson",

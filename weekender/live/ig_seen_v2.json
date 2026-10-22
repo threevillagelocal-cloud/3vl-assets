@@ -439,14 +439,6 @@
 "expires": "",
 "_ts": "2026-09-26T16:21:42+0000"
 },
-"18196775977383774": {
-"special": false,
-"title": "Fall Royalty Menu at Pasta Pasta",
-"when": "Unknown",
-"desc": "Fall Royalty has arrived, but no specific dates or details provided.",
-"expires": "2026-09-27",
-"_ts": "2026-09-21T19:07:45+0000"
-},
 "18120735451901721": {
 "special": false,
 "title": "Warm Up With Soup at PJ Lobster House",
@@ -478,14 +470,6 @@
 "desc": "25% off select wines from Long Island, Italy & California all day. In house only.",
 "expires": "2026-10-10",
 "_ts": "2026-09-23T14:07:09+0000"
-},
-"18128831176689320": {
-"special": false,
-"title": "Ruvo Text Club Signup",
-"when": "Ongoing",
-"desc": "Join the text club for a free cocktail and free birthday treat during birthday month.",
-"expires": "2026-10-27",
-"_ts": "2026-09-21T19:11:16+0000"
 },
 "17974753926131918": {
 "special": false,
@@ -647,14 +631,6 @@
 "expires": "2026-09-27",
 "_ts": "2026-09-25T01:52:33+0000"
 },
-"18111283589034855": {
-"special": false,
-"title": "Fall Seasonal Cocktails",
-"when": "Now available",
-"desc": "Seasonal fall cocktails have arrived at The Pie. Visit to see the full lineup.",
-"expires": "2026-10-11",
-"_ts": "2026-09-21T19:05:48+0000"
-},
 "18117531670758688": {
 "special": false,
 "title": "",
@@ -686,14 +662,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-22T13:15:28+0000"
-},
-"18007503696004777": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-22T01:06:57+0000"
 },
 "18073885922721393": {
 "special": false,
@@ -926,10 +894,6 @@
 "desc": "Emma S. Clark Memorial Library opens at noon to support the Three Village Historical Society's Culper Spy 5K Run.",
 "expires": "2026-09-27",
 "_ts": "2026-09-25T11:07:20+0000"
-},
-"18023085212861294": {
-"special": false,
-"_ts": "2026-09-21T20:27:26+0000"
 },
 "17926860852415540": {
 "special": false,
@@ -3730,5 +3694,69 @@
 "desc": "Half off all drinks (including top shelf) plus food specials at the bar, high tops and lounge.",
 "expires": "2026-10-21",
 "_ts": "2026-10-21T15:02:24+0000"
+},
+"18217945741349180": {
+"special": true,
+"title": "Seafood Stuffed Shells Special",
+"when": "Now",
+"desc": "Seafood Stuffed Shells featured on the specials menu at Tommy's Place.",
+"expires": "2026-11-05",
+"_ts": "2026-10-22T00:17:50+0000"
+},
+"18074576285727806": {
+"special": true,
+"title": "The Dip Schnitz Limited Menu Item",
+"when": "Limited time",
+"desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
+"expires": "2026-11-21",
+"_ts": "2026-10-21T21:25:57+0000"
+},
+"18117453413074762": {
+"special": false,
+"title": "Robinson's Tea Room",
+"when": "Tue-Sun, 11am-4pm",
+"desc": "Fresh-baked scones daily with 50+ tea flavors. Dine in or take out.",
+"expires": "2026-10-22",
+"_ts": "2026-10-21T15:38:04+0000"
+},
+"18110244839627398": {
+"special": true,
+"title": "Long Island Restaurant Week",
+"when": "Nov 1-8 (Closed Mon & Tue)",
+"desc": "Special dining event at Three Village Inn & Mirabelle. Reserve your table via their bio link.",
+"expires": "2026-11-08",
+"_ts": "2026-10-21T19:34:57+0000"
+},
+"18119189521984340": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-21T20:33:01+0000"
+},
+"18154222495572399": {
+"special": true,
+"title": "Long Island Restaurant Week Prix Fixe",
+"when": "Nov 1–8, 2026",
+"desc": "Special dinner menu at $48 per person. Reserve on Resy or call (888) 624-6106.",
+"expires": "2026-11-08",
+"_ts": "2026-10-21T21:01:03+0000"
+},
+"17992503939106514": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-21T19:50:09+0000"
+},
+"18120258622975718": {
+"special": true,
+"title": "NEW Pumpkin Shake with Real Pumpkin",
+"when": "Now - Seasonal",
+"desc": "Try Kilwins' new fall pumpkin shake made with real pumpkin while supplies last.",
+"expires": "2026-11-30",
+"_ts": "2026-10-21T22:31:03+0000"
 }
 }
