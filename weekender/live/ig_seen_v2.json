@@ -95,22 +95,6 @@
 "expires": "2026-09-25",
 "_ts": "2026-09-24T15:35:02+0000"
 },
-"18086389463277172": {
-"special": true,
-"title": "Live Music at Culpers 1778",
-"when": "Every Thursday",
-"desc": "Enjoy live music while dining on expertly prepared steaks and craft cocktails.",
-"expires": "2026-10-10",
-"_ts": "2026-09-22T16:35:51+0000"
-},
-"18100790006049337": {
-"special": false,
-"title": "Steak Oscar at Culpers 1778",
-"when": "Ongoing",
-"desc": "New menu item: Steak Oscar featuring steak and crab at this Setauket steakhouse.",
-"expires": "2026-10-11",
-"_ts": "2026-09-22T15:29:17+0000"
-},
 "18119689529285235": {
 "special": true,
 "title": "Moses Reaper Cheese - Halloween Edition",
@@ -322,14 +306,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-23T16:41:55+0000"
-},
-"18495000901101216": {
-"special": false,
-"title": "Extended Hours at The Study by Toast",
-"when": "Starting Wed, Sept 23",
-"desc": "Now open until 7 PM Wed-Sat and 4 PM Sun-Tue for coffee, food, and studying.",
-"expires": "2026-09-27",
-"_ts": "2026-09-22T15:07:08+0000"
 },
 "18347533030267916": {
 "special": false,
@@ -799,14 +775,6 @@
 "expires": "",
 "_ts": "2026-09-22T19:58:07+0000"
 },
-"17953206768030106": {
-"special": false,
-"title": "Real Estate Listing",
-"when": "Open House ended 9/27",
-"desc": "This is a real estate listing, not a food/drink or event special for the community page.",
-"expires": "2026-09-27",
-"_ts": "2026-09-22T18:29:22+0000"
-},
 "18126990563500773": {
 "special": false,
 "title": "",
@@ -871,14 +839,6 @@
 "expires": "2026-09-27",
 "_ts": "2026-09-23T19:16:22+0000"
 },
-"18343309285250105": {
-"special": true,
-"title": "Beginner Lyrical/Hip Hop Dance Class",
-"when": "Every Friday · 5:30–6:30 PM",
-"desc": "Ages 7+ learn lyrical and hip hop techniques at Roseland Stony Brook Village. Registration open now.",
-"expires": "2026-10-11",
-"_ts": "2026-09-22T18:59:39+0000"
-},
 "18122876903315669": {
 "special": false,
 "_ts": "2026-09-26T14:05:36+0000"
@@ -898,14 +858,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-27T20:05:00+0000"
-},
-"18134718448662722": {
-"special": false,
-"title": "Meet Strollette Mascot Bow Vote",
-"when": "Ongoing",
-"desc": "Comment to vote on mascot bow design and enter to win Joey Z's gift card.",
-"expires": "2026-09-27",
-"_ts": "2026-09-22T16:02:18+0000"
 },
 "18175888669444975": {
 "special": false,
@@ -3726,5 +3678,49 @@
 "desc": "Cinnamon sugar coated churro fries served with caramel sauce for dipping.",
 "expires": "2026-10-22",
 "_ts": "2026-10-22T13:53:35+0000"
+},
+"17941494225389338": {
+"special": false,
+"title": "Edible Gold Flakes Available",
+"when": "Ongoing",
+"desc": "Premiere Pastry Shop features cakes decorated with edible gold flakes.",
+"expires": "2026-10-22",
+"_ts": "2026-10-22T16:01:47+0000"
+},
+"18110514965522268": {
+"special": true,
+"title": "Week 7 Season Pass Pretzel Special",
+"when": "All week",
+"desc": "Season Passholders get Pretzel Sampler for $15 all week long at Burgerology.",
+"expires": "2026-10-28",
+"_ts": "2026-10-22T16:10:36+0000"
+},
+"17909824674564464": {
+"special": true,
+"title": "Caramel Apple Danish Pastry",
+"when": "October 2026",
+"desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
+"expires": "2026-10-31",
+"_ts": "2026-10-22T18:56:21+0000"
+},
+"18397070935167732": {
+"special": false,
+"_ts": "2026-10-22T18:41:45+0000"
+},
+"17961680139246691": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-22T15:42:42+0000"
+},
+"18116670341043180": {
+"special": true,
+"title": "Thursday Happy Hour at Castaways",
+"when": "Every Thursday · 12-6 PM",
+"desc": "Half off all drinks at the inside bar, high tops and lounge.",
+"expires": "2026-10-29",
+"_ts": "2026-10-22T15:01:33+0000"
 }
 }

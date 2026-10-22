@@ -166,7 +166,24 @@
 "inset": "ig/p18150886438536933.jpg"
 }
 ],
-"burgerologyusa": [],
+"burgerologyusa": [
+{
+"id": "18110514965522268",
+"biz": "Burgerology",
+"ig": "burgerologyusa",
+"town": "Stony Brook",
+"category": "Restaurant",
+"member": false,
+"title": "Week 7 Season Pass Pretzel Special",
+"when": "All week",
+"desc": "Season Passholders get Pretzel Sampler for $15 all week long at Burgerology.",
+"expires": "2026-10-28",
+"posted": "2026-10-22T16:10:36+0000",
+"url": "https://www.instagram.com/reel/DezYThhxrkO/",
+"img": "",
+"inset": "ig/p18110514965522268.jpg"
+}
+],
 "ep_restaurant": [],
 "tajcrownofindia": [],
 "rctaqueria": [
@@ -187,7 +204,24 @@
 "inset": "ig/p18504007429100687.jpg"
 }
 ],
-"thestudy.bytoast": [],
+"thestudy.bytoast": [
+{
+"id": "17909824674564464",
+"biz": "The Study by Toast",
+"ig": "thestudy.bytoast",
+"town": "East Setauket",
+"category": "Coffee House",
+"member": false,
+"title": "Caramel Apple Danish Pastry",
+"when": "October 2026",
+"desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
+"expires": "2026-10-31",
+"posted": "2026-10-22T18:56:21+0000",
+"url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
+"img": "",
+"inset": "ig/p17909824674564464.jpg"
+}
+],
 "breakroomny": [],
 "seportdelicatessen": [],
 "toastcoffeeandkitchen": [
@@ -468,6 +502,22 @@
 }
 ],
 "castawayspj": [
+{
+"id": "18116670341043180",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Thursday Happy Hour at Castaways",
+"when": "Every Thursday · 12-6 PM",
+"desc": "Half off all drinks at the inside bar, high tops and lounge.",
+"expires": "2026-10-29",
+"posted": "2026-10-22T15:01:33+0000",
+"url": "https://www.instagram.com/p/DezQcI-Cpph/",
+"img": "",
+"inset": "ig/p18116670341043180.jpg"
+},
 {
 "id": "18154222495572399",
 "biz": "Castaways Steak & Seafood",
