@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-21T23:11:50.995730+00:00",
+"updated": "2026-10-22T01:00:49.292164+00:00",
 "counts": {
-"Three Village Chamber": 6,
+"Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 209,
-"Emma S. Clark Library": 317,
+"Emma S. Clark Library": 316,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 3,
@@ -23,25 +23,6 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
-{
-"id": "3vchamber-1963370",
-"title": "Annual Scarecrow Competition",
-"start": "2026-10-03T00:00:00",
-"end": "2026-10-25T20:00:00",
-"allday": true,
-"venue": "Three Village area",
-"addr": "",
-"url": "https://members.3vchamber.com/event-calendar/Details/annual-scarecrow-competition-1963370",
-"desc": "Grab a ballot from any shop or restaurant",
-"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_518,w_800,x_0,y_0/q_auto/f_auto/c_limit,w_720/q_auto/v1792438314/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/fbb5b5ea4cb64aa18e6c9de4564c8bac/Scarecrow-COMP-png-2026.png",
-"src": "3vchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
 {
 "id": "pjchamber-14726",
 "title": "2026 Port Jefferson Scarecrow Walk",
@@ -300,7 +281,7 @@
 {
 "id": "cur-elephant",
 "title": "Elephant & Piggie's We Are in a Play!",
-"start": "2026-10-21T00:00",
+"start": "2026-10-22T00:00",
 "end": "2026-10-24T23:59",
 "allday": true,
 "ongoing": true,
@@ -322,7 +303,7 @@
 {
 "id": "cur-cabaret",
 "title": "Cabaret",
-"start": "2026-10-21T00:00",
+"start": "2026-10-22T00:00",
 "end": "2026-10-25T23:59",
 "allday": true,
 "ongoing": true,
@@ -343,7 +324,7 @@
 {
 "id": "cur-scarecrow",
 "title": "Stony Brook Village Scarecrows",
-"start": "2026-10-21T00:00",
+"start": "2026-10-22T00:00",
 "end": "2026-10-25T23:59",
 "allday": true,
 "ongoing": true,
@@ -366,7 +347,7 @@
 {
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-21T00:00",
+"start": "2026-10-22T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
@@ -384,25 +365,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "3vchamber-1926284",
-"title": "Meet the Candidates for the November Election",
-"start": "2026-10-21T11:30:00",
-"end": "2026-10-21T13:15:00",
-"allday": false,
-"venue": "Holiday Inn Express Stony Brook",
-"addr": "3131 Nesconset Highway, Centereach, NY 11720",
-"url": "https://members.3vchamber.com/event-calendar/Details/meet-the-candidates-for-the-november-election-1926284",
-"desc": "registration begins at 11:30. Program begins at noon.",
-"img": "",
-"src": "3vchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "emmaclark-library-walking-club-61174",
@@ -1257,25 +1219,6 @@
 "page": "https://www.threevillagelocal.com/events/stony-brook-fire-department-5k-monster-dash-race"
 },
 {
-"id": "3vchamber-1949574",
-"title": "Stony Brook Fire Department- Annual Monster Dash 5K Fun Run",
-"start": "2026-10-31T09:00:00",
-"end": "2026-10-31T10:00:00",
-"allday": false,
-"venue": "Stony Brook Village",
-"addr": "147 Main Street, Stony Brook, NY 11790",
-"url": "https://members.3vchamber.com/event-calendar/Details/stony-brook-fire-department-annual-monster-dash-5k-fun-run-1949574",
-"desc": "Costumes encouraged! - register at https://events.elitefeats.com/26sbfd",
-"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_582,w_900,x_0,y_0/q_auto/f_auto/q_auto/v1791312236/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/61ba1f2675b14806ab9d1b8ab82057e0/FIRE-DEPT-5K-3.png",
-"src": "3vchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-fire-department-annual-monster-dash-5k-fun-run"
-},
-{
 "id": "pjchamber-15008",
 "title": "Trick or Treat in Port Jefferson Village",
 "start": "2026-10-31T11:00:00",
@@ -1331,6 +1274,104 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/the-36th-annual-halloween-festival"
+},
+{
+"id": "pjchamber-15082",
+"title": "Blood Drive",
+"start": "2026-11-01T08:00:00",
+"end": "2026-11-01T15:00:00",
+"allday": false,
+"venue": "Greek Orthodox Church",
+"addr": "430 Sheep Pasture Rd, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/blood-drive-5/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/blood-drive"
+},
+{
+"id": "pjchamber-14900",
+"title": "Return To You: A Limitless Retreat",
+"start": "2026-11-01T08:45:00",
+"end": "2026-11-01T15:30:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/return-to-you-a-limitless-retreat/",
+"desc": "Your day will move intentionally between learning, nourishment, reflection, and restorative experiences—with plenty of space to simply enjoy being there. Arrival + Continental Breakfast Settle in with coffee, tea, fresh fruit, pastries and a light continental ",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
+},
+{
+"id": "portjeff-1098",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-01T09:00:00",
+"end": "2026-11-01T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1098",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-481"
+},
+{
+"id": "emmaclark-autumn-concert-jazz-loft-trio-61286",
+"title": "Autumn Concert with the Jazz Loft Trio",
+"start": "2026-11-01T14:00:00",
+"end": "2026-11-01T15:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/autumn-concert-jazz-loft-trio-61286",
+"desc": "The Jazz Loft Trio will perform a mix of classic jazz standards and Great American Songbook tunes. The Jazz Loft is located in Stony Brook and is the premiere destination for all things Jazz.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/beautiful-golden-saxophone-black-background-close-up2.jpg",
+"src": "emmaclark",
+"tags": [
+"music"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/autumn-concert-with-the-jazz-loft-trio"
+},
+{
+"id": "limehof-202611011500-emmett-hughes",
+"title": "Emmett Hughes",
+"start": "2026-11-01T15:00:00",
+"end": "2026-11-01T17:00:00",
+"allday": false,
+"venue": "The Long Island Music and Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook, NY 11790",
+"url": "https://www.limusichalloffame.org/events/",
+"desc": "Free with Admission. Singer-songwriter Emmett Hughes (Huntington, New York) writes and performs original songs featuring an eclectic mix of styles; rock, reggae, pop and singer songwriter, together with heartfelt lyrics. In addition to being a musical mad scie",
+"img": "https://www.limusichalloffame.org/wp-content/uploads/2026/10/Emmett-Hughes.jpg",
+"src": "limehof",
+"tags": [
+"free",
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": ""
 }
 ],
 "closings": [],
@@ -1576,23 +1617,6 @@
 "page": "https://www.threevillagelocal.com/nantuckets"
 },
 {
-"id": "18122996332941910",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Happy Hour at Castaways",
-"when": "Today, Oct. 21 · 4-6 PM",
-"desc": "Half off all drinks (including top shelf) plus food specials at the bar, high tops and lounge.",
-"expires": "2026-10-21",
-"posted": "2026-10-21T15:02:24+0000",
-"url": "https://www.instagram.com/reel/Dewrm9ZgqxX/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18122996332941910.jpg",
-"page": "https://www.threevillagelocal.com/castaways-steak-seafood"
-},
-{
 "id": "18078304106726827",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -1812,7 +1836,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-21T23:11:11+00:00",
+"checked": "2026-10-22T01:00:15+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
