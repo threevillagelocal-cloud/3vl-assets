@@ -1,7 +1,7 @@
 {
-"updated": "2026-10-22T03:19:21.899970+00:00",
+"updated": "2026-10-22T04:29:22.013208+00:00",
 "counts": {
-"Three Village Chamber": "error: HTTP Error 403: Forbidden",
+"Three Village Chamber": 5,
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
@@ -23,6 +23,25 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
+{
+"id": "3vchamber-1963370",
+"title": "Annual Scarecrow Competition",
+"start": "2026-10-03T00:00:00",
+"end": "2026-10-25T20:00:00",
+"allday": true,
+"venue": "Three Village area",
+"addr": "",
+"url": "https://members.3vchamber.com/event-calendar/Details/annual-scarecrow-competition-1963370",
+"desc": "Grab a ballot from any shop or restaurant",
+"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_518,w_800,x_0,y_0/q_auto/f_auto/c_limit,w_720/q_auto/v1792438314/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/fbb5b5ea4cb64aa18e6c9de4564c8bac/Scarecrow-COMP-png-2026.png",
+"src": "3vchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
 {
 "id": "pjchamber-14726",
 "title": "2026 Port Jefferson Scarecrow Walk",
@@ -1219,6 +1238,25 @@
 "page": "https://www.threevillagelocal.com/events/stony-brook-fire-department-5k-monster-dash-race"
 },
 {
+"id": "3vchamber-1949574",
+"title": "Stony Brook Fire Department- Annual Monster Dash 5K Fun Run",
+"start": "2026-10-31T09:00:00",
+"end": "2026-10-31T10:00:00",
+"allday": false,
+"venue": "Stony Brook Village",
+"addr": "147 Main Street, Stony Brook, NY 11790",
+"url": "https://members.3vchamber.com/event-calendar/Details/stony-brook-fire-department-annual-monster-dash-5k-fun-run-1949574",
+"desc": "Costumes encouraged! - register at https://events.elitefeats.com/26sbfd",
+"img": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_582,w_900,x_0,y_0/q_auto/f_auto/q_auto/v1791312236/tenants/917a7f0d-5511-41bc-8322-24aa8a70856e/61ba1f2675b14806ab9d1b8ab82057e0/FIRE-DEPT-5K-3.png",
+"src": "3vchamber",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/stony-brook-fire-department-annual-monster-dash-5k-fun-run"
+},
+{
 "id": "pjchamber-15008",
 "title": "Trick or Treat in Port Jefferson Village",
 "start": "2026-10-31T11:00:00",
@@ -1419,21 +1457,21 @@
 "page": "https://www.threevillagelocal.com/eat-drink/madiran-the-wine-bar-live-music"
 },
 {
-"id": "wd-eat.namkeen-20261021",
+"id": "wd-eat.namkeen-20261022",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Wing Wednesday: $9.99",
-"when": "Today, Wednesday",
-"desc": "8-piece wings or 12-piece chicken bites for $9.99. Dine-in only.",
-"expires": "2026-10-21",
+"title": "Smash Thursday: $9.99 meal",
+"when": "Today, Thursday",
+"desc": "Classic smash burger meal for $9.99. Dine-in only.",
+"expires": "2026-10-22",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/eat.namkeen.jpg",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-wing-wednesday",
-"label": "Special",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"label": "Event",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
 {
@@ -1557,22 +1595,22 @@
 "page": "https://www.threevillagelocal.com/eat-drink/madiran-the-wine-bar-live-music"
 },
 {
-"id": "wd-eat.namkeen-20261021",
+"id": "wd-eat.namkeen-20261022",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Wing Wednesday: $9.99",
-"when": "Today, Wednesday",
-"desc": "8-piece wings or 12-piece chicken bites for $9.99. Dine-in only.",
-"expires": "2026-10-21",
-"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
+"title": "Smash Thursday: $9.99 meal",
+"when": "Today, Thursday",
+"desc": "Classic smash burger meal for $9.99. Dine-in only.",
+"expires": "2026-10-22",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-wing-wednesday",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
-"label": "Special"
+"label": "Event"
 },
 {
 "id": "17931655359410036",
@@ -1947,7 +1985,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-22T03:18:45+00:00",
+"checked": "2026-10-22T04:28:41+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
@@ -1958,6 +1996,6 @@
 ],
 "cancellations": false,
 "url": "https://www.88844ferry.com/schedule",
-"rescheduled": true
+"rescheduled": false
 }
 }
