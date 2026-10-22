@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-22T01:00:49.292164+00:00",
+"updated": "2026-10-22T02:34:13.280455+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1391,7 +1391,8 @@
 "url": "https://www.instagram.com/reel/Dew1638vYIE/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18150886438536933.jpg",
-"page": "https://www.threevillagelocal.com/ralphs-italian-ices-stony-brook"
+"page": "https://www.threevillagelocal.com/ralphs-italian-ices-stony-brook",
+"label": "Special"
 },
 {
 "id": "17959517340254859",
@@ -1408,7 +1409,8 @@
 "url": "https://www.instagram.com/p/DewQX5hFxU3/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17959517340254859.jpg",
-"page": "https://www.threevillagelocal.com/the-steam-room"
+"page": "https://www.threevillagelocal.com/the-steam-room",
+"label": "Special"
 },
 {
 "id": "17931655359410036",
@@ -1425,7 +1427,8 @@
 "url": "https://www.instagram.com/p/Demr3dLufAE/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17931655359410036.jpg",
-"page": "https://www.threevillagelocal.com/little-cheese"
+"page": "https://www.threevillagelocal.com/little-cheese",
+"label": "Event"
 },
 {
 "id": "18223576354341630",
@@ -1442,41 +1445,44 @@
 "url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18223576354341630.jpg",
-"page": "https://www.threevillagelocal.com/po-boy-brewery"
+"page": "https://www.threevillagelocal.com/po-boy-brewery",
+"label": "Happy hour"
 },
 {
-"id": "18045318959847467",
-"biz": "Fifth Season Restaurant",
-"ig": "fifthseasonrestaurant",
-"town": "Port Jefferson",
+"id": "18504007429100687",
+"biz": "Right Coast Taqueria",
+"ig": "rctaqueria",
+"town": "East Setauket",
 "category": "Restaurant",
 "member": false,
-"title": "Friday Happy Hour at The Fifth",
-"when": "Every Friday",
-"desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
-"expires": "2026-10-23",
-"posted": "2026-10-16T16:39:54+0000",
-"url": "https://www.instagram.com/reel/Dej-smegwuG/",
+"title": "Taco Tuesday Specials",
+"when": "Every Tuesday",
+"desc": "3 specialty tacos for $12 or 3 tacos for $10 on Tuesdays.",
+"expires": "2026-10-27",
+"posted": "2026-10-20T12:23:26+0000",
+"url": "https://www.instagram.com/p/Det0xLPFpkQ/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18045318959847467.jpg",
-"page": "https://www.threevillagelocal.com/the-fifth-season"
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18504007429100687.jpg",
+"page": "https://www.threevillagelocal.com/right-coast-taqueria",
+"label": "Special"
 },
 {
-"id": "18134822992761307",
-"biz": "Nantuckets",
-"ig": "nantucketspjefferson",
-"town": "Port Jefferson",
-"category": "Restaurant (Seafood)",
+"id": "18113767961172883",
+"biz": "Premiere Pastry Shop",
+"ig": "premierepastryshop",
+"town": "Stony Brook",
+"category": "Bakery",
 "member": false,
-"title": "Winter Prix Fixe Menu",
-"when": "Now available",
-"desc": "Enjoy a winter prix fixe menu starting at $42 plus tax with delicious options.",
-"expires": "2026-11-01",
-"posted": "2026-10-18T13:02:41+0000",
-"url": "https://www.instagram.com/p/DeovmBCl5FQ/",
+"title": "Halloween Cakesicles Now Available",
+"when": "Through October 31",
+"desc": "Seasonal Halloween-themed cakesicles are available now at Premiere Pastry Shop.",
+"expires": "2026-10-31",
+"posted": "2026-10-17T17:21:51+0000",
+"url": "https://www.instagram.com/p/DemoZPHCNWS/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18134822992761307.jpg",
-"page": "https://www.threevillagelocal.com/nantuckets"
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18113767961172883.jpg",
+"page": "https://www.threevillagelocal.com/premiere-pastry-shop",
+"label": "Special"
 }
 ],
 "specialsAll": [
@@ -1583,6 +1589,40 @@
 "page": "https://www.threevillagelocal.com/po-boy-brewery"
 },
 {
+"id": "18504007429100687",
+"biz": "Right Coast Taqueria",
+"ig": "rctaqueria",
+"town": "East Setauket",
+"category": "Restaurant",
+"member": false,
+"title": "Taco Tuesday Specials",
+"when": "Every Tuesday",
+"desc": "3 specialty tacos for $12 or 3 tacos for $10 on Tuesdays.",
+"expires": "2026-10-27",
+"posted": "2026-10-20T12:23:26+0000",
+"url": "https://www.instagram.com/p/Det0xLPFpkQ/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18504007429100687.jpg",
+"page": "https://www.threevillagelocal.com/right-coast-taqueria"
+},
+{
+"id": "18113767961172883",
+"biz": "Premiere Pastry Shop",
+"ig": "premierepastryshop",
+"town": "Stony Brook",
+"category": "Bakery",
+"member": false,
+"title": "Halloween Cakesicles Now Available",
+"when": "Through October 31",
+"desc": "Seasonal Halloween-themed cakesicles are available now at Premiere Pastry Shop.",
+"expires": "2026-10-31",
+"posted": "2026-10-17T17:21:51+0000",
+"url": "https://www.instagram.com/p/DemoZPHCNWS/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18113767961172883.jpg",
+"page": "https://www.threevillagelocal.com/premiere-pastry-shop"
+},
+{
 "id": "18045318959847467",
 "biz": "Fifth Season Restaurant",
 "ig": "fifthseasonrestaurant",
@@ -1651,23 +1691,6 @@
 "page": "https://www.threevillagelocal.com/the-whiskey-barrel"
 },
 {
-"id": "18504007429100687",
-"biz": "Right Coast Taqueria",
-"ig": "rctaqueria",
-"town": "East Setauket",
-"category": "Restaurant",
-"member": false,
-"title": "Taco Tuesday Specials",
-"when": "Every Tuesday",
-"desc": "3 specialty tacos for $12 or 3 tacos for $10 on Tuesdays.",
-"expires": "2026-10-27",
-"posted": "2026-10-20T12:23:26+0000",
-"url": "https://www.instagram.com/p/Det0xLPFpkQ/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18504007429100687.jpg",
-"page": "https://www.threevillagelocal.com/right-coast-taqueria"
-},
-{
 "id": "18384649183233226",
 "biz": "Toast Coffee + Kitchen",
 "ig": "toastcoffeeandkitchen",
@@ -1683,23 +1706,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18384649183233226.jpg",
 "page": "https://www.threevillagelocal.com/toast-coffee-kitchen"
-},
-{
-"id": "18113767961172883",
-"biz": "Premiere Pastry Shop",
-"ig": "premierepastryshop",
-"town": "Stony Brook",
-"category": "Bakery",
-"member": false,
-"title": "Halloween Cakesicles Now Available",
-"when": "Through October 31",
-"desc": "Seasonal Halloween-themed cakesicles are available now at Premiere Pastry Shop.",
-"expires": "2026-10-31",
-"posted": "2026-10-17T17:21:51+0000",
-"url": "https://www.instagram.com/p/DemoZPHCNWS/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18113767961172883.jpg",
-"page": "https://www.threevillagelocal.com/premiere-pastry-shop"
 },
 {
 "id": "17946567318348098",
@@ -1791,13 +1797,13 @@
 "The Steam Room",
 "Little Cheese Shop",
 "Po' Boy Brewery",
+"Right Coast Taqueria",
+"Premiere Pastry Shop",
 "Fifth Season Restaurant",
 "Nantuckets",
 "Castaways Steak & Seafood",
 "The Whiskey Barrel",
-"Right Coast Taqueria",
 "Toast Coffee + Kitchen",
-"Premiere Pastry Shop",
 "Kilwins Port Jefferson",
 "Tommy's Place",
 "Namkeen Hot Chicken",
@@ -1836,7 +1842,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-22T01:00:15+00:00",
+"checked": "2026-10-22T02:33:38+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
