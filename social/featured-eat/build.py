@@ -94,13 +94,31 @@ def verify_live(cands, cap):   # cap kept for callers; the homepage already appl
     return out
 
 
+def _live(ref):
+    """Feed photo refs are either a path under weekender/live or (since Oct 2026) a full URL to it: map both to the local file,
+    downloading the URL when the file isn't in this checkout."""
+    if not ref:
+        return ""
+    m = re.search(r"/weekender/live/(.+)$", ref)
+    rel = m.group(1) if m else ref
+    loc = os.path.join(LIVE, rel)
+    if not os.path.exists(loc) and ref.startswith("http"):
+        try:
+            import urllib.request
+            os.makedirs(os.path.dirname(loc), exist_ok=True)
+            open(loc, "wb").write(urllib.request.urlopen(urllib.request.Request(ref, headers={"User-Agent": "3vl-featured"}), timeout=60).read())
+        except Exception as e:
+            print("photo download failed:", ref, e)
+    return loc
+
+
 def photo(kind, a, s, ov):
     """Path of the card photo: override, else the Instagram post image for Instagram specials, else the place's own photo."""
     cands = []
     if ov.get("photo"):
         cands.append(os.path.join(ROOT, ov["photo"]))
     if kind == "ig" and s.get("inset"):
-        cands.append(os.path.join(LIVE, s["inset"]))
+        cands.append(_live(s["inset"]))
     if kind == "hand":
         for key in ("ext", "venue", "dish"):
             if s.get(key):
@@ -111,7 +129,7 @@ def photo(kind, a, s, ov):
         cands.append(os.path.join(WK, m.group(1).replace("-720.webp", ".webp")))
         cands.append(os.path.join(WK, m.group(1)))
     if s.get("inset"):
-        cands.append(os.path.join(LIVE, s["inset"]))
+        cands.append(_live(s["inset"]))
     for c in cands:
         if os.path.exists(c):
             return c
