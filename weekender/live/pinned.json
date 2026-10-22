@@ -1,17 +1,34 @@
 [
  {
-  "id": "pin-madiran-live-music-2026-10",
   "ig": "madiranthewinebar_eastsetauket",
   "biz": "Madiran The Wine Bar",
   "town": "East Setauket",
   "title": "Live Music This Week",
-  "when": "Wed to Sat, from 7 PM",
-  "desc": "Wednesday 7-9 PM: Ray Anderson on trombone and Steve Salerno on guitar. Thursday 7-9 PM: Tim Siciliano on solo guitar. Friday 7-10 PM: Jim Lowe on keys and vocals. Saturday 7-10 PM: Tim Siciliano on solo guitar.",
-  "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-live-music.jpg",
   "inset": "",
-  "url": "https://www.instagram.com/madiranthewinebar_eastsetauket/",
-  "expires": "2026-11-01",
+  "url": "http://madiranthewinebar.com/events.html",
   "label": "Live music",
-  "source": "Madiran's own Instagram/Facebook post, 10/21/2026 (owner screenshot)"
+  "source": "madiranthewinebar.com/events.html + Madiran IG post 10/21/2026",
+  "id": "pin-madiran-2026-10-22",
+  "starts": "2026-10-21",
+  "expires": "2026-10-24",
+  "when": "Thu to Sat, Oct 22-24, from 7 PM",
+  "desc": "Thu Oct 22, 7-9 PM: Tim Siciliano on solo guitar. Fri Oct 23, 7-10 PM: Jim Lowe on keys and vocals. Sat Oct 24, 7-10 PM: Tim Siciliano on solo guitar.",
+  "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-22.jpg"
+ },
+ {
+  "ig": "madiranthewinebar_eastsetauket",
+  "biz": "Madiran The Wine Bar",
+  "town": "East Setauket",
+  "title": "Live Music This Week",
+  "inset": "",
+  "url": "http://madiranthewinebar.com/events.html",
+  "label": "Live music",
+  "source": "madiranthewinebar.com/events.html + Madiran IG post 10/21/2026",
+  "id": "pin-madiran-2026-10-28",
+  "starts": "2026-10-25",
+  "expires": "2026-10-31",
+  "when": "Wed to Sat, Oct 28-31, from 7 PM",
+  "desc": "Wed Oct 28, 7-9 PM: Rod Borrie on trombone and Vincent Loccisano on keys. Thu Oct 29, 7-9 PM: Phil Rinaldi. Fri Oct 30, 7-10 PM: Jim Lowe. Sat Oct 31, 7-10 PM: Douglas Baldwin Jazz Trio.",
+  "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-28.jpg"
  }
 ]

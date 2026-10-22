@@ -1,0 +1,84 @@
+{
+ "ralphsitalianicesstonybrook": {
+  "file": "ralphsitalianicesstonybrook.jpg",
+  "source": "Owner's previously used Ralph's Stony Brook storefront graphic (Desktop/graphics complete/three village local/ralphs2.png)",
+  "alt": {
+   "file": "ralphsitalianicesstonybrook-alt.jpg",
+   "source": "Google Maps photo of Ralph's Stony Brook storefront, 1320-24 Stony Brook Rd (maps place 0xeab606592448386b); real-photo alternative"
+  },
+  "note": "Main = owner's previously used storefront graphic (stylized/illustrated look, not a straight photo). Alt = real Google Maps photo of the same storefront."
+ },
+ "littlecheeseshop": {
+  "file": "littlecheeseshop.jpg",
+  "source": "Google Maps photo of Little Cheese storefront, 127 Main St, Stony Brook Village (maps place 0x68535e271d0c1fc2)"
+ },
+ "thesteamroomrestaurant": {
+  "file": "thesteamroomrestaurant.jpg",
+  "source": "Google Maps photo of The Steam Room storefront, 4 E Broadway, Port Jefferson (maps place 0x124b46090405e8d5)"
+ },
+ "rctaqueria": {
+  "file": "rctaqueria.jpg",
+  "source": "Google Maps photo of Right Coast Taqueria Setauket storefront, 4088 Nesconset Hwy (maps place 0x3680454af9f67376)"
+ },
+ "premierepastryshop": {
+  "file": "premierepastryshop.jpg",
+  "source": "3vl-private/pitches/src/premiere-pastry-shop/exterior-1.jpg (our RP pitch hero, Stony Brook Village Center)"
+ },
+ "eat.namkeen": {
+  "file": "eat.namkeen.jpg",
+  "source": "Google Maps photo of Namkeen Stony Brook storefront, 1320 Stony Brook Rd (maps place 0xdf59842a46820446); replaces pre-opening coming-soon photo"
+ },
+ "djsclamshackstonybrook": {
+  "file": "djsclamshackstonybrook.jpg",
+  "source": "3vl-assets/weekender/2026-10-02/djs-ext.webp (previously used)"
+ },
+ "madiranthewinebar_eastsetauket": {
+  "file": "madiranthewinebar_eastsetauket.jpg",
+  "source": "3vl-private/pitches/src/madiran-the-wine-bar/exterior-1.jpg (dusk storefront, our RP pitch hero)"
+ },
+ "tommysplaceportjeff_": {
+  "file": "tommysplaceportjeff_.jpg",
+  "source": "3vl-private/pitches/src/tommys-place/exterior-1.jpg (owner-supplied blue hour storefront, approved welcome graphic source)"
+ },
+ "fifthseasonrestaurant": {
+  "file": "fifthseasonrestaurant.jpg",
+  "source": "Fifth Season's own Instagram post https://www.instagram.com/p/DK0IGFCSjWA/ (sign + building, 6/12/2025)"
+ },
+ "nantucketspjefferson": {
+  "file": "nantucketspjefferson.jpg",
+  "source": "Google Maps photo of Nantuckets building + harbor patio, 9 Traders Cove, Port Jefferson (maps place 0x39b57d4a2f1bbe0f)",
+  "note": "Weak: building and harbor patio, no Nantuckets sign visible. Owner photo of the front sign would be better."
+ },
+ "castawayspj": {
+  "file": "castawayspj.jpg",
+  "source": "3vl-share/p/castaways-steak-and-seafood.jpg (our listing photo)"
+ },
+ "thewhiskeybarrelportjeff": {
+  "file": "thewhiskeybarrelportjeff.jpg",
+  "source": "3vl-share/p/the-whiskey-barrel.jpg (our listing photo, 138 Main St)"
+ },
+ "poboybeerandcider": {
+  "file": "poboybeerandcider.jpg",
+  "source": "Google Maps photo of Po' Boy Brewery front, 200 Wilson St, Port Jefferson Station (maps place 0xff907dfc47f68e1d)"
+ },
+ "toastcoffeeandkitchen": {
+  "file": "toastcoffeeandkitchen.jpg",
+  "source": "3vl-share/p/toast-coffee-kitchen.jpg (650 Route 112 PJS storefront; matches Toast IG post https://www.instagram.com/p/DcJXhX2ldhQ/)"
+ },
+ "kilwins_port_jeff": {
+  "file": "kilwins_port_jeff.jpg",
+  "source": "Kilwins official Port Jefferson store page https://www.kilwins.com/portjefferson (store exterior photo)"
+ },
+ "culpers1778": {
+  "file": "culpers1778.jpg",
+  "source": "3vl-assets/weekender/2026-10-02/culpers-ext.webp (previously used, re-edited)"
+ },
+ "countrycornerlongisland": {
+  "file": "countrycornerlongisland.jpg",
+  "source": "3vl-assets/weekender/2026-10-02/cc-ext.webp (previously used, re-edited)"
+ },
+ "ixchelmexicancuisine": {
+  "file": "ixchelmexicancuisine.jpg",
+  "source": "3vl-assets/weekender/2026-10-02/ixchel-ext.webp (previously used, re-edited)"
+ }
+}

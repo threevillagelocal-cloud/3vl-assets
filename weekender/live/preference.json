@@ -12,7 +12,6 @@
   "djsclamshackstonybrook",
   "eatschnitzels",
   "ralphsitalianicesstonybrook",
-  "thesteamroomrestaurant",
   "burgerologyusa",
   "seportdelicatessen",
   "thestudy.bytoast",
@@ -59,5 +58,9 @@
  "always": [
   "eat.namkeen"
  ],
- "_always": "Owner 10/21/2026: always on the homepage when they have a current special or daily deal (after pinned highlights)."
+ "_always": "Owner 10/21/2026: always on the homepage when they have a current special or daily deal (after pinned highlights).",
+ "no_promo": [
+  "thesteamroomrestaurant"
+ ],
+ "_no_promo": "Owner 10/21/2026: never on the homepage Eat & Drink or the featured reel (The Steam Room may claim a listing, but no promotion)."
 }

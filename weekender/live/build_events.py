@@ -300,7 +300,7 @@ def main():
     # PINNED weekly highlights (owner 10/21/2026: Madiran live music as a weekly highlight): weekender/live/pinned.json,
     # each {ig, biz, town, title, when, desc, img, url, expires, label}; shown first on the homepage until it expires.
     try:
-        pinned = [p for p in json.load(open(os.path.join(HERE, "pinned.json"), encoding="utf-8")) if p.get("expires", "9999") >= dt.date.today().isoformat()]
+        pinned = [p for p in json.load(open(os.path.join(HERE, "pinned.json"), encoding="utf-8")) if p.get("starts", "0000") <= dt.date.today().isoformat() <= p.get("expires", "9999")]
     except Exception as ex:
         print("pinned.json:", ex)
         pinned = []
@@ -322,6 +322,8 @@ def main():
         names_by_ig = {x["ig"].lower(): x["name"].lower() for x in json.load(open(os.path.join(HERE, "ig_accounts.json"), encoding="utf-8"))}
         pin_keys += [names_by_ig[h.lower()] for h in pref.get("always", []) if h.lower() in names_by_ig and names_by_ig[h.lower()] not in pin_keys]
         places = [k for k in pin_keys if k in first] + [k for k in places if k not in pin_keys]
+        nopromo = {names_by_ig[h.lower()] for h in pref.get("no_promo", []) if h.lower() in names_by_ig}   # owner: listing OK, no promo
+        places = [k for k in places if k not in nopromo]
         # Port Jefferson STATION is never featured on the homepage unless the owner says so (owner 10/21/2026); only PJ village 11777.
         if not pref.get("allow_pjs"):
             places = [k for k in places if "port jefferson station" not in (first[k].get("town") or "").lower()]
