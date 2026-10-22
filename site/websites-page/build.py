@@ -18,7 +18,7 @@ D.TITLE = "AI-Ready Websites for Long Island Businesses | Three Village Local"
 D.DESC = ("Websites built for customers and for AI: designed, built and hosted for you, readable by Google and AI assistants like ChatGPT, "
           "with an optional AI chat assistant. Member pricing for Three Village Local businesses.")
 D.FB_TITLE = "AI-Driven Websites: Design, Build, Host"
-D.FB_IMAGE = "https://threevillagelocal-cloud.github.io/3vl-share/site/websites/share-ai-websites-v1.jpg"
+D.FB_IMAGE = "/share/ai-websites-v1.jpg"   # BD mangles external og:image URLs; redirect 2253 -> 3vl-share/site/websites/share-ai-websites-v1.jpg
 
 
 def section(src, cls):
