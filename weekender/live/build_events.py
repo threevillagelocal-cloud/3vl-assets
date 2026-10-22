@@ -331,7 +331,7 @@ def main():
         is_pj = lambda k: "port jeff" in (first[k].get("town") or "").lower()
         chosen = [k for k in places if not is_pj(k)]   # pinned places are first in places, so they are always kept
         pj = [k for k in places if is_pj(k)]
-        need_pj = max(min(pj_max, len(pj)), cap_n - len(chosen))
+        need_pj = min(len(pj), 3, max(int(pref.get("pj_min", 1)), cap_n - len(chosen)))   # at least pj_min, more only if Setauket/Stony Brook run short (never over 3)
         pick_set = set(chosen[:cap_n - min(need_pj, len(pj))] + pj[:need_pj])
         places = [k for k in places if k in pick_set] + [k for k in places if k not in pick_set]
         pos = {k: i for i, k in enumerate(places)}
