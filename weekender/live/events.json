@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-22T02:39:58.570513+00:00",
+"updated": "2026-10-22T02:41:23.156615+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1377,22 +1377,20 @@
 "closings": [],
 "specials": [
 {
-"id": "18150886438536933",
-"biz": "Ralph's Famous Italian Ices & Ice Cream",
-"ig": "ralphsitalianicesstonybrook",
-"town": "Stony Brook",
-"category": "Ice Cream",
-"member": false,
-"title": "Final Day: Seasonal Closure This Sunday",
-"when": "Sun, Oct. 24",
-"desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
-"expires": "2026-10-24",
-"posted": "2026-10-21T16:38:20+0000",
-"url": "https://www.instagram.com/reel/Dew1638vYIE/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18150886438536933.jpg",
-"page": "https://www.threevillagelocal.com/ralphs-italian-ices-stony-brook",
-"label": "Special"
+"id": "pin-madiran-live-music-2026-10",
+"ig": "madiranthewinebar_eastsetauket",
+"biz": "Madiran The Wine Bar",
+"town": "East Setauket",
+"title": "Live Music This Week",
+"when": "Wed to Sat, from 7 PM",
+"desc": "Wednesday 7-9 PM: Ray Anderson on trombone and Steve Salerno on guitar. Thursday 7-9 PM: Tim Siciliano on solo guitar. Friday 7-10 PM: Jim Lowe on keys and vocals. Saturday 7-10 PM: Tim Siciliano on solo guitar.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-live-music.jpg",
+"inset": "",
+"url": "https://www.instagram.com/madiranthewinebar_eastsetauket/",
+"expires": "2026-11-01",
+"label": "Live music",
+"source": "Madiran's own Instagram/Facebook post, 10/21/2026 (owner screenshot)",
+"pinned": true
 },
 {
 "id": "17959517340254859",
@@ -1487,21 +1485,20 @@
 ],
 "specialsAll": [
 {
-"id": "18150886438536933",
-"biz": "Ralph's Famous Italian Ices & Ice Cream",
-"ig": "ralphsitalianicesstonybrook",
-"town": "Stony Brook",
-"category": "Ice Cream",
-"member": false,
-"title": "Final Day: Seasonal Closure This Sunday",
-"when": "Sun, Oct. 24",
-"desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
-"expires": "2026-10-24",
-"posted": "2026-10-21T16:38:20+0000",
-"url": "https://www.instagram.com/reel/Dew1638vYIE/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18150886438536933.jpg",
-"page": "https://www.threevillagelocal.com/ralphs-italian-ices-stony-brook"
+"id": "pin-madiran-live-music-2026-10",
+"ig": "madiranthewinebar_eastsetauket",
+"biz": "Madiran The Wine Bar",
+"town": "East Setauket",
+"title": "Live Music This Week",
+"when": "Wed to Sat, from 7 PM",
+"desc": "Wednesday 7-9 PM: Ray Anderson on trombone and Steve Salerno on guitar. Thursday 7-9 PM: Tim Siciliano on solo guitar. Friday 7-10 PM: Jim Lowe on keys and vocals. Saturday 7-10 PM: Tim Siciliano on solo guitar.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-live-music.jpg",
+"inset": "",
+"url": "https://www.instagram.com/madiranthewinebar_eastsetauket/",
+"expires": "2026-11-01",
+"label": "Live music",
+"source": "Madiran's own Instagram/Facebook post, 10/21/2026 (owner screenshot)",
+"pinned": true
 },
 {
 "id": "17959517340254859",
@@ -1741,6 +1738,23 @@
 "page": "https://www.threevillagelocal.com/djs-clam-shack"
 },
 {
+"id": "18150886438536933",
+"biz": "Ralph's Famous Italian Ices & Ice Cream",
+"ig": "ralphsitalianicesstonybrook",
+"town": "Stony Brook",
+"category": "Ice Cream",
+"member": false,
+"title": "Final Day: Seasonal Closure This Sunday",
+"when": "Sun, Oct. 24",
+"desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
+"expires": "2026-10-24",
+"posted": "2026-10-21T16:38:20+0000",
+"url": "https://www.instagram.com/reel/Dew1638vYIE/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18150886438536933.jpg",
+"page": "https://www.threevillagelocal.com/ralphs-italian-ices-stony-brook"
+},
+{
 "id": "18223576354341630",
 "biz": "Po' Boy Brewery",
 "ig": "poboybeerandcider",
@@ -1793,7 +1807,7 @@
 }
 ],
 "eatOrder": [
-"Ralph's Famous Italian Ices & Ice Cream",
+"Madiran The Wine Bar",
 "The Steam Room",
 "Little Cheese Shop",
 "Fifth Season Restaurant",
@@ -1806,9 +1820,9 @@
 "Tommy's Place",
 "Namkeen Hot Chicken",
 "DJ's Clam Shack (Stony Brook)",
+"Ralph's Famous Italian Ices & Ice Cream",
 "Culpers 1778",
 "The Country Corner",
-"Madiran The Wine Bar",
 "Ixchel Mexican Cuisine",
 "Schnitzels",
 "Burgerology",
@@ -1842,7 +1856,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-22T02:39:27+00:00",
+"checked": "2026-10-22T02:40:43+00:00",
 "alerts": [
 {
 "title": "PT Barnum Elevator Out of Service",
