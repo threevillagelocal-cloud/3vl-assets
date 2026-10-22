@@ -75,7 +75,7 @@ READY = card("ready", "AI-Ready", "AI can find you. Built so Google and AI assis
     "Your business clearly labeled for Google and AI: services, hours, area, reviews",
     "A page for every service, plus FAQs the way people ask",
     "Fast, mobile-first and secure, with a lead form to your inbox",
-    "Hosting, domain setup and updates included",
+    "Hosting, security and ongoing updates included: just message us your changes",
     "3VL Launch Spotlight + 3 months Featured on Three Village Local"])
 POWERED = card("powered", "AI-Powered", "AI works for you. Everything in AI-Ready, plus tools that bring in customers on their own.", [
     "Everything in AI-Ready",
@@ -122,14 +122,14 @@ BUNDLES = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
   </div>
   <div class="tvs-cards tvw-two">
 ''' + READY + POWERED + '''  </div>
-  <p class="tvs-fine tvs-up"><b>Half to start, the rest only when you love it.</b> Your start-up fee includes your first month. After that, the monthly plan covers hosting, security, updates and support, month to month. Your domain is registered in your name.</p>
+  <p class="tvs-fine tvs-up"><b>Half to start, the rest only when you love it.</b> Your start-up fee includes your first month. After that, your monthly plan covers hosting, security and support, plus your updates and changes: email or text us what you need and we handle it. Month to month. Your domain is registered in your name.</p>
 </section>'''
 
 ADDS_SEC = '''<section class="tvs-sec tvw-adds" id="tvw-adds">
   <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Add-ons</p><h2>More we can build for you.</h2>
     <p>Add any of these to your package, now or later. Same local team, same care.</p></div>
   <div class="tvw-add-grid"><div class="tvw-add tvs-up"><span>&#129302;</span><b>AI chat assistant</b><p>Answers customer questions 24/7 on your site and sends you the lead.</p></div><div class="tvw-add tvs-up"><span>&#128197;</span><b>Online booking</b><p>Appointments, reservations or quote requests that land in your calendar.</p></div><div class="tvw-add tvs-up"><span>&#128722;</span><b>Online store + payments</b><p>Sell products, gift cards or deposits with Stripe, Square or Shopify.</p></div><div class="tvw-add tvs-up"><span>&#9993;&#65039;</span><b>Email on your domain</b><p>you@yourbusiness.com, set up with Google Workspace.</p></div><div class="tvw-add tvs-up"><span>&#128260;</span><b>Site rescue + move</b><p>Move off Wix, Squarespace or GoDaddy and fix what was holding you back.</p></div><div class="tvw-add tvs-up"><span>&#9889;</span><b>Speed tune-up</b><p>Make a slow site load fast on phones, scored on Google's own test.</p></div><div class="tvw-add tvs-up"><span>&#128200;</span><b>Lead tracking + reports</b><p>See where calls and form leads come from, in plain English each month.</p></div><div class="tvw-add tvs-up"><span>&#127919;</span><b>Ad landing pages</b><p>Pages built for Google and Facebook ads, with conversion tracking.</p></div><div class="tvw-add tvs-up"><span>&#11088;</span><b>Reviews showcase</b><p>Your best Google reviews shown on your site, updated automatically.</p></div><div class="tvw-add tvs-up"><span>&#129518;</span><b>Custom tools</b><p>Quote estimators, calculators, menus, event calendars and more.</p></div><div class="tvw-add tvs-up"><span>&#128240;</span><b>Newsletter signup</b><p>Grow an email list of local customers right from your site.</p></div><div class="tvw-add tvs-up"><span>&#9855;</span><b>Accessibility upgrades</b><p>Easier to use for everyone, built to modern accessibility standards.</p></div></div>
-  <p class="tvs-fine tvs-up">Pricing depends on what you need. <a href="#tvs-book">Ask us on your free call.</a></p>
+  <p class="tvs-fine tvs-up">Pricing depends on what you need. <a href="#tvs-book">Send us a message</a> and we will put it together for you.</p>
 </section>'''
 
 SHIFT_SEC = '''<section class="tvs-sec tvw-shift" id="tvw-shift">
@@ -239,6 +239,14 @@ h = rep(h, "Websites + Google + AI search + Social + Video + Drone + Marketing",
 h = rep(h, "Your website, Google, AI search, social media, video and marketing, built by one local team to work as one. Then we launch it in front of the whole town on Three Village Local.",
         "Websites that do more than show off your business: they feed AI tools like ChatGPT and Google the facts they need to recommend you. Designed, built and hosted by one local team, then launched to the whole town on Three Village Local.")
 h = rep(h, 'href="#tvs-bundles">See the bundles</a>', 'href="#tvs-bundles">See the packages</a>')
+# owner 10/22: encourage email/messaging over calls (a call only if needed)
+h = rep(h, '<a class="tvs-btn tvs-ghost" href="#tvs-book">Book a free call</a>', '<a class="tvs-btn tvs-ghost" href="#tvs-book">Send us a message</a>')
+h = rep(h, '<a class="tvs-sticky" href="#tvs-book">Book a free call</a>', '<a class="tvs-sticky" href="#tvs-book">Send us a message</a>')
+h = rep(h, '<h3>Free call</h3><p>Tell us about your business. 15 minutes, no pressure.</p>', '<h3>Send a message</h3><p>Tell us about your business by email or the form below. No pressure.</p>')
+h = rep(h, '<h2>Book your free 15-minute call.</h2>', '<h2>Tell us about your business.</h2>')
+h = rep(h, '<p>Tell us a little about your business. We will reach out within one business day.</p>', '<p>Send us a quick message and we will reply by email, usually within one business day. Everything can happen by email or text. If you would rather talk it through, we are happy to set up a call.</p>')
+h = rep(h, '<li><b>No</b>long contracts</li>', '<li><b>Updates</b>included</li>')
+h = rep(h, '<details><summary>Do I own my website and domain?</summary>', '<details open><summary>Are updates and changes included?</summary><p>Yes. Your monthly plan covers the everyday changes: new photos, prices, menus, hours, services, specials and seasonal updates. Just email or text us what you need and we take care of it. No tickets, no extra bills for the small stuff.</p></details>\n    <details><summary>Do I own my website and domain?</summary>')
 h = re.sub(r'\n    <a class="tvs-newlink"[^\n]*</a>', "", h)
 h = cut(h, "tvs-sec tvs-social")                  # "Your content, seen all over town" (social media service)
 h = swap(h, "tvs-sec tvs-work", WORK)              # promo video + social posts -> real websites + phone
@@ -263,7 +271,7 @@ HTML = h
 
 PRICES = ("var P={webready:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},webpowered:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},"
                     % (PR["web-ready-regular"] + PR["web-ready-member"] * 3 + PR["web-powered-regular"] + PR["web-powered-member"] * 3))
-GOJS = '''<script>(function(){var n0=0,iv=setInterval(function(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value='web_consult';var g=s.closest('.form-group')||s.parentNode;g.style.display='none';clearInterval(iv)}if(++n0>40)clearInterval(iv)},250);function upd(){var b=document.querySelector('#tvs .tvs-tiers button.on'),m=!b||b.getAttribute('data-t')!=='all';
+GOJS = '''<script>(function(){var nb=0,ib=setInterval(function(){[].forEach.call(document.querySelectorAll('input[type="submit"][id^="services_inquiry"],#tvs-form-slot input[type="submit"]'),function(x){if(x.value!=='Send my message'){x.value='Send my message';x.setAttribute('value','Send my message')}});var t=document.querySelector('#tvs-form-slot textarea[name="comments"]');if(t)t.placeholder='Your current website (if any), what you want more of, anything we should know';if(++nb>120)clearInterval(ib)},250);var n0=0,iv=setInterval(function(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value='web_consult';var g=s.closest('.form-group')||s.parentNode;g.style.display='none';clearInterval(iv)}if(++n0>40)clearInterval(iv)},250);function upd(){var b=document.querySelector('#tvs .tvs-tiers button.on'),m=!b||b.getAttribute('data-t')!=='all';
 [].forEach.call(document.querySelectorAll('#tvs .tvw-go'),function(a){a.href=m?a.getAttribute('data-m'):a.getAttribute('data-r')})}
 document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('#tvs .tvs-tiers button'))setTimeout(upd,0)});upd()})();</script>'''
 
