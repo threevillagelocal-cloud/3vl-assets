@@ -59,3 +59,16 @@ jobs:
           mkdir -p data/featured && date -u +%FT%TZ > data/featured/ping.txt
           git add data/featured/ping.txt && git commit -qm "specials refreshed"
           for i in 1 2 3 4; do git pull -q --rebase --autostash && git push -q && exit 0; sleep 10; done
+      - name: Eat & Drink landing pages (the site guard builds them only when needed)
+        env:
+          GUARD_DEPLOY_KEY: ${{ secrets.GUARD_DEPLOY_KEY }}
+        run: |
+          git pull -q --rebase --autostash || true
+          python weekender/live/eat_need.py || exit 0
+          mkdir -p ~/.ssh && printf '%s\n' "$GUARD_DEPLOY_KEY" > ~/.ssh/guard && chmod 600 ~/.ssh/guard
+          export GIT_SSH_COMMAND="ssh -i ~/.ssh/guard -o StrictHostKeyChecking=accept-new"
+          rm -rf /tmp/guard-eat && git clone -q --depth 1 git@github.com:threevillagelocal-cloud/3vl-site-guard.git /tmp/guard-eat && cd /tmp/guard-eat
+          git config user.name "3VL events bot" && git config user.email "actions@users.noreply.github.com"
+          mkdir -p data/clock && date -u +%FT%TZ > data/clock/eat.txt
+          git add data/clock/eat.txt && git commit -qm "eat pages needed"
+          for i in 1 2 3 4; do git pull -q --rebase --autostash && git push -q && exit 0; sleep 10; done

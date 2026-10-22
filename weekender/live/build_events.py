@@ -367,6 +367,18 @@ def main():
             s["label"] = s.get("label") or special_label(s)
         specials_all.sort(key=lambda s: pos.get((s.get("biz") or "").lower(), 999))
         eat_order = [first[k]["biz"] for k in places] + [n for n in eat_order if n.lower() not in pos]
+    # Each special's own landing page on our site (eat_pages.json, written by the site guard): the card links there;
+    # "profile" keeps the business's 3VL listing for the name link. Without a landing page the card goes to the listing.
+    try:
+        eat_pages = json.load(open(os.path.join(HERE, "eat_pages.json"), encoding="utf-8"))
+    except Exception:
+        eat_pages = {}
+    for s in specials + specials_all:
+        if "profile" not in s:
+            s["profile"] = s["page"] if "/eat-drink/" not in (s.get("page") or "") and s.get("page") else listing_for(s.get("biz", ""))
+        lp = eat_pages.get(s.get("id") or "") if not str(s.get("id") or "").startswith("_") else ""
+        s["page"] = (SITE + lp if lp.startswith("/") else lp) if lp else s["profile"]
+        s["label"] = s.get("label") or special_label(s)
     if not pref.get("live"):
         specials, specials_all = [], []
     data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings, "specials": specials,

@@ -13,7 +13,30 @@
   "expires": "2026-10-24",
   "when": "Thu to Sat, Oct 22-24, from 7 PM",
   "desc": "Thu Oct 22, 7-9 PM: Tim Siciliano on solo guitar. Fri Oct 23, 7-10 PM: Jim Lowe on keys and vocals. Sat Oct 24, 7-10 PM: Tim Siciliano on solo guitar.",
-  "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-22.jpg"
+  "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-22.jpg",
+  "lineup": [
+   {
+    "day": "Thu",
+    "date": "Oct 22",
+    "time": "7-9 PM",
+    "who": "Tim Siciliano",
+    "what": "Solo guitar"
+   },
+   {
+    "day": "Fri",
+    "date": "Oct 23",
+    "time": "7-10 PM",
+    "who": "Jim Lowe",
+    "what": "Keys and vocals"
+   },
+   {
+    "day": "Sat",
+    "date": "Oct 24",
+    "time": "7-10 PM",
+    "who": "Tim Siciliano",
+    "what": "Solo guitar"
+   }
+  ]
  },
  {
   "ig": "madiranthewinebar_eastsetauket",
@@ -29,6 +52,36 @@
   "expires": "2026-10-31",
   "when": "Wed to Sat, Oct 28-31, from 7 PM",
   "desc": "Wed Oct 28, 7-9 PM: Rod Borrie on trombone and Vincent Loccisano on keys. Thu Oct 29, 7-9 PM: Phil Rinaldi. Fri Oct 30, 7-10 PM: Jim Lowe. Sat Oct 31, 7-10 PM: Douglas Baldwin Jazz Trio.",
-  "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-28.jpg"
+  "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-28.jpg",
+  "lineup": [
+   {
+    "day": "Wed",
+    "date": "Oct 28",
+    "time": "7-9 PM",
+    "who": "Rod Borrie and Vincent Loccisano",
+    "what": "Trombone and keys"
+   },
+   {
+    "day": "Thu",
+    "date": "Oct 29",
+    "time": "7-9 PM",
+    "who": "Phil Rinaldi",
+    "what": ""
+   },
+   {
+    "day": "Fri",
+    "date": "Oct 30",
+    "time": "7-10 PM",
+    "who": "Jim Lowe",
+    "what": ""
+   },
+   {
+    "day": "Sat",
+    "date": "Oct 31",
+    "time": "7-10 PM",
+    "who": "Douglas Baldwin Jazz Trio",
+    "what": "Jazz trio"
+   }
+  ]
  }
 ]
