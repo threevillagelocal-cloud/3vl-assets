@@ -1,11 +1,11 @@
 {
- "checked": "2026-10-22T23:00:15+00:00",
+ "checked": "2026-10-23T00:33:31+00:00",
  "alerts": [
   {
    "title": "Departure Cancellations - Thursday October 22",
-   "text": "The following departures have been cancelled Thur. 10/22: Departing Port Jefferson - 7:00 AM, 10:00 AM, 1:15 PM & 4:30 PM. Departing Bridgeport - 8:30 AM, 11:45 AM, 2:45 PM & 6:15 PM",
+   "text": "The following departures have been cancelled Thur. 10/22: Departing Port Jefferson - 7:00 AM, 10:00 AM, 1:15 PM, 4:30 PM & 7:45 PM. Departing Bridgeport - 8:30 AM, 11:45 AM, 2:45 PM, 6:15 PM& 8:15 PM.",
    "link": "https://www.88844ferry.com/schedule",
-   "published": "2026-10-22T20:10:32.835Z"
+   "published": "2026-10-22T23:15:57.735Z"
   }
  ],
  "cancellations": true,
