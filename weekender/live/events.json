@@ -1791,19 +1791,5 @@
 "The Secret Garden Tea Room",
 "Port Jefferson Ice Cream Cafe"
 ],
-"eatCap": 6,
-"ferry": {
-"checked": "2026-10-23T03:06:14+00:00",
-"alerts": [
-{
-"title": "PT Barnum Elevator Out of Service",
-"text": "At this time the PT Barnum's elevator is under repair, more info and affected departures available by clicking below.",
-"link": "https://www.88844ferry.com/info/elevator-alert",
-"published": "2026-10-23T02:19:02.479Z"
-}
-],
-"cancellations": true,
-"url": "https://www.88844ferry.com/schedule",
-"rescheduled": false
-}
+"eatCap": 6
 }

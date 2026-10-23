@@ -384,7 +384,7 @@ def main():
     data = {"updated": dt.datetime.now(dt.timezone.utc).isoformat(), "counts": counts, "icons": ICON, "events": final, "closings": closings, "specials": specials,
             "specialsAll": specials_all, "eatOrder": eat_order, "eatCap": int(pref.get("cap", 9))}
     fpath = os.path.join(HERE, "ferry.json")   # Port Jefferson Ferry service alerts (ferry.py); the homepage strip only shows service alerts
-    if os.path.exists(fpath):
+    if False and os.path.exists(fpath):   # ferry strip REMOVED from the homepage (owner 10/22: showed cancellations the ferry site did not state, twice)
         data["ferry"] = json.load(open(fpath, encoding="utf-8"))
     json.dump(data, open(os.path.join(HERE, "events.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     # events kept OFF the site because they match the never-promote list; the owner reviews these and may OK some (10/16/2026)
