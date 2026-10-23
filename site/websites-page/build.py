@@ -22,7 +22,7 @@ D.TITLE = "AI-Ready Websites for Long Island Businesses | Three Village Local"
 D.DESC = ("Websites built for customers and for AI: designed, built and hosted by one local team, set up for Google and AI search, "
           "then launched to the whole town on Three Village Local. Member pricing for Featured and VIP members of Three Village Local.")
 D.FB_TITLE = "AI-Driven Websites: Design, Build, Host"
-D.FB_IMAGE = "/share/ai-websites-v1.jpg"   # BD mangles external og:image URLs; redirect 2253 -> 3vl-share/site/websites/share-ai-websites-v1.jpg
+D.FB_IMAGE = "/share/ai-websites-v2.jpg"   # BD mangles external og:image URLs; redirect -> 3vl-share/site/websites/share-ai-websites-v2.jpg (v2 10/23: navy/electric-blue AI style; v1 = redirect 2253)
 
 SHARE = "https://threevillagelocal-cloud.github.io/3vl-share/site/websites/"
 D.HEAD = ""   # tried a hero preload 10/22: no LCP gain (BD template is the bottleneck)
