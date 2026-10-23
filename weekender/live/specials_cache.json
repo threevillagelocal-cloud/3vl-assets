@@ -1,5 +1,22 @@
 {
-"countrycornerlongisland": [],
+"countrycornerlongisland": [
+{
+"id": "18481707613112188",
+"biz": "The Country Corner",
+"ig": "countrycornerlongisland",
+"town": "East Setauket",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Live Music Night",
+"when": "Sat, Oct. 25 · 6:30 PM",
+"desc": "Live music on the back patio with good food and craft drink options.",
+"expires": "2026-10-25",
+"posted": "2026-10-23T14:28:52+0000",
+"url": "https://www.instagram.com/p/De1xSHCx8K7/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+"inset": "ig/p18481707613112188.jpg"
+}
+],
 "madiranthewinebar_eastsetauket": [],
 "tommysplaceportjeff_": [
 {

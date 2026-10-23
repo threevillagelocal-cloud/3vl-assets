@@ -147,14 +147,6 @@
 "special": false,
 "_ts": "2026-09-24T20:03:29+0000"
 },
-"18027741092910188": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-23T14:40:14+0000"
-},
 "18026341085884534": {
 "special": false,
 "title": "Holiday Party Booking Discount",
@@ -383,14 +375,6 @@
 "expires": "N/A",
 "_ts": "2026-09-25T14:05:22+0000"
 },
-"18115681990812366": {
-"special": true,
-"title": "Wine Down Wednesday - 25% Off Select Bottles",
-"when": "Every Wednesday",
-"desc": "25% off select wines from Long Island, Italy & California all day. In house only.",
-"expires": "2026-10-10",
-"_ts": "2026-09-23T14:07:09+0000"
-},
 "17974753926131918": {
 "special": false,
 "title": "",
@@ -599,14 +583,6 @@
 "special": false,
 "_ts": "2026-09-26T15:09:30+0000"
 },
-"17907897345559853": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-23T13:38:53+0000"
-},
 "18114230486319676": {
 "special": false,
 "title": "",
@@ -675,10 +651,6 @@
 "expires": "2026-09-27",
 "_ts": "2026-09-23T18:04:06+0000"
 },
-"17878460466547644": {
-"special": false,
-"_ts": "2026-09-23T14:03:44+0000"
-},
 "18037224695648412": {
 "special": false,
 "title": "",
@@ -686,14 +658,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-25T18:28:10+0000"
-},
-"18150123322539692": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-23T13:39:57+0000"
 },
 "18114399863082458": {
 "special": false,
@@ -730,10 +694,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-23T15:39:22+0000"
-},
-"17956782738249874": {
-"special": false,
-"_ts": "2026-09-23T13:14:40+0000"
 },
 "18126990563500773": {
 "special": false,
@@ -806,10 +766,6 @@
 "18113505053122918": {
 "special": false,
 "_ts": "2026-09-24T14:20:24+0000"
-},
-"18113238938017092": {
-"special": false,
-"_ts": "2026-09-23T14:05:23+0000"
 },
 "17987123550100225": {
 "special": false,
@@ -3706,5 +3662,21 @@
 "desc": "Seasonal pumpkin and Halloween-themed treats including pumpkin spice fudge, pumpkin shake, and mummy caramel apples.",
 "expires": "2026-10-31",
 "_ts": "2026-10-22T22:13:00+0000"
+},
+"18481707613112188": {
+"special": true,
+"title": "Live Music Night",
+"when": "Sat, Oct. 25 · 6:30 PM",
+"desc": "Live music on the back patio with good food and craft drink options.",
+"expires": "2026-10-25",
+"_ts": "2026-10-23T14:28:52+0000"
+},
+"18130905677507767": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-23T14:07:34+0000"
 }
 }

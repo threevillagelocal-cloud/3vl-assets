@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-23T12:00:12.674950+00:00",
+ "updated": "2026-10-23T15:00:14.978602+00:00",
  "specials": [
+  {
+   "id": "18481707613112188",
+   "biz": "The Country Corner",
+   "ig": "countrycornerlongisland",
+   "town": "East Setauket",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Live Music Night",
+   "when": "Sat, Oct. 25 · 6:30 PM",
+   "desc": "Live music on the back patio with good food and craft drink options.",
+   "expires": "2026-10-25",
+   "posted": "2026-10-23T14:28:52+0000",
+   "url": "https://www.instagram.com/p/De1xSHCx8K7/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+   "inset": "ig/p18481707613112188.jpg"
+  },
   {
    "id": "18217945741349180",
    "biz": "Tommy's Place",
@@ -80,26 +96,26 @@
    "url": "https://www.instagram.com/reel/DezYThhxrkO/",
    "img": "",
    "inset": "ig/p18110514965522268.jpg"
-  },
-  {
-   "id": "17909824674564464",
-   "biz": "The Study by Toast",
-   "ig": "thestudy.bytoast",
-   "town": "East Setauket",
-   "category": "Coffee House",
-   "member": false,
-   "title": "Caramel Apple Danish Pastry",
-   "when": "October 2026",
-   "desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
-   "expires": "2026-10-31",
-   "posted": "2026-10-22T18:56:21+0000",
-   "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
-   "img": "",
-   "inset": "ig/p17909824674564464.jpg"
   }
  ],
  "candidates": [
   {
+   "id": "18481707613112188",
+   "biz": "The Country Corner",
+   "ig": "countrycornerlongisland",
+   "town": "East Setauket",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Live Music Night",
+   "when": "Sat, Oct. 25 · 6:30 PM",
+   "desc": "Live music on the back patio with good food and craft drink options.",
+   "expires": "2026-10-25",
+   "posted": "2026-10-23T14:28:52+0000",
+   "url": "https://www.instagram.com/p/De1xSHCx8K7/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+   "inset": "ig/p18481707613112188.jpg"
+  },
+  {
    "id": "18217945741349180",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -178,25 +194,25 @@
    "url": "https://www.instagram.com/reel/DezYThhxrkO/",
    "img": "",
    "inset": "ig/p18110514965522268.jpg"
-  },
-  {
-   "id": "17909824674564464",
-   "biz": "The Study by Toast",
-   "ig": "thestudy.bytoast",
-   "town": "East Setauket",
-   "category": "Coffee House",
-   "member": false,
-   "title": "Caramel Apple Danish Pastry",
-   "when": "October 2026",
-   "desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
-   "expires": "2026-10-31",
-   "posted": "2026-10-22T18:56:21+0000",
-   "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
-   "img": "",
-   "inset": "ig/p17909824674564464.jpg"
   }
  ],
  "all": [
+  {
+   "id": "18481707613112188",
+   "biz": "The Country Corner",
+   "ig": "countrycornerlongisland",
+   "town": "East Setauket",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Live Music Night",
+   "when": "Sat, Oct. 25 · 6:30 PM",
+   "desc": "Live music on the back patio with good food and craft drink options.",
+   "expires": "2026-10-25",
+   "posted": "2026-10-23T14:28:52+0000",
+   "url": "https://www.instagram.com/p/De1xSHCx8K7/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+   "inset": "ig/p18481707613112188.jpg"
+  },
   {
    "id": "18217945741349180",
    "biz": "Tommy's Place",
