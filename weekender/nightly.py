@@ -91,6 +91,21 @@ def warm(body, ed, sha):
             time.sleep(3 + attempt * 4)
         else:
             bad.append(u)
+    for wait in (60, 120):   # 10/23/2026: a brand-new commit can stay unavailable for a few minutes; give it time before aborting
+        if not bad:
+            break
+        time.sleep(wait)
+        still = []
+        for u in bad:
+            try:
+                req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (3VL publish warm-up)"})
+                with urllib.request.urlopen(req, timeout=40) as r:
+                    if r.status == 200 and len(r.read()) > 0:
+                        continue
+            except Exception:
+                pass
+            still.append(u)
+        bad = still
     print("CDN warm-up: %d files, %d not available" % (len(urls), len(bad)))
     return bad
 
