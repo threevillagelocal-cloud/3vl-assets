@@ -8,7 +8,8 @@ import os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 SHA = sys.argv[sys.argv.index("--sha") + 1] if "--sha" in sys.argv else "master"
 LOCAL = "--local" in sys.argv
-ASSET = "" if LOCAL else "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@%s/posts/ai-find-2026/" % SHA
+# jsDelivr answered "Package size exceeded" (10/23), so the CSS/JS are served from 3vl-share GitHub Pages (publish_assets.sh copies them)
+ASSET = "" if LOCAL else "https://threevillagelocal-cloud.github.io/3vl-share/ai-find/"
 IMG = "https://threevillagelocal-cloud.github.io/3vl-share/ai-find/"
 WEB = "https://threevillagelocal-cloud.github.io/3vl-share/site/websites/"
 REPORT_PAGE = "/free-ai-report"
