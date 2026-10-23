@@ -244,40 +244,7 @@
 ],
 "prohibitionportjefferson": [],
 "portjeffbrewing": [],
-"poboybeerandcider": [
-{
-"id": "18223576354341630",
-"biz": "Po' Boy Brewery",
-"ig": "poboybeerandcider",
-"town": "Port Jefferson Station",
-"category": "Brewery/Cidery",
-"member": false,
-"title": "Halloween Costume Party & Contest",
-"when": "Oct 29 (in 2 weeks)",
-"desc": "Wear a costume for happy hour prices all night. Vote on top 3 costumes to win gift cards up to $100.",
-"expires": "2026-10-29",
-"posted": "2026-10-15T22:55:32+0000",
-"url": "https://www.instagram.com/reel/DeiFBhoyMgG/",
-"img": "",
-"inset": "ig/p18223576354341630.jpg"
-},
-{
-"id": "18097934228639515",
-"biz": "Po' Boy Brewery",
-"ig": "poboybeerandcider",
-"town": "Port Jefferson Station",
-"category": "Brewery/Cidery",
-"member": false,
-"title": "Halloween Costume Party & Happy Hour",
-"when": "Wed, Oct. 29 · All Night",
-"desc": "Wear a costume for happy hour prices all night + vote on costumes for gift card prizes up to $100.",
-"expires": "2026-10-29",
-"posted": "2026-10-15T22:35:01+0000",
-"url": "https://www.instagram.com/reel/DeiCvsxyyY0/",
-"img": "",
-"inset": "ig/p18097934228639515.jpg"
-}
-],
+"poboybeerandcider": [],
 "fifthseasonrestaurant": [
 {
 "id": "18045318959847467",
@@ -449,24 +416,7 @@
 }
 ],
 "danfordshotelandmarina": [],
-"thewhiskeybarrelportjeff": [
-{
-"id": "17882169600535369",
-"biz": "The Whiskey Barrel",
-"ig": "thewhiskeybarrelportjeff",
-"town": "Port Jefferson",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Thursday Night Karaoke",
-"when": "Every Thursday · 10 PM",
-"desc": "Sign up at 9:30 PM to take the mic at The Whiskey Barrel in Port Jefferson.",
-"expires": "2026-10-22",
-"posted": "2026-10-15T22:47:38+0000",
-"url": "https://www.instagram.com/p/DeiEH7EPyyT/",
-"img": "",
-"inset": "ig/p17882169600535369.jpg"
-}
-],
+"thewhiskeybarrelportjeff": [],
 "thesteamroomrestaurant": [
 {
 "id": "17959517340254859",
@@ -549,22 +499,6 @@
 "url": "https://www.instagram.com/reel/DeubY58kpkL/",
 "img": "",
 "inset": "ig/p18078304106726827.jpg"
-},
-{
-"id": "17913234690501916",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Happy Hour at Castaways",
-"when": "Every Monday · 4-6 PM",
-"desc": "Happy hour runs 4-6 PM at the inside bar, high tops and lounge with dinner from 4-9 PM.",
-"expires": "2026-10-26",
-"posted": "2026-10-19T18:01:14+0000",
-"url": "https://www.instagram.com/p/Der2nmBCtdf/",
-"img": "",
-"inset": "ig/p17913234690501916.jpg"
 }
 ],
 "salsasalsa_portjeff": [],
@@ -573,6 +507,22 @@
 "oldfieldspj": [],
 "secretgardentearoom": [],
 "kilwins_port_jeff": [
+{
+"id": "18426953476156122",
+"biz": "Kilwins Port Jefferson",
+"ig": "kilwins_port_jeff",
+"town": "Port Jefferson",
+"category": "Chocolate/Ice Cream",
+"member": false,
+"title": "Halloween & Fall Treats",
+"when": "Now through Halloween",
+"desc": "Seasonal pumpkin and Halloween-themed treats including pumpkin spice fudge, pumpkin shake, and mummy caramel apples.",
+"expires": "2026-10-31",
+"posted": "2026-10-22T22:13:00+0000",
+"url": "https://www.instagram.com/p/De0BxhlDKO3/",
+"img": "",
+"inset": "ig/p18426953476156122.jpg"
+},
 {
 "id": "18120258622975718",
 "biz": "Kilwins Port Jefferson",
@@ -588,22 +538,6 @@
 "url": "https://www.instagram.com/reel/Dexe_YMkQNQ/",
 "img": "",
 "inset": "ig/p18120258622975718.jpg"
-},
-{
-"id": "17946567318348098",
-"biz": "Kilwins Port Jefferson",
-"ig": "kilwins_port_jeff",
-"town": "Port Jefferson",
-"category": "Chocolate/Ice Cream",
-"member": false,
-"title": "Mummy Caramel Apples",
-"when": "Now through Halloween",
-"desc": "Caramel-coated apples dipped in white chocolate with spooky mummy decoration.",
-"expires": "2026-10-31",
-"posted": "2026-10-15T22:02:35+0000",
-"url": "https://www.instagram.com/reel/Deh_ABAExaG/",
-"img": "",
-"inset": "ig/p17946567318348098.jpg"
 }
 ],
 "portjefficecream": [],

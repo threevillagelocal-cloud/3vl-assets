@@ -71,14 +71,6 @@
 "expires": "",
 "_ts": "2026-09-23T00:36:12+0000"
 },
-"18187863958399481": {
-"special": false,
-"title": "Tequila & Mexican Cuisine Pairing",
-"when": "Thu, Oct. 22 · 6 PM",
-"desc": "5-course tasting with 5 agave spirit pours celebrating Mexican cuisine.",
-"expires": "2026-10-22",
-"_ts": "2026-09-22T21:19:13+0000"
-},
 "18101379767571054": {
 "special": false,
 "title": "",
@@ -719,14 +711,6 @@
 "expires": "",
 "_ts": "2026-09-23T13:39:57+0000"
 },
-"18104430221620878": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-22T21:13:40+0000"
-},
 "18114399863082458": {
 "special": false,
 "title": "",
@@ -766,14 +750,6 @@
 "17956782738249874": {
 "special": false,
 "_ts": "2026-09-23T13:14:40+0000"
-},
-"18102758828002339": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-22T19:58:07+0000"
 },
 "18126990563500773": {
 "special": false,
@@ -3722,5 +3698,29 @@
 "desc": "Half off all drinks at the inside bar, high tops and lounge.",
 "expires": "2026-10-29",
 "_ts": "2026-10-22T15:01:33+0000"
+},
+"18386134387233987": {
+"special": false,
+"title": "Roasted Heirloom Squash",
+"when": "",
+"desc": "Seasonal vegan dish with roasted squash, tahini, garbanzo beans, dried cherries, and kale.",
+"expires": "",
+"_ts": "2026-10-22T23:51:23+0000"
+},
+"18182532709425203": {
+"special": false,
+"title": "Ladies' Lounge Night Package",
+"when": "By reservation",
+"desc": "Group package for 6-12 people: $50/person includes 2 drinks, bites, 2-hour lounge reservation.",
+"expires": "2026-10-29",
+"_ts": "2026-10-22T21:00:58+0000"
+},
+"18426953476156122": {
+"special": true,
+"title": "Halloween & Fall Treats",
+"when": "Now through Halloween",
+"desc": "Seasonal pumpkin and Halloween-themed treats including pumpkin spice fudge, pumpkin shake, and mummy caramel apples.",
+"expires": "2026-10-31",
+"_ts": "2026-10-22T22:13:00+0000"
 }
 }
