@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-23T00:34:12.753341+00:00",
+"updated": "2026-10-23T01:00:54.841393+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1916,7 +1916,7 @@
 ],
 "eatCap": 6,
 "ferry": {
-"checked": "2026-10-23T00:33:31+00:00",
+"checked": "2026-10-23T01:00:13+00:00",
 "alerts": [
 {
 "title": "Departure Cancellations - Thursday October 22",
