@@ -13,8 +13,8 @@ import deploy as D
 
 LINKS = json.load(open("C:/Users/Matt/Documents/3vl-private/website-offer/stripe.json"))
 PR = {k: (v["setup"], v["monthly"]) for k, v in LINKS.items()}
-PR["web-ready-regular"] = (1499, 59)     # owner 10/22: anchor regular price so member pricing reads as a real deal
-PR["web-powered-regular"] = (2499, 129)
+PR["web-ready-regular"] = (999, 59)      # owner 10/22: anchor regular price so member pricing reads as a real deal
+PR["web-powered-regular"] = (1799, 129)   # owner 10/22: walk-in prices lowered (was 1499 / 2499)
 
 D.NAME = "3VL Page Websites" if D.LIVE else "3VL Page Websites Preview"   # preview has its own widget so it never changes the live page
 D.SLUG = "websites" if D.LIVE else "preview-websites"
@@ -119,7 +119,7 @@ BUNDLES = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
   </div>
   <div class="tvs-tiers tvs-up" role="tablist" aria-label="Choose your membership to see your price">
     <button type="button" role="tab" data-t="all">Walk-in price</button>
-    <button type="button" role="tab" data-t="vip" class="on">Featured &amp; VIP members<em>Save $1,000+</em></button>
+    <button type="button" role="tab" data-t="vip" class="on">Featured &amp; VIP members<em>Save $500+</em></button>
   </div>
   <p class="tvw-pnote tvs-up"><b>Two prices.</b> Featured and VIP members of Three Village Local get member pricing. Everyone else is welcome at our walk-in price. Not a member yet? <a href="/join">See Featured and VIP</a></p>
   <div class="tvs-cards tvw-two">
@@ -275,8 +275,8 @@ d.className=b.a;d.textContent='';w=a.split(' ');for(i=0;i<w.length;i++){d.textCo
 d.innerHTML=d.textContent.replace('Your Bakery','<b>Your Bakery</b>');
 if(b.c[k][2]){await sl(300);var cd=document.createElement('div');cd.className='tvw-gcard tvw-pop';cd.innerHTML='<span></span><div><b>Your Bakery</b><em>yourbakery.com</em></div>';l.appendChild(cd)}
 await sl(1400)}}
-async function loop(){await sl(500);for(;;){await on();await talk(P);await sl(600);await talk(L);await sl(2500)}}
-var el=document.querySelector('.tvw-dev');if(!el)return;new IntersectionObserver(function(e){vis=e[0].isIntersecting;if(vis&&!go){go=true;loop()}},{threshold:.3}).observe(el)})();</script>'''
+async function lp(b,d){await sl(d);for(;;){await on();await talk(b);await sl(2500)}}
+var el=document.querySelector('.tvw-dev');if(!el)return;new IntersectionObserver(function(e){vis=e[0].isIntersecting;if(vis&&!go){go=true;lp(P,300);lp(L,1800)}},{threshold:.3}).observe(el)})();</script>'''
 GOJS = '''<script>(function(){var nb=0,ib=setInterval(function(){[].forEach.call(document.querySelectorAll('input[type="submit"][id^="services_inquiry"],#tvs-form-slot input[type="submit"]'),function(x){if(x.value!=='Send my message'){x.value='Send my message';x.setAttribute('value','Send my message')}});var t=document.querySelector('#tvs-form-slot textarea[name="comments"]');if(t)t.placeholder='Your current website (if any), what you want more of, anything we should know';if(++nb>120)clearInterval(ib)},250);var n0=0,iv=setInterval(function(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value='web_consult';var g=s.closest('.form-group')||s.parentNode;g.style.display='none';clearInterval(iv)}if(++n0>40)clearInterval(iv)},250);function upd(){var b=document.querySelector('#tvs .tvs-tiers button.on'),m=!b||b.getAttribute('data-t')!=='all';
 [].forEach.call(document.querySelectorAll('#tvs .tvw-go'),function(a){a.href=m?a.getAttribute('data-m'):a.getAttribute('data-r')});[].forEach.call(document.querySelectorAll('#tvs .tvw-plabel'),function(p){p.textContent=m?'Featured & VIP member price*':'Walk-in price';p.className='tvw-plabel'+(m?' on':'')})}
 document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('#tvs .tvs-tiers button'))setTimeout(upd,0)});upd()})();</script>'''
