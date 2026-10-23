@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-23T19:02:47.545670+00:00",
+"updated": "2026-10-23T19:03:55.343163+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1456,7 +1456,7 @@
 "url": "https://www.instagram.com/p/De11jFqv5c2/",
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18120584680768249.jpg",
-"page": "https://www.threevillagelocal.com/culpers-1778",
+"page": "https://www.threevillagelocal.com/eat-drink/culpers-1778-happy-hour-extended-through-knicks",
 "profile": "https://www.threevillagelocal.com/culpers-1778",
 "label": "Happy hour"
 },
@@ -1494,7 +1494,7 @@
 "url": "https://www.instagram.com/p/De2NujRmuTk/",
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18200189893388564.jpg",
-"page": "https://www.threevillagelocal.com/tommys-place",
+"page": "https://www.threevillagelocal.com/eat-drink/tommys-place-weekly-specials",
 "profile": "https://www.threevillagelocal.com/tommys-place",
 "label": "Special"
 },
