@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-23T15:03:56.182577+00:00",
+"updated": "2026-10-23T17:00:54.227352+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 208,
-"Emma S. Clark Library": 332,
+"Emma S. Clark Library": 330,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -151,42 +151,6 @@
 "pick": true,
 "page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
 "rank": 4
-},
-{
-"id": "emmaclark-game-day-38291",
-"title": "Game Day",
-"start": "2026-10-23T10:00:00",
-"end": "2026-10-23T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/game-day-38291",
-"desc": "We provide the space, tables and chairs. You bring your friends and a favorite board or card game to play. No registration required.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-11/people-having-fun-while-playing-board-game2.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/game-day-410"
-},
-{
-"id": "emmaclark-time-baby-16-mos-24-mos-w-caregiver-58861",
-"title": "Time For Baby (16 mos. - 24 mos. w/ caregiver)",
-"start": "2026-10-23T11:00:00",
-"end": "2026-10-23T11:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/time-baby-16-mos-24-mos-w-caregiver-58861",
-"desc": "There will be music, dancing, and games to enjoy with your baby.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/time-for-baby-16-mos-24-mos-w-caregiver-411"
 },
 {
 "id": "cur-tvfm",
@@ -529,7 +493,7 @@
 },
 {
 "id": "emmaclark-word-38618",
-"title": "Introduction to Microsoft Word",
+"title": "*Cancelled* Introduction to Microsoft Word",
 "start": "2026-10-26T18:30:00",
 "end": "2026-10-26T20:30:00",
 "allday": false,
@@ -540,7 +504,7 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/word%20class_0.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": "",
+"status": "Canceled",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/introduction-to-microsoft-word"
 },
@@ -602,7 +566,7 @@
 },
 {
 "id": "emmaclark-word-38619",
-"title": "Introduction to Microsoft Word",
+"title": "*Cancelled* Introduction to Microsoft Word",
 "start": "2026-10-27T18:30:00",
 "end": "2026-10-27T20:30:00",
 "allday": false,
@@ -613,7 +577,7 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/word%20class_0.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": "",
+"status": "Canceled",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/introduction-to-microsoft-word-425"
 },
@@ -689,7 +653,7 @@
 },
 {
 "id": "emmaclark-word-38620",
-"title": "Introduction to Microsoft Word",
+"title": "*Cancelled* Introduction to Microsoft Word",
 "start": "2026-10-28T18:30:00",
 "end": "2026-10-28T20:30:00",
 "allday": false,
@@ -700,7 +664,7 @@
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/word%20class_0.jpg",
 "src": "emmaclark",
 "tags": [],
-"status": "",
+"status": "Canceled",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/introduction-to-microsoft-word-429"
 },
