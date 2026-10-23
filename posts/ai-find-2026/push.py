@@ -6,7 +6,7 @@ import json, os, re, urllib.parse, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 WIDGET, SLUG = "3VL Preview AI Find", "preview-can-ai-find-your-business"
 TITLE = "Can AI Find Your Business? How Small Local Businesses Can Even the AI Playing Field"
-OG = "https://threevillagelocal-cloud.github.io/3vl-share/ai-find/can-ai-find-your-business-og.jpg"
+OG = "https://threevillagelocal-cloud.github.io/3vl-share/ai-find/website-ai-visibility-card-b.jpg"
 IDS = os.path.join(HERE, "push_ids.json")
 
 
