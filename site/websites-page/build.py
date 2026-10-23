@@ -136,7 +136,7 @@ STRIP_SEC = '''<section class="tvw-strip tvs-up"><p>Get recommended on the AI to
 
 CTA3_SEC = '''<section class="tvw-cta3 tvs-up"><div class="tvw-cta3-in"><p class="tvw-cta3-k">Your next customer is asking AI</p><h2>Let&#39;s build your AI-ready website.</h2><p class="tvw-cta3-s">Designed, built and hosted for you. Updates included. Half to start, the rest when you love it.</p><div class="tvw-cta-btns"><a class="tvs-btn tvw-btn-w" href="#tvs-book">Send us a message</a><a class="tvs-btn tvw-btn-o" href="#tvs-bundles">See the packages</a></div></div></section>'''
 
-COMM_SEC = '''<section class="tvs-sec tvw-comm"><div class="tvw-comm-grid"><div class="tvw-comm-card tvs-up"><p class="tvw-comm-k">Built by your neighbors</p><h2>Local tech, local team. <span>Launched to the whole town.</span></h2><p>We live and work right here in Three Village. When your new site goes live, we introduce it to the neighbors on Three Village Local.</p><ul><li>Homepage spotlight</li><li>Weekly email feature</li><li>A boost on your listing</li></ul></div><div class="tvs-up"><div class="tvw-mos"><figure class="tvw-lm tvw-lm-a"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/websites/lm-setauket-main-v2.webp" alt="Setauket" loading="lazy" decoding="async"><figcaption>Setauket</figcaption></figure><figure class="tvw-lm tvw-lm-b"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/websites/lm-pj-harbor-v2.webp" alt="Port Jefferson Harbor" loading="lazy" decoding="async"><figcaption>Port Jefferson Harbor</figcaption></figure><figure class="tvw-lm tvw-lm-c"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/websites/lm-setauket-harbor-v2.webp" alt="Setauket Harbor" loading="lazy" decoding="async"><figcaption>Setauket Harbor</figcaption></figure><figure class="tvw-lm tvw-lm-d"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/websites/lm-sb-harbor-v2.webp" alt="Stony Brook Harbor" loading="lazy" decoding="async"><figcaption>Stony Brook Harbor</figcaption></figure><figure class="tvw-lm tvw-lm-e"><img src="https://threevillagelocal-cloud.github.io/3vl-share/site/websites/lm-sunset-v2.webp" alt="Three Village" loading="lazy" decoding="async"></figure></div></div></div></section>'''
+COMM_SEC = '''<section class="tvs-sec tvw-comm"><div class="tvw-comm-grid"><div class="tvw-comm-card tvs-up"><p class="tvw-comm-k">Built by your neighbors</p><h2>Local tech, local team. <span>Launched to the whole town.</span></h2><p>We live and work right here in Three Village. When your new site goes live, we introduce it to the neighbors on Three Village Local.</p><ul><li>Homepage spotlight</li><li>Weekly email feature</li><li>A boost on your listing</li></ul></div><div class="tvs-up"><div class="tvw-dev" role="img" aria-label="An AI-optimized website with a built-in AI assistant, shown on a laptop and a phone"><div class="tvw-lap"><div class="tvw-lap-scr"><div class="tvw-lap-d"><div class="tvw-ms-nav"><b>Your Bakery</b><span>Menu</span><span>Cakes</span><span>Visit</span><i>Order ahead</i></div><div class="tvw-ms-hero"><p class="tvw-ms-k">Main Street &middot; Since 1998</p><p class="tvw-ms-h">Fresh bread,<br>baked every morning.</p><p class="tvw-ms-btns"><i>See the menu</i><u>Get directions</u></p></div><div class="tvw-ms-row"><div><b>Open today</b><span>7 AM - 6 PM</span></div><div><b>&#9733;&#9733;&#9733;&#9733;&#9733; 4.9</b><span>312 reviews</span></div><div><b>Custom cakes</b><span>48 hr notice</span></div></div><div class="tvw-ms-chat"><div class="tvw-ms-ch"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4M9 14h.01M15 14h.01"/></svg></span><b>Ask Your Bakery</b><em>AI assistant</em></div><p class="tvw-ms-q tvw-dv1">Do you make gluten-free birthday cakes?</p><p class="tvw-ms-a tvw-dv2">Yes! Order 48 hours ahead and pick up any day after 9 AM. Want me to start an order?</p><p class="tvw-ms-in">Type a question...</p></div></div></div><div class="tvw-lap-b"></div></div><div class="tvw-ph"><div class="tvw-ph-d"><span class="tvw-ph-notch"></span><div class="tvw-ph-hero"><b>Your Bakery</b><p>Fresh bread, baked every morning.</p></div><div class="tvw-ph-chat"><p class="tvw-ph-lbl"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V4M9 14h.01M15 14h.01"/></svg></span>AI assistant</p><p class="tvw-ms-q tvw-dv3">Open Sunday?</p><p class="tvw-ms-a tvw-dv4">Yes, 7 AM to 4 PM. Fresh croissants come out at 8.</p><p class="tvw-ms-q tvw-dv5">Can I order a cake?</p><p class="tvw-ms-a tvw-dv6">Of course! What date do you need it?</p></div><p class="tvw-ph-in">Message...</p></div></div><p class="tvw-dev-tag"><span>&#10003;</span>Read and recommended by AI search</p></div></div></div></section>'''
 
 SHIFT_SEC = '''<section class="tvs-sec tvw-shift" id="tvw-shift">
   <div class="tvs-head tvs-up">
@@ -271,14 +271,56 @@ CSS = '''
 .tvw-comm-card>p{margin:0 0 16px!important;font-size:16.5px;line-height:1.6;color:var(--mut)}
 .tvw-comm-card ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .tvw-comm-card li{font-size:13px;font-weight:800;padding:7px 13px;border-radius:999px;background:#eef4ff;color:var(--navy)}
-.tvw-mos{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:170px 170px;gap:10px}
-.tvw-lm{position:relative;margin:0;border-radius:16px;overflow:hidden;box-shadow:0 16px 34px -20px rgba(9,30,66,.45)}
-.tvw-lm img{display:block;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;transition:transform 6s ease}
-.tvw-lm:hover img{transform:scale(1.06)}
-.tvw-lm figcaption{position:absolute;left:10px;bottom:10px;font-size:12px;font-weight:800;color:#0d2147;background:rgba(255,255,255,.92);padding:4px 10px;border-radius:999px}
-.tvw-lm-a{grid-row:span 2}
-.tvw-lm-e{grid-column:3;grid-row:2}
-@media (max-width:860px){.tvw-comm-grid{grid-template-columns:1fr;gap:22px}.tvw-comm-card h2{font-size:28px}.tvw-mos{grid-template-columns:1fr 1fr;grid-template-rows:150px 150px 150px}.tvw-lm-a{grid-row:span 2}.tvw-lm-e{grid-column:auto;grid-row:auto}}
+.tvw-dev{position:relative;container-type:inline-size;padding:1cqw 0 5cqw}
+.tvw-dev *{box-sizing:border-box}
+.tvw-dev p{margin:0!important}
+.tvw-lap{width:86cqw;filter:drop-shadow(0 4cqw 5cqw rgba(9,30,66,.28))}
+.tvw-lap-scr{padding:1.5cqw 1.5cqw 2cqw;border-radius:2.4cqw 2.4cqw 0 0;background:linear-gradient(160deg,#1c2433,#0b111c)}
+.tvw-lap-d{position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:.5cqw;background:#fffaf4;font-family:inherit}
+.tvw-lap-b{position:relative;width:108%;margin-left:-4%;height:2.2cqw;border-radius:0 0 2.6cqw 2.6cqw;background:linear-gradient(180deg,#eef1f5,#c3c9d3 60%,#9aa2ae)}
+.tvw-lap-b:before{content:"";position:absolute;left:50%;top:0;width:14%;height:.9cqw;transform:translateX(-50%);border-radius:0 0 1cqw 1cqw;background:#aab1bc}
+.tvw-ms-nav{display:flex;align-items:center;gap:2.4cqw;height:5.4cqw;padding:0 2.4cqw;background:#fff;border-bottom:1px solid #f0e6da;font-size:1.35cqw;color:#5b4636}
+.tvw-ms-nav b{margin-right:auto;font-family:Georgia,serif;font-size:2cqw;color:#3a2416}
+.tvw-ms-nav i{font-style:normal;font-weight:700;padding:.7cqw 1.4cqw;border-radius:9cqw;background:#c2410c;color:#fff}
+.tvw-ms-hero{height:25cqw;padding:4.2cqw 3cqw;background:linear-gradient(90deg,rgba(28,14,6,.82),rgba(28,14,6,.35) 55%,rgba(28,14,6,0)),url(https://threevillagelocal-cloud.github.io/3vl-share/site/websites/hero-bakery.webp) center/cover;color:#fff}
+.tvw-ms-k{font-size:1.25cqw;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fcd9a8}
+.tvw-ms-h{margin:1cqw 0 1.8cqw!important;font-family:Georgia,serif;font-size:3.7cqw;line-height:1.08;font-weight:700}
+.tvw-ms-btns{display:flex;gap:1cqw;font-size:1.3cqw;font-weight:700}
+.tvw-ms-btns i,.tvw-ms-btns u{font-style:normal;text-decoration:none;padding:.9cqw 1.7cqw;border-radius:9cqw}
+.tvw-ms-btns i{background:#c2410c}.tvw-ms-btns u{border:1px solid rgba(255,255,255,.7)}
+.tvw-ms-row{display:flex;gap:1.2cqw;padding:2cqw 2.4cqw;width:46%}
+.tvw-ms-row div{flex:1;padding:1.2cqw;border-radius:1cqw;background:#fff;box-shadow:0 .4cqw 1.4cqw rgba(60,30,10,.1)}
+.tvw-ms-row b{display:block;font-size:1.3cqw;color:#3a2416}.tvw-ms-row span{font-size:1.15cqw;color:#8a7262}
+.tvw-ms-chat{position:absolute;right:11cqw;bottom:1.6cqw;width:27cqw;border-radius:1.6cqw;background:#fff;overflow:hidden;box-shadow:0 2cqw 4cqw -1cqw rgba(13,35,70,.45);border:1px solid #e3e9f2}
+.tvw-ms-ch{display:flex;align-items:center;gap:.9cqw;padding:1.2cqw 1.4cqw;background:linear-gradient(120deg,#1d5fd1,#4f8df5);color:#fff}
+.tvw-ms-ch span,.tvw-ph-lbl span{display:flex;align-items:center;justify-content:center;width:2.8cqw;height:2.8cqw;border-radius:50%;background:rgba(255,255,255,.22)}
+.tvw-ms-ch svg,.tvw-ph-lbl svg{width:60%;height:60%}
+.tvw-ms-ch b{font-size:1.45cqw}
+.tvw-ms-ch em{margin-left:auto;font-style:normal;font-size:1.05cqw;padding:.3cqw .9cqw;border-radius:9cqw;background:rgba(255,255,255,.2)}
+.tvw-ms-chat .tvw-ms-q,.tvw-ms-chat .tvw-ms-a{margin:1.1cqw 1.3cqw 0!important}
+.tvw-ms-q,.tvw-ms-a{width:fit-content;max-width:86%;padding:.9cqw 1.3cqw;font-size:1.3cqw;line-height:1.35}
+.tvw-ms-q{margin-left:auto!important;border-radius:1.6cqw 1.6cqw .4cqw 1.6cqw;background:#1d5fd1;color:#fff}
+.tvw-ms-chat .tvw-ms-q{margin-left:auto!important}
+.tvw-ms-a{border-radius:1.6cqw 1.6cqw 1.6cqw .4cqw;background:#eef3fb;color:#1a2233}
+.tvw-ms-in{margin:1.2cqw 1.3cqw 1.3cqw!important;padding:.9cqw 1.3cqw;border-radius:9cqw;border:1px solid #dbe3ef;font-size:1.2cqw;color:#97a3b6}
+.tvw-ph{position:absolute;right:0;bottom:2cqw;width:24cqw;padding:.9cqw;border-radius:4.2cqw;background:linear-gradient(160deg,#2a3242,#0b111c);box-shadow:0 4cqw 6cqw -2cqw rgba(9,30,66,.55)}
+.tvw-ph-d{position:relative;aspect-ratio:9/19;overflow:hidden;border-radius:3.4cqw;background:#fff;display:flex;flex-direction:column}
+.tvw-ph-notch{position:absolute;left:50%;top:1cqw;width:7cqw;height:1.9cqw;transform:translateX(-50%);border-radius:9cqw;background:#0b111c;z-index:2}
+.tvw-ph-hero{height:19cqw;padding:5.6cqw 2cqw 0;background:linear-gradient(180deg,rgba(28,14,6,.15),rgba(28,14,6,.78)),url(https://threevillagelocal-cloud.github.io/3vl-share/site/websites/hero-bakery.webp) center/cover;color:#fff}
+.tvw-ph-hero b{display:block;font-family:Georgia,serif;font-size:2.1cqw;margin-top:4.6cqw}
+.tvw-ph-hero p{font-size:1.25cqw;line-height:1.3;opacity:.9}
+.tvw-ph-chat{flex:1;min-height:0;overflow:hidden;padding:1.6cqw 1.6cqw 0;background:#fbfcfe}
+.tvw-ph-lbl{display:flex;align-items:center;gap:.8cqw;font-size:1.25cqw;font-weight:800;color:#1d5fd1;margin-bottom:1.2cqw!important}
+.tvw-ph-lbl span{background:#e6eefc}
+.tvw-ph-chat .tvw-ms-q,.tvw-ph-chat .tvw-ms-a{font-size:1.3cqw;max-width:92%;margin-bottom:1cqw!important}
+.tvw-ph-in{margin:0 1.4cqw 1.8cqw!important;padding:.9cqw 1.3cqw;border-radius:9cqw;border:1px solid #dbe3ef;font-size:1.2cqw;color:#97a3b6}
+.tvw-dev-tag{position:absolute;left:4cqw;bottom:0;display:flex;align-items:center;gap:8px;padding:9px 16px 9px 10px;border-radius:999px;background:#fff;box-shadow:0 14px 30px -14px rgba(9,30,66,.5);font-size:max(12px,2.1cqw);font-weight:800;color:#0d2147}
+.tvw-dev-tag span{display:flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#16a34a;color:#fff;font-size:13px}
+.tvs-ready .tvw-dv1,.tvs-ready .tvw-dv2,.tvs-ready .tvw-dv3,.tvs-ready .tvw-dv4,.tvs-ready .tvw-dv5,.tvs-ready .tvw-dv6{opacity:0}
+.tvs-ready .tvs-in .tvw-dv1{animation:tvwPop .45s ease .5s forwards}.tvs-ready .tvs-in .tvw-dv2{animation:tvwPop .45s ease 1.5s forwards}
+.tvs-ready .tvs-in .tvw-dv3{animation:tvwPop .45s ease 2.3s forwards}.tvs-ready .tvs-in .tvw-dv4{animation:tvwPop .45s ease 3.2s forwards}.tvs-ready .tvs-in .tvw-dv5{animation:tvwPop .45s ease 4s forwards}.tvs-ready .tvs-in .tvw-dv6{animation:tvwPop .45s ease 4.9s forwards}
+@media (prefers-reduced-motion:reduce){.tvs-ready .tvw-dv1,.tvs-ready .tvw-dv2,.tvs-ready .tvw-dv3,.tvs-ready .tvw-dv4,.tvs-ready .tvw-dv5,.tvs-ready .tvw-dv6{opacity:1!important;animation:none!important}}
+@media (max-width:860px){.tvw-comm-grid{grid-template-columns:1fr;gap:22px}.tvw-comm-card h2{font-size:28px}.tvw-dev{padding-bottom:9cqw}.tvw-lap{width:84cqw}.tvw-ph{width:30cqw;bottom:6cqw}.tvw-ms-chat{right:14cqw;width:26cqw}.tvw-ms-row{width:40%}.tvw-ms-row div:nth-child(3),.tvw-ms-ch em{display:none}.tvw-dev-tag{left:0}}
 
 .tvw-hvis{position:absolute;top:0;right:0;bottom:0;width:50%;z-index:-1;display:flex;align-items:center;justify-content:center;padding:40px 46px 40px 20px;background:radial-gradient(520px 340px at 70% 30%,rgba(77,163,255,.20),transparent 70%),radial-gradient(420px 300px at 30% 90%,rgba(45,240,200,.14),transparent 70%),linear-gradient(160deg,#f3f8ff,#e9f2ff)}
 .tvw-hvis:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(29,95,209,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(29,95,209,.06) 1px,transparent 1px);background-size:34px 34px;-webkit-mask-image:radial-gradient(closest-side,#000,transparent);mask-image:radial-gradient(closest-side,#000,transparent)}
