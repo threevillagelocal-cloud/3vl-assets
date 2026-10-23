@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-23T15:00:14.978602+00:00",
+ "updated": "2026-10-23T19:00:13.095240+00:00",
  "specials": [
+  {
+   "id": "18120584680768249",
+   "biz": "Culpers 1778",
+   "ig": "culpers1778",
+   "town": "East Setauket",
+   "category": "Restaurant/Steakhouse",
+   "member": false,
+   "title": "Happy Hour Extended Through Knicks Game",
+   "when": "Fri, Oct. 23 · 7 PM until end of game",
+   "desc": "Happy Hour specials at the bar all through the Knicks vs. Celtics game tonight.",
+   "expires": "2026-10-23",
+   "posted": "2026-10-23T15:04:32+0000",
+   "url": "https://www.instagram.com/p/De11jFqv5c2/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
+   "inset": "ig/p18120584680768249.jpg"
+  },
   {
    "id": "18481707613112188",
    "biz": "The Country Corner",
@@ -18,36 +34,20 @@
    "inset": "ig/p18481707613112188.jpg"
   },
   {
-   "id": "18217945741349180",
+   "id": "18200189893388564",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
    "town": "Port Jefferson",
    "category": "Bar/Restaurant",
    "member": false,
-   "title": "Seafood Stuffed Shells Special",
-   "when": "Now",
-   "desc": "Seafood Stuffed Shells featured on the specials menu at Tommy's Place.",
-   "expires": "2026-11-05",
-   "posted": "2026-10-22T00:17:50+0000",
-   "url": "https://www.instagram.com/p/DexrUa_jZH0/",
+   "title": "Weekly Specials at Tommy's Place",
+   "when": "This week",
+   "desc": "Sweet potato corn chowder, fried seafood sampler, spicy pizza burger, and chicken parmesan.",
+   "expires": "2026-10-29",
+   "posted": "2026-10-23T18:35:28+0000",
+   "url": "https://www.instagram.com/p/De2NujRmuTk/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18217945741349180.jpg"
-  },
-  {
-   "id": "18074660135743458",
-   "biz": "DJ's Clam Shack (Stony Brook)",
-   "ig": "djsclamshackstonybrook",
-   "town": "Stony Brook",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Fall & Winter Lunch Specials",
-   "when": "Daily, 11:30 AM - 4 PM",
-   "desc": "Philly cheesesteak, chicken fingers, or smashburger with fries/coleslaw and soda for $11.50.",
-   "expires": "2026-10-30",
-   "posted": "2026-10-16T16:35:54+0000",
-   "url": "https://www.instagram.com/p/Dej-Kdlv3BJ/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
-   "inset": "ig/p18074660135743458.jpg"
+   "inset": "ig/p18200189893388564.jpg"
   },
   {
    "id": "18074576285727806",
@@ -100,6 +100,22 @@
  ],
  "candidates": [
   {
+   "id": "18120584680768249",
+   "biz": "Culpers 1778",
+   "ig": "culpers1778",
+   "town": "East Setauket",
+   "category": "Restaurant/Steakhouse",
+   "member": false,
+   "title": "Happy Hour Extended Through Knicks Game",
+   "when": "Fri, Oct. 23 · 7 PM until end of game",
+   "desc": "Happy Hour specials at the bar all through the Knicks vs. Celtics game tonight.",
+   "expires": "2026-10-23",
+   "posted": "2026-10-23T15:04:32+0000",
+   "url": "https://www.instagram.com/p/De11jFqv5c2/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
+   "inset": "ig/p18120584680768249.jpg"
+  },
+  {
    "id": "18481707613112188",
    "biz": "The Country Corner",
    "ig": "countrycornerlongisland",
@@ -116,36 +132,20 @@
    "inset": "ig/p18481707613112188.jpg"
   },
   {
-   "id": "18217945741349180",
+   "id": "18200189893388564",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
    "town": "Port Jefferson",
    "category": "Bar/Restaurant",
    "member": false,
-   "title": "Seafood Stuffed Shells Special",
-   "when": "Now",
-   "desc": "Seafood Stuffed Shells featured on the specials menu at Tommy's Place.",
-   "expires": "2026-11-05",
-   "posted": "2026-10-22T00:17:50+0000",
-   "url": "https://www.instagram.com/p/DexrUa_jZH0/",
+   "title": "Weekly Specials at Tommy's Place",
+   "when": "This week",
+   "desc": "Sweet potato corn chowder, fried seafood sampler, spicy pizza burger, and chicken parmesan.",
+   "expires": "2026-10-29",
+   "posted": "2026-10-23T18:35:28+0000",
+   "url": "https://www.instagram.com/p/De2NujRmuTk/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18217945741349180.jpg"
-  },
-  {
-   "id": "18074660135743458",
-   "biz": "DJ's Clam Shack (Stony Brook)",
-   "ig": "djsclamshackstonybrook",
-   "town": "Stony Brook",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Fall & Winter Lunch Specials",
-   "when": "Daily, 11:30 AM - 4 PM",
-   "desc": "Philly cheesesteak, chicken fingers, or smashburger with fries/coleslaw and soda for $11.50.",
-   "expires": "2026-10-30",
-   "posted": "2026-10-16T16:35:54+0000",
-   "url": "https://www.instagram.com/p/Dej-Kdlv3BJ/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
-   "inset": "ig/p18074660135743458.jpg"
+   "inset": "ig/p18200189893388564.jpg"
   },
   {
    "id": "18074576285727806",
@@ -198,6 +198,22 @@
  ],
  "all": [
   {
+   "id": "18120584680768249",
+   "biz": "Culpers 1778",
+   "ig": "culpers1778",
+   "town": "East Setauket",
+   "category": "Restaurant/Steakhouse",
+   "member": false,
+   "title": "Happy Hour Extended Through Knicks Game",
+   "when": "Fri, Oct. 23 · 7 PM until end of game",
+   "desc": "Happy Hour specials at the bar all through the Knicks vs. Celtics game tonight.",
+   "expires": "2026-10-23",
+   "posted": "2026-10-23T15:04:32+0000",
+   "url": "https://www.instagram.com/p/De11jFqv5c2/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
+   "inset": "ig/p18120584680768249.jpg"
+  },
+  {
    "id": "18481707613112188",
    "biz": "The Country Corner",
    "ig": "countrycornerlongisland",
@@ -214,6 +230,22 @@
    "inset": "ig/p18481707613112188.jpg"
   },
   {
+   "id": "18200189893388564",
+   "biz": "Tommy's Place",
+   "ig": "tommysplaceportjeff_",
+   "town": "Port Jefferson",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Weekly Specials at Tommy's Place",
+   "when": "This week",
+   "desc": "Sweet potato corn chowder, fried seafood sampler, spicy pizza burger, and chicken parmesan.",
+   "expires": "2026-10-29",
+   "posted": "2026-10-23T18:35:28+0000",
+   "url": "https://www.instagram.com/p/De2NujRmuTk/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+   "inset": "ig/p18200189893388564.jpg"
+  },
+  {
    "id": "18217945741349180",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -228,38 +260,6 @@
    "url": "https://www.instagram.com/p/DexrUa_jZH0/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
    "inset": "ig/p18217945741349180.jpg"
-  },
-  {
-   "id": "18124063798934600",
-   "biz": "Tommy's Place",
-   "ig": "tommysplaceportjeff_",
-   "town": "Port Jefferson",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "London Broil Special",
-   "when": "Limited time",
-   "desc": "London Broil comfort meal on the specials menu for a limited time this fall.",
-   "expires": "2026-11-04",
-   "posted": "2026-10-21T00:56:46+0000",
-   "url": "https://www.instagram.com/p/DevK-wkjfkt/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18124063798934600.jpg"
-  },
-  {
-   "id": "18074660135743458",
-   "biz": "DJ's Clam Shack (Stony Brook)",
-   "ig": "djsclamshackstonybrook",
-   "town": "Stony Brook",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Fall & Winter Lunch Specials",
-   "when": "Daily, 11:30 AM - 4 PM",
-   "desc": "Philly cheesesteak, chicken fingers, or smashburger with fries/coleslaw and soda for $11.50.",
-   "expires": "2026-10-30",
-   "posted": "2026-10-16T16:35:54+0000",
-   "url": "https://www.instagram.com/p/Dej-Kdlv3BJ/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
-   "inset": "ig/p18074660135743458.jpg"
   },
   {
    "id": "18074576285727806",
@@ -356,22 +356,6 @@
    "url": "https://www.instagram.com/p/DexKtUMl7va/",
    "img": "",
    "inset": "ig/p18110244839627398.jpg"
-  },
-  {
-   "id": "18045318959847467",
-   "biz": "Fifth Season Restaurant",
-   "ig": "fifthseasonrestaurant",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Friday Happy Hour at The Fifth",
-   "when": "Every Friday",
-   "desc": "Happy hour specials on Fridays at Fifth Season Restaurant in Port Jefferson.",
-   "expires": "2026-10-23",
-   "posted": "2026-10-16T16:39:54+0000",
-   "url": "https://www.instagram.com/reel/Dej-smegwuG/",
-   "img": "",
-   "inset": "ig/p18045318959847467.jpg"
   },
   {
    "id": "18134822992761307",

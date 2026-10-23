@@ -127,14 +127,6 @@
 "expires": "",
 "_ts": "2026-09-23T21:01:45+0000"
 },
-"18166376863481072": {
-"special": true,
-"title": "Kids Night: Half Off Kids Meals",
-"when": "Every Wednesday",
-"desc": "Kids meals half off with adult entree purchase. Dine in only at either location.",
-"expires": "2026-10-08",
-"_ts": "2026-09-23T17:03:00+0000"
-},
 "17899639635668203": {
 "special": false,
 "title": "Robinson's Tea Room",
@@ -170,14 +162,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-24T17:03:33+0000"
-},
-"18078468407371270": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-23T16:10:00+0000"
 },
 "17906671416487684": {
 "special": false,
@@ -266,14 +250,6 @@
 "desc": "Celebrate with Right Coast's signature trifold quesadillas, bigger and better than ever.",
 "expires": "2026-09-25",
 "_ts": "2026-09-25T18:26:17+0000"
-},
-"18042874244811745": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-23T16:41:55+0000"
 },
 "18347533030267916": {
 "special": false,
@@ -643,14 +619,6 @@
 "expires": "",
 "_ts": "2026-09-24T15:31:12+0000"
 },
-"18151662361539774": {
-"special": false,
-"title": "OALI-Access Immediate Orthopedic Care",
-"when": "Ongoing",
-"desc": "Walk-in orthopedic care for sprains, strains, and sports injuries at East Setauket, Commack, and West Babylon locations.",
-"expires": "2026-09-27",
-"_ts": "2026-09-23T18:04:06+0000"
-},
 "18037224695648412": {
 "special": false,
 "title": "",
@@ -686,14 +654,6 @@
 "desc": "Pet-friendly co-op community in Islip with dog run, pool, and clubhouse near LIRR.",
 "expires": "2026-09-27",
 "_ts": "2026-09-24T19:46:26+0000"
-},
-"18005236872004576": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-23T15:39:22+0000"
 },
 "18126990563500773": {
 "special": false,
@@ -3678,5 +3638,69 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-23T14:07:34+0000"
+},
+"18200189893388564": {
+"special": true,
+"title": "Weekly Specials at Tommy's Place",
+"when": "This week",
+"desc": "Sweet potato corn chowder, fried seafood sampler, spicy pizza burger, and chicken parmesan.",
+"expires": "2026-10-29",
+"_ts": "2026-10-23T18:35:28+0000"
+},
+"18120584680768249": {
+"special": true,
+"title": "Happy Hour Extended Through Knicks Game",
+"when": "Fri, Oct. 23 · 7 PM until end of game",
+"desc": "Happy Hour specials at the bar all through the Knicks vs. Celtics game tonight.",
+"expires": "2026-10-23",
+"_ts": "2026-10-23T15:04:32+0000"
+},
+"17869630611663100": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-23T15:36:26+0000"
+},
+"18170697820465471": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-23T16:44:24+0000"
+},
+"18086014745323573": {
+"special": false,
+"title": "Burgerology Returns to Patchogue",
+"when": "Opening Soon",
+"desc": "Burgerology is reopening in Patchogue with burgers, shakes, cocktails, and more.",
+"expires": "2026-10-23",
+"_ts": "2026-10-23T15:17:31+0000"
+},
+"18103216715290722": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-23T15:32:29+0000"
+},
+"18091127273299243": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-23T15:11:11+0000"
+},
+"18116839405814793": {
+"special": false,
+"title": "Vote for Best Lobster Roll 2027",
+"when": "Ongoing",
+"desc": "New England Lobster Roll nominated for Best of Long Island 2027. Vote via link in bio.",
+"expires": "2026-10-23",
+"_ts": "2026-10-23T16:02:25+0000"
 }
 }
