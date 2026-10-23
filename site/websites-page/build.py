@@ -257,7 +257,7 @@ h = cut(h, "tvs-sec tvw-adds")                    # owner 10/22: removed "More w
 h = cut(h, "tvs-sec tvs-show")                    # owner 10/22: page too long, removed "Anyone can build a website" launch section
 h = cut(h, "tvs-sec tvs-work")                    # owner 10/22: removed "See what you get" (phone + site examples)
 for m in re.finditer(r".{60}[Bb]undle.{40}", h): print("LEFT:", m.group(0))
-h = rep(h, chr(10) + '<a class="tvs-sticky"', chr(10) + '<p class="tvw-small">*Member pricing is for Featured and VIP tier members of Three Village Local who have been members for the previous 12 months, or who are on a paid annual plan. Walk-in pricing applies to everyone else.</p>' + chr(10) + '<a class="tvs-sticky"')   # owner 10/22: member pricing small print
+h = rep(h, chr(10) + '<a class="tvs-sticky"', chr(10) + '<p class="tvw-small">*Member pricing is for Featured and VIP tier members of Three Village Local with 12 months of membership. Featured and VIP members who joined before October 23, 2026 qualify now. Walk-in pricing applies to everyone else.</p>' + chr(10) + '<a class="tvs-sticky"')   # owner 10/22: member pricing small print
 HTML = h
 
 PRICES = ("var P={webready:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},webpowered:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},"
