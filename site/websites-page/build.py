@@ -55,7 +55,7 @@ def card(key, name, one, items, pop=False):
     return '''    <article class="tvs-card%s tvs-up" data-b="web%s">
 %s      <p class="tvs-cname">%s</p>
       <p class="tvs-cfor">%s</p>
-      <p class="tvw-plabel on">Featured &amp; VIP member price</p>
+      <p class="tvw-plabel on">Featured &amp; VIP member price*</p>
       <p class="tvs-was"></p>
       <p class="tvs-price"><sup>$</sup><b>%s</b></p>
       <p class="tvs-mo">+ <b>$%s</b>/mo</p>
@@ -118,10 +118,10 @@ BUNDLES = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
     <p><b>AI-Ready</b> means AI can find you. <b>AI-Powered</b> means AI works for you. Both are designed, built and hosted by us.</p>
   </div>
   <div class="tvs-tiers tvs-up" role="tablist" aria-label="Choose your membership to see your price">
-    <button type="button" role="tab" data-t="all">Regular price</button>
+    <button type="button" role="tab" data-t="all">Walk-in price</button>
     <button type="button" role="tab" data-t="vip" class="on">Featured &amp; VIP members<em>Save $1,000+</em></button>
   </div>
-  <p class="tvw-pnote tvs-up"><b>Two prices.</b> Featured and VIP members of Three Village Local get member pricing. Everyone else pays the regular price. Not a member yet? <a href="/join">See Featured and VIP</a></p>
+  <p class="tvw-pnote tvs-up"><b>Two prices.</b> Featured and VIP members of Three Village Local get member pricing. Everyone else is welcome at our walk-in price. Not a member yet? <a href="/join">See Featured and VIP</a></p>
   <div class="tvs-cards tvw-two">
 ''' + READY + POWERED + '''  </div>
   <p class="tvs-fine tvs-up"><b>Half to start, the rest only when you love it.</b> Your start-up fee includes your first month. After that, your monthly plan covers hosting, security and support, plus your updates and changes: email or text us what you need and we handle it. Month to month. Your domain is registered in your name.</p>
@@ -248,7 +248,7 @@ h = rep(h, "<p>We pick the right bundle together and map out your first month.</
 h = rep(h, "<p>No long contracts. Bundles are a one-time build, and monthly plans are month to month.</p>",
         "<p>No long contracts. Your site is a one-time build, and the monthly plan is month to month.</p>")
 h = rep(h, "<p>Half to start, the rest at launch once you love it.</p>", "<p>Half of your start-up fee to begin, and the rest only when you love your new site. Your start-up fee includes your first month.</p>")
-h = rep(h, "<p>No. Anyone can book. Members save on every bundle, and VIP members save the most.</p>", "<p>No. Anyone can book at the regular price. Featured and VIP members of Three Village Local get member pricing on both packages.</p>")
+h = rep(h, "<p>No. Anyone can book. Members save on every bundle, and VIP members save the most.</p>", "<p>No. Anyone can book at our walk-in price. Featured and VIP members of Three Village Local get member pricing on both packages.</p>")
 h = rep(h, "mailto:hello@threevillagelocal.com?subject=Services", "mailto:hello@threevillagelocal.com?subject=Websites")
 i, _ = sec(h, "tvs-sec tvs-steps")
 h = h[:i] + CTA3_SEC + chr(10) * 2 + h[i:]      # owner 10/22: more calls to action
@@ -256,6 +256,7 @@ h = cut(h, "tvs-sec tvw-adds")                    # owner 10/22: removed "More w
 h = cut(h, "tvs-sec tvs-show")                    # owner 10/22: page too long, removed "Anyone can build a website" launch section
 h = cut(h, "tvs-sec tvs-work")                    # owner 10/22: removed "See what you get" (phone + site examples)
 for m in re.finditer(r".{60}[Bb]undle.{40}", h): print("LEFT:", m.group(0))
+h = rep(h, chr(10) + '<a class="tvs-sticky"', chr(10) + '<p class="tvw-small">*Member pricing is for Featured and VIP tier members of Three Village Local who have been members for the previous 12 months, or who are on a paid annual plan. Walk-in pricing applies to everyone else.</p>' + chr(10) + '<a class="tvs-sticky"')   # owner 10/22: member pricing small print
 HTML = h
 
 PRICES = ("var P={webready:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},webpowered:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},"
@@ -277,7 +278,7 @@ await sl(1400)}}
 async function loop(){await sl(500);for(;;){await on();await talk(P);await sl(600);await talk(L);await sl(2500)}}
 var el=document.querySelector('.tvw-dev');if(!el)return;new IntersectionObserver(function(e){vis=e[0].isIntersecting;if(vis&&!go){go=true;loop()}},{threshold:.3}).observe(el)})();</script>'''
 GOJS = '''<script>(function(){var nb=0,ib=setInterval(function(){[].forEach.call(document.querySelectorAll('input[type="submit"][id^="services_inquiry"],#tvs-form-slot input[type="submit"]'),function(x){if(x.value!=='Send my message'){x.value='Send my message';x.setAttribute('value','Send my message')}});var t=document.querySelector('#tvs-form-slot textarea[name="comments"]');if(t)t.placeholder='Your current website (if any), what you want more of, anything we should know';if(++nb>120)clearInterval(ib)},250);var n0=0,iv=setInterval(function(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value='web_consult';var g=s.closest('.form-group')||s.parentNode;g.style.display='none';clearInterval(iv)}if(++n0>40)clearInterval(iv)},250);function upd(){var b=document.querySelector('#tvs .tvs-tiers button.on'),m=!b||b.getAttribute('data-t')!=='all';
-[].forEach.call(document.querySelectorAll('#tvs .tvw-go'),function(a){a.href=m?a.getAttribute('data-m'):a.getAttribute('data-r')});[].forEach.call(document.querySelectorAll('#tvs .tvw-plabel'),function(p){p.textContent=m?'Featured & VIP member price':'Regular price';p.className='tvw-plabel'+(m?' on':'')})}
+[].forEach.call(document.querySelectorAll('#tvs .tvw-go'),function(a){a.href=m?a.getAttribute('data-m'):a.getAttribute('data-r')});[].forEach.call(document.querySelectorAll('#tvs .tvw-plabel'),function(p){p.textContent=m?'Featured & VIP member price*':'Walk-in price';p.className='tvw-plabel'+(m?' on':'')})}
 document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('#tvs .tvs-tiers button'))setTimeout(upd,0)});upd()})();</script>'''
 
 CSS = '''
@@ -371,7 +372,7 @@ CSS = '''
 .tvw-hsite b{display:block;font-size:15px;color:var(--navy)}.tvw-hsite em{display:block;font-style:normal;font-size:13px;color:#1d5fd1}.tvw-hsite span{display:block;font-size:12.5px;color:#b07d00;margin-top:2px}
 .tvw-hdots{display:none;margin:0!important}
 .tvw-hf{right:34px!important;bottom:40px!important}
-.tvw-pnote{max-width:640px;margin:-14px auto 26px!important;text-align:center;font-size:15px;line-height:1.55;color:var(--mut)}.tvw-pnote b{color:var(--navy)}.tvw-pnote a{font-weight:800;color:var(--blue);white-space:nowrap}.tvw-plabel{display:inline-block;margin:6px 0 2px!important;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:#eef1f6;color:var(--mut)}.tvw-plabel.on{background:#fff3c4;color:#7a5600}.tvs-ready .tvw-h1{opacity:0;animation:tvwPop .5s ease .4s forwards}
+.tvw-small{max-width:860px;margin:6px auto 0!important;padding:0 16px 26px;text-align:center;font-size:12px;line-height:1.55;color:var(--mut)}.tvw-pnote{max-width:640px;margin:-14px auto 26px!important;text-align:center;font-size:15px;line-height:1.55;color:var(--mut)}.tvw-pnote b{color:var(--navy)}.tvw-pnote a{font-weight:800;color:var(--blue);white-space:nowrap}.tvw-plabel{display:inline-block;margin:6px 0 2px!important;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:#eef1f6;color:var(--mut)}.tvw-plabel.on{background:#fff3c4;color:#7a5600}.tvs-ready .tvw-h1{opacity:0;animation:tvwPop .5s ease .4s forwards}
 .tvs-ready .tvw-h2 .tvw-hdots{display:flex;gap:5px;position:absolute;top:6px;left:2px;animation:tvwOut .2s linear 2s forwards}
 .tvw-hdots i{width:7px;height:7px;border-radius:50%;background:#9fb0c8;animation:tvwDot 1s ease-in-out infinite}.tvw-hdots i:nth-child(2){animation-delay:.15s}.tvw-hdots i:nth-child(3){animation-delay:.3s}
 .tvs-ready .tvw-h2 .tvw-htxt,.tvs-ready .tvw-h2 .tvw-hsite{opacity:0;animation:tvwPop .5s ease forwards}
