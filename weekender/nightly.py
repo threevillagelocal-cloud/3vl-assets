@@ -118,7 +118,10 @@ def main():
     now = nhb.now_et()
     dp, dn = adjust(d, now)
     d2 = json.loads(json.dumps(d))
-    body = B.build(ed, False, sha, d=d)
+    # 10/24/2026 (owner approved): the homepage (widget 17) uses the front layout while weekender/front/homepage.on exists.
+    # Rollback = delete that file (3vl-private/backups/homepage-switch-2026-10-24/rollback.py does it).
+    front_home = os.path.exists(os.path.join(HERE, "front", "homepage.on"))
+    body = B.build(ed, False, sha, d=d, front=front_home)
     old = open(out, encoding="utf-8").read() if os.path.exists(out) else ""
     ends = datetime.datetime.fromisoformat(d["ends"][:16])
     print("edition %s | picks kept %d (dropped %d) | coming-up kept %d (dropped %d) | edition %s" % (
