@@ -276,8 +276,10 @@ def stories_main(skip=0, n=5):
         full = x["img"].replace("news-pictures-thumbnails", "news-pictures") if x["img"] else ""
         pic = (nhb.sm(full, 800) if i == 0 else nhb.sm(x["img"], 300)) if x["img"] else ""
         orig = full if i == 0 else x["img"]
-        img = ('<img src="%s" data-o="%s" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=&quot;&quot;}" alt="" loading="lazy" width="%d" height="%d">' % (
-            esc(pic), esc(orig), 800 if i == 0 else 360, 450 if i == 0 else 240)) if pic else ""
+        big = nhb.sm(full, 800) if (x["img"] and i) else ""
+        ss = (' srcset="%s 360w, %s 800w" sizes="240px"' % (esc(pic), esc(big))) if big and big != full and pic != x["img"] else ""
+        img = ('<img src="%s"%s data-o="%s" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=&quot;&quot;;this.removeAttribute(&quot;srcset&quot;)}" alt="" loading="lazy" width="%d" height="%d">' % (
+            esc(pic), ss, esc(orig), 800 if i == 0 else 360, 450 if i == 0 else 240)) if pic else ""
         cards.append('<a class="y-st%s" href="%s"><span class="y-sti">%s</span><span class="y-stb"><i>%s</i><b>%s</b>%s</span></a>' % (
             " y-stl" if i == 0 else "", esc(x["h"]), img, esc(x["d"]), esc(x["t"]), '<em class="y-stgo">Read the story ' + IC["chev"] + '</em>' if i == 0 else ""))
     return ('<section class="wk-sec y-stories" id="y-stories"><h2 class="wk-h2"><span>Local Stories</span><small>News and guides from around Three Village</small>'
