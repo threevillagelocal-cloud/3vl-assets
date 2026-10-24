@@ -20,7 +20,10 @@ SLUG = "preview-home"
 GUARD = os.path.join(WK, "..", "..", "3vl-site-guard", "post-sources")
 CSS = ("/* front layout preview: lower main sections are laid out only near the screen (same idea as the homepage) */\n"
        ".wk-y .wk-main>.wk-sec:not(#wk-picks){content-visibility:auto;contain-intrinsic-size:auto 700px}\n"
-       "#first_container{background-image:none!important}")
+       ".wk-y #nh-stories{content-visibility:auto;contain-intrinsic-size:auto 420px}\n"
+       "#first_container{background-image:none!important}\n"
+       "/* phone header logo: reserve its final box so the page does not move when it loads */\n"
+       ".mobile_website_logo a.visible-xs img{width:90.34px;height:35px}")
 
 
 def call(method, path, data=None):

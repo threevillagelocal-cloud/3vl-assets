@@ -40,13 +40,13 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
   var i=Math.floor(Math.random()*n),tm=0,hold=false,wide=window.matchMedia&&matchMedia('(min-width:1201px)');
   var CH='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>',PH='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>';
   function card(c){var g=function(k){return c.getAttribute('data-'+k)||''},name=(c.querySelector('.y-mct b')||{}).textContent||'',href=c.getAttribute('href');
-    var vis=g('img')?'<img src="'+esc(g('img'))+'" alt="'+esc(g('alt'))+'" style="object-position:'+esc(g('pos'))+'" width="900" height="560">':'<span class="y-panel" style="--c:'+esc(g('color'))+'"><span class="y-plogo" style="background-image:url(\''+esc(g('logo'))+'\')"></span></span>';
+    var vis=g('img')?'<img src="'+esc(g('img'))+'" alt="'+esc(g('alt'))+'" style="object-position:'+esc(g('pos'))+'" width="640" height="400" loading="lazy" decoding="async">':'<span class="y-panel" style="--c:'+esc(g('color'))+'"><span class="y-plogo" style="background-image:url(\''+esc(g('logo'))+'\')"></span></span>';
     return '<article class="y-spc"><a class="y-spimg" href="'+esc(href)+'" tabindex="-1" aria-hidden="true" data-y="photo">'+vis+'<span class="y-vipb">VIP</span></a><div class="y-spb"><div class="y-sptop"><span class="y-splogo" style="background-image:url(\''+esc(g('logo'))+'\')"></span>'+
       '<p class="y-spcat">'+esc(g('cat'))+(g('town')?' <span>&middot; '+esc(g('town'))+'</span>':'')+'</p></div><h3 class="y-spn2"><a href="'+esc(href)+'" data-y="name">'+esc(name)+'</a></h3>'+(g('desc')?'<p class="y-spd">'+esc(g('desc'))+'</p>':'')+
       '<div class="y-spbtns"><a class="y-btn" href="'+esc(href)+'" data-y="profile">View profile '+CH+'</a>'+(g('tel')?'<a class="y-btn o" href="tel:'+esc(g('tel'))+'" data-y="call">'+PH+'Call</a>':'')+'</div></div></article>'}
   function show(k){i=(k+n)%n;main.innerHTML=card(cards[i]);main.setAttribute('data-vip',(cards[i].querySelector('.y-mct b')||{}).textContent||'');
     cards.forEach(function(c,j){var d=(j-i+n)%n;c.style.order=d;c.classList.toggle('y-on',d>0&&d<=3);c.hidden=d===0});list.scrollLeft=0;
-    var nx=cards[(i+1)%n].getAttribute('data-img');if(nx){var p=new Image();p.src=nx}}
+    if(tm){var nx=cards[(i+1)%n].getAttribute('data-img');if(nx){var p=new Image();p.src=nx}}}
   function go(){clearInterval(tm);if(RM)return;tm=setInterval(function(){if(!hold&&!document.hidden)show(i+1)},7000)}
   var sec=document.getElementById('nh-feat')||wrap;
   ['mouseenter','focusin','touchstart'].forEach(function(ev){sec.addEventListener(ev,function(){hold=true},{passive:true})});
@@ -56,8 +56,8 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
     if(a.closest('#y-spmain'))track('spotlight_click',{vip:main.getAttribute('data-vip'),link:a.getAttribute('data-y')||'card'});
     else if(a.classList.contains('y-mc'))track('spotlight_click',{vip:(a.querySelector('.y-mct b')||{}).textContent||'',link:'also'});
     else if(a.classList.contains('y-lg'))track('spotlight_click',{vip:a.getAttribute('title')||'',link:'logo'});});
-  show(i);
-  /* start rotating once the section is near the screen (no work while it is far away) */
-  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){go();io.disconnect()}},{rootMargin:'200px 0px'});io.observe(sec)}else go();
+  /* draw the big card and start rotating only once the section is near the screen: no photo download while it is far away */
+  var drawn=false;function start(){if(drawn)return;drawn=true;show(i);go()}
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){start();io.disconnect()}},{rootMargin:'400px 0px'});io.observe(sec)}else start();
 })();
 })();

@@ -78,7 +78,8 @@ def _vips():
     return v
 
 
-def spotlight():
+def spotlight(base=""):
+    """base: the pinned weekender/ address. Small photo copies in weekender/front/img/<id>-640.webp and -240.webp are used when present."""
     vips = _vips()
     if not vips:
         return ""
@@ -93,6 +94,9 @@ def spotlight():
         j = _get_json(VIPBASE + uid + ".json") or {}
         h = j.get("hero") or {}
         photo = _hero(h)
+        mini = photo
+        if photo and base and os.path.exists(os.path.join(HERE, "img", uid + "-640.webp")):
+            photo, mini = base + "front/img/%s-640.webp" % uid, base + "front/img/%s-240.webp" % uid
         cat = j.get("category") or m.get("c") or ""
         twn = nhb.town(m.get("t"))
         desc = (j.get("sub") or j.get("tagline") or "").replace(chr(0x2014), "-").replace(chr(0x2013), "-")
@@ -100,7 +104,7 @@ def spotlight():
         color = ((j.get("theme") or {}).get("navy") or "#16304f")
         if not re.fullmatch(r"#[0-9a-fA-F]{3,8}", color):
             color = "#16304f"
-        vis = ('<img src="%s" alt="" loading="lazy" width="300" height="200" style="object-position:%s">' % (esc(photo), esc(h.get("pos") or "50% 50%"))) if photo else \
+        vis = ('<img src="%s" alt="" loading="lazy" width="240" height="160" style="object-position:%s">' % (esc(mini), esc(h.get("pos") or "50% 50%"))) if photo else \
               '<span class="y-panel" style="--c:%s"><span class="y-plogo" style="background-image:url(\'%s\')"></span></span>' % (color, esc(logo))
         cards.append(
             '<a class="y-mc" href="%s" data-id="%s" data-img="%s" data-pos="%s" data-alt="%s" data-logo="%s" data-cat="%s" data-town="%s" data-desc="%s" data-tel="%s" data-color="%s">'

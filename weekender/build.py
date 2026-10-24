@@ -246,7 +246,7 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
             ('<p class="wk-icred">%s</p>' % esc(n["credit"])) if n.get("credit") else ""))
     w('</div></section>')
     M["feat"] = len(out)
-    w(FB.spotlight() if front else nhb.featured())  # Featured Local Businesses (VIPs) / front: Local Business Spotlight
+    w(FB.spotlight(base) if front else nhb.featured())  # Featured Local Businesses (VIPs) / front: Local Business Spotlight
 
     M["eat"] = len(out)
     # EAT & DRINK (exterior photo + dish inset; one card per business)
