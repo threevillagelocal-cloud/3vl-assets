@@ -75,6 +75,8 @@ def _clean(t):
     t = html.unescape(re.sub(r"<[^>]+>", "", t or ""))
     t = "".join(ch for ch in t if ord(ch) < 0x2190)
     t = re.sub(r"\s+", " ", t).strip()
+    if t.lower() == "local stories":
+        return "Three Village Local Blog"
     return "Get the Mobile App" if t.lower() == "get the app" else t
 
 
@@ -96,7 +98,7 @@ def menu():
     if len(out) < 3:
         out = [("Home", SITE + "/", []), ("Find a Local Business", SITE + "/categories", []),
                ("Things to Do", SITE + "/events", [("This Weekend", SITE + "/this-weekend"), ("All Events", SITE + "/events"), ("Events Calendar", SITE + "/events-calendar")]),
-               ("Local Stories", SITE + "/blog", []), ("Get the Mobile App", SITE + "/app", [])]
+               ("Three Village Local Blog", SITE + "/blog", []), ("Get the Mobile App", SITE + "/app", [])]
     return out
 
 
@@ -274,21 +276,22 @@ def stories_main(skip=0, n=5):
     cards = []
     for i, x in enumerate(st):
         full = x["img"].replace("news-pictures-thumbnails", "news-pictures") if x["img"] else ""
-        pic = (nhb.sm(full, 800) if i == 0 else nhb.sm(x["img"], 300)) if x["img"] else ""
-        orig = full if i == 0 else x["img"]
+        pic = (nhb.sm(full, 800) if i == 0 else nhb.sm(full, 300)) if x["img"] else ""   # full post image (never BD's cropped thumbnail)
+        orig = full
         big = nhb.sm(full, 800) if (x["img"] and i) else ""
-        ss = (' srcset="%s 360w, %s 800w" sizes="240px"' % (esc(pic), esc(big))) if big and big != full and pic != x["img"] else ""
+        ss = (' srcset="%s 360w, %s 800w" sizes="240px"' % (esc(pic), esc(big))) if big and big != full and pic != full else ""
         img = ('<img src="%s"%s data-o="%s" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=&quot;&quot;;this.removeAttribute(&quot;srcset&quot;)}" alt="" loading="lazy" width="%d" height="%d">' % (
             esc(pic), ss, esc(orig), 800 if i == 0 else 360, 450 if i == 0 else 240)) if pic else ""
         cards.append('<a class="y-st%s" href="%s"><span class="y-sti">%s</span><span class="y-stb"><i>%s</i><b>%s</b>%s</span></a>' % (
             " y-stl" if i == 0 else "", esc(x["h"]), img, esc(x["d"]), esc(x["t"]), '<em class="y-stgo">Read the story ' + IC["chev"] + '</em>' if i == 0 else ""))
-    return ('<section class="wk-sec y-stories" id="y-stories"><h2 class="wk-h2"><span>Local Stories</span><small>News and guides from around Three Village</small>'
-            '<a class="wk-calbtn y-seeall" href="/blog">All local stories ' + IC["chev"] + '</a></h2>'
-            '<div class="y-stg">%s</div><p class="y-endbtn"><a class="y-bigbtn" href="/blog">All local stories %s</a></p></section>') % ("".join(cards), IC["chev"])
+    return ('<section class="wk-sec y-stories" id="y-stories"><h2 class="wk-h2"><span>Three Village Local Blog</span><small>News and guides from around Three Village</small>'
+            '<a class="wk-calbtn y-seeall" href="/blog">See the blog ' + IC["chev"] + '</a></h2>'
+            '<div class="y-stg">%s</div><p class="y-endbtn"><a class="y-bigbtn" href="/blog">All blog posts %s</a></p></section>') % ("".join(cards), IC["chev"])
 
 
 def stories_rail():
-    """Rail list: the posts after the five in the main Local Stories section."""
+    """Owner 10/24: the blog lives in the main column only; nothing in the rail."""
+    return ""
     st = nhb.stories(8)[5:8]
     if not st:
         return ""

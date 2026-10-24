@@ -648,3 +648,11 @@ html.tvl-inapp #wk-top.wk-y .y-cta{grid-template-columns:repeat(2,minmax(0,1fr))
   #wk-top.wk-y a.y-st:not(.y-stl){display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;align-items:start}
   #wk-top.wk-y form.y-msf input::placeholder{font-size:14px}
 }
+/* blog cards: designed share graphics, always shown whole (owner 10/24) */
+#wk-top.wk-y .y-sti,#wk-top.wk-y .y-stl .y-sti{aspect-ratio:1.91/1!important;background:#eef2f7}
+#wk-top.wk-y .y-sti img{object-fit:contain!important}
+@media (max-width:900px){#wk-top.wk-y .y-stl .y-sti{aspect-ratio:1.91/1!important}}
+#wk-top.wk-y a.y-st.y-stl{grid-row:span 2;align-self:start}
+#wk-top.wk-y .y-stl .y-sti{aspect-ratio:auto!important;background:none}
+#wk-top.wk-y .y-stl .y-sti img{position:static!important;display:block;height:auto!important}
+#wk-top.wk-y .wk-sec.wk-homesw{padding:0!important;background:none!important;border:0!important}
