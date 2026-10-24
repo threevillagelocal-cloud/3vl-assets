@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-24T18:45:07.469063+00:00",
+"updated": "2026-10-24T19:00:52.335398+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -192,7 +192,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/port-jefferson-chowder-crawl"
+"page": ""
 },
 {
 "id": "cur-chowder",
