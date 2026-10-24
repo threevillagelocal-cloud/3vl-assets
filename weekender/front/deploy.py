@@ -32,7 +32,7 @@ def call(method, path, data=None):
 
 
 def preload(body):
-    m = re.search(r'<header class="wk-hero[^>]*><picture><source media="\(max-width:720px\)" srcset="([^"]+)"><img class="wk-hbg" src="([^"]+)"', body)
+    m = re.search(r'<picture><source media="\(max-width:720px\)" srcset="([^"]+)"><img class="wk-hbg" src="([^"]+)"', body)
     if not m:
         return ""
     return ('<!-- 3VL hero preload (bd_guard.py) --><link rel="preload" as="image" href="%s" media="(max-width:720px)" fetchpriority="high">'
