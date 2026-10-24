@@ -534,8 +534,8 @@
 #wk-top.wk-y .wk-wlive{display:none!important}
 #wk-top.wk-y .wk-wbg iframe{display:none!important}
 #wk-top.wk-y .wk-wbg.is-cam .wk-wph{opacity:1!important}
-#wk-top.wk-y .wk-wbg.is-cam{cursor:pointer}
-#wk-top.wk-y .wk-wbg.is-cam::after{content:"LIVE";position:absolute;left:3px;top:3px;background:var(--red);color:#fff;font:700 8.5px/1 var(--q);padding:2px 4px;border-radius:4px;z-index:2}
+#wk-top.wk-y .wk-wbg.y-cam{cursor:pointer}
+#wk-top.wk-y .wk-wbg.y-cam::after{content:"LIVE";position:absolute;left:3px;top:3px;background:var(--red);color:#fff;font:700 8.5px/1 var(--q);padding:2px 4px;border-radius:4px;z-index:2}
 #wk-top.wk-y .y-lgend .nh-more{order:0;margin-left:0}
 #wk-top.wk-y .wk-tabs{width:100%}
 #wk-top.wk-y .wk-dayblk .wk-dayh>*{flex:none!important;margin:0!important}

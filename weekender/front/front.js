@@ -87,9 +87,15 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
     var dots=$$('i',d);function sync(){var on=ads.findIndex?ads.findIndex(function(a){return a.classList.contains('is-on')}):0;dots.forEach(function(x,i){x.classList.toggle('on',i===on)})}
     sync();if(window.MutationObserver)ads.forEach(function(a){new MutationObserver(sync).observe(a,{attributes:true,attributeFilter:['class']})})});return done}
   var n=0,t=setInterval(function(){if(frame()>=2||++n>20)clearInterval(t)},700);
+  /* images marked data-ysrc load only when they come near the screen */
+  var lz=$$('img[data-ysrc]');function ld(i){var u=i.getAttribute('data-ysrc');if(u){i.src=u;i.removeAttribute('data-ysrc')}}
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){ld(e.target);io.unobserve(e.target)}})},{rootMargin:'300px 0px'});lz.forEach(function(i){io.observe(i)})}else lz.forEach(ld);
   /* the weather line gets a "Best day" label from CSS; drop the emoji weekender.js puts in front of it */
   /* live cam: the thumbnail opens the camera (weekender.js marks it is-cam in daylight) */
-  root.addEventListener('click',function(e){var b=e.target.closest('.wk-wbg.is-cam');if(!b)return;var u=b.getAttribute('data-cam');if(u){window.open(u,'_blank','noopener');track('weather_cam',{})}});
+  function camOn(){var n=new Date(),h=n.getHours()+n.getMinutes()/60,ss=18,m=(document.querySelector('.wk-wd .wk-set')||{}).textContent||'',x=m.match(/(\d+):(\d+)\s*PM/);if(x)ss=12+(+x[1])+(+x[2])/60;
+    $$('.wk-wbg[data-ycam]').forEach(function(b){b.classList.toggle('y-cam',h>=7&&h<ss-1/3)})}
+  camOn();setTimeout(camOn,4000);setInterval(camOn,60000);
+  root.addEventListener('click',function(e){var b=e.target.closest('.wk-wbg.y-cam');if(!b)return;var u=b.getAttribute('data-ycam');if(u){window.open(u,'_blank','noopener');track('weather_cam',{})}});
   var v=document.getElementById('wk-verdict');
   function clean(){var f=v&&v.firstChild;if(f&&f.nodeType===3){var s=f.nodeValue.replace(/^[^A-Za-z0-9<]+/,'');if(s!==f.nodeValue)f.nodeValue=s}}
   if(v){clean();if(window.MutationObserver)new MutationObserver(clean).observe(v,{childList:true,characterData:true,subtree:true})}

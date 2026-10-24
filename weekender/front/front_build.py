@@ -292,6 +292,8 @@ def post(body):
         body = body.replace(old, new)
     # lighter photos: pick rows are ~120px wide (the 360 copy is sharp at 2x), weather thumbnails are 56px
     body = body.replace('sizes="280px"', 'sizes="120px"')
+    body = body.replace(' data-cam="', ' data-ycam="')   # no hidden camera iframe: the thumbnail links to the live camera instead (front.js)
+    body = re.sub(r'<img src="([^"]+/homes/[^"]+)"', r'<img data-ysrc="'+chr(92)+r'1"', body)   # homes thumbnails load only near the screen (front.js)
     body = re.sub(r'(<img class="wk-wph" src="[^"]+)-720[.]webp"', r'\1-360.webp"', body)
     body = re.sub(r'(<button type="button" class="wk-chip" data-tag="[a-z]+">)(?:&#[0-9]+;)+ ', r"\1", body)
     return body
