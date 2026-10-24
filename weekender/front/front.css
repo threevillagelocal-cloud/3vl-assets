@@ -366,3 +366,6 @@
 
 #wk-top.wk-y .wk-pimg .wk-pstat{white-space:nowrap!important}
 @media (max-width:760px){#wk-top.wk-y .wk-pimg .wk-pstat{font-size:8.5px;letter-spacing:.02em;padding:2px 4px}}
+#wk-top.wk-y .wk-evt{display:block!important}
+#wk-top.wk-y .wk-evt b,#wk-top.wk-y .wk-evt span{display:block!important;white-space:normal}
+#wk-top.wk-y .wk-evt b{white-space:nowrap!important}
