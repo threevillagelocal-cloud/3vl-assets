@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-24T13:00:58.393631+00:00",
+"updated": "2026-10-24T15:01:14.080120+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 208,
-"Emma S. Clark Library": 327,
+"Emma S. Clark Library": 325,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -195,23 +195,6 @@
 "page": "https://www.threevillagelocal.com/events/port-jefferson-chowder-crawl"
 },
 {
-"id": "emmaclark-tech-help-teens-42890",
-"title": "Tech Help (from teens)",
-"start": "2026-10-24T10:00:00",
-"end": "2026-10-24T11:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Technology Center",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/tech-help-teens-42890",
-"desc": "Teen Tech Tutors will assist patrons with basic questions about their mobile devices.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/tech-help-from-teens-414"
-},
-{
 "id": "emmaclark-italian-genealogy-workshop-58166",
 "title": "Italian Genealogy Workshop",
 "start": "2026-10-24T10:00:00",
@@ -250,23 +233,21 @@
 "page": "https://www.threevillagelocal.com/events/america-250-historical-gravestones-cleaning-416"
 },
 {
-"id": "emmaclark-storytime-around-world-ages-3-8-yrs-58811",
-"title": "Storytime Around the World (Ages 3-8 yrs.)",
-"start": "2026-10-24T10:30:00",
-"end": "2026-10-24T11:00:00",
+"id": "emmaclark-copy-tech-help-teens-42902",
+"title": "Tech Help (from teens)",
+"start": "2026-10-24T11:00:00",
+"end": "2026-10-24T12:00:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"venue": "Emma S. Clark Memorial Library, Technology Center",
 "addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/storytime-around-world-ages-3-8-yrs-58811",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-06/Storytime%20Around%20the%20World.png",
+"url": "https://emmaclark.librarycalendar.com/event/copy-tech-help-teens-42902",
+"desc": "Teen Tech Tutors will assist patrons with basic questions about their mobile devices.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
 "src": "emmaclark",
-"tags": [
-"kids"
-],
+"tags": [],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/storytime-around-the-world-ages-3-8-yrs"
+"fb": 1,
+"page": ""
 },
 {
 "id": "cur-chowder",
