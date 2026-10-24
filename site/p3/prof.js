@@ -67,7 +67,7 @@ document.addEventListener('click',function(e){var a=e.target.closest('.member_pr
 /* premium profile v2: live for ids in ON, ?v=2 previews any member with a data file, ?v=1 shows the old layout */
 (function(){try{if(!document.querySelector('.member_profile'))return;
   /* members on the new premium layout (add a user id when their profile goes live) */
-  var ON=[115,122,151,299,528,484,684,499,193,173,554,272,138,240,364],ud=document.querySelector('.member-profile-header .userData'),uid=ud?+ud.getAttribute('data-userid'):0,v=new URLSearchParams(location.search).get('v');
+  var ON=[115,122,151,299,528,484,684,499,193,173,554,272,138,240,364,78],ud=document.querySelector('.member-profile-header .userData'),uid=ud?+ud.getAttribute('data-userid'):0,v=new URLSearchParams(location.search).get('v');
   if(v==='1'||(v!=='2'&&ON.indexOf(uid)<0))return;
   var st=document.createElement('style');st.textContent='html:not(.pv2-on) .member_profile>.col-md-9>*,html:not(.pv2-on) .pf-coverimg{visibility:hidden}';document.head.appendChild(st);setTimeout(function(){st.remove()},4000);
   var B='https://threevillagelocal-cloud.github.io/3vl-share/live/p3/',q='?t='+Date.now(),l=document.createElement('link');l.rel='stylesheet';l.href=B+'prof2.css'+q;document.head.appendChild(l);
