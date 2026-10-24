@@ -44,7 +44,10 @@ function spread(arr,key,gap){var best=arr.slice();
 function build(list,side){
   /* competitors never share a page (owner 10/2/2026): one business per group per page view, picked at random */
   var pg={};list.forEach(function(v){if(!v.group)return;(pg[v.group]=pg[v.group]||[]);if(pg[v.group].indexOf(v.name)<0)pg[v.group].push(v.name)});
-  Object.keys(pg).forEach(function(g){pg[g]=pg[g][Math.floor(Math.random()*pg[g].length)]});
+  /* take turns instead of a random pick (owner 10/23/2026: 'try to even it out'): each visitor cycles through a group's businesses page by page */
+  var rr={};try{rr=JSON.parse(localStorage.getItem('vipxRR')||'{}')||{}}catch(e){}
+  Object.keys(pg).forEach(function(g){var n=pg[g].length;pg[g].sort();var c=typeof rr[g]==='number'?rr[g]:Math.floor(Math.random()*n);pg[g]=pg[g][c%n];rr[g]=(c+1)%n});
+  try{localStorage.setItem('vipxRR',JSON.stringify(rr))}catch(e){}
   list=list.filter(function(v){return !v.group||pg[v.group]===v.name});
   list=spread(list,function(v){return v.group||v.id},3);
   var gkey=function(v){return v.group||v.id};
