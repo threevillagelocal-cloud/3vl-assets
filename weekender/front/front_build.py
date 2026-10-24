@@ -46,18 +46,63 @@ def _hero(h):
 
 
 def hero(d, img):
-    h = d["hero"]
+    """Compact top band: search bar (smartsearch.js inserts it after .wk-dek) + the thin live "today" strip. No photo here:
+    this week's photo is the lead story inside Top Things to Do."""
     return (
-        '<header class="wk-hero wk-hero2 wk-yhero"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="%s" width="1600" height="1067" fetchpriority="high"></picture>'
-        '<div class="wk-hin"><p class="wk-ykick"><span class="wk-livepill"><i></i>Live from Three Village</span></p>'
-        '<h1 class="wk-yh1">What&rsquo;s happening in Three Village</h1>'
-        '<p class="wk-dek">Events, specials, weather and local news for Setauket, Stony Brook and Port Jefferson, updated all day.</p>'
+        '<header class="wk-hero wk-hero2 wk-yhero"><div class="wk-hin">'
+        '<h1 class="y-vh">What&rsquo;s happening in Three Village: events, specials, weather and local news for Setauket, Stony Brook and Port Jefferson</h1>'
+        '<p class="wk-dek">Search local businesses</p>'
         '<div class="wk-hstats">'
         '<div class="wk-hs"><span class="wk-hsl">Today</span><b id="wk-hdate">--</b><span class="wk-hsc" id="wk-hclock">--:--</span></div>'
         '<a class="wk-hs" href="#wk-sched"><span class="wk-hsl"><i class="wk-hdot"></i>Happening now</span><b id="wk-hnow">--</b><span class="wk-hsc" id="wk-hnext">checking&hellip;</span></a>'
         '<a class="wk-hs" href="#wk-wx"><span class="wk-hsl">Setauket weather</span><b><span class="wk-hwi2" id="wk-hwi2"></span><span id="wk-htemp">--</span>&deg;</b><span class="wk-hsc" id="wk-hsky">loading&hellip;</span></a>'
-        '</div></div><p class="wk-pcred">%s</p></header>'
-    ) % (img(h["img"], True), img(h["img"]), esc(h.get("alt") or "Three Village, Long Island this week"), esc(h["credit"]))
+        '<span class="y-jump">Jump to <a href="#wk-picks">Things to Do</a><a href="#wk-eat">Eat &amp; Drink</a><a href="#wk-sched">Schedule</a><a href="#wk-wx">Weather</a></span>'
+        '</div></div></header>')
+
+
+def _words(t):
+    return set(re.findall(r"[a-z]{4,}", (t or "").lower()))
+
+
+def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
+    """Tabs + the lead story of Top Things to Do. The week's hero photo is used only when it belongs to one of the picks
+    (its credit/alt names the event); otherwise the first pick with its own photo leads with that photo."""
+    tabs = ('<div class="y-tabs" role="tablist"><button type="button" role="tab" class="on" aria-selected="true" data-y="tp">Top Picks</button>'
+            '<button type="button" role="tab" aria-selected="false" data-y="td">Today <b class="y-tdn"></b></button>'
+            '<button type="button" role="tab" aria-selected="false" data-y="cu">Coming Up</button></div>')
+    cand = [ev[p] for p in d["picks"] if p in ev]
+    h = d.get("hero") or {}
+    hw = _words(h.get("credit", "") + " " + h.get("alt", ""))
+    le = next((e for e in cand if len(_words(e["title"]) & hw) >= 2 and h.get("img")), None)
+    if le is not None:
+        small, big, credit = img(h["img"], True), img(h["img"]), re.sub(r"^.*?Photo:\s*", "", h.get("credit", ""))
+    else:
+        le = next((e for e in cand if e.get("img")), None)
+        if le is None:
+            return tabs + '<div class="y-tp">'
+        small, big, credit = img(le["img"], True), img(le["img"]), le.get("credit", "")
+    from datetime import datetime, timedelta
+    if le.get("when"):
+        when = esc(le["when"])
+    else:
+        last = (datetime.fromisoformat(le["end"]) - timedelta(hours=6)).date().isoformat() if le.get("end") else le["start"][:10]
+        when = ("%s - %s" % (dshort(le["start"]), dshort(last))) if last > le["start"][:10] else "%s &middot; %s" % (dshort(le["start"]), fmt_time(le["start"]))
+    page = le.get("page") or CAL
+    g = next((x for x in d.get("guides", []) if x[0] in le["title"].lower()), None)
+    if g:
+        page = g[1]
+    acts = actions(le)
+    if le.get("when") and le.get("url"):
+        acts = re.sub(r'<button type="button" class="wk-cal"[^<]*</button>', '<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a>' % esc(le["url"]), acts)
+    lead = ('<article class="y-lead" data-href="%s" %s><a class="y-leadimg" href="%s" tabindex="-1" aria-hidden="true"><figure class="y-leadpic"><picture>'
+            '<source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="%s" width="1600" height="1067" fetchpriority="high"></picture>'
+            '<span class="wk-pnum">01</span><span class="wk-pstat" data-status></span></figure></a>'
+            '<div class="y-leadb"><p class="wk-pwhen">%s</p><h3 class="y-leadt"><a href="%s">%s</a></h3><p class="wk-pwhere">&#128205; %s</p>'
+            '<p class="y-leadd">%s</p><div class="wk-tags">%s</div>%s%s</div></article>') % (
+        esc(page), evattrs(le), esc(page), esc(small), esc(big), esc(h.get("alt") if big == img(h.get("img", "x")) else le["title"]),
+        when, esc(page), esc(le["title"]), esc(V[le["venue"]]["name"]), esc(le.get("desc", "")), tagchips(le.get("tags", [])), acts,
+        ('<p class="y-cred">Photo: %s</p>' % esc(credit)) if credit else "")
+    return tabs + '<div class="y-tp" data-lead="%s">' % esc(le["title"]) + lead
 
 
 def quick():

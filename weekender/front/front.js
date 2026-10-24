@@ -12,9 +12,17 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
 /* ---------- 1) Top Things to Do tabs ---------- */
 (function(){
   var sec=document.getElementById('wk-picks');if(!sec)return;var h2=sec.querySelector('.wk-h2');if(!h2)return;
-  var bar=document.createElement('div');bar.className='y-tabs';bar.setAttribute('role','tablist');
-  bar.innerHTML='<button type="button" role="tab" class="on" aria-selected="true" data-y="tp">Top Picks</button><button type="button" role="tab" aria-selected="false" data-y="td">Today <b class="y-tdn"></b></button><button type="button" role="tab" aria-selected="false" data-y="cu">Coming Up</button>';
-  h2.parentNode.insertBefore(bar,h2.nextSibling);
+  var bar=sec.querySelector('.y-tabs');
+  if(!bar){bar=document.createElement('div');bar.className='y-tabs';bar.setAttribute('role','tablist');
+    bar.innerHTML='<button type="button" role="tab" class="on" aria-selected="true" data-y="tp">Top Picks</button><button type="button" role="tab" aria-selected="false" data-y="td">Today <b class="y-tdn"></b></button><button type="button" role="tab" aria-selected="false" data-y="cu">Coming Up</button>';
+    h2.parentNode.insertBefore(bar,h2.nextSibling)}
+  /* the lead story is the first pick: hide its duplicate row and keep 5 compact rows beside it */
+  var tp=sec.querySelector('.y-tp'),leadT=tp&&tp.getAttribute('data-lead');
+  function norm(x){return String(x||'').toLowerCase().replace(/[^a-z0-9]/g,'')}
+  function rowsFix(){if(!tp)return;var n=0;$$('.wk-picks .wk-pick',sec).forEach(function(p){if(p.classList.contains('wk-radar'))return;
+    var t=p.getAttribute('data-title')||((p.querySelector('.wk-ptitle')||{}).textContent)||'';var dup=leadT&&norm(t)===norm(leadT);
+    p.classList.toggle('y-dup',!!dup);if(!dup)n++;p.classList.toggle('y-first',!dup&&n===1);p.classList.toggle('y-extra',!dup&&n>5)})}
+  rowsFix();
   var pane=document.createElement('div');pane.className='y-today';sec.appendChild(pane);
   function todayBlk(){var b=null;$$('#wk-sched .wk-dayblk').forEach(function(x){var t=x.querySelector('.wk-dayh b');if(!b&&t&&/^today$/i.test(t.textContent.trim()))b=x});return b}
   function rows(){var b=todayBlk(),li=b?$$('.wk-ev',b):[];
@@ -30,7 +38,7 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
     sec.classList.toggle('y-td',k==='td');sec.classList.toggle('y-cu',k==='cu');if(k==='td')rows();track('front_tab',{tab:k})});
   /* the live schedule opens on Today (the classic page starts with every day folded) */
   var opened=false;function openToday(){if(opened)return;var b=todayBlk();if(!b)return;opened=true;if(b.classList.contains('is-collapsed')){b.classList.remove('is-collapsed');var h=b.querySelector('.wk-dayh');if(h)h.setAttribute('aria-expanded','true')}}
-  upd();var n=0,t=setInterval(function(){upd();if(n>2)openToday();if(++n>12)clearInterval(t)},1500);
+  upd();var n=0,t=setInterval(function(){upd();rowsFix();if(n>2)openToday();if(++n>12)clearInterval(t)},1500);
 })();
 
 /* ---------- 2) Local Business Spotlight ---------- */
