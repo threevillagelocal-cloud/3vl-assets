@@ -24,6 +24,10 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
     p.classList.toggle('y-dup',!!dup);if(!dup)n++;p.classList.toggle('y-first',!dup&&n===1);p.classList.toggle('y-extra',!dup&&n>5);
       var st=p.querySelector('.wk-pimg .wk-pstat'),wh=p.querySelector('.wk-pwhen');if(st&&wh)wh.appendChild(st)})}
   rowsFix();
+  /* pick rows are small: ask for the small photo copy (weekender.js redraws the row with a 280px size hint) */
+  var box=sec.querySelector('.wk-picks');
+  function sz(){$$('.wk-picks .wk-pimg img',sec).forEach(function(i){if(i.getAttribute('sizes')!=='120px')i.setAttribute('sizes','120px')})}
+  if(box&&window.MutationObserver)new MutationObserver(sz).observe(box,{childList:true,subtree:true});
   var pane=document.createElement('div');pane.className='y-today';sec.appendChild(pane);
   function todayBlk(){var b=null;$$('#wk-sched .wk-dayblk').forEach(function(x){var t=x.querySelector('.wk-dayh b');if(!b&&t&&/^today$/i.test(t.textContent.trim()))b=x});return b}
   function rows(){var b=todayBlk(),li=b?$$('.wk-ev',b):[];

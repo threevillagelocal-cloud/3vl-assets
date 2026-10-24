@@ -114,14 +114,15 @@ def hero(d, img, base=""):
             if sp:
                 hl = '<a class="yh-hl" href="%s">%s</a>' % (esc(sp[1]), esc(sp[0]))
         else:
-            links.append('<a href="%s"%s>%s</a>' % (esc(u), ' class="on"' if i == 0 else "", esc(t)))
+            cls = "on" if i == 0 else ("yh-applink" if u.rstrip("/").endswith("/app") else "")
+            links.append('<a href="%s"%s>%s</a>' % (esc(u), (' class="%s"' % cls) if cls else "", esc(t)))
     cats = "".join('<a class="yh-q" href="%s%s"><span class="yh-qi"><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg></span><span>%s</span></a>' % (
         SITE, u, sv, esc(t)) for t, u, sv in CAT_IC)
     return (
         '<div class="wk-hero y-ssanchor" hidden><p class="wk-dek"></p></div>'
         '<h1 class="y-vh">Three Village Local: events, specials, weather and local news for Setauket, Stony Brook and Port Jefferson</h1>'
         '<header class="yh"><div class="yh-in">'
-        '<a class="yh-logo" href="{S}/" aria-label="Three Village Local home"><img src="{B}front/img/logo-navy.webp" width="177" height="60" alt="Three Village Local"></a>'
+        '<a class="yh-logo" href="{S}/" aria-label="Three Village Local home"><img src="https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-540.webp" width="167" height="52" alt="Three Village Local" fetchpriority="high"></a>'
         '<form class="yh-srch tvl-ns" action="/search_results" method="get" role="search"><span class="yh-si">{SEARCH}</span>'
         '<input type="search" name="q" placeholder="Search local businesses" aria-label="Search local businesses" autocomplete="off"><button type="submit">Search</button></form>'
         '<div class="yh-r"><a class="yh-gr" href="https://maps.google.com/?cid=15405294417866042762" target="_blank" rel="noopener" aria-label="Rated 5.0 on Google"><b>5.0</b><span class="yh-grs">&#9733;&#9733;&#9733;&#9733;&#9733;</span><em>Google</em></a>'
@@ -255,7 +256,7 @@ def cta(base):
             '<a class="y-btn" href="{S}/promotion">Submit it {CH}</a><p class="y-ccs">Own a local business? <a href="{S}/join">Join here</a></p></div>'
             '<div class="y-cc"><p class="y-cct">Send this to your crew</p><p class="y-ccd">Share the page with friends and family, or share the plans you saved.</p>'
             '<div class="y-ccb"><button type="button" class="y-btn o" id="wk-share">{SH}Share Three Village Local</button><button type="button" class="y-btn o" id="wk-share2">{ST}Share my plan</button></div></div>'
-            '<div class="y-cc"><p class="y-cct">Get Three Village Local on your phone</p>'
+            '<div class="y-cc y-app"><p class="y-cct">Get Three Village Local on your phone</p>'
             '<p class="y-ccd">The free Three Village Local mobile app puts today&rsquo;s events, local specials and neighbor-rated businesses right on your phone.</p>'
             '<div class="y-badges"><a href="https://apps.apple.com/us/app/three-village-local/id6746367200" target="_blank" rel="noopener"><img src="{R}badges/app-store-badge-400.webp" width="142" height="50" alt="Download on the App Store" loading="lazy"></a>'
             '<a href="https://play.google.com/store/apps/details?id=com.threevillagelocal.app&amp;hl=en_US" target="_blank" rel="noopener"><img src="{R}badges/google-play-badge-470.webp" width="168" height="50" alt="Get it on Google Play" loading="lazy"></a></div></div></section>'
@@ -289,5 +290,8 @@ def post(body):
                      ("<span>&#11088; VIP</span>", "<span>VIP</span>"),
                      ("&#128197; Add</button>", IC["cal"] + "Add</button>"), ("&#128205; Map</a></div>", IC["pin"] + "Map</a></div>")):
         body = body.replace(old, new)
+    # lighter photos: pick rows are ~120px wide (the 360 copy is sharp at 2x), weather thumbnails are 56px
+    body = body.replace('sizes="280px"', 'sizes="120px"')
+    body = re.sub(r'(<img class="wk-wph" src="[^"]+)-720[.]webp"', r'\1-360.webp"', body)
     body = re.sub(r'(<button type="button" class="wk-chip" data-tag="[a-z]+">)(?:&#[0-9]+;)+ ', r"\1", body)
     return body
