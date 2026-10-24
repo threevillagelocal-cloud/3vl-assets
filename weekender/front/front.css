@@ -560,3 +560,6 @@
   #wk-top.wk-y .wk-ev .wk-acts{grid-row:3!important}
   #wk-top.wk-y .wk-ev{grid-template-columns:76px minmax(0,1fr)}
 }
+#wk-top.wk-y .wk-adrot{display:flex!important;flex-direction:column}
+#wk-top.wk-y .wk-addots{order:5}
+#wk-top.wk-y .wk-verdict{font-weight:400!important}
