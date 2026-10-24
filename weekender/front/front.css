@@ -364,3 +364,5 @@
 #wk-top.wk-y .wk-pimg .wk-pstat{display:block;text-overflow:ellipsis}
 #wk-top.wk-y .wk-pimg .wk-pstat::before{display:none}
 
+#wk-top.wk-y .wk-pimg .wk-pstat{white-space:nowrap!important}
+@media (max-width:760px){#wk-top.wk-y .wk-pimg .wk-pstat{font-size:8.5px;letter-spacing:.02em;padding:2px 4px}}
