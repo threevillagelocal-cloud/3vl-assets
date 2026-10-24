@@ -625,7 +625,7 @@ html.tvl-inapp #wk-top.wk-y .y-cta{grid-template-columns:repeat(2,minmax(0,1fr))
 #wk-top.wk-y a.y-ssr em{font-style:normal;font-size:10.5px;font-weight:700;background:var(--yel);color:#2b2100;border-radius:999px;padding:2px 7px}
 #wk-top.wk-y a.y-ssall{display:block;margin-top:4px;padding:10px 8px;border-top:1px solid var(--line);font-weight:600;color:var(--blue)!important}
 @media (max-width:900px){
-  #wk-top.wk-y #y-midsearch{order:4}
+  #wk-top.wk-y #y-midsearch{order:1}
   #wk-top.wk-y #y-stories{order:10}
   #wk-top.wk-y .y-stg{grid-template-columns:1fr 1fr}
   #wk-top.wk-y a.y-st.y-stl{grid-column:1 / -1;grid-row:auto}

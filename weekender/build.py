@@ -244,9 +244,9 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
             esc(n["when"]), '<a href="%s"%s>%s</a>' % (esc(npage), "" if nours else ' target="_blank" rel="noopener"', esc(n["title"])),
             esc(n["desc"]), ('<div class="wk-acts"><a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a></div>' % esc(n["url"])) if n.get("url") else "",
             ('<p class="wk-icred">%s</p>' % esc(n["credit"])) if n.get("credit") else ""))
-    w(('</div></div>' + FB.endbtn("https://www.threevillagelocal.com/events-calendar", "See all things to do") + '</section>') if front else '</div></section>')
+    w(('</div></div>' + FB.endbtn("https://www.threevillagelocal.com/events-calendar", "See all things to do") + '</section>' + FB.midsearch()) if front else '</div></section>')
     M["feat"] = len(out)
-    w((FB.midsearch() + FB.spotlight(base)) if front else nhb.featured())  # Featured Local Businesses (VIPs) / front: Local Business Spotlight
+    w(FB.spotlight(base) if front else nhb.featured())  # Featured Local Businesses (VIPs) / front: Local Business Spotlight
 
     M["eat"] = len(out)
     # EAT & DRINK (exterior photo + dish inset; one card per business)
