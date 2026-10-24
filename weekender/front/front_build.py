@@ -45,19 +45,101 @@ def _hero(h):
     return full if _ok(full) else ""
 
 
-def hero(d, img):
-    """Compact top band: search bar (smartsearch.js inserts it after .wk-dek) + the thin live "today" strip. No photo here:
-    this week's photo is the lead story inside Top Things to Do."""
+SITE = "https://www.threevillagelocal.com"
+IC = {
+ "search": '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>',
+ "star": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>',
+ "menu": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
+ "chev": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>',
+ "phone": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>',
+ "mail": '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6l8.5 7 8.5-7"/></svg>',
+ "cal": '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>',
+ "pin": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+ "share": '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>',
+}
+CAT_IC = [
+ ("Restaurants", "/restaurant", '<path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M16 3c-2 0-3 2-3 6s1 4 3 4v8"/>'),
+ ("Home Services", "/home-services", '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/>'),
+ ("Contractors", "/contractor", '<path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M9 21v-6h6v6"/>'),
+ ("Health & Wellness", "/health-wellness", '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>'),
+ ("Real Estate", "/real-estate-services", '<path d="M4 20V9l8-5 8 5v11z"/><path d="M9 13h6M9 16h6"/>'),
+ ("Attorneys", "/attorney", '<path d="M12 4v16M5 20h14M6 8h12M6 8l-3 6a3 3 0 0 0 6 0zM18 8l-3 6a3 3 0 0 0 6 0z"/>'),
+ ("Beauty", "/beauty-personal-care", '<path d="M6 4l8 8M14 4l-8 8"/><circle cx="6" cy="17" r="3"/><circle cx="16" cy="17" r="3"/>'),
+ ("Financial", "/financial-services", '<rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/>'),
+ ("All categories", "/categories", '<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>'),
+]
+STD_EV = ("/this-weekend", "/events", "/events-calendar")
+
+
+def _clean(t):
+    t = html.unescape(re.sub(r"<[^>]+>", "", t or ""))
+    t = "".join(ch for ch in t if ord(ch) < 0x2190)
+    t = re.sub(r"\s+", " ", t).strip()
+    return "Get the Mobile App" if t.lower() == "get the app" else t
+
+
+def _abs(h):
+    return SITE + h if h.startswith("/") else h
+
+
+def menu():
+    """BD main menu (menu 52) as [(label, url, [(label, url)...])], read from the live site's mobile menu. Defaults if that fails."""
+    out = []
+    try:
+        h = nhb.get(SITE + "/")
+        m = re.search(r'<div class="mobile-main-menu">\s*<ul class="sidebar-nav">(.*?)</ul>\s*</div>', h, re.S)
+        for it in re.finditer(r"<li[^>]*><a href='([^']*)'[^>]*>(.*?)</a>(?:<ul>(.*?)</ul>)?</li>", m.group(1), re.S):
+            kids = [(_clean(k.group(2)), _abs(k.group(1))) for k in re.finditer(r"<a href='([^']*)'[^>]*>(.*?)</a>", it.group(3) or "")]
+            out.append((_clean(it.group(2)), _abs(it.group(1)), kids))
+    except Exception:
+        out = []
+    if len(out) < 3:
+        out = [("Home", SITE + "/", []), ("Find a Local Business", SITE + "/categories", []),
+               ("Things to Do", SITE + "/events", [("This Weekend", SITE + "/this-weekend"), ("All Events", SITE + "/events"), ("Events Calendar", SITE + "/events-calendar")]),
+               ("Local Stories", SITE + "/blog", []), ("Get the Mobile App", SITE + "/app", [])]
+    return out
+
+
+def hero(d, img, base=""):
+    """Prototype header: compact white top bar (logo, search, Google rating, Contact/Login/My Plans/Join, hamburger),
+    navy menu strip, category quick links, then the thin live "today" strip. The search form is .tvl-ns, so smartsearch.js
+    attaches its suggestions to it (it looks for .wk-hero .wk-dek, kept as a hidden anchor)."""
+    mn = menu()
+    links, hl = [], ""
+    for i, (t, u, kids) in enumerate(mn):
+        if kids:
+            links.append('<span class="yh-dd"><a href="%s">%s</a><span class="yh-ddm">%s</span></span>' % (
+                esc(u), esc(t), "".join('<a href="%s">%s</a>' % (esc(ku), esc(kt)) for kt, ku in kids)))
+            sp = next(((kt, ku) for kt, ku in kids if ku.replace(SITE, "").rstrip("/") not in STD_EV), None)
+            if sp:
+                hl = '<a class="yh-hl" href="%s">%s</a>' % (esc(sp[1]), esc(sp[0]))
+        else:
+            links.append('<a href="%s"%s>%s</a>' % (esc(u), ' class="on"' if i == 0 else "", esc(t)))
+    cats = "".join('<a class="yh-q" href="%s%s"><span class="yh-qi"><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg></span><span>%s</span></a>' % (
+        SITE, u, sv, esc(t)) for t, u, sv in CAT_IC)
     return (
-        '<header class="wk-hero wk-hero2 wk-yhero"><div class="wk-hin">'
-        '<h1 class="y-vh">What&rsquo;s happening in Three Village: events, specials, weather and local news for Setauket, Stony Brook and Port Jefferson</h1>'
-        '<p class="wk-dek">Search local businesses</p>'
-        '<div class="wk-hstats">'
-        '<div class="wk-hs"><span class="wk-hsl">Today</span><b id="wk-hdate">--</b><span class="wk-hsc" id="wk-hclock">--:--</span></div>'
-        '<a class="wk-hs" href="#wk-sched"><span class="wk-hsl"><i class="wk-hdot"></i>Happening now</span><b id="wk-hnow">--</b><span class="wk-hsc" id="wk-hnext">checking&hellip;</span></a>'
-        '<a class="wk-hs" href="#wk-wx"><span class="wk-hsl">Setauket weather</span><b><span class="wk-hwi2" id="wk-hwi2"></span><span id="wk-htemp">--</span>&deg;</b><span class="wk-hsc" id="wk-hsky">loading&hellip;</span></a>'
-        '<span class="y-jump">Jump to <a href="#wk-picks">Things to Do</a><a href="#wk-eat">Eat &amp; Drink</a><a href="#wk-sched">Schedule</a><a href="#wk-wx">Weather</a></span>'
-        '</div></div></header>')
+        '<div class="wk-hero y-ssanchor" hidden><p class="wk-dek"></p></div>'
+        '<h1 class="y-vh">Three Village Local: events, specials, weather and local news for Setauket, Stony Brook and Port Jefferson</h1>'
+        '<header class="yh"><div class="yh-in">'
+        '<a class="yh-logo" href="{S}/" aria-label="Three Village Local home"><img src="{B}front/img/logo-navy.webp" width="177" height="60" alt="Three Village Local"></a>'
+        '<form class="yh-srch tvl-ns" action="/search_results" method="get" role="search"><span class="yh-si">{SEARCH}</span>'
+        '<input type="search" name="q" placeholder="Search local businesses" aria-label="Search local businesses" autocomplete="off"><button type="submit">Search</button></form>'
+        '<div class="yh-r"><a class="yh-gr" href="https://maps.google.com/?cid=15405294417866042762" target="_blank" rel="noopener" aria-label="Rated 5.0 on Google"><b>5.0</b><span class="yh-grs">&#9733;&#9733;&#9733;&#9733;&#9733;</span><em>Google</em></a>'
+        '<a class="yh-tl" href="{S}/about/contact">Contact</a><a class="yh-tl" href="{S}/login">Login</a>'
+        '<button type="button" class="yh-plans" id="wk-fab" aria-controls="wk-drawer" aria-expanded="false" aria-label="My Plans">{STAR}<span>My Plans</span><b id="wk-fabn">0</b></button>'
+        '<a class="yh-join" href="{S}/join">Businesses - Join Today</a>'
+        '<button type="button" class="yh-mnu" id="yh-mnu" aria-label="Menu" aria-expanded="false" aria-controls="yh-mn">{MENU}</button></div></div>'
+        '<nav class="yh-mn" id="yh-mn" aria-label="Main menu"><div class="yh-mnin">{LINKS}<span class="yh-sp"></span>{HL}'
+        '<a class="yh-mob" href="{S}/about/contact">Contact</a><a class="yh-mob" href="{S}/login">Login</a><a class="yh-mob yh-mobj" href="{S}/join">Businesses - Join Today</a></div></nav>'
+        '<div class="yh-ql"><div class="yh-qlin">{CATS}</div></div></header>'
+        '<div class="yh-today"><div class="yh-tdin">'
+        '<span class="yh-tc"><b id="wk-hdate">--</b> <span id="wk-hclock">--:--</span></span>'
+        '<a class="yh-tc" href="#wk-sched"><i class="yh-dot"></i><b>Happening now: <span id="wk-hnow">--</span></b><span class="yh-ts" id="wk-hnext">checking&hellip;</span></a>'
+        '<a class="yh-tc" href="#wk-wx"><b>Setauket <span class="wk-hwi2" id="wk-hwi2"></span><span id="wk-htemp">--</span>&deg;</b><span class="yh-ts" id="wk-hsky">loading&hellip;</span></a>'
+        '<span class="yh-tsp"></span><span class="yh-tj">Jump to <a href="#wk-picks">Things to Do</a><a href="#wk-eat">Eat &amp; Drink</a><a href="#wk-sched">Schedule</a><a href="#wk-wx">Weather</a></span>'
+        '</div></div>'
+    ).replace("{S}", SITE).replace("{B}", base).replace("{SEARCH}", IC["search"]).replace("{STAR}", IC["star"]).replace("{MENU}", IC["menu"]) \
+     .replace("{LINKS}", "".join(links)).replace("{HL}", hl).replace("{CATS}", cats)
 
 
 def _words(t):
@@ -106,9 +188,7 @@ def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
 
 
 def quick():
-    chips = "".join('<a class="nh-cat" href="%s"><svg viewBox="0 0 24 24">%s</svg>%s</a>' % (u, nhb.ICO[i], esc(t)) for t, u, i in nhb.CATS)
-    return ('<nav class="wk-yql" id="nh-explore" aria-label="Browse local businesses"><div class="wk-yqlin">' + chips
-            + '<a class="nh-cat nh-allc" href="/categories">All categories &rarr;</a></div></nav>')
+    return ""   # the quick-link row is part of hero() now
 
 
 def _vips():
@@ -165,3 +245,49 @@ def spotlight(base=""):
             '<div class="y-lgs"><div class="y-lgvp"><div class="y-lgtr">%s<span class="y-lgdup" aria-hidden="true">%s</span></div></div>'
             '<div class="y-lgend"><a class="nh-more" href="/search_results">See all businesses &rarr;</a><a class="y-join" href="/join">Own a business? Get featured</a></div></div>'
             '</section>') % (nav, "".join(cards), lg, lg.replace('<a class="y-lg"', '<a class="y-lg" tabindex="-1"'))
+
+
+def cta(base):
+    root = base[:-len("weekender/")]
+    return ('<section class="wk-sec wk-cta y-cta" aria-label="Get involved">'
+            '<div class="y-cc"><p class="y-cct">Submit an event, business special or promotion</p>'
+            '<p class="y-ccd">Three Village Local is updated every day and seen by thousands of neighbors. Send us your event, special or promotion.</p>'
+            '<a class="y-btn" href="{S}/promotion">Submit it {CH}</a><p class="y-ccs">Own a local business? <a href="{S}/join">Join here</a></p></div>'
+            '<div class="y-cc"><p class="y-cct">Send this to your crew</p><p class="y-ccd">Share the page with friends and family, or share the plans you saved.</p>'
+            '<div class="y-ccb"><button type="button" class="y-btn o" id="wk-share">{SH}Share Three Village Local</button><button type="button" class="y-btn o" id="wk-share2">{ST}Share my plan</button></div></div>'
+            '<div class="y-cc"><p class="y-cct">Get Three Village Local on your phone</p>'
+            '<p class="y-ccd">The free Three Village Local mobile app puts today&rsquo;s events, local specials and neighbor-rated businesses right on your phone.</p>'
+            '<div class="y-badges"><a href="https://apps.apple.com/us/app/three-village-local/id6746367200" target="_blank" rel="noopener"><img src="{R}badges/app-store-badge-400.webp" width="142" height="50" alt="Download on the App Store" loading="lazy"></a>'
+            '<a href="https://play.google.com/store/apps/details?id=com.threevillagelocal.app&amp;hl=en_US" target="_blank" rel="noopener"><img src="{R}badges/google-play-badge-470.webp" width="168" height="50" alt="Get it on Google Play" loading="lazy"></a></div></div></section>'
+            ).replace("{S}", SITE).replace("{CH}", IC["chev"]).replace("{SH}", IC["share"]).replace("{ST}", IC["star"]).replace("{R}", root)
+
+
+def footer(base):
+    fb = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8z"/></svg>'
+    ig = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg>'
+    return ('<footer class="yf"><div class="yf-in">'
+            '<div class="yf-a"><img src="{B}front/img/logo-white.webp" width="149" height="50" alt="Three Village Local" loading="lazy"><p>Three Village Local is the free local guide to Setauket, Stony Brook, Port Jefferson and the Three Village area. '
+            'Find trusted local businesses, this week&rsquo;s events, restaurant specials and community news, all in one place, and support the neighbors who make our community special.</p></div>'
+            '<div class="yf-c"><b>Website</b><a href="{S}/about">How It Works</a><a href="{S}/about/contact">Contact Us</a><a href="{S}/newsletter">Three Village Weekly</a></div>'
+            '<div class="yf-c"><b>Search</b><a href="{S}/search_results">Browse Directory</a><a href="{S}/categories">Search by Category</a></div>'
+            '<div class="yf-c"><b>Support</b><a href="{S}/login">Member Login</a><a href="{S}/login/retrieval">Reset Password</a></div></div>'
+            '<div class="yf-in yf-2"><span class="yf-soc"><a href="{S}/about/contact" aria-label="Email">{MAIL}</a><a href="https://www.facebook.com/ThreeVillageLocal" aria-label="Facebook" target="_blank" rel="noopener">{FB}</a>'
+            '<a href="https://www.instagram.com/threevillagelocal/" aria-label="Instagram" target="_blank" rel="noopener">{IG}</a></span><a class="yf-join" href="{S}/join">Businesses - Join Today</a></div>'
+            '<p class="yf-copy">&copy; 2026 Three Village Local. All Rights Reserved. <a href="{S}/about/terms">Terms of Use</a> <a href="{S}/about/privacy">Privacy Policy</a></p></footer>'
+            ).replace("{S}", SITE).replace("{B}", base).replace("{MAIL}", IC["mail"]).replace("{FB}", fb).replace("{IG}", ig)
+
+
+def post(body):
+    """Text clean-ups so the front layout reads like the prototype (no emoji arrows in links, plain chips, svg icons)."""
+    ch = IC["chev"]
+    for old, new in (("&#128197; See all things to do &rarr;", "See all things to do " + ch), ("&#127869;&#65039; See all specials &rarr;", "See all specials " + ch),
+                     ("&#128197; Full calendar &rarr;", "Full calendar " + ch), ("All stories &rarr;", "All stories " + ch),
+                     ("See all businesses &rarr;", "See all businesses " + ch), ("Advertise here &rarr;", "Advertise here " + ch),
+                     ("View on 3VL &rarr;", "View on 3VL " + ch), ("&#128222; Call", IC["phone"] + "Call"),
+                     ("See the listings &rarr;", "See the listings " + ch), ("Sign up free &rarr;", "Sign up free " + ch),
+                     ('<span class="wk-nlic" aria-hidden="true">&#9993;&#65039;</span>', '<span class="wk-nlic" aria-hidden="true">' + IC["mail"] + '</span>'),
+                     ("<span>&#11088; VIP</span>", "<span>VIP</span>"),
+                     ("&#128197; Add</button>", IC["cal"] + "Add</button>"), ("&#128205; Map</a></div>", IC["pin"] + "Map</a></div>")):
+        body = body.replace(old, new)
+    body = re.sub(r'(<button type="button" class="wk-chip" data-tag="[a-z]+">)(?:&#[0-9]+;)+ ', r"\1", body)
+    return body

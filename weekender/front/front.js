@@ -21,7 +21,8 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
   function norm(x){return String(x||'').toLowerCase().replace(/[^a-z0-9]/g,'')}
   function rowsFix(){if(!tp)return;var n=0;$$('.wk-picks .wk-pick',sec).forEach(function(p){if(p.classList.contains('wk-radar'))return;
     var t=p.getAttribute('data-title')||((p.querySelector('.wk-ptitle')||{}).textContent)||'';var dup=leadT&&norm(t)===norm(leadT);
-    p.classList.toggle('y-dup',!!dup);if(!dup)n++;p.classList.toggle('y-first',!dup&&n===1);p.classList.toggle('y-extra',!dup&&n>5)})}
+    p.classList.toggle('y-dup',!!dup);if(!dup)n++;p.classList.toggle('y-first',!dup&&n===1);p.classList.toggle('y-extra',!dup&&n>5);
+      var st=p.querySelector('.wk-pimg .wk-pstat'),wh=p.querySelector('.wk-pwhen');if(st&&wh)wh.appendChild(st)})}
   rowsFix();
   var pane=document.createElement('div');pane.className='y-today';sec.appendChild(pane);
   function todayBlk(){var b=null;$$('#wk-sched .wk-dayblk').forEach(function(x){var t=x.querySelector('.wk-dayh b');if(!b&&t&&/^today$/i.test(t.textContent.trim()))b=x});return b}
@@ -37,7 +38,7 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
     $$('button',bar).forEach(function(x){var on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
     sec.classList.toggle('y-td',k==='td');sec.classList.toggle('y-cu',k==='cu');if(k==='td')rows();track('front_tab',{tab:k})});
   /* the live schedule opens on Today (the classic page starts with every day folded) */
-  var opened=false;function openToday(){if(opened)return;var b=todayBlk();if(!b)return;opened=true;if(b.classList.contains('is-collapsed')){b.classList.remove('is-collapsed');var h=b.querySelector('.wk-dayh');if(h)h.setAttribute('aria-expanded','true')}}
+  var opened=false;function openToday(){if(opened)return;var b=todayBlk();if(!b)return;opened=true;[b].concat(matchMedia('(min-width:901px)').matches&&b.nextElementSibling&&b.nextElementSibling.classList.contains('wk-dayblk')?[b.nextElementSibling]:[]).forEach(function(x){if(x.classList.contains('is-collapsed')){x.classList.remove('is-collapsed');var h=x.querySelector('.wk-dayh');if(h)h.setAttribute('aria-expanded','true')}})}
   upd();var n=0,t=setInterval(function(){upd();rowsFix();if(n>2)openToday();if(++n>12)clearInterval(t)},1500);
 })();
 
@@ -67,5 +68,26 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
   /* draw the big card and start rotating only once the section is near the screen: no photo download while it is far away */
   var drawn=false;function start(){if(drawn)return;drawn=true;show(i);go()}
   if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){start();io.disconnect()}},{rootMargin:'400px 0px'});io.observe(sec)}else start();
+})();
+
+/* ---------- 3) header menu, in-page banner frames, weather line ---------- */
+(function(){
+  var mb=document.getElementById('yh-mnu'),nav=document.getElementById('yh-mn');
+  if(mb&&nav)mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o?'true':'false')});
+  /* phone/tablet banner slots: same frame as the rail (title, dots, Advertise here) */
+  var titles=['Local businesses we love','More local favorites'];
+  function frame(){var done=0;$$('.wk-main>.wk-adslot').forEach(function(s,k){var rot=s.querySelector('.wk-adrot');if(!rot)return;done++;if(s.getAttribute('data-yf'))return;s.setAttribute('data-yf','1');
+    var h=document.createElement('p');h.className='y-adh';h.innerHTML='<span>VIP</span>'+titles[k%2];s.insertBefore(h,s.firstChild);
+    var ads=$$('.wk-ad',rot),d=document.createElement('div');d.className='y-dots';d.innerHTML=ads.map(function(){return '<i></i>'}).join('');s.appendChild(d);
+    var c=document.createElement('a');c.className='wk-railcta';c.href='https://www.threevillagelocal.com/join';c.innerHTML='Advertise here <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';s.appendChild(c);
+    var dots=$$('i',d);function sync(){var on=ads.findIndex?ads.findIndex(function(a){return a.classList.contains('is-on')}):0;dots.forEach(function(x,i){x.classList.toggle('on',i===on)})}
+    sync();if(window.MutationObserver)ads.forEach(function(a){new MutationObserver(sync).observe(a,{attributes:true,attributeFilter:['class']})})});return done}
+  var n=0,t=setInterval(function(){if(frame()>=2||++n>20)clearInterval(t)},700);
+  /* the weather line gets a "Best day" label from CSS; drop the emoji weekender.js puts in front of it */
+  /* live cam: the thumbnail opens the camera (weekender.js marks it is-cam in daylight) */
+  root.addEventListener('click',function(e){var b=e.target.closest('.wk-wbg.is-cam');if(!b)return;var u=b.getAttribute('data-cam');if(u){window.open(u,'_blank','noopener');track('weather_cam',{})}});
+  var v=document.getElementById('wk-verdict');
+  function clean(){var f=v&&v.firstChild;if(f&&f.nodeType===3){var s=f.nodeValue.replace(/^[^A-Za-z0-9<]+/,'');if(s!==f.nodeValue)f.nodeValue=s}}
+  if(v){clean();if(window.MutationObserver)new MutationObserver(clean).observe(v,{childList:true,characterData:true,subtree:true})}
 })();
 })();

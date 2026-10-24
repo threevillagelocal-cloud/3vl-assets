@@ -168,7 +168,7 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
         d["starts"], d["ends"], esc(base), edition, esc(feed_url), (' data-live="%slive/events.json"' % base) if local else "", esc(json.dumps(d.get("guides", [])))))
 
     if front:   # compact top band + category quick links (weekender/front)
-        w(FB.hero(d, img))
+        w(FB.hero(d, img, base))
         w(FB.quick())
     else:
       # HERO: compact live intro for Three Village Now
@@ -371,7 +371,10 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
     M["stories"] = len(out)
     w(nhb.stories_sec())  # Latest Local Stories
     M["cta"] = len(out)
-    w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Submit an event, business special or promotion</p><p class="wk-subd">Three Village Local is updated every day and seen by thousands of neighbors. '
+    if front:
+        w(FB.cta(base))
+    else:
+      w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Submit an event, business special or promotion</p><p class="wk-subd">Three Village Local is updated every day and seen by thousands of neighbors. '
       'Send us your event, special or promotion and we’ll put it in front of your neighbors.</p>'
       '<a class="wk-btn wk-btng" href="https://www.threevillagelocal.com/promotion">Submit it &rarr;</a><p style="margin:14px 0 0;font-size:14px;color:#dbe6f3">Own a local business? <a href="https://www.threevillagelocal.com/join" style="display:inline-block;margin-left:6px;padding:6px 14px;border:1px solid rgba(255,255,255,.6);border-radius:999px;color:#fff;font-weight:700;text-decoration:none">Join here &rarr;</a></p></div>'
       '<div class="wk-share"><p class="wk-subt">Send this to your crew</p><div class="wk-shb">'
@@ -388,16 +391,20 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
     seg = {k: out[M[k]:M[names[i + 1]] if i + 1 < len(names) else M["end"]] for i, k in enumerate(names)}
     ORDER = ["picks", "wx", "eat", "feat", "ad2", "sched", "ad1", "homes", "stories", "extra", "browse", "cta"]  # 10/5/2026 owner: weather above Eat & Drink
     assert sorted(ORDER) == sorted(names), "section list out of sync"
-    RAILX = []
+    RAILX, RAILW = [], []
     if front:   # front layout: weather, homes/newsletter and stories ride in the right rail (phones: CSS order puts them back in line)
-        RAILX = [x for k in ("wx", "homes", "stories") for x in seg[k]]
+        RAILW = list(seg["wx"])
+        RAILX = [x for k in ("homes", "stories") for x in seg[k]]
         ORDER = [k for k in ORDER if k not in ("wx", "homes", "stories")]
     out[M[names[0]]:M["end"]] = [x for k in ORDER for x in seg[k]]
 
     w('</div>')  # /wk-main
 
     # VIP RAIL
-    w('<aside class="wk-rail" aria-label="Three Village Local VIP members"><div class="wk-railin"><p class="wk-railh"><span>&#11088; VIP</span> Local businesses we love</p>'
+    w('<aside class="wk-rail" aria-label="Three Village Local VIP members">')
+    for x in RAILW:
+        w(x)
+    w('<div class="wk-railin"><p class="wk-railh"><span>&#11088; VIP</span> Local businesses we love</p>'
       '<div class="wk-adrot" id="wk-adrot">')
     banners = _only_active(json.load(open(os.path.join(HERE, "banners.json"), encoding="utf-8")))
     for i, v in enumerate(banners):
@@ -424,11 +431,13 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
     w('</div>')  # /wk-grid
 
     # MY WEEKEND DRAWER
-    w('<button type="button" class="wk-fab" id="wk-fab" aria-controls="wk-drawer" aria-expanded="false"><span class="wk-star">&#9733;</span> My Plans <b id="wk-fabn">0</b></button>'
-      '<div class="wk-drawer" id="wk-drawer" aria-hidden="true" inert><div class="wk-drin"><div class="wk-drh"><p>&#11088; My Plans</p><button type="button" id="wk-drx" aria-label="Close">&times;</button></div>'
+    w(('' if front else '<button type="button" class="wk-fab" id="wk-fab" aria-controls="wk-drawer" aria-expanded="false"><span class="wk-star">&#9733;</span> My Plans <b id="wk-fabn">0</b></button>')
+      + '<div class="wk-drawer" id="wk-drawer" aria-hidden="true" inert><div class="wk-drin"><div class="wk-drh"><p>&#11088; My Plans</p><button type="button" id="wk-drx" aria-label="Close">&times;</button></div>'
       '<div id="wk-drlist"></div><div class="wk-drf"><button type="button" class="wk-btn wk-btng" id="wk-calall">&#128197; Add all to my calendar</button>'
       '<button type="button" class="wk-btn wk-btno" id="wk-share3">&#128172; Share my plan</button></div></div></div>')
     w('<a href="#wk-top" class="wk-totop" id="wk-totop" aria-label="Back to top">&#8593;</a><div class="wk-toast" id="wk-toast" role="status"></div>')
+    if front:
+        w(FB.footer(base))
     w('</div>')
     w('<script src="%sweekender.js%s" defer></script>' % (base, ver))
     if front:
@@ -438,6 +447,8 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
     body = "\n".join(out)
     body = body.replace("’", "&rsquo;")
     body = linkify(body)
+    if front:
+        body = FB.post(body)
     assert "\\" not in body, "backslash found: BD would strip it"
     return body
 

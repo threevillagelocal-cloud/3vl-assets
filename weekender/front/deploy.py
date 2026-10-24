@@ -20,10 +20,16 @@ SLUG = "preview-home"
 GUARD = os.path.join(WK, "..", "..", "3vl-site-guard", "post-sources")
 CSS = ("/* front layout preview: lower main sections are laid out only near the screen (same idea as the homepage) */\n"
        ".wk-y .wk-main>.wk-sec:not(#wk-picks){content-visibility:auto;contain-intrinsic-size:auto 700px}\n"
-       ".wk-y #nh-stories{content-visibility:auto;contain-intrinsic-size:auto 420px}\n"
        "#first_container{background-image:none!important}\n"
-       "/* phone header logo: reserve its final box so the page does not move when it loads */\n"
-       ".mobile_website_logo a.visible-xs img{width:90.34px;height:35px}")
+       "/* this page draws its own (prototype) header and footer: BD's header, menu and footer never show, from the first paint */\n"
+       "body>.header,body>.footer,.mobile-main-menu,.banner-ad-unit,body>.footer-clear-element{display:none!important}\n"
+       "html,body{background:#f3f6fa!important;margin:0!important;padding:0!important}\n"
+       "#main-content,#first_container{margin:0!important;padding:0!important;background:#f3f6fa!important}\n"
+       "#first_container>.container{width:100%!important;max-width:none!important;padding:0!important;margin:0!important}\n"
+       "#first_container>.container>.row{margin:0!important}\n"
+       "#first_container>.container>.row>.col-md-12{padding:0!important;width:100%!important;float:none!important}\n"
+       "#first_container>.container>.clearfix{margin:0!important;padding:0!important;height:0!important}"+chr(10)+
+       "#wk-top{padding:0!important}")
 
 
 def call(method, path, data=None):
