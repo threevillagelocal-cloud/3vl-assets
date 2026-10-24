@@ -1,4 +1,4 @@
-SITEWIDE HEADER: always-on switch (NOT applied; needs the owner's OK). Two steps, one rollback.
+SITEWIDE HEADER: always-on switch (not applied yet). Two steps, one rollback.
 
 STEP 1 (HEAD box, Chrome only: BD admin > Settings > Design Settings > Custom CSS / HEAD tab, see CLAUDE.md "Instant design"):
 inside the "3VL instant design" block,
