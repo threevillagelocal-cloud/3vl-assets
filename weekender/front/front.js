@@ -53,8 +53,8 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
   var i=Math.floor(Math.random()*n),tm=0,hold=false,wide=window.matchMedia&&matchMedia('(min-width:1201px)');
   var CH='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>',PH='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>';
   function card(c){var g=function(k){return c.getAttribute('data-'+k)||''},name=(c.querySelector('.y-mct b')||{}).textContent||'',href=c.getAttribute('href');
-    var vis=g('img')?'<img src="'+esc(g('img'))+'" alt="'+esc(g('alt'))+'" style="object-position:'+esc(g('pos'))+'" width="640" height="400" decoding="async">':'<span class="y-panel" style="--c:'+esc(g('color'))+'"><span class="y-plogo" style="background-image:url(\''+esc(g('logo'))+'\')"></span></span>';
-    return '<article class="y-spc"><a class="y-spimg" href="'+esc(href)+'" tabindex="-1" aria-hidden="true" data-y="photo">'+vis+'<span class="y-vipb">VIP</span></a><div class="y-spb"><div class="y-sptop"><span class="y-splogo" style="background-image:url(\''+esc(g('logo'))+'\')"></span>'+
+    var vis=g('img')?'<img src="'+esc(g('img'))+'"'+(g('srcset')?' srcset="'+esc(g('srcset'))+'" sizes="(max-width:900px) 100vw, 560px"':'')+' alt="'+esc(g('alt'))+'" style="object-position:'+esc(g('pos'))+'" width="1200" height="500" decoding="async">':'<span class="y-panel" style="--c:'+esc(g('color'))+'"><span class="y-plogo" style="background-image:url(\''+esc(g('logo'))+'\')"></span></span>';
+    return '<article class="y-spc'+(g('ban')?' y-ban':'')+'"><a class="y-spimg" href="'+esc(href)+'" tabindex="-1" aria-hidden="true" data-y="photo">'+vis+(g('ban')?'':'<span class="y-vipb">VIP</span>')+'</a><div class="y-spb"><div class="y-sptop"><span class="y-splogo" style="background-image:url(\''+esc(g('logo'))+'\')"></span>'+
       '<p class="y-spcat">'+esc(g('cat'))+(g('town')?' <span>&middot; '+esc(g('town'))+'</span>':'')+'</p></div><h3 class="y-spn2"><a href="'+esc(href)+'" data-y="name">'+esc(name)+'</a></h3>'+(g('desc')?'<p class="y-spd">'+esc(g('desc'))+'</p>':'')+
       '<div class="y-spbtns"><a class="y-btn" href="'+esc(href)+'" data-y="profile">View profile '+CH+'</a>'+(g('tel')?'<a class="y-btn o" href="tel:'+esc(g('tel'))+'" data-y="call">'+PH+'Call</a>':'')+'</div></div></article>'}
   function show(k){i=(k+n)%n;main.innerHTML=card(cards[i]);main.setAttribute('data-vip',(cards[i].querySelector('.y-mct b')||{}).textContent||'');
@@ -99,5 +99,28 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
   var v=document.getElementById('wk-verdict');
   function clean(){var f=v&&v.firstChild;if(f&&f.nodeType===3){var s=f.nodeValue.replace(/^[^A-Za-z0-9<]+/,'');if(s!==f.nodeValue)f.nodeValue=s}}
   if(v){clean();if(window.MutationObserver)new MutationObserver(clean).observe(v,{childList:true,characterData:true,subtree:true})}
+})();
+
+/* ---------- 4) mid-page business search: same engine (window.tvlSS from p3.js) and the same kind of dropdown ---------- */
+(function(){
+  var f=document.getElementById('y-msf');if(!f)return;var inp=f.querySelector('input'),box=document.createElement('div');box.className='y-ssbox';box.hidden=true;box.setAttribute('role','listbox');f.appendChild(box);
+  var items=[],sel=-1,tm=0;function SS(){return window.tvlSS}
+  function hl(n,q){var e=esc(n),w=esc(q.trim());if(!w)return e;var i=e.toLowerCase().indexOf(w.toLowerCase());return i<0?e:e.slice(0,i)+'<b>'+e.slice(i,i+w.length)+'</b>'+e.slice(i+w.length)}
+  function render(){var q=inp.value.trim();if(q.length<2||!SS()){box.hidden=true;return}
+    SS().load().then(function(){var res=SS().search(q)||[];items=res;sel=-1;
+      var h='<p class="y-ssh">Best matches in Three Village</p>';if(!res.length)h+='<p class="y-ssn">No quick match. Press Enter to search everything.</p>';
+      res.slice(0,8).forEach(function(x,i){var m=x.r.m,meta=[m.c,String(m.t||'').replace(/^(East\s+)?Setauket.*$/i,'Setauket')].filter(Boolean).join(' · ');
+        h+='<a class="y-ssr" role="option" href="'+esc(m.u)+'" data-i="'+i+'">'+(m.l?'<span class="y-ssl" style="background-image:url(\''+esc(m.l)+'\')"></span>':'<span class="y-ssl"></span>')+'<span class="y-sst"><span>'+hl(m.n,q)+'</span><small>'+esc(meta)+'</small></span>'+(m.p==='vip'?'<em>VIP</em>':'')+'</a>'});
+      h+='<a class="y-ssall" href="/search_results?q='+encodeURIComponent(q)+'">See all results for &ldquo;'+esc(q)+'&rdquo; &rarr;</a>';box.innerHTML=h;box.hidden=false})}
+  inp.addEventListener('focus',function(){if(SS())SS().load()});
+  inp.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(render,90)});
+  inp.addEventListener('keydown',function(e){var rows=box.querySelectorAll('a.y-ssr');if(box.hidden||!rows.length)return;
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();sel=(sel+(e.key==='ArrowDown'?1:-1)+rows.length)%rows.length;[].forEach.call(rows,function(r,i){r.classList.toggle('on',i===sel)})}
+    else if(e.key==='Enter'&&sel>-1){e.preventDefault();track('mid_search',{action:'pick',search_term:inp.value.trim(),biz:rows[sel].textContent.slice(0,60)});location.href=rows[sel].href}
+    else if(e.key==='Escape')box.hidden=true});
+  box.addEventListener('click',function(e){var a=e.target.closest('a.y-ssr');if(a)track('mid_search',{action:'pick',search_term:inp.value.trim(),biz:a.textContent.slice(0,60)});else if(e.target.closest('.y-ssall'))track('mid_search',{action:'all',search_term:inp.value.trim()})});
+  document.addEventListener('click',function(e){if(!f.contains(e.target))box.hidden=true});
+  f.addEventListener('submit',function(e){var q=inp.value.trim();if(!q){e.preventDefault();inp.focus();return}track('mid_search',{action:'submit',search_term:q})});
+  var ch=document.getElementById('y-mschips');if(ch)ch.addEventListener('click',function(e){var a=e.target.closest('a');if(a)track('mid_search',{action:'chip',category:a.textContent.trim()})});
 })();
 })();

@@ -204,25 +204,42 @@ def _vips():
     return v
 
 
+SHARE = "https://threevillagelocal-cloud.github.io/3vl-share/"
+
+
 def spotlight(base=""):
-    """base: the pinned weekender/ address. Small photo copies in weekender/front/img/<id>-640.webp and -240.webp are used when present."""
+    """Local Business Spotlight from each VIP's CURRENT v3 profile (3vl-share live/p3/vip/<uid>.json), read on every build.
+    Photos come from 3vl-share t/vip.json: small copies (12:5 big 640/960/1280, 4:3 thumb 240) that 3vl-share t/gen.py makes
+    from those profiles every 30 minutes, keyed by a hash of the source file. A profile without copies yet uses its original files."""
     vips = _vips()
     if not vips:
         return ""
+    idx = _get_json(SHARE + "t/vip.json") or {}
     cards, logos = [], []
     for m in vips:
         uid = str(m["id"])
-        logo = nhb.sm(m.get("l"), 200)
+        j = _get_json(VIPBASE + uid + ".json") or {}
+        h = j.get("hero") or {}
+        x = idx.get(uid) or {}
+        fresh = bool(x) and x.get("src") == h.get("img")          # copies made from the photo the profile uses today
+        lg = x.get("logo") if fresh and x.get("logo") else ((VIPBASE + j["logo"]) if j.get("logo") else "")
+        logo = (SHARE + lg) if lg and not lg.startswith("http") else (lg or nhb.sm(m.get("l"), 200))
         logos.append('<a class="y-lg" href="%s" title="%s"><span style="background-image:url(\'%s\')"></span><i class="y-vh">%s</i></a>' % (
             esc(m["u"]), esc(m["n"]), esc(logo), esc(m["n"])))
         if uid in NO_SPOT:
             continue
-        j = _get_json(VIPBASE + uid + ".json") or {}
-        h = j.get("hero") or {}
-        photo = _hero(h)
-        mini = photo
-        if photo and base and os.path.exists(os.path.join(HERE, "img", uid + "-640.webp")):
-            photo, mini = base + "front/img/%s-640.webp" % uid, base + "front/img/%s-240.webp" % uid
+        banner = bool(h.get("banner"))
+        alt = (h.get("alt") or "")
+        plain = (not h.get("img")) or (not banner and ("background" in alt.lower() or "monogram" in alt.lower()))
+        if plain:
+            big, srcset, thumb = "", "", ""
+        elif fresh and x.get("big640"):
+            big = SHARE + x["big640"]
+            srcset = "%s 640w, %s 960w, %s 1280w" % (SHARE + x["big640"], SHARE + x["big960"], SHARE + x["big1280"])
+            thumb = SHARE + x["thumb"]
+        else:
+            big, srcset = VIPBASE + h["img"], ""
+            thumb = (VIPBASE + j["headshot"]) if banner and j.get("headshot") else big
         cat = j.get("category") or m.get("c") or ""
         twn = nhb.town(m.get("t"))
         desc = (j.get("sub") or j.get("tagline") or "").replace(chr(0x2014), "-").replace(chr(0x2013), "-")
@@ -230,12 +247,13 @@ def spotlight(base=""):
         color = ((j.get("theme") or {}).get("navy") or "#16304f")
         if not re.fullmatch(r"#[0-9a-fA-F]{3,8}", color):
             color = "#16304f"
-        vis = ('<img src="%s" alt="" loading="lazy" width="240" height="160" style="object-position:%s">' % (esc(mini), esc(h.get("pos") or "50% 50%"))) if photo else \
+        pos = "50% 50%" if (fresh or banner) else (h.get("pos") or "50% 50%")
+        vis = ('<img src="%s" alt="" loading="lazy" width="240" height="180" style="object-position:%s">' % (esc(thumb), esc(pos if not fresh else "50% 50%"))) if thumb else \
               '<span class="y-panel" style="--c:%s"><span class="y-plogo" style="background-image:url(\'%s\')"></span></span>' % (color, esc(logo))
         cards.append(
-            '<a class="y-mc" href="%s" data-id="%s" data-img="%s" data-pos="%s" data-alt="%s" data-logo="%s" data-cat="%s" data-town="%s" data-desc="%s" data-tel="%s" data-color="%s">'
+            '<a class="y-mc" href="%s" data-id="%s" data-img="%s" data-srcset="%s" data-ban="%s" data-pos="%s" data-alt="%s" data-logo="%s" data-cat="%s" data-town="%s" data-desc="%s" data-tel="%s" data-color="%s">'
             '<span class="y-mci">%s</span><span class="y-mct"><b>%s</b><small>%s</small></span></a>' % (
-                esc(m["u"]), uid, esc(photo), esc(h.get("pos") or "50% 50%"), esc(h.get("alt") or m["n"]), esc(logo), esc(cat), esc(twn), esc(desc), tel, color,
+                esc(m["u"]), uid, esc(big), esc(srcset), "1" if banner else "", esc(pos), esc(alt or m["n"]), esc(logo), esc(cat), esc(twn), esc(desc), tel, color,
                 vis, esc(m["n"]), esc(cat)))
     nav = ('<span class="y-spnav"><button type="button" class="y-spn" data-sp="-1" aria-label="Previous business"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>'
            '<button type="button" class="y-spn" data-sp="1" aria-label="Next business"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></span>')
@@ -246,6 +264,55 @@ def spotlight(base=""):
             '<div class="y-lgs"><div class="y-lgvp"><div class="y-lgtr">%s<span class="y-lgdup" aria-hidden="true">%s</span></div></div>'
             '<div class="y-lgend"><a class="nh-more" href="/search_results">See all businesses &rarr;</a><a class="y-join" href="/join">Own a business? Get featured</a></div></div>'
             '</section>') % (nav, "".join(cards), lg, lg.replace('<a class="y-lg"', '<a class="y-lg" tabindex="-1"'))
+
+
+def stories_main(skip=0, n=5):
+    """Local Stories in the main column: the newest posts from /blog (lead + smaller cards). Refreshed on every nightly build."""
+    st = nhb.stories(n + skip)[skip:skip + n]
+    if not st:
+        return ""
+    cards = []
+    for i, x in enumerate(st):
+        full = x["img"].replace("news-pictures-thumbnails", "news-pictures") if x["img"] else ""
+        pic = (nhb.sm(full, 800) if i == 0 else nhb.sm(x["img"], 300)) if x["img"] else ""
+        orig = full if i == 0 else x["img"]
+        img = ('<img src="%s" data-o="%s" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=&quot;&quot;}" alt="" loading="lazy" width="%d" height="%d">' % (
+            esc(pic), esc(orig), 800 if i == 0 else 360, 450 if i == 0 else 240)) if pic else ""
+        cards.append('<a class="y-st%s" href="%s"><span class="y-sti">%s</span><span class="y-stb"><i>%s</i><b>%s</b>%s</span></a>' % (
+            " y-stl" if i == 0 else "", esc(x["h"]), img, esc(x["d"]), esc(x["t"]), '<em class="y-stgo">Read the story ' + IC["chev"] + '</em>' if i == 0 else ""))
+    return ('<section class="wk-sec y-stories" id="y-stories"><h2 class="wk-h2"><span>Local Stories</span><small>News and guides from around Three Village</small>'
+            '<a class="wk-calbtn y-seeall" href="/blog">All local stories ' + IC["chev"] + '</a></h2>'
+            '<div class="y-stg">%s</div><p class="y-endbtn"><a class="y-bigbtn" href="/blog">All local stories %s</a></p></section>') % ("".join(cards), IC["chev"])
+
+
+def stories_rail():
+    """Rail list: the posts after the five in the main Local Stories section."""
+    st = nhb.stories(8)[5:8]
+    if not st:
+        return ""
+    row = "".join('<a class="nh-story" href="%s"><span class="nh-sim" style="background-image:url(\'%s\')" data-bgo="%s"></span><span class="nh-sb">%s<b>%s</b></span></a>' % (
+        esc(x["h"]), esc(nhb.sm(x["img"], 300)), esc(x["img"]), ("<i>%s</i>" % esc(x["d"])) if x["d"] else "", esc(x["t"])) for x in st)
+    return ('<section class="wk-sec nh-sec" id="nh-stories">' + nhb.head("More Local Stories", "", "/blog", "All stories")
+            + '<div class="nh-row" id="nh-srow">' + row + "</div></section>")
+
+
+MIDCATS = [("Restaurants", "/restaurant"), ("Contractors", "/contractor"), ("Landscaping", "/landscaping-property-maintenance"),
+           ("Plumbing & Electric", "/plumbing-electric-repairs"), ("Health & Wellness", "/health-wellness"), ("Real Estate", "/real-estate-services"),
+           ("Attorneys", "/attorney"), ("Beauty", "/beauty-personal-care")]
+
+
+def midsearch():
+    """Second business search between Eat & Drink and the Spotlight. Same engine as the top bar (front.js, window.tvlSS)."""
+    chips = "".join('<a href="%s%s">%s</a>' % (SITE, u, esc(t)) for t, u in MIDCATS)
+    return ('<section class="wk-sec y-mid" id="y-midsearch" aria-labelledby="y-midh"><h2 class="y-midh" id="y-midh">Find a local business or service</h2>'
+            '<p class="y-midd">Plumbers, dentists, lawyers, landscapers, pizza and more, rated by your neighbors.</p>'
+            '<form class="y-msf" id="y-msf" action="/search_results" method="get" role="search"><span class="y-msi">' + IC["search"] + '</span>'
+            '<input type="search" name="q" placeholder="What do you need? Try &quot;plumber&quot; or &quot;pizza&quot;" aria-label="Search local businesses and services" autocomplete="off">'
+            '<button type="submit">Search</button></form><div class="y-mschips" id="y-mschips">' + chips + '<a class="y-msall" href="' + SITE + '/categories">All categories ' + IC["chev"] + '</a></div></section>')
+
+
+def endbtn(href, label):
+    return '<p class="y-endbtn"><a class="y-bigbtn" href="%s">%s %s</a></p>' % (href, label, IC["chev"])
 
 
 def cta(base):

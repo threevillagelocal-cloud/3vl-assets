@@ -244,9 +244,9 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
             esc(n["when"]), '<a href="%s"%s>%s</a>' % (esc(npage), "" if nours else ' target="_blank" rel="noopener"', esc(n["title"])),
             esc(n["desc"]), ('<div class="wk-acts"><a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a></div>' % esc(n["url"])) if n.get("url") else "",
             ('<p class="wk-icred">%s</p>' % esc(n["credit"])) if n.get("credit") else ""))
-    w('</div></div></section>' if front else '</div></section>')
+    w(('</div></div>' + FB.endbtn("https://www.threevillagelocal.com/events-calendar", "See all things to do") + '</section>') if front else '</div></section>')
     M["feat"] = len(out)
-    w(FB.spotlight(base) if front else nhb.featured())  # Featured Local Businesses (VIPs) / front: Local Business Spotlight
+    w((FB.midsearch() + FB.spotlight(base)) if front else nhb.featured())  # Featured Local Businesses (VIPs) / front: Local Business Spotlight
 
     M["eat"] = len(out)
     # EAT & DRINK (exterior photo + dish inset; one card per business)
@@ -266,7 +266,8 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
           '<p class="wk-spd">%s</p><p class="wk-spf">%s<span>via %s</span>%s<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>' % (
             " wk-spfeat" if sp.get("feature") else "", pic, esc(sp["biz"]), esc(sp["title"]), esc(sp["when"]), esc(sp["desc"]),
             badge, esc(sp["srcName"]), call, gmap(sp["venue"])))
-    w('</div><p class="wk-note">Own a local spot with a special? <a href="https://www.threevillagelocal.com/promotion">Send it to us</a> and we&rsquo;ll feature it free.</p></section>')
+    w('</div><p class="wk-note">Own a local spot with a special? <a href="https://www.threevillagelocal.com/promotion">Send it to us</a> and we&rsquo;ll feature it free.</p>'
+      + (FB.endbtn("https://www.threevillagelocal.com/restaurant-specials", "See all specials") if front else '') + '</section>')
 
     M["homes"] = len(out)
     # HOMES FOR SALE strip (10/2/2026): links to the weekly /locallistings page. Data: weekender/homes.json (bump count/thumbs when that page is updated).
@@ -369,9 +370,10 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
     M["browse"] = len(out)
     w("" if front else nhb.browse())   # Browse Local Businesses (front: quick-link row at the top)
     M["stories"] = len(out)
-    w(nhb.stories_sec())  # Latest Local Stories
+    w(FB.stories_rail() if front else nhb.stories_sec())  # Latest Local Stories (front: the rail shows the next few after the main Local Stories section)
     M["cta"] = len(out)
     if front:
+        w(FB.stories_main())
         w(FB.cta(base))
     else:
       w('<section class="wk-sec wk-cta"><div class="wk-submit"><p class="wk-subt">Submit an event, business special or promotion</p><p class="wk-subd">Three Village Local is updated every day and seen by thousands of neighbors. '
