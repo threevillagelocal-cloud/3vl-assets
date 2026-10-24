@@ -401,10 +401,11 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
     w('</div>')  # /wk-main
 
     # VIP RAIL
-    w('<aside class="wk-rail" aria-label="Three Village Local VIP members">')
-    for x in RAILW:
-        w(x)
-    w('<div class="wk-railin"><p class="wk-railh"><span>&#11088; VIP</span> Local businesses we love</p>'
+    if front:
+        w('<aside class="wk-rail" aria-label="Three Village Local VIP members">')
+        for x in RAILW:
+            w(x)
+    w(('<div class="wk-railin">' if front else '<aside class="wk-rail" aria-label="Three Village Local VIP members"><div class="wk-railin">') + '<p class="wk-railh"><span>&#11088; VIP</span> Local businesses we love</p>'
       '<div class="wk-adrot" id="wk-adrot">')
     banners = _only_active(json.load(open(os.path.join(HERE, "banners.json"), encoding="utf-8")))
     for i, v in enumerate(banners):
