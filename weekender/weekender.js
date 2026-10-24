@@ -343,7 +343,10 @@ function vip(){var rot=$('wk-adrot');if(!rot)return;var ads=$$('.wk-ad',rot);if(
   /* competitors never share a page (owner 10/2/2026: e.g. the two orthopedic practices): one business per group per page view,
      picked at random so each gets its share across visitors; a business with two designs keeps both */
   var pickG={};ads.forEach(function(a){var g=a.getAttribute('data-group'),v=a.getAttribute('data-vip');if(!g)return;(pickG[g]=pickG[g]||[]);if(pickG[g].indexOf(v)<0)pickG[g].push(v)});
-  Object.keys(pickG).forEach(function(g){pickG[g]=pickG[g][Math.floor(Math.random()*pickG[g].length)]});
+  /* take turns per visitor, same as the side-column ads (owner 10/24/2026: realtors should share evenly) */
+  var rrG={};try{rrG=JSON.parse(localStorage.getItem('vipxRR')||'{}')||{}}catch(e){}
+  Object.keys(pickG).forEach(function(g){var n=pickG[g].length;pickG[g].sort();var c=typeof rrG[g]==='number'?rrG[g]:Math.floor(Math.random()*n);pickG[g]=pickG[g][c%n];rrG[g]=(c+1)%n});
+  try{localStorage.setItem('vipxRR',JSON.stringify(rrG))}catch(e){}
   ads=ads.filter(function(a){var g=a.getAttribute('data-group');if(!g||pickG[g]===a.getAttribute('data-vip'))return true;a.parentNode.removeChild(a);return false});
   ads=spread(ads,function(a){return a.getAttribute('data-group')||a.getAttribute('data-vip')},3);
   ads.forEach(function(a){rot.appendChild(a)});
