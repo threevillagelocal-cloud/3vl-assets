@@ -1,22 +1,6 @@
 {
- "updated": "2026-10-23T19:00:13.095240+00:00",
+ "updated": "2026-10-24T12:00:11.643435+00:00",
  "specials": [
-  {
-   "id": "18120584680768249",
-   "biz": "Culpers 1778",
-   "ig": "culpers1778",
-   "town": "East Setauket",
-   "category": "Restaurant/Steakhouse",
-   "member": false,
-   "title": "Happy Hour Extended Through Knicks Game",
-   "when": "Fri, Oct. 23 · 7 PM until end of game",
-   "desc": "Happy Hour specials at the bar all through the Knicks vs. Celtics game tonight.",
-   "expires": "2026-10-23",
-   "posted": "2026-10-23T15:04:32+0000",
-   "url": "https://www.instagram.com/p/De11jFqv5c2/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
-   "inset": "ig/p18120584680768249.jpg"
-  },
   {
    "id": "18481707613112188",
    "biz": "The Country Corner",
@@ -50,20 +34,20 @@
    "inset": "ig/p18200189893388564.jpg"
   },
   {
-   "id": "18074576285727806",
+   "id": "18637687174058338",
    "biz": "Schnitzels",
    "ig": "eatschnitzels",
    "town": "Stony Brook",
    "category": "Restaurant/Gastropub",
    "member": false,
-   "title": "The Dip Schnitz Limited Menu Item",
-   "when": "Limited time",
-   "desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
-   "expires": "2026-11-21",
-   "posted": "2026-10-21T21:25:57+0000",
-   "url": "https://www.instagram.com/p/DexXoFJhJhr/",
+   "title": "Final Oktoberfest Celebration",
+   "when": "Sat, Oct. 25 · 4 PM+",
+   "desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
+   "expires": "2026-10-25",
+   "posted": "2026-10-23T19:30:57+0000",
+   "url": "https://www.instagram.com/p/De2UE85FNNz/",
    "img": "",
-   "inset": "ig/p18074576285727806.jpg"
+   "inset": "ig/p18637687174058338.jpg"
   },
   {
    "id": "18150886438536933",
@@ -96,26 +80,26 @@
    "url": "https://www.instagram.com/reel/DezYThhxrkO/",
    "img": "",
    "inset": "ig/p18110514965522268.jpg"
+  },
+  {
+   "id": "17909824674564464",
+   "biz": "The Study by Toast",
+   "ig": "thestudy.bytoast",
+   "town": "East Setauket",
+   "category": "Coffee House",
+   "member": false,
+   "title": "Caramel Apple Danish Pastry",
+   "when": "October 2026",
+   "desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-22T18:56:21+0000",
+   "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
+   "img": "",
+   "inset": "ig/p17909824674564464.jpg"
   }
  ],
  "candidates": [
   {
-   "id": "18120584680768249",
-   "biz": "Culpers 1778",
-   "ig": "culpers1778",
-   "town": "East Setauket",
-   "category": "Restaurant/Steakhouse",
-   "member": false,
-   "title": "Happy Hour Extended Through Knicks Game",
-   "when": "Fri, Oct. 23 · 7 PM until end of game",
-   "desc": "Happy Hour specials at the bar all through the Knicks vs. Celtics game tonight.",
-   "expires": "2026-10-23",
-   "posted": "2026-10-23T15:04:32+0000",
-   "url": "https://www.instagram.com/p/De11jFqv5c2/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
-   "inset": "ig/p18120584680768249.jpg"
-  },
-  {
    "id": "18481707613112188",
    "biz": "The Country Corner",
    "ig": "countrycornerlongisland",
@@ -148,20 +132,20 @@
    "inset": "ig/p18200189893388564.jpg"
   },
   {
-   "id": "18074576285727806",
+   "id": "18637687174058338",
    "biz": "Schnitzels",
    "ig": "eatschnitzels",
    "town": "Stony Brook",
    "category": "Restaurant/Gastropub",
    "member": false,
-   "title": "The Dip Schnitz Limited Menu Item",
-   "when": "Limited time",
-   "desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
-   "expires": "2026-11-21",
-   "posted": "2026-10-21T21:25:57+0000",
-   "url": "https://www.instagram.com/p/DexXoFJhJhr/",
+   "title": "Final Oktoberfest Celebration",
+   "when": "Sat, Oct. 25 · 4 PM+",
+   "desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
+   "expires": "2026-10-25",
+   "posted": "2026-10-23T19:30:57+0000",
+   "url": "https://www.instagram.com/p/De2UE85FNNz/",
    "img": "",
-   "inset": "ig/p18074576285727806.jpg"
+   "inset": "ig/p18637687174058338.jpg"
   },
   {
    "id": "18150886438536933",
@@ -194,25 +178,25 @@
    "url": "https://www.instagram.com/reel/DezYThhxrkO/",
    "img": "",
    "inset": "ig/p18110514965522268.jpg"
+  },
+  {
+   "id": "17909824674564464",
+   "biz": "The Study by Toast",
+   "ig": "thestudy.bytoast",
+   "town": "East Setauket",
+   "category": "Coffee House",
+   "member": false,
+   "title": "Caramel Apple Danish Pastry",
+   "when": "October 2026",
+   "desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-22T18:56:21+0000",
+   "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
+   "img": "",
+   "inset": "ig/p17909824674564464.jpg"
   }
  ],
  "all": [
-  {
-   "id": "18120584680768249",
-   "biz": "Culpers 1778",
-   "ig": "culpers1778",
-   "town": "East Setauket",
-   "category": "Restaurant/Steakhouse",
-   "member": false,
-   "title": "Happy Hour Extended Through Knicks Game",
-   "when": "Fri, Oct. 23 · 7 PM until end of game",
-   "desc": "Happy Hour specials at the bar all through the Knicks vs. Celtics game tonight.",
-   "expires": "2026-10-23",
-   "posted": "2026-10-23T15:04:32+0000",
-   "url": "https://www.instagram.com/p/De11jFqv5c2/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
-   "inset": "ig/p18120584680768249.jpg"
-  },
   {
    "id": "18481707613112188",
    "biz": "The Country Corner",
@@ -260,6 +244,22 @@
    "url": "https://www.instagram.com/p/DexrUa_jZH0/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
    "inset": "ig/p18217945741349180.jpg"
+  },
+  {
+   "id": "18637687174058338",
+   "biz": "Schnitzels",
+   "ig": "eatschnitzels",
+   "town": "Stony Brook",
+   "category": "Restaurant/Gastropub",
+   "member": false,
+   "title": "Final Oktoberfest Celebration",
+   "when": "Sat, Oct. 25 · 4 PM+",
+   "desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
+   "expires": "2026-10-25",
+   "posted": "2026-10-23T19:30:57+0000",
+   "url": "https://www.instagram.com/p/De2UE85FNNz/",
+   "img": "",
+   "inset": "ig/p18637687174058338.jpg"
   },
   {
    "id": "18074576285727806",
@@ -326,20 +326,20 @@
    "inset": "ig/p17909824674564464.jpg"
   },
   {
-   "id": "17931655359410036",
-   "biz": "Little Cheese Shop",
-   "ig": "littlecheeseshop",
+   "id": "18076822349777571",
+   "biz": "Luca Restaurant",
+   "ig": "lucastonybrook",
    "town": "Stony Brook",
-   "category": "Cheese Shop/Cafe",
+   "category": "Restaurant",
    "member": false,
-   "title": "Spooky Cheese Workshop",
-   "when": "Fri, Oct. 23",
-   "desc": "Join a themed cheese workshop. Tickets available on their website.",
-   "expires": "2026-10-23",
-   "posted": "2026-10-17T17:53:01+0000",
-   "url": "https://www.instagram.com/p/Demr3dLufAE/",
+   "title": "Beet & Potato Mezzaluna Special",
+   "when": "This weekend",
+   "desc": "Homemade pasta with poppy seeds and lemon butter sauce available this weekend at Luca.",
+   "expires": "2026-10-26",
+   "posted": "2026-10-23T20:50:26+0000",
+   "url": "https://www.instagram.com/p/De2dLF2n0rL/",
    "img": "",
-   "inset": "ig/p17931655359410036.jpg"
+   "inset": "ig/p18076822349777571.jpg"
   },
   {
    "id": "18110244839627398",
@@ -374,6 +374,22 @@
    "inset": "ig/p18134822992761307.jpg"
   },
   {
+   "id": "18201844492379965",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Long Island Restaurant Week Dinner",
+   "when": "Nov 1-8, 2026",
+   "desc": "Three-course $48++ dinner menu with plenty of choices at Castaways.",
+   "expires": "2026-11-08",
+   "posted": "2026-10-23T19:00:52+0000",
+   "url": "https://www.instagram.com/p/De2QntVCmaU/",
+   "img": "",
+   "inset": "ig/p18201844492379965.jpg"
+  },
+  {
    "id": "18116670341043180",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
@@ -388,22 +404,6 @@
    "url": "https://www.instagram.com/p/DezQcI-Cpph/",
    "img": "",
    "inset": "ig/p18116670341043180.jpg"
-  },
-  {
-   "id": "18154222495572399",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Long Island Restaurant Week Prix Fixe",
-   "when": "Nov 1–8, 2026",
-   "desc": "Special dinner menu at $48 per person. Reserve on Resy or call (888) 624-6106.",
-   "expires": "2026-11-08",
-   "posted": "2026-10-21T21:01:03+0000",
-   "url": "https://www.instagram.com/p/DexUuZoChTJ/",
-   "img": "",
-   "inset": "ig/p18154222495572399.jpg"
   },
   {
    "id": "18504007429100687",

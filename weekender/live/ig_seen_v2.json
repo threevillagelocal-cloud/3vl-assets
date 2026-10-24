@@ -87,14 +87,6 @@
 "expires": "",
 "_ts": "2026-09-25T21:00:46+0000"
 },
-"17952010605270677": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-23T22:00:13+0000"
-},
 "18356691676221898": {
 "special": false,
 "title": "",
@@ -103,14 +95,6 @@
 "expires": "",
 "_ts": "2026-09-27T14:17:27+0000"
 },
-"18085238219696839": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-24T02:05:29+0000"
-},
 "18408891472088157": {
 "special": false,
 "title": "Schnitzels Merchandise Now Available",
@@ -118,14 +102,6 @@
 "desc": "Shirts, sweatshirts, hats and more merchandise available now at Schnitzels.",
 "expires": "2026-09-27",
 "_ts": "2026-09-26T00:01:38+0000"
-},
-"18134253034570735": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-23T21:01:45+0000"
 },
 "17899639635668203": {
 "special": false,
@@ -431,14 +407,6 @@
 "expires": "",
 "_ts": "2026-09-26T15:33:23+0000"
 },
-"18116576699008149": {
-"special": true,
-"title": "Crab Legs Thursdays",
-"when": "Every Thursday",
-"desc": "Crab legs for $20. Come in to The Steam Room in Port Jefferson.",
-"expires": "2026-10-10",
-"_ts": "2026-09-24T10:02:55+0000"
-},
 "17905419498565815": {
 "special": false,
 "title": "",
@@ -519,14 +487,6 @@
 "expires": "",
 "_ts": "2026-09-27T04:47:28+0000"
 },
-"18104019575575425": {
-"special": false,
-"title": "Holiday Party Bookings",
-"when": "Ongoing",
-"desc": "Book your holiday party at Old Fields Port Jefferson. Call to reserve.",
-"expires": "2026-09-27",
-"_ts": "2026-09-24T02:39:08+0000"
-},
 "18115030171804374": {
 "special": false,
 "title": "",
@@ -534,10 +494,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-24T22:23:26+0000"
-},
-"18073885922721393": {
-"special": false,
-"_ts": "2026-09-23T22:26:43+0000"
 },
 "18187715917370505": {
 "special": false,
@@ -583,14 +539,6 @@
 "expires": "",
 "_ts": "2026-09-24T21:40:09+0000"
 },
-"17968006670961311": {
-"special": false,
-"title": "Water Damage Restoration Service",
-"when": "Ongoing",
-"desc": "Professional water damage removal and restoration services for affected areas.",
-"expires": "2026-09-27",
-"_ts": "2026-09-23T23:03:48+0000"
-},
 "18655507852032655": {
 "special": false,
 "title": "",
@@ -634,14 +582,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-26T01:49:08+0000"
-},
-"18344078356266872": {
-"special": false,
-"title": "Strong Strains University",
-"when": "Not specified",
-"desc": "Educational class with Doctor Piff on cannabis topics, 21+.",
-"expires": "2026-09-27",
-"_ts": "2026-09-23T23:30:47+0000"
 },
 "18196249777380879": {
 "special": false,
@@ -710,14 +650,6 @@
 "desc": "Dance With Me classes for toddlers with a grown-up at Roseland Stony Brook.",
 "expires": "2026-10-11",
 "_ts": "2026-09-25T13:40:56+0000"
-},
-"17903708307578693": {
-"special": false,
-"title": "Cheer Dance Class for Kids",
-"when": "Ongoing",
-"desc": "Kids ages 5-6 learn tumbling, jumps, stunts and pom dances at Roseland School of Dance.",
-"expires": "2026-09-27",
-"_ts": "2026-09-23T19:16:22+0000"
 },
 "18122876903315669": {
 "special": false,
@@ -3702,5 +3634,61 @@
 "desc": "New England Lobster Roll nominated for Best of Long Island 2027. Vote via link in bio.",
 "expires": "2026-10-23",
 "_ts": "2026-10-23T16:02:25+0000"
+},
+"18076822349777571": {
+"special": true,
+"title": "Beet & Potato Mezzaluna Special",
+"when": "This weekend",
+"desc": "Homemade pasta with poppy seeds and lemon butter sauce available this weekend at Luca.",
+"expires": "2026-10-26",
+"_ts": "2026-10-23T20:50:26+0000"
+},
+"18637687174058338": {
+"special": true,
+"title": "Final Oktoberfest Celebration",
+"when": "Sat, Oct. 25 · 4 PM+",
+"desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
+"expires": "2026-10-25",
+"_ts": "2026-10-23T19:30:57+0000"
+},
+"18375984010243431": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-24T01:58:44+0000"
+},
+"18091915790690721": {
+"special": false,
+"title": "Se-Port Deli & Caterers",
+"when": "N/A",
+"desc": "Inspirational post about customer Steven Matz's faith journey. No food or event special.",
+"expires": "2026-10-24",
+"_ts": "2026-10-24T01:57:42+0000"
+},
+"18039045125837302": {
+"special": false,
+"title": "Se-Port Deli & Caterers",
+"when": "N/A",
+"desc": "Thank you post with no specific offer or event announced.",
+"expires": "2026-10-24",
+"_ts": "2026-10-23T20:40:45+0000"
+},
+"18414351025095479": {
+"special": false,
+"title": "Charles Dickens Festival Hotel Package",
+"when": "Dec 5-6, 2026",
+"desc": "Book a waterfront stay at Danfords during Port Jefferson's 30th Annual Charles Dickens Festival.",
+"expires": "2026-12-06",
+"_ts": "2026-10-24T04:00:12+0000"
+},
+"18201844492379965": {
+"special": true,
+"title": "Long Island Restaurant Week Dinner",
+"when": "Nov 1-8, 2026",
+"desc": "Three-course $48++ dinner menu with plenty of choices at Castaways.",
+"expires": "2026-11-08",
+"_ts": "2026-10-23T19:00:52+0000"
 }
 }

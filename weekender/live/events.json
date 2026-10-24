@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-24T10:48:13.749997+00:00",
+"updated": "2026-10-24T12:01:58.304873+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1536,6 +1536,25 @@
 "label": "Special"
 },
 {
+"id": "18637687174058338",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Final Oktoberfest Celebration",
+"when": "Sat, Oct. 25 · 4 PM+",
+"desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
+"expires": "2026-10-25",
+"posted": "2026-10-23T19:30:57+0000",
+"url": "https://www.instagram.com/p/De2UE85FNNz/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18637687174058338.jpg",
+"page": "https://www.threevillagelocal.com/schnitzels",
+"profile": "https://www.threevillagelocal.com/schnitzels",
+"label": "Happy hour"
+},
+{
 "id": "18074576285727806",
 "biz": "Schnitzels",
 "ig": "eatschnitzels",
@@ -1612,6 +1631,25 @@
 "label": "Special"
 },
 {
+"id": "18076822349777571",
+"biz": "Luca Restaurant",
+"ig": "lucastonybrook",
+"town": "Stony Brook",
+"category": "Restaurant",
+"member": false,
+"title": "Beet & Potato Mezzaluna Special",
+"when": "This weekend",
+"desc": "Homemade pasta with poppy seeds and lemon butter sauce available this weekend at Luca.",
+"expires": "2026-10-26",
+"posted": "2026-10-23T20:50:26+0000",
+"url": "https://www.instagram.com/p/De2dLF2n0rL/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18076822349777571.jpg",
+"page": "https://www.threevillagelocal.com/luca",
+"profile": "https://www.threevillagelocal.com/luca",
+"label": "Special"
+},
+{
 "id": "18110244839627398",
 "biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
 "ig": "threevillageinn",
@@ -1650,6 +1688,25 @@
 "label": "Special"
 },
 {
+"id": "18201844492379965",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Long Island Restaurant Week Dinner",
+"when": "Nov 1-8, 2026",
+"desc": "Three-course $48++ dinner menu with plenty of choices at Castaways.",
+"expires": "2026-11-08",
+"posted": "2026-10-23T19:00:52+0000",
+"url": "https://www.instagram.com/p/De2QntVCmaU/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18201844492379965.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"label": "Special"
+},
+{
 "id": "18116670341043180",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -1667,25 +1724,6 @@
 "page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-thursday-happy-hour",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
 "label": "Happy hour"
-},
-{
-"id": "18154222495572399",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Long Island Restaurant Week Prix Fixe",
-"when": "Nov 1–8, 2026",
-"desc": "Special dinner menu at $48 per person. Reserve on Resy or call (888) 624-6106.",
-"expires": "2026-11-08",
-"posted": "2026-10-21T21:01:03+0000",
-"url": "https://www.instagram.com/p/DexUuZoChTJ/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18154222495572399.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-long-island-restaurant-prix-fixe",
-"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Special"
 },
 {
 "id": "18384649183233226",
@@ -1719,6 +1757,7 @@
 "Ralph's Famous Italian Ices & Ice Cream",
 "Burgerology",
 "The Study by Toast",
+"Luca Restaurant",
 "Three Village Inn / Mirabelle Restaurant & Tavern",
 "Nantuckets",
 "Castaways Steak & Seafood",
@@ -1727,7 +1766,6 @@
 "DJ's Clam Shack (Stony Brook)",
 "Se-Port Deli & Caterers",
 "Little Cheese Shop",
-"Luca Restaurant",
 "Bliss Restaurant",
 "Prohibition Port Jefferson",
 "Port Jeff Brewing Company",
