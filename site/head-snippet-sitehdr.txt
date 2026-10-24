@@ -1,0 +1,13 @@
+SITEWIDE HEADER: always-on switch (NOT applied; needs the owner's OK). Two steps, one rollback.
+
+STEP 1 (HEAD box, Chrome only: BD admin > Settings > Design Settings > Custom CSS / HEAD tab, see CLAUDE.md "Instant design"):
+inside the "3VL instant design" block,
+ a) in the inline <script>, right BEFORE  js('p3/p3.js')  add:
+    var s1=p.split('/')[1]||'';if(p!=='/'&&['home','checkout','account','admin','preview-home'].indexOf(s1)<0)h.classList.add('tvl-sh');
+ b) at the end of the <style> block add:
+    @keyframes tvlshshow{to{opacity:1}}html.tvl-sh:not(.tvl-sh-on) body>.header{opacity:0;animation:tvlshshow .2s linear 6s forwards}html.tvl-sh:not(.tvl-sh-on) body{padding-top:164px}@media (max-width:900px){html.tvl-sh:not(.tvl-sh-on) body{padding-top:168px}}html.tvl-sh:not(.tvl-sh-on) body>.header{position:absolute!important;left:0;right:0;top:0}
+ (This only hides BD's header from the very first paint; with the switch off, p3.js removes the class again, and if p3.js ever fails BD's header shows after 6 s.)
+
+STEP 2 (the switch): site/p3/p3.js  var SITEWIDE=false  ->  true, then  python site/publish_live.py  (live in ~1 minute).
+
+ROLLBACK: SITEWIDE=false + python site/publish_live.py. The HEAD lines can stay (inert when the switch is off).
