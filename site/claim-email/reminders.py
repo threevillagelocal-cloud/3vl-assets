@@ -15,6 +15,9 @@ from build import (esc, btn, solid_bg, FONT, NAVY, GOLD, INK, MUT, LINE, BG, MAI
                    p, kicker, h2, short_name, tick)
 
 DEADLINE = "Friday, October 23"
+# the weekly-email bonus ended with that deadline: never mention it after it passes
+import datetime as _dt
+BONUS_ON = _dt.date.today() <= _dt.date(2026, 10, 23)
 
 
 def masthead():
@@ -47,6 +50,8 @@ def center_btn(href, label):
 
 
 def bonus_box(co, last=False):
+    if not BONUS_ON:
+        return ""
     head = "Ends this Friday" if last else "Bonus for claiming by %s" % DEADLINE
     return ('<tr><td style="padding:22px 28px 4px"><table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" '
             'style="background:#fff8e8;border:2px solid %s;border-radius:14px"><tr><td style="padding:18px 20px">%s%s</td></tr></table></td></tr>'
@@ -106,8 +111,8 @@ def build(kind, r, claim, base, utm):
                      "already finding it. Since we haven&rsquo;t heard back, we&rsquo;ll assume you&rsquo;d rather not have it up, and we&rsquo;ll take it "
                      "down soon. No hard feelings at all! If you would like to keep it, it only takes a minute:" % co, 16, INK, 14),
                    p('1. <a href="%s" style="%s">Claim it here</a> (free, about a minute, no credit card), or' % (esc(claim), link), 16, INK, 6),
-                   p("2. Just reply <b>YES</b> and we&rsquo;ll set up the login for you.", 16, INK, 14),
-                   p("Claim by <b>%s</b> and we&rsquo;ll also feature %s in our weekly email to Three Village residents, free." % (DEADLINE, co), 16, INK, 0))]
+                   p("2. Just reply <b>YES</b> and we&rsquo;ll set up the login for you.", 16, INK, 14 if BONUS_ON else 0),
+                   p("Claim by <b>%s</b> and we&rsquo;ll also feature %s in our weekly email to Three Village residents, free." % (DEADLINE, co), 16, INK, 0) if BONUS_ON else "")]
         rows.append('<tr><td align="center" style="padding:16px 28px 6px;background:#fff">%s</td></tr>' % center_btn(claim, "Claim my free page &rarr;"))
         rows.append('<tr><td style="padding:16px 28px 10px;background:#fff">%s%s</td></tr>'
                     % (p("Thanks, and thanks for being part of the neighborhood.", 16, INK, 10),
