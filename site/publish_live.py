@@ -30,6 +30,9 @@ FILES = [   # (source in 3vl-assets, destination under 3vl-share/live)
     ("site/hdr/tvl-bi.woff2", "hdr/tvl-bi.woff2"),      # header icons (subset fonts, see site/hdr/build_hdr.py)
     ("site/hdr/tvl-fa.woff2", "hdr/tvl-fa.woff2"),
     ("site/hdr/logo-540.webp", "hdr/logo-540.webp"),    # small copy of the site logo
+    ("site/hdr/sitehdr.js", "hdr/sitehdr.js"),          # sitewide header + footer (homepage look), loaded by p3.js
+    ("site/hdr/sitehdr.css", "hdr/sitehdr.css"),
+    ("weekender/front/img/logo-white.webp", "hdr/logo-white.webp"),
 ]
 
 
