@@ -87,8 +87,13 @@ def linkify(html_str):
     return "".join(out)
 
 
-def build(edition, local=False, sha="master", d=None, live=None):
-    """d: an already-adjusted weekend.json (the nightly job drops past items); live: weekender/live/events.json for the Event schema."""
+def build(edition, local=False, sha="master", d=None, live=None, front=False):
+    """d: an already-adjusted weekend.json (the nightly job drops past items); live: weekender/live/events.json for the Event schema.
+    front: the second layout (weekender/front, 10/24/2026). The default output is unchanged."""
+    FB = None
+    if front:
+        sys.path.insert(0, os.path.join(HERE, "front"))
+        import front_build as FB
     if d is None:
         d = json.load(open(os.path.join(HERE, edition, "weekend.json"), encoding="utf-8"))
     if live is None:
@@ -157,27 +162,33 @@ def build(edition, local=False, sha="master", d=None, live=None):
     w('<link rel="preload" as="image" href="%s" media="(max-width:720px)">' % img(d["hero"]["img"], True))
     ver = ("?v=%d" % int(__import__("time").time())) if local else ""
     w('<link rel="stylesheet" href="%sweekender.css%s">' % (base, ver))
-    w('<div class="wk" id="wk-top" data-start="%s" data-end="%s" data-assets="%s" data-edition="%s" data-feed="%s"%s data-guides="%s">' % (
+    if front:
+        w('<link rel="stylesheet" href="%sfront/front.css%s">' % (base, ver))
+    w(('<div class="wk%s" id="wk-top" ' % (" wk-y" if front else "")) + 'data-start="%s" data-end="%s" data-assets="%s" data-edition="%s" data-feed="%s"%s data-guides="%s">' % (
         d["starts"], d["ends"], esc(base), edition, esc(feed_url), (' data-live="%slive/events.json"' % base) if local else "", esc(json.dumps(d.get("guides", [])))))
 
-    # HERO: compact live intro for Three Village Now
-    w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="%s" width="1600" height="1067" fetchpriority="high"></picture>'
-      % (img(d["hero"]["img"], True), img(d["hero"]["img"]), esc(d["hero"].get("alt") or "Three Village, Long Island this week")))
-    w('<div class="wk-hshade"></div>')
-    w('<div class="wk-hin"><div class="wk-brandrow"><h1 class="wk-hname">Three Village <span>Local</span></h1><span class="wk-livepill"><i></i>Live from Three Village</span></div>')
-    w('<p class="wk-dek">What&rsquo;s happening in Setauket, Stony Brook and Port Jefferson right now. Events, specials, weather and local news, updated all day.</p>')
-    w('<div class="wk-hstats">'
-      '<div class="wk-hs"><span class="wk-hsl">Today</span><b id="wk-hdate">--</b><span class="wk-hsc" id="wk-hclock">--:--</span></div>'
-      '<a class="wk-hs" href="#wk-sched"><span class="wk-hsl"><i class="wk-hdot"></i>Happening now</span><b id="wk-hnow">--</b><span class="wk-hsc" id="wk-hnext">checking&hellip;</span></a>'
-      '<a class="wk-hs" href="#wk-wx"><span class="wk-hsl">Setauket weather</span><b><span class="wk-hwi2" id="wk-hwi2"></span><span id="wk-htemp">--</span>&deg;</b><span class="wk-hsc" id="wk-hsky">loading&hellip;</span></a>'
-      '</div></div><p class="wk-pcred">%s</p></header>' % esc(d["hero"]["credit"]))
+    if front:   # compact top band + category quick links (weekender/front)
+        w(FB.hero(d, img))
+        w(FB.quick())
+    else:
+      # HERO: compact live intro for Three Village Now
+      w('<header class="wk-hero wk-hero2"><picture><source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="%s" width="1600" height="1067" fetchpriority="high"></picture>'
+        % (img(d["hero"]["img"], True), img(d["hero"]["img"]), esc(d["hero"].get("alt") or "Three Village, Long Island this week")))
+      w('<div class="wk-hshade"></div>')
+      w('<div class="wk-hin"><div class="wk-brandrow"><h1 class="wk-hname">Three Village <span>Local</span></h1><span class="wk-livepill"><i></i>Live from Three Village</span></div>')
+      w('<p class="wk-dek">What&rsquo;s happening in Setauket, Stony Brook and Port Jefferson right now. Events, specials, weather and local news, updated all day.</p>')
+      w('<div class="wk-hstats">'
+        '<div class="wk-hs"><span class="wk-hsl">Today</span><b id="wk-hdate">--</b><span class="wk-hsc" id="wk-hclock">--:--</span></div>'
+        '<a class="wk-hs" href="#wk-sched"><span class="wk-hsl"><i class="wk-hdot"></i>Happening now</span><b id="wk-hnow">--</b><span class="wk-hsc" id="wk-hnext">checking&hellip;</span></a>'
+        '<a class="wk-hs" href="#wk-wx"><span class="wk-hsl">Setauket weather</span><b><span class="wk-hwi2" id="wk-hwi2"></span><span id="wk-htemp">--</span>&deg;</b><span class="wk-hsc" id="wk-hsky">loading&hellip;</span></a>'
+        '</div></div><p class="wk-pcred">%s</p></header>' % esc(d["hero"]["credit"]))
 
-    # NAV
-    w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
-      '<a href="#wk-picks">&#11088; Things to Do</a><a href="#wk-wx">&#9728;&#65039; Weather</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-sched">&#128197; Schedule</a>'
-      ''
-      + (('<a class="wk-spylink" href="%s">&#128373;&#65039; Spy Day</a>' % esc(d["spy_link"])) if d.get("spy_link") else '')
-      + '</div></nav>')
+      # NAV
+      w('<nav class="wk-nav" aria-label="Jump to section"><span class="wk-navl">Jump to &#8594;</span><div class="wk-navin">'
+        '<a href="#wk-picks">&#11088; Things to Do</a><a href="#wk-wx">&#9728;&#65039; Weather</a><a href="#wk-eat">&#127869;&#65039; Eat &amp; Drink</a><a href="#wk-sched">&#128197; Schedule</a>'
+        ''
+        + (('<a class="wk-spylink" href="%s">&#128373;&#65039; Spy Day</a>' % esc(d["spy_link"])) if d.get("spy_link") else '')
+        + '</div></nav>')
     w('<div class="wk-ticker" id="wk-ticker" hidden><span class="wk-tkl"><i></i>LIVE</span><div class="wk-tkm"><div class="wk-tkt" id="wk-tkt"></div></div></div>')
 
     w('<div class="wk-grid"><div class="wk-main">')
@@ -235,7 +246,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
             ('<p class="wk-icred">%s</p>' % esc(n["credit"])) if n.get("credit") else ""))
     w('</div></section>')
     M["feat"] = len(out)
-    w(nhb.featured())  # Featured Local Businesses (VIPs), right after Top Things to Do
+    w(FB.spotlight() if front else nhb.featured())  # Featured Local Businesses (VIPs) / front: Local Business Spotlight
 
     M["eat"] = len(out)
     # EAT & DRINK (exterior photo + dish inset; one card per business)
@@ -356,7 +367,7 @@ def build(edition, local=False, sha="master", d=None, live=None):
 
     # SUBMIT + SHARE + APP
     M["browse"] = len(out)
-    w(nhb.browse())   # Browse Local Businesses
+    w("" if front else nhb.browse())   # Browse Local Businesses (front: quick-link row at the top)
     M["stories"] = len(out)
     w(nhb.stories_sec())  # Latest Local Stories
     M["cta"] = len(out)
@@ -377,6 +388,10 @@ def build(edition, local=False, sha="master", d=None, live=None):
     seg = {k: out[M[k]:M[names[i + 1]] if i + 1 < len(names) else M["end"]] for i, k in enumerate(names)}
     ORDER = ["picks", "wx", "eat", "feat", "ad2", "sched", "ad1", "homes", "stories", "extra", "browse", "cta"]  # 10/5/2026 owner: weather above Eat & Drink
     assert sorted(ORDER) == sorted(names), "section list out of sync"
+    RAILX = []
+    if front:   # front layout: weather, homes/newsletter and stories ride in the right rail (phones: CSS order puts them back in line)
+        RAILX = [x for k in ("wx", "homes", "stories") for x in seg[k]]
+        ORDER = [k for k in ORDER if k not in ("wx", "homes", "stories")]
     out[M[names[0]]:M["end"]] = [x for k in ORDER for x in seg[k]]
 
     w('</div>')  # /wk-main
@@ -398,6 +413,8 @@ def build(edition, local=False, sha="master", d=None, live=None):
     w('<div class="wk-adprog"><i id="wk-adbar"></i></div><div class="wk-addots" id="wk-addots"></div></div>')
     w('<div class="wk-adrot2" id="wk-adrot2"></div>')
     w('<a class="wk-railcta" href="https://www.threevillagelocal.com/join">Advertise here &rarr;</a></div>')
+    for x in RAILX:
+        w(x)
     # second pair further down (owner 10/2/2026: "too much room there to not take advantage of"); desktop only, follows the reader
     # down the page; weekender.js fills the two slots and loads their banners only once they are near the screen
     w('<div class="wk-railin wk-rail2" id="wk-rail2"><p class="wk-railh"><span>&#11088; VIP</span> More local favorites</p>'
@@ -414,6 +431,8 @@ def build(edition, local=False, sha="master", d=None, live=None):
     w('<a href="#wk-top" class="wk-totop" id="wk-totop" aria-label="Back to top">&#8593;</a><div class="wk-toast" id="wk-toast" role="status"></div>')
     w('</div>')
     w('<script src="%sweekender.js%s" defer></script>' % (base, ver))
+    if front:
+        w('<script src="%sfront/front.js%s" defer></script>' % (base, ver))
 
     w(nhb.event_schema_live(live) or nhb.event_schema(d, img))  # schema.org Event list: live feed (next 2 weeks) when available, else this edition
     body = "\n".join(out)

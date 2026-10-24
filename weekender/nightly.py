@@ -112,15 +112,19 @@ def warm(body, ed, sha):
 
 def main():
     sha, out = sys.argv[1], sys.argv[2]
+    out2 = sys.argv[3] if len(sys.argv) > 3 else None   # 10/24/2026: second layout (weekender/front) for the hidden /preview-home page
     ed = latest_edition()
     d = json.load(open(os.path.join(HERE, ed, "weekend.json"), encoding="utf-8"))
     now = nhb.now_et()
     dp, dn = adjust(d, now)
+    d2 = json.loads(json.dumps(d))
     body = B.build(ed, False, sha, d=d)
     old = open(out, encoding="utf-8").read() if os.path.exists(out) else ""
     ends = datetime.datetime.fromisoformat(d["ends"][:16])
     print("edition %s | picks kept %d (dropped %d) | coming-up kept %d (dropped %d) | edition %s" % (
         ed, len(d["picks"]), dp, len(d.get("next", [])), dn, "CURRENT" if ends >= now else "PAST - add a new weekly edition for fresh hand-picked items"))
+    if out2:
+        front_main(sha, ed, d2, out2)
     if "\\" in body:
         print("ABORT: backslash in body (BD would strip it)"); sys.exit(1)
     if body == old:
@@ -130,6 +134,24 @@ def main():
         print("ABORT: %d files not yet available on the CDN, e.g. %s" % (len(bad), bad[0])); sys.exit(1)
     open(out, "w", encoding="utf-8").write(body)
     print("CHANGED", len(body), "chars")
+
+
+def front_main(sha, ed, d2, out2):
+    """Build the front layout into out2. Prints FRONT CHANGED / FRONT UNCHANGED / FRONT ABORT. Never stops the main homepage build."""
+    try:
+        body2 = B.build(ed, False, sha, d=d2, front=True)
+        old2 = open(out2, encoding="utf-8").read() if os.path.exists(out2) else ""
+        if "\\" in body2:
+            print("FRONT ABORT: backslash in body"); return
+        if body2 == old2:
+            print("FRONT UNCHANGED"); return
+        bad = warm(body2, ed, sha)
+        if bad:
+            print("FRONT ABORT: %d files not yet available on the CDN, e.g. %s" % (len(bad), bad[0])); return
+        open(out2, "w", encoding="utf-8").write(body2)
+        print("FRONT CHANGED", len(body2), "chars")
+    except Exception as e:
+        print("FRONT ABORT:", e)
 
 
 if __name__ == "__main__":
