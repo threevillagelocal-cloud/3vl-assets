@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-24T15:50:19.924636+00:00",
+"updated": "2026-10-24T17:00:58.765937+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 208,
-"Emma S. Clark Library": 325,
+"Emma S. Clark Library": 322,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -193,61 +193,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/port-jefferson-chowder-crawl"
-},
-{
-"id": "emmaclark-italian-genealogy-workshop-58166",
-"title": "Italian Genealogy Workshop",
-"start": "2026-10-24T10:00:00",
-"end": "2026-10-24T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/italian-genealogy-workshop-58166",
-"desc": "Genealogist Eileen Swanberg will show you how to find your Italian ancestors and their hometowns in Italy. You will learn about naming patterns, immigration and naturalization records, vital records, censuses, and helpful Italian websites. Discover the best wa",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/4513.jpg",
-"src": "emmaclark",
-"tags": [
-"history"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/italian-genealogy-workshop"
-},
-{
-"id": "emmaclark-america-250-historical-gravestones-cleaning-59573",
-"title": "America 250: Historical Gravestones Cleaning",
-"start": "2026-10-24T10:00:00",
-"end": "2026-10-24T12:30:00",
-"allday": false,
-"venue": "Off site (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/america-250-historical-gravestones-cleaning-59573",
-"desc": "This program is taking place offsite, not in the Library. If minors are attending the program, a parent/guardian who is 18 years old or older must stay with the minor at all times. Minors are not allowed to be dropped off at offsite programs without a parent/g",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"history"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/america-250-historical-gravestones-cleaning-416"
-},
-{
-"id": "emmaclark-copy-tech-help-teens-42902",
-"title": "Tech Help (from teens)",
-"start": "2026-10-24T11:00:00",
-"end": "2026-10-24T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Technology Center",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/copy-tech-help-teens-42902",
-"desc": "Teen Tech Tutors will assist patrons with basic questions about their mobile devices.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": ""
 },
 {
 "id": "cur-chowder",
