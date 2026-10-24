@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-24T04:25:31.853468+00:00",
+"updated": "2026-10-24T04:26:56.658727+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1260,7 +1260,7 @@
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/eat.namkeen.jpg",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-late-night-saturday-off",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
@@ -1398,7 +1398,7 @@
 "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-late-night-saturday-off",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "label": "Special"
 },
