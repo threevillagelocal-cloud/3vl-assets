@@ -128,24 +128,7 @@
 }
 ],
 "robinsonstearoom": [],
-"premierepastryshop": [
-{
-"id": "18113767961172883",
-"biz": "Premiere Pastry Shop",
-"ig": "premierepastryshop",
-"town": "Stony Brook",
-"category": "Bakery",
-"member": false,
-"title": "Halloween Cakesicles Now Available",
-"when": "Through October 31",
-"desc": "Seasonal Halloween-themed cakesicles are available now at Premiere Pastry Shop.",
-"expires": "2026-10-31",
-"posted": "2026-10-17T17:21:51+0000",
-"url": "https://www.instagram.com/p/DemoZPHCNWS/",
-"img": "",
-"inset": "ig/p18113767961172883.jpg"
-}
-],
+"premierepastryshop": [],
 "threevillageinn": [
 {
 "id": "18110244839627398",
@@ -482,22 +465,6 @@
 "url": "https://www.instagram.com/p/DezQcI-Cpph/",
 "img": "",
 "inset": "ig/p18116670341043180.jpg"
-},
-{
-"id": "18154222495572399",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Long Island Restaurant Week Prix Fixe",
-"when": "Nov 1–8, 2026",
-"desc": "Special dinner menu at $48 per person. Reserve on Resy or call (888) 624-6106.",
-"expires": "2026-11-08",
-"posted": "2026-10-21T21:01:03+0000",
-"url": "https://www.instagram.com/p/DexUuZoChTJ/",
-"img": "",
-"inset": "ig/p18154222495572399.jpg"
 }
 ],
 "salsasalsa_portjeff": [],

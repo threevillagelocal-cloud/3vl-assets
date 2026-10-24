@@ -55,14 +55,6 @@
 "expires": "",
 "_ts": "2026-09-26T15:47:28+0000"
 },
-"18133841173659448": {
-"special": true,
-"title": "Live Music with Matt Bruno",
-"when": "Thu, Sep. 25 · 6 PM",
-"desc": "Live music with Matt Bruno at this East Setauket steakhouse with cocktails and dinner.",
-"expires": "2026-09-25",
-"_ts": "2026-09-24T15:35:02+0000"
-},
 "18119689529285235": {
 "special": true,
 "title": "Moses Reaper Cheese - Halloween Edition",
@@ -122,14 +114,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-25T15:49:00+0000"
-},
-"18128797576766706": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-24T17:03:33+0000"
 },
 "17906671416487684": {
 "special": false,
@@ -423,14 +407,6 @@
 "expires": "",
 "_ts": "2026-09-25T15:21:33+0000"
 },
-"18389589367206391": {
-"special": false,
-"title": "Castaways Patio Dining",
-"when": "Ongoing",
-"desc": "Enjoy dinner and drinks on the patio at Castaways Steak & Seafood in Port Jefferson.",
-"expires": "2026-10-11",
-"_ts": "2026-09-24T18:00:44+0000"
-},
 "18338400298258270": {
 "special": false,
 "title": "Tiger Lily Cafe",
@@ -526,22 +502,6 @@
 "18116883184758328": {
 "special": false,
 "_ts": "2026-09-25T13:31:15+0000"
-},
-"18130409278740966": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-24T18:02:13+0000"
-},
-"18101217917023418": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-24T15:31:12+0000"
 },
 "18037224695648412": {
 "special": false,
@@ -3678,5 +3638,41 @@
 "desc": "New hand-rolled sushi now available alongside classic lobster. Dine in or order out.",
 "expires": "2026-10-24",
 "_ts": "2026-10-24T13:24:26+0000"
+},
+"18077550800749296": {
+"special": false,
+"_ts": "2026-10-24T18:45:51+0000"
+},
+"18120972058933405": {
+"special": false,
+"title": "Wedding Hosting at Three Village Inn",
+"when": "Ongoing",
+"desc": "Host your wedding at this historic Stony Brook inn with warm candlelight and charming rooms.",
+"expires": "2026-10-24",
+"_ts": "2026-10-24T15:17:44+0000"
+},
+"18157697737518294": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-24T17:40:55+0000"
+},
+"18070632287777578": {
+"special": false,
+"title": "Holiday Party Booking Discount",
+"when": "By Thanksgiving",
+"desc": "Book your holiday party before Thanksgiving and get 15% off.",
+"expires": "2026-11-27",
+"_ts": "2026-10-24T19:00:35+0000"
+},
+"18026930036875851": {
+"special": false,
+"title": "Castaways Steak & Seafood",
+"when": "Ongoing",
+"desc": "Cozy fireplace dining as nights get colder. Book on Resy or call.",
+"expires": "2026-10-24",
+"_ts": "2026-10-24T16:01:07+0000"
 }
 }
