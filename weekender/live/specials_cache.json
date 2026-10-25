@@ -95,6 +95,22 @@
 "crazybeansrestaurant": [],
 "eatschnitzels": [
 {
+"id": "18130326799700088",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Lobster Bomb Limited-Time Special",
+"when": "Limited time",
+"desc": "Warm bread bowl filled with lobster meat and creamy lobster bisque poured tableside.",
+"expires": "2026-11-08",
+"posted": "2026-10-24T19:31:23+0000",
+"url": "https://www.instagram.com/reel/De444rJEg01/",
+"img": "",
+"inset": "ig/p18130326799700088.jpg"
+},
+{
 "id": "18637687174058338",
 "biz": "Schnitzels",
 "ig": "eatschnitzels",
@@ -147,24 +163,7 @@
 "inset": "ig/p18110244839627398.jpg"
 }
 ],
-"ralphsitalianicesstonybrook": [
-{
-"id": "18150886438536933",
-"biz": "Ralph's Famous Italian Ices & Ice Cream",
-"ig": "ralphsitalianicesstonybrook",
-"town": "Stony Brook",
-"category": "Ice Cream",
-"member": false,
-"title": "Final Day: Seasonal Closure This Sunday",
-"when": "Sun, Oct. 24",
-"desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
-"expires": "2026-10-24",
-"posted": "2026-10-21T16:38:20+0000",
-"url": "https://www.instagram.com/reel/Dew1638vYIE/",
-"img": "",
-"inset": "ig/p18150886438536933.jpg"
-}
-],
+"ralphsitalianicesstonybrook": [],
 "burgerologyusa": [
 {
 "id": "18110514965522268",

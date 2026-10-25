@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-25T11:14:06.682455+00:00",
+"updated": "2026-10-25T12:01:59.939499+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1291,22 +1291,22 @@
 "profile": "https://www.threevillagelocal.com/country-corner"
 },
 {
-"id": "18637687174058338",
+"id": "18130326799700088",
 "biz": "Schnitzels",
 "ig": "eatschnitzels",
 "town": "Stony Brook",
 "category": "Restaurant/Gastropub",
 "member": false,
-"title": "Final Oktoberfest Celebration",
-"when": "Sat, Oct. 25 · 4 PM+",
-"desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
-"expires": "2026-10-25",
-"posted": "2026-10-23T19:30:57+0000",
-"url": "https://www.instagram.com/p/De2UE85FNNz/",
+"title": "Lobster Bomb Limited-Time Special",
+"when": "Limited time",
+"desc": "Warm bread bowl filled with lobster meat and creamy lobster bisque poured tableside.",
+"expires": "2026-11-08",
+"posted": "2026-10-24T19:31:23+0000",
+"url": "https://www.instagram.com/reel/De444rJEg01/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18637687174058338.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-final-oktoberfest-celebration",
-"label": "Happy hour",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18130326799700088.jpg",
+"page": "https://www.threevillagelocal.com/schnitzels",
+"label": "Special",
 "profile": "https://www.threevillagelocal.com/schnitzels"
 }
 ],
@@ -1455,6 +1455,25 @@
 "label": "Live music"
 },
 {
+"id": "18130326799700088",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Lobster Bomb Limited-Time Special",
+"when": "Limited time",
+"desc": "Warm bread bowl filled with lobster meat and creamy lobster bisque poured tableside.",
+"expires": "2026-11-08",
+"posted": "2026-10-24T19:31:23+0000",
+"url": "https://www.instagram.com/reel/De444rJEg01/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18130326799700088.jpg",
+"page": "https://www.threevillagelocal.com/schnitzels",
+"profile": "https://www.threevillagelocal.com/schnitzels",
+"label": "Special"
+},
+{
 "id": "18637687174058338",
 "biz": "Schnitzels",
 "ig": "eatschnitzels",
@@ -1472,25 +1491,6 @@
 "page": "https://www.threevillagelocal.com/eat-drink/schnitzels-final-oktoberfest-celebration",
 "profile": "https://www.threevillagelocal.com/schnitzels",
 "label": "Happy hour"
-},
-{
-"id": "18074576285727806",
-"biz": "Schnitzels",
-"ig": "eatschnitzels",
-"town": "Stony Brook",
-"category": "Restaurant/Gastropub",
-"member": false,
-"title": "The Dip Schnitz Limited Menu Item",
-"when": "Limited time",
-"desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
-"expires": "2026-11-21",
-"posted": "2026-10-21T21:25:57+0000",
-"url": "https://www.instagram.com/p/DexXoFJhJhr/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18074576285727806.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-dip-schnitz-limited-menu-item",
-"profile": "https://www.threevillagelocal.com/schnitzels",
-"label": "Special"
 },
 {
 "id": "18110514965522268",

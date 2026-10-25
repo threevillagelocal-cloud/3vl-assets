@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T19:00:12.358734+00:00",
+ "updated": "2026-10-25T12:00:11.895484+00:00",
  "specials": [
   {
    "id": "18481707613112188",
@@ -34,36 +34,20 @@
    "inset": "ig/p18200189893388564.jpg"
   },
   {
-   "id": "18637687174058338",
+   "id": "18130326799700088",
    "biz": "Schnitzels",
    "ig": "eatschnitzels",
    "town": "Stony Brook",
    "category": "Restaurant/Gastropub",
    "member": false,
-   "title": "Final Oktoberfest Celebration",
-   "when": "Sat, Oct. 25 · 4 PM+",
-   "desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
-   "expires": "2026-10-25",
-   "posted": "2026-10-23T19:30:57+0000",
-   "url": "https://www.instagram.com/p/De2UE85FNNz/",
+   "title": "Lobster Bomb Limited-Time Special",
+   "when": "Limited time",
+   "desc": "Warm bread bowl filled with lobster meat and creamy lobster bisque poured tableside.",
+   "expires": "2026-11-08",
+   "posted": "2026-10-24T19:31:23+0000",
+   "url": "https://www.instagram.com/reel/De444rJEg01/",
    "img": "",
-   "inset": "ig/p18637687174058338.jpg"
-  },
-  {
-   "id": "18150886438536933",
-   "biz": "Ralph's Famous Italian Ices & Ice Cream",
-   "ig": "ralphsitalianicesstonybrook",
-   "town": "Stony Brook",
-   "category": "Ice Cream",
-   "member": false,
-   "title": "Final Day: Seasonal Closure This Sunday",
-   "when": "Sun, Oct. 24",
-   "desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
-   "expires": "2026-10-24",
-   "posted": "2026-10-21T16:38:20+0000",
-   "url": "https://www.instagram.com/reel/Dew1638vYIE/",
-   "img": "",
-   "inset": "ig/p18150886438536933.jpg"
+   "inset": "ig/p18130326799700088.jpg"
   },
   {
    "id": "18110514965522268",
@@ -96,6 +80,22 @@
    "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
    "img": "",
    "inset": "ig/p17909824674564464.jpg"
+  },
+  {
+   "id": "18076822349777571",
+   "biz": "Luca Restaurant",
+   "ig": "lucastonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Beet & Potato Mezzaluna Special",
+   "when": "This weekend",
+   "desc": "Homemade pasta with poppy seeds and lemon butter sauce available this weekend at Luca.",
+   "expires": "2026-10-26",
+   "posted": "2026-10-23T20:50:26+0000",
+   "url": "https://www.instagram.com/p/De2dLF2n0rL/",
+   "img": "",
+   "inset": "ig/p18076822349777571.jpg"
   }
  ],
  "candidates": [
@@ -132,36 +132,20 @@
    "inset": "ig/p18200189893388564.jpg"
   },
   {
-   "id": "18637687174058338",
+   "id": "18130326799700088",
    "biz": "Schnitzels",
    "ig": "eatschnitzels",
    "town": "Stony Brook",
    "category": "Restaurant/Gastropub",
    "member": false,
-   "title": "Final Oktoberfest Celebration",
-   "when": "Sat, Oct. 25 · 4 PM+",
-   "desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
-   "expires": "2026-10-25",
-   "posted": "2026-10-23T19:30:57+0000",
-   "url": "https://www.instagram.com/p/De2UE85FNNz/",
+   "title": "Lobster Bomb Limited-Time Special",
+   "when": "Limited time",
+   "desc": "Warm bread bowl filled with lobster meat and creamy lobster bisque poured tableside.",
+   "expires": "2026-11-08",
+   "posted": "2026-10-24T19:31:23+0000",
+   "url": "https://www.instagram.com/reel/De444rJEg01/",
    "img": "",
-   "inset": "ig/p18637687174058338.jpg"
-  },
-  {
-   "id": "18150886438536933",
-   "biz": "Ralph's Famous Italian Ices & Ice Cream",
-   "ig": "ralphsitalianicesstonybrook",
-   "town": "Stony Brook",
-   "category": "Ice Cream",
-   "member": false,
-   "title": "Final Day: Seasonal Closure This Sunday",
-   "when": "Sun, Oct. 24",
-   "desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
-   "expires": "2026-10-24",
-   "posted": "2026-10-21T16:38:20+0000",
-   "url": "https://www.instagram.com/reel/Dew1638vYIE/",
-   "img": "",
-   "inset": "ig/p18150886438536933.jpg"
+   "inset": "ig/p18130326799700088.jpg"
   },
   {
    "id": "18110514965522268",
@@ -194,6 +178,22 @@
    "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
    "img": "",
    "inset": "ig/p17909824674564464.jpg"
+  },
+  {
+   "id": "18076822349777571",
+   "biz": "Luca Restaurant",
+   "ig": "lucastonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Beet & Potato Mezzaluna Special",
+   "when": "This weekend",
+   "desc": "Homemade pasta with poppy seeds and lemon butter sauce available this weekend at Luca.",
+   "expires": "2026-10-26",
+   "posted": "2026-10-23T20:50:26+0000",
+   "url": "https://www.instagram.com/p/De2dLF2n0rL/",
+   "img": "",
+   "inset": "ig/p18076822349777571.jpg"
   }
  ],
  "all": [
@@ -246,6 +246,22 @@
    "inset": "ig/p18217945741349180.jpg"
   },
   {
+   "id": "18130326799700088",
+   "biz": "Schnitzels",
+   "ig": "eatschnitzels",
+   "town": "Stony Brook",
+   "category": "Restaurant/Gastropub",
+   "member": false,
+   "title": "Lobster Bomb Limited-Time Special",
+   "when": "Limited time",
+   "desc": "Warm bread bowl filled with lobster meat and creamy lobster bisque poured tableside.",
+   "expires": "2026-11-08",
+   "posted": "2026-10-24T19:31:23+0000",
+   "url": "https://www.instagram.com/reel/De444rJEg01/",
+   "img": "",
+   "inset": "ig/p18130326799700088.jpg"
+  },
+  {
    "id": "18637687174058338",
    "biz": "Schnitzels",
    "ig": "eatschnitzels",
@@ -260,38 +276,6 @@
    "url": "https://www.instagram.com/p/De2UE85FNNz/",
    "img": "",
    "inset": "ig/p18637687174058338.jpg"
-  },
-  {
-   "id": "18074576285727806",
-   "biz": "Schnitzels",
-   "ig": "eatschnitzels",
-   "town": "Stony Brook",
-   "category": "Restaurant/Gastropub",
-   "member": false,
-   "title": "The Dip Schnitz Limited Menu Item",
-   "when": "Limited time",
-   "desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
-   "expires": "2026-11-21",
-   "posted": "2026-10-21T21:25:57+0000",
-   "url": "https://www.instagram.com/p/DexXoFJhJhr/",
-   "img": "",
-   "inset": "ig/p18074576285727806.jpg"
-  },
-  {
-   "id": "18150886438536933",
-   "biz": "Ralph's Famous Italian Ices & Ice Cream",
-   "ig": "ralphsitalianicesstonybrook",
-   "town": "Stony Brook",
-   "category": "Ice Cream",
-   "member": false,
-   "title": "Final Day: Seasonal Closure This Sunday",
-   "when": "Sun, Oct. 24",
-   "desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
-   "expires": "2026-10-24",
-   "posted": "2026-10-21T16:38:20+0000",
-   "url": "https://www.instagram.com/reel/Dew1638vYIE/",
-   "img": "",
-   "inset": "ig/p18150886438536933.jpg"
   },
   {
    "id": "18110514965522268",
