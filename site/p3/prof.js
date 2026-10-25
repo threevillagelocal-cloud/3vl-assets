@@ -13,7 +13,10 @@
   var P=window.__pvData=fetch(B+'vip/'+uid+'.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null});
   P.then(function(d){
     if(!d||d.layout!=='v3'){js(B+'prof2.js'+q);return}
-    var h=d.hero&&d.hero.img;if(h){var p=document.createElement('link');p.rel='preload';p.as='image';p.href=/^(https?:)?\/\//.test(h)?h:B+'vip/'+h;p.setAttribute('fetchpriority','high');H.appendChild(p)}
+    var h=d.hero&&d.hero.img;if(h){var p=document.createElement('link');p.rel='preload';p.as='image';p.href=/^(https?:)?\/\//.test(h)?h:B+'vip/'+h;p.setAttribute('fetchpriority','high');
+      /* same srcset/sizes as prof3.js draws for banner heroes, so the phone downloads the small copy only once */
+      if(d.hero.banner&&d.hero.sw&&/[.]webp$/.test(p.href)){p.setAttribute('imagesrcset',d.hero.sw.map(function(w,i){return (i===d.hero.sw.length-1?p.href:p.href.replace(/[.]webp$/,'-'+w+'.webp'))+' '+w+'w'}).join(', '));p.setAttribute('imagesizes','(max-width:991px) 100vw, 1000px')}
+      H.appendChild(p)}
     /* the old layout stays invisible (keeping its space) until prof3.js draws and adds pv2-on, so nothing jumps; it shows again after 10 s if prof3 fails */
     clearTimeout(stT);setTimeout(function(){st.remove()},10000);
     css(B+'prof3.css'+q);js(B+'prof3.js'+q)})}catch(e){}})();
