@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-25T12:01:59.939499+00:00",
+"updated": "2026-10-25T12:03:17.353130+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1305,7 +1305,7 @@
 "url": "https://www.instagram.com/reel/De444rJEg01/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18130326799700088.jpg",
-"page": "https://www.threevillagelocal.com/schnitzels",
+"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-lobster-bomb-limited-time-special",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/schnitzels"
 }
@@ -1469,7 +1469,7 @@
 "url": "https://www.instagram.com/reel/De444rJEg01/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18130326799700088.jpg",
-"page": "https://www.threevillagelocal.com/schnitzels",
+"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-lobster-bomb-limited-time-special",
 "profile": "https://www.threevillagelocal.com/schnitzels",
 "label": "Special"
 },
