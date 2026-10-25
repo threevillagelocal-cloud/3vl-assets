@@ -1,11 +1,11 @@
 {
-"updated": "2026-10-25T17:00:45.622012+00:00",
+"updated": "2026-10-25T18:55:02.977352+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 207,
+"Village of Port Jefferson": 206,
 "Emma S. Clark Library": 322,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 51,
@@ -237,26 +237,6 @@
 "pick": true,
 "page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
 "rank": 4
-},
-{
-"id": "portjeff-1097",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-10-25T09:00:00",
-"end": "2026-10-25T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1097",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-478"
 },
 {
 "id": "cur-catflor",
