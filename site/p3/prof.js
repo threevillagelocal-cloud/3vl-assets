@@ -3,7 +3,7 @@
   /* members on the new premium layout (add a user id when their profile goes live) */
   var ON=[115,122,151,299,528,484,684,499,193,173,554,272,138,240,364,78,474,71,137,112,142,217,228,552,143,149,153,222,262,292,296,402,685,732,733,634],ud=document.querySelector('.member-profile-header .userData'),uid=ud?+ud.getAttribute('data-userid'):0,v=new URLSearchParams(location.search).get('v');
   if(v==='1'||(v!=='2'&&ON.indexOf(uid)<0))return;
-  var st=document.createElement('style');st.textContent='html:not(.pv2-on) .member_profile>.col-md-9>*,html:not(.pv2-on) .pf-coverimg{visibility:hidden}';document.head.appendChild(st);var stT=setTimeout(function(){st.remove()},4000);
+  var st=document.createElement('style');st.textContent='html:not(.pv2-on) .member_profile>.col-md-9>*,html:not(.pv2-on) .pf-coverimg{visibility:hidden}';document.head.appendChild(st);var stT=setTimeout(function(){st.remove()},10000);/* 10 s (was 4): on slow phones the data can take over 4 s, and showing the old layout first made the page jump */
   /* speed (10/24/2026): the profile data + hero photo start downloading right here, and v3 profiles load prof3.js
      directly (it used to wait for prof2.js, then a second copy of the same data). Files are cached in 10-minute steps. */
   var B='https://threevillagelocal-cloud.github.io/3vl-share/live/p3/',q='?t='+Math.floor(Date.now()/6e5),H=document.head;
@@ -18,7 +18,6 @@
       if(d.hero.banner&&d.hero.sw&&/[.]webp$/.test(p.href)){p.setAttribute('imagesrcset',d.hero.sw.map(function(w,i){return (i===d.hero.sw.length-1?p.href:p.href.replace(/[.]webp$/,'-'+w+'.webp'))+' '+w+'w'}).join(', '));p.setAttribute('imagesizes','(max-width:991px) 100vw, 1000px')}
       H.appendChild(p)}
     /* the old layout stays invisible (keeping its space) until prof3.js draws and adds pv2-on, so nothing jumps; it shows again after 10 s if prof3 fails */
-    clearTimeout(stT);setTimeout(function(){st.remove()},10000);
     css(B+'prof3.css'+q);js(B+'prof3.js'+q)})}catch(e){}})();
 /* 3VL business profile: light premium polish on BD's own layout (MOCKUP - not wired yet).
    Keeps the cover, header, tabs and sidebar where BD puts them; only tidies and restyles. */
