@@ -658,3 +658,15 @@ html.tvl-inapp #wk-top.wk-y .y-cta{grid-template-columns:repeat(2,minmax(0,1fr))
 #wk-top.wk-y .wk-sec.wk-homesw{padding:0!important;background:none!important;border:0!important}
 #wk-top.wk-y .y-lead[hidden]{display:none!important}
 #wk-top.wk-y .y-leads{min-width:0}
+/* 10/24 mobile fixes: sideways rows must never trap a vertical swipe (overscroll-behavior:contain on both axes blocked the page scroll) */
+#wk-top.wk-y .wk-swipe,#wk-top.wk-y .wk-wx,#wk-top.wk-y .wk-eat,#wk-top.wk-y .y-list,#wk-top.wk-y .yh-qlin,#wk-top.wk-y .wk-chips,#wk-top.wk-y .wk-tabs,#wk-top.wk-y .y-tabs,#wk-top.wk-y .y-mschips,#wk-top.wk-y .yh-tdin{overscroll-behavior-x:contain!important;overscroll-behavior-y:auto!important;touch-action:pan-x pan-y!important}
+/* header "See all" buttons compact on phones (the big one stays at the end of each section) */
+@media (max-width:900px){
+  #wk-top.wk-y #wk-picks a.wk-calbtn,#wk-top.wk-y #wk-eat a.wk-calbtn,#wk-top.wk-y .y-stories a.wk-calbtn{font-size:13px!important;padding:5px 10px 5px 12px!important;box-shadow:none!important;margin-left:auto}
+  #wk-top.wk-y #wk-picks a.wk-calbtn svg,#wk-top.wk-y #wk-eat a.wk-calbtn svg,#wk-top.wk-y .y-stories a.wk-calbtn svg{width:13px;height:13px}
+  #wk-top.wk-y #wk-picks .wk-h2,#wk-top.wk-y #wk-eat .wk-h2,#wk-top.wk-y .y-stories .wk-h2{align-items:center;flex-wrap:wrap}
+}
+@media (max-width:400px){#wk-top.wk-y #wk-picks .wk-h2>span,#wk-top.wk-y #wk-eat .wk-h2>span,#wk-top.wk-y .y-stories .wk-h2>span{font-size:18px!important}}
+/* inside the 3VL mobile app (its own header has the logo): only the search bar and the category row */
+html.tvl-inapp #wk-top.wk-y .yh-logo,html.tvl-inapp #wk-top.wk-y .yh-r,html.tvl-inapp #wk-top.wk-y .yh-mn{display:none!important}
+html.tvl-inapp #wk-top.wk-y .yh-in{padding-top:8px}

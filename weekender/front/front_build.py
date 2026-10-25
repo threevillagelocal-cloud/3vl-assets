@@ -121,6 +121,7 @@ def hero(d, img, base=""):
     cats = "".join('<a class="yh-q" href="%s%s"><span class="yh-qi"><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg></span><span>%s</span></a>' % (
         SITE, u, sv, esc(t)) for t, u, sv in CAT_IC)
     return (
+        '<script>try{var u=navigator.userAgent||"";if(!/FBAN|FBAV|FB_IAB|Instagram/.test(u)&&((/iPhone|iPad|iPod/.test(u)&&!/Safari/.test(u))||(/Android/.test(u)&&u.indexOf("; wv)")>-1)))document.documentElement.classList.add("tvl-inapp");}catch(e){}</script>'
         '<div class="wk-hero y-ssanchor" hidden><p class="wk-dek"></p></div>'
         '<h1 class="y-vh">Three Village Local: events, specials, weather and local news for Setauket, Stony Brook and Port Jefferson</h1>'
         '<header class="yh"><div class="yh-in">'
@@ -263,11 +264,14 @@ SHARE = "https://threevillagelocal-cloud.github.io/3vl-share/"
 def spotlight(base=""):
     """Local Business Spotlight from each VIP's CURRENT v3 profile (3vl-share live/p3/vip/<uid>.json), read on every build.
     Photos come from 3vl-share t/vip.json: small copies (12:5 big 640/960/1280, 4:3 thumb 240) that 3vl-share t/gen.py makes
-    from those profiles every 30 minutes, keyed by a hash of the source file. A profile without copies yet uses its original files."""
+    from those profiles every 30 minutes, keyed by a hash of the source file. Every copy is HEAD-checked at build time and every
+    image carries its original as a fallback (data-o / data-bgo, front.js fixImgs), so a replaced or missing copy never shows a broken image."""
     vips = _vips()
     if not vips:
         return ""
     idx = _get_json(SHARE + "t/vip.json") or {}
+    OK = lambda u: bool(u) and _ok(u)
+    ONERR = 'onerror="if(this.dataset.o){this.removeAttribute(&quot;srcset&quot;);this.src=this.dataset.o;this.dataset.o=&quot;&quot;}"'
     cards, logos = [], []
     for m in vips:
         uid = str(m["id"])
@@ -275,24 +279,26 @@ def spotlight(base=""):
         h = j.get("hero") or {}
         x = idx.get(uid) or {}
         fresh = bool(x) and x.get("src") == h.get("img")          # copies made from the photo the profile uses today
-        lg = x.get("logo") if fresh and x.get("logo") else ((VIPBASE + j["logo"]) if j.get("logo") else "")
-        logo = (SHARE + lg) if lg and not lg.startswith("http") else (lg or nhb.sm(m.get("l"), 200))
-        logos.append('<a class="y-lg" href="%s" title="%s"><span style="background-image:url(\'%s\')"></span><i class="y-vh">%s</i></a>' % (
-            esc(m["u"]), esc(m["n"]), esc(logo), esc(m["n"])))
+        logo_o = (VIPBASE + j["logo"]) if j.get("logo") else nhb.sm(m.get("l"), 200)
+        lc = (SHARE + x["logo"]) if fresh and x.get("logo") and not x["logo"].startswith("http") else ""
+        logo = lc if lc and OK(lc) else logo_o
+        logos.append('<a class="y-lg" href="%s" title="%s"><span style="background-image:url(\'%s\')" data-bgo="%s"></span><i class="y-vh">%s</i></a>' % (
+            esc(m["u"]), esc(m["n"]), esc(logo), esc(logo_o), esc(m["n"])))
         if uid in NO_SPOT:
             continue
         banner = bool(h.get("banner"))
         alt = (h.get("alt") or "")
         plain = (not h.get("img")) or (not banner and ("background" in alt.lower() or "monogram" in alt.lower()))
+        big_o = (VIPBASE + h["img"]) if h.get("img") else ""
+        thumb_o = (VIPBASE + j["headshot"]) if banner and j.get("headshot") else big_o
         if plain:
             big, srcset, thumb = "", "", ""
-        elif fresh and x.get("big640"):
+        elif fresh and x.get("big640") and OK(SHARE + x["big640"]) and OK(SHARE + x.get("thumb", "")):
             big = SHARE + x["big640"]
-            srcset = "%s 640w, %s 960w, %s 1280w" % (SHARE + x["big640"], SHARE + x["big960"], SHARE + x["big1280"])
+            srcset = ", ".join("%s %sw" % (SHARE + x[k], k[3:]) for k in ("big640", "big960", "big1280") if x.get(k) and (k == "big640" or OK(SHARE + x[k])))
             thumb = SHARE + x["thumb"]
         else:
-            big, srcset = VIPBASE + h["img"], ""
-            thumb = (VIPBASE + j["headshot"]) if banner and j.get("headshot") else big
+            big, srcset, thumb = big_o, "", thumb_o
         cat = j.get("category") or m.get("c") or ""
         twn = nhb.town(m.get("t"))
         desc = (j.get("sub") or j.get("tagline") or "").replace(chr(0x2014), "-").replace(chr(0x2013), "-")
@@ -301,12 +307,13 @@ def spotlight(base=""):
         if not re.fullmatch(r"#[0-9a-fA-F]{3,8}", color):
             color = "#16304f"
         pos = "50% 50%" if (fresh or banner) else (h.get("pos") or "50% 50%")
-        vis = ('<img src="%s" alt="" loading="lazy" width="240" height="180" style="object-position:%s">' % (esc(thumb), esc(pos if not fresh else "50% 50%"))) if thumb else \
-              '<span class="y-panel" style="--c:%s"><span class="y-plogo" style="background-image:url(\'%s\')"></span></span>' % (color, esc(logo))
+        vis = ('<img src="%s" data-o="%s" %s alt="" loading="lazy" width="240" height="180" style="object-position:%s">' % (
+                   esc(thumb), esc(thumb_o if thumb_o != thumb else ""), ONERR, esc(pos))) if thumb else \
+              '<span class="y-panel" style="--c:%s"><span class="y-plogo" style="background-image:url(\'%s\')" data-bgo="%s"></span></span>' % (color, esc(logo), esc(logo_o))
         cards.append(
-            '<a class="y-mc" href="%s" data-id="%s" data-img="%s" data-srcset="%s" data-ban="%s" data-pos="%s" data-alt="%s" data-logo="%s" data-cat="%s" data-town="%s" data-desc="%s" data-tel="%s" data-color="%s">'
+            '<a class="y-mc" href="%s" data-id="%s" data-img="%s" data-imgo="%s" data-srcset="%s" data-ban="%s" data-pos="%s" data-alt="%s" data-logo="%s" data-logoo="%s" data-cat="%s" data-town="%s" data-desc="%s" data-tel="%s" data-color="%s">'
             '<span class="y-mci">%s</span><span class="y-mct"><b>%s</b><small>%s</small></span></a>' % (
-                esc(m["u"]), uid, esc(big), esc(srcset), "1" if banner else "", esc(pos), esc(alt or m["n"]), esc(logo), esc(cat), esc(twn), esc(desc), tel, color,
+                esc(m["u"]), uid, esc(big), esc(big_o), esc(srcset), "1" if banner else "", esc(pos), esc(alt or m["n"]), esc(logo), esc(logo_o), esc(cat), esc(twn), esc(desc), tel, color,
                 vis, esc(m["n"]), esc(cat)))
     nav = ('<span class="y-spnav"><button type="button" class="y-spn" data-sp="-1" aria-label="Previous business"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>'
            '<button type="button" class="y-spn" data-sp="1" aria-label="Next business"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></span>')
