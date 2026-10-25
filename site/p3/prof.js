@@ -70,5 +70,14 @@ document.addEventListener('click',function(e){var a=e.target.closest('.member_pr
   var ON=[115,122,151,299,528,484,684,499,193,173,554,272,138,240,364,78,474,71,137,112,142,217,228,552,143,149,153,222,262,292,296,402,685,732,733,634],ud=document.querySelector('.member-profile-header .userData'),uid=ud?+ud.getAttribute('data-userid'):0,v=new URLSearchParams(location.search).get('v');
   if(v==='1'||(v!=='2'&&ON.indexOf(uid)<0))return;
   var st=document.createElement('style');st.textContent='html:not(.pv2-on) .member_profile>.col-md-9>*,html:not(.pv2-on) .pf-coverimg{visibility:hidden}';document.head.appendChild(st);setTimeout(function(){st.remove()},4000);
-  var B='https://threevillagelocal-cloud.github.io/3vl-share/live/p3/',q='?t='+Date.now(),l=document.createElement('link');l.rel='stylesheet';l.href=B+'prof2.css'+q;document.head.appendChild(l);
-  var s=document.createElement('script');s.src=B+'prof2.js'+q;s.async=true;document.body.appendChild(s)}catch(e){}})();
+  /* speed (10/24/2026): the profile data + hero photo start downloading right here, and v3 profiles load prof3.js
+     directly (it used to wait for prof2.js, then a second copy of the same data). Files are cached in 10-minute steps. */
+  var B='https://threevillagelocal-cloud.github.io/3vl-share/live/p3/',q='?t='+Math.floor(Date.now()/6e5),H=document.head;
+  function css(u){var l=document.createElement('link');l.rel='stylesheet';l.href=u;H.appendChild(l)}
+  function js(u){var s=document.createElement('script');s.src=u;s.async=true;document.body.appendChild(s)}
+  css(B+'prof2.css'+q);
+  var P=window.__pvData=fetch(B+'vip/'+uid+'.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null});
+  P.then(function(d){
+    if(!d||d.layout!=='v3'){js(B+'prof2.js'+q);return}
+    var h=d.hero&&d.hero.img;if(h){var p=document.createElement('link');p.rel='preload';p.as='image';p.href=/^(https?:)?\/\//.test(h)?h:B+'vip/'+h;p.setAttribute('fetchpriority','high');H.appendChild(p)}
+    css(B+'prof3.css'+q);js(B+'prof3.js'+q);document.documentElement.classList.add('pv2-on')})}catch(e){}})();
