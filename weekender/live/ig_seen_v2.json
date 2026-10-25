@@ -79,14 +79,6 @@
 "expires": "2026-10-31",
 "_ts": "2026-09-26T15:01:04+0000"
 },
-"18339952615250231": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-25T15:49:00+0000"
-},
 "17906671416487684": {
 "special": false,
 "title": "",
@@ -127,14 +119,6 @@
 "expires": "2026-10-13",
 "_ts": "2026-09-26T15:19:05+0000"
 },
-"18287727439292412": {
-"special": true,
-"title": "Cheese Pulls - Final Days",
-"when": "Through Sunday, Sept. 28",
-"desc": "Last two days of cheese pulls before new experiments menu launches Monday.",
-"expires": "2026-09-28",
-"_ts": "2026-09-25T15:05:23+0000"
-},
 "18083652770322505": {
 "special": false,
 "title": "",
@@ -142,14 +126,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-27T15:34:37+0000"
-},
-"18201765796338516": {
-"special": true,
-"title": "National Quesadilla Day at Right Coast",
-"when": "Thu, Sep. 25",
-"desc": "Celebrate with Right Coast's signature trifold quesadillas, bigger and better than ever.",
-"expires": "2026-09-25",
-"_ts": "2026-09-25T18:26:17+0000"
 },
 "18169359694462213": {
 "special": false,
@@ -195,14 +171,6 @@
 "expires": "",
 "_ts": "2026-09-26T15:00:51+0000"
 },
-"17981237997109586": {
-"special": false,
-"title": "Toast Showdown: Christina vs. Kevin",
-"when": "TBA",
-"desc": "Staff competition to make the better Cookie Butter French Toast. Part 2 coming soon.",
-"expires": "2026-09-27",
-"_ts": "2026-09-25T17:20:06+0000"
-},
 "18563151625076522": {
 "special": false,
 "title": "Pasta Pasta Now Open",
@@ -210,14 +178,6 @@
 "desc": "Restaurant announcement that Pasta Pasta is open with wine service available.",
 "expires": "",
 "_ts": "2026-09-26T16:21:42+0000"
-},
-"18120735451901721": {
-"special": false,
-"title": "Warm Up With Soup at PJ Lobster House",
-"when": "Ongoing",
-"desc": "Come in for classic French onion or creamy lobster bisque to warm up during the nor'easter.",
-"expires": "2026-09-27",
-"_ts": "2026-09-25T16:58:54+0000"
 },
 "18142817821608252": {
 "special": false,
@@ -234,22 +194,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-26T13:01:17+0000"
-},
-"18098078141452047": {
-"special": true,
-"title": "2 Montauk Pumpkin Ales for $10",
-"when": "Now through end of season",
-"desc": "Seasonal special on local Montauk Pumpkin Ale at Black Pearl. Two beers for $10 while it lasts.",
-"expires": "2026-10-31",
-"_ts": "2026-09-25T17:38:04+0000"
-},
-"18109346456583359": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-25T15:56:28+0000"
 },
 "18117872237469576": {
 "special": false,
@@ -299,22 +243,6 @@
 "expires": "2026-09-27",
 "_ts": "2026-09-26T14:28:34+0000"
 },
-"18066781007599162": {
-"special": false,
-"title": "Roasted Jerk Chicken Dinner",
-"when": "Not specified",
-"desc": "Featured dish at Castaways: roasted jerk chicken with coconut rice, peppers and onions.",
-"expires": "2026-09-27",
-"_ts": "2026-09-25T16:02:12+0000"
-},
-"17869502706648853": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-25T15:21:33+0000"
-},
 "18338400298258270": {
 "special": false,
 "title": "Tiger Lily Cafe",
@@ -339,22 +267,6 @@
 "expires": "",
 "_ts": "2026-09-27T04:47:28+0000"
 },
-"18187715917370505": {
-"special": false,
-"title": "Daily Specials at Tara Inn",
-"when": "Posted 2026-09-25",
-"desc": "Friday menu with discounted entrees, sandwiches, and appetizers, but no date range specified for validity.",
-"expires": "2026-09-25",
-"_ts": "2026-09-25T15:56:02+0000"
-},
-"18019584911930886": {
-"special": false,
-"title": "Tara Inn Daily Specials",
-"when": "Past",
-"desc": "Posted for Friday, Sept 25 - post is now 2 days old and outside the 14-day window.",
-"expires": "2026-09-25",
-"_ts": "2026-09-25T15:50:41+0000"
-},
 "18429982066197878": {
 "special": false,
 "_ts": "2026-09-26T15:09:30+0000"
@@ -374,22 +286,6 @@
 "desc": "Emergency water damage and storm restoration available 24/7 across Long Island.",
 "expires": "2026-09-27",
 "_ts": "2026-09-25T22:34:35+0000"
-},
-"18655507852032655": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-25T18:03:14+0000"
-},
-"18037224695648412": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-25T18:28:10+0000"
 },
 "18114399863082458": {
 "special": false,
@@ -3590,5 +3486,25 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-25T12:55:34+0000"
+},
+"17959621605257416": {
+"special": false,
+"_ts": "2026-10-25T15:20:04+0000"
+},
+"17991384708117740": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-25T15:32:55+0000"
+},
+"17884331115523252": {
+"special": false,
+"title": "Game Day Wings",
+"when": "Today",
+"desc": "Wings available to-go for game day watch parties.",
+"expires": "2026-10-25",
+"_ts": "2026-10-25T16:11:03+0000"
 }
 }
