@@ -206,7 +206,7 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
     # owner 10/11/2026: same as Eat & Drink, a "See all" button next to the heading that opens the full calendar
     w('<section class="wk-sec" id="wk-picks"><h2 class="wk-h2" style="justify-content:flex-start;align-items:center"><span>Top Things to Do</span><em class="wk-h2r">'
       '<a class="wk-calbtn" href="https://www.threevillagelocal.com/events-calendar">&#128197; See all things to do &rarr;</a><small>%s</small></em>'
-      % ("This weekend &amp; coming up" if d.get("next") else "If you only do %s things" % {3: 'three', 4: 'four', 5: 'five', 6: 'six'}.get(len(d['picks']), 'a few')) + '</h2>' + (FB.lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL) if front else '') + '<div class="wk-picks wk-swipe">')
+      % ("This weekend &amp; coming up" if d.get("next") else "If you only do %s things" % {3: 'three', 4: 'four', 5: 'five', 6: 'six'}.get(len(d['picks']), 'a few')) + '</h2>' + (FB.lead_open(dict(d, _edition=edition), ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL) if front else '') + '<div class="wk-picks wk-swipe">')
     for i, pid in enumerate(d["picks"]):
         e = ev[pid]
         ongoing = bool(e.get("when"))

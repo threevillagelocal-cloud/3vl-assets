@@ -149,45 +149,96 @@ def _words(t):
     return set(re.findall(r"[a-z]{4,}", (t or "").lower()))
 
 
+def _webp_w(path):
+    """Pixel width of a .webp file from its header (no image library needed in the nightly job). 0 if unknown."""
+    try:
+        b = open(path, "rb").read(40)
+        if b[12:16] == b"VP8X":
+            return 1 + int.from_bytes(b[24:27], "little")
+        if b[12:16] == b"VP8 ":
+            return int.from_bytes(b[26:28], "little") & 0x3FFF
+        if b[12:16] == b"VP8L":
+            return 1 + (int.from_bytes(b[21:25], "little") & 0x3FFF)
+    except Exception:
+        pass
+    return 0
+
+
+ROT_MS = 1800000   # owner 10/24/2026: a different lead story every 30 minutes
+
+
 def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
-    """Tabs + the lead story of Top Things to Do. The week's hero photo is used only when it belongs to one of the picks
-    (its credit/alt names the event); otherwise the first pick with its own photo leads with that photo."""
+    """Tabs + the lead story of Top Things to Do. Every pick with its own photo gets a lead article; an inline script right after them
+    picks the one for the current 30-minute slot (same for every visitor, ?slot=N to test) before the page paints and loads only its photo.
+    The week's hero photo stands in for the pick it belongs to (its credit/alt names the event)."""
     tabs = ('<div class="y-tabs" role="tablist"><button type="button" role="tab" class="on" aria-selected="true" data-y="tp">Top Picks</button>'
             '<button type="button" role="tab" aria-selected="false" data-y="td">Today <b class="y-tdn"></b></button>'
             '<button type="button" role="tab" aria-selected="false" data-y="cu">Coming Up</button></div>')
     cand = [ev[p] for p in d["picks"] if p in ev]
     h = d.get("hero") or {}
     hw = _words(h.get("credit", "") + " " + h.get("alt", ""))
-    le = next((e for e in cand if len(_words(e["title"]) & hw) >= 2 and h.get("img")), None)
-    if le is not None:
-        small, big, credit = img(h["img"], True), img(h["img"]), re.sub(r"^.*?Photo:\s*", "", h.get("credit", ""))
-    else:
-        le = next((e for e in cand if e.get("img")), None)
-        if le is None:
-            return tabs + '<div class="y-tp">'
-        small, big, credit = img(le["img"], True), img(le["img"]), le.get("credit", "")
+    hero_of = next((e for e in cand if len(_words(e["title"]) & hw) >= 2 and h.get("img")), None)
     from datetime import datetime, timedelta
-    if le.get("when"):
-        when = esc(le["when"])
-    else:
-        last = (datetime.fromisoformat(le["end"]) - timedelta(hours=6)).date().isoformat() if le.get("end") else le["start"][:10]
-        when = ("%s - %s" % (dshort(le["start"]), dshort(last))) if last > le["start"][:10] else "%s &middot; %s" % (dshort(le["start"]), fmt_time(le["start"]))
-    page = le.get("page") or CAL
-    g = next((x for x in d.get("guides", []) if x[0] in le["title"].lower()), None)
-    if g:
-        page = g[1]
-    acts = actions(le)
-    if le.get("when") and le.get("url"):
-        acts = re.sub(r'<button type="button" class="wk-cal"[^<]*</button>', '<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a>' % esc(le["url"]), acts)
-    lead = ('<article class="y-lead" data-href="%s" %s><a class="y-leadimg" href="%s" tabindex="-1" aria-hidden="true"><figure class="y-leadpic"><picture>'
-            '<source media="(max-width:720px)" srcset="%s"><img class="wk-hbg" src="%s" alt="%s" width="1600" height="1067" fetchpriority="high"></picture>'
-            '<span class="wk-pnum">01</span><span class="wk-pstat" data-status></span></figure></a>'
-            '<div class="y-leadb"><p class="wk-pwhen">%s</p><h3 class="y-leadt"><a href="%s">%s</a></h3><p class="wk-pwhere">&#128205; %s</p>'
-            '<p class="y-leadd">%s</p><div class="wk-tags">%s</div>%s%s</div></article>') % (
-        esc(page), evattrs(le), esc(page), esc(small), esc(big), esc(h.get("alt") if big == img(h.get("img", "x")) else le["title"]),
-        when, esc(page), esc(le["title"]), esc(V[le["venue"]]["name"]), esc(le.get("desc", "")), tagchips(le.get("tags", [])), acts,
-        ('<p class="y-cred">Photo: %s</p>' % esc(credit)) if credit else "")
-    return tabs + '<div class="y-tp" data-lead="%s">' % esc(le["title"]) + lead
+    edir = os.path.dirname(HERE)
+    arts, titles = [], []
+    for le in cand:
+        if le is hero_of:
+            name, alt, credit = h["img"], h.get("alt") or le["title"], re.sub(r"^.*?Photo:\s*", "", h.get("credit", ""))
+        elif le.get("img"):
+            name, alt, credit = le["img"], le["title"], le.get("credit", "")
+        else:
+            continue
+        ed = img("x")[:-len("x.webp")]
+        full = img(name)
+        fw = _webp_w(os.path.join(edir, d.get("_edition", ""), name + ".webp")) if d.get("_edition") else 0
+        srcset = "%s 360w, %s 540w, %s 720w" % (ed + name + "-360.webp", ed + name + "-540.webp", ed + name + "-720.webp")
+        if fw > 760:
+            srcset += ", %s %dw" % (full, fw)
+        if le.get("when"):
+            when = esc(le["when"])
+        else:
+            last = (datetime.fromisoformat(le["end"]) - timedelta(hours=6)).date().isoformat() if le.get("end") else le["start"][:10]
+            when = ("%s - %s" % (dshort(le["start"]), dshort(last))) if last > le["start"][:10] else "%s &middot; %s" % (dshort(le["start"]), fmt_time(le["start"]))
+        page = le.get("page") or CAL
+        g = next((x for x in d.get("guides", []) if x[0] in le["title"].lower()), None)
+        if g:
+            page = g[1]
+        acts = actions(le)
+        if le.get("when") and le.get("url"):
+            acts = re.sub(r'<button type="button" class="wk-cal"[^<]*</button>', '<a class="wk-dir" href="%s" target="_blank" rel="noopener">&#128279; Details</a>' % esc(le["url"]), acts)
+        until = le.get("pick_until") or le.get("until") or le.get("end") or ""
+        if until and "T" not in until:
+            until += "T23:59"
+        if until:
+            try:
+                until = until[:16] + nhb.et_offset(datetime.fromisoformat(until[:16]))
+            except Exception:
+                until = ""
+        i = len(arts)
+        arts.append(
+            ('<article class="y-lead"%s data-href="%s" data-until="%s" %s><a class="y-leadimg" href="%s" tabindex="-1" aria-hidden="true"><figure class="y-leadpic">'
+             '<img class="wk-hbg" data-src="%s" data-srcset="%s" alt="%s" width="1600" height="1000">%s'
+             '<span class="wk-pnum">01</span><span class="wk-pstat" data-status></span></figure></a>'
+             '<div class="y-leadb"><p class="wk-pwhen">%s</p><h3 class="y-leadt"><a href="%s">%s</a></h3><p class="wk-pwhere">&#128205; %s</p>'
+             '<p class="y-leadd">%s</p><div class="wk-tags">%s</div>%s%s</div></article>') % (
+                "" if i == 0 else " hidden", esc(page), esc(until), evattrs(le), esc(page),
+                esc(ed + name + "-720.webp"), esc(srcset), esc(alt),
+                ('<noscript><img class="wk-hbg" src="%s" alt="%s"></noscript>' % (esc(ed + name + "-720.webp"), esc(alt))) if i == 0 else "",
+                when, esc(page), esc(le["title"]), esc(V[le["venue"]]["name"]), esc(le.get("desc", "")), tagchips(le.get("tags", [])), acts,
+                ('<p class="y-cred">Photo: %s</p>' % esc(credit)) if credit else ""))
+        titles.append(le["title"])
+    if not arts:
+        return tabs + '<div class="y-tp">'
+    # runs while the page is being read, before the first paint (no backslashes: BD strips them from widget code)
+    js = ("<script>(function(){var L=document.getElementById('y-leads');if(!L)return;"
+          "window.__yLeadPick=function(s){var a=[].slice.call(L.querySelectorAll('article.y-lead')),n=Date.now(),"
+          "ok=a.filter(function(x){var u=x.getAttribute('data-until');return !u||isNaN(Date.parse(u))||Date.parse(u)>n});if(!ok.length)ok=a;"
+          "var k=s%ok.length,el=ok[k];a.forEach(function(x){x.hidden=x!==el});var im=el.querySelector('img[data-src]');"
+          "if(im){im.setAttribute('fetchpriority','high');im.sizes='(max-width:900px) 100vw, 560px';im.srcset=im.getAttribute('data-srcset');im.src=im.getAttribute('data-src');im.removeAttribute('data-src')}"
+          "var o=ok.slice(k).concat(ok.slice(0,k)).map(function(x){return (x.querySelector('.y-leadt')||{}).textContent||''});"
+          "L.parentNode.setAttribute('data-lead',o[0]);window.__ylead={slot:s,k:k,n:ok.length,order:o};return el};"
+          "var q=location.search.match(/[?&]slot=([0-9]+)/),s=q?+q[1]:Math.floor(Date.now()/ROTMS);window.__yLeadFixed=!!q;window.__yLeadPick(s)})()</script>").replace("ROTMS", str(ROT_MS))
+    return tabs + '<div class="y-tp" data-lead="%s"><div class="y-leads" id="y-leads">%s</div>%s' % (esc(titles[0]), "".join(arts), js)
 
 
 def quick():

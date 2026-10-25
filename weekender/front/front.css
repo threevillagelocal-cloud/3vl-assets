@@ -656,3 +656,5 @@ html.tvl-inapp #wk-top.wk-y .y-cta{grid-template-columns:repeat(2,minmax(0,1fr))
 #wk-top.wk-y .y-stl .y-sti{aspect-ratio:auto!important;background:none}
 #wk-top.wk-y .y-stl .y-sti img{position:static!important;display:block;height:auto!important}
 #wk-top.wk-y .wk-sec.wk-homesw{padding:0!important;background:none!important;border:0!important}
+#wk-top.wk-y .y-lead[hidden]{display:none!important}
+#wk-top.wk-y .y-leads{min-width:0}

@@ -5,7 +5,7 @@
 'use strict';
 var root=document.getElementById('wk-top');if(!root||!root.classList.contains('wk-y'))return;
 function $$(s,el){return Array.prototype.slice.call((el||root).querySelectorAll(s))}
-function track(n,p){try{if(window.gtag)window.gtag('event',n,p||{})}catch(e){}}
+function track(n,p){p=p||{};if(window.__ylead)p.lead_slot=window.__ylead.slot;try{if(window.gtag)window.gtag('event',n,p)}catch(e){}}
 function esc(x){return String(x||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
 
@@ -17,13 +17,19 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
     bar.innerHTML='<button type="button" role="tab" class="on" aria-selected="true" data-y="tp">Top Picks</button><button type="button" role="tab" aria-selected="false" data-y="td">Today <b class="y-tdn"></b></button><button type="button" role="tab" aria-selected="false" data-y="cu">Coming Up</button>';
     h2.parentNode.insertBefore(bar,h2.nextSibling)}
   /* the lead story is the first pick: hide its duplicate row and keep 5 compact rows beside it */
-  var tp=sec.querySelector('.y-tp'),leadT=tp&&tp.getAttribute('data-lead');
+  var tp=sec.querySelector('.y-tp');
   function norm(x){return String(x||'').toLowerCase().replace(/[^a-z0-9]/g,'')}
-  function rowsFix(){if(!tp)return;var n=0;$$('.wk-picks .wk-pick',sec).forEach(function(p){if(p.classList.contains('wk-radar'))return;
+  function rowsFix(){if(!tp)return;var leadT=tp.getAttribute('data-lead'),n=0;
+    /* rows follow the lead in the rotated order (window.__ylead.order, set by the inline script after the lead stories) */
+    var box=sec.querySelector('.wk-picks'),Y=window.__ylead;if(box&&Y&&Y.order){var ord=Y.order.map(norm),rows=$$('.wk-picks .wk-pick',sec).filter(function(p){return !p.classList.contains('wk-radar')});
+      var key=function(p){var i=ord.indexOf(norm(p.getAttribute('data-title')||((p.querySelector('.wk-ptitle')||{}).textContent)));return i<0?999:i};
+      var sorted=rows.slice().sort(function(a,b){return key(a)-key(b)});var same=sorted.every(function(p,i){return p===rows[i]});
+      if(!same){var first=box.querySelector('.wk-radar');sorted.forEach(function(p){box.insertBefore(p,first)})}}
+    $$('.wk-picks .wk-pick',sec).forEach(function(p){if(p.classList.contains('wk-radar'))return;
     var t=p.getAttribute('data-title')||((p.querySelector('.wk-ptitle')||{}).textContent)||'';var dup=leadT&&norm(t)===norm(leadT);
-    p.classList.toggle('y-dup',!!dup);if(!dup)n++;p.classList.toggle('y-first',!dup&&n===1);p.classList.toggle('y-extra',!dup&&n>5);
+    p.classList.toggle('y-dup',!!dup);if(!dup)n++;p.classList.toggle('y-first',!dup&&n===1);p.classList.toggle('y-extra',!dup&&n>5);if(!dup){var nb=p.querySelector('.wk-pnum');if(nb&&!nb.classList.contains('wk-soon'))nb.textContent=(n+1<10?'0':'')+(n+1)}
       var st=p.querySelector('.wk-pimg .wk-pstat'),wh=p.querySelector('.wk-pwhen');if(st&&wh)wh.appendChild(st)})}
-  rowsFix();
+  rowsFix();window.__yRowsFix=rowsFix;
   /* pick rows are small: ask for the small photo copy (weekender.js redraws the row with a 280px size hint) */
   var box=sec.querySelector('.wk-picks');
   function sz(){$$('.wk-picks .wk-pimg img',sec).forEach(function(i){if(i.getAttribute('sizes')!=='120px')i.setAttribute('sizes','120px')})}
@@ -125,5 +131,14 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
   document.addEventListener('click',function(e){if(!f.contains(e.target))box.hidden=true});
   f.addEventListener('submit',function(e){var q=inp.value.trim();if(!q){e.preventDefault();inp.focus();return}track('mid_search',{action:'submit',search_term:q})});
   var ch=document.getElementById('y-mschips');if(ch)ch.addEventListener('click',function(e){var a=e.target.closest('a');if(a)track('mid_search',{action:'chip',category:a.textContent.trim()})});
+})();
+
+/* ---------- 5) a new lead story every 30 minutes while the page stays open (soft fade, scroll position kept) ---------- */
+(function(){
+  if(!window.__yLeadPick||window.__yLeadFixed)return;var L=document.getElementById('y-leads');if(!L)return;
+  L.style.transition='opacity .35s';
+  setInterval(function(){var s=Math.floor(Date.now()/1800000);if(!window.__ylead||window.__ylead.slot===s||document.hidden)return;
+    L.style.opacity='0';setTimeout(function(){var r=L.getBoundingClientRect(),above=r.bottom<0,h0=L.offsetHeight;window.__yLeadPick(s);if(window.__yRowsFix)window.__yRowsFix();
+      if(above){var d=L.offsetHeight-h0;if(d)window.scrollBy(0,d)}L.style.opacity='1'},380)},30000);
 })();
 })();
