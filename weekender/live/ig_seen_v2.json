@@ -1,12 +1,4 @@
 {
-"17949077496274961": {
-"special": true,
-"title": "Culper Spy Day in East Setauket",
-"when": "Sat, Oct. 3 · 11 AM",
-"desc": "Join for lunch with a view of the Brewster Family Home, drink specials and great food.",
-"expires": "2026-10-03",
-"_ts": "2026-09-25T13:03:40+0000"
-},
 "18050928416813278": {
 "special": false,
 "_ts": "2026-09-27T15:13:15+0000"
@@ -46,14 +38,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-26T15:47:28+0000"
-},
-"18119689529285235": {
-"special": true,
-"title": "Moses Reaper Cheese - Halloween Edition",
-"when": "Now",
-"desc": "Limited Halloween-themed cheese from Jasper Hill Farm at the shop while supplies last.",
-"expires": "2026-10-11",
-"_ts": "2026-09-25T14:05:01+0000"
 },
 "18130638007748327": {
 "special": false,
@@ -235,22 +219,6 @@
 "expires": "2026-09-27",
 "_ts": "2026-09-25T16:58:54+0000"
 },
-"18026906888911921": {
-"special": false,
-"title": "RUVO Kitchen & Wine Bar",
-"when": "N/A",
-"desc": "Restaurant and wine bar in Port Jefferson with Italian food and wine selection.",
-"expires": "N/A",
-"_ts": "2026-09-25T14:05:22+0000"
-},
-"17974753926131918": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-25T14:05:40+0000"
-},
 "18142817821608252": {
 "special": false,
 "title": "",
@@ -282,14 +250,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-25T15:56:28+0000"
-},
-"18341797597266919": {
-"special": true,
-"title": "Black Pearl Poker Run at Danfords",
-"when": "Oct. 2-4",
-"desc": "Check out impressive powerboats, enjoy the waterfront atmosphere, and dine at Black Pearl this weekend.",
-"expires": "2026-10-04",
-"_ts": "2026-09-25T13:02:44+0000"
 },
 "18117872237469576": {
 "special": false,
@@ -423,10 +383,6 @@
 "expires": "",
 "_ts": "2026-09-25T18:03:14+0000"
 },
-"18116883184758328": {
-"special": false,
-"_ts": "2026-09-25T13:31:15+0000"
-},
 "18037224695648412": {
 "special": false,
 "title": "",
@@ -478,22 +434,6 @@
 "desc": "Emma Clark Library celebrates Three Village's revolutionary history with activities and events.",
 "expires": "2026-10-03",
 "_ts": "2026-09-25T20:34:11+0000"
-},
-"18148262128546024": {
-"special": false,
-"title": "Dolly Parton Book & Audiobook Feature",
-"when": "Ongoing",
-"desc": "Library highlights a Dolly Parton book with personal stories, lyrics, illustrations, and audiobook narration.",
-"expires": "2026-09-27",
-"_ts": "2026-09-25T14:06:17+0000"
-},
-"17926860852415540": {
-"special": false,
-"title": "Roseland School of Dance",
-"when": "Ongoing",
-"desc": "Dance With Me classes for toddlers with a grown-up at Roseland Stony Brook.",
-"expires": "2026-10-11",
-"_ts": "2026-09-25T13:40:56+0000"
 },
 "18122876903315669": {
 "special": false,
@@ -3642,5 +3582,13 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-25T02:30:29+0000"
+},
+"17990631159074898": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-25T12:55:34+0000"
 }
 }
