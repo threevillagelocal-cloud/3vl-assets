@@ -176,6 +176,9 @@ def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
             '<button type="button" role="tab" aria-selected="false" data-y="td">Today <b class="y-tdn"></b></button>'
             '<button type="button" role="tab" aria-selected="false" data-y="cu">Coming Up</button></div>')
     cand = [ev[p] for p in d["picks"] if p in ev]
+    # owner 10/25/2026: the 30-minute rotation looked stuck because only the weekend picks with photos (2-3 by Sunday) took turns.
+    # Every other event in this edition with its own photo joins the rotation too (recirculating is fine); ended ones drop out by data-until.
+    cand += [e for e in ev.values() if e not in cand and e.get("img") and e.get("venue") in V]
     h = d.get("hero") or {}
     hw = _words(h.get("credit", "") + " " + h.get("alt", ""))
     hero_of = next((e for e in cand if len(_words(e["title"]) & hw) >= 2 and h.get("img")), None)
