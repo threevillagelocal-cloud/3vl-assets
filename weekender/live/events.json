@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-24T23:00:58.214062+00:00",
+"updated": "2026-10-25T01:00:59.386967+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -86,115 +86,6 @@
 "rank": 5
 },
 {
-"id": "cur-elephant",
-"title": "Elephant & Piggie's We Are in a Play!",
-"start": "2026-10-24T00:00",
-"end": "2026-10-24T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Final shows, through Oct. 24",
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson",
-"url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/",
-"desc": "Mo Willems' best friends in a musical made for first-time theatergoers.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/elephant-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"stage"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/theatre-three"
-},
-{
-"id": "cur-cabaret",
-"title": "Cabaret",
-"start": "2026-10-24T00:00",
-"end": "2026-10-25T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Final weekend, through Oct. 25",
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson",
-"url": "https://theatrethree.com/mainstage_shows/cabaret/",
-"desc": "Theatre Three's mainstage run of the Kander and Ebb classic closes Sunday.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/cabaret-720.webp",
-"src": "3vl",
-"tags": [
-"stage"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/theatre-three"
-},
-{
-"id": "cur-spooky",
-"title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-24T00:00",
-"end": "2026-10-31T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Running until Oct. 31",
-"venue": "Olde Towne Gardens",
-"addr": "360 Old Town Rd, East Setauket",
-"url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/spooky-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens",
-"rank": 6
-},
-{
-"id": "cur-scarecrow",
-"title": "Stony Brook Village Scarecrows",
-"start": "2026-10-24T00:00",
-"end": "2026-10-25T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Last weekend to vote, through Oct. 25",
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook",
-"url": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/",
-"desc": "The 36th annual scarecrows line Stony Brook Village. Grab a ballot in any shop and vote for your favorite by Sunday; winners are announced at the Halloween Festival on Oct. 31.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/scarecrow-720.webp",
-"src": "3vl",
-"tags": [
-"free",
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
-"rank": 4
-},
-{
-"id": "portjeff-1157",
-"title": "Chowder Crawl",
-"start": "2026-10-24T00:00:00",
-"end": "2026-10-24T00:00:00",
-"allday": true,
-"venue": "Port Jefferson",
-"addr": "Port Jefferson",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1157",
-"desc": "This is a ticketed event, please visit the Port Jefferson Chamber of Commerce's website for more info - Port Jefferson NY 11777.",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-chowder",
 "title": "Port Jefferson Chowder Crawl",
 "start": "2026-10-24T12:00",
@@ -256,6 +147,96 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/trunk-or-treat-at-brightview",
 "pu": ""
+},
+{
+"id": "cur-elephant",
+"title": "Elephant & Piggie's We Are in a Play!",
+"start": "2026-10-25T00:00",
+"end": "2026-10-24T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Final shows, through Oct. 24",
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/",
+"desc": "Mo Willems' best friends in a musical made for first-time theatergoers.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/elephant-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"stage"
+],
+"status": "",
+"pick": false,
+"page": "https://www.threevillagelocal.com/theatre-three"
+},
+{
+"id": "cur-cabaret",
+"title": "Cabaret",
+"start": "2026-10-25T00:00",
+"end": "2026-10-25T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Final weekend, through Oct. 25",
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://theatrethree.com/mainstage_shows/cabaret/",
+"desc": "Theatre Three's mainstage run of the Kander and Ebb classic closes Sunday.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/cabaret-720.webp",
+"src": "3vl",
+"tags": [
+"stage"
+],
+"status": "",
+"pick": false,
+"page": "https://www.threevillagelocal.com/theatre-three"
+},
+{
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-10-25T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Running until Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/spooky-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens",
+"rank": 6
+},
+{
+"id": "cur-scarecrow",
+"title": "Stony Brook Village Scarecrows",
+"start": "2026-10-25T00:00",
+"end": "2026-10-25T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Last weekend to vote, through Oct. 25",
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook",
+"url": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/",
+"desc": "The 36th annual scarecrows line Stony Brook Village. Grab a ballot in any shop and vote for your favorite by Sunday; winners are announced at the Halloween Festival on Oct. 31.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/scarecrow-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
+"rank": 4
 },
 {
 "id": "portjeff-1097",
@@ -1126,6 +1107,61 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comic-book-creation-for-teens-tweens"
+},
+{
+"id": "emmaclark-shed-meds-61288",
+"title": "Shed the Meds",
+"start": "2026-11-04T10:00:00",
+"end": "2026-11-04T14:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Periodical Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/shed-meds-61288",
+"desc": "The Suffolk County Sheriff’s Office is pleased to offer a safe way for residents to properly dispose of their unused medications. Proper disposal is essential to protect the environment and ensure that old drugs don’t end up in the wrong hands. Bring your fami",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/colorful-pills-package.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/shed-the-meds-589"
+},
+{
+"id": "emmaclark-osteoporosis-uncovering-hidden-causes-bone-loss-61289",
+"title": "Osteoporosis: Uncovering Hidden Causes of Bone Loss",
+"start": "2026-11-04T11:00:00",
+"end": "2026-11-04T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/osteoporosis-uncovering-hidden-causes-bone-loss-61289",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Learn about osteoporosis from Mather Medical Group's rheumatologist, Zarlasht Khan, MD.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/osteoporosis-uncovering-hidden-causes-of-bone-loss"
+},
+{
+"id": "lim-3225911",
+"title": "Mornings@LIM: Tour of Enduring Hearts",
+"start": "2026-11-04T11:00:00",
+"end": "2026-11-04T12:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/mornings-lim-enduring-hearts/",
+"desc": "These monthly sessions are open to individuals living with dementia and their care partners. They offer time for creative engagement and social connection in our galleries and art studio, as well as through special music and movie programs. This November, expl",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/June-Meeting.jpg",
+"src": "lim",
+"tags": [
+"free",
+"music",
+"history"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/mornings-lim-tour-of-enduring-hearts"
 }
 ],
 "closings": [],
@@ -1139,38 +1175,45 @@
 "url": "http://madiranthewinebar.com/events.html",
 "label": "Live music",
 "source": "madiranthewinebar.com/events.html + Madiran IG post 10/21/2026",
-"id": "pin-madiran-2026-10-22",
-"starts": "2026-10-21",
-"expires": "2026-10-24",
-"when": "Thu to Sat, Oct 22-24, from 7 PM",
-"desc": "Thu Oct 22, 7-9 PM: Tim Siciliano on solo guitar. Fri Oct 23, 7-10 PM: Jim Lowe on keys and vocals. Sat Oct 24, 7-10 PM: Tim Siciliano on solo guitar.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-22.jpg",
+"id": "pin-madiran-2026-10-28",
+"starts": "2026-10-25",
+"expires": "2026-10-31",
+"when": "Wed to Sat, Oct 28-31, from 7 PM",
+"desc": "Wed Oct 28, 7-9 PM: Rod Borrie on trombone and Vincent Loccisano on keys. Thu Oct 29, 7-9 PM: Phil Rinaldi. Fri Oct 30, 7-10 PM: Jim Lowe. Sat Oct 31, 7-10 PM: Douglas Baldwin Jazz Trio.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-28.jpg",
 "lineup": [
 {
-"day": "Thu",
-"date": "Oct 22",
+"day": "Wed",
+"date": "Oct 28",
 "time": "7-9 PM",
-"who": "Tim Siciliano",
-"what": "Solo guitar"
+"who": "Rod Borrie and Vincent Loccisano",
+"what": "Trombone and keys"
+},
+{
+"day": "Thu",
+"date": "Oct 29",
+"time": "7-9 PM",
+"who": "Phil Rinaldi",
+"what": ""
 },
 {
 "day": "Fri",
-"date": "Oct 23",
+"date": "Oct 30",
 "time": "7-10 PM",
 "who": "Jim Lowe",
-"what": "Keys and vocals"
+"what": ""
 },
 {
 "day": "Sat",
-"date": "Oct 24",
+"date": "Oct 31",
 "time": "7-10 PM",
-"who": "Tim Siciliano",
-"what": "Solo guitar"
+"who": "Douglas Baldwin Jazz Trio",
+"what": "Jazz trio"
 }
 ],
 "pinned": true,
 "profile": "https://www.threevillagelocal.com/madiran-the-wine-bar",
-"page": "https://www.threevillagelocal.com/eat-drink/madiran-the-wine-bar-live-music"
+"page": "https://www.threevillagelocal.com/madiran-the-wine-bar"
 },
 {
 "id": "wd-eat.namkeen-20261024",
@@ -1277,38 +1320,45 @@
 "url": "http://madiranthewinebar.com/events.html",
 "label": "Live music",
 "source": "madiranthewinebar.com/events.html + Madiran IG post 10/21/2026",
-"id": "pin-madiran-2026-10-22",
-"starts": "2026-10-21",
-"expires": "2026-10-24",
-"when": "Thu to Sat, Oct 22-24, from 7 PM",
-"desc": "Thu Oct 22, 7-9 PM: Tim Siciliano on solo guitar. Fri Oct 23, 7-10 PM: Jim Lowe on keys and vocals. Sat Oct 24, 7-10 PM: Tim Siciliano on solo guitar.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-22.jpg",
+"id": "pin-madiran-2026-10-28",
+"starts": "2026-10-25",
+"expires": "2026-10-31",
+"when": "Wed to Sat, Oct 28-31, from 7 PM",
+"desc": "Wed Oct 28, 7-9 PM: Rod Borrie on trombone and Vincent Loccisano on keys. Thu Oct 29, 7-9 PM: Phil Rinaldi. Fri Oct 30, 7-10 PM: Jim Lowe. Sat Oct 31, 7-10 PM: Douglas Baldwin Jazz Trio.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-28.jpg",
 "lineup": [
 {
-"day": "Thu",
-"date": "Oct 22",
+"day": "Wed",
+"date": "Oct 28",
 "time": "7-9 PM",
-"who": "Tim Siciliano",
-"what": "Solo guitar"
+"who": "Rod Borrie and Vincent Loccisano",
+"what": "Trombone and keys"
+},
+{
+"day": "Thu",
+"date": "Oct 29",
+"time": "7-9 PM",
+"who": "Phil Rinaldi",
+"what": ""
 },
 {
 "day": "Fri",
-"date": "Oct 23",
+"date": "Oct 30",
 "time": "7-10 PM",
 "who": "Jim Lowe",
-"what": "Keys and vocals"
+"what": ""
 },
 {
 "day": "Sat",
-"date": "Oct 24",
+"date": "Oct 31",
 "time": "7-10 PM",
-"who": "Tim Siciliano",
-"what": "Solo guitar"
+"who": "Douglas Baldwin Jazz Trio",
+"what": "Jazz trio"
 }
 ],
 "pinned": true,
 "profile": "https://www.threevillagelocal.com/madiran-the-wine-bar",
-"page": "https://www.threevillagelocal.com/eat-drink/madiran-the-wine-bar-live-music"
+"page": "https://www.threevillagelocal.com/madiran-the-wine-bar"
 },
 {
 "id": "wd-eat.namkeen-20261024",
@@ -1481,25 +1531,6 @@
 "label": "Special"
 },
 {
-"id": "18150886438536933",
-"biz": "Ralph's Famous Italian Ices & Ice Cream",
-"ig": "ralphsitalianicesstonybrook",
-"town": "Stony Brook",
-"category": "Ice Cream",
-"member": false,
-"title": "Final Day: Seasonal Closure This Sunday",
-"when": "Sun, Oct. 24",
-"desc": "Last chance to visit before Ralph's closes for the season. Stock up on your favorite flavors while supplies last.",
-"expires": "2026-10-24",
-"posted": "2026-10-21T16:38:20+0000",
-"url": "https://www.instagram.com/reel/Dew1638vYIE/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18150886438536933.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/ralphs-famous-italian-ices-ice-cream-final-day-seasonal-closure-sunday",
-"profile": "https://www.threevillagelocal.com/ralphs-italian-ices-stony-brook",
-"label": "Special"
-},
-{
 "id": "18110514965522268",
 "biz": "Burgerology",
 "ig": "burgerologyusa",
@@ -1660,7 +1691,6 @@
 "The Country Corner",
 "Schnitzels",
 "Tommy's Place",
-"Ralph's Famous Italian Ices & Ice Cream",
 "Burgerology",
 "The Study by Toast",
 "Luca Restaurant",
@@ -1670,6 +1700,7 @@
 "Culpers 1778",
 "Ixchel Mexican Cuisine",
 "DJ's Clam Shack (Stony Brook)",
+"Ralph's Famous Italian Ices & Ice Cream",
 "Se-Port Deli & Caterers",
 "Little Cheese Shop",
 "Bliss Restaurant",
