@@ -424,6 +424,8 @@ def post(body):
         body = body.replace(old, new)
     # lighter photos: pick rows are ~120px wide (the 360 copy is sharp at 2x), weather thumbnails are 56px
     body = body.replace('sizes="280px"', 'sizes="120px"')
+    # the lead photo rotates: the page HEAD preloads the photo of the current slot (bd_guard.hero_preload), so drop the fixed week-hero preloads
+    body = re.sub(r'<link rel="preload" as="image" href="[^"]+" media="[(](?:min|max)-width:72[01]px[)]">', "", body)
     body = body.replace('<div class="wk-adslot', '<div data-nosnippet class="wk-adslot').replace('<div class="wk-adrot', '<div data-nosnippet class="wk-adrot')   # VIP ad rotators stay out of search snippets
     body = body.replace(' data-cam="', ' data-ycam="')   # no hidden camera iframe: the thumbnail links to the live camera instead (front.js)
     body = re.sub(r'<img src="([^"]+/homes/[^"]+)"', r'<img data-ysrc="'+chr(92)+r'1"', body)   # homes thumbnails load only near the screen (front.js)
