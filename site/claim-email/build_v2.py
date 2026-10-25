@@ -60,7 +60,7 @@ def build(r, claim, base):
                  '<table role="presentation" width="100%%" cellpadding="0" cellspacing="0" border="0" style="margin-top:14px"><tr>%s%s%s</tr></table>'
                  '%s</div></td></tr>')
                 % (LINE, F, F, NAVY, co, esc(page), base, r["id"], co,
-                   fact("Visitors", "100,000+", "every month"), fact("Social", "100,000+", "views a month"), fact("Our app", "Free", "iPhone &amp; Android"),
+                   fact("Website visitors", "25,000+", "every month"), fact("Social", "100,000+", "views a month"), fact("Our app", "Free", "iPhone &amp; Android"),
                    ('<p style="margin:16px 0 0;font:16px/1.6 %s;color:%s">When neighbors search for <b>%s</b> in %s, your page is there with your phone number, '
                     'directions and website one tap away.</p>' % (F, INK, spec.lower(), town)) if spec else ""))
     # what claiming gives them + buttons
