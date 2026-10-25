@@ -399,7 +399,7 @@
 
 /* ---------- footer (prototype .ft) ---------- */
 #wk-top.wk-y .yf{background:var(--navy);color:#dbe5f2;margin-top:28px;padding:28px 20px 40px}
-#wk-top.wk-y .yf-in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px}
+#wk-top.wk-y .yf-in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1.3fr;gap:24px}
 #wk-top.wk-y .yf-a img{height:46px!important;width:auto!important;margin:0 0 10px!important}
 #wk-top.wk-y .yf-a p{margin:0;font-size:13.5px;max-width:520px}
 #wk-top.wk-y .yf-c{display:flex;flex-direction:column;gap:6px;font-size:14px}

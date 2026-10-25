@@ -124,7 +124,7 @@ def hero(d, img, base=""):
         '<script>try{var u=navigator.userAgent||"";if(!/FBAN|FBAV|FB_IAB|Instagram/.test(u)&&((/iPhone|iPad|iPod/.test(u)&&!/Safari/.test(u))||(/Android/.test(u)&&u.indexOf("; wv)")>-1)))document.documentElement.classList.add("tvl-inapp");}catch(e){}</script>'
         '<div class="wk-hero y-ssanchor" hidden><p class="wk-dek"></p></div>'
         '<h1 class="y-vh">Three Village Local: events, specials, weather and local news for Setauket, Stony Brook and Port Jefferson</h1>'
-        '<header class="yh"><div class="yh-in">'
+        '<header class="yh" data-nosnippet><div class="yh-in">'
         '<a class="yh-logo" href="{S}/" aria-label="Three Village Local home"><img src="https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-540.webp" width="167" height="52" alt="Three Village Local" fetchpriority="high"></a>'
         '<form class="yh-srch tvl-ns" action="/search_results" method="get" role="search"><span class="yh-si">{SEARCH}</span>'
         '<input type="search" name="q" placeholder="Search local businesses" aria-label="Search local businesses" autocomplete="off"><button type="submit">Search</button></form>'
@@ -136,7 +136,7 @@ def hero(d, img, base=""):
         '<nav class="yh-mn" id="yh-mn" aria-label="Main menu"><div class="yh-mnin">{LINKS}<span class="yh-sp"></span>{HL}'
         '<a class="yh-mob" href="{S}/about/contact">Contact</a><a class="yh-mob" href="{S}/login">Login</a><a class="yh-mob yh-mobj" href="{S}/join">Businesses - Join Today</a></div></nav>'
         '<div class="yh-ql"><div class="yh-qlin">{CATS}</div></div></header>'
-        '<div class="yh-today"><div class="yh-tdin">'
+        '<div class="yh-today" data-nosnippet><div class="yh-tdin">'
         '<span class="yh-tc"><b id="wk-hdate">--</b> <span id="wk-hclock">--:--</span></span>'
         '<a class="yh-tc" href="#wk-sched"><i class="yh-dot"></i><b>Happening now: <span id="wk-hnow">--</span></b><span class="yh-ts" id="wk-hnext">checking&hellip;</span></a>'
         '<a class="yh-tc" href="#wk-wx"><b>Setauket <span class="wk-hwi2" id="wk-hwi2"></span><span id="wk-htemp">--</span>&deg;</b><span class="yh-ts" id="wk-hsky">loading&hellip;</span></a>'
@@ -401,6 +401,8 @@ def footer(base):
             'Find trusted local businesses, this week&rsquo;s events, restaurant specials and community news, all in one place, and support the neighbors who make our community special.</p></div>'
             '<div class="yf-c"><b>Website</b><a href="{S}/about">How It Works</a><a href="{S}/about/contact">Contact Us</a><a href="{S}/newsletter">Three Village Weekly</a></div>'
             '<div class="yf-c"><b>Search</b><a href="{S}/search_results">Browse Directory</a><a href="{S}/categories">Search by Category</a></div>'
+            '<div class="yf-c"><b>Explore</b><a href="{S}/whats-new">What&rsquo;s New</a><a href="{S}/restaurants-stony-brook">Restaurants in Stony Brook</a>'
+            '<a href="{S}/restaurants-setauket">Restaurants in Setauket</a><a href="{S}/restaurants-port-jefferson">Restaurants in Port Jefferson</a><a href="{S}/halloween">Halloween in Three Village</a></div>'
             '<div class="yf-c"><b>Support</b><a href="{S}/login">Member Login</a><a href="{S}/login/retrieval">Reset Password</a></div></div>'
             '<div class="yf-in yf-2"><span class="yf-soc"><a href="{S}/about/contact" aria-label="Email">{MAIL}</a><a href="https://www.facebook.com/ThreeVillageLocal" aria-label="Facebook" target="_blank" rel="noopener">{FB}</a>'
             '<a href="https://www.instagram.com/threevillagelocal/" aria-label="Instagram" target="_blank" rel="noopener">{IG}</a></span><a class="yf-join" href="{S}/join">Businesses - Join Today</a></div>'
@@ -422,6 +424,7 @@ def post(body):
         body = body.replace(old, new)
     # lighter photos: pick rows are ~120px wide (the 360 copy is sharp at 2x), weather thumbnails are 56px
     body = body.replace('sizes="280px"', 'sizes="120px"')
+    body = body.replace('<div class="wk-adslot', '<div data-nosnippet class="wk-adslot').replace('<div class="wk-adrot', '<div data-nosnippet class="wk-adrot')   # VIP ad rotators stay out of search snippets
     body = body.replace(' data-cam="', ' data-ycam="')   # no hidden camera iframe: the thumbnail links to the live camera instead (front.js)
     body = re.sub(r'<img src="([^"]+/homes/[^"]+)"', r'<img data-ysrc="'+chr(92)+r'1"', body)   # homes thumbnails load only near the screen (front.js)
     body = re.sub(r'(<img class="wk-wph" src="[^"]+)-720[.]webp"', r'\1-360.webp"', body)

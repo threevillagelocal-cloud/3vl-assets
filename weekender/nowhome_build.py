@@ -165,7 +165,14 @@ def event_schema(d, img):
             ev["endDate"] = _iso(e["until"][:16] if "T" in e["until"] else e["until"] + "T23:59")
         if e.get("img"):
             ev["image"] = [img(e["img"])]
-        if e.get("url"):
+        if not desc:
+            ev.pop("description")
+        page = e.get("page") or ""   # our own /events page when there is one (same rule as the cards), else the organizer
+        if page.startswith("/"):
+            page = SITE + page
+        if page and "threevillagelocal.com" in page and "events-calendar" not in page:
+            ev["url"] = page
+        elif e.get("url"):
             ev["url"] = e["url"]
         if "free" in (e.get("tags") or []) or str(e.get("price", "")).lower() == "free":
             ev["isAccessibleForFree"] = True
@@ -216,7 +223,9 @@ def event_schema_live(live, days=14, cap=40):
         if e.get("status") or en < now or s > horizon or not e.get("title"):
             continue
         addr = (e.get("addr") or "").split(",")
-        ev = {"@type": "Event", "name": e["title"], "description": (e.get("desc") or "")[:300],
+        desc = re.split(r"\s(?:var|function|window\.|document\.|jQuery|\$\()", e.get("desc") or "")[0]   # feeds leak page script into the text
+        desc = re.sub(r"\s*(\.\.\.|…)\s*$", "", desc).strip()
+        ev = {"@type": "Event", "name": e["title"], "description": desc[:300],
               "startDate": _iso(s.strftime("%Y-%m-%dT%H:%M")), "endDate": _iso(en.strftime("%Y-%m-%dT%H:%M")),
               "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled",
               "location": {"@type": "Place", "name": e.get("venue") or "Three Village area",
@@ -224,7 +233,14 @@ def event_schema_live(live, days=14, cap=40):
                                        "addressLocality": addr[1].strip() if len(addr) > 1 else (e.get("venue") or "Setauket"), "addressRegion": "NY", "addressCountry": "US"}}}
         if e.get("img"):
             ev["image"] = [e["img"]]
-        if e.get("url"):
+        if not desc:
+            ev.pop("description")
+        page = e.get("page") or ""   # our own /events page when there is one (same rule as the cards), else the organizer
+        if page.startswith("/"):
+            page = SITE + page
+        if page and "threevillagelocal.com" in page and "events-calendar" not in page:
+            ev["url"] = page
+        elif e.get("url"):
             ev["url"] = e["url"]
         if "free" in (e.get("tags") or []):
             ev["isAccessibleForFree"] = True

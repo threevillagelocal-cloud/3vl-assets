@@ -52,7 +52,7 @@ function build(list,side){
   list=spread(list,function(v){return v.group||v.id},3);
   var gkey=function(v){return v.group||v.id};
   var st=document.createElement('style');st.textContent=css+'#vipx .vipx-unit+.vipx-unit{margin-top:18px;padding-top:16px;border-top:1px dashed #e3e9f0}';document.head.appendChild(st);
-  var box=document.createElement('div');box.id='vipx';box.className='module';
+  var box=document.createElement('div');box.id='vipx';box.className='module';box.setAttribute('data-nosnippet','');
   /* two stacked rotators on every page with a side column (owner 10/5/2026: "2 per page") */
   var N=list.length>=6?2:1;
   var h='<p class="vipx-h"><span>VIP</span>Local businesses we love</p>';
