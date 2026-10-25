@@ -76,6 +76,9 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
 
 /* ---------- 3) header menu, in-page banner frames, weather line ---------- */
 (function(){
+  /* /?plans=1 (the My Plans button on other pages) opens the My Plans drawer once weekender.js has wired it */
+  if(/[?&]plans=1(&|$)/.test(location.search)){var pt=0,pi=setInterval(function(){var f=document.getElementById('wk-fab'),d=document.getElementById('wk-drawer');
+    if(f&&d&&window.getComputedStyle){f.click();if(d.classList.contains('is-open')||++pt>20)clearInterval(pi)}else if(++pt>20)clearInterval(pi)},500)}
   var mb=document.getElementById('yh-mnu'),nav=document.getElementById('yh-mn');
   if(mb&&nav)mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o?'true':'false')});
   /* phone/tablet banner slots: same frame as the rail (title, dots, Advertise here) */
