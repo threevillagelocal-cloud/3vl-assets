@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-26T19:51:56.649594+00:00",
+"updated": "2026-10-26T21:01:18.055551+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -845,7 +845,7 @@
 "id": "pjchamber-15119",
 "title": "Long Island Restaurant Week",
 "start": "2026-11-01T00:00:00",
-"end": "2026-12-08T23:59:59",
+"end": "2026-11-08T23:59:59",
 "allday": true,
 "venue": "Port Jefferson Village",
 "addr": "",
