@@ -1,11 +1,18 @@
 {
- "updated": "2026-10-25T19:01",
+ "updated": "2026-10-26T00:49",
  "held": [
   {
    "title": "Annual Halloween Costume Party at the Country House Restaurant",
    "venue": "Stony Brook Village Center",
    "start": "2026-10-31T19:00:00",
    "url": "https://stonybrookvillage.com/event/annual-halloween-costume-party-at-the-country-house-restaurant/",
+   "matched": "Country House"
+  },
+  {
+   "title": "Lookbook Luncheon Fashion Show at the Country House Restaurant",
+   "venue": "Stony Brook Village Center",
+   "start": "2026-11-05T12:00:00",
+   "url": "https://stonybrookvillage.com/event/lookbook-luncheon-fashion-show-at-the-country-house-restaurant/",
    "matched": "Country House"
   }
  ]

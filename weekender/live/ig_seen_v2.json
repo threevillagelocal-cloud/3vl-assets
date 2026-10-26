@@ -15,10 +15,6 @@
 "expires": "",
 "_ts": "2026-09-26T14:40:15+0000"
 },
-"18488901259103407": {
-"special": false,
-"_ts": "2026-09-25T22:54:42+0000"
-},
 "18018245321941798": {
 "special": false,
 "_ts": "2026-09-27T20:35:53+0000"
@@ -39,14 +35,6 @@
 "expires": "",
 "_ts": "2026-09-26T15:47:28+0000"
 },
-"18130638007748327": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-25T21:00:46+0000"
-},
 "18356691676221898": {
 "special": false,
 "title": "",
@@ -54,22 +42,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-27T14:17:27+0000"
-},
-"18408891472088157": {
-"special": false,
-"title": "Schnitzels Merchandise Now Available",
-"when": "Ongoing",
-"desc": "Shirts, sweatshirts, hats and more merchandise available now at Schnitzels.",
-"expires": "2026-09-27",
-"_ts": "2026-09-26T00:01:38+0000"
-},
-"17899639635668203": {
-"special": false,
-"title": "Robinson's Tea Room",
-"when": "N/A",
-"desc": "Call to make a reservation at this Stony Brook tea room.",
-"expires": "2026-09-27",
-"_ts": "2026-09-25T22:00:14+0000"
 },
 "18026341085884534": {
 "special": false,
@@ -203,14 +175,6 @@
 "expires": "",
 "_ts": "2026-09-26T04:00:24+0000"
 },
-"17960412222206801": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-25T19:11:14+0000"
-},
 "18102931922637725": {
 "special": false,
 "title": "",
@@ -279,14 +243,6 @@
 "expires": "",
 "_ts": "2026-09-26T18:57:30+0000"
 },
-"18121777535475368": {
-"special": false,
-"title": "Magic Home Restoration",
-"when": "24/7 Emergency Service",
-"desc": "Emergency water damage and storm restoration available 24/7 across Long Island.",
-"expires": "2026-09-27",
-"_ts": "2026-09-25T22:34:35+0000"
-},
 "18114399863082458": {
 "special": false,
 "title": "",
@@ -322,14 +278,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-26T15:18:39+0000"
-},
-"18096637073551312": {
-"special": true,
-"title": "Culper Spy Day",
-"when": "Sat, Oct. 3",
-"desc": "Emma Clark Library celebrates Three Village's revolutionary history with activities and events.",
-"expires": "2026-10-03",
-"_ts": "2026-09-25T20:34:11+0000"
 },
 "18122876903315669": {
 "special": false,
@@ -3506,5 +3454,29 @@
 "desc": "Wings available to-go for game day watch parties.",
 "expires": "2026-10-25",
 "_ts": "2026-10-25T16:11:03+0000"
+},
+"18113599847613065": {
+"special": true,
+"title": "Spicy Pizza Burger Limited-Time Special",
+"when": "Now",
+"desc": "Black Angus burger with marinara, mozzarella, pepperoni, jalapeños and shoestring fries.",
+"expires": "2026-11-08",
+"_ts": "2026-10-25T21:02:49+0000"
+},
+"18113970185127450": {
+"special": true,
+"title": "Halloween at Stony Brook Village",
+"when": "Sat, Oct. 26",
+"desc": "Little Cheese Shop invites everyone to celebrate Halloween Saturday in Stony Brook Village in costume.",
+"expires": "2026-10-26",
+"_ts": "2026-10-25T22:26:18+0000"
+},
+"17960001585257263": {
+"special": false,
+"title": "NASCAR Sunday at Burgerology",
+"when": "Past event",
+"desc": "Event recap thanking collaborators and attendees for a NASCAR-themed gathering.",
+"expires": "2026-10-25",
+"_ts": "2026-10-25T23:07:33+0000"
 }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T19:00:12.169291+00:00",
+ "updated": "2026-10-26T00:47:43.244155+00:00",
  "specials": [
   {
    "id": "18481707613112188",
@@ -18,20 +18,20 @@
    "inset": "ig/p18481707613112188.jpg"
   },
   {
-   "id": "18200189893388564",
+   "id": "18113599847613065",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
    "town": "Port Jefferson",
    "category": "Bar/Restaurant",
    "member": false,
-   "title": "Weekly Specials at Tommy's Place",
-   "when": "This week",
-   "desc": "Sweet potato corn chowder, fried seafood sampler, spicy pizza burger, and chicken parmesan.",
-   "expires": "2026-10-29",
-   "posted": "2026-10-23T18:35:28+0000",
-   "url": "https://www.instagram.com/p/De2NujRmuTk/",
+   "title": "Spicy Pizza Burger Limited-Time Special",
+   "when": "Now",
+   "desc": "Black Angus burger with marinara, mozzarella, pepperoni, jalapeños and shoestring fries.",
+   "expires": "2026-11-08",
+   "posted": "2026-10-25T21:02:49+0000",
+   "url": "https://www.instagram.com/p/De7oLmEGs5g/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18200189893388564.jpg"
+   "inset": "ig/p18113599847613065.jpg"
   },
   {
    "id": "18130326799700088",
@@ -82,20 +82,20 @@
    "inset": "ig/p17909824674564464.jpg"
   },
   {
-   "id": "18076822349777571",
-   "biz": "Luca Restaurant",
-   "ig": "lucastonybrook",
+   "id": "18113970185127450",
+   "biz": "Little Cheese Shop",
+   "ig": "littlecheeseshop",
    "town": "Stony Brook",
-   "category": "Restaurant",
+   "category": "Cheese Shop/Cafe",
    "member": false,
-   "title": "Beet & Potato Mezzaluna Special",
-   "when": "This weekend",
-   "desc": "Homemade pasta with poppy seeds and lemon butter sauce available this weekend at Luca.",
+   "title": "Halloween at Stony Brook Village",
+   "when": "Sat, Oct. 26",
+   "desc": "Little Cheese Shop invites everyone to celebrate Halloween Saturday in Stony Brook Village in costume.",
    "expires": "2026-10-26",
-   "posted": "2026-10-23T20:50:26+0000",
-   "url": "https://www.instagram.com/p/De2dLF2n0rL/",
+   "posted": "2026-10-25T22:26:18+0000",
+   "url": "https://www.instagram.com/reel/De7xn2HAqC2/",
    "img": "",
-   "inset": "ig/p18076822349777571.jpg"
+   "inset": "ig/p18113970185127450.jpg"
   }
  ],
  "candidates": [
@@ -116,20 +116,20 @@
    "inset": "ig/p18481707613112188.jpg"
   },
   {
-   "id": "18200189893388564",
+   "id": "18113599847613065",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
    "town": "Port Jefferson",
    "category": "Bar/Restaurant",
    "member": false,
-   "title": "Weekly Specials at Tommy's Place",
-   "when": "This week",
-   "desc": "Sweet potato corn chowder, fried seafood sampler, spicy pizza burger, and chicken parmesan.",
-   "expires": "2026-10-29",
-   "posted": "2026-10-23T18:35:28+0000",
-   "url": "https://www.instagram.com/p/De2NujRmuTk/",
+   "title": "Spicy Pizza Burger Limited-Time Special",
+   "when": "Now",
+   "desc": "Black Angus burger with marinara, mozzarella, pepperoni, jalapeños and shoestring fries.",
+   "expires": "2026-11-08",
+   "posted": "2026-10-25T21:02:49+0000",
+   "url": "https://www.instagram.com/p/De7oLmEGs5g/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18200189893388564.jpg"
+   "inset": "ig/p18113599847613065.jpg"
   },
   {
    "id": "18130326799700088",
@@ -180,20 +180,20 @@
    "inset": "ig/p17909824674564464.jpg"
   },
   {
-   "id": "18076822349777571",
-   "biz": "Luca Restaurant",
-   "ig": "lucastonybrook",
+   "id": "18113970185127450",
+   "biz": "Little Cheese Shop",
+   "ig": "littlecheeseshop",
    "town": "Stony Brook",
-   "category": "Restaurant",
+   "category": "Cheese Shop/Cafe",
    "member": false,
-   "title": "Beet & Potato Mezzaluna Special",
-   "when": "This weekend",
-   "desc": "Homemade pasta with poppy seeds and lemon butter sauce available this weekend at Luca.",
+   "title": "Halloween at Stony Brook Village",
+   "when": "Sat, Oct. 26",
+   "desc": "Little Cheese Shop invites everyone to celebrate Halloween Saturday in Stony Brook Village in costume.",
    "expires": "2026-10-26",
-   "posted": "2026-10-23T20:50:26+0000",
-   "url": "https://www.instagram.com/p/De2dLF2n0rL/",
+   "posted": "2026-10-25T22:26:18+0000",
+   "url": "https://www.instagram.com/reel/De7xn2HAqC2/",
    "img": "",
-   "inset": "ig/p18076822349777571.jpg"
+   "inset": "ig/p18113970185127450.jpg"
   }
  ],
  "all": [
@@ -214,6 +214,22 @@
    "inset": "ig/p18481707613112188.jpg"
   },
   {
+   "id": "18113599847613065",
+   "biz": "Tommy's Place",
+   "ig": "tommysplaceportjeff_",
+   "town": "Port Jefferson",
+   "category": "Bar/Restaurant",
+   "member": false,
+   "title": "Spicy Pizza Burger Limited-Time Special",
+   "when": "Now",
+   "desc": "Black Angus burger with marinara, mozzarella, pepperoni, jalapeños and shoestring fries.",
+   "expires": "2026-11-08",
+   "posted": "2026-10-25T21:02:49+0000",
+   "url": "https://www.instagram.com/p/De7oLmEGs5g/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+   "inset": "ig/p18113599847613065.jpg"
+  },
+  {
    "id": "18200189893388564",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -228,22 +244,6 @@
    "url": "https://www.instagram.com/p/De2NujRmuTk/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
    "inset": "ig/p18200189893388564.jpg"
-  },
-  {
-   "id": "18217945741349180",
-   "biz": "Tommy's Place",
-   "ig": "tommysplaceportjeff_",
-   "town": "Port Jefferson",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "Seafood Stuffed Shells Special",
-   "when": "Now",
-   "desc": "Seafood Stuffed Shells featured on the specials menu at Tommy's Place.",
-   "expires": "2026-11-05",
-   "posted": "2026-10-22T00:17:50+0000",
-   "url": "https://www.instagram.com/p/DexrUa_jZH0/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18217945741349180.jpg"
   },
   {
    "id": "18130326799700088",
@@ -308,6 +308,22 @@
    "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
    "img": "",
    "inset": "ig/p17909824674564464.jpg"
+  },
+  {
+   "id": "18113970185127450",
+   "biz": "Little Cheese Shop",
+   "ig": "littlecheeseshop",
+   "town": "Stony Brook",
+   "category": "Cheese Shop/Cafe",
+   "member": false,
+   "title": "Halloween at Stony Brook Village",
+   "when": "Sat, Oct. 26",
+   "desc": "Little Cheese Shop invites everyone to celebrate Halloween Saturday in Stony Brook Village in costume.",
+   "expires": "2026-10-26",
+   "posted": "2026-10-25T22:26:18+0000",
+   "url": "https://www.instagram.com/reel/De7xn2HAqC2/",
+   "img": "",
+   "inset": "ig/p18113970185127450.jpg"
   },
   {
    "id": "18076822349777571",
