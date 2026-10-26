@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-26T21:01:18.055551+00:00",
+"updated": "2026-10-26T23:00:54.319485+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 206,
-"Emma S. Clark Library": 322,
+"Emma S. Clark Library": 320,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -301,44 +301,6 @@
 "pick": true,
 "page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
 "rank": 4
-},
-{
-"id": "emmaclark-after-school-story-time-grades-k-2-59002",
-"title": "After-School Story Time (Grades K-2)",
-"start": "2026-10-26T16:45:00",
-"end": "2026-10-26T17:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/after-school-story-time-grades-k-2-59002",
-"desc": "Have fun listening to stories, creating crafts, and making new friends.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/after-school-story-time-grades-k-2-420"
-},
-{
-"id": "emmaclark-decorated-dog-sweaters-59574",
-"title": "Decorated Dog Sweaters",
-"start": "2026-10-26T18:00:00",
-"end": "2026-10-26T19:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/decorated-dog-sweaters-59574",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/decorated-dog-sweaters"
 },
 {
 "id": "emmaclark-word-38618",
