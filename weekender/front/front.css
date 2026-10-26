@@ -670,3 +670,10 @@ html.tvl-inapp #wk-top.wk-y .y-cta{grid-template-columns:repeat(2,minmax(0,1fr))
 /* inside the 3VL mobile app (its own header has the logo): only the search bar and the category row */
 html.tvl-inapp #wk-top.wk-y .yh-logo,html.tvl-inapp #wk-top.wk-y .yh-r,html.tvl-inapp #wk-top.wk-y .yh-mn{display:none!important}
 html.tvl-inapp #wk-top.wk-y .yh-in{padding-top:8px}
+/* owner 10/25/2026: "Eat & Drink" in the date strip was cut off at the right edge. The long "Next:" / weather notes now shrink
+   (ellipsis) so the Jump to links always fit; the strip never needs to scroll on desktop. */
+#wk-top.wk-y .yh-tdin>*{flex-shrink:0}
+#wk-top.wk-y .yh-tdin>a.yh-tc{flex-shrink:1;min-width:0}
+#wk-top.wk-y .yh-tdin>a.yh-tc>b,#wk-top.wk-y .yh-tdin>a.yh-tc>i{flex-shrink:0}
+#wk-top.wk-y .yh-tdin .yh-ts{flex:0 1 auto;min-width:0}
+#wk-top.wk-y .yh-tdin>.yh-tsp{flex:1 1 0;min-width:0}
