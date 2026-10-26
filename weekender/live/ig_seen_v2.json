@@ -3,10 +3,6 @@
 "special": false,
 "_ts": "2026-09-27T15:13:15+0000"
 },
-"17891831100438139": {
-"special": false,
-"_ts": "2026-09-26T17:42:39+0000"
-},
 "18018245321941798": {
 "special": false,
 "_ts": "2026-09-27T20:35:53+0000"
@@ -19,14 +15,6 @@
 "expires": "",
 "_ts": "2026-09-26T19:23:40+0000"
 },
-"18101379767571054": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T15:47:28+0000"
-},
 "18356691676221898": {
 "special": false,
 "title": "",
@@ -34,14 +22,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-27T14:17:27+0000"
-},
-"18026341085884534": {
-"special": false,
-"title": "Holiday Party Booking Discount",
-"when": "By October 31st",
-"desc": "Book holiday parties at Three Village Inn by Oct 31 and save 10% on your event.",
-"expires": "2026-10-31",
-"_ts": "2026-09-26T15:01:04+0000"
 },
 "17906671416487684": {
 "special": false,
@@ -58,22 +38,6 @@
 "desc": "Try new Mega Mozzarella Sticks and see how long of a cheese pull you can get.",
 "expires": "2026-10-13",
 "_ts": "2026-09-27T16:28:07+0000"
-},
-"18425528017157244": {
-"special": false,
-"title": "Fantasy Football Draft Party Dessert",
-"when": "Ongoing",
-"desc": "Free dessert for Fantasy Football Draft Party guests who bring their card back.",
-"expires": "2026-10-11",
-"_ts": "2026-09-26T16:00:04+0000"
-},
-"18135836857640217": {
-"special": true,
-"title": "Mega Mozzarella Sticks & Smash Burgers",
-"when": "Starting Monday, Sept. 29",
-"desc": "New menu items launch Monday: Mega Mozzarella Sticks, Smash Burgers, Sammys and more.",
-"expires": "2026-10-13",
-"_ts": "2026-09-26T15:19:05+0000"
 },
 "18083652770322505": {
 "special": false,
@@ -119,22 +83,6 @@
 "expires": "",
 "_ts": "2026-09-27T10:52:06+0000"
 },
-"17961681408207576": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T15:00:51+0000"
-},
-"18563151625076522": {
-"special": false,
-"title": "Pasta Pasta Now Open",
-"when": "",
-"desc": "Restaurant announcement that Pasta Pasta is open with wine service available.",
-"expires": "",
-"_ts": "2026-09-26T16:21:42+0000"
-},
 "18142817821608252": {
 "special": false,
 "title": "",
@@ -143,14 +91,6 @@
 "expires": "",
 "_ts": "2026-09-27T13:02:08+0000"
 },
-"18102931922637725": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T15:33:23+0000"
-},
 "17905419498565815": {
 "special": false,
 "title": "",
@@ -158,14 +98,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-27T19:00:45+0000"
-},
-"18115634684078911": {
-"special": false,
-"title": "Castaways Steak & Seafood",
-"when": "Ongoing",
-"desc": "Settle in with something good on rainy days at this Port Jefferson restaurant.",
-"expires": "2026-09-27",
-"_ts": "2026-09-26T16:01:19+0000"
 },
 "18338400298258270": {
 "special": false,
@@ -183,18 +115,6 @@
 "expires": "",
 "_ts": "2026-09-27T04:47:28+0000"
 },
-"18429982066197878": {
-"special": false,
-"_ts": "2026-09-26T15:09:30+0000"
-},
-"18114230486319676": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T18:57:30+0000"
-},
 "18196249777380879": {
 "special": false,
 "_ts": "2026-09-27T19:18:10+0000"
@@ -206,22 +126,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-27T13:13:01+0000"
-},
-"18038871842646282": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T17:09:44+0000"
-},
-"18079121063341848": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T15:18:39+0000"
 },
 "17987123550100225": {
 "special": false,
@@ -3442,5 +3346,45 @@
 "desc": "Dinner at Castaways is $48 per person++ for a special Restaurant Week menu. Book on Resy or call.",
 "expires": "2026-11-08",
 "_ts": "2026-10-26T14:00:56+0000"
+},
+"18081231188448980": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-26T17:24:10+0000"
+},
+"17952097197339637": {
+"special": true,
+"title": "Halloween Drinks at Toast Coffee",
+"when": "Through Oct 31",
+"desc": "Nightmare Before Christmas-inspired drinks like Oogie Boogie Martini and Deadly Nightshade Latte at Patchogue location.",
+"expires": "2026-10-31",
+"_ts": "2026-10-26T17:32:06+0000"
+},
+"17966621909982728": {
+"special": false,
+"title": "PJ Lobster House",
+"when": "Ongoing",
+"desc": "Quality seafood dining and takeout available for lunch and dinner throughout the week.",
+"expires": "2026-10-26",
+"_ts": "2026-10-26T17:05:39+0000"
+},
+"18068366837789278": {
+"special": false,
+"title": "Crab Crusted Salmon",
+"when": "Ongoing",
+"desc": "Refined seafood dish with crab-topped salmon fillet, lemon basmati rice, seasonal vegetables and beurre blanc.",
+"expires": "2026-10-26",
+"_ts": "2026-10-26T15:33:38+0000"
+},
+"18175406926457171": {
+"special": true,
+"title": "Happy Hour & Daily Specials",
+"when": "Today · 3-8 PM",
+"desc": "Happy hour 3-8 PM with food specials including buffalo shrimp wrap, wings, burgers and sandwiches.",
+"expires": "2026-10-26",
+"_ts": "2026-10-26T15:31:13+0000"
 }
 }
