@@ -1,7 +1,7 @@
 {
- "when": "2026-10-22T12:35:33.306Z",
+ "when": "2026-10-26T13:28:52.562Z",
  "checked": 123,
- "failed": 0,
+ "failed": 14,
  "results": [
   {
    "url": "https://www.threevillagelocal.com/",
@@ -10,17 +10,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 2250,
+   "ms": 2775,
    "data": {
     "title": "Three Village Local | Setauket & Stony Brook Businesses & Events",
-    "textLen": 5895,
+    "textLen": 6195,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "p3v-js p3-done",
     "eat": 6,
-    "picks": 12,
+    "picks": 25,
     "top": true,
-    "secs": 10
+    "secs": 9
    }
   },
   {
@@ -30,17 +30,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1192,
+   "ms": 1270,
    "data": {
     "title": "Three Village Local | Setauket & Stony Brook Businesses & Events",
-    "textLen": 4387,
+    "textLen": 4292,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3-done p3v-js",
+    "htmlCls": "p3v-js p3-done",
     "eat": 6,
-    "picks": 12,
+    "picks": 25,
     "top": true,
-    "secs": 10
+    "secs": 9
    }
   },
   {
@@ -50,13 +50,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1206,
+   "ms": 1396,
    "data": {
     "title": "Find a Local Business in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2327,
+    "textLen": 2494,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-w3 p3v-js p3-on p3-done",
+    "htmlCls": "tvl-w3 tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
     "tiles": 30
    }
   },
@@ -67,13 +67,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1742,
+   "ms": 1477,
    "data": {
     "title": "Three Village Events | Things to Do in Setauket, Stony Brook & Port Jefferson",
-    "textLen": 6637,
+    "textLen": 6787,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-wc p3v-js p3-done tvc-on",
+    "htmlCls": "tvl-wc tvl-sh p3v-js tvl-sh-on tvc-on p3-done tvl-sf-on",
     "cards": 36,
     "tvc": true
    }
@@ -85,14 +85,14 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1919,
+   "ms": 1911,
    "data": {
     "title": "Three Village Events Calendar | Setauket, Stony Brook & Port Jefferson",
-    "textLen": 4478,
+    "textLen": 3705,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-wc p3v-js tvc-on p3-done",
-    "cards": 51,
+    "htmlCls": "tvl-wc tvl-sh p3v-js tvl-sh-on tvc-on p3-done tvl-sf-on",
+    "cards": 30,
     "tvc": true
    }
   },
@@ -103,13 +103,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1138,
+   "ms": 1159,
    "data": {
     "title": "Three Village Local Blog | News & Stories from Setauket, Stony Brook & Port Jefferson",
-    "textLen": 2745,
+    "textLen": 2929,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-w3 p3v-js p3-on p3-done",
+    "htmlCls": "tvl-w3 tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "cards": 8
    }
   },
@@ -120,13 +120,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 885,
+   "ms": 967,
    "data": {
     "title": "Promote Your Business Locally | Three Village Local",
-    "textLen": 4584,
+    "textLen": 4675,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3-done p3v-js"
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -136,13 +136,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 970,
+   "ms": 1175,
    "data": {
     "title": "Three Village Weekly: Free Email with the Best of Three Village | Three Village Local",
-    "textLen": 1567,
+    "textLen": 1726,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done"
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -152,13 +152,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1133,
+   "ms": 1088,
    "data": {
-    "title": "New Homes for Sale This Week in Three Village | Three Village Local",
-    "textLen": 5133,
+    "title": "New Listings in Three Village This Week | Three Village Local",
+    "textLen": 3141,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3-done p3v-js"
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -168,13 +168,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 3130,
+   "ms": 1360,
    "data": {
     "title": "Get the Three Village Local App - Free on iPhone and Android",
-    "textLen": 1509,
+    "textLen": 1772,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done"
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -184,13 +184,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 954,
+   "ms": 1196,
    "data": {
     "title": "Promote Your Business or Event | Three Village Local",
-    "textLen": 2022,
+    "textLen": 2181,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done"
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done tvl-sf-on"
    }
   },
   {
@@ -200,13 +200,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 981,
+   "ms": 1213,
    "data": {
     "title": "3VL Smart Publisher | Three Village Local",
-    "textLen": 1815,
+    "textLen": 1974,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done"
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -216,13 +216,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 975,
+   "ms": 984,
    "data": {
     "title": "Three Village Farmers & Artisans Market: Dates, Hours and Location | Three Village Local",
-    "textLen": 2226,
+    "textLen": 2384,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done"
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -232,13 +232,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 931,
+   "ms": 950,
    "data": {
     "title": "Login Now - Three Village Local",
-    "textLen": 1027,
+    "textLen": 1185,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3-done p3v-js tvl-login"
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-login tvl-sf-on"
    }
   },
   {
@@ -248,13 +248,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 894,
+   "ms": 1148,
    "data": {
     "title": "Contact Us - Three Village Local",
-    "textLen": 1133,
+    "textLen": 1291,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3-done p3v-js"
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -264,13 +264,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1767,
+   "ms": 2043,
    "data": {
     "title": "Businesses - Find & Compare Local Business Directory Professionals",
-    "textLen": 2235,
+    "textLen": 2386,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-w3 p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh tvl-w3 p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 6,
     "cur": 9,
@@ -286,17 +286,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1745,
+   "ms": 1920,
    "data": {
     "title": "Businesses - Find & Compare Local Business Directory Professionals",
-    "textLen": 2139,
+    "textLen": 2298,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-w3 p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh tvl-w3 p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 5,
     "cur": 9,
-    "tot": 20,
+    "tot": 21,
     "p3": true,
     "none": false
    }
@@ -308,17 +308,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1372,
+   "ms": 1256,
    "data": {
     "title": "Sports & Fitness in the Three Village Area | Three Village Local",
-    "textLen": 5712,
+    "textLen": 6320,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 21,
-    "cur": 21,
-    "tot": 21,
+    "reg": 24,
+    "cur": 24,
+    "tot": 24,
     "p3": true,
     "none": false
    }
@@ -330,17 +330,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1139,
+   "ms": 1252,
    "data": {
     "title": "Arts & Entertainment in the Three Village Area | Three Village Local",
-    "textLen": 3765,
+    "textLen": 4131,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
-    "reg": 10,
-    "cur": 11,
-    "tot": 11,
+    "reg": 11,
+    "cur": 12,
+    "tot": 12,
     "p3": true,
     "none": false
    }
@@ -352,17 +352,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1175,
+   "ms": 1451,
    "data": {
     "title": "Health & Wellness in the Three Village Area | Three Village Local",
-    "textLen": 4017,
+    "textLen": 4825,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
     "vip": 0,
-    "reg": 13,
-    "cur": 13,
-    "tot": 13,
+    "reg": 16,
+    "cur": 16,
+    "tot": 16,
     "p3": true,
     "none": false
    }
@@ -374,17 +374,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1191,
+   "ms": 1502,
    "data": {
     "title": "Education in the Three Village Area | Three Village Local",
-    "textLen": 4755,
+    "textLen": 5276,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 16,
-    "cur": 16,
-    "tot": 16,
+    "reg": 18,
+    "cur": 18,
+    "tot": 18,
     "p3": true,
     "none": false
    }
@@ -396,17 +396,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1135,
+   "ms": 1294,
    "data": {
     "title": "Doctors & Medical Services in the Three Village Area | Three Village Local",
-    "textLen": 8559,
+    "textLen": 9338,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 2,
-    "reg": 31,
-    "cur": 33,
-    "tot": 33,
+    "reg": 34,
+    "cur": 36,
+    "tot": 36,
     "p3": true,
     "none": false
    }
@@ -418,13 +418,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1090,
+   "ms": 1253,
    "data": {
     "title": "Hotels & Travel in the Three Village Area | Three Village Local",
-    "textLen": 2663,
+    "textLen": 2821,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 6,
     "cur": 6,
@@ -440,17 +440,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1094,
+   "ms": 1259,
    "data": {
     "title": "Nightlife in the Three Village Area | Three Village Local",
-    "textLen": 1981,
+    "textLen": 2294,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 3,
-    "cur": 3,
-    "tot": 3,
+    "reg": 4,
+    "cur": 4,
+    "tot": 4,
     "p3": true,
     "none": false
    }
@@ -462,13 +462,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1177,
+   "ms": 1326,
    "data": {
     "title": "Pet Services in the Three Village Area | Three Village Local",
-    "textLen": 4168,
+    "textLen": 4326,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 14,
     "cur": 14,
@@ -484,13 +484,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1076,
+   "ms": 1388,
    "data": {
     "title": "Professional Services in the Three Village Area | Three Village Local",
-    "textLen": 2483,
+    "textLen": 2641,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 5,
     "cur": 5,
@@ -506,13 +506,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1548,
+   "ms": 1688,
    "data": {
     "title": "Automotive in the Three Village Area | Three Village Local",
-    "textLen": 3355,
+    "textLen": 3513,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 10,
     "cur": 10,
@@ -528,13 +528,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1170,
+   "ms": 1378,
    "data": {
     "title": "Shopping & Retail in the Three Village Area | Three Village Local",
-    "textLen": 10099,
+    "textLen": 10249,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 46,
     "cur": 47,
@@ -550,13 +550,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1280,
+   "ms": 2902,
    "data": {
     "title": "Restaurants in the Three Village Area | Three Village Local",
-    "textLen": 19298,
+    "textLen": 19438,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 92,
     "cur": 92,
@@ -570,22 +570,25 @@
    "kind": "category",
    "phone": false,
    "problems": [],
-   "notes": [],
+   "notes": [
+    "passed on 2nd try (first try: only 9 of 12 businesses loaded (load-more stalled))"
+   ],
    "status": 200,
-   "ms": 1131,
+   "ms": 4519,
    "data": {
     "title": "Events & Entertainment | Three Village Local",
-    "textLen": 3894,
+    "textLen": 4052,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 12,
     "cur": 12,
     "tot": 12,
     "p3": true,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/real-estate-services",
@@ -594,17 +597,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1350,
+   "ms": 5750,
    "data": {
     "title": "Real Estate Services in the Three Village Area | Three Village Local",
-    "textLen": 10271,
+    "textLen": 11225,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 3,
-    "reg": 37,
-    "cur": 40,
-    "tot": 40,
+    "reg": 41,
+    "cur": 44,
+    "tot": 44,
     "p3": true,
     "none": false
    }
@@ -616,17 +619,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1279,
+   "ms": 1482,
    "data": {
     "title": "Attorneys in the Three Village Area | Three Village Local",
-    "textLen": 3291,
+    "textLen": 3538,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 3,
-    "reg": 5,
-    "cur": 8,
-    "tot": 8,
+    "reg": 6,
+    "cur": 9,
+    "tot": 9,
     "p3": true,
     "none": false
    }
@@ -638,17 +641,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1256,
+   "ms": 1240,
    "data": {
     "title": "Commercial Services in the Three Village Area | Three Village Local",
-    "textLen": 2145,
+    "textLen": 2456,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 4,
-    "cur": 4,
-    "tot": 4,
+    "reg": 5,
+    "cur": 5,
+    "tot": 5,
     "p3": true,
     "none": false
    }
@@ -660,17 +663,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1172,
+   "ms": 1328,
    "data": {
     "title": "Beauty & Personal Care in the Three Village Area | Three Village Local",
-    "textLen": 4699,
+    "textLen": 5181,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 17,
-    "cur": 17,
-    "tot": 17,
+    "reg": 19,
+    "cur": 19,
+    "tot": 19,
     "p3": true,
     "none": false
    }
@@ -682,13 +685,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1303,
+   "ms": 1176,
    "data": {
     "title": "Community & Civic in the Three Village Area | Three Village Local",
-    "textLen": 1781,
+    "textLen": 1932,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 2,
     "cur": 3,
@@ -704,13 +707,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1196,
+   "ms": 1163,
    "data": {
     "title": "Marine Services in the Three Village Area | Three Village Local",
-    "textLen": 2534,
+    "textLen": 2692,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 5,
     "cur": 5,
@@ -726,13 +729,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1071,
+   "ms": 1192,
    "data": {
     "title": "Technology & IT in the Three Village Area | Three Village Local",
-    "textLen": 2437,
+    "textLen": 2595,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 5,
     "cur": 5,
@@ -748,13 +751,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1192,
+   "ms": 1140,
    "data": {
     "title": "Marketing & Advertising | Three Village Local",
-    "textLen": 2148,
+    "textLen": 2306,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 4,
     "cur": 4,
@@ -770,13 +773,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 989,
+   "ms": 1106,
    "data": {
     "title": "Payroll & HR Services | Three Village Local",
-    "textLen": 1714,
+    "textLen": 1872,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 0,
     "cur": 1,
@@ -792,13 +795,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1029,
+   "ms": 1128,
    "data": {
     "title": "Farm Stands & Agriculture | Three Village Local",
-    "textLen": 1896,
+    "textLen": 2054,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 3,
     "cur": 3,
@@ -814,13 +817,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1202,
+   "ms": 1265,
    "data": {
     "title": "Flood, Fire & Mold Restoration in the Three Village Area | Three Village Local",
-    "textLen": 1930,
+    "textLen": 2088,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 2,
     "cur": 3,
@@ -836,17 +839,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1310,
+   "ms": 1332,
    "data": {
     "title": "Landscaping & Property Maintenance in the Three Village Area | Three Village Local",
-    "textLen": 4396,
+    "textLen": 4914,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 3,
-    "reg": 10,
-    "cur": 13,
-    "tot": 13,
+    "reg": 12,
+    "cur": 15,
+    "tot": 15,
     "p3": true,
     "none": false
    }
@@ -858,17 +861,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1307,
+   "ms": 1322,
    "data": {
     "title": "Contractors & Remodeling in the Three Village Area | Three Village Local",
-    "textLen": 5129,
+    "textLen": 5929,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
-    "reg": 13,
-    "cur": 14,
-    "tot": 14,
+    "reg": 18,
+    "cur": 19,
+    "tot": 19,
     "p3": true,
     "none": false
    }
@@ -880,17 +883,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1231,
+   "ms": 1293,
    "data": {
     "title": "Plumbers, Electricians & Home Repairs in the Three Village Area | Three Village Local",
-    "textLen": 6032,
+    "textLen": 6308,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 20,
-    "cur": 20,
-    "tot": 20,
+    "reg": 21,
+    "cur": 21,
+    "tot": 21,
     "p3": true,
     "none": false
    }
@@ -902,13 +905,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1244,
+   "ms": 1805,
    "data": {
     "title": "House Cleaning & Organizing in the Three Village Area | Three Village Local",
-    "textLen": 2436,
+    "textLen": 2594,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 6,
     "cur": 6,
@@ -924,17 +927,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1203,
+   "ms": 1339,
    "data": {
     "title": "Financial Advisors & Wealth Management in the Three Village Area | Three Village Local",
-    "textLen": 2396,
+    "textLen": 2702,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
-    "reg": 4,
-    "cur": 5,
-    "tot": 5,
+    "reg": 5,
+    "cur": 6,
+    "tot": 6,
     "p3": true,
     "none": false
    }
@@ -946,13 +949,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1161,
+   "ms": 1302,
    "data": {
     "title": "Mortgages & Home Loans in the Three Village Area | Three Village Local",
-    "textLen": 1603,
+    "textLen": 1777,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 0,
     "cur": 1,
@@ -968,13 +971,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1185,
+   "ms": 1318,
    "data": {
     "title": "Accountants & Tax Preparers in the Three Village Area | Three Village Local",
-    "textLen": 1834,
+    "textLen": 1992,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 2,
     "reg": 0,
     "cur": 2,
@@ -990,13 +993,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1060,
+   "ms": 1137,
    "data": {
     "title": "Insurance Agents in the Three Village Area | Three Village Local",
-    "textLen": 2356,
+    "textLen": 2522,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 5,
     "cur": 5,
@@ -1012,13 +1015,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1018,
+   "ms": 1112,
    "data": {
     "title": "Business Lendings - Find Local Business Directory News, Reviews, and Information",
-    "textLen": 1402,
+    "textLen": 1561,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 1,
     "cur": 1,
@@ -1034,169 +1037,15 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1335,
+   "ms": 1230,
    "data": {
     "title": "Sports & Fitness in the Three Village Area | Three Village Local",
-    "textLen": 5635,
+    "textLen": 6027,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 21,
-    "cur": 21,
-    "tot": 21,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/part-event-planning",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1079,
-   "data": {
-    "title": "Part & Event Planning - Find & Compare Part & Event Planning Professionals",
-    "textLen": 1654,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/photo-booths",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1052,
-   "data": {
-    "title": "Photo Booths - Find & Compare Photo Booths Professionals",
-    "textLen": 1611,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/photography-videography",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 997,
-   "data": {
-    "title": "Photography & Videography | Three Village Local",
-    "textLen": 2013,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/realtors",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1329,
-   "data": {
-    "title": "Realtors in the Three Village Area | Three Village Local",
-    "textLen": 9546,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 3,
-    "reg": 32,
-    "cur": 35,
-    "tot": 35,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/residential-real-estate",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1227,
-   "data": {
-    "title": "Residential Real Estate | Three Village Local",
-    "textLen": 7472,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 1,
-    "reg": 27,
-    "cur": 28,
-    "tot": 28,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/real-estate-consultants",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1208,
-   "data": {
-    "title": "Real Estate Salesperson | Three Village Local",
-    "textLen": 7486,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 3,
-    "reg": 23,
-    "cur": 26,
-    "tot": 26,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/general-real-estate",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1187,
-   "data": {
-    "title": "General Real Estate | Three Village Local",
-    "textLen": 6808,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 2,
-    "reg": 22,
+    "reg": 24,
     "cur": 24,
     "tot": 24,
     "p3": true,
@@ -1204,95 +1053,51 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/real-estate-agency",
+   "url": "https://www.threevillagelocal.com/plumbing",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1194,
+   "ms": 1172,
    "data": {
-    "title": "Real Estate Agency | Three Village Local",
-    "textLen": 6134,
+    "title": "Plumbing - Find & Compare Plumbing Professionals",
+    "textLen": 2461,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 2,
-    "reg": 18,
-    "cur": 20,
-    "tot": 20,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 5,
+    "cur": 5,
+    "tot": 5,
     "p3": true,
     "none": false
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/real-estate-brokers",
+   "url": "https://www.threevillagelocal.com/security-systems",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1253,
+   "ms": 1144,
    "data": {
-    "title": "Real Estate Brokers | Three Village Local",
-    "textLen": 5376,
+    "title": "Security Systems | Three Village Local",
+    "textLen": 2332,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 3,
-    "reg": 12,
-    "cur": 15,
-    "tot": 15,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 3,
+    "cur": 3,
+    "tot": 3,
     "p3": true,
     "none": false
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/condominiums",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1442,
-   "data": {
-    "title": "Condominiums | Three Village Local",
-    "textLen": 4745,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 2,
-    "reg": 12,
-    "cur": 14,
-    "tot": 14,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/real-estate-investments",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1176,
-   "data": {
-    "title": "Real Estate Investments | Three Village Local",
-    "textLen": 4763,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 2,
-    "reg": 11,
-    "cur": 13,
-    "tot": 13,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/property-management",
+   "url": "https://www.threevillagelocal.com/handyman",
    "kind": "category",
    "phone": false,
    "problems": [],
@@ -1300,33 +1105,121 @@
    "status": 200,
    "ms": 1213,
    "data": {
-    "title": "Property Management | Three Village Local",
-    "textLen": 3937,
+    "title": "Handyman in the Three Village Area | Three Village Local",
+    "textLen": 2154,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 1,
-    "reg": 8,
-    "cur": 9,
-    "tot": 9,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 2,
+    "cur": 2,
+    "tot": 2,
     "p3": true,
     "none": false
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/real-estate-developers",
+   "url": "https://www.threevillagelocal.com/locksmith",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1073,
+   "ms": 1178,
    "data": {
-    "title": "Real Estate Developers | Three Village Local",
-    "textLen": 2469,
+    "title": "Locksmith in the Three Village Area | Three Village Local",
+    "textLen": 2104,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 2,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/appliance-repair",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1146,
+   "data": {
+    "title": "Appliance Repair - Find & Compare Appliance Repair Professionals",
+    "textLen": 1655,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/chimney-services",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1112,
+   "data": {
+    "title": "Chimney Services - Find & Compare Chimney Services Professionals",
+    "textLen": 1654,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/septic-cesspool",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1112,
+   "data": {
+    "title": "Septic & Cesspool - Find & Compare Septic & Cesspool Professionals",
+    "textLen": 1594,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/home-cleaning",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1162,
+   "data": {
+    "title": "Home Cleaning | Three Village Local",
+    "textLen": 2398,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 4,
     "cur": 4,
@@ -1336,41 +1229,19 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/commercial-real-estate",
+   "url": "https://www.threevillagelocal.com/home-organization",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1228,
+   "ms": 1140,
    "data": {
-    "title": "Commercial Real Estate | Three Village Local",
-    "textLen": 2496,
+    "title": "Home Organization | Three Village Local",
+    "textLen": 2277,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 1,
-    "reg": 2,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/office-space-for-rent",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1088,
-   "data": {
-    "title": "Office Space For Rent | Three Village Local",
-    "textLen": 2456,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 3,
     "cur": 3,
@@ -1380,425 +1251,7 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/appraisers",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1028,
-   "data": {
-    "title": "Appraisers in the Three Village Area | Three Village Local",
-    "textLen": 2171,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/architecture",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1057,
-   "data": {
-    "title": "Architecture | Three Village Local",
-    "textLen": 2156,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/facilities-management",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1062,
-   "data": {
-    "title": "Facilities Management | Three Village Local",
-    "textLen": 2238,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/home-inspection",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1075,
-   "data": {
-    "title": "Home Inspection | Three Village Local",
-    "textLen": 2167,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/property-maintenance",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1114,
-   "data": {
-    "title": "Property Maintenance | Three Village Local",
-    "textLen": 2099,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/title-company",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1058,
-   "data": {
-    "title": "Title Company | Three Village Local",
-    "textLen": 1949,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/estate-planning-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1251,
-   "data": {
-    "title": "Estate Planning Attorney | Three Village Local",
-    "textLen": 2500,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 2,
-    "reg": 2,
-    "cur": 4,
-    "tot": 4,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/litigation-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1177,
-   "data": {
-    "title": "Litigation Attorney | Three Village Local",
-    "textLen": 2623,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 1,
-    "reg": 3,
-    "cur": 4,
-    "tot": 4,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/probate-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1091,
-   "data": {
-    "title": "Probate Attorney | Three Village Local",
-    "textLen": 2587,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 2,
-    "reg": 2,
-    "cur": 4,
-    "tot": 4,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/personal-injury-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1121,
-   "data": {
-    "title": "Personal Injury Attorney | Three Village Local",
-    "textLen": 2397,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 1,
-    "reg": 2,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/real-estate-attorney-1",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1044,
-   "data": {
-    "title": "Real Estate Attorney | Three Village Local",
-    "textLen": 2295,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 1,
-    "reg": 2,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/car-accident-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1066,
-   "data": {
-    "title": "Car Accident Attorney | Three Village Local",
-    "textLen": 2200,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 1,
-    "reg": 1,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/business-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1062,
-   "data": {
-    "title": "Business Attorney | Three Village Local",
-    "textLen": 1768,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/civil-rights-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1077,
-   "data": {
-    "title": "Civil Rights Attorney | Three Village Local",
-    "textLen": 1761,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/criminal-defense-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1097,
-   "data": {
-    "title": "Criminal Defense Attorney | Three Village Local",
-    "textLen": 1731,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/divorce-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1051,
-   "data": {
-    "title": "Divorce Attorney | Three Village Local",
-    "textLen": 1713,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/dwi-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1035,
-   "data": {
-    "title": "DWI Attorney | Three Village Local",
-    "textLen": 1707,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/entertainment-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1079,
-   "data": {
-    "title": "Entertainment Attorney | Three Village Local",
-    "textLen": 1856,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/family-attorney",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1158,
-   "data": {
-    "title": "Family Attorney | Three Village Local",
-    "textLen": 1799,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/medical-malpractice-attorney",
+   "url": "https://www.threevillagelocal.com/junk-removal",
    "kind": "category",
    "phone": false,
    "problems": [],
@@ -1806,11 +1259,187 @@
    "status": 200,
    "ms": 1127,
    "data": {
-    "title": "Medical Malpractice Attorney | Three Village Local",
-    "textLen": 2016,
+    "title": "Junk Removal in the Three Village Area | Three Village Local",
+    "textLen": 2160,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 1,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/carpet-cleaning",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1093,
+   "data": {
+    "title": "Carpet Cleaning | Three Village Local",
+    "textLen": 1759,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/home-staging",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1178,
+   "data": {
+    "title": "Home Staging in the Three Village Area | Three Village Local",
+    "textLen": 1835,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/movers",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1095,
+   "data": {
+    "title": "Movers - Find & Compare Movers Professionals",
+    "textLen": 1520,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/financial-advising",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1297,
+   "data": {
+    "title": "Financial Advising | Three Village Local",
+    "textLen": 3096,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 6,
+    "cur": 7,
+    "tot": 7,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/investing",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1187,
+   "data": {
+    "title": "Investing in the Three Village Area | Three Village Local",
+    "textLen": 2722,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 4,
+    "cur": 5,
+    "tot": 5,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/retirement-planning-advisory",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1211,
+   "data": {
+    "title": "Retirement Planning & Advisory | Three Village Local",
+    "textLen": 2615,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 3,
+    "cur": 4,
+    "tot": 4,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/estate-wealth-management",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1172,
+   "data": {
+    "title": "Estate & Wealth Management | Three Village Local",
+    "textLen": 2443,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 2,
+    "cur": 3,
+    "tot": 3,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/banks-credit-unions",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1144,
+   "data": {
+    "title": "Banks & Credit Unions | Three Village Local",
+    "textLen": 1953,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 0,
     "cur": 1,
@@ -1820,19 +1449,19 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/tax-attorney",
+   "url": "https://www.threevillagelocal.com/home-loans",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1074,
+   "ms": 1145,
    "data": {
-    "title": "Tax Attorney | Three Village Local",
-    "textLen": 1886,
+    "title": "Home Loans in the Three Village Area | Three Village Local",
+    "textLen": 1977,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 0,
     "cur": 1,
@@ -1842,19 +1471,19 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/workers-compensation-attorney",
+   "url": "https://www.threevillagelocal.com/mortgage-broker",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1112,
+   "ms": 1155,
    "data": {
-    "title": "Workers Compensation Attorney | Three Village Local",
-    "textLen": 2028,
+    "title": "Mortgage Broker | Three Village Local",
+    "textLen": 2003,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 0,
     "cur": 1,
@@ -1864,19 +1493,349 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/facility-maintenance-management",
+   "url": "https://www.threevillagelocal.com/reverse-mortgages",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1094,
+   "ms": 1125,
    "data": {
-    "title": "Facility Maintenance & Management | Three Village Local",
-    "textLen": 1854,
+    "title": "Reverse Mortgages | Three Village Local",
+    "textLen": 2011,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 0,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/va-loans",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1193,
+   "data": {
+    "title": "VA Loans in the Three Village Area | Three Village Local",
+    "textLen": 1950,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 0,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/accounting-bookkeeping-services",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1232,
+   "data": {
+    "title": "Accounting & Bookkeeping Services | Three Village Local",
+    "textLen": 2262,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 2,
+    "reg": 0,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/tax-services",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1187,
+   "data": {
+    "title": "Tax Services in the Three Village Area | Three Village Local",
+    "textLen": 2182,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 1,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/tax-preparation-services",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1228,
+   "data": {
+    "title": "Tax Preparation Services | Three Village Local",
+    "textLen": 2020,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 0,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/insurance-agents",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1213,
+   "data": {
+    "title": "Insurance Agents - Find & Compare Insurance Agents Professionals",
+    "textLen": 2507,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 6,
+    "cur": 6,
+    "tot": 6,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/group-benefits",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1211,
+   "data": {
+    "title": "Group Benefits | Three Village Local",
+    "textLen": 2438,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 4,
+    "cur": 4,
+    "tot": 4,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/commercial-real-estate-loans",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1143,
+   "data": {
+    "title": "Commercial Real Estate Loans - Find & Compare Commercial Real Estate Loans Professionals",
+    "textLen": 1573,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/sba-loans",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1180,
+   "data": {
+    "title": "SBA Loans - Find & Compare SBA Loans Professionals",
+    "textLen": 1554,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/working-capital",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1161,
+   "data": {
+    "title": "Working Capital - Find & Compare Working Capital Professionals",
+    "textLen": 1560,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/fitness-classes",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1232,
+   "data": {
+    "title": "Fitness Classes | Three Village Local",
+    "textLen": 2546,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 5,
+    "cur": 5,
+    "tot": 5,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/personal-trainers-fitness-coaches",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1143,
+   "data": {
+    "title": "Personal Trainers & Fitness Coaches | Three Village Local",
+    "textLen": 2274,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 3,
+    "cur": 3,
+    "tot": 3,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/summer-camps",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1261,
+   "data": {
+    "title": "Summer Camps in the Three Village Area | Three Village Local",
+    "textLen": 2392,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 3,
+    "cur": 3,
+    "tot": 3,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/yoga",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1311,
+   "data": {
+    "title": "Yoga in the Three Village Area | Three Village Local",
+    "textLen": 2267,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 3,
+    "cur": 3,
+    "tot": 3,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/youth-sports-leagues-clubs",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1541,
+   "data": {
+    "title": "Youth Sports Leagues & Clubs | Three Village Local",
+    "textLen": 2323,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 3,
+    "cur": 3,
+    "tot": 3,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/cheerleading-gymnastics-training",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1261,
+   "data": {
+    "title": "Cheerleading & Gymnastics Training | Three Village Local",
+    "textLen": 1850,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 2,
     "cur": 2,
@@ -1886,19 +1845,19 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/janitorial-cleaning-services",
+   "url": "https://www.threevillagelocal.com/gymnasiums-fitness-centers",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1090,
+   "ms": 1163,
    "data": {
-    "title": "Janitorial & Cleaning Services | Three Village Local",
-    "textLen": 1837,
+    "title": "Gymnasiums & Fitness Centers | Three Village Local",
+    "textLen": 2103,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 2,
     "cur": 2,
@@ -1908,19 +1867,63 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/window-cleaning-exterior-building-maintenance",
+   "url": "https://www.threevillagelocal.com/martial-arts-self-defense-schools",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1574,
+   "ms": 1243,
    "data": {
-    "title": "Window Cleaning & Exterior Building Maintenance | Three Village Local",
-    "textLen": 1945,
+    "title": "Martial Arts & Self-Defense Schools | Three Village Local",
+    "textLen": 2351,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-on p3-done",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 2,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/recreational-sports-facilities-e-g-indoor-soccer-basketball-courts",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1259,
+   "data": {
+    "title": "Recreational Sports Facilities | Three Village Local",
+    "textLen": 2516,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 2,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/soccer",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1286,
+   "data": {
+    "title": "Soccer in the Three Village Area | Three Village Local",
+    "textLen": 2391,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
     "reg": 2,
     "cur": 2,
@@ -1933,69 +1936,81 @@
    "url": "https://www.threevillagelocal.com/team-passamenti-at-better-homes-and-gardens-real-estate-realty-connect",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1502,
+   "ms": 1393,
    "data": {
     "title": "Team Passamenti at Better Homes and Gardens Real Estate Realty",
-    "textLen": 5281,
+    "textLen": 4760,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Team Passamenti at Better Homes and Gardens Real Estate Realty Connect                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/girard-wealth-management-group",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1276,
+   "ms": 1359,
    "data": {
     "title": "Girard Wealth Management Group | Setauket, NY",
-    "textLen": 7719,
+    "textLen": 5346,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Girard Wealth Management Group                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/the-odwyer-brainard-team-at-daniel-gale-sothebys-international-realty",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1412,
+   "ms": 1343,
    "data": {
     "title": "The O'Dwyer-Brainard Team at Daniel Gale Sotheby's International",
-    "textLen": 7719,
+    "textLen": 5418,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    The O'Dwyer-Brainard Team at Daniel Gale Sotheby's International Realty                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/kgr-contracting-corp",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1587,
+   "ms": 1360,
    "data": {
     "title": "KGR Contracting Corp. | Port Jefferson Station, NY",
-    "textLen": 3290,
+    "textLen": 4057,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on pv2-on",
-    "h1": "KGR Contracting"
-   }
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
+    "h1": "\n                    KGR Contracting Corp.                "
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/matt-bardram-at-coltrain-mortgage",
@@ -2004,13 +2019,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1491,
+   "ms": 1455,
    "data": {
     "title": "Matt Bardram at Coltrain Mortgage | Hauppauge, NY",
-    "textLen": 8962,
+    "textLen": 6659,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Matt Bardram at Coltrain Mortgage                "
    }
   },
@@ -2021,13 +2036,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1295,
+   "ms": 1423,
    "data": {
     "title": "Southard Estate Planning | Estate Planning Attorney in Setauket",
-    "textLen": 7041,
+    "textLen": 4719,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Southard Estate Planning                "
    }
   },
@@ -2035,52 +2050,61 @@
    "url": "https://www.threevillagelocal.com/tj-sirani-at-zuma-payroll",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1294,
+   "ms": 1767,
    "data": {
     "title": "TJ Sirani at Zuma Payroll | Payroll & HR Services in Melville, NY",
-    "textLen": 4727,
+    "textLen": 5035,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    TJ Sirani at Zuma Payroll                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/aronica-plant-healthcare-llc",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1314,
+   "ms": 1393,
    "data": {
     "title": "Aronica Plant Healthcare, LLC | Landscaping in Setauket, NY",
-    "textLen": 6501,
+    "textLen": 3938,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Aronica Plant Healthcare, LLC                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/emma-s-clark-memorial-library",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1391,
+   "ms": 1574,
    "data": {
     "title": "Emma S. Clark Memorial Library | Setauket, NY",
-    "textLen": 4117,
+    "textLen": 4306,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Emma S. Clark Memorial Library                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/magic-home-restoration",
@@ -2089,13 +2113,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1367,
+   "ms": 1471,
    "data": {
     "title": "Magic Home Restoration | Damage Restoration in Nesconset, NY",
-    "textLen": 6432,
+    "textLen": 4287,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Magic Home Restoration                "
    }
   },
@@ -2103,35 +2127,41 @@
    "url": "https://www.threevillagelocal.com/jlw-accounting-and-tax-services",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1275,
+   "ms": 1608,
    "data": {
     "title": "JLW Accounting and Tax Services | Setauket, NY",
-    "textLen": 7253,
+    "textLen": 4595,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    JLW Accounting and Tax Services                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/raupp-law-pc",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1301,
+   "ms": 1490,
    "data": {
     "title": "Raupp Law PC | Estate Planning Attorney in Setauket, NY",
-    "textLen": 4183,
+    "textLen": 5242,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Raupp Law PC                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/jm-management-solutions-inc",
@@ -2140,13 +2170,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1263,
+   "ms": 1434,
    "data": {
     "title": "JM Management Solutions Inc | Patchogue, NY",
-    "textLen": 6780,
+    "textLen": 4186,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    JM Management Solutions Inc                "
    }
   },
@@ -2157,13 +2187,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1251,
+   "ms": 1457,
    "data": {
     "title": "The North Shore Injury Lawyer | Stony Brook, NY",
-    "textLen": 7915,
+    "textLen": 4974,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    The North Shore Injury Lawyer                "
    }
   },
@@ -2171,18 +2201,21 @@
    "url": "https://www.threevillagelocal.com/hart-orthopedics",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1220,
+   "ms": 1375,
    "data": {
     "title": "Hart Orthopedics | Orthopedists in Stony Brook, NY",
-    "textLen": 7246,
+    "textLen": 4173,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Hart Orthopedics                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/chriss-complete-landscaping",
@@ -2191,13 +2224,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1151,
+   "ms": 1404,
    "data": {
     "title": "Chris's Complete Landscaping | Three Village, NY",
-    "textLen": 5441,
+    "textLen": 3616,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Chris's Complete Landscaping                "
    }
   },
@@ -2205,35 +2238,41 @@
    "url": "https://www.threevillagelocal.com/j33-art-studios-inc",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1238,
+   "ms": 1339,
    "data": {
     "title": "J33 Art Studios Inc. | Local Artist",
-    "textLen": 5463,
+    "textLen": 3613,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    J33 Art Studios Inc.                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/orthopedic-associates-of-long-island",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1275,
+   "ms": 1636,
    "data": {
     "title": "Orthopedic Associates of Long Island | Orthopedists in Setauket",
-    "textLen": 6367,
+    "textLen": 4304,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Orthopedic Associates of Long Island                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/rolling-hills-property-services-inc",
@@ -2242,13 +2281,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1455,
+   "ms": 1795,
    "data": {
     "title": "Rolling Hills Property Services Inc. | Port Jefferson Station, NY",
-    "textLen": 5252,
+    "textLen": 4050,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Rolling Hills Property Services Inc.                "
    }
   },
@@ -2256,136 +2295,142 @@
    "url": "https://www.threevillagelocal.com/strong-strains",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1237,
+   "ms": 3139,
    "data": {
     "title": "Strong Strains | Cannabis Dispensary in Setauket, NY",
-    "textLen": 4045,
+    "textLen": 4006,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Strong Strains                "
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/victor-stabile-at-douglas-elliman-real-estate-684",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1252,
+   "ms": 3811,
    "data": {
     "title": "Victor Stabile | Douglas Elliman Realtor in Setauket & Stony Brook, NY",
-    "textLen": 5018,
+    "textLen": 4706,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Victor Stabile at Douglas Elliman Real Estate                "
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/port-tackle-company",
+   "url": "https://www.threevillagelocal.com/yaas-tea-stony-brook",
    "kind": "profile",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 996,
+   "ms": 2773,
    "data": {
-    "title": "Port Tackle Company - Shopping - Retail - Local Business Directory",
-    "textLen": 1831,
+    "title": "Yaas Tea Stony Brook | Coffee & Tea in Stony Brook, NY",
+    "textLen": 1695,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
-    "h1": "\n                    Port Tackle Company                "
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    Yaas Tea Stony Brook                "
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/play-groups-school",
+   "url": "https://www.threevillagelocal.com/o-sole-mio-ny",
    "kind": "profile",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1079,
+   "ms": 3004,
    "data": {
-    "title": "Play Groups School - Education - Local Business Directory",
-    "textLen": 1719,
+    "title": "O Sole Mio NY | Italian Restaurant in Stony Brook, NY",
+    "textLen": 2427,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
-    "h1": "\n                    Play Groups School                "
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    O Sole Mio NY                "
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/east-setauket-dental",
+   "url": "https://www.threevillagelocal.com/se-port-delicatessen",
    "kind": "profile",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 982,
+   "ms": 3082,
    "data": {
-    "title": "East Setauket Dental - Doctors & Medical Services - Local Business Directory",
-    "textLen": 1755,
+    "title": "Se-Port Deli | Heroes, Iced Tea & Catering in East Setauket, NY",
+    "textLen": 1961,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
-    "h1": "\n                    East Setauket Dental                "
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    Se-Port Delicatessen                "
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/long-island-explorium",
+   "url": "https://www.threevillagelocal.com/salsa-salsa",
    "kind": "profile",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1186,
+   "ms": 3199,
    "data": {
-    "title": "Long Island Explorium - Arts & Entertainment - Local Business Directory",
-    "textLen": 1801,
+    "title": "Salsa Salsa - Restaurant - Local Business Directory",
+    "textLen": 1929,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
-    "h1": "\n                    Long Island Explorium                "
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    Salsa Salsa                "
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/selfie-shot-photo-booths",
+   "url": "https://www.threevillagelocal.com/checkmate-inn",
    "kind": "profile",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1197,
+   "ms": 2157,
    "data": {
-    "title": "Selfie Shot Photo Booths - Events & Entertainment - Local Business Directory",
-    "textLen": 1699,
+    "title": "Checkmate Inn - Nightlife - Local Business Directory",
+    "textLen": 1700,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
-    "h1": "\n                    Selfie Shot Photo Booths                "
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    Checkmate Inn                "
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/luna-nova",
+   "url": "https://www.threevillagelocal.com/station-pizza-brew",
    "kind": "profile",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1246,
+   "ms": 2468,
    "data": {
-    "title": "Luna Nova - Shopping - Retail - Local Business Directory",
-    "textLen": 1746,
+    "title": "Station Pizza & Brew - Restaurant - Local Business Directory",
+    "textLen": 1698,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done pf-on",
-    "h1": "\n                    Luna Nova                "
+    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    Station Pizza & Brew                "
    }
   },
   {
@@ -2395,13 +2440,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1193,
+   "ms": 3148,
    "data": {
     "title": "2026 Port Jefferson Scarecrow Walk | Mon, Oct 5",
-    "textLen": 2237,
+    "textLen": 2420,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-we p3v-js p3-done ev-on",
+    "htmlCls": "tvl-we tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on ev-on",
     "ev": true
    }
   },
@@ -2412,47 +2457,47 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1087,
+   "ms": 1704,
    "data": {
     "title": "2026 Port Jeff Self-Guided Fall Art Walk | Fri, Oct 9",
-    "textLen": 2183,
+    "textLen": 2366,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-we p3v-js p3-done ev-on",
+    "htmlCls": "tvl-we tvl-sh p3v-js p3-done ev-on tvl-sh-on tvl-sf-on",
     "ev": true
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/events/film-lim-a-new-york-minute-shorts-about-nyc",
+   "url": "https://www.threevillagelocal.com/events/port-jefferson-chowder-crawl",
    "kind": "event",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1096,
+   "ms": 1376,
    "data": {
-    "title": "FILM@LIM: “A New York Minute” Shorts… | Thu, Oct 15 in Stony Brook",
-    "textLen": 2731,
+    "title": "Port Jefferson Chowder Crawl | Sat, Oct 24",
+    "textLen": 2420,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-we p3-done p3v-js ev-on",
+    "htmlCls": "tvl-we tvl-sh p3v-js p3-done tvl-sh-on ev-on tvl-sf-on",
     "ev": true
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/events/2026-port-jefferson-harvest-festival",
+   "url": "https://www.threevillagelocal.com/events/spooktacular-trunk-or-treat-vendor-fair",
    "kind": "event",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1140,
+   "ms": 1128,
    "data": {
-    "title": "2026 Port Jefferson Harvest Festival | Sat, Oct 17",
-    "textLen": 2109,
+    "title": "Spooktacular Trunk or Treat &… | Sat, Oct 24 in East Setauket",
+    "textLen": 2306,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-we p3v-js p3-done ev-on",
+    "htmlCls": "tvl-we tvl-sh p3-done p3v-js tvl-sh-on ev-on tvl-sf-on",
     "ev": true
    }
   },
@@ -2463,13 +2508,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1309,
+   "ms": 1260,
    "data": {
     "title": "Culper Spy Day 2026 Guide: Schedule, Trolley, Food & Spy Facts | Three Village Local",
-    "textLen": 14370,
+    "textLen": 14545,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done"
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done tvl-sf-on"
    }
   }
  ]
