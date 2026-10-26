@@ -677,3 +677,6 @@ html.tvl-inapp #wk-top.wk-y .yh-in{padding-top:8px}
 #wk-top.wk-y .yh-tdin>a.yh-tc>b,#wk-top.wk-y .yh-tdin>a.yh-tc>i{flex-shrink:0}
 #wk-top.wk-y .yh-tdin .yh-ts{flex:0 1 auto;min-width:0}
 #wk-top.wk-y .yh-tdin>.yh-tsp{flex:1 1 0;min-width:0}
+/* 10/26/2026: on phones/tablets (jump links hidden, strip scrolls) the shrinking made "Happening now: 3 events" run under the
+   weather item. Below 1101px the items keep their natural width again. */
+@media (max-width:1100px){#wk-top.wk-y .yh-tdin>a.yh-tc{flex-shrink:0;min-width:auto}}
