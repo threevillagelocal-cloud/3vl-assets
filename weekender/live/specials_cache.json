@@ -222,24 +222,7 @@
 ],
 "breakroomny": [],
 "seportdelicatessen": [],
-"toastcoffeeandkitchen": [
-{
-"id": "18384649183233226",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Halloween Seasonal Drinks at Toast",
-"when": "Limited time",
-"desc": "Try It's Alive Latte and Red Rum Cocktail before these spooky seasonal favorites disappear.",
-"expires": "2026-10-31",
-"posted": "2026-10-19T13:28:23+0000",
-"url": "https://www.instagram.com/reel/DerXT9Txane/",
-"img": "",
-"inset": "ig/p18384649183233226.jpg"
-}
-],
+"toastcoffeeandkitchen": [],
 "prohibitionportjefferson": [],
 "portjeffbrewing": [],
 "poboybeerandcider": [],
@@ -417,6 +400,22 @@
 ],
 "castawayspj": [
 {
+"id": "18422434549159472",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Long Island Restaurant Week Prix Fixe",
+"when": "Sun, Nov. 1 - Fri, Nov. 8",
+"desc": "Dinner at Castaways is $48 per person++ for a special Restaurant Week menu. Book on Resy or call.",
+"expires": "2026-11-08",
+"posted": "2026-10-26T14:00:56+0000",
+"url": "https://www.instagram.com/p/De9cr7uldi0/",
+"img": "",
+"inset": "ig/p18422434549159472.jpg"
+},
+{
 "id": "18201844492379965",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -431,22 +430,6 @@
 "url": "https://www.instagram.com/p/De2QntVCmaU/",
 "img": "",
 "inset": "ig/p18201844492379965.jpg"
-},
-{
-"id": "18116670341043180",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Thursday Happy Hour at Castaways",
-"when": "Every Thursday · 12-6 PM",
-"desc": "Half off all drinks at the inside bar, high tops and lounge.",
-"expires": "2026-10-29",
-"posted": "2026-10-22T15:01:33+0000",
-"url": "https://www.instagram.com/p/DezQcI-Cpph/",
-"img": "",
-"inset": "ig/p18116670341043180.jpg"
 }
 ],
 "salsasalsa_portjeff": [],

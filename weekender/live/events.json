@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-26T15:00:55.040641+00:00",
+"updated": "2026-10-26T15:02:14.834090+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
@@ -1731,6 +1731,25 @@
 "label": "Special"
 },
 {
+"id": "18422434549159472",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Long Island Restaurant Week Prix Fixe",
+"when": "Sun, Nov. 1 - Fri, Nov. 8",
+"desc": "Dinner at Castaways is $48 per person++ for a special Restaurant Week menu. Book on Resy or call.",
+"expires": "2026-11-08",
+"posted": "2026-10-26T14:00:56+0000",
+"url": "https://www.instagram.com/p/De9cr7uldi0/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18422434549159472.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"label": "Special"
+},
+{
 "id": "18201844492379965",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -1747,44 +1766,6 @@
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18201844492379965.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-long-island-restaurant-dinner",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Special"
-},
-{
-"id": "18116670341043180",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Thursday Happy Hour at Castaways",
-"when": "Every Thursday · 12-6 PM",
-"desc": "Half off all drinks at the inside bar, high tops and lounge.",
-"expires": "2026-10-29",
-"posted": "2026-10-22T15:01:33+0000",
-"url": "https://www.instagram.com/p/DezQcI-Cpph/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18116670341043180.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-thursday-happy-hour",
-"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Happy hour"
-},
-{
-"id": "18384649183233226",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Halloween Seasonal Drinks at Toast",
-"when": "Limited time",
-"desc": "Try It's Alive Latte and Red Rum Cocktail before these spooky seasonal favorites disappear.",
-"expires": "2026-10-31",
-"posted": "2026-10-19T13:28:23+0000",
-"url": "https://www.instagram.com/reel/DerXT9Txane/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18384649183233226.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/toast-coffee-kitchen-halloween-seasonal-drinks",
-"profile": "https://www.threevillagelocal.com/toast-coffee-kitchen",
 "label": "Special"
 }
 ],

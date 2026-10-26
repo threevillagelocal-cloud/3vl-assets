@@ -7,14 +7,6 @@
 "special": false,
 "_ts": "2026-09-26T17:42:39+0000"
 },
-"18075081047546739": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T14:40:15+0000"
-},
 "18018245321941798": {
 "special": false,
 "_ts": "2026-09-27T20:35:53+0000"
@@ -58,14 +50,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-27T14:12:22+0000"
-},
-"17909038419492848": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T14:50:17+0000"
 },
 "18109489916464133": {
 "special": true,
@@ -159,14 +143,6 @@
 "expires": "",
 "_ts": "2026-09-27T13:02:08+0000"
 },
-"18385445914238212": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T13:01:17+0000"
-},
 "18102931922637725": {
 "special": false,
 "title": "",
@@ -190,14 +166,6 @@
 "desc": "Settle in with something good on rainy days at this Port Jefferson restaurant.",
 "expires": "2026-09-27",
 "_ts": "2026-09-26T16:01:19+0000"
-},
-"17901843501597825": {
-"special": false,
-"title": "Delayed Opening Notice",
-"when": "Today, Sep 27",
-"desc": "Castaways opens at 4 PM today due to storm. Regular hours resume tomorrow.",
-"expires": "2026-09-27",
-"_ts": "2026-09-26T14:28:34+0000"
 },
 "18338400298258270": {
 "special": false,
@@ -254,10 +222,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-26T15:18:39+0000"
-},
-"18122876903315669": {
-"special": false,
-"_ts": "2026-09-26T14:05:36+0000"
 },
 "17987123550100225": {
 "special": false,
@@ -3462,5 +3426,21 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-26T01:45:25+0000"
+},
+"17958710943255580": {
+"special": false,
+"title": "Burgerology Wins Best Buffalo Wings Award",
+"when": "Ongoing",
+"desc": "Celebrating their #1 Buffalo Wings title on Long Island. Try their award-winning wings.",
+"expires": "2026-10-26",
+"_ts": "2026-10-26T15:00:02+0000"
+},
+"18422434549159472": {
+"special": true,
+"title": "Long Island Restaurant Week Prix Fixe",
+"when": "Sun, Nov. 1 - Fri, Nov. 8",
+"desc": "Dinner at Castaways is $48 per person++ for a special Restaurant Week menu. Book on Resy or call.",
+"expires": "2026-11-08",
+"_ts": "2026-10-26T14:00:56+0000"
 }
 }
