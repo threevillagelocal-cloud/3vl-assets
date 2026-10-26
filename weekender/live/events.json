@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-26T19:03:35.326343+00:00",
+"updated": "2026-10-26T19:51:56.649594+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 41,
+"Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 206,
@@ -840,6 +840,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/the-36th-annual-halloween-festival"
+},
+{
+"id": "pjchamber-15119",
+"title": "Long Island Restaurant Week",
+"start": "2026-11-01T00:00:00",
+"end": "2026-12-08T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
+"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "pjchamber-15082",
