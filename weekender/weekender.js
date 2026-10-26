@@ -109,7 +109,7 @@ function renderLive(data){
     var card=function(x,old){var big=x.img||x.inset,small=x.img?x.inset:'',ob=old&&old.querySelector('.wk-spbiz');
       var map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(x.biz.replace(/\s*\(.*?\)/,'')+', '+(x.town||'Three Village')+', NY');
       var t=document.createElement('div');
-      t.innerHTML='<article class="wk-sp wk-rv is-in"'+(x.page?' data-href="'+esc2(x.page)+'"':'')+'>'+(big?'<div class="wk-eimg"><img '+smi(big,800,'(max-width:760px) 280px, 470px')+' alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img '+smi(small,300,'96px')+' alt="Food at '+esc2(x.biz)+'" loading="lazy"></span>':'')+'</div>':'')+
+      t.innerHTML='<article class="wk-sp wk-rv is-in"'+(x.pinned?' data-pin="1"':'')+(x.page?' data-href="'+esc2(x.page)+'"':'')+'>'+(big?'<div class="wk-eimg"><img '+smi(big,800,'(max-width:760px) 280px, 470px')+' alt="'+esc2(x.biz)+'" loading="lazy">'+(small?'<span class="wk-dish"><img '+smi(small,300,'96px')+' alt="Food at '+esc2(x.biz)+'" loading="lazy"></span>':'')+'</div>':'')+
        '<div class="wk-spb"><p class="wk-spbiz">'+(ob?ob.innerHTML:(x.profile||x.page)?'<a class="wk-biz" href="'+esc2(x.profile||x.page)+'">'+esc2(x.biz.replace(/\s*\(.*?\)/,''))+'</a>':esc2(x.biz.replace(/\s*\(.*?\)/,'')))+'</p><p class="wk-spt">'+(x.label?'<span class="wk-lbl'+(x.label==='Live music'?' wk-lbl-m':'')+'">'+esc2(x.label)+'</span>':'')+esc2(x.title)+'</p>'+(x.when?'<p class="wk-spw">'+esc2(x.when)+'</p>':'')+'<p class="wk-spd">'+esc2(x.desc)+'</p>'+
        '<p class="wk-spf"><span class="wk-src wk-igb">&#9711;</span><span>via <a class="wk-biz" href="'+esc2(x.url)+'" target="_blank" rel="noopener">Instagram</a></span><a class="wk-dir" href="'+esc2(map)+'" target="_blank" rel="noopener">&#128205; Map</a></p></div></article>';
       return t.firstChild};
@@ -118,7 +118,13 @@ function renderLive(data){
     order.forEach(function(n){var k=nm(n);if(used[k]||!ig[k])return;used[k]=1;out.push(card(ig[k],cur[k]))});
     order.forEach(function(n){var k=nm(n);if(used[k]||!cur[k])return;used[k]=1;out.push(cur[k])});
     Object.keys(cur).forEach(function(k){if(!used[k])out.push(cur[k])});
-    out=out.slice(0,data.eatCap||9);eat.innerHTML='';out.forEach(function(a){eat.appendChild(a)})}
+    out=out.slice(0,data.eatCap||9);
+    /* owner 10/25/2026: rotate the order every 30 minutes so returning visitors see a fresh row (same for everyone in a slot);
+       pinned highlights (Madiran live music) keep the first spot */
+    (function(){var pin=out.filter(function(a){return a.getAttribute('data-pin')}),rest=out.filter(function(a){return !a.getAttribute('data-pin')});
+      if(rest.length>1){var q=location.search.match(/[?&]slot=([0-9]+)/),k=(q?+q[1]:Math.floor(Date.now()/1800000))%rest.length;rest=rest.slice(k).concat(rest.slice(0,k))}
+      out=pin.concat(rest)})();
+    eat.innerHTML='';out.forEach(function(a){eat.appendChild(a)})}
   return true}
 function DAYN2x(d){return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][d.getDay()]}
 
