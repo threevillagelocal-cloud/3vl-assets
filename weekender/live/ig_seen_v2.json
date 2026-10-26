@@ -167,14 +167,6 @@
 "expires": "",
 "_ts": "2026-09-26T13:01:17+0000"
 },
-"18117872237469576": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T04:00:24+0000"
-},
 "18102931922637725": {
 "special": false,
 "title": "",
@@ -215,14 +207,6 @@
 "expires": "2026-09-27",
 "_ts": "2026-09-27T14:35:10+0000"
 },
-"18161041891505130": {
-"special": false,
-"title": "The Pie of Port Jeff",
-"when": "Ongoing",
-"desc": "Pizza available for takeout, curbside pickup, and delivery via DoorDash, Uber Eats & Grubhub.",
-"expires": "2026-09-27",
-"_ts": "2026-09-26T00:52:13+0000"
-},
 "18117531670758688": {
 "special": false,
 "title": "",
@@ -242,14 +226,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-26T18:57:30+0000"
-},
-"18114399863082458": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T01:49:08+0000"
 },
 "18196249777380879": {
 "special": false,
@@ -3478,5 +3454,13 @@
 "desc": "Event recap thanking collaborators and attendees for a NASCAR-themed gathering.",
 "expires": "2026-10-25",
 "_ts": "2026-10-25T23:07:33+0000"
+},
+"17990274732109102": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-26T01:45:25+0000"
 }
 }

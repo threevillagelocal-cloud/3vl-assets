@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-26T10:30:47.406685+00:00",
+"updated": "2026-10-26T11:59:47.885763+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
@@ -1575,6 +1575,25 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18130326799700088.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/schnitzels-lobster-bomb-limited-time-special",
+"profile": "https://www.threevillagelocal.com/schnitzels",
+"label": "Special"
+},
+{
+"id": "18074576285727806",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "The Dip Schnitz Limited Menu Item",
+"when": "Limited time",
+"desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
+"expires": "2026-11-21",
+"posted": "2026-10-21T21:25:57+0000",
+"url": "https://www.instagram.com/p/DexXoFJhJhr/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18074576285727806.jpg",
+"page": "https://www.threevillagelocal.com/schnitzels",
 "profile": "https://www.threevillagelocal.com/schnitzels",
 "label": "Special"
 },

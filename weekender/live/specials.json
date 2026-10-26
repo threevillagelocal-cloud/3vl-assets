@@ -1,22 +1,6 @@
 {
- "updated": "2026-10-26T00:47:43.244155+00:00",
+ "updated": "2026-10-26T11:58:04.991765+00:00",
  "specials": [
-  {
-   "id": "18481707613112188",
-   "biz": "The Country Corner",
-   "ig": "countrycornerlongisland",
-   "town": "East Setauket",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "Live Music Night",
-   "when": "Sat, Oct. 25 · 6:30 PM",
-   "desc": "Live music on the back patio with good food and craft drink options.",
-   "expires": "2026-10-25",
-   "posted": "2026-10-23T14:28:52+0000",
-   "url": "https://www.instagram.com/p/De1xSHCx8K7/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
-   "inset": "ig/p18481707613112188.jpg"
-  },
   {
    "id": "18113599847613065",
    "biz": "Tommy's Place",
@@ -96,26 +80,26 @@
    "url": "https://www.instagram.com/reel/De7xn2HAqC2/",
    "img": "",
    "inset": "ig/p18113970185127450.jpg"
+  },
+  {
+   "id": "18076822349777571",
+   "biz": "Luca Restaurant",
+   "ig": "lucastonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Beet & Potato Mezzaluna Special",
+   "when": "This weekend",
+   "desc": "Homemade pasta with poppy seeds and lemon butter sauce available this weekend at Luca.",
+   "expires": "2026-10-26",
+   "posted": "2026-10-23T20:50:26+0000",
+   "url": "https://www.instagram.com/p/De2dLF2n0rL/",
+   "img": "",
+   "inset": "ig/p18076822349777571.jpg"
   }
  ],
  "candidates": [
   {
-   "id": "18481707613112188",
-   "biz": "The Country Corner",
-   "ig": "countrycornerlongisland",
-   "town": "East Setauket",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "Live Music Night",
-   "when": "Sat, Oct. 25 · 6:30 PM",
-   "desc": "Live music on the back patio with good food and craft drink options.",
-   "expires": "2026-10-25",
-   "posted": "2026-10-23T14:28:52+0000",
-   "url": "https://www.instagram.com/p/De1xSHCx8K7/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
-   "inset": "ig/p18481707613112188.jpg"
-  },
-  {
    "id": "18113599847613065",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -194,25 +178,25 @@
    "url": "https://www.instagram.com/reel/De7xn2HAqC2/",
    "img": "",
    "inset": "ig/p18113970185127450.jpg"
+  },
+  {
+   "id": "18076822349777571",
+   "biz": "Luca Restaurant",
+   "ig": "lucastonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Beet & Potato Mezzaluna Special",
+   "when": "This weekend",
+   "desc": "Homemade pasta with poppy seeds and lemon butter sauce available this weekend at Luca.",
+   "expires": "2026-10-26",
+   "posted": "2026-10-23T20:50:26+0000",
+   "url": "https://www.instagram.com/p/De2dLF2n0rL/",
+   "img": "",
+   "inset": "ig/p18076822349777571.jpg"
   }
  ],
  "all": [
-  {
-   "id": "18481707613112188",
-   "biz": "The Country Corner",
-   "ig": "countrycornerlongisland",
-   "town": "East Setauket",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "Live Music Night",
-   "when": "Sat, Oct. 25 · 6:30 PM",
-   "desc": "Live music on the back patio with good food and craft drink options.",
-   "expires": "2026-10-25",
-   "posted": "2026-10-23T14:28:52+0000",
-   "url": "https://www.instagram.com/p/De1xSHCx8K7/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
-   "inset": "ig/p18481707613112188.jpg"
-  },
   {
    "id": "18113599847613065",
    "biz": "Tommy's Place",
@@ -262,20 +246,20 @@
    "inset": "ig/p18130326799700088.jpg"
   },
   {
-   "id": "18637687174058338",
+   "id": "18074576285727806",
    "biz": "Schnitzels",
    "ig": "eatschnitzels",
    "town": "Stony Brook",
    "category": "Restaurant/Gastropub",
    "member": false,
-   "title": "Final Oktoberfest Celebration",
-   "when": "Sat, Oct. 25 · 4 PM+",
-   "desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
-   "expires": "2026-10-25",
-   "posted": "2026-10-23T19:30:57+0000",
-   "url": "https://www.instagram.com/p/De2UE85FNNz/",
+   "title": "The Dip Schnitz Limited Menu Item",
+   "when": "Limited time",
+   "desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
+   "expires": "2026-11-21",
+   "posted": "2026-10-21T21:25:57+0000",
+   "url": "https://www.instagram.com/p/DexXoFJhJhr/",
    "img": "",
-   "inset": "ig/p18637687174058338.jpg"
+   "inset": "ig/p18074576285727806.jpg"
   },
   {
    "id": "18110514965522268",

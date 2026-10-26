@@ -1,22 +1,5 @@
 {
-"countrycornerlongisland": [
-{
-"id": "18481707613112188",
-"biz": "The Country Corner",
-"ig": "countrycornerlongisland",
-"town": "East Setauket",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Live Music Night",
-"when": "Sat, Oct. 25 · 6:30 PM",
-"desc": "Live music on the back patio with good food and craft drink options.",
-"expires": "2026-10-25",
-"posted": "2026-10-23T14:28:52+0000",
-"url": "https://www.instagram.com/p/De1xSHCx8K7/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
-"inset": "ig/p18481707613112188.jpg"
-}
-],
+"countrycornerlongisland": [],
 "madiranthewinebar_eastsetauket": [],
 "tommysplaceportjeff_": [
 {
@@ -142,22 +125,6 @@
 "url": "https://www.instagram.com/reel/De444rJEg01/",
 "img": "",
 "inset": "ig/p18130326799700088.jpg"
-},
-{
-"id": "18637687174058338",
-"biz": "Schnitzels",
-"ig": "eatschnitzels",
-"town": "Stony Brook",
-"category": "Restaurant/Gastropub",
-"member": false,
-"title": "Final Oktoberfest Celebration",
-"when": "Sat, Oct. 25 · 4 PM+",
-"desc": "Stein holding competition, giveaways, prizes, and all-day happy hour pricing in lederhosen or dirndl.",
-"expires": "2026-10-25",
-"posted": "2026-10-23T19:30:57+0000",
-"url": "https://www.instagram.com/p/De2UE85FNNz/",
-"img": "",
-"inset": "ig/p18637687174058338.jpg"
 },
 {
 "id": "18074576285727806",
