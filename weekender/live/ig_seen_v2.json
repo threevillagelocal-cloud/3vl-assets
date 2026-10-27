@@ -7,14 +7,6 @@
 "special": false,
 "_ts": "2026-09-27T20:35:53+0000"
 },
-"18384195190230837": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-26T19:23:40+0000"
-},
 "18356691676221898": {
 "special": false,
 "title": "",
@@ -51,38 +43,6 @@
 "special": false,
 "_ts": "2026-09-27T13:56:28+0000"
 },
-"17909534859497556": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-27T11:00:19+0000"
-},
-"18089809664481834": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-27T10:58:47+0000"
-},
-"18114941264281210": {
-"special": false,
-"_ts": "2026-09-27T10:54:59+0000"
-},
-"18122654512901730": {
-"special": false,
-"_ts": "2026-09-27T10:53:03+0000"
-},
-"18030754649677549": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-27T10:52:06+0000"
-},
 "18142817821608252": {
 "special": false,
 "title": "",
@@ -106,14 +66,6 @@
 "desc": "Gluten-free vegetarian and vegan dishes, wheatgrass shots, and matcha green tea chai available daily.",
 "expires": "2026-09-27",
 "_ts": "2026-09-27T14:35:10+0000"
-},
-"18117531670758688": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-27T04:47:28+0000"
 },
 "18196249777380879": {
 "special": false,
@@ -3386,5 +3338,37 @@
 "desc": "Happy hour 3-8 PM with food specials including buffalo shrimp wrap, wings, burgers and sandwiches.",
 "expires": "2026-10-26",
 "_ts": "2026-10-26T15:31:13+0000"
+},
+"18122486387286158": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-27T11:00:08+0000"
+},
+"18450495184121658": {
+"special": true,
+"title": "Halloween Week at Robinson's Tea Room",
+"when": "Tue-Sun, Oct 27-Nov 2 · 11am-4pm",
+"desc": "Warm scones, seasonal menu items and cozy festivities. Wear your costume!",
+"expires": "2026-11-02",
+"_ts": "2026-10-27T02:09:23+0000"
+},
+"18251285179309574": {
+"special": false,
+"title": "Lobster Grilled Cheese & Steak Sandwich",
+"when": "Ongoing",
+"desc": "Menu items featuring Lobster Grilled Cheese or Steak Sandwich with seasonal toppings.",
+"expires": "2026-11-10",
+"_ts": "2026-10-26T21:02:19+0000"
+},
+"18132884848691963": {
+"special": true,
+"title": "Pumpkin Season at Kilwins",
+"when": "Now through fall",
+"desc": "Try three new pumpkin treats: Pumpkin Pie Ice Cream, new Pumpkin Shake, and new Pumpkin Spice Fudge made with real pumpkin.",
+"expires": "2026-11-30",
+"_ts": "2026-10-26T22:20:26+0000"
 }
 }
