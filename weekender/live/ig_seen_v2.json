@@ -1,27 +1,7 @@
 {
-"18050928416813278": {
-"special": false,
-"_ts": "2026-09-27T15:13:15+0000"
-},
 "18018245321941798": {
 "special": false,
 "_ts": "2026-09-27T20:35:53+0000"
-},
-"18109489916464133": {
-"special": true,
-"title": "Mega Mozzarella Sticks Launch",
-"when": "Starting Monday, Sept. 30",
-"desc": "Try new Mega Mozzarella Sticks and see how long of a cheese pull you can get.",
-"expires": "2026-10-13",
-"_ts": "2026-09-27T16:28:07+0000"
-},
-"18083652770322505": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-27T15:34:37+0000"
 },
 "17905419498565815": {
 "special": false,
@@ -3358,5 +3338,61 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-27T12:24:53+0000"
+},
+"18124498483930308": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-27T18:47:18+0000"
+},
+"18109810757580122": {
+"special": true,
+"title": "Kids Eat Free Every Tuesday",
+"when": "Every Tuesday · 4 PM – 9 PM",
+"desc": "Kids eat free every Tuesday at Burgerology. Bring the family and enjoy your favorites.",
+"expires": "2026-11-10",
+"_ts": "2026-10-27T15:51:35+0000"
+},
+"18131414563772393": {
+"special": false,
+"title": "Trivia Wednesdays at The Study by Toast",
+"when": "Starting November 4th",
+"desc": "Trivia nights for teams of 2-4 with prizes on select Wednesdays.",
+"expires": "2026-12-09",
+"_ts": "2026-10-27T18:08:55+0000"
+},
+"17993881305055874": {
+"special": true,
+"title": "Annual Halloween Costume Party",
+"when": "Fri, Oct. 30 · 7 PM-12 AM",
+"desc": "Costume-wearers get happy hour prices all night. Food truck, music, and gift card prizes for top costumes.",
+"expires": "2026-10-30",
+"_ts": "2026-10-27T18:19:35+0000"
+},
+"18136544692735930": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-27T15:33:28+0000"
+},
+"18029105507881344": {
+"special": false,
+"title": "Ladies' Lounge Night at Castaways",
+"when": "Date not specified",
+"desc": "Group package for 6-12 people: $50 per person includes 2 drinks, lite bites, 2-hour lounge reservation.",
+"expires": "2026-10-27",
+"_ts": "2026-10-27T19:01:27+0000"
+},
+"17919832398458084": {
+"special": false,
+"title": "Holiday Party Booking Discount",
+"when": "Book before Thanksgiving",
+"desc": "15% off holiday parties booked before Thanksgiving. Call to mention promo.",
+"expires": "2026-11-26",
+"_ts": "2026-10-27T15:01:15+0000"
 }
 }
