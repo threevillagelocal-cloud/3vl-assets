@@ -7,22 +7,6 @@
 "special": false,
 "_ts": "2026-09-27T20:35:53+0000"
 },
-"18356691676221898": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-27T14:17:27+0000"
-},
-"17906671416487684": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-27T14:12:22+0000"
-},
 "18109489916464133": {
 "special": true,
 "title": "Mega Mozzarella Sticks Launch",
@@ -39,18 +23,6 @@
 "expires": "",
 "_ts": "2026-09-27T15:34:37+0000"
 },
-"18169359694462213": {
-"special": false,
-"_ts": "2026-09-27T13:56:28+0000"
-},
-"18142817821608252": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-27T13:02:08+0000"
-},
 "17905419498565815": {
 "special": false,
 "title": "",
@@ -59,25 +31,9 @@
 "expires": "",
 "_ts": "2026-09-27T19:00:45+0000"
 },
-"18338400298258270": {
-"special": false,
-"title": "Tiger Lily Cafe",
-"when": "Ongoing",
-"desc": "Gluten-free vegetarian and vegan dishes, wheatgrass shots, and matcha green tea chai available daily.",
-"expires": "2026-09-27",
-"_ts": "2026-09-27T14:35:10+0000"
-},
 "18196249777380879": {
 "special": false,
 "_ts": "2026-09-27T19:18:10+0000"
-},
-"18126990563500773": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-27T13:13:01+0000"
 },
 "17987123550100225": {
 "special": false,
@@ -3370,5 +3326,37 @@
 "desc": "Try three new pumpkin treats: Pumpkin Pie Ice Cream, new Pumpkin Shake, and new Pumpkin Spice Fudge made with real pumpkin.",
 "expires": "2026-11-30",
 "_ts": "2026-10-26T22:20:26+0000"
+},
+"18107379836204725": {
+"special": false,
+"title": "Book Review: The Painted Veil",
+"when": null,
+"desc": "Staff book review sharing thoughts on Maugham's 'The Painted Veil' and fringe classics.",
+"expires": null,
+"_ts": "2026-10-27T14:10:12+0000"
+},
+"18024722138929112": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-27T14:47:50+0000"
+},
+"18137012656571129": {
+"special": false,
+"title": "Private Heated Igloo Dining",
+"when": "Nov 15 – Mar 31, 2027",
+"desc": "Reserve a private heated igloo for up to 6 guests with $150 food & beverage minimum.",
+"expires": "2027-03-31",
+"_ts": "2026-10-27T13:14:44+0000"
+},
+"18193676245402846": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-27T12:24:53+0000"
 }
 }

@@ -167,24 +167,7 @@
 ],
 "ep_restaurant": [],
 "tajcrownofindia": [],
-"rctaqueria": [
-{
-"id": "18504007429100687",
-"biz": "Right Coast Taqueria",
-"ig": "rctaqueria",
-"town": "East Setauket",
-"category": "Restaurant",
-"member": false,
-"title": "Taco Tuesday Specials",
-"when": "Every Tuesday",
-"desc": "3 specialty tacos for $12 or 3 tacos for $10 on Tuesdays.",
-"expires": "2026-10-27",
-"posted": "2026-10-20T12:23:26+0000",
-"url": "https://www.instagram.com/p/Det0xLPFpkQ/",
-"img": "",
-"inset": "ig/p18504007429100687.jpg"
-}
-],
+"rctaqueria": [],
 "thestudy.bytoast": [
 {
 "id": "17909824674564464",
