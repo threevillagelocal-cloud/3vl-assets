@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-27T12:02:23.936494+00:00",
+"updated": "2026-10-27T12:03:50.200751+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1448,7 +1448,7 @@
 "url": "https://www.instagram.com/reel/De-Vz_0lcZK/",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/kilwins_port_jeff.jpg",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18132884848691963.jpg",
-"page": "https://www.threevillagelocal.com/kilwins-port-jefferson",
+"page": "https://www.threevillagelocal.com/eat-drink/kilwins-port-jefferson-pumpkin-season",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson"
 },
@@ -1593,7 +1593,7 @@
 "url": "https://www.instagram.com/reel/De-Vz_0lcZK/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18132884848691963.jpg",
-"page": "https://www.threevillagelocal.com/kilwins-port-jefferson",
+"page": "https://www.threevillagelocal.com/eat-drink/kilwins-port-jefferson-pumpkin-season",
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson",
 "label": "Special"
 },
@@ -1764,7 +1764,7 @@
 "url": "https://www.instagram.com/p/De-wDyQoGWz/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18450495184121658.jpg",
-"page": "https://www.threevillagelocal.com/robinsons-tea-room",
+"page": "https://www.threevillagelocal.com/eat-drink/robinsons-tea-room-halloween",
 "profile": "https://www.threevillagelocal.com/robinsons-tea-room",
 "label": "Special"
 },
