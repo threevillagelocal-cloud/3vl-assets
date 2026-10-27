@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-27T15:03:43.575626+00:00",
+"updated": "2026-10-27T17:01:02.636970+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 206,
-"Emma S. Clark Library": 318,
+"Emma S. Clark Library": 317,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
@@ -301,23 +301,6 @@
 "pick": true,
 "page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
 "rank": 4
-},
-{
-"id": "emmaclark-aarp-defensive-driving-course-38139",
-"title": "AARP Defensive Driving Course",
-"start": "2026-10-27T10:00:00",
-"end": "2026-10-27T13:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/aarp-defensive-driving-course-38139",
-"desc": "This 6-hour course for those age 50 and up qualifies licensed drivers to receive a reduction of up to four points on their driver’s license or a 10% deduction on collision and liability auto insurance rates for a period of three years. Some insurance companies",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-05/AARP_logo_screen_0.PNG",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "lim-3225806",
@@ -784,7 +767,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/long-island-restaurant-week"
 },
 {
 "id": "pjchamber-15082",
