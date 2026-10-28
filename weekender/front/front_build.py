@@ -452,7 +452,7 @@ def cta(base):
     return ('<section class="wk-sec wk-cta y-cta" aria-label="Get involved">'
             '<div class="y-cc"><p class="y-cct">Submit an event, business special or promotion</p>'
             '<p class="y-ccd">Three Village Local is updated every day and seen by thousands of neighbors. Send us your event, special or promotion.</p>'
-            '<a class="y-btn" href="{S}/promotion">Submit it {CH}</a><p class="y-ccs">Own a local business? <a href="{S}/join">Join here</a></p></div>'
+            '<a class="y-btn" href="{S}/submit-event">Submit it {CH}</a><p class="y-ccs">Own a local business? <a href="{S}/join">Join here</a></p></div>'
             '<div class="y-cc"><p class="y-cct">Send this to your crew</p><p class="y-ccd">Share the page with friends and family, or share the plans you saved.</p>'
             '<div class="y-ccb"><button type="button" class="y-btn o" id="wk-share">{SH}Share Three Village Local</button><button type="button" class="y-btn o" id="wk-share2">{ST}Share my plan</button></div></div>'
             '<div class="y-cc y-app"><p class="y-cct">Get Three Village Local on your phone</p>'
