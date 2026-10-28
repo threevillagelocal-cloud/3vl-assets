@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-28T21:00:56.616888+00:00",
+"updated": "2026-10-28T22:29:42.739706+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 206,
-"Emma S. Clark Library": 315,
+"Village of Port Jefferson": 205,
+"Emma S. Clark Library": 314,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -405,25 +405,6 @@
 "pick": true,
 "page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
 "rank": 4
-},
-{
-"id": "emmaclark-knit-cause-59651",
-"title": "Knit for a Cause",
-"start": "2026-10-28T17:00:00",
-"end": "2026-10-28T18:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/knit-cause-59651",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/knit-for-a-cause-426"
 },
 {
 "id": "emmaclark-useful-technology-caregivers-58167",
