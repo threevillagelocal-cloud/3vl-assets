@@ -1,3 +1,38 @@
+/* search data: BD's LocalBusiness JSON-LD on every profile is generic. Corrected in place (same node, so no second entity):
+   a specific schema.org type from the profile's own category + specialties, telephone as +1-631-555-1234, and opening hours
+   when the profile carries structured hours (itemprop=openingHours "Mo 09:00-17:00"). Nothing is added that the page does not say. */
+(function(){try{if(!document.querySelector('.member_profile'))return;
+  var SUB=[[/^(dentists?|orthodontists|prosthodontists|oral surgeons)$/i,'Dentist'],[/^optometrists$/i,'Optician'],[/^veterinarians|^emergency vet/i,'VeterinaryCare'],
+    [/^pediatricians$|^family practice$|^orthopedists$/i,'Physician'],[/^bakery$/i,'Bakery'],[/^ice cream$/i,'IceCreamShop'],[/^(cafe|coffee shop|coffee & tea|tea rooms)$/i,'CafeOrCoffeeShop'],
+    [/^(bars|sports bars|piano bars|lounges)$/i,'BarOrPub'],[/^wineries$/i,'Winery'],[/^plumbing$/i,'Plumber'],[/^electricians$/i,'Electrician'],[/hvac/i,'HVACBusiness'],
+    [/^roofing$/i,'RoofingContractor'],[/^locksmith$/i,'Locksmith'],[/^painters$/i,'HousePainter'],[/^general contractor$/i,'GeneralContractor'],
+    [/^hair salons/i,'HairSalon'],[/^spas/i,'DaySpa'],[/^(gymnasiums|fitness center)/i,'ExerciseGym'],[/^auto body/i,'AutoBodyShop'],[/^car wash$/i,'AutoWash'],
+    [/^auto (repair|inspection|oil|glass repair)|^transmission|^oil change/i,'AutoRepair'],[/^gas stations$/i,'GasStation'],[/^accounting|^tax (services|preparation)/i,'AccountingService'],
+    [/^insurance agents$/i,'InsuranceAgency'],[/^preschool/i,'ChildCare'],[/^libraries/i,'Library'],[/^art galleries$/i,'ArtGallery'],[/^florists$/i,'Florist'],
+    [/^jewelry$/i,'JewelryStore'],[/^books$/i,'BookStore'],[/^liquor/i,'LiquorStore'],[/^furniture/i,'FurnitureStore'],[/^bicycles$/i,'BikeStore'],[/^pet supplies$/i,'PetStore'],
+    [/^travel services$/i,'TravelAgency'],[/^movers$/i,'MovingCompany']];
+  var CAT={'restaurant':'Restaurant','nightlife':'BarOrPub','real estate services':'RealEstateAgent','shopping - retail':'Store','doctors & medical services':'MedicalBusiness',
+    'sports & fitness':'SportsActivityLocation','fitness center':'ExerciseGym','plumbing, electric & repairs':'HomeAndConstructionBusiness','contractors & remodeling':'HomeAndConstructionBusiness',
+    'landscaping & property maintenance':'HomeAndConstructionBusiness','restoration (flood, fire & mold)':'HomeAndConstructionBusiness','cleaning & organizing':'ProfessionalService',
+    'beauty & personal care':'HealthAndBeautyBusiness','health & wellness':'HealthAndBeautyBusiness','attorney':'LegalService','automotive':'AutomotiveBusiness',
+    'wealth management & financial planning':'FinancialService','accounting & tax':'AccountingService','mortgages & home loans':'FinancialService','business lending':'FinancialService',
+    'insurance':'InsuranceAgency','arts & entertainment':'EntertainmentBusiness','events & entertainment':'EntertainmentBusiness','professional services':'ProfessionalService',
+    'technology & it':'ProfessionalService','marketing & advertising':'ProfessionalService','commercial services':'ProfessionalService','payroll/human resources':'ProfessionalService'};
+  var DAY={Mo:'Monday',Tu:'Tuesday',We:'Wednesday',Th:'Thursday',Fr:'Friday',Sa:'Saturday',Su:'Sunday'},DK=['Mo','Tu','We','Th','Fr','Sa','Su'];
+  function tel(t){var d=String(t||'').replace(/[^0-9]/g,'');if(d.length===11&&d.charAt(0)==='1')d=d.slice(1);return d.length===10?'+1-'+d.slice(0,3)+'-'+d.slice(3,6)+'-'+d.slice(6):''}
+  function hours(){var out=[],seen={};[].forEach.call(document.querySelectorAll('.member_profile [itemprop="openingHours"][content]'),function(el){
+      var m=/^([A-Z][a-z])(?:-([A-Z][a-z]))? ([0-9]{2}:[0-9]{2})-([0-9]{2}:[0-9]{2})$/.exec(el.getAttribute('content').trim());if(!m||DK.indexOf(m[1])<0)return;
+      var a=DK.indexOf(m[1]),b=m[2]?DK.indexOf(m[2]):a;if(b<a)return;for(var i=a;i<=b;i++){var k=DK[i]+m[3]+m[4];if(seen[k])continue;seen[k]=1;
+        out.push({'@type':'OpeningHoursSpecification',dayOfWeek:'https://schema.org/'+DAY[DK[i]],opens:m[3],closes:m[4]})}});return out}
+  var crumbs=document.querySelectorAll('.breadcrumb [itemprop="itemListElement"] [itemprop="name"]'),cat=crumbs.length?crumbs[crumbs.length-1].textContent.trim().toLowerCase():'';
+  [].forEach.call(document.querySelectorAll('script[type="application/ld+json"]'),function(s){var d;try{d=JSON.parse(s.textContent)}catch(e){return}
+    var g=d&&d['@graph'];if(!g||!g.length)return;var hit=false;
+    g.forEach(function(n){if(n['@type']!=='LocalBusiness'||!/#entity$/.test(n['@id']||''))return;hit=true;
+      var subs=[].concat(n.knowsAbout||[]),t='';for(var i=0;i<SUB.length&&!t;i++)for(var j=0;j<subs.length;j++)if(SUB[i][0].test(String(subs[j]).trim())){t=SUB[i][1];break}
+      t=t||CAT[cat]||'';if(t)n['@type']=t;
+      var p=tel(n.telephone);if(p)n.telephone=p;else delete n.telephone;/* 'N/A', or digits run together with an extension */
+      var h=hours();if(h.length&&!n.openingHoursSpecification)n.openingHoursSpecification=h});
+    if(hit)s.textContent=JSON.stringify(d)})}catch(e){}})();
 /* premium profile v2: live for ids in ON, ?v=2 previews any member with a data file, ?v=1 shows the old layout */
 (function(){try{if(!document.querySelector('.member_profile'))return;
   /* members on the new premium layout (add a user id when their profile goes live) */

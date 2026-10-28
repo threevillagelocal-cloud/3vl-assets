@@ -322,7 +322,7 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
         w('<div class="wk-dayblk" data-day="%s"><p class="wk-dayh"><b>%s</b><span>%s</span></p><ol class="wk-tl">' % (
             k, DAYNAME[k], datetime.fromisoformat(d["days"][k]).strftime("%B %-d") if os.name != "nt" else datetime.fromisoformat(d["days"][k]).strftime("%B %#d")))
         for e in sorted([e for e in d["events"] if day_of(e["start"]) == k], key=lambda x: x["start"]):
-            thumb = ('<img src="%s" alt="" loading="lazy" width="120" height="120">' % img(e["img"], True)) if e.get("img") else (
+            thumb = ('<img src="%s" alt="%s" loading="lazy" width="120" height="120">' % (img(e["img"], True), esc(e["title"]))) if e.get("img") else (
                 '<span class="wk-ticon">%s</span>' % ICON[[t for t in ("history", "music", "stage", "food", "kids", "arts", "outdoor", "free") if t in e["tags"]][0]])
             w('<li class="wk-ev wk-rv" %s><div class="wk-evt"><b>%s</b><span>%s</span></div><div class="wk-evc"><div class="wk-evthumb">%s</div><div class="wk-evbody">'
               '<p class="wk-evtitle">%s <span class="wk-pstat" data-status></span></p><p class="wk-evwhere">%s &middot; %s</p><p class="wk-evdesc" tabindex="0">%s</p>'

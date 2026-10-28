@@ -5,6 +5,7 @@
 Same markup/classes as site/p3/nowhome.js, so the page looks identical; the JS only rotates the VIP order daily and refreshes stories.
 Rendered into the HTML so Google and AI crawlers (which often don't run JS) can see the business + story links."""
 import datetime, html, json, os, re, subprocess, urllib.parse, urllib.request
+import evschema as ES  # shared Event schema helpers (Place/PostalAddress, organizer, offers, status)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://www.threevillagelocal.com"
@@ -157,15 +158,15 @@ def event_schema(d, img):
               "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
               "eventStatus": "https://schema.org/EventScheduled",
               "location": {"@type": "Place", "name": v.get("name") or e.get("venue", ""),
-                           "address": {"@type": "PostalAddress", "streetAddress": (v.get("addr") or "").split(",")[0].strip(),
-                                       "addressLocality": (v.get("addr") or ",").split(",")[-1].strip() or "Setauket", "addressRegion": "NY", "addressCountry": "US"}}}
+                           "address": ES.postal_address(v.get("addr") or "", "", v.get("name") or e.get("venue", "")) or
+                                      {"@type": "PostalAddress", "addressLocality": "Setauket", "addressRegion": "NY", "postalCode": "11733", "addressCountry": "US"}}}
         if e.get("end") and not ongoing:
             ev["endDate"] = _iso(e["end"][:16])
         if ongoing and e.get("until"):
             ev["endDate"] = _iso(e["until"][:16] if "T" in e["until"] else e["until"] + "T23:59")
         if e.get("img"):
             ev["image"] = [img(e["img"])]
-        if not desc:
+        if not ev.get("description"):
             ev.pop("description")
         page = e.get("page") or ""   # our own /events page when there is one (same rule as the cards), else the organizer
         if page.startswith("/"):
@@ -176,7 +177,7 @@ def event_schema(d, img):
             ev["url"] = e["url"]
         if "free" in (e.get("tags") or []) or str(e.get("price", "")).lower() == "free":
             ev["isAccessibleForFree"] = True
-            ev["offers"] = {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": e.get("url", SITE + "/")}
+            ev["offers"] = {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": ev.get("url") or e.get("url", SITE + "/")}
         if v.get("ll"):
             ev["location"]["geo"] = {"@type": "GeoCoordinates", "latitude": v["ll"][0], "longitude": v["ll"][1]}
         items.append(ev)
@@ -220,30 +221,32 @@ def event_schema_live(live, days=14, cap=40):
             s = datetime.datetime.fromisoformat(e["start"][:19]); en = datetime.datetime.fromisoformat((e.get("end") or e["start"])[:19])
         except Exception:
             continue
-        if e.get("status") or en < now or s > horizon or not e.get("title"):
+        if en < now or s > horizon or not e.get("title"):   # past events dropped; cancelled ones stay, marked EventCancelled
             continue
-        addr = (e.get("addr") or "").split(",")
         desc = re.split(r"\s(?:var|function|window\.|document\.|jQuery|\$\()", e.get("desc") or "")[0]   # feeds leak page script into the text
         desc = re.sub(r"\s*(\.\.\.|…)\s*$", "", desc).strip()
+        page = e.get("page") or ""   # our own /events page when there is one (same rule as the cards), else the organizer
+        if page.startswith("/"):
+            page = SITE + page
+        url = page if (page and "threevillagelocal.com" in page and "events-calendar" not in page) else (e.get("url") or "")
+        loc, mode = ES.location(e.get("venue"), e.get("addr"), url=e.get("url") or url)
+        if not loc:
+            continue
         ev = {"@type": "Event", "name": e["title"], "description": desc[:300],
               "startDate": _iso(s.strftime("%Y-%m-%dT%H:%M")), "endDate": _iso(en.strftime("%Y-%m-%dT%H:%M")),
-              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled",
-              "location": {"@type": "Place", "name": e.get("venue") or "Three Village area",
-                           "address": {"@type": "PostalAddress", "streetAddress": addr[0].strip() if len(addr) > 1 else "",
-                                       "addressLocality": addr[1].strip() if len(addr) > 1 else (e.get("venue") or "Setauket"), "addressRegion": "NY", "addressCountry": "US"}}}
+              "eventAttendanceMode": mode, "eventStatus": ES.status(e.get("status")), "location": loc}
         if e.get("img"):
             ev["image"] = [e["img"]]
         if not desc:
             ev.pop("description")
-        page = e.get("page") or ""   # our own /events page when there is one (same rule as the cards), else the organizer
-        if page.startswith("/"):
-            page = SITE + page
-        if page and "threevillagelocal.com" in page and "events-calendar" not in page:
-            ev["url"] = page
-        elif e.get("url"):
-            ev["url"] = e["url"]
-        if "free" in (e.get("tags") or []):
+        if url:
+            ev["url"] = url
+        org = ES.organizer_for_src(e.get("src"))
+        if org:
+            ev["organizer"] = org
+        if ES.is_free(e):
             ev["isAccessibleForFree"] = True
+            ev["offers"] = ES.offers(free=True, url=url)
         items.append((s, ev))
     items.sort(key=lambda x: x[0])
     items = [ev for _, ev in items[:cap]]
