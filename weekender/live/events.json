@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-28T13:00:43.983614+00:00",
+"updated": "2026-10-28T14:12:36.945324+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -10,7 +10,15 @@
 "Stony Brook Village Center": 14,
 "Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
-"LI Music Hall of Fame": 7
+"LI Music Hall of Fame": 7,
+"Staller Center for the Arts": 138,
+"Theatre Three": 55,
+"Gallery North": 17,
+"Reboli Center": 21,
+"Sweetbriar Nature Center": 18,
+"Historical Society of Greater Port Jefferson": 1,
+"Stony Brook Athletics (home games)": 57,
+"Local business Instagram posts": 0
 },
 "icons": {
 "kids": "&#129490;",
@@ -23,6 +31,84 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
+{
+"id": "reboli-69e681251151e469d480d5b3",
+"title": "WORKS ON PAPER Exhibition",
+"start": "2026-08-25T11:00:00",
+"end": "2026-11-01T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2026/8/25/works-on-paper-an-illustration-exhibition",
+"desc": "Various mediums on paper. Endless expression. Works on Paper brings together Joseph Reboli and a hand-picked group of New York based artists in a celebration of paper as both an artistic surface and a cultural innovation. Explore the history of paper, discover",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1776714240564-9TLCP0GP6IJAFZLHAOTG/Art+Exhibit+Announcement+Poster+%286+x+4+in%29+%28Postcard+%28US%29%29.png",
+"src": "reboli",
+"tags": [
+"free",
+"history",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "reboli-6a07a610144905528a06d40b",
+"title": "Emerging Artist Spotlight: September & October | Kathleen Hartonchik",
+"start": "2026-09-01T11:00:00",
+"end": "2026-10-31T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/eashartonchik",
+"desc": "Originally from Rhode Island, Kathleen Hartonchik is a 23-year-old Long Island-based artist who specializes in many mediums, including painting, ceramics, photography, and drawing. Through her work, she aims to capture every fraction of a scene because she bel",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1778886381266-OYTUCGMJJRGD7FG15T1F/FB_IMG_1777487417888.jpg",
+"src": "reboli",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "reboli-695ad1cbc2e9370261a8c6ec",
+"title": "Thanksgiving Food Drive",
+"start": "2026-10-01T11:00:00",
+"end": "2026-11-20T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2026fooddrive",
+"desc": "We are eager to support local families in need. Help us ensure that every family in our community can enjoy a warm and nourishing Thanksgiving season. We invite you to donate non-perishable, non-expired food items to our collection basket, located in the foyer",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1767559709522-DT3IVFLXKD3RDHCDMG0Z/Pastel+Food+Drive+A4+Flyer-2.png",
+"src": "reboli",
+"tags": [
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive"
+},
+{
+"id": "reboli-6accf515efdc4f5ddb7123c3",
+"title": "October's Feature Artisan of the Month | Andrea Ingrassia",
+"start": "2026-10-01T11:00:00",
+"end": "2026-10-31T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2026/10/1/octobers-feature-artisan-of-the-month-andrea-ingrassia",
+"desc": "The Reboli Center is thrilled to feature dedicated volunteer Andrea Ingrassia as our Feature Artisan of the Month for October 2026. A resident of Mt. Sinai since 1984, Andrea brings a rich artistic background to the Center, including a degree in Advertising Ar",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1791817066322-QP1R4H7LD1K4C4YA2ZVD/Screenshot+2026-10-12+at+10.57.19+AM.png",
+"src": "reboli",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
 {
 "id": "pjchamber-14726",
 "title": "2026 Port Jefferson Scarecrow Walk",
@@ -41,6 +127,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
+},
+{
+"id": "gallerynorth-71344",
+"title": "Exhibition: Instincts",
+"start": "2026-10-08T00:00:00",
+"end": "2026-11-15T00:00:00",
+"allday": true,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org/collections/instincts-schery-markee-sullivan-gina-mars-and-jo-wadler",
+"desc": "Instincts brings together painter and mixed media artist, Schery Markee-Sullivan; sculptor and wearable artist, Jo Wadler; and ceramicist and sculptor, Gina Mars for their first exhibition together at Gallery North. The creative process of each artist is drive",
+"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71344/v1792695873793/image_large.webp",
+"src": "gallerynorth",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "pjchamber-14181",
@@ -390,6 +495,25 @@
 "page": "https://www.threevillagelocal.com/events/introduction-to-microsoft-word-429"
 },
 {
+"id": "staller-92aca5f0-169e-4203-ad6b-013d08671369",
+"title": "Jennifer Frautschi & Christina Dahl in Concert",
+"start": "2026-10-28T19:00:00",
+"end": "2026-10-28T19:00:00",
+"allday": false,
+"venue": "Staller Center for the Arts, Recital Hall",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stallercenter.showare.com/eventperformances.asp?evt=468",
+"desc": "Acclaimed Stony Brook Music faculty members, Jennifer Frautschi, violin, and Christina Dahl, piano, reunite for a program of rarities: three early-twentieth-century voices, from Respighi’s lush lyricism and Elgar’s nostalgic warmth to the virtuosity and intens",
+"img": "https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/73c8cab3-dfd5-4ae4-bf5d-d236ced82b3f/Elfsight_DAHL.png",
+"src": "staller",
+"tags": [
+"music"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
 "id": "sbv-2344",
 "title": "Hidden Beneath the Floorboards Walking Tour",
 "start": "2026-10-29T00:00:00",
@@ -510,7 +634,7 @@
 "venue": "The Long Island Museum",
 "addr": "1200 Route 25A, Stony Brook, NY 11790",
 "url": "https://longislandmuseum.org/event/leaf-mobile/",
-"desc": "Get creative at the Museum’s Studio with this fun fall workshop! Craft a beautiful painted leaf mobile. Perfect for ages 7 and up, this fall nature-inspired art project results in a stunning, personalized room decoration that dances gently in the autumn breeze",
+"desc": "CANCELED Get creative at the Museum’s Studio with this fun fall workshop! Craft a beautiful painted leaf mobile. Perfect for ages 7 and up, this fall nature-inspired art project results in a stunning, personalized room decoration that dances gently in the autu",
 "img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Painted-Leaves.jpg",
 "src": "lim",
 "tags": [
@@ -521,6 +645,23 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/fall-into-art-make-a-painted-leaf-mobile-workshop"
+},
+{
+"id": "seawolves-vcal-12775-stonybrookathletics-com",
+"title": "Stony Brook Seawolves Women's Basketball vs Queens College (Exh.)",
+"start": "2026-10-29T18:31:00",
+"end": "2026-10-29T20:31:00",
+"allday": false,
+"venue": "Stony Brook Arena, Stony Brook University",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12775&sport_id=12",
+"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
+"img": "",
+"src": "seawolves",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "wmho-1811",
@@ -617,6 +758,102 @@
 "page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free-441"
 },
 {
+"id": "seawolves-vcal-12663-stonybrookathletics-com",
+"title": "Stony Brook Seawolves Women's Volleyball vs UNCW - Dig Pink Game",
+"start": "2026-10-30T17:30:00",
+"end": "2026-10-30T19:30:00",
+"allday": false,
+"venue": "Pritchard Gymnasium, Stony Brook University",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12663&sport_id=17",
+"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
+"img": "",
+"src": "seawolves",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "gallerynorth-71313",
+"title": "Cabinet of Curiosities Sketch Night; Skulls, Bones & More!",
+"start": "2026-10-30T18:00:00",
+"end": "2026-10-30T20:00:00",
+"allday": false,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org/products/10-28-cabinet-of-curiosities-sketch-night-skulls-bones-more",
+"desc": "For All Ages and Abilities Join us in the studio for a curiosities sketch night! Draw inspiration from our collection of bones, insects, skulls and more! Get up close and personal with our vast collection of objects and sketch as many as you'd like. Drawing ma",
+"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71313/v1792687844741/image_large.webp",
+"src": "gallerynorth",
+"tags": [
+"kids",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "seawolves-vcal-12639-stonybrookathletics-com",
+"title": "Stony Brook Seawolves Men's Soccer vs Northeastern - Senior Day",
+"start": "2026-10-30T18:00:00",
+"end": "2026-10-30T20:00:00",
+"allday": false,
+"venue": "LaValle Stadium, Stony Brook University",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12639&sport_id=7",
+"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
+"img": "",
+"src": "seawolves",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "staller-01dafef3-fa1e-4fa9-9c26-e5769b8fb7c4",
+"title": "Disney Pixar’s Coco in Concert – Live to Film",
+"start": "2026-10-30T18:30:00",
+"end": "2026-10-30T18:30:00",
+"allday": false,
+"venue": "Staller Center for the Arts, Main Stage",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "http://stallercenter.showare.com/eventperformances.asp?evt=460",
+"desc": "Celebrate Dia de los Muertos (Day of the Dead) with a screening of the complete film with Oscar® and Grammy®-winning composer Michael Giacchino’s musical score performed by the 20-member Orquesta Folclórica Nacional de México, conducted by Esin Aydingoz.",
+"img": "https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/861c673b-2edc-4dd3-9f5b-167ab8b8a5ab/Elfsight_Coco.png",
+"src": "staller",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "theatre3-9366",
+"title": "Be Our Ghost: A Villainous Cabaret",
+"start": "2026-10-30T18:30:00",
+"end": "2026-10-30T18:30:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson, NY 11777",
+"url": "https://theatrethree.getmytix.net/tickets#937/Be-Our-Ghost-A-Villainous-Cabaret",
+"desc": "Joins us for night of songs from some of the most devious villains from film, TV, and the Stage!",
+"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_937_Ghost%20date.jpg",
+"src": "theatre3",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/be-our-ghost-at-theatre-three"
+},
+{
 "id": "sbv-2385",
 "title": "Little Cheese Halloween Charcuterie Workshop",
 "start": "2026-10-30T19:00:00",
@@ -655,6 +892,27 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/stony-brook-fire-department-5k-monster-dash-race"
+},
+{
+"id": "reboli-6aad4fa2d5560a47074f08e6",
+"title": "Trick or Treating for Littles! Happy Halloween!",
+"start": "2026-10-31T10:00:00",
+"end": "2026-10-31T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2026/10/31/trick-or-treating-for-littles-happy-halloween",
+"desc": "Join us this halloween for a kid-friendly day filled with Seasonal Kids Crafts, Spooky Music and Trick or Treating at our information desk! Click to Learn More…",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1789743085996-D8VP7FUH6E7Y5WUFKETL/White+and+Black+Illustrative+Halloween+Party+Invitation+Flyer.png",
+"src": "reboli",
+"tags": [
+"kids",
+"music",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "pjchamber-15008",
@@ -712,6 +970,42 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/36th-annual-halloween-festival-in-stony-brook-village"
+},
+{
+"id": "seawolves-vcal-12489-stonybrookathletics-com",
+"title": "Stony Brook Seawolves Football vs Sacred Heart - Halloween at LaValle - Free admission for fans 12 and under in costume",
+"start": "2026-10-31T12:00:00",
+"end": "2026-10-31T15:00:00",
+"allday": false,
+"venue": "LaValle Stadium, Stony Brook University",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12489&sport_id=3",
+"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
+"img": "",
+"src": "seawolves",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "seawolves-vcal-12664-stonybrookathletics-com",
+"title": "Stony Brook Seawolves Women's Volleyball vs UNCW",
+"start": "2026-10-31T13:00:00",
+"end": "2026-10-31T15:00:00",
+"allday": false,
+"venue": "Pritchard Gymnasium, Stony Brook University",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12664&sport_id=17",
+"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
+"img": "",
+"src": "seawolves",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "pjchamber-15119",
@@ -791,6 +1085,64 @@
 "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-481"
 },
 {
+"id": "reboli-6adf9dab4c6329721a5cedc5",
+"title": "Emerging Artist Spotlight: November | Genevieve Rochlin",
+"start": "2026-11-01T11:00:00",
+"end": "2026-11-30T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2026/11/1/emerging-artist-november-genevieve-rochlin",
+"desc": "The Reboli Center for Art and History is pleased to announce Genevieve Rochlin as our featured artist for the November 2026 Emerging Artist Spotlight, celebrating her evolving artistic voice and unique perspective on art, culture, and the human experience. Cli",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1793040692375-WE3M5JMDHDFZIX3JZ356/IMG_1813.jpeg",
+"src": "reboli",
+"tags": [
+"history",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "reboli-6accf440d369597d05b08c0e",
+"title": "November's Feature Artisan of the Month | Patricia Patten",
+"start": "2026-11-01T11:00:00",
+"end": "2026-11-30T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2026/11/1/novembers-feature-artisan-of-the-month-patricia-patten",
+"desc": "With more than 20 years of experience in pottery and a continued passion for learning, Patten has cultivated a creative practice rooted in family, faith, hard work, and the joy of sharing artistic talents with others. Patten’s studio, Silver Dollar Pottery & C",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1791817237039-YJNAGUGA8I5K52IYQCY0/IMG_8998.jpeg",
+"src": "reboli",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "sweetbriar-6ac5a4bd8b59bc4d06dd468d",
+"title": "Art Is A Hoot - Adults Sunday 11/1",
+"start": "2026-11-01T11:00:00",
+"end": "2026-11-01T12:30:00",
+"allday": false,
+"venue": "Sweetbriar Nature Center - ECSS",
+"addr": "62 Eckernkamp Drive, SMITHTOWN 11787",
+"url": "https://www.sweetbriarnc.org/new-events/2026/8/8/art-is-a-hoot-for-adults-y3836",
+"desc": "Join Andie and Jim for an exciting morning with two of our beautiful owl friends. Learn all about owls. Make art with the unique opportunity to work directly from this intimate time with our special girls.",
+"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1791338428451-U4MTSVRGRGB62DRPYYPQ/Screenshot%2B2026-10-06%2Bat%2B9.59.25%25E2%2580%25AFPM.png",
+"src": "sweetbriar",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
 "id": "emmaclark-autumn-concert-jazz-loft-trio-61286",
 "title": "Autumn Concert with the Jazz Loft Trio",
 "start": "2026-11-01T14:00:00",
@@ -850,6 +1202,23 @@
 "page": "https://www.threevillagelocal.com/events/take-make-sewn-heating-pads-for-people-in-need"
 },
 {
+"id": "seawolves-vcal-12715-stonybrookathletics-com",
+"title": "Stony Brook Seawolves Women's Basketball vs Molloy",
+"start": "2026-11-02T16:30:00",
+"end": "2026-11-02T18:30:00",
+"allday": false,
+"venue": "Stony Brook Arena, Stony Brook University",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12715&sport_id=12",
+"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
+"img": "",
+"src": "seawolves",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
 "id": "emmaclark-pokemon-club-grades-2-5-61747",
 "title": "Pokémon Club (Grades 2-5)",
 "start": "2026-11-02T17:00:00",
@@ -867,6 +1236,23 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/pok%C3%A9mon-club-grades-2-5-585"
+},
+{
+"id": "seawolves-vcal-12727-stonybrookathletics-com",
+"title": "Stony Brook Seawolves Men's Basketball vs SUNY Old Westbury",
+"start": "2026-11-02T18:31:00",
+"end": "2026-11-02T20:31:00",
+"allday": false,
+"venue": "Stony Brook Arena, Stony Brook University",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12727&sport_id=5",
+"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
+"img": "",
+"src": "seawolves",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "emmaclark-come-aboard-whale-watching-long-island-waters-61287",
@@ -903,6 +1289,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/touch-a-truck-families"
+},
+{
+"id": "reboli-695acda2780a38578fe575b6",
+"title": "Celebrate the Season | Our Annual Winter Exhibition",
+"start": "2026-11-03T11:00:00",
+"end": "2027-01-03T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2025/9/4/celebrate-the-season-our-annual-holiday-exhibition-8s9f6",
+"desc": "The Reboli Center is delighted to once again present our annual winter exhibition, Celebrate the Season , on view from November 3rd, 2026 through January 3rd, 2027. Our festive tradition and a community favorite, this year brings together the exceptional work ",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1789743445846-XM8HVKNHPDAN3GQMYBG0/IMG_3631.jpg",
+"src": "reboli",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition"
 },
 {
 "id": "emmaclark-snoopy-thanksgiving-grades-1-5-61752",
@@ -1179,6 +1584,26 @@
 "page": "https://www.threevillagelocal.com/events/the-cinematic-journey-of-jimmy-stewart-zoom"
 },
 {
+"id": "sweetbriar-6a8476a7ddd49a7465932582",
+"title": "First Steps Into Nature 2y-5y",
+"start": "2026-11-06T09:30:00",
+"end": "2026-11-06T10:30:00",
+"allday": false,
+"venue": "Sweetbriar Nature Center",
+"addr": "62 Eckernkamp Dr, Smithtown, NY 11787",
+"url": "https://www.sweetbriarnc.org/new-events/2wyhmzz39xjsct5-ah326-rf8sy-exd5d-h3ltx-a23ea-hljsh",
+"desc": "Sweetbriar’s experienced educators help open up the wonders of the natural world for children, through hands-on activities, live animals, crafts, and much more.",
+"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1697550982103-EKZXM6RQAQDHVTQWZZC8/images.jpeg.jpg",
+"src": "sweetbriar",
+"tags": [
+"kids",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
 "id": "emmaclark-time-baby-newborn-15-mos-w-caregiver-63798",
 "title": "Time For Baby (Newborn - 15 mos w/ caregiver)",
 "start": "2026-11-06T10:00:00",
@@ -1345,6 +1770,25 @@
 "page": "https://www.threevillagelocal.com/events/ai-and-self-driving-cars"
 },
 {
+"id": "gallerynorth-71315",
+"title": "Paper Quilling a Pumpkin w/Carol McMahon",
+"start": "2026-11-07T15:00:00",
+"end": "2026-11-07T17:00:00",
+"allday": false,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org/products/11-07",
+"desc": "Learn the art of paper quilling with local artist, Carol McMahon. In this workshop, participants will use a slotted tool to learn how to roll and shape paper. The shapes formed will be placed on a wooden pumpkin to create an ornament.",
+"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71315/v1792688015999/image_large.webp",
+"src": "gallerynorth",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
 "id": "lim-3225428",
 "title": "LIM’s Annual Winter Gala",
 "start": "2026-11-07T18:30:00",
@@ -1364,6 +1808,65 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/lims-annual-winter-gala"
+},
+{
+"id": "theatre3-9239",
+"title": "A Christmas Carol",
+"start": "2026-11-07T19:00:00",
+"end": "2026-11-07T19:00:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson, NY 11777",
+"url": "https://theatrethree.getmytix.net/tickets#922/A-Christmas-Carol",
+"desc": "“I will honor Christmas in my heart…” Celebrate the season with Long Island’s own holiday tradition and BroadwayWorld.com winner for Best Play. Follow the miser Ebenezer Scrooge on a journey that teaches him the meaning of Christmas - past, present, and future",
+"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_922_A%20Christmas%20Carol%201600x1000.png",
+"src": "theatre3",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol-at-theatre-three"
+},
+{
+"id": "staller-50b856a1-66c1-46e8-830d-bd351651b62c",
+"title": "Stony Brook Symphony Orchestra",
+"start": "2026-11-07T19:30:00",
+"end": "2026-11-07T19:30:00",
+"allday": false,
+"venue": "Staller Center for the Arts, Main Stage",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stallercenter.showare.com/eventperformances.asp?evt=475",
+"desc": "The Stony Brook Symphony Orchestra is composed of outstanding musicians from all over the world pursuing advanced studies in the graduate school of the Department of Music with renowned performance faculty. PROGRAM: André Raphel conducts Sibelius 5 Dvořák: Car",
+"img": "https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/becb3dc5-9d21-4d0f-9aa7-e3ff34cdbcc4/_2024PAHSBSO.jpg",
+"src": "staller",
+"tags": [
+"free",
+"music"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "sweetbriar-6adca1060470811e49a6c446",
+"title": "Comedy Fundraiser",
+"start": "2026-11-07T20:00:00",
+"end": "2026-11-07T22:00:00",
+"allday": false,
+"venue": "Sweetbriar Nature Center - ECSS",
+"addr": "62 Eckernkamp Drive, SMITHTOWN 11787",
+"url": "https://www.sweetbriarnc.org/new-events/2026/11/7/comedy-fundraiser",
+"desc": "Animal House Comedy Show Saturday 11/7 $25.00 At the Barn 8pm Add to cart #block-yui_3_17_2_1_1792843603812_36946 { --opacity: 100%; --translate-x: 0px; --translate-y: 0px; --rotation: 0deg; --scale-x: 100%; --scale-y: 100%; --skew-x: 0deg; --skew-y: 0deg; --o",
+"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1792844289621-WW2P0PQ302VB3VM92YUW/unsplash-image-z2AvphP--S0.jpg",
+"src": "sweetbriar",
+"tags": [
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": ""
 }
 ],
 "closings": [],
