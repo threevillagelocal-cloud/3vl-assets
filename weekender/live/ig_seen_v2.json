@@ -7,14 +7,6 @@
 "expires": "",
 "_ts": "2026-09-28T22:10:51+0000"
 },
-"18068492972763047": {
-"special": false,
-"title": "October Book Club: Frankenstein",
-"when": "Tue, Oct. 27 · 6 PM",
-"desc": "Discuss Frankenstein by Mary Shelley. $30 includes wine, small plate, and leather bookmark.",
-"expires": "2026-10-27",
-"_ts": "2026-09-28T18:08:32+0000"
-},
 "18129593152786851": {
 "special": false,
 "title": "Baby Back Ribs Platter",
@@ -71,14 +63,6 @@
 "expires": "2026-10-15",
 "_ts": "2026-09-29T18:42:39+0000"
 },
-"18115041437015974": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-28T16:56:47+0000"
-},
 "17906645451480591": {
 "special": true,
 "title": "Happy Hour at Mirabelle Tavern",
@@ -118,22 +102,6 @@
 "desc": "Try the new Pumpkin Pie Milkshake at Burgerology, available for a limited time this fall.",
 "expires": "2026-10-31",
 "_ts": "2026-09-29T13:13:43+0000"
-},
-"18007847729779084": {
-"special": true,
-"title": "Fall Favorites: Boozy PSL & Sangria",
-"when": "Available now",
-"desc": "Try Burgerology's new fall sangria and Boozy PSL seasonal drinks.",
-"expires": "2026-10-15",
-"_ts": "2026-09-28T16:37:46+0000"
-},
-"18113151038033448": {
-"special": false,
-"title": "Annual Halloween Party at The Bench",
-"when": "Fri, Oct. 31",
-"desc": "Costumes, drinks, music and a packed house for The Bench's annual Halloween celebration.",
-"expires": "2026-10-31",
-"_ts": "2026-09-28T17:40:29+0000"
 },
 "17905067478590619": {
 "special": false,
@@ -231,14 +199,6 @@
 "expires": "",
 "_ts": "2026-09-29T20:03:30+0000"
 },
-"17930011989412312": {
-"special": false,
-"title": "Seafood Paella",
-"when": "Ongoing",
-"desc": "Menu item featuring seafood, saffron, and skillet-cooked paella with bold flavors.",
-"expires": "2026-10-01",
-"_ts": "2026-09-28T16:50:43+0000"
-},
 "17960111250235779": {
 "special": true,
 "title": "Autumn Table at Ruvo",
@@ -270,14 +230,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-30T15:33:07+0000"
-},
-"18128984450497773": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-28T15:33:43+0000"
 },
 "18056356766797842": {
 "special": true,
@@ -311,22 +263,6 @@
 "expires": "",
 "_ts": "2026-09-29T13:01:18+0000"
 },
-"18114167645283457": {
-"special": false,
-"title": "Black Pearl Signature Burger",
-"when": "Ongoing",
-"desc": "Flame-grilled Certified Angus patty with aged cheddar, cherrywood-smoked bacon and BBQ bacon jam.",
-"expires": "2026-10-01",
-"_ts": "2026-09-28T18:01:11+0000"
-},
-"18340877659256402": {
-"special": true,
-"title": "Fleet Homecoming at Black Pearl",
-"when": "Sun, Oct. 4 (rain date Mon, Oct. 5)",
-"desc": "Dinner and cocktails with live music as the powerboat fleet returns to Port Jefferson.",
-"expires": "2026-10-05",
-"_ts": "2026-09-28T16:01:45+0000"
-},
 "18063089996789851": {
 "special": true,
 "title": "Happy Hour at The Whiskey Barrel",
@@ -334,14 +270,6 @@
 "desc": "Happy hour with good food and cold drinks at The Whiskey Barrel in Port Jefferson.",
 "expires": "2026-10-01",
 "_ts": "2026-10-01T14:05:32+0000"
-},
-"17890492278615610": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-28T16:04:44+0000"
 },
 "18116221034081046": {
 "special": false,
@@ -366,14 +294,6 @@
 "desc": "Enjoy tacos every Tuesday at this Port Jefferson steakhouse and seafood restaurant.",
 "expires": "2026-10-07",
 "_ts": "2026-09-29T15:01:49+0000"
-},
-"17991765524849054": {
-"special": false,
-"title": "Castaways Steak & Seafood",
-"when": "Ongoing",
-"desc": "Stop by for lunch, dinner or a drink at the bar at Castaways in Port Jefferson.",
-"expires": "2026-10-01",
-"_ts": "2026-09-28T15:01:11+0000"
 },
 "18106556117245506": {
 "special": false,
@@ -3406,5 +3326,29 @@
 "desc": "Daily specials including Prime Rib $25, Whole Lobster $17, Buffalo Wings $4.50, sandwiches from $2-$15.",
 "expires": "2026-10-28",
 "_ts": "2026-10-28T14:33:39+0000"
+},
+"17971285539180775": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-28T18:53:17+0000"
+},
+"18347833900252514": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-28T18:59:02+0000"
+},
+"18061999307634582": {
+"special": false,
+"title": "Castaways Steak & Seafood",
+"when": "Today",
+"desc": "Dinner service 4-9 PM. Try the Yellowfin Tuna Tartare or Seared Scallops.",
+"expires": "2026-10-28",
+"_ts": "2026-10-28T18:01:53+0000"
 }
 }
