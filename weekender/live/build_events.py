@@ -35,6 +35,8 @@ def tags_for(e):
         if re.search(r"\bfree\b", e["title"] + " " + e["desc"], re.I):
             t.insert(0, "free")
         return t[:3]
+    if e.get("src") == "seawolves":   # college home games: no "arts" guess; outdoor sports get Outdoor
+        return ["outdoor"] if re.search(r"football|soccer|lacrosse|baseball|softball|field hockey|tennis|cross country", e["title"], re.I) else []
     blob = (e["title"] + " " + e["desc"]).lower()
     t = [k for k, rx in TAGS if re.search(rx, blob)]
     if re.search(r"\bfree\b", blob):
@@ -51,7 +53,9 @@ def _norm(t):
 
 
 _GENERIC = {"market", "farmers", "outdoor", "summer", "live", "music", "event", "events", "night", "family", "library", "village",
-            "street", "center", "centre", "performance", "concert", "festival", "local", "weekend", "annual", "museum", "school"}
+            "street", "center", "centre", "performance", "concert", "festival", "local", "weekend", "annual", "museum", "school",
+            "halloween", "holiday", "holidays", "christmas", "thanksgiving", "spooky", "senior"}
+_TOWNW = {"stony", "brook", "port", "jefferson", "setauket", "east", "university", "village", "center", "long", "island"}
 
 
 def _toks(t):
@@ -69,7 +73,7 @@ def _merge_aliases(events):
         for k in keep:
             if k["start"][:16] != e["start"][:16] or k.get("src") == e.get("src"):
                 continue
-            vt = _toks(k.get("venue")) & _toks(e.get("venue"))
+            vt = (_toks(k.get("venue")) & _toks(e.get("venue"))) - _TOWNW   # "Stony Brook" alone is not the same place
             tt = {w for w in _toks(k["title"]) & _toks(e["title"]) if len(w) >= 6 and w not in _GENERIC}
             if len(vt) >= 2 or tt:
                 dup = True
@@ -119,7 +123,12 @@ def page_for(pages, title, start):
     if near:
         return min(near, key=lambda p: abs(len(p[0]) - len(n)))[2]
     exact = [p for p in pages if p[0] == n]
-    return exact[0][2] if len(exact) == 1 else ""
+    if len(exact) == 1:
+        return exact[0][2]
+    # organizer tagline vs our venue suffix (10/28/2026): "Be Our Ghost: A Villainous Cabaret" -> page "Be Our Ghost at Theatre Three"
+    core = _norm(re.split(r"\s+[|\u2013\u2014]\s+|\s+-\s+|:\s+", title)[0])
+    pre = [p for p in same if len(core) >= 8 and core != n and p[0].startswith(core)]
+    return pre[0][2] if len(pre) == 1 else ""
 
 
 _LISTINGS = {}
@@ -188,7 +197,7 @@ def main():
                 # owner 10/16/2026: hold these for HIS approval instead of silently dropping them (he may let some through)
                 held.append({"title": e["title"], "venue": e["venue"], "start": e["start"].isoformat(), "url": e["url"], "matched": hit.group(0)})
                 continue
-            if re.search(r"meeting|work session|advisory council|board of trustees|zoning board|planning board|delayed opening|library closed", e["title"], re.I):
+            if re.search(r"meeting|work session|advisory council|board of trustees|zoning board|planning board|delayed opening|library closed|closed for", e["title"], re.I):
                 continue
             st = status_for(e["title"])
             title = re.sub(r"^\s*(cancel+ed|postponed)\s*[-:]\s*", "", e["title"], flags=re.I).strip()

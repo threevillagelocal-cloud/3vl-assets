@@ -20,8 +20,8 @@ DAYS_AHEAD = 60
 TODAY = dt.date.today()
 
 
-def get(url, headers=None, timeout=40):
-    req = urllib.request.Request(url, headers=headers or UA)
+def get(url, headers=None, timeout=40, data=None):
+    req = urllib.request.Request(url, data=data, headers=headers or UA)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         raw = r.read()
     try:
@@ -46,6 +46,9 @@ VENUE_ADDR = {
     "brewster house": "18 Runs Rd, East Setauket, NY 11733",
     "ward melville heritage organization": "97P Main St, Stony Brook, NY 11790",
     "country house restaurant": "1175 N Country Rd, Stony Brook, NY 11790",
+    "the reboli center for art and history": "64 Main St, Stony Brook, NY 11790",
+    "sweetbriar nature center": "62 Eckernkamp Dr, Smithtown, NY 11787",
+    "mather house museum": "115 Prospect St, Port Jefferson, NY 11777",
 }
 
 
@@ -317,9 +320,19 @@ def chamber3v():
     return out
 
 
-def squarespace(src, base, default_venue):
-    d = json.loads(get(base + "/events?format=json"))
-    et = dt.timezone(dt.timedelta(hours=-4))
+def _et():
+    try:
+        from zoneinfo import ZoneInfo
+        return ZoneInfo("America/New_York")
+    except Exception:
+        return dt.timezone(dt.timedelta(hours=-5 if TODAY.month in (11, 12, 1, 2, 3) else -4))
+
+
+def squarespace(src, base, default_venue, path="/events"):
+    """Squarespace events collection (?format=json). Times are converted with the real Eastern zone (the old fixed -4 offset
+    put every winter event an hour early)."""
+    d = json.loads(get(base + path + "?format=json"))
+    et = _et()
     ms = lambda x: dt.datetime.fromtimestamp(int(x) / 1000, dt.timezone.utc).astimezone(et).replace(tzinfo=None)
     out = []
     for e in d.get("upcoming", []):
@@ -361,6 +374,160 @@ def limehof():
     return out
 
 
+def staller():
+    """Staller Center for the Arts (Stony Brook University). The official calendar at stallercenter.com/Calendar.php is an
+    Elfsight event-calendar widget; this reads the same public widget data the page loads (show, hall, time, photo, ticket link).
+    Shows the center has hidden from its calendar (visible=false) are skipped."""
+    page = "https://www.stallercenter.com/Calendar.php"
+    d = json.loads(get("https://core.service.elfsight.com/p/boot/?page=%s&w=%s" % (
+        urllib.parse.quote(page, safe=""), "e45e5135-f1f5-4969-84d5-c6e8a75e8a93")))
+    s = list(d["data"]["widgets"].values())[0]["data"]["settings"]
+    halls = {x.get("id"): x.get("name", "") for x in s.get("locations") or []}
+    out = []
+    for e in s.get("events") or []:
+        st, en = e.get("start") or {}, e.get("end") or {}
+        if e.get("visible") is False or (e.get("repeatPeriod") or "noRepeat") != "noRepeat" or not st.get("date") or not e.get("name"):
+            continue
+        timed = bool(st.get("time"))
+        start = dt.datetime.fromisoformat(st["date"] + "T" + (st.get("time") or "00:00"))
+        end = dt.datetime.fromisoformat((en.get("date") or st["date"]) + "T" + (en.get("time") or st.get("time") or "00:00"))
+        if end < start:
+            end = start
+        hall = halls.get((e.get("location") or [""])[0], "")
+        venue = "Staller Center for the Arts" + (", " + hall if hall else "")
+        link = ""
+        for a in e.get("actions") or []:
+            v = ((a.get("link") or {}).get("value") or "").strip()
+            if v.startswith("http") and not v.endswith("evt="):
+                link = v
+                break
+        img = (e.get("coverImage") or {}).get("url", "") if isinstance(e.get("coverImage"), dict) else ""
+        out.append(ev("staller", e.get("id") or start.isoformat(), html.unescape(e["name"]), start, end, venue,
+                      "100 Nicolls Rd, Stony Brook, NY 11794", link or page, e.get("description") or "", img, not timed))
+    return out
+
+
+def theatre3():
+    """Theatre Three (Port Jefferson): the box office calendar (getmytix venued_events, the calendar on theatrethree.com/events-calendar).
+    One entry per performance; each show's description and poster come from its event file."""
+    base = "https://theatrethree.getmytix.net"
+    data = base + "/_wss/clients/434/venued_events/"
+    m, months = TODAY.replace(day=1), []
+    for _ in range(3):   # this month + the next two (covers the 60-day sync window)
+        months.append(m)
+        m = (m + dt.timedelta(days=32)).replace(day=1)
+    info, seen, out = {}, set(), []
+    for mo in months:
+        d = json.loads(get(base + "/_appajax/venued_events/ajax/veHandler?command=get_calendar_events&month=" + mo.isoformat()))
+        for day in d.get("days") or []:
+            for x in day.get("events") or []:
+                if x.get("event_date_id") in seen or not x.get("event_date"):
+                    continue
+                seen.add(x.get("event_date_id"))
+                eid = str(x.get("event_id"))
+                if eid not in info:
+                    try:
+                        info[eid] = json.loads(get(data + "data/event_%s.json" % eid, timeout=20))
+                    except Exception:
+                        info[eid] = {}
+                i = info[eid]
+                tm = (x.get("event_time") or "00:00:00")[:5]
+                start = dt.datetime.fromisoformat(x["event_date"] + "T" + tm)
+                pic = i.get("event_image") or i.get("ticket_image") or ""
+                img = data + urllib.parse.quote(pic) if pic else ""
+                title = html.unescape(x.get("event_name") or x.get("display_name") or "").strip()   # display_name is cut short with "..."
+                if x.get("subtitle"):
+                    title += ": " + html.unescape(x["subtitle"])
+                y = ev("theatre3", x["event_date_id"], title, start, start, "Theatre Three", "412 Main St, Port Jefferson, NY 11777",
+                       base + "/tickets" + (i.get("permalink") or ""), i.get("description") or "", img, tm == "00:00")
+                y["show_id"] = eid
+                out.append(y)
+    return out
+
+
+def gallerynorth():
+    """Gallery North (Setauket): the gallery's own events calendar (Calee app on gallerynorth.org). One-time events and
+    exhibitions only; weekly multi-session classes (is_recurring) are left out."""
+    from urllib.parse import urlencode
+    body = urlencode({"shop": "gallerynorth.myshopify.com", "req_calling_method": "get_front_event_data",
+                      "calendar_type": "original", "calendar_id": "1"}).encode()
+    d = json.loads(get("https://theweeapps.com/caly-v2/api.php", data=body))
+    out = []
+    for e in d.get("event_data") or []:
+        if str(e.get("is_recurring")) == "1" or str(e.get("is_draft_event")) == "1" or not e.get("event_title"):
+            continue
+        s = dt.datetime.strptime(e["start_date_time"][:16], "%Y-%m-%d %H:%M")
+        en = dt.datetime.strptime((e.get("end_date_time") or e["start_date_time"])[:16], "%Y-%m-%d %H:%M")
+        allday = str(e.get("is_show_time")) == "0" or (s.strftime("%H:%M") == "00:00" and en.strftime("%H:%M") == "23:59")
+        if allday:
+            s, en = s.replace(hour=0, minute=0), en.replace(hour=0, minute=0)
+        loc = (e.get("event_location") or "").strip()
+        venue = "Gallery North" if not loc or loc.lower().startswith("gallery north") else "Gallery North, " + loc
+        img = e.get("event_image_s3") or ""
+        url = e.get("external_url") or ""
+        out.append(ev("gallerynorth", e.get("event_id"), e["event_title"], s, en, venue, "90 N Country Rd, Setauket, NY 11733",
+                      url if url.startswith("http") else "https://gallerynorth.org", e.get("event_details") or "",
+                      img if img.startswith("http") else "", allday))
+    return out
+
+
+def seawolves():
+    """Stony Brook University Athletics (official SIDEARM iCal). HOME games and meets on campus only (LOCATION "Stony Brook, N.Y., <facility>")."""
+    t = re.sub(r"\r?\n[ \t]", "", get("https://stonybrookathletics.com/calendar.ashx/calendar.ics"))
+    et, out = _et(), []
+    for block in re.findall(r"BEGIN:VEVENT(.*?)END:VEVENT", t, re.S):
+        f = {}
+        for line in block.strip().splitlines():
+            if ":" in line:
+                k, v = line.split(":", 1)
+                f[k.split(";")[0]] = (v.strip(), k)
+        loc = f.get("LOCATION", ("", ""))[0].replace("\\,", ",")
+        m = re.match(r"Stony Brook, N\.?Y\.?,\s*(.+)$", loc)
+        title = f.get("SUMMARY", ("", ""))[0].replace("\\,", ",").strip()
+        if not m or " vs " not in title or "DTSTART" not in f:
+            continue
+        def when(key):
+            v, k = f.get(key, f["DTSTART"])
+            if "VALUE=DATE" in k or len(v) == 8:
+                return dt.datetime.strptime(v[:8], "%Y%m%d"), True
+            d = dt.datetime.strptime(v[:15], "%Y%m%dT%H%M%S")
+            if v.endswith("Z"):
+                d = d.replace(tzinfo=dt.timezone.utc).astimezone(et).replace(tzinfo=None)
+            return d, False
+        s, allday = when("DTSTART")
+        e, _ = when("DTEND")
+        if allday and e > s:
+            e -= dt.timedelta(days=1)   # iCal all-day end is exclusive
+        title = re.sub(r"^Stony Brook University ", "Stony Brook Seawolves ", title)
+        url = html.unescape(f.get("URL", ("", ""))[0]) or "https://stonybrookathletics.com/calendar"
+        out.append(ev("seawolves", f.get("UID", (s.isoformat(), ""))[0], title, s, e, m.group(1).strip() + ", Stony Brook University",
+                      "100 Nicolls Rd, Stony Brook, NY 11794", url, "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.", "", allday))
+    return out
+
+
+def social():
+    """Events a local business announced on its OWN Instagram with the date, a start time and the place written in the post
+    (weekender/live/social_events.py "confirmed"; everything less clear goes to the owner's review email instead)."""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "social_events.json")
+    d = json.load(open(p, encoding="utf-8")) if os.path.exists(p) else json.loads(
+        get("https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/social_events.json"))
+    out = []
+    for x in d.get("confirmed") or []:
+        try:
+            s = dt.datetime.fromisoformat(x["date"] + "T" + x["start"])
+        except (KeyError, ValueError):
+            continue
+        e = dt.datetime.fromisoformat(x["date"] + "T" + x["end"]) if x.get("end") else s
+        if e < s:
+            e = s
+        y = ev("social", x["post"], x["title"], s, e, x.get("venue") or x.get("org", ""), x.get("addr", ""), x.get("url", ""),
+               x.get("desc", ""), x.get("img", ""), False)
+        y["org"], y["org_url"] = x.get("org", ""), x.get("org_url", "")
+        y["desc_from"] = "the Instagram post by %s" % (x.get("org") or "the organizer")
+        out.append(y)
+    return out
+
+
 SOURCES = [
     ("Three Village Chamber", chamber3v),
     ("Port Jefferson Chamber", lambda: tribe("pjchamber", "https://portjeffchamber.com", "Port Jefferson Village")),
@@ -372,6 +539,15 @@ SOURCES = [
     ("Long Island Museum", lambda: tribe("lim", "https://longislandmuseum.org", "The Long Island Museum")),
     ("Ward Melville Heritage Org", lambda: tribe("wmho", "https://wmho.org", "Ward Melville Heritage Organization")),
     ("LI Music Hall of Fame", limehof),
+    # added 10/28/2026 (owner: events were library heavy; check every reliable organizer calendar)
+    ("Staller Center for the Arts", staller),
+    ("Theatre Three", theatre3),
+    ("Gallery North", gallerynorth),
+    ("Reboli Center", lambda: squarespace("reboli", "https://rebolicenter.org", "The Reboli Center for Art and History")),
+    ("Sweetbriar Nature Center", lambda: squarespace("sweetbriar", "https://www.sweetbriarnc.org", "Sweetbriar Nature Center", "/new-events")),
+    ("Historical Society of Greater Port Jefferson", lambda: squarespace("pjhistorical", "https://www.portjeffhistorical.org", "Mather House Museum")),
+    ("Stony Brook Athletics (home games)", seawolves),
+    ("Local business Instagram posts", social),
 ]
 
 

@@ -25,6 +25,18 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python weekender/live/ig_specials.py
+      - name: Events from local businesses' Instagram posts (once a day, read-only)
+        continue-on-error: true
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GUARD_DEPLOY_KEY: ${{ secrets.GUARD_DEPLOY_KEY }}
+        run: |
+          python weekender/live/social_events.py --check || exit 0
+          mkdir -p ~/.ssh && printf '%s\n' "$GUARD_DEPLOY_KEY" > ~/.ssh/guard && chmod 600 ~/.ssh/guard
+          GIT_SSH_COMMAND="ssh -i ~/.ssh/guard -o StrictHostKeyChecking=accept-new" git clone -q --depth 1 git@github.com:threevillagelocal-cloud/3vl-site-guard.git /tmp/guard-soc
+          SOCIAL_MEMBERS=/tmp/guard-soc/data/member-social.json SOCIAL_SKIP=/tmp/guard-soc/data/social_events/skip.json python weekender/live/social_events.py
+          rm -rf /tmp/guard-soc
       - name: Rebuild the live feed
         run: python weekender/live/build_events.py
       - name: Commit

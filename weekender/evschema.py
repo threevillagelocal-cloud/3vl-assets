@@ -16,7 +16,14 @@ TOWNS = sorted(ZIPS, key=len, reverse=True)
 ORGS = {"emmaclark": ("Emma S. Clark Memorial Library", "https://www.emmaclark.org/"),
         "lim": ("The Long Island Museum", "https://longislandmuseum.org/"),
         "limehof": ("Long Island Music and Entertainment Hall of Fame", "https://www.limusichalloffame.org/"),
-        "wmho": ("Ward Melville Heritage Organization", "https://wmho.org/")}
+        "wmho": ("Ward Melville Heritage Organization", "https://wmho.org/"),
+        "staller": ("Staller Center for the Arts", "https://www.stallercenter.com/"),
+        "theatre3": ("Theatre Three", "https://theatrethree.com/"),
+        "gallerynorth": ("Gallery North", "https://gallerynorth.org/"),
+        "reboli": ("The Reboli Center for Art and History", "https://rebolicenter.org/"),
+        "sweetbriar": ("Sweetbriar Nature Center", "https://www.sweetbriarnc.org/"),
+        "pjhistorical": ("Historical Society of Greater Port Jefferson", "https://www.portjeffhistorical.org/"),
+        "seawolves": ("Stony Brook University Athletics", "https://stonybrookathletics.com/")}
 
 OFFLINE = "https://schema.org/OfflineEventAttendanceMode"
 ONLINE = "https://schema.org/OnlineEventAttendanceMode"
