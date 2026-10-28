@@ -65,7 +65,7 @@ function renderLive(data){
     var anchor=root.querySelector('#wk-sched .wk-allwk')||$('wk-nomatch');
     Object.keys(days).sort().forEach(function(k,di){var D=days[k],isT=k===dkey(t0),isTm=k===dkey(new Date(t0.getTime()+864e5));
       var h=(di?'':'<p class="wk-daytip">&#128073; Tap a day to see what&rsquo;s up</p>')+'<div class="wk-dayblk is-collapsed" data-day="'+k+'"><p class="wk-dayh" role="button" tabindex="0" aria-expanded="false"><b>'+(isT?'Today':isTm?'Tomorrow':DAYN2x(D.d))+'</b><span>'+ds(D.d)+'</span><i class="wk-dcount">'+D.l.length+' event'+(D.l.length===1?'':'s')+'</i><em class="wk-chev" aria-hidden="true"></em></p><ol class="wk-tl">';
-      D.l.forEach(function(e){var th=e.img?'<img '+smi(e.img,360)+' alt="" loading="lazy" width="120" height="120">':'<span class="wk-ticon">'+(IC[(e.tags.filter(function(x){return x!=='free'})[0])||'arts']||'&#9733;')+'</span>';
+      D.l.forEach(function(e){var th=e.img?'<img '+smi(e.img,360)+' alt="'+esc2(e.title)+'" loading="lazy" width="120" height="120">':'<span class="wk-ticon">'+(IC[(e.tags.filter(function(x){return x!=='free'})[0])||'arts']||'&#9733;')+'</span>';
         h+='<li class="wk-ev" '+attrs(e)+'><div class="wk-evt"><b>'+when(e)+'</b><span>'+(multi(e)?span(e):e.allday?'':'to '+tm(e.e))+'</span></div><div class="wk-evc"><div class="wk-evthumb">'+th+'</div><div class="wk-evbody">'+
           '<p class="wk-evtitle">'+(e.url?'<a href="'+esc2(e.url)+'" target="_blank" rel="noopener">'+esc2(e.title)+'</a>':esc2(e.title))+' <span class="wk-pstat" data-status></span></p><p class="wk-evwhere">'+esc2(e.venue)+'</p>'+
           (e.desc?'<p class="wk-evdesc" tabindex="0">'+esc2(e.desc)+'</p>':'')+'<div class="wk-tags">'+chips(e.tags)+'<span class="wk-wxchip"></span></div></div>'+acts(e)+'</div></li>'});
@@ -121,8 +121,11 @@ function renderLive(data){
     out=out.slice(0,data.eatCap||9);
     /* owner 10/25/2026: rotate the order every 30 minutes so returning visitors see a fresh row (same for everyone in a slot);
        pinned highlights (Madiran live music) keep the first spot */
-    (function(){var pin=out.filter(function(a){return a.getAttribute('data-pin')}),rest=out.filter(function(a){return !a.getAttribute('data-pin')});
-      if(rest.length>1){var q=location.search.match(/[?&]slot=([0-9]+)/),k=(q?+q[1]:Math.floor(Date.now()/1800000))%rest.length;rest=rest.slice(k).concat(rest.slice(0,k))}
+    /* owner 10/27/2026: Madiran is no longer pinned first; every card takes part in the rotation */
+    (function(){var pin=[],rest=out.slice();
+      /* owner 10/27/2026 "not rotating": shifting by one place looked frozen on phones, so each slot gets its own shuffle (same for everyone in the slot) */
+      if(rest.length>1){var q=location.search.match(/[?&]slot=([0-9]+)/),sd=(q?+q[1]:Math.floor(Date.now()/1800000))||1,rnd=function(){sd=(sd*16807)%2147483647;return sd/2147483647};
+        for(var r=0;r<3;r++)rnd();for(var i=rest.length-1;i>0;i--){var j=Math.floor(rnd()*(i+1)),t=rest[i];rest[i]=rest[j];rest[j]=t}}
       out=pin.concat(rest)})();
     eat.innerHTML='';out.forEach(function(a){eat.appendChild(a)})}
   return true}
@@ -184,7 +187,7 @@ function nowPanel(){var b=$('wk-nowb'),c=$('wk-clock');if(!b)return;var t=now();
   function row(e,isLive){var p=isLive?Math.round((t-e.start)/(e.end-e.start)*100):0,lbl;
     if(isLive){var left=Math.round((e.end-t)/60000);lbl=(left>=60?Math.floor(left/60)+'h':left+'m')+'<br><small style="font-size:8px">left</small>'}
     else{var d=Math.round((e.start-t)/60000);lbl=d<60?d+'m':d<1440?Math.floor(d/60)+'h':ds(e.start).split(', ')[1]}
-    var pic=e.img?'<img '+smi(e.img,240)+' alt="" loading="lazy">':'<span class="wk-nowico">'+(TAGI[e.tags.filter(function(t){return t!=="free"&&t!=="outdoor"})[0]||e.tags[0]]||'&#9733;')+'</span>';
+    var pic=e.img?'<img '+smi(e.img,240)+' alt="'+esc2(e.title)+'" loading="lazy">':'<span class="wk-nowico">'+(TAGI[e.tags.filter(function(t){return t!=="free"&&t!=="outdoor"})[0]||e.tags[0]]||'&#9733;')+'</span>';
     return '<a class="wk-nowi" href="#'+e.el.id+'" data-jump="'+e.id+'"><span class="wk-nowpic">'+pic+'</span><span class="wk-nowtx"><b>'+e.title+'</b><small>'+e.venue+' &middot; '+(isLive?'until '+tm(e.end):ds(e.start)+', '+tm(e.start))+'</small></span><span class="wk-nowbar" style="--p:'+p+'"><span>'+lbl+'</span></span></a>'}
   if(live.length){h+='<p class="wk-nowsub">&#9679; On right now &middot; '+live.length+'</p>';live.slice(0,4).forEach(function(e){h+=row(e,true)});if(live.length>4)h+='<a class="wk-nowmore" href="#wk-sched">+ '+(live.length-4)+' more happening now &rarr;</a>'}
   if(next.length){h+='<p class="wk-nowsub">'+(t<START?'Coming up':'Up next')+'</p>';next.forEach(function(e){h+=row(e,false)})}
@@ -201,7 +204,7 @@ function drawFeed(items){var ol=$('wk-flist'),tk=$('wk-tkt');if(!ol&&!tk)return;
   items.sort(function(a,b){return(b.t>a.t)?1:-1});
   if(ol)ol.innerHTML=items.slice(0,14).map(function(it,i){var key=it.who+it.text,isNew=!firstLoad&&!seen[key];seen[key]=1;
     var host='';try{host=it.url?new URL(it.url).hostname:''}catch(e){}var logo=it.logo||(host&&!/facebook\.com$/.test(host)&&it.src!=='nws'?'https://www.google.com/s2/favicons?sz=64&domain='+host:'');
-    return '<li class="wk-fi'+(isNew?' is-new':'')+'" style="animation-delay:'+(i*60)+'ms"><span class="wk-fic s-'+it.src+(logo?' has-logo':'')+'">'+(logo?'<img '+smi(logo,120)+' alt="" loading="lazy">':(ICONS[it.src]||'&#8226;'))+'</span><div><p class="wk-fw"><b>'+it.who+'</b> &middot; <span data-ago="'+it.t+'">'+ago(it.t)+'</span></p><p class="wk-ft">'+(it.url?'<a href="'+it.url+'" target="_blank" rel="noopener">'+it.text+'</a>':it.text)+'</p></div></li>'}).join('');
+    return '<li class="wk-fi'+(isNew?' is-new':'')+'" style="animation-delay:'+(i*60)+'ms"><span class="wk-fic s-'+it.src+(logo?' has-logo':'')+'">'+(logo?'<img '+smi(logo,120)+' alt="'+esc2(it.who)+'" loading="lazy">':(ICONS[it.src]||'&#8226;'))+'</span><div><p class="wk-fw"><b>'+it.who+'</b> &middot; <span data-ago="'+it.t+'">'+ago(it.t)+'</span></p><p class="wk-ft">'+(it.url?'<a href="'+it.url+'" target="_blank" rel="noopener">'+it.text+'</a>':it.text)+'</p></div></li>'}).join('');
   store.set('wkFeedSeen',seen);firstLoad=false;
   /* ticker only runs for big news: breaking items in feed.json or an active NWS warning */
   var big=items.filter(function(it){return it.breaking||(it.src==='nws'&&/Warning|Emergency/i.test(it.text))});

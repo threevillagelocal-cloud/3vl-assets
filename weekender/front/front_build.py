@@ -168,6 +168,10 @@ def _webp_w(path):
 ROT_MS = 1800000   # owner 10/24/2026: a different lead story every 30 minutes
 
 
+def _norm_title(t):
+    return re.sub(r"[^a-z0-9]", "", re.sub(r"^(the|\d{4})\s+", "", html.unescape(t).lower()))
+
+
 def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
     """Tabs + the lead story of Top Things to Do. Every pick with its own photo gets a lead article; an inline script right after them
     picks the one for the current 30-minute slot (same for every visitor, ?slot=N to test) before the page paints and loads only its photo.
@@ -185,7 +189,17 @@ def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
     from datetime import datetime, timedelta
     edir = os.path.dirname(HERE)
     arts, titles = [], []
+    _u = datetime.utcnow()
+    now = _u + timedelta(hours=int(nhb.et_offset(_u - timedelta(hours=4))[:3]))   # Eastern time (runner clock is UTC)
+    def _until(x):
+        u = x.get("pick_until") or x.get("until") or x.get("end") or x.get("start") or ""
+        try:
+            return datetime.fromisoformat((u if "T" in u else u + "T23:59")[:16])
+        except Exception:
+            return now
     for le in cand:
+        if _until(le) <= now:
+            continue   # owner 10/27/2026: ended events are left out of the page entirely, not just hidden
         if le is hero_of:
             name, alt, credit = h["img"], h.get("alt") or le["title"], re.sub(r"^.*?Photo:\s*", "", h.get("credit", ""))
         elif le.get("img"):
@@ -231,6 +245,58 @@ def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
                 when, esc(page), esc(le["title"]), esc(V[le["venue"]]["name"]), esc(le.get("desc", "")), tagchips(le.get("tags", [])), acts,
                 ('<p class="y-cred">Photo: %s</p>' % esc(credit)) if credit else ""))
         titles.append(le["title"])
+    # owner 10/27/2026 "top things to do is not rotating": Mon-Thu most of last weekend's picks have ended (1 of 11 left on 10/27),
+    # so the 30-minute rotation showed the same story all day. When fewer than 4 picks are still current at build time (nightly),
+    # fill in with this week's organizer events from the live calendar that have their own photo and our own event page
+    # (no routine library programs, nothing cancelled). Their photos load straight from the source, only the one showing.
+    if len(titles) < 4:
+        try:
+            live = json.load(open(os.path.join(edir, "live", "events.json"), encoding="utf-8")).get("events", [])
+        except Exception:
+            live = []
+        seen = set(_norm_title(t) for t in titles)
+        skip = re.compile(r"cancel|postpon|appointment|club|zoom|class|course|workshop for adults|story ?time|walking club|game day|knit|stitch|volunteer|take ?& ?make", re.I)
+        lib = re.compile(r"library|emma s\. clark|online", re.I)
+        extra = []
+        for le in sorted(live, key=lambda x: x.get("start", "")):
+            if len(extra) >= 8:
+                break
+            st = le.get("start", "")
+            try:
+                sd = datetime.fromisoformat(st[:16])
+            except Exception:
+                continue
+            if not (le.get("img") and le.get("page") and le.get("title")) or skip.search(le["title"]) or lib.search(le.get("venue", "")):
+                continue
+            if _until(le) <= now or sd > now + timedelta(days=8) or _norm_title(le["title"]) in seen:
+                continue
+            seen.add(_norm_title(le["title"]))
+            extra.append(le)
+        for le in extra:
+            last = le.get("end", "")[:10]
+            if le.get("allday") or le.get("start", "").endswith("T00:00:00"):
+                when = ("%s - %s" % (dshort(le["start"]), dshort(last))) if last and last > le["start"][:10] else dshort(le["start"])
+            else:
+                when = "%s &middot; %s" % (dshort(le["start"]), fmt_time(le["start"]))
+            until = _until(le).isoformat()[:16]
+            try:
+                until = until + nhb.et_offset(datetime.fromisoformat(until))
+            except Exception:
+                until = ""
+            desc = re.sub(r"\s*var\.\.\.$|\.\.\.$", "", le.get("desc", "")).strip()
+            if len(desc) > 180:
+                desc = desc[:177].rsplit(" ", 1)[0] + "..."
+            i = len(arts)
+            arts.append(
+                ('<article class="y-lead"%s data-href="%s" data-until="%s"><a class="y-leadimg" href="%s" tabindex="-1" aria-hidden="true"><figure class="y-leadpic">'
+                 '<img class="wk-hbg" data-src="%s" data-srcset="%s 1200w" alt="%s" width="1600" height="1000">'
+                 '<span class="wk-pnum">01</span><span class="wk-pstat" data-status></span></figure></a>'
+                 '<div class="y-leadb"><p class="wk-pwhen">%s</p><h3 class="y-leadt"><a href="%s">%s</a></h3><p class="wk-pwhere">&#128205; %s</p>'
+                 '<p class="y-leadd">%s</p><a class="wk-dir" href="%s">&#128279; Details</a></div></article>') % (
+                    "" if i == 0 else " hidden", esc(le["page"]), esc(until), esc(le["page"]),
+                    esc(le["img"]), esc(le["img"]), esc(le["title"]),
+                    when, esc(le["page"]), esc(le["title"]), esc(le.get("venue", "")), esc(desc), esc(le["page"])))
+            titles.append(le["title"])
     if not arts:
         return tabs + '<div class="y-tp">'
     # runs while the page is being read, before the first paint (no backslashes: BD strips them from widget code)
@@ -310,8 +376,8 @@ def spotlight(base=""):
         if not re.fullmatch(r"#[0-9a-fA-F]{3,8}", color):
             color = "#16304f"
         pos = "50% 50%" if (fresh or banner) else (h.get("pos") or "50% 50%")
-        vis = ('<img src="%s" data-o="%s" %s alt="" loading="lazy" width="240" height="180" style="object-position:%s">' % (
-                   esc(thumb), esc(thumb_o if thumb_o != thumb else ""), ONERR, esc(pos))) if thumb else \
+        vis = ('<img src="%s" data-o="%s" %s alt="%s" loading="lazy" width="240" height="180" style="object-position:%s">' % (
+                   esc(thumb), esc(thumb_o if thumb_o != thumb else ""), ONERR, esc(m["n"]), esc(pos))) if thumb else \
               '<span class="y-panel" style="--c:%s"><span class="y-plogo" style="background-image:url(\'%s\')" data-bgo="%s"></span></span>' % (color, esc(logo), esc(logo_o))
         cards.append(
             '<a class="y-mc" href="%s" data-id="%s" data-img="%s" data-imgo="%s" data-srcset="%s" data-ban="%s" data-pos="%s" data-alt="%s" data-logo="%s" data-logoo="%s" data-cat="%s" data-town="%s" data-desc="%s" data-tel="%s" data-color="%s">'
@@ -341,8 +407,8 @@ def stories_main(skip=0, n=5):
         orig = full
         big = nhb.sm(full, 800) if (x["img"] and i) else ""
         ss = (' srcset="%s 360w, %s 800w" sizes="240px"' % (esc(pic), esc(big))) if big and big != full and pic != full else ""
-        img = ('<img src="%s"%s data-o="%s" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=&quot;&quot;;this.removeAttribute(&quot;srcset&quot;)}" alt="" loading="lazy" width="%d" height="%d">' % (
-            esc(pic), ss, esc(orig), 800 if i == 0 else 360, 450 if i == 0 else 240)) if pic else ""
+        img = ('<img src="%s"%s data-o="%s" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=&quot;&quot;;this.removeAttribute(&quot;srcset&quot;)}" alt="%s" loading="lazy" width="%d" height="%d">' % (
+            esc(pic), ss, esc(orig), esc(x["t"]), 800 if i == 0 else 360, 450 if i == 0 else 240)) if pic else ""
         cards.append('<a class="y-st%s" href="%s"><span class="y-sti">%s</span><span class="y-stb"><i>%s</i><b>%s</b>%s</span></a>' % (
             " y-stl" if i == 0 else "", esc(x["h"]), img, esc(x["d"]), esc(x["t"]), '<em class="y-stgo">Read the story ' + IC["chev"] + '</em>' if i == 0 else ""))
     return ('<section class="wk-sec y-stories" id="y-stories"><h2 class="wk-h2"><span>Three Village Local Blog</span><small>News and guides from around Three Village</small>'
