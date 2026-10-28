@@ -1,14 +1,14 @@
 {
-"updated": "2026-10-27T23:00:43.225178+00:00",
+"updated": "2026-10-28T01:00:56.926184+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 207,
-"Emma S. Clark Library": 317,
+"Emma S. Clark Library": 316,
 "Stony Brook Village Center": 14,
-"Long Island Museum": 51,
+"Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 7
 },
@@ -215,7 +215,7 @@
 {
 "id": "cur-elephant",
 "title": "Elephant & Piggie's We Are in a Play!",
-"start": "2026-10-27T00:00",
+"start": "2026-10-28T00:00",
 "end": "2026-10-24T23:59",
 "allday": true,
 "ongoing": true,
@@ -237,7 +237,7 @@
 {
 "id": "cur-cabaret",
 "title": "Cabaret",
-"start": "2026-10-27T00:00",
+"start": "2026-10-28T00:00",
 "end": "2026-10-25T23:59",
 "allday": true,
 "ongoing": true,
@@ -258,7 +258,7 @@
 {
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-27T00:00",
+"start": "2026-10-28T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
@@ -281,7 +281,7 @@
 {
 "id": "cur-scarecrow",
 "title": "Stony Brook Village Scarecrows",
-"start": "2026-10-27T00:00",
+"start": "2026-10-28T00:00",
 "end": "2026-10-25T23:59",
 "allday": true,
 "ongoing": true,
@@ -301,43 +301,6 @@
 "pick": true,
 "page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
 "rank": 4
-},
-{
-"id": "lim-3225806",
-"title": "Smithsonian National Youth Summit 2026",
-"start": "2026-10-27T16:00:00",
-"end": "2026-10-27T18:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/youth-summit/",
-"desc": "CALLING ALL TEEN LEADERS! The National Youth Summit brings middle and high school students together with scholars, teachers, policy experts, and activists in a national conversation about important events in America’s past that have relevance to the nation’s p",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/National-Youth-Submit-2026.jpg",
-"src": "lim",
-"tags": [
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "emmaclark-word-38619",
-"title": "*Cancelled* Introduction to Microsoft Word",
-"start": "2026-10-27T18:30:00",
-"end": "2026-10-27T20:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Technology Center",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/word-38619",
-"desc": "This three-part class introduces Microsoft Word, or “Word” as it is commonly known. This popular software application allows you to write letters and resumés, create invitations, flyers and much more! Taught by Visual Communications and Technology Librarian Je",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/word%20class_0.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "Canceled",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/introduction-to-microsoft-word-425"
 },
 {
 "id": "emmaclark-aarp-defensive-driving-course-38140",
@@ -1307,6 +1270,100 @@
 "status": "",
 "fb": 1,
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
+},
+{
+"id": "portjeff-1151",
+"title": "Caleb Brewster Escape 4K run",
+"start": "2026-11-07T00:00:00",
+"end": "2026-11-07T00:00:00",
+"allday": true,
+"venue": "Strong's Park",
+"addr": "Strong's Park - Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
+},
+{
+"id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
+"title": "Writing Workshop: Language, Silence, and the Stories We Carry",
+"start": "2026-11-07T10:30:00",
+"end": "2026-11-07T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/writing-workshop-language-silence-and-stories-we-carry-61299",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Writing is more than putting words on a page. It is also a way of discovering voice. Through literature, guided writing, and creative voice exercises, participants will explore how",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/aerial-view-man-typing-retro-typewriter3.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/writing-workshop-language-silence-and-the-stories-we-carry"
+},
+{
+"id": "emmaclark-paper-plate-leaf-wreath-ages-3-11-w-caregiver-61955",
+"title": "Paper Plate Leaf Wreath (Ages 3-11 w/ caregiver)",
+"start": "2026-11-07T11:00:00",
+"end": "2026-11-07T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/paper-plate-leaf-wreath-ages-3-11-w-caregiver-61955",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-10/LeafWreath_0.png",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/paper-plate-leaf-wreath-ages-3-11-w-caregiver"
+},
+{
+"id": "emmaclark-ai-and-self-driving-cars-63996",
+"title": "AI and Self-Driving Cars",
+"start": "2026-11-07T15:00:00",
+"end": "2026-11-07T16:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/ai-and-self-driving-cars-63996",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/ai-and-self-driving-cars"
+},
+{
+"id": "lim-3225428",
+"title": "LIM’s Annual Winter Gala",
+"start": "2026-11-07T18:30:00",
+"end": "2026-11-07T22:00:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/winter-gala-2026/",
+"desc": "Join us for The Long Island Museum’s biggest fundraiser of the year. Enjoy a festive evening of dinner, dancing, and live music by Tom Manuel and The Jazz Loft All Stars! Get a head start on your holiday shopping at our annual silent auction, with proceeds sup",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/07/Winter-Gala-2026-Event.jpg",
+"src": "lim",
+"tags": [
+"music",
+"history",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/lims-annual-winter-gala"
 }
 ],
 "closings": [],
