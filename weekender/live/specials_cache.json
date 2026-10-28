@@ -49,22 +49,6 @@
 "url": "https://www.instagram.com/p/DexrUa_jZH0/",
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
 "inset": "ig/p18217945741349180.jpg"
-},
-{
-"id": "18124063798934600",
-"biz": "Tommy's Place",
-"ig": "tommysplaceportjeff_",
-"town": "Port Jefferson",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "London Broil Special",
-"when": "Limited time",
-"desc": "London Broil comfort meal on the specials menu for a limited time this fall.",
-"expires": "2026-11-04",
-"posted": "2026-10-21T00:56:46+0000",
-"url": "https://www.instagram.com/p/DevK-wkjfkt/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-"inset": "ig/p18124063798934600.jpg"
 }
 ],
 "ixchelmexicancuisine": [],
@@ -189,6 +173,22 @@
 "breakroomny": [],
 "seportdelicatessen": [],
 "toastcoffeeandkitchen": [
+{
+"id": "18097741877403785",
+"biz": "Toast Coffee + Kitchen",
+"ig": "toastcoffeeandkitchen",
+"town": "Port Jefferson Station",
+"category": "Cafe/Brunch",
+"member": false,
+"title": "1640 Chicken Salad Sandwich",
+"when": "Through end of October",
+"desc": "Crispy bacon, maple Dijon dressing, pecans, butternut squash, apples on a buttery croissant.",
+"expires": "2026-10-31",
+"posted": "2026-10-27T19:25:08+0000",
+"url": "https://www.instagram.com/p/DfAl9QLhDh6/",
+"img": "",
+"inset": "ig/p18097741877403785.jpg"
+},
 {
 "id": "17952097197339637",
 "biz": "Toast Coffee + Kitchen",

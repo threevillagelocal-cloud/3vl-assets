@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-28T10:30:43.268410+00:00",
+"updated": "2026-10-28T12:01:30.941253+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1807,6 +1807,25 @@
 "page": "https://www.threevillagelocal.com/eat-drink/po-boy-brewery-annual-halloween-costume-party",
 "profile": "https://www.threevillagelocal.com/po-boy-brewery",
 "label": "Event"
+},
+{
+"id": "18097741877403785",
+"biz": "Toast Coffee + Kitchen",
+"ig": "toastcoffeeandkitchen",
+"town": "Port Jefferson Station",
+"category": "Cafe/Brunch",
+"member": false,
+"title": "1640 Chicken Salad Sandwich",
+"when": "Through end of October",
+"desc": "Crispy bacon, maple Dijon dressing, pecans, butternut squash, apples on a buttery croissant.",
+"expires": "2026-10-31",
+"posted": "2026-10-27T19:25:08+0000",
+"url": "https://www.instagram.com/p/DfAl9QLhDh6/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18097741877403785.jpg",
+"page": "https://www.threevillagelocal.com/toast-coffee-kitchen",
+"profile": "https://www.threevillagelocal.com/toast-coffee-kitchen",
+"label": "Special"
 },
 {
 "id": "17952097197339637",
