@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-28T16:35:04.140542+00:00",
+"updated": "2026-10-28T17:01:05.026210+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 206,
-"Emma S. Clark Library": 316,
+"Emma S. Clark Library": 315,
 "Stony Brook Village Center": 14,
 "Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
@@ -408,23 +408,6 @@
 "rank": 4
 },
 {
-"id": "emmaclark-aarp-defensive-driving-course-38140",
-"title": "AARP Defensive Driving Course",
-"start": "2026-10-28T10:00:00",
-"end": "2026-10-28T13:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/aarp-defensive-driving-course-38140",
-"desc": "This 6-hour course for those age 50 and up qualifies licensed drivers to receive a reduction of up to four points on their driver’s license or a 10% deduction on collision and liability auto insurance rates for a period of three years. Some insurance companies",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-05/AARP_logo_screen_0.PNG",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "emmaclark-knit-cause-59651",
 "title": "Knit for a Cause",
 "start": "2026-10-28T17:00:00",
@@ -511,7 +494,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/jennifer-frautschi-christina-dahl-in-concert"
 },
 {
 "id": "sbv-2344",
@@ -661,7 +644,7 @@
 "tags": [],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-womens-basketball-vs-queens-college-exh"
 },
 {
 "id": "wmho-1811",
@@ -772,7 +755,7 @@
 "tags": [],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-womens-volleyball-vs-uncw-dig-pink-game"
 },
 {
 "id": "gallerynorth-71313",
@@ -792,7 +775,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/cabinet-of-curiosities-sketch-night-skulls-bones-more"
 },
 {
 "id": "seawolves-vcal-12639-stonybrookathletics-com",
@@ -811,7 +794,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-mens-soccer-vs-northeastern-senior-day"
 },
 {
 "id": "staller-01dafef3-fa1e-4fa9-9c26-e5769b8fb7c4",
@@ -831,7 +814,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/disney-pixars-coco-in-concert-live-to-film"
 },
 {
 "id": "theatre3-9366",
@@ -988,7 +971,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-football-vs-sacred-heart-halloween-at-lavalle-free-admission-for-fans-12-and-under-in-costume"
 },
 {
 "id": "seawolves-vcal-12664-stonybrookathletics-com",
@@ -1005,7 +988,7 @@
 "tags": [],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-womens-volleyball-vs-uncw"
 },
 {
 "id": "pjchamber-15119",
@@ -1102,7 +1085,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/emerging-artist-spotlight-november-genevieve-rochlin"
 },
 {
 "id": "reboli-6accf440d369597d05b08c0e",
@@ -1121,7 +1104,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/novembers-feature-artisan-of-the-month-patricia-patten"
 },
 {
 "id": "sweetbriar-6ac5a4bd8b59bc4d06dd468d",
@@ -1140,7 +1123,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/art-is-a-hoot-adults-sunday-11-1"
 },
 {
 "id": "emmaclark-autumn-concert-jazz-loft-trio-61286",
@@ -1216,7 +1199,7 @@
 "tags": [],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-womens-basketball-vs-molloy"
 },
 {
 "id": "emmaclark-pokemon-club-grades-2-5-61747",
@@ -1252,7 +1235,7 @@
 "tags": [],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-mens-basketball-vs-suny-old-westbury"
 },
 {
 "id": "emmaclark-come-aboard-whale-watching-long-island-waters-61287",
@@ -1601,7 +1584,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/first-steps-into-nature-2y-5y"
 },
 {
 "id": "emmaclark-time-baby-newborn-15-mos-w-caregiver-63798",
@@ -1786,7 +1769,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/paper-quilling-a-pumpkin-w-carol-mcmahon"
 },
 {
 "id": "lim-3225428",
@@ -1847,7 +1830,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/stony-brook-symphony-orchestra-924"
 },
 {
 "id": "sweetbriar-6adca1060470811e49a6c446",
@@ -1866,7 +1849,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
 }
 ],
 "closings": [],
