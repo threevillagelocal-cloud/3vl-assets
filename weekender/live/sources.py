@@ -546,7 +546,7 @@ SOURCES = [
     ("Reboli Center", lambda: squarespace("reboli", "https://rebolicenter.org", "The Reboli Center for Art and History")),
     ("Sweetbriar Nature Center", lambda: squarespace("sweetbriar", "https://www.sweetbriarnc.org", "Sweetbriar Nature Center", "/new-events")),
     ("Historical Society of Greater Port Jefferson", lambda: squarespace("pjhistorical", "https://www.portjeffhistorical.org", "Mather House Museum")),
-    ("Stony Brook Athletics (home games)", seawolves),
+    # ("Stony Brook Athletics (home games)", seawolves),   # owner 10/28/2026: "don't put stony brook sports on the events"
     ("Local business Instagram posts", social),
 ]
 
