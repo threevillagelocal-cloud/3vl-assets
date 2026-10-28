@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-28T17:01:05.026210+00:00",
+"updated": "2026-10-28T18:42:50.017727+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -8,7 +8,7 @@
 "Village of Port Jefferson": 206,
 "Emma S. Clark Library": 315,
 "Stony Brook Village Center": 14,
-"Long Island Museum": 50,
+"Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 7,
 "Staller Center for the Arts": 138,
@@ -17,7 +17,6 @@
 "Reboli Center": 21,
 "Sweetbriar Nature Center": 18,
 "Historical Society of Greater Port Jefferson": 1,
-"Stony Brook Athletics (home games)": 57,
 "Local business Instagram posts": 1
 },
 "icons": {
@@ -630,23 +629,6 @@
 "page": "https://www.threevillagelocal.com/events/fall-into-art-make-a-painted-leaf-mobile-workshop"
 },
 {
-"id": "seawolves-vcal-12775-stonybrookathletics-com",
-"title": "Stony Brook Seawolves Women's Basketball vs Queens College (Exh.)",
-"start": "2026-10-29T18:31:00",
-"end": "2026-10-29T20:31:00",
-"allday": false,
-"venue": "Stony Brook Arena, Stony Brook University",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12775&sport_id=12",
-"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
-"img": "",
-"src": "seawolves",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-womens-basketball-vs-queens-college-exh"
-},
-{
 "id": "wmho-1811",
 "title": "Hidden Beneath the Floorboards Walking Tour",
 "start": "2026-10-30T00:00:00",
@@ -741,23 +723,6 @@
 "page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free-441"
 },
 {
-"id": "seawolves-vcal-12663-stonybrookathletics-com",
-"title": "Stony Brook Seawolves Women's Volleyball vs UNCW - Dig Pink Game",
-"start": "2026-10-30T17:30:00",
-"end": "2026-10-30T19:30:00",
-"allday": false,
-"venue": "Pritchard Gymnasium, Stony Brook University",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12663&sport_id=17",
-"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
-"img": "",
-"src": "seawolves",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-womens-volleyball-vs-uncw-dig-pink-game"
-},
-{
 "id": "gallerynorth-71313",
 "title": "Cabinet of Curiosities Sketch Night; Skulls, Bones & More!",
 "start": "2026-10-30T18:00:00",
@@ -776,25 +741,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/cabinet-of-curiosities-sketch-night-skulls-bones-more"
-},
-{
-"id": "seawolves-vcal-12639-stonybrookathletics-com",
-"title": "Stony Brook Seawolves Men's Soccer vs Northeastern - Senior Day",
-"start": "2026-10-30T18:00:00",
-"end": "2026-10-30T20:00:00",
-"allday": false,
-"venue": "LaValle Stadium, Stony Brook University",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12639&sport_id=7",
-"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
-"img": "",
-"src": "seawolves",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-mens-soccer-vs-northeastern-senior-day"
 },
 {
 "id": "staller-01dafef3-fa1e-4fa9-9c26-e5769b8fb7c4",
@@ -955,42 +901,6 @@
 "page": "https://www.threevillagelocal.com/events/36th-annual-halloween-festival-in-stony-brook-village"
 },
 {
-"id": "seawolves-vcal-12489-stonybrookathletics-com",
-"title": "Stony Brook Seawolves Football vs Sacred Heart - Halloween at LaValle - Free admission for fans 12 and under in costume",
-"start": "2026-10-31T12:00:00",
-"end": "2026-10-31T15:00:00",
-"allday": false,
-"venue": "LaValle Stadium, Stony Brook University",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12489&sport_id=3",
-"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
-"img": "",
-"src": "seawolves",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-football-vs-sacred-heart-halloween-at-lavalle-free-admission-for-fans-12-and-under-in-costume"
-},
-{
-"id": "seawolves-vcal-12664-stonybrookathletics-com",
-"title": "Stony Brook Seawolves Women's Volleyball vs UNCW",
-"start": "2026-10-31T13:00:00",
-"end": "2026-10-31T15:00:00",
-"allday": false,
-"venue": "Pritchard Gymnasium, Stony Brook University",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12664&sport_id=17",
-"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
-"img": "",
-"src": "seawolves",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-womens-volleyball-vs-uncw"
-},
-{
 "id": "pjchamber-15119",
 "title": "Long Island Restaurant Week",
 "start": "2026-11-01T00:00:00",
@@ -999,7 +909,7 @@
 "venue": "Port Jefferson Village",
 "addr": "",
 "url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
-"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta",
+"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta – RUVO",
 "img": "",
 "src": "pjchamber",
 "tags": [
@@ -1185,23 +1095,6 @@
 "page": "https://www.threevillagelocal.com/events/take-make-sewn-heating-pads-for-people-in-need"
 },
 {
-"id": "seawolves-vcal-12715-stonybrookathletics-com",
-"title": "Stony Brook Seawolves Women's Basketball vs Molloy",
-"start": "2026-11-02T16:30:00",
-"end": "2026-11-02T18:30:00",
-"allday": false,
-"venue": "Stony Brook Arena, Stony Brook University",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12715&sport_id=12",
-"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
-"img": "",
-"src": "seawolves",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-womens-basketball-vs-molloy"
-},
-{
 "id": "emmaclark-pokemon-club-grades-2-5-61747",
 "title": "Pokémon Club (Grades 2-5)",
 "start": "2026-11-02T17:00:00",
@@ -1219,23 +1112,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/pok%C3%A9mon-club-grades-2-5-585"
-},
-{
-"id": "seawolves-vcal-12727-stonybrookathletics-com",
-"title": "Stony Brook Seawolves Men's Basketball vs SUNY Old Westbury",
-"start": "2026-11-02T18:31:00",
-"end": "2026-11-02T20:31:00",
-"allday": false,
-"venue": "Stony Brook Arena, Stony Brook University",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "https://stonybrookathletics.com/calendar.aspx?game_id=12727&sport_id=5",
-"desc": "Stony Brook University home game. Tickets, times and parking: stonybrookathletics.com.",
-"img": "",
-"src": "seawolves",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-seawolves-mens-basketball-vs-suny-old-westbury"
 },
 {
 "id": "emmaclark-come-aboard-whale-watching-long-island-waters-61287",
