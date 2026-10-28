@@ -95,14 +95,6 @@
 "expires": "2026-10-14",
 "_ts": "2026-09-29T17:31:00+0000"
 },
-"18116281079052168": {
-"special": false,
-"title": "Ralph's Famous Italian Ices & Ice Cream",
-"when": "Ongoing",
-"desc": "Ralph's is back and ready to serve with a smile after a two-day closure.",
-"expires": "2026-10-01",
-"_ts": "2026-09-28T14:54:56+0000"
-},
 "18141583504593377": {
 "special": false,
 "title": "Spicy Vodka Chicken Parm Sandwich",
@@ -143,14 +135,6 @@
 "expires": "2026-10-31",
 "_ts": "2026-09-28T17:40:29+0000"
 },
-"18137284411625141": {
-"special": true,
-"title": "Harvest Burrito Returns",
-"when": "Now through end of Fall",
-"desc": "Seasonal burrito with sweet potato, butternut squash, Brussels sprouts, corn salsa and spiced maple aioli.",
-"expires": "2026-12-20",
-"_ts": "2026-09-28T13:53:16+0000"
-},
 "17905067478590619": {
 "special": false,
 "title": "",
@@ -158,14 +142,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-09-29T16:31:46+0000"
-},
-"17878674009544984": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-28T14:00:10+0000"
 },
 "17918683176243017": {
 "special": true,
@@ -3398,5 +3374,37 @@
 "desc": "Crispy bacon, maple Dijon dressing, pecans, butternut squash, apples on a buttery croissant.",
 "expires": "2026-10-31",
 "_ts": "2026-10-27T19:25:08+0000"
+},
+"18148422697567936": {
+"special": false,
+"title": "Holiday Private Event Bookings Open",
+"when": "Dates TBA",
+"desc": "Book your corporate holiday party, family gathering, or festive event at Ixchel's private event room.",
+"expires": "2026-10-28",
+"_ts": "2026-10-28T13:19:27+0000"
+},
+"17951512758055831": {
+"special": false,
+"title": "PJ Lobster House Takeout & Delivery",
+"when": "Ongoing",
+"desc": "Order ahead for pickup, delivery for $6 flat fee within 8 miles, or cocktails to go.",
+"expires": "2026-10-28",
+"_ts": "2026-10-28T14:17:38+0000"
+},
+"18097406738446343": {
+"special": false,
+"title": "National Chocolate Day at Kilwins",
+"when": "Wed, Oct. 28",
+"desc": "Celebrate with Dubai chocolate and other chocolate favorites at Kilwins Port Jefferson.",
+"expires": "2026-10-28",
+"_ts": "2026-10-28T13:15:40+0000"
+},
+"17976382488173711": {
+"special": true,
+"title": "Wednesday Specials at Tara Inn",
+"when": "Wed, Oct. 28",
+"desc": "Daily specials including Prime Rib $25, Whole Lobster $17, Buffalo Wings $4.50, sandwiches from $2-$15.",
+"expires": "2026-10-28",
+"_ts": "2026-10-28T14:33:39+0000"
 }
 }

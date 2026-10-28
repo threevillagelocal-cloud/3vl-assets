@@ -473,5 +473,22 @@
 ],
 "portjefficecream": [],
 "slurp_ramen_usa": [],
-"tara.inn": []
+"tara.inn": [
+{
+"id": "17976382488173711",
+"biz": "Tara Inn",
+"ig": "tara.inn",
+"town": "Port Jefferson",
+"category": "Bar/Pub",
+"member": false,
+"title": "Wednesday Specials at Tara Inn",
+"when": "Wed, Oct. 28",
+"desc": "Daily specials including Prime Rib $25, Whole Lobster $17, Buffalo Wings $4.50, sandwiches from $2-$15.",
+"expires": "2026-10-28",
+"posted": "2026-10-28T14:33:39+0000",
+"url": "https://www.instagram.com/p/DfCqB65DZts/",
+"img": "",
+"inset": "ig/p17976382488173711.jpg"
+}
+]
 }
