@@ -31,6 +31,10 @@ def bd(m, path, d=None):
 
 
 if __name__ == "__main__":
+    # snow.css / snow.js are served from 3vl-share (GitHub Pages); copy them there, then commit + push 3vl-share before running this
+    import shutil
+    for f in ("snow.css", "snow.js"):
+        shutil.copy(os.path.join(HERE, f), os.path.join(HERE, "..", "..", "..", "3vl-share", "snow-shed", f))
     html = open(os.path.join(HERE, "post.html"), encoding="utf-8").read()
     js = re.search(r'<script src="[^"]+snow\.js" defer></script>', html).group(0)
     found = bd("GET", "/api/v2/data_widgets/get?property=widget_name&property_value=" + urllib.parse.quote(WIDGET))["message"]

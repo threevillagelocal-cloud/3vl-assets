@@ -8,7 +8,8 @@ from PIL import Image
 HERE = os.path.dirname(os.path.abspath(__file__))
 SHA = sys.argv[sys.argv.index("--sha") + 1] if "--sha" in sys.argv else "master"
 LOCAL = "--local" in sys.argv
-ASSET = "" if LOCAL else "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@%s/posts/snow-shed-2026/" % SHA
+# css/js are copied to 3vl-share (GitHub Pages) by push.py: jsDelivr refuses this repo when it is over 50 MB
+ASSET = "" if LOCAL else "https://threevillagelocal-cloud.github.io/3vl-share/snow-shed/"
 IMG = "https://threevillagelocal-cloud.github.io/3vl-share/snow-shed/"
 SHARE_DIR = os.path.join(HERE, "..", "..", "..", "3vl-share", "snow-shed")
 
