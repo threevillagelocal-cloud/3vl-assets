@@ -1,7 +1,7 @@
 {
-"last_run": "2026-10-28T15:01:02.429740+00:00",
-"cursor": 70,
-"accounts": 283,
+"last_run": "2026-10-29T12:01:08.530498+00:00",
+"cursor": 140,
+"accounts": 291,
 "posts": {
 "18481707613112188": {
 "ts": "2026-10-23T14:28:52+0000",
@@ -1086,6 +1086,555 @@
 "date_stated": false,
 "time_stated": false,
 "desc": "The caption mentions a Friday night but does not specify which Friday or provide any other event details."
+}
+},
+"18075334862758092": {
+"ts": "2026-10-16T19:03:47+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "A Saturday Afternoon with Bordeaux",
+"date": "2026-10-17",
+"start": "13:00",
+"end": "14:30",
+"place": "Enology Wine Bar & Bistro",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Learn about Left Bank, Right Bank, and the art of the blend, tasted side by side so you can finally figure out which side you're on."
+},
+"acct": {
+"name": "Enology Wine Bar & Bistro",
+"ig": "enologywinebar",
+"town": "St. James",
+"cat": "Wine Bar",
+"food": true,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/DekPW13D5Xu/",
+"caption": "We kicked off our Pinot Noir class with one question: why does the same grape taste so different from California to Burgundy?\nBy the end of the afternoon, everyone had an answer, and a few new favorites 🍷\n\nWe are looking forward to seeing you at the next one tomorrow! \n\n\"A Saturday Afternoon with Bordeaux\"\nSaturday, October 17th from 1–2:30pm\n\nLeft Bank, Right Bank, and the art of the blend, tasted side by side so you can finally figure out which side you're on.\n\nOnly a few seats left!\n\nReserve your spot through the link in our bio.\n\n#EnologyWineBar #BordeauxClass #ArtOfTheBlend #SaintJamesNY",
+"img": "ig/p18075334862758092.jpg"
+},
+"18099609011099623": {
+"ts": "2026-10-23T18:19:51+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Pure Barre Guest Class",
+"date": "2026-10-27",
+"start": "18:00",
+"end": "",
+"place": "Pure Barre East Setauket",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Join us for your chance to show your loved ones how hard you've been working at the barre. Bring your boo, friend, family, coworker - anyone you want to share your love of Pure Barre with!"
+},
+"acct": {
+"name": "Pure Barre",
+"ig": "pbeastsetauket",
+"town": "Setauket",
+"cat": "Fitness center",
+"food": false,
+"addr": "232 NY-25A, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/pure-barre",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/De2Lm_1IO6Z/",
+"caption": "This Tuesday, 10/27 at 6pm! 👻\n\nJoin us for your chance to show your loved ones how hard you’ve been working at the barre. Bring your boo, friend, family, coworker - anyone you want to share your love of Pure Barre with! Call, text or visit the front desk to sign up! 🎃",
+"img": "ig/p18099609011099623.jpg"
+},
+"18133987201778764": {
+"ts": "2026-10-26T10:28:39+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Assessment to Report: Mold Assessment Basics",
+"date": "2026-11-17",
+"start": "18:00",
+"end": "20:30",
+"place": "Farmingville, Long Island",
+"at_business": false,
+"date_stated": true,
+"time_stated": true,
+"desc": "In-person workshop for mold assessors covering assessment fundamentals, NYS Article 32, sampling methods, report writing, and remediation plans. $225 per student, printed manual included."
+},
+"acct": {
+"name": "Long Island Mold Guy",
+"ig": "longislandmoldguy",
+"town": "Centereach",
+"cat": "Restoration (Flood, Fire & Mold)",
+"food": false,
+"addr": "51 Joan Ave, Centereach, NY 11720",
+"page": "https://www.threevillagelocal.com/long-island-mold-guy",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/De9EGeLp3FT/",
+"caption": "🎓 INTRODUCING THE LONG ISLAND MOLD GUY PROFESSIONAL DEVELOPMENT SERIES!\n\nNEW TO MOLD ASSESSMENT? THIS CLASS IS FOR YOU!\n\nGetting your NYS Mold Assessor license is an important first step. But knowing how to approach an actual mold assessment, document findings, and prepare a professional report and remediation plan takes knowledge, practice, and experience.\n\nAfter 30+ years in the field and over 5,000 projects, I’m excited to share what I’ve learned through my new Professional Development Series!\n\n📚 MY FIRST CLASS:\n\nAssessment to Report: Basics of Mold Assessment and Remediation Plan Writing (",
+"img": "ig/p18133987201778764.jpg"
+},
+"18120834499938219": {
+"ts": "2026-10-22T16:38:13+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Live DJ on the Lanes",
+"date": "2026-10-30",
+"start": "",
+"end": "",
+"place": "Port Jeff Bowl",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Live DJ on the lanes. Event scheduled for October 23 and October 30."
+},
+"acct": {
+"name": "Port Jeff Bowl",
+"ig": "portjeffbowl",
+"town": "Port Jefferson Station",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "31 Chereb Ln, Port Jefferson Station, NY 11776",
+"page": "https://www.threevillagelocal.com/port-jeff-bowl",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dezbg5jDeYD/",
+"caption": "Join us for live music this October & November! Live DJ on the lanes on 10/23 & 10/30!",
+"img": "ig/p18120834499938219.jpg"
+},
+"18109388161934444": {
+"ts": "2026-10-19T16:00:16+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Adult Doubles No-Tap Tournament",
+"date": "2026-11-10",
+"start": "",
+"end": "",
+"place": "Port Jeff Bowl",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Adult Doubles No-Tap Tournament on 11/10."
+},
+"acct": {
+"name": "Port Jeff Bowl",
+"ig": "portjeffbowl",
+"town": "Port Jefferson Station",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "31 Chereb Ln, Port Jefferson Station, NY 11776",
+"page": "https://www.threevillagelocal.com/port-jeff-bowl",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DeroyL6EtsT/",
+"caption": "Join us next month for our Adult Doubles No-Tap Tournament on 11/10!",
+"img": "ig/p18109388161934444.jpg"
+},
+"17976354171136949": {
+"ts": "2026-10-21T00:41:41+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "A post sharing photos from a past family photo session in the park. The photographer mentions having a few openings left this season and invites people to reach out for more information about booking services."
+}
+},
+"18126008560881360": {
+"ts": "2026-10-12T02:44:47+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "The post is dated 2026-10-12 and references an event on Saturday, October 17th, which has already passed as of today (2026-10-29). This is a past event announcement, not an upcoming event."
+}
+},
+"17890554663653611": {
+"ts": "2026-10-25T13:00:14+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Post announces a radio interview that already aired. No upcoming public event is announced."
+}
+},
+"17992649112082705": {
+"ts": "2026-10-24T13:30:07+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Boys & Girls Club of Shinnecock Nation Dance Troupe",
+"date": "2026-11-21",
+"start": "13:00",
+"end": "",
+"place": "The Long Island Museum",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Experience vibrant culture and traditions of the Shinnecock Nation through powwow-style and traditional dances performed by Native American youth. Included with museum admission, no registration required."
+},
+"acct": {
+"name": "The Long Island Museum",
+"ig": "limuseum",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "1200 NY-25A, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/the-long-island-museum",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/De4Pk6pASNn/",
+"caption": "Join The Long Island Museum on November 21 at 1:00 pm for a special performance by the Boys & Girls Club of Shinnecock Nation Dance Troupe!\n\nExperience the vibrant culture and traditions of the Shinnecock Nation through the power of dance. Featuring Native American youth from the Shinnecock Nation, the troupe shares its heritage through performances throughout Long Island and New York City.\n\nFeaturing both powwow-style and traditional Shinnecock dances, this engaging performance offers an opportunity to learn about Indigenous traditions, history, and cultural expression.\n\nIncluded with museum ",
+"img": "ig/p17992649112082705.jpg"
+},
+"18098983790089450": {
+"ts": "2026-10-22T12:00:12+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Arnold Hoffman Jr. and the Screen Print Workshop",
+"date": "2027-02-18",
+"start": "",
+"end": "",
+"place": "Long Island Museum",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Exhibition featuring works from the LIM collection by Arnold Hoffman Jr. and artists he inspired, including James Brooks, on view from February 18 through June 6, 2027."
+},
+"acct": {
+"name": "The Long Island Museum",
+"ig": "limuseum",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "1200 NY-25A, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/the-long-island-museum",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dey7sjOGgcd/",
+"caption": "This #NationalColorDay, we invite you to explore how color can express human emotion through “South Fork,” an abstract work by James Brooks in LIM’s Art Collection. What feelings or emotions do these colors evoke for you?\n\nDuring World War II, Brooks served in the U.S. Army as an art correspondent based in Cairo, Egypt. After returning to the United States, he became an important figure in the Abstract Expressionist movement that dominated American art in the postwar years. \n\n“South Fork” was created during Brooks’s association with Arnold Hoffman Jr.’s Screen Print Workshop in East Hampton, c",
+"img": "ig/p18098983790089450.jpg"
+},
+"18222968302342194": {
+"ts": "2026-10-19T21:40:05+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Virtual Lecture: Stealing America with Linford D. Fisher",
+"date": "2026-11-18",
+"start": "19:00",
+"end": "",
+"place": "Virtual via Zoom",
+"at_business": false,
+"date_stated": true,
+"time_stated": true,
+"desc": "Virtual lecture with Brown University historian Linford D. Fisher on his book about Indigenous slavery in U.S. history. Free program; registration required by November 16."
+},
+"acct": {
+"name": "The Long Island Museum",
+"ig": "limuseum",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "1200 NY-25A, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/the-long-island-museum",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DesPrNin72D/",
+"caption": "DATE CORRECTED: Join us on Wednesday, November 18 at 7:00 pm for a virtual lecture with Linford D. Fisher, author and Professor of History at Brown University, to focus on his new book, “Stealing America: The Hidden Story of Indigenous Slavery in U.S. History,” and the lesser-known stories of Native enslavement and land loss throughout American history.\n\nIn his book, Fisher demonstrates how the enslavement of Indigenous people began in the years just after 1492, ensnaring an estimated three to six million Natives throughout the Americas. Although largely erased from the public consciousness, N",
+"img": "ig/p18222968302342194.jpg"
+},
+"18110075168076407": {
+"ts": "2026-10-19T12:00:10+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Archaeology and Native American History Program",
+"date": "2026-11-14",
+"start": "13:00",
+"end": "",
+"place": "The Long Island Museum",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Join anthropological archaeologist Allison McGovern for a seated presentation followed by a guided talk and walk through the \"Enduring Heart: Native American Long Island\" exhibit. Learn about archaeology's role in understanding Native American communities and emerging collaborative approaches."
+},
+"acct": {
+"name": "The Long Island Museum",
+"ig": "limuseum",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "1200 NY-25A, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/the-long-island-museum",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DerNTmyCi49/",
+"caption": "On November 14 at 1:00, join anthropological archaeologist Allison McGovern, PhD, RPA, Cultural Resources Manager at Brookhaven National Laboratory, for an engaging program exploring the complex relationship between archaeology and Native American history.\n\nThe program begins with a seated presentation, followed by a guided talk and walk through LIM’s “Enduring Heart: Native American Long Island.” Discover how archaeological practices have shaped our understanding of Native American communities and the challenges that can arise when studying Indigenous histories and cultural heritage. McGovern",
+"img": "ig/p18110075168076407.jpg"
+},
+"18024332753942148": {
+"ts": "2026-10-23T16:37:45+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "The post is dated 2026-10-23 and references events on October 24-25, which are in the past relative to today (2026-10-29). These dates have already passed."
+}
+},
+"17912617824516454": {
+"ts": "2026-10-14T14:01:42+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Post is from October 14, 2026, but today is October 29, 2026, making this a past event. The caption invites people to join 'Today October 14' which has already occurred."
+}
+},
+"18245420698314280": {
+"ts": "2026-10-11T15:43:26+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Witches & Warlocks Sunset Paddle",
+"date": "2026-10-18",
+"start": "16:30",
+"end": "",
+"place": "Stony Brook Harbor",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Join a sunset paddle in costume at Stony Brook Harbor. Kayaks and paddleboards welcome, with refreshments included and proceeds benefiting Sweet Briar Nature Center."
+},
+"acct": {
+"name": "Stony Brook Harbor Kayak & Paddleboard Rentals",
+"ig": "sbharborrentals",
+"town": "Stony Brook",
+"cat": "Marine Services",
+"food": false,
+"addr": "51 Shore Rd, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/stony-brook-harbor-kayak-paddleboard-rentals",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DeXAgE_nBJm/",
+"caption": "🧙‍♀️ Something wicked floats this way! 🎃\nJoin us for our Witches & Warlocks Sunset Paddle on Sunday, October 18, from 4:30 PM to sunset at Stony Brook Harbor!\n\nGrab your witch hat, dress in your spookiest costume, and enjoy a beautiful evening on the water. Kayaks and paddleboards are welcome!\n\n🛶 $50 per person with a rental\n🌊 $20 per person with your own kayak or paddleboard\n🍂 Refreshments included from eatschnitzels (if you haven't been to schnitzels, you are missing out)\n🦉 A portion of proceeds benefits Sweet Briar Nature Center\n\n📲 Text 631-834-3130 to reserve!\n\n#stonybrookvillage #longisla",
+"img": "ig/p18245420698314280.jpg"
+},
+"18113620358126373": {
+"ts": "2026-10-21T22:05:03+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "The event date (October 23rd) has already passed relative to the post date (October 21st) and today's date (October 29th). This is a past event announcement."
+}
+},
+"17993770425117730": {
+"ts": "2026-10-25T17:38:11+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "This is a general promotional post about brunch offerings at the restaurant, not an announcement of a specific upcoming event."
+}
+},
+"17965481022203258": {
+"ts": "2026-10-22T08:31:12+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "This is a notice about the business closing early on October 22 for a private wedding celebration, not a public event announcement."
+}
+},
+"17988467732877078": {
+"ts": "2026-10-22T11:02:41+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "No Gi Jiu Jitsu Class",
+"date": "",
+"start": "",
+"end": "",
+"place": "Stony Brook, NY",
+"at_business": true,
+"date_stated": false,
+"time_stated": false,
+"desc": "No Gi class covering Clinch Fighting Controls, setups for strikes, takedowns, joint locks, submissions, entries and sweeps from Deep Half Guard."
+},
+"acct": {
+"name": "Tide Change Tai Chi",
+"ig": "tide_change_tai_chi",
+"town": "Stony Brook",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "2500 Nesconset Hwy Building 26, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/tide-change-tai-chi",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dey0cSfpY8B/",
+"caption": "Tonight is a no Gi class where we will work on Clinch Fighting Controls and setups for strikes, takedowns and joint locks/Submissions as well as work on entries and sweeps from Deep Half Guard on the ground. If you miss class, you miss a lot!\nTide Change Jiu Jitsu/MMA teaches all aspects of Jiu Jitsu, Mixed Martial Arts, Self Defense, submission Wrestling, Weapons Defense and more. Try a free week of classes with us in Stony Brook, NY.\nWe also have a separate Tai Chi Chuan/ Kung Fu class available.\nwww.tidechangetaichi.com\n(631) 403-0086\n\n#suffolkcounty #suffolk #longisland #longislandmartiala",
+"img": "ig/p17988467732877078.jpg"
+},
+"17935417818146956": {
+"ts": "2026-10-28T23:16:09+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Evan & James Band Live Music",
+"date": "2026-10-31",
+"start": "13:00",
+"end": "17:00",
+"place": "holzmansfarm",
+"at_business": false,
+"date_stated": true,
+"time_stated": true,
+"desc": "Evan & James Band performs a doubleheader on Halloween weekend. First show at holzmansfarm 1-5 PM."
+},
+"acct": {
+"name": "Evan & James Band",
+"ig": "evanandjamesmusic",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "19 Dairy Farm Road, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/christopher-evan",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfDl0thEcGc/",
+"caption": "Halloween weekend gigs! 🎃\n\n10/31 — Doubleheader!\nholzmansfarm 1–5 PM\nlaporta_northport 8–11 PM\n\n11/1 — riverhead_ciderhouse 2–5 PM\n\nHope to see you out there!\n\n#livemusic #longisland #halloween #live #fall",
+"img": "ig/p17935417818146956.jpg"
+},
+"18109454681225188": {
+"ts": "2026-10-15T13:32:29+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Evan & James Band Live Music at Main and Mill",
+"date": "2026-10-30",
+"start": "17:00",
+"end": "19:00",
+"place": "mainandmill",
+"at_business": false,
+"date_stated": true,
+"time_stated": true,
+"desc": "Live music performance by Evan & James Band with wine and good times. Friday night from 5–7 PM."
+},
+"acct": {
+"name": "Evan & James Band",
+"ig": "evanandjamesmusic",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "19 Dairy Farm Road, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/christopher-evan",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DehDbeexcFy/",
+"caption": "Join us this Friday night at mainandmill from 5–7 PM for some live music, wine, and good times! 🍷🎵\n\nWe hope to see you there!\n\n#livemusic #northforklongisland #liveentertainment #duo #vineyard",
+"img": "ig/p18109454681225188.jpg"
+},
+"18079916570687658": {
+"ts": "2026-10-08T16:26:07+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Post references past dates (10/8-10/11) that have already occurred. Today is 2026-10-29, making all mentioned dates in the past. No upcoming public event is announced."
+}
+},
+"18108361226350124": {
+"ts": "2026-10-21T13:10:03+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": ""
 }
 }
 }

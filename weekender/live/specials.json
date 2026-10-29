@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T19:00:34.047599+00:00",
+ "updated": "2026-10-29T12:00:14.972488+00:00",
  "specials": [
   {
    "id": "18113599847613065",
@@ -66,22 +66,6 @@
    "inset": "ig/p17909824674564464.jpg"
   },
   {
-   "id": "18110244839627398",
-   "biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
-   "ig": "threevillageinn",
-   "town": "Stony Brook",
-   "category": "Restaurant/Inn",
-   "member": false,
-   "title": "Long Island Restaurant Week",
-   "when": "Nov 1-8 (Closed Mon & Tue)",
-   "desc": "Special dining event at Three Village Inn & Mirabelle. Reserve your table via their bio link.",
-   "expires": "2026-11-08",
-   "posted": "2026-10-21T19:34:57+0000",
-   "url": "https://www.instagram.com/p/DexKtUMl7va/",
-   "img": "",
-   "inset": "ig/p18110244839627398.jpg"
-  },
-  {
    "id": "17993881305055874",
    "biz": "Po' Boy Brewery",
    "ig": "poboybeerandcider",
@@ -96,6 +80,22 @@
    "url": "https://www.instagram.com/reel/DfAfAj_Jn_s/",
    "img": "",
    "inset": "ig/p17993881305055874.jpg"
+  },
+  {
+   "id": "18422434549159472",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Long Island Restaurant Week Prix Fixe",
+   "when": "Sun, Nov. 1 - Fri, Nov. 8",
+   "desc": "Dinner at Castaways is $48 per person++ for a special Restaurant Week menu. Book on Resy or call.",
+   "expires": "2026-11-08",
+   "posted": "2026-10-26T14:00:56+0000",
+   "url": "https://www.instagram.com/p/De9cr7uldi0/",
+   "img": "",
+   "inset": "ig/p18422434549159472.jpg"
   }
  ],
  "candidates": [
@@ -164,22 +164,6 @@
    "inset": "ig/p17909824674564464.jpg"
   },
   {
-   "id": "18110244839627398",
-   "biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
-   "ig": "threevillageinn",
-   "town": "Stony Brook",
-   "category": "Restaurant/Inn",
-   "member": false,
-   "title": "Long Island Restaurant Week",
-   "when": "Nov 1-8 (Closed Mon & Tue)",
-   "desc": "Special dining event at Three Village Inn & Mirabelle. Reserve your table via their bio link.",
-   "expires": "2026-11-08",
-   "posted": "2026-10-21T19:34:57+0000",
-   "url": "https://www.instagram.com/p/DexKtUMl7va/",
-   "img": "",
-   "inset": "ig/p18110244839627398.jpg"
-  },
-  {
    "id": "17993881305055874",
    "biz": "Po' Boy Brewery",
    "ig": "poboybeerandcider",
@@ -194,6 +178,22 @@
    "url": "https://www.instagram.com/reel/DfAfAj_Jn_s/",
    "img": "",
    "inset": "ig/p17993881305055874.jpg"
+  },
+  {
+   "id": "18422434549159472",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Long Island Restaurant Week Prix Fixe",
+   "when": "Sun, Nov. 1 - Fri, Nov. 8",
+   "desc": "Dinner at Castaways is $48 per person++ for a special Restaurant Week menu. Book on Resy or call.",
+   "expires": "2026-11-08",
+   "posted": "2026-10-26T14:00:56+0000",
+   "url": "https://www.instagram.com/p/De9cr7uldi0/",
+   "img": "",
+   "inset": "ig/p18422434549159472.jpg"
   }
  ],
  "all": [
@@ -246,22 +246,6 @@
    "inset": "ig/p18130326799700088.jpg"
   },
   {
-   "id": "18074576285727806",
-   "biz": "Schnitzels",
-   "ig": "eatschnitzels",
-   "town": "Stony Brook",
-   "category": "Restaurant/Gastropub",
-   "member": false,
-   "title": "The Dip Schnitz Limited Menu Item",
-   "when": "Limited time",
-   "desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
-   "expires": "2026-11-21",
-   "posted": "2026-10-21T21:25:57+0000",
-   "url": "https://www.instagram.com/p/DexXoFJhJhr/",
-   "img": "",
-   "inset": "ig/p18074576285727806.jpg"
-  },
-  {
    "id": "18109810757580122",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
@@ -292,22 +276,6 @@
    "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
    "img": "",
    "inset": "ig/p17909824674564464.jpg"
-  },
-  {
-   "id": "18110244839627398",
-   "biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
-   "ig": "threevillageinn",
-   "town": "Stony Brook",
-   "category": "Restaurant/Inn",
-   "member": false,
-   "title": "Long Island Restaurant Week",
-   "when": "Nov 1-8 (Closed Mon & Tue)",
-   "desc": "Special dining event at Three Village Inn & Mirabelle. Reserve your table via their bio link.",
-   "expires": "2026-11-08",
-   "posted": "2026-10-21T19:34:57+0000",
-   "url": "https://www.instagram.com/p/DexKtUMl7va/",
-   "img": "",
-   "inset": "ig/p18110244839627398.jpg"
   },
   {
    "id": "17993881305055874",
@@ -342,20 +310,20 @@
    "inset": "ig/p18422434549159472.jpg"
   },
   {
-   "id": "17976382488173711",
-   "biz": "Tara Inn",
-   "ig": "tara.inn",
-   "town": "Port Jefferson",
-   "category": "Bar/Pub",
+   "id": "18130308745847714",
+   "biz": "Right Coast Taqueria",
+   "ig": "rctaqueria",
+   "town": "East Setauket",
+   "category": "Restaurant",
    "member": false,
-   "title": "Wednesday Specials at Tara Inn",
-   "when": "Wed, Oct. 28",
-   "desc": "Daily specials including Prime Rib $25, Whole Lobster $17, Buffalo Wings $4.50, sandwiches from $2-$15.",
-   "expires": "2026-10-28",
-   "posted": "2026-10-28T14:33:39+0000",
-   "url": "https://www.instagram.com/p/DfCqB65DZts/",
+   "title": "Burritos $5 All Day",
+   "when": "Thu, Oct. 31",
+   "desc": "Get burritos for just $5 all day on Halloween at Right Coast Taqueria.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-28T19:53:35+0000",
+   "url": "https://www.instagram.com/p/DfDOmxTs3CQ/",
    "img": "",
-   "inset": "ig/p17976382488173711.jpg"
+   "inset": "ig/p18130308745847714.jpg"
   },
   {
    "id": "18097741877403785",
@@ -404,6 +372,22 @@
    "url": "https://www.instagram.com/p/De-wDyQoGWz/",
    "img": "",
    "inset": "ig/p18450495184121658.jpg"
+  },
+  {
+   "id": "18028508084923466",
+   "biz": "The Secret Garden Tea Room",
+   "ig": "secretgardentearoom",
+   "town": "Port Jefferson",
+   "category": "Tea Room",
+   "member": false,
+   "title": "Halloween Treat: 10% Off",
+   "when": "Sat, Oct. 31",
+   "desc": "Get 10% off your bill or gift shop purchase when you mention this post.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-28T20:24:10+0000",
+   "url": "https://www.instagram.com/p/DfDSJDzjXRn/",
+   "img": "",
+   "inset": "ig/p18028508084923466.jpg"
   },
   {
    "id": "18132884848691963",
