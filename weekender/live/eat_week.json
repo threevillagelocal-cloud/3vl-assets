@@ -1,13 +1,19 @@
 {
- "week": "2026-10-22",
+ "week": "2026-10-29",
  "lineup": [
+  "madiran the wine bar",
+  "tommy's place",
+  "burgerology",
+  "the study by toast",
+  "robinson's tea room",
+  "namkeen hot chicken"
+ ],
+ "prev": [
   "madiran the wine bar",
   "namkeen hot chicken",
   "kilwins port jefferson",
   "schnitzels",
   "three village inn / mirabelle restaurant & tavern",
   "robinson's tea room"
- ],
- "prev": [],
- "_note": "Owner-approved lineup for the week of Oct 22, 2026 (the Thursday reel). Next Thursday a fresh set is picked, avoiding these."
+ ]
 }

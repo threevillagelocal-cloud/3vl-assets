@@ -1,14 +1,14 @@
 {
- "checked": "2026-10-29T01:00:14+00:00",
+ "checked": "2026-10-29T05:34:42+00:00",
  "alerts": [
   {
-   "title": "PT Barnum Elevator Out of Service",
-   "text": "At this time the PT Barnum's elevator is under repair, more info and affected departures available by clicking below.",
-   "link": "https://www.88844ferry.com/info/elevator-alert",
-   "published": "2026-10-23T02:19:02.479Z"
+   "title": "Thursday Oct. 29 Revised Schedule",
+   "text": "Thursday 10/29 we will be running a revised schedule. The following departures have been cancelled - Departing Bridgeport: 8:30 AM & 11:45 AM. Departing Port Jefferson: 10:00 AM",
+   "link": "https://www.88844ferry.com/schedule",
+   "published": "2026-10-29T02:18:59.235Z"
   }
  ],
- "cancellations": false,
+ "cancellations": true,
  "url": "https://www.88844ferry.com/schedule",
  "rescheduled": true
 }
