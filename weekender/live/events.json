@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-29T05:35:35.913785+00:00",
+"updated": "2026-10-29T05:36:48.388021+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1955,7 +1955,7 @@
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/eat.namkeen.jpg",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-smash-thursday-meal",
 "label": "Event",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 }
@@ -2119,7 +2119,7 @@
 "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-smash-thursday-meal",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "label": "Event"
 },
