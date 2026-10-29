@@ -1,11 +1,11 @@
 {
-"updated": "2026-10-29T19:32:35.778621+00:00",
+"updated": "2026-10-29T21:01:02.351724+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Village of Port Jefferson": 204,
 "Emma S. Clark Library": 310,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
@@ -872,6 +872,26 @@
 "page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
 },
 {
+"id": "portjeff-1098",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-01T09:00:00",
+"end": "2026-11-01T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1098",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-481"
+},
+{
 "id": "reboli-6adf9dab4c6329721a5cedc5",
 "title": "Emerging Artist Spotlight: November | Genevieve Rochlin",
 "start": "2026-11-01T11:00:00",
@@ -1450,6 +1470,25 @@
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
 },
 {
+"id": "portjeff-1151",
+"title": "Caleb Brewster Escape 4K run",
+"start": "2026-11-07T00:00:00",
+"end": "2026-11-07T00:00:00",
+"allday": true,
+"venue": "Strong's Park",
+"addr": "Strong's Park - Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
+},
+{
 "id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
 "title": "Writing Workshop: Language, Silence, and the Stories We Carry",
 "start": "2026-11-07T10:30:00",
@@ -1572,7 +1611,7 @@
 "venue": "Staller Center for the Arts, Main Stage",
 "addr": "100 Nicolls Rd, Stony Brook, NY 11794",
 "url": "https://stallercenter.showare.com/eventperformances.asp?evt=475",
-"desc": "The Stony Brook Symphony Orchestra is composed of outstanding musicians from all over the world pursuing advanced studies in the graduate school of the Department of Music with renowned performance faculty. PROGRAM: André Raphel conducts Sibelius 5 Dvořák: Car",
+"desc": "The Stony Brook Symphony Orchestra is composed of outstanding musicians from all over the world pursuing advanced studies in the graduate school of the Department of Music with renowned performance faculty. PROGRAM: Dvořák: Carnival Overture Schnittke: Viola C",
 "img": "https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/becb3dc5-9d21-4d0f-9aa7-e3ff34cdbcc4/_2024PAHSBSO.jpg",
 "src": "staller",
 "tags": [
@@ -1601,6 +1640,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
+},
+{
+"id": "portjeff-1099",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-08T09:00:00",
+"end": "2026-11-08T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
@@ -1667,7 +1726,7 @@
 "venue": "The Long Island Music and Entertainment Hall of Fame",
 "addr": "97 Main St, Stony Brook, NY 11790",
 "url": "https://www.limusichalloffame.org/events/",
-"desc": "Free with Admission. Blotto Fest will celebrate the popular rock band Blotto , formed in 1978 in Albany, NY, which was known for blending music with sharp humor, goofy charm, and a playful stage persona. The band became a cult favorite in the early 1980s, with",
+"desc": "Free with Admission. About Blotto Fest Blotto Fest will celebrate the popular rock band Blotto, formed in 1978 in Albany, NY, which was known for blending music with sharp humor, goofy charm, and a playful stage persona. The band became a cult favorite in the ",
 "img": "https://www.limusichalloffame.org/wp-content/uploads/2026/08/Blotto_Fest_lineup_v3.jpg",
 "src": "limehof",
 "tags": [
