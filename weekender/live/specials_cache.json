@@ -84,6 +84,22 @@
 "ralphsitalianicesstonybrook": [],
 "burgerologyusa": [
 {
+"id": "17972423598169904",
+"biz": "Burgerology",
+"ig": "burgerologyusa",
+"town": "Stony Brook",
+"category": "Restaurant",
+"member": false,
+"title": "Beer Buckets for Season Pass Holders",
+"when": "Game days (Week 8 onwards)",
+"desc": "$15 domestic beer buckets for Season Pass holders during football games at Burgerology.",
+"expires": "2026-11-30",
+"posted": "2026-10-29T18:37:33+0000",
+"url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
+"img": "",
+"inset": "ig/p17972423598169904.jpg"
+},
+{
 "id": "18109810757580122",
 "biz": "Burgerology",
 "ig": "burgerologyusa",
@@ -122,25 +138,41 @@
 ],
 "thestudy.bytoast": [
 {
-"id": "17909824674564464",
+"id": "17966489859226645",
 "biz": "The Study by Toast",
 "ig": "thestudy.bytoast",
 "town": "East Setauket",
 "category": "Coffee House",
 "member": false,
-"title": "Caramel Apple Danish Pastry",
-"when": "October 2026",
-"desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
+"title": "Free Hedwig Cookie with Costume",
+"when": "Fri, Oct. 31",
+"desc": "Wear a costume and make a purchase to get a free Hedwig-inspired shortbread cookie.",
 "expires": "2026-10-31",
-"posted": "2026-10-22T18:56:21+0000",
-"url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
+"posted": "2026-10-29T16:11:18+0000",
+"url": "https://www.instagram.com/reel/DfFZk5DxrVE/",
 "img": "",
-"inset": "ig/p17909824674564464.jpg"
+"inset": "ig/p17966489859226645.jpg"
 }
 ],
 "breakroomny": [],
 "seportdelicatessen": [],
 "toastcoffeeandkitchen": [
+{
+"id": "18099657377388421",
+"biz": "Toast Coffee + Kitchen",
+"ig": "toastcoffeeandkitchen",
+"town": "Port Jefferson Station",
+"category": "Cafe/Brunch",
+"member": false,
+"title": "Thanksgiving Sandwich",
+"when": "Starting Sun, Nov 3 through Nov 25",
+"desc": "Fresh-roasted turkey, stuffing, Swiss cheese, cranberry mayo and gravy on a sandwich with a side.",
+"expires": "2026-11-25",
+"posted": "2026-10-29T16:06:38+0000",
+"url": "https://www.instagram.com/p/DfFZI30t-gX/",
+"img": "",
+"inset": "ig/p18099657377388421.jpg"
+},
 {
 "id": "18097741877403785",
 "biz": "Toast Coffee + Kitchen",

@@ -47,14 +47,6 @@
 "expires": "",
 "_ts": "2026-09-30T17:02:57+0000"
 },
-"18123674365928153": {
-"special": false,
-"title": "Robinson's Tea Room",
-"when": "Ongoing",
-"desc": "Fresh scones and hot tea available. Call to make a reservation.",
-"expires": "2026-10-15",
-"_ts": "2026-09-29T18:42:39+0000"
-},
 "17906645451480591": {
 "special": true,
 "title": "Happy Hour at Mirabelle Tavern",
@@ -62,14 +54,6 @@
 "desc": "50% off cocktails, wine and beer at the bar.",
 "expires": "2026-10-14",
 "_ts": "2026-09-30T15:10:46+0000"
-},
-"18222401701337755": {
-"special": true,
-"title": "Twister Tuesdays: Buy 1 Get 1 FREE",
-"when": "Every Tuesday",
-"desc": "Buy one item, get one free on Tuesdays. Bring a friend to Ralph's Famous Italian Ices & Ice Cream.",
-"expires": "2026-10-14",
-"_ts": "2026-09-29T17:31:00+0000"
 },
 "18141583504593377": {
 "special": false,
@@ -86,14 +70,6 @@
 "desc": "Halloween-themed drink served in a smoking cauldron with glowing LED ice cubes.",
 "expires": "2026-10-31",
 "_ts": "2026-09-29T23:37:43+0000"
-},
-"17905067478590619": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-29T16:31:46+0000"
 },
 "17918683176243017": {
 "special": true,
@@ -246,14 +222,6 @@
 "desc": "Half off beer, wine, cocktails, top-shelf pours plus $2 oysters, $1 clams and food specials from $8.",
 "expires": "2026-10-08",
 "_ts": "2026-09-30T16:02:16+0000"
-},
-"18148189036502764": {
-"special": true,
-"title": "Taco Tuesday at Castaways",
-"when": "Every Tuesday",
-"desc": "Enjoy tacos every Tuesday at this Port Jefferson steakhouse and seafood restaurant.",
-"expires": "2026-10-07",
-"_ts": "2026-09-29T15:01:49+0000"
 },
 "18106556117245506": {
 "special": false,
@@ -3318,5 +3286,61 @@
 "desc": "Get 10% off your bill or gift shop purchase when you mention this post.",
 "expires": "2026-10-31",
 "_ts": "2026-10-28T20:24:10+0000"
+},
+"17993314155113737": {
+"special": false,
+"title": "Pork Tenderloin",
+"when": "N/A",
+"desc": "Menu item description with no time-bound offer or event date announced.",
+"expires": "N/A",
+"_ts": "2026-10-29T16:02:40+0000"
+},
+"17972423598169904": {
+"special": true,
+"title": "Beer Buckets for Season Pass Holders",
+"when": "Game days (Week 8 onwards)",
+"desc": "$15 domestic beer buckets for Season Pass holders during football games at Burgerology.",
+"expires": "2026-11-30",
+"_ts": "2026-10-29T18:37:33+0000"
+},
+"17919214227464513": {
+"special": false,
+"title": "Long Island Restaurant Week Preview",
+"when": "TBA",
+"desc": "Burgerology teasing experimental menu items for Long Island Restaurant Week with no dates confirmed yet.",
+"expires": "2026-10-29",
+"_ts": "2026-10-29T15:38:58+0000"
+},
+"17966489859226645": {
+"special": true,
+"title": "Free Hedwig Cookie with Costume",
+"when": "Fri, Oct. 31",
+"desc": "Wear a costume and make a purchase to get a free Hedwig-inspired shortbread cookie.",
+"expires": "2026-10-31",
+"_ts": "2026-10-29T16:11:18+0000"
+},
+"18099657377388421": {
+"special": true,
+"title": "Thanksgiving Sandwich",
+"when": "Starting Sun, Nov 3 through Nov 25",
+"desc": "Fresh-roasted turkey, stuffing, Swiss cheese, cranberry mayo and gravy on a sandwich with a side.",
+"expires": "2026-11-25",
+"_ts": "2026-10-29T16:06:38+0000"
+},
+"18076418177497026": {
+"special": false,
+"title": "Online Ordering Available",
+"when": "Ongoing",
+"desc": "Order fresh greens and sweet pears online for convenient delivery or pickup.",
+"expires": "2026-10-29",
+"_ts": "2026-10-29T15:33:09+0000"
+},
+"18121989119068014": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-29T15:01:21+0000"
 }
 }

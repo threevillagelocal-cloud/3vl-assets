@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T15:00:15.256607+00:00",
+ "updated": "2026-10-29T19:00:14.065386+00:00",
  "specials": [
   {
    "id": "18113599847613065",
@@ -34,36 +34,36 @@
    "inset": "ig/p18130326799700088.jpg"
   },
   {
-   "id": "18109810757580122",
+   "id": "17972423598169904",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
    "town": "Stony Brook",
    "category": "Restaurant",
    "member": false,
-   "title": "Kids Eat Free Every Tuesday",
-   "when": "Every Tuesday · 4 PM – 9 PM",
-   "desc": "Kids eat free every Tuesday at Burgerology. Bring the family and enjoy your favorites.",
-   "expires": "2026-11-10",
-   "posted": "2026-10-27T15:51:35+0000",
-   "url": "https://www.instagram.com/reel/DfAOGxhxZWe/",
+   "title": "Beer Buckets for Season Pass Holders",
+   "when": "Game days (Week 8 onwards)",
+   "desc": "$15 domestic beer buckets for Season Pass holders during football games at Burgerology.",
+   "expires": "2026-11-30",
+   "posted": "2026-10-29T18:37:33+0000",
+   "url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
    "img": "",
-   "inset": "ig/p18109810757580122.jpg"
+   "inset": "ig/p17972423598169904.jpg"
   },
   {
-   "id": "17909824674564464",
+   "id": "17966489859226645",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
    "town": "East Setauket",
    "category": "Coffee House",
    "member": false,
-   "title": "Caramel Apple Danish Pastry",
-   "when": "October 2026",
-   "desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
+   "title": "Free Hedwig Cookie with Costume",
+   "when": "Fri, Oct. 31",
+   "desc": "Wear a costume and make a purchase to get a free Hedwig-inspired shortbread cookie.",
    "expires": "2026-10-31",
-   "posted": "2026-10-22T18:56:21+0000",
-   "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
+   "posted": "2026-10-29T16:11:18+0000",
+   "url": "https://www.instagram.com/reel/DfFZk5DxrVE/",
    "img": "",
-   "inset": "ig/p17909824674564464.jpg"
+   "inset": "ig/p17966489859226645.jpg"
   },
   {
    "id": "17993881305055874",
@@ -132,36 +132,36 @@
    "inset": "ig/p18130326799700088.jpg"
   },
   {
-   "id": "18109810757580122",
+   "id": "17972423598169904",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
    "town": "Stony Brook",
    "category": "Restaurant",
    "member": false,
-   "title": "Kids Eat Free Every Tuesday",
-   "when": "Every Tuesday · 4 PM – 9 PM",
-   "desc": "Kids eat free every Tuesday at Burgerology. Bring the family and enjoy your favorites.",
-   "expires": "2026-11-10",
-   "posted": "2026-10-27T15:51:35+0000",
-   "url": "https://www.instagram.com/reel/DfAOGxhxZWe/",
+   "title": "Beer Buckets for Season Pass Holders",
+   "when": "Game days (Week 8 onwards)",
+   "desc": "$15 domestic beer buckets for Season Pass holders during football games at Burgerology.",
+   "expires": "2026-11-30",
+   "posted": "2026-10-29T18:37:33+0000",
+   "url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
    "img": "",
-   "inset": "ig/p18109810757580122.jpg"
+   "inset": "ig/p17972423598169904.jpg"
   },
   {
-   "id": "17909824674564464",
+   "id": "17966489859226645",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
    "town": "East Setauket",
    "category": "Coffee House",
    "member": false,
-   "title": "Caramel Apple Danish Pastry",
-   "when": "October 2026",
-   "desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
+   "title": "Free Hedwig Cookie with Costume",
+   "when": "Fri, Oct. 31",
+   "desc": "Wear a costume and make a purchase to get a free Hedwig-inspired shortbread cookie.",
    "expires": "2026-10-31",
-   "posted": "2026-10-22T18:56:21+0000",
-   "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
+   "posted": "2026-10-29T16:11:18+0000",
+   "url": "https://www.instagram.com/reel/DfFZk5DxrVE/",
    "img": "",
-   "inset": "ig/p17909824674564464.jpg"
+   "inset": "ig/p17966489859226645.jpg"
   },
   {
    "id": "17993881305055874",
@@ -246,6 +246,22 @@
    "inset": "ig/p18130326799700088.jpg"
   },
   {
+   "id": "17972423598169904",
+   "biz": "Burgerology",
+   "ig": "burgerologyusa",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Beer Buckets for Season Pass Holders",
+   "when": "Game days (Week 8 onwards)",
+   "desc": "$15 domestic beer buckets for Season Pass holders during football games at Burgerology.",
+   "expires": "2026-11-30",
+   "posted": "2026-10-29T18:37:33+0000",
+   "url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
+   "img": "",
+   "inset": "ig/p17972423598169904.jpg"
+  },
+  {
    "id": "18109810757580122",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
@@ -262,20 +278,20 @@
    "inset": "ig/p18109810757580122.jpg"
   },
   {
-   "id": "17909824674564464",
+   "id": "17966489859226645",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
    "town": "East Setauket",
    "category": "Coffee House",
    "member": false,
-   "title": "Caramel Apple Danish Pastry",
-   "when": "October 2026",
-   "desc": "Seasonal fall pastry special at The Study by Toast. Flaky, buttery Danish with caramel apple flavor.",
+   "title": "Free Hedwig Cookie with Costume",
+   "when": "Fri, Oct. 31",
+   "desc": "Wear a costume and make a purchase to get a free Hedwig-inspired shortbread cookie.",
    "expires": "2026-10-31",
-   "posted": "2026-10-22T18:56:21+0000",
-   "url": "https://www.instagram.com/reel/DezrQL-Tj8W/",
+   "posted": "2026-10-29T16:11:18+0000",
+   "url": "https://www.instagram.com/reel/DfFZk5DxrVE/",
    "img": "",
-   "inset": "ig/p17909824674564464.jpg"
+   "inset": "ig/p17966489859226645.jpg"
   },
   {
    "id": "17993881305055874",
@@ -326,6 +342,22 @@
    "inset": "ig/p18130308745847714.jpg"
   },
   {
+   "id": "18099657377388421",
+   "biz": "Toast Coffee + Kitchen",
+   "ig": "toastcoffeeandkitchen",
+   "town": "Port Jefferson Station",
+   "category": "Cafe/Brunch",
+   "member": false,
+   "title": "Thanksgiving Sandwich",
+   "when": "Starting Sun, Nov 3 through Nov 25",
+   "desc": "Fresh-roasted turkey, stuffing, Swiss cheese, cranberry mayo and gravy on a sandwich with a side.",
+   "expires": "2026-11-25",
+   "posted": "2026-10-29T16:06:38+0000",
+   "url": "https://www.instagram.com/p/DfFZI30t-gX/",
+   "img": "",
+   "inset": "ig/p18099657377388421.jpg"
+  },
+  {
    "id": "18097741877403785",
    "biz": "Toast Coffee + Kitchen",
    "ig": "toastcoffeeandkitchen",
@@ -340,22 +372,6 @@
    "url": "https://www.instagram.com/p/DfAl9QLhDh6/",
    "img": "",
    "inset": "ig/p18097741877403785.jpg"
-  },
-  {
-   "id": "17952097197339637",
-   "biz": "Toast Coffee + Kitchen",
-   "ig": "toastcoffeeandkitchen",
-   "town": "Port Jefferson Station",
-   "category": "Cafe/Brunch",
-   "member": false,
-   "title": "Halloween Drinks at Toast Coffee",
-   "when": "Through Oct 31",
-   "desc": "Nightmare Before Christmas-inspired drinks like Oogie Boogie Martini and Deadly Nightshade Latte at Patchogue location.",
-   "expires": "2026-10-31",
-   "posted": "2026-10-26T17:32:06+0000",
-   "url": "https://www.instagram.com/reel/De90m6eJF5J/",
-   "img": "",
-   "inset": "ig/p17952097197339637.jpg"
   },
   {
    "id": "18450495184121658",
