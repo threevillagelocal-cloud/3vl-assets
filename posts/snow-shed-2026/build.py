@@ -68,18 +68,20 @@ w('<div class="ss" id="ss-top">')
 
 # HERO
 w('<header class="ss-hero">'
-  '<img class="ss-hbg" src="%shero-80s-night-ski-960.webp" srcset="%shero-80s-night-ski-960.webp 960w, %shero-80s-night-ski-1600.webp 1600w" sizes="(max-width:860px) 100vw, 860px" '
-  'alt="Two skiers in bright 1980s-style ski suits on a snowy night" width="960" height="640" fetchpriority="high">'
+  '<img class="ss-hbg" src="%shero-storefront-960.webp" srcset="%shero-storefront-960.webp 960w, %shero-storefront-1600.webp 1600w" sizes="(max-width:860px) 100vw, 860px" '
+  'alt="The Snow Shed storefront on Route 112 at golden hour, with its blue Ski, Snowboard, Kayak awning" width="960" height="540" fetchpriority="high">'
   '<div class="ss-hshade"></div><div class="ss-snow"></div><div class="ss-snow2"></div>'
   '<div class="ss-stripes" aria-hidden="true"><i></i><i></i><i></i></div>'
   '<div class="ss-hin"><p class="ss-kick">A Three Village Throwback</p>'
   '<h2 class="ss-h1">Remembering Snow Shed<span>1982 to 2026</span></h2>'
-  '<p class="ss-dek">For 44 winters, Long Island skiers and snowboarders got fitted, tuned and sent north from a little shop on Route 112. '
-  'Snow Shed has closed for good, so let&#39;s do what it did best: get everyone ready for one more great day on the mountain.</p>'
+  '<p class="ss-dek">Snow Shed closed its doors in June, so this will be the first winter in 44 years without our local ski and snowboard experts. '
+  'Here&#39;s a look back at the little shop on Route 112 that got Long Island fitted, tuned and sent north.</p>'
   '<div class="ss-chips"><span>&#128205; Route 112, Port Jefferson Station</span><span>&#10052;&#65039; 44 winters</span><span>&#9975;&#65039; Skis, boards, tunes</span></div></div>'
-  '<p class="ss-cred">%s</p></header>' % (IMG, IMG, IMG, C["hero"]))
+  '</header>'
+  '<p class="ss-dek2">Snow Shed closed its doors in June, so this will be the first winter in 44 years without our local ski and snowboard experts. '
+  'Here&#39;s a look back at the little shop on Route 112 that got Long Island fitted, tuned and sent north.</p>' % (IMG, IMG, IMG))
 
-w('<nav class="ss-nav" aria-label="Jump to section"><a href="#ss-shop">The shop</a><a href="#ss-fit">Getting fitted</a><a href="#ss-first">Your first pair</a>'
+w('<nav class="ss-nav" aria-label="Jump to section"><a href="#ss-shop">The shop</a><a href="#ss-fit">Getting fitted</a>'
   '<a href="#ss-gear">The gear</a><a href="#ss-road">The road trip</a><a href="#ss-summer">Summers</a><a href="#ss-time">Timeline</a><a href="#ss-bye">The goodbye</a><a href="#ss-mem">Your memories</a></nav>')
 
 # 1. THE SHOP
@@ -93,8 +95,14 @@ w('<section class="ss-sec" id="ss-shop"><p class="ss-label">The shop on 112</p><
   '<p>Snow Shed sold and rented skis, snowboards and cross-country gear, plus bindings, boots, winter outerwear and thermal layers. '
   'Behind the counter was a full tune shop: tune-ups, hot waxes, stone grinds, base repairs and binding mounts.</p>'
   '<p>Its logo said it simply: a mountain range, <b>Snow Shed</b>, <b>Long Island, NY</b> and <b>Since 1982</b>. '
-  'This year, owner Chad signed the shop&#39;s farewell note to its customers.</p></div></div></section>'
-  % (lazy("snow-shed-logo", "Snow Shed logo: a mountain range with Since 1982 and Long Island, NY", "190px"), C["logo"]))
+  'This year, owner Chad signed the shop&#39;s farewell note to its customers.</p></div></div>'
+  '<p class="ss-label ss-rv" style="margin-top:26px">Inside the shop</p>'
+  '<div class="ss-gal ss-inside ss-rv">%s</div></section>'
+  % (lazy("snow-shed-logo", "Snow Shed logo: a mountain range with Since 1982 and Long Island, NY", "190px"), C["logo"],
+     "".join('<figure>%s<figcaption>%s<span>%s</span></figcaption></figure>' % (lazy(n, a, "(max-width:760px) 46vw, 280px"), t, d)
+             for n, a, t, d in (("shop-board-wall", "A wall of snowboards under a shelf of bindings, with Lib Tech and Ride signs", "The board wall", "Lib Tech, Ride and a shelf full of bindings"),
+                                ("shop-interior", "The snowboard room inside Snow Shed, boards lining every wall", "The board room", "Boards on every wall"),
+                                ("shop-customers", "Two customers comparing new snowboards inside the shop", "Picking out a new board", "The best part of the season")))))
 
 # 2. GETTING FITTED
 w('<section class="ss-sec" id="ss-fit"><p class="ss-label">Getting fitted</p><h2 class="ss-h2">The fall ritual: leases, boots and a fresh tune</h2>'
@@ -115,30 +123,6 @@ w('<section class="ss-sec" id="ss-fit"><p class="ss-label">Getting fitted</p><h2
   '<div class="ss-quote ss-rv"><p>&ldquo;It&#39;s been a pleasure fitting you and your family&#39;s up every winter.&rdquo;</p><i></i><small>Snow Shed, closing announcement, June 2026</small></div></section>'
   % (lazy("rental-ski-rack", "Rows of rental skis on a rack", "(max-width:760px) 46vw, 380px"), C["rack"],
      lazy("tune-shop", "Skis going through a ski tuning machine", "(max-width:760px) 92vw, 860px"), C["tune"]))
-
-# 3. YOUR FIRST PAIR (picker)
-P = [("straight", "&#9975;&#65039;", "Long, straight skis", "the 80s", "skis-straight", "straight-vs-shaped", "Two ski bottoms: a late 1980s straight ski next to a 2007 shaped ski", C["skis"],
-      "The long, straight skis", "Back when skis came up past your head and every turn was a workout. The ski on the left is a late 1980s Rossignol, 180 cm long. Was your first pair like this?",
-      "My first pair of skis was..."),
-     ("boots", "&#129406;", "Rear-entry boots", "the late 80s", "boots", "rear-entry-boots", "Salomon SX 92 rear-entry ski boots, one open and one closed", C["sx92"],
-      "The rear-entry boots", "Step in from the back, flip the lever, go. Rear-entry boots like these Salomons were everywhere in the late 1980s. Did you have a pair?",
-      "My first ski boots were..."),
-     ("board", "&#127938;", "My first snowboard", "the 90s", "board", "burton-1981", "A vintage Burton snowboard from about 1981", C["burton"],
-      "The first snowboard", "Most mountains didn&#39;t allow snowboards at first. Did you buy, lease or borrow your first board, and where did you first ride it?",
-      "My first snowboard was..."),
-     ("lease", "&#128106;", "The kids&#39; season lease", "every fall", "lease", "kids-skiing-vintage", "Children on skis in the snow outside a cabin, in black and white", C["kids"],
-      "The kids&#39; season lease", "Fitted every fall, back every April, two sizes bigger next year. Did your kids learn on Snow Shed leases?",
-      "My family leased our gear from Snow Shed...")]
-opts = []
-for k, em, t, era, key, img, alt, cred, hh, pp, q in P:
-    opts.append('<button type="button" class="ss-opt%s" aria-pressed="%s" data-k="%s" data-img="%s" data-alt="%s" data-cred="%s" data-h="%s" data-p="%s" data-q="%s"><em>%s</em>%s<small>%s</small></button>'
-                % (" on" if k == "straight" else "", "true" if k == "straight" else "false", k, src(img), alt, cred.replace("&copy;", "(c)"), hh, pp, q, em, t, era))
-f0 = P[0]
-w('<section class="ss-sec" id="ss-first"><div class="ss-pick ss-rv"><p class="ss-label">Your turn to remember</p><h2 class="ss-h2">Your first pair of skis</h2>'
-  '<p>Tap the one that was yours, then tell us the story.</p><div class="ss-opts">%s</div>'
-  '<div class="ss-out"><figure>%s<figcaption>%s</figcaption></figure><div><h3>%s</h3><p>%s</p>'
-  '<a class="ss-btn" href="mailto:hello@threevillagelocal.com?subject=My%%20Snow%%20Shed%%20memory">&#9993;&#65039; Tell us your story</a></div></div></div></section>'
-  % ("".join(opts), lazy(f0[5], f0[6], "(max-width:760px) 88vw, 200px"), f0[7], f0[8], f0[9]))
 
 # 4. THE GEAR (gallery)
 G = [("nordica-boots", "Nordica rear-entry boots", "Red, loud and very late 80s", C["nordica"], ""),
