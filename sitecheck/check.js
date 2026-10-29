@@ -54,7 +54,9 @@ async function checkPage(browser, item) {
   const res = { url: SITE + item.u, kind: item.kind, phone: !!item.phone, problems: [], notes: [] };
   const errs = [], bad = [];
   page.on('pageerror', e => { if (!IGNORE.test(e.message + (e.stack || ''))) errs.push(e.message.slice(0, 160)) });
-  page.on('response', r => { const u = r.url(); if (r.status() >= 400 && OURS.test(u) && !/favicon|\.map$|\/wapi\/stats|apple-touch/i.test(u)) bad.push(r.status() + ' ' + u.slice(0, 140)) });
+  // 10/29/2026: match OURS on host + path only (never the ?query). Facebook's page-plugin URL carries our address in ?href=/next=, and Facebook sends
+  // GitHub's datacenter runners to a login page (400), which made 14 profiles look broken. Real visitors get the plugin fine.
+  page.on('response', r => { const u = r.url(); let h = '', hp = ''; try { const x = new URL(u); h = x.hostname; hp = h + x.pathname } catch (e) {} if (r.status() >= 400 && OURS.test(hp) && !IGNORE.test(h) && !/favicon|\.map$|\/wapi\/stats|apple-touch/i.test(u)) bad.push(r.status() + ' ' + u.slice(0, 140)) });
   const t0 = Date.now();
   let status = 0;
   try {
