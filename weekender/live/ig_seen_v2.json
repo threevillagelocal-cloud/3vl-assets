@@ -87,14 +87,6 @@
 "expires": "2026-10-31",
 "_ts": "2026-09-29T23:37:43+0000"
 },
-"18114160769516701": {
-"special": true,
-"title": "Pumpkin Pie Milkshake",
-"when": "Available now, limited time",
-"desc": "Try the new Pumpkin Pie Milkshake at Burgerology, available for a limited time this fall.",
-"expires": "2026-10-31",
-"_ts": "2026-09-29T13:13:43+0000"
-},
 "17905067478590619": {
 "special": false,
 "title": "",
@@ -167,14 +159,6 @@
 "expires": "2026-10-31",
 "_ts": "2026-09-30T14:13:17+0000"
 },
-"18166901620462965": {
-"special": false,
-"title": "National Coffee Day Celebration",
-"when": "Already passed",
-"desc": "Celebration of National Coffee Day with no specific offer or time-bound deal announced.",
-"expires": "2026-09-29",
-"_ts": "2026-09-29T13:48:19+0000"
-},
 "17903957838591718": {
 "special": false,
 "title": "",
@@ -239,14 +223,6 @@
 "expires": "2026-10-13",
 "_ts": "2026-09-29T19:19:43+0000"
 },
-"18488483527104306": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-29T13:01:18+0000"
-},
 "18063089996789851": {
 "special": true,
 "title": "Happy Hour at The Whiskey Barrel",
@@ -294,14 +270,6 @@
 "desc": "Small batch hand-crafted marshmallows with a fluffy, pillowy texture that melts in your mouth.",
 "expires": "2026-10-15",
 "_ts": "2026-09-30T17:16:23+0000"
-},
-"18492240370103461": {
-"special": true,
-"title": "Cappuccino Chocolate Chip Ice Cream",
-"when": "Today (National Coffee Day)",
-"desc": "Celebrate National Coffee Day with espresso-flavored ice cream and chocolate chunks.",
-"expires": "2026-10-01",
-"_ts": "2026-09-29T13:22:26+0000"
 },
 "18097840004554578": {
 "special": true,
