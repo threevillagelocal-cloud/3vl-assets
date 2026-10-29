@@ -5,7 +5,7 @@
 .ss *{box-sizing:border-box;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
 .ss p{margin:0 0 16px!important}
 .ss img{max-width:100%;height:auto;display:block}
-.ss .nw{white-space:nowrap}
+.ss .nw,.ss span.nw{white-space:nowrap!important;display:inline-block}
 .ss a{color:var(--sky);font-weight:700}
 #post-content .post-image-container,#post-content .post-image-container + hr{display:none!important}
 
