@@ -1,11 +1,11 @@
 {
-"updated": "2026-10-29T19:02:23.536383+00:00",
+"updated": "2026-10-29T19:04:08.202539+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 204,
+"Village of Port Jefferson": "error: <urlopen error timed out>",
 "Emma S. Clark Library": 310,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
@@ -872,26 +872,6 @@
 "page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
 },
 {
-"id": "portjeff-1098",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-01T09:00:00",
-"end": "2026-11-01T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1098",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-481"
-},
-{
 "id": "reboli-6adf9dab4c6329721a5cedc5",
 "title": "Emerging Artist Spotlight: November | Genevieve Rochlin",
 "start": "2026-11-01T11:00:00",
@@ -1470,25 +1450,6 @@
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
 },
 {
-"id": "portjeff-1151",
-"title": "Caleb Brewster Escape 4K run",
-"start": "2026-11-07T00:00:00",
-"end": "2026-11-07T00:00:00",
-"allday": true,
-"venue": "Strong's Park",
-"addr": "Strong's Park - Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
-},
-{
 "id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
 "title": "Writing Workshop: Language, Silence, and the Stories We Carry",
 "start": "2026-11-07T10:30:00",
@@ -1640,26 +1601,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
-},
-{
-"id": "portjeff-1099",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-08T09:00:00",
-"end": "2026-11-08T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
@@ -1902,7 +1843,7 @@
 "url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17972423598169904.jpg",
-"page": "https://www.threevillagelocal.com/burgerology",
+"page": "https://www.threevillagelocal.com/eat-drink/burgerology-beer-buckets-season-pass-holders",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/burgerology"
 },
@@ -1921,7 +1862,7 @@
 "url": "https://www.instagram.com/reel/DfFZk5DxrVE/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17966489859226645.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-free-hedwig-cookie-costume",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast"
 },
@@ -2066,7 +2007,7 @@
 "url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17972423598169904.jpg",
-"page": "https://www.threevillagelocal.com/burgerology",
+"page": "https://www.threevillagelocal.com/eat-drink/burgerology-beer-buckets-season-pass-holders",
 "profile": "https://www.threevillagelocal.com/burgerology",
 "label": "Special"
 },
@@ -2104,7 +2045,7 @@
 "url": "https://www.instagram.com/reel/DfFZk5DxrVE/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17966489859226645.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-free-hedwig-cookie-costume",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast",
 "label": "Special"
 },
@@ -2293,7 +2234,7 @@
 "url": "https://www.instagram.com/p/DfFZI30t-gX/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18099657377388421.jpg",
-"page": "https://www.threevillagelocal.com/toast-coffee-kitchen",
+"page": "https://www.threevillagelocal.com/eat-drink/toast-coffee-kitchen-thanksgiving-sandwich",
 "profile": "https://www.threevillagelocal.com/toast-coffee-kitchen",
 "label": "Special"
 },
