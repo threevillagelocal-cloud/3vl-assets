@@ -31,14 +31,6 @@
 "expires": "",
 "_ts": "2026-10-01T10:37:36+0000"
 },
-"18029801909856158": {
-"special": true,
-"title": "Oktoberfest at Schnitzels",
-"when": "Ongoing through October",
-"desc": "Giant Bavarian pretzels with beer cheese and mustard paired with German brews.",
-"expires": "2026-10-15",
-"_ts": "2026-09-29T22:23:43+0000"
-},
 "17864553186677125": {
 "special": false,
 "title": "",
@@ -62,14 +54,6 @@
 "desc": "New menu item: crispy chicken with spicy house-made vodka sauce, mozzarella and Parmesan on toasted semolina hero.",
 "expires": "2026-10-15",
 "_ts": "2026-09-30T17:04:52+0000"
-},
-"18114880313055054": {
-"special": true,
-"title": "Wicked Potion Punch",
-"when": "Limited time",
-"desc": "Halloween-themed drink served in a smoking cauldron with glowing LED ice cubes.",
-"expires": "2026-10-31",
-"_ts": "2026-09-29T23:37:43+0000"
 },
 "17918683176243017": {
 "special": true,
@@ -143,14 +127,6 @@
 "expires": "",
 "_ts": "2026-09-30T01:44:50+0000"
 },
-"18016900397947832": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-29T20:03:30+0000"
-},
 "17960111250235779": {
 "special": true,
 "title": "Autumn Table at Ruvo",
@@ -190,14 +166,6 @@
 "desc": "Powerboats, live music, great food and poker run at the waterfront. No boat needed!",
 "expires": "2026-10-04",
 "_ts": "2026-09-30T13:02:28+0000"
-},
-"18410132518094697": {
-"special": true,
-"title": "Montauk Ales 2 for $10",
-"when": "Through Oct. 13",
-"desc": "Enjoy two Montauk Ales for $10 at Black Pearl Seafood Chophouse in Port Jefferson.",
-"expires": "2026-10-13",
-"_ts": "2026-09-29T19:19:43+0000"
 },
 "18063089996789851": {
 "special": true,

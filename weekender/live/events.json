@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-29T23:00:49.696280+00:00",
+"updated": "2026-10-29T23:47:39.950300+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 204,
-"Emma S. Clark Library": 309,
+"Emma S. Clark Library": 308,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -447,23 +447,6 @@
 "page": "https://www.threevillagelocal.com/events/the-47th-annual-holiday-tree-competition"
 },
 {
-"id": "emmaclark-social-work-intern-appointments-58750",
-"title": "Social Work Intern Appointments",
-"start": "2026-10-29T14:00:00",
-"end": "2026-10-29T19:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Small Study Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58750",
-"desc": "Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical Social Workers. These individuals will be on-site ",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments-432"
-},
-{
 "id": "emmaclark-cricut-bookmark-38586",
 "title": "Cricut: Bookmark [LOTTERY]",
 "start": "2026-10-29T18:00:00",
@@ -520,7 +503,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/fall-into-art-make-a-painted-leaf-mobile-workshop"
+"page": ""
 },
 {
 "id": "wmho-1811",
@@ -2198,25 +2181,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18132884848691963.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/kilwins-port-jefferson-pumpkin-season",
-"profile": "https://www.threevillagelocal.com/kilwins-port-jefferson",
-"label": "Special"
-},
-{
-"id": "18426953476156122",
-"biz": "Kilwins Port Jefferson",
-"ig": "kilwins_port_jeff",
-"town": "Port Jefferson",
-"category": "Chocolate/Ice Cream",
-"member": false,
-"title": "Halloween & Fall Treats",
-"when": "Now through Halloween",
-"desc": "Seasonal pumpkin and Halloween-themed treats including pumpkin spice fudge, pumpkin shake, and mummy caramel apples.",
-"expires": "2026-10-31",
-"posted": "2026-10-22T22:13:00+0000",
-"url": "https://www.instagram.com/p/De0BxhlDKO3/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18426953476156122.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/kilwins-port-jefferson-halloween-fall-treats",
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson",
 "label": "Special"
 },
