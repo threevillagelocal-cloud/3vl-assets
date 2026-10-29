@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-29T12:04:55.477037+00:00",
+"updated": "2026-10-29T12:06:14.956165+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 42,
+"Port Jefferson Chamber": 0,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 204,
@@ -109,25 +109,6 @@
 "page": ""
 },
 {
-"id": "pjchamber-14726",
-"title": "2026 Port Jefferson Scarecrow Walk",
-"start": "2026-10-05T00:00:00",
-"end": "2026-11-02T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
-"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd! var...",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
-},
-{
 "id": "gallerynorth-71344",
 "title": "Exhibition: Instincts",
 "start": "2026-10-08T00:00:00",
@@ -145,26 +126,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "pjchamber-14181",
-"title": "2026 Port Jeff Self-Guided Fall Art Walk",
-"start": "2026-10-09T00:00:00",
-"end": "2026-11-06T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
 },
 {
 "id": "cur-tvfm",
@@ -755,25 +716,6 @@
 "page": ""
 },
 {
-"id": "pjchamber-15008",
-"title": "Trick or Treat in Port Jefferson Village",
-"start": "2026-10-31T11:00:00",
-"end": "2026-10-31T17:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/trick-or-treat-in-port-jefferson-village/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/trick-or-treat-in-port-jefferson-village"
-},
-{
 "id": "emmaclark-monster-week-tabletop-rpg-61437",
 "title": "Monster of the Week: A Tabletop RPG",
 "start": "2026-10-31T12:00:00",
@@ -810,63 +752,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/36th-annual-halloween-festival-in-stony-brook-village"
-},
-{
-"id": "pjchamber-15119",
-"title": "Long Island Restaurant Week",
-"start": "2026-11-01T00:00:00",
-"end": "2026-11-08T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
-"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta – RUVO",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/long-island-restaurant-week"
-},
-{
-"id": "pjchamber-15082",
-"title": "Blood Drive",
-"start": "2026-11-01T08:00:00",
-"end": "2026-11-01T15:00:00",
-"allday": false,
-"venue": "Greek Orthodox Church",
-"addr": "430 Sheep Pasture Rd, Port Jefferson, NY, 11777",
-"url": "https://portjeffchamber.com/events-calendar/blood-drive-5/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/blood-drive"
-},
-{
-"id": "pjchamber-14900",
-"title": "Return To You: A Limitless Retreat",
-"start": "2026-11-01T08:45:00",
-"end": "2026-11-01T15:30:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/return-to-you-a-limitless-retreat/",
-"desc": "Your day will move intentionally between learning, nourishment, reflection, and restorative experiences—with plenty of space to simply enjoy being there. Arrival + Continental Breakfast Settle in with coffee, tea, fresh fruit, pastries and a light continental ",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
 },
 {
 "id": "portjeff-1098",
@@ -2157,7 +2042,7 @@
 "url": "https://www.instagram.com/p/DfDOmxTs3CQ/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18130308745847714.jpg",
-"page": "https://www.threevillagelocal.com/right-coast-taqueria",
+"page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-burritos-all-day",
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria",
 "label": "Special"
 },
@@ -2176,7 +2061,7 @@
 "url": "https://www.instagram.com/p/DfDSJDzjXRn/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18028508084923466.jpg",
-"page": "https://www.threevillagelocal.com/the-secret-garden-tea-room",
+"page": "https://www.threevillagelocal.com/eat-drink/the-secret-garden-tea-room-halloween-treat-off",
 "profile": "https://www.threevillagelocal.com/the-secret-garden-tea-room",
 "label": "Special"
 },
