@@ -1,13 +1,13 @@
 {
-"updated": "2026-10-29T15:02:03.428775+00:00",
+"updated": "2026-10-29T17:00:54.537076+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 204,
-"Emma S. Clark Library": 311,
-"Stony Brook Village Center": 9,
+"Emma S. Clark Library": 310,
+"Stony Brook Village Center": 11,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 7,
@@ -427,21 +427,24 @@
 "page": "https://www.threevillagelocal.com/events/hidden-beneath-the-floorboards-walking-tour"
 },
 {
-"id": "emmaclark-library-walking-club-61175",
-"title": "Library Walking Club",
-"start": "2026-10-29T10:00:00",
-"end": "2026-10-29T11:15:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Library Front Lawn",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/library-walking-club-61175",
-"desc": "Looking for accountability and consistency on your fitness journey? Get active and connect with others at our weekly Walking Club! Join us Thursday mornings in September and October for a group walk from the library to Frank Melville Park, where participants w",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/Frank%20Melville%20Park1a.jpg",
-"src": "emmaclark",
-"tags": [],
+"id": "sbv-2456",
+"title": "The 47th Annual Holiday Tree Competition",
+"start": "2026-10-29T00:00:00",
+"end": "2026-12-31T23:59:59",
+"allday": true,
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/the-47th-annual-holiday-tree-competition/",
+"desc": "The Ward Melville Heritage Organization (WMHO) is delighted to announce the return of its 47th Annual Holiday Tree Competition to Stony Brook Village. This festive event invites community members, organizations, and businesses to showcase their creativity by d",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2025/11/24-1.png",
+"src": "sbv",
+"tags": [
+"history",
+"outdoor"
+],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/library-walking-club-431"
+"page": "https://www.threevillagelocal.com/events/the-47th-annual-holiday-tree-competition"
 },
 {
 "id": "emmaclark-social-work-intern-appointments-58750",
