@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Radio+Canada:wght@500;600;700&display=block" rel="stylesheet">
+<style>
+@page{size:4in 6in;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:4in;height:6in;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.s{position:relative;width:4in;height:6in;overflow:hidden;background:#fff;font-family:'Radio Canada',sans-serif;color:#0f2a4f;text-align:center}
+.top{position:absolute;left:0;right:0;top:0;height:2.35in;background:linear-gradient(180deg,#e7f1ff 0%,#f6faff 70%,#fff 100%)}
+.stars{position:absolute;inset:0;background-image:radial-gradient(circle,#ffc53d 0 2px,transparent 2.6px),radial-gradient(circle,#8ec5ff 0 1.6px,transparent 2.2px);background-size:46px 46px,30px 30px;background-position:8px 10px,22px 26px;opacity:.55;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 85%);mask-image:linear-gradient(180deg,#000 0%,transparent 85%)}
+.logo{position:relative;display:block;margin:.16in auto 0;width:1.95in}
+.pill{position:relative;display:inline-block;margin-top:.1in;background:#0f2a4f;color:#fff;font-weight:700;font-size:10.5pt;letter-spacing:.14em;padding:5px 14px 4px;border-radius:999px}
+.pill b{color:#ffc53d}
+h1{position:relative;font-family:'Anton',sans-serif;font-weight:400;font-size:33pt;line-height:.95;letter-spacing:.01em;text-transform:uppercase;margin-top:.08in;color:#0f2a4f}
+h1 span{color:#1d5fbf}
+.sub{position:relative;font-size:11pt;font-weight:600;color:#3c4a5e;margin-top:.04in}
+.sub i{font-style:normal;background:linear-gradient(transparent 60%,#ffd76a 60%)}
+.store{position:absolute;left:.28in;right:.28in;top:2.24in;display:flex;align-items:center;gap:.12in;background:#fff;border:1.5px solid #dbe5f1;border-radius:14px;padding:.08in .12in;box-shadow:0 6px 16px rgba(15,42,79,.08)}
+.store .lg{flex:0 0 1.1in;height:.9in;display:flex;align-items:center;justify-content:center}
+.store .lg img{max-width:100%;max-height:100%;object-fit:contain}
+.store .tx{flex:1;text-align:left;min-width:0}
+.store small{display:block;font-size:8pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1d5fbf}
+.store b{display:block;font-size:14pt;line-height:1.1;color:#0f2a4f;margin-top:2px}
+.store em{display:block;font-style:normal;font-size:9pt;color:#66717e;margin-top:2px}
+.qrw{position:absolute;left:50%;top:3.3in;transform:translateX(-50%);width:1.86in;height:1.86in;padding:.1in;background:#fff}
+.qrw img{display:block;width:100%;height:100%}
+.qrw i{position:absolute;width:.3in;height:.3in;border-color:#ffc53d;border-style:solid}
+.qrw .a{left:0;top:0;border-width:4px 0 0 4px;border-radius:8px 0 0 0}.qrw .b{right:0;top:0;border-width:4px 4px 0 0;border-radius:0 8px 0 0}
+.qrw .c{left:0;bottom:0;border-width:0 0 4px 4px;border-radius:0 0 0 8px}.qrw .d{right:0;bottom:0;border-width:0 4px 4px 0;border-radius:0 0 8px 0}
+.scan{position:absolute;left:0;right:0;top:5.2in;font-size:9pt;font-weight:600;color:#3c4a5e}
+.scan b{color:#0f2a4f}
+.foot{position:absolute;left:0;right:0;bottom:0;height:.5in;background:#0f2a4f;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.foot b{font-size:15pt;color:#fff;letter-spacing:.01em}
+.foot b span{color:#ffc53d}
+.foot small{font-size:6.5pt;color:#b9c9dd;margin-top:1px;letter-spacing:.04em}
+</style></head><body><div class="s">
+<div class="top"><div class="stars"></div></div>
+<img class="logo" src="3vl-navy.png" alt="Three Village Local">
+<div class="pill"><b>&#9733;</b> SCAVENGER HUNT <b>&#9733;</b></div>
+<h1>Scan &amp; <span>check in</span></h1>
+<p class="sub">Collect points at local spots. <i>Win prizes!</i></p>
+<div class="store"><div class="lg"><img src="{{LOGO}}" alt=""></div><div class="tx"><small>You found us!</small><b>{{NAME}}</b><em>{{TOWN}}</em></div></div>
+<div class="qrw"><img src="{{QR}}" alt="QR code"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i></div>
+<p class="scan">Open your <b>phone camera</b> and point it here</p>
+<div class="foot"><b>ThreeVillage<span>Local</span>.com</b><small>No purchase necessary &middot; Official rules at ThreeVillageLocal.com</small></div>
+</div></body></html>
