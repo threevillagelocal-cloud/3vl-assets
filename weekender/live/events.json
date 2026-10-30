@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-30T10:30:56.774105+00:00",
+"updated": "2026-10-30T11:11:42.957630+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 42,
+"Port Jefferson Chamber": 0,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 203,
@@ -109,25 +109,6 @@
 "page": ""
 },
 {
-"id": "pjchamber-14726",
-"title": "2026 Port Jefferson Scarecrow Walk",
-"start": "2026-10-05T00:00:00",
-"end": "2026-11-02T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
-"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd! var...",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
-},
-{
 "id": "gallerynorth-71344",
 "title": "Exhibition: Instincts",
 "start": "2026-10-08T00:00:00",
@@ -145,176 +126,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "pjchamber-14181",
-"title": "2026 Port Jeff Self-Guided Fall Art Walk",
-"start": "2026-10-09T00:00:00",
-"end": "2026-11-06T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
-},
-{
-"id": "cur-tvfm",
-"title": "Three Village Farmers & Artisans Market",
-"start": "2026-10-23T15:00",
-"end": "2026-10-23T18:00",
-"allday": false,
-"venue": "Three Village Historical Society",
-"addr": "93 N. Country Rd, East Setauket",
-"url": "https://www.tvhs.org/farmers-market",
-"desc": "Farmers, bakers and makers on the historical society lawn, Fridays 3 to 6 PM. Only two markets left this season: today and Oct. 30.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/tvfm-720.webp",
-"src": "3vl",
-"tags": [
-"free",
-"outdoor",
-"food"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/three-village-farmers-market",
-"pu": "",
-"rank": 5
-},
-{
-"id": "cur-chowder",
-"title": "Port Jefferson Chowder Crawl",
-"start": "2026-10-24T12:00",
-"end": "2026-10-24T15:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "Port Jefferson",
-"url": "https://portjeffchamber.com/events-calendar/port-jefferson-chowder-crawl/",
-"desc": "The Greater Port Jefferson Chamber's Chowder Crawl: 12 village restaurants serve up their chowder, and you vote for your favorite.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/chowder-720.webp",
-"src": "3vl",
-"tags": [
-"food"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/port-jefferson-chowder-crawl",
-"pu": "",
-"rank": 3
-},
-{
-"id": "cur-trunk",
-"title": "Spooktacular Trunk or Treat & Vendor Fair",
-"start": "2026-10-24T12:00",
-"end": "2026-10-24T16:00",
-"allday": false,
-"venue": "Messiah Lutheran Church",
-"addr": "465 Pond Path, East Setauket",
-"url": "https://patch.com/new-york/threevillage/calendar/event/20261024/e0591bed-e50f-4cdd-9c89-24c4dd6c3bfb/trunk-or-treat-vendor-fair",
-"desc": "Trunk or treat at Messiah Lutheran Church with local craft vendors, candy, games, prizes and free face painting. Come in costume. Rain or shine (indoors if it rains).",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/trunk-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/spooktacular-trunk-or-treat-vendor-fair",
-"pu": "",
-"rank": 2
-},
-{
-"id": "cur-brightview",
-"title": "Trunk or Treat at Brightview",
-"start": "2026-10-24T13:00",
-"end": "2026-10-24T15:00",
-"allday": false,
-"venue": "Brightview Port Jefferson",
-"addr": "1175 Route 112, Port Jefferson Station",
-"url": "https://patch.com/new-york/portjefferson/calendar/event/20261024/45a3d0d2-6856-4f1c-af7f-2118cd3ca262/trunk-or-treat",
-"desc": "An afternoon of Halloween fun with festive treats, decorated trunks and a costume contest. RSVP with Brightview.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/brightview-720.webp",
-"src": "3vl",
-"tags": [
-"kids"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/trunk-or-treat-at-brightview",
-"pu": ""
-},
-{
-"id": "cur-catflor",
-"title": "Halloween Cat Arrangement Workshop",
-"start": "2026-10-25T13:00",
-"end": "2026-10-25T15:00",
-"allday": false,
-"venue": "Village Florist & Events",
-"addr": "111 Main St, Stony Brook",
-"url": "https://stonybrookvillage.com/event/halloween-cat-arrangement-workshop-at-village-florist-events/",
-"desc": "Make a cat-themed Halloween floral arrangement at Village Florist & Events. Call 631-467-0385 to reserve.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/catflor-720.webp",
-"src": "3vl",
-"tags": [
-"arts",
-"kids"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/halloween-cat-arrangement-workshop-at-village-florist-events",
-"pu": ""
-},
-{
-"id": "cur-limfun",
-"title": "Halloween Family Fun Day at the Long Island Museum",
-"start": "2026-10-25T13:00",
-"end": "2026-10-25T16:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook",
-"url": "https://longislandmuseum.org/event/halloween2026-2/",
-"desc": "Come in costume for pumpkin painting, festive crafts, the galleries and a Mad Science show. Bring a non-perishable food donation for Agape Meals for Kids.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/limfun-720.webp",
-"src": "3vl",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/halloween-family-fun-day-free",
-"pu": "",
-"rank": 1
-},
-{
-"id": "cur-horse",
-"title": "Last Charge of the Light Horse at the Hall of Fame",
-"start": "2026-10-25T15:00",
-"end": "2026-10-25T16:00",
-"allday": false,
-"venue": "LI Music & Entertainment Hall of Fame",
-"addr": "97 Main St, Stony Brook",
-"url": "https://stonybrookvillage.com/event/live-performance-by-last-charge-of-the-light-horse-at-the-long-island-music-and-entertainment-hall-of-fame/",
-"desc": "A Sunday concert at the Long Island Music & Entertainment Hall of Fame. Free with a general admission ticket, or $10 concert-only tickets the day of the show.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/horse-720.webp",
-"src": "3vl",
-"tags": [
-"music"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/live-performance-by-last-charge-of-the-light-horse-at-the-long-island-music-and-entertainment-hall-of-fame",
-"pu": ""
 },
 {
 "id": "sbv-2344",
@@ -357,94 +168,26 @@
 "page": "https://www.threevillagelocal.com/events/the-47th-annual-holiday-tree-competition"
 },
 {
-"id": "cur-elephant",
-"title": "Elephant & Piggie's We Are in a Play!",
-"start": "2026-10-30T00:00",
-"end": "2026-10-24T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Final shows, through Oct. 24",
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson",
-"url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/",
-"desc": "Mo Willems' best friends in a musical made for first-time theatergoers.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/elephant-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"stage"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/theatre-three"
-},
-{
-"id": "cur-cabaret",
-"title": "Cabaret",
-"start": "2026-10-30T00:00",
-"end": "2026-10-25T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Final weekend, through Oct. 25",
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson",
-"url": "https://theatrethree.com/mainstage_shows/cabaret/",
-"desc": "Theatre Three's mainstage run of the Kander and Ebb classic closes Sunday.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/cabaret-720.webp",
-"src": "3vl",
-"tags": [
-"stage"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/theatre-three"
-},
-{
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
 "start": "2026-10-30T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
-"whenText": "Running until Oct. 31",
+"whenText": "Final days, through Oct. 31",
 "venue": "Olde Towne Gardens",
 "addr": "360 Old Town Rd, East Setauket",
 "url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at a garden center that's been in East Setauket since 1949: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/spooky-720.webp",
+"desc": "A family Halloween village at the East Setauket garden center: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/spooky-720.webp",
 "src": "3vl",
 "tags": [
 "kids",
 "outdoor"
 ],
 "status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens",
-"rank": 6
-},
-{
-"id": "cur-scarecrow",
-"title": "Stony Brook Village Scarecrows",
-"start": "2026-10-30T00:00",
-"end": "2026-10-25T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Last weekend to vote, through Oct. 25",
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook",
-"url": "https://stonybrookvillage.com/event/the-36th-annual-scarecrow-competition/",
-"desc": "The 36th annual scarecrows line Stony Brook Village. Grab a ballot in any shop and vote for your favorite by Sunday; winners are announced at the Halloween Festival on Oct. 31.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-23/scarecrow-720.webp",
-"src": "3vl",
-"tags": [
-"free",
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
-"rank": 4
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
 },
 {
 "id": "wmho-1811",
@@ -541,6 +284,50 @@
 "page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free-441"
 },
 {
+"id": "cur-tvfm",
+"title": "Three Village Farmers & Artisans Market",
+"start": "2026-10-30T15:00",
+"end": "2026-10-30T18:00",
+"allday": false,
+"venue": "Three Village Historical Society",
+"addr": "93 N. Country Rd, East Setauket",
+"url": "https://www.tvhs.org/farmers-market",
+"desc": "The last market of the season: farmers, bakers and makers on the historical society lawn, 3 to 6 PM. Free to walk in and browse.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/tvfm-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"outdoor",
+"food"
+],
+"status": "",
+"pick": true,
+"page": "https://www.threevillagelocal.com/three-village-farmers-market",
+"pu": "",
+"rank": 2
+},
+{
+"id": "cur-benners",
+"title": "Haunted Evening Hayrides at Benner's Farm",
+"start": "2026-10-30T18:00",
+"end": "2026-10-30T21:00",
+"allday": false,
+"venue": "Benner's Farm",
+"addr": "56 Gnarled Hollow Rd, East Setauket",
+"url": "https://www.eventcreate.com/e/hauntedhayridesbennersfarm2026",
+"desc": "A tractor ride through the dark woods at Benner's Farm. The first hour is a Not-So-Spooky ride for younger friends; later rides get scarier. Tickets are sold online only and every rider needs one, kids included.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/benners-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/haunted-evening-hayrides-at-benners-farm-575",
+"pu": ""
+},
+{
 "id": "gallerynorth-71313",
 "title": "Cabinet of Curiosities Sketch Night; Skulls, Bones & More!",
 "start": "2026-10-30T18:00:00",
@@ -559,6 +346,27 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/cabinet-of-curiosities-sketch-night-skulls-bones-more"
+},
+{
+"id": "cur-ghost",
+"title": "Be Our Ghost at Theatre Three",
+"start": "2026-10-30T18:30",
+"end": "2026-10-30T22:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://theatrethree.com/third_act/be-our-ghost/",
+"desc": "A Third Act cabaret night of songs from some of the most devious villains of film, TV and the stage. Shows at 6:30 and 9 PM.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/ghost-720.webp",
+"src": "3vl",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/be-our-ghost-at-theatre-three",
+"pu": ""
 },
 {
 "id": "staller-01dafef3-fa1e-4fa9-9c26-e5769b8fb7c4",
@@ -581,24 +389,25 @@
 "page": "https://www.threevillagelocal.com/events/disney-pixars-coco-in-concert-live-to-film"
 },
 {
-"id": "theatre3-9366",
-"title": "Be Our Ghost: A Villainous Cabaret",
-"start": "2026-10-30T18:30:00",
-"end": "2026-10-30T18:30:00",
+"id": "cur-poboy",
+"title": "Po' Boy Brewery Halloween Costume Party",
+"start": "2026-10-30T19:00",
+"end": "2026-10-31T00:00",
 "allday": false,
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson, NY 11777",
-"url": "https://theatrethree.getmytix.net/tickets#937/Be-Our-Ghost-A-Villainous-Cabaret",
-"desc": "Joins us for night of songs from some of the most devious villains from film, TV, and the Stage!",
-"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_937_Ghost%20date.jpg",
-"src": "theatre3",
+"venue": "Po' Boy Brewery",
+"addr": "200 Wilson St, Port Jefferson Station",
+"url": "https://www.threevillagelocal.com/events/po-boy-brewery-halloween-costume-party",
+"desc": "Their costume party: everyone's welcome, costumes get happy hour prices all night, plus a food truck, music and gift cards for the top 3 costumes, voted by guests.",
+"img": "",
+"src": "3vl",
 "tags": [
 "music",
-"stage"
+"food"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/be-our-ghost-at-theatre-three"
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/po-boy-brewery-halloween-costume-party",
+"pu": ""
 },
 {
 "id": "sbv-2385",
@@ -622,63 +431,93 @@
 "page": "https://www.threevillagelocal.com/events/little-cheese-halloween-charcuterie-workshop"
 },
 {
-"id": "sbv-2351",
+"id": "cur-dash",
 "title": "Stony Brook Fire Department 5K Monster Dash Race",
-"start": "2026-10-31T00:00:00",
-"end": "2026-10-31T23:59:59",
-"allday": true,
+"start": "2026-10-31T09:00",
+"end": "2026-10-31T11:00",
+"allday": false,
 "venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook, NY 11790",
+"addr": "111 Main St, Stony Brook",
 "url": "https://stonybrookvillage.com/event/stony-brook-fire-department-5k-monster-dash-race/",
-"desc": "10th Annual Stony Brook Fire Department Monster Dash 5K & Fun Run! Saturday, October 31st Stony Brook Village Fun Run: 9:00 AM 5K Start: 9:30 AM This year, we’re bringing the Monster Dash to Stony Brook Village! Join us for a fun Halloween morning filled with ",
-"img": "https://stonybrookvillage.com/wp-content/uploads/2026/09/797648881_1365837708867206_6469720363900024127_n.jpg",
-"src": "sbv",
+"desc": "The fire department's 10th annual Monster Dash moves to Stony Brook Village this year: Fun Run at 9 AM, 5K at 9:30 AM. Costumes encouraged, with trick-or-treating in the village to follow.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/dash-720.webp",
+"src": "3vl",
 "tags": [
+"outdoor",
+"kids"
+],
+"status": "",
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/stony-brook-fire-department-5k-monster-dash-race",
+"pu": "",
+"rank": 4
+},
+{
+"id": "cur-reboli",
+"title": "Trick or Treating for Littles at the Reboli Center",
+"start": "2026-10-31T10:00",
+"end": "2026-10-31T17:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main St, Stony Brook",
+"url": "https://www.rebolicenter.org/events/2026/10/31/trick-or-treating-for-littles-happy-halloween",
+"desc": "A kid-friendly Halloween day with seasonal crafts, spooky music and trick-or-treating at the information desk. Costumes encouraged, no RSVP needed.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/reboli-720.webp",
+"src": "3vl",
+"tags": [
+"free",
+"kids",
+"arts"
+],
+"status": "",
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/trick-or-treating-for-littles-at-the-reboli-center",
+"pu": ""
+},
+{
+"id": "cur-pjtot",
+"title": "Trick or Treat in Port Jefferson Village",
+"start": "2026-10-31T11:00",
+"end": "2026-10-31T17:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "Port Jefferson",
+"url": "https://portjeffchamber.com/events-calendar/trick-or-treat-in-port-jefferson-village/",
+"desc": "Trick-or-treat around Port Jefferson Village from 11 AM to 5 PM, plus a fun scavenger hunt. Participating businesses have a sign in their window.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/pjtot-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
 "outdoor"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-fire-department-5k-monster-dash-race"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/trick-or-treat-in-port-jefferson-village",
+"pu": "",
+"rank": 3
 },
 {
-"id": "reboli-6aad4fa2d5560a47074f08e6",
-"title": "Trick or Treating for Littles! Happy Halloween!",
-"start": "2026-10-31T10:00:00",
-"end": "2026-10-31T17:00:00",
+"id": "cur-hwfest",
+"title": "36th Annual Halloween Festival in Stony Brook Village",
+"start": "2026-10-31T12:00",
+"end": "2026-10-31T16:00",
 "allday": false,
-"venue": "The Reboli Center for Art and History",
-"addr": "64 Main Street, Stony Brook, NY, 11790",
-"url": "https://rebolicenter.org/events/2026/10/31/trick-or-treating-for-littles-happy-halloween",
-"desc": "Join us this halloween for a kid-friendly day filled with Seasonal Kids Crafts, Spooky Music and Trick or Treating at our information desk! Click to Learn More…",
-"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1789743085996-D8VP7FUH6E7Y5WUFKETL/White+and+Black+Illustrative+Halloween+Party+Invitation+Flyer.png",
-"src": "reboli",
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook",
+"url": "https://stonybrookvillage.com/event/the-36th-annual-halloween-festival/",
+"desc": "Trick-or-treat through the Stony Brook Village Center shops and eateries, games in the Inner Court, WALK FM's Walkie Bear from 1 to 3 PM, photos with Monster Merlin and the scarecrow winners announced at 2 PM.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/hwfest-720.webp",
+"src": "3vl",
 "tags": [
+"free",
 "kids",
-"music",
-"arts"
+"outdoor"
 ],
 "status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "pjchamber-15008",
-"title": "Trick or Treat in Port Jefferson Village",
-"start": "2026-10-31T11:00:00",
-"end": "2026-10-31T17:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/trick-or-treat-in-port-jefferson-village/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/trick-or-treat-in-port-jefferson-village"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/36th-annual-halloween-festival-in-stony-brook-village",
+"pu": "",
+"rank": 1
 },
 {
 "id": "emmaclark-monster-week-tabletop-rpg-61437",
@@ -719,61 +558,66 @@
 "page": "https://www.threevillagelocal.com/events/36th-annual-halloween-festival-in-stony-brook-village"
 },
 {
-"id": "pjchamber-15119",
-"title": "Long Island Restaurant Week",
-"start": "2026-11-01T00:00:00",
-"end": "2026-11-08T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
-"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta – RUVO",
-"img": "",
-"src": "pjchamber",
+"id": "cur-hauntmus",
+"title": "Trick or Treat at the Haunted Museum",
+"start": "2026-10-31T14:00",
+"end": "2026-10-31T16:30",
+"allday": false,
+"venue": "The Jazz Loft",
+"addr": "275 Christian Ave, Stony Brook",
+"url": "https://thejazzloft.org/",
+"desc": "Kids come in costume, trick-or-treat through the Jazz Loft's exhibits, visit the haunted garden and hear the New Orleans Goblins Jazz Band.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/hauntmus-720.webp",
+"src": "3vl",
 "tags": [
-"arts"
+"kids",
+"music"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/long-island-restaurant-week"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/trick-or-treat-at-the-haunted-museum",
+"pu": "",
+"rank": 5
 },
 {
-"id": "pjchamber-15082",
-"title": "Blood Drive",
-"start": "2026-11-01T08:00:00",
-"end": "2026-11-01T15:00:00",
+"id": "cur-jlnight",
+"title": "Night at the Museum: Halloween at the Jazz Loft",
+"start": "2026-10-31T19:00",
+"end": "2026-10-31T21:30",
 "allday": false,
-"venue": "Greek Orthodox Church",
-"addr": "430 Sheep Pasture Rd, Port Jefferson, NY, 11777",
-"url": "https://portjeffchamber.com/events-calendar/blood-drive-5/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
+"venue": "The Jazz Loft",
+"addr": "275 Christian Ave, Stony Brook",
+"url": "https://thejazzloft.org/",
+"desc": "Come in costume for a spooky cocktail in the haunted garden and music by the New Orleans Goblins Jazz Band.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/jlnight-720.webp",
+"src": "3vl",
 "tags": [
-"arts"
+"music"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/blood-drive"
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/night-at-the-museum-halloween-at-the-jazz-loft",
+"pu": ""
 },
 {
-"id": "pjchamber-14900",
-"title": "Return To You: A Limitless Retreat",
-"start": "2026-11-01T08:45:00",
-"end": "2026-11-01T15:30:00",
+"id": "cur-tommys",
+"title": "Halloween Party at Tommy's Place",
+"start": "2026-10-31T20:00",
+"end": "2026-11-01T01:00",
 "allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/return-to-you-a-limitless-retreat/",
-"desc": "Your day will move intentionally between learning, nourishment, reflection, and restorative experiences—with plenty of space to simply enjoy being there. Arrival + Continental Breakfast Settle in with coffee, tea, fresh fruit, pastries and a light continental ",
+"venue": "Tommy's Place",
+"addr": "109 Main St, Port Jefferson",
+"url": "https://www.threevillagelocal.com/events/halloween-party-at-tommys-place",
+"desc": "Eat, drink and be scary: the party starts at 8 PM and the costume contest is at midnight. Arrive early to beat the line.",
 "img": "",
-"src": "pjchamber",
+"src": "3vl",
 "tags": [
-"arts"
+"food"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/halloween-party-at-tommys-place",
+"pu": ""
 },
 {
 "id": "portjeff-1098",
@@ -854,23 +698,47 @@
 "page": "https://www.threevillagelocal.com/events/art-is-a-hoot-adults-sunday-11-1"
 },
 {
-"id": "emmaclark-autumn-concert-jazz-loft-trio-61286",
+"id": "cur-jltrio",
 "title": "Autumn Concert with the Jazz Loft Trio",
-"start": "2026-11-01T14:00:00",
-"end": "2026-11-01T15:00:00",
+"start": "2026-11-01T14:00",
+"end": "2026-11-01T15:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/autumn-concert-jazz-loft-trio-61286",
-"desc": "The Jazz Loft Trio will perform a mix of classic jazz standards and Great American Songbook tunes. The Jazz Loft is located in Stony Brook and is the premiere destination for all things Jazz.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/beautiful-golden-saxophone-black-background-close-up2.jpg",
-"src": "emmaclark",
+"venue": "Emma S. Clark Library",
+"addr": "120 Main St, Setauket",
+"url": "https://www.threevillagelocal.com/events/autumn-concert-with-the-jazz-loft-trio",
+"desc": "The Jazz Loft Trio will perform a mix of classic jazz standards and Great American Songbook tunes, in the library's Vincent R. O'Leary Community Room.",
+"img": "",
+"src": "3vl",
 "tags": [
 "music"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/autumn-concert-with-the-jazz-loft-trio"
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/autumn-concert-with-the-jazz-loft-trio",
+"pu": ""
+},
+{
+"id": "cur-mischief",
+"title": "All Saints Mischief Market",
+"start": "2026-11-01T15:00",
+"end": "2026-11-01T21:00",
+"allday": false,
+"venue": "Malkmes Florists & Greenhouses",
+"addr": "70 Oakland Ave, Port Jefferson Station",
+"url": "https://www.eventbrite.com/e/all-saints-mischief-market-tickets-2002097893695",
+"desc": "An all-ages outdoor market with live music, food, vendors, a Spooky Walk trail, crafts, a costume contest and raffles for The SEED Foundation.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/mischief-720.webp",
+"src": "3vl",
+"tags": [
+"music",
+"food",
+"kids"
+],
+"status": "",
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/all-saints-mischief-market",
+"pu": "",
+"rank": 6
 },
 {
 "id": "limehof-202611011500-emmett-hughes",
