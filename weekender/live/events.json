@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-30T15:01:00.513243+00:00",
+"updated": "2026-10-30T15:02:19.852350+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1904,21 +1904,21 @@
 "profile": "https://www.threevillagelocal.com/burgerology"
 },
 {
-"id": "17966489859226645",
+"id": "18344774434251963",
 "biz": "The Study by Toast",
 "ig": "thestudy.bytoast",
 "town": "East Setauket",
 "category": "Coffee House",
 "member": false,
-"title": "Free Hedwig Cookie with Costume",
-"when": "Fri, Oct. 31",
-"desc": "Wear a costume and make a purchase to get a free Hedwig-inspired shortbread cookie.",
+"title": "Halloween Butterbeer & Costume Cookie",
+"when": "Halloween Weekend (Oct 30-31)",
+"desc": "Get a Butterbeer-inspired drink all weekend. Arrive in costume on Halloween for a free Hedwig shortbread cookie with purchase.",
 "expires": "2026-10-31",
-"posted": "2026-10-29T16:11:18+0000",
-"url": "https://www.instagram.com/reel/DfFZk5DxrVE/",
+"posted": "2026-10-30T14:30:15+0000",
+"url": "https://www.instagram.com/p/DfHzOtiEQj8/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17966489859226645.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-free-hedwig-cookie-costume",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18344774434251963.jpg",
+"page": "https://www.threevillagelocal.com/the-study-by-toast",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast"
 },
@@ -2065,6 +2065,25 @@
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18109810757580122.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/burgerology-kids-eat-free-every-tuesday",
 "profile": "https://www.threevillagelocal.com/burgerology",
+"label": "Special"
+},
+{
+"id": "18344774434251963",
+"biz": "The Study by Toast",
+"ig": "thestudy.bytoast",
+"town": "East Setauket",
+"category": "Coffee House",
+"member": false,
+"title": "Halloween Butterbeer & Costume Cookie",
+"when": "Halloween Weekend (Oct 30-31)",
+"desc": "Get a Butterbeer-inspired drink all weekend. Arrive in costume on Halloween for a free Hedwig shortbread cookie with purchase.",
+"expires": "2026-10-31",
+"posted": "2026-10-30T14:30:15+0000",
+"url": "https://www.instagram.com/p/DfHzOtiEQj8/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18344774434251963.jpg",
+"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"profile": "https://www.threevillagelocal.com/the-study-by-toast",
 "label": "Special"
 },
 {

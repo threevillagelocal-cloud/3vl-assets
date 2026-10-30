@@ -103,14 +103,6 @@
 "expires": "",
 "_ts": "2026-09-30T21:03:52+0000"
 },
-"18157413349503508": {
-"special": true,
-"title": "Halloween Drinks at Toast Locations",
-"when": "October 1-31, 2026",
-"desc": "Spooky seasonal drinks available all month at Toast locations including Port Jefferson with Addams Family-inspired beverages.",
-"expires": "2026-10-31",
-"_ts": "2026-09-30T14:13:17+0000"
-},
 "17960111250235779": {
 "special": true,
 "title": "Autumn Table at Ruvo",
@@ -118,14 +110,6 @@
 "desc": "Complimentary pumpkin beer or fall sangria with your entrée every Thursday.",
 "expires": "2026-10-14",
 "_ts": "2026-10-01T13:30:05+0000"
-},
-"18104943581249558": {
-"special": true,
-"title": "Last Girl Dinner of the Season",
-"when": "Tonight (Wed, Oct 1)",
-"desc": "Pick two favorites plus espresso martini, dirty martini or wine for $42 at the bar.",
-"expires": "2026-10-01",
-"_ts": "2026-09-30T13:30:09+0000"
 },
 "18117894214952760": {
 "special": false,
@@ -142,14 +126,6 @@
 "desc": "Live music and dining during race weekend. Boats arrive Sat with brunch at 1 PM, fleet departs Sun at noon.",
 "expires": "2026-10-04",
 "_ts": "2026-10-01T13:00:52+0000"
-},
-"18107693584919649": {
-"special": true,
-"title": "Black Pearl Poker Run Weekend",
-"when": "Oct. 2–4",
-"desc": "Powerboats, live music, great food and poker run at the waterfront. No boat needed!",
-"expires": "2026-10-04",
-"_ts": "2026-09-30T13:02:28+0000"
 },
 "18063089996789851": {
 "special": true,
@@ -190,14 +166,6 @@
 "desc": "Small batch hand-crafted marshmallows with a fluffy, pillowy texture that melts in your mouth.",
 "expires": "2026-10-15",
 "_ts": "2026-09-30T17:16:23+0000"
-},
-"18097840004554578": {
-"special": true,
-"title": "Wednesday Specials & Happy Hour",
-"when": "Every Wednesday",
-"desc": "Happy hour 4-close with daily food specials including Prime Rib $24, steaks, seafood, sandwiches from $2-$24.",
-"expires": "2026-10-14",
-"_ts": "2026-09-30T14:18:41+0000"
 },
 "18044301530821720": {
 "special": false,
@@ -3318,5 +3286,29 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-30T10:12:20+0000"
+},
+"18344774434251963": {
+"special": true,
+"title": "Halloween Butterbeer & Costume Cookie",
+"when": "Halloween Weekend (Oct 30-31)",
+"desc": "Get a Butterbeer-inspired drink all weekend. Arrive in costume on Halloween for a free Hedwig shortbread cookie with purchase.",
+"expires": "2026-10-31",
+"_ts": "2026-10-30T14:30:15+0000"
+},
+"18117246257039765": {
+"special": false,
+"_ts": "2026-10-30T14:16:15+0000"
+},
+"18134856148728505": {
+"special": false,
+"title": "Happy Hour at Nantuckets",
+"when": "Not specified",
+"desc": "Happy hour drinks and food offered, but no specific times or days mentioned.",
+"expires": "2026-10-30",
+"_ts": "2026-10-30T12:04:54+0000"
+},
+"17939044014125295": {
+"special": false,
+"_ts": "2026-10-30T14:46:57+0000"
 }
 }
