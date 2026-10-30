@@ -1,39 +1,39 @@
 [
  {
   "kind": "spotlight",
-  "match": "halloween family fun day",
-  "title": "Costumes, chowder and scarecrows",
+  "match": "halloween festival in stony brook",
+  "title": "It's Halloween weekend",
   "kicker": "This weekend's big one",
-  "blurb": "Halloween is next Saturday, and the fun starts this weekend. The Long Island Museum throws a free Halloween Family Fun Day on Sunday, there are two trunk or treats on Saturday, and it's the last weekend to vote for your favorite Stony Brook Village scarecrow.",
-  "short": "A free family fun day at the Long Island Museum, two trunk or treats and the last weekend to vote for the Stony Brook Village scarecrows.",
+  "blurb": "Halloween lands on Saturday, and Three Village is ready. Stony Brook Village throws its 36th annual Halloween Festival, Port Jeff's shops hand out treats all afternoon, and Benner's Farm runs haunted hayrides on Friday night.",
+  "short": "The Stony Brook Village Halloween Festival, trick or treating in Port Jeff and haunted hayrides at Benner's Farm.",
   "bullets_short": [
-   "<b>Sun 1-4 PM:</b> Halloween Family Fun Day at the Long Island Museum, free: come in costume for pumpkin painting, crafts and a Mad Science show (bring a food donation for Agape Meals for Kids)",
-   "<b>Sat 12-4 PM:</b> Spooktacular Trunk or Treat & Vendor Fair at Messiah Lutheran Church, East Setauket, with free face painting",
-   "<b>All weekend:</b> vote for your favorite Stony Brook Village scarecrow (ballots in every shop through Sunday), plus every Halloween event in town on our Halloween page"
+   "<b>Sat 12-4 PM:</b> 36th Annual Halloween Festival in Stony Brook Village, free: trick or treat through the shops, music, kids' games, and the scarecrow winner announced at 2 PM",
+   "<b>Sat 11 AM-5 PM:</b> Trick or Treat in Port Jefferson Village with the Greater Port Jefferson Chamber",
+   "<b>Fri 6-9 PM:</b> Haunted Evening Hayrides at Benner's Farm, East Setauket ($17, advance tickets only), plus every Halloween event on our Halloween page"
   ],
-  "img": "weekender/2026-10-23/hero-halloween-720.webp",
+  "img": "https://ik.imagekit.io/otjdm8rek/uploads/news-pictures/pphoto-576-tmilhg7c27c865.webp",
   "url": "https://www.threevillagelocal.com/halloween",
   "button": "See all Halloween events",
-  "page": "https://www.threevillagelocal.com/events/halloween-family-fun-day-free",
+  "page": "https://www.threevillagelocal.com/events/36th-annual-halloween-festival-in-stony-brook-village",
   "cal": {
-   "title": "Halloween Family Fun Day at the Long Island Museum",
-   "start": "20261025T130000",
-   "end": "20261025T160000",
-   "where": "The Long Island Museum, 1200 Route 25A, Stony Brook, NY"
+   "title": "36th Annual Halloween Festival in Stony Brook Village",
+   "start": "20261031T120000",
+   "end": "20261031T160000",
+   "where": "Stony Brook Village Center, 111 Main St, Stony Brook, NY"
   },
-  "until": "2026-10-25",
-  "subject": "🎃 Trunk or treats and a chowder crawl"
+  "until": "2026-11-01",
+  "subject": "🎃 It's Halloween weekend in Three Village"
  },
  {
-  "kick": "Last weekend to vote",
-  "title": "Who has the best pizza in Three Village?",
-  "blurb": "Our Best Pizza poll is open. Pick your favorite slice, one vote per person, voting closes Sunday, Oct. 25.",
-  "short": "10 local pizzerias, one winner. Voting closes Sun, Oct. 25",
-  "url": "https://www.threevillagelocal.com/bestpizza",
-  "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/bestpizza/share-v2.jpg",
-  "thumb": "https://threevillagelocal-cloud.github.io/3vl-share/site/bestpizza/hero-800.webp",
-  "button": "Cast your vote",
-  "until": "2026-10-25"
+  "kick": "New on the blog",
+  "title": "Remembering Snow Shed",
+  "blurb": "This will be the first winter in 44 years without our local ski and snowboard experts. A look back at the little shop on Route 112 that got Long Island fitted, tuned and sent north.",
+  "short": "The first winter in 44 years without our local ski shop",
+  "url": "https://www.threevillagelocal.com/blog/a-three-village-throwback-remembering-snow-shed-44-winters-on-route-112",
+  "img": "https://threevillagelocal-cloud.github.io/3vl-share/snow-shed/snowshed-storefront-share3-960.jpg",
+  "thumb": "https://threevillagelocal-cloud.github.io/3vl-share/snow-shed/hero-storefront-960.webp",
+  "button": "Read the throwback",
+  "until": "2026-11-06"
  },
  {
   "title": "The 2026 Three Village Fall Guide",
@@ -45,115 +45,5 @@
   "note": "owner 10/5/2026: link the fall guide in the next weekly email",
   "short": "Every pumpkin patch, hayride and festival near you",
   "thumb": "https://threevillagelocal-cloud.github.io/3vl-share/fall-2026/pumpkin6-640.webp"
- },
- {
-  "kind": "lineup",
-  "until": "2026-10-25",
-  "title": "Your weekend, day by day",
-  "days": [
-   {
-    "day": "All weekend",
-    "items": [
-     {
-      "t": "Stony Brook Village Scarecrows (last weekend to vote)",
-      "when": "Through Oct 25",
-      "where": "Stony Brook Village Center",
-      "url": "https://www.threevillagelocal.com/events/scarecrow-competition-opens",
-      "free": true
-     },
-     {
-      "t": "Spooky Village at Olde Towne Gardens",
-      "when": "Through Oct 31",
-      "where": "Old Town Rd, East Setauket",
-      "url": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-     },
-     {
-      "t": "Port Jefferson Scarecrow Walk",
-      "when": "Through Nov 2",
-      "where": "East Main St, Port Jefferson",
-      "url": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk",
-      "free": true
-     },
-     {
-      "t": "Cabaret at Theatre Three (final weekend)",
-      "when": "Through Oct 25",
-      "where": "Port Jefferson",
-      "url": "https://theatrethree.com/mainstage_shows/cabaret/"
-     },
-     {
-      "t": "Elephant & Piggie's We Are in a Play! (kids, final shows)",
-      "when": "Through Oct 24",
-      "where": "Theatre Three, Port Jefferson",
-      "url": "https://theatrethree.com/childrens_theatre_shows/elephant-and-piggie/"
-     }
-    ]
-   },
-   {
-    "day": "Friday, Oct 23",
-    "items": [
-     {
-      "t": "Three Village Farmers & Artisans Market",
-      "when": "3-6 PM",
-      "where": "Three Village Historical Society, East Setauket",
-      "url": "https://www.threevillagelocal.com/three-village-farmers-market",
-      "free": true
-     },
-     {
-      "t": "DIY Zombie Makeup (teens & tweens, register)",
-      "when": "5-6:30 PM",
-      "where": "Emma S. Clark Memorial Library, Setauket",
-      "url": "https://www.threevillagelocal.com/events/diy-zombie-makeup",
-      "free": true
-     }
-    ]
-   },
-   {
-    "day": "Saturday, Oct 24",
-    "items": [
-     {
-      "t": "Spooktacular Trunk or Treat & Vendor Fair",
-      "when": "12-4 PM",
-      "where": "Messiah Lutheran Church, East Setauket",
-      "url": "https://www.threevillagelocal.com/events/spooktacular-trunk-or-treat-vendor-fair"
-     },
-     {
-      "t": "Port Jefferson Chowder Crawl",
-      "when": "12-3 PM",
-      "where": "Port Jefferson Village",
-      "url": "https://www.threevillagelocal.com/events/port-jefferson-chowder-crawl"
-     },
-     {
-      "t": "Trunk or Treat at Brightview",
-      "when": "1-3 PM",
-      "where": "Port Jefferson Station",
-      "url": "https://www.threevillagelocal.com/events/trunk-or-treat-at-brightview"
-     }
-    ]
-   },
-   {
-    "day": "Sunday, Oct 25",
-    "items": [
-     {
-      "t": "Halloween Family Fun Day at the Long Island Museum",
-      "when": "1-4 PM",
-      "where": "Stony Brook",
-      "url": "https://www.threevillagelocal.com/events/halloween-family-fun-day-free",
-      "free": true
-     },
-     {
-      "t": "Halloween Cat Arrangement Workshop",
-      "when": "1-3 PM",
-      "where": "Village Florist & Events, Stony Brook",
-      "url": "https://www.threevillagelocal.com/events/halloween-cat-arrangement-workshop-at-village-florist-events"
-     },
-     {
-      "t": "Last Charge of the Light Horse",
-      "when": "3 PM",
-      "where": "LI Music & Entertainment Hall of Fame, Stony Brook",
-      "url": "https://www.threevillagelocal.com/events/live-performance-by-last-charge-of-the-light-horse-at-the-long-island-music-and-entertainment-hall-of-fame"
-     }
-    ]
-   }
-  ]
  }
 ]
