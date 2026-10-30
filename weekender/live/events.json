@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-30T13:00:51.271264+00:00",
+"updated": "2026-10-30T15:01:00.513243+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 203,
-"Emma S. Clark Library": 306,
+"Emma S. Clark Library": 305,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -249,25 +249,6 @@
 "page": "https://www.threevillagelocal.com/events/hidden-beneath-the-floorboards-walking-tour-437"
 },
 {
-"id": "emmaclark-halloween-parade-ages-18-mo-35-yrs-w-caregiver-58813",
-"title": "Halloween Parade (Ages 18 mo. - 5 yrs. w/ caregiver)",
-"start": "2026-10-30T10:00:00",
-"end": "2026-10-30T10:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/halloween-parade-ages-18-mo-35-yrs-w-caregiver-58813",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/halloween-parade-ages-18-mo-5-yrs-w-caregiver"
-},
-{
 "id": "emmaclark-game-day-38292",
 "title": "Game Day",
 "start": "2026-10-30T10:00:00",
@@ -283,6 +264,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/game-day-439"
+},
+{
+"id": "emmaclark-copy-halloween-parade-ages-18-mo-35-yrs-w-caregiver-58815",
+"title": "Halloween Parade (Ages 18 mo. - 5 yrs. w/ caregiver)",
+"start": "2026-10-30T11:00:00",
+"end": "2026-10-30T11:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/copy-halloween-parade-ages-18-mo-35-yrs-w-caregiver-58815",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": ""
 },
 {
 "id": "emmaclark-halloween-bingo-58168",
