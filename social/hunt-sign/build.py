@@ -9,6 +9,17 @@ T = open(os.path.join(HERE, "template.html"), encoding="utf-8").read()
 stores = json.load(open(os.path.join(HERE, "stores.json"), encoding="utf-8"))
 pick = set(sys.argv[1:])
 pdfs = []
+# 10/30/2026: every sign's code is also registered in the hunt back end (Codes tab). Key lives in the PRIVATE repo only.
+API = "https://script.google.com/macros/s/AKfycbxAoS6PpFp8m33fumGxn32v4_6bXPFzdq5nyQNo-e7_w4ftemJJ0kJ8hCFOmze0TrUnlg/exec"
+def register(s):
+    import re, urllib.request
+    try:
+        key = re.search(r"ADMIN_KEY[^:]*:\s*([0-9a-f]{16})", open(os.path.expanduser("~/Documents/3vl-private/hunt-secrets.md"), encoding="utf-8").read()).group(1)
+    except Exception:
+        print("  (no admin key found: code not registered)"); return
+    body = json.dumps({"action": "addcode", "key": key, "code": s["slug"], "name": s["name"], "type": s.get("type", "store")}).encode()
+    r = urllib.request.urlopen(urllib.request.Request(API, data=body, headers={"Content-Type": "text/plain"}), timeout=60).read().decode()
+    print("  registered:", r)
 for s in stores:
     if pick and s["slug"] not in pick:
         continue
@@ -21,7 +32,7 @@ for s in stores:
     hf = os.path.join(HERE, "_%s.html" % s["slug"]); open(hf, "w", encoding="utf-8").write(h)
     pdf, png = os.path.join(OUT, s["slug"] + ".pdf"), os.path.join(OUT, s["slug"] + ".png")
     subprocess.run(["node", os.path.join(HERE, "render.js"), hf.replace("\\", "/"), pdf, png], check=True)
-    os.remove(hf); pdfs.append(pdf); print("made", s["name"])
+    os.remove(hf); pdfs.append(pdf); print("made", s["name"]); register(s)
 if len(pdfs) > 1:
     import fitz
     doc = fitz.open()
