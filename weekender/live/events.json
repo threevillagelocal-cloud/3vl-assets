@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-30T17:00:55.918080+00:00",
+"updated": "2026-10-30T19:00:55.783624+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 203,
-"Emma S. Clark Library": 303,
+"Emma S. Clark Library": 302,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -247,23 +247,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/hidden-beneath-the-floorboards-walking-tour-437"
-},
-{
-"id": "emmaclark-halloween-bingo-58168",
-"title": "Halloween Bingo!",
-"start": "2026-10-30T14:00:00",
-"end": "2026-10-30T15:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/halloween-bingo-58168",
-"desc": "Show off your Halloween costume, eat some candy, and join us for a relaxing afternoon of bingo and conversation with friends and neighbors.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-07/halloweenbingo_var2.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/halloween-bingo"
 },
 {
 "id": "lim-10000258",
