@@ -15,6 +15,15 @@ NO_SPOT = {"552"}   # logo strip only
 esc = nhb.esc
 
 
+def _trange(le, fmt_time):
+    """'6 PM - 9 PM' when the event ends the same day (owner 10/30: a 6 PM start alone read as already over at 8)."""
+    t = fmt_time(le["start"])
+    e = le.get("end") or ""
+    if len(e) >= 16 and e[:10] == le["start"][:10] and e[11:16] not in ("00:00", "23:59") and e[11:16] > le["start"][11:16]:
+        t += " - " + fmt_time(e)
+    return t
+
+
 def _get_json(u):
     try:
         with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 3VL"}), timeout=20) as r:
@@ -216,7 +225,7 @@ def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
             when = esc(le["when"])
         else:
             last = (datetime.fromisoformat(le["end"]) - timedelta(hours=6)).date().isoformat() if le.get("end") else le["start"][:10]
-            when = ("%s - %s" % (dshort(le["start"]), dshort(last))) if last > le["start"][:10] else "%s &middot; %s" % (dshort(le["start"]), fmt_time(le["start"]))
+            when = ("%s - %s" % (dshort(le["start"]), dshort(last))) if last > le["start"][:10] else "%s &middot; %s" % (dshort(le["start"]), _trange(le, fmt_time))
         page = le.get("page") or CAL
         g = next((x for x in d.get("guides", []) if x[0] in le["title"].lower()), None)
         if g:
@@ -277,7 +286,7 @@ def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
             if le.get("allday") or le.get("start", "").endswith("T00:00:00"):
                 when = ("%s - %s" % (dshort(le["start"]), dshort(last))) if last and last > le["start"][:10] else dshort(le["start"])
             else:
-                when = "%s &middot; %s" % (dshort(le["start"]), fmt_time(le["start"]))
+                when = "%s &middot; %s" % (dshort(le["start"]), _trange(le, fmt_time))
             until = _until(le).isoformat()[:16]
             try:
                 until = until + nhb.et_offset(datetime.fromisoformat(until))
