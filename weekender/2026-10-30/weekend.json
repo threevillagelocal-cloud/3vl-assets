@@ -1,0 +1,409 @@
+{
+ "edition": "2026-10-30",
+ "brand": "The Weekender",
+ "range": "Oct 30-Nov 1, 2026",
+ "starts": "2026-10-30T17:00:00-04:00",
+ "ends": "2026-11-01T23:59:00-05:00",
+ "slug": "",
+ "headline": [
+  "This Weekend",
+  "in Three Village"
+ ],
+ "dek": "It's Halloween weekend: trick-or-treating through Stony Brook Village and Port Jeff on Saturday, the fire department's Monster Dash, the last farmers market of the season on Friday and a Mischief Market on Sunday. Clocks fall back an hour Sunday morning. Here's everything worth doing in Three Village this weekend, updated live.",
+ "hero": {
+  "img": "hero-hwfest",
+  "credit": "Halloween Festival in Stony Brook Village. Photo: Ward Melville Heritage Organization",
+  "alt": "Families in costume on the lawn at the Halloween Festival in Stony Brook Village"
+ },
+ "days": {
+  "fri": "2026-10-30",
+  "sat": "2026-10-31",
+  "sun": "2026-11-01"
+ },
+ "picks": [
+  "hwfest",
+  "tvfm",
+  "pjtot",
+  "dash",
+  "hauntmus",
+  "mischief"
+ ],
+ "venues": {
+  "sbv": {
+   "name": "Stony Brook Village Center",
+   "addr": "111 Main St, Stony Brook",
+   "ll": [
+    40.91742,
+    -73.14738
+   ]
+  },
+  "pjv": {
+   "name": "Port Jefferson Village",
+   "addr": "Port Jefferson",
+   "ll": [
+    40.9465,
+    -73.0693
+   ]
+  },
+  "tvhs": {
+   "name": "Three Village Historical Society",
+   "addr": "93 N. Country Rd, East Setauket",
+   "ll": [
+    40.93391,
+    -73.11775
+   ]
+  },
+  "theatre3": {
+   "name": "Theatre Three",
+   "addr": "412 Main St, Port Jefferson",
+   "ll": [
+    40.94366,
+    -73.06754
+   ]
+  },
+  "otg": {
+   "name": "Olde Towne Gardens",
+   "addr": "360 Old Town Rd, East Setauket",
+   "ll": [
+    40.91917,
+    -73.0771
+   ]
+  },
+  "tommys": {
+   "name": "Tommy's Place",
+   "addr": "109 Main St, Port Jefferson",
+   "ll": [
+    40.94632,
+    -73.06875
+   ]
+  },
+  "jazzloft": {
+   "name": "The Jazz Loft",
+   "addr": "275 Christian Ave, Stony Brook",
+   "ll": [
+    40.9189,
+    -73.1394
+   ]
+  },
+  "reboli": {
+   "name": "The Reboli Center for Art and History",
+   "addr": "64 Main St, Stony Brook",
+   "ll": [
+    40.9154,
+    -73.1446
+   ]
+  },
+  "benners": {
+   "name": "Benner's Farm",
+   "addr": "56 Gnarled Hollow Rd, East Setauket",
+   "ll": [
+    40.915,
+    -73.096
+   ]
+  },
+  "malkmes": {
+   "name": "Malkmes Florists & Greenhouses",
+   "addr": "70 Oakland Ave, Port Jefferson Station",
+   "ll": [
+    40.9269,
+    -73.056
+   ]
+  },
+  "poboy": {
+   "name": "Po' Boy Brewery",
+   "addr": "200 Wilson St, Port Jefferson Station",
+   "ll": [
+    40.9224,
+    -73.0541
+   ]
+  },
+  "emma": {
+   "name": "Emma S. Clark Library",
+   "addr": "120 Main St, Setauket",
+   "ll": [
+    40.94487,
+    -73.11197
+   ]
+  }
+ },
+ "events": [
+  {
+   "id": "tvfm",
+   "title": "Three Village Farmers & Artisans Market",
+   "start": "2026-10-30T15:00",
+   "end": "2026-10-30T18:00",
+   "page": "https://www.threevillagelocal.com/three-village-farmers-market",
+   "venue": "tvhs",
+   "price": "Free",
+   "tags": [
+    "free",
+    "outdoor",
+    "food",
+    "kids"
+   ],
+   "img": "tvfm",
+   "desc": "The last market of the season: farmers, bakers and makers on the historical society lawn, 3 to 6 PM. Free to walk in and browse.",
+   "url": "https://www.tvhs.org/farmers-market",
+   "src": "tvhs.org"
+  },
+  {
+   "id": "benners",
+   "title": "Haunted Evening Hayrides at Benner's Farm",
+   "start": "2026-10-30T18:00",
+   "end": "2026-10-30T21:00",
+   "page": "https://www.threevillagelocal.com/events/haunted-evening-hayrides-at-benners-farm-575",
+   "venue": "benners",
+   "price": "Tickets online only",
+   "tags": [
+    "kids",
+    "outdoor"
+   ],
+   "img": "benners",
+   "credit": "Photo: @bennersfarm on Instagram",
+   "desc": "A tractor ride through the dark woods at Benner's Farm. The first hour is a Not-So-Spooky ride for younger friends; later rides get scarier. Tickets are sold online only and every rider needs one, kids included.",
+   "url": "https://www.eventcreate.com/e/hauntedhayridesbennersfarm2026",
+   "src": "eventcreate.com"
+  },
+  {
+   "id": "ghost",
+   "title": "Be Our Ghost at Theatre Three",
+   "start": "2026-10-30T18:30",
+   "end": "2026-10-30T22:00",
+   "page": "https://www.threevillagelocal.com/events/be-our-ghost-at-theatre-three",
+   "venue": "theatre3",
+   "price": "$30",
+   "tags": [
+    "music",
+    "stage"
+   ],
+   "img": "ghost",
+   "credit": "Photo: Theatre Three",
+   "desc": "A Third Act cabaret night of songs from some of the most devious villains of film, TV and the stage. Shows at 6:30 and 9 PM.",
+   "url": "https://theatrethree.com/third_act/be-our-ghost/",
+   "src": "theatrethree.com"
+  },
+  {
+   "id": "poboy",
+   "title": "Po' Boy Brewery Halloween Costume Party",
+   "start": "2026-10-30T19:00",
+   "end": "2026-10-31T00:00",
+   "page": "https://www.threevillagelocal.com/events/po-boy-brewery-halloween-costume-party",
+   "venue": "poboy",
+   "price": "See details",
+   "tags": [
+    "music",
+    "food"
+   ],
+   "desc": "Their costume party: everyone's welcome, costumes get happy hour prices all night, plus a food truck, music and gift cards for the top 3 costumes, voted by guests.",
+   "url": "https://www.threevillagelocal.com/events/po-boy-brewery-halloween-costume-party",
+   "src": "threevillagelocal.com"
+  },
+  {
+   "id": "dash",
+   "title": "Stony Brook Fire Department 5K Monster Dash Race",
+   "start": "2026-10-31T09:00",
+   "end": "2026-10-31T11:00",
+   "page": "https://www.threevillagelocal.com/events/stony-brook-fire-department-5k-monster-dash-race",
+   "venue": "sbv",
+   "price": "Register online",
+   "tags": [
+    "outdoor",
+    "kids"
+   ],
+   "img": "dash",
+   "credit": "Photo: Stony Brook Fire Department",
+   "desc": "The fire department's 10th annual Monster Dash moves to Stony Brook Village this year: Fun Run at 9 AM, 5K at 9:30 AM. Costumes encouraged, with trick-or-treating in the village to follow.",
+   "url": "https://stonybrookvillage.com/event/stony-brook-fire-department-5k-monster-dash-race/",
+   "src": "stonybrookvillage.com"
+  },
+  {
+   "id": "reboli",
+   "title": "Trick or Treating for Littles at the Reboli Center",
+   "start": "2026-10-31T10:00",
+   "end": "2026-10-31T17:00",
+   "page": "https://www.threevillagelocal.com/events/trick-or-treating-for-littles-at-the-reboli-center",
+   "venue": "reboli",
+   "price": "Free",
+   "tags": [
+    "free",
+    "kids",
+    "arts"
+   ],
+   "img": "reboli",
+   "credit": "Photo: The Reboli Center",
+   "desc": "A kid-friendly Halloween day with seasonal crafts, spooky music and trick-or-treating at the information desk. Costumes encouraged, no RSVP needed.",
+   "url": "https://www.rebolicenter.org/events/2026/10/31/trick-or-treating-for-littles-happy-halloween",
+   "src": "rebolicenter.org"
+  },
+  {
+   "id": "pjtot",
+   "title": "Trick or Treat in Port Jefferson Village",
+   "start": "2026-10-31T11:00",
+   "end": "2026-10-31T17:00",
+   "page": "https://www.threevillagelocal.com/events/trick-or-treat-in-port-jefferson-village",
+   "venue": "pjv",
+   "price": "See details",
+   "tags": [
+    "kids",
+    "outdoor"
+   ],
+   "img": "pjtot",
+   "credit": "Photo: Greater Port Jefferson Chamber of Commerce",
+   "desc": "Trick-or-treat around Port Jefferson Village from 11 AM to 5 PM, plus a fun scavenger hunt. Participating businesses have a sign in their window.",
+   "url": "https://portjeffchamber.com/events-calendar/trick-or-treat-in-port-jefferson-village/",
+   "src": "portjeffchamber.com"
+  },
+  {
+   "id": "hwfest",
+   "title": "36th Annual Halloween Festival in Stony Brook Village",
+   "start": "2026-10-31T12:00",
+   "end": "2026-10-31T16:00",
+   "page": "https://www.threevillagelocal.com/events/36th-annual-halloween-festival-in-stony-brook-village",
+   "venue": "sbv",
+   "price": "Free",
+   "tags": [
+    "free",
+    "kids",
+    "outdoor",
+    "music"
+   ],
+   "img": "hwfest",
+   "credit": "Photo: Ward Melville Heritage Organization",
+   "desc": "Trick-or-treat through the Stony Brook Village Center shops and eateries, games in the Inner Court, WALK FM's Walkie Bear from 1 to 3 PM, photos with Monster Merlin and the scarecrow winners announced at 2 PM.",
+   "url": "https://stonybrookvillage.com/event/the-36th-annual-halloween-festival/",
+   "src": "stonybrookvillage.com"
+  },
+  {
+   "id": "hauntmus",
+   "title": "Trick or Treat at the Haunted Museum",
+   "start": "2026-10-31T14:00",
+   "end": "2026-10-31T16:30",
+   "page": "https://www.threevillagelocal.com/events/trick-or-treat-at-the-haunted-museum",
+   "venue": "jazzloft",
+   "price": "$10",
+   "tags": [
+    "kids",
+    "music"
+   ],
+   "img": "hauntmus",
+   "credit": "Photo: The Jazz Loft",
+   "desc": "Kids come in costume, trick-or-treat through the Jazz Loft's exhibits, visit the haunted garden and hear the New Orleans Goblins Jazz Band.",
+   "url": "https://thejazzloft.org/",
+   "src": "thejazzloft.org"
+  },
+  {
+   "id": "jlnight",
+   "title": "Night at the Museum: Halloween at the Jazz Loft",
+   "start": "2026-10-31T19:00",
+   "end": "2026-10-31T21:30",
+   "page": "https://www.threevillagelocal.com/events/night-at-the-museum-halloween-at-the-jazz-loft",
+   "venue": "jazzloft",
+   "price": "From $20",
+   "tags": [
+    "music"
+   ],
+   "img": "jlnight",
+   "credit": "Photo: The Jazz Loft",
+   "desc": "Come in costume for a spooky cocktail in the haunted garden and music by the New Orleans Goblins Jazz Band.",
+   "url": "https://thejazzloft.org/",
+   "src": "thejazzloft.org"
+  },
+  {
+   "id": "tommys",
+   "title": "Halloween Party at Tommy's Place",
+   "start": "2026-10-31T20:00",
+   "end": "2026-11-01T01:00",
+   "page": "https://www.threevillagelocal.com/events/halloween-party-at-tommys-place",
+   "venue": "tommys",
+   "price": "See details",
+   "tags": [
+    "food"
+   ],
+   "desc": "Eat, drink and be scary: the party starts at 8 PM and the costume contest is at midnight. Arrive early to beat the line.",
+   "url": "https://www.threevillagelocal.com/events/halloween-party-at-tommys-place",
+   "src": "threevillagelocal.com",
+   "member": "tommys-place"
+  },
+  {
+   "id": "jltrio",
+   "title": "Autumn Concert with the Jazz Loft Trio",
+   "start": "2026-11-01T14:00",
+   "end": "2026-11-01T15:00",
+   "page": "https://www.threevillagelocal.com/events/autumn-concert-with-the-jazz-loft-trio",
+   "venue": "emma",
+   "price": "See details",
+   "tags": [
+    "music"
+   ],
+   "desc": "The Jazz Loft Trio will perform a mix of classic jazz standards and Great American Songbook tunes, in the library's Vincent R. O'Leary Community Room.",
+   "url": "https://www.threevillagelocal.com/events/autumn-concert-with-the-jazz-loft-trio",
+   "src": "emmaclark.org"
+  },
+  {
+   "id": "mischief",
+   "title": "All Saints Mischief Market",
+   "start": "2026-11-01T15:00",
+   "end": "2026-11-01T21:00",
+   "page": "https://www.threevillagelocal.com/events/all-saints-mischief-market",
+   "venue": "malkmes",
+   "price": "Tickets on Eventbrite",
+   "tags": [
+    "music",
+    "food",
+    "kids",
+    "outdoor"
+   ],
+   "img": "mischief",
+   "credit": "Photo: All Saints Mischief Market",
+   "desc": "An all-ages outdoor market with live music, food, vendors, a Spooky Walk trail, crafts, a costume contest and raffles for The SEED Foundation.",
+   "url": "https://www.eventbrite.com/e/all-saints-mischief-market-tickets-2002097893695",
+   "src": "eventbrite.com"
+  }
+ ],
+ "allweekend": [
+  {
+   "id": "spooky",
+   "title": "Spooky Village at Olde Towne Gardens",
+   "venue": "otg",
+   "when": "Final days, through Oct. 31",
+   "start": "2026-10-30T00:00",
+   "end": "2026-10-30T23:59",
+   "until": "2026-10-31",
+   "price": "Pay at the gate",
+   "tags": [
+    "kids",
+    "outdoor"
+   ],
+   "desc": "A family Halloween village at the East Setauket garden center: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
+   "img": "spooky",
+   "credit": "Photo: Olde Towne Gardens",
+   "url": "https://theoldetownegardens.com/spooky-village/",
+   "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens",
+   "member": "olde-towne-gardens"
+  }
+ ],
+ "specials": [],
+ "next": [],
+ "trolley": [],
+ "wxbg": {
+  "fri": {
+   "loc": "Stony Brook Village Green",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_1",
+   "photo": "sbvgreen",
+   "credit": "Live cam: Stony Brook Village Center"
+  },
+  "sat": {
+   "loc": "Port Jefferson Harbor",
+   "photo": "pjharbor",
+   "credit": "Photo: Traitor, CC BY-SA 3.0"
+  },
+  "sun": {
+   "loc": "Stony Brook Harbor",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_2",
+   "photo": "sbharbor2",
+   "credit": "Live cam: Stony Brook Village Center"
+  }
+ },
+ "closings": null,
+ "guides": []
+}

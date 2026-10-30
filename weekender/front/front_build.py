@@ -203,7 +203,7 @@ def lead_open(d, ev, V, img, evattrs, actions, tagchips, dshort, fmt_time, CAL):
         if le is hero_of:
             name, alt, credit = h["img"], h.get("alt") or le["title"], re.sub(r"^.*?Photo:\s*", "", h.get("credit", ""))
         elif le.get("img"):
-            name, alt, credit = le["img"], le["title"], le.get("credit", "")
+            name, alt, credit = le["img"], le["title"], re.sub(r"^\s*Photo:\s*", "", le.get("credit", ""))   # 10/30/2026: the label below adds "Photo: " (credits read "Photo: X")
         else:
             continue
         ed = img("x")[:-len("x.webp")]

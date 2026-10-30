@@ -134,9 +134,10 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
 
     def evattrs(e):
         v = V[e["venue"]]
-        return ('data-id="%s" data-day="%s" data-start="%s-04:00" data-end="%s-04:00" data-tags="%s" '
+        # 10/30/2026: real Eastern offset per event (was a fixed -04:00, so events after the November DST change ended an hour early)
+        return ('data-id="%s" data-day="%s" data-start="%s%s" data-end="%s%s" data-tags="%s" '
                 'data-lat="%s" data-lon="%s" data-title="%s" data-venue="%s" data-addr="%s" data-img="%s"') % (
-            e["id"], day_of(e["start"]), e["start"], e["end"], " ".join(e["tags"]), v["ll"][0], v["ll"][1],
+            e["id"], day_of(e["start"]), e["start"], nhb.et_offset(datetime.fromisoformat(e["start"][:16])), e["end"], nhb.et_offset(datetime.fromisoformat(e["end"][:16])), " ".join(e["tags"]), v["ll"][0], v["ll"][1],
             esc(e["title"]), esc(v["name"]), esc(v["addr"]), img(e["img"], True) if e.get("img") else "") + ((' data-off="%s"' % esc(e["status"])) if e.get("status") else "")
 
     def actions(e):
