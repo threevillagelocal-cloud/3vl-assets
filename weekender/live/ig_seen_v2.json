@@ -23,30 +23,6 @@
 "expires": "",
 "_ts": "2026-10-01T10:37:36+0000"
 },
-"17864553186677125": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-30T17:02:57+0000"
-},
-"17906645451480591": {
-"special": true,
-"title": "Happy Hour at Mirabelle Tavern",
-"when": "Every Wednesday & Thursday · 4-6 PM",
-"desc": "50% off cocktails, wine and beer at the bar.",
-"expires": "2026-10-14",
-"_ts": "2026-09-30T15:10:46+0000"
-},
-"18141583504593377": {
-"special": false,
-"title": "Spicy Vodka Chicken Parm Sandwich",
-"when": "Ongoing",
-"desc": "New menu item: crispy chicken with spicy house-made vodka sauce, mozzarella and Parmesan on toasted semolina hero.",
-"expires": "2026-10-15",
-"_ts": "2026-09-30T17:04:52+0000"
-},
 "17918683176243017": {
 "special": true,
 "title": "Pumpkin Pie Latte",
@@ -111,14 +87,6 @@
 "expires": "2026-10-14",
 "_ts": "2026-10-01T13:30:05+0000"
 },
-"18117894214952760": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-30T15:33:07+0000"
-},
 "18056356766797842": {
 "special": true,
 "title": "Race Weekend at Black Pearl",
@@ -143,14 +111,6 @@
 "expires": "2026-11-26",
 "_ts": "2026-10-01T13:01:38+0000"
 },
-"17897319489606666": {
-"special": true,
-"title": "Happy Hour at Castaways",
-"when": "Mon-Thu · 12-6 PM",
-"desc": "Half off beer, wine, cocktails, top-shelf pours plus $2 oysters, $1 clams and food specials from $8.",
-"expires": "2026-10-08",
-"_ts": "2026-09-30T16:02:16+0000"
-},
 "18106556117245506": {
 "special": false,
 "title": "",
@@ -158,14 +118,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-01T12:25:52+0000"
-},
-"18201020956327612": {
-"special": false,
-"title": "Hand-Crafted Marshmallows",
-"when": "Ongoing",
-"desc": "Small batch hand-crafted marshmallows with a fluffy, pillowy texture that melts in your mouth.",
-"expires": "2026-10-15",
-"_ts": "2026-09-30T17:16:23+0000"
 },
 "18044301530821720": {
 "special": false,
@@ -3310,5 +3262,53 @@
 "17939044014125295": {
 "special": false,
 "_ts": "2026-10-30T14:46:57+0000"
+},
+"17939011704127395": {
+"special": true,
+"title": "Fall Seasonal Sandwiches & Platters",
+"when": "Through late November",
+"desc": "Vegan balsamic roasted carrot, turkey brie and pear sandwiches with dessert platters.",
+"expires": "2026-11-27",
+"_ts": "2026-10-30T15:48:48+0000"
+},
+"17956826028281403": {
+"special": false,
+"title": "Weddings at Three Village Inn",
+"when": "Ongoing",
+"desc": "Wedding planning services at TVI. Link in bio for more information.",
+"expires": "2026-10-30",
+"_ts": "2026-10-30T17:01:03+0000"
+},
+"17887131192504989": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-30T17:55:20+0000"
+},
+"18076482704758141": {
+"special": false,
+"title": "PJ Lobster House",
+"when": "",
+"desc": "General invitation to visit for food and atmosphere, no specific offer or event date.",
+"expires": "",
+"_ts": "2026-10-30T15:16:40+0000"
+},
+"18195290281401396": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-30T15:32:48+0000"
+},
+"18140529568538365": {
+"special": true,
+"title": "Happy Hour at Castaways",
+"when": "Today · 12–6 PM",
+"desc": "Happy Hour from 12–6 PM. Try the Castaways Burger with cheddar, house sauce, lettuce, tomato, and onion.",
+"expires": "2026-10-30",
+"_ts": "2026-10-30T15:01:54+0000"
 }
 }
