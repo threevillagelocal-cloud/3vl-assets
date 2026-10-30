@@ -102,11 +102,28 @@ function totals_() {   // player_id -> points (counted check-ins only)
 }
 function active_(c) { return c.active === true || String(c.active).toUpperCase() === 'TRUE' || String(c.active).toLowerCase() === 'yes'; }
 
+// Bonus days (owner 10/30/2026): tab "Bonus" = date (yyyy-mm-dd, Eastern) | code ("all" = every code) | points | note
+// e.g. 2026-11-07 | olde-towne-gardens | 3 | Triple points today!  -> a check-in there that day scores 3.
+function bonus_(code, day) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet(), sh = ss.getSheetByName('Bonus');
+  if (!sh) { sh = ss.insertSheet('Bonus'); sh.appendRow(['date', 'code', 'points', 'note']); sh.setFrozenRows(1); sh.getRange(1, 1, 1, 4).setFontWeight('bold'); return null; }
+  var v = sh.getDataRange().getValues(); v.shift();
+  code = String(code).toLowerCase();
+  var best = null;
+  v.forEach(function (r) {
+    var d = r[0] instanceof Date ? Utilities.formatDate(r[0], TZ, 'yyyy-MM-dd') : String(r[0]).trim();
+    var c = String(r[1]).trim().toLowerCase(), p = Number(r[2]);
+    if (d === day && (c === code || c === 'all') && p > 0 && (!best || p > best.points)) best = { points: p, note: String(r[3] || '') };
+  });
+  return best;
+}
+
 // ---------- actions ----------
 function codeInfo_(b) {
   var f = findCode_(b.code);
   if (!f || !active_(f.c)) return { ok: false, error: 'nocode' };
-  return { ok: true, code: f.c.code, name: f.c.name, type: f.c.type, located: f.c.lat !== '' && f.c.lng !== '' };
+  var bon = bonus_(f.c.code, today_());
+  return { ok: true, code: f.c.code, name: f.c.name, type: f.c.type, located: f.c.lat !== '' && f.c.lng !== '', bonus: bon ? bon.points : 0, bonusNote: bon ? bon.note : '' };
 }
 
 function start_(b) {
@@ -196,9 +213,9 @@ function checkin_(b) {
     if (c.lat === '' || c.lng === '') { log('code_not_placed', 0, null); return { ok: false, error: 'notplaced' }; }
     var d = dist_(Number(c.lat), Number(c.lng), lat, lng), rad = Number(c.radius_m) || DEFAULT_RADIUS;
     if (d > rad + Math.min(acc, 100)) { log('too_far', 0, d); return { ok: false, error: 'far', dist: d }; }
-    var pts = Number(c.points) || 1;
+    var bon = bonus_(c.code, today), pts = bon ? bon.points : (Number(c.points) || 1);
     log('ok', pts, d, recent >= 6 ? 'fast: ' + (recent + 1) + ' check-ins in 10 min' : '');
-    return Object.assign({ ok: true, place: c.name, points: pts }, mine_(pl.p.id));
+    return Object.assign({ ok: true, place: c.name, points: pts, bonus: bon ? bon.note || '' : '' }, mine_(pl.p.id));
   } finally { lock.releaseLock(); }
 }
 
