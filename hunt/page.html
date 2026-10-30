@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://threevillagelocal-cloud.github.io/3vl-share/hunt/app.css?v=1">
+<div class="tvhp">
+<div id="tvh" class="tvh-app"></div>
+<section class="tvh-land tvh-hero">
+ <div class="tvh-stars" aria-hidden="true"></div>
+ <p class="tvh-pill"><span class="tvh-star">&#9733;</span> THE THREE VILLAGE LOCAL SCAVENGER HUNT <span class="tvh-star">&#9733;</span></p>
+ <h1>Find the codes. <span>Check in. Win.</span></h1>
+ <p class="tvh-lead">Look for Three Village Local QR signs in local shops and restaurants, plus a few secret stickers hidden around town. Scan one with your phone camera to check in and score a point. The more spots you find, the higher you climb.</p>
+ <div class="tvh-facts"><span><b>1 point</b> per check-in</span><span><b>Every day</b> each spot counts again</span><span><b>Free</b> no purchase needed</span></div>
+</section>
+<div id="tvh-mine" class="tvh-land"></div>
+<section class="tvh-land tvh-sec">
+ <h2>How it works</h2>
+ <div class="tvh-steps">
+  <div><i>1</i><b>Spot a code</b><span>Signs at the counter of local shops and restaurants, and stickers hidden around Setauket, Stony Brook and Port Jefferson.</span></div>
+  <div><i>2</i><b>Scan with your camera</b><span>First time only: your name and email, and a quick code we email you. After that it is one tap.</span></div>
+  <div><i>3</i><b>Tap Check in</b><span>Your phone confirms you are really there, and the point is yours. Each code counts once per day, so scan as many different spots as you can find.</span></div>
+ </div>
+</section>
+<section class="tvh-land tvh-sec">
+ <h2>Leaderboard</h2>
+ <div id="tvh-board" class="tvh-card"><div class="tvh-spin"></div></div>
+</section>
+<section class="tvh-land tvh-sec" id="rules">
+ <h2>Contest rules</h2>
+ <div class="tvh-card tvh-rules">
+  <ul>
+   <li><b>No purchase necessary.</b> Visiting and scanning earns points; you never have to buy anything.</li>
+   <li><b>1 point</b> for each check-in. Each QR code counts <b>once per player per day</b> (midnight to midnight, Eastern time). Check in at as many different codes as you can find.</li>
+   <li>You must be at the sign or sticker when you check in. Your phone's location is checked at that moment only.</li>
+   <li>One entry per person, with a real name, email and mobile number. Duplicate or fake entries, shared or posted codes, and automated scanning are disqualified.</li>
+   <li><b>Prize and contest dates:</b> coming soon. We will post them here before the hunt starts.</li>
+   <li>Winners are confirmed by Three Village Local before prizes are given out. Our decisions are final.</li>
+   <li>Your name shows on the leaderboard as first name and last initial only. We never sell your information.</li>
+  </ul>
+ </div>
+</section>
+<section class="tvh-land tvh-req" id="request">
+ <div class="tvh-reqin">
+  <p class="tvh-kick">For local businesses</p>
+  <h2>Get a scavenger hunt sign for your store</h2>
+  <p>Bring hunters through your door. We bring you a free counter sign with your own QR code, list you as a stop, and send you how many people checked in.</p>
+  <button type="button" class="tvh-btn" id="tvh-reqbtn">Request a sign for my business</button>
+  <form class="tvh-f tvh-reqf" id="tvh-reqf" hidden>
+   <label>Business name<input name="business" required></label>
+   <div class="tvh-row"><label>Your name<input name="contact" autocomplete="name" required></label><label>Phone<input name="phone" type="tel" autocomplete="tel"></label></div>
+   <label>Email<input name="email" type="email" autocomplete="email" required></label>
+   <label>Business address<input name="address" autocomplete="street-address"></label>
+   <label>Anything we should know? (optional)<input name="notes"></label>
+   <input name="hp" class="tvh-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+   <button class="tvh-btn" type="submit">Send my request</button><p class="tvh-err" id="tvh-reqe"></p>
+  </form>
+ </div>
+</section>
+</div>
+<script>window.TVH_API="__API__";</script>
+<script src="https://threevillagelocal-cloud.github.io/3vl-share/hunt/app.js?v=1" defer></script>
