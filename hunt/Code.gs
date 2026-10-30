@@ -56,6 +56,7 @@ function handle_(b) {
     else if (a === 'board') out = board_();
     else if (a === 'setloc') out = setloc_(b);
     else if (a === 'request') out = request_(b);
+    else if (a === 'addcode') out = addcode_(b);
     else out = { ok: false, error: 'unknown' };
   } catch (err) {
     out = { ok: false, error: 'server', detail: String(err && err.message || err) };
@@ -245,6 +246,21 @@ function request_(b) {   // a local business asks for a hunt sign -> "Sign Reque
     subject: '[Scavenger Hunt] Sign request: ' + biz,
     htmlBody: '<p><b>' + biz + '</b> wants a scavenger hunt sign.</p><p>Contact: ' + who + '<br>Email: ' + email + '<br>Phone: ' + phone + '<br>Address: ' + addr + '</p><p>' + notes + '</p><p>Reply to this email to answer them. It is also in the "Sign Requests" tab of the 3VL Scavenger Hunt sheet.</p>' });
   return { ok: true };
+}
+
+function addcode_(b) {   // staff/sign builder: add or update a code row (needs ADMIN_KEY). Never moves an existing saved spot unless lat/lng are sent.
+  if (String(b.key || '') !== PropertiesService.getScriptProperties().getProperty('ADMIN_KEY')) return { ok: false, error: 'key' };
+  var code = String(b.code || '').trim().toLowerCase();
+  if (!/^[a-z0-9-]{3,60}$/.test(code)) return { ok: false, error: 'code' };
+  var f = findCode_(code), sh = sh_('Codes');
+  var lat = b.lat === undefined || b.lat === '' ? null : Number(b.lat), lng = b.lng === undefined || b.lng === '' ? null : Number(b.lng);
+  if (f) {
+    sh.getRange(f.row, 2, 1, 2).setValues([[clean_(b.name, 80) || f.c.name, clean_(b.type, 20) || f.c.type]]);
+    if (lat !== null && lng !== null) sh.getRange(f.row, 4, 1, 2).setValues([[lat, lng]]);
+    return { ok: true, updated: code };
+  }
+  sh.appendRow([code, clean_(b.name, 80), clean_(b.type, 20) || 'store', lat === null ? '' : lat, lng === null ? '' : lng, Number(b.radius_m) || DEFAULT_RADIUS, true, Number(b.points) || 1, clean_(b.notes, 200)]);
+  return { ok: true, added: code };
 }
 
 function setloc_(b) {   // owner/staff: stand at the sign or sticker, open /hunt/<code>?place=<ADMIN_KEY>, tap "Save this spot"
