@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-30T11:11:42.957630+00:00",
+"updated": "2026-10-30T12:05:24.842806+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 0,
+"Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 203,
@@ -17,7 +17,7 @@
 "Reboli Center": 21,
 "Sweetbriar Nature Center": 18,
 "Historical Society of Greater Port Jefferson": 1,
-"Local business Instagram posts": 3
+"Local business Instagram posts": 8
 },
 "icons": {
 "kids": "&#129490;",
@@ -109,6 +109,25 @@
 "page": ""
 },
 {
+"id": "pjchamber-14726",
+"title": "2026 Port Jefferson Scarecrow Walk",
+"start": "2026-10-05T00:00:00",
+"end": "2026-11-02T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
+"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd! var...",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
+},
+{
 "id": "gallerynorth-71344",
 "title": "Exhibition: Instincts",
 "start": "2026-10-08T00:00:00",
@@ -126,6 +145,26 @@
 "status": "",
 "fb": 0,
 "page": ""
+},
+{
+"id": "pjchamber-14181",
+"title": "2026 Port Jeff Self-Guided Fall Art Walk",
+"start": "2026-10-09T00:00:00",
+"end": "2026-11-06T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
 },
 {
 "id": "sbv-2344",
@@ -431,6 +470,44 @@
 "page": "https://www.threevillagelocal.com/events/little-cheese-halloween-charcuterie-workshop"
 },
 {
+"id": "social-18096966509142204",
+"title": "Audrey Johnson CD Release Concert",
+"start": "2026-10-30T19:00:00",
+"end": "2026-10-30T19:00:00",
+"allday": false,
+"venue": "The Jazz Loft",
+"addr": "275 Christian Ave, Stony Brook, NY 11790",
+"url": "https://www.instagram.com/p/De-J26hn72s/",
+"desc": "Audrey Johnson CD Release Concert at The Jazz Loft. Purchase tickets at www.thejazzloft.org",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18096966509142204.jpg",
+"src": "social",
+"tags": [
+"music"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "social-18119535476059705",
+"title": "Spooky Sweat Saturday Halloween Workout",
+"start": "2026-10-31T07:30:00",
+"end": "2026-10-31T07:30:00",
+"allday": false,
+"venue": "F45 Training East Setauket",
+"addr": "1385 NY 25A, E, East Setauket, NY 11733",
+"url": "https://www.instagram.com/p/DfAQGTsJUHv/",
+"desc": "Halloween costume party with classes at 7:30 AM and 9:00 AM, featuring a costume contest and spooktacular workout at F45 East Setauket.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18119535476059705.jpg",
+"src": "social",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
 "id": "cur-dash",
 "title": "Stony Brook Fire Department 5K Monster Dash Race",
 "start": "2026-10-31T09:00",
@@ -618,6 +695,63 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/halloween-party-at-tommys-place",
 "pu": ""
+},
+{
+"id": "pjchamber-15119",
+"title": "Long Island Restaurant Week",
+"start": "2026-11-01T00:00:00",
+"end": "2026-11-08T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
+"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta – RUVO",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/long-island-restaurant-week"
+},
+{
+"id": "pjchamber-15082",
+"title": "Blood Drive",
+"start": "2026-11-01T08:00:00",
+"end": "2026-11-01T15:00:00",
+"allday": false,
+"venue": "Greek Orthodox Church",
+"addr": "430 Sheep Pasture Rd, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/blood-drive-5/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/blood-drive"
+},
+{
+"id": "pjchamber-14900",
+"title": "Return To You: A Limitless Retreat",
+"start": "2026-11-01T08:45:00",
+"end": "2026-11-01T15:30:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/return-to-you-a-limitless-retreat/",
+"desc": "Your day will move intentionally between learning, nourishment, reflection, and restorative experiences—with plenty of space to simply enjoy being there. Arrival + Continental Breakfast Settle in with coffee, tea, fresh fruit, pastries and a light continental ",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
 },
 {
 "id": "portjeff-1098",

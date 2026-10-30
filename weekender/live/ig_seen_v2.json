@@ -1,12 +1,4 @@
 {
-"18129593152786851": {
-"special": false,
-"title": "Baby Back Ribs Platter",
-"when": "Expired",
-"desc": "Slow-roasted ribs with barbecue sauce, mashed potatoes, and cornbread.",
-"expires": "2026-09-30",
-"_ts": "2026-09-30T00:54:19+0000"
-},
 "18126325852659544": {
 "special": false,
 "title": "",
@@ -118,14 +110,6 @@
 "desc": "Spooky seasonal drinks available all month at Toast locations including Port Jefferson with Addams Family-inspired beverages.",
 "expires": "2026-10-31",
 "_ts": "2026-09-30T14:13:17+0000"
-},
-"17903957838591718": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "Caption lacks specific offer details; appears to be a generic post asking followers to swipe for content.",
-"expires": "",
-"_ts": "2026-09-30T01:44:50+0000"
 },
 "17960111250235779": {
 "special": true,
@@ -3310,5 +3294,29 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-29T15:01:21+0000"
+},
+"17970977996965299": {
+"special": false,
+"title": "Monthly Book Club Meeting",
+"when": "Wed, Nov. 18 · 6 PM",
+"desc": "Discuss Heart of a Dog by Mikhail Bulgakov. $30 includes wine, small plate, and bookmark.",
+"expires": "2026-11-18",
+"_ts": "2026-10-30T11:58:46+0000"
+},
+"18134474068754007": {
+"special": false,
+"title": "Halloween Specials at Tommy's Place",
+"when": "Today only",
+"desc": "Baked Shrimp Scampi, Italian Wedding Soup, Birria Burrito and Crunchy Tacos.",
+"expires": "2026-10-30",
+"_ts": "2026-10-30T00:03:20+0000"
+},
+"17909551725334285": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-30T10:12:20+0000"
 }
 }
