@@ -1,12 +1,12 @@
 {
-"updated": "2026-10-30T15:04:12.345673+00:00",
+"updated": "2026-10-30T17:00:55.918080+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
-"Emma S. Clark Library": 305,
+"Village of Port Jefferson": 203,
+"Emma S. Clark Library": 303,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -249,42 +249,6 @@
 "page": "https://www.threevillagelocal.com/events/hidden-beneath-the-floorboards-walking-tour-437"
 },
 {
-"id": "emmaclark-game-day-38292",
-"title": "Game Day",
-"start": "2026-10-30T10:00:00",
-"end": "2026-10-30T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/game-day-38292",
-"desc": "We provide the space, tables and chairs. You bring your friends and a favorite board or card game to play. No registration required.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-11/people-having-fun-while-playing-board-game2.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/game-day-439"
-},
-{
-"id": "emmaclark-copy-halloween-parade-ages-18-mo-35-yrs-w-caregiver-58815",
-"title": "Halloween Parade (Ages 18 mo. - 5 yrs. w/ caregiver)",
-"start": "2026-10-30T11:00:00",
-"end": "2026-10-30T11:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/copy-halloween-parade-ages-18-mo-35-yrs-w-caregiver-58815",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": ""
-},
-{
 "id": "emmaclark-halloween-bingo-58168",
 "title": "Halloween Bingo!",
 "start": "2026-10-30T14:00:00",
@@ -486,7 +450,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/audrey-johnson-cd-release-concert"
 },
 {
 "id": "social-18119535476059705",
@@ -505,7 +469,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/spooky-sweat-saturday-halloween-workout"
 },
 {
 "id": "cur-dash",
@@ -752,6 +716,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
+},
+{
+"id": "portjeff-1098",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-01T09:00:00",
+"end": "2026-11-01T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1098",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-481"
 },
 {
 "id": "reboli-6adf9dab4c6329721a5cedc5",
@@ -1356,6 +1340,25 @@
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
 },
 {
+"id": "portjeff-1151",
+"title": "Caleb Brewster Escape 4K run",
+"start": "2026-11-07T00:00:00",
+"end": "2026-11-07T00:00:00",
+"allday": true,
+"venue": "Strong's Park",
+"addr": "Strong's Park - Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
+},
+{
 "id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
 "title": "Writing Workshop: Language, Silence, and the Stories We Carry",
 "start": "2026-11-07T10:30:00",
@@ -1507,6 +1510,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
+},
+{
+"id": "portjeff-1099",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-08T09:00:00",
+"end": "2026-11-08T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
