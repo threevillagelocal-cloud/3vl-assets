@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-30T21:00:58.895466+00:00",
+"updated": "2026-10-30T23:01:02.530171+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -12,7 +12,7 @@
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 7,
 "Staller Center for the Arts": 138,
-"Theatre Three": 55,
+"Theatre Three": 54,
 "Gallery North": 17,
 "Reboli Center": 21,
 "Sweetbriar Nature Center": 18,
@@ -372,7 +372,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/disney-pixars-coco-in-concert-live-to-film"
+"page": ""
 },
 {
 "id": "cur-poboy",
@@ -433,7 +433,27 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/audrey-johnson-cd-release-concert"
+"page": ""
+},
+{
+"id": "theatre3-9367",
+"title": "Be Our Ghost: A Villainous Cabaret",
+"start": "2026-10-30T21:00:00",
+"end": "2026-10-30T21:00:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson, NY 11777",
+"url": "https://theatrethree.getmytix.net/tickets#937/Be-Our-Ghost-A-Villainous-Cabaret",
+"desc": "Joins us for night of songs from some of the most devious villains from film, TV, and the Stage!",
+"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_937_Ghost%20date.jpg",
+"src": "theatre3",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/be-our-ghost-at-theatre-three"
 },
 {
 "id": "social-18119535476059705",
