@@ -1,11 +1,11 @@
 {
-"updated": "2026-10-30T15:02:19.852350+00:00",
+"updated": "2026-10-30T15:04:12.345673+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 203,
+"Village of Port Jefferson": "error: <urlopen error timed out>",
 "Emma S. Clark Library": 305,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
@@ -754,26 +754,6 @@
 "page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
 },
 {
-"id": "portjeff-1098",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-01T09:00:00",
-"end": "2026-11-01T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1098",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-481"
-},
-{
 "id": "reboli-6adf9dab4c6329721a5cedc5",
 "title": "Emerging Artist Spotlight: November | Genevieve Rochlin",
 "start": "2026-11-01T11:00:00",
@@ -1376,25 +1356,6 @@
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
 },
 {
-"id": "portjeff-1151",
-"title": "Caleb Brewster Escape 4K run",
-"start": "2026-11-07T00:00:00",
-"end": "2026-11-07T00:00:00",
-"allday": true,
-"venue": "Strong's Park",
-"addr": "Strong's Park - Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
-},
-{
 "id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
 "title": "Writing Workshop: Language, Silence, and the Stories We Carry",
 "start": "2026-11-07T10:30:00",
@@ -1546,26 +1507,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
-},
-{
-"id": "portjeff-1099",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-08T09:00:00",
-"end": "2026-11-08T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
@@ -1918,7 +1859,7 @@
 "url": "https://www.instagram.com/p/DfHzOtiEQj8/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18344774434251963.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-halloween-butterbeer-costume-cookie",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast"
 },
@@ -2082,7 +2023,7 @@
 "url": "https://www.instagram.com/p/DfHzOtiEQj8/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18344774434251963.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-halloween-butterbeer-costume-cookie",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast",
 "label": "Special"
 },
