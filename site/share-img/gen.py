@@ -115,7 +115,7 @@ def page(m):
     vip = str(m["subscription_id"]) in VIP
     t = town(m["city"]); cat = m.get("category") or ""
     yr = str(m.get("experience") or "").strip()
-    yr = yr if re.fullmatch(r"(18|19|20)\d\d", yr) and int(yr) <= 2026 else ""
+    yr = yr if re.fullmatch(r"(18|19|20)\d\d", yr) and int(yr) < 2026 else ""   # 10/30: "Since 2026" says nothing (CMIT)
     name = (m.get("company") or " ".join(x for x in [m.get("first_name"), m.get("last_name")] if x)).strip()
     if vip:
         pill = '<span class="pill gold">&#9733; NEIGHBOR FAVORITE</span>'
@@ -129,7 +129,7 @@ def page(m):
         gold = t
     else:
         lab = seo_gen.label((SRC.get(m["user_id"]) or {}).get("services"), cat)
-        if lab and (lab.lower() in name.lower() or len(lab) > 24):
+        if lab and (lab.lower() in name.lower() or len(lab) > 32):
             lab = ""
         gold = lab or t or cat or "Three Village"
     mode, uri, bgc = prep(m)
