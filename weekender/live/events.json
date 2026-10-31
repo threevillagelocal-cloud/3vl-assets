@@ -1,19 +1,19 @@
 {
-"updated": "2026-10-31T19:03:49.823189+00:00",
+"updated": "2026-10-31T21:00:58.384123+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 203,
-"Emma S. Clark Library": 301,
+"Emma S. Clark Library": 299,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 7,
 "Staller Center for the Arts": 138,
 "Theatre Three": 53,
-"Gallery North": 17,
+"Gallery North": 16,
 "Reboli Center": 21,
 "Sweetbriar Nature Center": 18,
 "Historical Society of Greater Port Jefferson": 1,
@@ -441,7 +441,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/36th-annual-halloween-festival-in-stony-brook-village"
+"page": ""
 },
 {
 "id": "cur-hauntmus",
@@ -464,23 +464,6 @@
 "page": "https://www.threevillagelocal.com/events/trick-or-treat-at-the-haunted-museum",
 "pu": "",
 "rank": 5
-},
-{
-"id": "emmaclark-monster-week-tabletop-rpg-59670",
-"title": "Monster of the Week: A Tabletop RPG",
-"start": "2026-10-31T14:00:00",
-"end": "2026-10-31T15:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Board Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-59670",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": ""
 },
 {
 "id": "cur-jlnight",
