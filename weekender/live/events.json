@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-30T23:37:52.432782+00:00",
+"updated": "2026-10-31T01:00:47.359388+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -167,26 +167,6 @@
 "page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
 },
 {
-"id": "sbv-2344",
-"title": "Hidden Beneath the Floorboards Walking Tour",
-"start": "2026-10-29T00:00:00",
-"end": "2026-10-30T23:59:59",
-"allday": true,
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook, NY 11790",
-"url": "https://stonybrookvillage.com/event/hidden-beneath-the-floorboards-walking-tour/",
-"desc": "The Ward Melville Heritage Organization (WMHO) is excited to announce the return of its captivating walking tour, Hidden Beneath the Floorboards , this October in Stony Brook Village . Hidden Beneath the Floorboards leads you through a hauntingly historic walk",
-"img": "https://stonybrookvillage.com/wp-content/uploads/2026/09/WMHO-Walking-Tour-scaled.jpg",
-"src": "sbv",
-"tags": [
-"history",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/hidden-beneath-the-floorboards-walking-tour-437"
-},
-{
 "id": "sbv-2456",
 "title": "The 47th Annual Holiday Tree Competition",
 "start": "2026-10-29T00:00:00",
@@ -207,28 +187,6 @@
 "page": "https://www.threevillagelocal.com/events/the-47th-annual-holiday-tree-competition"
 },
 {
-"id": "cur-spooky",
-"title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-30T00:00",
-"end": "2026-10-31T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Final days, through Oct. 31",
-"venue": "Olde Towne Gardens",
-"addr": "360 Old Town Rd, East Setauket",
-"url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at the East Setauket garden center: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/spooky-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
 "id": "wmho-1811",
 "title": "Hidden Beneath the Floorboards Walking Tour",
 "start": "2026-10-30T00:00:00",
@@ -247,27 +205,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/hidden-beneath-the-floorboards-walking-tour-437"
-},
-{
-"id": "lim-10000258",
-"title": "Stitch & Chit-Ch(at) – FREE!",
-"start": "2026-10-30T14:00:00",
-"end": "2026-10-30T15:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/stitch/2026-10-30/",
-"desc": "Whether you knit, crochet, embroider, or hand-sew, gather at the LIM to do what you love. Bring your work-in-progress and enjoy some good company. Open to adults and children 12 and up. This program will take place in the Studio located on the East side of cam",
-"img": "https://longislandmuseum.org/wp-content/uploads/2025/12/Stitch-and-Chit-Chat.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "cur-tvfm",
@@ -314,26 +251,6 @@
 "pu": ""
 },
 {
-"id": "gallerynorth-71313",
-"title": "Cabinet of Curiosities Sketch Night; Skulls, Bones & More!",
-"start": "2026-10-30T18:00:00",
-"end": "2026-10-30T20:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/products/10-28-cabinet-of-curiosities-sketch-night-skulls-bones-more",
-"desc": "For All Ages and Abilities Join us in the studio for a curiosities sketch night! Draw inspiration from our collection of bones, insects, skulls and more! Get up close and personal with our vast collection of objects and sketch as many as you'd like. Drawing ma",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71313/v1792687844741/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/cabinet-of-curiosities-sketch-night-skulls-bones-more"
-},
-{
 "id": "cur-ghost",
 "title": "Be Our Ghost at Theatre Three",
 "start": "2026-10-30T18:30",
@@ -353,26 +270,6 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/be-our-ghost-at-theatre-three",
 "pu": ""
-},
-{
-"id": "staller-01dafef3-fa1e-4fa9-9c26-e5769b8fb7c4",
-"title": "Disney Pixar’s Coco in Concert – Live to Film",
-"start": "2026-10-30T18:30:00",
-"end": "2026-10-30T18:30:00",
-"allday": false,
-"venue": "Staller Center for the Arts, Main Stage",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "http://stallercenter.showare.com/eventperformances.asp?evt=460",
-"desc": "Celebrate Dia de los Muertos (Day of the Dead) with a screening of the complete film with Oscar® and Grammy®-winning composer Michael Giacchino’s musical score performed by the 20-member Orquesta Folclórica Nacional de México, conducted by Esin Aydingoz.",
-"img": "https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/861c673b-2edc-4dd3-9f5b-167ab8b8a5ab/Elfsight_Coco.png",
-"src": "staller",
-"tags": [
-"music",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "cur-poboy",
@@ -396,64 +293,26 @@
 "pu": ""
 },
 {
-"id": "sbv-2385",
-"title": "Little Cheese Halloween Charcuterie Workshop",
-"start": "2026-10-30T19:00:00",
-"end": "2026-10-30T20:00:00",
-"allday": false,
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook, NY 11790",
-"url": "https://stonybrookvillage.com/event/little-cheese-halloween-charcuterie-workshop/",
-"desc": "The Little Cheese Shop Halloween Workshop is officially on the books! Friday, October 30th… $89 dollars per person. Gather your favorite ghouls to join us at the shop. You’ll learn how to style a SPOOKY + DELICIOUS cheese & charcuterie board …and, we’re doing ",
-"img": "https://stonybrookvillage.com/wp-content/uploads/2026/09/808136977_17938413600360301_7606807701860091211_n.jpg",
-"src": "sbv",
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-10-31T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Final days, through Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at the East Setauket garden center: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/spooky-720.webp",
+"src": "3vl",
 "tags": [
-"free",
 "kids",
-"food"
+"outdoor"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/little-cheese-halloween-charcuterie-workshop"
-},
-{
-"id": "social-18096966509142204",
-"title": "Audrey Johnson CD Release Concert",
-"start": "2026-10-30T19:00:00",
-"end": "2026-10-30T19:00:00",
-"allday": false,
-"venue": "The Jazz Loft",
-"addr": "275 Christian Ave, Stony Brook, NY 11790",
-"url": "https://www.instagram.com/p/De-J26hn72s/",
-"desc": "Audrey Johnson CD Release Concert at The Jazz Loft. Purchase tickets at www.thejazzloft.org",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18096966509142204.jpg",
-"src": "social",
-"tags": [
-"music"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "theatre3-9367",
-"title": "Be Our Ghost: A Villainous Cabaret",
-"start": "2026-10-30T21:00:00",
-"end": "2026-10-30T21:00:00",
-"allday": false,
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson, NY 11777",
-"url": "https://theatrethree.getmytix.net/tickets#937/Be-Our-Ghost-A-Villainous-Cabaret",
-"desc": "Joins us for night of songs from some of the most devious villains from film, TV, and the Stage!",
-"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_937_Ghost%20date.jpg",
-"src": "theatre3",
-"tags": [
-"music",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/be-our-ghost-at-theatre-three"
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
 },
 {
 "id": "social-18119535476059705",
@@ -1779,6 +1638,117 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/pc-clean-up"
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-63810",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-11-10T10:30:00",
+"end": "2026-11-10T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-63810",
+"desc": "Themed activities that you and your child can enjoy together.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-541"
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-63823",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-11-10T13:15:00",
+"end": "2026-11-10T13:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-63823",
+"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-542"
+},
+{
+"id": "emmaclark-medicare-basics-61303",
+"title": "Medicare Basics",
+"start": "2026-11-10T14:00:00",
+"end": "2026-11-10T15:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/medicare-basics-61303",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. This presentation is designed for Medicare Eligible people who want to better understand Medicare, including Parts A, B, C, & D and the options available, such as the Medicare Savi",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/medicare-basics"
+},
+{
+"id": "emmaclark-create-fall-scene-grades-3-5-61960",
+"title": "Create a Fall Scene (Grades 3-5)",
+"start": "2026-11-10T16:45:00",
+"end": "2026-11-10T17:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/create-fall-scene-grades-3-5-61960",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-10/Create%20a%20Fall%20Scence_0.jpg",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/create-a-fall-scene-grades-3-5"
+},
+{
+"id": "emmaclark-cricut-coffee-mug-38562",
+"title": "Cricut: Coffee Mug [LOTTERY]",
+"start": "2026-11-10T18:00:00",
+"end": "2026-11-10T20:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Technology Center",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/cricut-coffee-mug-38562",
+"desc": "THIS IS A LOTTERY PROGRAM. Upon registration, your name will be added to a waitlist pool from which individuals will be randomly selected. Registration for lottery programming will run for 28 hours, opening at 9:30am two weeks ahead of the program start-date a",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/4_DTC_Infographic_2008335.png",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/cricut-coffee-mug-lottery"
+},
+{
+"id": "emmaclark-evening-book-discussion-61332",
+"title": "Evening Book Discussion",
+"start": "2026-11-10T19:30:00",
+"end": "2026-11-10T20:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/evening-book-discussion-61332",
+"desc": "We meet the 2nd Wednesday of the month 7:30-8:45 p.m. in the Vincent R. O’Leary Community Room. Copies of the book are available to borrow at the Circulation Desk. No registration required. Braiding Sweetgrass by Robin Wall Kimmerer – Book pickup starts 10/14 ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/braidingsweetgrass.png",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/evening-book-discussion-610"
 }
 ],
 "closings": [],
@@ -2129,44 +2099,6 @@
 "label": "Special"
 },
 {
-"id": "18028508084923466",
-"biz": "The Secret Garden Tea Room",
-"ig": "secretgardentearoom",
-"town": "Port Jefferson",
-"category": "Tea Room",
-"member": false,
-"title": "Halloween Treat: 10% Off",
-"when": "Sat, Oct. 31",
-"desc": "Get 10% off your bill or gift shop purchase when you mention this post.",
-"expires": "2026-10-31",
-"posted": "2026-10-28T20:24:10+0000",
-"url": "https://www.instagram.com/p/DfDSJDzjXRn/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18028508084923466.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-secret-garden-tea-room-halloween-treat-off",
-"profile": "https://www.threevillagelocal.com/the-secret-garden-tea-room",
-"label": "Special"
-},
-{
-"id": "18140529568538365",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Happy Hour at Castaways",
-"when": "Today · 12–6 PM",
-"desc": "Happy Hour from 12–6 PM. Try the Castaways Burger with cheddar, house sauce, lettuce, tomato, and onion.",
-"expires": "2026-10-30",
-"posted": "2026-10-30T15:01:54+0000",
-"url": "https://www.instagram.com/reel/DfH2yjVvUda/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18140529568538365.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-happy-hour",
-"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Happy hour"
-},
-{
 "id": "18130308745847714",
 "biz": "Right Coast Taqueria",
 "ig": "rctaqueria",
@@ -2183,6 +2115,25 @@
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18130308745847714.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-burritos-all-day",
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria",
+"label": "Special"
+},
+{
+"id": "18028508084923466",
+"biz": "The Secret Garden Tea Room",
+"ig": "secretgardentearoom",
+"town": "Port Jefferson",
+"category": "Tea Room",
+"member": false,
+"title": "Halloween Treat: 10% Off",
+"when": "Sat, Oct. 31",
+"desc": "Get 10% off your bill or gift shop purchase when you mention this post.",
+"expires": "2026-10-31",
+"posted": "2026-10-28T20:24:10+0000",
+"url": "https://www.instagram.com/p/DfDSJDzjXRn/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18028508084923466.jpg",
+"page": "https://www.threevillagelocal.com/eat-drink/the-secret-garden-tea-room-halloween-treat-off",
+"profile": "https://www.threevillagelocal.com/the-secret-garden-tea-room",
 "label": "Special"
 },
 {
@@ -2222,25 +2173,6 @@
 "page": "https://www.threevillagelocal.com/eat-drink/schnitzels-lobster-bomb-limited-time-special",
 "profile": "https://www.threevillagelocal.com/schnitzels",
 "label": "Special"
-},
-{
-"id": "17993881305055874",
-"biz": "Po' Boy Brewery",
-"ig": "poboybeerandcider",
-"town": "Port Jefferson Station",
-"category": "Brewery/Cidery",
-"member": false,
-"title": "Annual Halloween Costume Party",
-"when": "Fri, Oct. 30 · 7 PM-12 AM",
-"desc": "Costume-wearers get happy hour prices all night. Food truck, music, and gift card prizes for top costumes.",
-"expires": "2026-10-30",
-"posted": "2026-10-27T18:19:35+0000",
-"url": "https://www.instagram.com/reel/DfAfAj_Jn_s/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17993881305055874.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/po-boy-brewery-annual-halloween-costume-party",
-"profile": "https://www.threevillagelocal.com/po-boy-brewery",
-"label": "Event"
 },
 {
 "id": "18099657377388421",
@@ -2288,9 +2220,8 @@
 "The Study by Toast",
 "Robinson's Tea Room",
 "Namkeen Hot Chicken",
-"The Secret Garden Tea Room",
-"Castaways Steak & Seafood",
 "Right Coast Taqueria",
+"The Secret Garden Tea Room",
 "Kilwins Port Jefferson",
 "Schnitzels",
 "Culpers 1778",
@@ -2309,6 +2240,7 @@
 "Fifth Season Restaurant",
 "PJ Lobster House",
 "Nantuckets",
+"Castaways Steak & Seafood",
 "Old Fields Port Jefferson",
 "The Whiskey Barrel",
 "Tara Inn",
