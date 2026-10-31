@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-31T15:00:55.434231+00:00",
+"updated": "2026-10-31T15:02:02.590657+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -2156,6 +2156,25 @@
 "label": "Special"
 },
 {
+"id": "18136335244710503",
+"biz": "The Pie of Port Jeff",
+"ig": "thepie216",
+"town": "Port Jefferson",
+"category": "Pizza",
+"member": false,
+"title": "Halloween Spooky Sips & Pizza",
+"when": "Today, Oct. 31",
+"desc": "Stop in for autumn cocktails and pizza on Halloween at The Pie of Port Jeff.",
+"expires": "2026-10-31",
+"posted": "2026-10-31T14:22:24+0000",
+"url": "https://www.instagram.com/p/DfKXIGsFs0K/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18136335244710503.jpg",
+"page": "https://www.threevillagelocal.com/the-pie-of-port-jeff",
+"profile": "https://www.threevillagelocal.com/the-pie-of-port-jeff",
+"label": "Special"
+},
+{
 "id": "18028508084923466",
 "biz": "The Secret Garden Tea Room",
 "ig": "secretgardentearoom",
@@ -2260,6 +2279,7 @@
 "Namkeen Hot Chicken",
 "Castaways Steak & Seafood",
 "Right Coast Taqueria",
+"The Pie of Port Jeff",
 "The Secret Garden Tea Room",
 "Schnitzels",
 "Kilwins Port Jefferson",
@@ -2288,7 +2308,6 @@
 "Salsa Salsa",
 "Pasta Pasta",
 "Slurp Ramen",
-"The Pie of Port Jeff",
 "Danfords Hotel & Marina",
 "Toast Coffee + Kitchen",
 "Crazy Beans",

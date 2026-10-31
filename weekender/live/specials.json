@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T12:00:12.736313+00:00",
+ "updated": "2026-10-31T15:00:13.126238+00:00",
  "specials": [
   {
    "id": "18099881135407803",
@@ -340,6 +340,22 @@
    "url": "https://www.instagram.com/p/DfDOmxTs3CQ/",
    "img": "",
    "inset": "ig/p18130308745847714.jpg"
+  },
+  {
+   "id": "18136335244710503",
+   "biz": "The Pie of Port Jeff",
+   "ig": "thepie216",
+   "town": "Port Jefferson",
+   "category": "Pizza",
+   "member": false,
+   "title": "Halloween Spooky Sips & Pizza",
+   "when": "Today, Oct. 31",
+   "desc": "Stop in for autumn cocktails and pizza on Halloween at The Pie of Port Jeff.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-31T14:22:24+0000",
+   "url": "https://www.instagram.com/p/DfKXIGsFs0K/",
+   "img": "",
+   "inset": "ig/p18136335244710503.jpg"
   },
   {
    "id": "18099657377388421",

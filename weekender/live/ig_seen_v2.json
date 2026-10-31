@@ -1,52 +1,4 @@
 {
-"17918683176243017": {
-"special": true,
-"title": "Pumpkin Pie Latte",
-"when": "Now through fall season",
-"desc": "Cozy pumpkin pie latte available hot or iced at Break Room Cafe.",
-"expires": "2026-11-30",
-"_ts": "2026-10-01T13:46:15+0000"
-},
-"17960111250235779": {
-"special": true,
-"title": "Autumn Table at Ruvo",
-"when": "Every Thursday · 4 PM–close",
-"desc": "Complimentary pumpkin beer or fall sangria with your entrée every Thursday.",
-"expires": "2026-10-14",
-"_ts": "2026-10-01T13:30:05+0000"
-},
-"18056356766797842": {
-"special": true,
-"title": "Race Weekend at Black Pearl",
-"when": "Fri-Sun, Oct 2-4",
-"desc": "Live music and dining during race weekend. Boats arrive Sat with brunch at 1 PM, fleet departs Sun at noon.",
-"expires": "2026-10-04",
-"_ts": "2026-10-01T13:00:52+0000"
-},
-"18063089996789851": {
-"special": true,
-"title": "Happy Hour at The Whiskey Barrel",
-"when": "Today until 6 PM",
-"desc": "Happy hour with good food and cold drinks at The Whiskey Barrel in Port Jefferson.",
-"expires": "2026-10-01",
-"_ts": "2026-10-01T14:05:32+0000"
-},
-"18116221034081046": {
-"special": false,
-"title": "Holiday Party Booking Promotion",
-"when": "By Thanksgiving 2026",
-"desc": "Book your holiday party before Thanksgiving and receive 15% off. Call to plan.",
-"expires": "2026-11-26",
-"_ts": "2026-10-01T13:01:38+0000"
-},
-"18106556117245506": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-01T12:25:52+0000"
-},
 "18044301530821720": {
 "special": false,
 "title": "N/A",
@@ -79,14 +31,6 @@
 "expires": "2026-11-27",
 "_ts": "2026-10-01T22:40:02+0000"
 },
-"17993730161842363": {
-"special": false,
-"title": "Little Cheese Shop Nominated for Best of Long Island",
-"when": "Voting through Dec 15",
-"desc": "Community voting recognition for Best Grilled Cheese, Best BLT, and Best Healthy Eatery.",
-"expires": "2026-12-15",
-"_ts": "2026-10-01T14:47:43+0000"
-},
 "17880818445534638": {
 "special": false,
 "title": "",
@@ -102,14 +46,6 @@
 "desc": "Enjoy $30 margarita towers while watching football games on Sundays.",
 "expires": "2026-10-16",
 "_ts": "2026-10-01T16:30:01+0000"
-},
-"18635026507016646": {
-"special": false,
-"title": "Mexican Street Corn",
-"when": "Ongoing",
-"desc": "Char-grilled corn with garlic aioli, smoky chili, cotija and cilantro.",
-"expires": "2026-10-16",
-"_ts": "2026-10-01T14:47:16+0000"
 },
 "18124968607894302": {
 "special": false,
@@ -3270,5 +3206,29 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-31T05:37:12+0000"
+},
+"18274835290314502": {
+"special": false,
+"title": "Halloween Day at PJ Lobster House",
+"when": "Today, Oct. 31",
+"desc": "Stop in for lunch or dinner on Halloween. Seafood, pasta, burgers, and kids' favorites available.",
+"expires": "2026-10-31",
+"_ts": "2026-10-31T13:15:14+0000"
+},
+"18136335244710503": {
+"special": true,
+"title": "Halloween Spooky Sips & Pizza",
+"when": "Today, Oct. 31",
+"desc": "Stop in for autumn cocktails and pizza on Halloween at The Pie of Port Jeff.",
+"expires": "2026-10-31",
+"_ts": "2026-10-31T14:22:24+0000"
+},
+"17873014950646109": {
+"special": false,
+"title": "Halloween Treats at Kilwins",
+"when": "Today only",
+"desc": "Halloween-themed treats and ice cream to celebrate the spooky season.",
+"expires": "2026-10-31",
+"_ts": "2026-10-31T13:10:26+0000"
 }
 }
