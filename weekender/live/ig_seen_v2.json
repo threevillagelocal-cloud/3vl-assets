@@ -7,14 +7,6 @@
 "expires": "N/A",
 "_ts": "2026-10-02T16:25:56+0000"
 },
-"17997226202826254": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-01T15:09:34+0000"
-},
 "18117371683949994": {
 "special": false,
 "title": "Fall Menu at Tommy's Place",
@@ -31,22 +23,6 @@
 "expires": "2026-11-27",
 "_ts": "2026-10-01T22:40:02+0000"
 },
-"17880818445534638": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-01T18:31:50+0000"
-},
-"18109679189596201": {
-"special": true,
-"title": "Margarita Towers $30 during Football",
-"when": "Every Sunday",
-"desc": "Enjoy $30 margarita towers while watching football games on Sundays.",
-"expires": "2026-10-16",
-"_ts": "2026-10-01T16:30:01+0000"
-},
 "18124968607894302": {
 "special": false,
 "title": "Se-Port Deli & Caterers",
@@ -62,14 +38,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-02T14:15:42+0000"
-},
-"17982954207107362": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-01T15:42:00+0000"
 },
 "18104967374225721": {
 "special": true,
@@ -95,14 +63,6 @@
 "expires": "",
 "_ts": "2026-10-02T15:33:42+0000"
 },
-"18204189751335346": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-01T15:32:47+0000"
-},
 "18593264023067367": {
 "special": true,
 "title": "Poker Run Weekend with Live Music",
@@ -126,14 +86,6 @@
 "desc": "Promotional post about coastal getaway destination with no specific offer or event date.",
 "expires": "2026-10-02",
 "_ts": "2026-10-02T04:00:18+0000"
-},
-"18097223750639649": {
-"special": false,
-"title": "Fall Getaway at Danfords",
-"when": "Ongoing",
-"desc": "Enjoy coffee, harbor walks, and a weekend escape in Port Jefferson at Danfords Hotel & Marina.",
-"expires": "2026-10-16",
-"_ts": "2026-10-01T18:03:15+0000"
 },
 "18100186061267459": {
 "special": true,
@@ -3230,5 +3182,29 @@
 "desc": "Halloween-themed treats and ice cream to celebrate the spooky season.",
 "expires": "2026-10-31",
 "_ts": "2026-10-31T13:10:26+0000"
+},
+"17865432024693529": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-31T18:38:03+0000"
+},
+"18142839358721782": {
+"special": false,
+"title": "Nantuckets - Order Online",
+"when": "Ongoing",
+"desc": "Enjoy delivery or pickup when you order online at this Port Jefferson seafood restaurant.",
+"expires": "2026-10-31",
+"_ts": "2026-10-31T16:05:14+0000"
+},
+"18106318559633808": {
+"special": true,
+"title": "Halloween Happy Hour",
+"when": "Today, Oct. 31 · 12-6 PM",
+"desc": "Happy Hour specials on drinks and dinner. Open until 10 PM tonight.",
+"expires": "2026-10-31",
+"_ts": "2026-10-31T15:01:10+0000"
 }
 }

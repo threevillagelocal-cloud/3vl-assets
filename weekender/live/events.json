@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-31T19:01:00.921214+00:00",
+"updated": "2026-10-31T19:02:42.031985+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -2116,6 +2116,25 @@
 "page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-late-night-saturday-off",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "label": "Special"
+},
+{
+"id": "18106318559633808",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Halloween Happy Hour",
+"when": "Today, Oct. 31 · 12-6 PM",
+"desc": "Happy Hour specials on drinks and dinner. Open until 10 PM tonight.",
+"expires": "2026-10-31",
+"posted": "2026-10-31T15:01:10+0000",
+"url": "https://www.instagram.com/p/DfKbjLlikkT/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18106318559633808.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"label": "Happy hour"
 },
 {
 "id": "18080320388726966",

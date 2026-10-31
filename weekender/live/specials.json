@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T15:00:13.126238+00:00",
+ "updated": "2026-10-31T19:00:13.312604+00:00",
  "specials": [
   {
    "id": "18099881135407803",
@@ -66,20 +66,20 @@
    "inset": "ig/p18344774434251963.jpg"
   },
   {
-   "id": "18080320388726966",
+   "id": "18106318559633808",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
    "town": "Port Jefferson",
    "category": "Restaurant",
    "member": false,
-   "title": "Long Island Restaurant Week Dinner",
-   "when": "Nov 1-8, 2026",
-   "desc": "Special dinner prix fixe for $48 per person at Castaways. Book via Resy or call (888) 624-6106.",
-   "expires": "2026-11-08",
-   "posted": "2026-10-30T19:01:52+0000",
-   "url": "https://www.instagram.com/p/DfISPwoCoAa/",
+   "title": "Halloween Happy Hour",
+   "when": "Today, Oct. 31 · 12-6 PM",
+   "desc": "Happy Hour specials on drinks and dinner. Open until 10 PM tonight.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-31T15:01:10+0000",
+   "url": "https://www.instagram.com/p/DfKbjLlikkT/",
    "img": "",
-   "inset": "ig/p18080320388726966.jpg"
+   "inset": "ig/p18106318559633808.jpg"
   },
   {
    "id": "18130308745847714",
@@ -164,20 +164,20 @@
    "inset": "ig/p18344774434251963.jpg"
   },
   {
-   "id": "18080320388726966",
+   "id": "18106318559633808",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
    "town": "Port Jefferson",
    "category": "Restaurant",
    "member": false,
-   "title": "Long Island Restaurant Week Dinner",
-   "when": "Nov 1-8, 2026",
-   "desc": "Special dinner prix fixe for $48 per person at Castaways. Book via Resy or call (888) 624-6106.",
-   "expires": "2026-11-08",
-   "posted": "2026-10-30T19:01:52+0000",
-   "url": "https://www.instagram.com/p/DfISPwoCoAa/",
+   "title": "Halloween Happy Hour",
+   "when": "Today, Oct. 31 · 12-6 PM",
+   "desc": "Happy Hour specials on drinks and dinner. Open until 10 PM tonight.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-31T15:01:10+0000",
+   "url": "https://www.instagram.com/p/DfKbjLlikkT/",
    "img": "",
-   "inset": "ig/p18080320388726966.jpg"
+   "inset": "ig/p18106318559633808.jpg"
   },
   {
    "id": "18130308745847714",
@@ -308,6 +308,22 @@
    "url": "https://www.instagram.com/reel/DfFZk5DxrVE/",
    "img": "",
    "inset": "ig/p17966489859226645.jpg"
+  },
+  {
+   "id": "18106318559633808",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Halloween Happy Hour",
+   "when": "Today, Oct. 31 · 12-6 PM",
+   "desc": "Happy Hour specials on drinks and dinner. Open until 10 PM tonight.",
+   "expires": "2026-10-31",
+   "posted": "2026-10-31T15:01:10+0000",
+   "url": "https://www.instagram.com/p/DfKbjLlikkT/",
+   "img": "",
+   "inset": "ig/p18106318559633808.jpg"
   },
   {
    "id": "18080320388726966",
