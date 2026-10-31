@@ -1,6 +1,6 @@
 /**
  * Three Village Local Scavenger Hunt - back end (Google Apps Script web app, bound to the "3VL Scavenger Hunt" Google Sheet).
- * Built 10/30/2026. Owner rules: 1 point per check-in, each QR counts once per player per day (Eastern time),
+ * Built 10/30/2026. Owner rules: 10 points per check-in (owner 10/31: was 1), each QR counts once per player per day (Eastern time),
  * as many different QRs per day as you can find; must be near the QR (phone location); players verify their email once.
  *
  * Sheet tabs (created by setup()):
@@ -95,6 +95,8 @@ function playerByToken_(tok) {
   return null;
 }
 function initials_(p) { return clean_(p.first, 30) + ' ' + (clean_(p.last, 30).charAt(0) ? clean_(p.last, 30).charAt(0).toUpperCase() + '.' : ''); }
+var POINTS_PER_SCAN = 10;
+
 function totals_() {   // player_id -> points (counted check-ins only)
   var r = rows_('Scans'), t = {}, pi = r.h.indexOf('player_id'), ri = r.h.indexOf('result'), pt = r.h.indexOf('points');
   r.v.forEach(function (x) { if (x[ri] === 'ok') t[x[pi]] = (t[x[pi]] || 0) + (Number(x[pt]) || 1); });
@@ -103,7 +105,7 @@ function totals_() {   // player_id -> points (counted check-ins only)
 function active_(c) { return c.active === true || String(c.active).toUpperCase() === 'TRUE' || String(c.active).toLowerCase() === 'yes'; }
 
 // Bonus days (owner 10/30/2026): tab "Bonus" = date (yyyy-mm-dd, Eastern) | code ("all" = every code) | points | note
-// e.g. 2026-11-07 | olde-towne-gardens | 3 | Triple points today!  -> a check-in there that day scores 3.
+// e.g. 2026-11-07 | olde-towne-gardens | 3 | Triple points today!  -> a check-in there that day scores 3 x 10 = 30.
 function bonus_(code, day) {
   var ss = SpreadsheetApp.getActiveSpreadsheet(), sh = ss.getSheetByName('Bonus');
   if (!sh) { sh = ss.insertSheet('Bonus'); sh.appendRow(['date', 'code', 'points', 'note']); sh.setFrozenRows(1); sh.getRange(1, 1, 1, 4).setFontWeight('bold'); return null; }
@@ -213,7 +215,8 @@ function checkin_(b) {
     if (c.lat === '' || c.lng === '') { log('code_not_placed', 0, null); return { ok: false, error: 'notplaced' }; }
     var d = dist_(Number(c.lat), Number(c.lng), lat, lng), rad = Number(c.radius_m) || DEFAULT_RADIUS;
     if (d > rad + Math.min(acc, 100)) { log('too_far', 0, d); return { ok: false, error: 'far', dist: d }; }
-    var bon = bonus_(c.code, today), pts = bon ? bon.points : (Number(c.points) || 1);
+    // 10/31/2026 owner: 10 points per check-in. Codes.points and Bonus.points stay multipliers (1 = normal, 3 = triple = 30).
+    var bon = bonus_(c.code, today), pts = POINTS_PER_SCAN * (bon ? bon.points : (Number(c.points) || 1));
     log('ok', pts, d, recent >= 6 ? 'fast: ' + (recent + 1) + ' check-ins in 10 min' : '');
     return Object.assign({ ok: true, place: c.name, points: pts, bonus: bon ? bon.note || '' : '' }, mine_(pl.p.id));
   } finally { lock.releaseLock(); }
