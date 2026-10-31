@@ -1,11 +1,11 @@
 {
-"updated": "2026-10-31T21:00:58.384123+00:00",
+"updated": "2026-10-31T23:01:15.597111+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 203,
+"Village of Port Jefferson": "error: <urlopen error timed out>",
 "Emma S. Clark Library": 299,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
@@ -14,7 +14,7 @@
 "Staller Center for the Arts": 138,
 "Theatre Three": 53,
 "Gallery North": 16,
-"Reboli Center": 21,
+"Reboli Center": 18,
 "Sweetbriar Nature Center": 18,
 "Historical Society of Greater Port Jefferson": 1,
 "Local business Instagram posts": 10
@@ -52,25 +52,6 @@
 "page": ""
 },
 {
-"id": "reboli-6a07a610144905528a06d40b",
-"title": "Emerging Artist Spotlight: September & October | Kathleen Hartonchik",
-"start": "2026-09-01T11:00:00",
-"end": "2026-10-31T17:00:00",
-"allday": false,
-"venue": "The Reboli Center for Art and History",
-"addr": "64 Main Street, Stony Brook, NY, 11790",
-"url": "https://rebolicenter.org/events/eashartonchik",
-"desc": "Originally from Rhode Island, Kathleen Hartonchik is a 23-year-old Long Island-based artist who specializes in many mediums, including painting, ceramics, photography, and drawing. Through her work, she aims to capture every fraction of a scene because she bel",
-"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1778886381266-OYTUCGMJJRGD7FG15T1F/FB_IMG_1777487417888.jpg",
-"src": "reboli",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "reboli-695ad1cbc2e9370261a8c6ec",
 "title": "Thanksgiving Food Drive",
 "start": "2026-10-01T11:00:00",
@@ -88,25 +69,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive"
-},
-{
-"id": "reboli-6accf515efdc4f5ddb7123c3",
-"title": "October's Feature Artisan of the Month | Andrea Ingrassia",
-"start": "2026-10-01T11:00:00",
-"end": "2026-10-31T17:00:00",
-"allday": false,
-"venue": "The Reboli Center for Art and History",
-"addr": "64 Main Street, Stony Brook, NY, 11790",
-"url": "https://rebolicenter.org/events/2026/10/1/octobers-feature-artisan-of-the-month-andrea-ingrassia",
-"desc": "The Reboli Center is thrilled to feature dedicated volunteer Andrea Ingrassia as our Feature Artisan of the Month for October 2026. A resident of Mt. Sinai since 1984, Andrea brings a rich artistic background to the Center, including a degree in Advertising Ar",
-"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1791817066322-QP1R4H7LD1K4C4YA2ZVD/Screenshot+2026-10-12+at+10.57.19+AM.png",
-"src": "reboli",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "pjchamber-14726",
@@ -561,26 +523,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
-},
-{
-"id": "portjeff-1098",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-01T09:00:00",
-"end": "2026-11-01T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1098",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-481"
 },
 {
 "id": "reboli-6adf9dab4c6329721a5cedc5",
@@ -1185,25 +1127,6 @@
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
 },
 {
-"id": "portjeff-1151",
-"title": "Caleb Brewster Escape 4K run",
-"start": "2026-11-07T00:00:00",
-"end": "2026-11-07T00:00:00",
-"allday": true,
-"venue": "Strong's Park",
-"addr": "Strong's Park - Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
-},
-{
 "id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
 "title": "Writing Workshop: Language, Silence, and the Stories We Carry",
 "start": "2026-11-07T10:30:00",
@@ -1355,26 +1278,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
-},
-{
-"id": "portjeff-1099",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-08T09:00:00",
-"end": "2026-11-08T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
