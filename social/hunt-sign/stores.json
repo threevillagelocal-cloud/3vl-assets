@@ -1,5 +1,66 @@
 [
- {"slug": "olde-towne-gardens", "name": "Olde Towne Gardens", "town": "East Setauket",
+ {
+  "slug": "olde-towne-gardens",
+  "name": "Olde Towne Gardens",
+  "town": "East Setauket",
   "logo": "logos/olde-towne-gardens.jpg",
-  "qr": "https://www.threevillagelocal.com/hunt/olde-towne-gardens"}
+  "qr": "https://www.threevillagelocal.com/hunt/olde-towne-gardens"
+ },
+ {
+  "slug": "sample-generic",
+  "name": "Your Business Name Here",
+  "town": "Your Town",
+  "logo": "logos/your-logo-here.png",
+  "qr": "https://www.threevillagelocal.com/hunt",
+  "register": false
+ },
+ {
+  "slug": "college-101",
+  "name": "College 101 Resource Center",
+  "town": "Setauket",
+  "logo": "logos/college-101.png",
+  "qr": "https://www.threevillagelocal.com/hunt/college-101"
+ },
+ {
+  "slug": "djs-clam-shack",
+  "name": "DJ's Clam Shack",
+  "town": "Stony Brook",
+  "logo": "logos/djs-clam-shack.png",
+  "qr": "https://www.threevillagelocal.com/hunt/djs-clam-shack"
+ },
+ {
+  "slug": "smittys-garage",
+  "name": "Smitty's Garage",
+  "town": "Setauket",
+  "logo": "logos/smittys-garage.png",
+  "qr": "https://www.threevillagelocal.com/hunt/smittys-garage"
+ },
+ {
+  "slug": "flow-pilates-east",
+  "name": "Flow Pilates East",
+  "town": "Setauket",
+  "logo": "logos/flow-pilates-east.png",
+  "qr": "https://www.threevillagelocal.com/hunt/flow-pilates-east"
+ },
+ {
+  "slug": "the-pie",
+  "name": "The Pie",
+  "town": "Port Jefferson",
+  "logo": "logos/the-pie.jpg",
+  "qr": "https://www.threevillagelocal.com/hunt/the-pie"
+ },
+ {
+  "slug": "o-sole-mio",
+  "name": "O Sole Mio",
+  "town": "Stony Brook",
+  "logo": "logos/o-sole-mio.jpg",
+  "qr": "https://www.threevillagelocal.com/hunt/o-sole-mio"
+ },
+ {
+  "slug": "country-corner",
+  "name": "Country Corner",
+  "town": "Setauket",
+  "logo": "logos/country-corner.jpg",
+  "qr": "https://www.threevillagelocal.com/hunt/country-corner"
+ }
 ]

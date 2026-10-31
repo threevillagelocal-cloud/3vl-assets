@@ -32,7 +32,8 @@ for s in stores:
     hf = os.path.join(HERE, "_%s.html" % s["slug"]); open(hf, "w", encoding="utf-8").write(h)
     pdf, png = os.path.join(OUT, s["slug"] + ".pdf"), os.path.join(OUT, s["slug"] + ".png")
     subprocess.run(["node", os.path.join(HERE, "render.js"), hf.replace("\\", "/"), pdf, png], check=True)
-    os.remove(hf); pdfs.append(pdf); print("made", s["name"]); register(s)
+    os.remove(hf); pdfs.append(pdf); print("made", s["name"])
+    if s.get("register", True): register(s)
 if len(pdfs) > 1:
     import fitz
     doc = fitz.open()
