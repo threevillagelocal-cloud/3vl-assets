@@ -1,7 +1,7 @@
 {
-"last_run": "2026-10-30T12:01:30.040265+00:00",
-"cursor": 210,
-"accounts": 297,
+"last_run": "2026-10-31T12:01:28.075430+00:00",
+"cursor": 280,
+"accounts": 304,
 "posts": {
 "18481707613112188": {
 "ts": "2026-10-23T14:28:52+0000",
@@ -2030,6 +2030,446 @@
 "link": "https://www.instagram.com/reel/DfGI2N7vIln/",
 "caption": "Roll a 3 and YOUR MEAL IS FREE!!!🎲😱\n\nWhen it comes to food, are you taking the chance?👀 Share this with the luckiest person you know…🍀\n\n✨Promotion is only available Monday-Friday from 12-4pm.\n✨Limited to Tables of 2-4 Guests Only.\n✨Each Guest must order at least one “Casual” or “Entree” menu item.\n✨Must be 21 years or older to participate.\n✨Only one roll allowed per party.\n🎲If a “3” is rolled, the entire party’s meal is free of charge.\n\n📍Bistro180 at THE EXPERIENCE 80 Commerce Drive Hauppauge \n\n#theexperience #longisland #hauppauge #happyhour #rolla3yourmealisfree",
 "img": "ig/p18076643759467539.jpg"
+},
+"17957370510266511": {
+"ts": "2026-10-30T20:05:36+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Caramel Apple Cold Foam Cold Brew",
+"date": "2026-10-30",
+"start": "",
+"end": "",
+"place": "Dark Horse Coffee & Kitchen",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Caramel apple cold foam cold brew special available Oct 30-Nov 1, Fri-Sun only."
+},
+"acct": {
+"name": "Dark Horse Coffee & Kitchen",
+"ig": "darkhorsecoffeeandkitchen",
+"town": "Port Jefferson",
+"cat": "Restaurant",
+"food": true,
+"addr": "156 W Broadway, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/dark-horse-coffee-kitchen",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfIZm7KmJUm/",
+"caption": "Caramel apple cold foam just met cold brew 👻 Oct 30-Nov 1, Fri-Sun only\n\n#sayville #portjefferson #darkhorsecoffeeandkitchen #longisland #halloween",
+"img": "ig/p17957370510266511.jpg"
+},
+"18111607808582869": {
+"ts": "2026-10-29T18:30:47+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "The post is dated 2026-10-29 and refers to 'this Friday, October 29' which has already passed as of today (2026-10-31). This is a past event, not an upcoming event."
+}
+},
+"17919556842457295": {
+"ts": "2026-10-29T15:20:42+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "MedArtation",
+"date": "2026-11-08",
+"start": "17:00",
+"end": "19:00",
+"place": "Gallery North",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "An exclusive member event featuring a meditation session led by Jackie Incorvia of Mindful Turtle and a slow looking experience of the current exhibition, Instincts, led by Exhibitions Director Kate Schwarting."
+},
+"acct": {
+"name": "Gallery North",
+"ig": "gallerynorthli",
+"town": "Setauket",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "90 North Country Road, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/gallery-north",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/DfFS0xKhZi0/",
+"caption": "Join us for evening of relaxation and art! What better way to close out the weekend and start you week fresh than with MedArtation our exclusive member event on Sunday November 8 from 5 to 7 PM. The event includes a meditation session led by Jackie Incorvia of Mindful Turtle and a slow looking experience of our current exhibition, Instincts, led by Exhibitions Director Kate Schwarting. Register now at Gallerynorth.org! mindfulturtle #mindfulness #artandmeditation",
+"img": "ig/p17919556842457295.jpg"
+},
+"18083230598394960": {
+"ts": "2026-10-21T20:57:53+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Parents' Afternoon Out",
+"date": "2026-11-28",
+"start": "13:00",
+"end": "17:00",
+"place": "",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Drop off kids for supervised fun while parents enjoy time on the town. Ages 5 and up. Sign up required."
+},
+"acct": {
+"name": "Gallery North",
+"ig": "gallerynorthli",
+"town": "Setauket",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "90 North Country Road, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/gallery-north",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/DexUSMwAC93/",
+"caption": "This is the perfect Parents’ Afternoon Out—drop the kids off, enjoy some time on the town, and let us take care of the fun! \nNovember 28 (Saturday)1 - 5 pm, Ages 5 & up. Sign up today!",
+"img": "ig/p18083230598394960.jpg"
+},
+"18220900564343792": {
+"ts": "2026-10-15T20:15:30+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Instincts Opening Reception",
+"date": "2026-10-17",
+"start": "17:00",
+"end": "19:00",
+"place": "Gallery North",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Opening reception featuring artists Gina Mars, Schery, Marquis Sullivan and Jo Wadler with live performance by Tim Siciliano. Free and open to the public with hors d'oeuvres and refreshments."
+},
+"acct": {
+"name": "Gallery North",
+"ig": "gallerynorthli",
+"town": "Setauket",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "90 North Country Road, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/gallery-north",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dehy0QbFDIo/",
+"caption": "Join us for the opening reception of Instincts featuring Gina Mars, Schery, Marquis Sullivan and Jo Wadler! The reception will be Saturday, October 17 from 5 to 7 PM. Live performace by Tim Siciliano! Hors d'oeuvres and refreshemnts will be served. This event is free and open to the public. We hope to see you there!",
+"img": "ig/p18220900564343792.jpg"
+},
+"18114097814172840": {
+"ts": "2026-10-20T11:46:06+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "A social media prompt asking followers to share memories of Port Jefferson locations from their childhood in the comments section."
+}
+},
+"17921479197443278": {
+"ts": "2026-10-18T01:54:02+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "A recap of the 38th Annual Country Auction that already occurred. The post thanks participants but does not announce an upcoming public event."
+}
+},
+"18418299613153856": {
+"ts": "2026-10-27T12:39:52+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Friday Night Bellport Team Ladder League",
+"date": "2026-12-04",
+"start": "19:00",
+"end": "21:00",
+"place": "Paddles Up Bellport, 10 Farber Drive, Bellport, NY 11713",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "7 weeks of competitive pickleball team matchups in the Advanced Intermediate (3.5-3.9) division. Teams of up to 4 players compete in weekly ladder play with a season-ending championship playoff tournament."
+},
+"acct": {
+"name": "Paddles Up Pickleball & Padel",
+"ig": "paddles_up_pickleball",
+"town": "Setauket",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "5 South Jersey Avenue, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/paddles-up-pickleball-padel",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/De_3uHRO0xd/",
+"caption": "🏆 INTRODUCING OUR FRIDAY NIGHT BELLPORT TEAM LADDER LEAGUE!\n\nGet ready for 7 weeks of competitive pickleball, exciting team matchups, weekly standings, and a season-ending playoff tournament!\n\n🏓 LEAGUE DETAILS\n🔥 ADVANCED INTERMEDIATE (3.5–3.9)\n👥 GENDER BLIND — Men’s, Women’s, and Mixed Teams are ALL welcome!\n\n⭐ TEAMS OF UP TO 4 PLAYERS ALLOWED! Build your roster, rotate players, and compete together throughout the season!\n\n📅 STARTS FRIDAY, DECEMBER 4TH!\n⏰ Friday Nights | 7 PM – 9 PM\n❄️ Holiday weeks will be skipped\n📍 Paddles Up Bellport\n10 Farber Drive, Bellport, NY 11713\n\n🏆 HOW THE LEAGUE WOR",
+"img": "ig/p18418299613153856.jpg"
+},
+"18102236510552469": {
+"ts": "2026-10-25T14:32:43+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Winter Afternoon Ladder Leagues - Pickleball",
+"date": "2026-12-15",
+"start": "13:00",
+"end": "15:00",
+"place": "Paddles Up Bellport | 10 Farber Drive",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "7-week competitive pickleball ladder league with two gender-blind divisions (Intermediate 3.0-3.4 and Advanced Intermediate 3.5-3.9). Includes 6 weeks of ladder play, week 7 playoff tournament, and medals for top finishers."
+},
+"acct": {
+"name": "Paddles Up Pickleball & Padel",
+"ig": "paddles_up_pickleball",
+"town": "Setauket",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "5 South Jersey Avenue, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/paddles-up-pickleball-padel",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/De67dkXOBVj/",
+"caption": "❄️ WINTER AFTERNOON LADDER LEAGUES ARE AT PADDLES UP BELLPORT! 🔥\n\nGet ready to compete, climb the ladder, meet new players, and keep your game sharp all winter long! 💪\n\n🏆 TWO GENDER-BLIND DIVISIONS:\n\n🟢 Intermediate: 3.0–3.4\n🔵 Advanced Intermediate: 3.5–3.9\n\n📅 TUESDAYS | 1 PM – 3 PM\n❄️ December 15, 2026 – January 26, 2027\n📍 Paddles Up Bellport | 10 Farber Drive\n\n🏓 7 WEEKS OF ACTION!\n\n* 6 weeks of competitive ladder play\n* Week 7 playoff tournament 🏆\n* Weekly scoring and exciting matchups\n* 🥇🥈 Medals for top finishers\n* New players, new friendships, and great competition!\n\n💰 LEAGUE PRICING:\n\n💗 M",
+"img": "ig/p18102236510552469.jpg"
+},
+"18100546067437657": {
+"ts": "2026-10-19T12:04:45+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Paddles Up Mini Tournament Series",
+"date": "",
+"start": "19:00",
+"end": "21:00",
+"place": "Paddles Up Bellport, 10 Farber Drive, Bellport, NY",
+"at_business": true,
+"date_stated": false,
+"time_stated": true,
+"desc": "Thursday night pickleball mini tournaments with multiple divisions throughout October and November. Compete for gold and silver medals."
+},
+"acct": {
+"name": "Paddles Up Pickleball & Padel",
+"ig": "paddles_up_pickleball",
+"town": "Setauket",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "5 South Jersey Avenue, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/paddles-up-pickleball-padel",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DerNgfrumvA/",
+"caption": "🔥🏓 THURSDAY NIGHTS ARE FOR CHAMPIONS! 🏆🔥\n\nThe Paddles Up MINI TOURNAMENT SERIES is heating up at Bellport, and we’re bringing the competition every Thursday night!\n\nGrab your partner, bring your A-game, and battle it out for the podium! 💪\n\n🥇 1ST PLACE — GOLD MEDALS!\n🥈 2ND PLACE — SILVER MEDALS!\n\n📅 UPCOMING TOURNAMENTS:\n\n🔥 OCT 22 — Men’s Advanced Intermediate (3.5–3.9)\n\n🔥 NOV 5 — Advanced 4.0+ (Gender Blind)\n\n🔥 NOV 12 — Mixed Advanced Intermediate (3.5–3.9) | 1 Male / 1 Female\n\n🔥 NOV 19 — Women’s Intermediate (3.0–3.4)\n\n⏰ Thursday Nights | 7–9 PM\n💰 $60 Per Team\n💚 UNLIMITED MEMBERS PAY HALF PRIC",
+"img": "ig/p18100546067437657.jpg"
+},
+"18200167675377319": {
+"ts": "2026-10-16T20:32:48+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "80s Themed Waterfall Ladder Pickleball",
+"date": "2026-11-15",
+"start": "15:00",
+"end": "18:00",
+"place": "PADDLES UP — BELLPORT",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "1980s themed waterfall ladder pickleball tournament with 3 hours of competitive play, neon dress code, 80s music, and prizes including $100 court credit for first place. Two skill levels: Intermediate and Advanced Intermediate."
+},
+"acct": {
+"name": "Paddles Up Pickleball & Padel",
+"ig": "paddles_up_pickleball",
+"town": "Setauket",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "5 South Jersey Avenue, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/paddles-up-pickleball-padel",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DekZUJTOvjB/",
+"caption": "🕹️🎸 WE’RE TAKING PICKLEBALL BACK TO THE 80s! 💚💗💙\n\nBreak out the neon, sweatbands, leg warmers, and short shorts! Paddles Up is bringing you an 1980s THEMED WATERFALL LADDER! 🏓🔥\n\n🎶 80s MUSIC!\n🕶️ DRESS LIKE THE 80s!\n🏆 PRIZES FOR COURT CREDITS!\n🔥 3 HOURS OF COMPETITIVE PICKLEBALL!\n\n🎯 THE OBJECTIVE: Reach the Challenge Court, defend your spot, and stay there as long as possible!\n\n💰 PRIZES!\n🥇 $100 COURT CREDIT to the top team left standing on the Challenge Court!\n🥈 $50 COURT CREDIT for second place!\n\n🎯 TWO SKILL LEVELS\n🟢 Intermediate\n🔵 Advanced Intermediate\n\n📅 SUNDAY, NOVEMBER 15TH\n⏰ 3:00 PM – 6:00",
+"img": "ig/p18200167675377319.jpg"
+},
+"18120549787999614": {
+"ts": "2026-10-30T14:13:54+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Trick-or-treat at WILD Plant Shop",
+"date": "2026-10-31",
+"start": "11:00",
+"end": "18:00",
+"place": "WILD Plant Shop, Port Jefferson",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Trick-or-treat event at WILD Plant Shop from 11 am to 6 pm."
+},
+"acct": {
+"name": "WILD Plant Shop",
+"ig": "wild_portjeff",
+"town": "Port Jefferson",
+"cat": "Shopping - Retail",
+"food": false,
+"addr": "116 East Main Street, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/wild-plant-shop",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfHxWNLCIBf/",
+"caption": "Trick-or-treat with us tomorrow from 11 am to 6 pm! 🎃🌿\n\nWe're open until 4 pm today! \n\nSee you soon!\n.\n.\n\n#shoplocal \n#halloween\n#spookyseason\n#plantshop\n#wildportjeff",
+"img": "ig/p18120549787999614.jpg"
+},
+"18113177510132714": {
+"ts": "2026-10-12T11:41:47+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "This post is from October 12, 2026, which is in the past relative to today (October 31, 2026). The sale has already occurred and is no longer upcoming."
+}
+},
+"18032583668909480": {
+"ts": "2026-10-28T16:04:42+0000",
+"c": {
+"event": false,
+"kind": "sale",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": ""
+}
+},
+"18114015077142333": {
+"ts": "2026-10-14T18:08:45+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Kirtan Chanting & Reiki Sound Bath with Darren Marc Levene",
+"date": "2026-10-17",
+"start": "17:30",
+"end": "19:00",
+"place": "Mindful Turtle Yoga",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Kirtan Chanting & Reiki Sound Bath with Darren Marc Levene. Sign up on the website."
+},
+"acct": {
+"name": "Mindful Turtle Yoga",
+"ig": "mindfulturtle",
+"town": "Setauket",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "60 Route 25A, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/mindful-turtle-yoga",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/Dee_fj6pzkG/",
+"caption": "Kirtan Chanting & Reiki Sound Bath with Darren Marc Levene this Saturday 10/17 5:30-7:00pm, sign up on our website! www.mindfulturtle.com ➡️ “special offerings” ➡️ “events” #kirtan #longislandkirtan #reiki #longislandreiki #soundbath",
+"img": "ig/p18114015077142333.jpg"
+},
+"18101915528553716": {
+"ts": "2026-10-25T12:25:58+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "A Regency Holiday Evening at Lavender Fields",
+"date": "2026-12-03",
+"start": "19:30",
+"end": "22:00",
+"place": "Lavender Fields · 250 East Main Street, Port Jefferson",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "A Christmas soirée inspired by Bridgerton featuring fan decorating, society gossip papers, a historical tour, tea and confections, society portraits, and after-hours holiday shopping. Regency-inspired attire encouraged but optional."
+},
+"acct": {
+"name": "Lavender Fields",
+"ig": "shoplavenderfields",
+"town": "Port Jefferson",
+"cat": "Shopping - Retail",
+"food": false,
+"addr": "250 E Main Street, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/lavender-fields",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/De6s5h_x7vN/",
+"caption": "Dearest friends, a most enchanting holiday evening awaits… 🕯️✨\n\nJoin us for A Regency Holiday Evening at Lavender Fields, a Christmas soirée inspired by the charm and elegance of Bridgerton.\n\nEnjoy an evening of:\n🎀 Decorating a folding fan to take home\n📰 The Port Jefferson Society Papers—our Christmas edition filled with society gossip\n🏛️ A mini historical tour with Ava\n☕ Tea and Christmas confections\n📸 Society portraits\n🛍️ After-hours holiday shopping\n\nGather your friends, put on a little holiday finery, and join us for a lovely night in the village. Regency-inspired attire is encouraged, but",
+"img": "ig/p18101915528553716.jpg"
+},
+"18104942951203980": {
+"ts": "2026-10-13T15:36:19+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "A Spirited Halloween at Lavender Fields",
+"date": "2026-10-30",
+"start": "19:00",
+"end": "22:00",
+"place": "Lavender Fields | Port Jefferson Village",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Join an evening of mystery, creativity, costumes, and Halloween magic featuring spooky tales, a mystery book craft, scavenger hunt, and costume party. Ages 16 and older. Bring cat food donations for a special gift."
+},
+"acct": {
+"name": "Lavender Fields",
+"ig": "shoplavenderfields",
+"town": "Port Jefferson",
+"cat": "Shopping - Retail",
+"food": false,
+"addr": "250 E Main Street, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/lavender-fields",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DecJMF-xamE/",
+"caption": "🎃👻 A SPIRITED HALLOWEEN AT LAVENDER FIELDS! 🕯️🖤\n\nThey say our store is haunted… 👻 And this Halloween, you’re invited to discover its spooky side!\n\nJoin us for an unforgettable evening of mystery, creativity, costumes, and a little Halloween magic inside our historic Port Jefferson shop!\n\n🗓️ Friday, October 30th\n🕖 7:00–10:00 PM\n📍 Lavender Fields | Port Jefferson Village\n\n🕯️ Spooky Tales – Hear chilling stories and haunted legends!\n\n📚 Create Your Own Mystery Book – Learn how to make a beautifully wrapped mystery book, perfect for gifting or keeping!\n\n🔎 Halloween Scavenger Hunt – Follow the clues",
+"img": "ig/p18104942951203980.jpg"
 }
 }
 }

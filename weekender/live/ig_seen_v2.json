@@ -1,28 +1,4 @@
 {
-"18126325852659544": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-01T11:58:03+0000"
-},
-"17894811927418607": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-30T22:00:08+0000"
-},
-"18110962889333621": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-01T10:37:36+0000"
-},
 "17918683176243017": {
 "special": true,
 "title": "Pumpkin Pie Latte",
@@ -30,54 +6,6 @@
 "desc": "Cozy pumpkin pie latte available hot or iced at Break Room Cafe.",
 "expires": "2026-11-30",
 "_ts": "2026-10-01T13:46:15+0000"
-},
-"18112118108005849": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-30T21:47:13+0000"
-},
-"18024321902917384": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-30T21:42:36+0000"
-},
-"17946941775317183": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-30T21:17:34+0000"
-},
-"18059878418542591": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-30T21:15:54+0000"
-},
-"18019190822927274": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-30T21:07:48+0000"
-},
-"18174395338448792": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-09-30T21:03:52+0000"
 },
 "17960111250235779": {
 "special": true,
@@ -3310,5 +3238,37 @@
 "desc": "Happy Hour from 12–6 PM. Try the Castaways Burger with cheddar, house sauce, lettuce, tomato, and onion.",
 "expires": "2026-10-30",
 "_ts": "2026-10-30T15:01:54+0000"
+},
+"18099881135407803": {
+"special": true,
+"title": "Halloween Drink Specials",
+"when": "Fri-Sun, Nov 1-2",
+"desc": "Drink specials all weekend at Tommy's Place to celebrate Halloween with friends.",
+"expires": "2026-11-02",
+"_ts": "2026-10-30T21:08:45+0000"
+},
+"18146392888578566": {
+"special": false,
+"title": "Haus Brisket Sandwich",
+"when": "Ongoing",
+"desc": "Slow-smoked brisket, cheddar, crispy onions, pickles, BBQ sauce on toasted roll with frites.",
+"expires": "2026-10-31",
+"_ts": "2026-10-30T20:40:19+0000"
+},
+"18080320388726966": {
+"special": true,
+"title": "Long Island Restaurant Week Dinner",
+"when": "Nov 1-8, 2026",
+"desc": "Special dinner prix fixe for $48 per person at Castaways. Book via Resy or call (888) 624-6106.",
+"expires": "2026-11-08",
+"_ts": "2026-10-30T19:01:52+0000"
+},
+"18497202964106081": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-31T05:37:12+0000"
 }
 }
