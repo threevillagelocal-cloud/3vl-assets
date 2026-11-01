@@ -7,22 +7,6 @@
 "expires": "N/A",
 "_ts": "2026-10-02T16:25:56+0000"
 },
-"18117371683949994": {
-"special": false,
-"title": "Fall Menu at Tommy's Place",
-"when": "Ongoing",
-"desc": "Seasonal fall flavors including butternut squash soup, burrata crostinis, and chipotle chicken salad.",
-"expires": "2026-10-16",
-"_ts": "2026-10-01T23:50:37+0000"
-},
-"18100354376162106": {
-"special": false,
-"title": "Thanksgiving Pre-Orders Now Open",
-"when": "Ongoing",
-"desc": "Place holiday cheese board and custom orders ahead for Thanksgiving via their website.",
-"expires": "2026-11-27",
-"_ts": "2026-10-01T22:40:02+0000"
-},
 "18124968607894302": {
 "special": false,
 "title": "Se-Port Deli & Caterers",
@@ -38,14 +22,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-02T14:15:42+0000"
-},
-"18104967374225721": {
-"special": true,
-"title": "Live Music All Month at Ruvo",
-"when": "Every night in October",
-"desc": "Live music all month long at Ruvo's Greenlawn and Port Jefferson locations.",
-"expires": "2026-10-31",
-"_ts": "2026-10-02T13:00:02+0000"
 },
 "18165160786489388": {
 "special": true,
@@ -70,22 +46,6 @@
 "desc": "Live music with Tradewinds kicks off Poker Run weekend tonight through Sunday.",
 "expires": "2026-10-04",
 "_ts": "2026-10-02T13:01:22+0000"
-},
-"18197818402379924": {
-"special": false,
-"title": "Danfords Hotel & Marina",
-"when": "Ongoing",
-"desc": "Hotel, marina, dining and harbor views in Port Jefferson.",
-"expires": "2026-10-02",
-"_ts": "2026-10-02T04:00:21+0000"
-},
-"18098409767431215": {
-"special": false,
-"title": "Danfords Hotel & Marina",
-"when": "N/A",
-"desc": "Promotional post about coastal getaway destination with no specific offer or event date.",
-"expires": "2026-10-02",
-"_ts": "2026-10-02T04:00:18+0000"
 },
 "18100186061267459": {
 "special": true,
@@ -3206,5 +3166,89 @@
 "desc": "Happy Hour specials on drinks and dinner. Open until 10 PM tonight.",
 "expires": "2026-10-31",
 "_ts": "2026-10-31T15:01:10+0000"
+},
+"18112886780179368": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-01T00:39:33+0000"
+},
+"18024961292716004": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-01T00:00:24+0000"
+},
+"18190305031423305": {
+"special": false,
+"title": "Fresh Mozzarella & Puntarelle Salad",
+"when": "Ongoing",
+"desc": "Fresh mozzarella and puntarelle with anchovy dressing and bread crisp.",
+"expires": "2026-11-01",
+"_ts": "2026-11-01T11:26:25+0000"
+},
+"18348667447252876": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-01T12:58:16+0000"
+},
+"18134430400767339": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-01T12:55:33+0000"
+},
+"18428375104147732": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-01T12:53:55+0000"
+},
+"18136224067656584": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-01T12:39:07+0000"
+},
+"18001637139031464": {
+"special": false,
+"_ts": "2026-11-01T11:55:25+0000"
+},
+"17894010258447818": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-01T11:54:17+0000"
+},
+"18146771710581070": {
+"special": true,
+"title": "Give One, Get One Gift Cards",
+"when": "Nov 1 - Dec 24, 2026",
+"desc": "Buy a gift card in person, get one free. Valid through Dec 24. Cannot be used day of purchase or for parties.",
+"expires": "2026-12-24",
+"_ts": "2026-11-01T01:27:26+0000"
+},
+"18107510464976469": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-10-31T22:28:24+0000"
 }
 }
