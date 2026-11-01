@@ -15,30 +15,6 @@
 "expires": "2026-10-16",
 "_ts": "2026-10-02T16:03:07+0000"
 },
-"18126510971507064": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-02T15:33:42+0000"
-},
-"18100186061267459": {
-"special": true,
-"title": "Drunken Parrot Cocktail & Live Music",
-"when": "Fri, Oct. 4 · 6 PM",
-"desc": "Try the Drunken Parrot tropical cocktail and enjoy live music starting at 6PM.",
-"expires": "2026-10-04",
-"_ts": "2026-10-02T15:02:52+0000"
-},
-"18175253083444132": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-02T15:10:48+0000"
-},
 "17895179811609684": {
 "special": true,
 "title": "Fall Cocktails & Mocktails Launch",
@@ -3226,5 +3202,29 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-31T22:28:24+0000"
+},
+"18345166126278651": {
+"special": false,
+"title": "Apple Pie Empanada",
+"when": "Ongoing",
+"desc": "New menu item: flaky empanada filled with apple pie filling, cinnamon sugar and caramel sauce.",
+"expires": "2026-11-15",
+"_ts": "2026-11-01T15:01:13+0000"
+},
+"18153094972530027": {
+"special": true,
+"title": "Restaurant Week at Pasta Pasta",
+"when": "Nov 1-8",
+"desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
+"expires": "2026-11-08",
+"_ts": "2026-11-01T14:40:00+0000"
+},
+"18353249986248006": {
+"special": true,
+"title": "Long Island Restaurant Week",
+"when": "Tonight through Nov 8",
+"desc": "3-course dinner for $48/person at Castaways. Appetizers, entrees, and dessert included.",
+"expires": "2026-11-08",
+"_ts": "2026-11-01T16:00:59+0000"
 }
 }

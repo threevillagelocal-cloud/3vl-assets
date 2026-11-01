@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T14:26:13.437609+00:00",
+ "updated": "2026-11-01T16:00:14.301255+00:00",
  "specials": [
   {
    "id": "18099881135407803",
@@ -34,20 +34,20 @@
    "inset": "ig/p17972423598169904.jpg"
   },
   {
-   "id": "18080320388726966",
+   "id": "18353249986248006",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
    "town": "Port Jefferson",
    "category": "Restaurant",
    "member": false,
-   "title": "Long Island Restaurant Week Dinner",
-   "when": "Nov 1-8, 2026",
-   "desc": "Special dinner prix fixe for $48 per person at Castaways. Book via Resy or call (888) 624-6106.",
+   "title": "Long Island Restaurant Week",
+   "when": "Tonight through Nov 8",
+   "desc": "3-course dinner for $48/person at Castaways. Appetizers, entrees, and dessert included.",
    "expires": "2026-11-08",
-   "posted": "2026-10-30T19:01:52+0000",
-   "url": "https://www.instagram.com/p/DfISPwoCoAa/",
+   "posted": "2026-11-01T16:00:59+0000",
+   "url": "https://www.instagram.com/reel/DfNHJuqK9fz/",
    "img": "",
-   "inset": "ig/p18080320388726966.jpg"
+   "inset": "ig/p18353249986248006.jpg"
   },
   {
    "id": "18146771710581070",
@@ -66,6 +66,22 @@
    "inset": "ig/p18146771710581070.jpg"
   },
   {
+   "id": "18153094972530027",
+   "biz": "Pasta Pasta",
+   "ig": "pastapasta_portjeff",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Restaurant Week at Pasta Pasta",
+   "when": "Nov 1-8",
+   "desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
+   "expires": "2026-11-08",
+   "posted": "2026-11-01T14:40:00+0000",
+   "url": "https://www.instagram.com/p/DfM9ynrypga/",
+   "img": "",
+   "inset": "ig/p18153094972530027.jpg"
+  },
+  {
    "id": "18099657377388421",
    "biz": "Toast Coffee + Kitchen",
    "ig": "toastcoffeeandkitchen",
@@ -80,22 +96,6 @@
    "url": "https://www.instagram.com/p/DfFZI30t-gX/",
    "img": "",
    "inset": "ig/p18099657377388421.jpg"
-  },
-  {
-   "id": "17939011704127395",
-   "biz": "Robinson's Tea Room",
-   "ig": "robinsonstearoom",
-   "town": "Stony Brook",
-   "category": "Tea Room",
-   "member": false,
-   "title": "Fall Seasonal Sandwiches & Platters",
-   "when": "Through late November",
-   "desc": "Vegan balsamic roasted carrot, turkey brie and pear sandwiches with dessert platters.",
-   "expires": "2026-11-27",
-   "posted": "2026-10-30T15:48:48+0000",
-   "url": "https://www.instagram.com/p/DfH8OFGoCuW/",
-   "img": "",
-   "inset": "ig/p17939011704127395.jpg"
   }
  ],
  "candidates": [
@@ -132,20 +132,20 @@
    "inset": "ig/p17972423598169904.jpg"
   },
   {
-   "id": "18080320388726966",
+   "id": "18353249986248006",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
    "town": "Port Jefferson",
    "category": "Restaurant",
    "member": false,
-   "title": "Long Island Restaurant Week Dinner",
-   "when": "Nov 1-8, 2026",
-   "desc": "Special dinner prix fixe for $48 per person at Castaways. Book via Resy or call (888) 624-6106.",
+   "title": "Long Island Restaurant Week",
+   "when": "Tonight through Nov 8",
+   "desc": "3-course dinner for $48/person at Castaways. Appetizers, entrees, and dessert included.",
    "expires": "2026-11-08",
-   "posted": "2026-10-30T19:01:52+0000",
-   "url": "https://www.instagram.com/p/DfISPwoCoAa/",
+   "posted": "2026-11-01T16:00:59+0000",
+   "url": "https://www.instagram.com/reel/DfNHJuqK9fz/",
    "img": "",
-   "inset": "ig/p18080320388726966.jpg"
+   "inset": "ig/p18353249986248006.jpg"
   },
   {
    "id": "18146771710581070",
@@ -164,6 +164,22 @@
    "inset": "ig/p18146771710581070.jpg"
   },
   {
+   "id": "18153094972530027",
+   "biz": "Pasta Pasta",
+   "ig": "pastapasta_portjeff",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Restaurant Week at Pasta Pasta",
+   "when": "Nov 1-8",
+   "desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
+   "expires": "2026-11-08",
+   "posted": "2026-11-01T14:40:00+0000",
+   "url": "https://www.instagram.com/p/DfM9ynrypga/",
+   "img": "",
+   "inset": "ig/p18153094972530027.jpg"
+  },
+  {
    "id": "18099657377388421",
    "biz": "Toast Coffee + Kitchen",
    "ig": "toastcoffeeandkitchen",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/p/DfFZI30t-gX/",
    "img": "",
    "inset": "ig/p18099657377388421.jpg"
-  },
-  {
-   "id": "17939011704127395",
-   "biz": "Robinson's Tea Room",
-   "ig": "robinsonstearoom",
-   "town": "Stony Brook",
-   "category": "Tea Room",
-   "member": false,
-   "title": "Fall Seasonal Sandwiches & Platters",
-   "when": "Through late November",
-   "desc": "Vegan balsamic roasted carrot, turkey brie and pear sandwiches with dessert platters.",
-   "expires": "2026-11-27",
-   "posted": "2026-10-30T15:48:48+0000",
-   "url": "https://www.instagram.com/p/DfH8OFGoCuW/",
-   "img": "",
-   "inset": "ig/p17939011704127395.jpg"
   }
  ],
  "all": [
@@ -262,6 +262,22 @@
    "inset": "ig/p18109810757580122.jpg"
   },
   {
+   "id": "18353249986248006",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Long Island Restaurant Week",
+   "when": "Tonight through Nov 8",
+   "desc": "3-course dinner for $48/person at Castaways. Appetizers, entrees, and dessert included.",
+   "expires": "2026-11-08",
+   "posted": "2026-11-01T16:00:59+0000",
+   "url": "https://www.instagram.com/reel/DfNHJuqK9fz/",
+   "img": "",
+   "inset": "ig/p18353249986248006.jpg"
+  },
+  {
    "id": "18080320388726966",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
@@ -292,6 +308,22 @@
    "url": "https://www.instagram.com/reel/DfLjNMBTBXL/",
    "img": "",
    "inset": "ig/p18146771710581070.jpg"
+  },
+  {
+   "id": "18153094972530027",
+   "biz": "Pasta Pasta",
+   "ig": "pastapasta_portjeff",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Restaurant Week at Pasta Pasta",
+   "when": "Nov 1-8",
+   "desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
+   "expires": "2026-11-08",
+   "posted": "2026-11-01T14:40:00+0000",
+   "url": "https://www.instagram.com/p/DfM9ynrypga/",
+   "img": "",
+   "inset": "ig/p18153094972530027.jpg"
   },
   {
    "id": "18099657377388421",

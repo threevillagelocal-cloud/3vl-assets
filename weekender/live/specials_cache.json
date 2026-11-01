@@ -143,7 +143,24 @@
 "portjeffbrewing": [],
 "poboybeerandcider": [],
 "fifthseasonrestaurant": [],
-"pastapasta_portjeff": [],
+"pastapasta_portjeff": [
+{
+"id": "18153094972530027",
+"biz": "Pasta Pasta",
+"ig": "pastapasta_portjeff",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Restaurant Week at Pasta Pasta",
+"when": "Nov 1-8",
+"desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
+"expires": "2026-11-08",
+"posted": "2026-11-01T14:40:00+0000",
+"url": "https://www.instagram.com/p/DfM9ynrypga/",
+"img": "",
+"inset": "ig/p18153094972530027.jpg"
+}
+],
 "pjlobsterhouse": [],
 "ruvorestaurant": [
 {
@@ -315,6 +332,22 @@
 }
 ],
 "castawayspj": [
+{
+"id": "18353249986248006",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Long Island Restaurant Week",
+"when": "Tonight through Nov 8",
+"desc": "3-course dinner for $48/person at Castaways. Appetizers, entrees, and dessert included.",
+"expires": "2026-11-08",
+"posted": "2026-11-01T16:00:59+0000",
+"url": "https://www.instagram.com/reel/DfNHJuqK9fz/",
+"img": "",
+"inset": "ig/p18353249986248006.jpg"
+},
 {
 "id": "18080320388726966",
 "biz": "Castaways Steak & Seafood",
