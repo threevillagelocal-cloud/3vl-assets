@@ -90,6 +90,24 @@
    "posted": "2026-10-16",
    "kind": "community",
    "member": true
+  },
+  {
+   "post": "17970977996965299",
+   "title": "Book Club: Heart of a Dog",
+   "date": "2026-11-18",
+   "start": "18:00",
+   "end": "",
+   "venue": "Madiran The Wine Bar",
+   "addr": "1203 Route 25A, East Setauket, NY 11733",
+   "desc": "Monthly book club meeting discussing Heart of a Dog by Mikhail Bulgakov. $30 covers a glass of wine, a small plate, and a leather bookmark.",
+   "org": "Madiran The Wine Bar",
+   "handle": "madiranthewinebar_eastsetauket",
+   "org_url": "https://www.instagram.com/madiranthewinebar_eastsetauket/",
+   "url": "https://www.instagram.com/p/DfHhz2uCKxs/",
+   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17970977996965299.jpg",
+   "posted": "2026-10-30",
+   "kind": "community",
+   "member": false
   }
  ],
  "review": [
@@ -130,25 +148,6 @@
    "kind": "community",
    "member": true,
    "why": "no clear date"
-  },
-  {
-   "post": "17970977996965299",
-   "title": "Book Club: Heart of a Dog",
-   "date": "2026-11-18",
-   "start": "18:00",
-   "end": "",
-   "venue": "Madiran The Wine Bar",
-   "addr": "",
-   "desc": "Monthly book club meeting discussing Heart of a Dog by Mikhail Bulgakov. $30 covers a glass of wine, a small plate, and a leather bookmark.",
-   "org": "Madiran The Wine Bar",
-   "handle": "madiranthewinebar_eastsetauket",
-   "org_url": "https://www.instagram.com/madiranthewinebar_eastsetauket/",
-   "url": "https://www.instagram.com/p/DfHhz2uCKxs/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17970977996965299.jpg",
-   "posted": "2026-10-30",
-   "kind": "community",
-   "member": false,
-   "why": "restaurant/bar account: check it is not a dining promo"
   },
   {
    "post": "18076643759467539",
