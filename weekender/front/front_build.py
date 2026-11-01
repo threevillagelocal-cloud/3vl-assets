@@ -406,7 +406,19 @@ def spotlight(base=""):
 
 def stories_main(skip=0, n=5):
     """Local Stories in the main column: the newest posts from /blog (lead + smaller cards). Refreshed on every nightly build."""
-    st = nhb.stories(n + skip)[skip:skip + n]
+    st = nhb.stories(n + skip)
+    # owner 11/1/2026: hand-picked member/partner articles (weekender/front/extra_stories.json) join the blog row with a byline until "until"
+    try:
+        from datetime import date as _d
+        for x in json.load(open(os.path.join(HERE, "extra_stories.json"), encoding="utf-8")):
+            dt = _d.fromisoformat(x["date"])
+            if _d.fromisoformat(x["until"]) >= _d.today() and not any(y["h"] == x["h"] for y in st):
+                st.append({"h": x["h"], "t": x["t"], "img": x["img"], "ts": dt.toordinal(),
+                           "d": "%s %d, %d &middot; %s" % (["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"][dt.month - 1], dt.day, dt.year, x["by"]), "raw": 1})
+        st.sort(key=lambda x: -x.get("ts", 0))
+    except Exception as e:
+        print("extra stories skipped:", e)
+    st = st[skip:skip + n]
     if not st:
         return ""
     cards = []
@@ -419,7 +431,7 @@ def stories_main(skip=0, n=5):
         img = ('<img src="%s"%s data-o="%s" onerror="if(this.dataset.o){this.src=this.dataset.o;this.dataset.o=&quot;&quot;;this.removeAttribute(&quot;srcset&quot;)}" alt="%s" loading="lazy" width="%d" height="%d">' % (
             esc(pic), ss, esc(orig), esc(x["t"]), 800 if i == 0 else 360, 450 if i == 0 else 240)) if pic else ""
         cards.append('<a class="y-st%s" href="%s"><span class="y-sti">%s</span><span class="y-stb"><i>%s</i><b>%s</b>%s</span></a>' % (
-            " y-stl" if i == 0 else "", esc(x["h"]), img, esc(x["d"]), esc(x["t"]), '<em class="y-stgo">Read the story ' + IC["chev"] + '</em>' if i == 0 else ""))
+            " y-stl" if i == 0 else "", esc(x["h"]), img, x["d"] if x.get("raw") else esc(x["d"]), esc(x["t"]), '<em class="y-stgo">Read the story ' + IC["chev"] + '</em>' if i == 0 else ""))
     return ('<section class="wk-sec y-stories" id="y-stories"><h2 class="wk-h2"><span>Three Village Local Blog</span><small>News and guides from around Three Village</small>'
             '<a class="wk-calbtn y-seeall" href="/blog">See the blog ' + IC["chev"] + '</a></h2>'
             '<div class="y-stg">%s</div><p class="y-endbtn"><a class="y-bigbtn" href="/blog">All blog posts %s</a></p></section>') % ("".join(cards), IC["chev"])
