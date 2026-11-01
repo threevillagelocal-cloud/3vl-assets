@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;600;700&display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:var(--w);height:var(--h);overflow:hidden;font-family:'Radio Canada',sans-serif;color:#13233a;background:#fff}
+.stage{position:relative;width:var(--w);height:var(--h);overflow:hidden;background:#fff}
+.photo{position:absolute;left:0;top:0;width:var(--pw);height:var(--ph);background:url(street.jpg) var(--pos)/cover no-repeat}
+.photo:after{content:"";position:absolute;inset:0;background:var(--fade)}
+.stripe{position:absolute;left:0;right:0;top:0;height:12px;display:flex}.stripe i{flex:1}.stripe i:first-child{background:#b22234}.stripe i:last-child{background:#1f3f8f}
+.panel{position:absolute;left:var(--px);right:var(--pr);top:var(--pt);text-align:var(--al)}
+.logo{width:var(--lw);display:block;margin:var(--lm)}
+.k{display:inline-flex;align-items:center;gap:14px;font-size:var(--kf);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1f3f8f;background:#eef3fc;border-radius:999px;padding:12px 30px}
+.k b{color:#b22234}
+h1{margin-top:var(--hm);font-size:var(--hf);line-height:1.02;font-weight:700;letter-spacing:-.015em;color:#13233a}
+h1 span{color:#1f3f8f;background:linear-gradient(transparent 76%,#ffc53d 76%,#ffc53d 90%,transparent 90%)}
+.sub{margin-top:var(--sm);font-size:var(--sf);line-height:1.32;font-weight:600;color:#3c4a5c}
+.cta{display:inline-block;margin-top:var(--cm);background:#1f3f8f;color:#fff;font-size:var(--cf);font-weight:700;padding:18px 40px;border-radius:999px;box-shadow:0 12px 26px rgba(31,63,143,.28)}
+.cta em{font-style:normal;color:#ffc53d}
+</style></head>
+<body><div class="stage">
+<div class="photo"></div><div class="stripe"><i></i><i></i></div>
+<div class="panel">
+ <img class="logo" src="logo-navy.png" alt="">
+ <div class="k"><b>&#9733;</b> Veterans Day &middot; November 11</div>
+ <h1>Honoring the businesses that <span>served.</span></h1>
+ <p class="sub">Veteran-owned? Offering a Veterans Day special? Know a local veteran? Be part of our community Veterans Day feature.</p>
+ <div class="cta">CTATEXT</div>
+</div>
+</div></body></html>

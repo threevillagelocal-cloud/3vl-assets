@@ -1,0 +1,48 @@
+.vds{font-family:"tvl-rc","Radio Canada",system-ui,sans-serif;color:#13233a;max-width:780px;margin:0 auto}
+.vds-hero{position:relative;background:#fff;border:1px solid #e1e8f2;border-radius:26px;overflow:hidden;box-shadow:0 18px 44px rgba(19,35,58,.09);margin:10px 0 14px}
+.vds-stripe{display:flex;height:6px}.vds-stripe i{flex:1}.vds-stripe i:nth-child(1){background:#b22234}.vds-stripe i:nth-child(2){display:none}.vds-stripe i:nth-child(3){background:#1f3f8f}
+.vds-hero:before{content:"";position:absolute;right:-40px;top:-30px;width:260px;height:260px;background:radial-gradient(circle,#eaf1fd 0,#eaf1fd 2px,transparent 2.5px) 0 0/22px 22px;opacity:.9;pointer-events:none;-webkit-mask:radial-gradient(circle at 70% 30%,#000 30%,transparent 70%);mask:radial-gradient(circle at 70% 30%,#000 30%,transparent 70%)}
+.vds-in{position:relative;padding:28px 26px 26px}
+.vds-k{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#1f3f8f;background:#eef3fc;border-radius:999px;padding:7px 14px;margin:0 0 14px}
+.vds-k span{color:#b22234}
+.vds-h{font-size:clamp(32px,6.4vw,50px);line-height:1.05;font-weight:700;margin:0 0 14px;letter-spacing:-.015em;color:#13233a;text-wrap:balance}
+.vds-h span{color:#1f3f8f;background:linear-gradient(transparent 76%,#ffc53d 76%,#ffc53d 92%,transparent 92%)}
+.vds-sub{font-size:18px;line-height:1.55;color:#4a5869;margin:0 0 20px;max-width:62ch}
+.vds-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 18px}
+.vds-c{display:flex;gap:12px;align-items:flex-start;background:#f6f9fd;border:1px solid #e1e8f2;border-radius:18px;padding:16px}
+.vds-c b{flex:none;width:42px;height:42px;border-radius:13px;background:#1f3f8f;color:#fff;display:flex;align-items:center;justify-content:center;font-size:19px}
+.vds-c:nth-child(2) b{background:#b22234}
+.vds-c strong{display:block;font-size:17px;margin:1px 0 3px}.vds-c span{display:block;font-size:15px;line-height:1.4;color:#4a5869}
+.vds-pts{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:9px}
+.vds-pts li{display:flex;gap:10px;align-items:flex-start;font-size:16px;font-weight:600;line-height:1.4}
+.vds-pts b{flex:none;width:24px;height:24px;border-radius:50%;background:#e7f3ec;color:#2f7d4f;display:flex;align-items:center;justify-content:center;font-size:13px;margin-top:1px}
+.vds-due{display:inline-flex;align-items:baseline;gap:8px;border-left:4px solid #b22234;padding:4px 0 4px 12px;margin:0 0 18px}
+.vds-due span{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#6b7888}.vds-due strong{font-size:19px;color:#13233a}
+.vds-go{display:block;width:max-content;max-width:100%;background:#1f3f8f;color:#fff!important;text-decoration:none!important;font-weight:700;font-size:18px;padding:15px 30px;border-radius:999px;box-shadow:0 10px 24px rgba(31,63,143,.28)}
+.vds-go:hover{background:#17327a}.vds-go:focus-visible{outline:3px solid #ffc53d;outline-offset:3px}
+.vds-anchor{scroll-margin-top:90px}
+.vds-note{font-size:15px;color:#5d6b7c;text-align:center;margin:0 0 16px}
+form[id^="veterans_day_submission_347"]{max-width:780px;margin:0 auto 40px;background:#fff;border:1px solid #e1e8f2;border-radius:22px;padding:24px 22px;box-shadow:0 12px 30px rgba(19,35,58,.06);font-family:"tvl-rc","Radio Canada",system-ui,sans-serif}
+form[id^="veterans_day_submission_347"] h4{font-size:19px;font-weight:700;color:#1f3f8f}
+form[id^="veterans_day_submission_347"] label{font-weight:600;color:#13233a}
+form[id^="veterans_day_submission_347"] .form-control{border-radius:12px;min-height:46px;font-size:16px;border-color:#cfd9e6}
+form[id^="veterans_day_submission_347"] textarea.form-control{min-height:110px}
+form[id^="veterans_day_submission_347"] .btn-primary{background:#1f3f8f;border-color:#1f3f8f;border-radius:999px;font-weight:700;padding:14px}
+#bd_hpc{position:absolute;left:-9999px}
+@media (max-width:620px){.vds-in{padding:22px 18px 20px}.vds-cards{grid-template-columns:1fr}.vds-sub{font-size:17px}.vds-go{width:100%;text-align:center}form[id^="veterans_day_submission_347"]{padding:18px 14px}}
+.vds-btns{display:flex;flex-wrap:wrap;gap:10px}
+.vds-alt{background:#fff;color:#1f3f8f!important;border:2px solid #1f3f8f;box-shadow:none}.vds-alt:hover{background:#eef3fc}
+.vds-cards{grid-template-columns:repeat(3,1fr)}
+.vds-c:nth-child(3) b{background:#13233a}
+.vds-hon{margin-top:34px;scroll-margin-top:90px}
+.vds-hbox{background:#fff;border:1px solid #e1e8f2;border-radius:26px;overflow:hidden;box-shadow:0 14px 34px rgba(19,35,58,.07);margin:0 0 14px}
+.vds-h2{font-size:clamp(28px,5vw,38px);line-height:1.1;font-weight:700;margin:0 0 10px;color:#13233a}
+.vds-hon .vds-sub{margin:0}
+form[id^="veterans_thank_you_348"]{max-width:780px;margin:0 auto 40px;background:#fff;border:1px solid #e1e8f2;border-radius:22px;padding:24px 22px;box-shadow:0 12px 30px rgba(19,35,58,.06);font-family:"tvl-rc","Radio Canada",system-ui,sans-serif}
+form[id^="veterans_thank_you_348"] label{font-weight:600;color:#13233a}
+form[id^="veterans_thank_you_348"] .form-control{border-radius:12px;min-height:46px;font-size:16px;border-color:#cfd9e6}
+form[id^="veterans_thank_you_348"] .btn-primary{background:#1f3f8f;border-color:#1f3f8f;border-radius:999px;font-weight:700;padding:14px}
+@media (max-width:760px){.vds-cards{grid-template-columns:1fr}}
+@media (max-width:620px){.vds-btns .vds-go{width:100%;text-align:center}form[id^="veterans_thank_you_348"]{padding:18px 14px}}
+
+.vds .bootstrap-filestyle .btn,.vds~form .bootstrap-filestyle .btn,form[id^="veterans_day_submission_347"] .bootstrap-filestyle .btn,form[id^="veterans_day_submission_347"] .btn-file{color:#fff!important}
