@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T16:00:14.301255+00:00",
+ "updated": "2026-11-01T20:00:15.200770+00:00",
  "specials": [
   {
    "id": "18099881135407803",
@@ -18,20 +18,36 @@
    "inset": "ig/p18099881135407803.jpg"
   },
   {
-   "id": "17972423598169904",
+   "id": "18645486091036908",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
    "town": "Stony Brook",
    "category": "Restaurant",
    "member": false,
-   "title": "Beer Buckets for Season Pass Holders",
-   "when": "Game days (Week 8 onwards)",
-   "desc": "$15 domestic beer buckets for Season Pass holders during football games at Burgerology.",
-   "expires": "2026-11-30",
-   "posted": "2026-10-29T18:37:33+0000",
-   "url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
+   "title": "Spin Dip Smash on Restaurant Week Menu",
+   "when": "Restaurant Week (limited time)",
+   "desc": "Try the Spin Dip Smash with cheesy spinach dip and tortilla chips between smash patties.",
+   "expires": "2026-11-08",
+   "posted": "2026-11-01T18:30:55+0000",
+   "url": "https://www.instagram.com/p/DfNYXMJo0Fu/",
    "img": "",
-   "inset": "ig/p17972423598169904.jpg"
+   "inset": "ig/p18645486091036908.jpg"
+  },
+  {
+   "id": "18034496063897138",
+   "biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
+   "ig": "threevillageinn",
+   "town": "Stony Brook",
+   "category": "Restaurant/Inn",
+   "member": false,
+   "title": "Thanksgiving Day Dining",
+   "when": "Thu, Nov. 27 · 11 AM-7 PM",
+   "desc": "Join Three Village Inn for Thanksgiving Day with special pricing and menu options.",
+   "expires": "2026-11-27",
+   "posted": "2026-11-01T16:51:39+0000",
+   "url": "https://www.instagram.com/p/DfNM_0nDc5n/",
+   "img": "",
+   "inset": "ig/p18034496063897138.jpg"
   },
   {
    "id": "18353249986248006",
@@ -80,22 +96,6 @@
    "url": "https://www.instagram.com/p/DfM9ynrypga/",
    "img": "",
    "inset": "ig/p18153094972530027.jpg"
-  },
-  {
-   "id": "18099657377388421",
-   "biz": "Toast Coffee + Kitchen",
-   "ig": "toastcoffeeandkitchen",
-   "town": "Port Jefferson Station",
-   "category": "Cafe/Brunch",
-   "member": false,
-   "title": "Thanksgiving Sandwich",
-   "when": "Starting Sun, Nov 3 through Nov 25",
-   "desc": "Fresh-roasted turkey, stuffing, Swiss cheese, cranberry mayo and gravy on a sandwich with a side.",
-   "expires": "2026-11-25",
-   "posted": "2026-10-29T16:06:38+0000",
-   "url": "https://www.instagram.com/p/DfFZI30t-gX/",
-   "img": "",
-   "inset": "ig/p18099657377388421.jpg"
   }
  ],
  "candidates": [
@@ -116,20 +116,36 @@
    "inset": "ig/p18099881135407803.jpg"
   },
   {
-   "id": "17972423598169904",
+   "id": "18645486091036908",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
    "town": "Stony Brook",
    "category": "Restaurant",
    "member": false,
-   "title": "Beer Buckets for Season Pass Holders",
-   "when": "Game days (Week 8 onwards)",
-   "desc": "$15 domestic beer buckets for Season Pass holders during football games at Burgerology.",
-   "expires": "2026-11-30",
-   "posted": "2026-10-29T18:37:33+0000",
-   "url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
+   "title": "Spin Dip Smash on Restaurant Week Menu",
+   "when": "Restaurant Week (limited time)",
+   "desc": "Try the Spin Dip Smash with cheesy spinach dip and tortilla chips between smash patties.",
+   "expires": "2026-11-08",
+   "posted": "2026-11-01T18:30:55+0000",
+   "url": "https://www.instagram.com/p/DfNYXMJo0Fu/",
    "img": "",
-   "inset": "ig/p17972423598169904.jpg"
+   "inset": "ig/p18645486091036908.jpg"
+  },
+  {
+   "id": "18034496063897138",
+   "biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
+   "ig": "threevillageinn",
+   "town": "Stony Brook",
+   "category": "Restaurant/Inn",
+   "member": false,
+   "title": "Thanksgiving Day Dining",
+   "when": "Thu, Nov. 27 · 11 AM-7 PM",
+   "desc": "Join Three Village Inn for Thanksgiving Day with special pricing and menu options.",
+   "expires": "2026-11-27",
+   "posted": "2026-11-01T16:51:39+0000",
+   "url": "https://www.instagram.com/p/DfNM_0nDc5n/",
+   "img": "",
+   "inset": "ig/p18034496063897138.jpg"
   },
   {
    "id": "18353249986248006",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/p/DfM9ynrypga/",
    "img": "",
    "inset": "ig/p18153094972530027.jpg"
-  },
-  {
-   "id": "18099657377388421",
-   "biz": "Toast Coffee + Kitchen",
-   "ig": "toastcoffeeandkitchen",
-   "town": "Port Jefferson Station",
-   "category": "Cafe/Brunch",
-   "member": false,
-   "title": "Thanksgiving Sandwich",
-   "when": "Starting Sun, Nov 3 through Nov 25",
-   "desc": "Fresh-roasted turkey, stuffing, Swiss cheese, cranberry mayo and gravy on a sandwich with a side.",
-   "expires": "2026-11-25",
-   "posted": "2026-10-29T16:06:38+0000",
-   "url": "https://www.instagram.com/p/DfFZI30t-gX/",
-   "img": "",
-   "inset": "ig/p18099657377388421.jpg"
   }
  ],
  "all": [
@@ -230,6 +230,22 @@
    "inset": "ig/p18113599847613065.jpg"
   },
   {
+   "id": "18645486091036908",
+   "biz": "Burgerology",
+   "ig": "burgerologyusa",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Spin Dip Smash on Restaurant Week Menu",
+   "when": "Restaurant Week (limited time)",
+   "desc": "Try the Spin Dip Smash with cheesy spinach dip and tortilla chips between smash patties.",
+   "expires": "2026-11-08",
+   "posted": "2026-11-01T18:30:55+0000",
+   "url": "https://www.instagram.com/p/DfNYXMJo0Fu/",
+   "img": "",
+   "inset": "ig/p18645486091036908.jpg"
+  },
+  {
    "id": "17972423598169904",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
@@ -246,20 +262,20 @@
    "inset": "ig/p17972423598169904.jpg"
   },
   {
-   "id": "18109810757580122",
-   "biz": "Burgerology",
-   "ig": "burgerologyusa",
+   "id": "18034496063897138",
+   "biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
+   "ig": "threevillageinn",
    "town": "Stony Brook",
-   "category": "Restaurant",
+   "category": "Restaurant/Inn",
    "member": false,
-   "title": "Kids Eat Free Every Tuesday",
-   "when": "Every Tuesday · 4 PM – 9 PM",
-   "desc": "Kids eat free every Tuesday at Burgerology. Bring the family and enjoy your favorites.",
-   "expires": "2026-11-10",
-   "posted": "2026-10-27T15:51:35+0000",
-   "url": "https://www.instagram.com/reel/DfAOGxhxZWe/",
+   "title": "Thanksgiving Day Dining",
+   "when": "Thu, Nov. 27 · 11 AM-7 PM",
+   "desc": "Join Three Village Inn for Thanksgiving Day with special pricing and menu options.",
+   "expires": "2026-11-27",
+   "posted": "2026-11-01T16:51:39+0000",
+   "url": "https://www.instagram.com/p/DfNM_0nDc5n/",
    "img": "",
-   "inset": "ig/p18109810757580122.jpg"
+   "inset": "ig/p18034496063897138.jpg"
   },
   {
    "id": "18353249986248006",
@@ -324,6 +340,22 @@
    "url": "https://www.instagram.com/p/DfM9ynrypga/",
    "img": "",
    "inset": "ig/p18153094972530027.jpg"
+  },
+  {
+   "id": "18120866714096855",
+   "biz": "The Pie of Port Jeff",
+   "ig": "thepie216",
+   "town": "Port Jefferson",
+   "category": "Pizza",
+   "member": false,
+   "title": "Soup Season at The Pie of Port Jeff",
+   "when": "Now through fall season",
+   "desc": "Enjoy creamy butternut squash, potato leek, and other fall soup favorites.",
+   "expires": "2026-11-15",
+   "posted": "2026-11-01T18:25:22+0000",
+   "url": "https://www.instagram.com/p/DfNXudnltaA/",
+   "img": "",
+   "inset": "ig/p18120866714096855.jpg"
   },
   {
    "id": "18099657377388421",
