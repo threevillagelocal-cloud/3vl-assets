@@ -36,6 +36,7 @@ page = {
     "meta_desc": "Veteran-owned business or Veterans Day special in Setauket, Stony Brook or Port Jefferson? Submit it free for our Veterans Day feature, or add a local veteran to our community thank-you.",
     "facebook_title": "Honoring the businesses that served",
     "facebook_desc": "Veteran-owned? Offering a Veterans Day special? Know a local veteran? Be part of our Veterans Day feature. Free.",
+    "facebook_image": "https://www.threevillagelocal.com/share/veterans-day-submit-v1.jpg",
     "content": "[widget=3VL Page Veterans Day Submit][form=veterans_day_submission][widget=3VL Veterans Day Honor Intro][form=veterans_thank_you]",
     "content_css": rd("page.css"),
 }
