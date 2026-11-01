@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-01T18:52:16.362011+00:00",
+"updated": "2026-11-01T20:01:06.644960+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 203,
-"Emma S. Clark Library": 284,
+"Village of Port Jefferson": 202,
+"Emma S. Clark Library": 283,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -15,7 +15,7 @@
 "Theatre Three": 71,
 "Gallery North": 16,
 "Reboli Center": 18,
-"Sweetbriar Nature Center": 18,
+"Sweetbriar Nature Center": 17,
 "Historical Society of Greater Port Jefferson": 1,
 "Local business Instagram posts": 6
 },
@@ -443,7 +443,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/blood-drive"
+"page": "https://www.threevillagelocal.com/events/blood-drive-787"
 },
 {
 "id": "pjchamber-14900",
@@ -463,26 +463,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
-},
-{
-"id": "portjeff-1098",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-01T09:00:00",
-"end": "2026-11-01T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1098",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-481"
 },
 {
 "id": "reboli-6adf9dab4c6329721a5cedc5",
@@ -522,25 +502,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/novembers-feature-artisan-of-the-month-patricia-patten"
-},
-{
-"id": "sweetbriar-6ac5a4bd8b59bc4d06dd468d",
-"title": "Art Is A Hoot - Adults Sunday 11/1",
-"start": "2026-11-01T11:00:00",
-"end": "2026-11-01T12:30:00",
-"allday": false,
-"venue": "Sweetbriar Nature Center - ECSS",
-"addr": "62 Eckernkamp Drive, SMITHTOWN 11787",
-"url": "https://www.sweetbriarnc.org/new-events/2026/8/8/art-is-a-hoot-for-adults-y3836",
-"desc": "Join Andie and Jim for an exciting morning with two of our beautiful owl friends. Learn all about owls. Make art with the unique opportunity to work directly from this intimate time with our special girls.",
-"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1791338428451-U4MTSVRGRGB62DRPYYPQ/Screenshot%2B2026-10-06%2Bat%2B9.59.25%25E2%2580%25AFPM.png",
-"src": "sweetbriar",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "cur-jltrio",
