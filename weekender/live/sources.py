@@ -217,6 +217,8 @@ def emmaclark():
         link, title = tag("link"), tag("title")
         raw = re.search(r"<description>(.*?)</description>", item, re.S)
         raw = raw.group(1) if raw else ""
+        if "<category>" not in item and not re.search(r"&lt;p&gt;|<p>|CDATA", raw):
+            continue   # 11/1/2026: holiday closing markers ("Veterans Day", no category, no text) are not events
         im = re.search(r'<img[^>]+src="([^"]+)"', raw)
         image = im.group(1) if im else ""
         txt = clean(html.unescape(re.sub(r"<!\[CDATA\[.*?\]\]>", " ", raw, flags=re.S)))   # unescape first so <p> breaks become spaces
