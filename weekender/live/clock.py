@@ -8,6 +8,7 @@ from buddy import ensure                       # the buddy restarts this clock i
 ET = ZoneInfo("America/New_York")
 SPECIALS = {(8, 0), (11, 0), (15, 0)}          # Instagram specials refresh (ET)
 TICK_FROM, TICK_TO = (6, 30), (22, 0)          # site guard every 30 min in this window (ET), inclusive; 6:30 = fresh data before the 7:05 briefing
+NIGHTLY = (3, 0)                               # owner 11/1/2026: homepage nightly rebuild (GitHub's 3:05 cron ran 7 hours late)
 RUN_FOR = 5 * 3600 + 35 * 60                   # leave room under the 355-minute job limit
 REPO = os.environ.get("GITHUB_REPOSITORY", "threevillagelocal-cloud/3vl-assets")
 GUARD = "/tmp/guard"
@@ -23,6 +24,8 @@ def events_after(t):
         acts = []
         if hm in SPECIALS:
             acts.append("specials")
+        if hm == NIGHTLY:
+            acts.append("nightly")
         if TICK_FROM <= hm <= TICK_TO:
             acts.append("tick")
         if acts:
@@ -122,16 +125,15 @@ def main():
         now = dt.datetime.now(ET)
         if "specials" in acts:
             specials()
+        if "nightly" in acts:
+            tick(now, "nightly.txt", "homepage nightly")
         if "tick" in acts:
             if now.weekday() == 4 and (now.hour, now.minute) == (7, 0):   # owner 10/16/2026: weekly email preview Fri 7 AM (GitHub's cron runs hours late)
                 tick(now, "weekly.txt", "weekly email build")
             if guard_due(now):   # owner 10/12/2026: site guard, watchdog AND events/ferry feed every 2 hours
                 tick(now)
                 sh("gh workflow run events-live.yml -R %s" % REPO, check=True)   # events feed + Port Jefferson Ferry alerts
-            try:
-                radar(now)
-            except Exception as e:                    # the radar must never stop the clock
-                print("radar error:", type(e).__name__)
+            # owner 11/1/2026: news radar emails stopped ("Stop sending me this email"); radar(now) no longer runs
             ensure("clock-buddy.yml")
     if time.time() - start < 600:                  # safety: never restart in a tight loop; the hourly cron picks it up
         print("run ended after %d s: not restarting" % (time.time() - start)); return
