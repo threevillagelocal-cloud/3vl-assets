@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-01T14:33:37.966931+00:00",
+"updated": "2026-11-01T14:56:07.572152+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 203,
-"Emma S. Clark Library": 299,
+"Emma S. Clark Library": 284,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 51,
 "Ward Melville Heritage Org": 3,
@@ -1634,23 +1634,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/evening-book-discussion-610"
-},
-{
-"id": "emmaclark-veterans-day-38086",
-"title": "Veterans Day",
-"start": "2026-11-11T09:00:00",
-"end": "2026-11-11T21:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/veterans-day-38086",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/veterans-day"
 },
 {
 "id": "staller-e836ccf2-cdbe-4645-9bbb-5d263567a0e3",
