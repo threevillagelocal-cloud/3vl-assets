@@ -62,5 +62,19 @@
   "town": "Setauket",
   "logo": "logos/country-corner.jpg",
   "qr": "https://www.threevillagelocal.com/hunt/country-corner"
+ },
+ {
+  "slug": "setauket-frame-shop",
+  "name": "Setauket Frame Shop",
+  "town": "Setauket",
+  "logo": "logos/setauket-frame-shop-sign.jpg",
+  "qr": "https://www.threevillagelocal.com/hunt/setauket-frame-shop"
+ },
+ {
+  "slug": "the-pie-of-port-jeff",
+  "name": "The Pie of Port Jeff",
+  "town": "Port Jefferson",
+  "logo": "logos/the-pie-of-port-jeff.webp",
+  "qr": "https://www.threevillagelocal.com/hunt/the-pie-of-port-jeff"
  }
 ]
