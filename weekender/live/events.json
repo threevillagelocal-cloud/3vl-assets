@@ -1,8 +1,8 @@
 {
-"updated": "2026-10-31T23:17:37.374073+00:00",
+"updated": "2026-11-01T01:01:01.921277+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 0,
+"Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 203,
@@ -12,7 +12,7 @@
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 7,
 "Staller Center for the Arts": 138,
-"Theatre Three": 53,
+"Theatre Three": 71,
 "Gallery North": 16,
 "Reboli Center": 18,
 "Sweetbriar Nature Center": 18,
@@ -71,6 +71,25 @@
 "page": "https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive"
 },
 {
+"id": "pjchamber-14726",
+"title": "2026 Port Jefferson Scarecrow Walk",
+"start": "2026-10-05T00:00:00",
+"end": "2026-11-02T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-scarecrow-walk/",
+"desc": "Join us for our 2026 Port Jefferson Scarecrow Walk on East Main Street from October 5th- November 2nd! var...",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
+},
+{
 "id": "gallerynorth-71344",
 "title": "Exhibition: Instincts",
 "start": "2026-10-08T00:00:00",
@@ -88,6 +107,26 @@
 "status": "",
 "fb": 0,
 "page": ""
+},
+{
+"id": "pjchamber-14181",
+"title": "2026 Port Jeff Self-Guided Fall Art Walk",
+"start": "2026-10-09T00:00:00",
+"end": "2026-11-06T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
 },
 {
 "id": "sbv-2456",
@@ -108,26 +147,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/the-47th-annual-holiday-tree-competition"
-},
-{
-"id": "wmho-1811",
-"title": "Hidden Beneath the Floorboards Walking Tour",
-"start": "2026-10-30T00:00:00",
-"end": "2026-10-31T23:59:59",
-"allday": true,
-"venue": "Stony Brook Village Center",
-"addr": "111 Main Street, Stony Brook, NY, 11790",
-"url": "https://wmho.org/event/hidden-beneath-the-floorboards-walking-tour/",
-"desc": "The Ward Melville Heritage Organization (WMHO) is excited to announce the return of its captivating walking tour, Hidden Beneath the Floorboards , this October in Stony Brook Village . Hidden Beneath the Floorboards leads you through a hauntingly historic walk",
-"img": "https://wmho.org/wp-content/uploads/2026/09/WMHO-Walking-Tour-scaled.jpg",
-"src": "wmho",
-"tags": [
-"history",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "cur-tvfm",
@@ -214,47 +233,6 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/po-boy-brewery-halloween-costume-party",
 "pu": ""
-},
-{
-"id": "cur-spooky",
-"title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-10-31T00:00",
-"end": "2026-10-31T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Final days, through Oct. 31",
-"venue": "Olde Towne Gardens",
-"addr": "360 Old Town Rd, East Setauket",
-"url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at the East Setauket garden center: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/spooky-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "social-18119535476059705",
-"title": "Spooky Sweat Saturday Halloween Workout",
-"start": "2026-10-31T07:30:00",
-"end": "2026-10-31T07:30:00",
-"allday": false,
-"venue": "F45 Training East Setauket",
-"addr": "1385 NY 25A, E, East Setauket, NY 11733",
-"url": "https://www.instagram.com/p/DfAQGTsJUHv/",
-"desc": "Halloween costume party with classes at 7:30 AM and 9:00 AM, featuring a costume contest and spooktacular workout at F45 East Setauket.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18119535476059705.jpg",
-"src": "social",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "cur-dash",
@@ -346,27 +324,6 @@
 "rank": 1
 },
 {
-"id": "sbv-2342",
-"title": "The 36th Annual Halloween Festival",
-"start": "2026-10-31T12:00:00",
-"end": "2026-10-31T16:00:00",
-"allday": false,
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook, NY 11790",
-"url": "https://stonybrookvillage.com/event/the-36th-annual-halloween-festival/",
-"desc": "Get ready for a spooktacular celebration! The Ward Melville Heritage Organization (WMHO) presents its 36th Annual Halloween Festival on Saturday, October 31, from 12 PM to 4 PM. Join the Halloween celebration for an afternoon filled with festive music, trick-o",
-"img": "https://stonybrookvillage.com/wp-content/uploads/2025/09/35-DSC_0064.jpg",
-"src": "sbv",
-"tags": [
-"free",
-"kids",
-"music"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-hauntmus",
 "title": "Trick or Treat at the Haunted Museum",
 "start": "2026-10-31T14:00",
@@ -427,6 +384,85 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/halloween-party-at-tommys-place",
 "pu": ""
+},
+{
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-11-01T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Final days, through Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at the East Setauket garden center: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/spooky-720.webp",
+"src": "3vl",
+"tags": [
+"kids",
+"outdoor"
+],
+"status": "",
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
+},
+{
+"id": "pjchamber-15119",
+"title": "Long Island Restaurant Week",
+"start": "2026-11-01T00:00:00",
+"end": "2026-11-08T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
+"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta – RUVO",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/long-island-restaurant-week"
+},
+{
+"id": "pjchamber-15082",
+"title": "Blood Drive",
+"start": "2026-11-01T08:00:00",
+"end": "2026-11-01T15:00:00",
+"allday": false,
+"venue": "Greek Orthodox Church",
+"addr": "430 Sheep Pasture Rd, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/blood-drive-5/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/blood-drive"
+},
+{
+"id": "pjchamber-14900",
+"title": "Return To You: A Limitless Retreat",
+"start": "2026-11-01T08:45:00",
+"end": "2026-11-01T15:30:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/return-to-you-a-limitless-retreat/",
+"desc": "Your day will move intentionally between learning, nourishment, reflection, and restorative experiences—with plenty of space to simply enjoy being there. Arrival + Continental Breakfast Settle in with coffee, tea, fresh fruit, pastries and a light continental ",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/return-to-you-a-limitless-retreat"
 },
 {
 "id": "portjeff-1098",
@@ -1598,59 +1634,46 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/evening-book-discussion-610"
+},
+{
+"id": "emmaclark-veterans-day-38086",
+"title": "Veterans Day",
+"start": "2026-11-11T09:00:00",
+"end": "2026-11-11T21:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/veterans-day-38086",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/veterans-day"
+},
+{
+"id": "staller-e836ccf2-cdbe-4645-9bbb-5d263567a0e3",
+"title": "Starry Nights | Featuring Colin Carr & Arnaud Sussmann",
+"start": "2026-11-11T19:00:00",
+"end": "2026-11-11T19:00:00",
+"allday": false,
+"venue": "Staller Center for the Arts, Recital Hall",
+"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
+"url": "https://stallercenter.showare.com/eventperformances.asp?evt=470",
+"desc": "Artistic Director Colin Carr, cello, takes the stage with Arnaud Sussmann, violin, for a program that includes Mozart's Divertimento K563 for violin, viola, and cello. PROGRAM: Debussy Petite Suite for piano, 4 hands En bateau: Andantino Cortège: Moderato Menu",
+"img": "https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/21c5edc5-f81f-4c7a-a1f6-d8c4373e8df7/Elfsight_Starry.png",
+"src": "staller",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/starry-nights-featuring-colin-carr-arnaud-sussmann"
 }
 ],
 "closings": [],
 "specials": [
-{
-"ig": "madiranthewinebar_eastsetauket",
-"biz": "Madiran The Wine Bar",
-"town": "East Setauket",
-"title": "Live Music This Week",
-"inset": "",
-"url": "http://madiranthewinebar.com/events.html",
-"label": "Live music",
-"source": "madiranthewinebar.com/events.html + Madiran IG post 10/21/2026",
-"id": "pin-madiran-2026-10-28",
-"starts": "2026-10-25",
-"expires": "2026-10-31",
-"when": "Wed to Sat, Oct 28-31, from 7 PM",
-"desc": "Wed Oct 28, 7-9 PM: Rod Borrie on trombone and Vincent Loccisano on keys. Thu Oct 29, 7-9 PM: Phil Rinaldi. Fri Oct 30, 7-10 PM: Jim Lowe. Sat Oct 31, 7-10 PM: Douglas Baldwin Jazz Trio.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-28.jpg",
-"lineup": [
-{
-"day": "Wed",
-"date": "Oct 28",
-"time": "7-9 PM",
-"who": "Rod Borrie and Vincent Loccisano",
-"what": "Trombone and keys"
-},
-{
-"day": "Thu",
-"date": "Oct 29",
-"time": "7-9 PM",
-"who": "Phil Rinaldi",
-"what": ""
-},
-{
-"day": "Fri",
-"date": "Oct 30",
-"time": "7-10 PM",
-"who": "Jim Lowe",
-"what": ""
-},
-{
-"day": "Sat",
-"date": "Oct 31",
-"time": "7-10 PM",
-"who": "Douglas Baldwin Jazz Trio",
-"what": "Jazz trio"
-}
-],
-"pinned": true,
-"profile": "https://www.threevillagelocal.com/madiran-the-wine-bar",
-"page": "https://www.threevillagelocal.com/eat-drink/madiran-the-wine-bar-live-music"
-},
 {
 "id": "18099881135407803",
 "biz": "Tommy's Place",
@@ -1690,25 +1713,6 @@
 "profile": "https://www.threevillagelocal.com/burgerology"
 },
 {
-"id": "18344774434251963",
-"biz": "The Study by Toast",
-"ig": "thestudy.bytoast",
-"town": "East Setauket",
-"category": "Coffee House",
-"member": false,
-"title": "Halloween Butterbeer & Costume Cookie",
-"when": "Halloween Weekend (Oct 30-31)",
-"desc": "Get a Butterbeer-inspired drink all weekend. Arrive in costume on Halloween for a free Hedwig shortbread cookie with purchase.",
-"expires": "2026-10-31",
-"posted": "2026-10-30T14:30:15+0000",
-"url": "https://www.instagram.com/p/DfHzOtiEQj8/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18344774434251963.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-halloween-butterbeer-costume-cookie",
-"label": "Special",
-"profile": "https://www.threevillagelocal.com/the-study-by-toast"
-},
-{
 "id": "17939011704127395",
 "biz": "Robinson's Tea Room",
 "ig": "robinsonstearoom",
@@ -1744,58 +1748,47 @@
 "page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-late-night-saturday-off",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
+},
+{
+"id": "18080320388726966",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Long Island Restaurant Week Dinner",
+"when": "Nov 1-8, 2026",
+"desc": "Special dinner prix fixe for $48 per person at Castaways. Book via Resy or call (888) 624-6106.",
+"expires": "2026-11-08",
+"posted": "2026-10-30T19:01:52+0000",
+"url": "https://www.instagram.com/p/DfISPwoCoAa/",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/castawayspj.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18080320388726966.jpg",
+"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-long-island-restaurant-dinner",
+"label": "Special",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood"
+},
+{
+"id": "18130326799700088",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Lobster Bomb Limited-Time Special",
+"when": "Limited time",
+"desc": "Warm bread bowl filled with lobster meat and creamy lobster bisque poured tableside.",
+"expires": "2026-11-08",
+"posted": "2026-10-24T19:31:23+0000",
+"url": "https://www.instagram.com/reel/De444rJEg01/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18130326799700088.jpg",
+"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-lobster-bomb-limited-time-special",
+"label": "Special",
+"profile": "https://www.threevillagelocal.com/schnitzels"
 }
 ],
 "specialsAll": [
-{
-"ig": "madiranthewinebar_eastsetauket",
-"biz": "Madiran The Wine Bar",
-"town": "East Setauket",
-"title": "Live Music This Week",
-"inset": "",
-"url": "http://madiranthewinebar.com/events.html",
-"label": "Live music",
-"source": "madiranthewinebar.com/events.html + Madiran IG post 10/21/2026",
-"id": "pin-madiran-2026-10-28",
-"starts": "2026-10-25",
-"expires": "2026-10-31",
-"when": "Wed to Sat, Oct 28-31, from 7 PM",
-"desc": "Wed Oct 28, 7-9 PM: Rod Borrie on trombone and Vincent Loccisano on keys. Thu Oct 29, 7-9 PM: Phil Rinaldi. Fri Oct 30, 7-10 PM: Jim Lowe. Sat Oct 31, 7-10 PM: Douglas Baldwin Jazz Trio.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/highlights/madiran-2026-10-28.jpg",
-"lineup": [
-{
-"day": "Wed",
-"date": "Oct 28",
-"time": "7-9 PM",
-"who": "Rod Borrie and Vincent Loccisano",
-"what": "Trombone and keys"
-},
-{
-"day": "Thu",
-"date": "Oct 29",
-"time": "7-9 PM",
-"who": "Phil Rinaldi",
-"what": ""
-},
-{
-"day": "Fri",
-"date": "Oct 30",
-"time": "7-10 PM",
-"who": "Jim Lowe",
-"what": ""
-},
-{
-"day": "Sat",
-"date": "Oct 31",
-"time": "7-10 PM",
-"who": "Douglas Baldwin Jazz Trio",
-"what": "Jazz trio"
-}
-],
-"pinned": true,
-"profile": "https://www.threevillagelocal.com/madiran-the-wine-bar",
-"page": "https://www.threevillagelocal.com/eat-drink/madiran-the-wine-bar-live-music"
-},
 {
 "id": "18099881135407803",
 "biz": "Tommy's Place",
@@ -1873,44 +1866,6 @@
 "label": "Special"
 },
 {
-"id": "18344774434251963",
-"biz": "The Study by Toast",
-"ig": "thestudy.bytoast",
-"town": "East Setauket",
-"category": "Coffee House",
-"member": false,
-"title": "Halloween Butterbeer & Costume Cookie",
-"when": "Halloween Weekend (Oct 30-31)",
-"desc": "Get a Butterbeer-inspired drink all weekend. Arrive in costume on Halloween for a free Hedwig shortbread cookie with purchase.",
-"expires": "2026-10-31",
-"posted": "2026-10-30T14:30:15+0000",
-"url": "https://www.instagram.com/p/DfHzOtiEQj8/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18344774434251963.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-halloween-butterbeer-costume-cookie",
-"profile": "https://www.threevillagelocal.com/the-study-by-toast",
-"label": "Special"
-},
-{
-"id": "17966489859226645",
-"biz": "The Study by Toast",
-"ig": "thestudy.bytoast",
-"town": "East Setauket",
-"category": "Coffee House",
-"member": false,
-"title": "Free Hedwig Cookie with Costume",
-"when": "Fri, Oct. 31",
-"desc": "Wear a costume and make a purchase to get a free Hedwig-inspired shortbread cookie.",
-"expires": "2026-10-31",
-"posted": "2026-10-29T16:11:18+0000",
-"url": "https://www.instagram.com/reel/DfFZk5DxrVE/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17966489859226645.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-free-hedwig-cookie-costume",
-"profile": "https://www.threevillagelocal.com/the-study-by-toast",
-"label": "Special"
-},
-{
 "id": "17939011704127395",
 "biz": "Robinson's Tea Room",
 "ig": "robinsonstearoom",
@@ -1967,25 +1922,6 @@
 "label": "Special"
 },
 {
-"id": "18106318559633808",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Halloween Happy Hour",
-"when": "Today, Oct. 31 · 12-6 PM",
-"desc": "Happy Hour specials on drinks and dinner. Open until 10 PM tonight.",
-"expires": "2026-10-31",
-"posted": "2026-10-31T15:01:10+0000",
-"url": "https://www.instagram.com/p/DfKbjLlikkT/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18106318559633808.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-halloween-happy-hour",
-"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Happy hour"
-},
-{
 "id": "18080320388726966",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -2002,63 +1938,6 @@
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18080320388726966.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-long-island-restaurant-dinner",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Special"
-},
-{
-"id": "18130308745847714",
-"biz": "Right Coast Taqueria",
-"ig": "rctaqueria",
-"town": "East Setauket",
-"category": "Restaurant",
-"member": false,
-"title": "Burritos $5 All Day",
-"when": "Thu, Oct. 31",
-"desc": "Get burritos for just $5 all day on Halloween at Right Coast Taqueria.",
-"expires": "2026-10-31",
-"posted": "2026-10-28T19:53:35+0000",
-"url": "https://www.instagram.com/p/DfDOmxTs3CQ/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18130308745847714.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-burritos-all-day",
-"profile": "https://www.threevillagelocal.com/right-coast-taqueria",
-"label": "Special"
-},
-{
-"id": "18136335244710503",
-"biz": "The Pie of Port Jeff",
-"ig": "thepie216",
-"town": "Port Jefferson",
-"category": "Pizza",
-"member": false,
-"title": "Halloween Spooky Sips & Pizza",
-"when": "Today, Oct. 31",
-"desc": "Stop in for autumn cocktails and pizza on Halloween at The Pie of Port Jeff.",
-"expires": "2026-10-31",
-"posted": "2026-10-31T14:22:24+0000",
-"url": "https://www.instagram.com/p/DfKXIGsFs0K/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18136335244710503.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-pie-of-port-jeff-halloween-spooky-sips-pizza",
-"profile": "https://www.threevillagelocal.com/the-pie-of-port-jeff",
-"label": "Special"
-},
-{
-"id": "18028508084923466",
-"biz": "The Secret Garden Tea Room",
-"ig": "secretgardentearoom",
-"town": "Port Jefferson",
-"category": "Tea Room",
-"member": false,
-"title": "Halloween Treat: 10% Off",
-"when": "Sat, Oct. 31",
-"desc": "Get 10% off your bill or gift shop purchase when you mention this post.",
-"expires": "2026-10-31",
-"posted": "2026-10-28T20:24:10+0000",
-"url": "https://www.instagram.com/p/DfDSJDzjXRn/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18028508084923466.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-secret-garden-tea-room-halloween-treat-off",
-"profile": "https://www.threevillagelocal.com/the-secret-garden-tea-room",
 "label": "Special"
 },
 {
@@ -2117,46 +1996,24 @@
 "page": "https://www.threevillagelocal.com/eat-drink/toast-coffee-kitchen-thanksgiving-sandwich",
 "profile": "https://www.threevillagelocal.com/toast-coffee-kitchen",
 "label": "Special"
-},
-{
-"id": "18097741877403785",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "1640 Chicken Salad Sandwich",
-"when": "Through end of October",
-"desc": "Crispy bacon, maple Dijon dressing, pecans, butternut squash, apples on a buttery croissant.",
-"expires": "2026-10-31",
-"posted": "2026-10-27T19:25:08+0000",
-"url": "https://www.instagram.com/p/DfAl9QLhDh6/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18097741877403785.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/toast-coffee-kitchen-chicken-salad-sandwich",
-"profile": "https://www.threevillagelocal.com/toast-coffee-kitchen",
-"label": "Special"
 }
 ],
 "eatOrder": [
-"Madiran The Wine Bar",
 "Tommy's Place",
 "Burgerology",
-"The Study by Toast",
 "Robinson's Tea Room",
 "Namkeen Hot Chicken",
 "Castaways Steak & Seafood",
-"Right Coast Taqueria",
-"The Pie of Port Jeff",
-"The Secret Garden Tea Room",
 "Schnitzels",
 "Kilwins Port Jefferson",
 "Culpers 1778",
 "The Country Corner",
+"Madiran The Wine Bar",
 "Ixchel Mexican Cuisine",
 "DJ's Clam Shack (Stony Brook)",
 "Ralph's Famous Italian Ices & Ice Cream",
 "Se-Port Deli & Caterers",
+"The Study by Toast",
 "Little Cheese Shop",
 "Luca Restaurant",
 "Three Village Inn / Mirabelle Restaurant & Tavern",
@@ -2170,18 +2027,21 @@
 "Old Fields Port Jefferson",
 "The Whiskey Barrel",
 "Tara Inn",
+"Right Coast Taqueria",
 "Hirosaki",
 "Eastern Pavilion",
 "Taj Crown of India",
 "Salsa Salsa",
 "Pasta Pasta",
 "Slurp Ramen",
+"The Pie of Port Jeff",
 "Danfords Hotel & Marina",
 "Toast Coffee + Kitchen",
 "Crazy Beans",
 "Level Up Kitchen",
 "Break Room Cafe",
 "Tiger Lily Cafe",
+"The Secret Garden Tea Room",
 "Premiere Pastry Shop",
 "Port Jefferson Ice Cream Cafe"
 ],
