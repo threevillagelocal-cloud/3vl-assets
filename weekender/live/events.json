@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-02T11:31:18.424625+00:00",
+"updated": "2026-11-02T13:03:55.829668+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Village of Port Jefferson": 202,
 "Emma S. Clark Library": 282,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 50,
@@ -949,6 +949,25 @@
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
 },
 {
+"id": "portjeff-1151",
+"title": "Caleb Brewster Escape 4K run",
+"start": "2026-11-07T00:00:00",
+"end": "2026-11-07T00:00:00",
+"allday": true,
+"venue": "Strong's Park",
+"addr": "Strong's Park - Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
+},
+{
 "id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
 "title": "Writing Workshop: Language, Silence, and the Stories We Carry",
 "start": "2026-11-07T10:30:00",
@@ -1100,6 +1119,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
+},
+{
+"id": "portjeff-1099",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-08T09:00:00",
+"end": "2026-11-08T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
@@ -1831,25 +1870,6 @@
 "label": "Special"
 },
 {
-"id": "18113599847613065",
-"biz": "Tommy's Place",
-"ig": "tommysplaceportjeff_",
-"town": "Port Jefferson",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Spicy Pizza Burger Limited-Time Special",
-"when": "Now",
-"desc": "Black Angus burger with marinara, mozzarella, pepperoni, jalapeños and shoestring fries.",
-"expires": "2026-11-08",
-"posted": "2026-10-25T21:02:49+0000",
-"url": "https://www.instagram.com/p/De7oLmEGs5g/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18113599847613065.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/tommys-place-spicy-pizza-burger-limited-time",
-"profile": "https://www.threevillagelocal.com/tommys-place",
-"label": "Special"
-},
-{
 "id": "18645486091036908",
 "biz": "Burgerology",
 "ig": "burgerologyusa",
@@ -2001,6 +2021,25 @@
 "label": "Special"
 },
 {
+"id": "18643741162021432",
+"biz": "Nantuckets",
+"ig": "nantucketspjefferson",
+"town": "Port Jefferson",
+"category": "Restaurant (Seafood)",
+"member": false,
+"title": "Restaurant Week: 3-Course Dinner",
+"when": "All winter",
+"desc": "Three-course dinner for $42 plus tax throughout the winter season at Nantuckets.",
+"expires": "2027-03-20",
+"posted": "2026-11-01T20:04:12+0000",
+"url": "https://www.instagram.com/p/DfNjCVQn8qm/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18643741162021432.jpg",
+"page": "https://www.threevillagelocal.com/nantuckets",
+"profile": "https://www.threevillagelocal.com/nantuckets",
+"label": "Special"
+},
+{
 "id": "18146771710581070",
 "biz": "Old Fields Port Jefferson",
 "ig": "oldfieldspj",
@@ -2103,6 +2142,7 @@
 "Namkeen Hot Chicken",
 "Castaways Steak & Seafood",
 "Three Village Inn / Mirabelle Restaurant & Tavern",
+"Nantuckets",
 "Old Fields Port Jefferson",
 "Pasta Pasta",
 "The Pie of Port Jeff",
@@ -2124,7 +2164,6 @@
 "Po' Boy Brewery",
 "Fifth Season Restaurant",
 "PJ Lobster House",
-"Nantuckets",
 "The Whiskey Barrel",
 "Tara Inn",
 "Right Coast Taqueria",

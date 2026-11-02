@@ -1,12 +1,4 @@
 {
-"17895179811609684": {
-"special": true,
-"title": "Fall Cocktails & Mocktails Launch",
-"when": "Now available",
-"desc": "Try 5 new signature fall cocktails plus 2 mocktails at Tommy's Place in Port Jefferson.",
-"expires": "2026-10-17",
-"_ts": "2026-10-03T00:24:01+0000"
-},
 "18340988335248081": {
 "special": false,
 "title": "Culpers 1778 Steaks & Cocktails",
@@ -14,30 +6,6 @@
 "desc": "Join Culpers 1778 for steaks, cocktails and dinner after exploring Setauket history.",
 "expires": "2026-10-03",
 "_ts": "2026-10-03T15:13:50+0000"
-},
-"18103635809006054": {
-"special": false,
-"title": "Hirosaki - Stony Brook Japanese Restaurant",
-"when": "Ongoing",
-"desc": "Fresh Japanese dishes, live hibachi, cocktails, and happy hour at Stony Brook's favorite destination.",
-"expires": "2026-10-17",
-"_ts": "2026-10-02T21:00:43+0000"
-},
-"17908140729484404": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-02T21:39:58+0000"
-},
-"17934646269401040": {
-"special": false,
-"title": "Robinson's Tea Room New Menu",
-"when": "Starting this week",
-"desc": "New menu and tea flavors launching this week at Robinson's Tea Room in Stony Brook.",
-"expires": "2026-10-03",
-"_ts": "2026-10-02T21:04:38+0000"
 },
 "18130813969781684": {
 "special": false,
@@ -54,14 +22,6 @@
 "desc": "National Powerboat Association fleet weekend with live music, food, and drinks. Brunch Saturday at 1 PM, party Sunday at 6 PM.",
 "expires": "2026-10-05",
 "_ts": "2026-10-03T13:01:35+0000"
-},
-"17959771527224516": {
-"special": true,
-"title": "Bananas Foster French Roast Brunch",
-"when": "Sat, Oct. 5 · 11 AM–4 PM",
-"desc": "Bananas Foster French Roast topped with coconut syrup and coconut flakes this Saturday brunch.",
-"expires": "2026-10-05",
-"_ts": "2026-10-03T12:01:38+0000"
 },
 "17921455176223830": {
 "special": true,
@@ -3202,5 +3162,29 @@
 "desc": "Enjoy creamy butternut squash, potato leek, and other fall soup favorites.",
 "expires": "2026-11-15",
 "_ts": "2026-11-01T18:25:22+0000"
+},
+"18357951649174057": {
+"special": false,
+"title": "Wine Feature",
+"when": "Not specified",
+"desc": "Green & Red Chiles Canyon Vineyards 2022 Napa Zinfandel now available at the wine bar.",
+"expires": "2026-11-02",
+"_ts": "2026-11-02T02:38:29+0000"
+},
+"18172137121461425": {
+"special": false,
+"title": "Long Island Restaurant Week at Culpers 1778",
+"when": "Dates not specified",
+"desc": "Prix fixe dining special during Long Island Restaurant Week, but no specific dates provided in post.",
+"expires": "2026-11-02",
+"_ts": "2026-11-01T20:24:59+0000"
+},
+"18643741162021432": {
+"special": true,
+"title": "Restaurant Week: 3-Course Dinner",
+"when": "All winter",
+"desc": "Three-course dinner for $42 plus tax throughout the winter season at Nantuckets.",
+"expires": "2027-03-20",
+"_ts": "2026-11-01T20:04:12+0000"
 }
 }

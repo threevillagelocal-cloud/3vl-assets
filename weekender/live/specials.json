@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T20:00:15.200770+00:00",
+ "updated": "2026-11-02T13:00:15.958744+00:00",
  "specials": [
   {
    "id": "18099881135407803",
@@ -50,6 +50,22 @@
    "inset": "ig/p18034496063897138.jpg"
   },
   {
+   "id": "18643741162021432",
+   "biz": "Nantuckets",
+   "ig": "nantucketspjefferson",
+   "town": "Port Jefferson",
+   "category": "Restaurant (Seafood)",
+   "member": false,
+   "title": "Restaurant Week: 3-Course Dinner",
+   "when": "All winter",
+   "desc": "Three-course dinner for $42 plus tax throughout the winter season at Nantuckets.",
+   "expires": "2027-03-20",
+   "posted": "2026-11-01T20:04:12+0000",
+   "url": "https://www.instagram.com/p/DfNjCVQn8qm/",
+   "img": "",
+   "inset": "ig/p18643741162021432.jpg"
+  },
+  {
    "id": "18353249986248006",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
@@ -80,22 +96,6 @@
    "url": "https://www.instagram.com/reel/DfLjNMBTBXL/",
    "img": "",
    "inset": "ig/p18146771710581070.jpg"
-  },
-  {
-   "id": "18153094972530027",
-   "biz": "Pasta Pasta",
-   "ig": "pastapasta_portjeff",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Restaurant Week at Pasta Pasta",
-   "when": "Nov 1-8",
-   "desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
-   "expires": "2026-11-08",
-   "posted": "2026-11-01T14:40:00+0000",
-   "url": "https://www.instagram.com/p/DfM9ynrypga/",
-   "img": "",
-   "inset": "ig/p18153094972530027.jpg"
   }
  ],
  "candidates": [
@@ -148,6 +148,22 @@
    "inset": "ig/p18034496063897138.jpg"
   },
   {
+   "id": "18643741162021432",
+   "biz": "Nantuckets",
+   "ig": "nantucketspjefferson",
+   "town": "Port Jefferson",
+   "category": "Restaurant (Seafood)",
+   "member": false,
+   "title": "Restaurant Week: 3-Course Dinner",
+   "when": "All winter",
+   "desc": "Three-course dinner for $42 plus tax throughout the winter season at Nantuckets.",
+   "expires": "2027-03-20",
+   "posted": "2026-11-01T20:04:12+0000",
+   "url": "https://www.instagram.com/p/DfNjCVQn8qm/",
+   "img": "",
+   "inset": "ig/p18643741162021432.jpg"
+  },
+  {
    "id": "18353249986248006",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/reel/DfLjNMBTBXL/",
    "img": "",
    "inset": "ig/p18146771710581070.jpg"
-  },
-  {
-   "id": "18153094972530027",
-   "biz": "Pasta Pasta",
-   "ig": "pastapasta_portjeff",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Restaurant Week at Pasta Pasta",
-   "when": "Nov 1-8",
-   "desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
-   "expires": "2026-11-08",
-   "posted": "2026-11-01T14:40:00+0000",
-   "url": "https://www.instagram.com/p/DfM9ynrypga/",
-   "img": "",
-   "inset": "ig/p18153094972530027.jpg"
   }
  ],
  "all": [
@@ -212,22 +212,6 @@
    "url": "https://www.instagram.com/p/DfIgbRKOWLF/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
    "inset": "ig/p18099881135407803.jpg"
-  },
-  {
-   "id": "18113599847613065",
-   "biz": "Tommy's Place",
-   "ig": "tommysplaceportjeff_",
-   "town": "Port Jefferson",
-   "category": "Bar/Restaurant",
-   "member": false,
-   "title": "Spicy Pizza Burger Limited-Time Special",
-   "when": "Now",
-   "desc": "Black Angus burger with marinara, mozzarella, pepperoni, jalapeños and shoestring fries.",
-   "expires": "2026-11-08",
-   "posted": "2026-10-25T21:02:49+0000",
-   "url": "https://www.instagram.com/p/De7oLmEGs5g/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-   "inset": "ig/p18113599847613065.jpg"
   },
   {
    "id": "18645486091036908",
@@ -276,6 +260,22 @@
    "url": "https://www.instagram.com/p/DfNM_0nDc5n/",
    "img": "",
    "inset": "ig/p18034496063897138.jpg"
+  },
+  {
+   "id": "18643741162021432",
+   "biz": "Nantuckets",
+   "ig": "nantucketspjefferson",
+   "town": "Port Jefferson",
+   "category": "Restaurant (Seafood)",
+   "member": false,
+   "title": "Restaurant Week: 3-Course Dinner",
+   "when": "All winter",
+   "desc": "Three-course dinner for $42 plus tax throughout the winter season at Nantuckets.",
+   "expires": "2027-03-20",
+   "posted": "2026-11-01T20:04:12+0000",
+   "url": "https://www.instagram.com/p/DfNjCVQn8qm/",
+   "img": "",
+   "inset": "ig/p18643741162021432.jpg"
   },
   {
    "id": "18353249986248006",

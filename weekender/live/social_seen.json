@@ -1,7 +1,7 @@
 {
-"last_run": "2026-11-01T13:01:45.266486+00:00",
-"cursor": 40,
-"accounts": 310,
+"last_run": "2026-11-02T13:01:18.293202+00:00",
+"cursor": 110,
+"accounts": 315,
 "posts": {
 "18481707613112188": {
 "ts": "2026-10-23T14:28:52+0000",
@@ -2791,6 +2791,113 @@
 "link": "https://www.instagram.com/p/DfKbjLlikkT/",
 "caption": "Happy Halloween from Castaways 🎃\n\nNo tricks here, just treats: dinner, drinks and Happy Hour 12–6. \n\nCostume optional. Appetite required.\n\nWe're open 12–10 tonight.",
 "img": "ig/p18106318559633808.jpg"
+},
+"18079808006475637": {
+"ts": "2026-10-29T00:23:06+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Holiday greeting and service advertisement for emergency water damage restoration available 24/7. No specific upcoming event announced."
+}
+},
+"18135216097739388": {
+"ts": "2026-11-02T12:05:05+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Post announces multiple Thanksgiving programs across different dates in November, not a single specific event."
+}
+},
+"17985140619105045": {
+"ts": "2026-11-01T22:00:13+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "The post announces multiple community service programs for middle and high schoolers throughout November, not a single specific event."
+}
+},
+"18143849005612910": {
+"ts": "2026-11-01T15:36:05+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "North Pole at The Knox School",
+"date": "2026-11-22",
+"start": "",
+"end": "",
+"place": "The Knox School",
+"at_business": false,
+"date_stated": true,
+"time_stated": false,
+"desc": "Santa visit with photo opportunities, crafts and family activities co-hosted with strollnissequogue."
+},
+"acct": {
+"name": "Stroll Head of the Harbor",
+"ig": "strollheadoftheharbor",
+"town": "",
+"cat": "3VL member",
+"food": false,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfNEI_0sKn0/",
+"caption": "Preferred Partners, this is an opportunity for you!\n\nHelp us make some Christmas magic for the kiddos in our community by supporting North Pole at The Knox School, an event co-hosted with strollnissequogue on November 22. \n\nSanta is coming and we cannot wait to see him, take photos with the families, and create crafts and memories! \n\nAlso, don’t forget our B2B Breakfast Networking event is November 4, 7:30am at brooklynsbestbakingco.  This is a great way to meet other partners and resident businesss owners, y’all are invited as well!",
+"img": "ig/p18143849005612910.jpg"
+},
+"17989305882087411": {
+"ts": "2026-11-01T13:09:07+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Enduring Heart: Native American Long Island Programs",
+"date": "",
+"start": "",
+"end": "",
+"place": "The Long Island Museum",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "A series of programs celebrating Native American Heritage Month including gallery tours, lectures, a virtual lecture, and a dance troupe performance from Nov. 4-21."
+},
+"acct": {
+"name": "The Long Island Museum",
+"ig": "limuseum",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "1200 NY-25A, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/the-long-island-museum",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/DfMzAUmAzhp/",
+"caption": "This #NativeAmericanHeritageMonth, join us as we honor and celebrate Long Island’s Native American communities, their rich history, and their enduring legacy of resilience.\n\nExplore our exhibition, “Enduring Heart: Native American Long Island,” to learn about the history and traditions of our region’s first people and discover the work of contemporary Native artists who continue to share and preserve their stories through art and traditional crafts. \n\nThen, join us for a series of engaging programs celebrating Native American Heritage Month:\n\nNov. 4: Mornings@LIM – Enduring Heart Gallery Tour ",
+"img": "ig/p17989305882087411.jpg"
 }
 }
 }
