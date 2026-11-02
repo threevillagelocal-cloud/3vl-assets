@@ -1,44 +1,4 @@
 {
-"17921455176223830": {
-"special": true,
-"title": "Elbling Wine by the Glass",
-"when": "Limited time",
-"desc": "Crisp German white from Mosel available by the glass for Oktoberfest season.",
-"expires": "2026-10-17",
-"_ts": "2026-10-03T19:07:54+0000"
-},
-"18180088777380597": {
-"special": false,
-"title": "Burgerology Catering",
-"when": "Ongoing",
-"desc": "Book catering for your party, game day or event. Call to place your order.",
-"expires": "2026-10-03",
-"_ts": "2026-10-03T17:10:54+0000"
-},
-"18031868912887756": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-03T19:57:02+0000"
-},
-"17922734175428282": {
-"special": false,
-"title": "The Whiskey Barrel",
-"when": "",
-"desc": "Generic promotion for whiskey selection with no specific offer, discount, or event date mentioned.",
-"expires": "",
-"_ts": "2026-10-03T19:14:16+0000"
-},
-"17994683973031034": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-03T17:19:39+0000"
-},
 "18135841063631032": {
 "special": false,
 "title": "Burgerology Returning to Patchogue",
@@ -3154,5 +3114,29 @@
 "desc": "Three-course dinner for $42 plus tax throughout the winter season at Nantuckets.",
 "expires": "2027-03-20",
 "_ts": "2026-11-01T20:04:12+0000"
+},
+"18094743548691073": {
+"special": true,
+"title": "Music Bingo Night",
+"when": "Tonight (Mon, Nov 2) · 7 PM",
+"desc": "Test your music knowledge and compete for cash prizes, gift cards, and Schnitzels merch.",
+"expires": "2026-11-02",
+"_ts": "2026-11-02T17:47:04+0000"
+},
+"18600168367067495": {
+"special": false,
+"title": "Holiday Drink Specials Coming Soon",
+"when": "Nov 6 onwards",
+"desc": "New seasonal drinks launching Nov 6 with flavors like Egg Nog and Gingerbread.",
+"expires": "2026-11-02",
+"_ts": "2026-11-02T16:13:23+0000"
+},
+"18110400590218453": {
+"special": false,
+"title": "Nantuckets Seafood Restaurant",
+"when": "N/A",
+"desc": "Generic food photo with no specific offer, event, or time-bound promotion announced.",
+"expires": "N/A",
+"_ts": "2026-11-02T16:33:14+0000"
 }
 }

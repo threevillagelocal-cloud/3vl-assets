@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T16:00:27.588012+00:00",
+ "updated": "2026-11-02T20:00:19.411420+00:00",
  "specials": [
   {
    "id": "18099881135407803",
@@ -16,6 +16,22 @@
    "url": "https://www.instagram.com/p/DfIgbRKOWLF/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
    "inset": "ig/p18099881135407803.jpg"
+  },
+  {
+   "id": "18094743548691073",
+   "biz": "Schnitzels",
+   "ig": "eatschnitzels",
+   "town": "Stony Brook",
+   "category": "Restaurant/Gastropub",
+   "member": false,
+   "title": "Music Bingo Night",
+   "when": "Tonight (Mon, Nov 2) · 7 PM",
+   "desc": "Test your music knowledge and compete for cash prizes, gift cards, and Schnitzels merch.",
+   "expires": "2026-11-02",
+   "posted": "2026-11-02T17:47:04+0000",
+   "url": "https://www.instagram.com/reel/DfP4FhchJrL/",
+   "img": "",
+   "inset": "ig/p18094743548691073.jpg"
   },
   {
    "id": "18645486091036908",
@@ -80,22 +96,6 @@
    "url": "https://www.instagram.com/reel/DfNHJuqK9fz/",
    "img": "",
    "inset": "ig/p18353249986248006.jpg"
-  },
-  {
-   "id": "18146771710581070",
-   "biz": "Old Fields Port Jefferson",
-   "ig": "oldfieldspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant/Steakhouse",
-   "member": false,
-   "title": "Give One, Get One Gift Cards",
-   "when": "Nov 1 - Dec 24, 2026",
-   "desc": "Buy a gift card in person, get one free. Valid through Dec 24. Cannot be used day of purchase or for parties.",
-   "expires": "2026-12-24",
-   "posted": "2026-11-01T01:27:26+0000",
-   "url": "https://www.instagram.com/reel/DfLjNMBTBXL/",
-   "img": "",
-   "inset": "ig/p18146771710581070.jpg"
   }
  ],
  "candidates": [
@@ -116,6 +116,22 @@
    "inset": "ig/p18099881135407803.jpg"
   },
   {
+   "id": "18094743548691073",
+   "biz": "Schnitzels",
+   "ig": "eatschnitzels",
+   "town": "Stony Brook",
+   "category": "Restaurant/Gastropub",
+   "member": false,
+   "title": "Music Bingo Night",
+   "when": "Tonight (Mon, Nov 2) · 7 PM",
+   "desc": "Test your music knowledge and compete for cash prizes, gift cards, and Schnitzels merch.",
+   "expires": "2026-11-02",
+   "posted": "2026-11-02T17:47:04+0000",
+   "url": "https://www.instagram.com/reel/DfP4FhchJrL/",
+   "img": "",
+   "inset": "ig/p18094743548691073.jpg"
+  },
+  {
    "id": "18645486091036908",
    "biz": "Burgerology",
    "ig": "burgerologyusa",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/reel/DfNHJuqK9fz/",
    "img": "",
    "inset": "ig/p18353249986248006.jpg"
-  },
-  {
-   "id": "18146771710581070",
-   "biz": "Old Fields Port Jefferson",
-   "ig": "oldfieldspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant/Steakhouse",
-   "member": false,
-   "title": "Give One, Get One Gift Cards",
-   "when": "Nov 1 - Dec 24, 2026",
-   "desc": "Buy a gift card in person, get one free. Valid through Dec 24. Cannot be used day of purchase or for parties.",
-   "expires": "2026-12-24",
-   "posted": "2026-11-01T01:27:26+0000",
-   "url": "https://www.instagram.com/reel/DfLjNMBTBXL/",
-   "img": "",
-   "inset": "ig/p18146771710581070.jpg"
   }
  ],
  "all": [
@@ -212,6 +212,22 @@
    "url": "https://www.instagram.com/p/DfIgbRKOWLF/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
    "inset": "ig/p18099881135407803.jpg"
+  },
+  {
+   "id": "18094743548691073",
+   "biz": "Schnitzels",
+   "ig": "eatschnitzels",
+   "town": "Stony Brook",
+   "category": "Restaurant/Gastropub",
+   "member": false,
+   "title": "Music Bingo Night",
+   "when": "Tonight (Mon, Nov 2) · 7 PM",
+   "desc": "Test your music knowledge and compete for cash prizes, gift cards, and Schnitzels merch.",
+   "expires": "2026-11-02",
+   "posted": "2026-11-02T17:47:04+0000",
+   "url": "https://www.instagram.com/reel/DfP4FhchJrL/",
+   "img": "",
+   "inset": "ig/p18094743548691073.jpg"
   },
   {
    "id": "18645486091036908",

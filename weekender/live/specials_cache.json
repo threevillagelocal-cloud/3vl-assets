@@ -27,7 +27,24 @@
 "hirosakiny": [],
 "lucastonybrook": [],
 "crazybeansrestaurant": [],
-"eatschnitzels": [],
+"eatschnitzels": [
+{
+"id": "18094743548691073",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Music Bingo Night",
+"when": "Tonight (Mon, Nov 2) · 7 PM",
+"desc": "Test your music knowledge and compete for cash prizes, gift cards, and Schnitzels merch.",
+"expires": "2026-11-02",
+"posted": "2026-11-02T17:47:04+0000",
+"url": "https://www.instagram.com/reel/DfP4FhchJrL/",
+"img": "",
+"inset": "ig/p18094743548691073.jpg"
+}
+],
 "robinsonstearoom": [
 {
 "id": "17939011704127395",
