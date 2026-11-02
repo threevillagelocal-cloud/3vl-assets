@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-02T20:02:30.141432+00:00",
+"updated": "2026-11-02T20:03:43.281079+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -1844,7 +1844,7 @@
 "url": "https://www.instagram.com/reel/DfP4FhchJrL/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18094743548691073.jpg",
-"page": "https://www.threevillagelocal.com/schnitzels",
+"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-music-bingo-night",
 "label": "Event",
 "profile": "https://www.threevillagelocal.com/schnitzels"
 }
@@ -1997,7 +1997,7 @@
 "url": "https://www.instagram.com/reel/DfP4FhchJrL/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18094743548691073.jpg",
-"page": "https://www.threevillagelocal.com/schnitzels",
+"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-music-bingo-night",
 "profile": "https://www.threevillagelocal.com/schnitzels",
 "label": "Event"
 },
