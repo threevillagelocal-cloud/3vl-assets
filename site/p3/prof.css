@@ -2,6 +2,8 @@
 html.pf-on .member_profile{font-family:'Radio Canada',system-ui,sans-serif}
 /* cover: rounded, tucked on top of the header card */
 html.pf-on img.pf-coverimg{border-radius:22px!important;box-shadow:0 12px 30px rgba(27,47,69,.12)!important;margin:0!important;display:block;width:100%;box-shadow:none}
+/* tall or square uploads: show a banner-height crop instead of the whole photo (12:5 banners are under the cap, unchanged) */
+html.pf-on img.pf-coverimg{height:auto!important;max-height:min(460px,56vw);object-fit:cover;object-position:50% 45%}
 html.pf-on .member_profile .member-profile-header{background:#fff;border:1px solid #e3e9f0;border-radius:22px;box-shadow:0 14px 34px rgba(27,47,69,.10);padding:22px 18px 18px;margin:0 0 18px!important}
 html.pf-on .content_w_sidebar>.col-md-9>.member-profile-header:first-child{border-radius:22px}
 /* logo */
