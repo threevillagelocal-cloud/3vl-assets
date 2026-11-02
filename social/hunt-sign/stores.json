@@ -76,5 +76,12 @@
   "town": "Port Jefferson",
   "logo": "logos/the-pie-of-port-jeff.webp",
   "qr": "https://www.threevillagelocal.com/hunt/the-pie-of-port-jeff"
+ },
+ {
+  "slug": "northshore-properties",
+  "name": "Northshore Properties Realty",
+  "town": "Setauket",
+  "logo": "logos/northshore-properties.png",
+  "qr": "https://www.threevillagelocal.com/hunt/northshore-properties"
  }
 ]
