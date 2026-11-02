@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-01T23:30:14.393047+00:00",
+"updated": "2026-11-02T00:00:57.983681+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -8,9 +8,9 @@
 "Village of Port Jefferson": 202,
 "Emma S. Clark Library": 283,
 "Stony Brook Village Center": 11,
-"Long Island Museum": 51,
+"Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
-"LI Music Hall of Fame": 7,
+"LI Music Hall of Fame": 6,
 "Staller Center for the Arts": 138,
 "Theatre Three": 71,
 "Gallery North": 16,
@@ -30,27 +30,6 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
-{
-"id": "reboli-69e681251151e469d480d5b3",
-"title": "WORKS ON PAPER Exhibition",
-"start": "2026-08-25T11:00:00",
-"end": "2026-11-01T17:00:00",
-"allday": false,
-"venue": "The Reboli Center for Art and History",
-"addr": "64 Main Street, Stony Brook, NY, 11790",
-"url": "https://rebolicenter.org/events/2026/8/25/works-on-paper-an-illustration-exhibition",
-"desc": "Various mediums on paper. Endless expression. Works on Paper brings together Joseph Reboli and a hand-picked group of New York based artists in a celebration of paper as both an artistic surface and a cultural innovation. Explore the history of paper, discover",
-"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1776714240564-9TLCP0GP6IJAFZLHAOTG/Art+Exhibit+Announcement+Poster+%286+x+4+in%29+%28Postcard+%28US%29%29.png",
-"src": "reboli",
-"tags": [
-"free",
-"history",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
 {
 "id": "reboli-695ad1cbc2e9370261a8c6ec",
 "title": "Thanksgiving Food Drive",
@@ -386,28 +365,6 @@
 "pu": ""
 },
 {
-"id": "cur-spooky",
-"title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-11-01T00:00",
-"end": "2026-10-31T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Final days, through Oct. 31",
-"venue": "Olde Towne Gardens",
-"addr": "360 Old Town Rd, East Setauket",
-"url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at the East Setauket garden center: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/spooky-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
 "id": "pjchamber-15119",
 "title": "Long Island Restaurant Week",
 "start": "2026-11-01T00:00:00",
@@ -425,44 +382,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/long-island-restaurant-week"
-},
-{
-"id": "pjchamber-15082",
-"title": "Blood Drive",
-"start": "2026-11-01T08:00:00",
-"end": "2026-11-01T15:00:00",
-"allday": false,
-"venue": "Greek Orthodox Church",
-"addr": "430 Sheep Pasture Rd, Port Jefferson, NY, 11777",
-"url": "https://portjeffchamber.com/events-calendar/blood-drive-5/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/blood-drive-787"
-},
-{
-"id": "pjchamber-14900",
-"title": "Return To You: A Limitless Retreat",
-"start": "2026-11-01T08:45:00",
-"end": "2026-11-01T15:30:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/return-to-you-a-limitless-retreat/",
-"desc": "Your day will move intentionally between learning, nourishment, reflection, and restorative experiences—with plenty of space to simply enjoy being there. Arrival + Continental Breakfast Settle in with coffee, tea, fresh fruit, pastries and a light continental ",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "reboli-6adf9dab4c6329721a5cedc5",
@@ -547,25 +466,26 @@
 "rank": 6
 },
 {
-"id": "limehof-202611011500-emmett-hughes",
-"title": "Emmett Hughes",
-"start": "2026-11-01T15:00:00",
-"end": "2026-11-01T17:00:00",
-"allday": false,
-"venue": "The Long Island Music and Entertainment Hall of Fame",
-"addr": "97 Main St, Stony Brook, NY 11790",
-"url": "https://www.limusichalloffame.org/events/",
-"desc": "Free with Admission. Singer-songwriter Emmett Hughes (Huntington, New York) writes and performs original songs featuring an eclectic mix of styles; rock, reggae, pop and singer songwriter, together with heartfelt lyrics. In addition to being a musical mad scie",
-"img": "https://www.limusichalloffame.org/wp-content/uploads/2026/10/Emmett-Hughes.jpg",
-"src": "limehof",
+"id": "cur-spooky",
+"title": "Spooky Village at Olde Towne Gardens",
+"start": "2026-11-02T00:00",
+"end": "2026-10-31T23:59",
+"allday": true,
+"ongoing": true,
+"whenText": "Final days, through Oct. 31",
+"venue": "Olde Towne Gardens",
+"addr": "360 Old Town Rd, East Setauket",
+"url": "https://theoldetownegardens.com/spooky-village/",
+"desc": "A family Halloween village at the East Setauket garden center: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/spooky-720.webp",
+"src": "3vl",
 "tags": [
-"free",
-"music",
-"stage"
+"kids",
+"outdoor"
 ],
 "status": "",
-"fb": 0,
-"page": ""
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
 },
 {
 "id": "emmaclark-take-make-sewn-heating-pads-people-need-63990",
@@ -1614,6 +1534,222 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/starry-nights-featuring-colin-carr-arnaud-sussmann"
+},
+{
+"id": "pjchamber-15086",
+"title": "Blood Drive",
+"start": "2026-11-12T07:00:00",
+"end": "2026-11-12T19:00:00",
+"allday": false,
+"venue": "St. Charles Hospital",
+"addr": "200 Belle Terre Rd, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/blood-drive-6/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/blood-drive-787"
+},
+{
+"id": "emmaclark-chair-yoga-61291",
+"title": "Chair Yoga",
+"start": "2026-11-12T11:30:00",
+"end": "2026-11-12T12:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/chair-yoga-61291",
+"desc": "Experience the many benefits of chair yoga in stabilizing and mobilizing the body, fortifying the respiratory system, and developing a calmer, clearer, more meditative, and focused mind. All you need is a chair that does not have arms (which may get in the way",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/close-up-women-doing-relaxation-exercises1.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/chair-yoga-611"
+},
+{
+"id": "emmaclark-chair-yoga-zoom-61294",
+"title": "Chair Yoga [ZOOM]",
+"start": "2026-11-12T11:30:00",
+"end": "2026-11-12T12:30:00",
+"allday": false,
+"venue": "Online (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/chair-yoga-zoom-61294",
+"desc": "Experience the many benefits of chair yoga in stabilizing and mobilizing the body, fortifying the respiratory system, and developing a calmer, clearer, more meditative, and focused mind. All you need is a chair that does not have arms (which may get in the way",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/full-shot-woman-training-with-laptop-indoors1.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/chair-yoga-zoom-612"
+},
+{
+"id": "sbv-2426",
+"title": "Lookbook Luncheon Fashion Show at Mirabelle Restaurant",
+"start": "2026-11-12T12:00:00",
+"end": "2026-11-12T14:00:00",
+"allday": false,
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/lookbook-luncheon-fashion-show-at-mirabelle-restaurant/",
+"desc": "Experience an afternoon of style, flavor, and fall inspiration at Stony Brook Village’s fifth annual Lookbook Luncheon Fashion Shows , returning this November. Each event offers guests a curated dining experience paired with an exclusive showcase of the latest",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/10/Fashion-Show-scaled.png",
+"src": "sbv",
+"tags": [
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/lookbook-luncheon-fashion-show-at-mirabelle-restaurant"
+},
+{
+"id": "emmaclark-social-work-intern-appointments-58752",
+"title": "Social Work Intern Appointments",
+"start": "2026-11-12T14:00:00",
+"end": "2026-11-12T19:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Small Study Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58752",
+"desc": "Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical Social Workers. These individuals will be on-site ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments-613"
+},
+{
+"id": "emmaclark-bark-readers-5th-grade-61962",
+"title": "BARK (For Readers Up to 5th Grade)",
+"start": "2026-11-12T16:30:00",
+"end": "2026-11-12T17:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/bark-readers-5th-grade-61962",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-01/BARK2.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/bark-for-readers-up-to-5th-grade-614"
+},
+{
+"id": "pjchamber-14970",
+"title": "Somewhere in Time 1912",
+"start": "2026-11-12T18:00:00",
+"end": "2026-11-12T22:00:00",
+"allday": false,
+"venue": "Victorian on Main",
+"addr": "709 Main Street, Port Jefferson, New York",
+"url": "https://portjeffchamber.com/events-calendar/somewhere-in-time-1912/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/somewhere-in-time-1912"
+},
+{
+"id": "emmaclark-tech-help-teens-42855",
+"title": "Tech Help (from teens)",
+"start": "2026-11-12T18:00:00",
+"end": "2026-11-12T19:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Technology Center",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tech-help-teens-42855",
+"desc": "Teen Tech Tutors will assist patrons with basic questions about their mobile devices.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tech-help-from-teens-452"
+},
+{
+"id": "emmaclark-teddy-bears-t-shirts-63997",
+"title": "Teddy Bears with T-Shirts",
+"start": "2026-11-12T18:00:00",
+"end": "2026-11-12T19:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/teddy-bears-t-shirts-63997",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/teddy-bears-with-t-shirts"
+},
+{
+"id": "gallerynorth-71323",
+"title": "Fiber Arts Club",
+"start": "2026-11-12T18:00:00",
+"end": "2026-11-12T20:00:00",
+"allday": false,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org/products/09-10-fiber-arts-club-copy",
+"desc": "Join us in the Studio once a month for a makers meet up! Bring any projects you are working on; knitting, sewing, embroidery, weaving, felting or crocheting! Anything you'd like is welcome. Members will share ideas, work on their projects and enjoy some light ",
+"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71323/v1792692434221/image_large.webp",
+"src": "gallerynorth",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/fiber-arts-club"
+},
+{
+"id": "emmaclark-chaos-control-simplify-password-manager-38548",
+"title": "From Chaos to Control: Simplify with a Password Manager [ZOOM]",
+"start": "2026-11-12T18:30:00",
+"end": "2026-11-12T20:00:00",
+"allday": false,
+"venue": "Online (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/chaos-control-simplify-password-manager-38548",
+"desc": "Learn how to protect your online accounts with ease by using a password manager. They generate strong, unique passwords for each account and automatically fill them in when you need to log in. With encryption and security features, password managers ensure you",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-10/11667622_20945479.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/from-chaos-to-control-simplify-with-a-password-manager-zoom"
+},
+{
+"id": "emmaclark-creative-writing-workshop-63998",
+"title": "Mystery Writing Workshop",
+"start": "2026-11-12T19:30:00",
+"end": "2026-11-12T20:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Board Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/creative-writing-workshop-63998",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": ""
 }
 ],
 "closings": [],
