@@ -1,7 +1,7 @@
 {
- "when": "2026-10-29T13:26:22.745Z",
+ "when": "2026-11-02T16:18:53.578Z",
  "checked": 123,
- "failed": 14,
+ "failed": 2,
  "results": [
   {
    "url": "https://www.threevillagelocal.com/",
@@ -10,15 +10,15 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 3052,
+   "ms": 3949,
    "data": {
     "title": "Three Village Local: Things To Do, Food & Local Businesses",
-    "textLen": 8056,
+    "textLen": 7323,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "p3v-js p3-done",
     "eat": 6,
-    "picks": 22,
+    "picks": 21,
     "top": true,
     "secs": 9
    }
@@ -30,15 +30,15 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1443,
+   "ms": 1544,
    "data": {
     "title": "Three Village Local: Things To Do, Food & Local Businesses",
-    "textLen": 4373,
+    "textLen": 4379,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "p3v-js p3-done",
     "eat": 6,
-    "picks": 22,
+    "picks": 21,
     "top": true,
     "secs": 9
    }
@@ -50,7 +50,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1397,
+   "ms": 1479,
    "data": {
     "title": "Find a Local Business in Setauket, Stony Brook & Port Jefferson | Three Village Local",
     "textLen": 2579,
@@ -64,37 +64,43 @@
    "url": "https://www.threevillagelocal.com/events",
    "kind": "events",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 404 https://www.threevillagelocal.com/uploads/news-pictures/pphoto-812-tnkpll94a5f341.jpg?fit=2560%2c1440&ssl=1"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 1636,
+   "ms": 1774,
    "data": {
     "title": "Three Village Events | Things to Do in Setauket, Stony Brook & Port Jefferson",
-    "textLen": 6667,
+    "textLen": 7185,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-wc tvl-sh p3v-js tvc-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "tvl-wc tvl-sh p3v-js tvl-sh-on tvc-on p3-done tvl-sf-on",
     "cards": 36,
     "tvc": true
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/events-calendar",
    "kind": "events",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "failed files: 404 https://www.threevillagelocal.com/uploads/news-pictures/pphoto-812-tnkpll94a5f341.jpg?fit=2560%2c1440&ssl=1"
+   ],
    "notes": [],
    "status": 200,
-   "ms": 2093,
+   "ms": 2637,
    "data": {
     "title": "Three Village Events Calendar | Setauket, Stony Brook & Port Jefferson",
-    "textLen": 4564,
+    "textLen": 8155,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-wc tvl-sh tvc-on p3-done p3v-js tvl-sh-on tvl-sf-on",
-    "cards": 35,
+    "htmlCls": "tvl-wc tvl-sh p3v-js p3-done tvc-on tvl-sh-on tvl-sf-on",
+    "cards": 112,
     "tvc": true
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/blog",
@@ -103,10 +109,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1256,
+   "ms": 1816,
    "data": {
     "title": "Three Village Local Blog | News & Stories from Setauket, Stony Brook & Port Jefferson",
-    "textLen": 3022,
+    "textLen": 3076,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-w3 tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -120,7 +126,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1146,
+   "ms": 982,
    "data": {
     "title": "Promote Your Business Locally | Three Village Local",
     "textLen": 4760,
@@ -136,13 +142,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1214,
+   "ms": 1164,
    "data": {
     "title": "Three Village Weekly: Free Email with the Best of Three Village | Three Village Local",
     "textLen": 1811,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -152,13 +158,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1177,
+   "ms": 1157,
    "data": {
     "title": "New Listings in Three Village This Week | Three Village Local",
-    "textLen": 3226,
+    "textLen": 3688,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -168,13 +174,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1478,
+   "ms": 1124,
    "data": {
     "title": "Get the Three Village Local App - Free on iPhone and Android",
     "textLen": 1857,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on"
    }
   },
   {
@@ -184,13 +190,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1188,
+   "ms": 1213,
    "data": {
     "title": "Promote Your Business or Event | Three Village Local",
     "textLen": 2954,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done tvl-sf-on"
    }
   },
   {
@@ -200,7 +206,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1222,
+   "ms": 1015,
    "data": {
     "title": "3VL Smart Publisher | Three Village Local",
     "textLen": 2059,
@@ -216,13 +222,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1202,
+   "ms": 1039,
    "data": {
     "title": "Three Village Farmers & Artisans Market: Dates, Hours and Location | Three Village Local",
     "textLen": 2469,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on"
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done tvl-sf-on"
    }
   },
   {
@@ -232,13 +238,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1180,
+   "ms": 1007,
    "data": {
     "title": "Login Now - Three Village Local",
     "textLen": 1270,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-login tvl-sf-on"
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-login tvl-sf-on"
    }
   },
   {
@@ -248,13 +254,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 960,
+   "ms": 1271,
    "data": {
     "title": "Contact Us - Three Village Local",
     "textLen": 1376,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done tvl-sf-on"
    }
   },
   {
@@ -264,7 +270,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 2352,
+   "ms": 3198,
    "data": {
     "title": "Businesses - Find & Compare Local Business Directory Professionals",
     "textLen": 2479,
@@ -286,7 +292,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 2362,
+   "ms": 2605,
    "data": {
     "title": "Businesses - Find & Compare Local Business Directory Professionals",
     "textLen": 2383,
@@ -308,17 +314,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1661,
+   "ms": 1443,
    "data": {
     "title": "Sports & Fitness in the Three Village Area | Three Village Local",
-    "textLen": 6721,
+    "textLen": 7213,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 26,
-    "cur": 26,
-    "tot": 26,
+    "reg": 29,
+    "cur": 29,
+    "tot": 29,
     "p3": true,
     "none": false
    }
@@ -330,10 +336,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1323,
+   "ms": 1441,
    "data": {
     "title": "Arts & Entertainment in the Three Village Area | Three Village Local",
-    "textLen": 4325,
+    "textLen": 4313,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -352,32 +358,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1326,
+   "ms": 1436,
    "data": {
     "title": "Health & Wellness in the Three Village Area | Three Village Local",
-    "textLen": 5152,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 18,
-    "cur": 18,
-    "tot": 18,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/education",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1321,
-   "data": {
-    "title": "Education in the Three Village Area | Three Village Local",
-    "textLen": 5917,
+    "textLen": 5591,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -390,23 +374,45 @@
    }
   },
   {
+   "url": "https://www.threevillagelocal.com/education",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1428,
+   "data": {
+    "title": "Education in the Three Village Area | Three Village Local",
+    "textLen": 6100,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 22,
+    "cur": 22,
+    "tot": 22,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
    "url": "https://www.threevillagelocal.com/medical-services",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1354,
+   "ms": 1439,
    "data": {
     "title": "Doctors & Medical Services in the Three Village Area | Three Village Local",
-    "textLen": 9964,
+    "textLen": 10200,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 2,
-    "reg": 37,
-    "cur": 39,
-    "tot": 39,
+    "reg": 38,
+    "cur": 40,
+    "tot": 40,
     "p3": true,
     "none": false
    }
@@ -418,7 +424,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1322,
+   "ms": 1474,
    "data": {
     "title": "Hotels & Travel in the Three Village Area | Three Village Local",
     "textLen": 3107,
@@ -440,13 +446,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1279,
+   "ms": 1381,
    "data": {
     "title": "Nightlife in the Three Village Area | Three Village Local",
-    "textLen": 2379,
+    "textLen": 2371,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
     "vip": 0,
     "reg": 4,
     "cur": 4,
@@ -462,10 +468,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1319,
+   "ms": 1435,
    "data": {
     "title": "Pet Services in the Three Village Area | Three Village Local",
-    "textLen": 4411,
+    "textLen": 4403,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -484,17 +490,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1385,
+   "ms": 1464,
    "data": {
     "title": "Professional Services in the Three Village Area | Three Village Local",
-    "textLen": 3253,
+    "textLen": 3392,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 8,
-    "cur": 8,
-    "tot": 8,
+    "reg": 9,
+    "cur": 9,
+    "tot": 9,
     "p3": true,
     "none": false
    }
@@ -506,7 +512,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1311,
+   "ms": 1553,
    "data": {
     "title": "Automotive in the Three Village Area | Three Village Local",
     "textLen": 3751,
@@ -528,7 +534,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1363,
+   "ms": 1407,
    "data": {
     "title": "Shopping & Retail in the Three Village Area | Three Village Local",
     "textLen": 10342,
@@ -550,10 +556,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1322,
+   "ms": 1445,
    "data": {
     "title": "Restaurants in the Three Village Area | Three Village Local",
-    "textLen": 19862,
+    "textLen": 19846,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -572,17 +578,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1297,
+   "ms": 1438,
    "data": {
     "title": "Events & Entertainment | Three Village Local",
-    "textLen": 4287,
+    "textLen": 4434,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 13,
-    "cur": 13,
-    "tot": 13,
+    "reg": 14,
+    "cur": 14,
+    "tot": 14,
     "p3": true,
     "none": false
    }
@@ -594,7 +600,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1333,
+   "ms": 1482,
    "data": {
     "title": "Real Estate Services in the Three Village Area | Three Village Local",
     "textLen": 12282,
@@ -616,7 +622,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1335,
+   "ms": 1404,
    "data": {
     "title": "Attorneys in the Three Village Area | Three Village Local",
     "textLen": 3940,
@@ -638,7 +644,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1302,
+   "ms": 1271,
    "data": {
     "title": "Commercial Services in the Three Village Area | Three Village Local",
     "textLen": 2549,
@@ -660,17 +666,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1278,
+   "ms": 1356,
    "data": {
     "title": "Beauty & Personal Care in the Three Village Area | Three Village Local",
-    "textLen": 5425,
+    "textLen": 6231,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 20,
-    "cur": 20,
-    "tot": 20,
+    "reg": 25,
+    "cur": 25,
+    "tot": 25,
     "p3": true,
     "none": false
    }
@@ -682,13 +688,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1205,
+   "ms": 1271,
    "data": {
     "title": "Community & Civic in the Three Village Area | Three Village Local",
     "textLen": 2025,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 2,
     "cur": 3,
@@ -704,17 +710,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1229,
+   "ms": 1305,
    "data": {
     "title": "Marine Services in the Three Village Area | Three Village Local",
-    "textLen": 2769,
+    "textLen": 2934,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 5,
-    "cur": 5,
-    "tot": 5,
+    "reg": 6,
+    "cur": 6,
+    "tot": 6,
     "p3": true,
     "none": false
    }
@@ -726,10 +732,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1263,
+   "ms": 1309,
    "data": {
     "title": "Technology & IT in the Three Village Area | Three Village Local",
-    "textLen": 2672,
+    "textLen": 2680,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -748,13 +754,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1229,
+   "ms": 1244,
    "data": {
     "title": "Marketing & Advertising | Three Village Local",
-    "textLen": 2383,
+    "textLen": 2391,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
     "vip": 0,
     "reg": 4,
     "cur": 4,
@@ -770,7 +776,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1163,
+   "ms": 1120,
    "data": {
     "title": "Payroll & HR Services | Three Village Local",
     "textLen": 1957,
@@ -792,7 +798,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1196,
+   "ms": 1817,
    "data": {
     "title": "Farm Stands & Agriculture | Three Village Local",
     "textLen": 2139,
@@ -814,17 +820,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1289,
+   "ms": 1349,
    "data": {
     "title": "Flood, Fire & Mold Restoration in the Three Village Area | Three Village Local",
-    "textLen": 2325,
+    "textLen": 2511,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
     "vip": 1,
-    "reg": 3,
-    "cur": 4,
-    "tot": 4,
+    "reg": 4,
+    "cur": 5,
+    "tot": 5,
     "p3": true,
     "none": false
    }
@@ -836,17 +842,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1310,
+   "ms": 1384,
    "data": {
     "title": "Landscaping & Property Maintenance in the Three Village Area | Three Village Local",
-    "textLen": 5166,
+    "textLen": 5731,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 3,
-    "reg": 13,
-    "cur": 16,
-    "tot": 16,
+    "reg": 16,
+    "cur": 19,
+    "tot": 19,
     "p3": true,
     "none": false
    }
@@ -858,17 +864,17 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1366,
+   "ms": 1387,
    "data": {
     "title": "Contractors & Remodeling in the Three Village Area | Three Village Local",
-    "textLen": 6201,
+    "textLen": 6653,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
-    "reg": 19,
-    "cur": 20,
-    "tot": 20,
+    "reg": 22,
+    "cur": 23,
+    "tot": 23,
     "p3": true,
     "none": false
    }
@@ -880,7 +886,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1333,
+   "ms": 1380,
    "data": {
     "title": "Plumbers, Electricians & Home Repairs in the Three Village Area | Three Village Local",
     "textLen": 6560,
@@ -902,7 +908,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1249,
+   "ms": 1282,
    "data": {
     "title": "House Cleaning & Organizing in the Three Village Area | Three Village Local",
     "textLen": 2679,
@@ -924,13 +930,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1203,
+   "ms": 1378,
    "data": {
     "title": "Financial Advisors & Wealth Management in the Three Village Area | Three Village Local",
     "textLen": 2988,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
     "vip": 1,
     "reg": 6,
     "cur": 7,
@@ -946,13 +952,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1248,
+   "ms": 1190,
    "data": {
     "title": "Mortgages & Home Loans in the Three Village Area | Three Village Local",
     "textLen": 1862,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
     "reg": 0,
     "cur": 1,
@@ -968,7 +974,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1249,
+   "ms": 1172,
    "data": {
     "title": "Accountants & Tax Preparers in the Three Village Area | Three Village Local",
     "textLen": 2077,
@@ -990,13 +996,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1215,
+   "ms": 1346,
    "data": {
     "title": "Insurance Agents in the Three Village Area | Three Village Local",
     "textLen": 2607,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
     "vip": 0,
     "reg": 5,
     "cur": 5,
@@ -1012,10 +1018,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1166,
+   "ms": 1097,
    "data": {
     "title": "Business Lendings - Find Local Business Directory News, Reviews, and Information",
-    "textLen": 1646,
+    "textLen": 1638,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -1034,54 +1040,32 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1321,
+   "ms": 1435,
    "data": {
     "title": "Sports & Fitness in the Three Village Area | Three Village Local",
-    "textLen": 6428,
+    "textLen": 6927,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 26,
-    "cur": 26,
-    "tot": 26,
+    "reg": 29,
+    "cur": 29,
+    "tot": 29,
     "p3": true,
     "none": false
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/florists",
+   "url": "https://www.threevillagelocal.com/farm-stands-local-produce",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1332,
+   "ms": 1203,
    "data": {
-    "title": "Florists in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1942,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/wine",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1215,
-   "data": {
-    "title": "Wine in the Three Village Area | Three Village Local",
-    "textLen": 2111,
+    "title": "Farm Stands & Local Produce in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1737,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -1094,104 +1078,60 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/bicycles",
+   "url": "https://www.threevillagelocal.com/specialty-farm-products",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1131,
+   "ms": 1210,
    "data": {
-    "title": "Bicycles in the Three Village Area | Three Village Local",
-    "textLen": 1955,
+    "title": "Specialty Farm Products in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1659,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
+    "reg": 2,
+    "cur": 2,
+    "tot": 2,
     "p3": true,
     "none": false
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/books",
+   "url": "https://www.threevillagelocal.com/damage-restoration",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1147,
+   "ms": 1299,
    "data": {
-    "title": "Books in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1689,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/cameras-telescopes",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1182,
-   "data": {
-    "title": "Cameras & Telescopes in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2083,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/cannabis-dispensary",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1185,
-   "data": {
-    "title": "Cannabis Dispensary in the Three Village Area | Three Village Local",
-    "textLen": 2625,
+    "title": "Damage Restoration | Three Village Local",
+    "textLen": 2823,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
     "vip": 1,
-    "reg": 0,
-    "cur": 1,
-    "tot": 1,
+    "reg": 5,
+    "cur": 6,
+    "tot": 6,
     "p3": true,
     "none": false
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/cards",
+   "url": "https://www.threevillagelocal.com/mold-remediation",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1162,
+   "ms": 3722,
    "data": {
-    "title": "Cards in the Three Village Area | Three Village Local",
-    "textLen": 2285,
+    "title": "Mold Remediation | Three Village Local",
+    "textLen": 1923,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -1204,593 +1144,21 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/chocolatiers-chocolate-shop",
+   "url": "https://www.threevillagelocal.com/landscaping",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1138,
+   "ms": 4331,
    "data": {
-    "title": "Chocolatiers - Chocolate Shop | Three Village Local",
-    "textLen": 2354,
+    "title": "Landscaping in the Three Village Area | Three Village Local",
+    "textLen": 3927,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/cigars",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1168,
-   "data": {
-    "title": "Cigars in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2011,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/comics",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1144,
-   "data": {
-    "title": "Comics in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1984,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/convenience-stores",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1201,
-   "data": {
-    "title": "Convenience Stores | Three Village Local",
-    "textLen": 2293,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/crystals",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1169,
-   "data": {
-    "title": "Crystals in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1982,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/electronics",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1142,
-   "data": {
-    "title": "Electronics in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2081,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/fishing-tackle",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1137,
-   "data": {
-    "title": "Fishing & Tackle in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2072,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/furniture-stores",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1150,
-   "data": {
-    "title": "Furniture Stores in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2058,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/liquor",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1152,
-   "data": {
-    "title": "Liquor in the Three Village Area | Three Village Local",
-    "textLen": 2330,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/liquor-stores",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1311,
-   "data": {
-    "title": "Liquor in the Three Village Area | Three Village Local",
-    "textLen": 2338,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/musical-instruments",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1197,
-   "data": {
-    "title": "Musical Instruments in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2050,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/nurseries-gardening",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1180,
-   "data": {
-    "title": "Nurseries & Gardening | Three Village Local",
-    "textLen": 2355,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/picture-framing",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1147,
-   "data": {
-    "title": "Picture Framing | Three Village Local",
-    "textLen": 2291,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/plants",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1165,
-   "data": {
-    "title": "Plants in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2002,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/specialty-food",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1457,
-   "data": {
-    "title": "Shopping & Retail in the Three Village Area | Three Village Local",
-    "textLen": 10334,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 46,
-    "cur": 47,
-    "tot": 47,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/specialty-foods",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1209,
-   "data": {
-    "title": "Specialty Foods in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2030,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/dinner",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1298,
-   "data": {
-    "title": "Dinner in the Three Village Area | Three Village Local",
-    "textLen": 8111,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 33,
-    "cur": 33,
-    "tot": 33,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/lunch",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1328,
-   "data": {
-    "title": "Lunch in the Three Village Area | Three Village Local",
-    "textLen": 7652,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 31,
-    "cur": 31,
-    "tot": 31,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/american",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1254,
-   "data": {
-    "title": "American in the Three Village Area | Three Village Local",
-    "textLen": 5483,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 19,
-    "cur": 19,
-    "tot": 19,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/breakfast",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1342,
-   "data": {
-    "title": "Breakfast in the Three Village Area | Three Village Local",
-    "textLen": 4454,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 14,
-    "cur": 14,
-    "tot": 14,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/take-out-restaurants",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1340,
-   "data": {
-    "title": "Take Out Restaurants | Three Village Local",
-    "textLen": 3726,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 12,
-    "cur": 12,
-    "tot": 12,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/burgers",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1359,
-   "data": {
-    "title": "Burgers in the Three Village Area | Three Village Local",
-    "textLen": 3632,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 11,
-    "cur": 11,
-    "tot": 11,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/healthy-eating",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1344,
-   "data": {
-    "title": "Healthy Eating | Three Village Local",
-    "textLen": 3918,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 11,
-    "cur": 11,
-    "tot": 11,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/salads",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1347,
-   "data": {
-    "title": "Salads in the Three Village Area | Three Village Local",
-    "textLen": 3990,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 11,
-    "cur": 11,
-    "tot": 11,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/wings",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1350,
-   "data": {
-    "title": "Wings in the Three Village Area | Three Village Local",
-    "textLen": 3868,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 11,
-    "cur": 11,
-    "tot": 11,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/cafe",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1330,
-   "data": {
-    "title": "Cafe in the Three Village Area | Three Village Local",
-    "textLen": 3667,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 10,
-    "cur": 10,
-    "tot": 10,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/italian",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1326,
-   "data": {
-    "title": "Italian in the Three Village Area | Three Village Local",
-    "textLen": 3575,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 9,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 3,
+    "reg": 6,
     "cur": 9,
     "tot": 9,
     "p3": true,
@@ -1798,51 +1166,205 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/modern",
+   "url": "https://www.threevillagelocal.com/tree-services",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1446,
+   "ms": 1402,
    "data": {
-    "title": "Modern in the Three Village Area | Three Village Local",
-    "textLen": 3232,
+    "title": "Tree Services | Three Village Local",
+    "textLen": 3068,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 8,
-    "cur": 8,
-    "tot": 8,
+    "vip": 1,
+    "reg": 5,
+    "cur": 6,
+    "tot": 6,
     "p3": true,
     "none": false
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/wraps",
+   "url": "https://www.threevillagelocal.com/pest-control",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1297,
+   "ms": 1236,
    "data": {
-    "title": "Wraps in the Three Village Area | Three Village Local",
-    "textLen": 3340,
+    "title": "Pest Control in the Three Village Area | Three Village Local",
+    "textLen": 2953,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 8,
-    "cur": 8,
-    "tot": 8,
+    "vip": 1,
+    "reg": 4,
+    "cur": 5,
+    "tot": 5,
     "p3": true,
     "none": false
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/bakery",
+   "url": "https://www.threevillagelocal.com/pool-cleaners",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1170,
+   "data": {
+    "title": "Pool Cleaners | Three Village Local",
+    "textLen": 2072,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 2,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/snow-removal",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1227,
+   "data": {
+    "title": "Snow Removal in the Three Village Area | Three Village Local",
+    "textLen": 2312,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 1,
+    "reg": 1,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/home-watching",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1142,
+   "data": {
+    "title": "Home Watching in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1708,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/pressure-washing",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1175,
+   "data": {
+    "title": "Pressure Washing in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1660,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/general-contractor",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1227,
+   "data": {
+    "title": "General Contractor in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 3698,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 11,
+    "cur": 12,
+    "tot": 12,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/flooring",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1170,
+   "data": {
+    "title": "Flooring in the Three Village Area | Three Village Local",
+    "textLen": 2614,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 4,
+    "cur": 4,
+    "tot": 4,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/interior-design-renovation",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1209,
+   "data": {
+    "title": "Interior Design And Renovation in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 2208,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 4,
+    "cur": 4,
+    "tot": 4,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/roofing",
    "kind": "category",
    "phone": false,
    "problems": [],
@@ -1850,8 +1372,140 @@
    "status": 200,
    "ms": 1260,
    "data": {
-    "title": "Bakery in the Three Village Area | Three Village Local",
-    "textLen": 3728,
+    "title": "Roofing in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 2172,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 0,
+    "reg": 4,
+    "cur": 4,
+    "tot": 4,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/masonry",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1156,
+   "data": {
+    "title": "Masonry in the Three Village Area | Three Village Local",
+    "textLen": 2149,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 3,
+    "cur": 3,
+    "tot": 3,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/carpet-installation",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1136,
+   "data": {
+    "title": "Carpet Installation | Three Village Local",
+    "textLen": 1973,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/hardwood-floor-refinishing",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1111,
+   "data": {
+    "title": "Hardwood Floor Refinishing | Three Village Local",
+    "textLen": 2196,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/painters",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1093,
+   "data": {
+    "title": "Painters in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1726,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/solar",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1144,
+   "data": {
+    "title": "Solar in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1683,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/electricians",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1421,
+   "data": {
+    "title": "Electricians in the Three Village Area | Three Village Local",
+    "textLen": 3043,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -1864,38 +1518,16 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/seafood",
+   "url": "https://www.threevillagelocal.com/heating-air-conditioning-hvac",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1313,
+   "ms": 1343,
    "data": {
-    "title": "Seafood in the Three Village Area | Three Village Local",
-    "textLen": 3695,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 7,
-    "cur": 7,
-    "tot": 7,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/coffee-shop",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1277,
-   "data": {
-    "title": "Coffee Shop in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 3244,
+    "title": "Heating & Air Conditioning (HVAC) in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 2755,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -1908,19 +1540,19 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/ice-cream",
+   "url": "https://www.threevillagelocal.com/plumbing",
    "kind": "category",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1312,
+   "ms": 1305,
    "data": {
-    "title": "Ice Cream in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 3035,
+    "title": "Plumbing in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 2546,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
     "vip": 0,
     "reg": 5,
     "cur": 5,
@@ -1930,35 +1562,404 @@
    }
   },
   {
+   "url": "https://www.threevillagelocal.com/security-systems",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1157,
+   "data": {
+    "title": "Security Systems | Three Village Local",
+    "textLen": 2417,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 3,
+    "cur": 3,
+    "tot": 3,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/handyman",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1146,
+   "data": {
+    "title": "Handyman in the Three Village Area | Three Village Local",
+    "textLen": 2239,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 2,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/locksmith",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1179,
+   "data": {
+    "title": "Locksmith in the Three Village Area | Three Village Local",
+    "textLen": 2197,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 0,
+    "reg": 2,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/appliance-repair",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1112,
+   "data": {
+    "title": "Appliance Repair in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1740,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/chimney-services",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1162,
+   "data": {
+    "title": "Chimney Services in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1739,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/septic-cesspool",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1108,
+   "data": {
+    "title": "Septic & Cesspool in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1679,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/home-cleaning",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1278,
+   "data": {
+    "title": "Home Cleaning | Three Village Local",
+    "textLen": 2483,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 4,
+    "cur": 4,
+    "tot": 4,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/home-organization",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1179,
+   "data": {
+    "title": "Home Organization | Three Village Local",
+    "textLen": 2362,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 0,
+    "reg": 3,
+    "cur": 3,
+    "tot": 3,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/junk-removal",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1245,
+   "data": {
+    "title": "Junk Removal in the Three Village Area | Three Village Local",
+    "textLen": 2253,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 1,
+    "cur": 2,
+    "tot": 2,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/carpet-cleaning",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1094,
+   "data": {
+    "title": "Carpet Cleaning | Three Village Local",
+    "textLen": 1844,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/home-staging",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1098,
+   "data": {
+    "title": "Home Staging in the Three Village Area | Three Village Local",
+    "textLen": 1920,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/movers",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1127,
+   "data": {
+    "title": "Movers in Setauket, Stony Brook & Port Jefferson | Three Village Local",
+    "textLen": 1613,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 0,
+    "reg": 1,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/financial-advising",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1345,
+   "data": {
+    "title": "Financial Advising | Three Village Local",
+    "textLen": 3382,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 7,
+    "cur": 8,
+    "tot": 8,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/investing",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1256,
+   "data": {
+    "title": "Investing in the Three Village Area | Three Village Local",
+    "textLen": 2807,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 1,
+    "reg": 4,
+    "cur": 5,
+    "tot": 5,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/retirement-planning-advisory",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1208,
+   "data": {
+    "title": "Retirement Planning & Advisory | Three Village Local",
+    "textLen": 2700,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 3,
+    "cur": 4,
+    "tot": 4,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/estate-wealth-management",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1342,
+   "data": {
+    "title": "Estate & Wealth Management | Three Village Local",
+    "textLen": 2528,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "vip": 1,
+    "reg": 2,
+    "cur": 3,
+    "tot": 3,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/banks-credit-unions",
+   "kind": "category",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1162,
+   "data": {
+    "title": "Banks & Credit Unions | Three Village Local",
+    "textLen": 2030,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
+    "vip": 1,
+    "reg": 0,
+    "cur": 1,
+    "tot": 1,
+    "p3": true,
+    "none": false
+   }
+  },
+  {
    "url": "https://www.threevillagelocal.com/team-passamenti-at-better-homes-and-gardens-real-estate-realty-connect",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1475,
+   "ms": 1698,
    "data": {
     "title": "Team Passamenti at Better Homes and Gardens Real Estate Realty",
     "textLen": 4845,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Team Passamenti at Better Homes and Gardens Real Estate Realty Connect                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/girard-wealth-management-group",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1472,
+   "ms": 1595,
    "data": {
     "title": "Girard Wealth Management Group | Setauket, NY",
     "textLen": 5431,
@@ -1966,39 +1967,33 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Girard Wealth Management Group                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/the-odwyer-brainard-team-at-daniel-gale-sothebys-international-realty",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1562,
+   "ms": 1704,
    "data": {
     "title": "The O'Dwyer-Brainard Team at Daniel Gale Sotheby's International",
     "textLen": 5503,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    The O'Dwyer-Brainard Team at Daniel Gale Sotheby's International Realty                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/kgr-contracting-corp",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1452,
+   "ms": 1580,
    "data": {
     "title": "KGR Contracting Corp. | Port Jefferson Station, NY",
     "textLen": 4142,
@@ -2006,8 +2001,7 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    KGR Contracting Corp.                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/matt-bardram-at-coltrain-mortgage",
@@ -2016,13 +2010,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1509,
+   "ms": 1637,
    "data": {
     "title": "Matt Bardram at Coltrain Mortgage | Hauppauge, NY",
     "textLen": 6744,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Matt Bardram at Coltrain Mortgage                "
    }
   },
@@ -2033,7 +2027,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1425,
+   "ms": 1475,
    "data": {
     "title": "Southard Estate Planning | Estate Planning Attorney in Setauket",
     "textLen": 4804,
@@ -2047,12 +2041,10 @@
    "url": "https://www.threevillagelocal.com/tj-sirani-at-zuma-payroll",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1469,
+   "ms": 1427,
    "data": {
     "title": "TJ Sirani at Zuma Payroll | Payroll & HR Services in Melville, NY",
     "textLen": 5120,
@@ -2060,19 +2052,16 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    TJ Sirani at Zuma Payroll                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/aronica-plant-healthcare-llc",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1862,
+   "ms": 1503,
    "data": {
     "title": "Aronica Plant Healthcare, LLC | Landscaping in Setauket, NY",
     "textLen": 4023,
@@ -2080,28 +2069,24 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Aronica Plant Healthcare, LLC                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/emma-s-clark-memorial-library",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1656,
+   "ms": 1891,
    "data": {
     "title": "Emma S. Clark Memorial Library | Setauket, NY",
-    "textLen": 4391,
+    "textLen": 4356,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Emma S. Clark Memorial Library                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/magic-home-restoration",
@@ -2110,7 +2095,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1606,
+   "ms": 1513,
    "data": {
     "title": "Magic Home Restoration | Damage Restoration in Nesconset, NY",
     "textLen": 4372,
@@ -2124,12 +2109,10 @@
    "url": "https://www.threevillagelocal.com/jlw-accounting-and-tax-services",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 8054,
+   "ms": 1537,
    "data": {
     "title": "JLW Accounting and Tax Services | Setauket, NY",
     "textLen": 4680,
@@ -2137,19 +2120,16 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    JLW Accounting and Tax Services                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/raupp-law-pc",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1524,
+   "ms": 1554,
    "data": {
     "title": "Raupp Law PC | Estate Planning Attorney in Setauket, NY",
     "textLen": 5327,
@@ -2157,8 +2137,7 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Raupp Law PC                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/jm-management-solutions-inc",
@@ -2167,13 +2146,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1408,
+   "ms": 1421,
    "data": {
     "title": "JM Management Solutions Inc | Patchogue, NY",
     "textLen": 4271,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    JM Management Solutions Inc                "
    }
   },
@@ -2184,7 +2163,7 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1491,
+   "ms": 1418,
    "data": {
     "title": "The North Shore Injury Lawyer | Stony Brook, NY",
     "textLen": 5059,
@@ -2198,12 +2177,10 @@
    "url": "https://www.threevillagelocal.com/hart-orthopedics",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1404,
+   "ms": 1463,
    "data": {
     "title": "Hart Orthopedics | Orthopedists in Stony Brook, NY",
     "textLen": 4258,
@@ -2211,8 +2188,7 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Hart Orthopedics                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/chriss-complete-landscaping",
@@ -2221,13 +2197,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1507,
+   "ms": 1460,
    "data": {
     "title": "Chris's Complete Landscaping | Three Village, NY",
     "textLen": 3701,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Chris's Complete Landscaping                "
    }
   },
@@ -2235,12 +2211,10 @@
    "url": "https://www.threevillagelocal.com/j33-art-studios-inc",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1822,
+   "ms": 1756,
    "data": {
     "title": "J33 Art Studios Inc. | Local Artist",
     "textLen": 3698,
@@ -2248,19 +2222,16 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    J33 Art Studios Inc.                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/orthopedic-associates-of-long-island",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1607,
+   "ms": 1765,
    "data": {
     "title": "Orthopedic Associates of Long Island | Orthopedists in Setauket",
     "textLen": 4389,
@@ -2268,8 +2239,7 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Orthopedic Associates of Long Island                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/rolling-hills-property-services-inc",
@@ -2278,13 +2248,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1532,
+   "ms": 1655,
    "data": {
     "title": "Rolling Hills Property Services Inc. | Port Jefferson Station, NY",
     "textLen": 4135,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Rolling Hills Property Services Inc.                "
    }
   },
@@ -2292,32 +2262,27 @@
    "url": "https://www.threevillagelocal.com/strong-strains",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1419,
+   "ms": 1519,
    "data": {
     "title": "Strong Strains | Cannabis Dispensary in Setauket, NY",
-    "textLen": 4089,
+    "textLen": 4091,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Strong Strains                "
-   },
-   "retried": true
+   }
   },
   {
    "url": "https://www.threevillagelocal.com/victor-stabile-at-douglas-elliman-real-estate-684",
    "kind": "profile",
    "phone": false,
-   "problems": [
-    "failed files: 400 https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fv24.0%2Fplugins%2Fpage.php%3Fadapt_container_width%3Dtrue%26app_id%26c"
-   ],
+   "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1388,
+   "ms": 1477,
    "data": {
     "title": "Victor Stabile | Douglas Elliman Realtor in Setauket & Stony Brook, NY",
     "textLen": 4791,
@@ -2325,79 +2290,10 @@
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-on pv2-on",
     "h1": "\n                    Victor Stabile at Douglas Elliman Real Estate                "
-   },
-   "retried": true
-  },
-  {
-   "url": "https://www.threevillagelocal.com/sea-creations",
-   "kind": "profile",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1327,
-   "data": {
-    "title": "Sea Creations | Shopping & Retail in Port Jefferson, NY",
-    "textLen": 2038,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    Sea Creations                "
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/whm-plumbing-heating-contractors",
-   "kind": "profile",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1263,
-   "data": {
-    "title": "WHM Plumbing & Heating Contractors | Setauket, NY",
-    "textLen": 1934,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    WHM Plumbing & Heating Contractors                "
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/gallery-north",
-   "kind": "profile",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1271,
-   "data": {
-    "title": "Gallery North | Arts & Entertainment in Setauket, NY",
-    "textLen": 2042,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    Gallery North                "
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/sweet-n-savory-crepe-rice-pudding-bar",
-   "kind": "profile",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1266,
-   "data": {
-    "title": "Sweet 'n' Savory Crepe & Rice Pudding Bar",
-    "textLen": 2014,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    Sweet 'n' Savory Crepe & Rice Pudding Bar                "
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/port-jefferson-frigate",
+   "url": "https://www.threevillagelocal.com/long-island-explorium",
    "kind": "profile",
    "phone": false,
    "problems": [],
@@ -2405,29 +2301,97 @@
    "status": 200,
    "ms": 1228,
    "data": {
-    "title": "Port Jefferson Frigate | Restaurant in Port Jefferson, NY",
-    "textLen": 1732,
+    "title": "Long Island Explorium | Port Jefferson, NY",
+    "textLen": 2045,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    Port Jefferson Frigate                "
+    "h1": "\n                    Long Island Explorium                "
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/suffolk-oral-surgery-associates-llp",
+   "url": "https://www.threevillagelocal.com/selfie-shot-photo-booths",
    "kind": "profile",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1261,
+   "ms": 1249,
    "data": {
-    "title": "Suffolk Oral Surgery Associates, LLP | Stony Brook, NY",
-    "textLen": 2120,
+    "title": "Selfie Shot Photo Booths | Setauket, NY",
+    "textLen": 1943,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    Selfie Shot Photo Booths                "
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/hana-japanese-restaurant",
+   "kind": "profile",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1170,
+   "data": {
+    "title": "Hana Japanese Restaurant | Restaurant in Port Jefferson, NY",
+    "textLen": 1982,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    Hana Japanese Restaurant                "
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/ichi-sushi-ramen",
+   "kind": "profile",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1159,
+   "data": {
+    "title": "Ichi Sushi & Ramen | Restaurant in Setauket, NY",
+    "textLen": 1995,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    Ichi Sushi & Ramen                "
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/lavender-fields",
+   "kind": "profile",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1232,
+   "data": {
+    "title": "Lavender Fields | Shopping & Retail in Port Jefferson, NY",
+    "textLen": 1631,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    Suffolk Oral Surgery Associates, LLP                "
+    "h1": "\n                    Lavender Fields                "
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/four-d-landscaping-and-design-llc",
+   "kind": "profile",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1242,
+   "data": {
+    "title": "Four D Landscaping and Design LLC | Setauket, NY",
+    "textLen": 1774,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
+    "h1": "\n                    Four D Landscaping and Design LLC                "
    }
   },
   {
@@ -2437,30 +2401,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1180,
+   "ms": 1339,
    "data": {
     "title": "Reboli Center Thanksgiving Food Drive | Thu, Oct 1 in Stony Brook",
-    "textLen": 2476,
+    "textLen": 2535,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-we tvl-sh p3v-js p3-done tvl-sh-on ev-on tvl-sf-on",
-    "ev": true
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk",
-   "kind": "event",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1217,
-   "data": {
-    "title": "2026 Port Jefferson Scarecrow Walk | Mon, Oct 5",
-    "textLen": 2505,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-we tvl-sh p3v-js p3-done tvl-sh-on ev-on tvl-sf-on",
+    "htmlCls": "tvl-we tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on ev-on",
     "ev": true
    }
   },
@@ -2471,10 +2418,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1183,
+   "ms": 1207,
    "data": {
     "title": "2026 Port Jeff Self-Guided Fall Art Walk | Fri, Oct 9",
-    "textLen": 2451,
+    "textLen": 2510,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-we tvl-sh p3v-js p3-done tvl-sh-on ev-on tvl-sf-on",
@@ -2482,16 +2429,33 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/events/port-jefferson-chowder-crawl",
+   "url": "https://www.threevillagelocal.com/events/the-47th-annual-holiday-tree-competition",
    "kind": "event",
    "phone": false,
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1281,
+   "ms": 1204,
    "data": {
-    "title": "Port Jefferson Chowder Crawl | Sat, Oct 24",
-    "textLen": 2513,
+    "title": "The 47th Annual Holiday Tree… | Thu, Oct 29 in Stony Brook",
+    "textLen": 3088,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "tvl-we tvl-sh p3v-js tvl-sh-on p3-done ev-on tvl-sf-on",
+    "ev": true
+   }
+  },
+  {
+   "url": "https://www.threevillagelocal.com/events/haunted-evening-hayrides-at-benners-farm-575",
+   "kind": "event",
+   "phone": false,
+   "problems": [],
+   "notes": [],
+   "status": 200,
+   "ms": 1192,
+   "data": {
+    "title": "Haunted Evening Hayrides at… | Fri, Oct 30 in East Setauket",
+    "textLen": 2635,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-we tvl-sh p3v-js p3-done tvl-sh-on ev-on tvl-sf-on",
@@ -2505,13 +2469,13 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1362,
+   "ms": 1657,
    "data": {
     "title": "Culper Spy Day Guide: Setauket Spy Ring Weekend | Three Village Local",
-    "textLen": 14602,
+    "textLen": 14568,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
+    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done tvl-sf-on"
    }
   }
  ]
