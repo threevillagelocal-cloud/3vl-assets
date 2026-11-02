@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-02T02:00:50.728901+00:00",
+"updated": "2026-11-02T05:49:38.245972+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 202,
-"Emma S. Clark Library": 283,
+"Emma S. Clark Library": 282,
 "Stony Brook Village Center": 11,
 "Long Island Museum": 50,
 "Ward Melville Heritage Org": 3,
@@ -66,7 +66,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-scarecrow-walk"
+"page": ""
 },
 {
 "id": "gallerynorth-71344",
@@ -486,25 +486,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "emmaclark-take-make-sewn-heating-pads-people-need-63990",
-"title": "Take & Make: Sewn Heating Pads for People in Need",
-"start": "2026-11-02T00:00:00",
-"end": "2026-11-02T00:00:00",
-"allday": true,
-"venue": "Emma S. Clark Memorial Library, Pick Up at the Lower Level Service Desk",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/take-make-sewn-heating-pads-people-need-63990",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/take-make-sewn-heating-pads-for-people-in-need"
 },
 {
 "id": "emmaclark-pokemon-club-grades-2-5-61747",
@@ -1812,20 +1793,20 @@
 "profile": "https://www.threevillagelocal.com/robinsons-tea-room"
 },
 {
-"id": "wd-eat.namkeen-20261101",
+"id": "wd-eat.namkeen-20261102",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Sunday Feast: 15% off",
-"when": "Today, Sunday",
-"desc": "15% off all meals every Sunday. Dine-in only.",
-"expires": "2026-11-01",
+"title": "Melt Monday: free fries",
+"when": "Today, Monday",
+"desc": "Buy any sandwich (Nashville, Tikkaville, Tikka Melt and more) and get fries free. Dine-in only.",
+"expires": "2026-11-02",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/eat.namkeen.jpg",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-sunday-feast-off",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
@@ -1984,20 +1965,20 @@
 "label": "Special"
 },
 {
-"id": "wd-eat.namkeen-20261101",
+"id": "wd-eat.namkeen-20261102",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Sunday Feast: 15% off",
-"when": "Today, Sunday",
-"desc": "15% off all meals every Sunday. Dine-in only.",
-"expires": "2026-11-01",
+"title": "Melt Monday: free fries",
+"when": "Today, Monday",
+"desc": "Buy any sandwich (Nashville, Tikkaville, Tikka Melt and more) and get fries free. Dine-in only.",
+"expires": "2026-11-02",
 "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/sandwich-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-sunday-feast-off",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "label": "Special"
 },
