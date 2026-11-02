@@ -1,14 +1,14 @@
 {
-"updated": "2026-11-02T16:03:12.907220+00:00",
+"updated": "2026-11-02T18:01:22.724704+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 202,
-"Emma S. Clark Library": 282,
+"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Emma S. Clark Library": 281,
 "Stony Brook Village Center": 11,
-"Long Island Museum": 50,
+"Long Island Museum": 0,
 "Ward Melville Heritage Org": 3,
 "LI Music Hall of Fame": 6,
 "Staller Center for the Arts": 138,
@@ -671,27 +671,6 @@
 "page": "https://www.threevillagelocal.com/events/osteoporosis-uncovering-hidden-causes-of-bone-loss"
 },
 {
-"id": "lim-3225911",
-"title": "Mornings@LIM: Tour of Enduring Hearts",
-"start": "2026-11-04T11:00:00",
-"end": "2026-11-04T12:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/mornings-lim-enduring-hearts/",
-"desc": "These monthly sessions are open to individuals living with dementia and their care partners. They offer time for creative engagement and social connection in our galleries and art studio, as well as through special music and movie programs. This November, expl",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/June-Meeting.jpg",
-"src": "lim",
-"tags": [
-"free",
-"music",
-"history"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/mornings-lim-tour-of-enduring-hearts"
-},
-{
 "id": "emmaclark-chair-yoga-61290",
 "title": "Chair Yoga",
 "start": "2026-11-05T11:30:00",
@@ -949,25 +928,6 @@
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
 },
 {
-"id": "portjeff-1151",
-"title": "Caleb Brewster Escape 4K run",
-"start": "2026-11-07T00:00:00",
-"end": "2026-11-07T00:00:00",
-"allday": true,
-"venue": "Strong's Park",
-"addr": "Strong's Park - Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
-},
-{
 "id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
 "title": "Writing Workshop: Language, Silence, and the Stories We Carry",
 "start": "2026-11-07T10:30:00",
@@ -1041,27 +1001,6 @@
 "page": "https://www.threevillagelocal.com/events/paper-quilling-a-pumpkin-w-carol-mcmahon"
 },
 {
-"id": "lim-3225428",
-"title": "LIM’s Annual Winter Gala",
-"start": "2026-11-07T18:30:00",
-"end": "2026-11-07T22:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/winter-gala-2026/",
-"desc": "Join us for The Long Island Museum’s biggest fundraiser of the year. Enjoy a festive evening of dinner, dancing, and live music by Tom Manuel and The Jazz Loft All Stars! Get a head start on your holiday shopping at our annual silent auction, with proceeds sup",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/07/Winter-Gala-2026-Event.jpg",
-"src": "lim",
-"tags": [
-"music",
-"history",
-"food"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/lims-annual-winter-gala"
-},
-{
 "id": "theatre3-9239",
 "title": "A Christmas Carol",
 "start": "2026-11-07T19:00:00",
@@ -1119,26 +1058,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
-},
-{
-"id": "portjeff-1099",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-08T09:00:00",
-"end": "2026-11-08T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
@@ -1236,26 +1155,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "lim-3225644",
-"title": "Sunday Street Concert Series: Celebrating Joni Mitchell and Tom Waits",
-"start": "2026-11-08T17:00:00",
-"end": "2026-11-08T19:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/joni-and-tom/",
-"desc": "The Long Island Museum, Port Jefferson Arts Council, and WUSB-FM are proud to present an eclectic music series featuring nationally and internationally known touring artists. Join us as we celebrate two legendary songwriters! Joni Mitchell and Tom Waits—two si",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Joni-Mitchell-and-Tom-Waits-cover.jpg",
-"src": "lim",
-"tags": [
-"music",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/sunday-street-concert-series-celebrating-joni-mitchell-and-tom-waits"
 },
 {
 "id": "gallerynorth-71316",
