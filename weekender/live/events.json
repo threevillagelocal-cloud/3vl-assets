@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-03T06:31:41.385635+00:00",
+"updated": "2026-11-03T06:32:59.841201+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
@@ -1888,7 +1888,7 @@
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/eat.namkeen.jpg",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-tender-tuesday-combo",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
@@ -2022,7 +2022,7 @@
 "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-tender-tuesday-combo",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "label": "Special"
 },
