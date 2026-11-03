@@ -108,6 +108,22 @@
 "seportdelicatessen": [],
 "toastcoffeeandkitchen": [
 {
+"id": "17994138573103731",
+"biz": "Toast Coffee + Kitchen",
+"ig": "toastcoffeeandkitchen",
+"town": "Port Jefferson Station",
+"category": "Cafe/Brunch",
+"member": false,
+"title": "November/December Food Specials Launch",
+"when": "Fri, Nov. 6",
+"desc": "Seasonal holiday food specials arrive with cozy, festive flavors and new creations.",
+"expires": "2026-12-31",
+"posted": "2026-11-03T18:52:42+0000",
+"url": "https://www.instagram.com/p/DfSkcaun1_v/",
+"img": "",
+"inset": "ig/p17994138573103731.jpg"
+},
+{
 "id": "18099657377388421",
 "biz": "Toast Coffee + Kitchen",
 "ig": "toastcoffeeandkitchen",
@@ -127,7 +143,24 @@
 "prohibitionportjefferson": [],
 "portjeffbrewing": [],
 "poboybeerandcider": [],
-"fifthseasonrestaurant": [],
+"fifthseasonrestaurant": [
+{
+"id": "18015260300978122",
+"biz": "Fifth Season Restaurant",
+"ig": "fifthseasonrestaurant",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Thanksgiving Family Style Meal Pickup",
+"when": "Wed & Thu, Nov 25-26",
+"desc": "Order prepared Thanksgiving dinner trays for pickup with simple heating instructions.",
+"expires": "2026-11-26",
+"posted": "2026-11-03T18:02:41+0000",
+"url": "https://www.instagram.com/p/DfSes0EAiij/",
+"img": "",
+"inset": "ig/p18015260300978122.jpg"
+}
+],
 "pastapasta_portjeff": [
 {
 "id": "18153094972530027",
@@ -426,5 +459,22 @@
 "inset": "ig/p17870534457661542.jpg"
 }
 ],
-"tara.inn": []
+"tara.inn": [
+{
+"id": "18118925392798239",
+"biz": "Tara Inn",
+"ig": "tara.inn",
+"town": "Port Jefferson",
+"category": "Bar/Pub",
+"member": false,
+"title": "Tuesday Dinner Specials",
+"when": "Tue, Nov. 3",
+"desc": "Soup, entrees, and sandwiches from $2-$16 including lobster, steak, and burgers.",
+"expires": "2026-11-03",
+"posted": "2026-11-03T16:48:09+0000",
+"url": "https://www.instagram.com/p/DfSWMElDWLF/",
+"img": "",
+"inset": "ig/p18118925392798239.jpg"
+}
+]
 }
