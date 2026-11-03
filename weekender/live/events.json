@@ -1,14 +1,14 @@
 {
-"updated": "2026-11-03T16:06:50.813522+00:00",
+"updated": "2026-11-03T18:02:59.580417+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 41,
+"Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 200,
-"Emma S. Clark Library": 279,
+"Emma S. Clark Library": 278,
 "Stony Brook Village Center": 7,
-"Long Island Museum": 48,
+"Long Island Museum": 0,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 6,
 "Staller Center for the Arts": 138,
@@ -487,26 +487,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
-},
-{
-"id": "emmaclark-touch-truck-families-61751",
-"title": "Touch-a-Truck (Families)",
-"start": "2026-11-03T10:00:00",
-"end": "2026-11-03T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Library Parking Lot",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/touch-truck-families-61751",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-06/Touch-A-Truck%202.png",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/touch-a-truck-families"
+"page": "https://www.threevillagelocal.com/events/the-47th-annual-tree-competition"
 },
 {
 "id": "reboli-695acda2780a38578fe575b6",
@@ -657,25 +638,23 @@
 "page": "https://www.threevillagelocal.com/events/osteoporosis-uncovering-hidden-causes-of-bone-loss"
 },
 {
-"id": "lim-3225911",
-"title": "Mornings@LIM: Tour of Enduring Hearts",
-"start": "2026-11-04T11:00:00",
-"end": "2026-11-04T12:30:00",
+"id": "pjchamber-15249",
+"title": "Preview Special Showing: 30th Annual Charles Dickens Festival",
+"start": "2026-11-04T19:00:00",
+"end": "2026-11-04T20:30:00",
 "allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/mornings-lim-enduring-hearts/",
-"desc": "These monthly sessions are open to individuals living with dementia and their care partners. They offer time for creative engagement and social connection in our galleries and art studio, as well as through special music and movie programs. This November, expl",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/June-Meeting.jpg",
-"src": "lim",
+"venue": "The Victorian Studio",
+"addr": "709 Main Street, Port Jefferson, New York, 11777",
+"url": "https://portjeffchamber.com/events-calendar/preview-special-showing-30th-annual-charles-dickens-festival/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
 "tags": [
-"free",
-"music",
-"history"
+"outdoor"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/mornings-lim-tour-of-enduring-hearts"
+"page": "https://www.threevillagelocal.com/events/preview-special-showing-30th-annual-charles-dickens-festival"
 },
 {
 "id": "madiran-20261104-ray-anderson-and-steve-salerno",
@@ -1087,27 +1066,6 @@
 "page": "https://www.threevillagelocal.com/events/paper-quilling-a-pumpkin-w-carol-mcmahon"
 },
 {
-"id": "lim-3225428",
-"title": "LIM’s Annual Winter Gala",
-"start": "2026-11-07T18:30:00",
-"end": "2026-11-07T22:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/winter-gala-2026/",
-"desc": "Join us for The Long Island Museum’s biggest fundraiser of the year. Enjoy a festive evening of dinner, dancing, and live music by Tom Manuel and The Jazz Loft All Stars! Get a head start on your holiday shopping at our annual silent auction, with proceeds sup",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/07/Winter-Gala-2026-Event.jpg",
-"src": "lim",
-"tags": [
-"music",
-"history",
-"food"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/lims-annual-winter-gala"
-},
-{
 "id": "theatre3-9239",
 "title": "A Christmas Carol",
 "start": "2026-11-07T19:00:00",
@@ -1302,26 +1260,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "lim-3225644",
-"title": "Sunday Street Concert Series: Celebrating Joni Mitchell and Tom Waits",
-"start": "2026-11-08T17:00:00",
-"end": "2026-11-08T19:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/joni-and-tom/",
-"desc": "The Long Island Museum, Port Jefferson Arts Council, and WUSB-FM are proud to present an eclectic music series featuring nationally and internationally known touring artists. Join us as we celebrate two legendary songwriters! Joni Mitchell and Tom Waits—two si",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Joni-Mitchell-and-Tom-Waits-cover.jpg",
-"src": "lim",
-"tags": [
-"music",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/sunday-street-concert-series-celebrating-joni-mitchell-and-tom-waits"
 },
 {
 "id": "gallerynorth-71316",
@@ -1934,27 +1872,6 @@
 "page": "https://www.threevillagelocal.com/events/toddler-tango-18m-4-yrs-w-parent-544"
 },
 {
-"id": "lim-10000259",
-"title": "Stitch & Chit-Ch(at) – FREE!",
-"start": "2026-11-13T14:00:00",
-"end": "2026-11-13T15:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/stitch/2026-11-13/",
-"desc": "Whether you knit, crochet, embroider, or hand-sew, gather at the LIM to do what you love. Bring your work-in-progress and enjoy some good company. Open to adults and children 12 and up. This program will take place in the Studio located on the East side of cam",
-"img": "https://longislandmuseum.org/wp-content/uploads/2025/12/Stitch-and-Chit-Chat.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free-453"
-},
-{
 "id": "gallerynorth-71324",
 "title": "Drawing Seashells with Conte Crayon with Cathleen Ficht",
 "start": "2026-11-13T17:00:00",
@@ -1972,27 +1889,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/drawing-seashells-with-conte-crayon-with-cathleen-ficht"
-},
-{
-"id": "lim-3225650",
-"title": "Picture Perfect: Felt Portrait Workshop",
-"start": "2026-11-13T18:00:00",
-"end": "2026-11-13T19:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/felt-portrait/",
-"desc": "Get creative at the Museum’s Studio with this fun fall workshop! This versatile paste felt portrait workshop lets participants transform photos or imaginations into soft, 2D textured masterpieces. Using vibrant felt shapes and easy crafting adhesives, attendee",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Felt-Portrait.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/picture-perfect-felt-portrait-workshop"
 },
 {
 "id": "theatre3-9241",
