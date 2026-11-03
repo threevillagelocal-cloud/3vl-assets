@@ -155,16 +155,12 @@ SHIFT_SEC = '''<section class="tvs-sec tvw-shift" id="tvw-shift">
     <div class="tvw-tn-arrow" aria-hidden="true">&#8594;</div>
     <div class="tvw-now">
       <p class="tvw-tn-lab">Now</p>
-      <div class="tvw-flow">
-        <div class="tvw-fl tvw-fl-site"><em>Your website</em><b>Services, hours, area, reviews, FAQs</b></div>
-        <div class="tvw-fl-ar" aria-hidden="true"></div>
-        <div class="tvw-fl tvw-fl-ai"><em>AI reads it</em><b>ChatGPT &middot; Gemini &middot; Copilot &middot; Google AI</b></div>
-        <div class="tvw-fl-ar" aria-hidden="true"></div>
-        <div class="tvw-fl tvw-fl-q"><em>A neighbor asks</em><b>&ldquo;Who&#39;s a good landscaper near me?&rdquo;</b></div>
-        <div class="tvw-fl-ar" aria-hidden="true"></div>
-        <div class="tvw-fl tvw-fl-win"><em>AI answers</em><b>&ldquo;Try <u>Your Business</u> in Setauket...&rdquo;</b></div>
+      <div class="tvw-chat">
+        <div class="tvw-chat-top"><span class="tvw-chat-dots"><i></i><i></i><i></i></span><b>Ask AI</b><em>ChatGPT &middot; Gemini &middot; Copilot &middot; Google AI</em></div>
+        <div class="tvw-q">Who&#39;s a good landscaper near me?</div>
+        <div class="tvw-a"><span class="tvw-a-ic" aria-hidden="true">&#10022;</span><div><p>Try <u>Your Business</u> in Setauket. They offer weekly lawn care, cleanups and mulch, have great reviews, and serve the whole Three Village area.</p><span class="tvw-src">&#128279; Source: yourbusiness.com</span></div></div>
       </div>
-      <p class="tvw-tn-txt">A source AI learns from, so it recommends you by name.</p>
+      <div class="tvw-steps"><span><b>1</b>Your website lists services, hours, area, reviews and FAQs</span><span><b>2</b>AI tools read it and learn who you are</span><span><b>3</b>AI recommends you by name</span></div>
     </div>
   </div>
   <div class="tvw-cta1 tvs-up"><p><b>Ready for a website AI recommends?</b><span>Tell us about your business. We reply by email, usually within a day.</span></p><div class="tvw-cta-btns"><a class="tvs-btn tvs-blue" href="#tvs-book">Send us a message</a><a class="tvs-btn tvs-ghost" href="#tvs-bundles">See the packages</a></div></div>
@@ -425,14 +421,13 @@ CSS = '''
 .tvw-logo svg{width:20px;height:20px}
 
 /* owner 10/22: three light CSS-only animations; they start when the section is revealed (.tvs-in) and run once */
-.tvs-ready .tvw-then-now .tvw-fl,.tvs-ready .tvw-then-now .tvw-fl-ar{opacity:.28;transition:none}
-.tvs-ready .tvw-then-now.tvs-in .tvw-fl,.tvs-ready .tvw-then-now.tvs-in .tvw-fl-ar{animation:tvwLit .55s ease forwards}
-.tvw-then-now.tvs-in .tvw-flow>:nth-child(1){animation-delay:.5s!important}.tvw-then-now.tvs-in .tvw-flow>:nth-child(2){animation-delay:1s!important}
-.tvw-then-now.tvs-in .tvw-flow>:nth-child(3){animation-delay:1.3s!important}.tvw-then-now.tvs-in .tvw-flow>:nth-child(4){animation-delay:1.8s!important}
-.tvw-then-now.tvs-in .tvw-flow>:nth-child(5){animation-delay:2.1s!important}.tvw-then-now.tvs-in .tvw-flow>:nth-child(6){animation-delay:2.6s!important}
-.tvs-ready .tvw-then-now.tvs-in .tvw-flow>:nth-child(7){animation:tvwLit .55s ease 2.9s forwards,tvwGlow 1.6s ease 3.5s 3}
+.tvs-ready .tvw-then-now .tvw-q,.tvs-ready .tvw-then-now .tvw-a,.tvs-ready .tvw-then-now .tvw-steps span{opacity:0;transition:none}
+.tvs-ready .tvw-then-now.tvs-in .tvw-q{animation:tvwLit .55s ease .5s forwards}
+.tvs-ready .tvw-then-now.tvs-in .tvw-a{animation:tvwLit .6s ease 1.5s forwards,tvwGlow 1.6s ease 2.3s 2}
+.tvs-ready .tvw-then-now.tvs-in .tvw-steps span{animation:tvwLit .5s ease forwards}
+.tvw-then-now.tvs-in .tvw-steps span:nth-child(1){animation-delay:2.2s!important}.tvw-then-now.tvs-in .tvw-steps span:nth-child(2){animation-delay:2.4s!important}.tvw-then-now.tvs-in .tvw-steps span:nth-child(3){animation-delay:2.6s!important}
 @keyframes tvwLit{from{opacity:.28;transform:translateY(4px)}to{opacity:1;transform:none}}
-@keyframes tvwGlow{0%,100%{box-shadow:0 10px 22px -16px rgba(13,35,70,.4)}50%{box-shadow:0 0 0 6px rgba(22,163,74,.18),0 10px 22px -16px rgba(13,35,70,.4)}}
+@keyframes tvwGlow{0%,100%{box-shadow:0 12px 26px -16px rgba(0,0,0,.5)}50%{box-shadow:0 0 0 6px rgba(127,212,255,.22),0 12px 26px -16px rgba(0,0,0,.5)}}
 .tvw-ai-win{position:relative}
 .tvs-ready .tvw-ai-cmp.tvs-in .tvw-ai-win:after{content:"";position:absolute;left:0;right:0;top:38px;height:46px;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(127,212,255,.28),transparent);animation:tvwScan 1.8s ease-in-out .3s 2 both}
 @keyframes tvwScan{0%{transform:translateY(0);opacity:1}90%{opacity:1}100%{transform:translateY(230px);opacity:0}}
@@ -447,23 +442,31 @@ CSS = '''
 .tvw-tech.tvs-in .tvw-tech-row span:nth-child(2){animation-delay:.12s}.tvw-tech.tvs-in .tvw-tech-row span:nth-child(3){animation-delay:.24s}
 .tvw-tech.tvs-in .tvw-tech-row span:nth-child(4){animation-delay:.36s}.tvw-tech.tvs-in .tvw-tech-row span:nth-child(5){animation-delay:.48s}.tvw-tech.tvs-in .tvw-tech-row span:nth-child(6){animation-delay:.6s}
 .tvs-ready .tvw-add-grid .tvw-add:nth-child(4n+2){transition-delay:.1s}.tvs-ready .tvw-add-grid .tvw-add:nth-child(4n+3){transition-delay:.2s}.tvs-ready .tvw-add-grid .tvw-add:nth-child(4n+4){transition-delay:.3s}
-@media (prefers-reduced-motion:reduce){.tvs-ready .tvw-then-now .tvw-fl,.tvs-ready .tvw-then-now .tvw-fl-ar,.tvs-ready .tvw-ai-cmp .tvw-ai-read li,.tvs-ready .tvw-ai-cmp .tvw-ai-empty,.tvs-ready .tvw-tech .tvw-tech-row span{opacity:1!important;transform:none!important;animation:none!important}.tvw-ai-win:after{display:none}}
+@media (prefers-reduced-motion:reduce){.tvs-ready .tvw-then-now .tvw-q,.tvs-ready .tvw-then-now .tvw-a,.tvs-ready .tvw-then-now .tvw-steps span,.tvs-ready .tvw-ai-cmp .tvw-ai-read li,.tvs-ready .tvw-ai-cmp .tvw-ai-empty,.tvs-ready .tvw-tech .tvw-tech-row span{opacity:1!important;transform:none!important;animation:none!important}.tvw-ai-win:after{display:none}}
 
-.tvw-then-now{display:grid;grid-template-columns:.8fr auto 1.4fr;gap:22px;align-items:center;max-width:1040px;margin:0 auto}
-.tvw-tn-lab{margin:0 0 10px!important;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.tvw-then-now{display:grid;grid-template-columns:.8fr auto 1.35fr;gap:26px;align-items:center;max-width:1060px;margin:0 auto}
+.tvw-tn-lab{margin:0 0 12px!important;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
 .tvw-now .tvw-tn-lab{color:var(--blue)}
-.tvw-tn-txt{margin:12px 0 0!important;font-size:15px;color:var(--mut);line-height:1.5}
-.tvw-bcard{border-radius:14px;padding:22px 20px;background:#fff;border:1px dashed #b9c6d8;box-shadow:0 8px 18px -14px rgba(13,35,70,.4);filter:grayscale(1);opacity:.85}
+.tvw-tn-txt{margin:14px 0 0!important;font-size:15px;color:var(--mut);line-height:1.5}
+.tvw-then{background:#eef1f5;border-radius:22px;padding:24px 22px 22px}
+.tvw-bcard{border-radius:14px;padding:22px 20px;background:#fff;border:1px dashed #b9c6d8;filter:grayscale(1);opacity:.8;transform:rotate(-1.5deg)}
 .tvw-bcard b{display:block;font-size:20px;color:#3b4656}.tvw-bcard span{display:block;font-size:14px;color:#6b7686;margin:4px 0 10px}.tvw-bcard i{font-style:normal;font-size:14px;color:#3b4656}
-.tvw-tn-arrow{font-size:34px;color:var(--blue);font-weight:800}
-.tvw-flow{display:grid;grid-template-columns:1fr 18px 1fr 18px 1fr 18px 1fr;align-items:stretch}
-.tvw-fl{border-radius:14px;padding:14px 12px;background:#fff;border:1px solid #dfe6f0;box-shadow:0 10px 22px -16px rgba(13,35,70,.4)}
-.tvw-fl em{display:block;font-style:normal;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
-.tvw-fl b{display:block;font-size:13.5px;line-height:1.35;color:var(--navy)}
-.tvw-fl-ai{background:linear-gradient(160deg,#0f1b2e,#1d3f78);border-color:#1d3f78}.tvw-fl-ai em{color:#7fd4ff}.tvw-fl-ai b{color:#fff}
-.tvw-fl-win{background:#ecfbf1;border-color:#b7e7c7}.tvw-fl-win em{color:#16a34a}.tvw-fl-win u{text-decoration:none;background:#fff3c4;padding:0 3px;border-radius:4px}
-.tvw-fl-ar{align-self:center;height:2px;background:#7fb2ff;position:relative}
-.tvw-fl-ar:after{content:"";position:absolute;right:-1px;top:-4px;border-left:7px solid #7fb2ff;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.tvw-tn-arrow{width:52px;height:52px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:24px;font-weight:800;box-shadow:0 10px 24px -8px rgba(29,95,209,.6)}
+.tvw-chat{position:relative;overflow:hidden;border-radius:22px;padding:20px 22px 24px;background:radial-gradient(120% 90% at 100% 0,rgba(63,140,255,.35),transparent 55%),linear-gradient(160deg,#0b1628,#14305c);box-shadow:0 26px 50px -24px rgba(11,22,40,.7)}
+.tvw-chat:before{content:"";position:absolute;right:-60px;top:30px;width:340px;height:2px;background:linear-gradient(90deg,transparent,#5cc8ff,transparent);transform:rotate(-24deg);opacity:.7}
+.tvw-chat-top{display:flex;align-items:center;gap:10px;padding-bottom:14px;margin-bottom:18px;border-bottom:1px solid rgba(255,255,255,.12)}
+.tvw-chat-dots{display:flex;gap:5px}.tvw-chat-dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25)}
+.tvw-chat-top b{color:#fff;font-size:14px}.tvw-chat-top em{margin-left:auto;font-style:normal;font-size:12px;color:#7fd4ff;text-align:right}
+.tvw-q{margin-left:auto;width:fit-content;max-width:80%;background:#fff;color:var(--navy);font-weight:700;font-size:16px;padding:12px 16px;border-radius:18px 18px 4px 18px}
+.tvw-a{display:flex;gap:12px;margin-top:16px;max-width:92%}
+.tvw-a-ic{flex:none;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#3f8cff,#7fd4ff);color:#fff;display:grid;place-items:center;font-size:16px}
+.tvw-a>div{background:rgba(255,255,255,.08);border:1px solid rgba(127,212,255,.3);border-radius:4px 18px 18px 18px;padding:14px 16px}
+.tvw-a p{margin:0!important;color:#e8f1ff;font-size:15.5px;line-height:1.5}
+.tvw-a u{text-decoration:none;background:#ffc53d;color:#0b1628;font-weight:800;padding:1px 6px;border-radius:5px}
+.tvw-src{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;color:#7fd4ff;background:rgba(127,212,255,.12);padding:4px 10px;border-radius:99px}
+.tvw-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.tvw-steps span{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid #dfe6f0;border-radius:14px;padding:12px;font-size:13.5px;line-height:1.35;color:var(--navy);font-weight:600}
+.tvw-steps b{flex:none;width:24px;height:24px;border-radius:50%;background:#eaf2ff;color:var(--blue);display:grid;place-items:center;font-size:12px}
 .tvw-bot-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;max-width:1040px;margin:0 auto}
 .tvw-bot h2{font-size:38px;line-height:1.1;margin:6px 0 12px!important}
 .tvw-bot-txt>p{font-size:16.5px;color:var(--mut);line-height:1.6}
@@ -488,7 +491,7 @@ CSS = '''
 .tvs-ready .tvw-d1{animation-delay:.4s}.tvs-ready .tvw-d2{animation-delay:1.5s}.tvs-ready .tvw-d3{animation-delay:2.9s}.tvs-ready .tvw-d4{animation-delay:4s}.tvs-ready .tvw-d5{animation-delay:5.2s}
 @keyframes tvwPop{to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.tvs-ready .tvw-d1,.tvs-ready .tvw-d2,.tvs-ready .tvw-d3,.tvs-ready .tvw-d4,.tvs-ready .tvw-d5{animation:none;opacity:1;transform:none}}
-@media (max-width:900px){.tvw-then-now{grid-template-columns:1fr}.tvw-tn-arrow{transform:rotate(90deg);justify-self:center}.tvw-flow{grid-template-columns:1fr}.tvw-fl-ar{width:2px;height:16px;justify-self:center}.tvw-fl-ar:after{display:none}.tvw-bot-grid{grid-template-columns:1fr;gap:28px}.tvw-bot h2{font-size:30px}.tvw-bot-list{grid-template-columns:1fr}.tvw-lead{position:relative;right:auto;margin:14px auto 0}.tvw-bot-ex{position:static;display:inline-block;margin-top:10px!important}}
+@media (max-width:900px){.tvw-then-now{grid-template-columns:1fr}.tvw-tn-arrow{transform:rotate(90deg);justify-self:center;width:44px;height:44px}.tvw-steps{grid-template-columns:1fr}.tvw-q{max-width:90%}.tvw-a{max-width:100%}.tvw-chat-top em{display:none}.tvw-bot-grid{grid-template-columns:1fr;gap:28px}.tvw-bot h2{font-size:30px}.tvw-bot-list{grid-template-columns:1fr}.tvw-lead{position:relative;right:auto;margin:14px auto 0}.tvw-bot-ex{position:static;display:inline-block;margin-top:10px!important}}
 
 .tvw-add-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1040px;margin:0 auto}
 .tvw-add{background:#fff;border:1px solid #dfe6f0;border-radius:16px;padding:18px 18px 16px;box-shadow:0 10px 26px -18px rgba(13,35,70,.35)}
