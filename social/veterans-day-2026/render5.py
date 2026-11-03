@@ -3,8 +3,8 @@ import os, subprocess
 from PIL import Image
 HERE = os.path.dirname(os.path.abspath(__file__))
 CH = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
-IG = "--ph:600px;--pos:center 28%;--pt:560px;--lw:150px;--kf:21px;--hm:22px;--nf:22px;--hf:78px;--om:32px;--op:24px 22px;--ic:56px;--of:31px;--os:22px;--cm:32px;--cf:38px;--ff:20px;"
-ST = "--ph:900px;--pos:center 30%;--pt:800px;--lw:180px;--kf:26px;--hm:30px;--nf:28px;--hf:80px;--om:44px;--op:30px 26px;--ic:64px;--of:34px;--os:25px;--cm:48px;--cf:46px;--ff:26px;"
+IG = "--ph:470px;--pos:center 26%;--it:300px;--iw:350px;--ih:230px;--pt:568px;--lw:150px;--kf:21px;--hm:22px;--nf:22px;--hf:78px;--om:32px;--op:24px 22px;--ic:56px;--of:31px;--os:22px;--cm:32px;--cf:38px;--ff:20px;"
+ST = "--ph:640px;--pos:center 30%;--it:420px;--iw:430px;--ih:290px;--pt:760px;--lw:180px;--kf:26px;--hm:30px;--nf:28px;--hf:80px;--om:44px;--op:30px 26px;--ic:64px;--of:34px;--os:25px;--cm:48px;--cf:46px;--ff:26px;"
 SIZES = {
     "ig": (1080, 1350, IG, "Nominate free <em>&rarr;</em> link in bio"),
     "ad-ig": (1080, 1350, IG, "Tap to nominate <em>&rarr;</em>"),

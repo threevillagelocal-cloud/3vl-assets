@@ -8,6 +8,9 @@ html,body{width:var(--w);height:var(--h);overflow:hidden;font-family:'Radio Cana
 .photo{position:absolute;left:0;top:0;width:100%;height:var(--ph);background:url(p-main.jpg) var(--pos)/cover no-repeat}
 .photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,0) 55%,#fff 99%)}
 .stripe{position:absolute;left:0;right:0;top:0;height:12px;display:flex}.stripe i{flex:1}.stripe i:first-child{background:#b22234}.stripe i:last-child{background:#1f3f8f}
+.ins{position:absolute;left:0;right:0;top:var(--it);display:flex;justify-content:center;gap:24px}
+.ins figure{width:var(--iw);height:var(--ih);border-radius:22px;overflow:hidden;border:6px solid #fff;box-shadow:0 16px 34px rgba(19,35,58,.22)}
+.ins img{width:100%;height:100%;object-fit:cover;display:block}
 .panel{position:absolute;left:60px;right:60px;top:var(--pt);text-align:center}
 .logo{width:var(--lw);display:block;margin:0 auto 18px}
 .k{display:inline-flex;align-items:center;gap:12px;font-size:var(--kf);font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#1f3f8f;background:#eef3fc;border-radius:999px;padding:11px 28px}
@@ -26,6 +29,7 @@ h1 span{white-space:nowrap;color:#1f3f8f;background:linear-gradient(transparent 
 </style></head>
 <body><div class="stage">
 <div class="photo"></div><div class="stripe"><i></i><i></i></div>
+<div class="ins"><figure><img src="p-guard-2x.jpg" alt=""></figure><figure><img src="p-esvfw-2x.jpg" alt=""></figure></div>
 <div class="panel">
  <img class="logo" src="logo-navy.png" alt="">
  <div class="k"><b>&#9733;</b> Veterans Day &middot; November 11</div>
