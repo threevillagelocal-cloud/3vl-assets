@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-03T20:06:14.903012+00:00",
+"updated": "2026-11-03T21:43:43.642045+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 45,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 200,
-"Emma S. Clark Library": 277,
+"Emma S. Clark Library": 275,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 48,
 "Ward Melville Heritage Org": 2,
@@ -507,42 +507,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition"
-},
-{
-"id": "emmaclark-volunteer-hobbs-farm-63991",
-"title": "Volunteer at Hobbs Farm",
-"start": "2026-11-03T14:00:00",
-"end": "2026-11-03T16:00:00",
-"allday": false,
-"venue": "Off site (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/volunteer-hobbs-farm-63991",
-"desc": "This program is taking place offsite, not in the Library. If minors are attending the program, a parent/guardian who is 18 years old or older must stay with the minor at all times. Minors are not allowed to be dropped off at offsite programs without a parent/g",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-05/000561-0067-000054.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/volunteer-at-hobbs-farm-658"
-},
-{
-"id": "emmaclark-volunteer-hobbs-farm-community-service-grades-3-5-61464",
-"title": "Volunteer at Hobbs Farm for Community Service (Grades 3-5)",
-"start": "2026-11-03T14:00:00",
-"end": "2026-11-03T16:00:00",
-"allday": false,
-"venue": "Off site (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/volunteer-hobbs-farm-community-service-grades-3-5-61464",
-"desc": "This program is taking place offsite, not in the Library. If minors are attending the program, a parent/guardian who is 18 years old or older must stay with the minor at all times. Minors are not allowed to be dropped off at offsite programs without a parent/g",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-07/CommunityServiceNew_3.png",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/volunteer-at-hobbs-farm-for-community-service-grades-3-5-512"
 },
 {
 "id": "emmaclark-comic-book-creation-teens-tweens-63992",
