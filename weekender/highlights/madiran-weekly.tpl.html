@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Radio+Canada:wght@500;600;700&display=block" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden;background:#000}
+.bg{position:absolute;left:0;right:0;top:0;height:560px;background:url(madiran-ext.jpg) center 45%/cover;filter:saturate(1.05) brightness(.95)}
+.sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.5) 24%,rgba(0,0,0,.93) 39%,#000 50%,#000 100%)}
+.fr{position:absolute;inset:24px;border:2px solid rgba(232,197,106,.6);border-radius:24px}
+.wrap{position:absolute;inset:0;padding:64px 62px;color:#fff;font-family:'Radio Canada',sans-serif}
+.kick{display:inline-flex;align-items:center;gap:12px;background:#e8c56a;color:#111;font-weight:700;font-size:24px;letter-spacing:.16em;text-transform:uppercase;padding:10px 22px;border-radius:999px}
+.kick i{width:14px;height:14px;border-radius:50%;background:#111;box-shadow:0 0 0 5px rgba(0,0,0,.18)}
+h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:118px;line-height:.92;margin-top:190px;letter-spacing:-.01em;text-shadow:0 4px 24px rgba(0,0,0,.45)}
+h1 em{font-style:italic;font-weight:600;color:#e8c56a}
+.at{font-size:30px;font-weight:600;color:#f3ead8;margin-top:12px;letter-spacing:.05em}
+.wk{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:34px;color:#e8c56a;margin-top:4px}
+.rows{margin-top:28px;display:grid;gap:12px}
+.r{display:grid;grid-template-columns:120px 150px 1fr;align-items:center;gap:16px;padding:16px 24px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(232,197,106,.32)}
+.r.star{background:linear-gradient(90deg,rgba(232,197,106,.24),rgba(232,197,106,.06));border-color:rgba(232,197,106,.75)}
+.d{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:46px;color:#e8c56a;line-height:1}
+.d small{display:block;font-family:'Radio Canada',sans-serif;font-size:19px;font-weight:600;color:#c9c3b8;margin-top:4px;letter-spacing:.04em}
+.t{font-weight:700;font-size:27px;color:#f3ead8}
+.p b{display:block;font-weight:700;font-size:30px;line-height:1.12}
+.p span{display:block;font-weight:500;font-size:21px;color:#c9c3b8;margin-top:4px;line-height:1.25}
+.ft{position:absolute;left:62px;right:62px;bottom:52px;display:flex;align-items:center;justify-content:space-between}
+.ft img{height:84px}
+.ft p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;color:#f3ead8;text-align:right;line-height:1.15}
+.ft p b{font-style:normal;font-family:'Radio Canada',sans-serif;font-size:22px;letter-spacing:.08em;color:#e8c56a;display:block;margin-top:4px}
+</style></head><body><div class="bg"></div><div class="sh"></div><div class="fr"></div>
+<div class="wrap">
+<span class="kick"><i></i>Live music this week</span>
+<h1>Live music <em>&amp; wine</em></h1>
+<div class="at">MADIRAN THE WINE BAR &middot; EAST SETAUKET</div>
+<div class="wk">{{WEEK}}</div>
+<div class="rows">
+{{ROWS}}
+</div></div>
+<div class="ft"><img src="3vl-white.png"><p>Pour a glass, stay for the set.<b>THREEVILLAGELOCAL.COM/EVENTS</b></p></div>
+</body></html>
