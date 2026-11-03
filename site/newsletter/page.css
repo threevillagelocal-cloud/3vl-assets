@@ -48,3 +48,5 @@
   #nl3 .nl-again{flex-direction:column;align-items:stretch;text-align:center}
 }
 @media (max-width:380px){#nl3 .nl-card .btn,#nl3 .nl-card button[type=submit]{font-size:15px}#nl3 .nl-fine{font-size:12px}}
+
+.nl-almost{background:#eaf3ff;color:#1b2f45;border-radius:10px;padding:10px 14px;font-weight:700;font-size:15px;margin:0 0 12px}
