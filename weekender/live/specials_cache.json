@@ -81,27 +81,28 @@
 "url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
 "img": "",
 "inset": "ig/p17972423598169904.jpg"
-},
-{
-"id": "18109810757580122",
-"biz": "Burgerology",
-"ig": "burgerologyusa",
-"town": "Stony Brook",
-"category": "Restaurant",
-"member": false,
-"title": "Kids Eat Free Every Tuesday",
-"when": "Every Tuesday · 4 PM – 9 PM",
-"desc": "Kids eat free every Tuesday at Burgerology. Bring the family and enjoy your favorites.",
-"expires": "2026-11-10",
-"posted": "2026-10-27T15:51:35+0000",
-"url": "https://www.instagram.com/reel/DfAOGxhxZWe/",
-"img": "",
-"inset": "ig/p18109810757580122.jpg"
 }
 ],
 "ep_restaurant": [],
 "tajcrownofindia": [],
-"rctaqueria": [],
+"rctaqueria": [
+{
+"id": "17977611195151056",
+"biz": "Right Coast Taqueria",
+"ig": "rctaqueria",
+"town": "East Setauket",
+"category": "Restaurant",
+"member": false,
+"title": "Pilgrim Burrito is Back",
+"when": "Limited Time",
+"desc": "Holiday-themed burrito with stuffing, turkey, cranberry, and sweet potatoes.",
+"expires": "2026-11-17",
+"posted": "2026-11-03T13:56:22+0000",
+"url": "https://www.instagram.com/reel/DfSCbrSszOS/",
+"img": "",
+"inset": "ig/p17977611195151056.jpg"
+}
+],
 "thestudy.bytoast": [],
 "breakroomny": [],
 "seportdelicatessen": [],

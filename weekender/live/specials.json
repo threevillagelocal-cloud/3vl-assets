@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T13:00:15.853411+00:00",
+ "updated": "2026-11-03T16:00:20.327925+00:00",
  "specials": [
   {
    "id": "18645486091036908",
@@ -82,20 +82,20 @@
    "inset": "ig/p18146771710581070.jpg"
   },
   {
-   "id": "18153094972530027",
-   "biz": "Pasta Pasta",
-   "ig": "pastapasta_portjeff",
-   "town": "Port Jefferson",
+   "id": "17977611195151056",
+   "biz": "Right Coast Taqueria",
+   "ig": "rctaqueria",
+   "town": "East Setauket",
    "category": "Restaurant",
    "member": false,
-   "title": "Restaurant Week at Pasta Pasta",
-   "when": "Nov 1-8",
-   "desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
-   "expires": "2026-11-08",
-   "posted": "2026-11-01T14:40:00+0000",
-   "url": "https://www.instagram.com/p/DfM9ynrypga/",
+   "title": "Pilgrim Burrito is Back",
+   "when": "Limited Time",
+   "desc": "Holiday-themed burrito with stuffing, turkey, cranberry, and sweet potatoes.",
+   "expires": "2026-11-17",
+   "posted": "2026-11-03T13:56:22+0000",
+   "url": "https://www.instagram.com/reel/DfSCbrSszOS/",
    "img": "",
-   "inset": "ig/p18153094972530027.jpg"
+   "inset": "ig/p17977611195151056.jpg"
   }
  ],
  "candidates": [
@@ -180,20 +180,20 @@
    "inset": "ig/p18146771710581070.jpg"
   },
   {
-   "id": "18153094972530027",
-   "biz": "Pasta Pasta",
-   "ig": "pastapasta_portjeff",
-   "town": "Port Jefferson",
+   "id": "17977611195151056",
+   "biz": "Right Coast Taqueria",
+   "ig": "rctaqueria",
+   "town": "East Setauket",
    "category": "Restaurant",
    "member": false,
-   "title": "Restaurant Week at Pasta Pasta",
-   "when": "Nov 1-8",
-   "desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
-   "expires": "2026-11-08",
-   "posted": "2026-11-01T14:40:00+0000",
-   "url": "https://www.instagram.com/p/DfM9ynrypga/",
+   "title": "Pilgrim Burrito is Back",
+   "when": "Limited Time",
+   "desc": "Holiday-themed burrito with stuffing, turkey, cranberry, and sweet potatoes.",
+   "expires": "2026-11-17",
+   "posted": "2026-11-03T13:56:22+0000",
+   "url": "https://www.instagram.com/reel/DfSCbrSszOS/",
    "img": "",
-   "inset": "ig/p18153094972530027.jpg"
+   "inset": "ig/p17977611195151056.jpg"
   }
  ],
  "all": [
@@ -308,6 +308,22 @@
    "url": "https://www.instagram.com/reel/DfLjNMBTBXL/",
    "img": "",
    "inset": "ig/p18146771710581070.jpg"
+  },
+  {
+   "id": "17977611195151056",
+   "biz": "Right Coast Taqueria",
+   "ig": "rctaqueria",
+   "town": "East Setauket",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Pilgrim Burrito is Back",
+   "when": "Limited Time",
+   "desc": "Holiday-themed burrito with stuffing, turkey, cranberry, and sweet potatoes.",
+   "expires": "2026-11-17",
+   "posted": "2026-11-03T13:56:22+0000",
+   "url": "https://www.instagram.com/reel/DfSCbrSszOS/",
+   "img": "",
+   "inset": "ig/p17977611195151056.jpg"
   },
   {
    "id": "18153094972530027",

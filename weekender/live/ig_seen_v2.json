@@ -1,44 +1,4 @@
 {
-"18135841063631032": {
-"special": false,
-"title": "Burgerology Returning to Patchogue",
-"when": "Coming Soon",
-"desc": "Burgerology announces return to Patchogue with a new location, no specific date provided yet.",
-"expires": "2026-10-04",
-"_ts": "2026-10-04T15:57:57+0000"
-},
-"18112517788871636": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-04T13:18:18+0000"
-},
-"18623568274030369": {
-"special": false,
-"title": "PJ Lobster House Sunday Dinner",
-"when": "Ongoing",
-"desc": "Dine in, pickup, or delivery available. No specific time-bound offer or event date announced.",
-"expires": "2026-10-04",
-"_ts": "2026-10-04T14:46:37+0000"
-},
-"18109923269234883": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-04T15:32:48+0000"
-},
-"18107119046191646": {
-"special": false,
-"title": "Game Day Takeout & Delivery",
-"when": "Ongoing",
-"desc": "Order game-day favorites like wings, calzones, and mozzarella sticks for takeout or delivery.",
-"expires": "2026-10-04",
-"_ts": "2026-10-04T15:28:29+0000"
-},
 "18097177262394673": {
 "special": false,
 "title": "",
@@ -3202,5 +3162,17 @@
 "desc": "Try turkey chashu, crispy stuffing, green beans with crunchy onions, red ginger and sweet corn in rich broth.",
 "expires": "2026-11-30",
 "_ts": "2026-11-03T01:59:10+0000"
+},
+"18110217565932127": {
+"special": false,
+"_ts": "2026-11-03T13:50:26+0000"
+},
+"17977611195151056": {
+"special": true,
+"title": "Pilgrim Burrito is Back",
+"when": "Limited Time",
+"desc": "Holiday-themed burrito with stuffing, turkey, cranberry, and sweet potatoes.",
+"expires": "2026-11-17",
+"_ts": "2026-11-03T13:56:22+0000"
 }
 }
