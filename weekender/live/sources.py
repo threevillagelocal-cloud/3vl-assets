@@ -376,6 +376,41 @@ def limehof():
     return out
 
 
+MADIRAN_IMG = "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg"   # our edited exterior
+
+
+def madiran():
+    """Madiran The Wine Bar (East Setauket): weekly live music. Their events page keeps the whole upcoming
+    'LIVE MUSIC SCHEDULE' as plain lines ("November 3 - Cathy Rose Salit with ..."), owner 11/3/2026.
+    Set times from the same page: Fri/Sat 7-10 PM, Sun 5-7 PM, other nights 7-9 PM. Live music lines only."""
+    base = "https://madiranthewinebar.com/events.html"
+    s = get(base)
+    s = s.decode("utf-8", "replace") if isinstance(s, bytes) else s
+    t = clean(html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"(?is)<(script|style).*?</\1>", " ", s))).replace("\u200b", " "))
+    i = t.upper().find("LIVE MUSIC SCHEDULE")
+    if i < 0:
+        return []
+    t = t[i:]
+    mon = "january february march april may june july august september october november december".split()
+    out = []
+    for m in re.finditer(r"\b(%s)\s+(\d{1,2})\s*-\s*(.+?)(?=\s+(?:%s)\s+\d{1,2}\s*-|\s+Proudly powered|$)" % ("|".join(mon), "|".join(mon)), t, re.I):
+        mo, day, who = mon.index(m.group(1).lower()) + 1, int(m.group(2)), clean(m.group(3)).rstrip(" .")
+        yr = TODAY.year + (1 if mo < TODAY.month - 2 else 0)
+        try:
+            d = dt.date(yr, mo, day)
+        except ValueError:
+            continue
+        wd = d.weekday()                                    # Mon 0 ... Sun 6
+        h0, h1 = ((19, 22) if wd in (4, 5) else (17, 19) if wd == 6 else (19, 21))
+        start = dt.datetime(yr, mo, day, h0)
+        title = who if re.search(r"(?i)show|series|jazz loft", who) else "Live Music: " + who
+        out.append(ev("madiran", "%s-%s" % (d.strftime("%Y%m%d"), re.sub(r"[^a-z0-9]+", "-", who.lower())[:40]), title, start,
+                      dt.datetime(yr, mo, day, h1), "Madiran The Wine Bar", "209 Route 25A, East Setauket, NY 11733", base,
+                      "Live music at Madiran The Wine Bar in East Setauket: %s. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table." % who,
+                      MADIRAN_IMG, False))
+    return out
+
+
 def staller():
     """Staller Center for the Arts (Stony Brook University). The official calendar at stallercenter.com/Calendar.php is an
     Elfsight event-calendar widget; this reads the same public widget data the page loads (show, hall, time, photo, ticket link).
@@ -549,6 +584,7 @@ SOURCES = [
     ("Sweetbriar Nature Center", lambda: squarespace("sweetbriar", "https://www.sweetbriarnc.org", "Sweetbriar Nature Center", "/new-events")),
     ("Historical Society of Greater Port Jefferson", lambda: squarespace("pjhistorical", "https://www.portjeffhistorical.org", "Mather House Museum")),
     # ("Stony Brook Athletics (home games)", seawolves),   # owner 10/28/2026: "don't put stony brook sports on the events"
+    ("Madiran The Wine Bar live music", madiran),   # owner 11/3/2026
     ("Local business Instagram posts", social),
 ]
 
