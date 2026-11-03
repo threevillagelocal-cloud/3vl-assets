@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-03T14:00:49.623599+00:00",
+"updated": "2026-11-03T14:41:44.853265+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
@@ -17,6 +17,7 @@
 "Reboli Center": 17,
 "Sweetbriar Nature Center": 17,
 "Historical Society of Greater Port Jefferson": 1,
+"Madiran The Wine Bar live music": 33,
 "Local business Instagram posts": 6
 },
 "icons": {
@@ -582,6 +583,26 @@
 "page": "https://www.threevillagelocal.com/events/comic-book-creation-for-teens-tweens"
 },
 {
+"id": "madiran-20261103-cathy-rose-salit-with-rod-borrie-vincent",
+"title": "Live Music: Cathy Rose Salit with Rod Borrie, Vincent Loccisano, and Dave Lobenstein",
+"start": "2026-11-03T19:00:00",
+"end": "2026-11-03T21:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in East Setauket: Cathy Rose Salit with Rod Borrie, Vincent Loccisano, and Dave Lobenstein. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-cathy-rose-salit-with-rod-borrie-vincent-loccisano-and-dave-lobenstein"
+},
+{
 "id": "emmaclark-shed-meds-61288",
 "title": "Shed the Meds",
 "start": "2026-11-04T10:00:00",
@@ -635,6 +656,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/mornings-lim-tour-of-enduring-hearts"
+},
+{
+"id": "madiran-20261104-ray-anderson-and-steve-salerno",
+"title": "Live Music: Ray Anderson and Steve Salerno",
+"start": "2026-11-04T19:00:00",
+"end": "2026-11-04T21:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in East Setauket: Ray Anderson and Steve Salerno. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-ray-anderson-and-steve-salerno"
 },
 {
 "id": "emmaclark-chair-yoga-61290",
@@ -781,6 +822,26 @@
 "page": "https://www.threevillagelocal.com/events/the-cinematic-journey-of-jimmy-stewart-zoom"
 },
 {
+"id": "madiran-20261105-frank-hansen-and-laura-rose",
+"title": "Live Music: Frank Hansen and Laura Rose",
+"start": "2026-11-05T19:00:00",
+"end": "2026-11-05T21:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in East Setauket: Frank Hansen and Laura Rose. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-frank-hansen-and-laura-rose"
+},
+{
 "id": "sweetbriar-6a8476a7ddd49a7465932582",
 "title": "First Steps Into Nature 2y-5y",
 "start": "2026-11-06T09:30:00",
@@ -892,6 +953,26 @@
 "status": "",
 "fb": 1,
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
+},
+{
+"id": "madiran-20261106-jim-lowe",
+"title": "Live Music: Jim Lowe",
+"start": "2026-11-06T19:00:00",
+"end": "2026-11-06T22:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in East Setauket: Jim Lowe. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-jim-lowe"
 },
 {
 "id": "portjeff-1151",
@@ -1025,6 +1106,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/a-christmas-carol-at-theatre-three"
+},
+{
+"id": "madiran-20261107-tim-siciliano",
+"title": "Live Music: Tim Siciliano",
+"start": "2026-11-07T19:00:00",
+"end": "2026-11-07T22:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in East Setauket: Tim Siciliano. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-tim-siciliano"
 },
 {
 "id": "staller-50b856a1-66c1-46e8-830d-bd351651b62c",
@@ -1426,6 +1527,26 @@
 "page": "https://www.threevillagelocal.com/events/cricut-coffee-mug-lottery"
 },
 {
+"id": "madiran-20261110-dave-lobenstein-james-miceli-and-steve-s",
+"title": "Live Music: Dave Lobenstein, James Miceli, and Steve Salerno",
+"start": "2026-11-10T19:00:00",
+"end": "2026-11-10T21:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in East Setauket: Dave Lobenstein, James Miceli, and Steve Salerno. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-dave-lobenstein-james-miceli-and-steve-salerno"
+},
+{
 "id": "emmaclark-evening-book-discussion-61332",
 "title": "Evening Book Discussion",
 "start": "2026-11-10T19:30:00",
@@ -1460,6 +1581,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/starry-nights-featuring-colin-carr-arnaud-sussmann"
+},
+{
+"id": "madiran-20261111-al-marino-james-miceli-and-jerry-mac",
+"title": "Live Music: Al Marino, James Miceli, and Jerry Mac",
+"start": "2026-11-11T19:00:00",
+"end": "2026-11-11T21:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in East Setauket: Al Marino, James Miceli, and Jerry Mac. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-al-marino-james-miceli-and-jerry-mac"
 },
 {
 "id": "pjchamber-15086",
@@ -1661,6 +1802,26 @@
 "page": "https://www.threevillagelocal.com/events/from-chaos-to-control-simplify-with-a-password-manager-zoom"
 },
 {
+"id": "madiran-20261112-the-jazz-loft-dispatch-series",
+"title": "The Jazz Loft Dispatch Series",
+"start": "2026-11-12T19:00:00",
+"end": "2026-11-12T21:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in East Setauket: The Jazz Loft Dispatch Series. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/the-jazz-loft-dispatch-series"
+},
+{
 "id": "emmaclark-creative-writing-workshop-63998",
 "title": "Mystery Writing Workshop",
 "start": "2026-11-12T19:30:00",
@@ -1832,6 +1993,26 @@
 "status": "",
 "fb": 0,
 "page": ""
+},
+{
+"id": "madiran-20261113-john-maurice-restrepo-and-eduardo-withri",
+"title": "Live Music: John Maurice Restrepo and Eduardo Withrington",
+"start": "2026-11-13T19:00:00",
+"end": "2026-11-13T22:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in East Setauket: John Maurice Restrepo and Eduardo Withrington. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-john-maurice-restrepo-and-eduardo-withrington"
 }
 ],
 "closings": [],
