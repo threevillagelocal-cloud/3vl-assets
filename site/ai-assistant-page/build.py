@@ -58,7 +58,7 @@ NEXT = '''<section class="tvs-sec tva-next" id="tva-next">
 FEAT = '''<section class="tvs-sec tva-feat" id="tva-feat">
   <div class="tvs-head tvs-up">
     <p class="tva-fd-pill"><span></span>Your Digital Front Desk</p>
-    <h2>Smart, friendly, and <span class="tva-fd-hl">it never misses a lead.</span></h2>
+    <h2>Smart, friendly,<br><span class="tva-fd-hl">and it never misses a lead.</span></h2>
     <p>We build your assistant, teach it your business, and add it to your site. You just watch the leads come in.</p>
   </div>
   <div class="tva-grid">
@@ -69,7 +69,7 @@ FEAT = '''<section class="tvs-sec tva-feat" id="tva-feat">
     <div class="tva-c tva-c5 tvs-up"><span>&#129309;</span><h3>Live person, instantly</h3><p>If someone asks for a real person, you get an instant text and email with their name, number and what they need.</p></div>
     <div class="tva-c tva-c6 tvs-up"><span>&#128202;</span><h3>Monthly summary</h3><p>See what customers asked, how many leads came in, and what to add next. We keep it sharp for you.</p></div>
   </div>
-  <div class="tva-reg tvs-up"><span>&#9878;&#65039;</span><div><b>Built for every kind of business, including regulated ones.</b><p>Restaurants, shops, home services and small businesses, plus law firms, financial advisors, insurance, mortgage, accounting and medical offices. We set up every assistant to follow your industry&#39;s regulations and guidelines: general information only (never legal, financial or medical advice), the right disclaimers, only the wording and rates you approve, no sensitive information collected, and anything specific goes straight to you. You approve it before it goes live.</p></div></div>
+  <div class="tva-reg tvs-up"><span>&#9878;&#65039;</span><div><b>Custom built for your business and your industry.</b><p>Trained on your business, set up to follow your industry&#39;s rules, and approved by you before it goes live. Restaurants, contractors, law firms, financial and medical offices.</p></div></div>
 </section>'''
 
 WORKS = '''<section class="tvs-sec tva-plat">
@@ -324,7 +324,9 @@ CSS = '''
 .tva-c1{--ac:#1d5fd1;--acl:#e3edff}.tva-c2{--ac:#16a37a;--acl:#dff7ee}.tva-c3{--ac:#0f8fb8;--acl:#ddf3fa}
 .tva-c4{--ac:#4a5fd6;--acl:#e7e9ff}.tva-c5{--ac:#2fb36d;--acl:#e1f6ea}.tva-c6{--ac:#e0a82e;--acl:#fdf3dc}
 .tva-feat .tva-reg{border-left:4px solid #1d5fd1}
+.tva-feat h2,.tva-fd-hl{text-wrap:balance}.tva-fd-hl{display:inline-block}
 @media (max-width:900px){.tva-feat{margin-top:34px;padding:40px 16px 44px!important}}
+@media (max-width:520px){.tva-feat .tvs-head h2{font-size:27px!important;line-height:1.2!important}}
 @media (prefers-reduced-motion:reduce){.tva-feat:before{animation:none}}
 @media (max-width:900px){.tva-why,.tva-grid{grid-template-columns:1fr}.tva-tune-in{grid-template-columns:1fr;padding:24px 20px}.tva-tune-in h2{font-size:28px}.tva-hvis{padding:24px 14px}}
 '''
