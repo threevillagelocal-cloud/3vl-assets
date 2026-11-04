@@ -1,28 +1,4 @@
 {
-"18097177262394673": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-05T01:52:08+0000"
-},
-"18013420268959176": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-04T22:56:30+0000"
-},
-"17907903513577355": {
-"special": true,
-"title": "Oktoberfest Music Bingo",
-"when": "Mon, Oct. 6 · 7 PM",
-"desc": "Music bingo with prizes, giveaways, and happy hour pricing for lederhosen/dirndl wearers.",
-"expires": "2026-10-06",
-"_ts": "2026-10-04T20:22:40+0000"
-},
 "18106809092626209": {
 "special": true,
 "title": "National Taco Day Special",
@@ -78,14 +54,6 @@
 "desc": "Cozy season has arrived. Open Monday 4-9 PM.",
 "expires": "2026-10-05",
 "_ts": "2026-10-05T14:01:58+0000"
-},
-"17908298838504456": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-05T04:18:38+0000"
 },
 "18430460974157157": {
 "special": true,
@@ -3194,5 +3162,29 @@
 "desc": "Soup, entrees, and sandwiches from $2-$16 including lobster, steak, and burgers.",
 "expires": "2026-11-03",
 "_ts": "2026-11-03T16:48:09+0000"
+},
+"17913502878476863": {
+"special": true,
+"title": "Taco Tuesday & Crunchy Tacos",
+"when": "Every Tuesday",
+"desc": "Taco Tuesday specials and crunchy tacos featured on the menu this week.",
+"expires": "2026-11-11",
+"_ts": "2026-11-04T00:04:51+0000"
+},
+"18016144667978614": {
+"special": false,
+"title": "Surf & Turf Sandwich",
+"when": "Daily",
+"desc": "Sliced steak, buttery lobster meat, Old Bay cream sauce, and potato chips on the side.",
+"expires": "2026-11-18",
+"_ts": "2026-11-03T21:01:33+0000"
+},
+"17890489236475523": {
+"special": true,
+"title": "New Pumpkin Spice Fudge",
+"when": "Now available",
+"desc": "Try samples of new pumpkin spice fudge with creamy fall flavors at Kilwins Port Jefferson.",
+"expires": "2026-11-30",
+"_ts": "2026-11-03T23:23:46+0000"
 }
 }

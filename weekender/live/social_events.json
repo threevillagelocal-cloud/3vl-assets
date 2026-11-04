@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T13:01+00:00",
+ "updated": "2026-11-04T13:02+00:00",
  "confirmed": [
   {
    "post": "17970977996965299",
@@ -435,25 +435,6 @@
    "why": "no clear date; no start time in the post"
   },
   {
-   "post": "18113538299138143",
-   "title": "Volunteering at Hobbs Farm",
-   "date": "2026-11-03",
-   "start": "",
-   "end": "",
-   "venue": "Hobbs Farm",
-   "addr": "",
-   "desc": "Community service opportunity for Grades 3-12 to volunteer outdoors. Sign up via the library's bio link under 'Register for Programs.'",
-   "org": "Emma S. Clark Memorial Library",
-   "handle": "emmaclarklibrary",
-   "org_url": "https://www.threevillagelocal.com/emma-s-clark-memorial-library",
-   "url": "https://www.instagram.com/p/Dew_kLQObRB/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18113538299138143.jpg",
-   "posted": "2026-10-21",
-   "kind": "community",
-   "member": true,
-   "why": "no start time in the post"
-  },
-  {
    "post": "17979557177918512",
    "title": "Sunday Brunch at RUVO",
    "date": "",
@@ -547,6 +528,44 @@
    "kind": "community",
    "member": true,
    "why": "restaurant/bar account: check it is not a dining promo; no clear date; no start time in the post"
+  },
+  {
+   "post": "18114850946111639",
+   "title": "14-Course Discovery Omakase",
+   "date": "",
+   "start": "",
+   "end": "",
+   "venue": "Sora Omakase",
+   "addr": "1113 NY-25A Unit 3E, Stony Brook, NY 11790",
+   "desc": "14-Course Discovery Omakase for $98 available Wednesday & Thursday. Chef Yama presents clean flavors, precise technique, and balance in every bite.",
+   "org": "Sora Omakase",
+   "handle": "soraomakase",
+   "org_url": "https://www.threevillagelocal.com/sora-omakase",
+   "url": "https://www.instagram.com/p/DenT2riNpnv/",
+   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18114850946111639.jpg",
+   "posted": "2026-10-17",
+   "kind": "food_drink",
+   "member": true,
+   "why": "food/drink item (Eat & Drink, not the calendar); no clear date; no start time in the post"
+  },
+  {
+   "post": "18467464951137326",
+   "title": "Harvest Festival - Stilt Walkers",
+   "date": "2026-11-05",
+   "start": "",
+   "end": "",
+   "venue": "Port Jefferson",
+   "addr": "",
+   "desc": "Creepy, towering stilt walkers roaming Port Jefferson for the Harvest Festival. They are coming back tomorrow.",
+   "org": "Sea Creations",
+   "handle": "sea_creations",
+   "org_url": "https://www.threevillagelocal.com/sea-creations",
+   "url": "https://www.instagram.com/reel/DenRiiYx3gj/",
+   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18467464951137326.jpg",
+   "posted": "2026-10-17",
+   "kind": "community",
+   "member": true,
+   "why": "no start time in the post"
   },
   {
    "post": "18474352012113837",
