@@ -16,7 +16,10 @@ def b64(img, fmt="PNG"):
 CSS = """*{margin:0;box-sizing:border-box}body{width:%(W)dpx;height:%(H)dpx;overflow:hidden;font-family:'Radio Canada',sans-serif;color:#13294b;position:relative;
 background:radial-gradient(900px 600px at 85%% 10%%,#dfeaff 0%%,rgba(223,234,255,0) 70%%),radial-gradient(700px 600px at 0%% 100%%,#e8f1ff 0%%,rgba(232,241,255,0) 70%%),#f6f9fe}
 .logo{position:absolute;left:58px;top:%(LT)dpx;height:%(LH)dpx}
-.new{position:absolute;right:58px;top:%(NT)dpx;background:#ffc53d;color:#13294b;font-weight:700;font-size:%(NS)dpx;letter-spacing:.08em;padding:12px 22px;border-radius:999px;box-shadow:0 10px 24px -12px rgba(19,41,75,.5)}
+.new{position:absolute;right:%(NR)dpx;top:%(NT)dpx;width:%(NB)dpx;height:%(NB)dpx;transform:rotate(-10deg);filter:drop-shadow(0 16px 22px rgba(19,41,75,.35))}
+.new svg{position:absolute;inset:0;width:100%%;height:100%%}
+.new div{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#13294b;text-align:center;line-height:.9}
+.new b{font-size:%(NS)dpx;font-weight:700;letter-spacing:.02em}.new span{font-size:%(NF)dpx;font-weight:700;letter-spacing:.14em;margin-top:6px}
 h1{position:absolute;left:58px;top:%(HT)dpx;width:%(HW)dpx;font-size:%(HS)dpx;line-height:.98;font-weight:700;letter-spacing:-.015em}h1 b{display:block;color:#1d5fd1}
 .sub{position:absolute;left:62px;top:%(ST)dpx;font-size:%(SS)dpx;font-weight:600;color:#2b3f5e}
 .mascot{position:absolute;left:%(ML)dpx;bottom:%(MB)dpx;height:%(MH)dpx;filter:drop-shadow(0 26px 30px rgba(19,41,75,.28))}
@@ -32,8 +35,8 @@ h1{position:absolute;left:58px;top:%(HT)dpx;width:%(HW)dpx;font-size:%(HS)dpx;li
 .foot em{font-style:normal;color:#ffc53d}"""
 
 FMT = {
-    "ig": dict(W=1080, H=1350, LT=54, LH=96, NT=72, NS=22, HT=196, HW=980, HS=112, ST=430, SS=40, ML=-20, MB=96, MH=730, CT=770, CW=540, MS=24, PS=21, FH=96, FS=33),
-    "sq": dict(W=1080, H=1080, LT=46, LH=84, NT=60, NS=20, HT=162, HW=980, HS=92, ST=360, SS=34, ML=-10, MB=84, MH=560, CT=520, CW=520, MS=22, PS=19, FH=84, FS=29),
+    "ig": dict(W=1080, H=1350, LT=54, LH=96, NT=492, NR=78, NB=262, NS=64, NF=24, HT=196, HW=980, HS=112, ST=430, SS=40, ML=-20, MB=96, MH=730, CT=770, CW=540, MS=24, PS=21, FH=96, FS=33),
+    "sq": dict(W=1080, H=1080, LT=46, LH=84, NT=110, NR=56, NB=232, NS=56, NF=21, HT=162, HW=980, HS=92, ST=360, SS=34, ML=-10, MB=84, MH=560, CT=520, CW=520, MS=22, PS=19, FH=84, FS=29),
 }
 
 
@@ -43,7 +46,7 @@ def render(name, f):
     logo = Image.open(LOGO).convert("RGBA")
     page = ('<!doctype html><html><head><meta charset=utf-8><link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap" rel=stylesheet>'
             '<style>%s</style></head><body>'
-            '<img class=logo src="%s"><div class=new>&#9733; NEW FEATURE</div>'
+            '<img class=logo src="%s"><div class=new><svg viewBox="0 0 100 100"><polygon points="50.0,0.0 58.0,9.8 69.1,3.8 72.8,15.9 85.4,14.6 84.1,27.2 96.2,30.9 90.2,42.0 100.0,50.0 90.2,58.0 96.2,69.1 84.1,72.8 85.4,85.4 72.8,84.1 69.1,96.2 58.0,90.2 50.0,100.0 42.0,90.2 30.9,96.2 27.2,84.1 14.6,85.4 15.9,72.8 3.8,69.1 9.8,58.0 0.0,50.0 9.8,42.0 3.8,30.9 15.9,27.2 14.6,14.6 27.2,15.9 30.9,3.8 42.0,9.8" fill="#ffc53d" stroke="#13294b" stroke-width="2.2" stroke-linejoin="round"/><circle cx="50" cy="50" r="35" fill="none" stroke="#13294b" stroke-width="1" stroke-dasharray="2 2.4" opacity=".55"/></svg><div><b>NEW!</b><span>FEATURE</span></div></div>'
             '<h1>Meet<b>Captain Culper</b></h1><p class=sub>Your tour guide to Three Village</p>'
             '<img class=mascot src="%s">'
             '<div class=chat><div class=ch><img src="%s"><div><b>Captain Culper</b><i>Your Three Village insider &middot; AI</i></div></div>'
