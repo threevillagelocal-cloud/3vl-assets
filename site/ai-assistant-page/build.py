@@ -216,7 +216,7 @@ CSS = '''
 .tva-hvis{padding:28px 34px 28px 24px}
 .tvs-hero:has(.tva-hvis){min-height:680px}
 .tva-hvis:before{pointer-events:none}   /* websites hero decor layer sat over the chat and swallowed clicks */
-.tva-pop{width:350px!important}.tva-pop .tva-box{height:470px!important;max-height:calc(100vh - 130px)!important}
+.tva-pop{width:360px!important}.tva-pop .tva-box{height:470px!important;max-height:calc(100vh - 130px)!important}
 @media (max-width:520px){.tva-pop{width:100%!important}.tva-pop .tva-box{height:100dvh!important;max-height:100dvh!important}}
 .tva-mock{position:relative;border-radius:18px;background:#fff;box-shadow:0 34px 70px -30px rgba(9,30,66,.5),0 0 0 1px rgba(15,42,82,.08);overflow:hidden;height:470px}
 .tva-mock-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:#eef2f7;border-bottom:1px solid #e1e8f2}
