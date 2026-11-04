@@ -12,9 +12,9 @@ D, sec = A.D, A.sec
 
 D.NAME = "3VL Page Platform" if D.LIVE else "3VL Page Platform Preview"
 D.SLUG = "our-services" if D.LIVE else "preview-our-services"
-D.TITLE = "Our Services: Local Marketing, AI Websites, AI Assistants, Video and Drone | Three Village Local"
+D.TITLE = "Our Services: Local Marketing, AI Websites, AI Assistants and Video | Three Village Local"
 D.DESC = ("Three Village Local connects local businesses with the community: our website, mobile app, social media and email, "
-          "plus AI websites, AI assistants, AI optimization, video and drone. Launch a new business or give yours an AI overhaul.")
+          "plus AI websites, AI assistants, AI optimization and video. Launch a new business or give yours an AI overhaul.")
 D.FB_TITLE = "We connect local businesses with the community."
 
 AI = "/ai-assistant" if D.LIVE else "/preview-ai-assistant"
@@ -22,15 +22,21 @@ SH = "https://threevillagelocal-cloud.github.io/3vl-share/site/"
 APP = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@1328a06c9ca8ab841e46fd8b85170aaef3bd1e63/site/app/"
 
 HERO = '''<section class="tvs-hero tvp-hero">
-  <div class="tvw-hvis tvp-vis" aria-hidden="true"><div class="tvp-orbit">
-    <div class="tvp-core"><b>3VL</b><span>Your neighbors<br>in business</span></div>
-    <div class="tvp-ring"><i class="o1">&#128187;<em>Website</em></i><i class="o2">&#128241;<em>Mobile app</em></i><i class="o3">&#128227;<em>Social</em></i>
-      <i class="o4">&#129302;<em>Front Desk</em></i><i class="o5">&#127909;<em>Video</em></i><i class="o6">&#128641;<em>Drone</em></i></div>
-  </div></div>
+  <div class="tvw-hvis tvp-vis"><nav class="tvp-menu" aria-label="Our services">
+    <p class="tvp-menu-k">The business essentials</p>
+      <a href="#tvp-seen"><span>&#11088;</span><div><b>Memberships</b><i>Top spots on Three Village Local</i></div><em>&rarr;</em></a>
+      <a href="#tvp-social"><span>&#128227;</span><div><b>Social media promotion</b><i>Posts and reels seen all over town</i></div><em>&rarr;</em></a>
+      <a href="#tvp-app"><span>&#128241;</span><div><b>Mobile app</b><i>Your specials on local phones</i></div><em>&rarr;</em></a>
+      <a href="#tvp-web"><span>&#128187;</span><div><b>AI-Ready websites</b><i>Built to be found by Google and AI</i></div><em>&rarr;</em></a>
+      <a href="#tvp-bot" class="tvp-m-hot"><span>&#129302;</span><div><b>Digital Front Desk</b><i>AI assistant that captures every lead</i></div><em>&rarr;</em></a>
+      <a href="#tvp-video"><span>&#127909;</span><div><b>Promo video</b><i>Short videos that sell</i></div><em>&rarr;</em></a>
+      <a href="#tvp-email"><span>&#128231;</span><div><b>Email and articles</b><i>Stories the community reads</i></div><em>&rarr;</em></a>
+    <p class="tvp-menu-f">Pick one, or put them together. They all work as one.</p>
+  </nav></div>
   <div class="tvs-hin tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Our mission</p>
     <h1>We connect local businesses<br><span>with the community.</span></h1>
-    <p class="tvs-sub">One local team and one connected platform: our website, mobile app, social media and email, plus AI websites, AI assistants, video and drone. Every piece works together to bring neighbors to your door.</p>
+    <p class="tvs-sub">One local team and one connected platform: our website, mobile app, social media and email, plus AI websites, AI assistants and video. Every piece works together to bring neighbors to your door.</p>
     <div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="#tvp-paths">Find your path</a><a class="tvs-btn tvs-ghost" href="#tvs-book">Send us a message</a></div>
     <ul class="tvs-trust"><li><b>45,000+</b>website page visits a month</li><li><b>100,000+</b>social views a month</li><li><b>One</b>local team</li></ul>
   </div>
@@ -40,7 +46,7 @@ PATHS = '''<section class="tvs-sec tvp-paths" id="tvp-paths">
   <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Where are you today?</p><h2>Two ways we help. Both start with you.</h2></div>
   <div class="tvp-two">
     <a class="tvp-path tvs-up" href="#tvp-launch"><span class="tvp-tag">New business</span><h3>Build it right.</h3>
-      <p>Open your doors with the whole town watching: a website AI can find, your Google and Apple listings, a Three Village Local launch spotlight, social posts, video and drone footage.</p><em>Plan my launch &rarr;</em></a>
+      <p>Open your doors with the whole town watching: a website AI can find, your Google and Apple listings, a Three Village Local launch spotlight, social posts and video.</p><em>Plan my launch &rarr;</em></a>
     <a class="tvp-path tvp-dark tvs-up" href="#tvp-ai"><span class="tvp-tag">Established business</span><h3>Get an AI overhaul.</h3>
       <p>Your reputation is built. Now make sure AI tools recommend you, your website turns visitors into leads 24/7, and the whole community keeps seeing you.</p><em>Show me the overhaul &rarr;</em></a>
   </div>
@@ -77,8 +83,7 @@ V_APP = '''<div class="tvp-phone"><img src="''' + APP + '''screen.webp" alt="The
 V_WEB = '''<div class="tvp-browser"><div class="tvp-bar"><i></i><i></i><i></i><span>yourbusiness.com</span></div><div class="tvp-site"><b></b><p></p><p class="s"></p><div><u></u><u></u></div></div>
   <div class="tvp-ai-tag">&#10022; Read and recommended by AI</div></div>'''
 V_BOT = '''<div class="tvp-chat"><div class="tvp-chat-h">&#10022; Your Business Front Desk</div><p class="me">Are you open Sunday?</p><p>Yes, 10 to 4! Want me to book you a time?</p><p class="me">Yes, Sarah, 631-555-0188</p><div class="tvp-lead">&#128241; New lead sent to you</div></div>'''
-V_VIDEO = '''<div class="tvp-drone"><img src="''' + SH + '''drone/harbor-720.webp" alt="Drone photo over a Long Island harbor" loading="lazy" width="720" height="480">
-  <img class="tvp-faa" src="''' + SH + '''drone/faa-badge.webp" alt="FAA Part 107 certified" loading="lazy" width="120" height="120"></div>'''
+V_VIDEO = '''<div class="tvp-drone tvp-vid"><img src="''' + SH + '''services/w-tommys-place-v2.webp" alt="Promo video for Tommy's Place" loading="lazy" width="320" height="400"><b class="tvp-play">&#9654;</b><i class="tvp-vid-t">0:15 &middot; Promo reel</i></div>'''
 V_EMAIL = '''<div class="tvp-mail"><div class="tvp-mail-h">Three Village Weekly</div><div class="tvp-mail-b"><b></b><p></p><p class="s"></p><div class="tvp-mail-f">&#9733; Featured: Your Business</div><p></p></div></div>'''
 
 ROWS = "\n\n".join([
@@ -102,10 +107,10 @@ ROWS = "\n\n".join([
         "A smart AI assistant on your current website answers customers in seconds, day or night, and sends you every lead. It comes with AI Website Optimization so you get noticed and recommended by AI.",
         ["Works with the website you already have", "Live person handoff: you get an instant text", "Follows your industry's rules and guidelines"],
         "Try the live demo", AI, V_BOT),
-    row("video", "Video and drone", "Show them, don&#39;t just tell them.",
-        "Promo videos and aerial drone photos and video that make your business, property or event look its best, shared across our site, social media and mobile app.",
-        ["FAA Part 107 certified and insured drone pilot", "Short promo videos for social and your website", "Included with VIP, discounted for Featured members"],
-        "Ask about video and drone", "#tvs-book", V_VIDEO, True),
+    row("video", "Promo video", "Show them, don&#39;t just tell them.",
+        "Short promo videos and reels that make your business look its best, shared across our site, social media and mobile app.",
+        ["Filmed, edited and captioned for you", "Sized for Instagram, Facebook and your website", "Included with VIP, discounted for Featured members"],
+        "Ask about promo video", "#tvs-book", V_VIDEO, True),
     row("email", "Email and articles", "Stories the community actually reads.",
         "Get featured in our weekly email and in custom articles on Three Village Local, so neighbors learn the story behind your business.",
         ["Spotlights in our weekly email", "Custom blog and article features", "Shared across social and the mobile app"],
@@ -119,7 +124,7 @@ LAUNCH = '''<section class="tvs-sec tvp-launch" id="tvp-launch">
     <li><b>1</b><em>Get found</em>AI-Ready website and AI optimization so Google and AI tools recommend you</li>
     <li><b>2</b><em>Get seen</em>Three Village Local, social media, the mobile app and email put you in front of neighbors</li>
     <li><b>3</b><em>Get chosen</em>Your AI assistant answers every question and turns visitors into leads</li>
-    <li><b>4</b><em>Keep growing</em>Video, drone and fresh content keep you top of mind, every month</li>
+    <li><b>4</b><em>Keep growing</em>Video and fresh content keep you top of mind, every month</li>
   </ol>
   <div class="tvp-why tvs-up">
     <div><b>&#127968; Local</b>We live and work in Three Village. We know your customers because they&#39;re our neighbors too.</div>
@@ -138,7 +143,7 @@ VS = '''<section class="tvs-sec tvs-vs tvp-cmp">
     <div class="tvs-tr" role="row"><span role="cell">A live AI front desk you can try right now</span><span role="cell" class="tvs-n">&mdash;</span><span role="cell" class="tvs-y">&#10003;</span></div>
     <div class="tvs-tr" role="row"><span role="cell">A built-in local audience: 45,000+ site visits and 100,000+ social views a month</span><span role="cell" class="tvs-n">&mdash;</span><span role="cell" class="tvs-y">&#10003;</span></div>
     <div class="tvs-tr" role="row"><span role="cell">Your business in a local mobile app, with push notifications</span><span role="cell" class="tvs-n">&mdash;</span><span role="cell" class="tvs-y">&#10003;</span></div>
-    <div class="tvs-tr" role="row"><span role="cell">Video and FAA-certified drone, in house</span><span role="cell" class="tvs-n">Rarely</span><span role="cell" class="tvs-y">&#10003;</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">Promo video, made in house</span><span role="cell" class="tvs-n">Rarely</span><span role="cell" class="tvs-y">&#10003;</span></div>
     <div class="tvs-tr" role="row"><span role="cell">Clear pricing posted up front</span><span role="cell" class="tvs-n">Rarely</span><span role="cell" class="tvs-y">&#10003;</span></div>
     <div class="tvs-tr" role="row"><span role="cell">Month to month, no long contract</span><span role="cell" class="tvs-n">Varies</span><span role="cell" class="tvs-y">&#10003;</span></div>
     <div class="tvs-tr" role="row"><span role="cell">A local team that lives in your community</span><span role="cell" class="tvs-n">&mdash;</span><span role="cell" class="tvs-y">&#10003;</span></div>
@@ -157,6 +162,20 @@ assert "\\" not in HTML
 
 CSS = '''
 .tvp-vis{display:flex;align-items:center;justify-content:center;background:radial-gradient(600px 400px at 60% 40%,rgba(77,163,255,.22),transparent 70%),linear-gradient(160deg,#f3f8ff,#e6f0ff)!important}
+.tvp-menu{position:relative;z-index:1;box-sizing:border-box;width:100%;max-width:440px;margin:0 auto;padding:18px!important;border-radius:24px!important;overflow:hidden;background:#fff;box-shadow:0 30px 70px -30px rgba(9,30,66,.45),0 0 0 1px rgba(15,42,82,.06)}
+.tvp-menu-k{margin:2px 6px 10px!important;font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.tvp-menu *{box-sizing:border-box}.tvp-menu a{display:flex;align-items:center;gap:13px;padding:10px 12px;border-radius:16px;text-decoration:none!important;color:var(--navy)!important;transition:background .2s,transform .2s;animation:tvpMIn .5s both}
+.tvp-menu a+a{margin-top:2px}.tvp-menu a:hover{background:#eef4ff;transform:translateX(4px)}
+.tvp-menu a span{flex:none;width:42px;height:42px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:21px;background:#e9f1ff}
+.tvp-menu a div{flex:1;min-width:0}.tvp-menu b{display:block;font-size:16px;line-height:1.25}.tvp-menu i{display:block;font-style:normal;font-size:13.5px;color:var(--mut);line-height:1.35}
+.tvp-menu em{font-style:normal;font-weight:800;color:#9db3d3;transition:color .2s,transform .2s}.tvp-menu a:hover em{color:var(--blue);transform:translateX(3px)}
+.tvp-menu a.tvp-m-hot{background:linear-gradient(120deg,#0b1f4b,#1d5fd1)}.tvp-menu a.tvp-m-hot b{color:#fff}.tvp-menu a.tvp-m-hot i{color:#bfe0ff}.tvp-menu a.tvp-m-hot span{background:rgba(255,255,255,.14)}.tvp-menu a.tvp-m-hot em{color:#f2c94c}
+.tvp-menu a:nth-of-type(2){animation-delay:.06s}.tvp-menu a:nth-of-type(3){animation-delay:.12s}.tvp-menu a:nth-of-type(4){animation-delay:.18s}.tvp-menu a:nth-of-type(5){animation-delay:.24s}.tvp-menu a:nth-of-type(6){animation-delay:.3s}.tvp-menu a:nth-of-type(7){animation-delay:.36s}
+.tvp-menu-f{margin:10px 6px 2px!important;padding-top:12px;border-top:1px solid #e6edf6;font-size:13.5px;font-weight:700;color:var(--navy);text-align:center}
+@keyframes tvpMIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+section[id^="tvp-"]{scroll-margin-top:90px}
+.tvp-vid{max-width:320px!important;margin:0 auto}.tvp-play{position:absolute;left:50%;top:50%;width:70px;height:70px;margin:-35px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:26px;padding-left:5px;box-shadow:0 18px 36px -12px rgba(9,30,66,.55)}
+.tvp-vid-t{position:absolute;left:14px;bottom:14px;font-style:normal;font-size:12.5px;font-weight:800;color:#fff;background:rgba(9,30,66,.65);padding:5px 10px;border-radius:999px}
 .tvp-orbit{position:relative;width:420px;height:420px;max-width:86%;aspect-ratio:1}
 .tvp-core{position:absolute;inset:30%;border-radius:50%;background:linear-gradient(150deg,#0b1f4b,#1d4fa8);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 30px 60px -24px rgba(9,30,66,.6),0 0 0 10px rgba(77,163,255,.15);animation:tvpPulse 4s ease-in-out infinite}
 .tvp-core b{font-size:40px;letter-spacing:.02em}.tvp-core span{font-size:12px;color:#bfe0ff;line-height:1.3;margin-top:4px}
@@ -230,7 +249,7 @@ CSS = '''
 @keyframes tvpIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 .tvs-sticky{right:auto!important;left:20px!important}
 .tva-pop{width:360px!important}.tva-pop .tva-box{height:470px!important;max-height:calc(100vh - 130px)!important}
-@media (max-width:900px){.tvs-hero.tvp-hero{display:flex;flex-direction:column}.tvp-vis{order:2;position:relative!important;width:auto!important;padding:30px 0!important}.tvp-orbit{width:300px;height:300px}.tvp-ring i{width:66px;height:66px;margin:-33px;font-size:22px;border-radius:18px}.tvp-ring i em{font-size:10px}
+@media (max-width:900px){.tvs-hero.tvp-hero{display:flex;flex-direction:column}.tvp-vis{order:2;position:relative!important;width:auto!important;padding:22px 14px!important}.tvp-menu{padding:12px}.tvp-orbit{width:300px;height:300px}.tvp-ring i{width:66px;height:66px;margin:-33px;font-size:22px;border-radius:18px}.tvp-ring i em{font-size:10px}
 .tvp-two,.tvp-vs,.tvp-row-in,.tvp-why{grid-template-columns:1fr}.tvp-flip .tvp-txt{order:0}.tvp-row-in{gap:30px}.tvp-txt h2{font-size:30px}.tvp-fomo-in{padding:32px 22px}.tvp-fomo-in h2{font-size:29px}.tvp-flow{grid-template-columns:1fr 1fr}
 .tvp-fan{height:330px}.tvp-push{left:-20px}}
 @media (max-width:520px){.tvp-flow{grid-template-columns:1fr}.tvp-fan{height:280px}.tvp-push{left:-10px;width:210px}.tva-pop{width:100%!important}.tva-pop .tva-box{height:100dvh!important;max-height:100dvh!important}}
@@ -247,7 +266,7 @@ def rd(f):
     if f == "page.css":
         return s + CSS
     if f == "page.js":
-        return s.replace('Ask me anything about AI for your website.', 'Questions about growing your business? Ask me.').replace("var pick='ai_chat'", "var pick='not_sure'")
+        return s.replace('widget.js" data-demo="1"', 'widget.js" data-tease="Hi! I am live. Questions about growing your business? Ask me."').replace("var pick='ai_chat'", "var pick='not_sure'")
     return s
 
 

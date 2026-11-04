@@ -24,13 +24,13 @@ DEMO = W.HTML[DEMO[0]:DEMO[1]]
 DEMO = DEMO[DEMO.index('<div class="tvw-bot-demo'):DEMO.rindex('</div>\n  </div>\n</section>')] + "</div>"   # the animated example chat + lead card (keep its own closing div)
 
 HERO = '''<section class="tvs-hero">
-  <div class="tvw-hvis tva-hvis"><div class="tva-try"><p class="tva-try-k"><span></span>How it looks on your website</p><div class="tva-mock" aria-hidden="true"><div class="tva-mock-bar"><i></i><i></i><i></i><span>yourbusiness.com</span></div><div class="tva-mock-page"><b></b><p></p><p></p><p class="s"></p><div class="tva-mock-row"><u></u><u></u><u></u></div><p></p><p class="s"></p></div><div class="tva-mock-chat">''' + DEMO + '''</div></div><div class="tva-float tva-f1"><b>&#128241;</b><div><em>New lead</em>Dana, weekend cleanup quote</div></div><div class="tva-float tva-f2"><b>&#9889;</b><div><em>Answered in seconds</em>10:42 PM, Sunday</div></div><div class="tva-float tva-f3"><b>&#10003;</b><div><em>Found by AI</em>AI optimization included</div></div></div></div>
+  <div class="tvw-hvis tva-hvis"><div class="tva-try"><p class="tva-try-k"><span></span>This is what you get</p><div class="tva-mock" aria-hidden="true" data-tva-open><div class="tva-mock-bar"><i></i><i></i><i></i><span>yourbusiness.com</span></div><div class="tva-mock-page"><b></b><p></p><p></p><p class="s"></p><div class="tva-mock-row"><u></u><u></u><u></u></div><p></p><p class="s"></p></div><div class="tva-mock-chat">''' + DEMO + '''</div></div><a class="tva-try-go" href="#" data-tva-open><span></span>It&#39;s live. Chat with it now &rarr;</a><div class="tva-float tva-f1"><b>&#128241;</b><div><em>New lead</em>Dana, weekend cleanup quote</div></div><div class="tva-float tva-f2"><b>&#9889;</b><div><em>Answered in seconds</em>10:42 PM, Sunday</div></div></div></div>
   <div class="tvs-hin tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Your Digital Front Desk</p>
     <h1>Turn your website<br><span>into a 24/7 lead machine.</span></h1>
     <p class="tvs-sub">Add a smart AI assistant to your current website. It answers customers the second they ask, day or night, and sends you every lead. Plus AI Website Optimization so your site gets noticed and recommended by AI. No new website needed.</p>
     <div class="tvs-ctas">
-      <a class="tvs-btn tvs-blue" href="#" data-tva-open>Try the live demo</a>
+      <a class="tvs-btn tvs-blue" href="#" data-tva-open>Try the live demo &rarr;</a>
       <a class="tvs-btn tvs-ghost" href="#tvs-bundles">See pricing</a>
     </div>
     <a class="tva-how" href="''' + HOW + '''">How does it work? See our process &rarr;</a>
@@ -246,7 +246,7 @@ CSS = '''
 .tva-float{position:absolute;z-index:3;padding:8px 12px!important;display:flex;gap:10px;align-items:center;padding:10px 14px;border-radius:14px;background:#fff;box-shadow:0 18px 40px -18px rgba(9,30,66,.45);font-size:13px;line-height:1.3;color:#3c4a5e;opacity:0;pointer-events:none}
 .tva-float b{font-size:18px}.tva-float em{display:block;font-style:normal;font-weight:800;color:var(--navy);font-size:13.5px}
 .tva-f1{right:-50px;top:-12px;animation:tvaIn1 .7s 1.2s forwards,tvaBob 5s 2s ease-in-out infinite}
-.tva-f2{left:-46px;bottom:-26px;animation:tvaIn1 .7s 2s forwards,tvaBob 6s 2.8s ease-in-out infinite}
+.tva-f2{left:-46px;top:46%;animation:tvaIn1 .7s 2s forwards,tvaBob 6s 2.8s ease-in-out infinite}
 .tva-f3{right:-40px;bottom:-26px;animation:tvaIn1 .7s 2.8s forwards,tvaBob 5.5s 3.6s ease-in-out infinite}
 .tva-f3 b{color:#2fd28a}
 @keyframes tvaGrad{0%{background-position:0% 50%}100%{background-position:300% 50%}}
@@ -268,6 +268,11 @@ CSS = '''
 .tva-try-k span{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fd28a;margin-right:8px;box-shadow:0 0 0 4px rgba(47,210,138,.2);vertical-align:1px}
 .tva-try .tva-box{height:540px}
 @media (max-width:900px){.tva-try .tva-box{height:520px;max-height:78vh}.tvs-hero:has(.tva-hvis){display:flex;flex-direction:column;min-height:0}.tva-hvis{order:2;border-radius:0 0 22px 22px!important}}
+.tva-try-go{z-index:5!important;display:flex;align-items:center;justify-content:center;gap:9px;margin:14px auto 0;max-width:330px;padding:12px 18px;border-radius:999px;background:linear-gradient(120deg,#0b1f4b,#1d5fd1 60%,#16a37a);color:#fff!important;font-weight:800;font-size:15px;text-decoration:none!important;box-shadow:0 16px 30px -14px rgba(29,95,209,.8);transition:transform .2s,box-shadow .2s;position:relative;z-index:2}
+.tva-try-go:hover{transform:translateY(-2px);box-shadow:0 20px 36px -14px rgba(29,95,209,.9)}
+.tva-try-go span{width:8px;height:8px;border-radius:50%;background:#46e39a;box-shadow:0 0 0 4px rgba(70,227,154,.3);animation:tvaDot 1.6s ease-in-out infinite}
+.tva-mock{cursor:pointer}
+@media (max-width:520px){.tva-tag{font-size:0!important;padding:9px 13px!important;bottom:110px!important}.tva-tag em{font-size:11.5px!important;margin:0!important}.tva-tag em:after{content:" · Tap to try";letter-spacing:.04em;color:#fff}}
 .tva-how{display:inline-block;margin:16px 0 4px;font-weight:800;color:var(--blue)!important;text-decoration:none!important;border-bottom:2px solid rgba(29,95,209,.25)}.tva-how:hover{border-color:var(--blue)}
 .tva-one{display:grid!important;grid-template-columns:minmax(0,560px)!important;justify-content:center}
 @media (min-width:980px){.tva-one{grid-template-columns:minmax(0,1120px)!important}
@@ -334,7 +339,7 @@ def rd(f):
     if f == "page.css":
         return s + CSS
     if f == "page.js":
-        return rep(s, "var P={", "var P={" + PRICES) + PICKJS + OPENJS + '<script src="https://3vl-ai-assistant.vercel.app/widget.js" data-tease="Hi! I am live. Ask me anything about AI for your website." defer></script>'
+        return rep(s, "var P={", "var P={" + PRICES) + PICKJS + OPENJS + '<script src="https://3vl-ai-assistant.vercel.app/widget.js" data-demo="1" defer></script>'
     return s
 
 
