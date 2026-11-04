@@ -9,8 +9,8 @@ import build as W
 from build import D, rep, cut, swap, sec
 
 # prices: (setup, monthly) walk-in / member. Tune-up is one-time (monthly 0).
-CHAT = {"all": (799, 199), "member": (499, 149)}   # research 11/3: agencies $500-1,500 setup + $300-500/mo; DIY apps $0-60/mo
-TUNE = {"all": (799, 0), "member": (499, 0)}       # research 11/3: local SEO/GEO projects $1,000-5,000
+CHAT = {"all": (799, 199), "member": (499, 149)}
+TUNE = {"all": (799, 0), "member": (499, 0)}
 
 D.NAME = "3VL Page AI Assistant" if D.LIVE else "3VL Page AI Assistant Preview"
 D.SLUG = "ai-assistant" if D.LIVE else "preview-ai-assistant"
