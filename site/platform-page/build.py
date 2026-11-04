@@ -128,13 +128,30 @@ LAUNCH = '''<section class="tvs-sec tvp-launch" id="tvp-launch">
   </div>
 </section>'''
 
+VS = '''<section class="tvs-sec tvs-vs tvp-cmp">
+  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">More value, one local team</p><h2>A typical marketing agency vs. Three Village Local</h2>
+  <p>Most agencies sell you SEO and reports. We bring the audience, the AI and the content, all working together.</p></div>
+  <div class="tvs-table tvs-up" role="table">
+    <div class="tvs-tr tvs-th" role="row"><span role="columnheader"></span><span role="columnheader">Typical agency</span><span role="columnheader">Three Village Local</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">Website and SEO</span><span role="cell" class="tvs-y">&#10003;</span><span role="cell" class="tvs-y">&#10003;</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">AI optimization for ChatGPT, Gemini and Google AI</span><span role="cell" class="tvs-n">Sometimes</span><span role="cell" class="tvs-y">&#10003;</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">A live AI front desk you can try right now</span><span role="cell" class="tvs-n">&mdash;</span><span role="cell" class="tvs-y">&#10003;</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">A built-in local audience: 45,000+ site visits and 100,000+ social views a month</span><span role="cell" class="tvs-n">&mdash;</span><span role="cell" class="tvs-y">&#10003;</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">Your business in a local mobile app, with push notifications</span><span role="cell" class="tvs-n">&mdash;</span><span role="cell" class="tvs-y">&#10003;</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">Video and FAA-certified drone, in house</span><span role="cell" class="tvs-n">Rarely</span><span role="cell" class="tvs-y">&#10003;</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">Clear pricing posted up front</span><span role="cell" class="tvs-n">Rarely</span><span role="cell" class="tvs-y">&#10003;</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">Month to month, no long contract</span><span role="cell" class="tvs-n">Varies</span><span role="cell" class="tvs-y">&#10003;</span></div>
+    <div class="tvs-tr" role="row"><span role="cell">A local team that lives in your community</span><span role="cell" class="tvs-n">&mdash;</span><span role="cell" class="tvs-y">&#10003;</span></div>
+  </div>
+</section>'''
+
 CTA = '''<section class="tvw-cta3 tvs-up"><div class="tvw-cta3-in"><p class="tvw-cta3-k">Your competition isn&#39;t waiting</p><h2>Let&#39;s build your plan.</h2>
 <p class="tvw-cta3-s">Tell us about your business and we&#39;ll send you a free, no-pressure plan by email.</p>
 <div class="tvw-cta-btns"><a class="tvs-btn tvw-btn-w" href="#tvs-book">Send us a message</a><a class="tvs-btn tvw-btn-o" href="''' + AI + '''">Try the Digital Front Desk</a></div></div></section>'''
 
 i, j = sec(A.HTML, "tvs-sec tvs-book")
 BOOK = A.HTML[i:j].replace("mailto:hello@threevillagelocal.com?subject=AI%20for%20my%20website", "mailto:hello@threevillagelocal.com?subject=Our%20services")
-HTML = ('<div class="tvs" id="tvs">\n\n' + HERO + "\n\n" + PATHS + "\n\n" + FOMO + "\n\n" + ROWS + "\n\n" + LAUNCH + "\n\n" + CTA + "\n\n" + BOOK +
+HTML = ('<div class="tvs" id="tvs">\n\n' + HERO + "\n\n" + PATHS + "\n\n" + FOMO + "\n\n" + ROWS + "\n\n" + LAUNCH + "\n\n" + VS + "\n\n" + CTA + "\n\n" + BOOK +
         '\n\n<a class="tvs-sticky" href="#tvs-book">Send us a message</a>\n</div>')
 assert "\\" not in HTML
 
