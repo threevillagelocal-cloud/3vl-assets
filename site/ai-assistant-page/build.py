@@ -216,6 +216,8 @@ CSS = '''
 .tva-hvis{padding:28px 34px 28px 24px}
 .tvs-hero:has(.tva-hvis){min-height:680px}
 .tva-hvis:before{pointer-events:none}   /* websites hero decor layer sat over the chat and swallowed clicks */
+.tva-pop{width:350px!important}.tva-pop .tva-box{height:470px!important;max-height:calc(100vh - 130px)!important}
+@media (max-width:520px){.tva-pop{width:100%!important}.tva-pop .tva-box{height:100dvh!important;max-height:100dvh!important}}
 .tva-mock{position:relative;border-radius:18px;background:#fff;box-shadow:0 34px 70px -30px rgba(9,30,66,.5),0 0 0 1px rgba(15,42,82,.08);overflow:hidden;height:470px}
 .tva-mock-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:#eef2f7;border-bottom:1px solid #e1e8f2}
 .tva-mock-bar i{width:9px;height:9px;border-radius:50%;background:#d3dbe6}.tva-mock-bar i:first-child{background:#ff7b6b}.tva-mock-bar i:nth-child(2){background:#ffc85a}.tva-mock-bar i:nth-child(3){background:#4bd18a}
@@ -223,7 +225,7 @@ CSS = '''
 .tva-mock-page{padding:22px 22px 0}.tva-mock-page b{display:block;width:55%;height:18px;border-radius:6px;background:#dbe5f3;margin-bottom:14px}
 .tva-mock-page p{height:9px;border-radius:5px;background:#edf1f6;margin:0 0 9px!important}.tva-mock-page p.s{width:60%}
 .tva-mock-row{display:flex;gap:10px;margin:16px 0}.tva-mock-row u{flex:1;height:64px;border-radius:10px;background:#f1f5fa}
-.tva-mock-chat{position:absolute;right:12px;bottom:12px;width:300px;transform-origin:bottom right;animation:tvaPopIn .7s .6s cubic-bezier(.2,.9,.3,1.15) both}
+.tva-mock-chat{position:absolute;right:12px;bottom:12px;width:330px;zoom:.8;transform-origin:bottom right;animation:tvaPopIn .7s .6s cubic-bezier(.2,.9,.3,1.15) both}
 .tva-mock-chat .tvw-bot-demo{margin:0!important}.tva-mock-chat .tvw-chatw{font-size:13px}.tva-mock-chat .tvw-bot-ex{display:none}
 .tva-mock-chat .tvw-lead{display:none}
 @keyframes tvaPopIn{from{opacity:0;transform:translateY(20px) scale(.85)}to{opacity:1;transform:none}}
