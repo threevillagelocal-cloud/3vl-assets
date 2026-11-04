@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-04T18:01:14.275659+00:00",
+"updated": "2026-11-04T19:41:34.252065+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 47,
+"Port Jefferson Chamber": 0,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 200,
-"Emma S. Clark Library": 273,
+"Emma S. Clark Library": 272,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 2,
@@ -68,26 +68,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "pjchamber-14181",
-"title": "2026 Port Jeff Self-Guided Fall Art Walk",
-"start": "2026-10-09T00:00:00",
-"end": "2026-11-06T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
 },
 {
 "id": "sbv-2456",
@@ -347,25 +327,6 @@
 "pu": ""
 },
 {
-"id": "pjchamber-15119",
-"title": "Long Island Restaurant Week",
-"start": "2026-11-01T00:00:00",
-"end": "2026-11-08T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
-"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta – RUVO",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/long-island-restaurant-week"
-},
-{
 "id": "reboli-6adf9dab4c6329721a5cedc5",
 "title": "Emerging Artist Spotlight: November | Genevieve Rochlin",
 "start": "2026-11-01T11:00:00",
@@ -509,23 +470,6 @@
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
 },
 {
-"id": "emmaclark-shed-meds-61288",
-"title": "Shed the Meds",
-"start": "2026-11-04T10:00:00",
-"end": "2026-11-04T14:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Periodical Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/shed-meds-61288",
-"desc": "The Suffolk County Sheriff’s Office is pleased to offer a safe way for residents to properly dispose of their unused medications. Proper disposal is essential to protect the environment and ensure that old drugs don’t end up in the wrong hands. Bring your fami",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/colorful-pills-package.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/shed-the-meds-589"
-},
-{
 "id": "lim-3225911",
 "title": "Mornings@LIM: Tour of Enduring Hearts",
 "start": "2026-11-04T11:00:00",
@@ -545,25 +489,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "pjchamber-15249",
-"title": "Preview Special Showing: 30th Annual Charles Dickens Festival",
-"start": "2026-11-04T19:00:00",
-"end": "2026-11-04T20:30:00",
-"allday": false,
-"venue": "The Victorian Studio",
-"addr": "709 Main Street, Port Jefferson, New York, 11777",
-"url": "https://portjeffchamber.com/events-calendar/preview-special-showing-30th-annual-charles-dickens-festival/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/preview-special-showing-30th-annual-charles-dickens-festival"
 },
 {
 "id": "madiran-20261104-ray-anderson-and-steve-salerno",
@@ -1530,25 +1455,6 @@
 "page": "https://www.threevillagelocal.com/events/live-music-al-marino-james-miceli-and-jerry-mac"
 },
 {
-"id": "pjchamber-15086",
-"title": "Blood Drive",
-"start": "2026-11-12T07:00:00",
-"end": "2026-11-12T19:00:00",
-"allday": false,
-"venue": "St. Charles Hospital",
-"addr": "200 Belle Terre Rd, Port Jefferson, NY, 11777",
-"url": "https://portjeffchamber.com/events-calendar/blood-drive-6/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/blood-drive-787"
-},
-{
 "id": "emmaclark-chair-yoga-61291",
 "title": "Chair Yoga",
 "start": "2026-11-12T11:30:00",
@@ -1638,23 +1544,23 @@
 "page": "https://www.threevillagelocal.com/events/bark-for-readers-up-to-5th-grade-614"
 },
 {
-"id": "pjchamber-14970",
-"title": "Somewhere in Time 1912",
+"id": "portjeff-1354",
+"title": "The Conservancy Presents \"Somewhere in Time\"",
 "start": "2026-11-12T18:00:00",
 "end": "2026-11-12T22:00:00",
 "allday": false,
-"venue": "Victorian on Main",
-"addr": "709 Main Street, Port Jefferson, New York",
-"url": "https://portjeffchamber.com/events-calendar/somewhere-in-time-1912/",
+"venue": "Port Jefferson",
+"addr": "709 Main Street Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1354",
 "desc": "",
 "img": "",
-"src": "pjchamber",
+"src": "portjeff",
 "tags": [
 "arts"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/somewhere-in-time-1912"
+"page": "https://www.threevillagelocal.com/events/the-conservancy-presents-somewhere-in-time"
 },
 {
 "id": "emmaclark-tech-help-teens-42855",
