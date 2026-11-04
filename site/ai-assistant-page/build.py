@@ -66,7 +66,7 @@ FEAT = '''<section class="tvs-sec tva-feat" id="tva-feat">
     <div class="tva-c tvs-up"><span>&#128241;</span><h3>Captures every lead</h3><p>Name, phone and what they need, sent to your email or phone the moment they ask.</p></div>
     <div class="tva-c tvs-up"><span>&#128197;</span><h3>Books and quotes</h3><p>Sends people straight to your booking calendar, quote form or online ordering.</p></div>
     <div class="tva-c tvs-up"><span>&#129504;</span><h3>Knows your business</h3><p>Trained on your services, prices and FAQs. It answers from your information, not guesses.</p></div>
-    <div class="tva-c tvs-up"><span>&#129309;</span><h3>Smart handoff</h3><p>When a question needs you, it takes a message and gets you the details instead of making something up.</p></div>
+    <div class="tva-c tvs-up"><span>&#129309;</span><h3>Live person, instantly</h3><p>If someone asks for a real person, you get an instant text and email with their name, number and what they need.</p></div>
     <div class="tva-c tvs-up"><span>&#128202;</span><h3>Monthly summary</h3><p>See what customers asked, how many leads came in, and what to add next. We keep it sharp for you.</p></div>
   </div>
   <div class="tva-reg tvs-up"><span>&#9878;&#65039;</span><div><b>Built for every kind of business, including regulated ones.</b><p>Restaurants, shops, home services and small businesses, plus law firms, financial advisors, insurance, mortgage, accounting and medical offices. We set up every assistant to follow your industry&#39;s regulations and guidelines: general information only (never legal, financial or medical advice), the right disclaimers, only the wording and rates you approve, no sensitive information collected, and anything specific goes straight to you. You approve it before it goes live.</p></div></div>
@@ -105,7 +105,8 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
     <button type="button" role="tab" data-t="vip" class="on">Featured &amp; VIP members<em>Member pricing</em></button>
   </div>
   <div class="tvs-cards tva-one">
-    <article class="tvs-card tvs-pop tvs-up" data-b="aichat">
+    <article class="tvs-card tvs-pop tvs-up tva-wide" data-b="aichat">
+      <div class="tva-pc-a">
       <p class="tvs-badge">AI Website Optimization included</p>
       <p class="tvs-cname">AI Assistant + AI Optimization</p>
       <p class="tvs-cfor">A smart assistant that answers your customers 24/7 and sends you every lead, plus one-time AI Website Optimization so ChatGPT, Google and other AI tools can find and understand you.</p>
@@ -114,15 +115,21 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
       <p class="tvs-price"><sup>$</sup><b>%(cm0)s</b></p>
       <p class="tvs-mo">+ <b>$%(cm1)s</b>/mo</p>
       <p class="tvs-save"></p>
+      <a class="tvs-btn tvs-blue tvs-wide tvw-go tva-pick" data-pick="ai_chat" href="#tvs-book">Get started &rarr;</a>
+      <p class="tva-pc-note">Month to month after setup. No contract.</p>
+      </div>
+      <div class="tva-pc-b">
       <p class="tva-grp">Your AI assistant</p>
       <ul>
         <li>Built, trained and added to your site for you</li>
         <li>Answers questions 24/7 from your own information</li>
         <li>Every lead sent to your email or phone right away</li>
         <li>Links to your booking, quote form or ordering</li>
-        <li>Smart handoff when a question needs you</li>
+        <li>Live person handoff: you get an instant text</li>
         <li>Monthly summary and tuning: just email us changes</li>
       </ul>
+      </div>
+      <div class="tva-pc-c">
       <p class="tva-grp">Your AI Website Optimization (included, done at setup)</p>
       <ul>
         <li>Before and after &ldquo;Can AI find you?&rdquo; report</li>
@@ -132,7 +139,7 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
         <li>Name, address and phone matched across the web</li>
         <li>Google Search Console and Bing Webmaster set up</li>
       </ul>
-      <a class="tvs-btn tvs-blue tvs-wide tvw-go tva-pick" data-pick="ai_chat" href="#tvs-book">Get started &rarr;</a>
+      </div>
     </article>
   </div>
   <p class="tvs-fine tvs-up"><b>Works with the site you have.</b> Wix, Squarespace, WordPress, GoDaddy, Shopify and custom sites. Some website builders only allow added code on their paid plans; we check yours first, free. The setup fee covers building your assistant and your full AI Website Optimization. Month to month after that, no contract. Want a site AI can fully read from the ground up? See our <a href="/websites">AI-Ready websites</a>.</p>
@@ -263,6 +270,12 @@ CSS = '''
 @media (max-width:900px){.tva-try .tva-box{height:520px;max-height:78vh}.tvs-hero:has(.tva-hvis){display:flex;flex-direction:column;min-height:0}.tva-hvis{order:2;border-radius:0 0 22px 22px!important}}
 .tva-how{display:inline-block;margin:16px 0 4px;font-weight:800;color:var(--blue)!important;text-decoration:none!important;border-bottom:2px solid rgba(29,95,209,.25)}.tva-how:hover{border-color:var(--blue)}
 .tva-one{display:grid!important;grid-template-columns:minmax(0,560px)!important;justify-content:center}
+@media (min-width:980px){.tva-one{grid-template-columns:minmax(0,1120px)!important}
+.tva-wide{display:grid!important;grid-template-columns:1fr 1.15fr 1.15fr;gap:30px;align-items:start;padding:34px 34px 30px!important}
+.tva-pc-a{padding-right:26px;border-right:1px solid #e3e9f2}.tva-pc-b{padding-right:24px;border-right:1px solid #e3e9f2}
+.tva-wide .tvs-cfor{display:none}.tva-wide li{font-size:14.5px!important;margin-bottom:6px!important}#tvs-bundles{padding-top:46px!important}#tvs-bundles .tvs-head{margin-bottom:18px!important}#tvs-bundles .tvs-head p{display:none}
+.tva-wide .tva-grp{margin-top:6px!important}.tva-wide ul{margin-bottom:0!important}}
+.tva-pc-note{margin:10px 0 0!important;font-size:13px;color:var(--mut);text-align:center}
 .tva-grp{margin:14px 0 6px!important;font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 .tva-why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1060px;margin:0 auto}
 .tva-why>div{background:#fff;border:1px solid #e3e9f2;border-radius:20px;padding:24px 22px;box-shadow:0 14px 34px -22px rgba(9,30,66,.25)}

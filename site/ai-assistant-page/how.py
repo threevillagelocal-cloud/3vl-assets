@@ -85,7 +85,7 @@ STEP3 = '''<section class="tvs-sec tvh-step" id="tvh-3">
     <li><b>&#128241;</b><em>You get the lead</em>Name, contact, what they need and the chat, in your inbox</li>
   </ol>
   <div class="tva-grid tvh-rules">
-    <div class="tva-c tvs-up"><span>&#129309;</span><h3>Honest handoff</h3><p>When a question needs you, it takes a message instead of guessing. It always says it&#39;s an AI assistant.</p></div>
+    <div class="tva-c tvs-up"><span>&#129309;</span><h3>Live person handoff</h3><p>If someone asks for a real person, you get an instant text and email with their details. It never guesses, and always says it&#39;s an AI assistant.</p></div>
     <div class="tva-c tvs-up"><span>&#9878;&#65039;</span><h3>Follows your industry rules</h3><p>General information only for regulated fields, the right disclaimers, and no sensitive information collected.</p></div>
     <div class="tva-c tvs-up"><span>&#128241;</span><h3>Fast on every device</h3><p>Works on phones and computers and loads after your page, so it never slows your site down.</p></div>
   </div>
