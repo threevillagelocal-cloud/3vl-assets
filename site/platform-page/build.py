@@ -37,7 +37,7 @@ HERO = '''<section class="tvs-hero tvp-hero">
     <p class="tvs-kick"><span class="tvs-dot"></span>Our mission</p>
     <h1>We connect local businesses<br><span>with the community.</span></h1>
     <p class="tvs-sub">One local team and one connected platform: our website, mobile app, social media and email, plus AI websites, AI assistants and video. Every piece works together to bring neighbors to your door.</p>
-    <div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="#tvp-paths">Find your path</a><a class="tvs-btn tvs-ghost" href="#tvs-book">Send us a message</a></div>
+    <div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="#tvp-seen">See what we offer</a><a class="tvs-btn tvs-ghost" href="#tvs-book">Send us a message</a></div>
     <ul class="tvs-trust"><li><b>45,000+</b>website page visits a month</li><li><b>100,000+</b>social views a month</li><li><b>One</b>local team</li></ul>
   </div>
 </section>'''
@@ -156,7 +156,7 @@ CTA = '''<section class="tvw-cta3 tvs-up"><div class="tvw-cta3-in"><p class="tvw
 
 i, j = sec(A.HTML, "tvs-sec tvs-book")
 BOOK = A.HTML[i:j].replace("mailto:hello@threevillagelocal.com?subject=AI%20for%20my%20website", "mailto:hello@threevillagelocal.com?subject=Our%20services")
-HTML = ('<div class="tvs" id="tvs">\n\n' + HERO + "\n\n" + PATHS + "\n\n" + FOMO + "\n\n" + ROWS + "\n\n" + LAUNCH + "\n\n" + VS + "\n\n" + CTA + "\n\n" + BOOK +
+HTML = ('<div class="tvs" id="tvs">\n\n' + HERO + "\n\n" + FOMO + "\n\n" + ROWS + "\n\n" + LAUNCH + "\n\n" + VS + "\n\n" + CTA + "\n\n" + BOOK +
         '\n\n<a class="tvs-sticky" href="#tvs-book">Send us a message</a>\n</div>')
 assert "\\" not in HTML
 
