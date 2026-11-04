@@ -13,7 +13,7 @@ CHAT = {"all": (1199, 199), "member": (799, 149)}
 
 D.NAME = "3VL Page AI Assistant" if D.LIVE else "3VL Page AI Assistant Preview"
 D.SLUG = "ai-assistant" if D.LIVE else "preview-ai-assistant"
-D.TITLE = "AI Chat Assistant + AI Website Optimization for Your Current Website | Three Village Local"
+D.TITLE = "Your Digital Front Desk: AI Assistant + AI Website Optimization | Three Village Local"
 D.DESC = ("Add a smart AI assistant to the website you already have. It answers customers 24/7 and sends you every lead. "
           "Plus AI Website Optimization built to get your business noticed and recommended by ChatGPT, Google and other AI tools. Works with Wix, Squarespace, WordPress and more.")
 D.FB_TITLE = "Turn your website into a 24/7 lead machine."
@@ -26,7 +26,7 @@ DEMO = DEMO[DEMO.index('<div class="tvw-bot-demo'):DEMO.rindex('</div>\n  </div>
 HERO = '''<section class="tvs-hero">
   <div class="tvw-hvis tva-hvis"><div class="tva-try"><p class="tva-try-k"><span></span>How it looks on your website</p><div class="tva-mock" aria-hidden="true"><div class="tva-mock-bar"><i></i><i></i><i></i><span>yourbusiness.com</span></div><div class="tva-mock-page"><b></b><p></p><p></p><p class="s"></p><div class="tva-mock-row"><u></u><u></u><u></u></div><p></p><p class="s"></p></div><div class="tva-mock-chat">''' + DEMO + '''</div></div><div class="tva-float tva-f1"><b>&#128241;</b><div><em>New lead</em>Dana, weekend cleanup quote</div></div><div class="tva-float tva-f2"><b>&#9889;</b><div><em>Answered in seconds</em>10:42 PM, Sunday</div></div><div class="tva-float tva-f3"><b>&#10003;</b><div><em>Found by AI</em>AI optimization included</div></div></div></div>
   <div class="tvs-hin tvs-up">
-    <p class="tvs-kick"><span class="tvs-dot"></span>AI for the website you already have</p>
+    <p class="tvs-kick"><span class="tvs-dot"></span>Your Digital Front Desk</p>
     <h1>Turn your website<br><span>into a 24/7 lead machine.</span></h1>
     <p class="tvs-sub">Add a smart AI assistant to your current website. It answers customers the second they ask, day or night, and sends you every lead. Plus AI Website Optimization so your site gets noticed and recommended by AI. No new website needed.</p>
     <div class="tvs-ctas">
@@ -57,7 +57,7 @@ NEXT = '''<section class="tvs-sec tva-next" id="tva-next">
 
 FEAT = '''<section class="tvs-sec tva-feat" id="tva-feat">
   <div class="tvs-head tvs-up">
-    <p class="tvs-eyebrow">AI Chat Assistant</p>
+    <p class="tvs-eyebrow">Your Digital Front Desk</p>
     <h2>Smart, friendly, and it never misses a lead.</h2>
     <p>We build your assistant, teach it your business, and add it to your site. You just watch the leads come in.</p>
   </div>
@@ -108,7 +108,7 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
     <article class="tvs-card tvs-pop tvs-up tva-wide" data-b="aichat">
       <div class="tva-pc-a">
       <p class="tvs-badge">AI Website Optimization included</p>
-      <p class="tvs-cname">AI Assistant + AI Optimization</p>
+      <p class="tvs-cname">Your Digital Front Desk</p>
       <p class="tvs-cfor">A smart assistant that answers your customers 24/7 and sends you every lead, plus one-time AI Website Optimization so ChatGPT, Google and other AI tools can find and understand you.</p>
       <p class="tvw-plabel on">Featured &amp; VIP member price*</p>
       <p class="tvs-was"></p>
