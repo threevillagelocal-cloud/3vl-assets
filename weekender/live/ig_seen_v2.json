@@ -1,44 +1,4 @@
 {
-"18106809092626209": {
-"special": true,
-"title": "National Taco Day Special",
-"when": "Tue, Oct. 6",
-"desc": "Pick any 3 specialty tacos for $12 or build your own with chicken, pork, or beef for $10.",
-"expires": "2026-10-06",
-"_ts": "2026-10-05T19:22:54+0000"
-},
-"18101502725634502": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-05T18:27:21+0000"
-},
-"18127184242870292": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-05T17:19:15+0000"
-},
-"17961303191997671": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-05T16:04:31+0000"
-},
-"18114848123053921": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-05T18:03:32+0000"
-},
 "18472752382119723": {
 "special": false,
 "title": "Hirosaki - Japanese & Hibachi",
@@ -3170,5 +3130,53 @@
 "desc": "Hand-harvested Argentine Malbec aged in French oak, $25 for 6oz pour.",
 "expires": "2026-11-04",
 "_ts": "2026-11-04T14:58:09+0000"
+},
+"18094777451678924": {
+"special": true,
+"title": "Live Music: Ray Anderson & Steve Salerno",
+"when": "Tonight · 7-9 PM",
+"desc": "Ray Anderson returns with Steve Salerno for live music tonight at Madiran The Wine Bar.",
+"expires": "2026-11-04",
+"_ts": "2026-11-04T19:07:20+0000"
+},
+"18335416909262987": {
+"special": false,
+"title": "October Recap",
+"when": "Past event",
+"desc": "Reflection on October activities. No current or upcoming offer announced.",
+"expires": "2026-11-04",
+"_ts": "2026-11-04T16:47:34+0000"
+},
+"17912357610481490": {
+"special": false,
+"title": "Santa Paws Brunch",
+"when": "Sun, Nov. 29 · 11am–2pm",
+"desc": "Holiday brunch with photos with Santa at Three Village Inn.",
+"expires": "2026-11-29",
+"_ts": "2026-11-04T17:27:40+0000"
+},
+"18639322114006586": {
+"special": true,
+"title": "Happy Hour at Castaways",
+"when": "Today · 4-6 PM",
+"desc": "Half off all drinks including top shelf plus food specials at the inside bar, high tops and lounge.",
+"expires": "2026-11-04",
+"_ts": "2026-11-04T18:01:43+0000"
+},
+"18138176551735763": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-04T19:05:08+0000"
+},
+"18196969990396804": {
+"special": false,
+"title": "National Candy Day at Kilwins",
+"when": "Today only",
+"desc": "Spin the wheel for sweet treats like caramel chews, Dubai chocolate, taffy, and buckeyes.",
+"expires": "2026-11-04",
+"_ts": "2026-11-04T18:02:32+0000"
 }
 }
