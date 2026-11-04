@@ -17,7 +17,7 @@ D.DESC = ("Three Village Local connects local businesses with the community: our
           "plus AI websites, AI assistants, AI optimization and video. Launch a new business or give yours an AI overhaul.")
 D.FB_TITLE = "We connect local businesses with the community."
 
-AI = "/ai-assistant" if D.LIVE else "/preview-ai-assistant"
+AI = "/ai-assistant"
 SH = "https://threevillagelocal-cloud.github.io/3vl-share/site/"
 APP = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@1328a06c9ca8ab841e46fd8b85170aaef3bd1e63/site/app/"
 
