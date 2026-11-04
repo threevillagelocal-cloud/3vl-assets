@@ -57,17 +57,17 @@ NEXT = '''<section class="tvs-sec tva-next" id="tva-next">
 
 FEAT = '''<section class="tvs-sec tva-feat" id="tva-feat">
   <div class="tvs-head tvs-up">
-    <p class="tvs-eyebrow">Your Digital Front Desk</p>
-    <h2>Smart, friendly, and it never misses a lead.</h2>
+    <p class="tva-fd-pill"><span></span>Your Digital Front Desk</p>
+    <h2>Smart, friendly, and <span class="tva-fd-hl">it never misses a lead.</span></h2>
     <p>We build your assistant, teach it your business, and add it to your site. You just watch the leads come in.</p>
   </div>
   <div class="tva-grid">
-    <div class="tva-c tvs-up"><span>&#128172;</span><h3>Answers instantly, 24/7</h3><p>Hours, prices, services, service area, parking, policies: anything you teach it, answered in seconds.</p></div>
-    <div class="tva-c tvs-up"><span>&#128241;</span><h3>Captures every lead</h3><p>Name, phone and what they need, sent to your email or phone the moment they ask.</p></div>
-    <div class="tva-c tvs-up"><span>&#128197;</span><h3>Books and quotes</h3><p>Sends people straight to your booking calendar, quote form or online ordering.</p></div>
-    <div class="tva-c tvs-up"><span>&#129504;</span><h3>Knows your business and your industry</h3><p>Custom built after we research your business, your industry, your competition and its rules. It answers from your approved information.</p></div>
-    <div class="tva-c tvs-up"><span>&#129309;</span><h3>Live person, instantly</h3><p>If someone asks for a real person, you get an instant text and email with their name, number and what they need.</p></div>
-    <div class="tva-c tvs-up"><span>&#128202;</span><h3>Monthly summary</h3><p>See what customers asked, how many leads came in, and what to add next. We keep it sharp for you.</p></div>
+    <div class="tva-c tva-c1 tvs-up"><span>&#128172;</span><h3>Answers instantly, 24/7</h3><p>Hours, prices, services, service area, parking, policies: anything you teach it, answered in seconds.</p></div>
+    <div class="tva-c tva-c2 tvs-up"><span>&#128241;</span><h3>Captures every lead</h3><p>Name, phone and what they need, sent to your email or phone the moment they ask.</p></div>
+    <div class="tva-c tva-c3 tvs-up"><span>&#128197;</span><h3>Books and quotes</h3><p>Sends people straight to your booking calendar, quote form or online ordering.</p></div>
+    <div class="tva-c tva-c4 tvs-up"><span>&#129504;</span><h3>Knows your business and your industry</h3><p>Custom built after we research your business, your industry, your competition and its rules. It answers from your approved information.</p></div>
+    <div class="tva-c tva-c5 tvs-up"><span>&#129309;</span><h3>Live person, instantly</h3><p>If someone asks for a real person, you get an instant text and email with their name, number and what they need.</p></div>
+    <div class="tva-c tva-c6 tvs-up"><span>&#128202;</span><h3>Monthly summary</h3><p>See what customers asked, how many leads came in, and what to add next. We keep it sharp for you.</p></div>
   </div>
   <div class="tva-reg tvs-up"><span>&#9878;&#65039;</span><div><b>Built for every kind of business, including regulated ones.</b><p>Restaurants, shops, home services and small businesses, plus law firms, financial advisors, insurance, mortgage, accounting and medical offices. We set up every assistant to follow your industry&#39;s regulations and guidelines: general information only (never legal, financial or medical advice), the right disclaimers, only the wording and rates you approve, no sensitive information collected, and anything specific goes straight to you. You approve it before it goes live.</p></div></div>
 </section>'''
@@ -197,7 +197,7 @@ h = h[:i] + HERO + h[j:]
 h = cut(h, "tvw-strip")
 h = cut(h, "tvs-sec tvw-shift")
 STRIP = W.STRIP_SEC.replace("<p>Get recommended on the AI tools your customers use</p>", "<p>AI Website Optimization: built to get you noticed and recommended on</p>")
-h = swap(h, "tvs-sec tvw-ai", NEXT + "\n\n" + WORKS + "\n\n" + STRIP + "\n\n" + FEAT + "\n\n" + TUNEUP)
+h = swap(h, "tvs-sec tvw-ai", WORKS + "\n\n" + STRIP + "\n\n" + FEAT + "\n\n" + NEXT + "\n\n" + TUNEUP)
 h = cut(h, "tvs-sec tvw-bot")
 h = swap(h, "tvs-sec tvs-bundles", PRICING)
 h = swap(h, "tvs-sec tvs-vs", VS)
@@ -309,6 +309,18 @@ CSS = '''
 .tva-list li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:12px 14px 12px 42px;position:relative;font-size:14.5px;line-height:1.45;color:#cfdcf1}
 .tva-list li:before{content:"✓";position:absolute;left:14px;top:11px;color:#5ee0a0;font-weight:800}
 .tva-list li b{display:block;color:#fff;font-size:15.5px}
+.tva-feat{position:relative;margin-top:48px;padding:56px 20px 60px!important;background:linear-gradient(160deg,#e6f0ff 0%,#eef6ff 45%,#e5f8f0 100%);border-top:1px solid #d6e4f7;border-bottom:1px solid #d6e4f7}
+.tva-feat:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,#1d5fd1,#4da3ff,#2fd28a,#4da3ff,#1d5fd1);background-size:200% 100%;animation:tvaGrad 8s linear infinite}
+.tva-fd-pill{display:inline-flex;align-items:center;gap:9px;margin:0 0 14px!important;padding:8px 18px;border-radius:999px;background:linear-gradient(120deg,#0b1f4b,#1d5fd1);color:#fff!important;font-size:13px!important;font-weight:800;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 12px 26px -14px rgba(29,95,209,.8)}
+.tva-fd-pill span{width:8px;height:8px;border-radius:50%;background:#f2c94c;box-shadow:0 0 0 4px rgba(242,201,76,.25)}
+.tva-fd-hl{background:linear-gradient(90deg,#1d5fd1,#16a37a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tva-feat .tva-c{background:#fff;border:1px solid #d9e5f5;border-top:4px solid var(--ac);box-shadow:0 16px 34px -24px rgba(9,30,66,.35)}
+.tva-feat .tva-c span{background:var(--acl);color:var(--ac)}
+.tva-c1{--ac:#1d5fd1;--acl:#e3edff}.tva-c2{--ac:#16a37a;--acl:#dff7ee}.tva-c3{--ac:#0f8fb8;--acl:#ddf3fa}
+.tva-c4{--ac:#4a5fd6;--acl:#e7e9ff}.tva-c5{--ac:#2fb36d;--acl:#e1f6ea}.tva-c6{--ac:#e0a82e;--acl:#fdf3dc}
+.tva-feat .tva-reg{border-left:4px solid #1d5fd1}
+@media (max-width:900px){.tva-feat{margin-top:34px;padding:40px 16px 44px!important}}
+@media (prefers-reduced-motion:reduce){.tva-feat:before{animation:none}}
 @media (max-width:900px){.tva-why,.tva-grid{grid-template-columns:1fr}.tva-tune-in{grid-template-columns:1fr;padding:24px 20px}.tva-tune-in h2{font-size:28px}.tva-hvis{padding:24px 14px}}
 '''
 
