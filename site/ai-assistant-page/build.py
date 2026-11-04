@@ -1,4 +1,4 @@
-"""AI add-ons for an EXISTING website (owner 11/3/2026): stand-alone AI Chat Assistant + AI Tune-Up for sites built and hosted by
+"""AI add-ons for an EXISTING website (owner 11/3/2026): stand-alone AI Chat Assistant + AI Website Optimization for sites built and hosted by
 someone else. Same look as /websites: imports that page's build and swaps the sections.
     python site/ai-assistant-page/build.py          -> widget "3VL Page AI Assistant Preview" + hidden /preview-ai-assistant
     python site/ai-assistant-page/build.py --live   -> widget "3VL Page AI Assistant" + /ai-assistant (indexable)"""
@@ -13,25 +13,27 @@ CHAT = {"all": (1199, 199), "member": (799, 149)}
 
 D.NAME = "3VL Page AI Assistant" if D.LIVE else "3VL Page AI Assistant Preview"
 D.SLUG = "ai-assistant" if D.LIVE else "preview-ai-assistant"
-D.TITLE = "AI Chat Assistant + AI Tune-Up for Your Current Website | Three Village Local"
+D.TITLE = "AI Chat Assistant + AI Website Optimization for Your Current Website | Three Village Local"
 D.DESC = ("Add a smart AI assistant to the website you already have. It answers customers 24/7 and sends you every lead. "
-          "Plus an AI Tune-Up so ChatGPT, Google and other AI tools can find and recommend you. Works with Wix, Squarespace, WordPress and more.")
+          "Plus AI Website Optimization built to get your business noticed and recommended by ChatGPT, Google and other AI tools. Works with Wix, Squarespace, WordPress and more.")
 D.FB_TITLE = "Turn your website into a 24/7 lead machine."
+HOW = "/ai-assistant-how-it-works" if D.LIVE else "/preview-ai-assistant-how"
 
 DEMO = W.sec(W.HTML, "tvs-sec tvw-bot")
 DEMO = W.HTML[DEMO[0]:DEMO[1]]
-DEMO = DEMO[DEMO.index('<div class="tvw-bot-demo'):DEMO.rindex('</div>\n  </div>\n</section>')]   # the animated example chat + lead card
+DEMO = DEMO[DEMO.index('<div class="tvw-bot-demo'):DEMO.rindex('</div>\n  </div>\n</section>')] + "</div>"   # the animated example chat + lead card (keep its own closing div)
 
 HERO = '''<section class="tvs-hero">
-  <div class="tvw-hvis tva-hvis"><div class="tva-try"><p class="tva-try-k"><span></span>Live demo: try me</p><div class="tva-glow"><div id="tva-live"></div></div><div class="tva-float tva-f1"><b>&#128241;</b><div><em>New lead</em>Dana, weekend cleanup quote</div></div><div class="tva-float tva-f2"><b>&#9889;</b><div><em>Answered in seconds</em>10:42 PM, Sunday</div></div><div class="tva-float tva-f3"><b>&#10003;</b><div><em>Found by AI</em>Tune-Up included</div></div></div></div>
+  <div class="tvw-hvis tva-hvis"><div class="tva-try"><p class="tva-try-k"><span></span>How it looks on your website</p><div class="tva-mock" aria-hidden="true"><div class="tva-mock-bar"><i></i><i></i><i></i><span>yourbusiness.com</span></div><div class="tva-mock-page"><b></b><p></p><p></p><p class="s"></p><div class="tva-mock-row"><u></u><u></u><u></u></div><p></p><p class="s"></p></div><div class="tva-mock-chat">''' + DEMO + '''</div></div><div class="tva-float tva-f1"><b>&#128241;</b><div><em>New lead</em>Dana, weekend cleanup quote</div></div><div class="tva-float tva-f2"><b>&#9889;</b><div><em>Answered in seconds</em>10:42 PM, Sunday</div></div><div class="tva-float tva-f3"><b>&#10003;</b><div><em>Found by AI</em>AI optimization included</div></div></div></div>
   <div class="tvs-hin tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>AI for the website you already have</p>
     <h1>Turn your website<br><span>into a 24/7 lead machine.</span></h1>
-    <p class="tvs-sub">Add a smart AI assistant to your current website. It answers customers the second they ask, day or night, and sends you every lead. Plus an AI Tune-Up so ChatGPT and Google can find you. No new website needed.</p>
+    <p class="tvs-sub">Add a smart AI assistant to your current website. It answers customers the second they ask, day or night, and sends you every lead. Plus AI Website Optimization so your site gets noticed and recommended by AI. No new website needed.</p>
     <div class="tvs-ctas">
-      <a class="tvs-btn tvs-blue" href="#tva-live">Try the live demo</a>
+      <a class="tvs-btn tvs-blue" href="#" data-tva-open>Try the live demo</a>
       <a class="tvs-btn tvs-ghost" href="#tvs-bundles">See pricing</a>
     </div>
+    <a class="tva-how" href="''' + HOW + '''">How does it work? See our process &rarr;</a>
     <ul class="tvs-trust">
       <li><b>No new</b>website needed</li>
       <li><b>About 7 days</b>to go live</li>
@@ -74,9 +76,9 @@ FEAT = '''<section class="tvs-sec tva-feat" id="tva-feat">
 TUNEUP = '''<section class="tvs-sec tva-tune" id="tva-tune">
   <div class="tva-tune-in tvs-up">
     <div>
-      <p class="tvs-eyebrow">Included: AI Tune-Up</p>
-      <h2>Get found by AI, not just answered.</h2>
-      <p>The assistant turns visitors into leads. The Tune-Up helps more people find you in the first place. ChatGPT, Gemini, Copilot and Google&#39;s AI recommend the businesses they can read and trust, so at setup we tune up your site and your listings so they know exactly who you are, what you do and where, without rebuilding anything.</p>
+      <p class="tvs-eyebrow">Included: AI Website Optimization</p>
+      <h2>Get your website noticed and recommended by AI.</h2>
+      <p>The assistant turns visitors into leads. AI Website Optimization helps more people find you in the first place. ChatGPT, Gemini, Copilot and Google&#39;s AI recommend the businesses they can read and trust, so at setup we optimize your site and your listings so they know exactly who you are, what you do and where, without rebuilding anything.</p>
       <p class="tva-rep"><b>You get a before and after report:</b> what AI said about your business before we started, and what it says after.</p>
     </div>
     <ul class="tva-list">
@@ -95,7 +97,7 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
   <div class="tvs-head tvs-up">
     <p class="tvs-eyebrow">Pricing</p>
     <h2>One package. Found by AI, and turning visitors into leads.</h2>
-    <p>Your AI assistant comes with a full AI Tune-Up of your site and listings, done once at setup. Works with the website you already have.</p>
+    <p>Your AI assistant comes with full AI Website Optimization of your site and listings, done once at setup. Works with the website you already have.</p>
   </div>
   <div class="tvs-tiers tvs-up" role="tablist" aria-label="Choose your membership to see your price">
     <button type="button" role="tab" data-t="all">Walk-in price</button>
@@ -103,9 +105,9 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
   </div>
   <div class="tvs-cards tva-one">
     <article class="tvs-card tvs-pop tvs-up" data-b="aichat">
-      <p class="tvs-badge">AI Tune-Up included</p>
-      <p class="tvs-cname">AI Assistant + Tune-Up</p>
-      <p class="tvs-cfor">A smart assistant that answers your customers 24/7 and sends you every lead, plus a one-time AI Tune-Up so ChatGPT, Google and other AI tools can find and understand you.</p>
+      <p class="tvs-badge">AI Website Optimization included</p>
+      <p class="tvs-cname">AI Assistant + AI Optimization</p>
+      <p class="tvs-cfor">A smart assistant that answers your customers 24/7 and sends you every lead, plus one-time AI Website Optimization so ChatGPT, Google and other AI tools can find and understand you.</p>
       <p class="tvw-plabel on">Featured &amp; VIP member price*</p>
       <p class="tvs-was"></p>
       <p class="tvs-price"><sup>$</sup><b>%(cm0)s</b></p>
@@ -120,7 +122,7 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
         <li>Smart handoff when a question needs you</li>
         <li>Monthly summary and tuning: just email us changes</li>
       </ul>
-      <p class="tva-grp">Your AI Tune-Up (included, done at setup)</p>
+      <p class="tva-grp">Your AI Website Optimization (included, done at setup)</p>
       <ul>
         <li>Before and after &ldquo;Can AI find you?&rdquo; report</li>
         <li>Business facts code AI can read</li>
@@ -132,7 +134,7 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
       <a class="tvs-btn tvs-blue tvs-wide tvw-go tva-pick" data-pick="ai_chat" href="#tvs-book">Get started &rarr;</a>
     </article>
   </div>
-  <p class="tvs-fine tvs-up"><b>Works with the site you have.</b> Wix, Squarespace, WordPress, GoDaddy, Shopify and custom sites. Some website builders only allow added code on their paid plans; we check yours first, free. The setup fee covers building your assistant and your full AI Tune-Up. Month to month after that, no contract. Want a site AI can fully read from the ground up? See our <a href="/websites">AI-Ready websites</a>.</p>
+  <p class="tvs-fine tvs-up"><b>Works with the site you have.</b> Wix, Squarespace, WordPress, GoDaddy, Shopify and custom sites. Some website builders only allow added code on their paid plans; we check yours first, free. The setup fee covers building your assistant and your full AI Website Optimization. Month to month after that, no contract. Want a site AI can fully read from the ground up? See our <a href="/websites">AI-Ready websites</a>.</p>
 </section>''' % {"cm0": CHAT["member"][0], "cm1": CHAT["member"][1]}
 
 VS = '''<section class="tvs-sec tvs-vs">
@@ -155,6 +157,7 @@ STEPS = '''<section class="tvs-sec tvs-steps">
   <div class="tvs-head tvs-up">
     <p class="tvs-eyebrow">How it works</p>
     <h2>Live on your site in about a week.</h2>
+    <p><a class="tva-how" href="''' + HOW + '''">See exactly how we train and test your assistant &rarr;</a></p>
   </div>
   <ol class="tvs-ol">
     <li class="tvs-up"><b>1</b><h3>Send a message</h3><p>Tell us about your business and send us your website link.</p></li>
@@ -173,9 +176,9 @@ FAQ = '''<section class="tvs-sec tvs-faq">
     <details><summary>Can I change what it says?</summary><p>Anytime. New prices, specials, hours or services: just email or text us and we update it.</p></details>
     <details><summary>I&#39;m a law firm, financial advisor or medical office. Is this OK for my industry?</summary><p>Yes. We set up your assistant to follow your industry&#39;s regulations and guidelines. It shares general information about your firm and services, never advice, uses the disclaimers you need, only states rates or fees you approve, never asks for sensitive information, and hands anything specific to you. You review and approve everything before launch, and we&#39;re happy to work with your compliance person.</p></details>
     <details><summary>Will it work on my website builder?</summary><p>Almost always. Wix, Squarespace, WordPress, GoDaddy, Shopify and custom sites all work. A few builders only allow added code on their paid plans, so we check yours first, free.</p></details>
-    <details><summary>What is the AI Tune-Up?</summary><p>It comes with every AI assistant. At setup we make a one-time set of fixes to your website and your Google, Bing and Apple listings so AI tools like ChatGPT can understand your business. You get a before and after report.</p></details>
-    <details><summary>Does the chat assistant help AI recommend me?</summary><p>Not on its own: AI search tools don&#39;t read chat bubbles. The assistant turns more of your visitors into leads, and the included AI Tune-Up is what helps AI tools find and understand you. That&#39;s why they come together.</p></details>
-    <details><summary>Is there a contract?</summary><p>No. One setup fee covers your assistant and your AI Tune-Up, then it is month to month.</p></details>
+    <details><summary>What is AI Website Optimization?</summary><p>It comes with every AI assistant. At setup we make a one-time set of fixes to your website and your Google, Bing and Apple listings so AI tools like ChatGPT can understand your business. You get a before and after report.</p></details>
+    <details><summary>Does the chat assistant help AI recommend me?</summary><p>Not on its own: AI search tools don&#39;t read chat bubbles. The assistant turns more of your visitors into leads, and the included AI Website Optimization is what helps AI tools find and understand you. That&#39;s why they come together.</p></details>
+    <details><summary>Is there a contract?</summary><p>No. One setup fee covers your assistant and your AI Website Optimization, then it is month to month.</p></details>
     <details><summary>Do I have to be a Three Village Local member?</summary><p>No. Anyone can sign up at our walk-in price. Featured and VIP members of Three Village Local get member pricing.</p></details>
   </div>
 </section>'''
@@ -185,7 +188,8 @@ i, j = sec(h, "tvs-hero")
 h = h[:i] + HERO + h[j:]
 h = cut(h, "tvw-strip")
 h = cut(h, "tvs-sec tvw-shift")
-h = swap(h, "tvs-sec tvw-ai", NEXT + "\n\n" + FEAT + "\n\n" + TUNEUP)
+STRIP = W.STRIP_SEC.replace("<p>Get recommended on the AI tools your customers use</p>", "<p>AI Website Optimization: built to get you noticed and recommended on</p>")
+h = swap(h, "tvs-sec tvw-ai", NEXT + "\n\n" + FEAT + "\n\n" + STRIP + "\n\n" + TUNEUP)
 h = cut(h, "tvs-sec tvw-bot")
 h = swap(h, "tvs-sec tvs-bundles", PRICING)
 h = swap(h, "tvs-sec tvs-vs", VS)
@@ -206,10 +210,23 @@ PICKJS = '''<script>(function(){var pick='ai_chat';document.addEventListener('cl
 function set(){var s=document.querySelector('#tvs-form-slot select[name="bundle"]');if(s){s.value=pick;return true}return false}
 var n=0,iv=setInterval(function(){if(set()||++n>60)clearInterval(iv)},300);})();</script>'''
 
+OPENJS = '''<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-tva-open]');if(a){e.preventDefault();if(window.tvaOpen)window.tvaOpen()}});</script>'''
+
 CSS = '''
 .tva-hvis{padding:28px 34px 28px 24px}
 .tvs-hero:has(.tva-hvis){min-height:680px}
 .tva-hvis:before{pointer-events:none}   /* websites hero decor layer sat over the chat and swallowed clicks */
+.tva-mock{position:relative;border-radius:18px;background:#fff;box-shadow:0 34px 70px -30px rgba(9,30,66,.5),0 0 0 1px rgba(15,42,82,.08);overflow:hidden;height:470px}
+.tva-mock-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:#eef2f7;border-bottom:1px solid #e1e8f2}
+.tva-mock-bar i{width:9px;height:9px;border-radius:50%;background:#d3dbe6}.tva-mock-bar i:first-child{background:#ff7b6b}.tva-mock-bar i:nth-child(2){background:#ffc85a}.tva-mock-bar i:nth-child(3){background:#4bd18a}
+.tva-mock-bar span{margin-left:10px;flex:1;padding:4px 12px;border-radius:999px;background:#fff;font-size:12px;color:#7a8696}
+.tva-mock-page{padding:22px 22px 0}.tva-mock-page b{display:block;width:55%;height:18px;border-radius:6px;background:#dbe5f3;margin-bottom:14px}
+.tva-mock-page p{height:9px;border-radius:5px;background:#edf1f6;margin:0 0 9px!important}.tva-mock-page p.s{width:60%}
+.tva-mock-row{display:flex;gap:10px;margin:16px 0}.tva-mock-row u{flex:1;height:64px;border-radius:10px;background:#f1f5fa}
+.tva-mock-chat{position:absolute;right:12px;bottom:12px;width:300px;transform-origin:bottom right;animation:tvaPopIn .7s .6s cubic-bezier(.2,.9,.3,1.15) both}
+.tva-mock-chat .tvw-bot-demo{margin:0!important}.tva-mock-chat .tvw-chatw{font-size:13px}.tva-mock-chat .tvw-bot-ex{display:none}
+.tva-mock-chat .tvw-lead{display:none}
+@keyframes tvaPopIn{from{opacity:0;transform:translateY(20px) scale(.85)}to{opacity:1;transform:none}}
 .tva-glow{position:relative;border-radius:24px}
 .tva-glow:before{content:"";position:absolute;inset:-3px;border-radius:26px;background:linear-gradient(120deg,#4da3ff,#2fd28a,#1d5fd1,#8fd0ff,#4da3ff);background-size:300% 300%;animation:tvaGrad 6s linear infinite;z-index:0;filter:blur(1px)}
 .tva-glow:after{content:"";position:absolute;inset:-18px;border-radius:40px;background:radial-gradient(closest-side,rgba(77,163,255,.35),transparent);z-index:-1;animation:tvaPulse 3.2s ease-in-out infinite;pointer-events:none}
@@ -241,6 +258,7 @@ CSS = '''
 .tva-try-k span{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fd28a;margin-right:8px;box-shadow:0 0 0 4px rgba(47,210,138,.2);vertical-align:1px}
 .tva-try .tva-box{height:540px}
 @media (max-width:900px){.tva-try .tva-box{height:520px;max-height:78vh}.tvs-hero:has(.tva-hvis){display:flex;flex-direction:column;min-height:0}.tva-hvis{order:2;border-radius:0 0 22px 22px!important}}
+.tva-how{display:inline-block;margin:16px 0 4px;font-weight:800;color:var(--blue)!important;text-decoration:none!important;border-bottom:2px solid rgba(29,95,209,.25)}.tva-how:hover{border-color:var(--blue)}
 .tva-one{display:grid!important;grid-template-columns:minmax(0,560px)!important;justify-content:center}
 .tva-grp{margin:14px 0 6px!important;font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 .tva-why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1060px;margin:0 auto}
@@ -285,7 +303,7 @@ def rd(f):
     if f == "page.css":
         return s + CSS
     if f == "page.js":
-        return rep(s, "var P={", "var P={" + PRICES) + PICKJS + '<script src="https://3vl-ai-assistant.vercel.app/widget.js" data-mount="#tva-live" defer></script>'
+        return rep(s, "var P={", "var P={" + PRICES) + PICKJS + OPENJS + '<script src="https://3vl-ai-assistant.vercel.app/widget.js" data-tease="Hi! I am live. Ask me anything about AI for your website." defer></script>'
     return s
 
 
