@@ -1,21 +1,21 @@
 {
-"updated": "2026-11-04T16:02:23.797157+00:00",
+"updated": "2026-11-04T18:01:14.275659+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 44,
+"Port Jefferson Chamber": 47,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 200,
-"Emma S. Clark Library": 274,
+"Emma S. Clark Library": 273,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 47,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 6,
 "Staller Center for the Arts": 138,
 "Theatre Three": 71,
-"Gallery North": 16,
+"Gallery North": 19,
 "Reboli Center": 17,
-"Sweetbriar Nature Center": 17,
+"Sweetbriar Nature Center": 34,
 "Historical Society of Greater Port Jefferson": 1,
 "Madiran The Wine Bar live music": 33,
 "Local business Instagram posts": 6
@@ -526,23 +526,6 @@
 "page": "https://www.threevillagelocal.com/events/shed-the-meds-589"
 },
 {
-"id": "emmaclark-osteoporosis-uncovering-hidden-causes-bone-loss-61289",
-"title": "Osteoporosis: Uncovering Hidden Causes of Bone Loss",
-"start": "2026-11-04T11:00:00",
-"end": "2026-11-04T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/osteoporosis-uncovering-hidden-causes-bone-loss-61289",
-"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Learn about osteoporosis from Mather Medical Group's rheumatologist, Zarlasht Khan, MD.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/osteoporosis-uncovering-hidden-causes-of-bone-loss"
-},
-{
 "id": "lim-3225911",
 "title": "Mornings@LIM: Tour of Enduring Hearts",
 "start": "2026-11-04T11:00:00",
@@ -561,7 +544,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/mornings-lim-tour-of-enduring-hearts"
+"page": ""
 },
 {
 "id": "pjchamber-15249",
@@ -1489,6 +1472,25 @@
 "page": "https://www.threevillagelocal.com/events/evening-book-discussion-610"
 },
 {
+"id": "gallerynorth-72969",
+"title": "Veteran's Day - Gallery Closed",
+"start": "2026-11-11T00:00:00",
+"end": "2026-11-11T00:00:00",
+"allday": true,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org",
+"desc": "",
+"img": "",
+"src": "gallerynorth",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
 "id": "staller-e836ccf2-cdbe-4645-9bbb-5d263567a0e3",
 "title": "Starry Nights | Featuring Colin Carr & Arnaud Sussmann",
 "start": "2026-11-11T19:00:00",
@@ -2133,7 +2135,7 @@
 "venue": "Gallery North",
 "addr": "90 N Country Rd, Setauket, NY 11733",
 "url": "https://gallerynorth.org",
-"desc": "Here from each of the artists of the current exhibition!",
+"desc": "Hear from each of the artists of the current exhibition!",
 "img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/70303/v1791909467088/image_large.webp",
 "src": "gallerynorth",
 "tags": [
