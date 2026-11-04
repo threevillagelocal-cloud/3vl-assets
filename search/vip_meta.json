@@ -79,7 +79,6 @@
   "since": "2004",
   "cred": "NMLS# 864086",
   "specs": [
-   "Banks & Credit Unions",
    "Home Loans",
    "Mortgage Broker",
    "Reverse Mortgages",
@@ -161,8 +160,7 @@
   "since": "2021",
   "cred": "Iicrc certified firm Nys mold license",
   "specs": [
-   "Damage Restoration",
-   "Junk Removal"
+   "Damage Restoration"
   ],
   "web": "https://magichomerestoration.com/",
   "fb": "http://www.facebook.com/magichomerestoration",
@@ -196,8 +194,7 @@
   "specs": [
    "Estate Planning Attorney",
    "Probate Attorney",
-   "Real Estate Attorney",
-   "Tax Attorney"
+   "Real Estate Attorney"
   ],
   "web": "https://www.raupplaw.com/",
   "fb": "https://www.facebook.com/Amy.C.Raupp.Attorney",
@@ -338,11 +335,11 @@
   "cred": "Licensed Realtor",
   "specs": [
    "Commercial Real Estate",
-   "Property Management",
    "Real Estate Brokers",
    "Real Estate Investments",
    "Real Estate Salesperson",
-   "Realtors"
+   "Realtors",
+   "Residential Real Estate"
   ],
   "web": "https://victorstabilerealtor.com/",
   "fb": "https://www.facebook.com/VictorStabileRealtor/",
