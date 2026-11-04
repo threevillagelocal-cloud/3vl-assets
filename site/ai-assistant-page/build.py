@@ -67,6 +67,7 @@ FEAT = '''<section class="tvs-sec tva-feat" id="tva-feat">
     <div class="tva-c tvs-up"><span>&#129309;</span><h3>Smart handoff</h3><p>When a question needs you, it takes a message and gets you the details instead of making something up.</p></div>
     <div class="tva-c tvs-up"><span>&#128202;</span><h3>Monthly summary</h3><p>See what customers asked, how many leads came in, and what to add next. We keep it sharp for you.</p></div>
   </div>
+  <div class="tva-reg tvs-up"><span>&#9878;&#65039;</span><div><b>Built for every kind of business, including regulated ones.</b><p>Restaurants, shops, home services and small businesses, plus law firms, financial advisors, insurance, mortgage, accounting and medical offices. We set up every assistant to follow your industry&#39;s regulations and guidelines: general information only (never legal, financial or medical advice), the right disclaimers, only the wording and rates you approve, no sensitive information collected, and anything specific goes straight to you. You approve it before it goes live.</p></div></div>
   <div class="tva-works tvs-up"><p>Works on the website you already have</p><div><span>Wix</span><span>Squarespace</span><span>WordPress</span><span>GoDaddy</span><span>Shopify</span><span>Weebly</span><span>Custom sites</span></div></div>
 </section>'''
 
@@ -170,6 +171,7 @@ FAQ = '''<section class="tvs-sec tvs-faq">
     <details><summary>What if it doesn&#39;t know an answer?</summary><p>It answers from the information you give us. When a question needs you, it says so, takes the customer&#39;s name and number, and sends the details to you instead of guessing.</p></details>
     <details><summary>How do I get the leads?</summary><p>Every lead is sent to your email (and phone, if you like) right away, with the customer&#39;s name, number and what they need.</p></details>
     <details><summary>Can I change what it says?</summary><p>Anytime. New prices, specials, hours or services: just email or text us and we update it.</p></details>
+    <details><summary>I&#39;m a law firm, financial advisor or medical office. Is this OK for my industry?</summary><p>Yes. We set up your assistant to follow your industry&#39;s regulations and guidelines. It shares general information about your firm and services, never advice, uses the disclaimers you need, only states rates or fees you approve, never asks for sensitive information, and hands anything specific to you. You review and approve everything before launch, and we&#39;re happy to work with your compliance person.</p></details>
     <details><summary>Will it work on my website builder?</summary><p>Almost always. Wix, Squarespace, WordPress, GoDaddy, Shopify and custom sites all work. A few builders only allow added code on their paid plans, so we check yours first, free.</p></details>
     <details><summary>What is the AI Tune-Up?</summary><p>It comes with every AI assistant. At setup we make a one-time set of fixes to your website and your Google, Bing and Apple listings so AI tools like ChatGPT can understand your business. You get a before and after report.</p></details>
     <details><summary>Does the chat assistant help AI recommend me?</summary><p>Not on its own: AI search tools don&#39;t read chat bubbles. The assistant turns more of your visitors into leads, and the included AI Tune-Up is what helps AI tools find and understand you. That&#39;s why they come together.</p></details>
@@ -224,6 +226,10 @@ CSS = '''
 .tva-c span{display:inline-flex;width:46px;height:46px;border-radius:14px;align-items:center;justify-content:center;font-size:23px;background:#e7f0ff;margin-bottom:10px}
 .tva-c h3{margin:0 0 6px!important;font-size:18px;color:var(--navy)}
 .tva-c p{margin:0!important;font-size:15px;line-height:1.55;color:var(--mut)}
+.tva-reg{display:flex;gap:16px;align-items:flex-start;max-width:1060px;margin:22px auto 0;padding:20px 22px;border-radius:20px;background:#fff;border:1px solid #dfe8f6;box-shadow:0 14px 34px -24px rgba(9,30,66,.3)}
+.tva-reg>span{font-size:28px;line-height:1}
+.tva-reg b{display:block;font-size:17px;color:var(--navy);margin-bottom:4px}
+.tva-reg p{margin:0!important;font-size:15px;line-height:1.55;color:var(--mut)}
 .tva-works{max-width:1060px;margin:26px auto 0;text-align:center}
 .tva-works p{margin:0 0 10px!important;font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
 .tva-works div{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
