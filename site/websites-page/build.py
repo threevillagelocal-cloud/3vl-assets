@@ -146,23 +146,6 @@ SHIFT_SEC = '''<section class="tvs-sec tvw-shift" id="tvw-shift">
     <h2>Your website isn&#39;t a digital business card anymore.</h2>
     <p>It still shows off your business, but now it has a bigger job: feeding AI tools the facts they need to recommend you. More and more people ask ChatGPT, Gemini, Copilot, Perplexity and Google&#39;s AI Overviews for answers and recommendations instead of scrolling through search results. If your site can&#39;t teach AI who you are, AI recommends someone else.</p>
   </div>
-  <div class="tvw-then-now tvs-up">
-    <div class="tvw-then">
-      <p class="tvw-tn-lab">Then</p>
-      <div class="tvw-bcard"><b>Your Business</b><span>Lawn Care &middot; Setauket</span><i>(631) 555-0100</i></div>
-      <p class="tvw-tn-txt">A digital business card. People found it, read it, maybe called.</p>
-    </div>
-    <div class="tvw-tn-arrow" aria-hidden="true">&#8594;</div>
-    <div class="tvw-now">
-      <p class="tvw-tn-lab">Now</p>
-      <div class="tvw-chat">
-        <div class="tvw-chat-top"><span class="tvw-chat-dots"><i></i><i></i><i></i></span><b>Ask AI</b><em>ChatGPT &middot; Gemini &middot; Copilot &middot; Google AI</em></div>
-        <div class="tvw-q">Who&#39;s a good landscaper near me?</div>
-        <div class="tvw-a"><span class="tvw-a-ic" aria-hidden="true">&#10022;</span><div><p>Try <u>Your Business</u> in Setauket. They offer weekly lawn care, cleanups and mulch, have great reviews, and serve the whole Three Village area.</p><span class="tvw-src">&#128279; Source: yourbusiness.com</span></div></div>
-      </div>
-      <div class="tvw-steps"><span><b>1</b>Your website lists services, hours, area, reviews and FAQs</span><span><b>2</b>AI tools read it and learn who you are</span><span><b>3</b>AI recommends you by name</span></div>
-    </div>
-  </div>
   <div class="tvw-cta1 tvs-up"><p><b>Ready for a website AI recommends?</b><span>Tell us about your business. We reply by email, usually within a day.</span></p><div class="tvw-cta-btns"><a class="tvs-btn tvs-blue" href="#tvs-book">Send us a message</a><a class="tvs-btn tvs-ghost" href="#tvs-bundles">See the packages</a></div></div>
 </section>'''
 
