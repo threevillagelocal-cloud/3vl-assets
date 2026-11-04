@@ -1,0 +1,22 @@
+.tse{font-family:"tvl-rc","Radio Canada",system-ui,sans-serif;color:#13233a;max-width:760px;margin:0 auto}
+.tse-hero{background:#fff;border:1px solid #e1e8f2;border-radius:24px;padding:28px 24px 24px;box-shadow:0 14px 34px rgba(19,35,58,.07);margin:10px 0 22px}
+.tse-k{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0b57b0;margin:0 0 8px}
+.tse-h{font-size:clamp(30px,6vw,44px);line-height:1.08;font-weight:700;margin:0 0 12px;letter-spacing:-.01em;color:#13233a}
+.tse-h span{color:#0b57b0;background:linear-gradient(transparent 78%,#ffc53d 78%,#ffc53d 92%,transparent 92%)}
+.tse-sub{font-size:18px;line-height:1.5;color:#4a5869;margin:0 0 18px}
+.tse-pts{display:grid;gap:10px;margin:0 0 20px}
+.tse-pt{display:flex;gap:12px;align-items:center;font-size:16px;font-weight:600}
+.tse-pt b{flex:none;width:38px;height:38px;border-radius:12px;background:#eaf2fd;display:flex;align-items:center;justify-content:center;font-size:18px;color:#0b57b0}
+.tse-go{display:inline-block;background:#0b57b0;color:#fff!important;text-decoration:none!important;font-weight:700;font-size:18px;padding:15px 28px;border-radius:999px;box-shadow:0 10px 24px rgba(11,87,176,.28)}
+.tse-go:hover{background:#094a96}
+.tse-anchor{scroll-margin-top:110px}
+/* the BD form that follows the widget */
+.tse ~ form,.tse + form,form#event_submission,form[name="event_submission"]{max-width:760px;margin:0 auto 40px;background:#fff;border:1px solid #e1e8f2;border-radius:24px;padding:24px;box-shadow:0 14px 34px rgba(19,35,58,.07);font-family:"tvl-rc","Radio Canada",system-ui,sans-serif}
+form[name="event_submission"] h3,form[name="event_submission"] h4{font-family:inherit;color:#13233a;font-weight:700}
+form[name="event_submission"] h4{font-size:19px;color:#0b57b0;border-top:1px solid #e1e8f2;padding-top:16px}
+form[name="event_submission"] label{font-weight:700;font-size:15px;color:#13233a}
+form[name="event_submission"] .form-control{border:1.5px solid #cfdbea;border-radius:12px;min-height:46px;font-size:16px;box-shadow:none}
+form[name="event_submission"] .form-control:focus{border-color:#0b57b0;box-shadow:0 0 0 4px rgba(11,87,176,.14)}
+form[name="event_submission"] textarea.form-control{min-height:130px}
+form[name="event_submission"] .btn-primary{background:#0b57b0;border:0;border-radius:999px;font-weight:700;font-size:18px;padding:15px}
+@media(max-width:600px){.tse-hero{padding:22px 18px 20px;border-radius:20px}.tse-sub{font-size:17px}}

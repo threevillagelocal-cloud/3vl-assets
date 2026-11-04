@@ -65,7 +65,7 @@ FEAT = '''<section class="tvs-sec tva-feat" id="tva-feat">
     <div class="tva-c tvs-up"><span>&#128172;</span><h3>Answers instantly, 24/7</h3><p>Hours, prices, services, service area, parking, policies: anything you teach it, answered in seconds.</p></div>
     <div class="tva-c tvs-up"><span>&#128241;</span><h3>Captures every lead</h3><p>Name, phone and what they need, sent to your email or phone the moment they ask.</p></div>
     <div class="tva-c tvs-up"><span>&#128197;</span><h3>Books and quotes</h3><p>Sends people straight to your booking calendar, quote form or online ordering.</p></div>
-    <div class="tva-c tvs-up"><span>&#129504;</span><h3>Knows your business</h3><p>Trained on your services, prices and FAQs. It answers from your information, not guesses.</p></div>
+    <div class="tva-c tvs-up"><span>&#129504;</span><h3>Knows your business and your industry</h3><p>Custom built after we research your business, your industry, your competition and its rules. It answers from your approved information.</p></div>
     <div class="tva-c tvs-up"><span>&#129309;</span><h3>Live person, instantly</h3><p>If someone asks for a real person, you get an instant text and email with their name, number and what they need.</p></div>
     <div class="tva-c tvs-up"><span>&#128202;</span><h3>Monthly summary</h3><p>See what customers asked, how many leads came in, and what to add next. We keep it sharp for you.</p></div>
   </div>
@@ -169,7 +169,7 @@ STEPS = '''<section class="tvs-sec tvs-steps">
   </div>
   <ol class="tvs-ol">
     <li class="tvs-up"><b>1</b><h3>Send a message</h3><p>Tell us about your business and send us your website link.</p></li>
-    <li class="tvs-up"><b>2</b><h3>We learn your business</h3><p>We read your site and gather your services, prices, hours and FAQs.</p></li>
+    <li class="tvs-up"><b>2</b><h3>Research and development</h3><p>We study your business, your industry, your competition and its rules.</p></li>
     <li class="tvs-up"><b>3</b><h3>We add it to your site</h3><p>One small line of code. We add it, or send you simple steps.</p></li>
     <li class="tvs-up"><b>4</b><h3>Leads come in</h3><p>Customers get answers 24/7 and you get every lead.</p></li>
   </ol>

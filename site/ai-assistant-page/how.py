@@ -51,8 +51,8 @@ STEP1 = '''<section class="tvs-sec tvh-step" id="tvh-1">
 </section>'''
 
 STEP2 = '''<section class="tvs-sec tvh-step tvh-alt" id="tvh-2">
-  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Step 2 &middot; Training and fact-finding</p><h2>We learn your business like a new employee would.</h2>
-  <p>We read your website, your Google profile and your reviews, then send you a short fact sheet to fill in or correct. Email is fine; a quick call is optional.</p></div>
+  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Step 2 &middot; Research and development</p><h2>We study your business, your industry and your competition.</h2>
+  <p>Every Front Desk is custom built. We research your business, what customers in your industry ask, what your competitors offer and say, and the rules your industry has to follow. Then you review a short fact sheet. Email is fine; a quick call is optional.</p></div>
   <div class="tvh-train">
     <div class="tvh-col tvs-up"><h3>What we teach it</h3><ul>
       <li><b>Your services</b>What you do, what&#39;s included, what you don&#39;t do</li>
@@ -62,6 +62,8 @@ STEP2 = '''<section class="tvs-sec tvh-step tvh-alt" id="tvh-2">
       <li><b>Booking</b>Your calendar, quote form, ordering or reservation links</li>
       <li><b>Policies</b>Deposits, cancellations, warranties, payment, parking</li>
       <li><b>Real questions</b>Your top FAQs, plus questions from your reviews and inbox</li>
+      <li><b>Your industry</b>What customers in your field ask most, and how the best businesses answer</li>
+      <li><b>Your competition</b>What nearby competitors offer and say, so your answers stand out</li>
     </ul></div>
     <div class="tvh-col tvs-up"><h3>How we want it to act</h3><ul>
       <li><b>Your name</b>It&#39;s named after your business, like &ldquo;Sun-Up Awnings Assistant,&rdquo; in your colors</li>

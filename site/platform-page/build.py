@@ -39,7 +39,7 @@ HERO = '''<section class="tvs-hero tvp-hero">
 PATHS = '''<section class="tvs-sec tvp-paths" id="tvp-paths">
   <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Where are you today?</p><h2>Two ways we help. Both start with you.</h2></div>
   <div class="tvp-two">
-    <a class="tvp-path tvs-up" href="#tvp-launch"><span class="tvp-tag">New business</span><h3>Launch it right.</h3>
+    <a class="tvp-path tvs-up" href="#tvp-launch"><span class="tvp-tag">New business</span><h3>Build it right.</h3>
       <p>Open your doors with the whole town watching: a website AI can find, your Google and Apple listings, a Three Village Local launch spotlight, social posts, video and drone footage.</p><em>Plan my launch &rarr;</em></a>
     <a class="tvp-path tvp-dark tvs-up" href="#tvp-ai"><span class="tvp-tag">Established business</span><h3>Get an AI overhaul.</h3>
       <p>Your reputation is built. Now make sure AI tools recommend you, your website turns visitors into leads 24/7, and the whole community keeps seeing you.</p><em>Show me the overhaul &rarr;</em></a>
