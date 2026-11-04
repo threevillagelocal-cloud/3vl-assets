@@ -216,6 +216,7 @@ h = cut(h, "tvs-sec tvs-social")                  # "Your content, seen all over
 h = swap(h, "tvs-sec tvs-work", WORK)              # promo video + social posts -> real websites + phone
 h = swap(h, "tvs-sec tvs-bundles", BUNDLES)        # social bundles -> the 2 website packages
 h = cut(h, "tvs-founding")                        # owner 10/22: remove the founding clients box
+h = cut(h, "tvs-sec tvs-aiadd")                  # AI add-ons block is for /services only
 i, _ = sec(h, "tvs-sec tvs-bundles")
 h = h[:i] + CHAT_SEC + chr(10) * 2 + h[i:]      # owner 10/22: highlight the AI chatbot, visual
 i, _ = sec(h, "tvs-sec tvs-vs")
