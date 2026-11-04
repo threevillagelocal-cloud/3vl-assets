@@ -9,7 +9,8 @@ import build as W
 from build import D, rep, cut, swap, sec
 
 # prices: (setup, monthly) walk-in / member. Owner 11/3: the AI Tune-Up is included in the assistant setup (one package).
-CHAT = {"all": (1199, 199), "member": (799, 149)}
+# owner 11/4: one price for everyone, $199 setup (research, training, chat-to-text) + $39/month
+CHAT = {"all": (199, 39), "member": (199, 39)}
 
 D.NAME = "3VL Page AI Assistant" if D.LIVE else "3VL Page AI Assistant Preview"
 D.SLUG = "ai-assistant" if D.LIVE else "preview-ai-assistant"
@@ -100,17 +101,13 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
     <h2>One package. Found by AI, and turning visitors into leads.</h2>
     <p>Your AI assistant comes with full AI Website Optimization of your site and listings, done once at setup. Works with the website you already have.</p>
   </div>
-  <div class="tvs-tiers tvs-up" role="tablist" aria-label="Choose your membership to see your price">
-    <button type="button" role="tab" data-t="all">Walk-in price</button>
-    <button type="button" role="tab" data-t="vip" class="on">Featured &amp; VIP members<em>Member pricing</em></button>
-  </div>
   <div class="tvs-cards tva-one">
     <article class="tvs-card tvs-pop tvs-up tva-wide" data-b="aichat">
       <div class="tva-pc-a">
       <p class="tvs-badge">AI Website Optimization included</p>
       <p class="tvs-cname">Your Digital Front Desk</p>
       <p class="tvs-cfor">A smart assistant that answers your customers 24/7 and sends you every lead, plus one-time AI Website Optimization so ChatGPT, Google and other AI tools can find and understand you.</p>
-      <p class="tvw-plabel on">Featured &amp; VIP member price*</p>
+      <p class="tva-plabel">One-time setup</p>
       <p class="tvs-was"></p>
       <p class="tvs-price"><sup>$</sup><b>%(cm0)s</b></p>
       <p class="tvs-mo">+ <b>$%(cm1)s</b>/mo</p>
@@ -121,11 +118,12 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
       <div class="tva-pc-b">
       <p class="tva-grp">Your AI assistant</p>
       <ul>
-        <li>Built, trained and added to your site for you</li>
+        <li>Custom built: we research your business, industry and competition</li>
+        <li>Trained, tested and added to your site for you</li>
         <li>Answers questions 24/7 from your own information</li>
         <li>Every lead sent to your email or phone right away</li>
         <li>Links to your booking, quote form or ordering</li>
-        <li>Live person handoff: you get an instant text</li>
+        <li>Chat to text: you get an instant text when someone wants you</li>
         <li>Monthly summary and tuning: just email us changes</li>
       </ul>
       </div>
@@ -187,7 +185,7 @@ FAQ = '''<section class="tvs-sec tvs-faq">
     <details><summary>What is AI Website Optimization?</summary><p>It comes with every AI assistant. At setup we make a one-time set of fixes to your website and your Google, Bing and Apple listings so AI tools like ChatGPT can understand your business. You get a before and after report.</p></details>
     <details><summary>Does the chat assistant help AI recommend me?</summary><p>Not on its own: AI search tools don&#39;t read chat bubbles. The assistant turns more of your visitors into leads, and the included AI Website Optimization is what helps AI tools find and understand you. That&#39;s why they come together.</p></details>
     <details><summary>Is there a contract?</summary><p>No. One setup fee covers your assistant and your AI Website Optimization, then it is month to month.</p></details>
-    <details><summary>Do I have to be a Three Village Local member?</summary><p>No. Anyone can sign up at our walk-in price. Featured and VIP members of Three Village Local get member pricing.</p></details>
+    <details><summary>Do I have to be a Three Village Local member?</summary><p>No. The price is the same for everyone: $199 to set up, then $39 a month.</p></details>
   </div>
 </section>'''
 
@@ -208,7 +206,7 @@ h = rep(h, "<p class=\"tvw-cta3-s\">Designed, built and hosted for you. Updates 
         "<p class=\"tvw-cta3-s\">No new website needed. Set up for you. Every lead sent to you.</p>")
 h = rep(h, '<a class="tvs-btn tvw-btn-o" href="#tvs-bundles">See the packages</a>', '<a class="tvs-btn tvw-btn-o" href="#tvs-bundles">See pricing</a>')
 h = rep(h, "mailto:hello@threevillagelocal.com?subject=Websites", "mailto:hello@threevillagelocal.com?subject=AI%20for%20my%20website")
-h = re.sub(r'<p class="tvw-small">.*?</p>', '<p class="tvw-small">*Member pricing is for Featured and VIP tier members of Three Village Local. Walk-in pricing applies to everyone else.</p>', h, count=1, flags=re.S)
+h = re.sub(r'<p class="tvw-small">.*?</p>', '', h, count=1, flags=re.S)   # owner 11/4: one price, no member footnote
 assert "\\" not in h and "tvw-dev" not in h
 HTML = h
 
@@ -280,6 +278,7 @@ CSS = '''
 .tva-pc-a{padding-right:26px;border-right:1px solid #e3e9f2}.tva-pc-b{padding-right:24px;border-right:1px solid #e3e9f2}
 .tva-wide .tvs-cfor{display:none}.tva-wide li{font-size:14.5px!important;margin-bottom:6px!important}#tvs-bundles{padding-top:46px!important}#tvs-bundles .tvs-head{margin-bottom:18px!important}#tvs-bundles .tvs-head p{display:none}
 .tva-wide .tva-grp{margin-top:6px!important}.tva-wide ul{margin-bottom:0!important}}
+.tva-plabel{display:inline-block;margin:6px 0 2px!important;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:#e7f0ff;color:var(--blue)}
 .tva-pc-note{margin:10px 0 0!important;font-size:13px;color:var(--mut);text-align:center}
 .tva-grp{margin:14px 0 6px!important;font-size:12.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
 .tva-why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1060px;margin:0 auto}
