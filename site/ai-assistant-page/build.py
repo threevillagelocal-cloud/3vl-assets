@@ -209,7 +209,8 @@ var n=0,iv=setInterval(function(){if(set()||++n>60)clearInterval(iv)},300);})();
 CSS = '''
 .tva-hvis{padding:28px 34px 28px 24px}
 .tvs-hero:has(.tva-hvis){min-height:680px}
-.tva-try{width:100%;max-width:430px;margin:0 auto}
+.tva-hvis:before{pointer-events:none}   /* websites hero decor layer sat over the chat and swallowed clicks */
+.tva-try{position:relative;z-index:1;width:100%;max-width:430px;margin:0 auto}
 .tva-try-k{margin:0 0 10px!important;text-align:center;font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
 .tva-try-k span{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fd28a;margin-right:8px;box-shadow:0 0 0 4px rgba(47,210,138,.2);vertical-align:1px}
 .tva-try .tva-box{height:540px}
