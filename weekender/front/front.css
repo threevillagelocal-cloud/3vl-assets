@@ -686,3 +686,8 @@ html.tvl-inapp #wk-top.wk-y .yh-in{padding-top:8px}
 
 .yf-credit{display:flex;align-items:center;justify-content:center;gap:10px;text-align:center;padding:14px 16px 4px;margin-top:14px;border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.6)!important;font-size:13.5px;text-decoration:none!important}.yf-credit b{color:#fff;font-weight:700}.yf-credit:hover b{color:#ffc53d}
 .yf-credit img{width:26px!important;height:26px!important;display:block;flex:0 0 auto;margin:0!important}
+/* 11/5/2026 owner: long NWS forecasts ("Mostly Cloudy then Slight Chance Light Rain") ran out of the weather card and squeezed "Today" under the icon. The forecast now gets its own full-width line under the day and wraps. */
+#wk-top.wk-y .wk-wd{grid-template-areas:"img d ic t" "img l ic t" "img s s s" "img x x x"!important}
+#wk-top.wk-y .wk-wm{display:contents!important}
+#wk-top.wk-y .wk-wm .wk-wt{grid-area:t;text-align:right;white-space:nowrap;margin:0!important}
+#wk-top.wk-y .wk-wm .wk-ws{grid-area:s;white-space:normal!important;text-align:left;font-size:12px!important;line-height:1.3!important;color:var(--mute)!important;margin:2px 0 0!important;min-width:0;overflow-wrap:anywhere}
