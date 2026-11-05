@@ -1,8 +1,8 @@
 {
-"updated": "2026-11-05T20:01:53.757379+00:00",
+"updated": "2026-11-05T20:03:56.994651+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 0,
+"Port Jefferson Chamber": 45,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 200,
@@ -68,6 +68,26 @@
 "status": "",
 "fb": 0,
 "page": ""
+},
+{
+"id": "pjchamber-14181",
+"title": "2026 Port Jeff Self-Guided Fall Art Walk",
+"start": "2026-10-09T00:00:00",
+"end": "2026-11-06T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
 },
 {
 "id": "sbv-2456",
@@ -325,6 +345,25 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/halloween-party-at-tommys-place",
 "pu": ""
+},
+{
+"id": "pjchamber-15119",
+"title": "Long Island Restaurant Week",
+"start": "2026-11-01T00:00:00",
+"end": "2026-11-08T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
+"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta – RUVO",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/long-island-restaurant-week"
 },
 {
 "id": "reboli-6adf9dab4c6329721a5cedc5",
@@ -1400,6 +1439,25 @@
 "page": "https://www.threevillagelocal.com/events/live-music-al-marino-james-miceli-and-jerry-mac"
 },
 {
+"id": "pjchamber-15086",
+"title": "Blood Drive",
+"start": "2026-11-12T07:00:00",
+"end": "2026-11-12T19:00:00",
+"allday": false,
+"venue": "St. Charles Hospital",
+"addr": "200 Belle Terre Rd, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/blood-drive-6/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/blood-drive-787"
+},
+{
 "id": "emmaclark-chair-yoga-61291",
 "title": "Chair Yoga",
 "start": "2026-11-12T11:30:00",
@@ -1489,23 +1547,23 @@
 "page": "https://www.threevillagelocal.com/events/bark-for-readers-up-to-5th-grade-614"
 },
 {
-"id": "portjeff-1354",
-"title": "The Conservancy Presents \"Somewhere in Time\"",
+"id": "pjchamber-14970",
+"title": "Somewhere in Time 1912",
 "start": "2026-11-12T18:00:00",
 "end": "2026-11-12T22:00:00",
 "allday": false,
-"venue": "Port Jefferson",
-"addr": "709 Main Street Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1354",
+"venue": "Victorian on Main",
+"addr": "709 Main Street, Port Jefferson, New York",
+"url": "https://portjeffchamber.com/events-calendar/somewhere-in-time-1912/",
 "desc": "",
 "img": "",
-"src": "portjeff",
+"src": "pjchamber",
 "tags": [
 "arts"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/the-conservancy-presents-somewhere-in-time"
+"page": "https://www.threevillagelocal.com/events/somewhere-in-time-1912"
 },
 {
 "id": "emmaclark-tech-help-teens-42855",
@@ -2387,22 +2445,22 @@
 "label": "Special"
 },
 {
-"id": "17972423598169904",
-"biz": "Burgerology",
-"ig": "burgerologyusa",
-"town": "Stony Brook",
+"id": "17961777639080064",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
 "category": "Restaurant",
 "member": false,
-"title": "Beer Buckets for Season Pass Holders",
-"when": "Game days (Week 8 onwards)",
-"desc": "$15 domestic beer buckets for Season Pass holders during football games at Burgerology.",
-"expires": "2026-11-30",
-"posted": "2026-10-29T18:37:33+0000",
-"url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
+"title": "Restaurant Week: Steak Sandwich Prix Fixe",
+"when": "Through Sunday, Nov. 9",
+"desc": "Five entrées for $48pp++ including sliced NY strip steak sandwich with mozzarella, fried onions, horseradish mayo.",
+"expires": "2026-11-09",
+"posted": "2026-11-05T19:38:47+0000",
+"url": "https://www.instagram.com/p/DfXzTPUDzbs/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17972423598169904.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/burgerology-beer-buckets-season-pass-holders",
-"profile": "https://www.threevillagelocal.com/burgerology",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17961777639080064.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
 "label": "Special"
 },
 {
@@ -2421,25 +2479,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18353249986248006.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-long-island-restaurant",
-"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Special"
-},
-{
-"id": "18080320388726966",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Long Island Restaurant Week Dinner",
-"when": "Nov 1-8, 2026",
-"desc": "Special dinner prix fixe for $48 per person at Castaways. Book via Resy or call (888) 624-6106.",
-"expires": "2026-11-08",
-"posted": "2026-10-30T19:01:52+0000",
-"url": "https://www.instagram.com/p/DfISPwoCoAa/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18080320388726966.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-long-island-restaurant-dinner",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
 "label": "Special"
 },
@@ -2577,6 +2616,25 @@
 "label": "Special"
 },
 {
+"id": "17924916534219471",
+"biz": "Toast Coffee + Kitchen",
+"ig": "toastcoffeeandkitchen",
+"town": "Port Jefferson Station",
+"category": "Cafe/Brunch",
+"member": false,
+"title": "Holiday Pies Pre-Order",
+"when": "Nov 24-25 · 9 AM-3 PM",
+"desc": "Pre-order holiday pies (apple crumb, coconut custard, pumpkin cheesecake) for $25 each at Toast Coffee + Kitchen locations.",
+"expires": "2026-11-25",
+"posted": "2026-11-05T17:48:01+0000",
+"url": "https://www.instagram.com/p/DfXmoc1lfL5/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17924916534219471.jpg",
+"page": "https://www.threevillagelocal.com/toast-coffee-kitchen",
+"profile": "https://www.threevillagelocal.com/toast-coffee-kitchen",
+"label": "Special"
+},
+{
 "id": "17994138573103731",
 "biz": "Toast Coffee + Kitchen",
 "ig": "toastcoffeeandkitchen",
@@ -2592,25 +2650,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17994138573103731.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/toast-coffee-kitchen-november-december-food-specials-launch",
-"profile": "https://www.threevillagelocal.com/toast-coffee-kitchen",
-"label": "Special"
-},
-{
-"id": "18099657377388421",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Thanksgiving Sandwich",
-"when": "Starting Sun, Nov 3 through Nov 25",
-"desc": "Fresh-roasted turkey, stuffing, Swiss cheese, cranberry mayo and gravy on a sandwich with a side.",
-"expires": "2026-11-25",
-"posted": "2026-10-29T16:06:38+0000",
-"url": "https://www.instagram.com/p/DfFZI30t-gX/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18099657377388421.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/toast-coffee-kitchen-thanksgiving-sandwich",
 "profile": "https://www.threevillagelocal.com/toast-coffee-kitchen",
 "label": "Special"
 }

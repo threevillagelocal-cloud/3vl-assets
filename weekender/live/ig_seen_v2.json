@@ -1,36 +1,4 @@
 {
-"18126567532841851": {
-"special": false,
-"title": "Fall/Winter Menu Arrives",
-"when": "Wed, Oct. 14",
-"desc": "New fall/winter menu launches Wednesday, October 14th. Make reservations via their bio link.",
-"expires": "2026-10-14",
-"_ts": "2026-10-06T17:12:09+0000"
-},
-"18097115540207113": {
-"special": false,
-"title": "Bombay Chicken Sandwich",
-"when": "Ongoing",
-"desc": "Gluten-free sandwich with curry chicken salad, cabbage, apricot, carrot, and garlic aioli.",
-"expires": "2026-10-06",
-"_ts": "2026-10-06T16:07:50+0000"
-},
-"18090078149229582": {
-"special": true,
-"title": "Halloween Twilight-Inspired Drinks",
-"when": "October only",
-"desc": "Try Mocha Loca Latte and Midnight Sun Mimosa inspired by Twilight. Available through October.",
-"expires": "2026-10-31",
-"_ts": "2026-10-06T16:29:48+0000"
-},
-"18094605377369609": {
-"special": true,
-"title": "Taco Tuesday - Cajun Swordfish Tacodilla",
-"when": "Every Tuesday",
-"desc": "Try the Cajun Swordfish Tacodilla. Order online for $6 delivery within 8 miles, no credit card fee.",
-"expires": "2026-10-13",
-"_ts": "2026-10-06T16:01:16+0000"
-},
 "18165795172468445": {
 "special": true,
 "title": "The Jazz Loft Live Music",
@@ -38,14 +6,6 @@
 "desc": "Live jazz with Tom, Steve, and Billy. Reservations recommended.",
 "expires": "2026-10-08",
 "_ts": "2026-10-07T14:13:30+0000"
-},
-"18190137262400311": {
-"special": true,
-"title": "Chipotle Chicken Salad Sandwich",
-"when": "This week",
-"desc": "Shredded chicken, chipotle sauce, Fontina, lettuce & tomato on Texas toast with fries.",
-"expires": "2026-10-13",
-"_ts": "2026-10-06T18:43:27+0000"
 },
 "18633139252010772": {
 "special": true,
@@ -70,14 +30,6 @@
 "desc": "Two-course lunch for $24, three-course dinner for $46. Closed Mon & Tues.",
 "expires": "2026-10-13",
 "_ts": "2026-10-07T15:12:33+0000"
-},
-"18106747217224206": {
-"special": true,
-"title": "Twister Tuesday: Buy 1 Get 1 FREE",
-"when": "Every Tuesday",
-"desc": "Buy one get one free on ice cream and Italian ices at Ralph's every Twister Tuesday.",
-"expires": "2026-10-14",
-"_ts": "2026-10-06T17:31:29+0000"
 },
 "18121416112857675": {
 "special": true,
@@ -126,14 +78,6 @@
 "desc": "Happy hour at the inside bar, high tops, and lounge with mussels, sliders, and cold beer.",
 "expires": "2026-10-07",
 "_ts": "2026-10-07T17:01:36+0000"
-},
-"17912346450472294": {
-"special": false,
-"title": "Girls Night Out Package",
-"when": "By reservation",
-"desc": "Reserve a group of 6-12 for 2 hours in the lounge with bites and 2 drinks each for $50/person.",
-"expires": "2026-10-21",
-"_ts": "2026-10-06T18:01:29+0000"
 },
 "18045608615819421": {
 "special": true,
@@ -3158,5 +3102,45 @@
 "18108555599253028": {
 "special": false,
 "_ts": "2026-11-05T15:22:46+0000"
+},
+"18396742693203505": {
+"special": false,
+"title": "Smashology Burger + Modelo Combo",
+"when": "Game days (Season Pass holders only)",
+"desc": "Smashology Burger and Modelo beer for $15, but offer lacks specific dates or recurring day.",
+"expires": "2026-11-05",
+"_ts": "2026-11-05T18:14:57+0000"
+},
+"17883924012626558": {
+"special": false,
+"title": "Burgerology Coming to Patchogue",
+"when": "Coming Soon",
+"desc": "New location announcement with no specific date or offer details provided.",
+"expires": "2026-11-05",
+"_ts": "2026-11-05T17:08:10+0000"
+},
+"17924916534219471": {
+"special": true,
+"title": "Holiday Pies Pre-Order",
+"when": "Nov 24-25 · 9 AM-3 PM",
+"desc": "Pre-order holiday pies (apple crumb, coconut custard, pumpkin cheesecake) for $25 each at Toast Coffee + Kitchen locations.",
+"expires": "2026-11-25",
+"_ts": "2026-11-05T17:48:01+0000"
+},
+"18110472683192967": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-05T17:37:48+0000"
+},
+"17961777639080064": {
+"special": true,
+"title": "Restaurant Week: Steak Sandwich Prix Fixe",
+"when": "Through Sunday, Nov. 9",
+"desc": "Five entrées for $48pp++ including sliced NY strip steak sandwich with mozzarella, fried onions, horseradish mayo.",
+"expires": "2026-11-09",
+"_ts": "2026-11-05T19:38:47+0000"
 }
 }

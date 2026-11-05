@@ -82,22 +82,6 @@
 "url": "https://www.instagram.com/p/DfNYXMJo0Fu/",
 "img": "",
 "inset": "ig/p18645486091036908.jpg"
-},
-{
-"id": "17972423598169904",
-"biz": "Burgerology",
-"ig": "burgerologyusa",
-"town": "Stony Brook",
-"category": "Restaurant",
-"member": false,
-"title": "Beer Buckets for Season Pass Holders",
-"when": "Game days (Week 8 onwards)",
-"desc": "$15 domestic beer buckets for Season Pass holders during football games at Burgerology.",
-"expires": "2026-11-30",
-"posted": "2026-10-29T18:37:33+0000",
-"url": "https://www.instagram.com/reel/DfFqrPLOZUW/",
-"img": "",
-"inset": "ig/p17972423598169904.jpg"
 }
 ],
 "ep_restaurant": [],
@@ -125,6 +109,22 @@
 "seportdelicatessen": [],
 "toastcoffeeandkitchen": [
 {
+"id": "17924916534219471",
+"biz": "Toast Coffee + Kitchen",
+"ig": "toastcoffeeandkitchen",
+"town": "Port Jefferson Station",
+"category": "Cafe/Brunch",
+"member": false,
+"title": "Holiday Pies Pre-Order",
+"when": "Nov 24-25 · 9 AM-3 PM",
+"desc": "Pre-order holiday pies (apple crumb, coconut custard, pumpkin cheesecake) for $25 each at Toast Coffee + Kitchen locations.",
+"expires": "2026-11-25",
+"posted": "2026-11-05T17:48:01+0000",
+"url": "https://www.instagram.com/p/DfXmoc1lfL5/",
+"img": "",
+"inset": "ig/p17924916534219471.jpg"
+},
+{
 "id": "17994138573103731",
 "biz": "Toast Coffee + Kitchen",
 "ig": "toastcoffeeandkitchen",
@@ -139,22 +139,6 @@
 "url": "https://www.instagram.com/p/DfSkcaun1_v/",
 "img": "",
 "inset": "ig/p17994138573103731.jpg"
-},
-{
-"id": "18099657377388421",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Thanksgiving Sandwich",
-"when": "Starting Sun, Nov 3 through Nov 25",
-"desc": "Fresh-roasted turkey, stuffing, Swiss cheese, cranberry mayo and gravy on a sandwich with a side.",
-"expires": "2026-11-25",
-"posted": "2026-10-29T16:06:38+0000",
-"url": "https://www.instagram.com/p/DfFZI30t-gX/",
-"img": "",
-"inset": "ig/p18099657377388421.jpg"
 }
 ],
 "prohibitionportjefferson": [],
@@ -385,6 +369,22 @@
 ],
 "castawayspj": [
 {
+"id": "17961777639080064",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Restaurant Week: Steak Sandwich Prix Fixe",
+"when": "Through Sunday, Nov. 9",
+"desc": "Five entrées for $48pp++ including sliced NY strip steak sandwich with mozzarella, fried onions, horseradish mayo.",
+"expires": "2026-11-09",
+"posted": "2026-11-05T19:38:47+0000",
+"url": "https://www.instagram.com/p/DfXzTPUDzbs/",
+"img": "",
+"inset": "ig/p17961777639080064.jpg"
+},
+{
 "id": "18353249986248006",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -399,22 +399,6 @@
 "url": "https://www.instagram.com/reel/DfNHJuqK9fz/",
 "img": "",
 "inset": "ig/p18353249986248006.jpg"
-},
-{
-"id": "18080320388726966",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Long Island Restaurant Week Dinner",
-"when": "Nov 1-8, 2026",
-"desc": "Special dinner prix fixe for $48 per person at Castaways. Book via Resy or call (888) 624-6106.",
-"expires": "2026-11-08",
-"posted": "2026-10-30T19:01:52+0000",
-"url": "https://www.instagram.com/p/DfISPwoCoAa/",
-"img": "",
-"inset": "ig/p18080320388726966.jpg"
 }
 ],
 "salsasalsa_portjeff": [],
