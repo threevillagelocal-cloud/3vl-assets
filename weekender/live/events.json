@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-05T14:00:54.454270+00:00",
+"updated": "2026-11-05T16:01:18.828617+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 45,
@@ -13,8 +13,8 @@
 "LI Music Hall of Fame": 6,
 "Staller Center for the Arts": 138,
 "Theatre Three": 71,
-"Gallery North": 19,
-"Reboli Center": 17,
+"Gallery North": "error: IncompleteRead(67571 bytes read)",
+"Reboli Center": 18,
 "Sweetbriar Nature Center": 34,
 "Historical Society of Greater Port Jefferson": 1,
 "Madiran The Wine Bar live music": 33,
@@ -49,25 +49,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive"
-},
-{
-"id": "gallerynorth-71344",
-"title": "Exhibition: Instincts",
-"start": "2026-10-08T00:00:00",
-"end": "2026-11-15T00:00:00",
-"allday": true,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/collections/instincts-schery-markee-sullivan-gina-mars-and-jo-wadler",
-"desc": "Instincts brings together painter and mixed media artist, Schery Markee-Sullivan; sculptor and wearable artist, Jo Wadler; and ceramicist and sculptor, Gina Mars for their first exhibition together at Gallery North. The creative process of each artist is drive",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71344/v1792695873793/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "pjchamber-14181",
@@ -899,25 +880,6 @@
 "page": "https://www.threevillagelocal.com/events/ai-and-self-driving-cars"
 },
 {
-"id": "gallerynorth-71315",
-"title": "Paper Quilling a Pumpkin w/Carol McMahon",
-"start": "2026-11-07T15:00:00",
-"end": "2026-11-07T17:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/products/11-07",
-"desc": "Learn the art of paper quilling with local artist, Carol McMahon. In this workshop, participants will use a slotted tool to learn how to roll and shape paper. The shapes formed will be placed on a wooden pumpkin to create an ornament.",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71315/v1792688015999/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/paper-quilling-a-pumpkin-w-carol-mcmahon"
-},
-{
 "id": "lim-3225428",
 "title": "LIM’s Annual Winter Gala",
 "start": "2026-11-07T18:30:00",
@@ -1153,25 +1115,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/sunday-street-concert-series-celebrating-joni-mitchell-and-tom-waits"
-},
-{
-"id": "gallerynorth-71316",
-"title": "MedARTation",
-"start": "2026-11-08T17:00:00",
-"end": "2026-11-08T19:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/pages/member-event-rsvp",
-"desc": "MedARTation is a unique four part series presented by Mindful Turtle Yoga and Gallery North. Each session includes a guided meditation session followed by a mindful viewing of our current gallery exhibition. Join us as we wind down and enjoy the many benefits ",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71316/v1792688465339/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/medartation"
 },
 {
 "id": "staller-4cce16ac-f68a-45a3-8e34-57d9e8ff1fda",
@@ -1415,25 +1358,6 @@
 "page": "https://www.threevillagelocal.com/events/evening-book-discussion-610"
 },
 {
-"id": "gallerynorth-72969",
-"title": "Veteran's Day - Gallery Closed",
-"start": "2026-11-11T00:00:00",
-"end": "2026-11-11T00:00:00",
-"allday": true,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org",
-"desc": "",
-"img": "",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "staller-e836ccf2-cdbe-4645-9bbb-5d263567a0e3",
 "title": "Starry Nights | Featuring Colin Carr & Arnaud Sussmann",
 "start": "2026-11-11T19:00:00",
@@ -1636,25 +1560,6 @@
 "page": "https://www.threevillagelocal.com/events/teddy-bears-with-t-shirts"
 },
 {
-"id": "gallerynorth-71323",
-"title": "Fiber Arts Club",
-"start": "2026-11-12T18:00:00",
-"end": "2026-11-12T20:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/products/09-10-fiber-arts-club-copy",
-"desc": "Join us in the Studio once a month for a makers meet up! Bring any projects you are working on; knitting, sewing, embroidery, weaving, felting or crocheting! Anything you'd like is welcome. Members will share ideas, work on their projects and enjoy some light ",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71323/v1792692434221/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/fiber-arts-club"
-},
-{
 "id": "emmaclark-chaos-control-simplify-password-manager-38548",
 "title": "From Chaos to Control: Simplify with a Password Manager [ZOOM]",
 "start": "2026-11-12T18:30:00",
@@ -1803,25 +1708,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/stitch-chit-ch-at-free-453"
-},
-{
-"id": "gallerynorth-71324",
-"title": "Drawing Seashells with Conte Crayon with Cathleen Ficht",
-"start": "2026-11-13T17:00:00",
-"end": "2026-11-13T20:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/products/11-13-drawing-seashells-with-conte-crayon-w-cathleen-ficht-copy",
-"desc": "Students will begin with quick observational studies to experiment with the different Conte colors and techniques including layering, blending, hatching, and creating highlights and shadows. They will then apply what they have learned to then create a finished",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71324/v1792692583534/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/drawing-seashells-with-conte-crayon-with-cathleen-ficht"
 },
 {
 "id": "lim-3225650",
@@ -2070,25 +1956,6 @@
 "page": "https://www.threevillagelocal.com/events/healthy-and-unhealthy-relationships-high-schoolers"
 },
 {
-"id": "gallerynorth-70303",
-"title": "ArTalk",
-"start": "2026-11-14T18:00:00",
-"end": "2026-11-14T20:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org",
-"desc": "Hear from each of the artists of the current exhibition!",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/70303/v1791909467088/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/artalk"
-},
-{
 "id": "theatre3-9242",
 "title": "A Christmas Carol",
 "start": "2026-11-14T19:00:00",
@@ -2196,7 +2063,7 @@
 "venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/dearest-friend-staged-reading-based-correspondence-abigail-and-john-adams-61305",
-"desc": "Join us for this one-woman theatrical reading drawn from the letters of Abigail & John Adams. Discover a pivotal American partnership shaped by love, principle, and the struggle to define liberty in a new world. Presented by Author-Actor Janet Emily Demarest. ",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Join us for this one-woman theatrical reading drawn from the letters of Abigail & John Adams. Discover a pivotal American partnership shaped by love, principle, and the struggle to",
 "img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/defaultcrop.jpg",
 "src": "emmaclark",
 "tags": [
