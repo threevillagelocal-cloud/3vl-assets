@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-05T11:30:59.541187+00:00",
+"updated": "2026-11-05T13:06:34.182457+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 45,
@@ -18,7 +18,7 @@
 "Sweetbriar Nature Center": 34,
 "Historical Society of Greater Port Jefferson": 1,
 "Madiran The Wine Bar live music": 33,
-"Local business Instagram posts": 6
+"Local business Instagram posts": 8
 },
 "icons": {
 "kids": "&#129490;",
@@ -823,6 +823,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
+},
+{
+"id": "social-18037033628902576",
+"title": "FREE Saturday Workout Classes",
+"start": "2026-11-07T06:00:00",
+"end": "2026-11-07T06:00:00",
+"allday": false,
+"venue": "Real Deal Fitness",
+"addr": "12 Technology Dr, Setauket, NY 11733",
+"url": "https://www.instagram.com/reel/DfU5NvSPfpW/",
+"desc": "Free workout classes with Real Deal Coaches at 6am, 7am, 8am, and 9am. Good music, good people, and hard work. All are welcome to bring friends.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18037033628902576.jpg",
+"src": "social",
+"tags": [
+"free",
+"music"
+],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
@@ -2493,6 +2513,25 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18353249986248006.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-long-island-restaurant",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"label": "Special"
+},
+{
+"id": "18080320388726966",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Long Island Restaurant Week Dinner",
+"when": "Nov 1-8, 2026",
+"desc": "Special dinner prix fixe for $48 per person at Castaways. Book via Resy or call (888) 624-6106.",
+"expires": "2026-11-08",
+"posted": "2026-10-30T19:01:52+0000",
+"url": "https://www.instagram.com/p/DfISPwoCoAa/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18080320388726966.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
 "label": "Special"
 },
