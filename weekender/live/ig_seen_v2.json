@@ -3178,5 +3178,29 @@
 "desc": "Spin the wheel for sweet treats like caramel chews, Dubai chocolate, taffy, and buckeyes.",
 "expires": "2026-11-04",
 "_ts": "2026-11-04T18:02:32+0000"
+},
+"18134818177750943": {
+"special": false,
+"_ts": "2026-11-04T23:33:22+0000"
+},
+"18347839441249124": {
+"special": false,
+"title": "Golden Potato-Crusted Halibut",
+"when": "Ongoing",
+"desc": "Crispy potato-crusted halibut with buttery leeks and caviar cream.",
+"expires": "2026-11-04",
+"_ts": "2026-11-04T20:06:22+0000"
+},
+"18120575498600963": {
+"special": false,
+"_ts": "2026-11-04T20:55:05+0000"
+},
+"18156606043542310": {
+"special": false,
+"title": "Bloody Marys at PJ Lobster House",
+"when": "Ongoing",
+"desc": "Enjoy Bloody Marys any day at PJ Lobster House, available for dine-in or to-go.",
+"expires": "2026-11-04",
+"_ts": "2026-11-04T21:18:13+0000"
 }
 }
