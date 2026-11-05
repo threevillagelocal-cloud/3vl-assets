@@ -31,30 +31,6 @@
 "expires": "2026-10-13",
 "_ts": "2026-10-06T16:01:16+0000"
 },
-"18219928495331176": {
-"special": false,
-"title": "Tuna Tartare",
-"when": "Ongoing",
-"desc": "Artfully arranged tuna tartare on a crisp base offers a refined taste experience.",
-"expires": "2026-10-06",
-"_ts": "2026-10-06T15:33:29+0000"
-},
-"18150216559547976": {
-"special": true,
-"title": "Witches & Warlocks Bar Crawl",
-"when": "Sat, Oct. 10 · 5-10 PM",
-"desc": "13-bar Halloween crawl featuring Castaways. $55 includes 5 drink tokens. 21+",
-"expires": "2026-10-10",
-"_ts": "2026-10-06T15:00:52+0000"
-},
-"18126404707848834": {
-"special": true,
-"title": "25% Off to Support Volleyball",
-"when": "Sun, Oct. 11 · 11 AM-1 PM",
-"desc": "25% of orders support Port Jeff Varsity Volleyball. Dine in or take-out (excludes UberEats).",
-"expires": "2026-10-11",
-"_ts": "2026-10-06T15:20:09+0000"
-},
 "18165795172468445": {
 "special": true,
 "title": "The Jazz Loft Live Music",
@@ -3170,5 +3146,17 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-05T03:08:02+0000"
+},
+"18350282020271672": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-05T14:01:50+0000"
+},
+"18108555599253028": {
+"special": false,
+"_ts": "2026-11-05T15:22:46+0000"
 }
 }
