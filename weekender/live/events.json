@@ -1,14 +1,14 @@
 {
-"updated": "2026-11-04T22:01:24.891137+00:00",
+"updated": "2026-11-05T00:00:51.913338+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 47,
+"Port Jefferson Chamber": 0,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Village of Port Jefferson": 200,
 "Emma S. Clark Library": 272,
 "Stony Brook Village Center": 7,
-"Long Island Museum": 47,
+"Long Island Museum": 45,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 6,
 "Staller Center for the Arts": 138,
@@ -68,26 +68,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "pjchamber-14181",
-"title": "2026 Port Jeff Self-Guided Fall Art Walk",
-"start": "2026-10-09T00:00:00",
-"end": "2026-11-06T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
 },
 {
 "id": "sbv-2456",
@@ -347,25 +327,6 @@
 "pu": ""
 },
 {
-"id": "pjchamber-15119",
-"title": "Long Island Restaurant Week",
-"start": "2026-11-01T00:00:00",
-"end": "2026-11-08T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
-"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta – RUVO",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/long-island-restaurant-week"
-},
-{
 "id": "reboli-6adf9dab4c6329721a5cedc5",
 "title": "Emerging Artist Spotlight: November | Genevieve Rochlin",
 "start": "2026-11-01T11:00:00",
@@ -489,7 +450,7 @@
 {
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-11-04T00:00",
+"start": "2026-11-05T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
@@ -507,66 +468,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "lim-3225911",
-"title": "Mornings@LIM: Tour of Enduring Hearts",
-"start": "2026-11-04T11:00:00",
-"end": "2026-11-04T12:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/mornings-lim-enduring-hearts/",
-"desc": "These monthly sessions are open to individuals living with dementia and their care partners. They offer time for creative engagement and social connection in our galleries and art studio, as well as through special music and movie programs. This November, expl",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/June-Meeting.jpg",
-"src": "lim",
-"tags": [
-"free",
-"music",
-"history"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "pjchamber-15249",
-"title": "Preview Special Showing: 30th Annual Charles Dickens Festival",
-"start": "2026-11-04T19:00:00",
-"end": "2026-11-04T20:30:00",
-"allday": false,
-"venue": "The Victorian Studio",
-"addr": "709 Main Street, Port Jefferson, New York, 11777",
-"url": "https://portjeffchamber.com/events-calendar/preview-special-showing-30th-annual-charles-dickens-festival/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/preview-special-showing-30th-annual-charles-dickens-festival"
-},
-{
-"id": "madiran-20261104-ray-anderson-and-steve-salerno",
-"title": "Live Music: Ray Anderson and Steve Salerno",
-"start": "2026-11-04T19:00:00",
-"end": "2026-11-04T21:00:00",
-"allday": false,
-"venue": "Madiran The Wine Bar",
-"addr": "209 Route 25A, East Setauket, NY 11733",
-"url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in East Setauket: Ray Anderson and Steve Salerno. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
-"src": "madiran",
-"tags": [
-"music",
-"food"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/live-music-ray-anderson-and-steve-salerno"
 },
 {
 "id": "emmaclark-chair-yoga-61290",
@@ -866,6 +767,25 @@
 "page": "https://www.threevillagelocal.com/events/live-music-jim-lowe"
 },
 {
+"id": "portjeff-1151",
+"title": "Caleb Brewster Escape 4K run",
+"start": "2026-11-07T00:00:00",
+"end": "2026-11-07T00:00:00",
+"allday": true,
+"venue": "Strong's Park",
+"addr": "Strong's Park - Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
+},
+{
 "id": "emmaclark-writing-workshop-language-silence-and-stories-we-carry-61299",
 "title": "Writing Workshop: Language, Silence, and the Stories We Carry",
 "start": "2026-11-07T10:30:00",
@@ -1037,6 +957,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
+},
+{
+"id": "portjeff-1099",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-08T09:00:00",
+"end": "2026-11-08T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
@@ -1474,25 +1414,6 @@
 "page": "https://www.threevillagelocal.com/events/live-music-al-marino-james-miceli-and-jerry-mac"
 },
 {
-"id": "pjchamber-15086",
-"title": "Blood Drive",
-"start": "2026-11-12T07:00:00",
-"end": "2026-11-12T19:00:00",
-"allday": false,
-"venue": "St. Charles Hospital",
-"addr": "200 Belle Terre Rd, Port Jefferson, NY, 11777",
-"url": "https://portjeffchamber.com/events-calendar/blood-drive-6/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/blood-drive-787"
-},
-{
 "id": "emmaclark-chair-yoga-61291",
 "title": "Chair Yoga",
 "start": "2026-11-12T11:30:00",
@@ -1582,23 +1503,23 @@
 "page": "https://www.threevillagelocal.com/events/bark-for-readers-up-to-5th-grade-614"
 },
 {
-"id": "pjchamber-14970",
-"title": "Somewhere in Time 1912",
+"id": "portjeff-1354",
+"title": "The Conservancy Presents \"Somewhere in Time\"",
 "start": "2026-11-12T18:00:00",
 "end": "2026-11-12T22:00:00",
 "allday": false,
-"venue": "Victorian on Main",
-"addr": "709 Main Street, Port Jefferson, New York",
-"url": "https://portjeffchamber.com/events-calendar/somewhere-in-time-1912/",
+"venue": "Port Jefferson",
+"addr": "709 Main Street Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1354",
 "desc": "",
 "img": "",
-"src": "pjchamber",
+"src": "portjeff",
 "tags": [
 "arts"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/somewhere-in-time-1912"
+"page": "https://www.threevillagelocal.com/events/the-conservancy-presents-somewhere-in-time"
 },
 {
 "id": "emmaclark-tech-help-teens-42855",
@@ -2147,6 +2068,106 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
+},
+{
+"id": "portjeff-1100",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-15T09:00:00",
+"end": "2026-11-15T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
+},
+{
+"id": "sweetbriar-6acbd8fb9083cf68d32902a2",
+"title": "The Sunday Art Class - The Abundant Cornucopia - Adults - Nov 15",
+"start": "2026-11-15T11:00:00",
+"end": "2026-11-15T12:30:00",
+"allday": false,
+"venue": "Sweetbriar Nature Center - ECSS",
+"addr": "62 Eckernkamp Drive, SMITHTOWN 11787",
+"url": "https://www.sweetbriarnc.org/new-events/2026/10/18/the-art-of-fall-foliage-adults-october-18-5ndab",
+"desc": "Join Artist In Residence Andie for our Sunday morning Art class series. This week make art from a cornucopia still life inspired by the harvest and abundance. Hang out on this relaxing Sunday morning over looking the beautiful Sweetbriar grounds and changing l",
+"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1793118656888-PB4MVBS9VIIFG6ESCI8S/unsplash-image-zDqqZ5jsGSc.jpg",
+"src": "sweetbriar",
+"tags": [
+"stage",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/the-sunday-art-class-the-abundant-cornucopia-adults-nov-15"
+},
+{
+"id": "emmaclark-dearest-friend-staged-reading-based-correspondence-abigail-and-john-ad",
+"title": "“Dearest Friend”: A Staged Reading Based on the Correspondence of Abigail and John Adams",
+"start": "2026-11-15T14:00:00",
+"end": "2026-11-15T15:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/dearest-friend-staged-reading-based-correspondence-abigail-and-john-adams-61305",
+"desc": "Join us for this one-woman theatrical reading drawn from the letters of Abigail & John Adams. Discover a pivotal American partnership shaped by love, principle, and the struggle to define liberty in a new world. Presented by Author-Actor Janet Emily Demarest. ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/defaultcrop.jpg",
+"src": "emmaclark",
+"tags": [
+"history",
+"music"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/dearest-friend-a-staged-reading-based-on-the-correspondence-of-abigail-and-john-adams"
+},
+{
+"id": "limehof-202611151500-marley-bone",
+"title": "Marley Bone",
+"start": "2026-11-15T15:00:00",
+"end": "2026-11-15T17:00:00",
+"allday": false,
+"venue": "The Long Island Music and Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook, NY 11790",
+"url": "https://www.limusichalloffame.org/events/",
+"desc": "Free with Admission. Marley Bone serves up a high-energy blend of rockabilly, roots rock and good old-fashioned rock & roll, with a sound that tips its hat to the past without getting stuck there. Fueled by twangy guitars, a driving rhythm section and a health",
+"img": "https://www.limusichalloffame.org/wp-content/uploads/2026/10/Marley-Bone.jpeg",
+"src": "limehof",
+"tags": [
+"free",
+"music"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/marley-bone"
+},
+{
+"id": "theatre3-9243",
+"title": "A Christmas Carol",
+"start": "2026-11-15T15:00:00",
+"end": "2026-11-15T15:00:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson, NY 11777",
+"url": "https://theatrethree.getmytix.net/tickets#922/A-Christmas-Carol",
+"desc": "“I will honor Christmas in my heart…” Celebrate the season with Long Island’s own holiday tradition and BroadwayWorld.com winner for Best Play. Follow the miser Ebenezer Scrooge on a journey that teaches him the meaning of Christmas - past, present, and future",
+"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_922_A%20Christmas%20Carol%201600x1000.png",
+"src": "theatre3",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": ""
 }
 ],
 "closings": [],
@@ -2437,25 +2458,6 @@
 "label": "Special"
 },
 {
-"id": "18639322114006586",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Happy Hour at Castaways",
-"when": "Today · 4-6 PM",
-"desc": "Half off all drinks including top shelf plus food specials at the inside bar, high tops and lounge.",
-"expires": "2026-11-04",
-"posted": "2026-11-04T18:01:43+0000",
-"url": "https://www.instagram.com/p/DfVDVOsij1F/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18639322114006586.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-happy-hour",
-"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Happy hour"
-},
-{
 "id": "18353249986248006",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -2570,25 +2572,6 @@
 "label": "Special"
 },
 {
-"id": "18094777451678924",
-"biz": "Madiran The Wine Bar",
-"ig": "madiranthewinebar_eastsetauket",
-"town": "East Setauket",
-"category": "Wine Bar",
-"member": false,
-"title": "Live Music: Ray Anderson & Steve Salerno",
-"when": "Tonight · 7-9 PM",
-"desc": "Ray Anderson returns with Steve Salerno for live music tonight at Madiran The Wine Bar.",
-"expires": "2026-11-04",
-"posted": "2026-11-04T19:07:20+0000",
-"url": "https://www.instagram.com/reel/DfVKjXEpkP5/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18094777451678924.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/madiran-the-wine-bar-live-music-ray-anderson-steve",
-"profile": "https://www.threevillagelocal.com/madiran-the-wine-bar",
-"label": "Live music"
-},
-{
 "id": "17994138573103731",
 "biz": "Toast Coffee + Kitchen",
 "ig": "toastcoffeeandkitchen",
@@ -2642,9 +2625,9 @@
 "Slurp Ramen",
 "The Pie of Port Jeff",
 "Kilwins Port Jefferson",
-"Madiran The Wine Bar",
 "Culpers 1778",
 "The Country Corner",
+"Madiran The Wine Bar",
 "Ixchel Mexican Cuisine",
 "DJ's Clam Shack (Stony Brook)",
 "Schnitzels",
