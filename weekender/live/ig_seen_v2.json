@@ -1,28 +1,4 @@
 {
-"18121416112857675": {
-"special": true,
-"title": "Golden Hour Cocktails & Bites",
-"when": "Wed-Sat, 4-7 PM",
-"desc": "Enjoy $10 cocktails and delicious bites during Golden Hour. Live music on Saturdays and Sundays.",
-"expires": "2026-10-20",
-"_ts": "2026-10-07T17:10:00+0000"
-},
-"18127411960867747": {
-"special": true,
-"title": "Happy Hour at Castaways",
-"when": "Wed, Oct. 7 · 4-6 PM",
-"desc": "Happy hour at the inside bar, high tops, and lounge with mussels, sliders, and cold beer.",
-"expires": "2026-10-07",
-"_ts": "2026-10-07T17:01:36+0000"
-},
-"18159635593508036": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-07T18:06:15+0000"
-},
 "17906330307587030": {
 "special": false,
 "title": "",
@@ -38,14 +14,6 @@
 "desc": "Tender duck breast with celery root, pear, macadamia nut, and red wine jus.",
 "expires": "2026-10-22",
 "_ts": "2026-10-07T22:39:36+0000"
-},
-"17924557194204295": {
-"special": true,
-"title": "New Seasonal Teas & Flavors",
-"when": "This Weekend",
-"desc": "Robinson's Tea Room unveils festive fall teas, scones, and beverages for dine-in or takeout.",
-"expires": "2026-10-12",
-"_ts": "2026-10-07T18:55:15+0000"
 },
 "17908972224561406": {
 "special": false,
@@ -94,14 +62,6 @@
 "desc": "Prohibition is decorated for Halloween with fall cocktails and Halloween specials coming soon.",
 "expires": "2026-10-08",
 "_ts": "2026-10-08T00:24:56+0000"
-},
-"17916476448259129": {
-"special": true,
-"title": "Happy Hour at The Whiskey Barrel",
-"when": "Today until 6 PM",
-"desc": "Skip cooking tonight. Grab a cold drink and food at The Whiskey Barrel's happy hour.",
-"expires": "2026-10-08",
-"_ts": "2026-10-07T18:13:33+0000"
 },
 "18157729165531593": {
 "special": false,
@@ -3110,5 +3070,45 @@
 "desc": "Kilwins introduces their new Pumpkin Spice Fudge for fall.",
 "expires": "2026-11-06",
 "_ts": "2026-11-06T14:02:45+0000"
+},
+"18113214434617494": {
+"special": true,
+"title": "Mahjong at the Wine Bar",
+"when": "Tue, Nov. 17 · 6 PM",
+"desc": "Join mahjong at Madiran The Wine Bar. Limited space available.",
+"expires": "2026-11-17",
+"_ts": "2026-11-06T18:45:17+0000"
+},
+"18098656106443507": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-06T16:32:29+0000"
+},
+"18312320776305053": {
+"special": true,
+"title": "Trivia Night at The Study",
+"when": "Wed, Nov. 11",
+"desc": "Gather your crew for a night of friendly trivia competition and coffee at this local favorite.",
+"expires": "2026-11-11",
+"_ts": "2026-11-06T19:33:56+0000"
+},
+"17892268170653685": {
+"special": false,
+"title": "Nantuckets Seafood Dining",
+"when": "Ongoing",
+"desc": "Refined seafood and aromatic rice dining experience at this Port Jefferson restaurant.",
+"expires": "2026-11-06",
+"_ts": "2026-11-06T16:33:17+0000"
+},
+"17893369665455257": {
+"special": true,
+"title": "Happy Hour at Castaways",
+"when": "Daily · 12–6 PM",
+"desc": "Half off all drinks during happy hour at this Port Jefferson bar and restaurant.",
+"expires": "2026-11-20",
+"_ts": "2026-11-06T17:01:52+0000"
 }
 }
