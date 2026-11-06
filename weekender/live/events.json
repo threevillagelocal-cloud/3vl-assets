@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-06T20:03:41.610693+00:00",
+"updated": "2026-11-06T21:27:01.864165+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 45,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 199,
-"Emma S. Clark Library": 261,
+"Emma S. Clark Library": 260,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 46,
 "Ward Melville Heritage Org": 2,
@@ -507,25 +507,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "emmaclark-knit-crochet-chat-61334",
-"title": "Knit, Crochet, & Chat",
-"start": "2026-11-06T14:00:00",
-"end": "2026-11-06T16:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/knit-crochet-chat-61334",
-"desc": "Please review the program description for materials required for participation in this program. Join with friends, old and new, to work on your current project. Share tips, techniques, and conversation. Questions? Contact eyohannan@emmaclark.org . No registrat",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-09/woman-knits-with-gray-thread-closeup_0.jpg",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/knit-crochet-chat-599"
 },
 {
 "id": "emmaclark-little-essentials-pantry-warmth-kit-63995",
@@ -1462,11 +1443,11 @@
 "addr": "120 Main St, Setauket, NY 11733",
 "url": "https://emmaclark.librarycalendar.com/event/creative-writing-workshop-63998",
 "desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-11/123736.jpg.jpeg",
 "src": "emmaclark",
 "tags": [],
 "status": "",
-"fb": 1,
+"fb": 0,
 "page": ""
 },
 {
