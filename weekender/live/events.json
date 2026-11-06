@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-05T23:33:06.060275+00:00",
+"updated": "2026-11-06T00:00:52.793524+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 45,
@@ -489,7 +489,7 @@
 {
 "id": "cur-spooky",
 "title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-11-05T00:00",
+"start": "2026-11-06T00:00",
 "end": "2026-10-31T23:59",
 "allday": true,
 "ongoing": true,
@@ -507,117 +507,6 @@
 "status": "",
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
-"id": "emmaclark-social-work-intern-appointments-58751",
-"title": "Social Work Intern Appointments",
-"start": "2026-11-05T14:00:00",
-"end": "2026-11-05T19:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Small Study Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58751",
-"desc": "Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical Social Workers. These individuals will be on-site ",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments-593"
-},
-{
-"id": "emmaclark-cricut-tea-towel-38587",
-"title": "Cricut: Tea Towel",
-"start": "2026-11-05T18:00:00",
-"end": "2026-11-05T20:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Technology Center",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/cricut-tea-towel-38587",
-"desc": "NOTE: Registration lottery opened on October 22, 2026 at 9:30am and closed on October 23, 2026 at 1:30pm. You may now join the regular waitlist for this program if interested. In this beginner class, we’ll learn how to use Cricut Design Space to create a trend",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/4_DTC_Infographic_2008335.png",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/cricut-tea-towel-lottery"
-},
-{
-"id": "emmaclark-stitching-circle-63994",
-"title": "The Stitching Circle",
-"start": "2026-11-05T18:00:00",
-"end": "2026-11-05T20:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/stitching-circle-63994",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-09/Screenshot%202025-09-16%20183024.jpg",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/the-stitching-circle-660"
-},
-{
-"id": "emmaclark-create-your-couture-grades-2-5-61947",
-"title": "Create Your Couture (Grades 2-5)",
-"start": "2026-11-05T18:30:00",
-"end": "2026-11-05T19:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/create-your-couture-grades-2-5-61947",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-10/Fashion%20Design.png",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/create-your-couture-grades-2-5"
-},
-{
-"id": "emmaclark-cinematic-journey-jimmy-stewart-zoom-61297",
-"title": "The Cinematic Journey of Jimmy Stewart [ZOOM]",
-"start": "2026-11-05T19:00:00",
-"end": "2026-11-05T20:00:00",
-"allday": false,
-"venue": "Online (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/cinematic-journey-jimmy-stewart-zoom-61297",
-"desc": "Explore the legendary six-decade career of Jimmy Stewart, Hollywood’s definitive everyday hero. Join us to discover how Stewart’s vulnerable, authentic acting style forever altered American cinema. Presented by filmmaker and film historian, Greg Blank. This le",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/EXM-N-9162-003b.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/the-cinematic-journey-of-jimmy-stewart-zoom"
-},
-{
-"id": "madiran-20261105-frank-hansen-and-laura-rose",
-"title": "Live Music: Frank Hansen and Laura Rose",
-"start": "2026-11-05T19:00:00",
-"end": "2026-11-05T21:00:00",
-"allday": false,
-"venue": "Madiran The Wine Bar",
-"addr": "209 Route 25A, East Setauket, NY 11733",
-"url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in East Setauket: Frank Hansen and Laura Rose. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
-"src": "madiran",
-"tags": [
-"music",
-"food"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/live-music-frank-hansen-and-laura-rose"
 },
 {
 "id": "sweetbriar-6a8476a7ddd49a7465932582",
@@ -2193,6 +2082,116 @@
 "status": "",
 "fb": 0,
 "page": ""
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-63807",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-11-16T10:30:00",
+"end": "2026-11-16T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-63807",
+"desc": "Themed activities that you and your child can enjoy together.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-545"
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-63815",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-11-16T11:30:00",
+"end": "2026-11-16T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-63815",
+"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence. We'll share lively stories & crafts that spark imagination, build early literacy skills & bring lots of smiles and giggles!",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-546"
+},
+{
+"id": "emmaclark-preventing-financial-exploitation-seniors-60028",
+"title": "Preventing the Financial Exploitation of Seniors",
+"start": "2026-11-16T14:00:00",
+"end": "2026-11-16T15:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preventing-financial-exploitation-seniors-60028",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Join the Suffolk County District Attorney’s Office for an informative discussion regarding the prevention of financial exploitation. Learn how to recognize the latest scams and how",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-01/closeup-support-hands.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/preventing-the-financial-exploitation-of-seniors"
+},
+{
+"id": "emmaclark-patriotic-jars-donate-community-service-project-grades-3-5-61459",
+"title": "Patriotic Jars for Veterans Community Service Project (Grades 3 - 5)",
+"start": "2026-11-16T16:30:00",
+"end": "2026-11-16T17:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/patriotic-jars-donate-community-service-project-grades-3-5-61459",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-11/CommunityServiceNew%20%281%29.png",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/patriotic-jars-for-veterans-community-service-project-grades-3-5"
+},
+{
+"id": "emmaclark-ai-20-practical-ai-everyday-life-63509",
+"title": "AI 2.0: Practical AI for Everyday Life",
+"start": "2026-11-16T18:00:00",
+"end": "2026-11-16T19:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/ai-20-practical-ai-everyday-life-63509",
+"desc": "Discover how AI can help with everyday tasks—from planning vacations & meals to organizing your week, drafting emails & learning new skills. Learn how to get useful results, double-check information & protect your personal data. Taught by Library Trustee Steph",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/ai-2-0-practical-ai-for-everyday-life"
+},
+{
+"id": "emmaclark-unsung-heroes-world-war-ii-zoom-61307",
+"title": "Unsung Heroes: World War II [ZOOM]",
+"start": "2026-11-16T19:00:00",
+"end": "2026-11-16T20:00:00",
+"allday": false,
+"venue": "Online (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/unsung-heroes-world-war-ii-zoom-61307",
+"desc": "Celebrate Veterans Day with Howard Rosenberg as he discusses the many untold stories of heroism during World War II. Explore the contributions of the 320 th Barrage Balloon Battalion, the Ritchie Boys, and more!",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/american-flag_1.jpg",
+"src": "emmaclark",
+"tags": [
+"history"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/unsung-heroes-world-war-ii-zoom"
 }
 ],
 "closings": [],
