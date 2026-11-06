@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-06T22:00:55.579576+00:00",
+"updated": "2026-11-06T22:45:56.166342+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 45,
@@ -110,243 +110,6 @@
 "page": "https://www.threevillagelocal.com/events/the-47th-annual-holiday-tree-competition"
 },
 {
-"id": "cur-tvfm",
-"title": "Three Village Farmers & Artisans Market",
-"start": "2026-10-30T15:00",
-"end": "2026-10-30T18:00",
-"allday": false,
-"venue": "Three Village Historical Society",
-"addr": "93 N. Country Rd, East Setauket",
-"url": "https://www.tvhs.org/farmers-market",
-"desc": "The last market of the season: farmers, bakers and makers on the historical society lawn, 3 to 6 PM. Free to walk in and browse.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/tvfm-720.webp",
-"src": "3vl",
-"tags": [
-"free",
-"outdoor",
-"food"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/three-village-farmers-market",
-"pu": "",
-"rank": 2
-},
-{
-"id": "cur-benners",
-"title": "Haunted Evening Hayrides at Benner's Farm",
-"start": "2026-10-30T18:00",
-"end": "2026-10-30T21:00",
-"allday": false,
-"venue": "Benner's Farm",
-"addr": "56 Gnarled Hollow Rd, East Setauket",
-"url": "https://www.eventcreate.com/e/hauntedhayridesbennersfarm2026",
-"desc": "A tractor ride through the dark woods at Benner's Farm. The first hour is a Not-So-Spooky ride for younger friends; later rides get scarier. Tickets are sold online only and every rider needs one, kids included.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/benners-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/haunted-evening-hayrides-at-benners-farm-575",
-"pu": ""
-},
-{
-"id": "cur-ghost",
-"title": "Be Our Ghost at Theatre Three",
-"start": "2026-10-30T18:30",
-"end": "2026-10-30T22:00",
-"allday": false,
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson",
-"url": "https://theatrethree.com/third_act/be-our-ghost/",
-"desc": "A Third Act cabaret night of songs from some of the most devious villains of film, TV and the stage. Shows at 6:30 and 9 PM.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/ghost-720.webp",
-"src": "3vl",
-"tags": [
-"music",
-"stage"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/be-our-ghost-at-theatre-three",
-"pu": ""
-},
-{
-"id": "cur-poboy",
-"title": "Po' Boy Brewery Halloween Costume Party",
-"start": "2026-10-30T19:00",
-"end": "2026-10-31T00:00",
-"allday": false,
-"venue": "Po' Boy Brewery",
-"addr": "200 Wilson St, Port Jefferson Station",
-"url": "https://www.threevillagelocal.com/events/po-boy-brewery-halloween-costume-party",
-"desc": "Their costume party: everyone's welcome, costumes get happy hour prices all night, plus a food truck, music and gift cards for the top 3 costumes, voted by guests.",
-"img": "",
-"src": "3vl",
-"tags": [
-"music",
-"food"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/po-boy-brewery-halloween-costume-party",
-"pu": ""
-},
-{
-"id": "cur-dash",
-"title": "Stony Brook Fire Department 5K Monster Dash Race",
-"start": "2026-10-31T09:00",
-"end": "2026-10-31T11:00",
-"allday": false,
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook",
-"url": "https://stonybrookvillage.com/event/stony-brook-fire-department-5k-monster-dash-race/",
-"desc": "The fire department's 10th annual Monster Dash moves to Stony Brook Village this year: Fun Run at 9 AM, 5K at 9:30 AM. Costumes encouraged, with trick-or-treating in the village to follow.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/dash-720.webp",
-"src": "3vl",
-"tags": [
-"outdoor",
-"kids"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/stony-brook-fire-department-5k-monster-dash-race",
-"pu": "",
-"rank": 4
-},
-{
-"id": "cur-reboli",
-"title": "Trick or Treating for Littles at the Reboli Center",
-"start": "2026-10-31T10:00",
-"end": "2026-10-31T17:00",
-"allday": false,
-"venue": "The Reboli Center for Art and History",
-"addr": "64 Main St, Stony Brook",
-"url": "https://www.rebolicenter.org/events/2026/10/31/trick-or-treating-for-littles-happy-halloween",
-"desc": "A kid-friendly Halloween day with seasonal crafts, spooky music and trick-or-treating at the information desk. Costumes encouraged, no RSVP needed.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/reboli-720.webp",
-"src": "3vl",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/trick-or-treating-for-littles-at-the-reboli-center",
-"pu": ""
-},
-{
-"id": "cur-pjtot",
-"title": "Trick or Treat in Port Jefferson Village",
-"start": "2026-10-31T11:00",
-"end": "2026-10-31T17:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "Port Jefferson",
-"url": "https://portjeffchamber.com/events-calendar/trick-or-treat-in-port-jefferson-village/",
-"desc": "Trick-or-treat around Port Jefferson Village from 11 AM to 5 PM, plus a fun scavenger hunt. Participating businesses have a sign in their window.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/pjtot-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/trick-or-treat-in-port-jefferson-village",
-"pu": "",
-"rank": 3
-},
-{
-"id": "cur-hwfest",
-"title": "36th Annual Halloween Festival in Stony Brook Village",
-"start": "2026-10-31T12:00",
-"end": "2026-10-31T16:00",
-"allday": false,
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook",
-"url": "https://stonybrookvillage.com/event/the-36th-annual-halloween-festival/",
-"desc": "Trick-or-treat through the Stony Brook Village Center shops and eateries, games in the Inner Court, WALK FM's Walkie Bear from 1 to 3 PM, photos with Monster Merlin and the scarecrow winners announced at 2 PM.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/hwfest-720.webp",
-"src": "3vl",
-"tags": [
-"free",
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/36th-annual-halloween-festival-in-stony-brook-village",
-"pu": "",
-"rank": 1
-},
-{
-"id": "cur-hauntmus",
-"title": "Trick or Treat at the Haunted Museum",
-"start": "2026-10-31T14:00",
-"end": "2026-10-31T16:30",
-"allday": false,
-"venue": "The Jazz Loft",
-"addr": "275 Christian Ave, Stony Brook",
-"url": "https://thejazzloft.org/",
-"desc": "Kids come in costume, trick-or-treat through the Jazz Loft's exhibits, visit the haunted garden and hear the New Orleans Goblins Jazz Band.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/hauntmus-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"music"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/trick-or-treat-at-the-haunted-museum",
-"pu": "",
-"rank": 5
-},
-{
-"id": "cur-jlnight",
-"title": "Night at the Museum: Halloween at the Jazz Loft",
-"start": "2026-10-31T19:00",
-"end": "2026-10-31T21:30",
-"allday": false,
-"venue": "The Jazz Loft",
-"addr": "275 Christian Ave, Stony Brook",
-"url": "https://thejazzloft.org/",
-"desc": "Come in costume for a spooky cocktail in the haunted garden and music by the New Orleans Goblins Jazz Band.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/jlnight-720.webp",
-"src": "3vl",
-"tags": [
-"music"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/night-at-the-museum-halloween-at-the-jazz-loft",
-"pu": ""
-},
-{
-"id": "cur-tommys",
-"title": "Halloween Party at Tommy's Place",
-"start": "2026-10-31T20:00",
-"end": "2026-11-01T01:00",
-"allday": false,
-"venue": "Tommy's Place",
-"addr": "109 Main St, Port Jefferson",
-"url": "https://www.threevillagelocal.com/events/halloween-party-at-tommys-place",
-"desc": "Eat, drink and be scary: the party starts at 8 PM and the costume contest is at midnight. Arrive early to beat the line.",
-"img": "",
-"src": "3vl",
-"tags": [
-"food"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/halloween-party-at-tommys-place",
-"pu": ""
-},
-{
 "id": "pjchamber-15119",
 "title": "Long Island Restaurant Week",
 "start": "2026-11-01T00:00:00",
@@ -405,49 +168,6 @@
 "page": "https://www.threevillagelocal.com/events/novembers-feature-artisan-of-the-month-patricia-patten"
 },
 {
-"id": "cur-jltrio",
-"title": "Autumn Concert with the Jazz Loft Trio",
-"start": "2026-11-01T14:00",
-"end": "2026-11-01T15:00",
-"allday": false,
-"venue": "Emma S. Clark Library",
-"addr": "120 Main St, Setauket",
-"url": "https://www.threevillagelocal.com/events/autumn-concert-with-the-jazz-loft-trio",
-"desc": "The Jazz Loft Trio will perform a mix of classic jazz standards and Great American Songbook tunes, in the library's Vincent R. O'Leary Community Room.",
-"img": "",
-"src": "3vl",
-"tags": [
-"music"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/autumn-concert-with-the-jazz-loft-trio",
-"pu": ""
-},
-{
-"id": "cur-mischief",
-"title": "All Saints Mischief Market",
-"start": "2026-11-01T15:00",
-"end": "2026-11-01T21:00",
-"allday": false,
-"venue": "Malkmes Florists & Greenhouses",
-"addr": "70 Oakland Ave, Port Jefferson Station",
-"url": "https://www.eventbrite.com/e/all-saints-mischief-market-tickets-2002097893695",
-"desc": "An all-ages outdoor market with live music, food, vendors, a Spooky Walk trail, crafts, a costume contest and raffles for The SEED Foundation.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/mischief-720.webp",
-"src": "3vl",
-"tags": [
-"music",
-"food",
-"kids"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/all-saints-mischief-market",
-"pu": "",
-"rank": 6
-},
-{
 "id": "wmho-1869",
 "title": "The 47th Annual Tree Competition",
 "start": "2026-11-03T00:00:00",
@@ -487,28 +207,6 @@
 "page": "https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition"
 },
 {
-"id": "cur-spooky",
-"title": "Spooky Village at Olde Towne Gardens",
-"start": "2026-11-06T00:00",
-"end": "2026-10-31T23:59",
-"allday": true,
-"ongoing": true,
-"whenText": "Final days, through Oct. 31",
-"venue": "Olde Towne Gardens",
-"addr": "360 Old Town Rd, East Setauket",
-"url": "https://theoldetownegardens.com/spooky-village/",
-"desc": "A family Halloween village at the East Setauket garden center: Gourdvilla the Pumpkin Queen's Spooky Walk, a pumpkin slide, ghost bounce house, games and a pumpkin patch.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-10-30/spooky-720.webp",
-"src": "3vl",
-"tags": [
-"kids",
-"outdoor"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/spooky-village-at-olde-towne-gardens"
-},
-{
 "id": "emmaclark-little-essentials-pantry-warmth-kit-63995",
 "title": "Little Essentials Pantry: Warmth Kit",
 "start": "2026-11-06T18:00:00",
@@ -528,24 +226,25 @@
 "page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
 },
 {
-"id": "madiran-20261106-jim-lowe",
-"title": "Live Music: Jim Lowe",
-"start": "2026-11-06T19:00:00",
-"end": "2026-11-06T22:00:00",
+"id": "cur-jimlowe",
+"title": "Live Music: Jim Lowe at Madiran",
+"start": "2026-11-06T19:00",
+"end": "2026-11-06T22:00",
 "allday": false,
 "venue": "Madiran The Wine Bar",
-"addr": "209 Route 25A, East Setauket, NY 11733",
+"addr": "209 Route 25A, East Setauket",
 "url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in East Setauket: Jim Lowe. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
-"src": "madiran",
+"desc": "Friday night live music at the East Setauket wine bar: Jim Lowe, 7 to 10 PM. Call 631-675-2778 to reserve a table.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-06/madiran-720.webp",
+"src": "3vl",
 "tags": [
 "music",
 "food"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/live-music-jim-lowe"
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/live-music-jim-lowe",
+"pu": ""
 },
 {
 "id": "portjeff-1151",
@@ -660,85 +359,90 @@
 "page": "https://www.threevillagelocal.com/events/paper-quilling-a-pumpkin-w-carol-mcmahon"
 },
 {
-"id": "lim-3225428",
-"title": "LIM’s Annual Winter Gala",
-"start": "2026-11-07T18:30:00",
-"end": "2026-11-07T22:00:00",
+"id": "cur-gala",
+"title": "The Long Island Museum's Winter Gala",
+"start": "2026-11-07T18:30",
+"end": "2026-11-07T22:00",
 "allday": false,
 "venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"addr": "1200 Route 25A, Stony Brook",
 "url": "https://longislandmuseum.org/event/winter-gala-2026/",
-"desc": "Join us for The Long Island Museum’s biggest fundraiser of the year. Enjoy a festive evening of dinner, dancing, and live music by Tom Manuel and The Jazz Loft All Stars! Get a head start on your holiday shopping at our annual silent auction, with proceeds sup",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/07/Winter-Gala-2026-Event.jpg",
-"src": "lim",
+"desc": "The museum's biggest fundraiser of the year: dinner, dancing, live music by Tom Manuel and The Jazz Loft All Stars, and a silent auction to get a head start on holiday shopping.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-06/gala-720.webp",
+"src": "3vl",
 "tags": [
 "music",
-"history",
 "food"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/lims-annual-winter-gala"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/lims-annual-winter-gala",
+"pu": "",
+"rank": 5
 },
 {
-"id": "theatre3-9239",
-"title": "A Christmas Carol",
-"start": "2026-11-07T19:00:00",
-"end": "2026-11-07T19:00:00",
-"allday": false,
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson, NY 11777",
-"url": "https://theatrethree.getmytix.net/tickets#922/A-Christmas-Carol",
-"desc": "“I will honor Christmas in my heart…” Celebrate the season with Long Island’s own holiday tradition and BroadwayWorld.com winner for Best Play. Follow the miser Ebenezer Scrooge on a journey that teaches him the meaning of Christmas - past, present, and future",
-"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_922_A%20Christmas%20Carol%201600x1000.png",
-"src": "theatre3",
-"tags": [
-"music",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/a-christmas-carol-at-theatre-three"
-},
-{
-"id": "madiran-20261107-tim-siciliano",
-"title": "Live Music: Tim Siciliano",
-"start": "2026-11-07T19:00:00",
-"end": "2026-11-07T22:00:00",
+"id": "cur-tim",
+"title": "Live Music: Tim Siciliano at Madiran",
+"start": "2026-11-07T19:00",
+"end": "2026-11-07T22:00",
 "allday": false,
 "venue": "Madiran The Wine Bar",
-"addr": "209 Route 25A, East Setauket, NY 11733",
+"addr": "209 Route 25A, East Setauket",
 "url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in East Setauket: Tim Siciliano. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
-"src": "madiran",
+"desc": "Saturday night live music at the East Setauket wine bar: Tim Siciliano, 7 to 10 PM. Call 631-675-2778 to reserve a table.",
+"img": "",
+"src": "3vl",
 "tags": [
 "music",
 "food"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/live-music-tim-siciliano"
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/live-music-tim-siciliano",
+"pu": ""
 },
 {
-"id": "staller-50b856a1-66c1-46e8-830d-bd351651b62c",
-"title": "Stony Brook Symphony Orchestra",
-"start": "2026-11-07T19:30:00",
-"end": "2026-11-07T19:30:00",
+"id": "cur-carol",
+"title": "A Christmas Carol at Theatre Three",
+"start": "2026-11-07T19:00",
+"end": "2026-11-07T21:30",
 "allday": false,
-"venue": "Staller Center for the Arts, Main Stage",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "https://stallercenter.showare.com/eventperformances.asp?evt=475",
-"desc": "The Stony Brook Symphony Orchestra is composed of outstanding musicians from all over the world pursuing advanced studies in the graduate school of the Department of Music with renowned performance faculty. PROGRAM: Dvořák: Carnival Overture Schnittke: Viola C",
-"img": "https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/becb3dc5-9d21-4d0f-9aa7-e3ff34cdbcc4/_2024PAHSBSO.jpg",
-"src": "staller",
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://www.theatrethree.com",
+"desc": "Opening weekend of Theatre Three's 42nd annual A Christmas Carol, Long Island's own holiday tradition: Saturday at 7 PM and Sunday at 3 PM, running through Dec. 27.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-06/carol-720.webp",
+"src": "3vl",
 "tags": [
-"free",
+"stage",
+"kids"
+],
+"status": "",
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol-at-theatre-three",
+"pu": "",
+"rank": 1
+},
+{
+"id": "cur-symphony",
+"title": "Stony Brook Symphony Orchestra",
+"start": "2026-11-07T19:30",
+"end": "2026-11-07T21:30",
+"allday": false,
+"venue": "Staller Center, Main Stage",
+"addr": "100 Nicolls Rd, Stony Brook",
+"url": "https://stallercenter.showare.com/eventperformances.asp?evt=475",
+"desc": "Stony Brook's graduate orchestra on the Staller Center Main Stage, with a program that opens with Dvorak's Carnival Overture.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-06/symphony-720.webp",
+"src": "3vl",
+"tags": [
 "music"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stony-brook-symphony-orchestra-924"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/stony-brook-symphony-orchestra-924",
+"pu": "",
+"rank": 6
 },
 {
 "id": "sweetbriar-6adca1060470811e49a6c446",
@@ -760,24 +464,27 @@
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
 },
 {
-"id": "portjeff-1099",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-08T09:00:00",
-"end": "2026-11-08T14:00:00",
+"id": "cur-pjfm",
+"title": "Port Jefferson Farmers Market",
+"start": "2026-11-08T09:00",
+"end": "2026-11-08T14:00",
 "allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"venue": "Harborfront Park",
+"addr": "101 E. Broadway, Port Jefferson",
 "url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
-"desc": "",
-"img": "",
-"src": "portjeff",
+"desc": "The outdoor Sunday market at Harborfront Park, 9 AM to 2 PM, with just a few Sundays left in the season (through Nov. 22).",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-06/pjfm-720.webp",
+"src": "3vl",
 "tags": [
+"free",
 "food",
 "outdoor"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484",
+"pu": "",
+"rank": 4
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
@@ -816,45 +523,48 @@
 "page": "https://www.threevillagelocal.com/events/harvest-gratitude-meditation"
 },
 {
-"id": "emmaclark-kids-kids-interactive-music-concert-grades-k-3-61956",
-"title": "Kids for Kids Interactive Music Concert (Grades K-3)",
-"start": "2026-11-08T15:00:00",
-"end": "2026-11-08T15:45:00",
+"id": "cur-blotto",
+"title": "Blotto Fest at the Music Hall of Fame",
+"start": "2026-11-08T15:00",
+"end": "2026-11-08T17:00",
 "allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/kids-kids-interactive-music-concert-grades-k-3-61956",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-05/Kids%20for%20Kids%20New.png",
-"src": "emmaclark",
-"tags": [
-"music",
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/kids-for-kids-interactive-music-concert-grades-k-3"
-},
-{
-"id": "limehof-202611081500-blotto-fest",
-"title": "Blotto Fest",
-"start": "2026-11-08T15:00:00",
-"end": "2026-11-08T17:00:00",
-"allday": false,
-"venue": "The Long Island Music and Entertainment Hall of Fame",
-"addr": "97 Main St, Stony Brook, NY 11790",
+"venue": "LI Music & Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook",
 "url": "https://www.limusichalloffame.org/events/",
-"desc": "Free with Admission. About Blotto Fest Blotto Fest will celebrate the popular rock band Blotto, formed in 1978 in Albany, NY, which was known for blending music with sharp humor, goofy charm, and a playful stage persona. The band became a cult favorite in the ",
-"img": "https://www.limusichalloffame.org/wp-content/uploads/2026/08/Blotto_Fest_lineup_v3.jpg",
-"src": "limehof",
+"desc": "Original Blotto members host an afternoon of the cult Albany band's favorites and deep cuts, with guest performers, at the Hall of Fame on Main Street.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-06/blotto-720.webp",
+"src": "3vl",
 "tags": [
-"free",
 "music",
 "stage"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/blotto-fest"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/blotto-fest",
+"pu": "",
+"rank": 3
+},
+{
+"id": "cur-kids4kids",
+"title": "Kids for Kids Interactive Music Concert",
+"start": "2026-11-08T15:00",
+"end": "2026-11-08T15:45",
+"allday": false,
+"venue": "Emma S. Clark Library",
+"addr": "120 Main St, Setauket",
+"url": "https://emmaclark.librarycalendar.com/event/kids-kids-interactive-music-concert-grades-k-3-61956",
+"desc": "An interactive concert and instrument demo for kids in grades K-3, in the Emma Clark children's program room.",
+"img": "",
+"src": "3vl",
+"tags": [
+"free",
+"kids",
+"music"
+],
+"status": "",
+"pick": false,
+"page": "https://www.threevillagelocal.com/events/kids-for-kids-interactive-music-concert-grades-k-3",
+"pu": ""
 },
 {
 "id": "theatre3-9240",
@@ -916,23 +626,25 @@
 "page": "https://www.threevillagelocal.com/events/medartation"
 },
 {
-"id": "staller-4cce16ac-f68a-45a3-8e34-57d9e8ff1fda",
-"title": "One Vision of Queen",
-"start": "2026-11-08T19:00:00",
-"end": "2026-11-08T19:00:00",
+"id": "cur-queen",
+"title": "One Vision of Queen at the Staller Center",
+"start": "2026-11-08T19:00",
+"end": "2026-11-08T21:30",
 "allday": false,
-"venue": "Staller Center for the Arts, Main Stage",
-"addr": "100 Nicolls Rd, Stony Brook, NY 11794",
-"url": "https://stallercenter.showare.com/eventperformances.asp?evt=469",
-"desc": "Experience the power, pageantry, and pure rock spectacle of Queen reborn in ONE VISION OF QUEEN, starring Marc Martel—a high-energy tribute so authentic, you’ll be singing, stomping, and believing you’re at the real thing.",
-"img": "https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/9eaef5e8-a54c-4ca4-b92c-61c0484fdd4c/Elfsight_Queen.png",
-"src": "staller",
+"venue": "Staller Center, Main Stage",
+"addr": "100 Nicolls Rd, Stony Brook",
+"url": "https://www.stallercenter.com",
+"desc": "Marc Martel leads a high-energy tribute to Queen on the Staller Center Main Stage, Sunday at 7 PM.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-06/queen-720.webp",
+"src": "3vl",
 "tags": [
-"arts"
+"music"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/one-vision-of-queen"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/one-vision-of-queen",
+"pu": "",
+"rank": 2
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-63806",
