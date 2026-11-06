@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-06T06:25:20.483754+00:00",
+"updated": "2026-11-06T11:30:56.688582+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 45,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Village of Port Jefferson": 199,
 "Emma S. Clark Library": 264,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 45,
@@ -642,6 +642,25 @@
 "page": "https://www.threevillagelocal.com/events/live-music-jim-lowe"
 },
 {
+"id": "portjeff-1151",
+"title": "Caleb Brewster Escape 4K run",
+"start": "2026-11-07T00:00:00",
+"end": "2026-11-07T00:00:00",
+"allday": true,
+"venue": "Strong's Park",
+"addr": "Strong's Park - Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
+},
+{
 "id": "social-18037033628902576",
 "title": "FREE Saturday Workout Classes",
 "start": "2026-11-07T06:00:00",
@@ -833,6 +852,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
+},
+{
+"id": "portjeff-1099",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-08T09:00:00",
+"end": "2026-11-08T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484"
 },
 {
 "id": "sweetbriar-6a9717c28594e647dc1ac7b9",
@@ -1943,6 +1982,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
+},
+{
+"id": "portjeff-1100",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-15T09:00:00",
+"end": "2026-11-15T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
 },
 {
 "id": "sweetbriar-6acbd8fb9083cf68d32902a2",
