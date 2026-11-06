@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-06T02:01:03.626481+00:00",
+"updated": "2026-11-06T06:23:49.152505+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 45,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 200,
+"Village of Port Jefferson": 199,
 "Emma S. Clark Library": 264,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 45,
@@ -87,7 +87,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/2026-port-jeff-self-guided-fall-art-walk"
+"page": ""
 },
 {
 "id": "sbv-2456",
@@ -2273,21 +2273,21 @@
 "profile": "https://www.threevillagelocal.com/robinsons-tea-room"
 },
 {
-"id": "wd-eat.namkeen-20261105",
+"id": "wd-eat.namkeen-20261106",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Smash Thursday: $9.99 meal",
-"when": "Today, Thursday",
-"desc": "Classic smash burger meal for $9.99. Dine-in only.",
-"expires": "2026-11-05",
+"title": "Family Friday: free shake",
+"when": "Today, Friday",
+"desc": "Buy 2 meals and get a free shake. Dine-in only.",
+"expires": "2026-11-06",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/eat.namkeen.jpg",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-smash-thursday-meal",
-"label": "Event",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"label": "Special",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
 {
@@ -2388,22 +2388,22 @@
 "label": "Special"
 },
 {
-"id": "wd-eat.namkeen-20261105",
+"id": "wd-eat.namkeen-20261106",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Smash Thursday: $9.99 meal",
-"when": "Today, Thursday",
-"desc": "Classic smash burger meal for $9.99. Dine-in only.",
-"expires": "2026-11-05",
-"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
+"title": "Family Friday: free shake",
+"when": "Today, Friday",
+"desc": "Buy 2 meals and get a free shake. Dine-in only.",
+"expires": "2026-11-06",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-smash-thursday-meal",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
-"label": "Event"
+"label": "Special"
 },
 {
 "id": "18645486091036908",
