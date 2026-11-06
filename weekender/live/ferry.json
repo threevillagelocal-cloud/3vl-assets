@@ -1,6 +1,13 @@
 {
- "checked": "2026-11-06T14:00:20+00:00",
- "alerts": [],
+ "checked": "2026-11-06T15:51:48+00:00",
+ "alerts": [
+  {
+   "title": "Bridgeport Traffic Delays",
+   "text": "Saturday 11/7: Due to local events near the Bridgeport terminal we are anticipating additional traffic and intermittent road closures to and from the Bridgeport Terminal. Please allow extra travel time to arrive at the Bridgeport terminal.",
+   "link": "https://www.88844ferry.com/info/traffic-delays",
+   "published": "2026-11-06T15:29:26.673Z"
+  }
+ ],
  "cancellations": false,
  "url": "https://www.88844ferry.com/schedule",
  "rescheduled": false
