@@ -1,20 +1,4 @@
 {
-"18165795172468445": {
-"special": true,
-"title": "The Jazz Loft Live Music",
-"when": "Thu, Oct. 8 · 7-9 PM",
-"desc": "Live jazz with Tom, Steve, and Billy. Reservations recommended.",
-"expires": "2026-10-08",
-"_ts": "2026-10-07T14:13:30+0000"
-},
-"18483879619129257": {
-"special": true,
-"title": "Prix Fixe Lunch & Dinner",
-"when": "This week (Mon-Sun, Oct 7-13)",
-"desc": "Two-course lunch for $24, three-course dinner for $46. Closed Mon & Tues.",
-"expires": "2026-10-13",
-"_ts": "2026-10-07T15:12:33+0000"
-},
 "18121416112857675": {
 "special": true,
 "title": "Golden Hour Cocktails & Bites",
@@ -23,30 +7,6 @@
 "expires": "2026-10-20",
 "_ts": "2026-10-07T17:10:00+0000"
 },
-"18080087426422651": {
-"special": true,
-"title": "Limited-Time Pulled Pork Sandwich",
-"when": "Now",
-"desc": "Try pulled pork, BBQ sauce, melted cheddar, and pickles on brioche with house-cut fries.",
-"expires": "2026-10-21",
-"_ts": "2026-10-07T15:15:02+0000"
-},
-"17910848337478335": {
-"special": false,
-"title": "Endless Summer Steak & Eggs",
-"when": "Ongoing",
-"desc": "Espresso-rubbed flat iron with eggs, sweet potato chorizo hash, and chimichurri.",
-"expires": "2026-10-07",
-"_ts": "2026-10-07T14:31:25+0000"
-},
-"18128926942845478": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-07T15:32:32+0000"
-},
 "18127411960867747": {
 "special": true,
 "title": "Happy Hour at Castaways",
@@ -54,14 +14,6 @@
 "desc": "Happy hour at the inside bar, high tops, and lounge with mussels, sliders, and cold beer.",
 "expires": "2026-10-07",
 "_ts": "2026-10-07T17:01:36+0000"
-},
-"17966715234181852": {
-"special": true,
-"title": "Wednesday Specials at Tara Inn",
-"when": "Wed, Oct. 7",
-"desc": "Prime rib, lobster, shrimp basket, burgers and more at daily special prices.",
-"expires": "2026-10-07",
-"_ts": "2026-10-07T14:38:56+0000"
 },
 "18159635593508036": {
 "special": false,
@@ -3134,5 +3086,29 @@
 "desc": "3LB and mini chocolate turkeys for Thanksgiving desserts and place settings.",
 "expires": "2026-11-06",
 "_ts": "2026-11-05T23:16:34+0000"
+},
+"18103760585058619": {
+"special": false,
+"_ts": "2026-11-06T15:37:34+0000"
+},
+"18099760832404190": {
+"special": false,
+"title": "Left Coast Quesadilla",
+"when": "Ongoing",
+"desc": "New menu item: crispy tri-fold quesadilla with fajita-inspired fillings and cheese.",
+"expires": "2026-11-06",
+"_ts": "2026-11-06T14:12:20+0000"
+},
+"18117791698822885": {
+"special": false,
+"_ts": "2026-11-06T13:08:54+0000"
+},
+"18136715905674183": {
+"special": false,
+"title": "New Pumpkin Spice Fudge",
+"when": "Ongoing",
+"desc": "Kilwins introduces their new Pumpkin Spice Fudge for fall.",
+"expires": "2026-11-06",
+"_ts": "2026-11-06T14:02:45+0000"
 }
 }
