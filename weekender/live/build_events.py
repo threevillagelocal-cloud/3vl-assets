@@ -228,6 +228,8 @@ def main():
                 until = a.get("until") or W.get("ends", "")
                 if until and "T" not in until:
                     until += "T23:59"
+                if until and until[:10] < dt.date.today().isoformat():
+                    continue   # ended: Spooky Village (until 10/31) was still in the feed on 11/6/2026 after the edition went stale
                 out.insert(0, {"id": "cur-" + a["id"], "title": a["title"], "start": dt.date.today().isoformat() + "T00:00", "end": until,
                                "allday": True, "ongoing": True, "whenText": a["when"], "venue": v.get("name", ""), "addr": v.get("addr", ""),
                                "url": a.get("url", ""), "desc": a["desc"], "img": (base + a["img"] + "-720.webp") if a.get("img") else "",

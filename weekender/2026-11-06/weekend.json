@@ -1,0 +1,274 @@
+{
+ "edition": "2026-11-06",
+ "brand": "The Weekender",
+ "range": "Nov 6-8, 2026",
+ "starts": "2026-11-06T17:00:00-05:00",
+ "ends": "2026-11-08T23:59:00-05:00",
+ "slug": "",
+ "headline": [
+  "This Weekend",
+  "in Three Village"
+ ],
+ "dek": "Theatre Three opens its 42nd A Christmas Carol on Saturday, the Staller Center has the Stony Brook Symphony and a Queen tribute, Blotto Fest takes over the Music Hall of Fame on Sunday and the Port Jeff farmers market is still going at Harborfront Park. Here's everything worth doing in Three Village this weekend, updated live.",
+ "hero": {
+  "img": "hero-carol",
+  "credit": "A Christmas Carol at Theatre Three. Poster: Theatre Three",
+  "alt": "A Christmas Carol poster for Theatre Three in Port Jefferson"
+ },
+ "days": {
+  "fri": "2026-11-06",
+  "sat": "2026-11-07",
+  "sun": "2026-11-08"
+ },
+ "picks": [
+  "carol",
+  "queen",
+  "blotto",
+  "pjfm",
+  "gala",
+  "symphony"
+ ],
+ "venues": {
+  "theatre3": {
+   "name": "Theatre Three",
+   "addr": "412 Main St, Port Jefferson",
+   "ll": [
+    40.94366,
+    -73.06754
+   ]
+  },
+  "staller": {
+   "name": "Staller Center, Main Stage",
+   "addr": "100 Nicolls Rd, Stony Brook",
+   "ll": [
+    40.91548,
+    -73.12113
+   ]
+  },
+  "limehof": {
+   "name": "LI Music & Entertainment Hall of Fame",
+   "addr": "97 Main St, Stony Brook",
+   "ll": [
+    40.91707,
+    -73.1463
+   ]
+  },
+  "lim": {
+   "name": "The Long Island Museum",
+   "addr": "1200 Route 25A, Stony Brook",
+   "ll": [
+    40.93029,
+    -73.11519
+   ]
+  },
+  "harborfront": {
+   "name": "Harborfront Park",
+   "addr": "101 E. Broadway, Port Jefferson",
+   "ll": [
+    40.94856,
+    -73.06718
+   ]
+  },
+  "madiran": {
+   "name": "Madiran The Wine Bar",
+   "addr": "209 Route 25A, East Setauket",
+   "ll": [
+    40.9296,
+    -73.1028
+   ]
+  },
+  "emma": {
+   "name": "Emma S. Clark Library",
+   "addr": "120 Main St, Setauket",
+   "ll": [
+    40.94487,
+    -73.11197
+   ]
+  }
+ },
+ "events": [
+  {
+   "id": "jimlowe",
+   "title": "Live Music: Jim Lowe at Madiran",
+   "start": "2026-11-06T19:00",
+   "end": "2026-11-06T22:00",
+   "page": "https://www.threevillagelocal.com/events/live-music-jim-lowe",
+   "venue": "madiran",
+   "price": "Free to listen",
+   "tags": [
+    "music",
+    "food"
+   ],
+   "img": "madiran",
+   "credit": "Photo: Madiran The Wine Bar",
+   "desc": "Friday night live music at the East Setauket wine bar: Jim Lowe, 7 to 10 PM. Call 631-675-2778 to reserve a table.",
+   "url": "https://madiranthewinebar.com/events.html",
+   "src": "madiranthewinebar.com"
+  },
+  {
+   "id": "carol",
+   "title": "A Christmas Carol at Theatre Three",
+   "start": "2026-11-07T19:00",
+   "end": "2026-11-07T21:30",
+   "page": "https://www.threevillagelocal.com/events/a-christmas-carol-at-theatre-three",
+   "venue": "theatre3",
+   "price": "$30 in November",
+   "tags": [
+    "stage",
+    "kids"
+   ],
+   "img": "carol",
+   "credit": "Poster: Theatre Three",
+   "desc": "Opening weekend of Theatre Three's 42nd annual A Christmas Carol, Long Island's own holiday tradition: Saturday at 7 PM and Sunday at 3 PM, running through Dec. 27.",
+   "url": "https://www.theatrethree.com",
+   "src": "theatrethree.com"
+  },
+  {
+   "id": "gala",
+   "title": "The Long Island Museum's Winter Gala",
+   "start": "2026-11-07T18:30",
+   "end": "2026-11-07T22:00",
+   "page": "https://www.threevillagelocal.com/events/lims-annual-winter-gala",
+   "venue": "lim",
+   "price": "Tickets online",
+   "tags": [
+    "music",
+    "food"
+   ],
+   "img": "gala",
+   "credit": "Image: The Long Island Museum",
+   "desc": "The museum's biggest fundraiser of the year: dinner, dancing, live music by Tom Manuel and The Jazz Loft All Stars, and a silent auction to get a head start on holiday shopping.",
+   "url": "https://longislandmuseum.org/event/winter-gala-2026/",
+   "src": "longislandmuseum.org"
+  },
+  {
+   "id": "tim",
+   "title": "Live Music: Tim Siciliano at Madiran",
+   "start": "2026-11-07T19:00",
+   "end": "2026-11-07T22:00",
+   "page": "https://www.threevillagelocal.com/events/live-music-tim-siciliano",
+   "venue": "madiran",
+   "price": "Free to listen",
+   "tags": [
+    "music",
+    "food"
+   ],
+   "desc": "Saturday night live music at the East Setauket wine bar: Tim Siciliano, 7 to 10 PM. Call 631-675-2778 to reserve a table.",
+   "url": "https://madiranthewinebar.com/events.html",
+   "src": "madiranthewinebar.com"
+  },
+  {
+   "id": "symphony",
+   "title": "Stony Brook Symphony Orchestra",
+   "start": "2026-11-07T19:30",
+   "end": "2026-11-07T21:30",
+   "page": "https://www.threevillagelocal.com/events/stony-brook-symphony-orchestra-924",
+   "venue": "staller",
+   "price": "See details",
+   "tags": [
+    "music"
+   ],
+   "img": "symphony",
+   "credit": "Image: Staller Center",
+   "desc": "Stony Brook's graduate orchestra on the Staller Center Main Stage, with a program that opens with Dvorak's Carnival Overture.",
+   "url": "https://stallercenter.showare.com/eventperformances.asp?evt=475",
+   "src": "stallercenter.com"
+  },
+  {
+   "id": "pjfm",
+   "title": "Port Jefferson Farmers Market",
+   "start": "2026-11-08T09:00",
+   "end": "2026-11-08T14:00",
+   "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484",
+   "venue": "harborfront",
+   "price": "Free to browse",
+   "tags": [
+    "free",
+    "food",
+    "outdoor"
+   ],
+   "img": "pjfm",
+   "credit": "Photo: Traitor, CC BY-SA 3.0",
+   "desc": "The outdoor Sunday market at Harborfront Park, 9 AM to 2 PM, with just a few Sundays left in the season (through Nov. 22).",
+   "url": "https://www.portjeffny.gov/calendar.aspx?EID=1099",
+   "src": "portjeffny.gov"
+  },
+  {
+   "id": "kids4kids",
+   "title": "Kids for Kids Interactive Music Concert",
+   "start": "2026-11-08T15:00",
+   "end": "2026-11-08T15:45",
+   "page": "https://www.threevillagelocal.com/events/kids-for-kids-interactive-music-concert-grades-k-3",
+   "venue": "emma",
+   "price": "Free (library program)",
+   "tags": [
+    "free",
+    "kids",
+    "music"
+   ],
+   "desc": "An interactive concert and instrument demo for kids in grades K-3, in the Emma Clark children's program room.",
+   "url": "https://emmaclark.librarycalendar.com/event/kids-kids-interactive-music-concert-grades-k-3-61956",
+   "src": "emmaclark.org"
+  },
+  {
+   "id": "blotto",
+   "title": "Blotto Fest at the Music Hall of Fame",
+   "start": "2026-11-08T15:00",
+   "end": "2026-11-08T17:00",
+   "page": "https://www.threevillagelocal.com/events/blotto-fest",
+   "venue": "limehof",
+   "price": "Free with museum admission",
+   "tags": [
+    "music",
+    "stage"
+   ],
+   "img": "blotto",
+   "credit": "Poster: LI Music & Entertainment Hall of Fame",
+   "desc": "Original Blotto members host an afternoon of the cult Albany band's favorites and deep cuts, with guest performers, at the Hall of Fame on Main Street.",
+   "url": "https://www.limusichalloffame.org/events/",
+   "src": "limusichalloffame.org"
+  },
+  {
+   "id": "queen",
+   "title": "One Vision of Queen at the Staller Center",
+   "start": "2026-11-08T19:00",
+   "end": "2026-11-08T21:30",
+   "page": "https://www.threevillagelocal.com/events/one-vision-of-queen",
+   "venue": "staller",
+   "price": "From $56",
+   "tags": [
+    "music"
+   ],
+   "img": "queen",
+   "credit": "Photo: Staller Center",
+   "desc": "Marc Martel leads a high-energy tribute to Queen on the Staller Center Main Stage, Sunday at 7 PM.",
+   "url": "https://www.stallercenter.com",
+   "src": "stallercenter.com"
+  }
+ ],
+ "allweekend": [],
+ "specials": [],
+ "next": [],
+ "trolley": [],
+ "wxbg": {
+  "fri": {
+   "loc": "Stony Brook Village Green",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_1",
+   "photo": "sbvgreen",
+   "credit": "Live cam: Stony Brook Village Center"
+  },
+  "sat": {
+   "loc": "Port Jefferson Harbor",
+   "photo": "pjharbor",
+   "credit": "Photo: Traitor, CC BY-SA 3.0"
+  },
+  "sun": {
+   "loc": "Stony Brook Harbor",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_2",
+   "photo": "sbharbor2",
+   "credit": "Live cam: Stony Brook Village Center"
+  }
+ },
+ "closings": null,
+ "guides": []
+}
