@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-07T20:03:59.252897+00:00",
+"updated": "2026-11-07T20:05:34.476753+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
@@ -1923,7 +1923,7 @@
 "url": "https://www.instagram.com/p/DfcpfZzp7GO/",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
 "inset": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-"page": "https://www.threevillagelocal.com/madiran-the-wine-bar",
+"page": "https://www.threevillagelocal.com/eat-drink/madiran-the-wine-bar-jazz-loft-live-music",
 "label": "Live music",
 "profile": "https://www.threevillagelocal.com/madiran-the-wine-bar"
 }
@@ -2038,7 +2038,7 @@
 "url": "https://www.instagram.com/p/DfcpfZzp7GO/",
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17985663533899935.jpg",
-"page": "https://www.threevillagelocal.com/madiran-the-wine-bar",
+"page": "https://www.threevillagelocal.com/eat-drink/madiran-the-wine-bar-jazz-loft-live-music",
 "profile": "https://www.threevillagelocal.com/madiran-the-wine-bar",
 "label": "Live music"
 },
