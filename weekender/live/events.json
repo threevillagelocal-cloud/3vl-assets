@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-07T02:01:10.802995+00:00",
+"updated": "2026-11-07T08:40:07.302615+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Village of Port Jefferson": 199,
 "Emma S. Clark Library": 259,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 46,
@@ -206,6 +206,25 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/live-music-jim-lowe",
 "pu": ""
+},
+{
+"id": "portjeff-1151",
+"title": "Caleb Brewster Escape 4K run",
+"start": "2026-11-07T00:00:00",
+"end": "2026-11-07T00:00:00",
+"allday": true,
+"venue": "Strong's Park",
+"addr": "Strong's Park - Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "social-18037033628902576",
@@ -1544,6 +1563,26 @@
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
 },
 {
+"id": "portjeff-1100",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-15T09:00:00",
+"end": "2026-11-15T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
+},
+{
 "id": "sweetbriar-6acbd8fb9083cf68d32902a2",
 "title": "The Sunday Art Class - The Abundant Cornucopia - Adults - Nov 15",
 "start": "2026-11-15T11:00:00",
@@ -1870,20 +1909,20 @@
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria"
 },
 {
-"id": "wd-eat.namkeen-20261106",
+"id": "wd-eat.namkeen-20261107",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Family Friday: free shake",
-"when": "Today, Friday",
-"desc": "Buy 2 meals and get a free shake. Dine-in only.",
-"expires": "2026-11-06",
+"title": "Late Night Saturday: 15% off",
+"when": "Today, Saturday",
+"desc": "15% off your entire order after 8 PM. Dine-in only.",
+"expires": "2026-11-07",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/eat.namkeen.jpg",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-family-friday-free-shake",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
@@ -1985,20 +2024,20 @@
 "label": "Special"
 },
 {
-"id": "wd-eat.namkeen-20261106",
+"id": "wd-eat.namkeen-20261107",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Family Friday: free shake",
-"when": "Today, Friday",
-"desc": "Buy 2 meals and get a free shake. Dine-in only.",
-"expires": "2026-11-06",
-"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
+"title": "Late Night Saturday: 15% off",
+"when": "Today, Saturday",
+"desc": "15% off your entire order after 8 PM. Dine-in only.",
+"expires": "2026-11-07",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/hands-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-family-friday-free-shake",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "label": "Special"
 },
