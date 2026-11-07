@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T13:00:17.566344+00:00",
+ "updated": "2026-11-07T16:00:16.802065+00:00",
  "specials": [
   {
    "id": "17913502878476863",
@@ -34,20 +34,20 @@
    "inset": "ig/p18113214434617494.jpg"
   },
   {
-   "id": "18648292147031813",
+   "id": "18107031662636808",
    "biz": "Schnitzels",
    "ig": "eatschnitzels",
    "town": "Stony Brook",
    "category": "Restaurant/Gastropub",
    "member": false,
-   "title": "Lobster Mac & Four-Cheese Gratin",
-   "when": "November · Limited time",
-   "desc": "Tender lobster, cavatappi pasta, and four cheeses baked golden with breadcrumbs.",
+   "title": "Thanksgiving French Toast Brunch",
+   "when": "Fri–Sun, 9 AM–1 PM",
+   "desc": "Butternut squash cream cheese french toast with pecans and maple syrup on the November brunch menu.",
    "expires": "2026-11-30",
-   "posted": "2026-11-06T20:36:03+0000",
-   "url": "https://www.instagram.com/p/DfaeqFriuhP/",
+   "posted": "2026-11-07T13:30:55+0000",
+   "url": "https://www.instagram.com/reel/DfcSw0vD2tP/",
    "img": "",
-   "inset": "ig/p18648292147031813.jpg"
+   "inset": "ig/p18107031662636808.jpg"
   },
   {
    "id": "18645486091036908",
@@ -132,20 +132,20 @@
    "inset": "ig/p18113214434617494.jpg"
   },
   {
-   "id": "18648292147031813",
+   "id": "18107031662636808",
    "biz": "Schnitzels",
    "ig": "eatschnitzels",
    "town": "Stony Brook",
    "category": "Restaurant/Gastropub",
    "member": false,
-   "title": "Lobster Mac & Four-Cheese Gratin",
-   "when": "November · Limited time",
-   "desc": "Tender lobster, cavatappi pasta, and four cheeses baked golden with breadcrumbs.",
+   "title": "Thanksgiving French Toast Brunch",
+   "when": "Fri–Sun, 9 AM–1 PM",
+   "desc": "Butternut squash cream cheese french toast with pecans and maple syrup on the November brunch menu.",
    "expires": "2026-11-30",
-   "posted": "2026-11-06T20:36:03+0000",
-   "url": "https://www.instagram.com/p/DfaeqFriuhP/",
+   "posted": "2026-11-07T13:30:55+0000",
+   "url": "https://www.instagram.com/reel/DfcSw0vD2tP/",
    "img": "",
-   "inset": "ig/p18648292147031813.jpg"
+   "inset": "ig/p18107031662636808.jpg"
   },
   {
    "id": "18645486091036908",
@@ -228,6 +228,22 @@
    "url": "https://www.instagram.com/p/DfaR1wVp5I1/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
    "inset": "ig/p18113214434617494.jpg"
+  },
+  {
+   "id": "18107031662636808",
+   "biz": "Schnitzels",
+   "ig": "eatschnitzels",
+   "town": "Stony Brook",
+   "category": "Restaurant/Gastropub",
+   "member": false,
+   "title": "Thanksgiving French Toast Brunch",
+   "when": "Fri–Sun, 9 AM–1 PM",
+   "desc": "Butternut squash cream cheese french toast with pecans and maple syrup on the November brunch menu.",
+   "expires": "2026-11-30",
+   "posted": "2026-11-07T13:30:55+0000",
+   "url": "https://www.instagram.com/reel/DfcSw0vD2tP/",
+   "img": "",
+   "inset": "ig/p18107031662636808.jpg"
   },
   {
    "id": "18648292147031813",
@@ -326,6 +342,22 @@
    "inset": "ig/p18643741162021432.jpg"
   },
   {
+   "id": "18211269280369753",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Ladies' Lounge Night at Castaways",
+   "when": "Saturdays",
+   "desc": "2 hours, 2 drinks each, and bites for groups of 6-12. $50 per person, plus tax and gratuity.",
+   "expires": "2026-11-21",
+   "posted": "2026-11-07T16:01:09+0000",
+   "url": "https://www.instagram.com/p/Dfcj-_lD9Oq/",
+   "img": "",
+   "inset": "ig/p18211269280369753.jpg"
+  },
+  {
    "id": "17893369665455257",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
@@ -340,22 +372,6 @@
    "url": "https://www.instagram.com/reel/DfaGCNDB-eX/",
    "img": "",
    "inset": "ig/p17893369665455257.jpg"
-  },
-  {
-   "id": "17961777639080064",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Restaurant Week: Steak Sandwich Prix Fixe",
-   "when": "Through Sunday, Nov. 9",
-   "desc": "Five entrées for $48pp++ including sliced NY strip steak sandwich with mozzarella, fried onions, horseradish mayo.",
-   "expires": "2026-11-09",
-   "posted": "2026-11-05T19:38:47+0000",
-   "url": "https://www.instagram.com/p/DfXzTPUDzbs/",
-   "img": "",
-   "inset": "ig/p17961777639080064.jpg"
   },
   {
    "id": "18146771710581070",

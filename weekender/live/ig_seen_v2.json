@@ -1,28 +1,4 @@
 {
-"17906330307587030": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-08T14:23:32+0000"
-},
-"17908972224561406": {
-"special": false,
-"title": "Three Village Inn Staycation",
-"when": "Ongoing",
-"desc": "Book a cozy staycation at Three Village Inn in Stony Brook village.",
-"expires": "2026-10-22",
-"_ts": "2026-10-08T13:17:13+0000"
-},
-"18095682431129095": {
-"special": false,
-"title": "Castaways Lunch",
-"when": "Today · 12 PM",
-"desc": "Burgers, seafood, sandwiches and more. Book your table on Resy.",
-"expires": "2026-10-08",
-"_ts": "2026-10-08T15:02:09+0000"
-},
 "18128984891490777": {
 "special": true,
 "title": "Jazz Performance at Madiran",
@@ -54,14 +30,6 @@
 "desc": "Try limited-time fall favorites: pumpkin French toast trio and honey-vanilla-pistachio latte.",
 "expires": "2026-10-31",
 "_ts": "2026-10-08T16:34:03+0000"
-},
-"18142297897609826": {
-"special": false,
-"title": "Nantuckets Catering Services",
-"when": "Ongoing",
-"desc": "Catering available for birthdays, corporate events, baby showers and other occasions.",
-"expires": "2026-10-08",
-"_ts": "2026-10-08T15:32:19+0000"
 },
 "18031726805676579": {
 "special": true,
@@ -3070,5 +3038,21 @@
 "desc": "Waterfront holiday dinner with seasonal favorites at Black Pearl Restaurant.",
 "expires": "2026-11-26",
 "_ts": "2026-11-06T21:39:13+0000"
+},
+"18107031662636808": {
+"special": true,
+"title": "Thanksgiving French Toast Brunch",
+"when": "Fri–Sun, 9 AM–1 PM",
+"desc": "Butternut squash cream cheese french toast with pecans and maple syrup on the November brunch menu.",
+"expires": "2026-11-30",
+"_ts": "2026-11-07T13:30:55+0000"
+},
+"18211269280369753": {
+"special": true,
+"title": "Ladies' Lounge Night at Castaways",
+"when": "Saturdays",
+"desc": "2 hours, 2 drinks each, and bites for groups of 6-12. $50 per person, plus tax and gratuity.",
+"expires": "2026-11-21",
+"_ts": "2026-11-07T16:01:09+0000"
 }
 }

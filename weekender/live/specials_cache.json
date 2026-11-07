@@ -46,6 +46,22 @@
 "crazybeansrestaurant": [],
 "eatschnitzels": [
 {
+"id": "18107031662636808",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Thanksgiving French Toast Brunch",
+"when": "Fri–Sun, 9 AM–1 PM",
+"desc": "Butternut squash cream cheese french toast with pecans and maple syrup on the November brunch menu.",
+"expires": "2026-11-30",
+"posted": "2026-11-07T13:30:55+0000",
+"url": "https://www.instagram.com/reel/DfcSw0vD2tP/",
+"img": "",
+"inset": "ig/p18107031662636808.jpg"
+},
+{
 "id": "18648292147031813",
 "biz": "Schnitzels",
 "ig": "eatschnitzels",
@@ -403,6 +419,22 @@
 ],
 "castawayspj": [
 {
+"id": "18211269280369753",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Ladies' Lounge Night at Castaways",
+"when": "Saturdays",
+"desc": "2 hours, 2 drinks each, and bites for groups of 6-12. $50 per person, plus tax and gratuity.",
+"expires": "2026-11-21",
+"posted": "2026-11-07T16:01:09+0000",
+"url": "https://www.instagram.com/p/Dfcj-_lD9Oq/",
+"img": "",
+"inset": "ig/p18211269280369753.jpg"
+},
+{
 "id": "17893369665455257",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -433,22 +465,6 @@
 "url": "https://www.instagram.com/p/DfXzTPUDzbs/",
 "img": "",
 "inset": "ig/p17961777639080064.jpg"
-},
-{
-"id": "18353249986248006",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Long Island Restaurant Week",
-"when": "Tonight through Nov 8",
-"desc": "3-course dinner for $48/person at Castaways. Appetizers, entrees, and dessert included.",
-"expires": "2026-11-08",
-"posted": "2026-11-01T16:00:59+0000",
-"url": "https://www.instagram.com/reel/DfNHJuqK9fz/",
-"img": "",
-"inset": "ig/p18353249986248006.jpg"
 }
 ],
 "salsasalsa_portjeff": [],

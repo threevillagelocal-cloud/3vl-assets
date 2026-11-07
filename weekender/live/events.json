@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-07T16:01:00.963211+00:00",
+"updated": "2026-11-07T16:03:04.086791+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
@@ -2080,6 +2080,25 @@
 "label": "Special"
 },
 {
+"id": "18211269280369753",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Ladies' Lounge Night at Castaways",
+"when": "Saturdays",
+"desc": "2 hours, 2 drinks each, and bites for groups of 6-12. $50 per person, plus tax and gratuity.",
+"expires": "2026-11-21",
+"posted": "2026-11-07T16:01:09+0000",
+"url": "https://www.instagram.com/p/Dfcj-_lD9Oq/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18211269280369753.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"label": "Special"
+},
+{
 "id": "17893369665455257",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -2097,25 +2116,6 @@
 "page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-happy-hour",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
 "label": "Happy hour"
-},
-{
-"id": "17961777639080064",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Restaurant Week: Steak Sandwich Prix Fixe",
-"when": "Through Sunday, Nov. 9",
-"desc": "Five entrées for $48pp++ including sliced NY strip steak sandwich with mozzarella, fried onions, horseradish mayo.",
-"expires": "2026-11-09",
-"posted": "2026-11-05T19:38:47+0000",
-"url": "https://www.instagram.com/p/DfXzTPUDzbs/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17961777639080064.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-restaurant-sandwich-prix-fixe",
-"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Special"
 },
 {
 "id": "18146771710581070",
@@ -2229,6 +2229,25 @@
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17913502878476863.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/tommys-place-taco-tuesday-crunchy-tacos",
 "profile": "https://www.threevillagelocal.com/tommys-place",
+"label": "Special"
+},
+{
+"id": "18107031662636808",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Thanksgiving French Toast Brunch",
+"when": "Fri–Sun, 9 AM–1 PM",
+"desc": "Butternut squash cream cheese french toast with pecans and maple syrup on the November brunch menu.",
+"expires": "2026-11-30",
+"posted": "2026-11-07T13:30:55+0000",
+"url": "https://www.instagram.com/reel/DfcSw0vD2tP/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18107031662636808.jpg",
+"page": "https://www.threevillagelocal.com/schnitzels",
+"profile": "https://www.threevillagelocal.com/schnitzels",
 "label": "Special"
 },
 {
