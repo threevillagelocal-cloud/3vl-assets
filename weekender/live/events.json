@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-07T00:01:26.467246+00:00",
+"updated": "2026-11-07T01:48:23.912954+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Village of Port Jefferson": 199,
 "Emma S. Clark Library": 259,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 46,
@@ -206,6 +206,25 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/live-music-jim-lowe",
 "pu": ""
+},
+{
+"id": "portjeff-1151",
+"title": "Caleb Brewster Escape 4K run",
+"start": "2026-11-07T00:00:00",
+"end": "2026-11-07T00:00:00",
+"allday": true,
+"venue": "Strong's Park",
+"addr": "Strong's Park - Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
 },
 {
 "id": "social-18037033628902576",
@@ -1542,6 +1561,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
+},
+{
+"id": "portjeff-1100",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-15T09:00:00",
+"end": "2026-11-15T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
 },
 {
 "id": "sweetbriar-6acbd8fb9083cf68d32902a2",
