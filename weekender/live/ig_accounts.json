@@ -685,5 +685,14 @@
   "source": "https://www.threevillagerotary.com",
   "note": "Owner 11/7/2026: scan for events (concerts, 5K, fundraisers, Electric Holiday Parade).",
   "group": "community"
+ },
+ {
+  "name": "Gallery North",
+  "town": "Setauket",
+  "category": "Art gallery",
+  "ig": "gallerynorthli",
+  "source": "https://gallerynorth.org",
+  "note": "Owner 11/7/2026: watch their IG for events (weekly 'This week at Gallery North' graphic). Website calendar is already a feed source.",
+  "group": "community"
  }
 ]
