@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-06T22:45:56.166342+00:00",
+"updated": "2026-11-07T00:01:26.467246+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 45,
+"Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 199,
-"Emma S. Clark Library": 260,
+"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Emma S. Clark Library": 259,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 46,
 "Ward Melville Heritage Org": 2,
@@ -63,26 +63,6 @@
 "img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71344/v1792695873793/image_large.webp",
 "src": "gallerynorth",
 "tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "pjchamber-14181",
-"title": "2026 Port Jeff Self-Guided Fall Art Walk",
-"start": "2026-10-09T00:00:00",
-"end": "2026-11-06T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/2026-port-jeff-self-guided-fall-art-walk/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"outdoor",
 "arts"
 ],
 "status": "",
@@ -207,25 +187,6 @@
 "page": "https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition"
 },
 {
-"id": "emmaclark-little-essentials-pantry-warmth-kit-63995",
-"title": "Little Essentials Pantry: Warmth Kit",
-"start": "2026-11-06T18:00:00",
-"end": "2026-11-06T19:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/little-essentials-pantry-warmth-kit-63995",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/little-essentials-pantry-warmth-kit"
-},
-{
 "id": "cur-jimlowe",
 "title": "Live Music: Jim Lowe at Madiran",
 "start": "2026-11-06T19:00",
@@ -245,25 +206,6 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/live-music-jim-lowe",
 "pu": ""
-},
-{
-"id": "portjeff-1151",
-"title": "Caleb Brewster Escape 4K run",
-"start": "2026-11-07T00:00:00",
-"end": "2026-11-07T00:00:00",
-"allday": true,
-"venue": "Strong's Park",
-"addr": "Strong's Park - Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/caleb-brewster-escape-4k-run"
 },
 {
 "id": "social-18037033628902576",
@@ -1602,26 +1544,6 @@
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
 },
 {
-"id": "portjeff-1100",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-15T09:00:00",
-"end": "2026-11-15T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
-},
-{
 "id": "sweetbriar-6acbd8fb9083cf68d32902a2",
 "title": "The Sunday Art Class - The Abundant Cornucopia - Adults - Nov 15",
 "start": "2026-11-15T11:00:00",
@@ -1810,6 +1732,82 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/unsung-heroes-world-war-ii-zoom"
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-63811",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-11-17T10:30:00",
+"end": "2026-11-17T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-63811",
+"desc": "Themed activities that you and your child can enjoy together.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-547"
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-63824",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-11-17T13:15:00",
+"end": "2026-11-17T13:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-63824",
+"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-548"
+},
+{
+"id": "emmaclark-gift-bow-making-cause-63061",
+"title": "Gift Bow Making for a Cause",
+"start": "2026-11-17T17:00:00",
+"end": "2026-11-17T18:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/gift-bow-making-cause-63061",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 1,
+"page": ""
+},
+{
+"id": "emmaclark-pies-parades-zoom-61308",
+"title": "From Pies to Parades [ZOOM]",
+"start": "2026-11-17T19:00:00",
+"end": "2026-11-17T20:00:00",
+"allday": false,
+"venue": "Online (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/pies-parades-zoom-61308",
+"desc": "Discover the origins of America’s favorite Thanksgiving traditions! In celebration of the 100 th Anniversary of the Macy’s Thanksgiving Day Parade, explore the maritime roots of Macy’s iconic star logo, learn how football became a Thanksgiving-day obsession, a",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/paradecrop1.jpg",
+"src": "emmaclark",
+"tags": [
+"history"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/from-pies-to-parades-zoom"
 }
 ],
 "closings": [],
