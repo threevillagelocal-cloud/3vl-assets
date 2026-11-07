@@ -44,7 +44,24 @@
 "hirosakiny": [],
 "lucastonybrook": [],
 "crazybeansrestaurant": [],
-"eatschnitzels": [],
+"eatschnitzels": [
+{
+"id": "18648292147031813",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Lobster Mac & Four-Cheese Gratin",
+"when": "November · Limited time",
+"desc": "Tender lobster, cavatappi pasta, and four cheeses baked golden with breadcrumbs.",
+"expires": "2026-11-30",
+"posted": "2026-11-06T20:36:03+0000",
+"url": "https://www.instagram.com/p/DfaeqFriuhP/",
+"img": "",
+"inset": "ig/p18648292147031813.jpg"
+}
+],
 "robinsonstearoom": [],
 "premierepastryshop": [],
 "threevillageinn": [
