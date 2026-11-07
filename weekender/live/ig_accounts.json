@@ -676,5 +676,14 @@
   "group": "member",
   "member": "Just The Basics",
   "noscan": true
+ },
+ {
+  "name": "Three Village Rotary",
+  "town": "Setauket",
+  "category": "Community group",
+  "ig": "three_village_rotary_ny",
+  "source": "https://www.threevillagerotary.com",
+  "note": "Owner 11/7/2026: scan for events (concerts, 5K, fundraisers, Electric Holiday Parade).",
+  "group": "community"
  }
 ]
