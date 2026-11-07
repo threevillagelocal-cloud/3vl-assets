@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-07T20:05:34.476753+00:00",
+"updated": "2026-11-07T21:43:31.000188+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 199,
-"Emma S. Clark Library": 257,
+"Emma S. Clark Library": 256,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 46,
 "Ward Melville Heritage Org": 2,
@@ -245,23 +245,6 @@
 "status": "",
 "fb": 0,
 "page": ""
-},
-{
-"id": "emmaclark-ai-and-self-driving-cars-63996",
-"title": "AI and Self-Driving Cars",
-"start": "2026-11-07T15:00:00",
-"end": "2026-11-07T16:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/ai-and-self-driving-cars-63996",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/ai-and-self-driving-cars"
 },
 {
 "id": "gallerynorth-71315",
