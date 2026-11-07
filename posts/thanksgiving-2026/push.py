@@ -51,7 +51,7 @@ if not ids.get("page"):
                                                "show_form": 1, "facebook_image": OG})
     ids["page"] = r["message"]["seo_id"]; print("page", ids["page"])
 if not ids.get("post"):
-    r = bd("POST", "/api/v2/data_posts/create", {"user_id": 5, "data_id": 14, "data_type": 20, "post_status": 0, "post_title": TITLE, "post_content": html,
+    r = bd("POST", "/api/v2/data_posts/create", {"user_id": 43, "data_id": 14, "data_type": 20, "post_status": 0, "post_title": TITLE, "post_content": html,
                                                  "post_image": OG, "original_image_url": OG, "auto_image_import": 1,
                                                  "post_meta_title": "Thanksgiving in Three Village: Traditions & Local Favorites",
                                                  "post_meta_description": DESC})
