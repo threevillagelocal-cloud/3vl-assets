@@ -68,19 +68,16 @@ w('<header class="tgb-hero"><img class="tgb-hbg" src="%shero-960.webp" srcset="%
   '<div class="tgb-hshade"></div><i class="tgb-leaf l1"></i><i class="tgb-leaf l2"></i><i class="tgb-leaf l3"></i><i class="tgb-leaf l4"></i><i class="tgb-leaf l5"></i>'
   '<div class="tgb-hin"><p class="tgb-kick">A Three Village Thanksgiving</p>'
   '<h2 class="tgb-h1">Thanksgiving in Three Village: <span>our traditions, our tables and our local favorites</span></h2>'
-  '<p class="tgb-dek">From a harvest table on the harbor to a full house at home, here is how Setauket, Stony Brook and Port Jefferson do Thanksgiving week.</p></div></header>'
+  '<p class="tgb-dek">How Setauket, Stony Brook and Port Jefferson do Thanksgiving week.</p></div></header>'
   % (IMG, IMG, IMG))
 w(cta("Our live Thanksgiving guide", "Every event, who&#39;s open on Thanksgiving Day, pies, catering and shop-local picks, updated daily."))
 w('<nav class="tgb-nav" aria-label="Jump to section"><a href="#tgb-roots">Our roots</a><a href="#tgb-eve">Thanksgiving Eve</a><a href="#tgb-table">The table</a>'
   '<a href="#tgb-give">Giving back</a><a href="#tgb-kids">For kids</a><a href="#tgb-friday">Black Friday</a><a href="#tgb-sbs">Small Business Saturday</a>'
-  '<a href="#tgb-sunday">The Sunday after</a><a href="#tgb-plan">Weekend plan</a></nav>')
+  '<a href="#tgb-sunday">The Sunday after</a></nav>')
 
 # INTRO
-w('<p class="tgb-lead tgb-rv">Thanksgiving in Three Village has a rhythm all its own. The tree goes up on Main Street the night before. The bakeries are slammed on Wednesday. '
-  'Stony Brook Village fills up the day after, and by Sunday Santa is rolling down Main Street in Port Jeff. In between, there&#39;s a lot of good food, a lot of family, '
-  'and a lot of neighbors looking out for neighbors.</p>'
-  '<p class="tgb-rv">We pulled it all together: the traditions, the local spots that make the holiday easier, and the events worth putting on the calendar. '
-  'Everything here comes straight from the organizers and businesses themselves, and our <a href="%s">live Thanksgiving guide</a> keeps it current every day.</p>' % GUIDE)
+w('<p class="tgb-lead tgb-rv">The tree lights up on Main Street the night before, the bakeries are slammed by Wednesday, and by Sunday Santa is rolling through Port Jeff. '
+  'Here are the traditions, local spots and events that make Thanksgiving in Three Village.</p>')
 
 # 1 ROOTS
 w('<section class="tgb-sec" id="tgb-roots"><p class="tgb-label">Where it all started</p><h2 class="tgb-h2">A harvest table on the harbor</h2>'
@@ -138,15 +135,20 @@ w('<section class="tgb-sec" id="tgb-give"><p class="tgb-label">Giving back</p><h
   '</ul><p style="margin:10px 0 0!important">We&#39;ll add 2026 dates to the <a href="%s">live guide</a> as soon as the organizers post them.</p></div></section>'
   % (ev_row("Reboli Center Thanksgiving Food Drive", "&#129387;", label="Now through Fri, Nov 20"), GUIDE))
 
-# 5 KIDS
+# 5 KIDS (one photo + compact list, owner 11/7: shorter scroll)
 kids = ["Apple Pie Making (Family)", "Turkey Tea Light", "Gratitude Vases (Grades 3-5)", "Turkey Time (3 years-PreK with Caregiver)",
         "A Charlie Brown Thanksgiving Treat", "Stop Motion Animation: Balloons Over Broadway (Grades 3-5)"]
+def krow(t):
+    ev = EV[t]
+    lib = ev["venue"].split(",")[0].replace(" Memorial Library", "").replace(" Public Library", "").replace(" Free Library", "")
+    return '<li><a href="%s"><time>%s</time><b>%s</b><span>%s</span></a></li>' % (e(ev.get("page") or ev.get("link")), when(ev), e(t), e(lib))
 w('<section class="tgb-sec" id="tgb-kids"><p class="tgb-label">For the kids</p><h2 class="tgb-h2">Turkey crafts, pie bakers and a Charlie Brown Thanksgiving</h2>'
-  '<p class="tgb-rv">Our local libraries go all-in on Thanksgiving week. Between the <b>Emma S. Clark Memorial Library</b>, the <b>Port Jefferson Free Library</b> and the '
-  '<b>Comsewogue Public Library</b>, there are more than a dozen free programs for little ones and big kids: turkey crafts, a real apple pie class with The Baking Coach, '
-  'gratitude vases for the table, and a stop-motion parade video inspired by the 100th Macy&#39;s parade. Most need registration, and the popular ones fill up.</p>'
-  '<div class="tgb-evs">%s</div></section>' % "".join(ev_row(t, "&#129411;") for t in sorted([k for k in kids if k in EV], key=lambda k: EV[k]["start"])))
-w(cta("See all the kids programs", "The full list, with times and registration links, lives on our Thanksgiving guide.", "Kids &amp; family"))
+  '<figure class="tgb-wide tgb-rv"><img data-src="%skids-960.webp" alt="Kids making paper turkey crafts at a library craft table" width="960" height="536" loading="lazy">'
+  '<figcaption>Illustration created for Three Village Local.</figcaption></figure>'
+  '<p class="tgb-rv">The <b>Emma S. Clark</b>, <b>Port Jefferson</b> and <b>Comsewogue</b> libraries have more than a dozen free Thanksgiving programs: turkey crafts, '
+  'a real apple pie class and a stop-motion parade for the 100th Macy&#39;s parade. Most need registration.</p>'
+  '<ul class="tgb-klist tgb-rv">%s</ul></section>' % (IMG, "".join(krow(t) for t in sorted([k for k in kids if k in EV], key=lambda k: EV[k]["start"]))))
+w(cta("See all the kids programs", "The full list, with registration links, lives on our Thanksgiving guide.", "Kids &amp; family"))
 
 # 6 BLACK FRIDAY
 w('<section class="tgb-sec" id="tgb-friday"><p class="tgb-label">Friday, Nov 27</p><h2 class="tgb-h2">Black Friday, the Three Village way</h2>'
@@ -183,16 +185,6 @@ w('<section class="tgb-sec" id="tgb-sunday"><p class="tgb-label">Sunday, Nov 29<
   '</ul></div></section>'
   % (ev_row("Port Jefferson Santa Parade & Visit", "&#127877;"), ev_row("Winter Holiday Market at the Setauket Neighborhood House", "&#127873;"),
      ev_row("Dickens in the Carriage Museum", "&#127913;")))
-
-# 9 WEEKEND PLAN
-w('<section class="tgb-sec" id="tgb-plan"><p class="tgb-label">Save this</p><h2 class="tgb-h2">Your Thanksgiving weekend, planned</h2><ul class="tgb-tl">'
-  '<li class="tgb-rv"><b>Saturday, Nov 21</b><span>Last day to order catering at Uncle Giuseppe&#39;s. Call your bakery about pies.</span></li>'
-  '<li class="tgb-rv"><b>Wednesday, Nov 25</b><span>Pick up the pies, then the Port Jefferson tree lighting at 6 PM.</span></li>'
-  '<li class="tgb-rv"><b>Thursday, Nov 26</b><span>Happy Thanksgiving! Dinner at home, or a table at Black Pearl or Mirabelle.</span></li>'
-  '<li class="tgb-rv"><b>Friday, Nov 27</b><span>Black Friday Festival in Stony Brook Village, then skating at The Rinx.</span></li>'
-  '<li class="tgb-rv"><b>Saturday, Nov 28</b><span>Small Business Saturday: shop local in Port Jeff and Stony Brook.</span></li>'
-  '<li class="tgb-rv"><b>Sunday, Nov 29</b><span>Winter Holiday Market in Setauket, the Santa Parade at 1 PM, and Dickens in the Carriage Museum.</span></li>'
-  '</ul></section>')
 
 # END
 w('<div class="tgb-end tgb-rv"><p class="tgb-label">Bookmark it</p><h2 class="tgb-h2">The live Thanksgiving guide has it all</h2>'
