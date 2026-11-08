@@ -21,6 +21,9 @@ AI = "/ai-assistant"
 SH = "https://threevillagelocal-cloud.github.io/3vl-share/site/"
 APP = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@1328a06c9ca8ab841e46fd8b85170aaef3bd1e63/site/app/"
 
+import re as _re
+_m = _re.search(r'<div class="tvw-logo-row">.*?</div>', A.W.STRIP_SEC, _re.S)
+AIROW = _m.group(0)
 HERO = """<section class="tvp-top" id="tvp-top">
   <div class="tvp-top-in tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Our services</p>
@@ -28,6 +31,7 @@ HERO = """<section class="tvp-top" id="tvp-top">
     <p class="tvp-lede">Every day, our <b>website</b>, free <b>mobile app</b> and <b>social media</b> put local businesses in front of the whole Three Village community. We also offer the modern tools that help a business get seen, get chosen and grow, all from one local team.</p>
     <ul class="tvs-trust tvp-trust"><li><b>45,000+</b>website page visits a month</li><li><b>100,000+</b>social views a month</li><li><b>One</b>local team</li></ul>
   </div>
+  <div class="tvp-ai tvs-up"><p>We help you get found and recommended on</p>""" + AIROW + """</div>
   <div class="tvp-glance" aria-label="Everything we offer">
     <div class="tvp-gcol tvs-up">
       <div class="tvp-gh"><p>On Three Village Local</p><h2>Get promoted where locals look</h2></div>
@@ -356,6 +360,8 @@ section[id^="tvp-"]{scroll-margin-top:90px}
 @media (max-width:900px){.tvp-soc .tvp-fan{height:200px!important}}
 @media (max-width:520px){.tvp-soc .tvp-fan{height:150px!important}.tvp-fan2 img:nth-child(2){top:16px}}
 .tvp-ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.tvp-ctas-c{justify-content:center;margin-top:26px}
+.tvp-ai{max-width:1000px;margin:-14px auto 34px;text-align:center}.tvp-ai>p{margin:0 0 14px!important;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.tvp-ai .tvw-logo{box-shadow:0 8px 20px -12px rgba(9,30,66,.35)}
 .tvs-sticky{right:auto!important;left:20px!important}
 .tva-pop{width:360px!important}.tva-pop .tva-box{height:470px!important;max-height:calc(100vh - 130px)!important}
 @media (max-width:900px){.tvs-hero.tvp-hero{display:flex;flex-direction:column}.tvp-vis{order:2;position:relative!important;width:auto!important;padding:22px 14px!important}.tvp-menu{padding:12px}.tvp-orbit{width:300px;height:300px}.tvp-ring i{width:66px;height:66px;margin:-33px;font-size:22px;border-radius:18px}.tvp-ring i em{font-size:10px}
