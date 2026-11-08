@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-08T01:17:38.454072+00:00",
+"updated": "2026-11-08T01:45:43.618999+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 199,
+"Village of Port Jefferson": "error: <urlopen error timed out>",
 "Emma S. Clark Library": 258,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 46,
@@ -1432,26 +1432,6 @@
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
 },
 {
-"id": "portjeff-1100",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-15T09:00:00",
-"end": "2026-11-15T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
-},
-{
 "id": "sweetbriar-6acbd8fb9083cf68d32902a2",
 "title": "The Sunday Art Class - The Abundant Cornucopia - Adults - Nov 15",
 "start": "2026-11-15T11:00:00",
@@ -2140,25 +2120,6 @@
 "label": "Happy hour"
 },
 {
-"id": "18146771710581070",
-"biz": "Old Fields Port Jefferson",
-"ig": "oldfieldspj",
-"town": "Port Jefferson",
-"category": "Restaurant/Steakhouse",
-"member": false,
-"title": "Give One, Get One Gift Cards",
-"when": "Nov 1 - Dec 24, 2026",
-"desc": "Buy a gift card in person, get one free. Valid through Dec 24. Cannot be used day of purchase or for parties.",
-"expires": "2026-12-24",
-"posted": "2026-11-01T01:27:26+0000",
-"url": "https://www.instagram.com/reel/DfLjNMBTBXL/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18146771710581070.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/old-fields-port-jefferson-give-one-get-one-gift",
-"profile": "https://www.threevillagelocal.com/old-fields-port-jefferson",
-"label": "Special"
-},
-{
 "id": "18153094972530027",
 "biz": "Pasta Pasta",
 "ig": "pastapasta_portjeff",
@@ -2376,7 +2337,6 @@
 "Burgerology",
 "Madiran The Wine Bar",
 "Castaways Steak & Seafood",
-"Old Fields Port Jefferson",
 "Pasta Pasta",
 "Slurp Ramen",
 "The Pie of Port Jeff",
@@ -2398,6 +2358,7 @@
 "Port Jeff Brewing Company",
 "Po' Boy Brewery",
 "PJ Lobster House",
+"Old Fields Port Jefferson",
 "The Whiskey Barrel",
 "Tara Inn",
 "Hirosaki",
