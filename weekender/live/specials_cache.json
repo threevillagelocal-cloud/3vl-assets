@@ -112,43 +112,9 @@
 ],
 "robinsonstearoom": [],
 "premierepastryshop": [],
-"threevillageinn": [
-{
-"id": "18034496063897138",
-"biz": "Three Village Inn / Mirabelle Restaurant & Tavern",
-"ig": "threevillageinn",
-"town": "Stony Brook",
-"category": "Restaurant/Inn",
-"member": false,
-"title": "Thanksgiving Day Dining",
-"when": "Thu, Nov. 27 · 11 AM-7 PM",
-"desc": "Join Three Village Inn for Thanksgiving Day with special pricing and menu options.",
-"expires": "2026-11-27",
-"posted": "2026-11-01T16:51:39+0000",
-"url": "https://www.instagram.com/p/DfNM_0nDc5n/",
-"img": "",
-"inset": "ig/p18034496063897138.jpg"
-}
-],
+"threevillageinn": [],
 "ralphsitalianicesstonybrook": [],
-"burgerologyusa": [
-{
-"id": "18645486091036908",
-"biz": "Burgerology",
-"ig": "burgerologyusa",
-"town": "Stony Brook",
-"category": "Restaurant",
-"member": false,
-"title": "Spin Dip Smash on Restaurant Week Menu",
-"when": "Restaurant Week (limited time)",
-"desc": "Try the Spin Dip Smash with cheesy spinach dip and tortilla chips between smash patties.",
-"expires": "2026-11-08",
-"posted": "2026-11-01T18:30:55+0000",
-"url": "https://www.instagram.com/p/DfNYXMJo0Fu/",
-"img": "",
-"inset": "ig/p18645486091036908.jpg"
-}
-],
+"burgerologyusa": [],
 "ep_restaurant": [],
 "tajcrownofindia": [],
 "rctaqueria": [
@@ -434,6 +400,22 @@
 ],
 "castawayspj": [
 {
+"id": "18358849555252065",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Restaurant Week Prix Fixe",
+"when": "Tonight only",
+"desc": "Three courses for $48pp at Castaways. Seafood, oysters, jerk chicken, blackened mahi mahi, petit filet and more.",
+"expires": "2026-11-08",
+"posted": "2026-11-08T17:00:37+0000",
+"url": "https://www.instagram.com/p/DffPlXgGtR1/",
+"img": "",
+"inset": "ig/p18358849555252065.jpg"
+},
+{
 "id": "18211269280369753",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
@@ -484,24 +466,7 @@
 ],
 "salsasalsa_portjeff": [],
 "tigerlilycafe": [],
-"thepie216": [
-{
-"id": "18120866714096855",
-"biz": "The Pie of Port Jeff",
-"ig": "thepie216",
-"town": "Port Jefferson",
-"category": "Pizza",
-"member": false,
-"title": "Soup Season at The Pie of Port Jeff",
-"when": "Now through fall season",
-"desc": "Enjoy creamy butternut squash, potato leek, and other fall soup favorites.",
-"expires": "2026-11-15",
-"posted": "2026-11-01T18:25:22+0000",
-"url": "https://www.instagram.com/p/DfNXudnltaA/",
-"img": "",
-"inset": "ig/p18120866714096855.jpg"
-}
-],
+"thepie216": [],
 "oldfieldspj": [],
 "secretgardentearoom": [],
 "kilwins_port_jeff": [

@@ -1,12 +1,4 @@
 {
-"18029668640860114": {
-"special": false,
-"title": "Witches & Warlocks Specialty Cocktails",
-"when": "Unknown dates",
-"desc": "Themed cocktails and mocktails including Poisoned Apple Sangria and The Good Witch.",
-"expires": "2026-10-24",
-"_ts": "2026-10-09T17:46:38+0000"
-},
 "18185980951373538": {
 "special": false,
 "title": "Long Island Restaurant Week Prix Fixe",
@@ -22,22 +14,6 @@
 "desc": "Sushi, hibachi, cocktails and modern Japanese dishes in Stony Brook.",
 "expires": "2026-10-10",
 "_ts": "2026-10-10T14:01:38+0000"
-},
-"18119306581990665": {
-"special": false,
-"title": "Hirosaki Sushi & Hibachi",
-"when": "Ongoing",
-"desc": "Japanese sushi and hibachi restaurant in Stony Brook. Happy hour available.",
-"expires": "2026-10-24",
-"_ts": "2026-10-09T19:02:13+0000"
-},
-"17963471301217490": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-09T18:57:59+0000"
 },
 "18107317751630922": {
 "special": false,
@@ -63,14 +39,6 @@
 "expires": "",
 "_ts": "2026-10-10T13:36:24+0000"
 },
-"18111198374177158": {
-"special": false,
-"title": "MEGA Mozzarella Stick",
-"when": "Ongoing",
-"desc": "Large mozzarella stick available at Burgerology, known for big cheese pulls.",
-"expires": "2026-10-24",
-"_ts": "2026-10-09T18:59:26+0000"
-},
 "18110203481181582": {
 "special": false,
 "title": "",
@@ -86,14 +54,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-10T20:20:26+0000"
-},
-"18110203772333626": {
-"special": true,
-"title": "Trivia Nights at Toast Ronkonkoma",
-"when": "Every Thursday, starting Oct. 15 · 4:30 PM",
-"desc": "Join trivia nights with brain teasers, food, drinks, and friendly competition.",
-"expires": "2026-10-24",
-"_ts": "2026-10-09T17:21:08+0000"
 },
 "17959248594011698": {
 "special": true,
@@ -142,14 +102,6 @@
 "desc": "Join the Halloween bar crawl at Castaways. Stop by for a drink between 5 and 10 PM tonight.",
 "expires": "2026-10-10",
 "_ts": "2026-10-10T14:00:53+0000"
-},
-"18095837027418148": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-09T19:00:47+0000"
 },
 "18437753002198828": {
 "special": false,
@@ -2970,5 +2922,45 @@
 "desc": "Celebrating with espresso, foam, and cinnamon. No specific offer or discount mentioned.",
 "expires": "2026-11-08",
 "_ts": "2026-11-08T15:49:45+0000"
+},
+"18122997278060689": {
+"special": false,
+"title": "Burgerology Opening Date Announcement",
+"when": "TBA",
+"desc": "New burger restaurant teasing official opening date reveal coming tomorrow.",
+"expires": "2026-11-09",
+"_ts": "2026-11-08T19:36:38+0000"
+},
+"17916718674536275": {
+"special": false,
+"title": "Right Coast Taqueria Game Day Takeout",
+"when": "Ongoing",
+"desc": "Bring Right Coast Taqueria home for game day with nachos and tacos.",
+"expires": "2026-11-08",
+"_ts": "2026-11-08T16:53:52+0000"
+},
+"18104905967374285": {
+"special": false,
+"title": "PJ Lobster House",
+"when": "Ongoing",
+"desc": "Seafood restaurant with lobster, mac & cheese, pasta, burgers and comfort food. Dine-in, takeout, and delivery available.",
+"expires": "2026-11-08",
+"_ts": "2026-11-08T17:56:20+0000"
+},
+"18652250134016397": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-08T16:32:49+0000"
+},
+"18358849555252065": {
+"special": true,
+"title": "Restaurant Week Prix Fixe",
+"when": "Tonight only",
+"desc": "Three courses for $48pp at Castaways. Seafood, oysters, jerk chicken, blackened mahi mahi, petit filet and more.",
+"expires": "2026-11-08",
+"_ts": "2026-11-08T17:00:37+0000"
 }
 }
