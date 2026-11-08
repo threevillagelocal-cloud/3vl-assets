@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-08T18:01:07.207534+00:00",
+"updated": "2026-11-08T20:00:18.071966+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 198,
+"Village of Port Jefferson": 197,
 "Emma S. Clark Library": 258,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 46,
@@ -15,7 +15,7 @@
 "Theatre Three": 70,
 "Gallery North": 18,
 "Reboli Center": 18,
-"Sweetbriar Nature Center": 32,
+"Sweetbriar Nature Center": 31,
 "Historical Society of Greater Port Jefferson": 1,
 "Madiran The Wine Bar live music": 33,
 "Local business Instagram posts": 9
@@ -315,25 +315,6 @@
 "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484",
 "pu": "",
 "rank": 4
-},
-{
-"id": "sweetbriar-6a9717c28594e647dc1ac7b9",
-"title": "Impressionism, Monet, And You - Adult Sunday 11/8",
-"start": "2026-11-08T11:00:00",
-"end": "2026-11-08T12:30:00",
-"allday": false,
-"venue": "Sweetbriar Nature Center - ECSS",
-"addr": "62 Eckernkamp Drive, SMITHTOWN 11787",
-"url": "https://www.sweetbriarnc.org/new-events/2026/9/27/art-under-the-sun-monet-renoir-and-impressionist-art-adult-sept-27",
-"desc": "Join Artist In Residence Andie while we create nature based art inspired by the impressionist painters focus on color, emotion, and brush stroke.",
-"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1788287232761-GR0230T1F5FEC03Q6407/Screenshot+2026-09-01+at+2.25.36%E2%80%AFPM.png",
-"src": "sweetbriar",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "emmaclark-harvest-gratitude-meditation-61301",
@@ -670,7 +651,7 @@
 "venue": "Madiran The Wine Bar",
 "addr": "209 Route 25A, East Setauket, NY 11733",
 "url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in East Setauket: Dave Lobenstein, James Miceli, and Steve Salerno. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"desc": "Live music at Madiran The Wine Bar in Setauket: Dave Lobenstein, James Miceli, and Steve Salerno. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
 "src": "madiran",
 "tags": [
@@ -745,7 +726,7 @@
 "venue": "Madiran The Wine Bar",
 "addr": "209 Route 25A, East Setauket, NY 11733",
 "url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in East Setauket: Al Marino, James Miceli, and Jerry Mac. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"desc": "Live music at Madiran The Wine Bar in Setauket: Al Marino, James Miceli, and Jerry Mac. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
 "src": "madiran",
 "tags": [
@@ -964,7 +945,7 @@
 "venue": "Madiran The Wine Bar",
 "addr": "209 Route 25A, East Setauket, NY 11733",
 "url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in East Setauket: The Jazz Loft Dispatch Series. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"desc": "Live music at Madiran The Wine Bar in Setauket: The Jazz Loft Dispatch Series. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
 "src": "madiran",
 "tags": [
@@ -1157,7 +1138,7 @@
 "venue": "Madiran The Wine Bar",
 "addr": "209 Route 25A, East Setauket, NY 11733",
 "url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in East Setauket: John Maurice Restrepo and Eduardo Withrington. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"desc": "Live music at Madiran The Wine Bar in Setauket: John Maurice Restrepo and Eduardo Withrington. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
 "src": "madiran",
 "tags": [
@@ -1401,7 +1382,7 @@
 "venue": "Madiran The Wine Bar",
 "addr": "209 Route 25A, East Setauket, NY 11733",
 "url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in East Setauket: Douglas Baldwin Jazz Trio. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"desc": "Live music at Madiran The Wine Bar in Setauket: Douglas Baldwin Jazz Trio. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
 "src": "madiran",
 "tags": [
