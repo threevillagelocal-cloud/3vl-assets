@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T13:00:17.704249+00:00",
+ "updated": "2026-11-08T16:00:17.383562+00:00",
  "specials": [
   {
    "id": "17913502878476863",
@@ -18,20 +18,20 @@
    "inset": "ig/p17913502878476863.jpg"
   },
   {
-   "id": "17985663533899935",
+   "id": "17896459920435270",
    "biz": "Madiran The Wine Bar",
    "ig": "madiranthewinebar_eastsetauket",
    "town": "East Setauket",
    "category": "Wine Bar",
    "member": false,
-   "title": "The Jazz Loft Live Music",
-   "when": "Thursday, Nov 12",
-   "desc": "The Jazz Loft returns to perform at the wine bar with Tom, Steve, and special guest.",
-   "expires": "2026-11-12",
-   "posted": "2026-11-07T16:49:44+0000",
-   "url": "https://www.instagram.com/p/DfcpfZzp7GO/",
+   "title": "Live Jazz & Bossa Night",
+   "when": "Wed, Nov. 11 · 7-9 PM",
+   "desc": "Live jazz and bossa tunes with Al Marino, James Miceli, and Jerry Mac at Madiran The Wine Bar.",
+   "expires": "2026-11-11",
+   "posted": "2026-11-08T13:22:51+0000",
+   "url": "https://www.instagram.com/p/Dfe2hy8isZq/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-   "inset": "ig/p17985663533899935.jpg"
+   "inset": "ig/p17896459920435270.jpg"
   },
   {
    "id": "18107031662636808",
@@ -116,20 +116,20 @@
    "inset": "ig/p17913502878476863.jpg"
   },
   {
-   "id": "17985663533899935",
+   "id": "17896459920435270",
    "biz": "Madiran The Wine Bar",
    "ig": "madiranthewinebar_eastsetauket",
    "town": "East Setauket",
    "category": "Wine Bar",
    "member": false,
-   "title": "The Jazz Loft Live Music",
-   "when": "Thursday, Nov 12",
-   "desc": "The Jazz Loft returns to perform at the wine bar with Tom, Steve, and special guest.",
-   "expires": "2026-11-12",
-   "posted": "2026-11-07T16:49:44+0000",
-   "url": "https://www.instagram.com/p/DfcpfZzp7GO/",
+   "title": "Live Jazz & Bossa Night",
+   "when": "Wed, Nov. 11 · 7-9 PM",
+   "desc": "Live jazz and bossa tunes with Al Marino, James Miceli, and Jerry Mac at Madiran The Wine Bar.",
+   "expires": "2026-11-11",
+   "posted": "2026-11-08T13:22:51+0000",
+   "url": "https://www.instagram.com/p/Dfe2hy8isZq/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-   "inset": "ig/p17985663533899935.jpg"
+   "inset": "ig/p17896459920435270.jpg"
   },
   {
    "id": "18107031662636808",
@@ -214,6 +214,22 @@
    "inset": "ig/p17913502878476863.jpg"
   },
   {
+   "id": "17896459920435270",
+   "biz": "Madiran The Wine Bar",
+   "ig": "madiranthewinebar_eastsetauket",
+   "town": "East Setauket",
+   "category": "Wine Bar",
+   "member": false,
+   "title": "Live Jazz & Bossa Night",
+   "when": "Wed, Nov. 11 · 7-9 PM",
+   "desc": "Live jazz and bossa tunes with Al Marino, James Miceli, and Jerry Mac at Madiran The Wine Bar.",
+   "expires": "2026-11-11",
+   "posted": "2026-11-08T13:22:51+0000",
+   "url": "https://www.instagram.com/p/Dfe2hy8isZq/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
+   "inset": "ig/p17896459920435270.jpg"
+  },
+  {
    "id": "17985663533899935",
    "biz": "Madiran The Wine Bar",
    "ig": "madiranthewinebar_eastsetauket",
@@ -228,22 +244,6 @@
    "url": "https://www.instagram.com/p/DfcpfZzp7GO/",
    "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
    "inset": "ig/p17985663533899935.jpg"
-  },
-  {
-   "id": "18113214434617494",
-   "biz": "Madiran The Wine Bar",
-   "ig": "madiranthewinebar_eastsetauket",
-   "town": "East Setauket",
-   "category": "Wine Bar",
-   "member": false,
-   "title": "Mahjong at the Wine Bar",
-   "when": "Tue, Nov. 17 · 6 PM",
-   "desc": "Join mahjong at Madiran The Wine Bar. Limited space available.",
-   "expires": "2026-11-17",
-   "posted": "2026-11-06T18:45:17+0000",
-   "url": "https://www.instagram.com/p/DfaR1wVp5I1/",
-   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-   "inset": "ig/p18113214434617494.jpg"
   },
   {
    "id": "18107031662636808",
@@ -404,22 +404,6 @@
    "url": "https://www.instagram.com/reel/DfSCbrSszOS/",
    "img": "",
    "inset": "ig/p17977611195151056.jpg"
-  },
-  {
-   "id": "18153094972530027",
-   "biz": "Pasta Pasta",
-   "ig": "pastapasta_portjeff",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Restaurant Week at Pasta Pasta",
-   "when": "Nov 1-8",
-   "desc": "Special prix fixe menu during Fall Restaurant Week. Call or book online for a reservation.",
-   "expires": "2026-11-08",
-   "posted": "2026-11-01T14:40:00+0000",
-   "url": "https://www.instagram.com/p/DfM9ynrypga/",
-   "img": "",
-   "inset": "ig/p18153094972530027.jpg"
   },
   {
    "id": "17870534457661542",

@@ -1,12 +1,4 @@
 {
-"18184814428420432": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-09T14:22:13+0000"
-},
 "18029668640860114": {
 "special": false,
 "title": "Witches & Warlocks Specialty Cocktails",
@@ -119,14 +111,6 @@
 "expires": "2026-10-10",
 "_ts": "2026-10-10T15:44:23+0000"
 },
-"18154536379460513": {
-"special": true,
-"title": "Witches & Warlocks Bar Crawl",
-"when": "Fri, Oct. 10 · 5 PM",
-"desc": "Join the bar crawl at PJ Lobster House with drinks and food. Tickets required.",
-"expires": "2026-10-10",
-"_ts": "2026-10-09T15:22:53+0000"
-},
 "18129103969837128": {
 "special": false,
 "title": "Danfords Hotel & Marina",
@@ -166,38 +150,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-09T19:00:47+0000"
-},
-"18641834701045814": {
-"special": true,
-"title": "Happy Hour & Live Music",
-"when": "Today (Fri, Oct 10) · 12-6 PM + 6 PM",
-"desc": "Happy hour noon to 6 PM, then live music from 6 PM at Castaways.",
-"expires": "2026-10-10",
-"_ts": "2026-10-09T15:01:19+0000"
-},
-"17893127859433356": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-09T13:04:31+0000"
-},
-"17868198207663464": {
-"special": true,
-"title": "Seasonal Sangrias",
-"when": "Long weekend",
-"desc": "Try Blood Orange & Pomegranate or Apple Pie seasonal sangrias this long weekend.",
-"expires": "2026-10-12",
-"_ts": "2026-10-09T14:31:51+0000"
-},
-"18393198076166609": {
-"special": true,
-"title": "ISSEI Mochi Gummies Now at Slurp Ramen",
-"when": "Limited time",
-"desc": "Try new fruity mochi gummies (mango, strawberry, yuzu, peach) - gluten free, plant based, no gelatin.",
-"expires": "2026-10-24",
-"_ts": "2026-10-09T15:38:17+0000"
 },
 "18437753002198828": {
 "special": false,
@@ -2998,5 +2950,25 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-08T01:55:14+0000"
+},
+"17896459920435270": {
+"special": true,
+"title": "Live Jazz & Bossa Night",
+"when": "Wed, Nov. 11 · 7-9 PM",
+"desc": "Live jazz and bossa tunes with Al Marino, James Miceli, and Jerry Mac at Madiran The Wine Bar.",
+"expires": "2026-11-11",
+"_ts": "2026-11-08T13:22:51+0000"
+},
+"18159442081517951": {
+"special": false,
+"_ts": "2026-11-08T13:25:41+0000"
+},
+"17952200559346954": {
+"special": false,
+"title": "National Cappuccino Day",
+"when": "Today only",
+"desc": "Celebrating with espresso, foam, and cinnamon. No specific offer or discount mentioned.",
+"expires": "2026-11-08",
+"_ts": "2026-11-08T15:49:45+0000"
 }
 }
