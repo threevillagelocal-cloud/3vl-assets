@@ -209,7 +209,7 @@ section[id^="tvp-"]{scroll-margin-top:90px}
 .tvp-row-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;max-width:1100px;margin:0 auto}
 .tvp-flip .tvp-txt{order:2}
 .tvp-row:nth-of-type(even){background:linear-gradient(180deg,#f3f7fd,#fff)}
-.tvp-txt h2{margin:0 0 12px!important;font-size:38px;line-height:1.1;color:var(--navy)}.tvp-txt>p{font-size:17px;line-height:1.6;color:var(--mut);margin:0 0 16px!important}
+.tvp-txt h2{margin:0 0 12px!important;font-size:38px;line-height:1.1;color:var(--navy);text-wrap:balance}.tvp-txt>p{font-size:17px;line-height:1.6;color:var(--mut);margin:0 0 16px!important}
 .tvp-ul{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:9px}.tvp-ul li{position:relative;padding-left:30px;font-size:15.5px;color:var(--navy);font-weight:600}
 .tvp-ul li:before{content:"✓";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:#e7f0ff;color:var(--blue);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
 .tvp-art{position:relative;display:flex;justify-content:center}
