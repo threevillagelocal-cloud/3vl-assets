@@ -21,26 +21,33 @@ AI = "/ai-assistant"
 SH = "https://threevillagelocal-cloud.github.io/3vl-share/site/"
 APP = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@1328a06c9ca8ab841e46fd8b85170aaef3bd1e63/site/app/"
 
-HERO = '''<section class="tvs-hero tvp-hero">
-  <div class="tvw-hvis tvp-vis"><nav class="tvp-menu" aria-label="Our services">
-    <p class="tvp-menu-k">The business essentials</p>
-      <a href="#tvp-seen"><span>&#11088;</span><div><b>Memberships</b><i>Top spots on Three Village Local</i></div><em>&rarr;</em></a>
-      <a href="#tvp-social"><span>&#128227;</span><div><b>Social media promotion</b><i>Posts and reels seen all over town</i></div><em>&rarr;</em></a>
-      <a href="#tvp-app"><span>&#128241;</span><div><b>Mobile app</b><i>Your specials on local phones</i></div><em>&rarr;</em></a>
-      <a href="#tvp-web"><span>&#128187;</span><div><b>AI-Ready websites</b><i>Built to be found by Google and AI</i></div><em>&rarr;</em></a>
-      <a href="#tvp-bot" class="tvp-m-hot"><span>&#129302;</span><div><b>Digital Front Desk</b><i>AI assistant that captures every lead</i></div><em>&rarr;</em></a>
-      <a href="#tvp-video"><span>&#127909;</span><div><b>Promo video</b><i>Short videos that sell</i></div><em>&rarr;</em></a>
-      <a href="#tvp-email"><span>&#128231;</span><div><b>Email and articles</b><i>Stories the community reads</i></div><em>&rarr;</em></a>
-    <p class="tvp-menu-f">Pick one, or put them together. They all work as one.</p>
-  </nav></div>
-  <div class="tvs-hin tvs-up">
-    <p class="tvs-kick"><span class="tvs-dot"></span>Our mission</p>
-    <h1>We connect local businesses<br><span>with the community.</span></h1>
-    <p class="tvs-sub">One local team and one connected platform: our website, mobile app, social media and email, plus AI websites, AI assistants and video. Every piece works together to bring neighbors to your door.</p>
-    <div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="#tvp-seen">See what we offer</a><a class="tvs-btn tvs-ghost" href="#tvs-book">Send us a message</a></div>
-    <ul class="tvs-trust"><li><b>45,000+</b>website page visits a month</li><li><b>100,000+</b>social views a month</li><li><b>One</b>local team</li></ul>
+HERO = """<section class="tvp-top" id="tvp-top">
+  <div class="tvp-top-in tvs-up">
+    <p class="tvs-kick"><span class="tvs-dot"></span>Our services</p>
+    <h1>You know us for promoting local businesses.<br><span>That&#39;s just the beginning.</span></h1>
+    <p class="tvp-lede">Every day, our <b>website</b>, free <b>mobile app</b> and <b>social media</b> put local businesses in front of the whole Three Village community. We also offer the modern tools that help a business get seen, get chosen and grow, all from one local team.</p>
+    <ul class="tvs-trust tvp-trust"><li><b>45,000+</b>website page visits a month</li><li><b>100,000+</b>social views a month</li><li><b>One</b>local team</li></ul>
   </div>
-</section>'''
+  <div class="tvp-glance" aria-label="Everything we offer">
+    <div class="tvp-gcol tvs-up">
+      <div class="tvp-gh"><p>On Three Village Local</p><h2>Get promoted where locals look</h2></div>
+      <a href="#tvp-seen"><span>&#11088;</span><div><b>Featured &amp; VIP memberships</b><i>Top spots in search, homepage features and banners</i></div><em>&rarr;</em></a>
+      <a href="#tvp-social"><span>&#128227;</span><div><b>Social media promotion</b><i>Posts and reels shared to 100,000+ local views a month</i></div><em>&rarr;</em></a>
+      <a href="#tvp-app"><span>&#128241;</span><div><b>Mobile app</b><i>Your specials and events on local phones, plus push alerts</i></div><em>&rarr;</em></a>
+      <a href="#tvp-seen"><span>&#128197;</span><div><b>Events &amp; specials</b><i>On our calendar, homepage and weekly picks</i></div><em>&rarr;</em></a>
+      <a href="#tvp-email"><span>&#128231;</span><div><b>Weekly email &amp; articles</b><i>Spotlights and stories neighbors actually read</i></div><em>&rarr;</em></a>
+    </div>
+    <div class="tvp-gcol tvp-gdark tvs-up">
+      <div class="tvp-gh"><p>Tools to get seen and grow</p><h2>Done for you by our local team</h2></div>
+      <a href="#tvp-web"><span>&#128187;</span><div><b>AI-optimized websites</b><i>Designed, built and hosted to be found on Google and AI</i></div><em>&rarr;</em></a>
+      <a href="#tvp-bot"><span>&#129302;</span><div><b>AI chatbot: Digital Front Desk</b><i>Answers customers 24/7 and texts you every lead</i></div><em>&rarr;</em></a>
+      <a href="#tvp-ai"><span>&#10024;</span><div><b>AI search optimization</b><i>Get recommended by ChatGPT, Gemini and Google AI</i></div><em>&rarr;</em></a>
+      <a href="#tvp-social"><span>&#128172;</span><div><b>Social media marketing</b><i>Scroll-stopping content for your own Facebook and Instagram</i></div><em>&rarr;</em></a>
+      <a href="#tvp-video"><span>&#127909;</span><div><b>Promo video</b><i>Short reels that show off your business</i></div><em>&rarr;</em></a>
+    </div>
+  </div>
+  <div class="tvp-gfoot tvs-up"><p>Pick one, or put them together. They all work as one.</p><div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="#tvs-book">Get a free plan</a><a class="tvs-btn tvs-ghost" href="#tvp-seen">Explore each service</a></div></div>
+</section>"""
 
 PATHS = '''<section class="tvs-sec tvp-paths" id="tvp-paths">
   <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Where are you today?</p><h2>Two ways we help. Both start with you.</h2></div>
@@ -247,6 +254,28 @@ section[id^="tvp-"]{scroll-margin-top:90px}
 @keyframes tvpFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @keyframes tvpPush{0%,10%{opacity:0;transform:translateY(-10px)}18%,82%{opacity:1;transform:none}92%,100%{opacity:0;transform:translateY(-10px)}}
 @keyframes tvpIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.tvp-top{margin:12px 0 0;padding:56px 40px 46px;border-radius:28px;background:radial-gradient(700px 360px at 85% -10%,rgba(77,163,255,.22),transparent 70%),radial-gradient(520px 300px at 0% 110%,rgba(45,240,200,.10),transparent 70%),linear-gradient(180deg,#f6f9ff,#fff 70%)}
+.tvp-top-in{max-width:860px;margin:0 auto;text-align:center}
+.tvp-top h1{font-size:54px;line-height:1.05;font-weight:800;margin:0 0 18px!important;text-wrap:balance}
+.tvp-top h1 span{background:linear-gradient(90deg,var(--blue),var(--blue2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tvp-lede{font-size:20px;line-height:1.6;color:#3c4a5e;max-width:760px;margin:0 auto 24px!important}.tvp-lede b{color:var(--navy)}
+.tvp-trust{justify-content:center;margin:0 0 38px!important}
+.tvp-glance{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1080px;margin:0 auto}
+.tvp-gcol{box-sizing:border-box;padding:24px 20px 18px;border-radius:26px;background:#fff;border:1px solid #dfe8f6;box-shadow:0 30px 60px -36px rgba(9,30,66,.45);text-align:left}
+.tvp-gh{padding:0 8px 12px;margin-bottom:6px;border-bottom:1px solid #e6edf6}
+.tvp-gh p{margin:0 0 4px!important;font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.tvp-gh h2{font-size:23px!important;line-height:1.2;color:var(--navy)}
+.tvp-gcol a{display:flex;align-items:center;gap:14px;padding:11px 10px;border-radius:16px;text-decoration:none!important;color:var(--navy)!important;transition:background .2s,transform .2s}
+.tvp-gcol a:hover{background:#eef4ff;transform:translateX(4px)}
+.tvp-gcol a span{flex:none;width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;background:#e9f1ff}
+.tvp-gcol a div{flex:1;min-width:0}.tvp-gcol b{display:block;font-size:17px;line-height:1.25}.tvp-gcol i{display:block;font-style:normal;font-size:14px;color:var(--mut);line-height:1.4;margin-top:2px}
+.tvp-gcol em{font-style:normal;font-weight:800;color:#9db3d3;transition:color .2s,transform .2s}.tvp-gcol a:hover em{color:var(--blue);transform:translateX(3px)}
+.tvp-gdark{background:radial-gradient(520px 260px at 90% 0%,rgba(77,163,255,.32),transparent 70%),linear-gradient(155deg,#0b1f4b,#173f8f);border:0;box-shadow:0 34px 70px -34px rgba(9,30,66,.7)}
+.tvp-gdark .tvp-gh{border-color:rgba(255,255,255,.14)}.tvp-gdark .tvp-gh p{color:#f2c94c}.tvp-gdark .tvp-gh h2{color:#fff!important}
+.tvp-gdark a{color:#fff!important}.tvp-gdark a:hover{background:rgba(255,255,255,.08)}.tvp-gdark a span{background:rgba(255,255,255,.12)}.tvp-gdark i{color:#bfd4f2}.tvp-gdark em{color:#7fa6dc}.tvp-gdark a:hover em{color:#f2c94c}
+.tvp-gfoot{text-align:center;margin-top:28px}.tvp-gfoot p{margin:0 0 14px!important;font-weight:800;color:var(--navy);font-size:17px}.tvp-gfoot .tvs-ctas{justify-content:center}
+@media (max-width:900px){.tvp-top{padding:34px 16px 30px;border-radius:22px}.tvp-top h1{font-size:36px}.tvp-lede{font-size:17.5px}.tvp-glance{grid-template-columns:1fr;gap:16px}.tvp-gcol{padding:18px 12px 12px}.tvp-gh h2{font-size:20px!important}.tvp-gcol b{font-size:16px}}
+@media (max-width:420px){.tvp-top h1{font-size:31px}.tvp-trust{gap:16px!important}.tvp-gcol a{gap:11px;padding:10px 6px}.tvp-gcol a span{width:40px;height:40px;font-size:19px}}
 .tvs-sticky{right:auto!important;left:20px!important}
 .tva-pop{width:360px!important}.tva-pop .tva-box{height:470px!important;max-height:calc(100vh - 130px)!important}
 @media (max-width:900px){.tvs-hero.tvp-hero{display:flex;flex-direction:column}.tvp-vis{order:2;position:relative!important;width:auto!important;padding:22px 14px!important}.tvp-menu{padding:12px}.tvp-orbit{width:300px;height:300px}.tvp-ring i{width:66px;height:66px;margin:-33px;font-size:22px;border-radius:18px}.tvp-ring i em{font-size:10px}
