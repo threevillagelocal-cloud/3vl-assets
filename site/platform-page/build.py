@@ -71,6 +71,7 @@ FOMO = '''<section class="tvs-sec tvp-fomo" id="tvp-ai">
     <div class="tvp-vs"><div><b>Without AI</b><span>Invisible to AI answers</span><span>Questions wait until morning</span><span>Leads slip to competitors</span></div>
       <div class="tvp-vs-on"><b>With Three Village Local AI</b><span>Built to be noticed and recommended</span><span>Answers in seconds, 24/7</span><span>Every lead sent straight to you</span></div></div>
     <div class="tvp-ctas tvp-ctas-c"><a class="tvs-btn tvw-btn-w" href="''' + AI + '''">See the AI overhaul</a><a class="tvs-btn tvw-btn-o" href="#tvs-book">Get my free plan</a></div>
+    <a class="tvp-aicheck" href="/free-ai-report"><span>&#128269;</span><div><b>Does ChatGPT recommend your business?</b><i>Get a free AI visibility check. Takes 1 minute.</i></div><em>Check free &rarr;</em></a>
   </div>
 </section>'''
 
@@ -193,7 +194,17 @@ CTA = '''<section class="tvw-cta3 tvs-up"><div class="tvw-cta3-in"><p class="tvw
 <div class="tvw-cta-btns"><a class="tvs-btn tvw-btn-w" href="#tvs-book">Send us a message</a><a class="tvs-btn tvw-btn-o" href="''' + AI + '''">Try the Digital Front Desk</a></div></div></section>'''
 
 i, j = sec(A.HTML, "tvs-sec tvs-book")
-BOOK = A.HTML[i:j].replace("mailto:hello@threevillagelocal.com?subject=AI%20for%20my%20website", "mailto:hello@threevillagelocal.com?subject=Our%20services")
+BOOK0 = A.HTML[i:j].replace("mailto:hello@threevillagelocal.com?subject=AI%20for%20my%20website", "mailto:hello@threevillagelocal.com?subject=Our%20services")
+BOOK = BOOK0.replace('<p class="tvs-eyebrow">Let\'s talk</p>', '<p class="tvs-eyebrow">Your free plan</p>').replace(
+    "<h2>Tell us about your business.</h2>", "<h2>Get your free plan.</h2>").replace(
+    "<p>Send us a quick message and we will reply by email, usually within one business day. Everything can happen by email or text. If you would rather talk it through, we are happy to set up a call.</p>",
+    """<p>Tell us your name, business and email. Within one business day you&#39;ll get a free, personalized plan by email:</p>
+    <ul class="tvp-get"><li>How you show up on Google and AI tools today</li><li>The 3 things we&#39;d do first for your business</li><li>Clear pricing, no pressure, no contract</li></ul>
+    <div class="tvp-proof"><div class="tvp-proof-h"><b>5.0</b><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span><em>on Google</em></div>
+      <blockquote>&ldquo;A great community-based website that eases the process of finding local businesses for the services you need.&rdquo;<cite>Amy C. Raupp, Raupp Law</cite></blockquote>
+      <blockquote>&ldquo;A one stop shop to plan your weekend!&rdquo;<cite>Stony Brook Harbor Kayak &amp; Paddleboard Rentals</cite></blockquote>
+      <blockquote>&ldquo;Amazing resource! Thank you for all you do to support the 3V community.&rdquo;<cite>Maryann B., neighbor</cite></blockquote></div>
+    <p class="tvp-alt">Rather start smaller? <a href="/free-ai-report">See if ChatGPT recommends your business &rarr; free AI check</a></p>""")
 HTML = ('<div class="tvs" id="tvs">\n\n' + HERO + "\n\n" + FOMO + "\n\n" + ROWS + "\n\n" + LAUNCH + "\n\n" + VS + "\n\n" + CTA + "\n\n" + BOOK +
         '\n\n<a class="tvs-sticky" href="#tvs-book">Get my free plan</a>\n</div>')
 assert "\\" not in HTML
@@ -362,6 +373,17 @@ section[id^="tvp-"]{scroll-margin-top:90px}
 .tvp-ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.tvp-ctas-c{justify-content:center;margin-top:26px}
 .tvp-ai{max-width:1000px;margin:-14px auto 34px;text-align:center}.tvp-ai>p{margin:0 0 14px!important;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
 .tvp-ai .tvw-logo{box-shadow:0 8px 20px -12px rgba(9,30,66,.35)}
+.tvp-get{list-style:none;margin:0 0 18px!important;padding:0;display:grid;gap:8px}.tvp-get li{position:relative;padding-left:30px;font-weight:700;color:var(--navy);font-size:16px}
+.tvp-get li:before{content:"✓";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;background:#e3f7ee;color:#0d7760;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.tvp-proof{margin:6px 0 16px;padding:16px 18px;border-radius:18px;background:#fff;border:1px solid #e3e9f1;box-shadow:0 16px 34px -24px rgba(9,30,66,.35)}
+.tvp-proof-h{display:flex;align-items:center;gap:8px;margin-bottom:8px}.tvp-proof-h b{font-size:22px;color:var(--navy)}.tvp-proof-h span{color:#f5a623;letter-spacing:1px}.tvp-proof-h em{font-style:normal;font-size:13px;font-weight:700;color:var(--mut)}
+.tvp-proof blockquote{margin:10px 0 0!important;padding:0 0 0 12px!important;border-left:3px solid #ffc53d;font-size:14.5px;line-height:1.5;color:#3c4a5e;font-style:normal}.tvp-proof cite{display:block;margin-top:3px;font-style:normal;font-size:12.5px;font-weight:800;color:var(--navy)}
+.tvp-alt{font-size:14.5px!important;color:var(--mut)}.tvp-alt a{font-weight:800;color:var(--blue)!important}
+.tvp-aicheck{display:flex;align-items:center;gap:14px;max-width:640px;margin:22px auto 0;padding:14px 18px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);text-decoration:none!important;color:#fff!important;text-align:left;transition:background .2s}
+.tvp-aicheck:hover{background:rgba(255,255,255,.14)}.tvp-aicheck span{font-size:26px}.tvp-aicheck div{flex:1;min-width:0}.tvp-aicheck b{display:block;font-size:16.5px}.tvp-aicheck i{display:block;font-style:normal;font-size:13.5px;color:#bfd4f2}.tvp-aicheck em{font-style:normal;font-weight:800;color:#f2c94c;white-space:nowrap}
+details.tvp-more{margin:4px 0 12px;border:1px dashed #cdd8e6;border-radius:14px;padding:10px 14px;background:#f8fafd}details.tvp-more summary{cursor:pointer;font-weight:800;color:var(--blue);font-size:15px}details.tvp-more[open] summary{margin-bottom:10px}
+@media (max-width:520px){.tvp-aicheck{flex-wrap:wrap}.tvp-aicheck em{width:100%}}
+@media (max-width:900px){.tvs-book{display:flex!important;flex-direction:column}.tvs-book .tvs-bside{display:contents}.tvs-book .tvs-bside>*{order:1}.tvs-book #tvs-form-slot{order:2;margin:6px 0 18px;width:100%;max-width:none;align-self:stretch;box-sizing:border-box}.tvs-book .tvp-proof,.tvs-book .tvp-alt,.tvs-book .tvs-direct{order:3}}
 .tvs-sticky{right:auto!important;left:20px!important}
 .tva-pop{width:360px!important}.tva-pop .tva-box{height:470px!important;max-height:calc(100vh - 130px)!important}
 @media (max-width:900px){.tvs-hero.tvp-hero{display:flex;flex-direction:column}.tvp-vis{order:2;position:relative!important;width:auto!important;padding:22px 14px!important}.tvp-menu{padding:12px}.tvp-orbit{width:300px;height:300px}.tvp-ring i{width:66px;height:66px;margin:-33px;font-size:22px;border-radius:18px}.tvp-ring i em{font-size:10px}
@@ -376,6 +398,17 @@ function go(){if(on)return;on=true;v.src=v.getAttribute('data-src');var p=v.play
 if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(!on){go();}else if(v.paused){v.play().catch(function(){});}}else if(on){v.pause();}});},{rootMargin:'250px 0px'}).observe(v);}else{go();}
 function snd(){go();v.muted=!v.muted;v.play().catch(function(){});if(b){b.innerHTML=v.muted?'&#128263; Tap for sound':'&#128266; Sound on';b.setAttribute('aria-label',v.muted?'Turn sound on':'Turn sound off');}if(window.gtag)gtag('event','promo_video_sound',{on:!v.muted});}
 if(b)b.addEventListener('click',snd);v.addEventListener('click',snd);})();'''
+VJS2 = r''';(function(){
+function slotTxt(a){var sec=a.closest('section');return sec&&sec.id?sec.id:(a.classList.contains('tvs-sticky')?'sticky':'other');}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href="#tvs-book"],a[href="/free-ai-report"]');if(!a||!window.gtag)return;gtag('event',a.getAttribute('href')==='#tvs-book'?'services_cta':'services_aicheck',{label:(a.textContent||'').trim().slice(0,40),section:slotTxt(a)});},true);
+var bk=document.getElementById('tvs-book'),st=document.querySelector('.tvs-sticky');if(bk&&st&&'IntersectionObserver' in window){new IntersectionObserver(function(es){st.style.opacity=es[0].isIntersecting?'0':'';st.style.pointerEvents=es[0].isIntersecting?'none':'';}).observe(bk);}
+var tries=0;(function arrange(){var f=document.querySelector('#tvs-form-slot form');if(!f){if(++tries<40)setTimeout(arrange,250);return;}
+ if(!f.querySelector('details.tvp-more')){var em=f.querySelector('[name=inquiry_email]');var g0=em&&em.closest('.form-group');var d=document.createElement('details');d.className='tvp-more';d.innerHTML='<summary>Tell us more (optional)</summary>';
+  ['phone','bundle','member_tier','comments'].forEach(function(n){var el=f.querySelector('[name='+n+']');var g=el&&el.closest('.form-group');if(g)d.appendChild(g);});
+  if(g0&&g0.parentNode)g0.parentNode.insertBefore(d,g0.nextSibling);}
+ var started=false;f.addEventListener('focusin',function(){if(!started&&window.gtag){started=true;gtag('event','services_form_start');}});
+ f.addEventListener('submit',function(){if(window.gtag)gtag('event','services_form_submit',{bundle:(f.querySelector('[name=bundle]')||{}).value||''});},true);
+})();})();'''
 _ard = A.rd
 
 
@@ -386,8 +419,9 @@ def rd(f):
     if f == "page.css":
         return s + CSS
     if f == "page.js":
-        s = s + '<script>' + VJS + '</script>'
-        return s.replace('widget.js" data-demo="1"', 'widget.js" data-tease="Hi! I am live. Questions about growing your business? Ask me."').replace("var pick='ai_chat'", "var pick='not_sure'")
+        s = s.replace("Send my message", "Get My Free Plan").replace("s.value='web_consult';var g=s.closest('.form-group')||s.parentNode;g.style.display='none';", "if(!s.value||s.value==='web_consult')s.value='not_sure';")
+        s = s + '<script>' + VJS + VJS2 + '</script>'
+        return s.replace('widget.js" data-demo="1"', 'widget.js" data-tease="Want a quick free plan? Tell me your business name and I will point you to the right fit."').replace("var pick='ai_chat'", "var pick='not_sure'")
     return s
 
 
