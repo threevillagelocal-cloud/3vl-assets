@@ -406,7 +406,7 @@ def madiran():
         title = who if re.search(r"(?i)show|series|jazz loft", who) else "Live Music: " + who
         out.append(ev("madiran", "%s-%s" % (d.strftime("%Y%m%d"), re.sub(r"[^a-z0-9]+", "-", who.lower())[:40]), title, start,
                       dt.datetime(yr, mo, day, h1), "Madiran The Wine Bar", "209 Route 25A, East Setauket, NY 11733", base,
-                      "Live music at Madiran The Wine Bar in East Setauket: %s. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table." % who,
+                      "Live music at Madiran The Wine Bar in Setauket: %s. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table." % who,
                       MADIRAN_IMG, False))
     return out
 

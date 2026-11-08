@@ -82,7 +82,7 @@ name = "madiran-ig-%s.jpg" % monday
 img.save(os.path.join(out, name), quality=94, subsampling=0)
 
 body = "\n".join(lines)
-cap = ("🍷 Live music & wine this week at Madiran The Wine Bar in East Setauket\n\n%s\n\n"
+cap = ("🍷 Live music & wine this week at Madiran The Wine Bar in Setauket\n\n%s\n\n"
        "Grab a glass, grab a seat, and support live music right here in Three Village. Call 631-675-2778 to reserve.\n\n{cta}\n\n"
        "#threevillagelocal #yourneighborsinbusiness #livemusic #jazz #winebar #setauket #eastsetauket #stonybrook #longisland #shoplocal") % body
 open(os.path.join(out, "caption.txt"), "w", encoding="utf-8").write(cap.replace("{cta}", "Every night is on our events calendar: link in bio 🔗"))
