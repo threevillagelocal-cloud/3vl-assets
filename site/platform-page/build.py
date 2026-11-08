@@ -66,7 +66,7 @@ FOMO = '''<section class="tvs-sec tvp-fomo" id="tvp-ai">
     <p>Nearly half of people now use AI tools like ChatGPT and Google&#39;s AI to find local businesses (BrightLocal, 2026). AI recommends the businesses it can read, understand and trust. If yours isn&#39;t one of them, those customers go to whoever is.</p>
     <div class="tvp-vs"><div><b>Without AI</b><span>Invisible to AI answers</span><span>Questions wait until morning</span><span>Leads slip to competitors</span></div>
       <div class="tvp-vs-on"><b>With Three Village Local AI</b><span>Built to be noticed and recommended</span><span>Answers in seconds, 24/7</span><span>Every lead sent straight to you</span></div></div>
-    <a class="tvs-btn tvw-btn-w" href="''' + AI + '''">See the AI overhaul</a>
+    <div class="tvp-ctas tvp-ctas-c"><a class="tvs-btn tvw-btn-w" href="''' + AI + '''">See the AI overhaul</a><a class="tvs-btn tvw-btn-o" href="#tvs-book">Get my free plan</a></div>
   </div>
 </section>'''
 
@@ -75,10 +75,10 @@ def row(i, eyebrow, title, text, bullets, cta, href, visual, flip=False, extra="
     li = "".join("<li>%s</li>" % b for b in bullets)
     return '''<section class="tvs-sec tvp-row%s" id="tvp-%s">
   <div class="tvp-row-in">
-    <div class="tvp-txt tvs-up"><p class="tvs-eyebrow">%s</p><h2>%s</h2><p>%s</p><ul class="tvp-ul">%s</ul><a class="tvs-btn tvs-blue" href="%s">%s</a>%s</div>
+    <div class="tvp-txt tvs-up"><p class="tvs-eyebrow">%s</p><h2>%s</h2><p>%s</p><ul class="tvp-ul">%s</ul><div class="tvp-ctas"><a class="tvs-btn tvs-blue" href="%s">%s</a>%s</div>%s</div>
     <div class="tvp-art tvs-up">%s</div>
   </div>
-</section>''' % (" tvp-flip" if flip else "", i, eyebrow, title, text, li, href, cta, extra, visual)
+</section>''' % (" tvp-flip" if flip else "", i, eyebrow, title, text, li, href, cta, ('<a class="tvs-btn tvs-ghost" href="#tvs-book">Get my free plan</a>' if href != "#tvs-book" else ""), extra, visual)
 
 
 V_STAGE = '''<div class="tvp-stage"><div class="tvp-sq"><span>&#128269;</span>plumber near Setauket<em>12 results</em></div>
@@ -163,6 +163,7 @@ LAUNCH = '''<section class="tvs-sec tvp-launch" id="tvp-launch">
     <div><b>&#9889; Done for you</b>You run your business. We handle the tech, the content and the promotion.</div>
     <div><b>&#10024; VIP AI service</b>Leading-edge AI, set up and tuned by a real local team, never a faceless app.</div>
   </div>
+  <div class="tvp-ctas tvp-ctas-c tvs-up"><a class="tvs-btn tvs-blue" href="#tvs-book">Build my free plan</a></div>
 </section>'''
 
 VS = '''<section class="tvs-sec tvs-vs tvp-cmp">
@@ -180,6 +181,7 @@ VS = '''<section class="tvs-sec tvs-vs tvp-cmp">
     <div class="tvs-tr" role="row"><span role="cell">Month to month, no long contract</span><span role="cell" class="tvs-n">Varies</span><span role="cell" class="tvs-y">&#10003;</span></div>
     <div class="tvs-tr" role="row"><span role="cell">A local team that lives in your community</span><span role="cell" class="tvs-n">&mdash;</span><span role="cell" class="tvs-y">&#10003;</span></div>
   </div>
+  <div class="tvp-ctas tvp-ctas-c tvs-up"><a class="tvs-btn tvs-blue" href="#tvs-book">Get my free plan</a></div>
 </section>'''
 
 CTA = '''<section class="tvw-cta3 tvs-up"><div class="tvw-cta3-in"><p class="tvw-cta3-k">Your competition isn&#39;t waiting</p><h2>Let&#39;s build your plan.</h2>
@@ -189,7 +191,7 @@ CTA = '''<section class="tvw-cta3 tvs-up"><div class="tvw-cta3-in"><p class="tvw
 i, j = sec(A.HTML, "tvs-sec tvs-book")
 BOOK = A.HTML[i:j].replace("mailto:hello@threevillagelocal.com?subject=AI%20for%20my%20website", "mailto:hello@threevillagelocal.com?subject=Our%20services")
 HTML = ('<div class="tvs" id="tvs">\n\n' + HERO + "\n\n" + FOMO + "\n\n" + ROWS + "\n\n" + LAUNCH + "\n\n" + VS + "\n\n" + CTA + "\n\n" + BOOK +
-        '\n\n<a class="tvs-sticky" href="#tvs-book">Send us a message</a>\n</div>')
+        '\n\n<a class="tvs-sticky" href="#tvs-book">Get my free plan</a>\n</div>')
 assert "\\" not in HTML
 
 CSS = '''
@@ -353,6 +355,7 @@ section[id^="tvp-"]{scroll-margin-top:90px}
 .tvp-fan2:hover img:nth-child(1){transform:rotate(11deg) translateX(-16px)}.tvp-fan2:hover img:nth-child(3){transform:rotate(-11deg) translateX(16px)}
 @media (max-width:900px){.tvp-soc .tvp-fan{height:200px!important}}
 @media (max-width:520px){.tvp-soc .tvp-fan{height:150px!important}.tvp-fan2 img:nth-child(2){top:16px}}
+.tvp-ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.tvp-ctas-c{justify-content:center;margin-top:26px}
 .tvs-sticky{right:auto!important;left:20px!important}
 .tva-pop{width:360px!important}.tva-pop .tva-box{height:470px!important;max-height:calc(100vh - 130px)!important}
 @media (max-width:900px){.tvs-hero.tvp-hero{display:flex;flex-direction:column}.tvp-vis{order:2;position:relative!important;width:auto!important;padding:22px 14px!important}.tvp-menu{padding:12px}.tvp-orbit{width:300px;height:300px}.tvp-ring i{width:66px;height:66px;margin:-33px;font-size:22px;border-radius:18px}.tvp-ring i em{font-size:10px}
