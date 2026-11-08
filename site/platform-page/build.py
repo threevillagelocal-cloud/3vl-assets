@@ -11,7 +11,7 @@ spec.loader.exec_module(A)
 D, sec = A.D, A.sec
 
 D.NAME = "3VL Page Platform" if D.LIVE else "3VL Page Platform Preview"
-D.SLUG = "our-services" if D.LIVE else "preview-our-services"
+D.SLUG = "services" if D.LIVE else "preview-our-services"
 D.TITLE = "Our Services: Local Marketing, AI Websites, AI Assistants and Video | Three Village Local"
 D.DESC = ("Three Village Local connects local businesses with the community: our website, mobile app, social media and email, "
           "plus AI websites, AI assistants, AI optimization and video. Launch a new business or give yours an AI overhaul.")
