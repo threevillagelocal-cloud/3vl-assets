@@ -1,24 +1,4 @@
 {
-"18096792566399406": {
-"special": false,
-"_ts": "2026-10-09T05:03:18+0000"
-},
-"18157262452515195": {
-"special": true,
-"title": "Happy Hour at Nantuckets",
-"when": "Ongoing",
-"desc": "Grab drinks and food during happy hour at this Port Jefferson seafood restaurant.",
-"expires": "2026-10-23",
-"_ts": "2026-10-09T11:03:29+0000"
-},
-"17887275831653267": {
-"special": true,
-"title": "Happy Hour at The Steam Room",
-"when": "Recurring (time not specified)",
-"desc": "Enjoy $20 Corona buckets, $5 margaritas and tropical drinks like Piña Colada, Mai Tai, Strawberry Daiquiri and Bahama Mama.",
-"expires": "2026-10-23",
-"_ts": "2026-10-09T10:02:43+0000"
-},
 "18184814428420432": {
 "special": false,
 "title": "",
@@ -3006,5 +2986,25 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-07T22:58:42+0000"
+},
+"18017290316965592": {
+"special": false,
+"_ts": "2026-11-08T12:27:57+0000"
+},
+"17917230891500606": {
+"special": false,
+"_ts": "2026-11-08T12:26:11+0000"
+},
+"17991456147068223": {
+"special": false,
+"_ts": "2026-11-08T12:25:21+0000"
+},
+"18028301843925626": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-08T01:55:14+0000"
 }
 }
