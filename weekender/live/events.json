@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-08T20:05:28.318744+00:00",
+"updated": "2026-11-08T21:58:02.595447+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
-"Emma S. Clark Library": 258,
+"Village of Port Jefferson": 197,
+"Emma S. Clark Library": 256,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 46,
 "Ward Melville Heritage Org": 2,
@@ -315,23 +315,6 @@
 "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-484",
 "pu": "",
 "rank": 4
-},
-{
-"id": "emmaclark-harvest-gratitude-meditation-61301",
-"title": "Harvest Gratitude Meditation",
-"start": "2026-11-08T14:00:00",
-"end": "2026-11-08T15:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/harvest-gratitude-meditation-61301",
-"desc": "Yoga & meditation instructor Amy Morton will lead a guided gratitude meditation in the spirit of Thanksgiving. The session will close with a soothing sound bowl experience. Chairs will be provided or you can bring a mat and meditate lying down.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/9791.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/harvest-gratitude-meditation"
 },
 {
 "id": "cur-blotto",
@@ -1391,6 +1374,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
+},
+{
+"id": "portjeff-1100",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-15T09:00:00",
+"end": "2026-11-15T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
 },
 {
 "id": "sweetbriar-6acbd8fb9083cf68d32902a2",
