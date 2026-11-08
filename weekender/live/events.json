@@ -1,18 +1,18 @@
 {
-"updated": "2026-11-07T22:00:45.324497+00:00",
+"updated": "2026-11-08T00:01:20.384082+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 199,
-"Emma S. Clark Library": 256,
+"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Emma S. Clark Library": 258,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 46,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 6,
 "Staller Center for the Arts": 138,
-"Theatre Three": 71,
+"Theatre Three": 70,
 "Gallery North": 19,
 "Reboli Center": 18,
 "Sweetbriar Nature Center": 33,
@@ -208,64 +208,6 @@
 "pu": ""
 },
 {
-"id": "portjeff-1151",
-"title": "Caleb Brewster Escape 4K run",
-"start": "2026-11-07T00:00:00",
-"end": "2026-11-07T00:00:00",
-"allday": true,
-"venue": "Strong's Park",
-"addr": "Strong's Park - Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1151",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "social-18037033628902576",
-"title": "FREE Saturday Workout Classes",
-"start": "2026-11-07T06:00:00",
-"end": "2026-11-07T06:00:00",
-"allday": false,
-"venue": "Real Deal Fitness",
-"addr": "12 Technology Dr, Setauket, NY 11733",
-"url": "https://www.instagram.com/reel/DfU5NvSPfpW/",
-"desc": "Free workout classes with Real Deal Coaches at 6am, 7am, 8am, and 9am. Good music, good people, and hard work. All are welcome to bring friends.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18037033628902576.jpg",
-"src": "social",
-"tags": [
-"free",
-"music"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "gallerynorth-71315",
-"title": "Paper Quilling a Pumpkin w/Carol McMahon",
-"start": "2026-11-07T15:00:00",
-"end": "2026-11-07T17:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/products/11-07",
-"desc": "Learn the art of paper quilling with local artist, Carol McMahon. In this workshop, participants will use a slotted tool to learn how to roll and shape paper. The shapes formed will be placed on a wooden pumpkin to create an ornament.",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71315/v1792688015999/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-gala",
 "title": "The Long Island Museum's Winter Gala",
 "start": "2026-11-07T18:30",
@@ -350,25 +292,6 @@
 "page": "https://www.threevillagelocal.com/events/stony-brook-symphony-orchestra-924",
 "pu": "",
 "rank": 6
-},
-{
-"id": "sweetbriar-6adca1060470811e49a6c446",
-"title": "Comedy Fundraiser",
-"start": "2026-11-07T20:00:00",
-"end": "2026-11-07T22:00:00",
-"allday": false,
-"venue": "Sweetbriar Nature Center - ECSS",
-"addr": "62 Eckernkamp Drive, SMITHTOWN 11787",
-"url": "https://www.sweetbriarnc.org/new-events/2026/11/7/comedy-fundraiser",
-"desc": "Animal House Comedy Show Saturday 11/7 $25.00 At the Barn 8pm Add to cart #block-yui_3_17_2_1_1792843603812_36946 { --opacity: 100%; --translate-x: 0px; --translate-y: 0px; --rotation: 0deg; --scale-x: 100%; --scale-y: 100%; --skew-x: 0deg; --skew-y: 0deg; --o",
-"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1792844289621-WW2P0PQ302VB3VM92YUW/unsplash-image-z2AvphP--S0.jpg",
-"src": "sweetbriar",
-"tags": [
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/comedy-fundraiser"
 },
 {
 "id": "cur-pjfm",
@@ -1509,26 +1432,6 @@
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
 },
 {
-"id": "portjeff-1100",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-15T09:00:00",
-"end": "2026-11-15T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
-},
-{
 "id": "sweetbriar-6acbd8fb9083cf68d32902a2",
 "title": "The Sunday Art Class - The Abundant Cornucopia - Adults - Nov 15",
 "start": "2026-11-15T11:00:00",
@@ -1793,6 +1696,140 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/from-pies-to-parades-zoom"
+},
+{
+"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63779",
+"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
+"start": "2026-11-18T09:30:00",
+"end": "2026-11-18T10:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63779",
+"desc": "Experience sharing, group participation, and play.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-ages-18m-3-5-yrs-w-caregiver-549"
+},
+{
+"id": "emmaclark-one-one-medicare-telephone-counseling-61336",
+"title": "One-on-One Medicare Telephone Counseling",
+"start": "2026-11-18T10:00:00",
+"end": "2026-11-18T12:30:00",
+"allday": false,
+"venue": "Online (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/one-one-medicare-telephone-counseling-61336",
+"desc": "HIICAP: Health Insurance Information Counseling & Assistance Program To schedule an appointment with a HIICAP volunteer, call Cassidy at 631-941-4080 ext. 116, or email cassidy@emmaclark.org",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/one-on-one-medicare-telephone-counseling-621"
+},
+{
+"id": "sbv-2429",
+"title": "Lookbook Luncheon Fashion Show at Luca Restaurant",
+"start": "2026-11-18T12:00:00",
+"end": "2026-11-18T14:00:00",
+"allday": false,
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/lookbook-luncheon-fashion-show-at-luca-restaurant/",
+"desc": "Experience an afternoon of style, flavor, and fall inspiration at Stony Brook Village’s fifth annual Lookbook Luncheon Fashion Shows , returning this November. Each event offers guests a curated dining experience paired with an exclusive showcase of the latest",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/10/Fashion-Show-scaled.png",
+"src": "sbv",
+"tags": [
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/lookbook-luncheon-fashion-show-at-luca-restaurant"
+},
+{
+"id": "emmaclark-autumns-canvas-rooster-leaf-art-61309",
+"title": "Autumn's Canvas: Rooster Leaf Art",
+"start": "2026-11-18T12:30:00",
+"end": "2026-11-18T13:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/autumns-canvas-rooster-leaf-art-61309",
+"desc": "Guided by Christin Nash, you will design and assemble a charming, two-dimensional rooster using a variety of autumn leaves. Perfect for all skill levels, this class is a wonderful way to celebrate seasonal creativity.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-10/2Rooster%20Leaf%20Art%2011_18-21_2026.png_1.jpeg",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/autumns-canvas-rooster-leaf-art"
+},
+{
+"id": "emmaclark-crafts-r-fun-paper-mache-plates-grades-k-5-62055",
+"title": "Crafts R Fun: Paper Mache Plates (Grades K-5)",
+"start": "2026-11-18T17:30:00",
+"end": "2026-11-18T18:15:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/crafts-r-fun-paper-mache-plates-grades-k-5-62055",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/crafts-r-fun-paper-mache-plates-grades-k-5"
+},
+{
+"id": "social-17970977996965299",
+"title": "Book Club: Heart of a Dog",
+"start": "2026-11-18T18:00:00",
+"end": "2026-11-18T18:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "",
+"url": "https://www.instagram.com/p/DfHhz2uCKxs/",
+"desc": "Monthly book club meeting discussing Heart of a Dog by Mikhail Bulgakov. $30 covers a glass of wine, a small plate, and a leather bookmark.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17970977996965299.jpg",
+"src": "social",
+"tags": [
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/book-club-heart-of-a-dog"
+},
+{
+"id": "lim-3226021",
+"title": "Stealing America with Linford D. Fisher – Free Virtual Lecture",
+"start": "2026-11-18T19:00:00",
+"end": "2026-11-18T20:30:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/stealing-america/",
+"desc": "Join us for a virtual lecture with Linford D. Fisher, author and Professor of History at Brown University, to focus on his new book, Stealing America: The Hidden Story of Indigenous Slavery in U.S. History , and the lesser-known stories of Native enslavement a",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/Stealing-America.jpg",
+"src": "lim",
+"tags": [
+"free",
+"history",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/stealing-america-with-linford-d-fisher-free-virtual-lecture"
 }
 ],
 "closings": [],
