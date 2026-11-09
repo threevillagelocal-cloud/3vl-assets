@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-09T16:03:22.280670+00:00",
+"updated": "2026-11-09T16:04:58.218918+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Village of Port Jefferson": 197,
 "Emma S. Clark Library": 255,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 45,
@@ -1299,6 +1299,26 @@
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
 },
 {
+"id": "portjeff-1100",
+"title": "Outdoor Summer Farmers Market",
+"start": "2026-11-15T09:00:00",
+"end": "2026-11-15T14:00:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
+},
+{
 "id": "sweetbriar-6acbd8fb9083cf68d32902a2",
 "title": "The Sunday Art Class - The Abundant Cornucopia - Adults - Nov 15",
 "start": "2026-11-15T11:00:00",
@@ -2037,7 +2057,7 @@
 "url": "https://www.instagram.com/p/DfhobdjkYUw/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18117435809104380.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-cranberry-crumble-bar-pastry-month",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast"
 }
@@ -2190,7 +2210,7 @@
 "url": "https://www.instagram.com/p/DfhobdjkYUw/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18117435809104380.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-cranberry-crumble-bar-pastry-month",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast",
 "label": "Special"
 },
@@ -2209,7 +2229,7 @@
 "url": "https://www.instagram.com/p/DfhnsVSR3VI/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18121786526284530.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-free-coffee-pastry-veterans",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast",
 "label": "Special"
 },
