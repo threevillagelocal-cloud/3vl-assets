@@ -1,20 +1,4 @@
 {
-"18185980951373538": {
-"special": false,
-"title": "Long Island Restaurant Week Prix Fixe",
-"when": "Nov 1–8, 2026",
-"desc": "3-course prix fixe menu for $48 per person during Long Island Restaurant Week.",
-"expires": "2026-11-08",
-"_ts": "2026-10-10T15:19:42+0000"
-},
-"18116373544798458": {
-"special": false,
-"title": "Hirosaki - Japanese Dining",
-"when": "Ongoing",
-"desc": "Sushi, hibachi, cocktails and modern Japanese dishes in Stony Brook.",
-"expires": "2026-10-10",
-"_ts": "2026-10-10T14:01:38+0000"
-},
 "18107317751630922": {
 "special": false,
 "title": "Pub Burger",
@@ -30,14 +14,6 @@
 "desc": "Fall promotions including dogs in costumes, holiday savings, and Restaurant Week menu mentioned without specific dates.",
 "expires": "2026-10-10",
 "_ts": "2026-10-10T17:53:19+0000"
-},
-"17910892449489120": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-10T13:36:24+0000"
 },
 "18110203481181582": {
 "special": false,
@@ -55,14 +31,6 @@
 "expires": "",
 "_ts": "2026-10-10T20:20:26+0000"
 },
-"17899927644656189": {
-"special": false,
-"title": "PJ Lobster House",
-"when": "Ongoing",
-"desc": "Seafood restaurant offering dine-in, bar seating, and takeout/delivery options.",
-"expires": "2026-10-10",
-"_ts": "2026-10-10T15:44:23+0000"
-},
 "18347426755248190": {
 "special": false,
 "title": "Bone-In Bourbon Glazed Pork Chop",
@@ -70,14 +38,6 @@
 "desc": "Menu item feature with no time-bound offer or event date announced.",
 "expires": "N/A",
 "_ts": "2026-10-10T18:01:15+0000"
-},
-"17922426342439533": {
-"special": true,
-"title": "Witches & Warlocks Bar Crawl",
-"when": "Today, Oct. 10 · 5-10 PM",
-"desc": "Join the Halloween bar crawl at Castaways. Stop by for a drink between 5 and 10 PM tonight.",
-"expires": "2026-10-10",
-"_ts": "2026-10-10T14:00:53+0000"
 },
 "18437753002198828": {
 "special": false,
@@ -2970,5 +2930,49 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-09T02:41:01+0000"
+},
+"18146027110591472": {
+"special": false,
+"_ts": "2026-11-09T15:46:08+0000"
+},
+"18179625055445289": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-09T14:26:02+0000"
+},
+"17913907392481526": {
+"special": false,
+"title": "Holiday Gatherings at Three Village Inn",
+"when": "Limited dates available",
+"desc": "Book an intimate holiday gathering at this historic Stony Brook restaurant with seasonal menus.",
+"expires": "2026-11-09",
+"_ts": "2026-11-09T15:40:56+0000"
+},
+"18117435809104380": {
+"special": true,
+"title": "Cranberry Crumble Bar - Pastry of the Month",
+"when": "November 2026",
+"desc": "Seasonal cranberry crumble bar available now at The Study by Toast. Pair with your favorite coffee.",
+"expires": "2026-11-30",
+"_ts": "2026-11-09T15:16:08+0000"
+},
+"18121786526284530": {
+"special": true,
+"title": "Free Coffee & Pastry for Veterans",
+"when": "Today, Nov. 9",
+"desc": "Free drip coffee and pastry for veterans on Veterans Day. Dine-in only.",
+"expires": "2026-11-09",
+"_ts": "2026-11-09T15:09:56+0000"
+},
+"18154626256539253": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-09T15:32:19+0000"
 }
 }

@@ -153,6 +153,38 @@
 ],
 "thestudy.bytoast": [
 {
+"id": "18117435809104380",
+"biz": "The Study by Toast",
+"ig": "thestudy.bytoast",
+"town": "East Setauket",
+"category": "Coffee House",
+"member": false,
+"title": "Cranberry Crumble Bar - Pastry of the Month",
+"when": "November 2026",
+"desc": "Seasonal cranberry crumble bar available now at The Study by Toast. Pair with your favorite coffee.",
+"expires": "2026-11-30",
+"posted": "2026-11-09T15:16:08+0000",
+"url": "https://www.instagram.com/p/DfhobdjkYUw/",
+"img": "",
+"inset": "ig/p18117435809104380.jpg"
+},
+{
+"id": "18121786526284530",
+"biz": "The Study by Toast",
+"ig": "thestudy.bytoast",
+"town": "East Setauket",
+"category": "Coffee House",
+"member": false,
+"title": "Free Coffee & Pastry for Veterans",
+"when": "Today, Nov. 9",
+"desc": "Free drip coffee and pastry for veterans on Veterans Day. Dine-in only.",
+"expires": "2026-11-09",
+"posted": "2026-11-09T15:09:56+0000",
+"url": "https://www.instagram.com/p/DfhnsVSR3VI/",
+"img": "",
+"inset": "ig/p18121786526284530.jpg"
+},
+{
 "id": "18312320776305053",
 "biz": "The Study by Toast",
 "ig": "thestudy.bytoast",
