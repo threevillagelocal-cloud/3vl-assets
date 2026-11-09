@@ -67,8 +67,15 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
     return '<article class="y-spc'+(g('ban')?' y-ban':'')+'"><a class="y-spimg" href="'+esc(href)+'" tabindex="-1" aria-hidden="true" data-y="photo">'+vis+(g('ban')?'':'<span class="y-vipb">VIP</span>')+'</a><div class="y-spb"><div class="y-sptop"><span class="y-splogo" style="background-image:url(\''+esc(g('logo'))+'\')" data-bgo="'+esc(g('logoo'))+'"></span>'+
       '<p class="y-spcat">'+esc(g('cat'))+(g('town')?' <span>&middot; '+esc(g('town'))+'</span>':'')+'</p></div><h3 class="y-spn2"><a href="'+esc(href)+'" data-y="name">'+esc(name)+'</a></h3>'+(g('desc')?'<p class="y-spd">'+esc(g('desc'))+'</p>':'')+
       '<div class="y-spbtns"><a class="y-btn" href="'+esc(href)+'" data-y="profile">View profile '+CH+'</a>'+(g('tel')?'<a class="y-btn o" href="tel:'+esc(g('tel'))+'" data-y="call">'+PH+'Call</a>':'')+'</div></div></article>'}
+  var FAM=[[/landscap|lawn|tree|shrub|garden/,'yard'],[/real estate|realt/,'realty'],[/attorney|lawyer|law\b/,'legal'],[/account|bookkeep|payroll|tax/,'books'],[/orthop/,'ortho'],[/mortgage|loan/,'mortgage'],[/financ|wealth|advisor/,'finance'],[/contract|remodel|restor/,'build']];
+  function fam(c){var t=(c.getAttribute('data-cat')||'').toLowerCase();for(var q=0;q<FAM.length;q++)if(FAM[q][0].test(t))return FAM[q][1];return t||c.getAttribute('href')}
   function show(k){i=(k+n)%n;main.innerHTML=card(cards[i]);main.setAttribute('data-vip',(cards[i].querySelector('.y-mct b')||{}).textContent||'');
-    fixImgs(main);    cards.forEach(function(c,j){var d=(j-i+n)%n;c.style.order=d;c.classList.toggle('y-on',d>0&&d<=3);c.hidden=d===0});list.scrollLeft=0;
+    fixImgs(main);
+    /* the 3 "also featured" never repeat the big card's line of business, or each other's (two landscapers side by side) */
+    var used={},pick=[],rest=[];used[fam(cards[i])]=1;
+    for(var d=1;d<n;d++){var c=cards[(i+d)%n],f=fam(c);if(pick.length<3&&!used[f]){used[f]=1;pick.push(c)}else rest.push(c)}
+    cards[i].hidden=true;cards[i].style.order=0;cards[i].classList.remove('y-on');
+    pick.concat(rest).forEach(function(c,k){c.hidden=false;c.style.order=k+1;c.classList.toggle('y-on',k<pick.length)});list.scrollLeft=0;
     if(tm){var nx=cards[(i+1)%n].getAttribute('data-img');if(nx){var p=new Image();p.src=nx}}}
   function go(){clearInterval(tm);if(RM)return;tm=setInterval(function(){if(!hold&&!document.hidden)show(i+1)},7000)}
   var sec=document.getElementById('nh-feat')||wrap;
