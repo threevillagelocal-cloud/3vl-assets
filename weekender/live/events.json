@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-08T22:01:17.410321+00:00",
+"updated": "2026-11-09T00:00:57.556516+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
@@ -8,9 +8,9 @@
 "Village of Port Jefferson": 197,
 "Emma S. Clark Library": 256,
 "Stony Brook Village Center": 7,
-"Long Island Museum": 46,
+"Long Island Museum": 45,
 "Ward Melville Heritage Org": 2,
-"LI Music Hall of Fame": 6,
+"LI Music Hall of Fame": 5,
 "Staller Center for the Arts": 138,
 "Theatre Three": 69,
 "Gallery North": 18,
@@ -88,25 +88,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/the-47th-annual-holiday-tree-competition"
-},
-{
-"id": "pjchamber-15119",
-"title": "Long Island Restaurant Week",
-"start": "2026-11-01T00:00:00",
-"end": "2026-11-08T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/long-island-restaurant-week-november-2026/",
-"desc": "Participating Restaurant Chamber Members: – Black Pearl Seafood Chophouse – Castaways Steak & Seafood – Pasta Pasta – RUVO",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "reboli-6adf9dab4c6329721a5cedc5",
@@ -359,45 +340,6 @@
 "pick": false,
 "page": "https://www.threevillagelocal.com/events/kids-for-kids-interactive-music-concert-grades-k-3",
 "pu": ""
-},
-{
-"id": "lim-3225644",
-"title": "Sunday Street Concert Series: Celebrating Joni Mitchell and Tom Waits",
-"start": "2026-11-08T17:00:00",
-"end": "2026-11-08T19:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/joni-and-tom/",
-"desc": "THIS PERFORMANCE IS SOLD OUT! The Long Island Museum, Port Jefferson Arts Council, and WUSB-FM are proud to present an eclectic music series featuring nationally and internationally known touring artists. Join us as we celebrate two legendary songwriters! Joni",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Joni-Mitchell-and-Tom-Waits-cover.jpg",
-"src": "lim",
-"tags": [
-"music",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/sunday-street-concert-series-celebrating-joni-mitchell-and-tom-waits"
-},
-{
-"id": "gallerynorth-71316",
-"title": "MedARTation",
-"start": "2026-11-08T17:00:00",
-"end": "2026-11-08T19:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/pages/member-event-rsvp",
-"desc": "MedARTation is a unique four part series presented by Mindful Turtle Yoga and Gallery North. Each session includes a guided meditation session followed by a mindful viewing of our current gallery exhibition. Join us as we wind down and enjoy the many benefits ",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71316/v1792688465339/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/medartation"
 },
 {
 "id": "cur-queen",
@@ -1794,6 +1736,233 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/stealing-america-with-linford-d-fisher-free-virtual-lecture"
+},
+{
+"id": "gallerynorth-71302",
+"title": "Exhibition: Deck the Halls",
+"start": "2026-11-19T00:00:00",
+"end": "2026-12-20T00:00:00",
+"allday": true,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org/pages/deckthehalls",
+"desc": "Deck the Halls is Gallery North’s annual group exhibition of small original works for holiday giving. Enjoy artworks by over 50 local and regional artists in a range of media, including painting, printmaking, works on paper, sculpture, glassware, and more. The",
+"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71302/v1792685891986/image_large.webp",
+"src": "gallerynorth",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": ""
+},
+{
+"id": "emmaclark-f-parent-toddler-workshop-18m-35-yrs-w-caregiver-63787",
+"title": "Parent Toddler Workshop (18m - 3.5 yrs w/ caregiver)",
+"start": "2026-11-19T09:30:00",
+"end": "2026-11-19T10:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/f-parent-toddler-workshop-18m-35-yrs-w-caregiver-63787",
+"desc": "Experience sharing, group participation, and play.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-18m-3-5-yrs-w-caregiver-550"
+},
+{
+"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63791",
+"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
+"start": "2026-11-19T11:00:00",
+"end": "2026-11-19T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63791",
+"desc": "Experience sharing, group participation, and play.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-ages-18m-3-5-yrs-w-caregiver-551"
+},
+{
+"id": "emmaclark-chair-yoga-61292",
+"title": "Chair Yoga",
+"start": "2026-11-19T11:30:00",
+"end": "2026-11-19T12:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/chair-yoga-61292",
+"desc": "Experience the many benefits of chair yoga in stabilizing and mobilizing the body, fortifying the respiratory system, and developing a calmer, clearer, more meditative, and focused mind. All you need is a chair that does not have arms (which may get in the way",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/close-up-women-doing-relaxation-exercises1.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/chair-yoga-623"
+},
+{
+"id": "emmaclark-chair-yoga-zoom-61295",
+"title": "Chair Yoga [ZOOM]",
+"start": "2026-11-19T11:30:00",
+"end": "2026-11-19T12:30:00",
+"allday": false,
+"venue": "Online (Emma S. Clark Library program)",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/chair-yoga-zoom-61295",
+"desc": "Experience the many benefits of chair yoga in stabilizing and mobilizing the body, fortifying the respiratory system, and developing a calmer, clearer, more meditative, and focused mind. All you need is a chair that does not have arms (which may get in the way",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/full-shot-woman-training-with-laptop-indoors1.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/chair-yoga-zoom-624"
+},
+{
+"id": "emmaclark-social-work-intern-appointments-58753",
+"title": "Social Work Intern Appointments",
+"start": "2026-11-19T14:00:00",
+"end": "2026-11-19T19:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Small Study Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-58753",
+"desc": "Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical Social Workers. These individuals will be on-site ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments-625"
+},
+{
+"id": "emmaclark-gratitude-vases-grades-3-5-59964",
+"title": "Gratitude Vases (Grades 3-5)",
+"start": "2026-11-19T16:45:00",
+"end": "2026-11-19T17:15:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/gratitude-vases-grades-3-5-59964",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-11/Gratitude%20Vases.jpg",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/gratitude-vases-grades-3-5-699"
+},
+{
+"id": "emmaclark-cricut-tote-bag-38588",
+"title": "Cricut: Tote Bag [LOTTERY]",
+"start": "2026-11-19T18:00:00",
+"end": "2026-11-19T20:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Technology Center",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/cricut-tote-bag-38588",
+"desc": "In this beginner class, we’ll learn how to use Cricut Design Space and create a stylish and personalized tote bag. All materials provided. Taught by Jackie Parente. [Tech Center] THIS IS A LOTTERY PROGRAM. Upon registration, your name will be added to a waitli",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/4_DTC_Infographic_2008335.png",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/cricut-tote-bag-lottery"
+},
+{
+"id": "gallerynorth-71303",
+"title": "Deck the Halls Opening Reception",
+"start": "2026-11-19T18:00:00",
+"end": "2026-11-19T20:00:00",
+"allday": false,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org",
+"desc": "The opening reception will be free and open to the public. Live music, free food and refreshments provided.",
+"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71303/v1792686133079/image_large.webp",
+"src": "gallerynorth",
+"tags": [
+"free",
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/deck-the-halls-opening-reception-at-gallery-north"
+},
+{
+"id": "emmaclark-genealogy-102-61312",
+"title": "Genealogy 102",
+"start": "2026-11-19T18:30:00",
+"end": "2026-11-19T20:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/genealogy-102-61312",
+"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Take your family research to the next level! Genealogist Eileen Swanberg will teach you how to use historical records to dig deeper into your family history search. You should have",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/2149548432.jpg",
+"src": "emmaclark",
+"tags": [
+"history"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/genealogy-102"
+},
+{
+"id": "madiran-20261119-tim-siciliano-and-kim-clarke-plus-beaujo",
+"title": "Live Music: Tim Siciliano and Kim Clarke, plus Beaujolais Day",
+"start": "2026-11-19T19:00:00",
+"end": "2026-11-19T21:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in Setauket: Tim Siciliano and Kim Clarke, plus Beaujolais Day. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-tim-siciliano-and-kim-clarke-plus-beaujolais-day"
+},
+{
+"id": "theatre3-9362",
+"title": "The New York Bee Gees",
+"start": "2026-11-19T20:00:00",
+"end": "2026-11-19T20:00:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson, NY 11777",
+"url": "https://theatrethree.getmytix.net/tickets#933/The-New-York-Bee-Gees",
+"desc": "The New York Bee Gees Tribute Show is comprised of some of Long Island New York’s most versatile and exceptionally talented players. The band includes present or former members of well known, world renown acts including The Alan Parsons Project, Happy Together",
+"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_933_Bee%20Gees%202.jpg",
+"src": "theatre3",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/the-new-york-bee-gees"
 }
 ],
 "closings": [],
@@ -2063,25 +2232,6 @@
 "page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-trivia-night",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast",
 "label": "Event"
-},
-{
-"id": "18358849555252065",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Restaurant Week Prix Fixe",
-"when": "Tonight only",
-"desc": "Three courses for $48pp at Castaways. Seafood, oysters, jerk chicken, blackened mahi mahi, petit filet and more.",
-"expires": "2026-11-08",
-"posted": "2026-11-08T17:00:37+0000",
-"url": "https://www.instagram.com/p/DffPlXgGtR1/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18358849555252065.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-restaurant-prix-fixe",
-"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Special"
 },
 {
 "id": "18211269280369753",
