@@ -52,6 +52,22 @@
 ],
 "tommysplaceportjeff_": [
 {
+"id": "18152426533558871",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Sausage Stuffed Portobello Mushroom",
+"when": "This week",
+"desc": "Savory sausage, melted mozzarella, and marinara in one starter. Limited time only.",
+"expires": "2026-11-15",
+"posted": "2026-11-08T21:04:34+0000",
+"url": "https://www.instagram.com/p/DffrgrIGm9R/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "ig/p18152426533558871.jpg"
+},
+{
 "id": "17913502878476863",
 "biz": "Tommy's Place",
 "ig": "tommysplaceportjeff_",
@@ -157,6 +173,22 @@
 "seportdelicatessen": [],
 "toastcoffeeandkitchen": [
 {
+"id": "17888204874625044",
+"biz": "Toast Coffee + Kitchen",
+"ig": "toastcoffeeandkitchen",
+"town": "Port Jefferson Station",
+"category": "Cafe/Brunch",
+"member": false,
+"title": "Free Pancakes for Veterans",
+"when": "Veterans Day (Nov. 11)",
+"desc": "Free full stack of pancakes for all veterans. Dine-in only.",
+"expires": "2026-11-11",
+"posted": "2026-11-08T22:02:23+0000",
+"url": "https://www.instagram.com/reel/Dffxmi2hFER/",
+"img": "",
+"inset": "ig/p17888204874625044.jpg"
+},
+{
 "id": "17924916534219471",
 "biz": "Toast Coffee + Kitchen",
 "ig": "toastcoffeeandkitchen",
@@ -246,24 +278,7 @@
 "inset": "ig/p17960111250235779.jpg"
 }
 ],
-"nantucketspjefferson": [
-{
-"id": "18643741162021432",
-"biz": "Nantuckets",
-"ig": "nantucketspjefferson",
-"town": "Port Jefferson",
-"category": "Restaurant (Seafood)",
-"member": false,
-"title": "Restaurant Week: 3-Course Dinner",
-"when": "All winter",
-"desc": "Three-course dinner for $42 plus tax throughout the winter season at Nantuckets.",
-"expires": "2027-03-20",
-"posted": "2026-11-01T20:04:12+0000",
-"url": "https://www.instagram.com/p/DfNjCVQn8qm/",
-"img": "",
-"inset": "ig/p18643741162021432.jpg"
-}
-],
+"nantucketspjefferson": [],
 "blackpearlportjeff": [
 {
 "id": "18073680299765743",
@@ -399,22 +414,6 @@
 }
 ],
 "castawayspj": [
-{
-"id": "18358849555252065",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Restaurant Week Prix Fixe",
-"when": "Tonight only",
-"desc": "Three courses for $48pp at Castaways. Seafood, oysters, jerk chicken, blackened mahi mahi, petit filet and more.",
-"expires": "2026-11-08",
-"posted": "2026-11-08T17:00:37+0000",
-"url": "https://www.instagram.com/p/DffPlXgGtR1/",
-"img": "",
-"inset": "ig/p18358849555252065.jpg"
-},
 {
 "id": "18211269280369753",
 "biz": "Castaways Steak & Seafood",

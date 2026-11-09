@@ -55,14 +55,6 @@
 "expires": "",
 "_ts": "2026-10-10T20:20:26+0000"
 },
-"17959248594011698": {
-"special": true,
-"title": "Po'Boy Halloween Costume Party",
-"when": "Fri, Oct. 30 · 7 PM–Midnight",
-"desc": "Come in costume for all-night Happy Hour pricing. Costume contest with prizes up to $100.",
-"expires": "2026-10-30",
-"_ts": "2026-10-09T21:48:30+0000"
-},
 "17899927644656189": {
 "special": false,
 "title": "PJ Lobster House",
@@ -70,22 +62,6 @@
 "desc": "Seafood restaurant offering dine-in, bar seating, and takeout/delivery options.",
 "expires": "2026-10-10",
 "_ts": "2026-10-10T15:44:23+0000"
-},
-"18129103969837128": {
-"special": false,
-"title": "Danfords Hotel & Marina",
-"when": "Ongoing",
-"desc": "Waterfront hotel and marina at the heart of Port Jefferson harbor.",
-"expires": "2026-10-10",
-"_ts": "2026-10-10T04:00:18+0000"
-},
-"18112147547172979": {
-"special": false,
-"title": "Fall Foliage at Danfords",
-"when": "Ongoing this October",
-"desc": "Enjoy autumn at the hotel with crisp air, harbor strolls, and Long Island Sound views.",
-"expires": "2026-10-31",
-"_ts": "2026-10-09T21:32:18+0000"
 },
 "18347426755248190": {
 "special": false,
@@ -2962,5 +2938,37 @@
 "desc": "Three courses for $48pp at Castaways. Seafood, oysters, jerk chicken, blackened mahi mahi, petit filet and more.",
 "expires": "2026-11-08",
 "_ts": "2026-11-08T17:00:37+0000"
+},
+"18152426533558871": {
+"special": true,
+"title": "Sausage Stuffed Portobello Mushroom",
+"when": "This week",
+"desc": "Savory sausage, melted mozzarella, and marinara in one starter. Limited time only.",
+"expires": "2026-11-15",
+"_ts": "2026-11-08T21:04:34+0000"
+},
+"18127947616901695": {
+"special": false,
+"title": "Thanksgiving Orders Now Open",
+"when": "Ongoing",
+"desc": "Order Thanksgiving items on their website. No specific deadline or date provided.",
+"expires": "2026-11-09",
+"_ts": "2026-11-08T21:44:34+0000"
+},
+"17888204874625044": {
+"special": true,
+"title": "Free Pancakes for Veterans",
+"when": "Veterans Day (Nov. 11)",
+"desc": "Free full stack of pancakes for all veterans. Dine-in only.",
+"expires": "2026-11-11",
+"_ts": "2026-11-08T22:02:23+0000"
+},
+"17994162306065865": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-09T02:41:01+0000"
 }
 }
