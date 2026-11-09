@@ -1,20 +1,4 @@
 {
-"18107317751630922": {
-"special": false,
-"title": "Pub Burger",
-"when": "Ongoing",
-"desc": "Aged white cheddar, crispy bacon, stout beer-battered onion rings, bourbon BBQ sauce on brioche.",
-"expires": "2026-10-24",
-"_ts": "2026-10-10T19:00:15+0000"
-},
-"17886945744653275": {
-"special": false,
-"title": "Fall at Three Village Inn",
-"when": "Unspecified",
-"desc": "Fall promotions including dogs in costumes, holiday savings, and Restaurant Week menu mentioned without specific dates.",
-"expires": "2026-10-10",
-"_ts": "2026-10-10T17:53:19+0000"
-},
 "18110203481181582": {
 "special": false,
 "title": "",
@@ -30,14 +14,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-10T20:20:26+0000"
-},
-"18347426755248190": {
-"special": false,
-"title": "Bone-In Bourbon Glazed Pork Chop",
-"when": "Not specified",
-"desc": "Menu item feature with no time-bound offer or event date announced.",
-"expires": "N/A",
-"_ts": "2026-10-10T18:01:15+0000"
 },
 "18437753002198828": {
 "special": false,
@@ -2974,5 +2950,29 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-09T15:32:19+0000"
+},
+"18115469309332179": {
+"special": false,
+"title": "Hirosaki Japanese Restaurant",
+"when": "Mon-Sun",
+"desc": "Sushi, hibachi, and shareable favorites for holiday gatherings and dinners.",
+"expires": "2026-11-09",
+"_ts": "2026-11-09T17:00:24+0000"
+},
+"18120040043066283": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-09T19:57:14+0000"
+},
+"18153463027552871": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-09T19:01:12+0000"
 }
 }
