@@ -7,42 +7,6 @@
 "expires": "2026-10-12",
 "_ts": "2026-10-12T01:57:51+0000"
 },
-"18130391350827520": {
-"special": false,
-"title": "Premium Pour: Morgan Twelve Clones Pinot Noir",
-"when": "Ongoing",
-"desc": "Featured wine pour at $25/6oz with pairing suggestions including burrata risotto and pumpkin ravioli.",
-"expires": "2026-10-12",
-"_ts": "2026-10-11T19:50:56+0000"
-},
-"18117802858952870": {
-"special": true,
-"title": "Wicked Wrap & Limited-Time Specials",
-"when": "While available",
-"desc": "Fried chicken, mozzarella, fried jalapeños, lettuce, tomato & chipotle sauce in spinach tortilla with fries.",
-"expires": "2026-10-26",
-"_ts": "2026-10-11T19:43:15+0000"
-},
-"17900498451602344": {
-"special": true,
-"title": "Boozy Pumpkin Spice Latte",
-"when": "Available now",
-"desc": "Burgerology's boozy take on PSL is available at all locations this fall season.",
-"expires": "2026-11-11",
-"_ts": "2026-10-11T19:39:17+0000"
-},
-"18336531259273312": {
-"special": false,
-"_ts": "2026-10-11T19:16:37+0000"
-},
-"17912012589519209": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-11T19:13:52+0000"
-},
 "18038377886838371": {
 "special": true,
 "title": "Live Music: Al Marino, James Miceli & Jerry Mac",
@@ -2966,5 +2930,53 @@
 "18108308024337853": {
 "special": false,
 "_ts": "2026-11-10T13:00:39+0000"
+},
+"18635163151057975": {
+"special": true,
+"title": "Burger & Beer Deal + Veterans Discount",
+"when": "Wed, Nov. 11",
+"desc": "Mug members get burger and beer deal. Veterans receive 10% off bill and special priced shots.",
+"expires": "2026-11-11",
+"_ts": "2026-11-10T16:51:12+0000"
+},
+"17995280955100831": {
+"special": true,
+"title": "Veterans Day: 10% Off",
+"when": "Mon, Nov. 10",
+"desc": "Thank you to veterans with 10% off your order at DJ's Clam Shack.",
+"expires": "2026-11-10",
+"_ts": "2026-11-10T19:27:50+0000"
+},
+"17963853557996306": {
+"special": true,
+"title": "Taco Tuesday Specials",
+"when": "Every Tuesday",
+"desc": "Get 3 specialty tacos for $12 or build your own 3 for $10. Plus $5 burritos after 8 PM.",
+"expires": "2026-11-17",
+"_ts": "2026-11-10T16:06:21+0000"
+},
+"17921223336253823": {
+"special": true,
+"title": "Holiday Pies - Pre-Order Now",
+"when": "Nov 24-25, 9 AM - 3 PM",
+"desc": "First-time holiday pies ($25 each): Apple Crumb, Coconut Pecan Custard, Pumpkin Cheesecake.",
+"expires": "2026-11-25",
+"_ts": "2026-11-10T16:19:54+0000"
+},
+"17902097802607572": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-10T18:09:10+0000"
+},
+"17966242182079299": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-10T16:33:01+0000"
 }
 }

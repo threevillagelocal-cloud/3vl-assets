@@ -1,5 +1,22 @@
 {
-"countrycornerlongisland": [],
+"countrycornerlongisland": [
+{
+"id": "18635163151057975",
+"biz": "The Country Corner",
+"ig": "countrycornerlongisland",
+"town": "East Setauket",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Burger & Beer Deal + Veterans Discount",
+"when": "Wed, Nov. 11",
+"desc": "Mug members get burger and beer deal. Veterans receive 10% off bill and special priced shots.",
+"expires": "2026-11-11",
+"posted": "2026-11-10T16:51:12+0000",
+"url": "https://www.instagram.com/p/DfkXzDry41s/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
+"inset": "ig/p18635163151057975.jpg"
+}
+],
 "madiranthewinebar_eastsetauket": [
 {
 "id": "17896459920435270",
@@ -101,7 +118,24 @@
 }
 ],
 "ixchelmexicancuisine": [],
-"djsclamshackstonybrook": [],
+"djsclamshackstonybrook": [
+{
+"id": "17995280955100831",
+"biz": "DJ's Clam Shack (Stony Brook)",
+"ig": "djsclamshackstonybrook",
+"town": "Stony Brook",
+"category": "Restaurant",
+"member": false,
+"title": "Veterans Day: 10% Off",
+"when": "Mon, Nov. 10",
+"desc": "Thank you to veterans with 10% off your order at DJ's Clam Shack.",
+"expires": "2026-11-10",
+"posted": "2026-11-10T19:27:50+0000",
+"url": "https://www.instagram.com/p/DfkqALSPL82/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/djs-ext-720.webp",
+"inset": "ig/p17995280955100831.jpg"
+}
+],
 "culpers1778": [],
 "levelupkitchenny": [],
 "littlecheeseshop": [],
@@ -149,8 +183,41 @@
 "burgerologyusa": [],
 "ep_restaurant": [],
 "tajcrownofindia": [],
-"rctaqueria": [],
+"rctaqueria": [
+{
+"id": "17963853557996306",
+"biz": "Right Coast Taqueria",
+"ig": "rctaqueria",
+"town": "East Setauket",
+"category": "Restaurant",
+"member": false,
+"title": "Taco Tuesday Specials",
+"when": "Every Tuesday",
+"desc": "Get 3 specialty tacos for $12 or build your own 3 for $10. Plus $5 burritos after 8 PM.",
+"expires": "2026-11-17",
+"posted": "2026-11-10T16:06:21+0000",
+"url": "https://www.instagram.com/reel/DfkS5pIsqPQ/",
+"img": "",
+"inset": "ig/p17963853557996306.jpg"
+}
+],
 "thestudy.bytoast": [
+{
+"id": "17921223336253823",
+"biz": "The Study by Toast",
+"ig": "thestudy.bytoast",
+"town": "East Setauket",
+"category": "Coffee House",
+"member": false,
+"title": "Holiday Pies - Pre-Order Now",
+"when": "Nov 24-25, 9 AM - 3 PM",
+"desc": "First-time holiday pies ($25 each): Apple Crumb, Coconut Pecan Custard, Pumpkin Cheesecake.",
+"expires": "2026-11-25",
+"posted": "2026-11-10T16:19:54+0000",
+"url": "https://www.instagram.com/p/DfkUhZ1pXEa/",
+"img": "",
+"inset": "ig/p17921223336253823.jpg"
+},
 {
 "id": "18117435809104380",
 "biz": "The Study by Toast",
@@ -218,45 +285,12 @@
 "url": "https://www.instagram.com/p/DfXmoc1lfL5/",
 "img": "",
 "inset": "ig/p17924916534219471.jpg"
-},
-{
-"id": "17994138573103731",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "November/December Food Specials Launch",
-"when": "Fri, Nov. 6",
-"desc": "Seasonal holiday food specials arrive with cozy, festive flavors and new creations.",
-"expires": "2026-12-31",
-"posted": "2026-11-03T18:52:42+0000",
-"url": "https://www.instagram.com/p/DfSkcaun1_v/",
-"img": "",
-"inset": "ig/p17994138573103731.jpg"
 }
 ],
 "prohibitionportjefferson": [],
 "portjeffbrewing": [],
 "poboybeerandcider": [],
-"fifthseasonrestaurant": [
-{
-"id": "18015260300978122",
-"biz": "Fifth Season Restaurant",
-"ig": "fifthseasonrestaurant",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Thanksgiving Family Style Meal Pickup",
-"when": "Wed & Thu, Nov 25-26",
-"desc": "Order prepared Thanksgiving dinner trays for pickup with simple heating instructions.",
-"expires": "2026-11-26",
-"posted": "2026-11-03T18:02:41+0000",
-"url": "https://www.instagram.com/p/DfSes0EAiij/",
-"img": "",
-"inset": "ig/p18015260300978122.jpg"
-}
-],
+"fifthseasonrestaurant": [],
 "pastapasta_portjeff": [],
 "pjlobsterhouse": [],
 "ruvorestaurant": [
