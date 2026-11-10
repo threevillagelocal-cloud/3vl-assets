@@ -87,7 +87,7 @@ def linkify(html_str):
     return "".join(out)
 
 
-def build(edition, local=False, sha="master", d=None, live=None, front=False):
+def build(edition, local=False, sha="master", d=None, live=None, front=False, trivia=None):
     """d: an already-adjusted weekend.json (the nightly job drops past items); live: weekender/live/events.json for the Event schema.
     front: the second layout (weekender/front, 10/24/2026). The default output is unchanged."""
     FB = None
@@ -269,6 +269,12 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
             badge, esc(sp["srcName"]), call, gmap(sp["venue"])))
     w('</div><p class="wk-note">Own a local spot with a special? <a href="https://www.threevillagelocal.com/promotion">Send it to us</a> and we&rsquo;ll feature it free.</p>'
       + (FB.endbtn("https://www.threevillagelocal.com/restaurant-specials", "See all specials") if front else '') + '</section>')
+    if trivia is None:   # trivia: True = always (the /preview-home page); None = only while weekender/trivia/homepage.on exists (live homepage switch)
+        trivia = os.path.exists(os.path.join(HERE, "trivia", "homepage.on"))
+    if front and trivia:   # owner 11/10/2026: Three Village Trivia (one question a day, weekender/trivia/), right after Eat & Drink
+        M["trivia"] = len(out)
+        w('<section class="wk-sec" id="wk-trivia" aria-label="Three Village Trivia"><link rel="stylesheet" href="%strivia/trivia.css">'
+          '<div id="tvl-trivia" data-src="%strivia/trivia.json"></div><script src="%strivia/trivia.js" defer></script></section>' % (base, base, base))
 
     M["homes"] = len(out)
     # HOMES FOR SALE strip (10/2/2026): links to the weekly /locallistings page. Data: weekender/homes.json (bump count/thumbs when that page is updated).
@@ -393,6 +399,8 @@ def build(edition, local=False, sha="master", d=None, live=None, front=False):
     names = sorted((k for k in M if k != "end"), key=lambda k: M[k])
     seg = {k: out[M[k]:M[names[i + 1]] if i + 1 < len(names) else M["end"]] for i, k in enumerate(names)}
     ORDER = ["picks", "wx", "eat", "feat", "ad2", "sched", "ad1", "homes", "stories", "extra", "browse", "cta"]  # 10/5/2026 owner: weather above Eat & Drink
+    if "trivia" in M:
+        ORDER.insert(ORDER.index("eat") + 1, "trivia")
     assert sorted(ORDER) == sorted(names), "section list out of sync"
     RAILX, RAILW = [], []
     if front:   # front layout: weather, homes/newsletter and stories ride in the right rail (phones: CSS order puts them back in line)

@@ -142,7 +142,7 @@ def main():
 def front_main(sha, ed, d2, out2):
     """Build the front layout into out2. Prints FRONT CHANGED / FRONT UNCHANGED / FRONT ABORT. Never stops the main homepage build."""
     try:
-        body2 = B.build(ed, False, sha, d=d2, front=True)
+        body2 = B.build(ed, False, sha, d=d2, front=True, trivia=True)
         old2 = open(out2, encoding="utf-8").read() if os.path.exists(out2) else ""
         if "\\" in body2:
             print("FRONT ABORT: backslash in body"); return

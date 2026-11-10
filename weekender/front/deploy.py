@@ -51,7 +51,7 @@ def main():
     ed = N.latest_edition()
     d = json.load(open(os.path.join(WK, ed, "weekend.json"), encoding="utf-8"))
     N.adjust(d, nhb.now_et())
-    body = B.build(ed, False, sha, d=d, front=True)
+    body = B.build(ed, False, sha, d=d, front=True, trivia=True)
     assert "\\" not in body, "backslash in body"
     bad = N.warm(body, ed, sha)
     if bad:
