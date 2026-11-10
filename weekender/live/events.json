@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-10T18:00:53.963171+00:00",
+"updated": "2026-11-10T20:00:58.218407+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 196,
-"Emma S. Clark Library": 250,
+"Emma S. Clark Library": 248,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 44,
 "Ward Melville Heritage Org": 2,
@@ -361,42 +361,6 @@
 "page": "https://www.threevillagelocal.com/events/one-vision-of-queen",
 "pu": "",
 "rank": 2
-},
-{
-"id": "emmaclark-preschool-storytime-ages-35-5-yrs-63823",
-"title": "PreSchool Storytime Ages 3.5- 5 yrs",
-"start": "2026-11-10T13:15:00",
-"end": "2026-11-10T13:45:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-63823",
-"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-542"
-},
-{
-"id": "emmaclark-medicare-basics-61303",
-"title": "Medicare Basics",
-"start": "2026-11-10T14:00:00",
-"end": "2026-11-10T15:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/medicare-basics-61303",
-"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. This presentation is designed for Medicare Eligible people who want to better understand Medicare, including Parts A, B, C, & D and the options available, such as the Medicare Savi",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/medicare-basics"
 },
 {
 "id": "emmaclark-create-fall-scene-grades-3-5-61960",
