@@ -26,3 +26,9 @@
 @keyframes ttpop{40%{transform:scale(1.02)}}@keyframes ttsh{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
 @media (max-width:560px){#tvl-trivia{padding:18px 16px 16px;border-radius:14px}.tt-q{font-size:19px}.tt-opts{grid-template-columns:1fr}.tt-o{font-size:15.5px}}
 @media (prefers-reduced-motion:reduce){#tvl-trivia.tt-pop,#tvl-trivia.tt-shake{animation:none}}
+/* on the homepage the section is already a card: no second box; keep our button shape over the homepage's button styles */
+#wk-trivia #tvl-trivia{border:0;box-shadow:none;padding:6px 0 2px;border-radius:0}
+#wk-trivia #tvl-trivia:before{display:none}
+#tvl-trivia button.tt-o{border-radius:12px;font-weight:600;letter-spacing:0;text-transform:none;box-shadow:none}
+#tvl-trivia button.tt-share{border-radius:999px}
+#tvl-trivia .tt-q{margin:4px 0 16px}
