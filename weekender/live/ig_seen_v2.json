@@ -1,12 +1,4 @@
 {
-"18028678862857521": {
-"special": true,
-"title": "Sunday Brunch at Castaways",
-"when": "Sunday, Oct. 12 · 12 PM",
-"desc": "Try the Quinoa Parfait with yogurt, toasted quinoa, berries, coconut and honey.",
-"expires": "2026-10-12",
-"_ts": "2026-10-11T15:01:28+0000"
-},
 "18642589981024887": {
 "special": false,
 "title": "Saintsbury Pratt Vineyard Pinot Noir",
@@ -2970,5 +2962,9 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-09T23:37:37+0000"
+},
+"18108308024337853": {
+"special": false,
+"_ts": "2026-11-10T13:00:39+0000"
 }
 }

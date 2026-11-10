@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-10T16:01:21.782485+00:00",
+"updated": "2026-11-10T16:03:10.781508+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
@@ -2090,25 +2090,6 @@
 "profile": "https://www.threevillagelocal.com/the-fifth-season"
 },
 {
-"id": "17977611195151056",
-"biz": "Right Coast Taqueria",
-"ig": "rctaqueria",
-"town": "East Setauket",
-"category": "Restaurant",
-"member": false,
-"title": "Pilgrim Burrito is Back",
-"when": "Limited Time",
-"desc": "Holiday-themed burrito with stuffing, turkey, cranberry, and sweet potatoes.",
-"expires": "2026-11-17",
-"posted": "2026-11-03T13:56:22+0000",
-"url": "https://www.instagram.com/reel/DfSCbrSszOS/",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/rctaqueria.jpg",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17977611195151056.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-pilgrim-burrito-back",
-"label": "Special",
-"profile": "https://www.threevillagelocal.com/right-coast-taqueria"
-},
-{
 "id": "wd-eat.namkeen-20261110",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
@@ -2182,6 +2163,25 @@
 "page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-cranberry-crumble-bar-pastry-month",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast"
+},
+{
+"id": "18211269280369753",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Ladies' Lounge Night at Castaways",
+"when": "Saturdays",
+"desc": "2 hours, 2 drinks each, and bites for groups of 6-12. $50 per person, plus tax and gratuity.",
+"expires": "2026-11-21",
+"posted": "2026-11-07T16:01:09+0000",
+"url": "https://www.instagram.com/p/Dfcj-_lD9Oq/",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/castawayspj.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18211269280369753.jpg",
+"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-ladies-lounge-night",
+"label": "Special",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood"
 }
 ],
 "specialsAll": [
@@ -2202,25 +2202,6 @@
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18015260300978122.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/fifth-season-restaurant-thanksgiving-family-style-meal-pickup",
 "profile": "https://www.threevillagelocal.com/the-fifth-season",
-"label": "Special"
-},
-{
-"id": "17977611195151056",
-"biz": "Right Coast Taqueria",
-"ig": "rctaqueria",
-"town": "East Setauket",
-"category": "Restaurant",
-"member": false,
-"title": "Pilgrim Burrito is Back",
-"when": "Limited Time",
-"desc": "Holiday-themed burrito with stuffing, turkey, cranberry, and sweet potatoes.",
-"expires": "2026-11-17",
-"posted": "2026-11-03T13:56:22+0000",
-"url": "https://www.instagram.com/reel/DfSCbrSszOS/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17977611195151056.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-pilgrim-burrito-back",
-"profile": "https://www.threevillagelocal.com/right-coast-taqueria",
 "label": "Special"
 },
 {
@@ -2491,7 +2472,6 @@
 ],
 "eatOrder": [
 "Fifth Season Restaurant",
-"Right Coast Taqueria",
 "Namkeen Hot Chicken",
 "Madiran The Wine Bar",
 "Schnitzels",
@@ -2518,6 +2498,7 @@
 "Old Fields Port Jefferson",
 "The Whiskey Barrel",
 "Tara Inn",
+"Right Coast Taqueria",
 "Hirosaki",
 "Eastern Pavilion",
 "Taj Crown of India",
