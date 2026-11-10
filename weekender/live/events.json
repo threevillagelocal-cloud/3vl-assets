@@ -1,14 +1,14 @@
 {
-"updated": "2026-11-09T22:01:47.076343+00:00",
+"updated": "2026-11-10T00:01:30.843879+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 44,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 197,
-"Emma S. Clark Library": 254,
+"Village of Port Jefferson": "error: <urlopen error timed out>",
+"Emma S. Clark Library": 253,
 "Stony Brook Village Center": 7,
-"Long Island Museum": 45,
+"Long Island Museum": 44,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 5,
 "Staller Center for the Arts": 138,
@@ -361,59 +361,6 @@
 "page": "https://www.threevillagelocal.com/events/one-vision-of-queen",
 "pu": "",
 "rank": 2
-},
-{
-"id": "emmaclark-after-school-story-time-grades-k-2-63874",
-"title": "After-School Story Time (Grades K-2)",
-"start": "2026-11-09T16:45:00",
-"end": "2026-11-09T17:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/after-school-story-time-grades-k-2-63874",
-"desc": "Have fun listening to stories, creating crafts, and making new friends.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/after-school-story-time-grades-k-2-604"
-},
-{
-"id": "emmaclark-history-native-plants-61302",
-"title": "The History of Native Plants",
-"start": "2026-11-09T18:30:00",
-"end": "2026-11-09T20:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/history-native-plants-61302",
-"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Learn how native plants were used by Native Americans & the early settlers of Long Island and discover how they are still used by Native Americans today. Presented by Kimberly Simm",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/Screenshot%2B2025-03-12%2B214245a.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/the-history-of-native-plants"
-},
-{
-"id": "emmaclark-pc-clean-38599",
-"title": "PC Clean Up",
-"start": "2026-11-09T18:30:00",
-"end": "2026-11-09T20:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Technology Center",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/pc-clean-38599",
-"desc": "Have a PC laptop? Bring it with you and learn how to clean and speed it up. If you don't have one, don't worry, you can use ours to learn. This class is specifically tailored for PCs and not applicable to Mac systems. Taught by Visual Communications and Techno",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-04/pc%20cleanup_4.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/pc-clean-up"
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-63810",
@@ -1280,26 +1227,6 @@
 "page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction"
 },
 {
-"id": "portjeff-1100",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-15T09:00:00",
-"end": "2026-11-15T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485"
-},
-{
 "id": "sweetbriar-6acbd8fb9083cf68d32902a2",
 "title": "The Sunday Art Class - The Abundant Cornucopia - Adults - Nov 15",
 "start": "2026-11-15T11:00:00",
@@ -1925,6 +1852,219 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/the-new-york-bee-gees"
+},
+{
+"id": "sweetbriar-6a8476d48c45724f7474bb24",
+"title": "First Steps Into Nature 2y-5y",
+"start": "2026-11-20T09:30:00",
+"end": "2026-11-20T10:30:00",
+"allday": false,
+"venue": "Sweetbriar Nature Center",
+"addr": "62 Eckernkamp Dr, Smithtown, NY 11787",
+"url": "https://www.sweetbriarnc.org/new-events/2wyhmzz39xjsct5-ah326-rf8sy-exd5d-h3ltx-a23ea-hljsh-kbrg6-sdsmr",
+"desc": "Sweetbriar’s experienced educators help open up the wonders of the natural world for children, through hands-on activities, live animals, crafts, and much more.",
+"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1697550982103-EKZXM6RQAQDHVTQWZZC8/images.jpeg.jpg",
+"src": "sweetbriar",
+"tags": [
+"kids",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/first-steps-into-nature-2y-5y-942"
+},
+{
+"id": "emmaclark-time-baby-newborn-15-mos-w-caregiver-63799",
+"title": "Time For Baby (Newborn - 15 mos w/ caregiver)",
+"start": "2026-11-20T10:00:00",
+"end": "2026-11-20T10:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/time-baby-newborn-15-mos-w-caregiver-63799",
+"desc": "We will learn songs, rhymes, and finger plays.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/time-for-baby-newborn-15-mos-w-caregiver-552"
+},
+{
+"id": "emmaclark-game-day-38295",
+"title": "Game Day",
+"start": "2026-11-20T10:00:00",
+"end": "2026-11-20T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/game-day-38295",
+"desc": "We provide the space, tables and chairs. You bring your friends and a favorite board or card game to play. No registration required.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-11/people-having-fun-while-playing-board-game2.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/game-day-628"
+},
+{
+"id": "emmaclark-time-baby-16-mos-24-mos-w-caregiver-63801",
+"title": "Time For Baby (16 mos. - 24 mos. w/ caregiver)",
+"start": "2026-11-20T11:00:00",
+"end": "2026-11-20T11:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/time-baby-16-mos-24-mos-w-caregiver-63801",
+"desc": "There will be music, dancing, and games to enjoy with your baby.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/time-for-baby-16-mos-24-mos-w-caregiver-553"
+},
+{
+"id": "emmaclark-friday-matinee-pressure-2026-61313",
+"title": "Friday Matinee: Pressure (2026)",
+"start": "2026-11-20T14:00:00",
+"end": "2026-11-20T16:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/friday-matinee-pressure-2026-61313",
+"desc": "Starring Brendan Fraser & Andrew Scott In the tense 72 hours before D-Day, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice – launch the most dangerous seaborne invasion in history or risk losing the war altogether. PG-13 (100 min",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/MV5BMjE2YjdkNDctMDg1MS00MjBjLWIyZjEtZWM1ZjczNTAzZGEyXkEyXkFqcGc%40._V1_.jpg",
+"src": "emmaclark",
+"tags": [
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/friday-matinee-pressure-2026"
+},
+{
+"id": "lim-3225062",
+"title": "America on Screen: Made in the USA",
+"start": "2026-11-20T14:00:00",
+"end": "2026-11-20T15:00:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/america-on-screen-made-in-the-usa/",
+"desc": "Join us on select Friday afternoons for a special film series commemorating America’s 250th: Anniversary: America on Screen . Enjoy screenings of Smithsonian Channel programs that explore the people, places, and stories that shaped America. Made in the USA Wit",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/06/America_in_Color_03_304_episode_3840_2160_GEG333183-scaled.jpg",
+"src": "lim",
+"tags": [
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/america-on-screen-made-in-the-usa"
+},
+{
+"id": "pjchamber-15286",
+"title": "Kids Night Out",
+"start": "2026-11-20T18:00:00",
+"end": "2026-11-20T20:00:00",
+"allday": false,
+"venue": "Port Jefferson Village Center",
+"addr": "101A East Broadway, Port Jefferson, 11777",
+"url": "https://portjeffchamber.com/events-calendar/kids-night-out-nov-2026/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/kids-night-out"
+},
+{
+"id": "reboli-6aad4cbf062c0f03de80759e",
+"title": "November's Third Friday!",
+"start": "2026-11-20T18:30:00",
+"end": "2026-11-20T20:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2026/11/20/novembers-third-friday",
+"desc": "Join us for another great Third Friday at The Reboli Center with local artist and Vietnam veteran John Melillo. Melillo, a proud Eastern Long Islander, found solace in art to combat his PTSD. Through his paintings, he captures the images of Vietnam and Long Is",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1789742483085-JPUEFEOFYI6JLXHPSJIB/NOVEMBER+RC+THIRD+FRIDAY+FLYER%282%29.png",
+"src": "reboli",
+"tags": [
+"free",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/novembers-third-friday"
+},
+{
+"id": "theatre3-9244",
+"title": "A Christmas Carol",
+"start": "2026-11-20T19:00:00",
+"end": "2026-11-20T19:00:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson, NY 11777",
+"url": "https://theatrethree.getmytix.net/tickets#922/A-Christmas-Carol",
+"desc": "“I will honor Christmas in my heart…” Celebrate the season with Long Island’s own holiday tradition and BroadwayWorld.com winner for Best Play. Follow the miser Ebenezer Scrooge on a journey that teaches him the meaning of Christmas - past, present, and future",
+"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_922_A%20Christmas%20Carol%201600x1000.png",
+"src": "theatre3",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
+},
+{
+"id": "gallerynorth-71325",
+"title": "Adults ONLY Card Making",
+"start": "2026-11-20T19:00:00",
+"end": "2026-11-20T21:00:00",
+"allday": false,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org/products/adults-only-card-making",
+"desc": "Have some well deserved fun and allow yourself to play with art materials!! Join us for some ADULTS ONLY art making!! During this Sip, Make, Play guests will have all the supplies they need to create all sorts of Holiday Cards! Get a chance to use our etching ",
+"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71325/v1792692704587/image_large.webp",
+"src": "gallerynorth",
+"tags": [
+"food",
+"stage",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/adults-only-card-making"
+},
+{
+"id": "madiran-20261120-jim-lowe",
+"title": "Live Music: Jim Lowe",
+"start": "2026-11-20T19:00:00",
+"end": "2026-11-20T22:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in Setauket: Jim Lowe. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-jim-lowe-1009"
 }
 ],
 "closings": [],
@@ -2192,25 +2332,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18117435809104380.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-cranberry-crumble-bar-pastry-month",
-"profile": "https://www.threevillagelocal.com/the-study-by-toast",
-"label": "Special"
-},
-{
-"id": "18121786526284530",
-"biz": "The Study by Toast",
-"ig": "thestudy.bytoast",
-"town": "East Setauket",
-"category": "Coffee House",
-"member": false,
-"title": "Free Coffee & Pastry for Veterans",
-"when": "Today, Nov. 9",
-"desc": "Free drip coffee and pastry for veterans on Veterans Day. Dine-in only.",
-"expires": "2026-11-09",
-"posted": "2026-11-09T15:09:56+0000",
-"url": "https://www.instagram.com/p/DfhnsVSR3VI/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18121786526284530.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-free-coffee-pastry-veterans",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast",
 "label": "Special"
 },
