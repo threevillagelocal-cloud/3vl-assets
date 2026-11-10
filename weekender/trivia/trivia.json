@@ -1,47 +1,256 @@
 {
- "start": "2026-11-10",
- "q": [
-  {"q": "Which Three Village hamlet was settled in 1655, the first settlement in what became the Town of Brookhaven?", "o": ["Stony Brook", "Setauket", "Old Field", "Poquott"], "a": 1,
-   "f": "Settlers from New England bought the land from the Setalcott people in 1655. Setauket takes its name from them."},
-  {"q": "In local tradition, what did Anna Strong hang on her clothesline to signal the Culper spies?", "o": ["A red lantern", "A blue quilt", "A black petticoat", "A white flag"], "a": 2,
-   "f": "Setauket legend says a black petticoat meant the courier had arrived, and handkerchiefs showed which cove he was hiding in."},
-  {"q": "Setauket farmer Abraham Woodhull spied for George Washington under what code name?", "o": ["John Bolton", "Samuel Culper", "Agent 711", "Caleb Brewster"], "a": 1,
-   "f": "Woodhull was \"Samuel Culper Sr.\" The ring's spymaster, Setauket-born Benjamin Tallmadge, went by \"John Bolton.\""},
-  {"q": "The Stony Brook Post Office eagle flaps its wings how often?", "o": ["Once a day at noon", "Every 15 minutes", "Every hour, on the hour", "Only on holidays"], "a": 2,
-   "f": "The mechanical eagle has flapped its wings every hour on the hour, from 8 AM to 8 PM, since 1941."},
-  {"q": "In what year did Ward Melville open the Stony Brook Village Center?", "o": ["1911", "1941", "1957", "1969"], "a": 1,
-   "f": "The Village Center opened in July 1941 and was built around a village green as part of Ward and Dorothy Melville's vision for Stony Brook."},
-  {"q": "Ward Melville's family company ran which famous chain of shoe stores?", "o": ["Thom McAn", "Florsheim", "Buster Brown", "Kinney Shoes"], "a": 0,
-   "f": "The Melville Shoe Corporation opened its first Thom McAn store in New York City in 1922."},
-  {"q": "The Hercules figurehead in Stony Brook once sat on the bow of which ship?", "o": ["USS Constitution", "USS Ohio", "The Mayflower", "USS Monitor"], "a": 1,
-   "f": "The USS Ohio was the first ship launched from the Brooklyn Navy Yard, in 1820. Hercules has watched over Stony Brook Harbor since the 1950s."},
-  {"q": "About how old is the Stony Brook Grist Mill?", "o": ["It dates to about 1751", "It dates to about 1851", "It dates to about 1901", "It was built in 1941"], "a": 0,
-   "f": "The mill dates to about 1751 and is described as Long Island's most completely equipped working grist mill."},
-  {"q": "Setauket's Caroline Church was renamed to honor whom?", "o": ["A local sea captain's daughter", "Queen Caroline of England", "The wife of the first minister", "Caroline County, Virginia"], "a": 1,
-   "f": "It began as Christ Church and was renamed for Queen Caroline. The building on the Setauket green was consecrated in 1729."},
-  {"q": "During the 1777 Battle of Setauket, Loyalist troops fortified which building?", "o": ["The grist mill", "The Presbyterian church", "Roe Tavern", "The lighthouse"], "a": 1,
-   "f": "On August 22, 1777, Connecticut troops attacked the fortified Presbyterian meeting house but could not take it. Today's church dates to 1812."},
-  {"q": "When George Washington toured Long Island in April 1790, he spent a night at whose house in Setauket?", "o": ["Anna Strong", "Abraham Woodhull", "Captain Austin Roe", "Benjamin Tallmadge"], "a": 2,
-   "f": "Washington stayed at Austin Roe's on April 22, 1790. Roe had carried messages for the Culper spy ring during the war."},
-  {"q": "What does the Old Field Point Lighthouse serve as today?", "o": ["A bed and breakfast", "A museum", "The Village of Old Field's village hall", "A seafood restaurant"], "a": 2,
-   "f": "The current lighthouse was built in 1868. The village uses it for its village hall, and a modern beacon still guides boats."},
-  {"q": "Thomas Hodgkins built the Emma S. Clark Memorial Library in memory of his...", "o": ["Wife", "Daughter", "Niece", "Sister"], "a": 2,
-   "f": "The library opened on October 3, 1892, on what would have been Emma Clark's birthday."},
-  {"q": "Before moving to Stony Brook, where did Stony Brook University hold its first classes in 1957?", "o": ["Oyster Bay", "Brooklyn", "Port Jefferson", "Riverhead"], "a": 0,
-   "f": "Classes began at the Planting Fields estate in Oyster Bay. The Stony Brook campus opened in 1962."},
-  {"q": "What is the name of Stony Brook University's mascot?", "o": ["Spike", "Wolfie", "Brooky", "Howler"], "a": 1,
-   "f": "Wolfie cheers on the Stony Brook Seawolves at home games all year."},
-  {"q": "Which painter famous for scenes of everyday Long Island life was born in Setauket in 1807?", "o": ["Winslow Homer", "Thomas Cole", "William Sidney Mount", "Edward Hopper"], "a": 2,
-   "f": "William Sidney Mount painted farmers, musicians and village life around Stony Brook and Setauket."},
-  {"q": "The Long Island Museum in Stony Brook is known for its collection of...", "o": ["Horse-drawn carriages", "Antique cars", "Ship models", "Antique dolls"], "a": 0,
-   "f": "The museum's Carriage Museum shows off horse-drawn carriages and sleighs from Long Island's past."},
-  {"q": "Which AMC drama told the story of Setauket's Revolutionary War spy ring?", "o": ["Sons of Liberty", "TURN: Washington's Spies", "John Adams", "The Patriot"], "a": 1,
-   "f": "TURN: Washington's Spies ran from 2014 to 2017 and followed Abraham Woodhull and the Culper Ring."},
-  {"q": "Culper Ring spymaster Benjamin Tallmadge grew up in Setauket. What was his father's job?", "o": ["Ship captain", "Minister of the Setauket Presbyterian Church", "Miller at the grist mill", "Tavern keeper"], "a": 1,
-   "f": "His father was the minister of the Presbyterian church on the Setauket village green."},
-  {"q": "What are the sports teams at Ward Melville High School called?", "o": ["The Seawolves", "The Spartans", "The Patriots", "The Eagles"], "a": 2,
-   "f": "A fitting name for a school in the heart of Culper spy country."},
-  {"q": "Stony Brook Harbor opens onto which body of water?", "o": ["Long Island Sound", "Great South Bay", "Peconic Bay", "The Atlantic Ocean"], "a": 0,
-   "f": "Stony Brook Harbor, West Meadow and Port Jefferson Harbor all open onto Long Island Sound."}
+ "note": "One round shows at a time: the newest round whose start date (New York) has arrived. Add a new round of 5 every Monday.",
+ "rounds": [
+  {
+   "start": "2026-11-10",
+   "title": "Launch Round",
+   "q": [
+    {
+     "q": "Which Three Village hamlet was settled in 1655, the first settlement in what became the Town of Brookhaven?",
+     "o": [
+      "Stony Brook",
+      "Setauket",
+      "Old Field",
+      "Poquott"
+     ],
+     "a": 1,
+     "f": "Settlers from New England bought the land from the Setalcott people in 1655. Setauket takes its name from them."
+    },
+    {
+     "q": "The Stony Brook Post Office eagle flaps its wings how often?",
+     "o": [
+      "Once a day at noon",
+      "Every 15 minutes",
+      "Every hour, on the hour",
+      "Only on holidays"
+     ],
+     "a": 2,
+     "f": "The mechanical eagle has flapped its wings every hour on the hour, from 8 AM to 8 PM, since 1941."
+    },
+    {
+     "q": "The Hercules figurehead in Stony Brook once sat on the bow of which ship?",
+     "o": [
+      "USS Constitution",
+      "USS Ohio",
+      "The Mayflower",
+      "USS Monitor"
+     ],
+     "a": 1,
+     "f": "The USS Ohio was the first ship launched from the Brooklyn Navy Yard, in 1820. Hercules has watched over Stony Brook Harbor since the 1950s."
+    },
+    {
+     "q": "In local tradition, what did Anna Strong hang on her clothesline to signal the Culper spies?",
+     "o": [
+      "A red lantern",
+      "A blue quilt",
+      "A black petticoat",
+      "A white flag"
+     ],
+     "a": 2,
+     "f": "Setauket legend says a black petticoat meant the courier had arrived, and handkerchiefs showed which cove he was hiding in."
+    },
+    {
+     "q": "Setauket farmer Abraham Woodhull spied for George Washington under what code name?",
+     "o": [
+      "John Bolton",
+      "Samuel Culper",
+      "Agent 711",
+      "Caleb Brewster"
+     ],
+     "a": 1,
+     "f": "Woodhull was \"Samuel Culper Sr.\" The ring's spymaster, Setauket-born Benjamin Tallmadge, went by \"John Bolton.\""
+    },
+    {
+     "q": "When George Washington toured Long Island in April 1790, he spent a night at whose house in Setauket?",
+     "o": [
+      "Anna Strong",
+      "Abraham Woodhull",
+      "Captain Austin Roe",
+      "Benjamin Tallmadge"
+     ],
+     "a": 2,
+     "f": "Washington stayed at Austin Roe's on April 22, 1790. Roe had carried messages for the Culper spy ring during the war."
+    },
+    {
+     "q": "Before moving to Stony Brook, where did Stony Brook University hold its first classes in 1957?",
+     "o": [
+      "Oyster Bay",
+      "Brooklyn",
+      "Port Jefferson",
+      "Riverhead"
+     ],
+     "a": 0,
+     "f": "Classes began at the Planting Fields estate in Oyster Bay. The Stony Brook campus opened in 1962."
+    },
+    {
+     "q": "What is the name of Stony Brook University's mascot?",
+     "o": [
+      "Spike",
+      "Wolfie",
+      "Brooky",
+      "Howler"
+     ],
+     "a": 1,
+     "f": "Wolfie cheers on the Stony Brook Seawolves at home games all year."
+    },
+    {
+     "q": "About how old is the Stony Brook Grist Mill?",
+     "o": [
+      "It dates to about 1751",
+      "It dates to about 1851",
+      "It dates to about 1901",
+      "It was built in 1941"
+     ],
+     "a": 0,
+     "f": "The mill dates to about 1751 and is described as Long Island's most completely equipped working grist mill."
+    },
+    {
+     "q": "Ward Melville's family company ran which famous chain of shoe stores?",
+     "o": [
+      "Thom McAn",
+      "Florsheim",
+      "Buster Brown",
+      "Kinney Shoes"
+     ],
+     "a": 0,
+     "f": "The Melville Shoe Corporation opened its first Thom McAn store in New York City in 1922."
+    }
+   ]
+  },
+  {
+   "start": "2026-11-16",
+   "title": "Week of Nov. 16",
+   "q": [
+    {
+     "q": "In what year did Ward Melville open the Stony Brook Village Center?",
+     "o": [
+      "1911",
+      "1941",
+      "1957",
+      "1969"
+     ],
+     "a": 1,
+     "f": "The Village Center opened in July 1941 and was built around a village green as part of Ward and Dorothy Melville's vision for Stony Brook."
+    },
+    {
+     "q": "Setauket's Caroline Church was renamed to honor whom?",
+     "o": [
+      "A local sea captain's daughter",
+      "Queen Caroline of England",
+      "The wife of the first minister",
+      "Caroline County, Virginia"
+     ],
+     "a": 1,
+     "f": "It began as Christ Church and was renamed for Queen Caroline. The building on the Setauket green was consecrated in 1729."
+    },
+    {
+     "q": "During the 1777 Battle of Setauket, Loyalist troops fortified which building?",
+     "o": [
+      "The grist mill",
+      "The Presbyterian church",
+      "Roe Tavern",
+      "The lighthouse"
+     ],
+     "a": 1,
+     "f": "On August 22, 1777, Connecticut troops attacked the fortified Presbyterian meeting house but could not take it. Today's church dates to 1812."
+    },
+    {
+     "q": "What does the Old Field Point Lighthouse serve as today?",
+     "o": [
+      "A bed and breakfast",
+      "A museum",
+      "The Village of Old Field's village hall",
+      "A seafood restaurant"
+     ],
+     "a": 2,
+     "f": "The current lighthouse was built in 1868. The village uses it for its village hall, and a modern beacon still guides boats."
+    },
+    {
+     "q": "Thomas Hodgkins built the Emma S. Clark Memorial Library in memory of his...",
+     "o": [
+      "Wife",
+      "Daughter",
+      "Niece",
+      "Sister"
+     ],
+     "a": 2,
+     "f": "The library opened on October 3, 1892, on what would have been Emma Clark's birthday."
+    }
+   ]
+  },
+  {
+   "start": "2026-11-23",
+   "title": "Week of Nov. 23",
+   "q": [
+    {
+     "q": "Which painter famous for scenes of everyday Long Island life was born in Setauket in 1807?",
+     "o": [
+      "Winslow Homer",
+      "Thomas Cole",
+      "William Sidney Mount",
+      "Edward Hopper"
+     ],
+     "a": 2,
+     "f": "William Sidney Mount painted farmers, musicians and village life around Stony Brook and Setauket."
+    },
+    {
+     "q": "The Long Island Museum in Stony Brook is known for its collection of...",
+     "o": [
+      "Horse-drawn carriages",
+      "Antique cars",
+      "Ship models",
+      "Antique dolls"
+     ],
+     "a": 0,
+     "f": "The museum's Carriage Museum shows off horse-drawn carriages and sleighs from Long Island's past."
+    },
+    {
+     "q": "Which AMC drama told the story of Setauket's Revolutionary War spy ring?",
+     "o": [
+      "Sons of Liberty",
+      "TURN: Washington's Spies",
+      "John Adams",
+      "The Patriot"
+     ],
+     "a": 1,
+     "f": "TURN: Washington's Spies ran from 2014 to 2017 and followed Abraham Woodhull and the Culper Ring."
+    },
+    {
+     "q": "Culper Ring spymaster Benjamin Tallmadge grew up in Setauket. What was his father's job?",
+     "o": [
+      "Ship captain",
+      "Minister of the Setauket Presbyterian Church",
+      "Miller at the grist mill",
+      "Tavern keeper"
+     ],
+     "a": 1,
+     "f": "His father was the minister of the Presbyterian church on the Setauket village green."
+    },
+    {
+     "q": "What are the sports teams at Ward Melville High School called?",
+     "o": [
+      "The Seawolves",
+      "The Spartans",
+      "The Patriots",
+      "The Eagles"
+     ],
+     "a": 2,
+     "f": "A fitting name for a school in the heart of Culper spy country."
+    }
+   ]
+  }
+ ],
+ "spare": [
+  {
+   "q": "Stony Brook Harbor opens onto which body of water?",
+   "o": [
+    "Long Island Sound",
+    "Great South Bay",
+    "Peconic Bay",
+    "The Atlantic Ocean"
+   ],
+   "a": 0,
+   "f": "Stony Brook Harbor, West Meadow and Port Jefferson Harbor all open onto Long Island Sound."
+  }
  ]
 }

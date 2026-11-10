@@ -35,3 +35,12 @@
 
 /* phones/tablets: the homepage lines sections up with CSS order; sit right after Eat & Drink (order 3) */
 @media (max-width:900px){#wk-top.wk-y #wk-trivia{order:3}}
+/* rounds (11/10/2026): progress, score card */
+.tt-count{margin-left:auto;font-size:14px;font-weight:700;color:var(--tb)}
+.tt-bar{height:6px;background:#e9eef5;border-radius:99px;overflow:hidden;margin:0 0 14px}
+.tt-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--tb),#3d8ae0);border-radius:99px;transition:width .4s}
+.tt-done{display:flex;align-items:center;gap:20px;background:#e9f2fd;border-radius:14px;padding:18px}
+.tt-score{flex:none;width:112px;height:112px;border-radius:50%;background:#fff;border:5px solid var(--ty);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(22,48,79,.12)}
+.tt-score b{font-size:44px;line-height:1;color:var(--tn)}.tt-score span{font-size:13px;font-weight:700;color:#5a6678}
+#tvl-trivia button.tt-again{font:inherit;font-weight:700;font-size:14.5px;background:#fff;color:var(--tn);border:2px solid #cfd9e6;border-radius:999px;padding:9px 16px;cursor:pointer}
+@media (max-width:560px){.tt-done{flex-direction:column;text-align:center}.tt-count{margin-left:0}}
