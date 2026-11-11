@@ -45,6 +45,7 @@ HERO = """<section class="tvp-top" id="tvp-top">
       <div class="tvp-gh"><p>Tools to get seen and grow</p><h2>Done for you by our local team</h2></div>
       <a href="#tvp-web"><span>&#128187;</span><div><b>AI-optimized websites</b><i>Designed, built and hosted to be found on Google and AI</i></div><em>&rarr;</em></a>
       <a href="#tvp-bot"><span>&#129302;</span><div><b>AI chatbot: Digital Front Desk</b><i>Answers customers 24/7 and texts you every lead</i></div><em>&rarr;</em></a>
+      <a href="#tvp-web"><span>&#128200;</span><div><b>SEO optimization</b><i>Rank higher on Google when locals search for what you do</i></div><em>&rarr;</em></a>
       <a href="#tvp-ai"><span>&#10024;</span><div><b>AI search optimization</b><i>Get recommended by ChatGPT, Gemini and Google AI</i></div><em>&rarr;</em></a>
       <a href="#tvp-social"><span>&#128172;</span><div><b>Social media marketing</b><i>Scroll-stopping content for your own Facebook and Instagram</i></div><em>&rarr;</em></a>
       <a href="#tvp-video"><span>&#127909;</span><div><b>Promo video</b><i>Short reels that show off your business</i></div><em>&rarr;</em></a>
