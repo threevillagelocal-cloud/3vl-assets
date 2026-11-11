@@ -57,6 +57,7 @@ function handle_(b) {
     else if (a === 'setloc') out = setloc_(b);
     else if (a === 'request') out = request_(b);
     else if (a === 'addcode') out = addcode_(b);
+    else if (a === 'stats') out = stats_(b);
     else out = { ok: false, error: 'unknown' };
   } catch (err) {
     out = { ok: false, error: 'server', detail: String(err && err.message || err) };
@@ -293,4 +294,26 @@ function setloc_(b) {   // owner/staff: stand at the sign or sticker, open /hunt
   var r = rows_('Codes'), li = r.h.indexOf('lat') + 1;
   sh_('Codes').getRange(f.row, li, 1, 2).setValues([[lat, lng]]);
   return { ok: true, code: f.c.code, name: f.c.name, acc: acc };
+}
+
+// Owner dashboard (BARDRAM HQ, 11/10/2026): every code with its spot status + scan counts, players, recent scans, sign requests. Needs ADMIN_KEY.
+function stats_(b) {
+  if (String(b.key || '') !== PropertiesService.getScriptProperties().getProperty('ADMIN_KEY')) return { ok: false, error: 'key' };
+  var fmt = function (d) { return d instanceof Date ? Utilities.formatDate(d, TZ, "yyyy-MM-dd HH:mm") : String(d || ''); };
+  var wk = Utilities.formatDate(new Date(Date.now() - 7 * 864e5), TZ, 'yyyy-MM-dd'), t = today_();
+  var C = rows_('Codes'), codes = {};
+  C.v.forEach(function (r) { var c = obj_(C.h, r); if (!c.code) return;
+    codes[String(c.code).toLowerCase()] = { code: String(c.code).toLowerCase(), name: c.name, type: c.type, placed: c.lat !== '' && c.lng !== '', active: active_(c), notes: c.notes,
+      ok: 0, ok7: 0, today: 0, tries: 0, fails: 0, players: {}, last: '' }; });
+  var S = rows_('Scans'), recent = [], fails = {};
+  S.v.forEach(function (r) { var x = obj_(S.h, r), k = String(x.code).toLowerCase(), c = codes[k], d = x.date_et instanceof Date ? Utilities.formatDate(x.date_et, TZ, 'yyyy-MM-dd') : String(x.date_et);
+    if (c) { c.tries++; if (x.result === 'ok') { c.ok++; c.players[x.player_id] = 1; if (d >= wk) c.ok7++; if (d === t) c.today++; c.last = fmt(x.time); } else c.fails++; }
+    if (x.result !== 'ok') fails[x.result] = (fails[x.result] || 0) + 1;
+    recent.push({ time: fmt(x.time), player: initials_({ first: String(x.player).split(' ')[0], last: String(x.player).split(' ').slice(1).join(' ') }), code: k, place: x.place, result: x.result, points: x.points, dist_m: x.dist_m, flag: x.flag }); });
+  var list = Object.keys(codes).map(function (k) { var c = codes[k]; c.unique = Object.keys(c.players).length; delete c.players; return c; });
+  var P = rows_('Players'), tot = totals_(), board = [];
+  P.v.forEach(function (r) { var p = obj_(P.h, r); if (tot[p.id]) board.push({ name: initials_(p), points: tot[p.id] }); });
+  board.sort(function (a, b) { return b.points - a.points; });
+  var R = rows_('Sign Requests'), req = R.v.map(function (r) { var o = obj_(R.h, r); return { time: fmt(o.time), business: o.business, contact: o.contact, address: o.address, status: o.status }; });
+  return { ok: true, codes: list, players: P.v.length, board: board.slice(0, 15), recent: recent.slice(-40).reverse(), fails: fails, requests: req.reverse() };
 }
