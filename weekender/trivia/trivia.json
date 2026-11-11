@@ -28,6 +28,17 @@
      "f": "The mechanical eagle has flapped its wings every hour on the hour, from 8 AM to 8 PM, since 1941."
     },
     {
+     "q": "Avalon Park & Preserve, across from the Stony Brook Grist Mill, was created in memory of whom?",
+     "o": [
+      "Ward Melville",
+      "Paul Simons",
+      "Anna Strong",
+      "Emma Clark"
+     ],
+     "a": 1,
+     "f": "The Paul Simons Foundation created it to honor Paul's love of nature. The labyrinth and sculpture there are his memorial."
+    },
+    {
      "q": "The Hercules figurehead in Stony Brook once sat on the bow of which ship?",
      "o": [
       "USS Constitution",
@@ -48,6 +59,17 @@
      ],
      "a": 2,
      "f": "Setauket legend says a black petticoat meant the courier had arrived, and handkerchiefs showed which cove he was hiding in."
+    },
+    {
+     "q": "The Jazz Loft, a jazz museum and performance space in Stony Brook Village, opened in what year?",
+     "o": [
+      "2001",
+      "2009",
+      "2016",
+      "2021"
+     ],
+     "a": 2,
+     "f": "Trumpeter Tom Manuel opened it in May 2016 on the site of the former Suffolk Museum. It hosts over 200 shows a year."
     },
     {
      "q": "Setauket farmer Abraham Woodhull spied for George Washington under what code name?",
@@ -72,6 +94,17 @@
      "f": "Washington stayed at Austin Roe's on April 22, 1790. Roe had carried messages for the Culper spy ring during the war."
     },
     {
+     "q": "Every July, Stony Brook University's Staller Center hosts which popular 10-day event?",
+     "o": [
+      "A food truck festival",
+      "The Stony Brook Film Festival",
+      "A hot air balloon festival",
+      "A county fair"
+     ],
+     "a": 1,
+     "f": "The Stony Brook Film Festival has screened independent films from around the world each summer since the mid-1990s."
+    },
+    {
      "q": "Before moving to Stony Brook, where did Stony Brook University hold its first classes in 1957?",
      "o": [
       "Oyster Bay",
@@ -94,6 +127,17 @@
      "f": "Wolfie cheers on the Stony Brook Seawolves at home games all year."
     },
     {
+     "q": "Every September, the Three Village Historical Society and Tri-Spy Tours host which event?",
+     "o": [
+      "Culper Spy Day",
+      "Setauket Tea Party",
+      "Founders Fair",
+      "Patriots Parade"
+     ],
+     "a": 0,
+     "f": "Culper Spy Day brings visitors to historic spy-ring sites around Setauket and Port Jefferson."
+    },
+    {
      "q": "About how old is the Stony Brook Grist Mill?",
      "o": [
       "It dates to about 1751",
@@ -114,6 +158,17 @@
      ],
      "a": 0,
      "f": "The Melville Shoe Corporation opened its first Thom McAn store in New York City in 1922."
+    },
+    {
+     "q": "Where do the Stony Brook Seawolves play home football games?",
+     "o": [
+      "Island Federal Arena",
+      "Kenneth P. LaValle Stadium",
+      "Belmont Park",
+      "Ward Melville Field"
+     ],
+     "a": 1,
+     "f": "The stadium opened in September 2002 and is named for State Senator Kenneth LaValle. Seawolves lacrosse and soccer play there too."
     }
    ]
   },
