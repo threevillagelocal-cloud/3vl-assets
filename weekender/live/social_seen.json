@@ -1,6 +1,6 @@
 {
-"last_run": "2026-11-10T13:01:43.937864+00:00",
-"cursor": 39,
+"last_run": "2026-11-11T13:02:01.480286+00:00",
+"cursor": 109,
 "accounts": 316,
 "posts": {
 "18481707613112188": {
@@ -5131,6 +5131,456 @@
 "date_stated": false,
 "time_stated": false,
 "desc": ""
+}
+},
+"18345345856287318": {
+"ts": "2026-11-10T23:58:01+0000",
+"c": {
+"event": true,
+"kind": "sale",
+"title": "Holiday Gift Card Bonus Promotion",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": true,
+"date_stated": false,
+"time_stated": false,
+"desc": "Receive a $10 Bonus Card for every $50 spent on Kilwins Gift Cards in a single transaction. Promotion runs through 1/4/2027 with bonus cards redeemable 1/5/27-3/31/27."
+},
+"acct": {
+"name": "Kilwins Port Jefferson",
+"ig": "kilwins_port_jeff",
+"town": "Port Jefferson",
+"cat": "Chocolate/Ice Cream",
+"food": true,
+"addr": "109D Main St, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/kilwins-port-jefferson",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DflI8bFDfqO/",
+"caption": "🎁 Holiday gifting starts early! Whether it’s for someone special or a little something for your holiday host, we’ve got you covered! 🍫\n\nNow through 1/4/2027, receive a $10 Bonus Card for every $50 spent on Kilwins Gift Cards in a single transaction. The bonus card is redeemable 1/5/27–3/31/27.\nAdditional terms: https://www.kilwins.com/collections/gift-cards\n\nGive a little sweetness this season! ❤️\n#giftideas #giftsforher #sweettreats #holidaygifting",
+"img": "ig/p18345345856287318.jpg"
+},
+"17957550888027675": {
+"ts": "2026-11-06T14:01:22+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Voting campaign for the 2027 Long Island Choice Awards, asking patients to vote for Hart Orthopedics and its doctors. Voting closes November 15."
+}
+},
+"18439948099181531": {
+"ts": "2026-11-10T20:30:02+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Kind Jar Community Service Program for Veterans",
+"date": "2026-11-16",
+"start": "16:30",
+"end": "17:30",
+"place": "Emma S. Clark Memorial Library",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Children in grades 3-5 make jars filled with kind phrases and nostalgic questions for veterans to reflect on. Taught by Theresa Maritato."
+},
+"acct": {
+"name": "Emma S. Clark Memorial Library",
+"ig": "emmaclarklibrary",
+"town": "",
+"cat": "3VL member",
+"food": false,
+"addr": "120 Main St, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/emma-s-clark-memorial-library",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfkxJYMjQUm/",
+"caption": "❤️🤍🩵 Children can make jars filled with kind phrases and nostalgic questions for veterans to reflect on in this community service program.\n*\nTaught by Theresa Maritato.\n*\nMonday, November 16, 4:30 - 5:30pm. Grades 3 - 5. To reserve your child's spot, visit the link in our bio and scroll down to \"Register for Programs.\"\n*\n#EmmaKids #CommunityService #HonoringOurVeterans",
+"img": "ig/p18439948099181531.jpg"
+},
+"18109550948200391": {
+"ts": "2026-11-10T00:00:09+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Gift Wrapping Service",
+"date": "2026-11-29",
+"start": "11:00",
+"end": "13:00",
+"place": "Emma S. Clark Memorial Library",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Teen and tween volunteers will wrap your gifts with a variety of holiday and winter-themed paper options. One-hour appointments available; registration required with approximate gift count."
+},
+"acct": {
+"name": "Emma S. Clark Memorial Library",
+"ig": "emmaclarklibrary",
+"town": "",
+"cat": "3VL member",
+"food": false,
+"addr": "120 Main St, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/emma-s-clark-memorial-library",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfikZZdD7qe/",
+"caption": "🎁 Do you have gifts for the holidays, but lack the mobility or resources or just need help with wrapping? Let our Teen & Tween Volunteers do it for you! \n*\n🕎❄🎄Bring your gifts to the Library, and choose from a variety of paper and bow options, both commercial and handmade. We will have holiday paper options, including Hanukkah and Christmas, as well as general winter-themed selections. You'll pick out paper, boxes, bags, and bows and let the teens/tweens do all the packaging work. We'll give you labels to fill out for each gift, so there's no confusion as to which gift is for whom when you tak",
+"img": "ig/p18109550948200391.jpg"
+},
+"18093375410240534": {
+"ts": "2026-11-09T17:00:03+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "This class has been cancelled by the programmer."
+}
+},
+"18137188303648038": {
+"ts": "2026-11-09T04:42:59+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "SKINMED Holiday Open House",
+"date": "2026-11-19",
+"start": "16:30",
+"end": "19:00",
+"place": "SKINMED SPA + BODY, Port Jefferson Village",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "An evening of beauty, shopping, and holiday indulgence featuring gift card sales, permanent jewelry, complimentary color analysis, holiday eye looks, and luxury vintage designer bags."
+},
+"acct": {
+"name": "SKINMED SPA + BODY",
+"ig": "skinmedspapj",
+"town": "",
+"cat": "3VL member",
+"food": false,
+"addr": "142 E Main St, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/skinmed-spa-body",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/Dfgfr2kRiyB/",
+"caption": "SKINMED HOLIDAY OPEN HOUSE 🎄\n\nYour holiday wish list starts at SKINMED.\n\nJoin us November 19th from 4:30–7 PM for our Holiday Open House—an evening of beauty, shopping, and a little holiday indulgence.\n\n• Gift card sale: $20 off every $200 \n🎄11/19 and 11/27 only for gift card sale \n• Permanent jewelry by Tabu Boutique with exclusive event pricing tabu.portjeff \n• Complimentary mini color analysis by Color School with Kristen colorschoolwithkristen \n• Holiday eye looks with Diana, our talented SKINMED esthetician diana_skinmedspapj \n• Authentic Designer, one of a kind bags from Luxury Vintage F",
+"img": "ig/p18137188303648038.jpg"
+},
+"18118426310592632": {
+"ts": "2026-11-10T21:02:23+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Chef Franco's Whipped Ricotta Tartine Night",
+"date": "2026-11-11",
+"start": "",
+"end": "",
+"place": "Enology Wine Bar & Bistro, Saint James",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Chef Franco's whipped ricotta tartine with toasted bread, butternut squash caramel and chestnuts. A small plate made for sharing over wine."
+},
+"acct": {
+"name": "Enology Wine Bar & Bistro",
+"ig": "enologywinebar",
+"town": "St. James",
+"cat": "Wine Bar",
+"food": true,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dfk02ENFNpb/",
+"caption": "Chef Franco's whipped ricotta tartine: toasted bread, butternut squash caramel and chestnuts. A small plate that tastes like the season, made for sharing over a glass of wine.\n\nJoin us tonight in Saint James. Book your table at the link in our bio.\n\n#enologywinebar #saintjamesny #longislandeats #smallplates",
+"img": "ig/p18118426310592632.jpg"
+},
+"18190177093418260": {
+"ts": "2026-11-10T16:31:54+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "German and Austrian Wine Tasting",
+"date": "2026-11-14",
+"start": "13:00",
+"end": "14:30",
+"place": "Enology Wine Bar & Bistro",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "An afternoon of six wines from Germany and Austria, grown in cool climates on steep ground, poured and talked through. $69 per guest, or $89 with a cheese plate."
+},
+"acct": {
+"name": "Enology Wine Bar & Bistro",
+"ig": "enologywinebar",
+"town": "St. James",
+"cat": "Wine Bar",
+"food": true,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfkV4kCJSU_/",
+"caption": "Say German wine and most people say Riesling. A fair answer, and an incomplete one.\n\nThis Saturday, join us for an afternoon of six wines from Germany and Austria, grown in cool climates on steep ground, poured and talked through in our dining room.\n\nSaturday, November 14\n1 to 2:30 p.m.\n$69 per guest, or $89 with a cheese plate\n\nSeats are limited and registration is required. Reserve through the link in our bio.\n\n#enologywinebar #saintjamesny #longislandwine #wineclass #germanwine #austrianwine #riesling #longislandevents #winetasting",
+"img": "ig/p18190177093418260.jpg"
+},
+"17993793270025920": {
+"ts": "2026-11-06T21:03:38+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Dinner at Enology Wine Bar & Bistro",
+"date": "2026-11-06",
+"start": "",
+"end": "",
+"place": "Enology Wine Bar & Bistro, Saint James",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Chef Franco's charred octopus over crushed fingerling potatoes with smoked paprika aioli and herb salad, paired with crisp white wine. A plate made for sharing."
+},
+"acct": {
+"name": "Enology Wine Bar & Bistro",
+"ig": "enologywinebar",
+"town": "St. James",
+"cat": "Wine Bar",
+"food": true,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfahzIMiMMW/",
+"caption": "Charred octopus from Chef Franco's kitchen, over crushed fingerling potatoes with smoked paprika aioli and a bright herb salad. A plate made for sharing, and for a crisp glass of white.\n\nJoin us tonight in Saint James. Book your table at the link in our bio.\n\n#enologywinebar #saintjamesny #longislandeats #charredoctopus",
+"img": "ig/p17993793270025920.jpg"
+},
+"18153989938535750": {
+"ts": "2026-11-02T02:29:14+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Light Up Main Street",
+"date": "2026-11-03",
+"start": "19:00",
+"end": "",
+"place": "Culper's 1778, 212 Main Street, East Setauket",
+"at_business": false,
+"date_stated": true,
+"time_stated": true,
+"desc": "Tree lighting at 7:00 PM at Veterans Memorial Park followed by open bar, food, and live music. All proceeds support the community's holiday lights on Main Street."
+},
+"acct": {
+"name": "Three Village Rotary",
+"ig": "three_village_rotary_ny",
+"town": "Setauket",
+"cat": "Community group",
+"food": false,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfOO_VDTFod/",
+"caption": "LOCATION UPDATE! 📍✨\nOur Light Up Main Street event has a new host! Join us tomorrow at Culper’s 1778 (212 Main Street, East Setauket).\nHuge thanks to our friends at Culper’s 1778 for stepping up to host this incredible evening!\n🎄 Tree Lighting at 7:00 PM at Veterans Memorial Park followed by:\n🍷 Open Bar\n🍽️ Amazing Food\n🎶 Live Music\n💡 All proceeds support our community’s holiday lights on Main Street!\nWe can’t wait to celebrate with everyone! Grab your tickets through the link in bio.",
+"img": "ig/p18153989938535750.jpg"
+},
+"18380872942242989": {
+"ts": "2026-11-07T01:04:58+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Post references a past game day event at Stony Brook and promotes catering services for future events, but does not announce a specific upcoming public event."
+}
+},
+"18082787906651053": {
+"ts": "2026-11-10T22:51:23+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Winter Season Soccer Shots",
+"date": "2026-11-21",
+"start": "",
+"end": "",
+"place": "",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Winter Season kicks off Saturday, November 21st. Give your child a positive weekend routine that keeps them moving, social, and building confidence away from the cold."
+},
+"acct": {
+"name": "Soccer Shots",
+"ig": "centralsuffolksoccershots",
+"town": "Port Jefferson",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "407 E Main St, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/soccer-shots",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/DflBR_VlSiR/",
+"caption": "The seasons may change, but the fun never stops! \n\nFrom spring sunshine and fall celebrations straight into our warm indoor gyms, we keep the smiles, goals, and high-fives going all year round.Winter Season kicks off Saturday, November 21st!  Give your child a positive weekend routine that keeps them moving, social, and building confidence away from the cold.",
+"img": "ig/p18082787906651053.jpg"
+},
+"17994618506851001": {
+"ts": "2026-11-09T10:43:08+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Assessment to Report – Mold Assessment Basics",
+"date": "2026-11-17",
+"start": "18:00",
+"end": "20:30",
+"place": "Long Island, NY",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Professional development course on mold assessment and remediation plan writing taught by Long Island Mold Guy with 30+ years of experience. For newly licensed NYS mold assessors, home inspectors, and environmental firms."
+},
+"acct": {
+"name": "Long Island Mold Guy",
+"ig": "longislandmoldguy",
+"town": "Centereach",
+"cat": "Restoration (Flood, Fire & Mold)",
+"food": false,
+"addr": "51 Joan Ave, Centereach, NY 11720",
+"page": "https://www.threevillagelocal.com/long-island-mold-guy",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/DfhIf5Bpna8/",
+"caption": "🚨 YOUR NYS MOLD LICENSE COURSE DIDN’T TEACH YOU EVERYTHING ABOUT WORKING IN THE FIELD!\n\nGetting licensed is one thing. Knowing how to apply what you’ve learned in real-world situations is another!\n\n🎓 LONG ISLAND MOLD GUY PROFESSIONAL DEVELOPMENT SERIES\n\n📚 Assessment to Report – Basics of Mold Assessment and Remediation Plan Writing\n\nLearn what the NY State licensing course doesn’t teach you about working in the field!\n\nWith over 30 years of hands-on experience and thousands of projects behind me, I’ll be sharing practical, real-world knowledge to help you better understand the mold assessment ",
+"img": "ig/p17994618506851001.jpg"
+},
+"18217738600364210": {
+"ts": "2026-11-11T00:00:08+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "The Muppet Christmas Carol Screening",
+"date": "2026-12-10",
+"start": "19:00",
+"end": "",
+"place": "Gillespie Room, Carriage Museum, Long Island Museum",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Free screening of the holiday classic \"The Muppet Christmas Carol\" (1992) featuring Kermit, Miss Piggy, Gonzo and the Muppet gang. Space is limited, advance registration encouraged on the museum's website."
+},
+"acct": {
+"name": "The Long Island Museum",
+"ig": "limuseum",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "1200 NY-25A, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/the-long-island-museum",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DflJL99ikjt/",
+"caption": "On December 10 at 7:00 pm, celebrate the magic of the holiday season with a free screening of the holiday classic, “The Muppet Christmas Carol” (1992)!\n\nJoin Kermit, Miss Piggy, Gonzo, and the rest of the beloved Muppet gang as they bring Charles Dickens’s timeless tale of Ebenezer Scrooge to life in this heartwarming holiday favorite. Follow Scrooge on his journey with the Ghosts of Christmas Past, Present, and Yet to Come, and discover the true meaning of Christmas. Filled with laugh-out-loud moments, memorable songs like “It Feels Like Christmas,” and plenty of Muppet mischief, this festive",
+"img": "ig/p18217738600364210.jpg"
+},
+"18093841037200973": {
+"ts": "2026-11-09T18:37:29+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Winter Solstice Sound Healing",
+"date": "2026-12-11",
+"start": "19:00",
+"end": "",
+"place": "The Long Island Museum's Carriage Museum",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "A restorative evening of sound healing with gongs, Tibetan bowls, crystal singing bowls, and chimes led by practitioner Toni Ann Nazimek. Release what no longer serves you and set intentions for the year ahead."
+},
+"acct": {
+"name": "The Long Island Museum",
+"ig": "limuseum",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "1200 NY-25A, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/the-long-island-museum",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dfh_eJHDZD0/",
+"caption": "Welcome the Winter Solstice with a deeply restorative evening of sound healing in The Long Island Museum’s Carriage Museum. Release what no longer serves you, quiet your mind, and reconnect with your inner light as you set intentions for the year ahead, surrounded by our historic carriages.\n\nImmerse yourself in the soothing vibrations of gongs, Tibetan bowls, crystal singing bowls, and chimes with practitioner Toni Ann Nazimek [toniannnamaste] from Hot Yoga Works Setauket [hotyogaworkssetauket].\n\n🗓️ December 11 @ 7:00 pm\n\nFor tickets, visit the events calendar on our website (link in bio)\n-\n#L",
+"img": "ig/p18093841037200973.jpg"
+},
+"18150974437483725": {
+"ts": "2026-11-08T23:00:08+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Long Island Cares Gather & Give Holiday Food Drive",
+"date": "2026-11-12",
+"start": "11:30",
+"end": "17:00",
+"place": "The Long Island Museum Visitors Center",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Bring nonperishable donations to support Long Island Cares' Holiday Food Drive and receive one free museum admission. Donations accepted November 12-29 during regular visiting hours."
+},
+"acct": {
+"name": "The Long Island Museum",
+"ig": "limuseum",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "1200 NY-25A, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/the-long-island-museum",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dff4vEGlR29/",
+"caption": "The Long Island Museum is proud to serve as a collection site for Long Island Cares’ Gather & Give Holiday Food Drive from November 12–29, 2026. [long_island_cares].\n\nAs food costs continue to rise, many families face growing challenges in putting nutritious meals on the table. Together, we can help make the holiday season a little brighter for our neighbors in need.\n\nBring your nonperishable donation to The Long Island Museum Visitors Center and receive one free museum admission as a thank-you for giving back to our community.\n\nDonations will be accepted during regular visiting hours:\n• Thurs",
+"img": "ig/p18150974437483725.jpg"
+},
+"17941664586400531": {
+"ts": "2026-11-11T00:50:08+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "A giveaway contest offering one family 3 months of unlimited classes, with entries due by Nov. 15."
 }
 }
 }
