@@ -1,28 +1,4 @@
 {
-"18038377886838371": {
-"special": true,
-"title": "Live Music: Al Marino, James Miceli & Jerry Mac",
-"when": "Wed, Oct. 12 · 7-9 PM",
-"desc": "Al Marino on guitar, James Miceli on sax, and Jerry Mac on bass perform tonight.",
-"expires": "2026-10-12",
-"_ts": "2026-10-12T13:07:30+0000"
-},
-"18002503688808113": {
-"special": true,
-"title": "Ronktoberfest at Toast Ronkonkoma",
-"when": "Oct. 15-18",
-"desc": "Featured Bavarian Street Brat Sandwich with bratwurst, Swiss cheese, sauerkraut, beer mustard, and crispy onions on pretzel roll.",
-"expires": "2026-10-18",
-"_ts": "2026-10-12T14:19:50+0000"
-},
-"18078461687547213": {
-"special": true,
-"title": "Open Interviews at Burgerology Patchogue",
-"when": "Wed & Thu, Oct 14–15 · 10:30 AM–8 PM",
-"desc": "All positions hiring. No appointment needed—bring your resume to 76 W Main St., Patchogue.",
-"expires": "2026-10-15",
-"_ts": "2026-10-12T15:16:44+0000"
-},
 "18130616062703518": {
 "special": false,
 "title": "",
@@ -30,14 +6,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-12T16:27:54+0000"
-},
-"18143477668589926": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-12T15:01:31+0000"
 },
 "18137250499725845": {
 "special": true,
@@ -3034,5 +3002,21 @@
 "desc": "Buy $50+ in gift cards in one transaction and get a $10 bonus card redeemable January 5–March 31, 2027.",
 "expires": "2027-01-04",
 "_ts": "2026-11-10T23:58:01+0000"
+},
+"18641965366047057": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-11T14:25:55+0000"
+},
+"18154607272553782": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-11T15:33:23+0000"
 }
 }
