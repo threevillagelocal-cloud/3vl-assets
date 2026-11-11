@@ -81,12 +81,11 @@ img = Image.open(shot).convert("RGB").resize((1080, 1350), Image.LANCZOS).filter
 name = "madiran-ig-%s.jpg" % monday
 img.save(os.path.join(out, name), quality=94, subsampling=0)
 
-body = "\n".join(lines)
-cap = ("🍷 Live music & wine this week at Madiran The Wine Bar in Setauket\n\n%s\n\n"
-       "Grab a glass, grab a seat, and support live music right here in Three Village. Call 631-675-2778 to reserve.\n\n{cta}\n\n"
-       "#threevillagelocal #yourneighborsinbusiness #livemusic #jazz #winebar #setauket #eastsetauket #stonybrook #longisland #shoplocal") % body
-open(os.path.join(out, "caption.txt"), "w", encoding="utf-8").write(cap.replace("{cta}", "Every night is on our events calendar: link in bio 🔗"))
-open(os.path.join(out, "fb.txt"), "w", encoding="utf-8").write(cap.replace("{cta}", "All the dates: https://www.threevillagelocal.com/events"))
+# Short caption, no performer names: the lineup is already in the photo.
+cap = ("🍷 Live music all week at @madiranthewinebar_eastsetauket. Lineup in the photo.\n\n{cta}\n\n"
+       "#threevillagelocal #yourneighborsinbusiness #livemusic #setauket")
+open(os.path.join(out, "caption.txt"), "w", encoding="utf-8").write(cap.replace("{cta}", "Details: link in bio"))
+open(os.path.join(out, "fb.txt"), "w", encoding="utf-8").write(cap.replace("@madiranthewinebar_eastsetauket", "Madiran The Wine Bar").replace("{cta}", "Details: https://www.threevillagelocal.com/events"))
 json.dump({"monday": str(monday), "week": week, "image": name, "nights": len(nights), "unknown": unknown},
           open(os.path.join(out, "meta.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 shutil.rmtree(work, ignore_errors=True)
