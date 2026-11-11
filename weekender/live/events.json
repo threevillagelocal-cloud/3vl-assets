@@ -1,8 +1,8 @@
 {
-"updated": "2026-11-11T20:01:50.251358+00:00",
+"updated": "2026-11-11T20:03:49.163115+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 0,
+"Port Jefferson Chamber": 43,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 196,
@@ -421,6 +421,25 @@
 "page": "https://www.threevillagelocal.com/events/live-music-al-marino-james-miceli-and-jerry-mac"
 },
 {
+"id": "pjchamber-15086",
+"title": "Blood Drive",
+"start": "2026-11-12T07:00:00",
+"end": "2026-11-12T19:00:00",
+"allday": false,
+"venue": "St. Charles Hospital",
+"addr": "200 Belle Terre Rd, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/blood-drive-6/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/blood-drive-787"
+},
+{
 "id": "emmaclark-chair-yoga-61291",
 "title": "Chair Yoga",
 "start": "2026-11-12T11:30:00",
@@ -510,23 +529,23 @@
 "page": "https://www.threevillagelocal.com/events/bark-for-readers-up-to-5th-grade-614"
 },
 {
-"id": "portjeff-1354",
-"title": "The Conservancy Presents \"Somewhere in Time\"",
+"id": "pjchamber-14970",
+"title": "Somewhere in Time 1912",
 "start": "2026-11-12T18:00:00",
 "end": "2026-11-12T22:00:00",
 "allday": false,
-"venue": "Port Jefferson",
-"addr": "709 Main Street Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1354",
+"venue": "Victorian on Main",
+"addr": "709 Main Street, Port Jefferson, New York",
+"url": "https://portjeffchamber.com/events-calendar/somewhere-in-time-1912/",
 "desc": "",
 "img": "",
-"src": "portjeff",
+"src": "pjchamber",
 "tags": [
 "arts"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/the-conservancy-presents-somewhere-in-time"
+"page": "https://www.threevillagelocal.com/events/somewhere-in-time-1912"
 },
 {
 "id": "emmaclark-tech-help-teens-42855",
@@ -1837,6 +1856,25 @@
 "page": "https://www.threevillagelocal.com/events/america-on-screen-made-in-the-usa"
 },
 {
+"id": "pjchamber-15286",
+"title": "Kids Night Out",
+"start": "2026-11-20T18:00:00",
+"end": "2026-11-20T20:00:00",
+"allday": false,
+"venue": "Port Jefferson Village Center",
+"addr": "101A East Broadway, Port Jefferson, 11777",
+"url": "https://portjeffchamber.com/events-calendar/kids-night-out-nov-2026/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/kids-night-out"
+},
+{
 "id": "reboli-6aad4cbf062c0f03de80759e",
 "title": "November's Third Friday!",
 "start": "2026-11-20T18:30:00",
@@ -1953,6 +1991,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/wildlife-wonders-furry-friends-ages-2y-5y"
+},
+{
+"id": "pjchamber-15079",
+"title": "March For Liberty",
+"start": "2026-11-21T11:00:00",
+"end": "2026-11-21T15:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/march-for-liberty/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/march-for-liberty"
 },
 {
 "id": "emmaclark-instrument-petting-zoo-ages-3-8-yrs-62060",
@@ -2437,6 +2494,25 @@
 "label": "Special"
 },
 {
+"id": "18136513211501491",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "Pesto Salmon Dinner Special",
+"when": "Today only",
+"desc": "Grilled salmon with pesto-panko crust, rice pilaf and green beans at Tommy's Place.",
+"expires": "2026-11-11",
+"posted": "2026-11-11T18:33:16+0000",
+"url": "https://www.instagram.com/p/DfnIlE2kYCR/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18136513211501491.jpg",
+"page": "https://www.threevillagelocal.com/tommys-place",
+"profile": "https://www.threevillagelocal.com/tommys-place",
+"label": "Special"
+},
+{
 "id": "18079551524738743",
 "biz": "Tommy's Place",
 "ig": "tommysplaceportjeff_",
@@ -2452,25 +2528,6 @@
 "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18079551524738743.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/tommys-place-lunch-specials",
-"profile": "https://www.threevillagelocal.com/tommys-place",
-"label": "Special"
-},
-{
-"id": "18152426533558871",
-"biz": "Tommy's Place",
-"ig": "tommysplaceportjeff_",
-"town": "Port Jefferson",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Sausage Stuffed Portobello Mushroom",
-"when": "This week",
-"desc": "Savory sausage, melted mozzarella, and marinara in one starter. Limited time only.",
-"expires": "2026-11-15",
-"posted": "2026-11-08T21:04:34+0000",
-"url": "https://www.instagram.com/p/DffrgrIGm9R/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18152426533558871.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/tommys-place-sausage-stuffed-portobello-mushroom",
 "profile": "https://www.threevillagelocal.com/tommys-place",
 "label": "Special"
 },

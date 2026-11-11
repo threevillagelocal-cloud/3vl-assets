@@ -1,20 +1,4 @@
 {
-"18130616062703518": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-12T16:27:54+0000"
-},
-"18137250499725845": {
-"special": true,
-"title": "Happy Hour at Castaways",
-"when": "Today, Oct. 12 · 4-6 PM",
-"desc": "Happy hour at the inside bar, high tops, and lounge Monday 4-6 PM.",
-"expires": "2026-10-12",
-"_ts": "2026-10-12T16:00:52+0000"
-},
 "18113198999582701": {
 "special": false,
 "title": "",
@@ -3018,5 +3002,61 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-11T15:33:23+0000"
+},
+"17973958320183255": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-11T18:42:40+0000"
+},
+"18136513211501491": {
+"special": true,
+"title": "Pesto Salmon Dinner Special",
+"when": "Today only",
+"desc": "Grilled salmon with pesto-panko crust, rice pilaf and green beans at Tommy's Place.",
+"expires": "2026-11-11",
+"_ts": "2026-11-11T18:33:16+0000"
+},
+"17985956435900419": {
+"special": false,
+"title": "Behind-the-Scenes Menu Tasting Footage",
+"when": "Not applicable",
+"desc": "Throwback video from Burgerology's first menu tasting before launching their Experiments Menu.",
+"expires": "2026-11-11",
+"_ts": "2026-11-11T17:06:18+0000"
+},
+"18026131085715326": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-11T19:00:09+0000"
+},
+"18484628023117378": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-11T17:16:13+0000"
+},
+"18421012510157253": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-11T16:40:55+0000"
+},
+"18486918409115475": {
+"special": false,
+"title": "Holiday Catering Packages",
+"when": "Call to book",
+"desc": "New holiday catering packages available for office parties, family gatherings, and events.",
+"expires": "2026-11-11",
+"_ts": "2026-11-11T16:02:09+0000"
 }
 }
