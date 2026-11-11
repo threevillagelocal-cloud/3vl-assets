@@ -85,7 +85,7 @@ img.save(os.path.join(out, name), quality=94, subsampling=0)
 cap = ("🍷 Live music all week at @madiranthewinebar_eastsetauket. Lineup in the photo.\n\n{cta}\n\n"
        "#threevillagelocal #yourneighborsinbusiness #livemusic #setauket")
 open(os.path.join(out, "caption.txt"), "w", encoding="utf-8").write(cap.replace("{cta}", "Details: link in bio"))
-open(os.path.join(out, "fb.txt"), "w", encoding="utf-8").write(cap.replace("@madiranthewinebar_eastsetauket", "Madiran The Wine Bar").replace("{cta}", "Details: https://www.threevillagelocal.com/events"))
+open(os.path.join(out, "fb.txt"), "w", encoding="utf-8").write(cap.replace("@madiranthewinebar_eastsetauket", "{tag0}").replace("{cta}", "Details: https://www.threevillagelocal.com/events"))
 json.dump({"monday": str(monday), "week": week, "image": name, "nights": len(nights), "unknown": unknown},
           open(os.path.join(out, "meta.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 shutil.rmtree(work, ignore_errors=True)

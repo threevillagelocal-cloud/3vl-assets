@@ -20,7 +20,7 @@ D.NAME = "3VL Page Websites" if D.LIVE else "3VL Page Websites Preview"   # prev
 D.SLUG = "websites" if D.LIVE else "preview-websites"
 D.TITLE = "AI-Ready Websites for Long Island Businesses | Three Village Local"
 D.DESC = ("Websites built for customers and for AI: designed, built and hosted by one local team, set up for Google and AI search, "
-          "then launched to the whole town on Three Village Local. Member pricing for Featured and VIP members of Three Village Local.")
+          "then launched to the whole town on Three Village Local.")
 D.FB_TITLE = "AI-Driven Websites: Design, Build, Host"
 D.FB_IMAGE = "/share/ai-websites-v2.jpg"   # BD mangles external og:image URLs; redirect -> 3vl-share/site/websites/share-ai-websites-v2.jpg (v2 10/23: navy/electric-blue AI style; v1 = redirect 2253)
 
@@ -55,19 +55,14 @@ def card(key, name, one, items, pop=False):
     return '''    <article class="tvs-card%s tvs-up" data-b="web%s">
 %s      <p class="tvs-cname">%s</p>
       <p class="tvs-cfor">%s</p>
-      <p class="tvw-plabel on">Featured &amp; VIP member price*</p>
-      <p class="tvs-was"></p>
-      <p class="tvs-price"><sup>$</sup><b>%s</b></p>
-      <p class="tvs-mo">+ <b>$%s</b>/mo</p>
-      <p class="tvs-save"></p>
       <ul>
         %s
       </ul>
-      <a class="tvs-btn %s tvs-wide tvw-go" data-m="%s" data-r="%s" href="%s">Get started &rarr;</a>
+      <a class="tvs-btn %s tvs-wide" href="#tvs-book">Get pricing &rarr;</a>
     </article>
-''' % (" tvs-pop" if pop else "", key, '      <p class="tvs-badge">Most popular</p>\n' if pop else "", name, one, "{:,}".format(m[0]), m[1],
+''' % (" tvs-pop" if pop else "", key, '      <p class="tvs-badge">Most popular</p>\n' if pop else "", name, one,
        "\n        ".join(lis.replace("</li><li", "</li>\n<li").split("\n")),
-       "tvs-blue" if pop else "tvs-line", START + "web-%s-member" % key, START + "web-%s-regular" % key, START + "web-%s-member" % key)
+       "tvs-blue" if pop else "tvs-line")   # owner 11/9/2026: no prices on the page
 
 
 READY = card("ready", "AI-Ready", "AI can find you. Built so Google and AI assistants understand and recommend your business.", [
@@ -118,14 +113,9 @@ BUNDLES = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
     <h2>Pick a package. We handle the rest.</h2>
     <p><b>AI-Ready</b> means AI can find you. <b>AI-Powered</b> means AI works for you. Both are designed, built and hosted by us.</p>
   </div>
-  <div class="tvs-tiers tvs-up" role="tablist" aria-label="Choose your membership to see your price">
-    <button type="button" role="tab" data-t="all">Walk-in price</button>
-    <button type="button" role="tab" data-t="vip" class="on">Featured &amp; VIP members<em>Save $500+</em></button>
-  </div>
-  <p class="tvw-pnote tvs-up"><b>Two prices.</b> Featured and VIP members of Three Village Local get member pricing. Everyone else is welcome at our walk-in price. Not a member yet? <a href="/join">See Featured and VIP</a></p>
   <div class="tvs-cards tvw-two">
 ''' + READY + POWERED + '''  </div>
-  <p class="tvs-fine tvs-up"><b>One payment to start, nothing else for 30 days.</b> Your start-up fee is paid up front and includes your first month. Your monthly plan begins 30 days later and covers hosting, security and support, plus your updates and changes: email or text us what you need and we handle it. Month to month. Your domain is registered in your name.</p>
+  <p class="tvs-fine tvs-up"><b>Pricing is built around what you need.</b> <a href="#tvs-book">Send us a message</a> and we will put it together for you. Your monthly plan covers hosting, security and support, plus your updates and changes: email or text us what you need and we handle it. Month to month. Your domain is registered in your name.</p>
 </section>'''
 
 ADDS_SEC = '''<section class="tvs-sec tvw-adds" id="tvw-adds">
@@ -229,7 +219,7 @@ h = rep(h, "<p>We pick the right bundle together and map out your first month.</
 h = rep(h, "<p>No long contracts. Bundles are a one-time build, and monthly plans are month to month.</p>",
         "<p>No long contracts. Your site is a one-time build, and the monthly plan is month to month.</p>")
 h = rep(h, "<p>Half to start, the rest at launch once you love it.</p>", "<p>Your start-up fee is paid in full when we kick off, and it includes your first month. Your monthly plan starts 30 days later. Month to month, no contract.</p>")
-h = rep(h, "<p>No. Anyone can book. Members save on every bundle, and VIP members save the most.</p>", "<p>No. Anyone can book at our walk-in price. Featured and VIP members of Three Village Local get member pricing on both packages.</p>")
+h = rep(h, "<p>No. Anyone can book. Members save on every bundle, and VIP members save the most.</p>", "<p>No. Anyone can work with us. Featured and VIP members of Three Village Local get special member pricing.</p>")
 h = rep(h, "mailto:hello@threevillagelocal.com?subject=Services", "mailto:hello@threevillagelocal.com?subject=Websites")
 i, _ = sec(h, "tvs-sec tvs-steps")
 h = h[:i] + CTA3_SEC + chr(10) * 2 + h[i:]      # owner 10/22: more calls to action
@@ -237,7 +227,7 @@ h = cut(h, "tvs-sec tvw-adds")                    # owner 10/22: removed "More w
 h = cut(h, "tvs-sec tvs-show")                    # owner 10/22: page too long, removed "Anyone can build a website" launch section
 h = cut(h, "tvs-sec tvs-work")                    # owner 10/22: removed "See what you get" (phone + site examples)
 for m in re.finditer(r".{60}[Bb]undle.{40}", h): print("LEFT:", m.group(0))
-h = rep(h, chr(10) + '<a class="tvs-sticky"', chr(10) + '<p class="tvw-small">*Member pricing is for Featured and VIP tier members of Three Village Local with 12 months of membership. Featured and VIP members who joined before October 23, 2026 qualify now. Walk-in pricing applies to everyone else.</p>' + chr(10) + '<a class="tvs-sticky"')   # owner 10/22: member pricing small print
+if 0: h = rep(h, chr(10) + '<a class="tvs-sticky"', chr(10) + '<p class="tvw-small">*Member pricing is for Featured and VIP tier members of Three Village Local with 12 months of membership. Featured and VIP members who joined before October 23, 2026 qualify now. Walk-in pricing applies to everyone else.</p>' + chr(10) + '<a class="tvs-sticky"')   # owner 10/22: member pricing small print
 HTML = h
 
 PRICES = ("var P={webready:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},webpowered:{all:[%d,%d],free:[%d,%d],featured:[%d,%d],vip:[%d,%d]},"
