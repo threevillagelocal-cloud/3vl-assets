@@ -1,20 +1,4 @@
 {
-"18130269310833978": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-13T14:10:53+0000"
-},
-"18082609028363290": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-13T13:58:35+0000"
-},
 "17898329580399424": {
 "special": false,
 "title": "Robinson's Tea Room Scones",
@@ -38,22 +22,6 @@
 "desc": "Try the Dirt Nap Iced Latte or Morticia's Black Widow Potion at Toast Port Jefferson Station.",
 "expires": "2026-10-31",
 "_ts": "2026-10-13T17:19:51+0000"
-},
-"18112769968875219": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-13T15:03:06+0000"
-},
-"17902153524371073": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-13T15:33:29+0000"
 },
 "18188199463411489": {
 "special": false,
@@ -3038,5 +3006,37 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-11T21:15:05+0000"
+},
+"18022583057736870": {
+"special": true,
+"title": "Live Bossa Nova Music Tonight",
+"when": "Today, Nov 12",
+"desc": "Al, James, and Jerry perform bossa nova including Take Me to Aruanda at Madiran.",
+"expires": "2026-11-12",
+"_ts": "2026-11-12T13:45:49+0000"
+},
+"17952601566341784": {
+"special": true,
+"title": "Bottomless Mimosas Brunch",
+"when": "Every Sunday · 11am-3pm",
+"desc": "Bottomless mimosas for $20 per person at Three Village Inn's Mirabelle Restaurant & Tavern.",
+"expires": "2026-11-26",
+"_ts": "2026-11-12T14:23:05+0000"
+},
+"18117875135164941": {
+"special": true,
+"title": "Thursday Lunch & Happy Hour",
+"when": "Today (Thu, Nov 12) · 12-6 PM",
+"desc": "Blackened Mahi Mahi Tacos with mango salsa and chipotle lime crema. Happy Hour runs noon to 6 PM.",
+"expires": "2026-11-12",
+"_ts": "2026-11-12T16:00:43+0000"
+},
+"18471961021137109": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-12T13:41:06+0000"
 }
 }
