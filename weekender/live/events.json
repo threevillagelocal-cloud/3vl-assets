@@ -1,8 +1,8 @@
 {
-"updated": "2026-11-12T00:03:38.413293+00:00",
+"updated": "2026-11-12T00:31:50.327778+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 0,
+"Port Jefferson Chamber": 42,
 "I Love Port Jeff": 1,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 196,
@@ -363,6 +363,25 @@
 "rank": 2
 },
 {
+"id": "pjchamber-15086",
+"title": "Blood Drive",
+"start": "2026-11-12T07:00:00",
+"end": "2026-11-12T19:00:00",
+"allday": false,
+"venue": "St. Charles Hospital",
+"addr": "200 Belle Terre Rd, Port Jefferson, NY, 11777",
+"url": "https://portjeffchamber.com/events-calendar/blood-drive-6/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/blood-drive-787"
+},
+{
 "id": "emmaclark-chair-yoga-61291",
 "title": "Chair Yoga",
 "start": "2026-11-12T11:30:00",
@@ -452,23 +471,23 @@
 "page": "https://www.threevillagelocal.com/events/bark-for-readers-up-to-5th-grade-614"
 },
 {
-"id": "portjeff-1354",
-"title": "The Conservancy Presents \"Somewhere in Time\"",
+"id": "pjchamber-14970",
+"title": "Somewhere in Time 1912",
 "start": "2026-11-12T18:00:00",
 "end": "2026-11-12T22:00:00",
 "allday": false,
-"venue": "Port Jefferson",
-"addr": "709 Main Street Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1354",
+"venue": "Victorian on Main",
+"addr": "709 Main Street, Port Jefferson, New York",
+"url": "https://portjeffchamber.com/events-calendar/somewhere-in-time-1912/",
 "desc": "",
 "img": "",
-"src": "portjeff",
+"src": "pjchamber",
 "tags": [
 "arts"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/the-conservancy-presents-somewhere-in-time"
+"page": "https://www.threevillagelocal.com/events/somewhere-in-time-1912"
 },
 {
 "id": "emmaclark-tech-help-teens-42855",
@@ -1779,6 +1798,25 @@
 "page": "https://www.threevillagelocal.com/events/america-on-screen-made-in-the-usa"
 },
 {
+"id": "pjchamber-15286",
+"title": "Kids Night Out",
+"start": "2026-11-20T18:00:00",
+"end": "2026-11-20T20:00:00",
+"allday": false,
+"venue": "Port Jefferson Village Center",
+"addr": "101A East Broadway, Port Jefferson, 11777",
+"url": "https://portjeffchamber.com/events-calendar/kids-night-out-nov-2026/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/kids-night-out"
+},
+{
 "id": "reboli-6aad4cbf062c0f03de80759e",
 "title": "November's Third Friday!",
 "start": "2026-11-20T18:30:00",
@@ -1895,6 +1933,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/wildlife-wonders-furry-friends-ages-2y-5y"
+},
+{
+"id": "pjchamber-15079",
+"title": "March For Liberty",
+"start": "2026-11-21T11:00:00",
+"end": "2026-11-21T15:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/march-for-liberty/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/march-for-liberty"
 },
 {
 "id": "emmaclark-instrument-petting-zoo-ages-3-8-yrs-62060",
@@ -2032,6 +2089,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/live-music-tim-siciliano-1010"
+},
+{
+"id": "pjchamber-15103",
+"title": "Reindeer Scavenger Hunt",
+"start": "2026-11-22T00:00:00",
+"end": "2027-01-04T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/reindeer-scavenger-hunt/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/reindeer-scavenger-hunt"
 },
 {
 "id": "portjeff-1103",
