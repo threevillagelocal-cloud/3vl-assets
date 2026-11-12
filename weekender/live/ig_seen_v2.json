@@ -1,44 +1,4 @@
 {
-"17898329580399424": {
-"special": false,
-"title": "Robinson's Tea Room Scones",
-"when": "Tue-Sun, 11am-4pm",
-"desc": "Fresh-baked scones in classic and seasonal flavors at this Stony Brook tea room.",
-"expires": "2026-10-27",
-"_ts": "2026-10-13T18:04:39+0000"
-},
-"17907328284589253": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-13T16:22:19+0000"
-},
-"18100984226300493": {
-"special": true,
-"title": "Addams Family Halloween Drinks",
-"when": "Through October",
-"desc": "Try the Dirt Nap Iced Latte or Morticia's Black Widow Potion at Toast Port Jefferson Station.",
-"expires": "2026-10-31",
-"_ts": "2026-10-13T17:19:51+0000"
-},
-"18188199463411489": {
-"special": false,
-"title": "Holiday Party Booking Promotion",
-"when": "Book before Thanksgiving",
-"desc": "15% off holiday party bookings at Castaways when you call to reserve.",
-"expires": "2026-11-27",
-"_ts": "2026-10-13T16:51:50+0000"
-},
-"18390106807228238": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-13T18:49:58+0000"
-},
 "18009207956779013": {
 "special": true,
 "title": "Bewitched Burger Limited Special",
@@ -54,22 +14,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-13T23:21:16+0000"
-},
-"17998939884010057": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-13T19:42:35+0000"
-},
-"18024366122866829": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-13T19:01:26+0000"
 },
 "17868625734659869": {
 "special": false,
@@ -3038,5 +2982,29 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-12T13:41:06+0000"
+},
+"17920719537523986": {
+"special": true,
+"title": "Thanksgiving Order Pickup",
+"when": "Tue, Nov. 25",
+"desc": "Order Thanksgiving meals by Nov. 20 for pickup on Nov. 25. Use form at link in bio.",
+"expires": "2026-11-25",
+"_ts": "2026-11-12T16:03:18+0000"
+},
+"18122081083969880": {
+"special": false,
+"title": "Christmas Candlelight Tea Reservations",
+"when": "TBA",
+"desc": "Holiday tea event with seasonal menu and celebration - call to reserve your spot.",
+"expires": "2026-11-12",
+"_ts": "2026-11-12T16:57:37+0000"
+},
+"18384721957235533": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-12T17:53:42+0000"
 }
 }

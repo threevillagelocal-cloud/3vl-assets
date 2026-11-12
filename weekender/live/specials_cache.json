@@ -71,7 +71,24 @@
 "ixchelmexicancuisine": [],
 "djsclamshackstonybrook": [],
 "culpers1778": [],
-"levelupkitchenny": [],
+"levelupkitchenny": [
+{
+"id": "17920719537523986",
+"biz": "Level Up Kitchen",
+"ig": "levelupkitchenny",
+"town": "Setauket / St. James",
+"category": "Cafe/Catering",
+"member": false,
+"title": "Thanksgiving Order Pickup",
+"when": "Tue, Nov. 25",
+"desc": "Order Thanksgiving meals by Nov. 20 for pickup on Nov. 25. Use form at link in bio.",
+"expires": "2026-11-25",
+"posted": "2026-11-12T16:03:18+0000",
+"url": "https://www.instagram.com/p/DfpcNpXG9HW/",
+"img": "",
+"inset": "ig/p17920719537523986.jpg"
+}
+],
 "littlecheeseshop": [],
 "hirosakiny": [],
 "lucastonybrook": [],
@@ -220,22 +237,6 @@
 "url": "https://www.instagram.com/p/DfkvTTzHxjF/",
 "img": "",
 "inset": "ig/p18224331736348848.jpg"
-},
-{
-"id": "17924916534219471",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Holiday Pies Pre-Order",
-"when": "Nov 24-25 · 9 AM-3 PM",
-"desc": "Pre-order holiday pies (apple crumb, coconut custard, pumpkin cheesecake) for $25 each at Toast Coffee + Kitchen locations.",
-"expires": "2026-11-25",
-"posted": "2026-11-05T17:48:01+0000",
-"url": "https://www.instagram.com/p/DfXmoc1lfL5/",
-"img": "",
-"inset": "ig/p17924916534219471.jpg"
 }
 ],
 "prohibitionportjefferson": [],
