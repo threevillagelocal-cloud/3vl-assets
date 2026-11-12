@@ -109,9 +109,12 @@ V_WEB = '''<div class="tvp-browser"><div class="tvp-bar"><i></i><i></i><i></i><s
   <div class="tvp-gpt"><b>&#10022; AI answer</b>Locals recommend <u>Your Bakery</u> on Main Street for fresh bread and custom cakes.</div>
   <div class="tvp-ai-tag">&#10022; Read and recommended by AI</div></div>'''
 V_BOT = '''<div class="tvp-chat"><div class="tvp-chat-h">&#10022; Your Business Front Desk</div><p class="me">Are you open Sunday?</p><p>Yes, 10 to 4! Want me to book you a time?</p><p class="me">Yes, Sarah, 631-555-0188</p><div class="tvp-lead">&#128241; New lead sent to you</div></div>'''
-V_VIDEO = '''<div class="tvp-reel"><video class="tvp-rv" muted playsinline loop preload="none" poster="''' + SH + '''services/campus-bikes-poster.webp" data-src="''' + SH + '''services/campus-bikes-720.mp4" width="720" height="900" aria-label="Promo video for Campus Bicycles in Stony Brook"></video>
+V_VIDEO = '''<div class="tvp-vids"><div class="tvp-reel"><video class="tvp-rv" muted playsinline loop preload="none" poster="''' + SH + '''services/campus-bikes-poster.webp" data-src="''' + SH + '''services/campus-bikes-720.mp4" width="720" height="900" aria-label="Promo video for Campus Bicycles in Stony Brook"></video>
   <button type="button" class="tvp-snd" aria-label="Turn sound on">&#128263; Tap for sound</button>
-  <div class="tvp-rtag"><b>Campus Bicycles</b><span>Stony Brook &middot; made by Three Village Local</span></div></div>'''
+  <div class="tvp-rtag"><b>Campus Bicycles</b><span>Stony Brook &middot; made by Three Village Local</span></div></div>
+ <div class="tvp-vph"><div class="tvp-vph-in"><span class="tvp-vph-notch"></span><video class="tvp-rv" muted playsinline loop preload="none" poster="''' + SH + '''services/girard-poster.webp" data-src="''' + SH + '''services/girard-720.mp4" width="720" height="1280" aria-label="Promo video for Girard Wealth Management, made by Three Village Local"></video>
+  <button type="button" class="tvp-snd" aria-label="Turn sound on">&#128263; Tap for sound</button></div>
+  <div class="tvp-rtag"><b>Girard Wealth Management</b><span>Made by Three Village Local</span></div></div></div>'''
 V_EMAIL = '''<div class="tvp-mail"><div class="tvp-mail-h"><b>Three Village Weekly</b><span>Every Friday</span></div><div class="tvp-mail-b">
   <p class="tvp-mk">This weekend in Three Village</p>
   <div class="tvp-ev"><span><b>SAT</b>14</span><div><b>Holiday craft fair</b><i>Village green &middot; 10 AM</i></div></div>
@@ -125,10 +128,18 @@ HAVE = '''<div class="tvp-have"><p class="tvp-have-k">Already have a website?</p
   <p class="tvp-have-f">Do one, or both. No rebuild needed.</p></div>'''
 
 ROWS = "\n\n".join([
+    row("web", "AI-Ready websites", "A website AI can read, and customers love.",
+        "We design, build and host a fast, beautiful website written so Google and AI tools understand exactly what you do, then we launch it to the whole town.",
+        ["Designed, written and hosted for you", "Built for Google and AI search from the first line", "Domain in your name, updates included"],
+        "See AI websites", "/websites", V_WEB, False, HAVE),
+    row("video", "Promo video", "Show them, don&#39;t just tell them.",
+        "Short promo videos and reels that make your business look its best, shared across our site, social media and mobile app.",
+        ["Filmed, edited and captioned for you", "Sized for Instagram, Facebook and your website", "Included with VIP, discounted for Featured members"],
+        "Ask about promo video", "#tvs-book", V_VIDEO, True),
     row("seen", "Get seen on Three Village Local", "Be the first name neighbors see.",
         "Featured and VIP memberships put your business at the top of our directory, on our homepage and across the site, where locals already go to find who to call.",
         ["Top-of-search placement with one-tap call", "Homepage features, banners and spotlights", "Post your events and specials on the site and mobile app"],
-        "See memberships", "/join", V_STAGE),
+        "See memberships", "/join", V_STAGE, False),
     row("social", "Social media promotion", "Seen all over town, every week.",
         "We create scroll-stopping posts and reels for your business and share them with more than 100,000 local views a month on Facebook and Instagram.",
         ["Custom graphics and reels, made for you", "Tagged and shared with your own accounts", "Launch posts, specials, events and spotlights"],
@@ -136,23 +147,15 @@ ROWS = "\n\n".join([
     row("app", "The Three Village Local mobile app", "Right on their phones.",
         "Our free mobile app keeps neighbors connected to local businesses, events and specials. VIP members can send a push notification straight to local phones.",
         ["Your listing, specials and events in the mobile app", "Push notifications to local phones (VIP)", "Free for the community on iPhone and Android"],
-        "See the mobile app", "/app", V_APP),
-    row("web", "AI-Ready websites", "A website AI can read, and customers love.",
-        "We design, build and host a fast, beautiful website written so Google and AI tools understand exactly what you do, then we launch it to the whole town.",
-        ["Designed, written and hosted for you", "Built for Google and AI search from the first line", "Domain in your name, updates included"],
-        "See AI websites", "/websites", V_WEB, True, HAVE),
+        "See the mobile app", "/app", V_APP, False),
     row("bot", "Your Digital Front Desk", "Your best salesperson, open 24/7.",
         "A smart AI assistant on your current website answers customers in seconds, day or night, and sends you every lead. It comes with AI Website Optimization so you get noticed and recommended by AI.",
         ["Works with the website you already have", "Live person handoff: you get an instant text", "Follows your industry's rules and guidelines"],
-        "Try the live demo", AI, V_BOT),
-    row("video", "Promo video", "Show them, don&#39;t just tell them.",
-        "Short promo videos and reels that make your business look its best, shared across our site, social media and mobile app.",
-        ["Filmed, edited and captioned for you", "Sized for Instagram, Facebook and your website", "Included with VIP, discounted for Featured members"],
-        "Ask about promo video", "#tvs-book", V_VIDEO, True),
+        "Try the live demo", AI, V_BOT, True),
     row("email", "Email and articles", "Stories the community actually reads.",
         "Get featured in our weekly email and in custom articles on Three Village Local, so neighbors learn the story behind your business.",
         ["Spotlights in our weekly email", "Custom blog and article features", "Shared across social and the mobile app"],
-        "Get featured", "#tvs-book", V_EMAIL),
+        "Get featured", "#tvs-book", V_EMAIL, False)
 ])
 
 LAUNCH = '''<section class="tvs-sec tvp-launch" id="tvp-launch">
@@ -342,6 +345,15 @@ section[id^="tvp-"]{scroll-margin-top:90px}
 .tvp-simg{display:block!important;margin:0!important}.tvp-simg img{display:block;width:100%!important;height:auto!important;filter:drop-shadow(0 14px 18px rgba(80,40,10,.25))}
 .tvp-srow{display:grid!important;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 16px 18px;margin:0!important}.tvp-srow div{padding:9px 10px;border-radius:12px;background:#f7f4f0;font-size:11px;color:#6b5a48;line-height:1.3}.tvp-srow b{display:block!important;width:auto!important;height:auto!important;background:none!important;margin:0!important;font-size:12px;color:#2e1f12}
 .tvp-gpt{position:absolute;right:-18px;top:62px;max-width:210px;padding:11px 13px;border-radius:16px;background:#fff;box-shadow:0 22px 44px -18px rgba(9,30,66,.5);border:1px solid #e3e9f2;font-size:12.5px;line-height:1.4;color:#3c4a5e;animation:tvpFloat 5s ease-in-out infinite;z-index:2}.tvp-gpt b{display:block;font-size:11.5px;color:var(--blue);margin-bottom:3px}.tvp-gpt u{text-decoration:none;font-weight:800;color:var(--navy)}
+.tvp-vids{display:flex;align-items:center;justify-content:center;gap:22px}.tvp-vids .tvp-reel{flex:1 1 0;min-width:0;max-width:330px}
+.tvp-vph{position:relative;display:flex;flex:0 0 auto;flex-direction:column;align-items:center;gap:12px}
+.tvp-vph-in{position:relative;width:230px;padding:11px;border-radius:44px;background:linear-gradient(145deg,#2a3346,#0b1220 55%);box-shadow:0 40px 70px -30px rgba(9,30,66,.7),inset 0 0 0 2px #39445c}
+.tvp-vph-in .tvp-rv{display:block;width:100%!important;height:auto!important;aspect-ratio:9/16;object-fit:cover;border-radius:34px;background:#0b1220;cursor:pointer}
+.tvp-vph-notch{position:absolute;left:50%;top:20px;transform:translateX(-50%);width:84px;height:22px;border-radius:12px;background:#05080f;z-index:2}
+.tvp-vph .tvp-snd{top:52px;bottom:auto;right:50%;transform:translateX(50%);white-space:nowrap}
+.tvp-vph .tvp-rtag{position:static;text-align:center;background:none;color:inherit}
+.tvp-vph .tvp-rtag b{display:block;font-size:16px;color:#0f2742}.tvp-vph .tvp-rtag span{font-size:13px;color:#5b6b7c}
+@media (max-width:760px){.tvp-vids{flex-direction:column;gap:30px}.tvp-vids .tvp-reel{width:100%;max-width:340px}.tvp-vph-in{width:250px}}
 .tvp-reel{position:relative;width:100%;max-width:380px;border-radius:26px;overflow:hidden;background:#0b1220;box-shadow:0 40px 70px -30px rgba(9,30,66,.65),0 0 0 8px #fff,0 0 0 9px #dfe8f6}
 .tvp-rv{display:block;width:100%!important;height:auto!important;aspect-ratio:4/5;object-fit:cover;background:#0b1220;cursor:pointer}
 .tvp-snd{position:absolute;right:12px;top:12px;border:0;cursor:pointer;font:inherit;font-size:13px;font-weight:800;color:#fff;background:rgba(9,20,45,.68);padding:8px 12px;border-radius:999px}
@@ -394,11 +406,11 @@ details.tvp-more{margin:4px 0 12px;border:1px dashed #cdd8e6;border-radius:14px;
 @media (prefers-reduced-motion:reduce){.tvp-ring,.tvp-ring i,.tvp-core,.tvp-stage-card,.tvp-push,.tvp-ai-tag,.tvp-lead,.tvp-faa,.tvp-flow li{animation:none!important}}
 '''
 
-VJS = ''';(function(){var v=document.querySelector('.tvp-rv');if(!v)return;var b=document.querySelector('.tvp-snd');var on=false;
+VJS = ''';(function(){document.querySelectorAll('.tvp-rv').forEach(function(v){var box=v.closest('.tvp-reel,.tvp-vph-in');var b=box&&box.querySelector('.tvp-snd');var on=false;
 function go(){if(on)return;on=true;v.src=v.getAttribute('data-src');var p=v.play();if(p&&p.catch)p.catch(function(){});}
 if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(!on){go();}else if(v.paused){v.play().catch(function(){});}}else if(on){v.pause();}});},{rootMargin:'250px 0px'}).observe(v);}else{go();}
-function snd(){go();v.muted=!v.muted;v.play().catch(function(){});if(b){b.innerHTML=v.muted?'&#128263; Tap for sound':'&#128266; Sound on';b.setAttribute('aria-label',v.muted?'Turn sound on':'Turn sound off');}if(window.gtag)gtag('event','promo_video_sound',{on:!v.muted});}
-if(b)b.addEventListener('click',snd);v.addEventListener('click',snd);})();'''
+function snd(){go();var turnOn=v.muted;document.querySelectorAll('.tvp-rv').forEach(function(o){if(o!==v&&!o.muted){o.muted=true;var ob=o.closest('.tvp-reel,.tvp-vph-in').querySelector('.tvp-snd');if(ob){ob.innerHTML='&#128263; Tap for sound';}}});v.muted=!turnOn?true:false;v.play().catch(function(){});if(b){b.innerHTML=v.muted?'&#128263; Tap for sound':'&#128266; Sound on';b.setAttribute('aria-label',v.muted?'Turn sound on':'Turn sound off');}if(window.gtag)gtag('event','promo_video_sound',{on:!v.muted,video:v.getAttribute('aria-label')});}
+if(b)b.addEventListener('click',snd);v.addEventListener('click',snd);});})();'''
 VJS2 = r''';(function(){
 function slotTxt(a){var sec=a.closest('section');return sec&&sec.id?sec.id:(a.classList.contains('tvs-sticky')?'sticky':'other');}
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href="#tvs-book"],a[href="/free-ai-report"]');if(!a||!window.gtag)return;gtag('event',a.getAttribute('href')==='#tvs-book'?'services_cta':'services_aicheck',{label:(a.textContent||'').trim().slice(0,40),section:slotTxt(a)});},true);
