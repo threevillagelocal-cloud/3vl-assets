@@ -1,55 +1,6 @@
 {
-"countrycornerlongisland": [
-{
-"id": "18105391916330585",
-"biz": "The Country Corner",
-"ig": "countrycornerlongisland",
-"town": "East Setauket",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Veterans Get 10% Off",
-"when": "Today, Nov. 11",
-"desc": "Veterans receive 10% off their bill as a thank you for their service.",
-"expires": "2026-11-11",
-"posted": "2026-11-11T12:41:57+0000",
-"url": "https://www.instagram.com/p/Dfmfo6OSi_j/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
-"inset": "ig/p18105391916330585.jpg"
-},
-{
-"id": "18635163151057975",
-"biz": "The Country Corner",
-"ig": "countrycornerlongisland",
-"town": "East Setauket",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Burger & Beer Deal + Veterans Discount",
-"when": "Wed, Nov. 11",
-"desc": "Mug members get burger and beer deal. Veterans receive 10% off bill and special priced shots.",
-"expires": "2026-11-11",
-"posted": "2026-11-10T16:51:12+0000",
-"url": "https://www.instagram.com/p/DfkXzDry41s/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/cc-ext-720.webp",
-"inset": "ig/p18635163151057975.jpg"
-}
-],
+"countrycornerlongisland": [],
 "madiranthewinebar_eastsetauket": [
-{
-"id": "17896459920435270",
-"biz": "Madiran The Wine Bar",
-"ig": "madiranthewinebar_eastsetauket",
-"town": "East Setauket",
-"category": "Wine Bar",
-"member": false,
-"title": "Live Jazz & Bossa Night",
-"when": "Wed, Nov. 11 · 7-9 PM",
-"desc": "Live jazz and bossa tunes with Al Marino, James Miceli, and Jerry Mac at Madiran The Wine Bar.",
-"expires": "2026-11-11",
-"posted": "2026-11-08T13:22:51+0000",
-"url": "https://www.instagram.com/p/Dfe2hy8isZq/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/madiran-ext-720.webp",
-"inset": "ig/p17896459920435270.jpg"
-},
 {
 "id": "17985663533899935",
 "biz": "Madiran The Wine Bar",
@@ -84,22 +35,6 @@
 }
 ],
 "tommysplaceportjeff_": [
-{
-"id": "18136513211501491",
-"biz": "Tommy's Place",
-"ig": "tommysplaceportjeff_",
-"town": "Port Jefferson",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Pesto Salmon Dinner Special",
-"when": "Today only",
-"desc": "Grilled salmon with pesto-panko crust, rice pilaf and green beans at Tommy's Place.",
-"expires": "2026-11-11",
-"posted": "2026-11-11T18:33:16+0000",
-"url": "https://www.instagram.com/p/DfnIlE2kYCR/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-"inset": "ig/p18136513211501491.jpg"
-},
 {
 "id": "18079551524738743",
 "biz": "Tommy's Place",
@@ -248,22 +183,6 @@
 "url": "https://www.instagram.com/p/DfhobdjkYUw/",
 "img": "",
 "inset": "ig/p18117435809104380.jpg"
-},
-{
-"id": "18312320776305053",
-"biz": "The Study by Toast",
-"ig": "thestudy.bytoast",
-"town": "East Setauket",
-"category": "Coffee House",
-"member": false,
-"title": "Trivia Night at The Study",
-"when": "Wed, Nov. 11",
-"desc": "Gather your crew for a night of friendly trivia competition and coffee at this local favorite.",
-"expires": "2026-11-11",
-"posted": "2026-11-06T19:33:56+0000",
-"url": "https://www.instagram.com/p/DfaXjFQn4nm/",
-"img": "",
-"inset": "ig/p18312320776305053.jpg"
 }
 ],
 "breakroomny": [],
@@ -284,22 +203,6 @@
 "url": "https://www.instagram.com/p/DfkvTTzHxjF/",
 "img": "",
 "inset": "ig/p18224331736348848.jpg"
-},
-{
-"id": "17888204874625044",
-"biz": "Toast Coffee + Kitchen",
-"ig": "toastcoffeeandkitchen",
-"town": "Port Jefferson Station",
-"category": "Cafe/Brunch",
-"member": false,
-"title": "Free Pancakes for Veterans",
-"when": "Veterans Day (Nov. 11)",
-"desc": "Free full stack of pancakes for all veterans. Dine-in only.",
-"expires": "2026-11-11",
-"posted": "2026-11-08T22:02:23+0000",
-"url": "https://www.instagram.com/reel/Dffxmi2hFER/",
-"img": "",
-"inset": "ig/p17888204874625044.jpg"
 },
 {
 "id": "17924916534219471",

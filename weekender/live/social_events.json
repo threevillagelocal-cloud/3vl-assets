@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T13:02+00:00",
+ "updated": "2026-11-12T13:01+00:00",
  "confirmed": [
   {
    "post": "18217738600364210",
@@ -240,23 +240,23 @@
    "why": "no start time in the post"
   },
   {
-   "post": "18118426310592632",
-   "title": "Chef Franco's Whipped Ricotta Tartine Night",
-   "date": "2026-11-11",
-   "start": "",
+   "post": "18012253526778562",
+   "title": "Jazz Loft November Events",
+   "date": "",
+   "start": "19:00",
    "end": "",
-   "venue": "Enology Wine Bar & Bistro",
-   "addr": "",
-   "desc": "Chef Franco's whipped ricotta tartine with toasted bread, butternut squash caramel and chestnuts. A small plate made for sharing over wine.",
-   "org": "Enology Wine Bar & Bistro",
-   "handle": "enologywinebar",
-   "org_url": "https://www.instagram.com/enologywinebar/",
-   "url": "https://www.instagram.com/p/Dfk02ENFNpb/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18118426310592632.jpg",
+   "venue": "The Jazz Loft",
+   "addr": "275 Christian Ave, Stony Brook, NY 11790",
+   "desc": "Multiple jazz performances throughout November including jam sessions, Jazz Dispatch shows, Danny Bacher Roast & Toast, Hilary Gardner with the Lonesome Pines, and the Rat Pack Revue.",
+   "org": "The Jazz Loft",
+   "handle": "thejazzloft.tjl",
+   "org_url": "https://www.threevillagelocal.com/the-jazz-loft",
+   "url": "https://www.instagram.com/p/DfkfMz5Cdh8/",
+   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18012253526778562.jpg",
    "posted": "2026-11-10",
    "kind": "food_drink",
-   "member": false,
-   "why": "food/drink item (Eat & Drink, not the calendar); no start time in the post"
+   "member": true,
+   "why": "food/drink item (Eat & Drink, not the calendar); no clear date"
   },
   {
    "post": "18190177093418260",
@@ -314,25 +314,6 @@
    "kind": "food_drink",
    "member": true,
    "why": "food/drink item (Eat & Drink, not the calendar); no clear date"
-  },
-  {
-   "post": "18091704968254178",
-   "title": "Veterans Day 15% Off at RUVO",
-   "date": "2026-11-11",
-   "start": "",
-   "end": "",
-   "venue": "RUVO Kitchen & Wine Bar",
-   "addr": "105 Wynn Ln, Port Jefferson, NY 11777",
-   "desc": "Veterans and military personnel can enjoy 15% off all day and night with a valid military ID to honor Veterans Day.",
-   "org": "RUVO Kitchen & Wine Bar",
-   "handle": "ruvorestaurant",
-   "org_url": "https://www.threevillagelocal.com/ruvo-restaurant",
-   "url": "https://www.instagram.com/p/DfhtiPGgjXM/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18091704968254178.jpg",
-   "posted": "2026-11-09",
-   "kind": "food_drink",
-   "member": true,
-   "why": "food/drink item (Eat & Drink, not the calendar); no start time in the post"
   },
   {
    "post": "18093210317215970",
@@ -449,25 +430,6 @@
    "why": "food/drink item (Eat & Drink, not the calendar); no clear date"
   },
   {
-   "post": "17896459920435270",
-   "title": "Live Jazz and Bossa with Al Marino, James Miceli, Jerry Mac",
-   "date": "2026-11-11",
-   "start": "19:00",
-   "end": "21:00",
-   "venue": "Madiran The Wine Bar",
-   "addr": "",
-   "desc": "Join for great live jazz and bossa tunes with Al Marino, James Miceli, and Jerry Mac.",
-   "org": "Madiran The Wine Bar",
-   "handle": "madiranthewinebar_eastsetauket",
-   "org_url": "https://www.instagram.com/madiranthewinebar_eastsetauket/",
-   "url": "https://www.instagram.com/p/Dfe2hy8isZq/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17896459920435270.jpg",
-   "posted": "2026-11-08",
-   "kind": "food_drink",
-   "member": false,
-   "why": "food/drink item (Eat & Drink, not the calendar)"
-  },
-  {
    "post": "18119501468061175",
    "title": "Bling A Nutcracker",
    "date": "2026-12-08",
@@ -504,6 +466,25 @@
    "kind": "community",
    "member": true,
    "why": "start time not written plainly in the caption"
+  },
+  {
+   "post": "17968409001226330",
+   "title": "Friendsgiving Parents Night Out",
+   "date": "2026-11-20",
+   "start": "",
+   "end": "",
+   "venue": "Chance To Dance",
+   "addr": "140 N Belle Mead Rd Suite F, Setauket, NY 11733",
+   "desc": "Join Chance To Dance on Friday, November 20th for a Friendsgiving. Pre-register by sending them a message.",
+   "org": "Chance To Dance",
+   "handle": "chancetodancestudios",
+   "org_url": "https://www.threevillagelocal.com/chance-to-dance",
+   "url": "https://www.instagram.com/p/DfdD05JzQTf/",
+   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17968409001226330.jpg",
+   "posted": "2026-11-07",
+   "kind": "community",
+   "member": true,
+   "why": "no start time in the post"
   },
   {
    "post": "18159081826525495",
@@ -618,25 +599,6 @@
    "kind": "sale",
    "member": true,
    "why": "a sale, not an event; no start time in the post"
-  },
-  {
-   "post": "18312320776305053",
-   "title": "Trivia Night at The Study",
-   "date": "2026-11-11",
-   "start": "",
-   "end": "",
-   "venue": "The Study by Toast",
-   "addr": "",
-   "desc": "Trivia night at the coffee shop. Gather your crew and get ready for a night of friendly competition.",
-   "org": "The Study by Toast",
-   "handle": "thestudy.bytoast",
-   "org_url": "https://www.instagram.com/thestudy.bytoast/",
-   "url": "https://www.instagram.com/p/DfaXjFQn4nm/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18312320776305053.jpg",
-   "posted": "2026-11-06",
-   "kind": "food_drink",
-   "member": false,
-   "why": "food/drink item (Eat & Drink, not the calendar); no start time in the post"
   },
   {
    "post": "18114825116125986",
