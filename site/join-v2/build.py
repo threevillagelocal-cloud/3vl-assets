@@ -12,7 +12,7 @@ import html as _html, json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 LOCAL = "--local" in sys.argv
 DRY = "--dry" in sys.argv
-assert "--live" not in sys.argv, "no --live here: preview only (see docstring)"
+LIVE = "--live" in sys.argv   # owner 11/13/2026 "the new join page is great. push it": --live writes widget 15 + page /join
 
 NAME = "3VL Page Join Preview"
 SLUG = "preview-join"
@@ -128,7 +128,7 @@ def plan_card(p):
     out += '<div class="jv-cta"><a class="jv-btn %s" href="%s"%s>%s</a>' % (btn_cls, CHECKOUT[k], ext, p["btn"])
     if p.get("fine"):
         out += '<p class="jv-fine">%s</p>' % p["fine"]
-    out += '</div><details class="jv-realtor"><summary>Realtor benefit</summary><p>%s</p></details></article>' % p["realtor"]
+    out += '</div></article>'   # realtor benefit line removed from the cards (owner 11/13/2026)
     return out
 
 
@@ -577,7 +577,7 @@ def nowrap_hyphens(h):
 def build():
     tpls = "".join(modal_tpl(k) for k in ("featured", "vip", "partner"))
     claim = open(os.path.join(HERE, "claim.js"), encoding="utf-8").read()
-    body = ribbon() + hero() + plans() + news() + compare_sec() + services() + faq() + final() + tpls
+    body = ("" if LIVE else ribbon()) + hero() + plans() + news() + compare_sec() + services() + faq() + final() + tpls
     html = '<div class="jv" id="jv">' + sprite() + body + '</div>'
     html = nowrap_hyphens(html)
     css = open(os.path.join(HERE, "page.css"), encoding="utf-8").read()
@@ -618,6 +618,8 @@ def main():
         body = urllib.parse.urlencode(data).encode() if data is not None else None
         return json.loads(urllib.request.urlopen(urllib.request.Request(API + path, data=body, headers=H, method=method), timeout=60).read())
 
+    if LIVE:
+        return live(call, html, css, js, head)
     assert NAME.endswith("Preview") and SLUG.startswith("preview-")
     w = {"widget_data": html, "widget_style": css, "widget_javascript": js}
     found = call("GET", "data_widgets/get?property=widget_name&property_value=" + urllib.parse.quote(NAME)).get("message")
@@ -642,6 +644,29 @@ def main():
     except Exception as e:
         print("cache:", e)
     print("https://www.threevillagelocal.com/" + SLUG)
+
+
+def live(call, html, css, js, head):
+    """Swap live /join (widget 15) to the new design; backs up the old widget + page first."""
+    import datetime
+    bk = os.path.join(os.path.expanduser("~"), "Documents", "3vl-private", "backups", "join-live-" + datetime.date.today().isoformat())
+    os.makedirs(bk, exist_ok=True)
+    old = call("GET", "data_widgets/get/15").get("message")
+    old = old[0] if isinstance(old, list) else old
+    assert old and str(old.get("widget_id")) == "15", old
+    json.dump(old, open(os.path.join(bk, "widget-15.json"), "w", encoding="utf-8"))
+    pg = call("GET", "list_seo/get?property=filename&property_value=join").get("message")
+    pg = [x for x in pg if x.get("filename") == "join"][0]
+    json.dump(pg, open(os.path.join(bk, "page-join.json"), "w", encoding="utf-8"))
+    print("backup", bk, "page", pg["seo_id"], "content:", (pg.get("content") or "")[:80])
+    print("widget 15", call("PUT", "data_widgets/update", {"widget_id": 15, "widget_data": html, "widget_style": css, "widget_javascript": js}).get("status"))
+    print("page", call("PUT", "list_seo/update", {"seo_id": pg["seo_id"], "title": TITLE, "meta_desc": DESC, "facebook_title": FB_TITLE,
+                                                   "facebook_desc": DESC, "content_head": head}).get("status"))
+    try:
+        call("POST", "website_settings/refreshCache", {})
+    except Exception as e:
+        print("cache:", e)
+    print("https://www.threevillagelocal.com/join")
 
 
 if __name__ == "__main__":
