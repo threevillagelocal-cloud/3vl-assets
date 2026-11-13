@@ -133,7 +133,7 @@ HERO = """<section class="tvp-top" id="tvp-top">
   <div class="tvp-gfoot tvs-up"><p>Pick one, or put them together. They all work as one.</p><div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="#tvs-book">Get a free plan</a><a class="tvs-btn tvs-ghost" href="#tvp-svcs">See all 10 services</a></div></div>
 </section>"""
 
-SNAV = """<nav class="tvp-snav-bar" id="tvp-snav" aria-label="Our services"><div class="tvp-snav-in">
+SNAV = """<nav class="tvp-snav-bar" id="tvp-snav" aria-label="Our services"><button type="button" class="tvp-snav-arr tvp-snav-l" aria-label="Scroll services left" hidden>&#8249;</button><button type="button" class="tvp-snav-arr tvp-snav-r" aria-label="Scroll services right" hidden>&#8250;</button><div class="tvp-snav-in">
   <a href="#tvp-svcs">All services</a>""" + "".join('<a href="#tvp-%s">%s</a>' % (s[0], s[3]) for s in SV) + """<a class="tvp-snav-cta" href="#tvs-book">Get a free plan</a>
 </div></nav>"""
 
@@ -634,6 +634,13 @@ details.tvp-more{margin:4px 0 12px;border:1px dashed #cdd8e6;border-radius:14px;
 .tvp-snav-in a:hover{background:#e9f1ff!important;border-color:#c9daf5!important}
 .tvp-snav-in a.on{background:#1d5fd1!important;border-color:#1d5fd1!important;color:#fff!important}
 .tvp-snav-in a.tvp-snav-cta{background:#0f2742!important;color:#fff!important;border-color:#0f2742!important}
+.tvp-snav-arr{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:38px;height:38px;border-radius:50%;border:1px solid #d5e1f3;background:#fff;color:#0f2742;font-size:26px;line-height:1;font-weight:700;display:grid;place-items:center;padding:0 0 3px;cursor:pointer;box-shadow:0 6px 16px -6px rgba(9,30,66,.45);transition:background .2s,transform .2s}
+.tvp-snav-arr:hover{background:#1d5fd1;color:#fff;border-color:#1d5fd1}
+.tvp-snav-arr[hidden]{display:none}
+.tvp-snav-l{left:6px}.tvp-snav-r{right:6px}
+.tvp-snav-bar.fx .tvp-snav-l{left:max(6px,calc(50% - 606px))}.tvp-snav-bar.fx .tvp-snav-r{right:max(6px,calc(50% - 606px))}
+.tvp-snav-in.drag{cursor:grabbing;scroll-behavior:auto}.tvp-snav-in.drag a{pointer-events:none}
+@media (hover:none){.tvp-snav-arr{width:32px;height:32px;font-size:22px}}
 .tvp-works{margin-top:22px!important;gap:8px}
 .tvp-works-d{margin:24px 0 24px!important}
 .tvp-ctas{row-gap:12px}
@@ -648,7 +655,16 @@ var hb=hdrBottom(),pinned=false;addEventListener('resize',function(){hb=hdrBotto
 var endEl=document.getElementById('tvs-book');function onScroll(){var r=ph.getBoundingClientRect();var want=r.top<hb&&(!endEl||endEl.getBoundingClientRect().bottom>hb+90);if(want!==pinned){pinned=want;nav.classList.toggle('fx',want);ph.style.height=want?nav.offsetHeight+'px':'0px';}
  if(pinned){nav.style.top=hb+'px';nav.style.left='0px';nav.style.width='100%';}}
 addEventListener('scroll',onScroll,{passive:true});onScroll();
-if(!('IntersectionObserver' in window))return;var row=nav.querySelector('.tvp-snav-in');var links=[].slice.call(nav.querySelectorAll('a[href^="#tvp-"]'));var map={};
+var row=nav.querySelector('.tvp-snav-in'),aL=nav.querySelector('.tvp-snav-l'),aR=nav.querySelector('.tvp-snav-r');
+/* owner 11/13: no way to move the chip row with a mouse -> arrows + drag */
+function arr(){var m=row.scrollWidth-row.clientWidth;aL.hidden=row.scrollLeft<8;aR.hidden=m<8||row.scrollLeft>m-8;}
+aL.addEventListener('click',function(){row.scrollBy({left:-row.clientWidth*.7,behavior:'smooth'});});aR.addEventListener('click',function(){row.scrollBy({left:row.clientWidth*.7,behavior:'smooth'});});
+row.addEventListener('scroll',arr,{passive:true});addEventListener('resize',arr);setTimeout(arr,300);arr();
+var dx=null,sl=0,moved=false;row.addEventListener('mousedown',function(e){dx=e.pageX;sl=row.scrollLeft;moved=false;});
+addEventListener('mousemove',function(e){if(dx===null)return;var d=e.pageX-dx;if(Math.abs(d)>5){moved=true;row.classList.add('drag');}if(moved)row.scrollLeft=sl-d;});
+addEventListener('mouseup',function(){if(dx===null)return;dx=null;setTimeout(function(){row.classList.remove('drag');},0);});
+row.addEventListener('click',function(e){if(moved){e.preventDefault();moved=false;}},true);
+if(!('IntersectionObserver' in window))return;var links=[].slice.call(nav.querySelectorAll('a[href^="#tvp-"]'));var map={};
 links.forEach(function(a){var el=document.querySelector(a.getAttribute('href'));if(el)map[el.id]=a;});
 var io=new IntersectionObserver(function(es){es.forEach(function(e){var a=map[e.target.id];if(a&&e.isIntersecting){links.forEach(function(x){x.classList.remove('on');});a.classList.add('on');row.scrollTo({left:a.offsetLeft-row.clientWidth/2+a.clientWidth/2,behavior:'smooth'});}});},{rootMargin:'-40% 0px -55% 0px'});
 Object.keys(map).forEach(function(id){io.observe(document.getElementById(id));});})();'''
