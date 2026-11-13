@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T13:00:18.154320+00:00",
+ "updated": "2026-11-13T16:00:24.983986+00:00",
  "specials": [
   {
    "id": "18079551524738743",
@@ -32,6 +32,22 @@
    "url": "https://www.instagram.com/p/Dfk0moeEYP3/",
    "img": "",
    "inset": "ig/p18134508478823617.jpg"
+  },
+  {
+   "id": "17871751329693435",
+   "biz": "Burgerology",
+   "ig": "burgerologyusa",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Pumpkin Pie Milkshake & Sweet Potato Fries",
+   "when": "Now through end of season",
+   "desc": "Pumpkin Pie Milkshake served in a real pumpkin with sweet potato fries and marshmallow dipping sauce.",
+   "expires": "2026-11-30",
+   "posted": "2026-11-13T15:27:51+0000",
+   "url": "https://www.instagram.com/reel/Dfr84T5RxGw/",
+   "img": "",
+   "inset": "ig/p17871751329693435.jpg"
   },
   {
    "id": "17921223336253823",
@@ -80,22 +96,6 @@
    "url": "https://www.instagram.com/reel/DfpQaTlhhXD/",
    "img": "",
    "inset": "ig/p17952601566341784.jpg"
-  },
-  {
-   "id": "18211269280369753",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Ladies' Lounge Night at Castaways",
-   "when": "Saturdays",
-   "desc": "2 hours, 2 drinks each, and bites for groups of 6-12. $50 per person, plus tax and gratuity.",
-   "expires": "2026-11-21",
-   "posted": "2026-11-07T16:01:09+0000",
-   "url": "https://www.instagram.com/p/Dfcj-_lD9Oq/",
-   "img": "",
-   "inset": "ig/p18211269280369753.jpg"
   }
  ],
  "candidates": [
@@ -132,6 +132,22 @@
    "inset": "ig/p18134508478823617.jpg"
   },
   {
+   "id": "17871751329693435",
+   "biz": "Burgerology",
+   "ig": "burgerologyusa",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Pumpkin Pie Milkshake & Sweet Potato Fries",
+   "when": "Now through end of season",
+   "desc": "Pumpkin Pie Milkshake served in a real pumpkin with sweet potato fries and marshmallow dipping sauce.",
+   "expires": "2026-11-30",
+   "posted": "2026-11-13T15:27:51+0000",
+   "url": "https://www.instagram.com/reel/Dfr84T5RxGw/",
+   "img": "",
+   "inset": "ig/p17871751329693435.jpg"
+  },
+  {
    "id": "17921223336253823",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
@@ -178,22 +194,6 @@
    "url": "https://www.instagram.com/reel/DfpQaTlhhXD/",
    "img": "",
    "inset": "ig/p17952601566341784.jpg"
-  },
-  {
-   "id": "18211269280369753",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Ladies' Lounge Night at Castaways",
-   "when": "Saturdays",
-   "desc": "2 hours, 2 drinks each, and bites for groups of 6-12. $50 per person, plus tax and gratuity.",
-   "expires": "2026-11-21",
-   "posted": "2026-11-07T16:01:09+0000",
-   "url": "https://www.instagram.com/p/Dfcj-_lD9Oq/",
-   "img": "",
-   "inset": "ig/p18211269280369753.jpg"
   }
  ],
  "all": [
@@ -260,6 +260,22 @@
    "url": "https://www.instagram.com/reel/DfcSw0vD2tP/",
    "img": "",
    "inset": "ig/p18107031662636808.jpg"
+  },
+  {
+   "id": "17871751329693435",
+   "biz": "Burgerology",
+   "ig": "burgerologyusa",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Pumpkin Pie Milkshake & Sweet Potato Fries",
+   "when": "Now through end of season",
+   "desc": "Pumpkin Pie Milkshake served in a real pumpkin with sweet potato fries and marshmallow dipping sauce.",
+   "expires": "2026-11-30",
+   "posted": "2026-11-13T15:27:51+0000",
+   "url": "https://www.instagram.com/reel/Dfr84T5RxGw/",
+   "img": "",
+   "inset": "ig/p17871751329693435.jpg"
   },
   {
    "id": "17921223336253823",
@@ -340,6 +356,22 @@
    "url": "https://www.instagram.com/p/Dfcj-_lD9Oq/",
    "img": "",
    "inset": "ig/p18211269280369753.jpg"
+  },
+  {
+   "id": "18155940556551591",
+   "biz": "Right Coast Taqueria",
+   "ig": "rctaqueria",
+   "town": "East Setauket",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Pilgrim Burrito",
+   "when": "Now through holiday season",
+   "desc": "Turkey, stuffing, mashed sweet potatoes, and cranberry sauce in one holiday-inspired burrito.",
+   "expires": "2026-11-27",
+   "posted": "2026-11-13T15:35:33+0000",
+   "url": "https://www.instagram.com/p/Dfr91MRlrQn/",
+   "img": "",
+   "inset": "ig/p18155940556551591.jpg"
   },
   {
    "id": "17963853557996306",

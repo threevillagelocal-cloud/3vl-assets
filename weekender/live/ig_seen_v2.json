@@ -1,28 +1,4 @@
 {
-"17896265835414405": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-14T13:53:43+0000"
-},
-"18111523336896336": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-14T14:02:00+0000"
-},
-"18092116067478114": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-14T15:30:02+0000"
-},
 "18129967099834792": {
 "special": false,
 "title": "",
@@ -3050,5 +3026,29 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-13T10:40:53+0000"
+},
+"17871751329693435": {
+"special": true,
+"title": "Pumpkin Pie Milkshake & Sweet Potato Fries",
+"when": "Now through end of season",
+"desc": "Pumpkin Pie Milkshake served in a real pumpkin with sweet potato fries and marshmallow dipping sauce.",
+"expires": "2026-11-30",
+"_ts": "2026-11-13T15:27:51+0000"
+},
+"18155940556551591": {
+"special": true,
+"title": "Pilgrim Burrito",
+"when": "Now through holiday season",
+"desc": "Turkey, stuffing, mashed sweet potatoes, and cranberry sauce in one holiday-inspired burrito.",
+"expires": "2026-11-27",
+"_ts": "2026-11-13T15:35:33+0000"
+},
+"18141024433653000": {
+"special": false,
+"title": "PJ Lobster House",
+"when": "N/A",
+"desc": "General invitation to visit for lunch, dinner, or a night out.",
+"expires": "N/A",
+"_ts": "2026-11-13T15:40:32+0000"
 }
 }
