@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-13T17:34:27.646179+00:00",
+"updated": "2026-11-13T17:38:41.337624+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
 "I Love Port Jeff": 2,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 194,
+"Village of Port Jefferson": "error: <urlopen error timed out>",
 "Emma S. Clark Library": 233,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 42,
@@ -396,7 +396,7 @@
 "src": "3vl",
 "tags": [
 "history",
-"learn"
+"arts"
 ],
 "status": "",
 "pick": false,
@@ -1694,46 +1694,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/reindeer-scavenger-hunt"
-},
-{
-"id": "portjeff-1103",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-22T09:00:00",
-"end": "2026-11-22T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1103",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-486"
-},
-{
-"id": "portjeff-1154",
-"title": "Outdoor Summer Farmers Market - Last Day",
-"start": "2026-11-22T09:00:00",
-"end": "2026-11-22T14:00:00",
-"allday": false,
-"venue": "Village Center",
-"addr": "Village Center - 101A Robert T. Strong Way Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1154",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-last-day"
 },
 {
 "id": "emmaclark-stitching-circle-64002",
