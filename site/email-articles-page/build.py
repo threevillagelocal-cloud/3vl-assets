@@ -194,5 +194,5 @@ if __name__ == "__main__":
            "Weekly Email Spotlights and Custom Articles for Local Businesses | Three Village Local",
            "Get your business featured in the Three Village Local weekly email and in custom articles neighbors read, then shared on Facebook, Instagram, our website and our free mobile app.",
            "Stories the community actually reads",
-           [HERO, NAV, GET, ANAT, ART, INC, STATS, HOW, FAQ, REL, CTA], bundle="not_sure", css=CSS, js=JS)
+           [HERO, NAV, GET, ANAT, ART, INC, STATS, HOW, FAQ, REL, CTA], bundle="email_articles", css=CSS, js=JS)
     K.main()
