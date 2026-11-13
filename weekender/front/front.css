@@ -412,8 +412,10 @@
 #wk-top.wk-y .yf-app{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}#wk-top.wk-y .yf-app b{color:#fff;font-weight:700;font-size:15px;margin-right:4px}#wk-top.wk-y .yf-app a{display:block;line-height:0}#wk-top.wk-y .yf-app img{height:44px;width:auto;display:block}
 #wk-top.wk-y .yf-soc a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:#fff}
 #wk-top.wk-y .yf-join{background:var(--blue);color:#fff!important;font-weight:600;font-size:14px;padding:9px 16px;border-radius:999px}
-#wk-top.wk-y .yf-copy{max-width:1240px;margin:16px auto 0!important;font-size:12.5px;text-align:center}
-#wk-top.wk-y .yf-copy a{margin-left:8px;white-space:nowrap}
+#wk-top.wk-y .yf-copy{max-width:1240px;margin:16px auto 0!important;font-size:13.5px;text-align:center}
+#wk-top.wk-y .yf-legal{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-left:14px}
+#wk-top.wk-y .yf-copy a{color:#fff;font-weight:600;font-size:14.5px;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+@media (max-width:700px){#wk-top.wk-y .yf-legal{display:flex;margin:10px 0 0}}
 
 /* ---------- tablet ---------- */
 @media (max-width:1100px){
