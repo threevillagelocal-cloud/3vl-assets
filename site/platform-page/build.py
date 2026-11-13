@@ -24,6 +24,104 @@ APP = "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@1328a06c9c
 import re as _re
 _m = _re.search(r'<div class="tvw-logo-row">.*?</div>', A.W.STRIP_SEC, _re.S)
 AIROW = _m.group(0)
+
+# ===== service catalog (owner 11/13/2026: every service gets a card + a detail page, all shown working together) =====
+import urllib.request, math
+LIVE_NOW = {"websites", "ai-assistant", "join", "app"}          # already-public detail pages
+
+
+def _up(slug):
+    try:
+        return urllib.request.urlopen(urllib.request.Request("https://www.threevillagelocal.com/" + slug, method="HEAD"), timeout=15).status == 200
+    except Exception:
+        return False
+
+
+def dl(slug, sid):
+    if slug in LIVE_NOW:
+        return "/" + slug
+    if not D.LIVE:
+        return "/preview-" + slug
+    if _up(slug):
+        return "/" + slug
+    print("WARNING: /%s is not live yet, the %s card links to its section on this page" % (slug, sid))
+    return "#tvp-" + sid
+
+
+STAGES = [("found", "Step 1", "Get found", "Be the business Google and AI recommend."),
+          ("seen", "Step 2", "Get seen", "Get in front of the whole community, every week."),
+          ("grow", "Step 3", "Win and grow", "Turn attention into customers, and run it all from one place.")]
+# id, stage, icon, name, short label, card text, detail slug, works with
+SV = [
+    ("web", "found", "&#128187;", "AI-Ready Websites", "Websites", "Designed, built and hosted for you, written so Google and AI understand exactly what you do.", "websites", ["ai", "bot", "dash"]),
+    ("ai", "found", "&#10024;", "AI Search Optimization", "AI search", "Get recommended when locals ask ChatGPT, Gemini and Google AI who to call.", "ai-search", ["web", "bot", "seen"]),
+    ("video", "seen", "&#127909;", "Promo Video", "Video", "Short promo videos and reels that make your business look its best.", "promo-video", ["social", "seen", "web"]),
+    ("seen", "seen", "&#11088;", "Featured &amp; VIP Memberships", "Featured", "Top spots in our directory, homepage features and banners, right where locals look.", "join", ["social", "app", "email"]),
+    ("social", "seen", "&#128227;", "Social Media Promotion", "Social", "Posts and reels shared to 100,000+ local views a month on Facebook and Instagram.", "social-media", ["video", "seen", "app"]),
+    ("email", "seen", "&#128231;", "Email &amp; Articles", "Email", "Spotlights in our weekly email and custom articles neighbors actually read.", "email-articles", ["seen", "social", "app"]),
+    ("app", "seen", "&#128241;", "Mobile App", "Mobile app", "Your specials and events on local phones, plus push alerts for VIP members.", "app", ["seen", "email", "social"]),
+    ("bot", "grow", "&#129302;", "AI Digital Front Desk", "Front desk", "An AI assistant on your website that answers customers 24/7 and texts you every lead.", "ai-assistant", ["web", "ai", "dash"]),
+    ("dash", "grow", "&#128202;", "Company Digital Dashboards", "Dashboards", "Customers, calendar, money, marketing and social media in one custom app.", "business-dashboards", ["bot", "web", "social"]),
+    ("launch", "grow", "&#128640;", "New Business Launch", "Launch", "Opening soon? We put every piece together so the whole town knows you&#39;re open.", "new-business-launch", ["web", "seen", "social", "video"]),
+]
+SVD = {s[0]: s for s in SV}
+LM = {"web": "AI websites", "ai": "AI search", "video": "promo video", "seen": "memberships", "social": "social media", "email": "email and articles",
+      "app": "the mobile app", "bot": "the front desk", "dash": "dashboards", "launch": "launch plans"}
+NUM = {s[0]: "%02d" % (k + 1) for k, s in enumerate(SV)}
+LINK = {s[0]: dl(s[6], s[0]) for s in SV}
+
+
+def card(s):
+    i, st, ic, nm, _, tx, _, _ = s
+    return ('<a class="tvp-card st-%s" href="%s"><span class="tvp-card-n">%s</span><span class="tvp-card-w"><span class="tvp-card-i">%s</span>'
+            '<span class="tvp-card-t"><b>%s</b><p>%s</p><em>Learn more <i>&rarr;</i></em></span></span></a>') % (st, LINK[i], NUM[i], ic, nm, tx)
+
+
+SVCS = ('<section class="tvs-sec tvp-svcs" id="tvp-svcs">\n  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Everything we offer</p>'
+        '<h2>Ten services. One local team.</h2><p>Each one works on its own. Put them together and they work as one system. Tap any service for the full details.</p></div>\n' +
+        "\n".join('  <div class="tvp-sgrp st-%s tvs-up"><div class="tvp-sgrp-h"><span>%s</span><b>%s</b><i>%s</i></div><div class="tvp-cards">%s</div></div>'
+                  % (k, n, t, d, "".join(card(s) for s in SV if s[1] == k)) for k, n, t, d in STAGES) +
+        '\n</section>')
+
+# animated system diagram: 10 nodes around "Your business", flowing lines, stages light up in turn
+_nodes, _lines = [], []
+for k, s in enumerate(SV):
+    a = -math.pi / 2 + k * 2 * math.pi / len(SV)
+    x, y = 200 + 158 * math.cos(a), 200 + 158 * math.sin(a)
+    _lines.append('<path class="st-%s" id="tvp-l%d" d="M%.1f %.1fL200 200"/>' % (s[1], k, x, y))
+    _lines.append('<circle class="tvp-dot st-%s" r="3.6"><animateMotion dur="2.8s" begin="%.1fs" repeatCount="indefinite"><mpath href="#tvp-l%d"/></animateMotion></circle>' % (s[1], k * .28, k))
+    _nodes.append('<a class="tvp-node st-%s" href="#tvp-%s" style="left:%.2f%%;top:%.2f%%"><span>%s</span><em>%s</em></a>' % (s[1], s[0], x / 4, y / 4, s[2], s[4]))
+SYS = ('''<section class="tvs-sec tvp-sys" id="tvp-sys">
+  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Better together</p><h2>Individual services. One system working for you.</h2>
+  <p>Every service feeds the others. Your website makes AI recommend you, our audience sends people to it, your front desk turns them into customers, and your dashboard shows it all.</p></div>
+  <div class="tvp-sys-in tvs-up">
+    <div class="tvp-hub" id="tvp-hub" data-on="found" aria-hidden="true"><svg viewBox="0 0 400 400"><circle class="tvp-hub-ring" cx="200" cy="200" r="158"/>''' + "".join(_lines) + '''</svg>
+      <div class="tvp-hub-core"><b>Your</b><b>business</b><span>at the center</span></div>''' + "".join(_nodes) + '''</div>
+    <div class="tvp-steps" role="tablist" aria-label="How the services work together">''' +
+       "".join('<button type="button" role="tab" class="tvp-step st-%s%s" data-st="%s"><span>%s</span><b>%s</b><i>%s</i><small>%s</small></button>'
+               % (k, " on" if k == "found" else "", k, n, t, d, " &middot; ".join(SVD[s[0]][4] for s in SV if s[1] == k)) for k, n, t, d in STAGES) + '''
+      <p class="tvp-steps-f">You run your business. We handle the tech, the content and the promotion, all from one local team.</p>
+    </div>
+  </div>
+  <div class="tvp-why tvs-up">
+    <div><b>&#127968; Local</b>We live and work in Three Village. We know your customers because they&#39;re our neighbors too.</div>
+    <div><b>&#9889; Done for you</b>You run your business. We handle the tech, the content and the promotion.</div>
+    <div><b>&#10024; Leading-edge AI</b>Set up and tuned by a real local team, never a faceless app.</div>
+  </div>
+</section>''')
+
+
+def stage(k):
+    _, n, t, d = [x for x in STAGES if x[0] == k][0]
+    chips = "".join('<a href="#tvp-%s"><span>%s</span>%s</a>' % (s[0], s[2], s[3]) for s in SV if s[1] == k)
+    return ('<section class="tvs-sec tvp-stg st-%s" id="tvp-stage-%s"><div class="tvp-stg-in tvs-up"><span class="tvp-stg-n">%s</span>'
+            '<h2>%s</h2><p>%s</p><div class="tvp-stg-chips">%s</div></div></section>') % (k, k, n, t, d, chips)
+
+
+def works(i):
+    return '<p class="tvp-works"><span>Works with</span>' + "".join('<a href="#tvp-%s">%s</a>' % (w, SVD[w][4]) for w in SVD[i][7]) + '</p>'
+
+
 HERO = """<section class="tvp-top" id="tvp-top">
   <div class="tvp-top-in tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Our services</p>
@@ -32,31 +130,11 @@ HERO = """<section class="tvp-top" id="tvp-top">
     <ul class="tvs-trust tvp-trust"><li><b>45,000+</b>website page visits a month</li><li><b>100,000+</b>social views a month</li><li><b>One</b>local team</li></ul>
   </div>
   <div class="tvp-ai tvs-up"><p>We help you get found and recommended on</p>""" + AIROW + """</div>
-  <div class="tvp-glance" aria-label="Everything we offer">
-    <div class="tvp-gcol tvs-up">
-      <div class="tvp-gh"><p>On Three Village Local</p><h2>Get promoted where locals look</h2></div>
-      <a href="#tvp-seen"><span>&#11088;</span><div><b>Featured &amp; VIP memberships</b><i>Top spots in search, homepage features and banners</i></div><em>&rarr;</em></a>
-      <a href="#tvp-social"><span>&#128227;</span><div><b>Social media promotion</b><i>Posts and reels shared to 100,000+ local views a month</i></div><em>&rarr;</em></a>
-      <a href="#tvp-app"><span>&#128241;</span><div><b>Mobile app</b><i>Your specials and events on local phones, plus push alerts</i></div><em>&rarr;</em></a>
-      <a href="#tvp-seen"><span>&#128197;</span><div><b>Events &amp; specials</b><i>On our calendar, homepage and weekly picks</i></div><em>&rarr;</em></a>
-      <a href="#tvp-email"><span>&#128231;</span><div><b>Weekly email &amp; articles</b><i>Spotlights and stories neighbors actually read</i></div><em>&rarr;</em></a>
-    </div>
-    <div class="tvp-gcol tvp-gdark tvs-up">
-      <div class="tvp-gh"><p>Tools to get seen and grow</p><h2>Done for you by our local team</h2></div>
-      <a href="#tvp-web"><span>&#128187;</span><div><b>AI-optimized websites</b><i>Designed, built and hosted to be found on Google and AI</i></div><em>&rarr;</em></a>
-      <a href="#tvp-bot"><span>&#129302;</span><div><b>AI chatbot: Digital Front Desk</b><i>Answers customers 24/7 and texts you every lead</i></div><em>&rarr;</em></a>
-      <a href="#tvp-web"><span>&#128200;</span><div><b>SEO optimization</b><i>Rank higher on Google when locals search for what you do</i></div><em>&rarr;</em></a>
-      <a href="#tvp-ai"><span>&#10024;</span><div><b>AI search optimization</b><i>Get recommended by ChatGPT, Gemini and Google AI</i></div><em>&rarr;</em></a>
-      <a href="#tvp-social"><span>&#128172;</span><div><b>Social media marketing</b><i>Scroll-stopping content for your own Facebook and Instagram</i></div><em>&rarr;</em></a>
-      <a href="#tvp-video"><span>&#127909;</span><div><b>Promo video</b><i>Short reels that show off your business</i></div><em>&rarr;</em></a>
-      <a href="#tvp-dash"><span>&#128202;</span><div><b>Company Digital Dashboards</b><i>Your clients, money, marketing and calendar in one app</i></div><em>&rarr;</em></a>
-    </div>
-  </div>
-  <div class="tvp-gfoot tvs-up"><p>Pick one, or put them together. They all work as one.</p><div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="#tvs-book">Get a free plan</a><a class="tvs-btn tvs-ghost" href="#tvp-seen">Explore each service</a></div></div>
+  <div class="tvp-gfoot tvs-up"><p>Pick one, or put them together. They all work as one.</p><div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="#tvs-book">Get a free plan</a><a class="tvs-btn tvs-ghost" href="#tvp-svcs">See all 10 services</a></div></div>
 </section>"""
 
 SNAV = """<nav class="tvp-snav-bar" id="tvp-snav" aria-label="Our services"><div class="tvp-snav-in">
-  <a href="#tvp-web">AI websites</a><a href="#tvp-video">Promo video</a><a href="#tvp-dash">Business dashboards</a><a href="#tvp-bot">AI front desk</a><a href="#tvp-ai">AI search</a><a href="#tvp-seen">Featured &amp; VIP</a><a href="#tvp-social">Social media</a><a href="#tvp-app">Mobile app</a><a href="#tvp-email">Email &amp; articles</a><a href="#tvp-launch">New business launch</a><a class="tvp-snav-cta" href="#tvs-book">Get a free plan</a>
+  <a href="#tvp-svcs">All services</a>""" + "".join('<a href="#tvp-%s">%s</a>' % (s[0], s[3]) for s in SV) + """<a class="tvp-snav-cta" href="#tvs-book">Get a free plan</a>
 </div></nav>"""
 
 PATHS = '''<section class="tvs-sec tvp-paths" id="tvp-paths">
@@ -71,25 +149,29 @@ PATHS = '''<section class="tvs-sec tvp-paths" id="tvp-paths">
 
 FOMO = '''<section class="tvs-sec tvp-fomo" id="tvp-ai">
   <div class="tvp-fomo-in tvs-up">
-    <p class="tvs-eyebrow">The shift is already happening</p>
+    <p class="tvs-eyebrow tvp-eb"><span class="tvp-num st-found">''' + NUM["ai"] + '''</span>AI Search Optimization<em class="tvp-eb-st">Get found</em></p>
     <h2>Your next customer is asking AI who to call.<br><span>Is it saying your name?</span></h2>
     <p>Nearly half of people now use AI tools like ChatGPT and Google&#39;s AI to find local businesses (BrightLocal, 2026). AI recommends the businesses it can read, understand and trust. If yours isn&#39;t one of them, those customers go to whoever is.</p>
     <div class="tvp-vs"><div><b>Without AI</b><span>Invisible to AI answers</span><span>Questions wait until morning</span><span>Leads slip to competitors</span></div>
       <div class="tvp-vs-on"><b>With Three Village Local AI</b><span>Built to be noticed and recommended</span><span>Answers in seconds, 24/7</span><span>Every lead sent straight to you</span></div></div>
-    <div class="tvp-ctas tvp-ctas-c"><a class="tvs-btn tvw-btn-w" href="''' + AI + '''">See the AI overhaul</a><a class="tvs-btn tvw-btn-o" href="#tvs-book">Get my free plan</a></div>
+    <div class="tvp-ctas tvp-ctas-c"><a class="tvs-btn tvw-btn-w" href="''' + LINK["ai"] + '''">Learn more about AI search &rarr;</a><a class="tvs-btn tvw-btn-o" href="#tvs-book">Get my free plan</a></div>
+    ''' + works("ai").replace('class="tvp-works"', 'class="tvp-works tvp-works-d"') + '''
     <a class="tvp-aicheck" href="/free-ai-report"><span>&#128269;</span><div><b>Does ChatGPT recommend your business?</b><i>Get a free AI visibility check. Takes 1 minute.</i></div><em>Check free &rarr;</em></a>
   </div>
 </section>'''
 
 
 def row(i, eyebrow, title, text, bullets, cta, href, visual, flip=False, extra=""):
-    li = "".join("<li>%s</li>" % b for b in bullets)
-    return '''<section class="tvs-sec tvp-row%s" id="tvp-%s">
+    li = "".join("<li>%s</li>" % x for x in bullets)
+    st = SVD[i][1]; stn = [x for x in STAGES if x[0] == st][0]
+    eb = '<span class="tvp-num st-%s">%s</span>%s<em class="tvp-eb-st">%s</em>' % (st, NUM[i], SVD[i][3], stn[2])
+    more = '<a class="tvs-btn tvs-blue" href="%s">Learn more about %s &rarr;</a>' % (LINK[i], LM[i])
+    return '''<section class="tvs-sec tvp-row st-%s%s" id="tvp-%s">
   <div class="tvp-row-in">
-    <div class="tvp-txt tvs-up"><p class="tvs-eyebrow">%s</p><h2>%s</h2><p>%s</p><ul class="tvp-ul">%s</ul><div class="tvp-ctas"><a class="tvs-btn tvs-blue" href="%s">%s</a>%s</div>%s</div>
+    <div class="tvp-txt tvs-up"><p class="tvs-eyebrow tvp-eb">%s</p><h2>%s</h2><p>%s</p><ul class="tvp-ul">%s</ul><div class="tvp-ctas">%s<a class="tvs-btn tvs-ghost" href="#tvs-book">Get my free plan</a></div>%s%s</div>
     <div class="tvp-art tvs-up">%s</div>
   </div>
-</section>''' % (" tvp-flip" if flip else "", i, eyebrow, title, text, li, href, cta, ('<a class="tvs-btn tvs-ghost" href="#tvs-book">Get my free plan</a>' if href != "#tvs-book" else ""), extra, visual)
+</section>''' % (st, " tvp-flip" if flip else "", i, eb, title, text, li, more, works(i), extra, visual)
 
 
 V_STAGE = '''<div class="tvp-stage"><div class="tvp-sq"><span>&#128269;</span>plumber near Setauket<em>12 results</em></div>
@@ -114,12 +196,13 @@ V_WEB = '''<div class="tvp-browser"><div class="tvp-bar"><i></i><i></i><i></i><s
   <div class="tvp-gpt"><b>&#10022; AI answer</b>Locals recommend <u>Your Bakery</u> on Main Street for fresh bread and custom cakes.</div>
   <div class="tvp-ai-tag">&#10022; Read and recommended by AI</div></div>'''
 V_BOT = '''<div class="tvp-chat"><div class="tvp-chat-h">&#10022; Your Business Front Desk</div><p class="me">Are you open Sunday?</p><p>Yes, 10 to 4! Want me to book you a time?</p><p class="me">Yes, Sarah, 631-555-0188</p><div class="tvp-lead">&#128241; New lead sent to you</div></div>'''
-V_VIDEO = '''<div class="tvp-vids"><div class="tvp-reel"><video class="tvp-rv" muted playsinline loop preload="none" poster="''' + SH + '''services/campus-bikes-poster.webp" data-src="''' + SH + '''services/campus-bikes-720.mp4" width="720" height="900" aria-label="Promo video for Campus Bicycles in Stony Brook"></video>
-  <button type="button" class="tvp-snd" aria-label="Turn sound on">&#128263; Tap for sound</button>
-  <div class="tvp-rtag"><b>Campus Bicycles</b><span>Stony Brook &middot; made by Three Village Local</span></div></div>
- <div class="tvp-vph"><div class="tvp-vph-in"><span class="tvp-vph-notch"></span><video class="tvp-rv" muted playsinline loop preload="none" poster="''' + SH + '''services/girard-poster.webp" data-src="''' + SH + '''services/girard-720.mp4" width="720" height="1280" aria-label="Promo video for Girard Wealth Management, made by Three Village Local"></video>
+V_VIDEO = '''<div class="tvp-vsw" id="tvp-vsw" data-i="0"><div class="tvp-vph-in"><span class="tvp-vph-notch"></span><div class="tvp-vscr">
+  <img class="tvp-vbg" src="''' + SH + '''services/campus-bikes-poster.webp" alt="" aria-hidden="true" loading="lazy">
+  <video class="on" muted playsinline preload="none" poster="''' + SH + '''services/campus-bikes-poster.webp" data-src="''' + SH + '''services/campus-bikes-720.mp4" width="720" height="900" aria-label="Promo video for Campus Bicycles in Stony Brook, made by Three Village Local"></video>
+  <video muted playsinline preload="none" poster="''' + SH + '''services/girard-poster.webp" data-src="''' + SH + '''services/girard-720.mp4" width="720" height="1280" aria-label="Promo video for Girard Wealth Management, made by Three Village Local"></video></div>
   <button type="button" class="tvp-snd" aria-label="Turn sound on">&#128263; Tap for sound</button></div>
-  <div class="tvp-rtag"><b>Girard Wealth Management</b><span>Made by Three Village Local</span></div></div></div>'''
+ <div class="tvp-vtabs" role="tablist" aria-label="Promo video examples"><button type="button" role="tab" aria-selected="true" class="tvp-vtab on"><b>Campus Bicycles</b><span>Stony Brook</span></button><button type="button" role="tab" aria-selected="false" class="tvp-vtab"><b>Girard Wealth</b><span>Management</span></button></div>
+ <p class="tvp-vcap">Two real examples, both made by Three Village Local</p></div>'''
 V_DASH = '''<div class="tvp-dash" aria-hidden="true"><div class="tvp-dash-side"><b>&#9632;</b><i class="on"></i><i></i><i></i><i></i><i></i></div>
   <div class="tvp-dash-main"><div class="tvp-dash-top"><b>Good morning, Sam</b><span>&#128269; Search</span></div>
   <div class="tvp-dash-ai">&#10022; <b>Your day:</b> 14 bookings, 3 leads to call back, revenue up 12% this week.</div>
@@ -133,45 +216,57 @@ V_EMAIL = '''<div class="tvp-mail"><div class="tvp-mail-h"><b>Three Village Week
   <div class="tvp-feat"><img src="''' + SH + '''services/w-tommys-place-v2.webp" alt="" loading="lazy" width="320" height="400"><div><em>&#9733; Featured business</em><b>Your Business</b><i>Meet the family behind Main Street&#39;s favorite spot.</i><u>Read the story &rarr;</u></div></div>
   <div class="tvp-mfoot">Also in the mobile app and on social</div></div></div>'''
 
+V_LAUNCH = '''<div class="tvp-lch"><div class="tvp-lch-h"><span>&#128640;</span><div><b>Grand opening plan</b><i>Your Business</i></div><em>Week 1</em></div>
+<ul><li>Website live and AI-ready</li><li>Google and Apple Maps listings</li><li>Three Village Local launch spotlight</li><li>Launch posts and reel shared</li><li>Opening day alert in the mobile app</li></ul>
+<div class="tvp-lch-bar"><u></u></div><p class="tvp-lch-f">&#127881; Doors open. The whole town knows.</p></div>'''
 HAVE = '''<div class="tvp-have"><p class="tvp-have-k">Already have a website?</p><h3>Keep it. We&#39;ll make it smarter.</h3>
   <a href="#tvs-book"><span>&#10024;</span><div><b>AI search optimization</b><i>We tune the site you already have so ChatGPT, Gemini and Google AI can read it and recommend you.</i></div><em>&rarr;</em></a>
   <a href="/ai-assistant"><span>&#129302;</span><div><b>Add an AI chatbot</b><i>Our Digital Front Desk works on your current website, answers customers 24/7 and texts you every lead.</i></div><em>&rarr;</em></a>
   <p class="tvp-have-f">Do one, or both. No rebuild needed.</p></div>'''
 
-ROWS = "\n\n".join([
-    row("web", "AI-Ready websites", "A website AI can read, and customers love.",
+def _rows():
+    return {
+    "web": row("web", "AI-Ready websites", "A website AI can read, and customers love.",
         "We design, build and host a fast, beautiful website written so Google and AI tools understand exactly what you do, then we launch it to the whole town.",
         ["Designed, written and hosted for you", "Built for Google and AI search from the first line", "Domain in your name, updates included"],
         "See AI websites", "/websites", V_WEB, False, HAVE),
-    row("video", "Promo video", "Show them, don&#39;t just tell them.",
+    "video": row("video", "Promo video", "Show them, don&#39;t just tell them.",
         "Short promo videos and reels that make your business look its best, shared across our site, social media and mobile app.",
         ["Filmed, edited and captioned for you", "Sized for Instagram, Facebook and your website", "Included with VIP, discounted for Featured members"],
-        "Ask about promo video", "#tvs-book", V_VIDEO, True),
-    row("dash", "Company Digital Dashboards", "Your whole business. One dashboard.",
-        "A custom app built around how your business runs: customers and leads, calendar, money, marketing, reviews and social media, all in one place, with an AI assistant that tells you what needs attention today.",
-        ["Built for your industry: restaurants, contractors, salons, gyms, offices and more", "CRM, calendar, finances, marketing and content in one app", "Works on your phone and connects to the tools you already use"],
-        "See it in action", "#tvs-book", V_DASH, False),
-    row("bot", "Your Digital Front Desk", "Your best salesperson, open 24/7.",
-        "A smart AI assistant on your current website answers customers in seconds, day or night, and sends you every lead. It comes with AI Website Optimization so you get noticed and recommended by AI.",
-        ["Works with the website you already have", "Live person handoff: you get an instant text", "Follows your industry's rules and guidelines"],
-        "Try the live demo", AI, V_BOT, True),
-    row("seen", "Get seen on Three Village Local", "Be the first name neighbors see.",
+        "Ask about promo video", "#tvs-book", V_VIDEO, False),
+    "seen": row("seen", "Get seen on Three Village Local", "Be the first name neighbors see.",
         "Featured and VIP memberships put your business at the top of our directory, on our homepage and across the site, where locals already go to find who to call.",
         ["Top-of-search placement with one-tap call", "Homepage features, banners and spotlights", "Post your events and specials on the site and mobile app"],
-        "See memberships", "/join", V_STAGE, False),
-    row("social", "Social media promotion", "Seen all over town, every week.",
+        "See memberships", "/join", V_STAGE, True),
+    "social": row("social", "Social media promotion", "Seen all over town, every week.",
         "We create scroll-stopping posts and reels for your business and share them with more than 100,000 local views a month on Facebook and Instagram.",
         ["Custom graphics and reels, made for you", "Tagged and shared with your own accounts", "Launch posts, specials, events and spotlights"],
-        "Ask about social promotion", "#tvs-book", V_SOCIAL, True),
-    row("app", "The Three Village Local mobile app", "Right on their phones.",
+        "Ask about social promotion", "#tvs-book", V_SOCIAL, False),
+    "email": row("email", "Email and articles", "Stories the community actually reads.",
+        "Get featured in our weekly email and in custom articles on Three Village Local, so neighbors learn the story behind your business.",
+        ["Spotlights in our weekly email", "Custom blog and article features", "Shared across social and the mobile app"],
+        "Get featured", "#tvs-book", V_EMAIL, True),
+    "app": row("app", "The Three Village Local mobile app", "Right on their phones.",
         "Our free mobile app keeps neighbors connected to local businesses, events and specials. VIP members can send a push notification straight to local phones.",
         ["Your listing, specials and events in the mobile app", "Push notifications to local phones (VIP)", "Free for the community on iPhone and Android"],
         "See the mobile app", "/app", V_APP, False),
-    row("email", "Email and articles", "Stories the community actually reads.",
-        "Get featured in our weekly email and in custom articles on Three Village Local, so neighbors learn the story behind your business.",
-        ["Spotlights in our weekly email", "Custom blog and article features", "Shared across social and the mobile app"],
-        "Get featured", "#tvs-book", V_EMAIL, True)
-])
+    "bot": row("bot", "Your Digital Front Desk", "Your best salesperson, open 24/7.",
+        "A smart AI assistant on your current website answers customers in seconds, day or night, and sends you every lead. It comes with AI Website Optimization so you get noticed and recommended by AI.",
+        ["Works with the website you already have", "Live person handoff: you get an instant text", "Follows your industry's rules and guidelines"],
+        "Try the live demo", AI, V_BOT, False),
+    "dash": row("dash", "Company Digital Dashboards", "Your whole business. One dashboard.",
+        "A custom app built around how your business runs: customers and leads, calendar, money, marketing, reviews and social media, all in one place, with an AI assistant that tells you what needs attention today.",
+        ["Built for your industry: restaurants, contractors, salons, gyms, offices and more", "CRM, calendar, finances, marketing and content in one app", "Works on your phone and connects to the tools you already use"],
+        "See it in action", "#tvs-book", V_DASH, True),
+    "launch": row("launch", "New Business Launch", "Open your doors with the whole town watching.",
+        "Opening a new business? We put every piece together before day one: a website AI can find, your Google and Apple listings, a Three Village Local launch spotlight, social posts and a promo video.",
+        ["Everything ready before opening day", "A launch spotlight seen all over town", "One local team, one simple plan"],
+        "", "", V_LAUNCH, True)}
+
+
+RW = _rows()
+ROWS = "\n\n".join([stage("found"), RW["web"], FOMO, stage("seen"), RW["video"], RW["seen"], RW["social"], RW["email"], RW["app"],
+                     stage("grow"), RW["bot"], RW["dash"], RW["launch"]])
 
 LAUNCH = '''<section class="tvs-sec tvp-launch" id="tvp-launch">
   <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Better together</p><h2>One plan. Every piece working for you.</h2>
@@ -224,7 +319,7 @@ BOOK = BOOK0.replace('<p class="tvs-eyebrow">Let\'s talk</p>', '<p class="tvs-ey
       <blockquote>&ldquo;A one stop shop to plan your weekend!&rdquo;<cite>Stony Brook Harbor Kayak &amp; Paddleboard Rentals</cite></blockquote>
       <blockquote>&ldquo;Amazing resource! Thank you for all you do to support the 3V community.&rdquo;<cite>Maryann B., neighbor</cite></blockquote></div>
     <p class="tvp-alt">Rather start smaller? <a href="/free-ai-report">See if ChatGPT recommends your business &rarr; free AI check</a></p>""")
-HTML = ('<div class="tvs" id="tvs">\n\n' + HERO + "\n\n" + SNAV + "\n\n" + FOMO + "\n\n" + ROWS + "\n\n" + LAUNCH + "\n\n" + VS + "\n\n" + CTA + "\n\n" + BOOK +
+HTML = ('<div class="tvs" id="tvs">\n\n' + HERO + "\n\n" + SNAV + "\n\n" + SVCS + "\n\n" + SYS + "\n\n" + ROWS + "\n\n" + VS + "\n\n" + CTA + "\n\n" + BOOK +
         '\n\n<a class="tvs-sticky" href="#tvs-book">Get my free plan</a>\n</div>')
 assert "\\" not in HTML
 
@@ -437,6 +532,99 @@ details.tvp-more{margin:4px 0 12px;border:1px dashed #cdd8e6;border-radius:14px;
 .tvp-fan{height:330px}.tvp-push{left:-20px}}
 @media (max-width:520px){.tvp-flow{grid-template-columns:1fr}.tvp-fan{height:280px}.tvp-push{left:-10px;width:210px}.tva-pop{width:100%!important}.tva-pop .tva-box{height:100dvh!important;max-height:100dvh!important}}
 @media (prefers-reduced-motion:reduce){.tvp-ring,.tvp-ring i,.tvp-core,.tvp-stage-card,.tvp-push,.tvp-ai-tag,.tvp-lead,.tvp-faa,.tvp-flow li{animation:none!important}}
+/* ===== 11/13/2026 reorganization: service cards, system diagram, step bands, one video player ===== */
+.tvp-svcs,.tvp-sys,.tvp-row,.tvp-stg{--sc:#1d5fd1;--sl:#e8f0ff}
+.st-found{--sc:#1d5fd1;--sl:#e8f0ff}.st-seen{--sc:#0b8fb3;--sl:#e3f6fb}.st-grow{--sc:#3b4fd8;--sl:#ebeefe}
+.tvp-sgrp{max-width:1140px;margin:0 auto 26px}
+.tvp-sgrp-h{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 12px;margin:0 4px 12px;padding-bottom:10px;border-bottom:2px solid var(--sl)}
+.tvp-sgrp-h span{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--sc);padding:4px 10px;border-radius:999px}
+.tvp-sgrp-h b{font-size:22px;color:var(--navy)}.tvp-sgrp-h i{font-style:normal;font-size:15px;color:var(--mut)}
+.tvp-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.tvp-card{position:relative;display:flex;flex-direction:column;padding:20px 18px 16px;border-radius:20px;background:#fff;border:1px solid #dfe8f6;box-shadow:0 16px 36px -28px rgba(9,30,66,.45);text-decoration:none!important;color:inherit!important;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s}
+.tvp-card:before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:var(--sc);transform:scaleX(.18);transform-origin:left;transition:transform .35s}
+.tvp-card:hover{transform:translateY(-6px);box-shadow:0 26px 48px -26px rgba(9,30,66,.5);border-color:var(--sc)}.tvp-card:hover:before{transform:none}
+.tvp-card-n{position:absolute;right:16px;top:14px;font-size:13px;font-weight:800;color:#b9c6d8;letter-spacing:.06em}
+.tvp-card-i{width:48px;height:48px;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:24px;background:var(--sl);margin-bottom:12px;transition:transform .3s}
+.tvp-card:hover .tvp-card-i{transform:scale(1.1) rotate(-6deg)}
+.tvp-card b{font-size:17px;line-height:1.25;color:var(--navy);margin-bottom:6px}.tvp-card p{margin:0 0 14px!important;font-size:14.5px;line-height:1.5;color:var(--mut);flex:1}
+.tvp-card em{font-style:normal;font-size:14px;font-weight:800;color:var(--sc)}.tvp-card em i{display:inline-block;font-style:normal;transition:transform .25s}.tvp-card:hover em i{transform:translateX(5px)}
+.tvp-sgrp.tvs-in .tvp-card{animation:tvpIn .5s ease both}.tvp-sgrp.tvs-in .tvp-card:nth-child(2){animation-delay:.08s}.tvp-sgrp.tvs-in .tvp-card:nth-child(3){animation-delay:.16s}.tvp-sgrp.tvs-in .tvp-card:nth-child(4){animation-delay:.24s}.tvp-sgrp.tvs-in .tvp-card:nth-child(5){animation-delay:.32s}
+.tvp-sys{background:linear-gradient(180deg,#f3f7fd,#fff)}
+.tvp-sys-in{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;max-width:1100px;margin:0 auto 30px}
+.tvp-hub{position:relative;width:100%;max-width:480px;aspect-ratio:1;margin:0 auto}
+.tvp-hub svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.tvp-hub-ring{fill:none;stroke:#d5e2f5;stroke-width:1.5;stroke-dasharray:3 6}
+.tvp-hub path{stroke:#cfdcf0;stroke-width:2;fill:none;stroke-dasharray:5 7;animation:tvpFlow 1.4s linear infinite;transition:stroke .4s,stroke-width .4s}
+.tvp-dot{fill:#b9c9e2;transition:fill .4s}
+@keyframes tvpFlow{to{stroke-dashoffset:-24}}
+.tvp-hub[data-on=found] path.st-found,.tvp-hub[data-on=seen] path.st-seen,.tvp-hub[data-on=grow] path.st-grow{stroke:var(--sc);stroke-width:3}
+.tvp-hub[data-on=found] .tvp-dot.st-found,.tvp-hub[data-on=seen] .tvp-dot.st-seen,.tvp-hub[data-on=grow] .tvp-dot.st-grow{fill:var(--sc)}
+.tvp-hub-core{position:absolute;left:50%;top:50%;width:34%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:linear-gradient(150deg,#0b1f4b,#1d4fa8);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;animation:tvpPulse 4s ease-in-out infinite}
+.tvp-hub-core b{font-size:clamp(16px,3.4vw,24px);line-height:1.05}.tvp-hub-core span{font-size:clamp(10px,1.8vw,12.5px);color:#bfe0ff;margin-top:4px}
+.tvp-node{position:absolute;width:17%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:22%;background:#fff;box-shadow:0 14px 30px -16px rgba(9,30,66,.5),0 0 0 1px #dfe8f6;display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none!important;transition:transform .35s,box-shadow .35s,background .35s}
+.tvp-node span{font-size:clamp(17px,3.6vw,26px);line-height:1}.tvp-node em{font-style:normal;font-size:clamp(9px,1.7vw,11.5px);font-weight:800;color:var(--navy);margin-top:4px;text-align:center;line-height:1.1}
+.tvp-hub[data-on=found] .tvp-node.st-found,.tvp-hub[data-on=seen] .tvp-node.st-seen,.tvp-hub[data-on=grow] .tvp-node.st-grow{transform:translate(-50%,-50%) scale(1.12);background:var(--sc);box-shadow:0 18px 36px -14px var(--sc)}
+.tvp-hub[data-on=found] .tvp-node.st-found em,.tvp-hub[data-on=seen] .tvp-node.st-seen em,.tvp-hub[data-on=grow] .tvp-node.st-grow em{color:#fff}
+.tvp-steps{display:grid;gap:12px}
+.tvp-step{display:block;width:100%;text-align:left;font:inherit;cursor:pointer;padding:18px 20px 16px;border-radius:20px;background:#fff;border:1px solid #dfe8f6;border-left:5px solid #dfe8f6;transition:border-color .35s,box-shadow .35s,transform .35s}
+.tvp-step span{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--sc)}
+.tvp-step b{display:block;font-size:21px;color:var(--navy);margin:2px 0}.tvp-step i{display:block;font-style:normal;font-size:15px;color:var(--mut);line-height:1.45}
+.tvp-step small{display:block;margin-top:8px;font-size:13px;font-weight:700;color:#8a97a8}
+.tvp-step.on{border-color:var(--sc);border-left-color:var(--sc);box-shadow:0 20px 40px -26px rgba(9,30,66,.45);transform:translateX(6px)}.tvp-step.on small{color:var(--sc)}
+.tvp-steps-f{margin:6px 4px 0!important;font-size:14.5px;color:var(--mut)}
+.tvp-stg{padding-top:34px!important;padding-bottom:6px!important;background:none!important}
+.tvp-stg-in{max-width:1100px;margin:0 auto;padding:26px 28px;border-radius:24px;background:linear-gradient(120deg,var(--sl),#fff 75%);border:1px solid #dfe8f6;border-left:6px solid var(--sc)}
+.tvp-stg-n{font-size:12.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--sc)}
+.tvp-stg h2{margin:2px 0 4px!important;font-size:34px;color:var(--navy)}.tvp-stg p{margin:0 0 14px!important;font-size:16.5px;color:var(--mut)}
+.tvp-stg-chips{display:flex;flex-wrap:wrap;gap:8px}.tvp-stg-chips a{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #d7e2f2;font-size:14px;font-weight:700;color:var(--navy)!important;text-decoration:none!important;transition:border-color .2s,transform .2s}
+.tvp-stg-chips a:hover{border-color:var(--sc);transform:translateY(-2px)}
+.tvp-stg-in.tvs-in .tvp-stg-chips a{animation:tvpIn .45s ease both}.tvp-stg-in.tvs-in .tvp-stg-chips a:nth-child(2){animation-delay:.08s}.tvp-stg-in.tvs-in .tvp-stg-chips a:nth-child(3){animation-delay:.16s}.tvp-stg-in.tvs-in .tvp-stg-chips a:nth-child(4){animation-delay:.24s}.tvp-stg-in.tvs-in .tvp-stg-chips a:nth-child(5){animation-delay:.32s}
+.tvp-eb{display:flex;align-items:center;flex-wrap:wrap;gap:8px 10px}
+.tvp-num{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 6px;border-radius:11px;background:var(--sc);color:#fff!important;font-size:14px;letter-spacing:.04em}
+.tvp-eb-st{font-style:normal;font-size:11.5px;letter-spacing:.12em;padding:4px 9px;border-radius:999px;background:var(--sl);color:var(--sc)}
+.tvp-fomo-in .tvp-eb{justify-content:center}.tvp-fomo-in .tvp-eb-st{background:rgba(255,255,255,.14);color:#bfe0ff}
+.tvp-works{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:18px 0 0!important;font-size:13.5px}
+.tvp-works span{font-weight:800;color:#8a97a8;margin-right:4px;text-transform:uppercase;letter-spacing:.1em;font-size:11.5px}
+.tvp-works a{padding:5px 11px;border-radius:999px;background:#f1f5fb;border:1px solid #e1e9f4;color:var(--navy)!important;font-weight:700;text-decoration:none!important}.tvp-works a:hover{border-color:var(--sc,#1d5fd1)}
+.tvp-works-d{justify-content:center;margin:0 0 20px!important}.tvp-works-d span{color:#8fc1ff}.tvp-works-d a{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2);color:#e6edf8!important}
+.tvp-vsw{display:flex;flex-direction:column;align-items:center;gap:14px}
+.tvp-vsw .tvp-vph-in{width:260px}
+.tvp-vscr{position:relative;aspect-ratio:9/16;border-radius:34px;overflow:hidden;background:#0b1220}
+.tvp-vbg{position:absolute;inset:-20px;width:calc(100% + 40px)!important;height:calc(100% + 40px)!important;max-width:none;object-fit:cover;filter:blur(18px) brightness(.75);transition:opacity .4s}
+.tvp-vsw[data-i="1"] .tvp-vbg{opacity:0}
+.tvp-vscr video{position:absolute;inset:0;width:100%!important;height:100%!important;object-fit:contain;opacity:0;transition:opacity .45s;cursor:pointer}
+.tvp-vscr video+video{object-fit:cover}.tvp-vscr video.on{opacity:1;z-index:1}
+.tvp-vsw .tvp-snd{top:auto;bottom:24px;right:50%;transform:translateX(50%);white-space:nowrap;z-index:3}
+.tvp-vsw .tvp-vph-notch{z-index:3}
+.tvp-vtabs{display:flex;gap:8px;padding:5px;border-radius:999px;background:#eef3fb;border:1px solid #dfe8f6}
+.tvp-vtab{font:inherit;border:0;cursor:pointer;padding:8px 16px;border-radius:999px;background:none;text-align:center;line-height:1.15;transition:background .25s,box-shadow .25s}
+.tvp-vtab b{display:block;font-size:14px;color:var(--navy)}.tvp-vtab span{font-size:11.5px;color:var(--mut)}
+.tvp-vtab.on{background:#fff;box-shadow:0 8px 18px -10px rgba(9,30,66,.45)}.tvp-vtab.on b{color:var(--blue)}
+.tvp-vcap{margin:0!important;font-size:13px;font-weight:700;color:var(--mut)}
+.tvp-lch{width:100%;max-width:400px;padding:22px;border-radius:24px;background:#fff;box-shadow:0 30px 60px -32px rgba(9,30,66,.5),0 0 0 1px #e3eaf5}
+.tvp-lch-h{display:flex;align-items:center;gap:12px;margin-bottom:12px}.tvp-lch-h span{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;background:#ebeefe}
+.tvp-lch-h b{display:block;font-size:17px;color:var(--navy)}.tvp-lch-h i{font-style:normal;font-size:13px;color:var(--mut)}.tvp-lch-h em{margin-left:auto;font-style:normal;font-size:12px;font-weight:800;color:#3b4fd8;background:#ebeefe;padding:4px 10px;border-radius:999px}
+.tvp-lch ul{list-style:none;margin:0;padding:0}.tvp-lch li{position:relative;padding:10px 0 10px 34px;border-top:1px solid #eef2f8;font-size:14.5px;font-weight:600;color:var(--navy)}
+.tvp-lch li:before{content:"";position:absolute;left:0;top:9px;width:22px;height:22px;border-radius:7px;border:2px solid #cfd9ea;box-sizing:border-box;animation:tvpTick 9s infinite}
+.tvp-lch li:nth-child(2):before{animation-delay:.9s}.tvp-lch li:nth-child(3):before{animation-delay:1.8s}.tvp-lch li:nth-child(4):before{animation-delay:2.7s}.tvp-lch li:nth-child(5):before{animation-delay:3.6s}
+@keyframes tvpTick{0%,8%{background:#fff;border-color:#cfd9ea;color:transparent}12%,88%{background:#16a34a;border-color:#16a34a;content:"✓";color:#fff;font-size:13px;font-weight:800;text-align:center;line-height:18px}100%{background:#fff;border-color:#cfd9ea}}
+.tvp-lch-bar{height:8px;border-radius:99px;background:#eef2f8;overflow:hidden;margin:12px 0 10px}.tvp-lch-bar u{display:block;height:100%;width:0;background:linear-gradient(90deg,#1d5fd1,#3b4fd8);animation:tvpBar 9s infinite}
+@keyframes tvpBar{0%{width:0}50%,88%{width:100%}100%{width:0}}
+.tvp-lch-f{margin:0!important;text-align:center;font-size:14.5px;font-weight:800;color:var(--navy)}
+@media (max-width:900px){.tvp-sys-in{grid-template-columns:1fr;gap:26px}.tvp-step.on{transform:none}.tvp-stg h2{font-size:28px}.tvp-stg-in{padding:20px 18px}}
+@media (max-width:520px){.tvp-cards{grid-template-columns:1fr 1fr;gap:10px}.tvp-card{padding:16px 13px 13px;border-radius:16px}.tvp-card b{font-size:15.5px}.tvp-card p{font-size:13.5px}.tvp-card-i{width:42px;height:42px;font-size:21px}
+ .tvp-sgrp-h b{font-size:19px}.tvp-node{width:19%}.tvp-stg-chips a{font-size:13px;padding:7px 11px}.tvp-vsw .tvp-vph-in{width:240px}}
+@media (max-width:360px){.tvp-cards{grid-template-columns:1fr}}
+
+.tvp-cards{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))!important}
+.tvp-card{container-type:inline-size}.tvp-card-w{display:flex;flex-direction:column;flex:1}.tvp-card-t{display:flex;flex-direction:column;flex:1}
+@container (min-width:300px){.tvp-card-w{flex-direction:row;gap:18px;align-items:flex-start}.tvp-card-i{width:60px;height:60px;font-size:30px;flex:none}.tvp-card b{font-size:20px}.tvp-card p{font-size:15.5px}}
+.tvp-step{border-radius:20px!important;border-left-width:5px!important}
+.tvp-vsw .tvp-snd{width:max-content;white-space:nowrap}
+.tvp-hub{margin:24px auto 34px}
+@media (max-width:520px){.tvp-cards{grid-template-columns:1fr!important;gap:10px}.tvp-card{padding:14px 14px 12px}.tvp-card-w{gap:13px!important}.tvp-card-i{width:46px!important;height:46px!important;font-size:23px!important}.tvp-card b{font-size:16.5px!important;padding-right:22px}.tvp-card p{font-size:14px!important;margin-bottom:8px!important}}
+@media (max-width:520px){.tvp-hub{width:92%}}
+@media (prefers-reduced-motion:reduce){.tvp-hub path,.tvp-hub-core,.tvp-lch li:before,.tvp-lch-bar u{animation:none}.tvp-dot{display:none}}
 '''
 
 VJS0 = ''';(function(){var nav=document.getElementById('tvp-snav');if(!nav)return;
@@ -451,11 +639,21 @@ if(!('IntersectionObserver' in window))return;var row=nav.querySelector('.tvp-sn
 links.forEach(function(a){var el=document.querySelector(a.getAttribute('href'));if(el)map[el.id]=a;});
 var io=new IntersectionObserver(function(es){es.forEach(function(e){var a=map[e.target.id];if(a&&e.isIntersecting){links.forEach(function(x){x.classList.remove('on');});a.classList.add('on');row.scrollTo({left:a.offsetLeft-row.clientWidth/2+a.clientWidth/2,behavior:'smooth'});}});},{rootMargin:'-40% 0px -55% 0px'});
 Object.keys(map).forEach(function(id){io.observe(document.getElementById(id));});})();'''
-VJS = ''';(function(){document.querySelectorAll('.tvp-rv').forEach(function(v){var box=v.closest('.tvp-reel,.tvp-vph-in');var b=box&&box.querySelector('.tvp-snd');var on=false;
-function go(){if(on)return;on=true;v.src=v.getAttribute('data-src');var p=v.play();if(p&&p.catch)p.catch(function(){});}
-if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(!on){go();}else if(v.paused){v.play().catch(function(){});}}else if(on){v.pause();}});},{rootMargin:'250px 0px'}).observe(v);}else{go();}
-function snd(){go();var turnOn=v.muted;document.querySelectorAll('.tvp-rv').forEach(function(o){if(o!==v&&!o.muted){o.muted=true;var ob=o.closest('.tvp-reel,.tvp-vph-in').querySelector('.tvp-snd');if(ob){ob.innerHTML='&#128263; Tap for sound';}}});v.muted=!turnOn?true:false;v.play().catch(function(){});if(b){b.innerHTML=v.muted?'&#128263; Tap for sound':'&#128266; Sound on';b.setAttribute('aria-label',v.muted?'Turn sound on':'Turn sound off');}if(window.gtag)gtag('event','promo_video_sound',{on:!v.muted,video:v.getAttribute('aria-label')});}
-if(b)b.addEventListener('click',snd);v.addEventListener('click',snd);});})();'''
+VJS = ''';(function(){var box=document.getElementById('tvp-vsw');if(!box)return;var vids=[].slice.call(box.querySelectorAll('video'));var tabs=[].slice.call(box.querySelectorAll('.tvp-vtab'));var snd=box.querySelector('.tvp-snd');var cur=0,seen=false,muted=true,picked=false;
+function ld(v){if(!v.getAttribute('src'))v.src=v.getAttribute('data-src');}
+function play(){var v=vids[cur];v.muted=muted;ld(v);var p=v.play();if(p&&p.catch)p.catch(function(){});}
+function show(i){cur=i;box.setAttribute('data-i',i);vids.forEach(function(v,k){v.classList.toggle('on',k===i);if(k!==i)v.pause();});tabs.forEach(function(t,k){t.classList.toggle('on',k===i);t.setAttribute('aria-selected',k===i?'true':'false');});if(seen){vids[i].currentTime=0;play();}}
+tabs.forEach(function(t,k){t.addEventListener('click',function(){picked=true;show(k);if(window.gtag)gtag('event','promo_video_tab',{video:t.textContent});});});
+function tog(){muted=!muted;play();snd.innerHTML=muted?'&#128263; Tap for sound':'&#128266; Sound on';snd.setAttribute('aria-label',muted?'Turn sound on':'Turn sound off');if(window.gtag)gtag('event','promo_video_sound',{on:!muted,video:vids[cur].getAttribute('aria-label')});}
+snd.addEventListener('click',tog);vids.forEach(function(v,k){v.addEventListener('click',tog);v.addEventListener('ended',function(){if(muted&&!picked)show((k+1)%vids.length);else{v.currentTime=0;play();}});});
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){seen=true;play();}else{vids[cur].pause();}});},{rootMargin:'200px 0px'}).observe(box);}else{seen=true;play();}
+})();
+;(function(){var hub=document.getElementById('tvp-hub');if(!hub)return;var steps=[].slice.call(document.querySelectorAll('.tvp-step'));var order=['found','seen','grow'],k=0,user=false,t=null;
+function set(st){hub.setAttribute('data-on',st);steps.forEach(function(s){var on=s.getAttribute('data-st')===st;s.classList.toggle('on',on);s.setAttribute('aria-selected',on?'true':'false');});}
+steps.forEach(function(s){s.addEventListener('click',function(){user=true;if(t)clearInterval(t);set(s.getAttribute('data-st'));});});
+function run(){if(t||user)return;t=setInterval(function(){k=(k+1)%3;set(order[k]);},3200);}
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)run();else if(t){clearInterval(t);t=null;}});}).observe(hub);}else run();
+})();'''
 VJS2 = r''';(function(){
 function slotTxt(a){var sec=a.closest('section');return sec&&sec.id?sec.id:(a.classList.contains('tvs-sticky')?'sticky':'other');}
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href="#tvs-book"],a[href="/free-ai-report"]');if(!a||!window.gtag)return;gtag('event',a.getAttribute('href')==='#tvs-book'?'services_cta':'services_aicheck',{label:(a.textContent||'').trim().slice(0,40),section:slotTxt(a)});},true);
