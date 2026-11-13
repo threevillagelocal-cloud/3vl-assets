@@ -232,8 +232,9 @@ def share_meta(fname):
             '<meta name="twitter:image:alt" content="%s">' % (alt, img, alt))
 
 
-def page(name, slug, title, desc, fb_title, body, bundle="not_sure", css="", js="", book_eyebrow="Your free plan", fb_image=None):
-    """body: list of section html strings (hero first). Publishes widget '3VL Page <name> Preview' + /preview-<slug>."""
+def page(name, slug, title, desc, fb_title, body, bundle="not_sure", css="", js="", book_eyebrow="Your free plan", fb_image=None, prices=False):
+    """body: list of section html strings (hero first). Publishes widget '3VL Page <name> Preview' + /preview-<slug>.
+    prices=True: the page shows approved prices (skips the no-price check)."""
     D.NAME = ("3VL Page %s" if LIVE else "3VL Page %s Preview") % name
     D.SLUG = slug if LIVE else "preview-" + slug
     D.TITLE, D.DESC, D.FB_TITLE = title, desc, fb_title
@@ -264,7 +265,7 @@ def page(name, slug, title, desc, fb_title, body, bundle="not_sure", css="", js=
     for nm, s in [("html", html), ("css", full_css), ("js", full_js), ("head", D.HEAD)]:
         assert "\\" not in s, nm + " has a backslash (BD strips them)"
         assert "—" not in s and "&mdash;" not in s, nm + " has an em dash"
-        assert "$" not in re.sub(r"<script.*?</script>", "", s, flags=re.S) or nm in ("js",), nm + " mentions a price"
+        assert prices or "$" not in re.sub(r"<script.*?</script>", "", s, flags=re.S) or nm in ("js",), nm + " mentions a price"
 
     _prd = P.rd
 
