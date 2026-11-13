@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-13T11:30:55.123249+00:00",
+"updated": "2026-11-13T13:04:10.131091+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -18,7 +18,7 @@
 "Sweetbriar Nature Center": 31,
 "Historical Society of Greater Port Jefferson": 1,
 "Madiran The Wine Bar live music": 33,
-"Local business Instagram posts": 11
+"Local business Instagram posts": 12
 },
 "icons": {
 "kids": "&#129490;",
@@ -550,6 +550,25 @@
 "desc": "Join us at the Mather House for our Annual Fall Clean-up Day! Volunteers welcome. Great opportunity for students who need recorded volunteer hours in addition to those looking to give back to the community.",
 "img": "https://images.squarespace-cdn.com/content/v1/66cdf6fd922d3d7898d823b8/1786725247310-CXTG4A8YAZEWU0XHUMPZ/FallCleanup_2026.png",
 "src": "pjhistorical",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/fall-clean-up"
+},
+{
+"id": "social-18006958577794211",
+"title": "2026 Fall Clean-Up",
+"start": "2026-11-14T08:30:00",
+"end": "2026-11-14T12:00:00",
+"allday": false,
+"venue": "Port Jefferson Historical Society",
+"addr": "115 Prospect Street, Port Jefferson, NY 11777",
+"url": "https://www.instagram.com/p/DfoDIfuAaRw/",
+"desc": "Help with dusting, sorting, and lifting at the Mather Museum's Fall Clean-Up. Enjoy a cup of coffee while volunteering to keep the organization in tip-top shape.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18006958577794211.jpg",
+"src": "social",
 "tags": [
 "arts"
 ],
@@ -2339,6 +2358,25 @@
 "label": "Special"
 },
 {
+"id": "17957224149267265",
+"biz": "Little Cheese Shop",
+"ig": "littlecheeseshop",
+"town": "Stony Brook",
+"category": "Cheese Shop/Cafe",
+"member": false,
+"title": "Shadow Blossom Cheese Tasting",
+"when": "This week",
+"desc": "Try new Shadow Blossom from Bavaria, a spicy semi-hard cheese with six peppers, cut to order with samples available.",
+"expires": "2026-11-19",
+"posted": "2026-11-12T20:06:31+0000",
+"url": "https://www.instagram.com/reel/DfpwnxdPK4x/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17957224149267265.jpg",
+"page": "https://www.threevillagelocal.com/little-cheese",
+"profile": "https://www.threevillagelocal.com/little-cheese",
+"label": "Event"
+},
+{
 "id": "17920719537523986",
 "biz": "Level Up Kitchen",
 "ig": "levelupkitchenny",
@@ -2441,6 +2479,7 @@
 "Right Coast Taqueria",
 "Namkeen Hot Chicken",
 "Three Village Inn / Mirabelle Restaurant & Tavern",
+"Little Cheese Shop",
 "Level Up Kitchen",
 "Tommy's Place",
 "Castaways Steak & Seafood",
@@ -2452,7 +2491,6 @@
 "Ralph's Famous Italian Ices & Ice Cream",
 "Burgerology",
 "Se-Port Deli & Caterers",
-"Little Cheese Shop",
 "Luca Restaurant",
 "Bliss Restaurant",
 "Prohibition Port Jefferson",

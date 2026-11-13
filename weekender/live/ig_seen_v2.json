@@ -1,32 +1,4 @@
 {
-"18009207956779013": {
-"special": true,
-"title": "Bewitched Burger Limited Special",
-"when": "While supplies last",
-"desc": "Try the stacked Bewitched Burger at Tommy's Place before this limited-time special disappears.",
-"expires": "2026-10-27",
-"_ts": "2026-10-13T23:22:41+0000"
-},
-"17960859435218619": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-13T23:21:16+0000"
-},
-"17868625734659869": {
-"special": false,
-"_ts": "2026-10-13T20:23:38+0000"
-},
-"17884376013625577": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-14T12:15:16+0000"
-},
 "17896265835414405": {
 "special": false,
 "title": "",
@@ -3006,5 +2978,77 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-12T17:53:42+0000"
+},
+"18109523918207974": {
+"special": false,
+"title": "Prosecco and Parade Party",
+"when": "Sun, Dec. 13",
+"desc": "Annual event with complimentary Prosecco for dinner guests and parade viewing from the wine bar.",
+"expires": "2026-12-13",
+"_ts": "2026-11-12T21:22:34+0000"
+},
+"17957224149267265": {
+"special": true,
+"title": "Shadow Blossom Cheese Tasting",
+"when": "This week",
+"desc": "Try new Shadow Blossom from Bavaria, a spicy semi-hard cheese with six peppers, cut to order with samples available.",
+"expires": "2026-11-19",
+"_ts": "2026-11-12T20:06:31+0000"
+},
+"18416932030083358": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-13T12:43:56+0000"
+},
+"18025672892941139": {
+"special": false,
+"title": "Tagliatelle Bolognese",
+"when": "Wed-Sun lunch, Tue-Sat dinner",
+"desc": "House-made tagliatelle with slow-simmered Bolognese of beef, pork, and pancetta.",
+"expires": "2026-11-27",
+"_ts": "2026-11-12T21:15:45+0000"
+},
+"17971763649192566": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-13T11:10:54+0000"
+},
+"17881868376632620": {
+"special": false,
+"_ts": "2026-11-13T11:05:31+0000"
+},
+"17975935659156005": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-13T11:03:24+0000"
+},
+"18169452778486089": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-13T10:53:09+0000"
+},
+"17913858531483291": {
+"special": false,
+"_ts": "2026-11-13T10:49:59+0000"
+},
+"18110107871222232": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-13T10:40:53+0000"
 }
 }
