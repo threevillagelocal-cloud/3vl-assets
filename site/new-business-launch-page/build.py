@@ -208,5 +208,5 @@ if __name__ == "__main__":
            "New Business Launch: Website, Google, Social Media and Grand Opening | Three Village Local",
            "Opening a business in Setauket, Stony Brook or Port Jefferson? We set up your website, Google and Apple listings, social media and promo video, then launch you to the whole town with a Three Village Local spotlight.",
            "Launch with the whole town watching",
-           [HERO, NAV, CHECK, TIMELINE, INC, STATS, HOW, FAQ, REL, CTA], bundle="new_open", css=CSS, js=JS)
+           [HERO, NAV, CHECK, TIMELINE, INC, STATS, HOW, FAQ, REL, CTA], bundle="new_open", css=CSS, js=JS, fb_image="/share/svc-new-business-launch-v1.jpg")
     K.main()

@@ -193,5 +193,5 @@ if __name__ == "__main__":
            "Promo Videos and Reels for Local Businesses | Three Village Local",
            "Short promo videos and reels for Three Village and Port Jefferson businesses: filmed at your place, edited with music and captions, sized for Reels, TikTok, Facebook and your website, then shared with 100,000+ local views a month.",
            "Promo videos that show off your business",
-           [HERO, NAV, GET, FORMATS, HOW, REACH, IDEAS, FAQ, REL, CTA], bundle="video", css=CSS)
+           [HERO, NAV, GET, FORMATS, HOW, REACH, IDEAS, FAQ, REL, CTA], bundle="video", css=CSS, fb_image="/share/svc-promo-video-v1.jpg")
     K.main()

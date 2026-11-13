@@ -211,12 +211,13 @@ KIT_CSS = open(os.path.join(HERE, "kit.css"), encoding="utf-8").read()
 KIT_JS = open(os.path.join(HERE, "kit.js"), encoding="utf-8").read()
 
 
-def page(name, slug, title, desc, fb_title, body, bundle="not_sure", css="", js="", book_eyebrow="Your free plan"):
+def page(name, slug, title, desc, fb_title, body, bundle="not_sure", css="", js="", book_eyebrow="Your free plan", fb_image=None):
     """body: list of section html strings (hero first). Publishes widget '3VL Page <name> Preview' + /preview-<slug>."""
     D.NAME = ("3VL Page %s" if LIVE else "3VL Page %s Preview") % name
     D.SLUG = slug if LIVE else "preview-" + slug
     D.TITLE, D.DESC, D.FB_TITLE = title, desc, fb_title
-    D.FB_IMAGE = "/share/site-hero.webp"
+    # fb_image: "/share/svc-<slug>-v1.jpg" = BD redirect -> 3vl-share/site/services/share/ (BD mangles external og:image URLs)
+    D.FB_IMAGE = fb_image or "/share/site-hero.webp"
     ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": _FAQ_LD}
     svc = {"@context": "https://schema.org", "@type": "Service", "name": fb_title, "serviceType": name, "description": desc,
            "provider": {"@id": "https://www.threevillagelocal.com/#organization", "name": "Three Village Local"},

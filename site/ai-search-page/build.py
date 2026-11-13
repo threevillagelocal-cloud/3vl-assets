@@ -276,5 +276,5 @@ if __name__ == "__main__":
                   "AI Search Optimization: Get Recommended by ChatGPT, Gemini and Google AI | Three Village Local",
                   "Get your business recommended by ChatGPT, Gemini, Google AI Overviews, Copilot, Perplexity and Claude. We fix your Google Business Profile, listings, schema, AI-readable pages, reviews and llms.txt. Free AI visibility check.",
                   "Get recommended by ChatGPT, Gemini and Google AI",
-                  [HERO, NAV, WHY, FIXSEC, REPORT, CHECK, HOW, FAQ, REL, CTA], bundle="ai_tuneup", css=CSS, js=JS)
+                  [HERO, NAV, WHY, FIXSEC, REPORT, CHECK, HOW, FAQ, REL, CTA], bundle="ai_tuneup", css=CSS, js=JS, fb_image="/share/svc-ai-search-v1.jpg")
     K.main()

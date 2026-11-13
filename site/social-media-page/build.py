@@ -270,5 +270,5 @@ if __name__ == "__main__":
            "Social Media Promotion and Marketing for Local Businesses | Three Village Local",
            "Get seen all over Three Village: social media promotion to 100,000+ local Facebook and Instagram views a month, plus done-for-you social media marketing for your own accounts. Tagged posts, collab posts, reels and a content calendar you approve.",
            "Social media that gets you seen all over town",
-           [HERO, NAV, TWO, TYPESEC, COLLAB, CALSEC, STATS, HOW, FAQ, REL, CTA], bundle="social", css=CSS, js=JS)
+           [HERO, NAV, TWO, TYPESEC, COLLAB, CALSEC, STATS, HOW, FAQ, REL, CTA], bundle="social", css=CSS, js=JS, fb_image="/share/svc-social-media-v1.jpg")
     K.main()
