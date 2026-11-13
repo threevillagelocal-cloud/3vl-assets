@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-13T16:03:01.808791+00:00",
+"updated": "2026-11-13T16:04:27.443883+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 42,
@@ -2144,7 +2144,7 @@
 "url": "https://www.instagram.com/p/Dfr91MRlrQn/",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/rctaqueria.jpg",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18155940556551591.jpg",
-"page": "https://www.threevillagelocal.com/right-coast-taqueria",
+"page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-pilgrim-burrito",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria"
 },
@@ -2297,7 +2297,7 @@
 "url": "https://www.instagram.com/p/Dfr91MRlrQn/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18155940556551591.jpg",
-"page": "https://www.threevillagelocal.com/right-coast-taqueria",
+"page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-pilgrim-burrito",
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria",
 "label": "Special"
 },
@@ -2429,7 +2429,7 @@
 "url": "https://www.instagram.com/reel/Dfr84T5RxGw/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17871751329693435.jpg",
-"page": "https://www.threevillagelocal.com/burgerology",
+"page": "https://www.threevillagelocal.com/eat-drink/burgerology-pumpkin-pie-milkshake-sweet-potato",
 "profile": "https://www.threevillagelocal.com/burgerology",
 "label": "Special"
 },
