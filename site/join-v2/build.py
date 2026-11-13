@@ -286,7 +286,7 @@ def m_dash(k):
         rows += ('<li data-f="%s"><span class="jvd-dot">%s</span>%s<div><b>%s</b><i>%s</i></div><time>%s</time></li>'
                  % (f, ic(i), thumb, ti, note, d))
     up_tier = {"featured": ("vip", "Go VIP", "Banner ads, VIP of the Week and a custom article every quarter."),
-               "vip": ("partner", "Become a Partner", "An AI chatbot, your own Company Dashboard and monthly content."),
+               "vip": ("partner", "Become a Partner", "An AI chatbot, your own Company Dashboard and monthly content.") if PARTNER_ON else None,
                "partner": None}[k]
     disc = "10%" if t == "f" else "20%"
     ups = [("video", "Promo reel", "Filmed and edited for you", "/services#tvp-video"),
@@ -498,7 +498,7 @@ def news():
         ("insta", "Instagram auto-share", "Post a special or event on your Instagram and it shows up in our feeds.", "", "", "", ""),
         ("sparkle", "Quarterly AI visibility check", "We check how ChatGPT, Gemini and Google AI describe you, and fix what is off.", "", "", "", ""),
         ("qr", "Review-request kit", "A QR counter card and a text template that turn happy customers into Google reviews.", "", "", "", ""),
-        ("percent", "Member pricing on services", "10% off for Featured, 20% off for VIP and Partner: videos, websites, AI and more.", "", "", "", ""),
+        ("percent", "Member pricing on services", "10% off for Featured, 20% off for VIP" + (" and Partner" if PARTNER_ON else "") + ": videos, websites, AI and more.", "", "", "", ""),
         ("article", "VIP: a custom article every quarter", "We write, design and publish a story about your business, then share it.", "vip", "vip", "jv-n-vip", ""),
         ("crown", "VIP of the Week", "A week as our homepage spotlight, plus priority in our AI answer pages.", "vip", "vip", "jv-n-vip", ""),
     ]
@@ -574,13 +574,33 @@ def nowrap_hyphens(h):
     return "".join(out)
 
 
+PARTNER_ON = False   # owner 11/13/2026 "pull down the partner plan for right now": hide Partner everywhere on /join (BD plan 10 kept)
+
+
+def _partner_off():
+    global PLANS, COLS, CMP, FAQ, TITLE, DESC
+    PLANS = [p for p in PLANS if p["k"] != "partner"]
+    COLS = [c for c in COLS if c[0] != "partner"]
+    CMP = [(g, [r[:4] for r in rows]) for g, rows in CMP if g != "Partner only"]
+    FAQ = [(q, a.replace("Featured, VIP and Partner members", "Featured and VIP members").replace("VIP and Partner members", "VIP members"))
+           for q, a in FAQ if "Partner plan" not in q]
+    TITLE = TITLE.replace("Featured, VIP and Partner", "Featured and VIP")
+    DESC = DESC.replace("Free listings, Featured and VIP memberships and the new Partner plan:", "Free listings plus Featured and VIP memberships:")
+
+
 def build():
-    tpls = "".join(modal_tpl(k) for k in ("featured", "vip", "partner"))
+    if not PARTNER_ON:
+        _partner_off()
+    tpls = "".join(modal_tpl(k) for k in (("featured", "vip", "partner") if PARTNER_ON else ("featured", "vip")))
     claim = open(os.path.join(HERE, "claim.js"), encoding="utf-8").read()
     body = ("" if LIVE else ribbon()) + hero() + plans() + news() + compare_sec() + services() + faq() + final() + tpls
     html = '<div class="jv" id="jv">' + sprite() + body + '</div>'
     html = nowrap_hyphens(html)
     css = open(os.path.join(HERE, "page.css"), encoding="utf-8").read()
+    if not PARTNER_ON:   # 3 paid/free plans: cards and stacked table rows use 3 columns
+        css += ("#jv .jv-cards{grid-template-columns:repeat(3,1fr);max-width:1060px;margin-left:auto;margin-right:auto}"
+                "@media (max-width:1100px){#jv .jv-cards{grid-template-columns:repeat(2,1fr)}}"
+                "@media (max-width:760px){#jv .jv-cards{grid-template-columns:1fr}#jv .jv-tbl tr{grid-template-columns:repeat(3,1fr)}}")
     js = "<script>" + open(os.path.join(HERE, "page.js"), encoding="utf-8").read() + "</script><script>" + claim + "</script>"
     ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
