@@ -175,6 +175,11 @@ def special_label(s):
     return "Special"
 
 
+# Feed items whose listed dates are a registration window: hide them until the public part starts.
+# WMHO Holiday Tree Competition: SBV/WMHO list Oct 29 - Dec 31, but the trees are on display Dec 6 - Jan 4 (stonybrookvillage.com).
+NOT_YET = [(r"holiday tree competition|annual tree competition", "2026-12-06")]
+
+
 def main():
     today = dt.date.today()
     horizon = today + dt.timedelta(days=10)
@@ -199,6 +204,8 @@ def main():
                 continue
             if re.search(r"meeting|work session|advisory council|board of trustees|zoning board|planning board|delayed opening|library closed|closed for", e["title"], re.I):
                 continue
+            if any(re.search(rx, e["title"], re.I) and today.isoformat() < show_from for rx, show_from in NOT_YET):
+                continue   # feed date range is a sign-up window, not the public event (nothing to see yet)
             st = status_for(e["title"])
             title = re.sub(r"^\s*(cancel+ed|postponed)\s*[-:]\s*", "", e["title"], flags=re.I).strip()
             out.append({"id": re.sub(r"[^a-z0-9]+", "-", e["uid"].lower())[:80], "title": title, "start": e["start"].isoformat(),
