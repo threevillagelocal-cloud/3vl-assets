@@ -624,6 +624,19 @@ details.tvp-more{margin:4px 0 12px;border:1px dashed #cdd8e6;border-radius:14px;
 .tvp-hub{margin:24px auto 34px}
 @media (max-width:520px){.tvp-cards{grid-template-columns:1fr!important;gap:10px}.tvp-card{padding:14px 14px 12px}.tvp-card-w{gap:13px!important}.tvp-card-i{width:46px!important;height:46px!important;font-size:23px!important}.tvp-card b{font-size:16.5px!important;padding-right:22px}.tvp-card p{font-size:14px!important;margin-bottom:8px!important}}
 @media (max-width:520px){.tvp-hub{width:92%}}
+
+/* 11/13 owner: pinned service bar looked like it was floating; now a light full-width strip that reads as part of the header */
+.tvp-snav-bar{background:rgba(255,255,255,.96)!important;border:1px solid #e3eaf5;box-shadow:0 10px 26px -20px rgba(9,30,66,.45)!important}
+.tvp-snav-bar.fx{border-radius:0!important;border-width:0 0 1px;box-shadow:0 8px 20px -14px rgba(9,30,66,.35)!important}
+.tvp-snav-bar.fx .tvp-snav-in{max-width:1200px;margin:0 auto}
+.tvp-snav-in{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 28px),transparent)}
+.tvp-snav-in a{border-color:#dfe8f6!important;color:#0f2742!important;background:#f5f8fd}
+.tvp-snav-in a:hover{background:#e9f1ff!important;border-color:#c9daf5!important}
+.tvp-snav-in a.on{background:#1d5fd1!important;border-color:#1d5fd1!important;color:#fff!important}
+.tvp-snav-in a.tvp-snav-cta{background:#0f2742!important;color:#fff!important;border-color:#0f2742!important}
+.tvp-works{margin-top:22px!important;gap:8px}
+.tvp-works-d{margin:24px 0 24px!important}
+.tvp-ctas{row-gap:12px}
 @media (prefers-reduced-motion:reduce){.tvp-hub path,.tvp-hub-core,.tvp-lch li:before,.tvp-lch-bar u{animation:none}.tvp-dot{display:none}}
 '''
 
@@ -632,8 +645,8 @@ VJS0 = ''';(function(){var nav=document.getElementById('tvp-snav');if(!nav)retur
 var ph=document.createElement('div');ph.className='tvp-snav-ph';nav.parentNode.insertBefore(ph,nav);
 function hdrBottom(){var b=0;[].slice.call(document.querySelectorAll('body *')).slice(0,400).forEach(function(el){var cs=getComputedStyle(el);if((cs.position==='fixed'||cs.position==='sticky')&&el!==nav&&!nav.contains(el)){var r=el.getBoundingClientRect();if(r.top<=1&&r.height>20&&r.height<260&&r.width>innerWidth*.6)b=Math.max(b,r.bottom);}});return b;}
 var hb=hdrBottom(),pinned=false;addEventListener('resize',function(){hb=hdrBottom();});
-function onScroll(){var r=ph.getBoundingClientRect();var want=r.top<hb;if(want!==pinned){pinned=want;nav.classList.toggle('fx',want);ph.style.height=want?nav.offsetHeight+'px':'0px';}
- if(pinned){nav.style.top=hb+'px';nav.style.left=r.left+'px';nav.style.width=r.width+'px';}}
+var endEl=document.getElementById('tvs-book');function onScroll(){var r=ph.getBoundingClientRect();var want=r.top<hb&&(!endEl||endEl.getBoundingClientRect().bottom>hb+90);if(want!==pinned){pinned=want;nav.classList.toggle('fx',want);ph.style.height=want?nav.offsetHeight+'px':'0px';}
+ if(pinned){nav.style.top=hb+'px';nav.style.left='0px';nav.style.width='100%';}}
 addEventListener('scroll',onScroll,{passive:true});onScroll();
 if(!('IntersectionObserver' in window))return;var row=nav.querySelector('.tvp-snav-in');var links=[].slice.call(nav.querySelectorAll('a[href^="#tvp-"]'));var map={};
 links.forEach(function(a){var el=document.querySelector(a.getAttribute('href'));if(el)map[el.id]=a;});
