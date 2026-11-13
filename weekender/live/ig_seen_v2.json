@@ -1,36 +1,4 @@
 {
-"18129967099834792": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-14T16:38:29+0000"
-},
-"18117715669788260": {
-"special": true,
-"title": "Wednesday Night Special",
-"when": "Every Wednesday",
-"desc": "Weekly special at Fifth Season Restaurant in Port Jefferson. Details in post.",
-"expires": "2026-10-20",
-"_ts": "2026-10-14T18:27:21+0000"
-},
-"17931002478165864": {
-"special": false,
-"title": "Castaways Steak & Seafood",
-"when": "Daily from 4 PM",
-"desc": "Cozy dinner spot in Port Jefferson. Reserve your table on Resy.",
-"expires": "2026-10-14",
-"_ts": "2026-10-14T18:01:51+0000"
-},
-"18081011885365219": {
-"special": true,
-"title": "Happy Hour – 50% Off All Drinks",
-"when": "Mon & Wed 4–6PM, Thu–Sun 12–6PM",
-"desc": "Half off all drinks including top shelf, plus food specials at the bar, high tops and lounge.",
-"expires": "2026-10-20",
-"_ts": "2026-10-14T16:21:04+0000"
-},
 "18117578293785434": {
 "special": true,
 "title": "Live Music: Down Port Band",
@@ -3050,5 +3018,45 @@
 "desc": "General invitation to visit for lunch, dinner, or a night out.",
 "expires": "N/A",
 "_ts": "2026-11-13T15:40:32+0000"
+},
+"18103373576075919": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-13T16:04:35+0000"
+},
+"18139280062644201": {
+"special": false,
+"title": "Hirosaki Japanese Restaurant",
+"when": "Ongoing",
+"desc": "Sushi, hibachi, cocktails and happy hour at Stony Brook's favorite Japanese destination.",
+"expires": "2026-11-13",
+"_ts": "2026-11-13T16:01:24+0000"
+},
+"18023690675949485": {
+"special": true,
+"title": "Holiday Pie Preorders",
+"when": "Order by Nov. 25",
+"desc": "Preorder festive pies: Coconut Pecan Custard, Pumpkin Cheesecake, or Apple Crumb for $25 each.",
+"expires": "2026-11-25",
+"_ts": "2026-11-13T16:01:16+0000"
+},
+"18142319698722200": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-13T16:33:04+0000"
+},
+"18641434747055209": {
+"special": false,
+"title": "Holiday Party Catering Discount",
+"when": "Book before Thanksgiving",
+"desc": "15% off holiday party catering when you book before Thanksgiving and mention the promo.",
+"expires": "2026-11-26",
+"_ts": "2026-11-13T17:01:46+0000"
 }
 }
