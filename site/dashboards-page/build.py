@@ -12,9 +12,9 @@ spec = importlib.util.spec_from_file_location("platbuild", os.path.join(HERE, ".
 P = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(P)
 D = P.D
-INTEG_DIR = os.path.join(HERE, "..", "integrations-page")
-sys.path.insert(0, INTEG_DIR)
-from integrations_data import ITEMS as INTEG_ITEMS
+# Integrations are a DASHBOARD FEATURE (an "Integrations" screen inside every demo), not a separate page.
+# dash_integrations.json comes from integ_build.py (only tools with a real API, feed or export).
+INTEG = json.load(open(os.path.join(HERE, "dash_integrations.json"), encoding="utf-8"))
 
 D.NAME = "3VL Page Dashboards" if D.LIVE else "3VL Page Dashboards Preview"
 D.SLUG = "business-dashboards" if D.LIVE else "preview-business-dashboards"
@@ -22,196 +22,47 @@ D.TITLE = "Company Digital Dashboards: Your Whole Business in One Dashboard | Th
 D.DESC = ("Custom business dashboards built by Three Village Local: customers and leads, calendar, money, marketing, social media, "
           "reviews, team and automations in one place, with an AI assistant. Works on laptop, tablet and phone.")
 D.FB_TITLE = "Your whole business. One dashboard."
-INTEG = "/integrations" if D.LIVE else "/preview-integrations"
-IC = json.load(open(os.path.join(INTEG_DIR, "icons.json"), encoding="utf-8"))
-CDN = "https://cdn.jsdelivr.net/npm/simple-icons@%s/icons/" % IC["version"]
-NTOOLS = "%d+" % (len(INTEG_ITEMS) // 50 * 50)
-
-# ---------- small helpers ----------
-SV = {
-    "cc": "M4 4h7v7H4zM13 4h7v4h-7zM13 10h7v10h-7zM4 13h7v7H4z",
-    "crm": "M16 19v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1M9.5 10a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M21 19v-1a4 4 0 0 0-3-3.9M16 3.1a3.5 3.5 0 0 1 0 6.8",
-    "cal": "M4 6h16v14H4zM4 10h16M8 3v5M16 3v5",
-    "fin": "M12 2v20M17 6.5C17 4.6 14.8 4 12 4S7 5 7 7.5 9.5 10.5 12 11s5 1.5 5 4-2.2 3.5-5 3.5-5-1-5-3",
-    "mkt": "M4 20V11M10 20V5M16 20v-8M21 20H3",
-    "soc": "M4 5h16v11H9l-5 4z",
-    "rev": "M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z",
-    "auto": "M13 2L4 14h7l-1 8 9-12h-7z",
-}
-
-
-def ico(k, cls="tvd-ic"):
-    return '<svg class="%s" viewBox="0 0 24 24" aria-hidden="true"><path d="%s"/></svg>' % (cls, SV[k])
+D.FB_IMAGE = "/share/svc-business-dashboards-v1.jpg"   # BD redirect 2361 -> 3vl-share/site/services/share/svc-business-dashboards-v1.jpg
+CDN = "https://cdn.jsdelivr.net/npm/simple-icons@%s/icons/" % INTEG["v"]
+TOOLS = [i for i in INTEG["items"] if i["t"] != "built"]
+NTOOLS = "%d+" % (len(TOOLS) // 50 * 50)
+NT = {t: sum(1 for i in TOOLS if i["t"] == t) for t in ("api", "feed", "export")}
+# live demos: public copies in 3vl-share (demos/dashboards); the realtor CRM is its own app
+DEMO_BASE = "https://threevillagelocal-cloud.github.io/3vl-share/demos/dashboards/"
+REALTOR = "https://realtors-edge.vercel.app"
+LIVE_DEMOS = [  # key, tab, emoji, business, kind, address bar
+    ("restaurant", "Restaurant", "&#127869;", "Harbor &amp; Vine", "Restaurant", "dashboard.harborandvine.com"),
+    ("contractor", "Contractor", "&#128679;", "North Shore Builders", "Contractor", "dashboard.northshorebuilders.com"),
+    ("salon", "Salon", "&#10024;", "Glow Studio", "Salon &amp; med spa", "dashboard.glowstudio.com"),
+    ("gym", "Gym", "&#127947;", "Iron Harbor Fitness", "Gym &amp; studio", "dashboard.ironharborfitness.com"),
+    ("landscaper", "Landscaper", "&#127807;", "Greenline Landscape Co.", "Landscaping", "dashboard.greenlinelandscape.com"),
+    ("realestate", "Real estate", "&#127969;", "Realtor&#39;s Edge", "Real estate CRM", "realtors-edge.vercel.app"),
+]
 
 
-def pts(vals, w=300, h=100, pad=8):
-    lo, hi = min(vals), max(vals)
-    out = []
-    for i, v in enumerate(vals):
-        x = round(i * w / (len(vals) - 1), 1)
-        y = round(h - pad - (v - lo) / ((hi - lo) or 1) * (h - 2 * pad), 1)
-        out.append((x, y))
-    return out
+def demo_url(k, tour=True):
+    if k == "realestate":
+        return REALTOR
+    return DEMO_BASE + k + ".html" + ("?embed=1&tour=1" if tour else "")
 
 
-def line_d(vals, w=300, h=100):
-    return "M" + " L".join("%s %s" % p for p in pts(vals, w, h))
+def poster(k, dev):
+    return DEMO_BASE + "posters/%s-%s.webp" % (k, dev)
 
-
-def area(vals, gid, color="#1d5fbf", w=300, h=100, cls=""):
-    d = line_d(vals, w, h)
-    return ('<svg class="tvd-area %s" viewBox="0 0 %d %d" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="%s" x1="0" y1="0" x2="0" y2="1">'
-            '<stop offset="0" stop-color="%s" stop-opacity=".28"/><stop offset="1" stop-color="%s" stop-opacity="0"/></linearGradient></defs>'
-            '<path class="tvd-fill" d="%s L%d %d L0 %dZ" fill="url(#%s)"/><path class="tvd-draw" pathLength="1" d="%s" fill="none" stroke="%s" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>') % (
-        cls, w, h, gid, color, color, d, w, h, h, gid, d, color)
-
-
-def spark(vals, color="#1d5fbf"):
-    return '<svg class="tvd-spark" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true"><path class="tvd-draw" pathLength="1" d="%s" fill="none" stroke="%s" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>' % (line_d(vals, 100, 30), color)
-
-
-def num(v, dec=0, pre="", suf=""):
-    shown = ("{:,.%df}" % dec).format(v)
-    return '%s<span data-c="%s" data-d="%d">%s</span>%s' % (pre, v, dec, shown, suf)
-
-
-def kpi(label, value, delta, vals, up=True, color="#1d5fbf"):
-    return '<div class="tvd-kpi"><em>%s</em><b>%s</b><u class="%s">%s</u>%s</div>' % (label, value, "up" if up else "dn", delta, spark(vals, color))
-
-
-# ---------- dashboard screens ----------
-CC = '''<div class="tvd-pane on" data-p="cc" role="tabpanel" aria-label="Command Center">
-  <div class="tvd-ph"><div><h4>Good morning, Sam</h4><p>Thursday &middot; Harbor &amp; Vine, both locations</p></div><span class="tvd-pill">&#9679; Live</span></div>
-  <div class="tvd-brief"><b>&#10022; Your day</b>46 reservations tonight, 3 catering leads to call back, and next Tuesday looks slow. I drafted a 2-for-1 dessert post for your approval.</div>
-  <div class="tvd-kpis">''' + kpi("Revenue this week", num(24860, 0, "$"), "&#9650; 12%", [8, 9, 8, 11, 10, 12, 14]) + kpi("New leads", num(38), "&#9650; 9", [3, 5, 4, 6, 5, 7, 8], True, "#16a34a") + kpi("Bookings", num(112), "&#9650; 14%", [10, 12, 11, 13, 15, 14, 17], True, "#7c4dff") + kpi("Google rating", num(4.9, 1, "", " &#9733;"), "+6 reviews", [4, 4, 5, 5, 5, 6, 6], True, "#f59e0b") + '''</div>
-  <div class="tvd-2">
-    <div class="tvd-card"><div class="tvd-ch"><b>Revenue, last 12 weeks</b><span>&#9650; 18% vs last year</span></div>''' + area([52, 55, 51, 58, 62, 60, 66, 64, 71, 69, 76, 82], "tvdg1") + '''<div class="tvd-xl"><i>Aug</i><i>Sep</i><i>Oct</i><i>Nov</i></div></div>
-    <div class="tvd-card"><div class="tvd-ch"><b>Needs attention</b><span>4</span></div>
-      <ul class="tvd-todo"><li><i class="r"></i><div><b>Catering lead waiting 12 min</b><span>Website chat &middot; party of 40</span></div><em>Call</em></li>
-      <li><i class="y"></i><div><b>Instagram post needs approval</b><span>2-for-1 dessert Tuesday</span></div><em>Review</em></li>
-      <li><i class="y"></i><div><b>Invoice #1039 is 6 days late</b><span>Reminder sent this morning</span></div><em>View</em></li>
-      <li><i class="g"></i><div><b>New 5-star review on Google</b><span>AI reply drafted</span></div><em>Post</em></li></ul></div>
-  </div></div>'''
-
-def lead(n, v, tag, age, hot=False):
-    return '<div class="tvd-lead%s"><b>%s</b><span>%s</span><p><em>%s</em><i>%s</i></p></div>' % (" hot" if hot else "", n, v, tag, age)
-
-
-CRM = '''<div class="tvd-pane" data-p="crm" role="tabpanel" aria-label="Customers and leads" hidden>
-  <div class="tvd-ph"><div><h4>Customers &amp; leads</h4><p>Catering and private events pipeline</p></div><span class="tvd-pill">23 open</span></div>
-  <div class="tvd-kpis">''' + kpi("Pipeline value", num(48200, 0, "$"), "&#9650; $6.1k", [20, 24, 23, 28, 31, 35, 40]) + kpi("Win rate", num(41, 0, "", "%"), "&#9650; 5 pts", [30, 32, 35, 34, 38, 39, 41], True, "#16a34a") + kpi("Avg. response", num(4, 0, "", " min"), "&#9660; 9 min", [14, 12, 11, 9, 7, 5, 4], True, "#7c4dff") + kpi("Repeat guests", num(63, 0, "", "%"), "&#9650; 4%", [55, 56, 58, 59, 60, 62, 63], True, "#f59e0b") + '''</div>
-  <div class="tvd-kan">
-    <div class="tvd-col"><h5>New <span>3</span></h5>''' + lead("Dana R.", "Rehearsal dinner, 40", "Website chat", "12 min", True) + lead("Mike T.", "Office lunch, 25", "Google call", "1 hr") + '''</div>
-    <div class="tvd-col"><h5>Contacted <span>2</span></h5>''' + lead("Priya S.", "Birthday, 18", "Instagram", "Today") + lead("Coastal Realty", "Holiday party", "Referral", "2 days") + '''</div>
-    <div class="tvd-col"><h5>Quote sent <span>2</span></h5>''' + lead("Lena W.", "$3,400", "E-signed", "Viewed 2x") + lead("J. Alvarez", "$1,850", "Follow-up Fri", "3 days") + '''</div>
-    <div class="tvd-col"><h5>Booked <span>4</span></h5>''' + lead("The Kims", "$2,900", "Deposit paid", "Dec 6") + lead("Harbor PTA", "$1,200", "Deposit paid", "Dec 13") + '''</div>
+# ---------- hero: live embedded demos (laptop + phone), lazy loaded by dash.js ----------
+ltabs = "".join('<button type="button" class="tvd-lt%s" role="tab" aria-selected="%s" data-k="%s" data-src="%s" data-full="%s" data-pd="%s" data-pp="%s" data-url="%s" data-name="%s" data-kind="%s"><span>%s</span>%s</button>' % (
+    " on" if n == 0 else "", "true" if n == 0 else "false", k, demo_url(k), demo_url(k, False), poster(k, "desk"), poster(k, "phone"), u, b, kd.lower(), e, t)
+    for n, (k, t, e, b, kd, u) in enumerate(LIVE_DEMOS))
+APP = '''<div class="tvd-live tvs-up" id="tvd-live">
+  <div class="tvd-ltabs" role="tablist" aria-label="Pick a sample business">''' + ltabs + '''</div>
+  <div class="tvd-stage">
+    <div class="tvd-lapf"><div class="tvd-lapf-bar"><i></i><i></i><i></i><span class="tvd-url">dashboard.harborandvine.com</span><em><b></b>Live demo</em></div>
+      <div class="tvd-scr" data-w="1366" data-h="854"><img class="tvd-poster" src="''' + poster("restaurant", "desk") + '''" alt="Restaurant dashboard demo, Command Center screen" width="1366" height="854" decoding="async" fetchpriority="high"><div class="tvd-load"><i></i>Starting the live demo</div></div></div>
+    <div class="tvd-phf"><div class="tvd-scr tvd-scr-p" data-w="390" data-h="844"><img class="tvd-poster" src="''' + poster("restaurant", "phone") + '''" alt="The same dashboard on a phone" width="390" height="844" decoding="async"><div class="tvd-load"><i></i>Starting</div></div></div>
   </div>
-  <div class="tvd-card tvd-health"><div class="tvd-ch"><b>Customer health</b><span>Win-back ready</span></div>
-    <p><b>Alicia M.</b><span class="tvd-hb"><i style="width:92%" class="g"></i></span><em class="g">92 &middot; Loyal</em></p>
-    <p><b>Tom &amp; Rae B.</b><span class="tvd-hb"><i style="width:64%" class="y"></i></span><em class="y">64 &middot; Offer sent</em></p>
-    <p><b>Greg P.</b><span class="tvd-hb"><i style="width:38%" class="r"></i></span><em class="r">38 &middot; 60 days away</em></p></div>
+  <div class="tvd-lbar"><p><span class="tvd-pulse"><b></b>Live</span><span><b class="tvd-lname">Harbor &amp; Vine</b>, a sample <span class="tvd-lkind">restaurant</span> with made-up data. It runs itself. Hover to pause, click to take over.</span></p>
+    <a class="tvs-btn tvs-blue tvd-full" href="''' + demo_url("restaurant", False) + '''" target="_blank" rel="noopener">Open the full demo &#8599;</a></div>
 </div>'''
-
-def evb(t, s, c, h):
-    return '<i class="%s" style="height:%dpx"><b>%s</b>%s</i>' % (c, h, t, s)
-
-
-CAL = '''<div class="tvd-pane" data-p="cal" role="tabpanel" aria-label="Calendar" hidden>
-  <div class="tvd-ph"><div><h4>Calendar</h4><p>Reservations, events and staff, one view</p></div><span class="tvd-pill">This week</span></div>
-  <div class="tvd-alert"><b>&#9888; Slow day ahead</b>Tuesday dinner is pacing 40% under normal. <u>Promote it</u></div>
-  <div class="tvd-week">
-    <div><h6>Mon</h6>''' + evb("Lunch", "38 covers", "b", 46) + evb("Staff", "6 on", "p", 30) + evb("Dinner", "82 covers", "b", 70) + '''</div>
-    <div class="slow"><h6>Tue</h6>''' + evb("Lunch", "31 covers", "b", 40) + evb("Staff", "5 on", "p", 30) + evb("Dinner", "36 covers", "y", 44) + '''</div>
-    <div><h6>Wed</h6>''' + evb("Lunch", "44 covers", "b", 50) + evb("Tasting", "Wine dinner", "g", 56) + evb("Staff", "7 on", "p", 30) + '''</div>
-    <div><h6>Thu</h6>''' + evb("Lunch", "40 covers", "b", 46) + evb("Dinner", "96 covers", "b", 78) + evb("Staff", "8 on", "p", 30) + '''</div>
-    <div><h6>Fri</h6>''' + evb("Party", "Kims, 40", "g", 54) + evb("Dinner", "128 covers", "b", 92) + '''</div>
-    <div><h6>Sat</h6>''' + evb("Brunch", "74 covers", "b", 62) + evb("Dinner", "140 covers", "b", 96) + '''</div>
-    <div><h6>Sun</h6>''' + evb("Brunch", "88 covers", "b", 70) + evb("Staff", "6 on", "p", 30) + '''</div>
-  </div>
-  <div class="tvd-row3"><div><b>''' + num(28) + '''</b><span>reminder texts sent today</span></div><div><b>''' + num(2) + '''</b><span>no-shows this week (down from 9)</span></div><div><b>''' + num(96, 0, "", "%") + '''</b><span>shifts confirmed</span></div></div>
-</div>'''
-
-BARS = [(62, 48), (66, 50), (71, 52), (69, 51), (78, 55), (86, 61)]
-bars = "".join('<g><rect class="tvd-bar" x="%d" y="%d" width="16" height="%d" rx="3" fill="#1d5fbf" style="animation-delay:%.2fs"/><rect class="tvd-bar" x="%d" y="%d" width="16" height="%d" rx="3" fill="#c9d8ef" style="animation-delay:%.2fs"/></g>' % (
-    12 + i * 48, 110 - r, r, i * .08, 30 + i * 48, 110 - e, e, i * .08 + .04) for i, (r, e) in enumerate(BARS))
-FIN = '''<div class="tvd-pane" data-p="fin" role="tabpanel" aria-label="Finance" hidden>
-  <div class="tvd-ph"><div><h4>Money</h4><p>From QuickBooks, Square and your bank feed</p></div><span class="tvd-pill">November</span></div>
-  <div class="tvd-kpis">''' + kpi("Revenue (month)", num(86400, 0, "$"), "&#9650; 9%", [60, 62, 66, 65, 70, 74, 78]) + kpi("Expenses", num(61250, 0, "$"), "&#9650; 3%", [50, 52, 51, 53, 54, 55, 56], False, "#94a3b8") + kpi("Profit", num(25150, 0, "$"), "29% margin", [10, 11, 14, 12, 16, 18, 21], True, "#16a34a") + kpi("Cash in 30 days", num(41900, 0, "$"), "Forecast", [30, 31, 33, 32, 35, 38, 41], True, "#7c4dff") + '''</div>
-  <div class="tvd-2">
-    <div class="tvd-card"><div class="tvd-ch"><b>Revenue vs. expenses</b><span class="tvd-leg"><i class="b"></i>Revenue <i class="l"></i>Expenses</span></div>
-      <svg class="tvd-bars" viewBox="0 0 300 120" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="110" x2="300" y2="110" stroke="#e2e8f0"/>''' + bars + '''</svg><div class="tvd-xl"><i>Jun</i><i>Jul</i><i>Aug</i><i>Sep</i><i>Oct</i><i>Nov</i></div></div>
-    <div class="tvd-card tvd-donut-c"><div class="tvd-ch"><b>Where the money goes</b></div>
-      <div class="tvd-donut"><svg viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="15.9" fill="none" stroke="#eef2f7" stroke-width="6"/>
-        <circle class="tvd-seg" cx="21" cy="21" r="15.9" fill="none" stroke="#1d5fbf" stroke-width="6" pathLength="100" stroke-dasharray="31 69" stroke-dashoffset="25"/>
-        <circle class="tvd-seg" cx="21" cy="21" r="15.9" fill="none" stroke="#4da3ff" stroke-width="6" pathLength="100" stroke-dasharray="28 72" stroke-dashoffset="-6"/>
-        <circle class="tvd-seg" cx="21" cy="21" r="15.9" fill="none" stroke="#f2c94c" stroke-width="6" pathLength="100" stroke-dasharray="12 88" stroke-dashoffset="-34"/>
-        <circle class="tvd-seg" cx="21" cy="21" r="15.9" fill="none" stroke="#16a34a" stroke-width="6" pathLength="100" stroke-dasharray="29 71" stroke-dashoffset="-46"/></svg><b>29%<span>profit</span></b></div>
-      <ul class="tvd-key"><li><i style="background:#1d5fbf"></i>Food &amp; drink 31%</li><li><i style="background:#4da3ff"></i>Labor 28%</li><li><i style="background:#f2c94c"></i>Rent &amp; other 12%</li><li><i style="background:#16a34a"></i>Profit 29%</li></ul></div>
-  </div>
-  <ul class="tvd-inv"><li><b>#1042 Coastal Realty</b><span>$2,350</span><em class="g">Paid</em></li><li><b>#1043 Harbor PTA</b><span>$600</span><em class="y">Due Fri</em></li><li><b>#1039 J. Alvarez</b><span>$925</span><em class="r">6 days late &middot; reminder sent</em></li></ul>
-</div>'''
-
-def src(n, p, c):
-    return '<p><span>%s</span><i><u class="tvd-grow" style="width:%d%%;background:%s"></u></i><b>%d%%</b></p>' % (n, p * 2, c, p)
-
-
-MKT = '''<div class="tvd-pane" data-p="mkt" role="tabpanel" aria-label="Marketing" hidden>
-  <div class="tvd-ph"><div><h4>Marketing</h4><p>Website, Google, social and email in one place</p></div><span class="tvd-pill">Last 30 days</span></div>
-  <div class="tvd-kpis">''' + kpi("Website visits", num(4820), "&#9650; 18%", [30, 34, 33, 38, 41, 44, 48]) + kpi("Calls from Google", num(146), "&#9650; 22", [10, 12, 13, 12, 15, 17, 19], True, "#16a34a") + kpi("Social reach", num(31400), "&#9650; 31%", [12, 15, 14, 19, 22, 25, 31], True, "#d62976") + kpi("Email opens", num(46, 0, "", "%"), "&#9650; 3 pts", [40, 41, 43, 42, 44, 45, 46], True, "#f59e0b") + '''</div>
-  <div class="tvd-2">
-    <div class="tvd-card"><div class="tvd-ch"><b>Where customers found you</b></div><div class="tvd-src">''' + src("Google search", 42, "#1d5fbf") + src("Google Maps", 21, "#4da3ff") + src("Instagram", 14, "#d62976") + src("Three Village Local", 11, "#f2a93b") + src("Email", 7, "#16a34a") + '''</div></div>
-    <div class="tvd-card tvd-tvl"><div class="tvd-ch"><b>&#9733; Three Village Local</b><span>Built in</span></div>
-      <p><span>Profile views</span><b>&#9650; 32%</b></p><p><span>Website clicks</span><b>&#9650; 18%</b></p><p><span>Calls from your listing</span><b>&#9650; 11%</b></p><p><span>Featured this week</span><b>Homepage + email</b></p></div>
-  </div></div>'''
-
-def post(img, cap, status, cls, when, approve=False):
-    btn = '<div class="tvd-pact"><button type="button" class="tvd-approve">Approve</button><button type="button" class="tvd-edit">Edit</button></div>' if approve else ""
-    return '<div class="tvd-post %s"><div class="tvd-pimg" style="--pg:%s"><span>%s</span></div><p>%s</p><em>%s</em><i>%s</i>%s</div>' % (cls, img[0], img[1], cap, status, when, btn)
-
-
-SOC = '''<div class="tvd-pane" data-p="soc" role="tabpanel" aria-label="Social content studio" hidden>
-  <div class="tvd-ph"><div><h4>Content studio</h4><p>Plan, approve and schedule every post</p></div><span class="tvd-pill">Next 7 days</span></div>
-  <div class="tvd-posts">''' + post(("linear-gradient(140deg,#7a2e3b,#d9825b)", "&#127856;"), "2-for-1 dessert Tuesday. Bring a friend!", "Needs your OK", "wait", "Tue 4 PM", True) + post(("linear-gradient(140deg,#0f4c5c,#5fb3a1)", "&#127863;"), "Wine dinner Wednesday, 5 courses", "Scheduled", "ok", "Wed 11 AM") + post(("linear-gradient(140deg,#2b2d42,#8d99ae)", "&#127926;"), "Live jazz this Friday from 7 PM", "Scheduled", "ok", "Thu 6 PM") + post(("linear-gradient(140deg,#b5651d,#f2c94c)", "&#129360;"), "New fall brunch menu reel", "Draft", "draft", "Sat 9 AM") + '''</div>
-  <div class="tvd-row3"><div><b>Thu 6 to 8 PM</b><span>your best time to post</span></div><div><b>''' + num(8940) + '''</b><span>views on your top reel</span></div><div><b>''' + num(12) + '''</b><span>posts planned this month</span></div></div>
-</div>'''
-
-REV = '''<div class="tvd-pane" data-p="rev" role="tabpanel" aria-label="Reviews" hidden>
-  <div class="tvd-ph"><div><h4>Reviews</h4><p>Every platform, one inbox</p></div><span class="tvd-pill">&#9650; 19 this month</span></div>
-  <div class="tvd-2 tvd-2b">
-    <div class="tvd-card tvd-score"><b>''' + num(4.9, 1) + '''</b><span class="tvd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><em>''' + num(312) + ''' reviews</em>
-      <div class="tvd-plat"><p><span>Google</span><b>4.9</b><i>214</i></p><p><span>Yelp</span><b>4.6</b><i>61</i></p><p><span>Facebook</span><b>5.0</b><i>29</i></p><p><span>Tripadvisor</span><b>4.8</b><i>8</i></p></div></div>
-    <div class="tvd-card tvd-revs">
-      <div class="tvd-rv"><p class="tvd-rh"><b>Jen K. on Google</b><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p><p>&ldquo;Best short rib in town and the staff made our anniversary so special.&rdquo;</p>
-        <div class="tvd-reply"><em>&#10022; AI drafted reply</em>Thank you, Jen! Happy anniversary from all of us. See you soon.<button type="button" class="tvd-post-reply">Post reply</button></div></div>
-      <div class="tvd-rv"><p class="tvd-rh"><b>Marco D. on Yelp</b><span>&#9733;&#9733;&#9733;&#9733;&#9734;</span></p><p>&ldquo;Great food, a bit of a wait on Saturday.&rdquo;</p><p class="tvd-flag">&#128276; Flagged for the manager</p></div>
-    </div>
-  </div></div>'''
-
-def tog(name, sub, on, runs):
-    return '<li><div><b>%s</b><span>%s</span></div><em>%s</em><button type="button" class="tvd-sw%s" role="switch" aria-checked="%s" aria-label="%s"><i></i></button></li>' % (
-        name, sub, runs, " on" if on else "", "true" if on else "false", name)
-
-
-AUTO = '''<div class="tvd-pane" data-p="auto" role="tabpanel" aria-label="Automations" hidden>
-  <div class="tvd-ph"><div><h4>Automations</h4><p>Running quietly in the background</p></div><span class="tvd-pill">7 active</span></div>
-  <div class="tvd-saved"><b>''' + num(41.5, 1) + ''' hours</b><span>saved this month by your automations</span></div>
-  <ul class="tvd-autos">''' + tog("Missed-call text-back", "Texts every missed caller within a minute", True, "37 runs") + tog("Speed-to-lead alarm", "Buzzes you if a lead waits 5 minutes", True, "12 runs") + tog("Review request after visit", "Thank-you text with your Google link", True, "84 runs") + tog("Invoice reminders", "Friendly nudges at 3, 7 and 14 days", True, "9 runs") + tog("Win-back offer", "Guests away 60 days get a welcome-back offer", True, "21 runs") + tog("Birthday treat", "A free dessert on their birthday week", False, "Off") + '''</ul>
-</div>'''
-
-TABS = [("cc", "Command Center"), ("crm", "Customers &amp; leads"), ("cal", "Calendar"), ("fin", "Money"), ("mkt", "Marketing"), ("soc", "Content studio"), ("rev", "Reviews"), ("auto", "Automations")]
-tabs = "".join('<button type="button" class="tvd-tab%s" role="tab" data-p="%s" aria-selected="%s">%s<span>%s</span></button>' % (
-    " on" if i == 0 else "", k, "true" if i == 0 else "false", ico(k), n) for i, (k, n) in enumerate(TABS))
-
-APP = '''<div class="tvd-appwrap tvs-up"><div class="tvd-app" id="tvd-app">
-  <div class="tvd-chrome"><i></i><i></i><i></i><span>&#128274; dashboard.harborandvine.com</span><em><b></b>Live preview: click around</em></div>
-  <div class="tvd-body">
-    <nav class="tvd-side" role="tablist" aria-label="Dashboard screens"><div class="tvd-brand"><b>HV</b><span>Harbor &amp; Vine</span></div>''' + tabs + '''</nav>
-    <div class="tvd-main"><div class="tvd-top"><div class="tvd-ask">&#10022; Ask your business anything...</div><div class="tvd-me"><b>SM</b><span>Owner</span></div></div>
-''' + CC + CRM + CAL + FIN + MKT + SOC + REV + AUTO + '''
-    </div></div>
-  <div class="tvd-toast" id="tvd-toast" role="status" aria-live="polite"></div>
-</div>
-<p class="tvd-note">Sample business shown. Yours is built around how you work, with your numbers.</p></div>'''
 
 HERO = '''<section class="tvd-top-sec" id="tvd-top">
   <div class="tvd-top-in tvs-up">
@@ -219,7 +70,7 @@ HERO = '''<section class="tvd-top-sec" id="tvd-top">
     <h1>Your whole business.<br><span>One dashboard.</span></h1>
     <p class="tvd-lede">Customers, calendar, money, marketing, social media, reviews and your team, all in one place. Built for your business by our local team, with an AI assistant that tells you what needs you today.</p>
     <div class="tvs-ctas tvd-ctas"><a class="tvs-btn tvs-blue" href="#tvs-book">Book a free demo</a><a class="tvs-btn tvs-ghost" href="#demos">See the live demos</a></div>
-    <ul class="tvs-trust tvd-trust"><li><b>8 screens</b>in one login</li><li><b>''' + NTOOLS + '''</b>tools it connects to</li><li><b>Laptop, tablet</b>and phone</li></ul>
+    <ul class="tvs-trust tvd-trust"><li><b>20+ screens</b>in one login</li><li><b>''' + NTOOLS + '''</b>tools it connects to</li><li><b>Laptop, tablet</b>and phone</li></ul>
   </div>
 ''' + APP + '''
 </section>'''
@@ -280,8 +131,8 @@ feed_tpl = "".join('<template class="tvd-fe"><li class="%s"><span>%s</span><p>%s
 AUTOS = '''<section class="tvs-sec tvd-feed-sec" id="tvd-auto">
   <div class="tvd-feed-in">
     <div class="tvs-up"><p class="tvs-eyebrow">Automations</p><h2>The busywork runs itself.</h2>
-      <p>Follow-ups, reminders, review requests and invoice nudges happen on their own, the same way every time. Your dashboard keeps score of the hours you get back.</p>
-      <div class="tvd-hours"><b><span id="tvd-hrs">41.5</span> hours</b><span>saved this month at Harbor &amp; Vine (sample)</span></div></div>
+      <p>Follow-ups, reminders, review requests and invoice nudges happen on their own, the same way every time. You see every one in your dashboard as it happens.</p>
+      <div class="tvd-hours"><b><span id="tvd-hrs">1,029</span> tasks</b><span>done automatically this month at Harbor &amp; Vine (sample)</span></div></div>
     <div class="tvd-feed tvs-up"><div class="tvd-feed-h"><b><i></i>Live activity</b><span>Today</span></div><ul id="tvd-feed"></ul>''' + feed_tpl + '''</div>
   </div></section>'''
 
@@ -292,7 +143,7 @@ IND = [
      ["Toast", "Square", "OpenTable", "Resy", "7shifts", "DoorDash", "MarginEdge"]),
     ("con", "&#128679;", "Contractors", "Every lead, estimate and job on one board.",
      ["Leads by source", "Estimates sent vs. won", "Job pipeline and schedule", "Profit per job", "Photo timelines for every job", "Change orders and e-signatures", "Crew hours", "Permit and inspection dates"],
-     ["Jobber", "Buildertrend", "CompanyCam", "QuickBooks Online", "JobNimbus", "Angi", "Houzz Pro"]),
+     ["Jobber", "Buildertrend", "CompanyCam", "QuickBooks Online", "JobNimbus", "Angi Leads", "Houzz Pro"]),
     ("spa", "&#128135;", "Salons &amp; med spas", "Fuller books and clients who come back.",
      ["Bookings and rebook rate", "No-shows and late cancels", "Revenue per provider", "Retail product sales", "Memberships and packages", "Client notes and before and after photos", "Consent forms", "Reviews and referrals"],
      ["Vagaro", "Boulevard", "GlossGenius", "Mangomint", "Square Appointments", "Fresha", "Instagram"]),
@@ -304,7 +155,7 @@ IND = [
      ["LMN", "Aspire", "SingleOps", "Jobber", "Service Autopilot", "QuickBooks Online", "CompanyCam"]),
     ("re", "&#127969;", "Real estate", "Your pipeline, listings and sphere in one CRM.",
      ["Buyer and seller pipeline", "Speed to lead by source", "Listings and showing feedback", "Transactions and key dates", "Past-client touches", "Open house sign-ins", "Commission forecast", "Marketing per listing"],
-     ["Follow Up Boss", "kvCORE", "OneKey MLS", "Dotloop", "SkySlope", "ShowingTime", "Zillow"]),
+     ["Follow Up Boss", "kvCORE", "OneKey MLS", "Dotloop", "SkySlope", "ShowingTime", "Zillow Premier Agent"]),
     ("off", "&#128188;", "Offices &amp; pros", "Clients, projects and billable time.",
      ["Client intake", "Projects and deadlines", "Billable hours", "Invoices and payments", "Proposals and e-signatures", "Secure client portal", "Referral sources", "Team workload"],
      ["Clio", "Karbon", "TaxDome", "QuickBooks Online", "Microsoft 365", "DocuSign", "Calendly"]),
@@ -313,18 +164,24 @@ IND = [
      ["Shopify", "Square", "Lightspeed Retail", "Clover", "Klaviyo", "Etsy", "Instagram"]),
     ("med", "&#129463;", "Medical &amp; dental", "A smoother front desk and a fuller schedule.",
      ["Appointments and open slots", "No-shows and recalls", "New patient sources", "Production and collections", "Reviews", "Online intake forms", "Staff schedule", "Treatment acceptance"],
-     ["Weave", "NexHealth", "Dentrix", "Open Dental", "Jane", "SimplePractice", "Zocdoc"]),
+     ["Weave", "NexHealth", "Dentrix", "Open Dental", "Jane", "SimplePractice", "Google Calendar"]),
     ("aut", "&#128663;", "Auto repair", "Bays, repair orders and repeat customers.",
      ["Car count and bay use", "Repair orders and average ticket", "Parts orders", "Technician hours", "Approvals by text", "Service reminders", "Reviews", "Fleet accounts"],
      ["Tekmetric", "Shopmonkey", "Mitchell 1", "AutoLeap", "QuickBooks Online", "Podium", "Google Business Profile"]),
 ]
+IDEMO = {"rest": DEMO_BASE + "restaurant.html#/integrations", "con": DEMO_BASE + "contractor.html#/integrations", "spa": DEMO_BASE + "salon.html#/integrations",
+         "gym": DEMO_BASE + "gym.html#/integrations", "lan": DEMO_BASE + "landscaper.html#/integrations"}
+NAMES = {i["n"] for i in INTEG["items"]}
+for _x in IND:
+    for _c in _x[5]:
+        assert _c in NAMES, "industry chip not in the integrations list: " + _c
 itabs = "".join('<button type="button" class="tvd-itab%s" data-i="%s" role="tab" aria-selected="%s"><span>%s</span>%s</button>' % (
     " on" if i == 0 else "", k, "true" if i == 0 else "false", e, n) for i, (k, e, n, t, tr, cn) in enumerate(IND))
 ipanes = "".join('''<div class="tvd-ipane%s" data-i="%s" role="tabpanel"%s><div class="tvd-ip-h"><span>%s</span><div><h3>%s</h3><p>%s</p></div></div>
   <div class="tvd-ip-b"><div><p class="tvd-ip-k">Your dashboard tracks</p><ul>%s</ul></div><div><p class="tvd-ip-k">Popular connections</p><div class="tvd-ip-c">%s</div>
-  <a class="tvd-ip-more" href="%s">See all %s integrations &rarr;</a></div></div></div>''' % (
+  <a class="tvd-ip-more" href="%s" target="_blank" rel="noopener">See Integrations inside a live demo &#8599;</a></div></div></div>''' % (
     " on" if i == 0 else "", k, "" if i == 0 else " hidden", e, n, t, "".join("<li>%s</li>" % x for x in tr),
-    "".join('<a href="%s?q=%s">%s</a>' % (INTEG, escape(c.replace(" ", "+")), escape(c)) for c in cn), INTEG, NTOOLS) for i, (k, e, n, t, tr, cn) in enumerate(IND))
+    "".join('<span>%s</span>' % escape(c) for c in cn), IDEMO.get(k, DEMO_BASE + "restaurant.html#/integrations")) for i, (k, e, n, t, tr, cn) in enumerate(IND))
 INDS = '''<section class="tvs-sec tvd-ind" id="tvd-ind">
   <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Built for your industry</p><h2>Made for the way your business works.</h2><p>Every dashboard starts with what matters most in your line of work. Pick yours.</p></div>
   <div class="tvd-ind-box tvs-up"><div class="tvd-itabs" role="tablist" aria-label="Industries">''' + itabs + '''</div>''' + ipanes + '''</div>
@@ -357,14 +214,28 @@ FEAT = '''<section class="tvs-sec tvd-feats" id="tvd-feats">
   <div class="tvd-fgrid tvs-up">''' + feats + '''</div></section>'''
 
 # ---------- integrations teaser ----------
-WALL = ["quickbooks", "square", "stripe", "shopify", "google", "googleanalytics", "instagram", "facebook", "gmail", "googlecalendar", "mailchimp", "yelp",
-        "doordash", "calendly", "hubspot", "zoom", "dropbox", "tiktok", "xero", "paypal", "wix", "wordpress", "trello", "notion"]
-wall = "".join('<span><img src="%s%s.svg" alt="" loading="lazy" width="28" height="28"></span>' % (CDN, s) for s in WALL)
+BYN = {x["n"]: x for x in INTEG["items"]}
+WALLN = [n for n in INTEG["wall"] if BYN[n].get("s")]
+for _n in ["Google Sheets", "YouTube Analytics", "Google Ads", "Gusto", "Pinterest", "Google Business Profile", "Microsoft Teams", "Slack", "Etsy", "Square Appointments"]:
+    if len(WALLN) < 30 and _n in BYN and BYN[_n].get("s") and _n not in WALLN and BYN[_n]["s"] not in {BYN[x]["s"] for x in WALLN}:
+        WALLN.append(_n)
+
+
+def wtile(x):
+    if x.get("s"):
+        return '<span style="--c:#%s"><i style="-webkit-mask-image:url(%s%s.svg);mask-image:url(%s%s.svg)"></i><em>%s</em></span>' % (x["h"], CDN, x["s"], CDN, x["s"], escape(x["n"]))
+    w = x["n"].split()
+    mono = {"OpenAI API (ChatGPT)": "GPT"}.get(x["n"], (w[0][0] + w[1][0]) if len(w) > 1 else x["n"][:2])
+    return '<span class="m" style="--c:#%s"><b>%s</b><em>%s</em></span>' % (x.get("h", "1d5fbf"), escape(mono.upper()), escape(x["n"]))
+
+
+wall = "".join(wtile(BYN[n]) for n in WALLN[:30])
 INT = '''<section class="tvs-sec tvd-int" id="tvd-int">
-  <div class="tvd-int-in tvs-up"><div class="tvd-int-txt"><p class="tvs-eyebrow">Connects to what you already use</p><h2>Keep your tools. Lose the tab juggling.</h2>
-    <p>Your dashboard pulls the numbers that matter from the software you already pay for: POS, accounting, booking, CRM, email, social media, reviews and more. If it has an export or an API, we can usually connect it.</p>
-    <div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="''' + INTEG + '''">Search ''' + NTOOLS + ''' integrations</a><a class="tvs-btn tvs-ghost" href="#tvs-book">Ask about my software</a></div></div>
-    <div class="tvd-wall" aria-hidden="true">''' + wall + '''</div></div></section>'''
+  <div class="tvd-int-in tvs-up"><div class="tvd-int-txt"><p class="tvs-eyebrow">Built into every dashboard: Integrations</p><h2>Connects with ''' + NTOOLS + ''' tools.</h2>
+    <p>Every dashboard has its own Integrations screen. Connect your POS, accounting, booking, Google, Microsoft 365, social media and AI tools, and the numbers flow in on their own. We only list tools with a real way in: an official sign-in or API, a standard feed, or the tool&#39;s own export.</p>
+    <ul class="tvd-int-k"><li><b>''' + str(NT["api"]) + '''</b><span>connect directly with their official sign-in or API</span></li><li><b>''' + str(NT["feed"]) + '''</b><span>connect by a standard feed (MLS, calendar, email)</span></li><li><b>''' + str(NT["export"]) + '''</b><span>connect through their own report or file export</span></li></ul>
+    <div class="tvs-ctas"><a class="tvs-btn tvs-blue" href="''' + DEMO_BASE + '''restaurant.html#/integrations" target="_blank" rel="noopener">See it inside a demo &#8599;</a><a class="tvs-btn tvs-ghost" href="#tvs-book">Ask about my software</a></div></div>
+    <div class="tvd-wall" aria-label="A few of the tools a dashboard connects to">''' + wall + '''</div></div></section>'''
 
 # ---------- security ----------
 SEC = '''<section class="tvs-sec tvd-sec" id="tvd-sec">
@@ -391,21 +262,17 @@ HOW = '''<section class="tvs-sec tvd-how" id="tvd-how">
   <div class="tvp-ctas tvp-ctas-c tvs-up"><a class="tvs-btn tvs-blue" href="#tvs-book">Book a free demo</a></div></section>'''
 
 # ---------- demos ----------
-DEMOS = [("Harbor &amp; Vine", "Restaurant", "#7a2e3b", "#d9825b", "&#127863;", ["Covers and food cost", "Reservations and reviews", "Slow-night promos"]),
-         ("North Shore Builders", "Contractor", "#9a3412", "#f59e0b", "&#128679;", ["Leads to signed jobs", "Profit per job", "Photo timelines"]),
-         ("Glow Studio", "Salon &amp; med spa", "#9d174d", "#f472b6", "&#10024;", ["Rebook rate", "Memberships", "Client photos and forms"]),
-         ("Iron Harbor Fitness", "Gym", "#111827", "#ef4444", "&#127947;", ["Members and churn", "Class attendance", "Failed payments"]),
-         ("Greenline Landscape Co.", "Landscaping", "#14532d", "#4ade80", "&#127807;", ["Routes and crews", "Renewals", "Seasonal upsells"]),
-         ("Realtor&#39;s Edge", "Real estate CRM", "#0b1f4b", "#4da3ff", "&#127969;", ["Speed to lead", "Pipeline and closings", "Past-client touches"])]
-demos = "".join('''<div class="tvd-demo" style="--a:%s;--b:%s"><div class="tvd-demo-v" aria-hidden="true"><div class="tvd-demo-bar"><span>%s</span><i></i><i></i><i></i></div>
-  <div class="tvd-demo-k"><u></u><u></u><u></u></div><svg viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0 26 L15 22 L30 24 L45 15 L60 17 L75 9 L100 4" fill="none" stroke="currentColor" stroke-width="2.4" vector-effect="non-scaling-stroke"/></svg></div>
-  <div class="tvd-demo-t"><em>%s</em><h3>%s</h3><ul>%s</ul><span class="tvd-soon">Demo coming soon</span></div></div>''' % (
-    a, b, e, k, n, "".join("<li>%s</li>" % x for x in pts_), ) for n, k, a, b, e, pts_ in DEMOS)
+DPTS = {"restaurant": ["Covers, reservations and food cost", "Catering and private events", "Slow-night promos"], "contractor": ["Leads to signed jobs", "Profit per job", "Photo timelines and permits"],
+        "salon": ["Rebook rate and waitlist", "Memberships and retail", "Client formulas and photos"], "gym": ["Check-ins and classes", "Members at risk", "Trials to members"],
+        "landscaper": ["Routes and crews", "Contracts and renewals", "Seasonal upsells"], "realestate": ["Speed to lead", "Pipeline and closings", "Past-client touches"]}
+demos = "".join('''<div class="tvd-demo"><button type="button" class="tvd-demo-v" data-watch="%s" aria-label="Watch the %s demo live"><span class="tvd-demo-bar"><i></i><i></i><i></i><u>%s</u></span><img src="%s" alt="%s dashboard demo" width="1366" height="854" loading="lazy" decoding="async"><span class="tvd-play">&#9654; Watch it live</span></button>
+  <div class="tvd-demo-t"><em>%s</em><h3>%s</h3><ul>%s</ul><a class="tvd-open" href="%s" target="_blank" rel="noopener">Open the full demo &#8599;</a></div></div>''' % (
+    k, kd, u, poster(k, "desk"), kd, kd, b, "".join("<li>%s</li>" % x for x in DPTS[k]), demo_url(k, False)) for k, t, e, b, kd, u in LIVE_DEMOS)
 DEMO = '''<section class="tvs-sec tvd-demos" id="demos">
-  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">See the live demos</p><h2>Six sample businesses. Six dashboards.</h2>
-    <p>Interactive demos for each sample business are coming soon. Want to see one now? Book a free demo and we&#39;ll walk you through the one closest to your business.</p></div>
+  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Try the live demos</p><h2>Six sample businesses. Six real dashboards.</h2>
+    <p>These are working dashboards, not pictures. Open one, switch between the owner, manager and employee views, connect an integration, approve a post. Everything runs on made-up sample data.</p></div>
   <div class="tvd-dgrid tvs-up">''' + demos + '''</div>
-  <p class="tvd-note">Sample businesses for demonstration only.</p>
+  <p class="tvd-note">Sample businesses and people are fictional, for demonstration only.</p>
   <div class="tvp-ctas tvp-ctas-c tvs-up"><a class="tvs-btn tvs-blue" href="#tvs-book">Book a free demo</a></div></section>'''
 
 # ---------- FAQ ----------
@@ -436,7 +303,7 @@ assert "\\" not in D.HEAD
 
 CTA = '''<section class="tvw-cta3 tvs-up"><div class="tvw-cta3-in"><p class="tvw-cta3-k">Run your business from one screen</p><h2>See your dashboard in action.</h2>
 <p class="tvw-cta3-s">Book a free demo. We&#39;ll show you a dashboard built for your industry and send a custom quote.</p>
-<div class="tvw-cta-btns"><a class="tvs-btn tvw-btn-w" href="#tvs-book">Book a free demo</a><a class="tvs-btn tvw-btn-o" href="''' + INTEG + '''">See integrations</a></div></div></section>'''
+<div class="tvw-cta-btns"><a class="tvs-btn tvw-btn-w" href="#tvs-book">Book a free demo</a><a class="tvs-btn tvw-btn-o" href="#demos">Try the live demos</a></div></div></section>'''
 
 BOOK = P.BOOK.replace('<p class="tvs-eyebrow">Your free plan</p>', '<p class="tvs-eyebrow">Free demo</p>').replace(
     "<h2>Get your free plan.</h2>", "<h2>Book your free demo.</h2>")
@@ -447,7 +314,7 @@ BOOK = BOOK[:i] + '''<p>Tell us your name, business and email. Within one busine
     ''' + BOOK[j:]
 BOOK = BOOK.replace("mailto:hello@threevillagelocal.com?subject=Our%20services", "mailto:hello@threevillagelocal.com?subject=Dashboard%20demo")
 i = BOOK.index('<p class="tvp-alt">')
-BOOK = BOOK[:i] + '<p class="tvp-alt">Using lots of software? <a href="' + INTEG + '">Check our integrations directory &rarr;</a></p>' + BOOK[BOOK.index("</p>", i) + 4:]
+BOOK = BOOK[:i] + '<p class="tvp-alt">Using lots of software? <a href="' + DEMO_BASE + 'restaurant.html#/integrations" target="_blank" rel="noopener">See the Integrations screen in a live demo &#8599;</a></p>' + BOOK[BOOK.index("</p>", i) + 4:]
 
 HTML = ('<div class="tvs tvd" id="tvs">\n\n' + HERO + "\n\n" + AI + "\n\n" + ROLES + "\n\n" + DEV + "\n\n" + AUTOS + "\n\n" + INDS + "\n\n" +
         FEAT + "\n\n" + INT + "\n\n" + SEC + "\n\n" + HOW + "\n\n" + DEMO + "\n\n" + FAQ + "\n\n" + CTA + "\n\n" + BOOK +
@@ -455,6 +322,7 @@ HTML = ('<div class="tvs tvd" id="tvs">\n\n' + HERO + "\n\n" + AI + "\n\n" + ROL
 # keep hyphenated words on one line (never split at the hyphen), text only, never inside tags
 HTML = re.sub(r'>([^<]+)<', lambda m: '>' + re.sub(r'(?<![A-Za-z0-9&#;.-])([A-Za-z0-9.()]+(?:-[A-Za-z0-9.,]+)+)', r'<nobr>\1</nobr>', m.group(1)) + '<', HTML)
 assert "\\" not in HTML and chr(0x2014) not in HTML
+assert "preview-integrations" not in HTML and 'href="/integrations' not in HTML
 
 CSS = open(os.path.join(HERE, "dash.css"), encoding="utf-8").read()
 JS = open(os.path.join(HERE, "dash.js"), encoding="utf-8").read()
@@ -471,6 +339,8 @@ def rd(f):
         s = s.replace("Get My Free Plan", "Book My Free Demo").replace(
             'data-tease="Want a quick free plan? Tell me your business name and I will point you to the right fit."',
             'data-tease="Curious what a dashboard could do for your business? Ask me."')
+        assert "var pick='not_sure'" in s
+        s = s.replace("var pick='not_sure'", "var pick='dashboards'")   # form 343 field "bundle": Company Digital Dashboard
         s = s + "<script>" + JS + "</script>"
         assert "\\" not in s
         return s
