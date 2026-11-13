@@ -98,7 +98,7 @@ SYS = ('''<section class="tvs-sec tvp-sys" id="tvp-sys">
     <div class="tvp-hub" id="tvp-hub" data-on="found" aria-hidden="true"><svg viewBox="0 0 400 400"><circle class="tvp-hub-ring" cx="200" cy="200" r="158"/>''' + "".join(_lines) + '''</svg>
       <div class="tvp-hub-core"><b>Your</b><b>business</b><span>at the center</span></div>''' + "".join(_nodes) + '''</div>
     <div class="tvp-steps" role="tablist" aria-label="How the services work together">''' +
-       "".join('<button type="button" role="tab" class="tvp-step st-%s%s" data-st="%s"><span>%s</span><b>%s</b><i>%s</i><small>%s</small></button>'
+       "".join('<div role="tab" tabindex="0" class="tvp-step st-%s%s" data-st="%s"><span>%s</span><b>%s</b><i>%s</i><small>%s</small></div>'
                % (k, " on" if k == "found" else "", k, n, t, d, " &middot; ".join(SVD[s[0]][4] for s in SV if s[1] == k)) for k, n, t, d in STAGES) + '''
       <p class="tvp-steps-f">You run your business. We handle the tech, the content and the promotion, all from one local team.</p>
     </div>
@@ -619,7 +619,7 @@ details.tvp-more{margin:4px 0 12px;border:1px dashed #cdd8e6;border-radius:14px;
 .tvp-cards{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))!important}
 .tvp-card{container-type:inline-size}.tvp-card-w{display:flex;flex-direction:column;flex:1}.tvp-card-t{display:flex;flex-direction:column;flex:1}
 @container (min-width:300px){.tvp-card-w{flex-direction:row;gap:18px;align-items:flex-start}.tvp-card-i{width:60px;height:60px;font-size:30px;flex:none}.tvp-card b{font-size:20px}.tvp-card p{font-size:15.5px}}
-.tvp-step{border-radius:20px!important;border-left-width:5px!important}
+.tvp-step{border-radius:18px!important;border-left-width:5px!important;box-sizing:border-box;padding:18px 22px 16px!important;white-space:normal}.tvp-step:focus-visible{outline:3px solid var(--sc);outline-offset:2px}
 .tvp-vsw .tvp-snd{width:max-content;white-space:nowrap}
 .tvp-hub{margin:24px auto 34px}
 @media (max-width:520px){.tvp-cards{grid-template-columns:1fr!important;gap:10px}.tvp-card{padding:14px 14px 12px}.tvp-card-w{gap:13px!important}.tvp-card-i{width:46px!important;height:46px!important;font-size:23px!important}.tvp-card b{font-size:16.5px!important;padding-right:22px}.tvp-card p{font-size:14px!important;margin-bottom:8px!important}}
@@ -650,7 +650,7 @@ if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.fo
 })();
 ;(function(){var hub=document.getElementById('tvp-hub');if(!hub)return;var steps=[].slice.call(document.querySelectorAll('.tvp-step'));var order=['found','seen','grow'],k=0,user=false,t=null;
 function set(st){hub.setAttribute('data-on',st);steps.forEach(function(s){var on=s.getAttribute('data-st')===st;s.classList.toggle('on',on);s.setAttribute('aria-selected',on?'true':'false');});}
-steps.forEach(function(s){s.addEventListener('click',function(){user=true;if(t)clearInterval(t);set(s.getAttribute('data-st'));});});
+steps.forEach(function(s){function pick(){user=true;if(t)clearInterval(t);set(s.getAttribute('data-st'));}s.addEventListener('click',pick);s.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick();}});});
 function run(){if(t||user)return;t=setInterval(function(){k=(k+1)%3;set(order[k]);},3200);}
 if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)run();else if(t){clearInterval(t);t=null;}});}).observe(hub);}else run();
 })();'''
