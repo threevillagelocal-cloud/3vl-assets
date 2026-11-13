@@ -5,7 +5,7 @@
 There is deliberately NO --live switch here: the live /join is widget 15 "3VL Page Join" (guarded copy in
 3vl-site-guard post-sources/widget-15-3vl-page-join.html). Going live = copy the approved output there, with the owner's OK.
 
-Prices in PRICE are proposed (preview only). Partner has no checkout plan yet: its button goes to the services form.
+Prices in PRICE are proposed (preview only). Partner checkout = BD plan 10 ($349, created 11/13/2026).
 """
 import html as _html, json, os, re, sys
 
@@ -26,7 +26,7 @@ SH = "https://threevillagelocal-cloud.github.io/3vl-share/site/join-v2/"
 VIDEO = "https://threevillagelocal-cloud.github.io/3vl-share/live/p3/vip/img/666-loop-480.mp4"
 LOGO3 = "https://threevillagelocal-cloud.github.io/3vl-share/site/icon-192.png"
 PRICE = {"free": 0, "featured": 42, "vip": 135, "partner": 349}          # proposed, preview only
-CHECKOUT = {"free": "/checkout/6", "featured": "/checkout/2", "vip": "/checkout/1", "partner": "/services#tvs-book"}
+CHECKOUT = {"free": "/checkout/6", "featured": "/checkout/2", "vip": "/checkout/1", "partner": "/checkout/10"}
 
 # ---------- icons (stroke style, shared with svc-kit) ----------
 _src = open(os.path.join(HERE, "..", "svc-kit", "kit.py"), encoding="utf-8").read()
@@ -99,7 +99,7 @@ PLANS = [
      "items": [("bot", "AI chatbot for your website: answers customers 24/7 and texts you leads"),
                ("dash", "Company Digital Dashboard for your business"), ("edit", "Monthly social content made for your own accounts"),
                ("calendar", "Quarterly strategy call"), ("bolt", "Priority on everything we do")],
-     "btn": "Talk to us about Partner", "fine": "Partner is set up with you personally, so it starts with a short call. No checkout needed.",
+     "btn": "Choose Partner", "fine": "Month to month. After you sign up, we call you to set up your chatbot and dashboard.",
      "realtor": "Everything in VIP, including Top 3 weekly placement."},
 ]
 
@@ -205,7 +205,7 @@ def compare():
     foot = '<tr class="jv-tfoot"><th scope="row"><span class="jv-sr">Choose a plan</span></th>' + "".join(
         '<td class="jv-c-%s"><a class="jv-btn jv-btn-sm %s" href="%s" data-jv-plan="%s">%s</a></td>' % (
             k, {"free": "jv-btn-line", "featured": "jv-btn-blue", "vip": "jv-btn-gold", "partner": "jv-btn-navy"}[k], CHECKOUT[k], k,
-            {"free": "Start free", "featured": "Choose Featured", "vip": "Request VIP", "partner": "Talk to us"}[k]) for k, _ in COLS) + "</tr>"
+            {"free": "Start free", "featured": "Choose Featured", "vip": "Request VIP", "partner": "Choose Partner"}[k]) for k, _ in COLS) + "</tr>"
     pin = '<div class="jv-pin" id="jv-pin" aria-hidden="true">' + "".join(
         '<span class="jv-c-%s"><b>%s</b><i>%s</i></span>' % (k, n, ("$%d/mo" % PRICE[k]) if PRICE[k] else "$0") for k, n in COLS) + "</div>"
     return ('<div class="jv-tblwrap" id="jv-tblwrap">%s<table class="jv-tbl" id="jv-tbl"><caption class="jv-sr">Compare membership plans</caption>'
@@ -535,7 +535,7 @@ FAQ = [
     ("What comes with the premium profile?", "A custom-designed profile in your colors with your best photos, video support, one-tap call, booking and directions buttons, and clean facts that Google and AI tools can read."),
     ("How do the service discounts work?", "Featured members get 10% off all of our services. VIP and Partner members get 20% off: promo videos, websites, AI search work, drone and more."),
     ("What is the quarterly article for VIPs?", "Every quarter we write, design and publish a custom article about your business on Three Village Local, then share it on social media and in our email."),
-    ("How do I start the Partner plan?", "Partner is set up with you personally, so it starts with a short call. Tap Talk to us about Partner and tell us about your business."),
+    ("How do I start the Partner plan?", "Tap Choose Partner to sign up online, month to month. After you sign up, we call you to set up your AI chatbot, Company Dashboard and monthly content."),
     ("Can I upgrade or downgrade my plan?", "Yes, anytime. Test more exposure or scale back as your business needs change."),
     ("Who controls my business listing?", "You do. You get your own login to update your info, photos and categories (based on your plan) whenever you like."),
     ("Can I get help setting up my listing?", "Yes. We will guide you through setup and help with photos and content so your business looks its best."),
@@ -649,7 +649,7 @@ def main():
 def live(call, html, css, js, head):
     """Swap live /join (widget 15) to the new design; backs up the old widget + page first."""
     import datetime
-    bk = os.path.join(os.path.expanduser("~"), "Documents", "3vl-private", "backups", "join-live-" + datetime.date.today().isoformat())
+    bk = os.path.join(os.path.expanduser("~"), "Documents", "3vl-private", "backups", "join-live-" + datetime.datetime.now().strftime("%Y-%m-%d-%H%M"))
     os.makedirs(bk, exist_ok=True)
     old = call("GET", "data_widgets/get/15").get("message")
     old = old[0] if isinstance(old, list) else old
