@@ -211,6 +211,27 @@ KIT_CSS = open(os.path.join(HERE, "kit.css"), encoding="utf-8").read()
 KIT_JS = open(os.path.join(HERE, "kit.js"), encoding="utf-8").read()
 
 
+SHARE_ALT = {
+    "svc-ai-search-v1.jpg": "Three Village Local AI search optimization: Be the answer AI recommends. A ChatGPT answer lists Your Business as the top pick.",
+    "svc-business-dashboards-v1.jpg": "Three Village Local Company Digital Dashboards: Your business. One dashboard. Leads, money and AI on a laptop and phone.",
+    "svc-email-articles-v1.jpg": "Three Village Local email and articles: Stories the town actually reads. A weekly email with a neighbor spotlight.",
+    "svc-new-business-launch-v1.jpg": "Three Village Local new business launch: Launch with the whole town watching. A storefront grand opening with a red ribbon.",
+    "svc-promo-video-v1.jpg": "Three Village Local promo videos: Show them, don't just tell them. Two phones playing local business reels.",
+    "svc-social-media-v1.jpg": "Three Village Local social media: Get seen by the whole town. Facebook and Instagram posts featuring local businesses.",
+}
+
+
+def share_meta(fname):
+    """Extra share tags for content_head (BD itself only writes og:image): twitter card + size + alt.
+    Points straight at GitHub Pages (no redirect) so X/LinkedIn fetch it directly."""
+    img = SV + "share/" + fname
+    alt = _html.escape(SHARE_ALT[fname], quote=True)
+    return ('<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+            '<meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="%s">'
+            '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s">'
+            '<meta name="twitter:image:alt" content="%s">' % (alt, img, alt))
+
+
 def page(name, slug, title, desc, fb_title, body, bundle="not_sure", css="", js="", book_eyebrow="Your free plan", fb_image=None):
     """body: list of section html strings (hero first). Publishes widget '3VL Page <name> Preview' + /preview-<slug>."""
     D.NAME = ("3VL Page %s" if LIVE else "3VL Page %s Preview") % name
@@ -224,6 +245,9 @@ def page(name, slug, title, desc, fb_title, body, bundle="not_sure", css="", js=
            "areaServed": ["Setauket", "East Setauket", "Stony Brook", "Port Jefferson", "Old Field", "Poquott", "Long Island, NY"]}
     D.HEAD = ('<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + '</script>'
               '<script type="application/ld+json">' + json.dumps(svc, ensure_ascii=False) + '</script>') if _FAQ_LD else ""
+    _f = D.FB_IMAGE.rsplit("/", 1)[-1]
+    if _f in SHARE_ALT:
+        D.HEAD += share_meta(_f)
     html = ('<div class="tvs tvx" id="tvs" data-svc="%s">\n\n' % slug + "\n\n".join(body) + "\n\n" + book(book_eyebrow) +
             '\n\n<a class="tvs-sticky" href="#tvs-book">Get my free plan</a>\n</div>')
     html = _nowrap_hyphens(html)

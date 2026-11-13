@@ -299,6 +299,13 @@ def plain(s):
 LD = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
     {"@type": "Question", "name": plain(q), "acceptedAnswer": {"@type": "Answer", "text": plain(a)}} for q, a in FAQS]}
 D.HEAD = '<script type="application/ld+json">' + json.dumps(LD, ensure_ascii=False, separators=(",", ":")) + "</script>"
+# share tags BD does not write itself (same format as svc-kit share_meta)
+_SIMG = "https://threevillagelocal-cloud.github.io/3vl-share/site/services/share/svc-business-dashboards-v1.jpg"
+_SALT = "Three Village Local Company Digital Dashboards: Your business. One dashboard. Leads, money and AI on a laptop and phone."
+D.HEAD += ('<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+           '<meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="%s">'
+           '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s">'
+           '<meta name="twitter:image:alt" content="%s">' % (_SALT, _SIMG, _SALT))
 assert "\\" not in D.HEAD
 
 CTA = '''<section class="tvw-cta3 tvs-up"><div class="tvw-cta3-in"><p class="tvw-cta3-k">Run your business from one screen</p><h2>See your dashboard in action.</h2>
