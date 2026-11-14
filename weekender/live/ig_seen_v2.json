@@ -1,16 +1,4 @@
 {
-"18118179379992698": {
-"special": false,
-"_ts": "2026-10-15T18:52:44+0000"
-},
-"18114059207143070": {
-"special": false,
-"title": "Event Hosting at Luca",
-"when": "Ongoing",
-"desc": "Customized event menus and catering available for celebrations and gatherings. Call 631-675-0435 to inquire.",
-"expires": "2026-10-15",
-"_ts": "2026-10-15T19:44:19+0000"
-},
 "18134810281641075": {
 "special": false,
 "title": "Football Season Specials",
@@ -18,46 +6,6 @@
 "desc": "100 oz Modelo beer special during football games with food and company.",
 "expires": "2026-10-22",
 "_ts": "2026-10-15T20:15:16+0000"
-},
-"17922201324441947": {
-"special": false,
-"title": "Se-Port Deli & Caterers",
-"when": "",
-"desc": "No specific offer or event announced in this post.",
-"expires": "2026-10-15",
-"_ts": "2026-10-15T19:21:01+0000"
-},
-"18049979072819564": {
-"special": false,
-"title": "Se-Port Deli & Caterers",
-"when": "",
-"desc": "No specific offer or event announced in this post.",
-"expires": "",
-"_ts": "2026-10-15T19:20:05+0000"
-},
-"18286511038288842": {
-"special": false,
-"_ts": "2026-10-15T19:19:28+0000"
-},
-"18123924358965652": {
-"special": false,
-"_ts": "2026-10-15T19:18:58+0000"
-},
-"18132278239773295": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-15T19:09:24+0000"
-},
-"17929228515421341": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-15T19:07:25+0000"
 },
 "18223576354341630": {
 "special": true,
@@ -2986,5 +2934,29 @@
 "desc": "Cast your vote for Castaways' lobster roll in the 2027 Best of Long Island Awards.",
 "expires": "2026-12-15",
 "_ts": "2026-11-14T16:01:15+0000"
+},
+"18049051340823985": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-14T16:30:57+0000"
+},
+"18117580553025331": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-14T17:05:32+0000"
+},
+"18030186059700958": {
+"special": true,
+"title": "Bottomless Mimosas Brunch",
+"when": "Every Sat & Sun · 10 AM-2:30 PM",
+"desc": "Bottomless mimosas, bloody marys, and coffee. No reservations needed.",
+"expires": "2026-11-28",
+"_ts": "2026-11-14T16:33:34+0000"
 }
 }

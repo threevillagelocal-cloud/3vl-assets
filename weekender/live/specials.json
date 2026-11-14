@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T16:00:18.236879+00:00",
+ "updated": "2026-11-14T20:00:17.119113+00:00",
  "specials": [
   {
    "id": "17916105516283491",
@@ -340,6 +340,22 @@
    "url": "https://www.instagram.com/reel/DfshcYEyQSq/",
    "img": "",
    "inset": "ig/p18127003225698973.jpg"
+  },
+  {
+   "id": "18030186059700958",
+   "biz": "Nantuckets",
+   "ig": "nantucketspjefferson",
+   "town": "Port Jefferson",
+   "category": "Restaurant (Seafood)",
+   "member": false,
+   "title": "Bottomless Mimosas Brunch",
+   "when": "Every Sat & Sun · 10 AM-2:30 PM",
+   "desc": "Bottomless mimosas, bloody marys, and coffee. No reservations needed.",
+   "expires": "2026-11-28",
+   "posted": "2026-11-14T16:33:34+0000",
+   "url": "https://www.instagram.com/p/DfupMaTl0Q6/",
+   "img": "",
+   "inset": "ig/p18030186059700958.jpg"
   },
   {
    "id": "18155940556551591",
