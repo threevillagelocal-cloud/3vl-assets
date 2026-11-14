@@ -109,7 +109,13 @@ def weekly_issues():
         sent = any("weekly-sending-%s" % date in n for n in names)
         notsent = any("weekly-notsent-%s" % date in n for n in names)
         status = "sent" if sent else ("skipped" if notsent else "pending")
-        out.append((date, status, jload(p, {})))
+        f = dict(jload(p, {}) or {})
+        for n in names:   # "going out right now to 288 people" in the send notice
+            if "weekly-sending-%s" % date in n:
+                m = re.search(r"to (\d[\d,]*) people", (jload(os.path.join(sent_dir, n), {}) or {}).get("html", ""))
+                if m:
+                    f["_recipients"] = int(m.group(1).replace(",", ""))
+        out.append((date, status, f))
     return out
 
 
@@ -150,6 +156,7 @@ def activity(m, hp, issues, posts, rot, banners):
 
     # homepage: one row per week, plus counts per month
     hp_month = {}
+    hp_days = []
     weeks = {}
     for day, ids in sorted(hp.items()):
         if uid not in ids:
@@ -158,6 +165,7 @@ def activity(m, hp, issues, posts, rot, banners):
         mk = day[:7]
         hm = hp_month.setdefault(mk, {"days": 0, "lead": 0})
         hm["days"] += 1
+        hp_days.append(day)
         lead = ids[0] == uid
         hm["lead"] += lead
         wk = d - dt.timedelta(days=d.weekday())
@@ -188,7 +196,7 @@ def activity(m, hp, issues, posts, rot, banners):
                     break
         if not hit:
             continue
-        row = {"date": date, "ch": "email", "icon": "mail", "title": hit[0], "note": hit[1]}
+        row = {"date": date, "ch": "email", "icon": "mail", "title": hit[0], "note": hit[1], "recipients": f.get("_recipients", 0)}
         if status == "sent":
             items.append(row)
         elif status == "pending" and dt.date.fromisoformat(date) >= TODAY - dt.timedelta(days=2):
@@ -258,7 +266,7 @@ def activity(m, hp, issues, posts, rot, banners):
     for s in months.values():
         s["total"] = s["home_days"] + s["social"] + s["email"]
     nxt_social = next((u for u in upcoming if u.get("ch") == "social"), None)
-    return {"uid": uid, "name": m["name"], "short": m["short"], "cat": m["cat"], "town": m["town"], "profile": m["url"],
+    return {"hp_days": hp_days, "uid": uid, "name": m["name"], "short": m["short"], "cat": m["cat"], "town": m["town"], "profile": m["url"],
             "logo": logo, "banner": ban, "has_banner_ad": uid in banners, "banner_img": banners.get(uid, ""), "months": months, "items": items, "upcoming": upcoming,
             "next_social": nxt_social and nxt_social["date"], "built": dt.datetime.now().isoformat(timespec="minutes")}
 
@@ -321,6 +329,34 @@ LIVE_DIR = os.path.join(os.path.dirname(ASSETS), "3vl-share", "live", "md")
 SAMPLE = '<em class="md-sample" title="Placeholder: we do not log this yet">Sample</em>'
 MONTHS = {"2026-10": "October", "2026-11": "November", "2026-12": "December"}
 
+W0 = (TODAY - dt.timedelta(days=30)).isoformat()   # rolling last-30-days window start
+
+
+def reach30(a):
+    """Rolling last 30 days: real reach we can measure, broken down. Banner = sitewide page views (a ceiling, so 'up to')."""
+    r = jload(os.path.join(HERE, "data", "banner_reach.json"), {}) or {}
+    home_daily = r.get("home_daily", {})
+    banner = int(r.get("views", 0)) if a["has_banner_ad"] else 0
+    days = [d for d in a.get("hp_days", []) if d >= W0]
+    home = sum(home_daily.get(d, 0) for d in days)
+    emails = [it for it in a["items"] if it["ch"] == "email" and it["date"] >= W0 and not it.get("sample")]
+    email = sum(it.get("recipients", 0) for it in emails)
+    social = [it for it in a["items"] if it["ch"] == "social" and it["date"] >= W0 and not it.get("sample")]
+    total = banner + home + email
+    nf = lambda n: "{:,}".format(n)
+    parts = []
+    if banner:
+        parts.append(("banner", "Banner ad", "up to %s views" % nf(banner)))
+    parts.append(("home", "Homepage spotlight", ("%s views on your %d day%s" % (nf(home), len(days), "" if len(days) == 1 else "s")) if days else "Your turn is coming up"))
+    if emails:
+        parts.append(("mail", "Three Village Weekly", "sent to %s subscribers" % nf(email) if email else "%d feature%s" % (len(emails), "" if len(emails) == 1 else "s")))
+    if social:
+        parts.append(("insta", "Facebook and Instagram", "%d post%s about you" % (len(social), "" if len(social) == 1 else "s")))
+    rows = "".join('<li><span class="md-ic">%s</span><b>%s</b><em>%s</em></li>' % (ic(i), t, v) for i, t, v in parts)
+    return ('<div class="md-kpis md-reach" data-m="r30"><div class="md-reach-tot"><span class="md-ic">%s</span><b>%s<span data-n="%d">%s</span></b>'
+            '<i>Times neighbors may have seen your business in the last 30 days</i></div><ul class="md-reach-l">%s</ul></div>'
+            % (ic("megaphone"), "Up to " if banner else "", total, nf(total), rows))
+
 
 def kpis(a, mk):
     s = a["months"].get(mk, {"home_days": 0, "home_lead": 0, "social": 0, "email": 0, "total": 0})
@@ -355,16 +391,14 @@ def row(it):
     d = dt.date.fromisoformat(it["date"])
     link = ('<a class="md-open" href="%s" target="_blank" rel="noopener">See it %s</a>' % (e(it["url"]), ic("ext"))) if it.get("url") else ""
     return ('<li data-f="%s" data-m="%s"><span class="md-dot">%s</span>%s<div class="md-txt"><b>%s%s</b><i>%s</i>%s</div><time datetime="%s">%s</time></li>'
-            % (it["ch"], it["date"][:7], ic(it["icon"]), th, e(it["title"]), SAMPLE if it.get("sample") else "", e(it["note"]), link, it["date"], fmt(d)))
+            % (it["ch"], "r30" if it["date"] >= W0 else "old", ic(it["icon"]), th, e(it["title"]), SAMPLE if it.get("sample") else "", e(it["note"]), link, it["date"], fmt(d)))
 
 
 def page(a):
     USED.clear()
     cur = TODAY.strftime("%Y-%m")
-    months = sorted({k for k in a["months"]} | {cur}, reverse=True)[:3]
-    mtabs = "".join('<button type="button" data-m="%s" aria-pressed="%s"%s>%s</button>' % (
-        mk, "true" if mk == cur else "false", ' class="on"' if mk == cur else "", MONTHS.get(mk, mk) + (" so far" if mk == cur else "")) for mk in months)
-    tiles = "".join(kpis(a, mk) for mk in months)
+    mtabs = '<button type="button" data-m="r30" aria-pressed="true" class="on">Last 30 days</button>'   # rolling window (owner 11/13)
+    tiles = reach30(a)
     vip = ['<span>%s<span><b>Top-spot card</b> at the top of %s search</span></span>' % (ic("search"), e(a["cat"] or "your category"))]
     if a["has_banner_ad"]:
         vip.insert(0, '<span>%s<span><b>Banner ad</b> rotating on every page</span></span>' % ic("banner"))

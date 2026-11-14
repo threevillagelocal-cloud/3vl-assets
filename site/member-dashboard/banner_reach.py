@@ -31,11 +31,21 @@ def main():
     views, prev = vals.get("cur", 0), vals.get("prev", 0)
     if views <= 0:
         sys.exit("GA4 returned no page views; keeping the previous file")
-    pct = round((views - prev) * 100.0 / prev) if prev else None   # true change, last 30 days vs the 30 before
+    pct = round((views - prev) * 100.0 / prev) if prev else None
+    # homepage views per day (for each member's spotlight days in the dashboard reach tile)
+    r2 = s.post("https://analyticsdata.googleapis.com/v1beta/%s:runReport" % PROPERTY, json={
+        "dateRanges": [{"startDate": "60daysAgo", "endDate": "yesterday"}], "dimensions": [{"name": "date"}],
+        "dimensionFilter": {"filter": {"fieldName": "pagePath", "inListFilter": {"values": ["/", "/home"]}}},
+        "metrics": [{"name": "screenPageViews"}], "limit": 100}, timeout=60)
+    r2.raise_for_status()
+    home = {}
+    for row in r2.json().get("rows") or []:
+        d = row["dimensionValues"][0]["value"]
+        home["%s-%s-%s" % (d[:4], d[4:6], d[6:])] = int(row["metricValues"][0]["value"])   # true change, last 30 days vs the 30 before
     y = dt.date.today() - dt.timedelta(days=1)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump({"views": views, "prev_views": prev, "change_pct": pct, "start": (y - dt.timedelta(days=29)).isoformat(), "end": y.isoformat(),
-               "fetched": dt.datetime.now().isoformat(timespec="minutes"), "source": "GA4 screenPageViews, sitewide"},
+               "fetched": dt.datetime.now().isoformat(timespec="minutes"), "source": "GA4 screenPageViews, sitewide", "home_daily": home},
               open(OUT, "w", encoding="utf-8"), indent=1)
     print("banner reach", views, "prev", prev, "change %", pct)
 
