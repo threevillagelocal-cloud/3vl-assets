@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-14T14:01:06.979793+00:00",
+"updated": "2026-11-14T16:01:11.660932+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 194,
-"Emma S. Clark Library": 233,
+"Emma S. Clark Library": 232,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 42,
 "Ward Melville Heritage Org": 2,
@@ -16,7 +16,7 @@
 "Gallery North": 15,
 "Reboli Center": 20,
 "Sweetbriar Nature Center": 30,
-"Historical Society of Greater Port Jefferson": 1,
+"Historical Society of Greater Port Jefferson": 0,
 "Madiran The Wine Bar live music": 33,
 "Local business Instagram posts": 12
 },
@@ -191,25 +191,6 @@
 "pu": ""
 },
 {
-"id": "pjhistorical-6a7f424a6af17c025225f616",
-"title": "Fall Clean-Up",
-"start": "2026-11-14T08:30:00",
-"end": "2026-11-14T11:00:00",
-"allday": false,
-"venue": "Mather House Museum",
-"addr": "115 Prospect Street, Port Jefferson, New York, 11777",
-"url": "https://www.portjeffhistorical.org/events/fall-clean-up",
-"desc": "Join us at the Mather House for our Annual Fall Clean-up Day! Volunteers welcome. Great opportunity for students who need recorded volunteer hours in addition to those looking to give back to the community.",
-"img": "https://images.squarespace-cdn.com/content/v1/66cdf6fd922d3d7898d823b8/1786725247310-CXTG4A8YAZEWU0XHUMPZ/FallCleanup_2026.png",
-"src": "pjhistorical",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/fall-clean-up"
-},
-{
 "id": "social-18006958577794211",
 "title": "2026 Fall Clean-Up",
 "start": "2026-11-14T08:30:00",
@@ -226,24 +207,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/fall-clean-up"
-},
-{
-"id": "emmaclark-tech-help-teens-42891",
-"title": "Tech Help (from teens)",
-"start": "2026-11-14T10:00:00",
-"end": "2026-11-14T11:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Technology Center",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/tech-help-teens-42891",
-"desc": "Teen Tech Tutors will assist patrons with basic questions about their mobile devices.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/tech-help-from-teens-455"
+"page": ""
 },
 {
 "id": "emmaclark-musical-journey-ages-4-7-61963",
@@ -264,6 +228,23 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/musical-journey-ages-4-7-yrs"
+},
+{
+"id": "emmaclark-copy-tech-help-teens-42903",
+"title": "Tech Help (from teens)",
+"start": "2026-11-14T11:00:00",
+"end": "2026-11-14T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Technology Center",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/copy-tech-help-teens-42903",
+"desc": "Teen Tech Tutors will assist patrons with basic questions about their mobile devices. Due to a lack of teen volunteers, this program has been cancelled.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": ""
 },
 {
 "id": "sweetbriar-6a8c8e7fc3ef112e20f0706d",
