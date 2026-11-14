@@ -1,8 +1,8 @@
 {
-"updated": "2026-11-13T23:28:23.277473+00:00",
+"updated": "2026-11-14T00:00:59.770763+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 42,
+"Port Jefferson Chamber": 41,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 194,
@@ -128,67 +128,6 @@
 "page": "https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition"
 },
 {
-"id": "lim-10000259",
-"title": "Stitch & Chit-Ch(at) – FREE!",
-"start": "2026-11-13T14:00:00",
-"end": "2026-11-13T15:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/stitch/2026-11-13/",
-"desc": "Whether you knit, crochet, embroider, or hand-sew, gather at the LIM to do what you love. Bring your work-in-progress and enjoy some good company. Open to adults and children 12 and up. This program will take place in the Studio located on the East side of cam",
-"img": "https://longislandmuseum.org/wp-content/uploads/2025/12/Stitch-and-Chit-Chat.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "gallerynorth-71324",
-"title": "Drawing Seashells with Conte Crayon with Cathleen Ficht",
-"start": "2026-11-13T17:00:00",
-"end": "2026-11-13T20:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/products/11-13-drawing-seashells-with-conte-crayon-w-cathleen-ficht-copy",
-"desc": "Students will begin with quick observational studies to experiment with the different Conte colors and techniques including layering, blending, hatching, and creating highlights and shadows. They will then apply what they have learned to then create a finished",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71324/v1792692583534/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/drawing-seashells-with-conte-crayon-with-cathleen-ficht"
-},
-{
-"id": "lim-3225650",
-"title": "Picture Perfect: Felt Portrait Workshop",
-"start": "2026-11-13T18:00:00",
-"end": "2026-11-13T19:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/felt-portrait/",
-"desc": "Get creative at the Museum’s Studio with this fun fall workshop! This versatile paste felt portrait workshop lets participants transform photos or imaginations into soft, 2D textured masterpieces. Using vibrant felt shapes and easy crafting adhesives, attendee",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Felt-Portrait.jpg",
-"src": "lim",
-"tags": [
-"free",
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/picture-perfect-felt-portrait-workshop"
-},
-{
 "id": "cur-jmr",
 "title": "Live Music: John Maurice Restrepo and Eduardo Withrington at Madiran",
 "start": "2026-11-13T19:00",
@@ -230,26 +169,6 @@
 "page": "https://www.threevillagelocal.com/events/danny-bacher-memorial-roast-toast-at-the-jazz-loft",
 "pu": "",
 "rank": 6
-},
-{
-"id": "theatre3-9241",
-"title": "A Christmas Carol",
-"start": "2026-11-13T19:00:00",
-"end": "2026-11-13T19:00:00",
-"allday": false,
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson, NY 11777",
-"url": "https://theatrethree.getmytix.net/tickets#922/A-Christmas-Carol",
-"desc": "“I will honor Christmas in my heart…” Celebrate the season with Long Island’s own holiday tradition and BroadwayWorld.com winner for Best Play. Follow the miser Ebenezer Scrooge on a journey that teaches him the meaning of Christmas - past, present, and future",
-"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_922_A%20Christmas%20Carol%201600x1000.png",
-"src": "theatre3",
-"tags": [
-"music",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
 },
 {
 "id": "cur-rorie",
@@ -1872,6 +1791,64 @@
 "status": "",
 "fb": 1,
 "page": "https://www.threevillagelocal.com/events/gift-bow-making-for-a-cause-462"
+},
+{
+"id": "emmaclark-cricut-coffee-mug-lottery-43471",
+"title": "Cricut: Coffee Mug",
+"start": "2026-11-24T14:00:00",
+"end": "2026-11-24T16:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Technology Center",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/cricut-coffee-mug-lottery-43471",
+"desc": "NOTE: Registration lottery opened on November 10, 2026 at 9:30am and closed on November 11, 2026 at 1:30pm. You can still sign up for this program if there are openings, or join the waitlist if interested. In this beginner class, you’ll learn how to use Cricut",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/4_DTC_Infographic_2008335.png",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/cricut-coffee-mug-lottery-632"
+},
+{
+"id": "emmaclark-holiday-cards-seniors-community-service-project-grades-3-5-61460",
+"title": "Holiday Cards for Seniors Community Service Project (Grades 3-5)",
+"start": "2026-11-24T16:30:00",
+"end": "2026-11-24T17:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/holiday-cards-seniors-community-service-project-grades-3-5-61460",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-07/CommunityServiceNew_1.png",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/holiday-cards-for-seniors-community-service-project-grades-3-5"
+},
+{
+"id": "madiran-20261124-rod-borrie-and-vincent-loccisano",
+"title": "Live Music: Rod Borrie and Vincent Loccisano",
+"start": "2026-11-24T19:00:00",
+"end": "2026-11-24T21:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in Setauket: Rod Borrie and Vincent Loccisano. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-rod-borrie-and-vincent-loccisano"
 }
 ],
 "closings": [],
