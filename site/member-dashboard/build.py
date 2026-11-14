@@ -462,15 +462,37 @@ def services_list(tier):
         for i, t, d, h in ups)
 
 
+FB_LOGO = ('<svg class="md-brandlogo" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1877F2"/>'
+           '<path fill="#fff" d="M15.1 12.9l.4-2.8h-2.7V8.3c0-.8.4-1.5 1.6-1.5h1.2V4.4s-1.1-.2-2.2-.2c-2.2 0-3.7 1.3-3.7 3.8v2.1H7.3v2.8h2.4V24h3.1V12.9z"/></svg>')
+IG_LOGO = ('<svg class="md-brandlogo" viewBox="0 0 24 24" aria-hidden="true"><defs><radialGradient id="mdig" cx="30%" cy="107%" r="150%">'
+           '<stop offset="0" stop-color="#fdf497"/><stop offset=".05" stop-color="#fdf497"/><stop offset=".45" stop-color="#fd5949"/>'
+           '<stop offset=".6" stop-color="#d6249f"/><stop offset=".9" stop-color="#285AEB"/></radialGradient></defs>'
+           '<rect width="24" height="24" rx="6.5" fill="url(#mdig)"/><rect x="5.5" y="5.5" width="13" height="13" rx="4" fill="none" stroke="#fff" stroke-width="1.8"/>'
+           '<circle cx="12" cy="12" r="3.1" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="16.3" cy="7.7" r="1.05" fill="#fff"/></svg>')
+
+
+def social_li():
+    """Real Meta numbers, last 28 days (Meta's insights window): FB page_media_view + IG views, from 3vl-news-monitor data/hq/social.json."""
+    d = jload(os.path.join(NEWS, "data", "hq", "social.json"), {}) or {}
+    fb = int(((d.get("fb") or {}).get("cur") or {}).get("page_media_view") or 0)
+    ig = int(((d.get("ig") or {}).get("cur") or {}).get("views") or 0)
+    nf = lambda x: "{:,}".format(x)
+    if not (fb or ig):
+        return '<li><span class="md-ic">%s</span><b>100,000+</b><i>Facebook and Instagram views our posts reach every month</i></li>' % ic("share")
+    return ('<li class="md-soc"><b>%s</b><i>Facebook and Instagram views in the last 28 days</i>'
+            '<span class="md-soc-r">%s<em>%s</em></span><span class="md-soc-r">%s<em>%s</em></span></li>'
+            % (nf(fb + ig), FB_LOGO, nf(fb), IG_LOGO, nf(ig)))
+
+
 def net_card():
     n = NET
     nf = lambda x: "{:,}".format(x)
     up = ('<small>Up %d%%</small>' % n["pct"]) if isinstance(n.get("pct"), int) and n["pct"] > 0 else ""
     st = [("chart", nf(n.get("views", 0)), "Website page views in the last 30 days" + (" " + up if up else "")),
-          ("share", "100,000+", "Facebook and Instagram views our posts reach every month"),
+          ("social", "", ""),
           ("crown", nf(n.get("vip_hl", 0)), "Times we highlighted our VIP members in the last 30 days"),
           ("mail", nf(n.get("subs", 0)), "Neighbors who get Three Village Weekly by email")]
-    li = "".join('<li><span class="md-ic">%s</span><b>%s</b><i>%s</i></li>' % (ic(i), v, t) for i, v, t in st)
+    li = "".join(social_li() if i == "social" else '<li><span class="md-ic">%s</span><b>%s</b><i>%s</i></li>' % (ic(i), v, t) for i, v, t in st)
     return ('<div class="md-card md-net"><div class="md-ch"><b>Three Village Local right now</b><i>Updated nightly</i></div>'
             '<ul class="md-net-l">%s</ul></div>' % li)
 
