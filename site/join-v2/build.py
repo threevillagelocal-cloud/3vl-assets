@@ -79,7 +79,7 @@ PLANS = [
      "btn": "Start free", "realtor": "Eligible for our weekly Real Estate Listings page, space permitting."},
     {"k": "featured", "tag": "Be found", "badge": "Most businesses start here", "name": "Featured",
      "sub": "A premium profile, priority placement and steady promotion across Three Village Local.", "lead": "",
-     "items": [("star", NEW + "Premium custom profile, with video"), ("dash", NEW + "Member Dashboard: see everything we did for you"),
+     "items": [("star", NEW + "Premium custom profile, with video"),
                ("bolt", "Featured badge and priority placement above free listings"),
                ("megaphone", "Category spotlights and newsletter mentions"),
                ("insta", NEW + "Your Instagram specials and events, shared into our feeds"),
@@ -88,7 +88,7 @@ PLANS = [
     {"k": "vip", "tag": "Be seen everywhere", "badge": "Only 3 per category", "name": "Three Village VIP",
      "value": "Over $500 a month in marketing value if purchased separately",
      "sub": "For businesses that want the neighbors to know they are the best.", "lead": "Everything in Featured, plus:",
-     "items": [("banner", "Banner ad rotating across the whole website"), ("search", "Top-spot card at the top of search with one-tap call"),
+     "items": [("dash", NEW + "Member Dashboard: see everything we did for you"), ("banner", "Banner ad rotating across the whole website"), ("search", "Top-spot card at the top of search with one-tap call"),
                ("article", NEW + "A custom article about you, every quarter"), ("crown", NEW + "VIP of the Week homepage spotlight"),
                ("bell", "One mobile app push notification a month"), ("video", "Video promotion plus drone photos and video included"),
                ("percent", NEW + "20% off all of our services")],
@@ -121,6 +121,9 @@ def plan_card(p):
     out += '<p class="jv-tag">%s</p><h3 class="jv-name" id="jv-n-%s">%s</h3>%s' % (p["tag"], k, p["name"], pr)
     if p.get("value"):
         out += '<p class="jv-value">%s</p>' % p["value"]
+    if k == "vip":   # second, top-of-card button so the VIP popup is seen without scrolling
+        out += ('<button type="button" class="jv-see jv-see-top" data-jv-open="vip" aria-haspopup="dialog">%s<span>See everything VIPs get</span>%s</button>'
+                % (ic("eye"), ic("chev", "jv-see-ch")))
     out += '<p class="jv-sub">%s</p>' % p["sub"]
     if p["lead"]:
         out += '<p class="jv-lead">%s</p>' % p["lead"]
@@ -163,7 +166,7 @@ CMP = [
         ("Video promotion and drone photos and video", "", "Member discount", "Included", "Included"),
     ]),
     ("Tools and insight", [
-        ("Member Dashboard: what Three Village Local did for you", "", Y, "Full", "Full"),
+        ("Member Dashboard: what Three Village Local did for you", "", "", Y, Y),
         ("AI visibility check", "", "Quarterly", "Quarterly", "Quarterly"),
         ("AI search tune-up", "", "", "Yearly", "Yearly"),
         ("Review-request kit (QR counter card + text template)", "", Y, Y, Y),
@@ -401,7 +404,7 @@ def m_partner():
 
 
 PERKS = {
-    "featured": [("star", "Premium custom profile design, with video support"), ("dash", "Member Dashboard: everything we did for you"),
+    "featured": [("star", "Premium custom profile design, with video support"),
                  ("bolt", "Featured badge and priority placement above free listings"), ("megaphone", "Category spotlights and newsletter mentions"),
                  ("calendar", "Post events and specials on our website and mobile app"), ("insta", "Instagram specials and events shared into our feeds"),
                  ("camera", "Logo plus up to 5 photos and an enhanced description"), ("link", "A link to your website from a trusted local site"),
@@ -411,7 +414,7 @@ PERKS = {
             ("search", "Top-spot card at the top of search with one-tap call"), ("crown", "Premium VIP profile, VIP badge and top category placement"),
             ("megaphone", "VIP spotlights on social, our website and mobile app"), ("mail", "Spotlights in our email campaigns"),
             ("bell", "One mobile app push notification a month"), ("video", "Video promotion plus drone photos and video included"),
-            ("article", "A custom article about your business every quarter"), ("dash", "The full Member Dashboard"),
+            ("article", "A custom article about your business every quarter"), ("dash", "Member Dashboard: everything we did for you"),
             ("home", "VIP of the Week homepage spotlight rotation"), ("bot", "Priority in our AI answer pages"),
             ("refresh", "Yearly AI search tune-up"), ("percent", "20% off all of our services")],
     "partner": [("check", "Everything in VIP"), ("bot", "AI chatbot on your website: answers 24/7, texts you leads"),
@@ -435,8 +438,8 @@ def m_cta(k):
 
 def modal_tpl(k):
     if k == "featured":
-        secs = [("profile", "Profile"), ("dash", "Dashboard"), ("seen", "Where you're seen"), ("perks", "Everything")]
-        body = m_profile(k) + m_dash(k) + m_seen(k) + m_perks(k)
+        secs = [("profile", "Profile"), ("seen", "Where you're seen"), ("perks", "Everything")]   # Member Dashboard is VIP only
+        body = m_profile(k) + m_seen(k) + m_perks(k)
     elif k == "vip":
         secs = [("profile", "VIP profile"), ("dash", "Dashboard"), ("vip", "VIP extras"), ("seen", "Where you're seen"), ("perks", "Everything")]
         body = m_profile(k) + m_dash(k) + m_vip() + m_seen(k) + m_perks(k)
@@ -458,8 +461,8 @@ def hero():
 <div class="jv-hin">
 <p class="jv-kick"><span class="jv-dot"></span>Three Village Local Memberships</p>
 <h1 class="jv-h1">Get your business <span>seen</span> by the neighbors.</h1>
-<p class="jv-dek">The local promotion platform for Setauket, Stony Brook and Port Jefferson. Every plan puts you on our website and mobile app. Paid plans put you in front of the whole town, and now show you everything we did for you.</p>
-<div class="jv-hctas"><a class="jv-btn jv-btn-blue" href="#jv-plans">See the plans</a><button type="button" class="jv-btn jv-btn-ghost" data-jv-open="featured" data-jv-go="dash" aria-haspopup="dialog">%s See the Member Dashboard</button></div>
+<p class="jv-dek">The local promotion platform for Setauket, Stony Brook and Port Jefferson. Every plan puts you on our website and mobile app. Paid plans put you in front of the whole town, and VIP members see everything we did for them.</p>
+<div class="jv-hctas"><a class="jv-btn jv-btn-blue" href="#jv-plans">See the plans</a><button type="button" class="jv-btn jv-btn-ghost" data-jv-open="vip" data-jv-go="dash" aria-haspopup="dialog">%s See the Member Dashboard</button></div>
 <ul class="jv-stats">
 <li><span class="jv-st-ic">%s</span><div><b>45,000+</b><i>website page visits a month</i></div></li>
 <li><span class="jv-st-ic">%s</span><div><b>100,000+</b><i>Facebook &amp; Instagram views a month</i></div></li>
@@ -479,7 +482,7 @@ def hero():
 
 def plans():
     return ('<section class="jv-sec jv-plans" id="jv-plans"><div class="jv-head"><p class="jv-eye">Plans</p><h2>Pick how loud you want to be.</h2>'
-            '<p>Start free, or let us put you in front of the whole town. Every paid plan comes with a premium profile and your own Member Dashboard.</p></div>'
+            '<p>Start free, or let us put you in front of the whole town. Every paid plan comes with a premium profile. VIP adds your own Member Dashboard.</p></div>'
             '<div class="jv-cards">%s</div>'
             '<div class="jv-assure"><p class="jv-keep">%s<span><b>Already a member?</b> Current members keep their rate.</span></p>'
             '<ul><li>%s<span>Month to month, no long-term contract</span></li><li>%s<span>Upgrade, downgrade or cancel anytime</span></li><li>%s<span>Help setting up your listing</span></li></ul></div>'
@@ -489,7 +492,7 @@ def plans():
 
 def news():
     tiles = [
-        ("dash", "Member Dashboard", "Sign in and see every homepage feature, post, email and fix we did for you.", "featured", "dash", "jv-n-big",
+        ("dash", "Member Dashboard", "VIP members sign in and see every homepage feature, post, email and fix we did for them.", "vip", "dash", "jv-n-big",
          '<div class="jv-mini"><p class="jv-mini-h">Welcome back, Castaways</p><div class="jv-mini-k"><span><b data-n="6">6</b><i>homepage features</i></span><span><b>100K+</b><i>social views</i></span><span><b data-n="3">3</b><i>AI fixes</i></span></div>'
          '<ul class="jv-mini-l"><li>%s<span>Your special went out on Instagram</span></li><li>%s<span>In this week&#39;s email</span></li><li>%s<span>Your reel posted</span></li></ul></div>'
          % (img("c-margarita-160.webp", "", 160, 160), img("c-oysters-160.webp", "", 160, 160), img("c-grill-160.webp", "", 160, 160))),
@@ -531,7 +534,7 @@ def services():
 FAQ = [
     ("Is there a long-term commitment?", "No. Every plan is month to month with no long-term contract. Cancel anytime, but we think you will love the results."),
     ("I am already a member. Does my price change?", "No. Current members keep their rate. You get the new member perks that come with your plan as we roll them out."),
-    ("What is the Member Dashboard?", "A sign-in page for Featured, VIP and Partner members that shows what Three Village Local did for you: homepage features, social posts, email mentions, reels, AI visibility fixes and what is scheduled next."),
+    ("What is the Member Dashboard?", "A sign-in page for VIP members that shows what Three Village Local did for you: homepage features, social posts, email mentions, reels, AI visibility fixes and what is scheduled next."),
     ("What comes with the premium profile?", "A custom-designed profile in your colors with your best photos, video support, one-tap call, booking and directions buttons, and clean facts that Google and AI tools can read."),
     ("How do the service discounts work?", "Featured members get 10% off all of our services. VIP and Partner members get 20% off: promo videos, websites, AI search work, drone and more."),
     ("What is the quarterly article for VIPs?", "Every quarter we write, design and publish a custom article about your business on Three Village Local, then share it on social media and in our email."),

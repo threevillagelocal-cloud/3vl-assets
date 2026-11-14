@@ -556,3 +556,10 @@
 #jvm .jvm-body{scroll-behavior:auto}
 }
 html.jvm-lock,html.jvm-lock body{overflow:hidden!important}
+
+/* VIP card: top "see everything" button */
+#jv#jv .jv-vip .jv-see-top{margin:0 0 14px!important;border-style:solid;border-color:#e9b949;background:linear-gradient(135deg,#ffd257,#ffbf2e);color:#13294b;box-shadow:0 10px 22px -12px rgba(224,168,46,.8)}
+#jv#jv .jv-vip .jv-see-top:hover{background:linear-gradient(135deg,#ffdb73,#ffc845);border-color:#d9a632}
+
+/* hide the site chat bubble + back-to-top while the plan popup is open (it covered the CTA bar) */
+html.jvm-lock .tva-fab,html.jvm-lock .tva-tease,html.jvm-lock .scrollup{display:none!important}
