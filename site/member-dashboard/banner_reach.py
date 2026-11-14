@@ -10,7 +10,7 @@ from google.auth.transport.requests import AuthorizedSession
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROPERTY = "properties/485326487"
-KEY = os.environ.get("GA4_KEY") or os.path.join(HERE, "..", "..", "..", "3vl-news-monitor", "service-account.json")
+KEY = os.environ.get("GA4_KEY") or os.path.join(os.environ.get("DOCS_DIR") or os.path.join(HERE, "..", "..", ".."), "3vl-news-monitor", "service-account.json")
 if "--key" in sys.argv:
     KEY = sys.argv[sys.argv.index("--key") + 1]
 OUT = os.path.join(HERE, "data", "banner_reach.json")

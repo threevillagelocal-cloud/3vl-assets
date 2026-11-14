@@ -18,9 +18,9 @@ reels/videos, AI visibility fixes. See manual_log.example.json for the proposed 
 import datetime as dt, glob, html, json, os, re, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DOCS = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+DOCS = os.environ.get("DOCS_DIR") or os.path.abspath(os.path.join(HERE, "..", "..", ".."))   # nightly job: repos side by side in DOCS_DIR
 ASSETS = os.path.join(DOCS, "3vl-assets")
-GUARD = os.path.join(DOCS, "3vl-site-guard")
+GUARD = os.environ.get("GUARD_DIR") or os.path.join(DOCS, "3vl-site-guard")
 NEWS = os.path.join(DOCS, "3vl-news-monitor")
 SHARE = "https://threevillagelocal-cloud.github.io/3vl-share/"
 SITE = "https://www.threevillagelocal.com"
@@ -74,7 +74,7 @@ def member_images(uid):
 
 # ---------------------------------------------------------------- homepage (git history of the nightly homepage)
 def homepage_history():
-    cache_p = os.path.join(HERE, "_cache", "homepage.json")
+    cache_p = os.environ.get("HP_CACHE") or os.path.join(HERE, "_cache", "homepage.json")
     cache = jload(cache_p, {}) or {}
     f = "post-sources/widget-17-3vl-page-now.html"
     log = subprocess.run(["git", "-C", GUARD, "log", "--format=%H %cd", "--date=format-local:%Y-%m-%d", "--", f],
