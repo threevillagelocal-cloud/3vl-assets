@@ -431,7 +431,7 @@ def page(a):
            '<p class="md-s">Here is everything Three Village Local did for you.</p></div></div>'
            '<a class="md-prof" href="%s" target="_blank" rel="noopener">View your profile %s</a></div>'
            '%s<div class="md-mtabs" role="group" aria-label="Choose a month">%s</div>%s'
-           '<div class="md-vipstrip">%s</div>'
+           '<div class="md-vipstrip">%s</div>%s'
            '<div class="md-grid"><div class="md-card md-tl"><div class="md-ch"><b>Your promotion timeline</b>'
            '<div class="md-chips" role="group" aria-label="Filter the timeline"><button type="button" class="on" data-f="all" aria-pressed="true">All</button>'
            '<button type="button" data-f="web" aria-pressed="false">Website</button><button type="button" data-f="social" aria-pressed="false">Social</button>'
@@ -439,10 +439,10 @@ def page(a):
            '<ol class="md-list">%s</ol><p class="md-empty" hidden>Nothing here for this month yet.</p></div>'
            '<div class="md-side"><div class="md-card"><div class="md-ch"><b>Coming up for you</b></div><ul class="md-upc">%s</ul></div>'
            '<div class="md-card"><div class="md-ch"><b>What&#39;s new at 3VL</b></div><ul class="md-news">%s</ul></div></div>'
-           '%s<div class="md-card md-grow"><div class="md-ch"><b>Grow with us</b><i>VIP pricing</i></div><div class="md-ups">%s</div></div></div>'
+           '<div class="md-card md-grow"><div class="md-ch"><b>Grow with us</b><i>VIP pricing</i></div><div class="md-ups">%s</div></div></div>'
            '<p class="md-foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a> and we will get it out there.</p>'
            '</div>') % (LOGO3VL, ic("lock"), (' style="--ban:url(%s)"' % e(a["banner"])) if a["banner"] else "", logo, ic("crown"), e(first), e(a["profile"]), ic("chev"),
-                        banner_card(a), mtabs, tiles, "".join(vip), rows, up, nl, net_card(), upl)
+                        banner_card(a), mtabs, tiles, "".join(vip), net_card(), rows, up, nl, upl)
     return sprite() + nowrap_hyphens(out)
 
 
@@ -538,7 +538,7 @@ def page_featured(a):
     out = ('<div class="md" id="md" data-tier="f">' + head("%s Featured member" % ic("star"), "Welcome back, %s" % e(a["short"]),
                                                     "Here is what Three Village Local did for you lately.", a["profile"], a["logo"], a["banner"]) +
            '<div class="md-mtabs" role="group" aria-label="Time period"><button type="button" data-m="r30" aria-pressed="true" class="on">Last 30 days</button></div>'
-           + reach30(a) +
+           + reach30(a) + net_card() +
            '<div class="md-grid"><div class="md-card md-tl"><div class="md-ch"><b>Your promotion timeline</b>'
            '<div class="md-chips" role="group" aria-label="Filter the timeline"><button type="button" class="on" data-f="all" aria-pressed="true">All</button>'
            '<button type="button" data-f="web" aria-pressed="false">Website</button><button type="button" data-f="social" aria-pressed="false">Social</button>'
@@ -546,10 +546,10 @@ def page_featured(a):
            '<ol class="md-list">%s</ol><p class="md-empty" hidden>Nothing in the last 30 days yet. Your next spotlight is on the way.</p></div>'
            '<div class="md-side"><div class="md-card"><div class="md-ch"><b>Coming up for you</b></div><ul class="md-upc">%s</ul></div>'
            '<div class="md-card"><div class="md-ch"><b>What&#39;s new at 3VL</b></div><ul class="md-news">%s</ul></div></div>'
-           '%s<div class="md-card md-grow md-sells">%s</div>'
+           '<div class="md-card md-grow md-sells">%s</div>'
            '<div class="md-card md-grow"><div class="md-ch"><b>Our services</b><i>10%% off for Featured</i></div><div class="md-ups">%s</div></div></div>'
            '<p class="md-foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a> and we will get it out there.</p></div>'
-           ) % (rows, up, news_list("f"), net_card(), upsell("f"), services_list("f"))
+           ) % (rows, up, news_list("f"), upsell("f"), services_list("f"))
     return sprite() + nowrap_hyphens(out)
 
 
