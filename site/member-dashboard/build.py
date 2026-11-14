@@ -45,16 +45,16 @@ def fmt(d):
 
 
 # ---------------------------------------------------------------- members
-def vips():
+def vips(plans=("vip",)):
     mem = jload(os.path.join(GUARD, "data", "members.json"), {}).get("members", [])
     short = {str(v["id"]): v for v in jload(os.path.join(ASSETS, "weekender", "vip.json"), [])}
     out = {}
     for m in mem:
-        if m.get("plan") != "vip":
+        if m.get("plan") not in plans:
             continue
         uid = str(m["id"])
         s = short.get(uid, {})
-        out[uid] = {"uid": uid, "name": m["name"], "short": s.get("name") or m["name"], "cat": m.get("category") or s.get("cat") or "",
+        out[uid] = {"tier": "v" if m.get("plan") == "vip" else "f", "uid": uid, "name": m["name"], "short": s.get("name") or m["name"], "cat": m.get("category") or s.get("cat") or "",
                     "town": m.get("city") or "", "url": m["url"], "slugs": {slug(m["url"]), slug(s.get("url"))} - {""}}
     return out
 
@@ -266,7 +266,7 @@ def activity(m, hp, issues, posts, rot, banners):
     for s in months.values():
         s["total"] = s["home_days"] + s["social"] + s["email"]
     nxt_social = next((u for u in upcoming if u.get("ch") == "social"), None)
-    return {"hp_days": hp_days, "uid": uid, "name": m["name"], "short": m["short"], "cat": m["cat"], "town": m["town"], "profile": m["url"],
+    return {"tier": m.get("tier", "v"), "hp_days": hp_days, "uid": uid, "name": m["name"], "short": m["short"], "cat": m["cat"], "town": m["town"], "profile": m["url"],
             "logo": logo, "banner": ban, "has_banner_ad": uid in banners, "banner_img": banners.get(uid, ""), "months": months, "items": items, "upcoming": upcoming,
             "next_social": nxt_social and nxt_social["date"], "built": dt.datetime.now().isoformat(timespec="minutes")}
 
@@ -395,6 +395,8 @@ def row(it):
 
 
 def page(a):
+    if a.get("tier") == "f":
+        return page_featured(a)
     USED.clear()
     cur = TODAY.strftime("%Y-%m")
     mtabs = '<button type="button" data-m="r30" aria-pressed="true" class="on">Last 30 days</button>'   # rolling window (owner 11/13)
@@ -419,8 +421,7 @@ def page(a):
            ("globe", "AI website", "Built to be found on Google and AI", "/websites"),
            ("sparkle", "AI visibility report", "See how AI tools describe you", "/free-ai-report"),
            ("camera", "Drone photos and video", "Included with VIP, book a shoot", "/services")]
-    upl = "".join('<a class="md-upb" href="%s"><span class="md-ic">%s</span><div><b>%s</b><i>%s</i></div><em>%s</em></a>' % (
-        SITE + h, ic(i), t, d, "Included" if "Included" in d else "20% off") for i, t, d, h in ups)
+    upl = services_list("v")
     first = a["short"]
     logo = ('<span class="md-logo"><img src="%s" alt="%s logo" width="168" height="100" decoding="async" data-processed="true"></span>' % (e(a["logo"]), e(first))) if a["logo"] else ""
     out = ('<div class="md" id="md" data-tier="v">'
@@ -438,10 +439,107 @@ def page(a):
            '<ol class="md-list">%s</ol><p class="md-empty" hidden>Nothing here for this month yet.</p></div>'
            '<div class="md-side"><div class="md-card"><div class="md-ch"><b>Coming up for you</b></div><ul class="md-upc">%s</ul></div>'
            '<div class="md-card"><div class="md-ch"><b>What&#39;s new at 3VL</b></div><ul class="md-news">%s</ul></div></div>'
-           '<div class="md-card md-grow"><div class="md-ch"><b>Grow with us</b><i>VIP pricing</i></div><div class="md-ups">%s</div></div></div>'
+           '%s<div class="md-card md-grow"><div class="md-ch"><b>Grow with us</b><i>VIP pricing</i></div><div class="md-ups">%s</div></div></div>'
            '<p class="md-foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a> and we will get it out there.</p>'
            '</div>') % (LOGO3VL, ic("lock"), (' style="--ban:url(%s)"' % e(a["banner"])) if a["banner"] else "", logo, ic("crown"), e(first), e(a["profile"]), ic("chev"),
-                        banner_card(a), mtabs, tiles, "".join(vip), rows, up, nl, upl)
+                        banner_card(a), mtabs, tiles, "".join(vip), rows, up, nl, net_card(), upl)
+    return sprite() + nowrap_hyphens(out)
+
+
+# ---------------------------------------------------------------- all-member pieces (owner 11/13: every member gets the new dashboard)
+NET = {}   # filled in main(): network stats shown to every member
+
+
+def services_list(tier):
+    off = {"v": "20% off", "f": "10% off", "b": ""}[tier]
+    ups = [("video", "Promo reel", "Filmed and edited for you", "/services#tvp-video"),
+           ("bot", "AI chatbot", "Answers customers 24/7, texts you leads", "/ai-assistant"),
+           ("globe", "AI website", "Built to be found on Google and AI", "/websites"),
+           ("sparkle", "AI visibility report", "See how AI tools describe you", "/free-ai-report"),
+           ("camera", "Drone photos and video", "Included with VIP, book a shoot" if tier == "v" else "Aerial photos and video of your business", "/services")]
+    return "".join('<a class="md-upb" href="%s"><span class="md-ic">%s</span><div><b>%s</b><i>%s</i></div>%s</a>' % (
+        SITE + h, ic(i), t, d, ("<em>%s</em>" % ("Included" if (tier == "v" and "Included" in d) else off)) if off else '<em class="md-go">See it</em>')
+        for i, t, d, h in ups)
+
+
+def net_card():
+    n = NET
+    nf = lambda x: "{:,}".format(x)
+    up = ('<small>Up %d%%</small>' % n["pct"]) if isinstance(n.get("pct"), int) and n["pct"] > 0 else ""
+    st = [("chart", nf(n.get("views", 0)), "Website page views in the last 30 days" + (" " + up if up else "")),
+          ("share", "100,000+", "Facebook and Instagram views our posts reach every month"),
+          ("crown", nf(n.get("vip_hl", 0)), "Times we highlighted our VIP members in the last 30 days"),
+          ("mail", nf(n.get("subs", 0)), "Neighbors who get Three Village Weekly by email")]
+    li = "".join('<li><span class="md-ic">%s</span><b>%s</b><i>%s</i></li>' % (ic(i), v, t) for i, v, t in st)
+    return ('<div class="md-card md-net"><div class="md-ch"><b>Three Village Local right now</b><i>Updated nightly</i></div>'
+            '<ul class="md-net-l">%s</ul></div>' % li)
+
+
+def upsell(tier):
+    vip = ('<div class="md-sell md-sell-v"><p class="md-k">%s Three Village VIP</p><b>Be seen everywhere in Three Village</b>'
+           '<p>Your banner ad on every page, the top spot in search, homepage spotlights, a custom article every quarter and this full dashboard of everything we did for you.</p>'
+           '<div class="md-sell-b"><a class="md-btn md-btn-gold" href="/join#plan-vip" data-vip-pop>See what VIP gets you</a>'
+           '<a class="md-btn md-btn-line" href="/checkout/1">Request VIP</a></div><small>Only 3 VIP spots per category</small></div>') % ic("crown")
+    if tier == "f":
+        return vip
+    fea = ('<div class="md-sell md-sell-f"><p class="md-k">%s Featured</p><b>Get found first</b>'
+           '<p>A premium profile with video, priority placement above free listings, category spotlights, your Instagram specials in our feeds and 10%% off our services.</p>'
+           '<div class="md-sell-b"><a class="md-btn md-btn-blue" href="/checkout/2">Upgrade to Featured</a><a class="md-btn md-btn-line" href="/join">Compare plans</a></div></div>') % ic("star")
+    return fea + vip
+
+
+def news_list(tier):
+    news = [("Just launched", "Homepage trivia: neighbors play every Monday, with local business prizes."),
+            ("Live now", "Our Thanksgiving guide is up. Send us your holiday hours and specials and we will add them.")]
+    news.append(("For VIPs", "20% off all of our services: promo videos, websites, AI search work and drone.") if tier == "v"
+                else ("For members", "Send us your news, specials and events at hello@threevillagelocal.com and we will help promote them."))
+    return "".join('<li><em>%s</em><span>%s</span></li>' % x for x in news)
+
+
+def head(kicker, title, sub, profile="", logo="", ban=""):
+    lg = ('<span class="md-logo"><img src="%s" alt="" width="168" height="100" decoding="async" data-processed="true"></span>' % e(logo)) if logo else ""
+    prof = ('<a class="md-prof" href="%s" target="_blank" rel="noopener">View your profile %s</a>' % (e(profile), ic("chev"))) if profile else \
+        ('<a class="md-prof" data-md-prof href="/account/contact">Edit your listing %s</a>' % ic("chev"))
+    return ('<div class="md-top"><img src="%s" alt="Three Village Local" width="132" height="45" class="md-3vl" data-processed="true">'
+            '<span class="md-brand">Member Dashboard</span><span class="md-sign">%s Signed in</span></div>'
+            '<div class="md-hi"%s><div class="md-hi-in">%s<div><p class="md-k">%s</p><h1 class="md-h">%s</h1><p class="md-s">%s</p></div></div>%s</div>'
+            % (LOGO3VL, ic("lock"), (' style="--ban:url(%s)"' % e(ban)) if ban else "", lg, kicker, title, sub, prof))
+
+
+def page_featured(a):
+    USED.clear()
+    rows = "".join(row(it) for it in a["items"])
+    up = "".join('<li><span class="md-up-d"><b>%s</b><i>%s</i></span><div><b>%s</b><i>%s</i></div></li>' % (
+        dt.date.fromisoformat(u["date"]).strftime("%b"), dt.date.fromisoformat(u["date"]).day, e(u["title"]), e(u["note"])) for u in a["upcoming"][:4])
+    if not up:
+        up = '<li><span class="md-up-d"><b>%s</b><i>&#8226;</i></span><div><b>More on the way</b><i>Have news, a special or an event? Email hello@threevillagelocal.com and we will help promote it.</i></div></li>' % TODAY.strftime("%b")
+    out = ('<div class="md" id="md" data-tier="f">' + head("%s Featured member" % ic("star"), "Welcome back, %s" % e(a["short"]),
+                                                    "Here is what Three Village Local did for you lately.", a["profile"], a["logo"], a["banner"]) +
+           '<div class="md-mtabs" role="group" aria-label="Time period"><button type="button" data-m="r30" aria-pressed="true" class="on">Last 30 days</button></div>'
+           + reach30(a) +
+           '<div class="md-grid"><div class="md-card md-tl"><div class="md-ch"><b>Your promotion timeline</b>'
+           '<div class="md-chips" role="group" aria-label="Filter the timeline"><button type="button" class="on" data-f="all" aria-pressed="true">All</button>'
+           '<button type="button" data-f="web" aria-pressed="false">Website</button><button type="button" data-f="social" aria-pressed="false">Social</button>'
+           '<button type="button" data-f="email" aria-pressed="false">Email</button></div></div>'
+           '<ol class="md-list">%s</ol><p class="md-empty" hidden>Nothing in the last 30 days yet. Your next spotlight is on the way.</p></div>'
+           '<div class="md-side"><div class="md-card"><div class="md-ch"><b>Coming up for you</b></div><ul class="md-upc">%s</ul></div>'
+           '<div class="md-card"><div class="md-ch"><b>What&#39;s new at 3VL</b></div><ul class="md-news">%s</ul></div></div>'
+           '%s<div class="md-card md-grow md-sells">%s</div>'
+           '<div class="md-card md-grow"><div class="md-ch"><b>Our services</b><i>10%% off for Featured</i></div><div class="md-ups">%s</div></div></div>'
+           '<p class="md-foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a> and we will get it out there.</p></div>'
+           ) % (rows, up, news_list("f"), net_card(), upsell("f"), services_list("f"))
+    return sprite() + nowrap_hyphens(out)
+
+
+def page_basic():
+    """One shared page for every Basic member (no personal data; p3.js fills in the name)."""
+    USED.clear()
+    out = ('<div class="md" id="md" data-tier="b">' + head("%s Basic member" % ic("check"), "Welcome back, <span data-md-name>neighbor</span>",
+                                                    "You are listed on Three Village Local. Here is how the neighbors find local businesses, and how to get seen more.") +
+           '%s<div class="md-card md-grow md-sells">%s</div>'
+           '<div class="md-card md-grow"><div class="md-ch"><b>Our services</b><i>Save 10%% with Featured, 20%% with VIP</i></div><div class="md-ups">%s</div></div>'
+           '<p class="md-foot">Need help with your listing? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a> and a real person will help.</p></div>'
+           ) % (net_card(), upsell("b"), services_list("b"))
     return sprite() + nowrap_hyphens(out)
 
 
@@ -483,7 +581,7 @@ def token(uid):
 
 def main():
     want = [a for a in sys.argv[1:] if a.isdigit()]
-    V = vips()
+    V = vips(("vip", "noticed"))
     hp = homepage_history()
     issues, posts, rot = weekly_issues(), social_posts(), rotation()
     banners = {str(b["id"]): b.get("img", "") for b in jload(os.path.join(ASSETS, "weekender", "banners.json"), [])}
@@ -491,10 +589,19 @@ def main():
     os.makedirs(os.path.join(HERE, "_local"), exist_ok=True)
     css = open(os.path.join(HERE, "dash.css"), encoding="utf-8").read()
     js = open(os.path.join(HERE, "dash.js"), encoding="utf-8").read()
+    r = jload(os.path.join(HERE, "data", "banner_reach.json"), {}) or {}
+    acts = {uid: activity(m, hp, issues, posts, rot, banners) for uid, m in V.items()}
+    hl = 0
+    for a in acts.values():
+        if a["tier"] == "v":
+            hl += len([d for d in a.get("hp_days", []) if d >= W0]) + len([it for it in a["items"] if it["ch"] in ("social", "email") and it["date"] >= W0])
+    subs = next((f.get("_recipients") for d, st, f in sorted(issues, reverse=True) if f.get("_recipients")), 0)
+    NET.update({"views": int(r.get("views", 0)), "pct": r.get("change_pct"), "vip_hl": hl, "subs": subs})
+    print("network", NET)
     for uid, m in V.items():
         if want and uid not in want:
             continue
-        a = activity(m, hp, issues, posts, rot, banners)
+        a = acts[uid]
         json.dump(a, open(os.path.join(HERE, "data", uid + ".json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
         body = page(a)
         for bad in ("—", "–", "&mdash;", "&ndash;"):
@@ -504,12 +611,15 @@ def main():
         open(os.path.join(HERE, "_local", uid + ".html"), "w", encoding="utf-8").write(SHELL % (css, body, js))
         if LIVE:   # signed-in dashboard fragment, loaded by p3.js on /account/home for members in its MD list
             os.makedirs(LIVE_DIR, exist_ok=True)
-            open(os.path.join(LIVE_DIR, "%s-%s.html" % (uid, token(uid))), "w", encoding="utf-8").write(body)
-            print("live", uid, "token", token(uid))
+            os.makedirs(os.path.join(LIVE_DIR, "m"), exist_ok=True)
+            open(os.path.join(LIVE_DIR, "m", "%s.html" % uid), "w", encoding="utf-8").write(body)
         s = a["months"].get(TODAY.strftime("%Y-%m"), {})
         print(uid, m["short"], "| items", len(a["items"]), "| upcoming", len(a["upcoming"]), "| this month", s)
 
+    bb = page_basic()
+    open(os.path.join(HERE, "_local", "basic.html"), "w", encoding="utf-8").write(SHELL % (css, bb, js))
     if LIVE:
+        open(os.path.join(LIVE_DIR, "basic.html"), "w", encoding="utf-8").write(bb)
         import shutil
         shutil.copy(os.path.join(HERE, "dash.css"), os.path.join(LIVE_DIR, "md.css"))
         shutil.copy(os.path.join(HERE, "dash.js"), os.path.join(LIVE_DIR, "md.js"))
