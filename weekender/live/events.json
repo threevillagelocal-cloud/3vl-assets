@@ -1,21 +1,21 @@
 {
-"updated": "2026-11-14T19:02:39.050909+00:00",
+"updated": "2026-11-14T20:00:59.295631+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 194,
-"Emma S. Clark Library": 229,
+"Emma S. Clark Library": 228,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 42,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 5,
 "Staller Center for the Arts": 138,
 "Theatre Three": 69,
-"Gallery North": 15,
+"Gallery North": 14,
 "Reboli Center": 20,
-"Sweetbriar Nature Center": 30,
+"Sweetbriar Nature Center": 29,
 "Historical Society of Greater Port Jefferson": 0,
 "Madiran The Wine Bar live music": 33,
 "Local business Instagram posts": 12
@@ -210,25 +210,6 @@
 "page": ""
 },
 {
-"id": "sweetbriar-6a8c8e7fc3ef112e20f0706d",
-"title": "Superheroes of the Sky 11/14",
-"start": "2026-11-14T11:00:00",
-"end": "2026-11-14T12:00:00",
-"allday": false,
-"venue": "Sweetbriar Nature Center",
-"addr": "62 Eckernkamp Drive, Smithtown, NY, 11787",
-"url": "https://www.sweetbriarnc.org/new-events/cfxl65hm85sjc7s-whfre-s2jsc-8dbcb-sz92m",
-"desc": "Take a walking tour with Jim while he feeds our Birds of Prey and tells you about their incredible adaptations that help them survive in the wild. You’ll be seeing and learning about our Bald Eagle, our Turkey Vultures, our owls, hawks and many more. How much:",
-"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1605632570996-HV7DY01T40I45GC2W5XW/EagleSuperhero.jpg",
-"src": "sweetbriar",
-"tags": [
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-heart",
 "title": "Enduring Heart Lecture & Gallery Walk",
 "start": "2026-11-14T13:00",
@@ -270,23 +251,6 @@
 "page": "https://www.threevillagelocal.com/events/celebrate-the-season-artists-reception",
 "pu": "",
 "rank": 4
-},
-{
-"id": "emmaclark-healthy-and-unhealthy-relationships-middle-schoolers-63999",
-"title": "Healthy and Unhealthy Relationships (Middle Schoolers)",
-"start": "2026-11-14T14:00:00",
-"end": "2026-11-14T15:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/healthy-and-unhealthy-relationships-middle-schoolers-63999",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/healthy-and-unhealthy-relationships-middle-schoolers"
 },
 {
 "id": "emmaclark-homework-heroes-grades-k-5-62047",
@@ -344,8 +308,8 @@
 {
 "id": "gallerynorth-70303",
 "title": "ArTalk",
-"start": "2026-11-14T18:00:00",
-"end": "2026-11-14T20:00:00",
+"start": "2026-11-14T17:00:00",
+"end": "2026-11-14T19:00:00",
 "allday": false,
 "venue": "Gallery North",
 "addr": "90 N Country Rd, Setauket, NY 11733",
