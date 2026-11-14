@@ -1,31 +1,7 @@
 {
-"18116585051585331": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-15T13:32:10+0000"
-},
-"18446451835130348": {
-"special": true,
-"title": "Happy Hour at Castaways",
-"when": "Every Thursday · 12-6 PM",
-"desc": "Cold drinks and crispy bites at the inside bar, high tops, or lounge.",
-"expires": "2026-10-22",
-"_ts": "2026-10-15T13:01:33+0000"
-},
 "18118179379992698": {
 "special": false,
 "_ts": "2026-10-15T18:52:44+0000"
-},
-"18104634956631034": {
-"special": true,
-"title": "Butternut Squash Soup & Sauerbraten",
-"when": "Today, Oct. 15",
-"desc": "Butternut squash soup and sauerbraten available today at Tara Inn.",
-"expires": "2026-10-15",
-"_ts": "2026-10-15T15:59:45+0000"
 },
 "18114059207143070": {
 "special": false,
@@ -2986,5 +2962,29 @@
 "desc": "Free heroes and chips 4-6 PM, live music at 7 PM. New Strawberry Quick IPA and Peach Sour Ale on tap.",
 "expires": "2026-11-26",
 "_ts": "2026-11-13T20:47:30+0000"
+},
+"18084837473711035": {
+"special": false,
+"title": "Santa's Brunch Experience",
+"when": "Date TBA",
+"desc": "Photos with Santa, Letters to Santa station, and reindeer food. Reservation required.",
+"expires": "2026-11-14",
+"_ts": "2026-11-14T14:44:21+0000"
+},
+"18081321626730067": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-14T15:31:29+0000"
+},
+"18150187183631547": {
+"special": false,
+"title": "Vote for Best Lobster Roll",
+"when": "By December 15",
+"desc": "Cast your vote for Castaways' lobster roll in the 2027 Best of Long Island Awards.",
+"expires": "2026-12-15",
+"_ts": "2026-11-14T16:01:15+0000"
 }
 }

@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-14T16:01:11.660932+00:00",
+"updated": "2026-11-14T16:03:04.751918+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
@@ -1984,25 +1984,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18134508478823617.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/schnitzels-butterfly-cut-breaded-veal-chop",
-"profile": "https://www.threevillagelocal.com/schnitzels",
-"label": "Special"
-},
-{
-"id": "18107031662636808",
-"biz": "Schnitzels",
-"ig": "eatschnitzels",
-"town": "Stony Brook",
-"category": "Restaurant/Gastropub",
-"member": false,
-"title": "Thanksgiving French Toast Brunch",
-"when": "Fri–Sun, 9 AM–1 PM",
-"desc": "Butternut squash cream cheese french toast with pecans and maple syrup on the November brunch menu.",
-"expires": "2026-11-30",
-"posted": "2026-11-07T13:30:55+0000",
-"url": "https://www.instagram.com/reel/DfcSw0vD2tP/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18107031662636808.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-thanksgiving-french-toast-brunch",
 "profile": "https://www.threevillagelocal.com/schnitzels",
 "label": "Special"
 },
