@@ -1,0 +1,52 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500;600;700;800&display=block" rel="stylesheet">
+<style>
+:root{--navy:#0b1f4b;--blue:#1d5fd1;--sky:#2b7bff;--gold:#ffc53d}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:Inter,sans-serif;background:linear-gradient(165deg,#ffffff 0%,#f2f7ff 45%,#e6f0ff 100%);position:relative;color:var(--navy)}
+.streak{position:absolute;height:3px;border-radius:3px;background:linear-gradient(90deg,transparent,rgba(43,123,255,.55),transparent);transform:rotate(-14deg)}
+.s1{width:620px;top:300px;right:-160px}.s2{width:420px;top:345px;right:-80px;opacity:.6}.s3{width:520px;top:1010px;left:-140px;opacity:.5}
+.glow{position:absolute;width:760px;height:760px;right:-260px;top:420px;border-radius:50%;background:radial-gradient(closest-side,rgba(43,123,255,.18),transparent)}
+.top{position:absolute;left:64px;right:64px;top:54px;display:flex;align-items:center;justify-content:space-between}
+.top img{height:92px;width:auto}
+.new{font-weight:800;font-size:22px;letter-spacing:.18em;color:#fff;background:var(--navy);padding:12px 22px;border-radius:99px;display:flex;align-items:center;gap:10px}
+.new i{width:12px;height:12px;border-radius:50%;background:#46e39a;box-shadow:0 0 0 5px rgba(70,227,154,.25)}
+h1{position:absolute;left:64px;top:176px;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:116px;line-height:.98;letter-spacing:.005em;text-transform:uppercase;color:var(--navy)}
+h1 span{color:var(--sky)}
+.pill{position:absolute;left:64px;top:648px;display:inline-flex;align-items:center;gap:12px;background:var(--gold);color:var(--navy);font-weight:800;font-size:30px;padding:14px 28px;border-radius:99px;box-shadow:0 14px 30px -14px rgba(160,110,0,.6)}
+.pill svg{width:28px;height:28px}
+.shot{position:absolute;left:150px;top:752px;width:1000px;border-radius:20px;background:#fff;box-shadow:0 50px 90px -40px rgba(9,30,66,.55),0 0 0 1px rgba(15,42,82,.08);overflow:hidden;transform:rotate(-2.5deg)}
+.bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#eef2f7;border-bottom:1px solid #e1e8f2}
+.bar i{width:12px;height:12px;border-radius:50%;background:#d3dbe6}.bar i:nth-child(1){background:#ff7b6b}.bar i:nth-child(2){background:#ffc85a}.bar i:nth-child(3){background:#4bd18a}
+.bar span{margin-left:12px;flex:1;padding:6px 14px;border-radius:99px;background:#fff;font-size:15px;color:#7a8696;font-weight:600}
+.shot .vp{height:300px;overflow:hidden}.shot .vp img{width:100%;display:block}
+.chat{position:absolute;left:40px;top:955px;width:340px;background:#fff;border-radius:22px;padding:18px 20px;box-shadow:0 30px 60px -28px rgba(9,30,66,.5),0 0 0 2px var(--sky)}
+.chat .h{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;margin-bottom:10px}
+.chat .h b{width:34px;height:34px;border-radius:50%;background:var(--sky);display:grid;place-items:center;color:#fff;font-size:16px}
+.chat .h small{display:block;font-weight:600;font-size:13px;color:#22a35a}
+.chat p{background:#eef3fb;border-radius:14px 14px 14px 4px;padding:10px 13px;font-size:16px;line-height:1.4;font-weight:600;color:#1b2b44}
+.lead{position:absolute;right:52px;top:640px;transform:rotate(2deg);display:flex;align-items:center;gap:12px;background:var(--navy);color:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 24px 46px -22px rgba(9,30,66,.7)}
+.lead em{font-style:normal;width:40px;height:40px;border-radius:12px;background:#46e39a;display:grid;place-items:center;font-size:22px}
+.lead b{display:block;font-size:18px}.lead small{font-size:15px;color:#c9d6f0;font-weight:600}
+.logos{position:absolute;left:64px;right:64px;top:1118px;background:#fff;border-radius:24px;padding:18px 26px;box-shadow:0 18px 40px -26px rgba(9,30,66,.45),0 0 0 1px #e3e9f2;display:flex;align-items:center;gap:22px}
+.logos p{font-weight:800;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:#5b6b80;line-height:1.25;width:150px;flex:none}
+.logos div{display:flex;align-items:center;justify-content:space-between;flex:1}
+.logos img{height:46px;width:auto;max-width:56px;object-fit:contain}
+.cta{position:absolute;left:64px;right:64px;bottom:44px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.cta p{font-size:27px;font-weight:700;line-height:1.3;color:var(--navy)}
+.cta p b{color:var(--blue)}
+.cta span{flex:none;background:var(--blue);color:#fff;font-weight:800;font-size:24px;padding:16px 26px;border-radius:99px;box-shadow:0 14px 28px -12px rgba(29,95,209,.8)}
+</style></head><body>
+<i class="streak s1"></i><i class="streak s2"></i><i class="streak s3"></i><i class="glow"></i>
+<div class="top"><img src="file:///C:/Users/Matt/Desktop/three%20village%20local%202/logo/group%20hd%20clear.png" alt=""><span class="new"><i></i>NEW ARTICLE</span></div>
+<h1>5 Ways AI<br>can help your<br>business<br><span>this week</span></h1>
+<div class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="#0b1f4b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>No tech skills needed</div>
+<div class="shot"><div class="bar"><i></i><i></i><i></i><span>app.yourbusiness.com</span></div><div class="vp"><img src="file:///C:/Users/Matt/Documents/3vl-share/ai-5-ways/img/dash-mgr-1600.webp" alt=""></div></div>
+<div class="chat"><div class="h"><b>&#10022;</b><span>AI chatbot<small>&#9679; Replies instantly, 24/7</small></span></div><p>Yes, we have openings Saturday! Want me to book you in?</p></div>
+<div class="lead"><em>&#128241;</em><span><b>New lead texted to you</b><small>10:42 PM, Sunday</small></span></div>
+<div class="logos"><p>Works with your tools</p><div>
+<img src="file:///C:/Users/Matt/Documents/3vl-share/ai-5-ways/img/logos/chatgpt.svg"><img src="file:///C:/Users/Matt/Documents/3vl-share/ai-5-ways/img/logos/gemini.svg"><img src="file:///C:/Users/Matt/Documents/3vl-share/ai-5-ways/img/logos/google.svg"><img src="file:///C:/Users/Matt/Documents/3vl-share/ai-5-ways/img/logos/quickbooks.svg"><img src="file:///C:/Users/Matt/Documents/3vl-share/ai-5-ways/img/logos/square.svg"><img src="file:///C:/Users/Matt/Documents/3vl-share/ai-5-ways/img/logos/shopify.svg"><img src="file:///C:/Users/Matt/Documents/3vl-share/ai-5-ways/img/logos/mailchimp.svg"><img src="file:///C:/Users/Matt/Documents/3vl-share/ai-5-ways/img/logos/instagram.svg">
+</div></div>
+<div class="cta"><p>Read the new article on <b>ThreeVillageLocal.com</b><br>or our free mobile app</p><span>Link in bio</span></div>
+</body></html>
