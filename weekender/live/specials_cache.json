@@ -95,6 +95,22 @@
 "crazybeansrestaurant": [],
 "eatschnitzels": [
 {
+"id": "18120385831810538",
+"biz": "Schnitzels",
+"ig": "eatschnitzels",
+"town": "Stony Brook",
+"category": "Restaurant/Gastropub",
+"member": false,
+"title": "Scrambled Harvest Special",
+"when": "Fri–Sun · 9 AM–1 PM",
+"desc": "Fluffy scrambled eggs with ham, scallions, mushrooms, tomatoes, potatoes, and cheddar. Choose your toast.",
+"expires": "2026-11-17",
+"posted": "2026-11-15T13:30:50+0000",
+"url": "https://www.instagram.com/p/Dfw5JbwHCpD/",
+"img": "",
+"inset": "ig/p18120385831810538.jpg"
+},
+{
 "id": "18134508478823617",
 "biz": "Schnitzels",
 "ig": "eatschnitzels",
@@ -465,7 +481,24 @@
 "inset": "ig/p17963374023211130.jpg"
 }
 ],
-"castawayspj": [],
+"castawayspj": [
+{
+"id": "18108793784212492",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Sunday Brunch at Castaways",
+"when": "Every Sunday · 12-4 PM",
+"desc": "Breakfast burritos, burgers with fried eggs, and brunch favorites in Port Jefferson.",
+"expires": "2026-11-29",
+"posted": "2026-11-15T15:00:46+0000",
+"url": "https://www.instagram.com/p/DfxDbE4ChMD/",
+"img": "",
+"inset": "ig/p18108793784212492.jpg"
+}
+],
 "salsasalsa_portjeff": [],
 "tigerlilycafe": [],
 "thepie216": [],
