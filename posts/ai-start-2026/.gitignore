@@ -6,3 +6,4 @@ post-local.html
 share/out/
 __pycache__/
 tools/
+src-dash/*.png
