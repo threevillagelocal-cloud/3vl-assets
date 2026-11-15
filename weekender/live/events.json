@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-15T20:00:57.066959+00:00",
+"updated": "2026-11-15T20:03:32.085664+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
@@ -12,7 +12,7 @@
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 4,
 "Staller Center for the Arts": 138,
-"Theatre Three": 68,
+"Theatre Three": 67,
 "Gallery North": 13,
 "Reboli Center": 18,
 "Sweetbriar Nature Center": 29,
@@ -399,26 +399,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/marley-bone"
-},
-{
-"id": "theatre3-9243",
-"title": "A Christmas Carol",
-"start": "2026-11-15T15:00:00",
-"end": "2026-11-15T15:00:00",
-"allday": false,
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson, NY 11777",
-"url": "https://theatrethree.getmytix.net/tickets#922/A-Christmas-Carol",
-"desc": "“I will honor Christmas in my heart…” Celebrate the season with Long Island’s own holiday tradition and BroadwayWorld.com winner for Best Play. Follow the miser Ebenezer Scrooge on a journey that teaches him the meaning of Christmas - past, present, and future",
-"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_922_A%20Christmas%20Carol%201600x1000.png",
-"src": "theatre3",
-"tags": [
-"music",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-63807",
