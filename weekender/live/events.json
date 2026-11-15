@@ -1,20 +1,20 @@
 {
-"updated": "2026-11-15T18:00:49.958918+00:00",
+"updated": "2026-11-15T20:00:57.066959+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 194,
-"Emma S. Clark Library": 224,
+"Village of Port Jefferson": 193,
+"Emma S. Clark Library": 223,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 42,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 4,
 "Staller Center for the Arts": 138,
 "Theatre Three": 68,
-"Gallery North": 14,
-"Reboli Center": 19,
+"Gallery North": 13,
+"Reboli Center": 18,
 "Sweetbriar Nature Center": 29,
 "Historical Society of Greater Port Jefferson": 0,
 "Madiran The Wine Bar live music": 33,
@@ -379,26 +379,6 @@
 "status": "Canceled",
 "fb": 0,
 "page": ""
-},
-{
-"id": "emmaclark-dearest-friend-staged-reading-based-correspondence-abigail-and-john-ad",
-"title": "“Dearest Friend”: A Staged Reading Based on the Correspondence of Abigail and John Adams",
-"start": "2026-11-15T14:00:00",
-"end": "2026-11-15T15:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/dearest-friend-staged-reading-based-correspondence-abigail-and-john-adams-61305",
-"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Join us for this one-woman theatrical reading drawn from the letters of Abigail & John Adams. Discover a pivotal American partnership shaped by love, principle, and the struggle to",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/defaultcrop.jpg",
-"src": "emmaclark",
-"tags": [
-"history",
-"music"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/dearest-friend-a-staged-reading-based-on-the-correspondence-of-abigail-and-john-adams"
 },
 {
 "id": "limehof-202611151500-marley-bone",
