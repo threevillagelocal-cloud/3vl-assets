@@ -1,6 +1,6 @@
 {
-"last_run": "2026-11-14T13:01:36.922678+00:00",
-"cursor": 3,
+"last_run": "2026-11-15T12:34:48.966782+00:00",
+"cursor": 73,
 "accounts": 316,
 "posts": {
 "18481707613112188": {
@@ -6291,6 +6291,488 @@
 "link": "https://www.instagram.com/p/DfqAuZTppku/",
 "caption": "Sunday, December 13, the annual Electric Light Parade will be coming through Setauket, and there is no better viewing party than our annual PROSECCO AND PARADE PARTY!  We’ve been hosting this event since the wine bar’s very first Christmas season, and it’s always a wonderful time.  Reservations are a must, and tables are booking up already.  Regular dinner menu, complimentary glass of Prosecco for all dinner guests, and an opportunity to view the parade from the wine bar’s big front windows overlooking the floats and performers.  Please join our staff for our favorite tradition. ❤️🥂🍾🎄✨",
 "img": "ig/p18109523918207974.jpg"
+},
+"18025672892941139": {
+"ts": "2026-11-12T21:15:45+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "This is a menu item advertisement with regular business hours listed, not an announcement of a specific upcoming event."
+}
+},
+"18141024433653000": {
+"ts": "2026-11-13T15:40:32+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "A promotional post encouraging customers to visit the restaurant for lunch or dinner, featuring apple crumb pie as a menu item. No specific event date or time is announced."
+}
+},
+"18659513545008456": {
+"ts": "2026-11-14T15:00:34+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Saturday Night Dinner at RUVO",
+"date": "2026-11-16",
+"start": "",
+"end": "",
+"place": "RUVO Kitchen & Wine Bar, GREENLAWN | PORT JEFF",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Dinner with good food and handcrafted cocktails. Reservations encouraged."
+},
+"acct": {
+"name": "RUVO Kitchen & Wine Bar",
+"ig": "ruvorestaurant",
+"town": "Port Jefferson",
+"cat": "Restaurant/Wine Bar",
+"food": true,
+"addr": "105 Wynn Ln, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/ruvo-restaurant",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dfuenw5AYpJ/",
+"caption": "Your weekend plans are calling… and dinner could look a little something like this. 🍝🍸\n\nGood food, handcrafted cocktails, and a table waiting for you.\n\nMake it a Saturday night at RUVO. Reservations encouraged!\n\nGREENLAWN | PORT JEFF",
+"img": "ig/p18659513545008456.jpg"
+},
+"18030186059700958": {
+"ts": "2026-11-14T16:33:34+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Saturday and Sunday Brunch with Bottomless Mimosas",
+"date": "",
+"start": "10:00",
+"end": "14:30",
+"place": "Nantuckets, Port Jefferson",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Join us for brunch every Saturday and Sunday from 10 am-2:30 with bottomless mimosas. No reservations needed, no wait."
+},
+"acct": {
+"name": "Nantuckets",
+"ig": "nantucketspjefferson",
+"town": "Port Jefferson",
+"cat": "Restaurant (Seafood)",
+"food": true,
+"addr": "9 Traders Cove, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/nantuckets",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfupMaTl0Q6/",
+"caption": "Join us for brunch every Saturday and Sunday (10 am-2:30)! \nBottomless Mimosas!! No reservations needed. NO WAIT! #brunch#mimosas#bloodymary#coffee",
+"img": "ig/p18030186059700958.jpg"
+},
+"18092044019697868": {
+"ts": "2026-11-13T14:00:50+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "New Year's Eve Dinner at Black Pearl",
+"date": "2026-12-31",
+"start": "17:00",
+"end": "01:00",
+"place": "Black Pearl Seafood Chophouse, Port Jefferson",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Special three-course prix fixe dinner with live DJ entertainment and complimentary champagne. Two seating times available: 5-8 PM or 9 PM-1 AM."
+},
+"acct": {
+"name": "Black Pearl Seafood Chophouse",
+"ig": "blackpearlportjeff",
+"town": "Port Jefferson",
+"cat": "Restaurant",
+"food": true,
+"addr": "25 E Broadway, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/black-pearl-seafood-chophouse",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dfry-rXipNT/",
+"caption": "Make your New Year's Eve dinner plans at Black Pearl! 🥂 \n\nJoin us Thursday, December 31, for a special three-course prix fixe dinner in our main dining room. \n\nEnjoy a great meal, live DJ entertainment and a complimentary glass of champagne for each guest as we welcome 2027.\n\nChoose from two seating times: 5–8 PM or 9 PM–1 AM.\n\nAdults: $119 | Children ages 3–10: $39\nPlus tax and gratuity.\n\nReservations are required. Call 631-676-7025 to reserve your table and spend New Year's Eve with us!",
+"img": "ig/p18092044019697868.jpg"
+},
+"18000954143826041": {
+"ts": "2026-11-12T17:00:58+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Restaurant Week All Year Long Prix Fixe Menu",
+"date": "",
+"start": "17:00",
+"end": "",
+"place": "Black Pearl Seafood Chophouse, Port Jefferson",
+"at_business": true,
+"date_stated": false,
+"time_stated": true,
+"desc": "Three-course prix fixe menu for $48 available through December 30. Available for dine-in only, starting at 5 PM, plus tax and gratuity. Excludes Thanksgiving, Christmas Eve and Christmas Day."
+},
+"acct": {
+"name": "Black Pearl Seafood Chophouse",
+"ig": "blackpearlportjeff",
+"town": "Port Jefferson",
+"cat": "Restaurant",
+"food": true,
+"addr": "25 E Broadway, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/black-pearl-seafood-chophouse",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dfpiy5LCg3v/",
+"caption": "Enjoy a beautiful fall evening in Port Jefferson with Restaurant Week All Year Long at Black Pearl! 🍂 \n\nOur $48 three-course prix fixe menu is available through December 30, giving you another reason to plan a night out, enjoy a great meal and take in the waterfront village.\n\nAvailable for dine-in only, starting at 5 PM. Plus tax and gratuity. Excludes Thanksgiving, Christmas Eve and Christmas Day.\n\nMake your dinner plans and join us at Black Pearl!",
+"img": "ig/p18000954143826041.jpg"
+},
+"18150187183631547": {
+"ts": "2026-11-14T16:01:15+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "This post promotes a lobster roll menu item and encourages voting in the 2027 Best of Long Island Awards, but does not announce a specific event the public can attend."
+}
+},
+"18471961021137109": {
+"ts": "2026-11-12T13:41:06+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Dinner at The Pie of Port Jeff",
+"date": "2026-11-15",
+"start": "",
+"end": "",
+"place": "",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Join for dinner to experience the craft and coal-fired oven pizza making. See you tonight."
+},
+"acct": {
+"name": "The Pie of Port Jeff",
+"ig": "thepie216",
+"town": "Port Jefferson",
+"cat": "Pizza",
+"food": true,
+"addr": "216 Main Street, Port Jefferson, NY 11777",
+"page": "https://www.threevillagelocal.com/the-pie-of-port-jeff",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/DfpL0vzPi_V/",
+"caption": "What we see: the craft, the coal-fired oven, and all the details that go into making the perfect pie.\nWhat you see: a pretty great reason to join us for dinner later. \n\n🍕😉 See you tonight!",
+"img": "ig/p18471961021137109.jpg"
+},
+"18078705578463516": {
+"ts": "2026-11-14T06:24:42+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "A reflection on Hart Orthopedics' three-year journey from startup to established practice with an MRI suite, thanking past and present supporters."
+}
+},
+"18122047301470616": {
+"ts": "2026-11-11T15:30:34+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Shoulder Pain Educational Discussion with Dr. Swanson",
+"date": "2026-11-17",
+"start": "12:15",
+"end": "",
+"place": "Patchogue Family YMCA | 255 W. Main Street, Patchogue",
+"at_business": false,
+"date_stated": true,
+"time_stated": true,
+"desc": "Dr. Swanson and Jaclyn Rauchfuss will discuss shoulder pain causes and treatment options, including the role of physical therapy in recovery. Light lunch provided for registered attendees."
+},
+"acct": {
+"name": "Orthopedic Associates of LI",
+"ig": "orthopedicassociatesli",
+"town": "",
+"cat": "3VL member",
+"food": false,
+"addr": "6 Technology Dr, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/orthopedic-associates-of-long-island",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dfmzp3al7tD/",
+"caption": "Join Dr. Swanson, board-certified orthopedic surgeon with Orthopedic Associates of Long Island, for an informative discussion on shoulder pain, common causes, and the treatment options available to help patients find relief and improve mobility.\n\nAlongside Jaclyn Rauchfuss, PTA, of Professional Care Physical Therapy & Rehabilitation, Dr. Swanson will discuss how shoulder conditions are evaluated and treated, the role of physical therapy in recovery, and how the right approach can help patients return to the activities they enjoy.\n\n📅 Tuesday, November 17 at 12:15 PM\n📍 Patchogue Family YMCA | 25",
+"img": "ig/p18122047301470616.jpg"
+},
+"18032251811954778": {
+"ts": "2026-11-13T17:27:47+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Open House - 2439 Union Blvd 3A",
+"date": "2026-11-14",
+"start": "11:00",
+"end": "13:00",
+"place": "2439 Union Blvd 3A Islip NY 11751",
+"at_business": false,
+"date_stated": true,
+"time_stated": true,
+"desc": "Open house for a first floor co-op in the Forest Green Community. The unit features 1 bedroom, 1 bathroom, hardwood floors, and community amenities including a pool and dog run."
+},
+"acct": {
+"name": "Team Passamenti",
+"ig": "longislandrealestatecouple",
+"town": "",
+"cat": "3VL member",
+"food": false,
+"addr": "764 NY-25A, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/team-passamenti-at-better-homes-and-gardens-real-estate-realty-connect",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfsKrQwjZu5/",
+"caption": "🔔PRICE IMPROVEMENT\n📍2439 Union Blvd 3A Islip NY 11751\n💲Price $225,000\n💰Monthly Maintenance $1,320\n🛏️ 1 Bedroom 🛁 1 Bathrooms\n📚 Islip School District\n🏠Open House 11am-1pm 11/14\n\nWhy Rent When You Can Own? This First Floor Co-op Located in the Forest Green Community Has Been Impeccably Maintained! Step Inside to a Spacious Entrance Foyer Featuring Two Generously Sized Closets, Opening to the Open Concept Dining Area and Living Room with Gleaming Hardwood Floors. The Kitchen Features Wood Cabinetry and Opens to the Main Living Space, Perfect for Everyday Living and Entertaining. A Well-Sized Bedr",
+"img": "ig/p18032251811954778.jpg"
+},
+"18190786465414220": {
+"ts": "2026-11-11T18:35:58+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Open House at 9 Sussex Lane, Lake Grove",
+"date": "2026-11-14",
+"start": "11:00",
+"end": "13:00",
+"place": "9 Sussex Lane, Lake Grove, New York 11755",
+"at_business": false,
+"date_stated": true,
+"time_stated": true,
+"desc": "Open house for a 4 bedroom, 2.5 bathroom home in Brittany Hills Development featuring a brand new kitchen, updated bathrooms, and recently renovated exterior."
+},
+"acct": {
+"name": "Team Passamenti",
+"ig": "longislandrealestatecouple",
+"town": "",
+"cat": "3VL member",
+"food": false,
+"addr": "764 NY-25A, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/team-passamenti-at-better-homes-and-gardens-real-estate-realty-connect",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfnI410DdvU/",
+"caption": "🔔PRICE IMPROVEMENT\n📍9 Sussex Lane, Lake Grove, New York 11755\n💲Price $889,000\n 💰Taxes $13,019.33 | Village of Lake Grove $1,399.02\n🛏️ 4 Bedroom 🛁 2.5 Bathrooms\n📚 Sachem School District\n🏠Open House 11am-1pm 11/14\n🔥Seller Incentive to Buyer 🔥\n💰 $10,000 Buyer Concession INCREASED TO $15,000 for buyers able to close within 45 days!\n\nLocated in the Sought After Brittany Hills Development in the Village of Lake Grove- Move Right in and Unpack! Enter Along the Newly Sealed Driveway with New Paver Apron to a Welcoming Front Porch, Perfect for Enjoying Your Morning Coffee. Step Inside to the Entrance F",
+"img": "ig/p18190786465414220.jpg"
+},
+"18005056691806234": {
+"ts": "2026-11-13T17:05:10+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Family History Research Workshop",
+"date": "2026-11-19",
+"start": "18:30",
+"end": "20:30",
+"place": "Emma S. Clark Memorial Library",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Learn how to use historical records to dig deeper into your family history search. Taught by Genealogist Eileen Swanberg. Open to all Suffolk County residents."
+},
+"acct": {
+"name": "Emma S. Clark Memorial Library",
+"ig": "emmaclarklibrary",
+"town": "",
+"cat": "3VL member",
+"food": false,
+"addr": "120 Main St, Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/emma-s-clark-memorial-library",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfsIFjFFIEU/",
+"caption": "🌳 Take your family research to the next level! Discover how to use historical records to dig deeper into your family history search. 🔍\n*\nYou should have some basic familiarity with typical records such as censuses and newspapers. \n*\nTaught by Genealogist Eileen Swanberg.\n*\nThursday, November 19, 6:30 - 8:30pm. Open to all Suffolk County residents. To reserve your spot, visit the link in our bio and scroll down to \"Register for Programs.\"\n*\n#FamilyTree #Genealogy #FamilyHistory",
+"img": "ig/p18005056691806234.jpg"
+},
+"18033558461683857": {
+"ts": "2026-11-13T00:35:05+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": ""
+}
+},
+"18121766384048014": {
+"ts": "2026-11-12T20:05:04+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": ""
+}
+},
+"18147353410596525": {
+"ts": "2026-11-11T19:12:36+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Harbor Country Day School Open House",
+"date": "2026-11-14",
+"start": "",
+"end": "",
+"place": "Harbor Country Day School",
+"at_business": false,
+"date_stated": true,
+"time_stated": false,
+"desc": "Open house at Harbor Country Day School, an independent school offering preschool through eighth grade education with a dynamic curriculum focused on connection and character building."
+},
+"acct": {
+"name": "Stroll Head of the Harbor",
+"ig": "strollheadoftheharbor",
+"town": "",
+"cat": "3VL member",
+"food": false,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfnNETIl_pA/",
+"caption": "Looking for an inspiring educational environment where children thrive? harborcountrydayschool offers an exceptional learning experience anchored in connection and ready for the world. 🏫 \n\nDedicated faculty members guide students from preschool through eighth grade with a dynamic curriculum in a premier facility. Their mission-driven independent education nurtures curiosity, builds character, and fosters a lifelong love for learning right here in our community. 📚 \n\nDiscover the difference a nurturing and academically rich independent school can make for your child. 🎒\n\n🗓️ Mark your calendar: Op",
+"img": "ig/p18147353410596525.jpg"
+},
+"17911382160327393": {
+"ts": "2026-11-13T21:03:27+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Charcuterie Board & Wine Night",
+"date": "2026-11-15",
+"start": "",
+"end": "",
+"place": "Enology Wine Bar & Bistro, Saint James",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "Cured meats and cheeses chosen by Chef Franco, with almonds, apricots and cornichons. Friday starts with a board for the table and a bottle to share."
+},
+"acct": {
+"name": "Enology Wine Bar & Bistro",
+"ig": "enologywinebar",
+"town": "St. James",
+"cat": "Wine Bar",
+"food": true,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfsjUN8JSyE/",
+"caption": "Cured meats and cheeses chosen by Chef Franco, with almonds, apricots and cornichons. Friday starts with a board for the table and a bottle to share.\n\nJoin us tonight in Saint James. Book your table at the link in our bio.\n\n#enologywinebar #saintjamesny #longislandeats #charcuterie",
+"img": "ig/p17911382160327393.jpg"
+},
+"18150491614566252": {
+"ts": "2026-11-12T21:02:36+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Spritz Evening at Enology Wine Bar & Bistro",
+"date": "2026-11-15",
+"start": "",
+"end": "",
+"place": "Enology Wine Bar & Bistro, Saint James",
+"at_business": true,
+"date_stated": true,
+"time_stated": false,
+"desc": "A spritz to start the evening, bright, bubbly and poured to order at the bar. Pull up a seat and let the week slow down."
+},
+"acct": {
+"name": "Enology Wine Bar & Bistro",
+"ig": "enologywinebar",
+"town": "St. James",
+"cat": "Wine Bar",
+"food": true,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dfp-bP5HyAb/",
+"caption": "A spritz to start the evening, bright, bubbly and poured to order at our bar. Pull up a seat and let the week slow down.\n\nJoin us tonight in Saint James. Book your table at the link in our bio.\n\n#enologywinebar #saintjamesny #longislandeats #spritz",
+"img": "ig/p18150491614566252.jpg"
+},
+"18120190153794098": {
+"ts": "2026-11-14T03:13:26+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Three Village Electric Holiday Parade",
+"date": "2026-12-13",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": true,
+"time_stated": false,
+"desc": "Decorate a float or vehicle with lights, walk with your organization, or enjoy the show as a spectator. Registration is free."
+},
+"acct": {
+"name": "Three Village Rotary",
+"ig": "three_village_rotary_ny",
+"town": "Setauket",
+"cat": "Community group",
+"food": false,
+"addr": "",
+"page": ""
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DftNsoYoXHt/",
+"caption": "What a magical night! ✨\nHuge thank you to everyone who came out to Light Up Main Street and helped us kick off the holiday season.\nSpecial thanks to our incredible hosts at Culpers and everyone who supports the Rotary’s mission to make Main Street shine bright this year. 💫\nThe holiday fun is just beginning! Join us Sunday, December 13 for the Three Village Electric Holiday Parade. 🎄✨\nDecorate a float/vehicle with lights, walk with your organization, or come enjoy the show as a spectator. Registration is free! 💡🚗\n\n🔗 Head over to www.3VHolidayParade.com to sign up or learn how to support as a sp",
+"img": "ig/p18120190153794098.jpg"
 }
 }
 }

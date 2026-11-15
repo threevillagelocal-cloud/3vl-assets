@@ -1,12 +1,4 @@
 {
-"18094045229657335": {
-"special": false,
-"title": "Día de los Muertos Ofrenda",
-"when": "Ongoing",
-"desc": "Community ofrenda honoring loved ones. Bring photos, notes, or keepsakes to share.",
-"expires": "2026-10-16",
-"_ts": "2026-10-16T04:05:42+0000"
-},
 "18111616376166061": {
 "special": false,
 "title": "",
@@ -2926,5 +2918,13 @@
 "desc": "Holiday workshop where you'll create and take home a styled board with new skills.",
 "expires": "2026-11-14",
 "_ts": "2026-11-15T01:10:38+0000"
+},
+"18116547809126086": {
+"special": false,
+"title": "Winter Menu Launch at Tommy's Place",
+"when": "Now",
+"desc": "New winter menu featuring Chipotle Burger, Pesto Salmon, Chicken Pot Pie, and appetizers.",
+"expires": "2026-11-15",
+"_ts": "2026-11-15T01:44:23+0000"
 }
 }

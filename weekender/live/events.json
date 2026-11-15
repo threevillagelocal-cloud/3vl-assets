@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-15T11:30:50.838033+00:00",
+"updated": "2026-11-15T12:37:47.493831+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
@@ -16,7 +16,7 @@
 "Gallery North": 14,
 "Reboli Center": 19,
 "Sweetbriar Nature Center": 29,
-"Historical Society of Greater Port Jefferson": 1,
+"Historical Society of Greater Port Jefferson": 0,
 "Madiran The Wine Bar live music": 33,
 "Local business Instagram posts": 12
 },
@@ -568,6 +568,25 @@
 "status": "",
 "fb": 1,
 "page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-547"
+},
+{
+"id": "social-18122047301470616",
+"title": "Shoulder Pain Educational Discussion with Dr. Swanson",
+"start": "2026-11-17T12:15:00",
+"end": "2026-11-17T12:15:00",
+"allday": false,
+"venue": "Patchogue Family YMCA | 255 W. Main Street, Patchogue",
+"addr": "",
+"url": "https://www.instagram.com/p/Dfmzp3al7tD/",
+"desc": "Dr. Swanson and Jaclyn Rauchfuss will discuss shoulder pain causes and treatment options, including the role of physical therapy in recovery. Light lunch provided for registered attendees.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18122047301470616.jpg",
+"src": "social",
+"tags": [
+"food"
+],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "emmaclark-preschool-storytime-ages-35-5-yrs-63824",
