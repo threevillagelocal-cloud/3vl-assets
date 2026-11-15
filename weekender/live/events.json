@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-14T23:50:18.508778+00:00",
+"updated": "2026-11-15T00:01:02.931407+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
@@ -10,7 +10,7 @@
 "Stony Brook Village Center": 7,
 "Long Island Museum": 42,
 "Ward Melville Heritage Org": 2,
-"LI Music Hall of Fame": 5,
+"LI Music Hall of Fame": 4,
 "Staller Center for the Arts": 138,
 "Theatre Three": 69,
 "Gallery North": 14,
@@ -191,25 +191,6 @@
 "pu": ""
 },
 {
-"id": "social-18006958577794211",
-"title": "2026 Fall Clean-Up",
-"start": "2026-11-14T08:30:00",
-"end": "2026-11-14T12:00:00",
-"allday": false,
-"venue": "Port Jefferson Historical Society",
-"addr": "115 Prospect Street, Port Jefferson, NY 11777",
-"url": "https://www.instagram.com/p/DfoDIfuAaRw/",
-"desc": "Help with dusting, sorting, and lifting at the Mather Museum's Fall Clean-Up. Enjoy a cup of coffee while volunteering to keep the organization in tip-top shape.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18006958577794211.jpg",
-"src": "social",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "cur-heart",
 "title": "Enduring Heart Lecture & Gallery Walk",
 "start": "2026-11-14T13:00",
@@ -251,25 +232,6 @@
 "page": "https://www.threevillagelocal.com/events/celebrate-the-season-artists-reception",
 "pu": "",
 "rank": 4
-},
-{
-"id": "gallerynorth-70303",
-"title": "ArTalk",
-"start": "2026-11-14T17:00:00",
-"end": "2026-11-14T19:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org",
-"desc": "Hear from each of the artists of the current exhibition!",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/70303/v1791909467088/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/artalk"
 },
 {
 "id": "cur-baldwin",
@@ -1704,6 +1666,98 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/live-music-rod-borrie-and-vincent-loccisano"
+},
+{
+"id": "pjchamber-15101",
+"title": "Port Jefferson BID Tree Lighting",
+"start": "2026-11-25T00:00:00",
+"end": "2026-11-25T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/port-jefferson-bid-tree-lighting/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/bid-tree-lighting"
+},
+{
+"id": "emmaclark-social-work-intern-appointments-62275",
+"title": "Social Work Intern Appointments",
+"start": "2026-11-25T10:00:00",
+"end": "2026-11-25T13:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Small Study Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/social-work-intern-appointments-62275",
+"desc": "Throughout the academic year, the Emma S. Clark Library is host to one or more Social Work Interns from the Masters of Social Work Program at Stony Brook University who are training to become Licensed Clinical Social Workers. These individuals will be on-site ",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/Social-Work_Website_0.png",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments-633"
+},
+{
+"id": "emmaclark-crafts-r-fun-diy-gift-pouches-and-bows-grades-k-5-62063",
+"title": "Crafts R Fun: DIY Gift Pouches and Bows (Grades K-5)",
+"start": "2026-11-25T11:00:00",
+"end": "2026-11-25T11:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/crafts-r-fun-diy-gift-pouches-and-bows-grades-k-5-62063",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/crafts-r-fun-diy-gift-pouches-and-bows-grades-k-5"
+},
+{
+"id": "emmaclark-thanksgiving-eve-early-closure-38090",
+"title": "Thanksgiving Eve - Early Closure",
+"start": "2026-11-25T15:00:00",
+"end": "2026-11-25T21:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/thanksgiving-eve-early-closure-38090",
+"desc": "*Early closure - library open until 3pm",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/thanksgiving-eve-early-closure"
+},
+{
+"id": "iloveportjeff-6af757b23944af4c43aed500",
+"title": "Christmas Tree Lighting",
+"start": "2026-11-25T18:00:00",
+"end": "2026-11-25T19:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "11777",
+"url": "https://www.iloveportjeff.com/events/christmas-tree-lighting",
+"desc": "Sip some hot chocolate, roast marshmallows, watch some fun holiday performances and visit with Santa at our 2026 Tree Lighting, happening on November 25!",
+"img": "https://images.squarespace-cdn.com/content/v1/6849b4cd4d4fd13a7a9784e5/1794595240095-QHIZLXS3M4VV8T2C7CJV/f8bb6aea-7c80-42af-b9af-f63a9175cd66+%281%29.jpg",
+"src": "iloveportjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/christmas-tree-lighting"
 }
 ],
 "closings": [],
