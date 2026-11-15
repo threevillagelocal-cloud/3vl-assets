@@ -9,8 +9,9 @@ import build as W
 from build import D, rep, cut, swap, sec
 
 # prices: (setup, monthly) walk-in / member. Owner 11/3: the AI Tune-Up is included in the assistant setup (one package).
-# owner 11/4: one price for everyone, $199 setup (research, training, chat-to-text) + $39/month
-CHAT = {"all": (199, 39), "member": (199, 39)}
+# owner 11/15: final price for everyone, $297 setup + $99/month (same as 3vldigital.com). No annual, no free setups.
+# Current-member intro promo: $50 off setup thru 12/15/2026 (FAQ line only; remove after 12/15)
+CHAT = {"all": (297, 99), "member": (297, 99)}
 
 D.NAME = "3VL Page AI Assistant" if D.LIVE else "3VL Page AI Assistant Preview"
 D.SLUG = "ai-assistant" if D.LIVE else "preview-ai-assistant"
@@ -185,7 +186,7 @@ FAQ = '''<section class="tvs-sec tvs-faq">
     <details><summary>What is AI Website Optimization?</summary><p>It comes with every AI assistant. At setup we make a one-time set of fixes to your website and your Google, Bing and Apple listings so AI tools like ChatGPT can understand your business. You get a before and after report.</p></details>
     <details><summary>Does the chat assistant help AI recommend me?</summary><p>Not on its own: AI search tools don&#39;t read chat bubbles. The assistant turns more of your visitors into leads, and the included AI Website Optimization is what helps AI tools find and understand you. That&#39;s why they come together.</p></details>
     <details><summary>Is there a contract?</summary><p>No. One setup fee covers your assistant and your AI Website Optimization, then it is month to month.</p></details>
-    <details><summary>Do I have to be a Three Village Local member?</summary><p>No. The price is the same for everyone: $199 to set up, then $39 a month.</p></details>
+    <details><summary>Do I have to be a Three Village Local member?</summary><p>No. The price is the same for everyone: $297 to set up, then $99 a month. Member intro offer: current Three Village Local members get $50 off setup through December 15, 2026.</p></details>
   </div>
 </section>'''
 

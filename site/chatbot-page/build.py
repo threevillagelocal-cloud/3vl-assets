@@ -10,7 +10,7 @@ import kit as K
 from kit import ic
 
 # same numbers as the /ai-assistant page (site/ai-assistant-page/build.py CHAT)
-SETUP, MONTHLY = 199, 39
+SETUP, MONTHLY = 297, 99   # owner 11/15 final price, same as 3vldigital.com
 
 # platform logo row, reused from the /ai-assistant page source
 _src = open(os.path.join(HERE, "..", "ai-assistant-page", "build.py"), encoding="utf-8").read()
@@ -160,7 +160,7 @@ FAQ = K.faq([
     ("Can I change what it says?", "Anytime. New prices, specials, hours or services: just email or text us and we update it."),
     ("I&#39;m a law firm, financial advisor or medical office. Is this OK for my industry?", "Yes. We set up your assistant to follow your industry&#39;s rules. It shares general information about your business, never advice, uses the disclaimers you need, only states rates or fees you approve, never asks for sensitive information, and hands anything specific to you. You approve everything before launch."),
     ("Is there a contract?", "No. One setup fee, then it is month to month with no contract."),
-    ("Do I have to be a Three Village Local member?", "No. The price is the same for everyone: $%d to set up, then $%d a month." % (SETUP, MONTHLY)),
+    ("Do I have to be a Three Village Local member?", "No. The price is the same for everyone: $%d to set up, then $%d a month. Member intro offer: current Three Village Local members get $50 off setup through December 15, 2026." % (SETUP, MONTHLY)),
     ("Will the chatbot help AI tools recommend me?", "Not on its own: AI search tools don&#39;t read chat bubbles. The chatbot turns more of your visitors into leads. The AI Website Optimization included at setup is what helps AI tools understand your business."),
 ])
 
