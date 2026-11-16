@@ -374,7 +374,7 @@ def page(a, ctx):
     if has(tier, "timeline") and real:
         act_card = ('<div class="card actc"><div class="card-head"><span class="card-icon amber">%s</span><div><h3>What we did for you</h3><div class="sub">%s</div></div>'
                     '<span class="right"><a class="btn ghost sm" href="#promotions" data-go="promotions">See all %s</a></span></div><ul class="acts">%s</ul>'
-                    % (ic("megaphone"), ("%d promotions since you joined" % lifetime) if lifetime >= 3 else "Newest first", ic("chev"), "".join(row(it) for it in real[:5])) + '<div class="card-foot"><span>Have news, a special or an event?</span><button type="button" class="btn primary sm" data-open="event">%s Send it to us</button></div></div>' % ic("send"))
+                    % (ic("megaphone"), ("%d promotions since you joined" % lifetime) if lifetime >= 3 else "Newest first", ic("chev"), "".join(row(it) for it in real[:10])) + '<div class="card-foot"><span>Have news, a special or an event?</span><button type="button" class="btn primary sm" data-open="event">%s Send it to us</button></div></div>' % ic("send"))
         chans = sorted({it["ch"] for it in real})
         chips = ('<div class="seg" role="group" aria-label="Filter"><button type="button" class="on" data-f="all">All</button>' + "".join(
             '<button type="button" data-f="%s">%s</button>' % (c, l) for c, l in (("web", "Website"), ("social", "Social"), ("email", "Email")) if c in chans) + "</div>") if len(chans) > 1 else ""
