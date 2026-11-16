@@ -1,8 +1,8 @@
 {
-"updated": "2026-11-15T22:00:54.298824+00:00",
+"updated": "2026-11-16T00:00:58.997303+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 41,
+"Port Jefferson Chamber": 39,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 193,
@@ -10,12 +10,12 @@
 "Stony Brook Village Center": 7,
 "Long Island Museum": 42,
 "Ward Melville Heritage Org": 2,
-"LI Music Hall of Fame": 4,
+"LI Music Hall of Fame": 3,
 "Staller Center for the Arts": 138,
 "Theatre Three": 67,
 "Gallery North": 13,
 "Reboli Center": 19,
-"Sweetbriar Nature Center": 29,
+"Sweetbriar Nature Center": 28,
 "Historical Society of Greater Port Jefferson": 0,
 "Madiran The Wine Bar live music": 33,
 "Local business Instagram posts": 12
@@ -49,25 +49,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive"
-},
-{
-"id": "gallerynorth-71344",
-"title": "Exhibition: Instincts",
-"start": "2026-10-08T00:00:00",
-"end": "2026-11-15T00:00:00",
-"allday": true,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/collections/instincts-schery-markee-sullivan-gina-mars-and-jo-wadler",
-"desc": "Instincts brings together painter and mixed media artist, Schery Markee-Sullivan; sculptor and wearable artist, Jo Wadler; and ceramicist and sculptor, Gina Mars for their first exhibition together at Gallery North. The creative process of each artist is drive",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71344/v1792695873793/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "reboli-6adf9dab4c6329721a5cedc5",
@@ -360,45 +341,6 @@
 "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485",
 "pu": "",
 "rank": 5
-},
-{
-"id": "sweetbriar-6acbd8fb9083cf68d32902a2",
-"title": "The Sunday Art Class - The Abundant Cornucopia - Adults - Nov",
-"start": "2026-11-15T11:00:00",
-"end": "2026-11-15T12:30:00",
-"allday": false,
-"venue": "Sweetbriar Nature Center - ECSS",
-"addr": "62 Eckernkamp Drive, SMITHTOWN 11787",
-"url": "https://www.sweetbriarnc.org/new-events/2026/10/18/the-art-of-fall-foliage-adults-october-18-5ndab",
-"desc": "I’m sorry but the Nov 15 Art Class is Cancelled. Please check out Dec 6 and Dec 20 Art classes in the event listings They are the last two of the year and are going to be great. The 2027 Art Class calendar is shaping up to be super exciting. Keep your eyes pee",
-"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1793118656888-PB4MVBS9VIIFG6ESCI8S/unsplash-image-zDqqZ5jsGSc.jpg",
-"src": "sweetbriar",
-"tags": [
-"arts"
-],
-"status": "Canceled",
-"fb": 0,
-"page": ""
-},
-{
-"id": "limehof-202611151500-marley-bone",
-"title": "Marley Bone",
-"start": "2026-11-15T15:00:00",
-"end": "2026-11-15T17:00:00",
-"allday": false,
-"venue": "The Long Island Music and Entertainment Hall of Fame",
-"addr": "97 Main St, Stony Brook, NY 11790",
-"url": "https://www.limusichalloffame.org/events/",
-"desc": "Free with Admission. Marley Bone serves up a high-energy blend of rockabilly, roots rock and good old-fashioned rock & roll, with a sound that tips its hat to the past without getting stuck there. Fueled by twangy guitars, a driving rhythm section and a health",
-"img": "https://www.limusichalloffame.org/wp-content/uploads/2026/10/Marley-Bone.jpeg",
-"src": "limehof",
-"tags": [
-"free",
-"music"
-],
-"status": "",
-"fb": 0,
-"page": ""
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-63807",
@@ -1737,6 +1679,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/christmas-tree-lighting"
+},
+{
+"id": "gallerynorth-72970",
+"title": "Thanksgiving - Gallery North Closed",
+"start": "2026-11-26T00:00:00",
+"end": "2026-11-26T00:00:00",
+"allday": true,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org",
+"desc": "",
+"img": "",
+"src": "gallerynorth",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/thanksgiving-day"
 }
 ],
 "closings": [],
