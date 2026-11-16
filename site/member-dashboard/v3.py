@@ -484,8 +484,8 @@ def page(a, ctx):
                  '<li><b>Tell your customers</b><i>Print your QR code for the counter, cards and flyers.</i><a class="chip" href="#profile" data-go="profile">Get your QR code</a></li></ul></div>') % ic("spark")
 
     # ---- sidebar
-    acct = [("tag", "Billing and payment", "/account/billing/change"), ("star", "Upgrade my plan", "/account/upgrade"), ("lock", "Change password", "/account/password")]
-    acct_more = [("edit", "Edit my listing", "/account/contact"), ("mail", "Leads and inquiries", "/account/leads")]
+    acct = [("tag", "Billing and payment", "/account/billing/change"), ("star", "Upgrade my plan", "/account/upgrade"), ("lock", "Change password", "/account/password"), ("mail", "Customer messages", "/account/leads")]
+    acct_more = [("edit", "Edit my listing", "/account/contact")]
     acct_nav = "".join('<a class="nav-acct" href="/login?login_direct_url=%s" data-acct="%s" data-ga="dash_account_click" data-product="%s">%s<span>%s</span></a>' % (
         quote(p, safe=""), p, re.sub(r"[^a-z]+", "_", t.lower()), ic(i if i in ICONS else "chev"), t) for i, t, p in acct) + '<a class="nav-acct" href="/logout" data-acct="/logout">%s<span>Sign out</span></a>' % ic("x")
     more_acct_nav = "".join('<a class="nav-acct" href="/login?login_direct_url=%s" data-acct="%s" data-ga="dash_account_click" data-product="%s">%s<span>%s</span></a>' % (
@@ -497,11 +497,11 @@ def page(a, ctx):
     seen_lock = lockb if not (has(tier, "banner") and has(tier, "spotlight")) else ""
     promo_badge = ('<em class="nb">%d</em>' % len(soc30 + em30)) if (soc30 or em30) and has(tier, "timeline") else ("" if has(tier, "timeline") else lockb)
     side = ('<aside class="sidebar"><a class="brand" href="%s/" target="_blank" rel="noopener">%s<span class="brand-sub">Member dashboard</span></a><nav class="nav" aria-label="Dashboard">'
-            '%s%s%s%s%s<details class="nav-grp"><summary>%s<span>Account</span>%s</summary>%s</details></nav>'
+            '%s%s%s%s<details class="nav-grp"><summary>%s<span>Account</span>%s</summary>%s</details></nav>'
             '<a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="sidebar_3vl_digital"><span>Business AI services by</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a>'
             '<div class="side-foot"><div class="me">%s<div><b class="ellip">%s</b><span class="tierb t-%s">%s%s</span></div><button type="button" class="me-app" data-open="app" aria-label="Get the dashboard app on your phone" title="Get the app on your phone" data-ga="dash_action_open" data-product="get_app">%s</button></div></div></aside>') % (
         SITE, img("https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-white.webp", "Three Village Local", 168, 58, "brand-logo", lazy=False),
-        nav("overview", "grid", "Overview"), nav("promotions", "megaphone", "Your promotions", promo_badge), leads_nav, nav("profile", "user", "Your listing"), nav("grow", "rocket", "Grow"),
+        nav("overview", "grid", "Overview"), nav("promotions", "megaphone", "Your promotions", promo_badge), nav("profile", "user", "Your listing"), nav("grow", "rocket", "Grow"),
         ic("lock"), '<span class="nav-chev">%s</span>' % ic("chev"), acct_nav,
         img(a.get("logo"), "", 64, 64, "me-logo") if a.get("logo") else '<span class="me-logo ph">%s</span>' % ic("user"), name_html, tier, "&#9733; " if X.RANK[tier] >= X.RANK["v"] else "", TIER_NAME[tier].upper() if X.RANK[tier] >= X.RANK["v"] else TIER_NAME[tier], ic("phone"))
 
@@ -568,7 +568,7 @@ def page(a, ctx):
                  '<li><b>It goes out</b><i>Calendar, homepage, weekly email or social, tagged to you.</i></li></ol></div>%s</div></div>') % (
         act_big, upc_card, ic("layers"), news_card)
 
-    profile_v = ('<div class="view" data-view="profile"><div class="vh"><h1>Your listing</h1><p>How neighbors see %s, plus tools to help them find you.</p><div class="row-wrap mt-s"><a class="btn primary sm" href="/login?login_direct_url=%%2Faccount%%2Fcontact">Edit my listing</a><a class="btn ghost sm" href="/login?login_direct_url=%%2Faccount%%2Fleads">See my leads</a></div></div>'
+    profile_v = ('<div class="view" data-view="profile"><div class="vh"><h1>Your listing</h1><p>How neighbors see %s, plus tools to help them find you.</p><div class="row-wrap mt-s"><a class="btn primary sm" href="/login?login_direct_url=%%2Faccount%%2Fcontact">Edit my listing</a></div></div>'
                  '<div class="grid g-prof">%s<div class="card pstr"><div class="card-head"><span class="card-icon green">%s</span><div><h3>Profile strength</h3><div class="sub">%s</div></div><span class="right">%s</span></div>'
                  '<ul class="checks">%s</ul></div><div class="card qlk"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Quick links</h3><div class="sub">Tools to help neighbors find you</div></div></div><div class="tools">%s</div></div></div>'
                  '<div class="card upsell wide mt">' + ups.replace('data-ups="', 'data-ups3="').replace('%', '%%') + '</div></div>') % (
