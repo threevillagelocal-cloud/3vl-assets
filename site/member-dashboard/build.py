@@ -683,6 +683,148 @@ def token(uid):
     return hashlib.sha256((open(sp).read().strip() + uid).encode()).hexdigest()[:14]
 
 
+# ---------------------------------------------------------------- v2: private addresses + dashboard-style page
+V2 = "--v2" in sys.argv
+TOKENS_P = os.path.join(GUARD, "data", "member_dashboard", "tokens.json")   # PRIVATE repo only, never 3vl-share
+
+
+def tokens_for(uids):
+    """uid -> long random token (secrets.token_urlsafe(24) = 32 chars). New members get one; existing ones never change."""
+    import secrets
+    t = jload(TOKENS_P, {}) or {}
+    changed = False
+    for u in uids:
+        if u not in t:
+            t[u] = secrets.token_urlsafe(24)
+            changed = True
+    if changed:
+        os.makedirs(os.path.dirname(TOKENS_P), exist_ok=True)
+        json.dump(t, open(TOKENS_P, "w", encoding="utf-8"), indent=1, sort_keys=True)
+    return t
+
+
+def lookup_key(uid, email):
+    """What p3.js computes in the browser for the signed-in member: sha256('3vlmd|' + uid + '|' + lowercased account email)."""
+    import hashlib
+    return hashlib.sha256(("3vlmd|%s|%s" % (uid, (email or "").strip().lower())).encode()).hexdigest()
+
+
+def account_emails(uids):
+    """Account emails from the BD API (nightly job only, env BD_API_KEY). Used to write lookup keys; never stored or published."""
+    key = os.environ.get("BD_API_KEY")
+    if not key:
+        return {}
+    import requests
+    out = {}
+    for u in uids:
+        try:
+            r = requests.get("https://www.threevillagelocal.com/api/v2/user/get/%s" % u, headers={"X-Api-Key": key}, timeout=30).json()
+            m = r.get("message")
+            m = m[0] if isinstance(m, list) and m else m
+            if isinstance(m, dict) and m.get("email"):
+                out[u] = m["email"]
+        except Exception as ex:
+            print("email lookup failed", u, ex)
+    return out
+
+
+def build_v2(acts, V, NETd, r):
+    """One dashboard for every tier. VIP + Featured get their own private token page; Basic members share one page (name filled in)."""
+    import v2 as X
+    mem = {str(m["id"]): m for m in (jload(os.path.join(GUARD, "data", "members.json"), {}) or {}).get("members", [])}
+    tier_of = lambda u: {"vip": "v", "noticed": "f", "partner": "p"}.get((mem.get(u) or {}).get("plan"), "b")
+    ids = list(acts.keys())
+    toks = tokens_for(ids)
+    share_dir = os.path.join(DOCS, "3vl-share")
+    local_css, local_js = "../dash2.css", "../dash2.js"
+    live_css, live_js = SHARE + "live/md/md2.css", SHARE + "live/md/md2.js"
+    bviews = floor_k(r.get("views") or 0)
+    soc = jload(os.path.join(NEWS, "data", "hq", "social.json"), {}) or {}
+    net = dict(NETd)
+    net["social"] = int(((soc.get("fb") or {}).get("cur") or {}).get("page_media_view") or 0) + int(((soc.get("ig") or {}).get("cur") or {}).get("views") or 0)
+    others_all = []
+    for u, a in acts.items():
+        if a["tier"] == "v":
+            lg, ban, th = member_images(u)
+            if th:
+                others_all.append({"uid": u, "name": a["short"], "img": th})
+    preview = not WRITE_LIVE
+    samples = jload(os.path.join(GUARD, "data", "member_dashboard", "sample_requests.json"), {}) or {}   # {uid: date}, written by the submit endpoint
+    wk0 = (dt.date.today() - dt.timedelta(days=dt.date.today().weekday())).isoformat()   # Monday of this week
+    week_n = sum(1 for v in samples.values() if str(v.get("date") if isinstance(v, dict) else v)[:10] >= wk0)
+    samples_full = week_n >= 5   # weekly cap (the endpoint enforces it too)
+    want = [x for x in sys.argv[1:] if x.isdigit()]
+    built = []
+
+    def ctx_for(u, a, tier):
+        hd = r.get("home_daily", {})
+        home = sum(hd.get(d, 0) for d in a.get("hp_days", []) if d >= W0)
+        email = sum(it.get("recipients", 0) for it in a.get("items", []) if it["ch"] == "email" and it["date"] >= W0 and not it.get("sample"))
+        tot = (bviews if a.get("has_banner_ad") and tier in ("v", "p") else 0) + home + email
+        return {"sample_done": u in samples, "samples_full": samples_full, "tier": tier, "w0": W0, "net": net, "banner_views": bviews, "reach": floor_k(tot) if tot >= FLOOR_REACH else 0, "share_dir": share_dir,
+                "member": mem.get(u, {}), "raw": RAW, "logo3vl": LOGO3VL, "preview": preview, "others": [o for o in others_all if o["uid"] != u]}
+
+    def write(name, title, body, installable=True):
+        b = body.replace(SHARE + "live/md/3vl-navy-440.webp", "../img/3vl-navy-440.webp")
+        if installable:
+            b = b.replace("</main></div>", "</main>" + X.INSTALL % "../img/icon-180.png" + "</div>")
+            open(os.path.join(HERE, "_local", "v2-%s.webmanifest" % name), "w", encoding="utf-8").write(X.manifest("v2-" + name, "../img/"))
+        open(os.path.join(HERE, "_local", "v2-%s.html" % name), "w", encoding="utf-8").write(
+            X.SHELL % (e(title), "v2-%s.webmanifest" % name, "../img/icon-180.png", local_css, b, local_js))
+
+    for u in ids:
+        if want and u not in want:
+            continue
+        a, tier = acts[u], tier_of(u)
+        body = X.page(a, ctx_for(u, a, tier))
+        for bad in ("\u2014", "\u2013", "&mdash;", "&ndash;"):
+            assert bad not in body, "dash in v2 " + u
+        write(u, a["short"], body)
+        if WRITE_LIVE:
+            os.makedirs(os.path.join(LIVE_DIR, "v"), exist_ok=True)
+            ib = SHARE + "live/md/"
+            lb = body.replace('<div class="mdx"', '<div class="mdx" data-sw="sw.js"', 1).replace("</main></div>", "</main>" + X.INSTALL % (ib + "icon-180.png") + "</div>")
+            open(os.path.join(LIVE_DIR, "v", "%s.html" % toks[u]), "w", encoding="utf-8").write(
+                X.SHELL % (e(a["short"]), "%s.webmanifest" % toks[u], ib + "icon-180.png", live_css, lb, live_js))
+            open(os.path.join(LIVE_DIR, "v", "%s.webmanifest" % toks[u]), "w", encoding="utf-8").write(X.manifest(toks[u], ib))
+        built.append(u)
+    # Basic members: one shared page (no personal data; the loader fills in the business name)
+    basic = X.page({"uid": "", "short": "", "items": [], "hp_days": []}, ctx_for("", {"items": [], "hp_days": []}, "b"))
+    write("basic", "Member Dashboard", basic, installable=False)
+    if WRITE_LIVE:
+        import shutil
+        open(os.path.join(LIVE_DIR, "basic2.html"), "w", encoding="utf-8").write(X.SHELL % ("Member Dashboard", "", SHARE + "live/md/icon-180.png", live_css, basic, live_js))
+        for n in ("icon-180.png", "icon-192.png", "icon-512.png"):
+            shutil.copy(os.path.join(HERE, "img", n), os.path.join(LIVE_DIR, n))
+        shutil.copy(os.path.join(HERE, "sw.js"), os.path.join(LIVE_DIR, "v", "sw.js"))   # same origin + scope as the private pages
+        shutil.copy(os.path.join(HERE, "dash2.css"), os.path.join(LIVE_DIR, "md2.css"))
+        shutil.copy(os.path.join(HERE, "dash2.js"), os.path.join(LIVE_DIR, "md2.js"))
+        kdir = os.path.join(LIVE_DIR, "k")   # lookup keys for the signed-in loader: k/<sha256(uid|email)>.txt holds that member's token only
+        shutil.rmtree(kdir, ignore_errors=True)
+        os.makedirs(kdir, exist_ok=True)
+        for u, em in account_emails(ids).items():
+            open(os.path.join(kdir, lookup_key(u, em) + ".txt"), "w").write(toks[u])
+        shutil.rmtree(os.path.join(LIVE_DIR, "m"), ignore_errors=True)   # retire the guessable member-number pages
+    if "--shots" in sys.argv:
+        shots(built)
+    return built
+
+
+def shots(uids):
+    """Crisp 1200px-wide desktop screenshots for the VIP email: shots/<uid>.png"""
+    from playwright.sync_api import sync_playwright
+    os.makedirs(os.path.join(HERE, "shots"), exist_ok=True)
+    with sync_playwright() as pw:
+        b = pw.chromium.launch()
+        for u in uids:
+            pg = b.new_page(viewport={"width": 1200, "height": 900}, device_scale_factor=2)
+            pg.goto("file:///" + os.path.join(HERE, "_local", "v2-%s.html" % u).replace("\\", "/"))
+            pg.wait_for_timeout(1500)
+            pg.screenshot(path=os.path.join(HERE, "shots", "%s.png" % u), full_page=True)
+            pg.close()
+        b.close()
+
+
 def main():
     want = [a for a in sys.argv[1:] if a.isdigit()]
     V = vips(("vip", "noticed"))
@@ -720,6 +862,9 @@ def main():
             open(os.path.join(LIVE_DIR, "m", "%s.html" % uid), "w", encoding="utf-8").write(body)
         s = a["months"].get(TODAY.strftime("%Y-%m"), {})
         print(uid, m["short"], "| items", len(a["items"]), "| upcoming", len(a["upcoming"]), "| this month", s)
+
+    if V2:
+        print("v2 built:", build_v2(acts, V, dict(NET), r))
 
     bb = page_basic()
     open(os.path.join(HERE, "_local", "basic.html"), "w", encoding="utf-8").write(SHELL % (css, bb, js))
