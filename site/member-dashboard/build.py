@@ -40,6 +40,26 @@ def slug(u):
     return u.split("threevillagelocal.com/")[-1] if "threevillagelocal.com/" in u else ""
 
 
+def floor_k(n):
+    """Friendly rounding (owner 11/15/2026): totals round DOWN to the thousand, so 12,263 -> 12,000. Never rounds up."""
+    n = int(n or 0)
+    return (n // 1000) * 1000 if n >= 1000 else n
+
+
+def nice(n, plus=True):
+    """12,263 -> '12,000+' ; 640 -> '640'. Callers hide anything under their floor, so '0' never renders."""
+    n = int(n or 0)
+    return ("{:,}".format(floor_k(n)) + ("+" if plus and n >= 1000 else "")) if n >= 1000 else "{:,}".format(n)
+
+
+# Floor rule (owner 11/15/2026): a weak or zero number is never shown. The card or row is hidden instead.
+FLOOR_REACH = 1000    # last-30-days reach total under this -> the reach card is hidden
+FLOOR_HOME_VIEWS = 100   # homepage views on spotlight days under this -> show the day count only, no view number
+FLOOR_NET_VIEWS = 1000   # network page views under this -> row hidden
+FLOOR_SUBS = 100      # weekly subscribers under this -> row hidden
+FLOOR_HL = 10         # VIP highlights under this -> row hidden
+
+
 def fmt(d):
     return "%s %d" % (d.strftime("%b"), d.day)
 
@@ -136,6 +156,39 @@ def rotation():
     return jload(os.path.join(NEWS, "social", "featured-rotation.json"), {}).get("rotation", [])
 
 
+# ---------------------------------------------------------------- banner start dates + member articles
+def banner_since():
+    """{uid: first date the member's VIP banner appeared in weekender/banners.json} from git history (oldest first)."""
+    f = "weekender/banners.json"
+    log = subprocess.run(["git", "-C", ASSETS, "log", "--reverse", "--format=%H %cd", "--date=format-local:%Y-%m-%d", "--", f],
+                         capture_output=True, text=True, encoding="utf-8").stdout.split("\n")
+    since = {}
+    for ln in log:
+        if not ln.strip():
+            continue
+        sha, day = ln.split()
+        raw = subprocess.run(["git", "-C", ASSETS, "show", "%s:%s" % (sha, f)], capture_output=True, text=True, encoding="utf-8").stdout
+        try:
+            ids = {str(b.get("id")) for b in json.loads(raw)}
+        except Exception:
+            continue
+        for i in ids:
+            since.setdefault(i, day)
+    return since
+
+
+def member_articles(m):
+    """Articles about or by the member that we published (homepage extra stories with a byline)."""
+    out = []
+    names = {m["short"].lower(), m["name"].lower()}
+    for x in jload(os.path.join(ASSETS, "weekender", "front", "extra_stories.json"), []) or []:
+        txt = (x.get("t", "") + " " + x.get("by", "") + " " + x.get("h", "")).lower()
+        if any(n and n in txt for n in names) or any(sl and sl in x.get("h", "") for sl in m["slugs"]):
+            out.append({"date": x["date"], "ch": "web", "icon": "article", "thumb": x.get("img", ""), "title": "Your article on our homepage and blog",
+                        "note": x.get("t", ""), "url": x.get("h", "")})
+    return out
+
+
 # ---------------------------------------------------------------- sample (not logged yet)
 def samples(m):
     """Placeholders for things we do not log yet. Every one carries sample=True and is badged SAMPLE on the page."""
@@ -149,7 +202,7 @@ def samples(m):
 
 
 # ---------------------------------------------------------------- per-member activity
-def activity(m, hp, issues, posts, rot, banners):
+def activity(m, hp, issues, posts, rot, banners, bsince=None):
     uid, items, upcoming = m["uid"], [], []
     logo, ban, thumb = member_images(uid)
     names = [m["short"].lower(), m["name"].lower().split(" at ")[0].split(",")[0]]
@@ -210,6 +263,8 @@ def activity(m, hp, issues, posts, rot, banners):
         title = (j.get("title") or "").lower()
         if slug(j.get("article")) not in m["slugs"] and not any(n and n in title for n in names):
             continue
+        if any(n and re.search(r"\b(no|without|minus)\s+" + re.escape(n), title) for n in names):   # a post that explicitly left them out
+            continue
         when = (j.get("when") or "")[:10]
         kind = pid.split("-")[0]
         key = (kind, when)
@@ -221,7 +276,7 @@ def activity(m, hp, issues, posts, rot, banners):
         ttl = {"spotlight": "VIP Spotlight on Instagram%s" % (" and Facebook" if fb or not posted else ""),
                "welcome": "Welcome to Three Village Local post", "featured": "Featured spotlight post"}.get(kind, j.get("title") or "Social post")
         if kind not in ("spotlight", "welcome", "featured"):
-            ttl = re.sub(r"(?i)\s*\((ig|fb)\)\s*$", "", ttl)
+            ttl = re.sub(r"\s*\([^)]*\)", "", ttl).strip()   # internal notes in parentheses never reach members
             for n in (m["short"], m["name"]):
                 if ttl.lower().startswith(n.lower()):
                     ttl = "Your" + ttl[len(n):]
@@ -247,6 +302,12 @@ def activity(m, hp, issues, posts, rot, banners):
             upcoming.append({"date": r["date"], "ch": "social", "icon": "insta", "title": "VIP Spotlight on Facebook and Instagram",
                              "note": "Planned for %s at noon" % fmt(dt.date.fromisoformat(r["date"]))})
 
+    # VIP banner ad (rotating on every page since it went up) + articles we published for them
+    if uid in banners and (bsince or {}).get(uid):
+        items.append({"date": bsince[uid], "ch": "web", "icon": "banner", "title": "Your banner ad went up on every page",
+                      "note": "Rotating across the whole Three Village Local website ever since", "n_banner": 1})
+    items += member_articles(m)
+
     smp_done, smp_next = ([], []) if LIVE else samples(m)
     items += smp_done
     upcoming += smp_next
@@ -266,9 +327,11 @@ def activity(m, hp, issues, posts, rot, banners):
     for s in months.values():
         s["total"] = s["home_days"] + s["social"] + s["email"]
     nxt_social = next((u for u in upcoming if u.get("ch") == "social"), None)
+    # lifetime promotions: every homepage day, post, email feature, article and the banner placement (real items only)
+    lifetime = sum(it.get("n_home", 0) or (0 if it.get("sample") else 1) for it in items)
     return {"tier": m.get("tier", "v"), "hp_days": hp_days, "uid": uid, "name": m["name"], "short": m["short"], "cat": m["cat"], "town": m["town"], "profile": m["url"],
             "logo": logo, "banner": ban, "has_banner_ad": uid in banners, "banner_img": banners.get(uid, ""), "months": months, "items": items, "upcoming": upcoming,
-            "next_social": nxt_social and nxt_social["date"], "built": dt.datetime.now().isoformat(timespec="minutes")}
+            "next_social": nxt_social and nxt_social["date"], "lifetime": lifetime, "built": dt.datetime.now().isoformat(timespec="minutes")}
 
 
 # ---------------------------------------------------------------- render
@@ -311,8 +374,8 @@ RAW = "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/mast
 
 def banner_card(a):
     r = jload(os.path.join(HERE, "data", "banner_reach.json"), {}) or {}
-    n = int(r.get("views") or 0)
-    if not (a["has_banner_ad"] and n):
+    n = floor_k(r.get("views") or 0)
+    if not (a["has_banner_ad"] and n >= 1000):   # floor rule
         return ""
     pre, post = BANNER_LABEL.split("{n}")
     pic = ('<img class="md-ban-img" src="%s" alt="Your banner ad" width="180" height="150" loading="lazy" decoding="async" data-processed="true">' % e(RAW + a["banner_img"])) if a.get("banner_img") else ""
@@ -324,7 +387,8 @@ def banner_card(a):
             % (e(BANNER_LIVE_URL), pic, ic("banner"), n, "{:,}".format(n), chg, e(pre), "{:,}".format(n), e(post), ic("sparkle"), e(AI_LINE)))
 
 
-LIVE = "--live" in sys.argv
+LIVE = "--live" in sys.argv or "--live-preview" in sys.argv   # --live-preview: live content rules, local files only
+WRITE_LIVE = "--live" in sys.argv
 LIVE_DIR = os.path.join(os.path.dirname(ASSETS), "3vl-share", "live", "md")
 SAMPLE = '<em class="md-sample" title="Placeholder: we do not log this yet">Sample</em>'
 MONTHS = {"2026-10": "October", "2026-11": "November", "2026-12": "December"}
@@ -343,19 +407,24 @@ def reach30(a):
     email = sum(it.get("recipients", 0) for it in emails)
     social = [it for it in a["items"] if it["ch"] == "social" and it["date"] >= W0 and not it.get("sample")]
     total = banner + home + email
-    nf = lambda n: "{:,}".format(n)
+    if total < FLOOR_REACH:   # floor rule: a weak month hides the whole card (the timeline still shows what we did)
+        return ""
+    banner, total = floor_k(banner), floor_k(total)
     parts = []
     if banner:
-        parts.append(("banner", "Banner ad", "up to %s views" % nf(banner)))
-    parts.append(("home", "Homepage spotlight", ("%s views on your %d day%s" % (nf(home), len(days), "" if len(days) == 1 else "s")) if days else "Your turn is coming up"))
+        parts.append(("banner", "Banner ad", "up to %s views" % "{:,}".format(banner)))
+    if days:
+        pl = "" if len(days) == 1 else "s"
+        parts.append(("home", "Homepage spotlight", ("%s views on your %d day%s" % (nice(home), len(days), pl)) if home >= FLOOR_HOME_VIEWS
+                      else "Featured %d day%s" % (len(days), pl)))
     if emails:
-        parts.append(("mail", "Three Village Weekly", "sent to %s subscribers" % nf(email) if email else "%d feature%s" % (len(emails), "" if len(emails) == 1 else "s")))
+        parts.append(("mail", "Three Village Weekly", "sent to %s subscribers" % nice(email) if email >= FLOOR_SUBS else "%d feature%s" % (len(emails), "" if len(emails) == 1 else "s")))
     if social:
         parts.append(("insta", "Facebook and Instagram", "%d post%s about you" % (len(social), "" if len(social) == 1 else "s")))
     rows = "".join('<li><span class="md-ic">%s</span><b>%s</b><em>%s</em></li>' % (ic(i), t, v) for i, t, v in parts)
-    return ('<div class="md-kpis md-reach" data-m="r30"><div class="md-reach-tot"><span class="md-ic">%s</span><b>%s<span data-n="%d">%s</span></b>'
+    return ('<div class="md-kpis md-reach" data-m="r30"><div class="md-reach-tot"><span class="md-ic">%s</span><b>%s<span data-n="%d" data-plus="%s">%s</span></b>'
             '<i>Times neighbors may have seen your business in the last 30 days</i></div><ul class="md-reach-l">%s</ul></div>'
-            % (ic("megaphone"), "Up to " if banner else "", total, nf(total), rows))
+            % (ic("megaphone"), "Up to " if banner else "", total, "" if banner else "+", "{:,}".format(total) + ("" if banner or total < 1000 else "+"), rows))
 
 
 def kpis(a, mk):
@@ -394,13 +463,32 @@ def row(it):
             % (it["ch"], "r30" if it["date"] >= W0 else "old", ic(it["icon"]), th, e(it["title"]), SAMPLE if it.get("sample") else "", e(it["note"]), link, it["date"], fmt(d)))
 
 
+def timeline(a, ai):
+    """'What we did for you': every real promotion, newest first, plus a lifetime count. Only grows. Hidden when empty (floor rule)."""
+    real = [it for it in a["items"] if not it.get("sample")] if LIVE else a["items"]
+    if not real:
+        return ""
+    n = a.get("lifetime") or len(real)
+    chans = sorted({it["ch"] for it in real})
+    chips = '<button type="button" class="on" data-f="all" aria-pressed="true">All</button>' + "".join(
+        '<button type="button" data-f="%s" aria-pressed="false">%s</button>' % (c, l) for c, l in
+        (("web", "Website"), ("social", "Social"), ("email", "Email"), ("ai", "AI")) if c in chans and (ai or c != "ai"))
+    since = ('<p class="md-life"><b>%d promotions</b> for you since you joined</p>' % n) if n >= 3 else ""
+    return ('<div class="md-card md-tl"><div class="md-ch"><b>What we did for you</b>'
+            '<div class="md-chips" role="group" aria-label="Filter the list">%s</div></div>%s'
+            '<ol class="md-list">%s</ol><p class="md-empty" hidden>More on the way.</p></div>'
+            % (chips if len(chans) > 1 else "", since, "".join(row(it) for it in real)))
+
+
 def page(a):
     if a.get("tier") == "f":
         return page_featured(a)
     USED.clear()
     cur = TODAY.strftime("%Y-%m")
-    mtabs = '<button type="button" data-m="r30" aria-pressed="true" class="on">Last 30 days</button>'   # rolling window (owner 11/13)
+    mtabs = '<div class="md-mtabs" role="group" aria-label="Choose a month"><button type="button" data-m="r30" aria-pressed="true" class="on">Last 30 days</button></div>'   # rolling window (owner 11/13)
     tiles = reach30(a)
+    if not tiles:   # floor rule hid the reach card: no orphan period tab
+        mtabs = ""
     vip = ['<span>%s<span><b>Top-spot card</b> at the top of %s search</span></span>' % (ic("search"), e(a["cat"] or "your category"))]
     if a["has_banner_ad"]:
         vip.insert(0, '<span>%s<span><b>Banner ad</b> rotating on every page</span></span>' % ic("banner"))
@@ -430,19 +518,15 @@ def page(a):
            '<div class="md-hi"%s><div class="md-hi-in">%s<div><p class="md-k">%s VIP member</p><h1 class="md-h">Welcome back, %s</h1>'
            '<p class="md-s">Here is everything Three Village Local did for you.</p></div></div>'
            '<a class="md-prof" href="%s" target="_blank" rel="noopener">View your profile %s</a></div>'
-           '%s<div class="md-mtabs" role="group" aria-label="Choose a month">%s</div>%s'
+           '%s%s%s'
            '<div class="md-vipstrip">%s</div>%s'
-           '<div class="md-grid"><div class="md-card md-tl"><div class="md-ch"><b>Your promotion timeline</b>'
-           '<div class="md-chips" role="group" aria-label="Filter the timeline"><button type="button" class="on" data-f="all" aria-pressed="true">All</button>'
-           '<button type="button" data-f="web" aria-pressed="false">Website</button><button type="button" data-f="social" aria-pressed="false">Social</button>'
-           '<button type="button" data-f="email" aria-pressed="false">Email</button><button type="button" data-f="ai" aria-pressed="false">AI</button></div></div>'
-           '<ol class="md-list">%s</ol><p class="md-empty" hidden>Nothing here for this month yet.</p></div>'
+           '<div class="md-grid">%s'
            '<div class="md-side"><div class="md-card"><div class="md-ch"><b>Coming up for you</b></div><ul class="md-upc">%s</ul></div>'
            '<div class="md-card"><div class="md-ch"><b>What&#39;s new at 3VL</b></div><ul class="md-news">%s</ul></div></div>'
            '<div class="md-card md-grow"><div class="md-ch"><b>Grow with us</b><i>VIP pricing</i></div><div class="md-ups">%s</div></div></div>'
            '<p class="md-foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a> and we will get it out there.</p>'
            '</div>') % (LOGO3VL, ic("lock"), (' style="--ban:url(%s)"' % e(a["banner"])) if a["banner"] else "", logo, ic("crown"), e(first), e(a["profile"]), ic("chev"),
-                        banner_card(a), mtabs, tiles, "".join(vip), net_card(), rows, up, nl, upl)
+                        banner_card(a), mtabs, tiles, "".join(vip), net_card(), timeline(a, True), up, nl, upl)
     return sprite() + nowrap_hyphens(out)
 
 
@@ -476,8 +560,8 @@ def social_li():
     d = jload(os.path.join(NEWS, "data", "hq", "social.json"), {}) or {}
     fb = int(((d.get("fb") or {}).get("cur") or {}).get("page_media_view") or 0)
     ig = int(((d.get("ig") or {}).get("cur") or {}).get("views") or 0)
-    nf = lambda x: "{:,}".format(x)
-    if not (fb or ig):
+    nf = nice
+    if (fb + ig) < 1000:
         return '<li><span class="md-ic">%s</span><b>100,000+</b><i>Facebook and Instagram views our posts reach every month</i></li>' % ic("share")
     return ('<li class="md-soc"><b>%s</b><i>Facebook and Instagram views in the last 28 days</i>'
             '<span class="md-soc-r">%s<em>%s</em></span><span class="md-soc-r">%s<em>%s</em></span></li>'
@@ -486,12 +570,14 @@ def social_li():
 
 def net_card():
     n = NET
-    nf = lambda x: "{:,}".format(x)
-    up = ('<small>Up %d%%</small>' % n["pct"]) if isinstance(n.get("pct"), int) and n["pct"] > 0 else ""
-    st = [("chart", nf(n.get("views", 0)), "Website page views in the last 30 days" + (" " + up if up else "")),
-          ("social", "", ""),
-          ("crown", nf(n.get("vip_hl", 0)), "Times we highlighted our VIP members in the last 30 days"),
-          ("mail", nf(n.get("subs", 0)), "Neighbors who get Three Village Weekly by email")]
+    up = ('<small>Up %d%%</small>' % n["pct"]) if isinstance(n.get("pct"), int) and n["pct"] > 0 else ""   # never a negative (owner 11/15)
+    st = [("social", "", "")]
+    if int(n.get("views") or 0) >= FLOOR_NET_VIEWS:
+        st.insert(0, ("chart", nice(n["views"]), "Website page views in the last 30 days" + (" " + up if up else "")))
+    if int(n.get("vip_hl") or 0) >= FLOOR_HL:
+        st.append(("crown", nice(n["vip_hl"]), "Times we highlighted our VIP members in the last 30 days"))
+    if int(n.get("subs") or 0) >= FLOOR_SUBS:
+        st.append(("mail", nice(n["subs"]), "Neighbors who get Three Village Weekly by email"))
     li = "".join(social_li() if i == "social" else '<li><span class="md-ic">%s</span><b>%s</b><i>%s</i></li>' % (ic(i), v, t) for i, v, t in st)
     return ('<div class="md-card md-net"><div class="md-ch"><b>Three Village Local right now</b><i>Updated nightly</i></div>'
             '<ul class="md-net-l">%s</ul></div>' % li)
@@ -536,20 +622,16 @@ def page_featured(a):
     if not up:
         up = '<li><span class="md-up-d"><b>%s</b><i>&#8226;</i></span><div><b>More on the way</b><i>Have news, a special or an event? Email hello@threevillagelocal.com and we will help promote it.</i></div></li>' % TODAY.strftime("%b")
     top = ('<div class="md" id="md" data-tier="f">' + head("%s Featured member" % ic("star"), "Welcome back, %s" % e(a["short"]),
-                                                    "Here is what Three Village Local did for you lately.", a["profile"], a["logo"], a["banner"]) +
-           '<div class="md-mtabs" role="group" aria-label="Time period"><button type="button" data-m="r30" aria-pressed="true" class="on">Last 30 days</button></div>'
-           + reach30(a) + net_card())
-    out = top + ('<div class="md-grid"><div class="md-card md-tl"><div class="md-ch"><b>Your promotion timeline</b>'
-           '<div class="md-chips" role="group" aria-label="Filter the timeline"><button type="button" class="on" data-f="all" aria-pressed="true">All</button>'
-           '<button type="button" data-f="web" aria-pressed="false">Website</button><button type="button" data-f="social" aria-pressed="false">Social</button>'
-           '<button type="button" data-f="email" aria-pressed="false">Email</button></div></div>'
-           '<ol class="md-list">%s</ol><p class="md-empty" hidden>Nothing in the last 30 days yet. Your next spotlight is on the way.</p></div>'
+                                                    "Here is what Three Village Local did for you lately.", a["profile"], a["logo"], a["banner"])
+           + (('<div class="md-mtabs" role="group" aria-label="Time period"><button type="button" data-m="r30" aria-pressed="true" class="on">Last 30 days</button></div>' + reach30(a)) if reach30(a) else "")
+           + net_card())
+    out = top + ('<div class="md-grid">%s'
            '<div class="md-side"><div class="md-card"><div class="md-ch"><b>Coming up for you</b></div><ul class="md-upc">%s</ul></div>'
            '<div class="md-card"><div class="md-ch"><b>What&#39;s new at 3VL</b></div><ul class="md-news">%s</ul></div></div>'
            '<div class="md-card md-grow md-sells">%s</div>'
            '<div class="md-card md-grow"><div class="md-ch"><b>Our services</b><i>10%% off for Featured</i></div><div class="md-ups">%s</div></div></div>'
            '<p class="md-foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a> and we will get it out there.</p></div>'
-           ) % (rows, up, news_list("f"), upsell("f"), services_list("f"))
+           ) % (timeline(a, False), up, news_list("f"), upsell("f"), services_list("f"))
     return sprite() + nowrap_hyphens(out)
 
 
@@ -589,7 +671,7 @@ SHELL = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name
 .pv-rib{max-width:1180px;margin:12px auto 0;padding:0 16px;font:700 12.5px system-ui;color:#7a5a00}.pv-rib span{display:block;background:#fff6dc;border:1px dashed #e9c25a;border-radius:12px;padding:8px 12px}
 .wrap{max-width:1180px;margin:0 auto;padding:12px 16px 40px}</style>
 <style>%s</style></head><body><div class="bd-fake">threevillagelocal.com/account/home (BD member area, simulated)</div>
-<div class="pv-rib"><span>PREVIEW for owner review. Real activity from our logs. Items marked SAMPLE are placeholders until we log them. Nothing here is live.</span></div>
+<div class="pv-rib"><span>PREVIEW for owner review. Real activity from our logs only. Nothing here is live.</span></div>
 <div class="wrap">%s</div><script>%s</script></body></html>'''
 
 
@@ -599,6 +681,282 @@ def token(uid):
     if not os.path.exists(sp):
         open(sp, "w").write(os.urandom(16).hex())
     return hashlib.sha256((open(sp).read().strip() + uid).encode()).hexdigest()[:14]
+
+
+# ---------------------------------------------------------------- v2: private addresses + dashboard-style page
+V2 = "--v2" in sys.argv
+TOKENS_P = os.path.join(GUARD, "data", "member_dashboard", "tokens.json")   # PRIVATE repo only, never 3vl-share
+
+
+def tokens_for(uids):
+    """uid -> long random token (secrets.token_urlsafe(24) = 32 chars). New members get one; existing ones never change."""
+    import secrets
+    t = jload(TOKENS_P, {}) or {}
+    changed = False
+    for u in uids:
+        if u not in t:
+            t[u] = secrets.token_urlsafe(24)
+            changed = True
+    if changed:
+        os.makedirs(os.path.dirname(TOKENS_P), exist_ok=True)
+        json.dump(t, open(TOKENS_P, "w", encoding="utf-8"), indent=1, sort_keys=True)
+    return t
+
+
+def lookup_key(uid, email):
+    """What p3.js computes in the browser for the signed-in member: sha256('3vlmd|' + uid + '|' + lowercased account email)."""
+    import hashlib
+    return hashlib.sha256(("3vlmd|%s|%s" % (uid, (email or "").strip().lower())).encode()).hexdigest()
+
+
+def account_emails(uids):
+    """Account emails from the BD API (nightly job only, env BD_API_KEY). Used to write lookup keys; never stored or published."""
+    key = os.environ.get("BD_API_KEY")
+    if not key:
+        return {}
+    import requests
+    out = {}
+    for u in uids:
+        try:
+            r = requests.get("https://www.threevillagelocal.com/api/v2/user/get/%s" % u, headers={"X-Api-Key": key}, timeout=30).json()
+            m = r.get("message")
+            m = m[0] if isinstance(m, list) and m else m
+            if isinstance(m, dict) and m.get("email"):
+                out[u] = m["email"]
+        except Exception as ex:
+            print("email lookup failed", u, ex)
+    return out
+
+
+ENDPOINT = "https://3vl-ai-assistant.vercel.app/api/member-submit"
+PV_DIR = "live/md/pv/D312ZnN2JxLHNwlhEuRlUSp6"   # owner preview folder (hidden, noindex)
+
+
+def speedup(html, css_path):
+    """Owner 11/15 speed pass: inline the CSS (no render-blocking request), fonts non-blocking, preload the hero photo,
+    and images inside views that are not open yet only load when the view opens (data-src, see dash3.js hydrate)."""
+    import re as _re
+    css = open(css_path, encoding="utf-8").read()
+    html = _re.sub(r'<link rel="stylesheet" href="[^"]+">', lambda m: "<style>" + css + "</style>", html, count=1)
+    html = _re.sub(r'<link href="(https://fonts\.googleapis\.com/[^"]+)" rel="stylesheet">',
+                   lambda m: '<link rel="preload" as="style" href="%s"><link rel="stylesheet" href="%s" media="print" onload="this.media=\'all\'">' % (m.group(1), m.group(1)), html, count=1)
+    hm = _re.search(r'class="hero-ph"><img src="([^"]+)"', html)
+    if hm:
+        html = html.replace("</title>", '</title><link rel="preload" as="image" href="%s" fetchpriority="high">' % hm.group(1), 1)
+    out, pos = [], 0
+    for m in _re.finditer(r'<div class="view" data-view="[a-z]+">', html):
+        out.append(html[pos:m.start()])
+        end = html.find('<div class="view', m.end())
+        end = end if end > 0 else html.find('<div class="drawer"', m.end())
+        chunk = html[m.start():end]
+        chunk = _re.sub(r'<img((?:(?!>).)*?) src="(https?://[^"]+)"', r'<img\1 data-src="\2"', chunk)
+        chunk = _re.sub(r' srcset="([^"]+)"', r' data-srcset="\1"', chunk)
+        out.append(chunk)
+        pos = end
+    out.append(html[pos:])
+    return "".join(out)
+
+
+def announcements_for(uid, tier):
+    """Active one-time popups for this member (member-specific first, then "all"). Source: guard data/member_dashboard/announcements.json."""
+    import datetime as _dt
+    today = _dt.datetime.now().strftime("%Y-%m-%d")
+    items = (jload(os.path.join(GUARD, "data", "member_dashboard", "announcements.json"), {}) or {}).get("items", [])
+    out = []
+    for it in items:
+        if not it.get("id") or not it.get("title"):
+            continue
+        if str(it.get("start") or "0000") > today or str(it.get("end") or "9999") < today:
+            continue
+        who = str(it.get("uid") or "all")
+        if who != "all" and who != str(uid or ""):
+            continue
+        if it.get("tiers") and tier not in it["tiers"]:
+            continue
+        j = {k: it[k] for k in ("id", "title", "emoji", "body", "frame", "button", "end") if it.get(k)}
+        for k in ("image", "image_640"):
+            if it.get(k):
+                j[k] = it[k] if it[k].startswith("http") else SHARE + "live/md/" + it[k]
+        out.append((0 if who != "all" else 1, j))
+    out.sort(key=lambda x: x[0])
+    return [j for _, j in out]
+
+
+def ann_script(uid, tier):
+    a = announcements_for(uid, tier)
+    if not a:
+        return ""
+    return '<script type="application/json" id="mdann">%s</script>' % json.dumps(a, ensure_ascii=False).replace("</", "<" + "\\" + "/")
+
+
+def inst_html(icon, company=""):
+    import importlib
+    X = importlib.import_module("v3" if V3_FLAG else "v2")
+    """Phone install bubble (owner 11/15: call it their dashboard APP). Installed app name stays "3VL Dashboard"."""
+    h = X.INSTALL % icon
+    if company and V3_FLAG:
+        h = h.replace("<b>Get your 3VL Dashboard app</b>", "<b>Add your %s dashboard app to your home screen</b>" % e(company), 1)
+    return h
+
+
+V3_FLAG = "--v3" in sys.argv
+
+
+def requested_samples():
+    """uid -> date of a dashboard sample request: legacy guard file + the submit endpoint's record files in news-monitor."""
+    out = {}
+    for u, v in (jload(os.path.join(GUARD, "data", "member_dashboard", "sample_requests.json"), {}) or {}).items():
+        out[u] = v
+    rd = os.path.join(NEWS, "data", "member_dashboard", "requests")
+    if os.path.isdir(rd):
+        for fn in sorted(os.listdir(rd)):
+            if fn.endswith("_dashboard_sample.json"):
+                j = jload(os.path.join(rd, fn), {}) or {}
+                if j.get("uid"):
+                    out[str(j["uid"])] = {"date": str(j.get("at", ""))[:10]}
+    return out
+
+
+def write_members_map(toks, mem, acts, tier_of, emails):
+    """Private token -> member map for the submit endpoint (sha256 keys only), written to the PRIVATE news-monitor repo."""
+    import hashlib
+    m = {}
+    for u, t in toks.items():
+        a = acts.get(u) or {}
+        mm = mem.get(u) or {}
+        first = ""
+        try:
+            import v2 as X2
+            first = (X2.v3_profile(u, os.path.join(DOCS, "3vl-share")).get("first") or "").strip()
+        except Exception:
+            pass
+        ph = "".join(ch for ch in str(mm.get("phone") or "") if ch.isdigit())
+        m[hashlib.sha256(t.encode()).hexdigest()] = {"uid": u, "company": a.get("short") or mm.get("name") or "", "first": first, "tier": tier_of(u),
+                                                      "phone": ("%s-%s-%s" % (ph[:3], ph[3:6], ph[6:10])) if len(ph) == 10 else ph, "profile": mm.get("url") or a.get("profile") or "",
+                                                      "email": emails.get(u, "")}
+    p = os.path.join(NEWS, "data", "member_dashboard", "members_map.json")
+    os.makedirs(os.path.dirname(p), exist_ok=True)
+    json.dump(m, open(p, "w", encoding="utf-8"), indent=1, sort_keys=True)
+    return p
+
+
+def build_v2(acts, V, NETd, r):
+    """One dashboard for every tier. VIP + Featured get their own private token page; Basic members share one page (name filled in)."""
+    V3 = "--v3" in sys.argv
+    if V3:
+        import v3 as X
+    else:
+        import v2 as X
+    PFX = "v3-" if V3 else "v2-"
+    mem = {str(m["id"]): m for m in (jload(os.path.join(GUARD, "data", "members.json"), {}) or {}).get("members", [])}
+    tier_of = lambda u: {"vip": "v", "noticed": "f", "partner": "p"}.get((mem.get(u) or {}).get("plan"), "b")
+    ids = list(acts.keys())
+    toks = tokens_for(ids)
+    share_dir = os.path.join(DOCS, "3vl-share")
+    local_css, local_js = ("../dash3.css", "../dash3.js") if V3 else ("../dash2.css", "../dash2.js")
+    live_css, live_js = (SHARE + "live/md/md3.css", SHARE + "live/md/md3.js") if V3 else (SHARE + "live/md/md2.css", SHARE + "live/md/md2.js")
+    bviews = floor_k(r.get("views") or 0)
+    soc = jload(os.path.join(NEWS, "data", "hq", "social.json"), {}) or {}
+    net = dict(NETd)
+    net["social"] = int(((soc.get("fb") or {}).get("cur") or {}).get("page_media_view") or 0) + int(((soc.get("ig") or {}).get("cur") or {}).get("views") or 0)
+    others_all = []
+    for u, a in acts.items():
+        if a["tier"] == "v":
+            lg, ban, th = member_images(u)
+            if th:
+                others_all.append({"uid": u, "name": a["short"], "img": th})
+    preview = not WRITE_LIVE
+    samples = requested_samples()   # {uid: date}: the submit endpoint's records + legacy file
+    wk0 = (dt.date.today() - dt.timedelta(days=dt.date.today().weekday())).isoformat()   # Monday of this week
+    week_n = sum(1 for v in samples.values() if str(v.get("date") if isinstance(v, dict) else v)[:10] >= wk0)
+    samples_full = week_n >= 5   # weekly cap (the endpoint enforces it too)
+    want = [x for x in sys.argv[1:] if x.isdigit()]
+    built = []
+
+    def ctx_for(u, a, tier):
+        hd = r.get("home_daily", {})
+        home = sum(hd.get(d, 0) for d in a.get("hp_days", []) if d >= W0)
+        email = sum(it.get("recipients", 0) for it in a.get("items", []) if it["ch"] == "email" and it["date"] >= W0 and not it.get("sample"))
+        tot = (bviews if a.get("has_banner_ad") and tier in ("v", "p") else 0) + home + email
+        tok = toks.get(u, "")
+        live_url = (SHARE + "live/md/v/%s.html" % tok) if tok else ""
+        pv = (u == "115") or not u
+        return {"endpoint": ENDPOINT if (WRITE_LIVE or "--pv" in sys.argv) else "", "token": tok if (WRITE_LIVE or "--pv" in sys.argv) else "",
+                "dash_url": live_url if WRITE_LIVE else ("https://threevillagelocal-cloud.github.io/3vl-share/%s/kgr.html" % PV_DIR if pv else ""),
+                "sample_done": u in samples, "samples_full": samples_full, "tier": tier, "w0": W0, "net": net, "banner_views": bviews, "reach": floor_k(tot) if tot >= FLOOR_REACH else 0, "share_dir": share_dir,
+                "member": mem.get(u, {}), "raw": RAW, "logo3vl": LOGO3VL, "preview": preview, "others": [o for o in others_all if o["uid"] != u]}
+
+    def write(name, title, body, installable=True):
+        b = body.replace(SHARE + "live/md/3vl-navy-440.webp", "../img/3vl-navy-440.webp")
+        if installable:
+            b = b.replace("</main></div>", "</main>" + inst_html("../img/icon-180.png", title if name != "basic" else "") + "</div>")
+            open(os.path.join(HERE, "_local", PFX + "%s.webmanifest" % name), "w", encoding="utf-8").write(X.manifest(PFX + name, "../img/"))
+        page_html = X.SHELL % (e(title), PFX + "%s.webmanifest" % name, "../img/icon-180.png", local_css, b, local_js)
+        if V3:
+            page_html = speedup(page_html, os.path.join(HERE, "dash3.css"))
+            if "--pv" in sys.argv:
+                page_html = page_html.replace('id="mdx" ', 'id="mdx" data-test="1" ', 1)
+        open(os.path.join(HERE, "_local", PFX + "%s.html" % name), "w", encoding="utf-8").write(page_html)
+
+    for u in ids:
+        if want and u not in want:
+            continue
+        a, tier = acts[u], tier_of(u)
+        body = X.page(a, ctx_for(u, a, tier)) + (ann_script(u, tier) if V3 else "")
+        for bad in ("\u2014", "\u2013", "&mdash;", "&ndash;"):
+            assert bad not in body, "dash in v2 " + u
+        write(u, a["short"], body)
+        if WRITE_LIVE:
+            os.makedirs(os.path.join(LIVE_DIR, "v"), exist_ok=True)
+            ib = SHARE + "live/md/"
+            lb = body.replace('<div class="mdx"', '<div class="mdx" data-sw="sw.js"', 1).replace("</main></div>", "</main>" + inst_html(ib + "icon-180.png", a["short"]) + "</div>")
+            lh = X.SHELL % (e(a["short"]), "%s.webmanifest" % toks[u], ib + "icon-180.png", live_css, lb, live_js)
+            if V3:
+                lh = speedup(lh, os.path.join(HERE, "dash3.css"))
+            open(os.path.join(LIVE_DIR, "v", "%s.html" % toks[u]), "w", encoding="utf-8").write(lh)
+            open(os.path.join(LIVE_DIR, "v", "%s.webmanifest" % toks[u]), "w", encoding="utf-8").write(X.manifest(toks[u], ib))
+        built.append(u)
+    # Basic members: one shared page (no personal data; the loader fills in the business name)
+    basic = X.page({"uid": "", "short": "", "items": [], "hp_days": []}, ctx_for("", {"items": [], "hp_days": []}, "b")) + (ann_script("", "b") if V3 else "")
+    write("basic", "Member Dashboard", basic, installable=False)
+    if WRITE_LIVE:
+        import shutil
+        open(os.path.join(LIVE_DIR, "basic2.html"), "w", encoding="utf-8").write(X.SHELL % ("Member Dashboard", "", SHARE + "live/md/icon-180.png", live_css, basic, live_js))
+        for n in ("icon-180.png", "icon-192.png", "icon-512.png"):
+            shutil.copy(os.path.join(HERE, "img", n), os.path.join(LIVE_DIR, n))
+        shutil.copy(os.path.join(HERE, "sw.js"), os.path.join(LIVE_DIR, "v", "sw.js"))   # same origin + scope as the private pages
+        shutil.copy(os.path.join(HERE, "dash2.css"), os.path.join(LIVE_DIR, "md2.css"))
+        shutil.copy(os.path.join(HERE, "dash2.js"), os.path.join(LIVE_DIR, "md2.js"))
+        shutil.copy(os.path.join(HERE, "dash3.css"), os.path.join(LIVE_DIR, "md3.css"))
+        shutil.copy(os.path.join(HERE, "dash3.js"), os.path.join(LIVE_DIR, "md3.js"))
+        kdir = os.path.join(LIVE_DIR, "k")   # lookup keys for the signed-in loader: k/<sha256(uid|email)>.txt holds that member's token only
+        shutil.rmtree(kdir, ignore_errors=True)
+        os.makedirs(kdir, exist_ok=True)
+        emails = account_emails(ids)
+        for u, em in emails.items():
+            open(os.path.join(kdir, lookup_key(u, em) + ".txt"), "w").write(toks[u])
+        print("members map:", write_members_map({u: toks[u] for u in ids}, mem, acts, tier_of, emails))
+        shutil.rmtree(os.path.join(LIVE_DIR, "m"), ignore_errors=True)   # retire the guessable member-number pages
+    if "--map" in sys.argv and not WRITE_LIVE:   # write the endpoint's members map without publishing pages
+        print("members map:", write_members_map({u: toks[u] for u in ids}, mem, acts, tier_of, account_emails(ids)))
+    if "--shots" in sys.argv:
+        shots(built)
+    return built
+
+
+def shots(uids):
+    """Crisp 1200px-wide desktop screenshots for the VIP email: shots/<uid>.png"""
+    from playwright.sync_api import sync_playwright
+    os.makedirs(os.path.join(HERE, "shots"), exist_ok=True)
+    with sync_playwright() as pw:
+        b = pw.chromium.launch()
+        for u in uids:
+            pg = b.new_page(viewport={"width": 1200, "height": 900}, device_scale_factor=2)
+            pg.goto("file:///" + os.path.join(HERE, "_local", "v2-%s.html" % u).replace("\\", "/"))
+            pg.wait_for_timeout(1500)
+            pg.screenshot(path=os.path.join(HERE, "shots", "%s.png" % u), full_page=True)
+            pg.close()
+        b.close()
 
 
 def main():
@@ -612,7 +970,8 @@ def main():
     css = open(os.path.join(HERE, "dash.css"), encoding="utf-8").read()
     js = open(os.path.join(HERE, "dash.js"), encoding="utf-8").read()
     r = jload(os.path.join(HERE, "data", "banner_reach.json"), {}) or {}
-    acts = {uid: activity(m, hp, issues, posts, rot, banners) for uid, m in V.items()}
+    bsince = banner_since()
+    acts = {uid: activity(m, hp, issues, posts, rot, banners, bsince) for uid, m in V.items()}
     hl = 0
     for a in acts.values():
         if a["tier"] == "v":
@@ -631,16 +990,19 @@ def main():
         vis = re.sub(r"<[^>]+>", " ", re.sub(r"<(svg|script|style)[^>]*>.*?</\1>", " ", body, flags=re.S))
         assert not re.search(r"(?i)(?<!mobile )\bapps?\b", vis), "bare 'app' in copy for %s" % uid
         open(os.path.join(HERE, "_local", uid + ".html"), "w", encoding="utf-8").write(SHELL % (css, body, js))
-        if LIVE:   # signed-in dashboard fragment, loaded by p3.js on /account/home for members in its MD list
+        if WRITE_LIVE:   # signed-in dashboard fragment, loaded by p3.js on /account/home for members in its MD list
             os.makedirs(LIVE_DIR, exist_ok=True)
             os.makedirs(os.path.join(LIVE_DIR, "m"), exist_ok=True)
             open(os.path.join(LIVE_DIR, "m", "%s.html" % uid), "w", encoding="utf-8").write(body)
         s = a["months"].get(TODAY.strftime("%Y-%m"), {})
         print(uid, m["short"], "| items", len(a["items"]), "| upcoming", len(a["upcoming"]), "| this month", s)
 
+    if V2:
+        print("v2 built:", build_v2(acts, V, dict(NET), r))
+
     bb = page_basic()
     open(os.path.join(HERE, "_local", "basic.html"), "w", encoding="utf-8").write(SHELL % (css, bb, js))
-    if LIVE:
+    if WRITE_LIVE:
         open(os.path.join(LIVE_DIR, "basic.html"), "w", encoding="utf-8").write(bb)
         import shutil
         shutil.copy(os.path.join(HERE, "dash.css"), os.path.join(LIVE_DIR, "md.css"))
