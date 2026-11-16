@@ -728,6 +728,73 @@ def account_emails(uids):
     return out
 
 
+ENDPOINT = "https://3vl-ai-assistant.vercel.app/api/member-submit"
+PV_DIR = "live/md/pv/D312ZnN2JxLHNwlhEuRlUSp6"   # owner preview folder (hidden, noindex)
+
+
+def speedup(html, css_path):
+    """Owner 11/15 speed pass: inline the CSS (no render-blocking request), fonts non-blocking, preload the hero photo,
+    and images inside views that are not open yet only load when the view opens (data-src, see dash3.js hydrate)."""
+    import re as _re
+    css = open(css_path, encoding="utf-8").read()
+    html = _re.sub(r'<link rel="stylesheet" href="[^"]+">', lambda m: "<style>" + css + "</style>", html, count=1)
+    html = _re.sub(r'<link href="(https://fonts\.googleapis\.com/[^"]+)" rel="stylesheet">',
+                   lambda m: '<link rel="preload" as="style" href="%s"><link rel="stylesheet" href="%s" media="print" onload="this.media=\'all\'">' % (m.group(1), m.group(1)), html, count=1)
+    hm = _re.search(r'class="hero-ph"><img src="([^"]+)"', html)
+    if hm:
+        html = html.replace("</title>", '</title><link rel="preload" as="image" href="%s" fetchpriority="high">' % hm.group(1), 1)
+    out, pos = [], 0
+    for m in _re.finditer(r'<div class="view" data-view="[a-z]+">', html):
+        out.append(html[pos:m.start()])
+        end = html.find('<div class="view', m.end())
+        end = end if end > 0 else html.find('<div class="drawer"', m.end())
+        chunk = html[m.start():end]
+        chunk = _re.sub(r'<img((?:(?!>).)*?) src="(https?://[^"]+)"', r'<img\1 data-src="\2"', chunk)
+        chunk = _re.sub(r' srcset="([^"]+)"', r' data-srcset="\1"', chunk)
+        out.append(chunk)
+        pos = end
+    out.append(html[pos:])
+    return "".join(out)
+
+
+def requested_samples():
+    """uid -> date of a dashboard sample request: legacy guard file + the submit endpoint's record files in news-monitor."""
+    out = {}
+    for u, v in (jload(os.path.join(GUARD, "data", "member_dashboard", "sample_requests.json"), {}) or {}).items():
+        out[u] = v
+    rd = os.path.join(NEWS, "data", "member_dashboard", "requests")
+    if os.path.isdir(rd):
+        for fn in sorted(os.listdir(rd)):
+            if fn.endswith("_dashboard_sample.json"):
+                j = jload(os.path.join(rd, fn), {}) or {}
+                if j.get("uid"):
+                    out[str(j["uid"])] = {"date": str(j.get("at", ""))[:10]}
+    return out
+
+
+def write_members_map(toks, mem, acts, tier_of, emails):
+    """Private token -> member map for the submit endpoint (sha256 keys only), written to the PRIVATE news-monitor repo."""
+    import hashlib
+    m = {}
+    for u, t in toks.items():
+        a = acts.get(u) or {}
+        mm = mem.get(u) or {}
+        first = ""
+        try:
+            import v2 as X2
+            first = (X2.v3_profile(u, os.path.join(DOCS, "3vl-share")).get("first") or "").strip()
+        except Exception:
+            pass
+        ph = "".join(ch for ch in str(mm.get("phone") or "") if ch.isdigit())
+        m[hashlib.sha256(t.encode()).hexdigest()] = {"uid": u, "company": a.get("short") or mm.get("name") or "", "first": first, "tier": tier_of(u),
+                                                      "phone": ("%s-%s-%s" % (ph[:3], ph[3:6], ph[6:10])) if len(ph) == 10 else ph, "profile": mm.get("url") or a.get("profile") or "",
+                                                      "email": emails.get(u, "")}
+    p = os.path.join(NEWS, "data", "member_dashboard", "members_map.json")
+    os.makedirs(os.path.dirname(p), exist_ok=True)
+    json.dump(m, open(p, "w", encoding="utf-8"), indent=1, sort_keys=True)
+    return p
+
+
 def build_v2(acts, V, NETd, r):
     """One dashboard for every tier. VIP + Featured get their own private token page; Basic members share one page (name filled in)."""
     V3 = "--v3" in sys.argv
@@ -754,7 +821,7 @@ def build_v2(acts, V, NETd, r):
             if th:
                 others_all.append({"uid": u, "name": a["short"], "img": th})
     preview = not WRITE_LIVE
-    samples = jload(os.path.join(GUARD, "data", "member_dashboard", "sample_requests.json"), {}) or {}   # {uid: date}, written by the submit endpoint
+    samples = requested_samples()   # {uid: date}: the submit endpoint's records + legacy file
     wk0 = (dt.date.today() - dt.timedelta(days=dt.date.today().weekday())).isoformat()   # Monday of this week
     week_n = sum(1 for v in samples.values() if str(v.get("date") if isinstance(v, dict) else v)[:10] >= wk0)
     samples_full = week_n >= 5   # weekly cap (the endpoint enforces it too)
@@ -766,7 +833,12 @@ def build_v2(acts, V, NETd, r):
         home = sum(hd.get(d, 0) for d in a.get("hp_days", []) if d >= W0)
         email = sum(it.get("recipients", 0) for it in a.get("items", []) if it["ch"] == "email" and it["date"] >= W0 and not it.get("sample"))
         tot = (bviews if a.get("has_banner_ad") and tier in ("v", "p") else 0) + home + email
-        return {"sample_done": u in samples, "samples_full": samples_full, "tier": tier, "w0": W0, "net": net, "banner_views": bviews, "reach": floor_k(tot) if tot >= FLOOR_REACH else 0, "share_dir": share_dir,
+        tok = toks.get(u, "")
+        live_url = (SHARE + "live/md/v/%s.html" % tok) if tok else ""
+        pv = (u == "115") or not u
+        return {"endpoint": ENDPOINT if (WRITE_LIVE or "--pv" in sys.argv) else "", "token": tok if (WRITE_LIVE or "--pv" in sys.argv) else "",
+                "dash_url": live_url if WRITE_LIVE else ("https://threevillagelocal-cloud.github.io/3vl-share/%s/kgr.html" % PV_DIR if pv else ""),
+                "sample_done": u in samples, "samples_full": samples_full, "tier": tier, "w0": W0, "net": net, "banner_views": bviews, "reach": floor_k(tot) if tot >= FLOOR_REACH else 0, "share_dir": share_dir,
                 "member": mem.get(u, {}), "raw": RAW, "logo3vl": LOGO3VL, "preview": preview, "others": [o for o in others_all if o["uid"] != u]}
 
     def write(name, title, body, installable=True):
@@ -774,8 +846,12 @@ def build_v2(acts, V, NETd, r):
         if installable:
             b = b.replace("</main></div>", "</main>" + X.INSTALL % "../img/icon-180.png" + "</div>")
             open(os.path.join(HERE, "_local", PFX + "%s.webmanifest" % name), "w", encoding="utf-8").write(X.manifest(PFX + name, "../img/"))
-        open(os.path.join(HERE, "_local", PFX + "%s.html" % name), "w", encoding="utf-8").write(
-            X.SHELL % (e(title), PFX + "%s.webmanifest" % name, "../img/icon-180.png", local_css, b, local_js))
+        page_html = X.SHELL % (e(title), PFX + "%s.webmanifest" % name, "../img/icon-180.png", local_css, b, local_js)
+        if V3:
+            page_html = speedup(page_html, os.path.join(HERE, "dash3.css"))
+            if "--pv" in sys.argv:
+                page_html = page_html.replace('id="mdx" ', 'id="mdx" data-test="1" ', 1)
+        open(os.path.join(HERE, "_local", PFX + "%s.html" % name), "w", encoding="utf-8").write(page_html)
 
     for u in ids:
         if want and u not in want:
@@ -789,8 +865,10 @@ def build_v2(acts, V, NETd, r):
             os.makedirs(os.path.join(LIVE_DIR, "v"), exist_ok=True)
             ib = SHARE + "live/md/"
             lb = body.replace('<div class="mdx"', '<div class="mdx" data-sw="sw.js"', 1).replace("</main></div>", "</main>" + X.INSTALL % (ib + "icon-180.png") + "</div>")
-            open(os.path.join(LIVE_DIR, "v", "%s.html" % toks[u]), "w", encoding="utf-8").write(
-                X.SHELL % (e(a["short"]), "%s.webmanifest" % toks[u], ib + "icon-180.png", live_css, lb, live_js))
+            lh = X.SHELL % (e(a["short"]), "%s.webmanifest" % toks[u], ib + "icon-180.png", live_css, lb, live_js)
+            if V3:
+                lh = speedup(lh, os.path.join(HERE, "dash3.css"))
+            open(os.path.join(LIVE_DIR, "v", "%s.html" % toks[u]), "w", encoding="utf-8").write(lh)
             open(os.path.join(LIVE_DIR, "v", "%s.webmanifest" % toks[u]), "w", encoding="utf-8").write(X.manifest(toks[u], ib))
         built.append(u)
     # Basic members: one shared page (no personal data; the loader fills in the business name)
@@ -804,12 +882,18 @@ def build_v2(acts, V, NETd, r):
         shutil.copy(os.path.join(HERE, "sw.js"), os.path.join(LIVE_DIR, "v", "sw.js"))   # same origin + scope as the private pages
         shutil.copy(os.path.join(HERE, "dash2.css"), os.path.join(LIVE_DIR, "md2.css"))
         shutil.copy(os.path.join(HERE, "dash2.js"), os.path.join(LIVE_DIR, "md2.js"))
+        shutil.copy(os.path.join(HERE, "dash3.css"), os.path.join(LIVE_DIR, "md3.css"))
+        shutil.copy(os.path.join(HERE, "dash3.js"), os.path.join(LIVE_DIR, "md3.js"))
         kdir = os.path.join(LIVE_DIR, "k")   # lookup keys for the signed-in loader: k/<sha256(uid|email)>.txt holds that member's token only
         shutil.rmtree(kdir, ignore_errors=True)
         os.makedirs(kdir, exist_ok=True)
-        for u, em in account_emails(ids).items():
+        emails = account_emails(ids)
+        for u, em in emails.items():
             open(os.path.join(kdir, lookup_key(u, em) + ".txt"), "w").write(toks[u])
+        print("members map:", write_members_map({u: toks[u] for u in ids}, mem, acts, tier_of, emails))
         shutil.rmtree(os.path.join(LIVE_DIR, "m"), ignore_errors=True)   # retire the guessable member-number pages
+    if "--map" in sys.argv and not WRITE_LIVE:   # write the endpoint's members map without publishing pages
+        print("members map:", write_members_map({u: toks[u] for u in ids}, mem, acts, tier_of, account_emails(ids)))
     if "--shots" in sys.argv:
         shots(built)
     return built

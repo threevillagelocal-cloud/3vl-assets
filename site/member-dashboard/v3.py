@@ -117,13 +117,17 @@ def drawer_forms(tier):
                        [inp("title", "Title", req=True), inp("details", "Details", "textarea"),
                         '<div class="x-2">' + inp("start", "Starts", "date") + inp("end", "Ends", "date") + '</div>',
                         '<div class="x-2">' + inp("photo", "Photo", "file") + inp("link", "Link", "url") + '</div>'], "Send special")
-    out["video"] = F("video", "Request a promo video", "Tell us what you have in mind. We will reply with options.",
+    out["video"] = F("video", "Request your free promo reel", "VIP perk: a fresh promo video every month, produced by 3VL Digital. Tell us what to feature.",
                      [inp("want", "What should the video show?", "textarea", req=True),
                       '<div class="x-2">' + inp("style", "Style", "select:Animated with voiceover|Filmed on location|Interview style|Not sure yet") + inp("dates", "Preferred dates", ph="Any week that works") + '</div>',
                       inp("notes", "Anything else", "textarea")], "Send request")
     out["social"] = F("social", "Request a social post", "News, a milestone or something new? We will put it on our Facebook and Instagram.",
                       [inp("what", "What should we post about?", "textarea", req=True),
                        '<div class="x-2">' + inp("photo", "Photo", "file") + inp("when", "Best timing", ph="This week, a date, any time") + '</div>'], "Send request")
+    if tier == "b":   # Basic shares one page (no private token): we need a way to reach them
+        out["event"] = out["event"].replace('<button', inp("business", "Your business", req=True) + '<div class="x-2">' + inp("contact_name", "Your name") + inp("contact_email", "Your email", "email", req=True) + '</div><button', 1)
+    if X.RANK[tier] < X.RANK["v"]:
+        out["video"] = '<div class="drawlock"><span class="lockic">%s</span><b>A free promo video every month</b><i>VIPs get a fresh promo reel every month, produced by 3VL Digital in their own brand.</i><a class="btn primary" href="%s" data-ga="dash_upgrade_click" data-product="promo_reel">Upgrade to VIP %s</a></div>' % (ic("lock"), UPGRADE, ic("chev"))
     if not has(tier, "special"):
         out["special"] = '<div class="drawlock"><span class="lockic">%s</span><b>Feature your specials</b><i>Featured and VIP members send us deals and we put them in front of neighbors.</i><a class="btn primary" href="%s">Upgrade to Featured %s</a></div>' % (ic("lock"), UPGRADE, ic("chev"))
     if not has(tier, "social_req"):
@@ -133,18 +137,63 @@ def drawer_forms(tier):
 
 ACTIONS = [("event", "cal", "Submit an event", "Add it to our calendar and weekend picks", "blue"),
            ("special", "tag", "Submit a special", "Deals, menus and seasonal offers", "amber"),
-           ("video", "video", "Request a promo video", "Animated, on location or interview", "violet"),
+           ("video", "video", "Your free promo reel", "VIP perk: a new video every month", "violet"),
            ("social", "insta", "Request a social post", "Facebook and Instagram, tagged", "pink"),
            ("listing", "edit", "Update my listing", "Hours, photos, services, contact", "green")]
 
 
 def action_btn(k, icn, label, sub, color, tier, big=False):
-    locked = (k == "special" and not has(tier, "special")) or (k == "social" and not has(tier, "social_req"))
+    locked = (k == "special" and not has(tier, "special")) or (k == "social" and not has(tier, "social_req")) or (k == "video" and X.RANK[tier] < X.RANK["v"])
     if k == "listing":
         return '<a class="qa %s%s" href="%s" data-ga="dash_action_open" data-product="listing"><span class="qa-ic">%s</span><b>%s</b>%s</a>' % (
             color, " big" if big else "", LOGIN_EDIT, ic(icn), label, ("<i>%s</i>" % sub) if big else "")
     return '<button type="button" class="qa %s%s" data-open="%s" data-ga="dash_action_open" data-product="%s"><span class="qa-ic">%s</span><b>%s</b>%s%s</button>' % (
         color, " big" if big else "", k, k, ic(icn), label, ("<i>%s</i>" % sub) if big else "", '<em class="qa-lk">%s</em>' % ic("lock") if locked else "")
+
+
+def industry_shot(cat):
+    c = (cat or "").lower()
+    for keys, shot in ((("restaurant", "food", "bakery", "cafe", "pizza", "bar", "deli", "catering", "eat"), "dash-restaurant"),
+                       (("beauty", "salon", "spa", "hair", "nail", "esthetic", "skin", "barber", "wellness"), "dash-salon"),
+                       (("fitness", "gym", "yoga", "pilates", "martial", "sport"), "dash-gym"),
+                       (("landscap", "lawn", "tree", "garden", "plant"), "dash-landscaper")):
+        if any(re.search(r"" + k, c) for k in keys):
+            return shot
+    return "dash-contractor"
+
+
+LOGO_BASE = "https://threevillagelocal-cloud.github.io/3vl-share/ai-5-ways/img/logos/"
+LOGOS_ROW = ('<div class="sf-logos"><span class="sf-lk">Connects to 400+ programs you already use</span><div class="sf-lg">' + "".join(
+    '<span class="lg" style="--d:%d"><img src="%s%s.svg" alt="%s" width="22" height="22" loading="lazy" decoding="async" data-processed="true"></span>' % (i, LOGO_BASE, f, n)
+    for i, (f, n) in enumerate((("quickbooks", "QuickBooks"), ("square", "Square"), ("stripe", "Stripe"), ("googlecalendar", "Google Calendar"), ("gmail", "Gmail"),
+                                ("shopify", "Shopify"), ("mailchimp", "Mailchimp"), ("hubspot", "HubSpot"), ("facebook", "Facebook"), ("instagram", "Instagram"),
+                                ("paypal", "PayPal"), ("calendly", "Calendly")))) + '<span class="lg more">+400</span></div></div>')
+
+
+def sample_feature(company, first, sample_done, tier, full, cat):
+    """Owner 11/15: the free dashboard sample offer is the most eye-catching card on the Overview (wide, condensed caps, glowing CTA,
+    tilted dashboard mockup for THEIR industry, FREE ribbon, animated border). Thank-you state + weekly cap/waitlist kept."""
+    if tier == "b" or sample_done:
+        return ""
+    comp = e(company) if company else "your business"
+    shot = industry_shot(cat)
+    if full:
+        h = 'Our free sample spots are <em>full this week.</em>'
+        sub = "Join the list and we will reach out to %s first." % comp
+        btn = ('<button type="button" class="sf-cta" data-sample data-kind="dashboard_sample_waitlist" data-first="%s" data-ga="dash_sample_request" data-product="waitlist">'
+               'Join the list %s</button>' % (e(first or ""), ic("chev")))
+        fine = "Free &middot; No obligation"
+    else:
+        h = 'We make custom dashboards <em>like this</em> for <em>your business.</em>'
+        sub = "Leads, jobs, team and money on one screen. Logins for you, your managers and your staff."
+        btn = ('<button type="button" class="sf-cta" data-sample data-first="%s" data-ga="dash_sample_request" data-product="dashboards">'
+               'Request your FREE working sample <span aria-hidden="true">&rarr;</span></button>' % e(first or ""))
+        fine = "Free &middot; No obligation &middot; Built for %s" % comp
+    return ('<section class="sfeat" data-ups="dashboards" id="sfeat"><span class="sf-ribbon">FREE</span><span class="sf-streak" aria-hidden="true"></span>'
+            '<div class="sf-t ups-t"><span class="sf-k">3VL Digital &middot; Custom dashboards</span><h2>%s</h2><p>%s</p>%s<span class="sf-fine">%s</span>%s</div>'
+            '<div class="sf-v" aria-hidden="true"><div class="sf-frame"><div class="sf-bar"><i></i><i></i><i></i><span>app.yourbusiness.com</span></div>'
+            '<img src="%s%s-640.webp" srcset="%s%s-640.webp 640w, %s%s-1200.webp 1200w" sizes="(max-width: 860px) 90vw, 520px" alt="" width="640" height="400" loading="lazy" decoding="async" data-processed="true"></div></div></section>') % (
+        h, sub, btn, fine, LOGOS_ROW, SHOT, shot, SHOT, shot, SHOT, shot)
 
 
 def upsell_cards(company, first, sample_done, tier, full):
@@ -362,7 +411,7 @@ def page(a, ctx):
     prod = "".join('<a class="card prod" href="%s%s?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=grow-%s" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="grow_%s">'
                    '<span class="prod-img">%s</span><span class="prod-t"><b>%s</b><i>%s</i></span></a>' % (DIG, p, k, k, img(SHOT + im, ""), t, d) for k, t, d, im, p in products)
     # owner 11/15: only offers that are 100% working end to end (AI visibility report + drone cards removed until they have a working request path)
-    more = [("video", "Promo video", "Tell us your idea, we reply with options", "data-open=\"video\""),
+    more = ([("video", "Your free promo reel", "VIP perk: a new video every month", "data-open=\"video\"")] if X.RANK[tier] >= X.RANK["v"] else []) + [
             ("insta", "Social spotlight", "Ask us to feature you on Facebook and Instagram", "data-open=\"social\""),
             ("cal", "Event promotion", "Calendar, weekend picks and weekly email", "data-open=\"event\"")]
     if RANK[tier] < RANK["v"]:
@@ -417,28 +466,36 @@ def page(a, ctx):
                  '<li><b>Tell your customers</b><i>Print your QR code for the counter, cards and flyers.</i><a class="chip" href="#profile" data-go="profile">Get your QR code</a></li></ul></div>') % ic("spark")
 
     # ---- sidebar
+    acct = [("edit", "Edit my listing", "/account/contact"), ("mail", "Leads and inquiries", "/account/leads"), ("tag", "Billing and payment", "/account/billing/change"),
+            ("star", "Upgrade my plan", "/account/upgrade"), ("lock", "Change password", "/account/password")]
+    acct_nav = "".join('<a class="nav-acct" href="/login?login_direct_url=%s" data-acct="%s" data-ga="dash_account_click" data-product="%s">%s<span>%s</span></a>' % (
+        quote(p, safe=""), p, re.sub(r"[^a-z]+", "_", t.lower()), ic(i if i in ICONS else "chev"), t) for i, t, p in acct) + '<a class="nav-acct" href="/logout" data-acct="/logout">%s<span>Sign out</span></a>' % ic("x")
     def nav(v, icn, label, badge=""):
         return '<a href="#%s" data-go="%s"%s>%s<span>%s</span>%s</a>' % (v, v, ' class="on" aria-current="page"' if v == "overview" else "", ic(icn), label, badge)
     lockb = '<em class="nlk">%s</em>' % ic("lock")
     seen_lock = lockb if not (has(tier, "banner") and has(tier, "spotlight")) else ""
     promo_badge = ('<em class="nb">%d</em>' % len(soc30 + em30)) if (soc30 or em30) and has(tier, "timeline") else ("" if has(tier, "timeline") else lockb)
     side = ('<aside class="sidebar"><a class="brand" href="%s/" target="_blank" rel="noopener">%s<span class="brand-sub">Member dashboard</span></a><nav class="nav" aria-label="Dashboard">'
-            '<div class="nav-label">Your dashboard</div>%s%s%s<div class="nav-label">Take action</div>%s%s<div class="nav-label">Grow</div>%s</nav>'
-            '<div class="side-foot"><div class="me">%s<div><b class="ellip">%s</b><span class="tierb t-%s">%s</span></div></div><a class="side-link" href="%s">Sign in to edit %s</a></div></aside>') % (
+            '<div class="nav-label">Your dashboard</div>%s%s%s<div class="nav-label">Take action</div>%s%s<div class="nav-label">Grow</div>%s<a href="#" data-open="app" data-ga="dash_action_open" data-product="get_app">%s<span>Get the app on your phone</span></a><div class="nav-label">Account</div>%s</nav>'
+            '<a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="sidebar_3vl_digital"><span>Visit our business AI services at</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a><div class="side-foot"><div class="me">%s<div><b class="ellip">%s</b><span class="tierb t-%s">%s%s</span></div></div><a class="side-link" href="%s">Sign in to edit %s</a></div></aside>') % (
         SITE, img("https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-white.webp", "Three Village Local", 168, 58, "brand-logo", lazy=False), nav("overview", "grid", "Overview"), nav("promotions", "megaphone", "Promotions", promo_badge),
-        nav("seen", "eye", "Banner and Spotlight", seen_lock), nav("actions", "send", "Action center"), nav("profile", "user", "Profile"), nav("grow", "rocket", "Grow with 3VL Digital"),
-        img(a.get("logo"), "", 34, 34, "me-logo") if a.get("logo") else '<span class="me-logo ph">%s</span>' % ic("user"), name_html, tier, TIER_NAME[tier], LOGIN, ic("chev"))
+        nav("seen", "eye", "Banner and Spotlight", seen_lock), nav("actions", "send", "Action center"), nav("profile", "user", "Profile"), nav("grow", "rocket", "Grow with 3VL Digital"), ic("phone"), acct_nav,
+        img(a.get("logo"), "", 60, 60, "me-logo") if a.get("logo") else '<span class="me-logo ph">%s</span>' % ic("user"), name_html, tier, "&#9733; " if X.RANK[tier] >= X.RANK["v"] else "", TIER_NAME[tier].upper() if X.RANK[tier] >= X.RANK["v"] else TIER_NAME[tier], LOGIN, ic("chev"))
 
     top = ('<header class="topbar"><label class="search">%s<input type="search" placeholder="Search your dashboard" aria-label="Search your dashboard" data-search></label>'
-           '<span class="pill live hide-s"><i></i>Updated nightly</span><div class="topbar-actions"><button type="button" class="btn primary sm hide-s" data-open="event">%s Submit something</button>'
+           '<span class="pill live hide-s"><i></i>Updated nightly</span>%s<div class="topbar-actions"><button type="button" class="btn primary sm hide-s" data-open="event">%s Submit something</button>'
            '<a class="btn ghost sm hide-s" href="%s" target="_blank" rel="noopener">View profile %s</a><span class="avatar">%s</span></div></header>') % (
-        ic("search"), ic("send"), e(prof or SITE), ic("ext"), img(a.get("logo"), "", 34, 34) if a.get("logo") else ic("user"))
+        ic("search"), ('<span class="tpill vip">&#9733; VIP MEMBER</span>' if X.RANK[tier] >= X.RANK["v"] else
+                       '<span class="tpill">%s<a href="%s" data-ga="dash_upgrade_click" data-product="topbar">Upgrade</a></span>' % (TIER_NAME[tier], UPGRADE)),
+        ic("send"), e(prof or SITE), ic("ext"), img(a.get("logo"), "", 34, 34) if a.get("logo") else ic("user"))
 
+    hero_img = ('<img src="%s" alt="" fetchpriority="high" decoding="async" data-processed="true" onerror="this.style.opacity=0">' % e(hero_photo)) if hero_photo else ""
     hero = ('<section class="hero"><div class="hero-ph">%s</div><div class="hero-in"><span class="chip-ai">%s Your month &middot; %s</span>'
             '<h2><span data-greet>Hello</span>, %s.</h2><p class="hero-sum">%s</p><!--%s--><div class="brief-actions">'
-            '<button type="button" class="btn gold sm" data-open="event">%s Submit an event</button><button type="button" class="btn glass sm" data-open="video">%s Request a promo video</button>'
+            '<button type="button" class="btn gold sm" data-open="event">%s Submit an event</button>%s'
             '<a class="btn glass sm" href="#seen" data-go="seen">%s See where you show up</a></div></div></section>') % (
-        img(hero_photo, "", lazy=False), ic("spark"), month, hello, summary, ('<div class="brief">%s</div>' % briefs) if briefs else "", ic("cal"), ic("video"), ic("eye"))
+        hero_img, ic("spark"), month, hello, summary, ('<div class="brief">%s</div>' % briefs) if briefs else "", ic("cal"),
+        ('<button type="button" class="btn glass sm" data-open="video">%s Your free promo reel</button>' % ic("video")) if X.RANK[tier] >= X.RANK["v"] else "", ic("eye"))
 
     prof_mini = ('<div class="card"><div class="card-head"><span class="card-icon green">%s</span><div><h3>Profile strength</h3><div class="sub">%s</div></div><span class="right">%s</span></div>'
                  '<div class="card-body"><div class="qa-grid">%s</div></div></div>') % (
@@ -451,8 +508,10 @@ def page(a, ctx):
     elif not sc:
         sc = [net_card or upc_card, news_card]
     seen_row = '<div class="grid g-ov">%s%s</div>' % ("".join(sc), prof_mini)
-    overview = ('<div class="view on" data-view="overview">%s<div class="kpis">%s</div>%s<div class="grid g-ov">%s%s<div class="card upsell" id="ups">%s</div></div></div>') % (
-        hero, kpis, seen_row, chart_card or tips_card, act_card, ups)
+    sfeat = sample_feature(short, first if uid else "", ctx.get("sample_done", False), tier, ctx.get("samples_full", False), a.get("cat"))
+    third = news_card if sfeat else '<div class="card upsell" id="ups">%s</div>' % ups
+    overview = ('<div class="view on" data-view="overview">%s<div class="kpis">%s</div>%s%s<div class="grid g-ov">%s%s%s</div></div>') % (
+        hero, kpis, sfeat, seen_row, chart_card or tips_card, act_card, third)
 
     promotions = ('<div class="view" data-view="promotions"><div class="vh"><h1>Promotions</h1><p>Everything we have done to put %s in front of neighbors.</p></div>'
                   '<div class="grid g-promo"><div class="stack">%s<div class="grid g-2">%s%s</div></div>%s</div></div>') % (name_html, chart_card or "", mix_card or news_card, upc_card, tl_full)
@@ -492,25 +551,38 @@ def page(a, ctx):
               '<div class="grid g-grow"><div class="card upsell big" id="ups2">%s</div>%s</div><div class="grid g-3 mt">%s</div><div class="grid g-3 mt"><div class="card"><div class="card-head"><span class="card-icon amber">%s</span><div><h3>More ways to grow</h3></div></div><div class="tiles">%s</div></div>%s%s</div></div>') % (
         ups.replace('data-ups="', 'data-ups2="'), meet, prod, ic("rocket"), morel, news_card, net_card)
 
+    dash_url = ctx.get("dash_url") or ""
+    app_qr = X.qr_data_uri(dash_url) if dash_url else ""
+    app_pane = ('<section class="drawpane" data-pane="app" hidden><div class="apppane"><span class="card-icon blue">%s</span><h3>Put your dashboard on your phone</h3>'
+                '<p class="faint">It opens like an app, updates every morning and needs no login.</p>%s'
+                '<div class="appsteps"><div><b>iPhone</b><ol><li>Open your dashboard link in <b>Safari</b></li><li>Tap <b>Share</b> (the square with an arrow)</li><li>Tap <b>Add to Home Screen</b></li></ol></div>'
+                '<div><b>Android</b><ol><li>Open your dashboard link in <b>Chrome</b></li><li>Tap <b>Install app</b> (or the menu, then Add to Home screen)</li></ol>'
+                '<button type="button" class="btn primary sm x-inst-go" data-install hidden>Install now</button></div></div>%s</div></section>') % (
+        ic("phone"), ('<div class="appqr"><img src="%s" alt="QR code to open your dashboard on your phone" width="168" height="168"><i>Scan with your phone camera</i></div>' % app_qr) if app_qr else "",
+        ('<button type="button" class="chip" data-copy="%s">%s Copy my dashboard link</button>' % (e(dash_url), ic("copy"))) if dash_url else "")
+    more_pane = ('<section class="drawpane" data-pane="more" hidden><div class="morepane"><h3>More</h3><button type="button" class="tile-l" data-open="app">%s<span><b>Get the app on your phone</b><i>Your dashboard on your home screen</i></span></button>'
+                 '<div class="nav-label">Account</div><div class="morelinks">%s</div><a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="more_3vl_digital">'
+                 '<span>Visit our business AI services at</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a></div></section>') % (ic("phone"), acct_nav)
     drawer = ('<div class="drawer" id="drawer" hidden aria-hidden="true"><div class="dr-scrim" data-close></div><div class="dr-panel" role="dialog" aria-modal="true" aria-label="Send to Three Village Local">'
               '<button type="button" class="dr-x" data-close aria-label="Close">%s</button>%s%s</div></div>') % (
-        ic("x"), drawer_forms(tier), '<p class="prev-note">Preview: forms are switched off. Nothing is sent.</p>' if ctx.get("preview") else "")
+        ic("x"), drawer_forms(tier) + app_pane + more_pane, '<p class="prev-note">Preview (test mode): what you send goes only to the 3VL team inbox, marked TEST.</p>' if ctx.get("preview") else "")
     status = ('<details class="pv-status"><summary>Preview status</summary><p><b>Working now</b></p><ul class="ok">'
               '<li>Switching views, numbers, charts, animations</li><li>Share links (copy, Facebook, LinkedIn, email)</li><li>QR code download</li>'
               '<li>Google review link copy</li><li>Upgrade, edit listing and view profile links (go through member login)</li><li>3VL Digital and follow links</li></ul>'
               '<p><b>Finish before go-live</b></p><ul class="todo"><li>Form submissions (event, special, promo video, social): endpoint to email you</li>'
               '<li>Free sample request + waitlist alert: same endpoint, weekly cap of 5</li><li>Home screen install: needs the private live pages + service worker</li>'
               '<li>Signed-in loader on /account/home (test with a real member login)</li></ul><p class="faint small">Monthly promo reel (free VIP perk) stays hidden until delivery works.</p></details>') if ctx.get("preview") else ""
-    tabs = ('<nav class="tabbar" aria-label="Dashboard">%s</nav>' % "".join(
+    tabs = ('<nav class="tabbar" aria-label="Dashboard">%s</nav>' % ("".join(
         '<a href="#%s" data-go="%s"%s>%s<span>%s</span></a>' % (v, v, ' class="on"' if v == "overview" else "", ic(i), t) for v, i, t in (
-            ("overview", "grid", "Home"), ("promotions", "megaphone", "Promos"), ("seen", "eye", "Seen"), ("actions", "send", "Actions"), ("grow", "rocket", "Grow"))))
+            ("overview", "grid", "Home"), ("promotions", "megaphone", "Promos"), ("seen", "eye", "Seen"), ("actions", "send", "Actions"), ("grow", "rocket", "Grow"))) + ('<a href="#" data-open="more">%s<span>More</span></a>' % ic("layers"))))
+    attrs = (' data-preview="1"' if ctx.get("preview") else "") + (' data-endpoint="%s"' % e(ctx["endpoint"]) if ctx.get("endpoint") else "") + (' data-token="%s"' % e(ctx["token"]) if ctx.get("token") else "")
     body = ('<div class="mdx app" id="mdx" data-tier="%s" data-uid="%s"%s>%s<div class="main">%s<main class="content" id="view">%s%s%s%s%s%s'
             '<p class="foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a>. Updated nightly.</p></main></div>%s%s'
             '<div class="toasts" id="toasts" aria-live="polite"></div></div>') % (
-        tier, uid, ' data-preview="1"' if ctx.get("preview") else "", side, top, overview, promotions, seen, actions_v, profile_v, grow_v, drawer, tabs + status)
+        tier, uid, attrs, side, top, overview, promotions, seen, actions_v, profile_v, grow_v, drawer, tabs + status)
     return body
 
 
-SHELL = X.SHELL.replace("family=Inter:wght@400;500;600;700;800", "family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700")
+SHELL = X.SHELL.replace("family=Inter:wght@400;500;600;700;800", "family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Anton")
 manifest = X.manifest
 INSTALL = X.INSTALL.replace('class="x-btn x-inst-go"', 'class="btn primary sm x-inst-go"')
