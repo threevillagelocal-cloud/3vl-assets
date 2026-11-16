@@ -193,11 +193,15 @@ LOGOS_ROW = ('<div class="sf-logos"><span class="sf-lk">Connects to 400+ program
 def sample_feature(company, first, sample_done, tier, full, cat):
     """Owner 11/15: the free dashboard sample offer is the most eye-catching card on the Overview (wide, condensed caps, glowing CTA,
     tilted dashboard mockup for THEIR industry, FREE ribbon, animated border). Thank-you state + weekly cap/waitlist kept."""
-    if tier == "b" or sample_done:
-        return ""
     comp = e(company) if company else "your business"
     shot = industry_shot(cat)
-    if full:
+    if tier == "b" or sample_done:   # owner 11/16: "everyone should have a box that is a promo for 3vldigital"
+        h = 'AI websites, chatbots and <em>custom dashboards.</em>'
+        sub = "Built by 3VL Digital, the team behind Three Village Local, for local businesses like %s." % comp
+        btn = ('<a class="sf-cta" href="https://3vldigital.com/?utm_source=member-dashboard&amp;utm_medium=dashboard&amp;utm_campaign=member_box" target="_blank" rel="noopener" '
+               'data-ga="dash_upsell_click" data-product="3vldigital_box">See what we build <span aria-hidden="true">&rarr;</span></a>')
+        fine = "From the team behind Three Village Local"
+    elif full:
         h = 'Our free sample spots are <em>full this week.</em>'
         sub = "Join the list and we will reach out to %s first." % comp
         btn = ('<button type="button" class="sf-cta" data-sample data-kind="dashboard_sample_waitlist" data-first="%s" data-ga="dash_sample_request" data-product="waitlist">'
@@ -210,10 +214,10 @@ def sample_feature(company, first, sample_done, tier, full, cat):
                'Request a free working sample <span aria-hidden="true">&rarr;</span></button>' % e(first or ""))
         fine = "No obligation &middot; Built for %s" % comp
     return ('<section class="sfeat card" data-ups="dashboards" id="sfeat"><span class="sf-streak" aria-hidden="true"></span>'
-            '<div class="sf-t ups-t"><span class="sf-k">3VL Digital &middot; Custom dashboards</span><h2>%s</h2><p>%s</p>%s<span class="sf-fine">%s</span>%s</div>'
+            '<div class="sf-t ups-t"><span class="sf-k">3VL Digital &middot; %s</span><h2>%s</h2><p>%s</p>%s<span class="sf-fine">%s</span>%s</div>'
             '<div class="sf-v" aria-hidden="true"><div class="sf-frame"><div class="sf-bar"><i></i><i></i><i></i><span>app.yourbusiness.com</span></div>'
             '<img src="%s%s-640.webp" srcset="%s%s-640.webp 640w, %s%s-1200.webp 1200w" sizes="(max-width: 860px) 90vw, 520px" alt="" width="640" height="400" loading="lazy" decoding="async" data-processed="true"></div></div></section>') % (
-        h, sub, btn, fine, LOGOS_ROW, SHOT, shot, SHOT, shot, SHOT, shot)
+        "For your business" if (tier == "b" or sample_done) else "Custom dashboards", h, sub, btn, fine, LOGOS_ROW, SHOT, shot, SHOT, shot, SHOT, shot)
 
 
 CHAT_SNIP = ('<div class="csnip" aria-hidden="true"><div class="cs-h"><span class="cs-av">R</span><span><b>Ridgeline Assistant</b><i><em></em>Online now</i></span></div>'
@@ -370,7 +374,7 @@ def page(a, ctx):
     if has(tier, "timeline") and real:
         act_card = ('<div class="card actc"><div class="card-head"><span class="card-icon amber">%s</span><div><h3>What we did for you</h3><div class="sub">%s</div></div>'
                     '<span class="right"><a class="btn ghost sm" href="#promotions" data-go="promotions">See all %s</a></span></div><ul class="acts">%s</ul>'
-                    % (ic("megaphone"), ("%d promotions since you joined" % lifetime) if lifetime >= 3 else "Newest first", ic("chev"), "".join(row(it) for it in real[:7])) + '<div class="card-foot"><span>Have news, a special or an event?</span><button type="button" class="btn primary sm" data-open="event">%s Send it to us</button></div></div>' % ic("send"))
+                    % (ic("megaphone"), ("%d promotions since you joined" % lifetime) if lifetime >= 3 else "Newest first", ic("chev"), "".join(row(it) for it in real[:5])) + '<div class="card-foot"><span>Have news, a special or an event?</span><button type="button" class="btn primary sm" data-open="event">%s Send it to us</button></div></div>' % ic("send"))
         chans = sorted({it["ch"] for it in real})
         chips = ('<div class="seg" role="group" aria-label="Filter"><button type="button" class="on" data-f="all">All</button>' + "".join(
             '<button type="button" data-f="%s">%s</button>' % (c, l) for c, l in (("web", "Website"), ("social", "Social"), ("email", "Email")) if c in chans) + "</div>") if len(chans) > 1 else ""
