@@ -147,14 +147,19 @@ def drawer_forms(tier):
         out["special"] = '<div class="drawlock"><span class="lockic">%s</span><b>Feature your specials</b><i>Featured and VIP members send us deals and we put them in front of neighbors.</i><a class="btn primary" href="%s">Upgrade to Featured %s</a></div>' % (ic("lock"), UPGRADE, ic("chev"))
     if not has(tier, "social_req"):
         out["social"] = '<div class="drawlock"><span class="lockic">%s</span><b>Request a social spotlight</b><i>Featured and VIP members can ask us to feature their business on our Facebook and Instagram.</i><a class="btn primary" href="%s">Upgrade to Featured %s</a></div>' % (ic("lock"), UPGRADE, ic("chev"))
+    if not REEL_ON:
+        out.pop("video", None)
     return "".join('<section class="drawpane" data-pane="%s" hidden>%s</section>' % (k, v) for k, v in out.items())
 
 
+REEL_ON = False   # owner 11/16: hide the free VIP promo reel until delivery works (flip to True to bring it back)
 ACTIONS = [("event", "cal", "Submit an event", "Add it to our calendar and weekend picks", "blue"),
            ("special", "tag", "Submit a special", "Deals, menus and seasonal offers", "amber"),
            ("video", "video", "Your free promo reel", "VIP perk: a new video every month", "violet"),
            ("social", "insta", "Request a social post", "Facebook and Instagram, tagged", "pink"),
            ("listing", "edit", "Update my listing", "Hours, photos, services, contact", "green")]
+if not REEL_ON:
+    ACTIONS = [x for x in ACTIONS if x[0] != "video"]
 
 
 def action_btn(k, icn, label, sub, color, tier, big=False):
@@ -446,7 +451,7 @@ def page(a, ctx):
     prod = "".join('<a class="card prod" href="%s%s?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=grow-%s" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="grow_%s">'
                    '<span class="prod-img%s">%s</span><span class="prod-t"><b>%s</b><i>%s</i></span></a>' % (DIG, p, k, k, " chat" if k == "chatbots" else "", CHAT_SNIP if k == "chatbots" else img(SHOT + im, ""), t, d) for k, t, d, im, p in products)
     # owner 11/15: only offers that are 100% working end to end (AI visibility report + drone cards removed until they have a working request path)
-    more = ([("video", "Your free promo reel", "VIP perk: a new video every month", "data-open=\"video\"")] if X.RANK[tier] >= X.RANK["v"] else []) + [
+    more = ([("video", "Your free promo reel", "VIP perk: a new video every month", "data-open=\"video\"")] if REEL_ON and X.RANK[tier] >= X.RANK["v"] else []) + [
             ("insta", "Social spotlight", "Ask us to feature you on Facebook and Instagram", "data-open=\"social\""),
             ("cal", "Event promotion", "Calendar, weekend picks and weekly email", "data-open=\"event\"")]
     if RANK[tier] < RANK["v"]:
@@ -535,7 +540,7 @@ def page(a, ctx):
             '<button type="button" class="btn gold sm" data-open="event">%s Submit an event</button>%s'
             '<a class="btn glass sm" href="#seen" data-go="seen">%s See where you show up</a></div></div></section>') % (
         hero_img, ic("spark"), month, hello, summary, ('<div class="brief">%s</div>' % briefs) if briefs else "", ic("cal"),
-        ('<button type="button" class="btn glass sm" data-open="video">%s Your free promo reel</button>' % ic("video")) if X.RANK[tier] >= X.RANK["v"] else "", ic("eye"))
+        ('<button type="button" class="btn glass sm" data-open="video">%s Your free promo reel</button>' % ic("video")) if REEL_ON and X.RANK[tier] >= X.RANK["v"] else "", ic("eye"))
 
     prof_mini = ('<div class="card"><div class="card-head"><span class="card-icon green">%s</span><div><h3>Profile strength</h3><div class="sub">%s</div></div><span class="right">%s</span></div>'
                  '<div class="card-body"><div class="qa-grid">%s</div></div></div>') % (
