@@ -1,24 +1,4 @@
 {
-"17931655359410036": {
-"special": true,
-"title": "Spooky Cheese Workshop",
-"when": "Fri, Oct. 23",
-"desc": "Join a themed cheese workshop. Tickets available on their website.",
-"expires": "2026-10-23",
-"_ts": "2026-10-17T17:53:01+0000"
-},
-"18009595800006784": {
-"special": false,
-"_ts": "2026-10-17T19:29:42+0000"
-},
-"18113767961172883": {
-"special": true,
-"title": "Halloween Cakesicles Now Available",
-"when": "Through October 31",
-"desc": "Seasonal Halloween-themed cakesicles are available now at Premiere Pastry Shop.",
-"expires": "2026-10-31",
-"_ts": "2026-10-17T17:21:51+0000"
-},
 "18437649649181535": {
 "special": false,
 "title": "",
@@ -50,38 +30,6 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-10-17T20:14:36+0000"
-},
-"17954653890039721": {
-"special": false,
-"title": "PJ Lobster House Open for Harvest Festival",
-"when": "Oct 17-18, 2026",
-"desc": "Restaurant open during Port Jeff Harvest Festival with dine-in reservations and delivery available.",
-"expires": "2026-10-18",
-"_ts": "2026-10-17T16:36:04+0000"
-},
-"18146727334569460": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-17T16:04:32+0000"
-},
-"18263565073307789": {
-"special": true,
-"title": "Port Jefferson Harvest Fest",
-"when": "This weekend",
-"desc": "Local vendors, food, and entertainment celebrate autumn in the village this weekend.",
-"expires": "2026-10-19",
-"_ts": "2026-10-17T16:42:16+0000"
-},
-"17999493447040327": {
-"special": false,
-"title": "Ladies' Lounge Night Booking",
-"when": "By reservation",
-"desc": "Book the lounge for 2 hours with drinks and lite bites for groups of 6-12.",
-"expires": "2026-10-31",
-"_ts": "2026-10-17T19:02:02+0000"
 },
 "18122401276938699": {
 "special": false,
@@ -2878,5 +2826,29 @@
 "desc": "Limited-time turkey sandwich with cranberry mayo, stuffing, Swiss, and gravy for dipping.",
 "expires": "2026-11-25",
 "_ts": "2026-11-16T14:42:54+0000"
+},
+"18641387761065130": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-16T19:07:40+0000"
+},
+"18134454538753675": {
+"special": false,
+"title": "Nantuckets Restaurant",
+"when": "Ongoing",
+"desc": "Elegant seafood dining in Port Jefferson with refined, sophisticated culinary experience.",
+"expires": "2026-11-16",
+"_ts": "2026-11-16T16:32:43+0000"
+},
+"17924523486446853": {
+"special": true,
+"title": "15% Off Holiday Party Bookings",
+"when": "Book by Nov. 26",
+"desc": "Save 15% on office parties, family dinners or friends' nights out when you book before Thanksgiving.",
+"expires": "2026-11-26",
+"_ts": "2026-11-16T17:01:44+0000"
 }
 }

@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-16T20:00:49.599760+00:00",
+"updated": "2026-11-16T20:02:47.283936+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 40,
@@ -2045,6 +2045,25 @@
 "page": "https://www.threevillagelocal.com/eat-drink/level-up-kitchen-thanksgiving-order-pickup",
 "profile": "https://www.threevillagelocal.com/level-up-kitchen",
 "label": "Special"
+},
+{
+"id": "17924523486446853",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "15% Off Holiday Party Bookings",
+"when": "Book by Nov. 26",
+"desc": "Save 15% on office parties, family dinners or friends' nights out when you book before Thanksgiving.",
+"expires": "2026-11-26",
+"posted": "2026-11-16T17:01:44+0000",
+"url": "https://www.instagram.com/p/Dfz2Aa4in9R/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17924523486446853.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"label": "Event"
 },
 {
 "id": "18108793784212492",
