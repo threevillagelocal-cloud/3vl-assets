@@ -96,6 +96,13 @@ def site_mock(banner_src, short):
             '<div class="sm-rail"><div class="sm-ad">%s<em>Your ad</em></div><p></p><p class="s"></p></div></div></div>') % img(banner_src, "Banner ad for " + short)
 
 
+def ban_hero(banner_src, short, big=False):
+    """Owner 11/15: their real banner ad, big, as the hero of the card (no empty fake page)."""
+    pic = img(banner_src, "Banner ad for " + short) if banner_src else '<span class="bn-ph"></span>'
+    return ('<div class="bn-hero%s" aria-hidden="true"><div class="bn-frame">%s<em>Your ad</em></div>'
+            '<div class="bn-cap"><span class="dot"></span>Rotating on every page of threevillagelocal.com</div></div>') % (" big" if big else "", pic)
+
+
 def spot_mock(a, others, big=False):
     """Owner 11/15: a faithful copy of the real homepage Local Business Spotlight card for THIS business (front.js card(): 12:5 photo,
     logo tile, blue caps category + town, name, services line, View profile + Call). No 'Also featured' list."""
@@ -277,25 +284,35 @@ def page(a, ctx):
     else:
         summary = "Your next spotlight is on the way. Have news, a special or an event? Send it to us and we will promote it."
 
-    # ---- KPI tiles (floor rule: weak or missing numbers never show)
+    # ---- KPI tiles (floor rule: weak or missing numbers never show). Owner 11/15: logos/graphics on every tile.
+    LG = "https://threevillagelocal-cloud.github.io/3vl-share/ai-5-ways/img/logos/"
+    def th1(src, alt=""):
+        return '<span class="kt-img">%s</span>' % img(src, alt, 40, 40) if src else ""
+    def logos(*names):
+        return '<span class="kt-logos">%s</span>' % "".join('<span class="kt-lg"><img src="%s%s.svg" alt="%s" width="18" height="18" loading="lazy" decoding="async" data-processed="true"></span>' % (LG, n, n.title()) for n in names)
+    thumbs = [it["thumb"] for it in real if it.get("thumb")]
+    stack = ('<span class="kt-stack">%s</span>' % "".join('<span class="kt-av">%s</span>' % img(t, "", 30, 30) for t in thumbs[:3])) if thumbs else logos("instagram", "facebook")
+    spot_src = a.get("banner") or hero_photo
     k = []
     if bview:
-        k.append(("eye", "Banner reach", bview, "up to ", "+", "this month", spark(series(a, 30)), "#seen"))
+        k.append(("eye", "Banner reach", bview, "up to ", "+", "this month", spark(series(a, 30)), "#seen", "c1", th1(banner_src, "Your banner")))
     if hp30 and has(tier, "spotlight"):
-        k.append(("home", "Homepage spotlight", len(hp30), "", "", "days this month", spark(series(a, 30, home=True)), "#seen"))
-    if (soc30 or em30) and has(tier, "timeline"):
-        k.append(("insta", "Social and email", len(soc30) + len(em30), "", "", "this month", spark(series(a, 30, ch=("social", "email"))), "#promotions"))
+        k.append(("home", "Homepage spotlight", len(hp30), "", "", "days this month", spark(series(a, 30, home=True)), "#seen", "c2", th1(spot_src, "Your spotlight photo")))
+    if (len(soc30) + len(em30)) >= 2 and has(tier, "timeline"):
+        k.append(("insta", "Social and email", len(soc30) + len(em30), "", "", "this month", spark(series(a, 30, ch=("social", "email"))), "#promotions", "c3", logos("instagram", "facebook", "gmail")))
     if lifetime >= 3 and has(tier, "timeline"):
-        k.append(("megaphone", "Promotions for you", lifetime, "", "", "since you joined", spark(series(a, 90)), "#promotions"))
+        k.append(("megaphone", "Promotions for you", lifetime, "", "", "since you joined", spark(series(a, 90)), "#promotions", "c4", stack))
     if int(net.get("views") or 0) >= 1000:
-        k.append(("globe", "Three Village Local", int(net["views"]) // 1000 * 1000, "", "+", "page views", spark([]), "#grow"))
-    if len(k) < 4 and int(net.get("social") or 0) >= 1000:
-        k.append(("share", "Social reach", int(net["social"]) // 1000 * 1000, "", "+", "social views", spark([]), "#grow"))
-    if len(k) < 4 and int(net.get("subs") or 0) >= 100:
-        k.append(("mail", "Weekly email", int(net["subs"]), "", "", "subscribers", spark([]), "#grow"))
+        k.append(("globe", "Three Village Local", int(net["views"]) // 1000 * 1000, "", "+", "page views", spark([]), "#grow", "c5",
+                  '<span class="kt-img logo">%s</span>' % img("https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-540.webp", "Three Village Local", 56, 28)))
+    if len(k) < 5 and int(net.get("social") or 0) >= 1000:
+        k.append(("share", "Social reach", int(net["social"]) // 1000 * 1000, "", "+", "social views", spark([]), "#grow", "c3", logos("instagram", "facebook")))
+    if len(k) < 5 and int(net.get("subs") or 0) >= 100:
+        k.append(("mail", "Weekly email", int(net["subs"]), "", "", "subscribers", spark([]), "#grow", "c4", logos("gmail")))
     k = k[:5]
-    kpis = "".join('<a class="card kpi" href="%s" data-go="%s"><span class="label">%s %s</span><span class="value num" data-count="%d" data-pre="%s" data-suf="%s">%s%s%s</span>'
-                   '<span class="delta">%s</span>%s</a>' % (h, h[1:], ic(i), t, n, pre, suf, pre, "{:,}".format(n), suf, d, sp) for i, t, n, pre, suf, d, sp, h in k)
+    kpis = "".join('<a class="card kpi kc %s" href="%s" data-go="%s"><span class="kt-top"><span class="kt-ic">%s</span>%s</span><span class="label">%s</span>'
+                   '<span class="value num" data-count="%d" data-pre="%s" data-suf="%s">%s%s%s</span>'
+                   '<span class="delta">%s</span>%s</a>' % (c, h, h[1:], ic(i), g, t, n, pre, suf, pre, "{:,}".format(n), suf, d, sp) for i, t, n, pre, suf, d, sp, h, c, g in k)
 
     brief = []
     if bview:
@@ -311,10 +328,10 @@ def page(a, ctx):
     # ---- seen: banner + spotlight (or locks)
     if bview:
         ban_card = ('<div class="card seen" data-go="seen"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Your banner ad</h3><div class="sub">Rotating on every page</div></div>'
-                    '<span class="right"><span class="pill live"><i></i>Live</span></span></div><div class="card-body seen-b">%s<div class="seen-n"><b class="num" data-count="%d" data-suf="+">%s+</b><i>times it may have been seen this month</i></div></div></div>'
-                    % (ic("banner"), site_mock(banner_src, short), bview, "{:,}".format(bview)))
+                    '<span class="right"><span class="pill live"><i></i>Live</span></span></div><div class="card-body seen-b2">%s<div class="seen-n row"><b class="num" data-count="%d" data-suf="+">%s+</b><i>times it may have been seen this month</i></div></div></div>'
+                    % (ic("banner"), ban_hero(banner_src, short), bview, "{:,}".format(bview)))
     elif not has(tier, "banner"):
-        ban_card = '<div class="card seen">%s</div>' % lock("banner", site_mock("", ""))
+        ban_card = '<div class="card seen">%s</div>' % lock("banner", ban_hero("", ""))
     else:
         ban_card = ""
     if has(tier, "spotlight") and hp30:
@@ -543,11 +560,11 @@ def page(a, ctx):
     seen_main = ""
     if bview:
         seen_main += ('<div class="card seen-big"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Your banner ad, on every page</h3><div class="sub">It rotates in the side rail across threevillagelocal.com</div></div>'
-                      '<span class="right"><span class="pill live"><i></i>Live</span></span></div><div class="card-body sb">%s<div class="sb-side"><div class="ban-real">%s</div>'
+                      '<span class="right"><span class="pill live"><i></i>Live</span></span></div><div class="card-body sb">%s<div class="sb-side">'
                       '<div class="seen-n big"><b class="num" data-count="%d" data-suf="+">%s+</b><i>times your banner may have been seen this month</i></div></div></div></div>') % (
-            ic("banner"), site_mock(banner_src, short), img(banner_src, "Your banner ad"), bview, "{:,}".format(bview))
+            ic("banner"), ban_hero(banner_src, short, big=True), bview, "{:,}".format(bview))
     elif not has(tier, "banner"):
-        seen_main += '<div class="card seen-big">%s</div>' % lock("banner", site_mock("", ""))
+        seen_main += '<div class="card seen-big">%s</div>' % lock("banner", ban_hero("", "", big=True))
     if has(tier, "spotlight") and hp30:
         seen_main += ('<div class="card seen-big"><div class="card-head"><span class="card-icon violet">%s</span><div><h3>The homepage Business Spotlight</h3><div class="sub">You rotated through the big spot %d day%s this month</div></div>'
                       '<span class="right"><a class="btn ghost sm" href="%s/" target="_blank" rel="noopener">See it live %s</a></span></div><div class="card-body">%s</div></div>') % (
