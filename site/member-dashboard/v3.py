@@ -167,7 +167,7 @@ LOGOS_ROW = ('<div class="sf-logos"><span class="sf-lk">Connects to 400+ program
     '<span class="lg" style="--d:%d"><img src="%s%s.svg" alt="%s" width="22" height="22" loading="lazy" decoding="async" data-processed="true"></span>' % (i, LOGO_BASE, f, n)
     for i, (f, n) in enumerate((("quickbooks", "QuickBooks"), ("square", "Square"), ("stripe", "Stripe"), ("googlecalendar", "Google Calendar"), ("gmail", "Gmail"),
                                 ("shopify", "Shopify"), ("mailchimp", "Mailchimp"), ("hubspot", "HubSpot"), ("facebook", "Facebook"), ("instagram", "Instagram"),
-                                ("paypal", "PayPal"), ("calendly", "Calendly")))) + '<span class="lg more">+400</span></div></div>')
+                                ("paypal", "PayPal"), ("calendly", "Calendly"))[:9])) + '<span class="lg more">+400</span></div></div>')
 
 
 def sample_feature(company, first, sample_done, tier, full, cat):
@@ -182,14 +182,14 @@ def sample_feature(company, first, sample_done, tier, full, cat):
         sub = "Join the list and we will reach out to %s first." % comp
         btn = ('<button type="button" class="sf-cta" data-sample data-kind="dashboard_sample_waitlist" data-first="%s" data-ga="dash_sample_request" data-product="waitlist">'
                'Join the list %s</button>' % (e(first or ""), ic("chev")))
-        fine = "Free &middot; No obligation"
+        fine = "No obligation"
     else:
         h = 'We make custom dashboards <em>like this</em> for <em>your business.</em>'
         sub = "Leads, jobs, team and money on one screen. Logins for you, your managers and your staff."
         btn = ('<button type="button" class="sf-cta" data-sample data-first="%s" data-ga="dash_sample_request" data-product="dashboards">'
-               'Request your FREE working sample <span aria-hidden="true">&rarr;</span></button>' % e(first or ""))
-        fine = "Free &middot; No obligation &middot; Built for %s" % comp
-    return ('<section class="sfeat" data-ups="dashboards" id="sfeat"><span class="sf-ribbon">FREE</span><span class="sf-streak" aria-hidden="true"></span>'
+               'Request a free working sample <span aria-hidden="true">&rarr;</span></button>' % e(first or ""))
+        fine = "No obligation &middot; Built for %s" % comp
+    return ('<section class="sfeat card" data-ups="dashboards" id="sfeat"><span class="sf-streak" aria-hidden="true"></span>'
             '<div class="sf-t ups-t"><span class="sf-k">3VL Digital &middot; Custom dashboards</span><h2>%s</h2><p>%s</p>%s<span class="sf-fine">%s</span>%s</div>'
             '<div class="sf-v" aria-hidden="true"><div class="sf-frame"><div class="sf-bar"><i></i><i></i><i></i><span>app.yourbusiness.com</span></div>'
             '<img src="%s%s-640.webp" srcset="%s%s-640.webp 640w, %s%s-1200.webp 1200w" sizes="(max-width: 860px) 90vw, 520px" alt="" width="640" height="400" loading="lazy" decoding="async" data-processed="true"></div></div></section>') % (
@@ -509,9 +509,9 @@ def page(a, ctx):
         sc = [net_card or upc_card, news_card]
     seen_row = '<div class="grid g-ov">%s%s</div>' % ("".join(sc), prof_mini)
     sfeat = sample_feature(short, first if uid else "", ctx.get("sample_done", False), tier, ctx.get("samples_full", False), a.get("cat"))
-    third = news_card if sfeat else '<div class="card upsell" id="ups">%s</div>' % ups
-    overview = ('<div class="view on" data-view="overview">%s<div class="kpis">%s</div>%s%s<div class="grid g-ov">%s%s%s</div></div>') % (
-        hero, kpis, sfeat, seen_row, chart_card or tips_card, act_card, third)
+    third = sfeat or '<div class="card upsell" id="ups">%s</div>' % ups
+    overview = ('<div class="view on" data-view="overview">%s<div class="kpis">%s</div>%s<div class="grid g-ov">%s%s%s</div></div>') % (
+        hero, kpis, seen_row, chart_card or tips_card, act_card, third)
 
     promotions = ('<div class="view" data-view="promotions"><div class="vh"><h1>Promotions</h1><p>Everything we have done to put %s in front of neighbors.</p></div>'
                   '<div class="grid g-promo"><div class="stack">%s<div class="grid g-2">%s%s</div></div>%s</div></div>') % (name_html, chart_card or "", mix_card or news_card, upc_card, tl_full)
