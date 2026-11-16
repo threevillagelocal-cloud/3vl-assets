@@ -1,27 +1,34 @@
 {
- "when": "2026-11-12T15:36:05.553Z",
+ "when": "2026-11-16T16:22:18.617Z",
  "checked": 124,
- "failed": 0,
+ "failed": 122,
  "results": [
   {
    "url": "https://www.threevillagelocal.com/",
    "kind": "home",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "homepage content (Things to Do) missing",
+    "Eat & Drink shows 0 cards (expected 6)",
+    "failed files: 403 https://www.threevillagelocal.com/?sitecheck=1794844485176"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 6747,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Three Village Local: Things To Do, Food & Local Businesses",
-    "textLen": 8681,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "p3v-js p3-done",
-    "eat": 6,
-    "picks": 21,
-    "top": true,
-    "secs": 10
-   }
+    "htmlCls": "",
+    "eat": 0,
+    "picks": 0,
+    "top": false,
+    "secs": 0
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/",
@@ -30,10 +37,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1441,
+   "ms": 1609,
    "data": {
     "title": "Three Village Local: Things To Do, Food & Local Businesses",
-    "textLen": 4659,
+    "textLen": 4593,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "p3v-js p3-done",
@@ -47,985 +54,1264 @@
    "url": "https://www.threevillagelocal.com/categories",
    "kind": "categories",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "category tiles missing",
+    "failed files: 403 https://www.threevillagelocal.com/categories?sitecheck=1794844509434"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1556,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Find a Local Business in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2627,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-w3 tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "tiles": 30
-   }
+    "htmlCls": "",
+    "tiles": 0
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/events",
    "kind": "events",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "no events showing on the calendar",
+    "failed files: 403 https://www.threevillagelocal.com/events?sitecheck=1794844522877"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1747,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Three Village Events | Things to Do in Setauket, Stony Brook & Port Jefferson",
-    "textLen": 6802,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-wc tvl-sh p3v-js tvl-sh-on p3-done tvc-on tvl-sf-on",
-    "cards": 36,
-    "tvc": true
-   }
+    "htmlCls": "",
+    "cards": 0,
+    "tvc": false
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/events-calendar",
    "kind": "events",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "no events showing on the calendar",
+    "failed files: 403 https://www.threevillagelocal.com/events-calendar?sitecheck=1794844536328"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 2354,
+   "status": 403,
+   "ms": 552,
    "data": {
-    "title": "Three Village Events Calendar | Setauket, Stony Brook & Port Jefferson",
-    "textLen": 8873,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-wc tvl-sh p3v-js tvl-sh-on tvc-on p3-done tvl-sf-on",
-    "cards": 104,
-    "tvc": true
-   }
+    "htmlCls": "",
+    "cards": 0,
+    "tvc": false
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/blog",
    "kind": "blog",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "blog shows 0 posts",
+    "failed files: 403 https://www.threevillagelocal.com/blog?sitecheck=1794844549353"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1332,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Three Village Local Blog | News & Stories from Setauket, Stony Brook & Port Jefferson",
-    "textLen": 3140,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-w3 tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "cards": 8
-   }
+    "htmlCls": "",
+    "cards": 0
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/join",
    "kind": "page",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/join?sitecheck=1794844562793"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1236,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Promote Your Business Locally | Three Village Local",
-    "textLen": 5279,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/newsletter",
    "kind": "page",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/newsletter?sitecheck=1794844576241"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1239,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Three Village Weekly: Free Email with the Best of Three Village | Three Village Local",
-    "textLen": 1859,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/locallistings",
    "kind": "page",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/locallistings?sitecheck=1794844589686"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 968,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "New Listings in Three Village This Week | Three Village Local",
-    "textLen": 3323,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/app",
    "kind": "page",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/app?sitecheck=1794844603138"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1445,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Get the Three Village Local App - Free on iPhone and Android",
-    "textLen": 1905,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/promotion",
    "kind": "page",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/promotion?sitecheck=1794844616585"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1162,
+   "status": 403,
+   "ms": 1027,
    "data": {
-    "title": "Promote Your Business or Event | Three Village Local",
-    "textLen": 3002,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/smart-publisher",
    "kind": "page",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/smart-publisher?sitecheck=1794844630039"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1165,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "3VL Smart Publisher | Three Village Local",
-    "textLen": 2107,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/three-village-farmers-market",
    "kind": "page",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/three-village-farmers-market?sitecheck=1794844643479"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1113,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Three Village Farmers & Artisans Market: Dates, Hours and Location | Three Village Local",
-    "textLen": 2517,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/login",
    "kind": "page",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/login?sitecheck=1794844656916"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1052,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Login Now - Three Village Local",
-    "textLen": 1318,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-login tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/about/contact",
    "kind": "page",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/about/contact?sitecheck=1794844670354"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1107,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Contact Us - Three Village Local",
-    "textLen": 1424,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/search_results?q=pizza",
    "kind": "search",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "search returned no results",
+    "failed files: 403 https://www.threevillagelocal.com/search_results?q=pizza&sitecheck=1794844683796"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1894,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Businesses - Find & Compare Local Business Directory Professionals",
-    "textLen": 2527,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh tvl-w3 p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 6,
-    "cur": 12,
-    "tot": 12,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/search_results?q=plumber",
    "kind": "search",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "search returned no results",
+    "failed files: 403 https://www.threevillagelocal.com/search_results?q=plumber&sitecheck=1794844697239"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 2084,
+   "status": 403,
+   "ms": 1060,
    "data": {
-    "title": "Businesses - Find & Compare Local Business Directory Professionals",
-    "textLen": 2431,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh tvl-w3 p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 5,
-    "cur": 18,
-    "tot": 22,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/fitness-sports",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/fitness-sports?sitecheck=1794844710715"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1417,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Sports & Fitness in the Three Village Area | Three Village Local",
-    "textLen": 8312,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 29,
-    "cur": 29,
-    "tot": 29,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/arts-entertainment",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/arts-entertainment?sitecheck=1794844724176"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1321,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Arts & Entertainment in the Three Village Area | Three Village Local",
-    "textLen": 4391,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 12,
-    "cur": 13,
-    "tot": 13,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/health-wellness",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/health-wellness?sitecheck=1794844737624"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1325,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Health & Wellness in the Three Village Area | Three Village Local",
-    "textLen": 6620,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 21,
-    "cur": 21,
-    "tot": 21,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/education",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/education?sitecheck=1794844751062"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1529,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Education in the Three Village Area | Three Village Local",
-    "textLen": 6148,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 22,
-    "cur": 22,
-    "tot": 22,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/medical-services",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/medical-services?sitecheck=1794844764501"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1225,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Doctors & Medical Services in the Three Village Area | Three Village Local",
-    "textLen": 11211,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3-on p3-done p3v-js tvl-sh-on tvl-sf-on",
-    "vip": 2,
-    "reg": 38,
-    "cur": 40,
-    "tot": 40,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/hotels-travel",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/hotels-travel?sitecheck=1794844777950"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1302,
+   "status": 403,
+   "ms": 1021,
    "data": {
-    "title": "Hotels & Travel in the Three Village Area | Three Village Local",
-    "textLen": 3147,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 7,
-    "cur": 7,
-    "tot": 7,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/nightlife",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/nightlife?sitecheck=1794844791390"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1181,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Nightlife in the Three Village Area | Three Village Local",
-    "textLen": 2400,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 4,
-    "cur": 4,
-    "tot": 4,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/pet-services",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/pet-services?sitecheck=1794844804828"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1406,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Pet Services in the Three Village Area | Three Village Local",
-    "textLen": 5388,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 14,
-    "cur": 14,
-    "tot": 14,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/professional-services",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/professional-services?sitecheck=1794844818272"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1478,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Professional Services in the Three Village Area | Three Village Local",
-    "textLen": 3440,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 9,
-    "cur": 9,
-    "tot": 9,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/automotive",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/automotive?sitecheck=1794844831713"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1357,
+   "status": 403,
+   "ms": 1027,
    "data": {
-    "title": "Automotive in the Three Village Area | Three Village Local",
-    "textLen": 4744,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-on p3-done tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 11,
-    "cur": 11,
-    "tot": 11,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/shopping",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/shopping?sitecheck=1794844845165"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1369,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Shopping & Retail in the Three Village Area | Three Village Local",
-    "textLen": 10386,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 46,
-    "cur": 47,
-    "tot": 47,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/restaurant",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/restaurant?sitecheck=1794844858613"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1355,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Restaurants in the Three Village Area | Three Village Local",
-    "textLen": 19895,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 94,
-    "cur": 94,
-    "tot": 94,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/events-entertainment",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/events-entertainment?sitecheck=1794844872056"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1357,
+   "status": 403,
+   "ms": 1027,
    "data": {
-    "title": "Events & Entertainment | Three Village Local",
-    "textLen": 4482,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 14,
-    "cur": 14,
-    "tot": 14,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/real-estate-services",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/real-estate-services?sitecheck=1794844885502"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1322,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Real Estate Services in the Three Village Area | Three Village Local",
-    "textLen": 12332,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 3,
-    "reg": 46,
-    "cur": 49,
-    "tot": 49,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/attorney",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/attorney?sitecheck=1794844898958"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1323,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Attorneys in the Three Village Area | Three Village Local",
-    "textLen": 4000,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 3,
-    "reg": 8,
-    "cur": 11,
-    "tot": 11,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/business-services",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/business-services?sitecheck=1794844912401"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1183,
+   "status": 403,
+   "ms": 1026,
    "data": {
-    "title": "Commercial Services in the Three Village Area | Three Village Local",
-    "textLen": 2600,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 5,
-    "cur": 5,
-    "tot": 5,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/beauty-personal-care",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/beauty-personal-care?sitecheck=1794844925866"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1503,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Beauty & Personal Care in the Three Village Area | Three Village Local",
-    "textLen": 7288,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 25,
-    "cur": 25,
-    "tot": 25,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/community-civic",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/community-civic?sitecheck=1794844939308"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1183,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Community & Civic in the Three Village Area | Three Village Local",
-    "textLen": 2073,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 2,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/marine-services",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/marine-services?sitecheck=1794844952774"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1314,
+   "status": 403,
+   "ms": 1027,
    "data": {
-    "title": "Marine Services in the Three Village Area | Three Village Local",
-    "textLen": 2947,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 6,
-    "cur": 6,
-    "tot": 6,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/technology-it",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/technology-it?sitecheck=1794844966226"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1229,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Technology & IT in the Three Village Area | Three Village Local",
-    "textLen": 2720,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 5,
-    "cur": 5,
-    "tot": 5,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/marketing-advertising",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/marketing-advertising?sitecheck=1794844979675"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1215,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Marketing & Advertising | Three Village Local",
-    "textLen": 2439,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 4,
-    "cur": 4,
-    "tot": 4,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/payroll-human-resources",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/payroll-human-resources?sitecheck=1794844993123"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1145,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Payroll & HR Services | Three Village Local",
-    "textLen": 2005,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
+    "htmlCls": "",
+    "vip": 0,
     "reg": 0,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/farmstand-agriculture",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/farmstand-agriculture?sitecheck=1794845006585"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1146,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Farm Stands & Agriculture | Three Village Local",
-    "textLen": 2187,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 3,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/restoration",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/restoration?sitecheck=1794845020021"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1260,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Flood, Fire & Mold Restoration in the Three Village Area | Three Village Local",
-    "textLen": 3502,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 4,
-    "cur": 5,
-    "tot": 5,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/landscaping-property-maintenance",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/landscaping-property-maintenance?sitecheck=1794845033457"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1269,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Landscaping & Property Maintenance in the Three Village Area | Three Village Local",
-    "textLen": 7174,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 4,
-    "reg": 16,
-    "cur": 20,
-    "tot": 20,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/contractor",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/contractor?sitecheck=1794845046892"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1234,
+   "status": 403,
+   "ms": 1026,
    "data": {
-    "title": "Contractors & Remodeling in the Three Village Area | Three Village Local",
-    "textLen": 6933,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 22,
-    "cur": 23,
-    "tot": 23,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/plumbing-electric-repairs",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/plumbing-electric-repairs?sitecheck=1794845060345"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1384,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Plumbers, Electricians & Home Repairs in the Three Village Area | Three Village Local",
-    "textLen": 6599,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 22,
-    "cur": 22,
-    "tot": 22,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/cleaning-organizing",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/cleaning-organizing?sitecheck=1794845073799"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1203,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "House Cleaning & Organizing in the Three Village Area | Three Village Local",
-    "textLen": 3679,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 6,
-    "cur": 6,
-    "tot": 6,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/wealth-management-financial-planning",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/wealth-management-financial-planning?sitecheck=1794845087246"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1317,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Financial Advisors & Wealth Management in the Three Village Area | Three Village Local",
-    "textLen": 3036,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 6,
-    "cur": 7,
-    "tot": 7,
-    "p3": true,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/mortgages-home-loans",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/mortgages-home-loans?sitecheck=1794845100699"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1095,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Mortgages & Home Loans in the Three Village Area | Three Village Local",
-    "textLen": 1880,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
+    "htmlCls": "",
+    "vip": 0,
     "reg": 0,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/accounting-tax",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/accounting-tax?sitecheck=1794845114146"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1072,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Accountants & Tax Preparers in the Three Village Area | Three Village Local",
-    "textLen": 2125,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 2,
+    "htmlCls": "",
+    "vip": 0,
     "reg": 0,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/insurance",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/insurance?sitecheck=1794845127583"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1180,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Insurance Agents in the Three Village Area | Three Village Local",
-    "textLen": 3686,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 5,
-    "cur": 5,
-    "tot": 5,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/business-lending",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/business-lending?sitecheck=1794845141025"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1096,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Business Lendings - Find Local Business Directory News, Reviews, and Information",
-    "textLen": 1694,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/fitness-sports",
@@ -1034,10 +1320,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1277,
+   "ms": 1723,
    "data": {
     "title": "Sports & Fitness in the Three Village Area | Three Village Local",
-    "textLen": 8002,
+    "textLen": 8022,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -1050,1444 +1336,1853 @@
    }
   },
   {
-   "url": "https://www.threevillagelocal.com/marina-services",
+   "url": "https://www.threevillagelocal.com/home-garden",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/home-garden?sitecheck=1794845165423"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1094,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Marina Services | Three Village Local",
-    "textLen": 2143,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/boat-rentals",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1131,
-   "data": {
-    "title": "Boat Rentals in the Three Village Area | Three Village Local",
-    "textLen": 1739,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/boat-storage",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1118,
-   "data": {
-    "title": "Boat Storage in the Three Village Area | Three Village Local",
-    "textLen": 2005,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/dock-bulkhead-services",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1085,
-   "data": {
-    "title": "Dock & Bulkhead Services | Three Village Local",
-    "textLen": 1991,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/marine-supplies",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1087,
-   "data": {
-    "title": "Marine Supplies in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1735,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/it-support-computer-services",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1150,
-   "data": {
-    "title": "IT Support & Computer Services in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2190,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 3,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/web-technology-consulting",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1113,
-   "data": {
-    "title": "Web & Technology Consulting in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1922,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/business-phone-systems",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1115,
-   "data": {
-    "title": "Business Phone Systems in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1636,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/marketing-social-media",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1197,
-   "data": {
-    "title": "Marketing & Social Media in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2007,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 3,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/business-networking-groups",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1097,
-   "data": {
-    "title": "Business Networking Groups in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1682,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/payroll-hr-services",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1101,
-   "data": {
-    "title": "Payroll & HR Services in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1739,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
     "reg": 0,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/farm-stands-local-produce",
+   "url": "https://www.threevillagelocal.com/jewelry",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/jewelry?sitecheck=1794845178865"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1097,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Farm Stands & Local Produce in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1785,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/specialty-farm-products",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1099,
-   "data": {
-    "title": "Specialty Farm Products in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1707,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/damage-restoration",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1168,
-   "data": {
-    "title": "Damage Restoration | Three Village Local",
-    "textLen": 2728,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 4,
-    "cur": 5,
-    "tot": 5,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/mold-remediation",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1119,
-   "data": {
-    "title": "Mold Remediation | Three Village Local",
-    "textLen": 1971,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/landscaping",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1347,
-   "data": {
-    "title": "Landscaping in the Three Village Area | Three Village Local",
-    "textLen": 4281,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 4,
-    "reg": 6,
-    "cur": 10,
-    "tot": 10,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/tree-services",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1193,
-   "data": {
-    "title": "Tree Services | Three Village Local",
-    "textLen": 3109,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 5,
-    "cur": 6,
-    "tot": 6,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/pest-control",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1234,
-   "data": {
-    "title": "Pest Control in the Three Village Area | Three Village Local",
-    "textLen": 3002,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 4,
-    "cur": 5,
-    "tot": 5,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/pool-cleaners",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1115,
-   "data": {
-    "title": "Pool Cleaners | Three Village Local",
-    "textLen": 2144,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/home-watching",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1078,
-   "data": {
-    "title": "Home Watching in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1757,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/pressure-washing",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1081,
-   "data": {
-    "title": "Pressure Washing in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1717,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/snow-removal",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1160,
-   "data": {
-    "title": "Snow Removal in the Three Village Area | Three Village Local",
-    "textLen": 2152,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
     "reg": 0,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/general-contractor",
+   "url": "https://www.threevillagelocal.com/candles",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/candles?sitecheck=1794845192310"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1312,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "General Contractor in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 3602,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
-    "vip": 1,
-    "reg": 10,
-    "cur": 11,
-    "tot": 11,
-    "p3": true,
-    "none": false
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/interior-design-renovation",
-   "kind": "category",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1190,
-   "data": {
-    "title": "Interior Design And Renovation in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2234,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 4,
-    "cur": 4,
-    "tot": 4,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/roofing",
+   "url": "https://www.threevillagelocal.com/candy-store",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/candy-store?sitecheck=1794845205765"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1228,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Roofing in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2198,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 4,
-    "cur": 4,
-    "tot": 4,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/flooring",
+   "url": "https://www.threevillagelocal.com/children-s-clothing",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/children-s-clothing?sitecheck=1794845219205"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1176,
+   "status": 403,
+   "ms": 1026,
    "data": {
-    "title": "Flooring in the Three Village Area | Three Village Local",
-    "textLen": 2518,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 3,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/masonry",
+   "url": "https://www.threevillagelocal.com/collectibles",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/collectibles?sitecheck=1794845232645"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1180,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Masonry in the Three Village Area | Three Village Local",
-    "textLen": 1999,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/hardwood-floor-refinishing",
+   "url": "https://www.threevillagelocal.com/florists",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/florists?sitecheck=1794845246089"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1101,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Hardwood Floor Refinishing | Three Village Local",
-    "textLen": 2222,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/painters",
+   "url": "https://www.threevillagelocal.com/wine",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/wine?sitecheck=1794845259529"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1115,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Painters in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1752,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/solar",
+   "url": "https://www.threevillagelocal.com/antiques",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/antiques?sitecheck=1794845272970"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1068,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Solar in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1717,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/electricians",
+   "url": "https://www.threevillagelocal.com/bicycles",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/bicycles?sitecheck=1794845286413"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1215,
+   "status": 403,
+   "ms": 1027,
    "data": {
-    "title": "Electricians in the Three Village Area | Three Village Local",
-    "textLen": 3088,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 7,
-    "cur": 7,
-    "tot": 7,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/heating-air-conditioning-hvac",
+   "url": "https://www.threevillagelocal.com/books",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/books?sitecheck=1794845299864"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1294,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Heating & Air Conditioning (HVAC) in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2792,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 6,
-    "cur": 6,
-    "tot": 6,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/plumbing",
+   "url": "https://www.threevillagelocal.com/cameras-telescopes",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/cameras-telescopes?sitecheck=1794845313309"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1212,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Plumbing in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 2583,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 5,
-    "cur": 5,
-    "tot": 5,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/locksmith",
+   "url": "https://www.threevillagelocal.com/cannabis-dispensary",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/cannabis-dispensary?sitecheck=1794845326747"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1116,
+   "status": 403,
+   "ms": 1026,
    "data": {
-    "title": "Locksmith in the Three Village Area | Three Village Local",
-    "textLen": 2234,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/security-systems",
+   "url": "https://www.threevillagelocal.com/cards",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/cards?sitecheck=1794845340193"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1121,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Security Systems | Three Village Local",
-    "textLen": 2218,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 2,
-    "cur": 2,
-    "tot": 2,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/appliance-repair",
+   "url": "https://www.threevillagelocal.com/chocolatiers-chocolate-shop",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/chocolatiers-chocolate-shop?sitecheck=1794845353639"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1097,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Appliance Repair in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1777,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/chimney-services",
+   "url": "https://www.threevillagelocal.com/cigars",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/cigars?sitecheck=1794845367082"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1104,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Chimney Services in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1776,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/septic-cesspool",
+   "url": "https://www.threevillagelocal.com/comics",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/comics?sitecheck=1794845380527"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1097,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Septic & Cesspool in Setauket, Stony Brook & Port Jefferson | Three Village Local",
-    "textLen": 1716,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 1,
-    "cur": 1,
-    "tot": 1,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/home-cleaning",
+   "url": "https://www.threevillagelocal.com/crystals",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/crystals?sitecheck=1794845393983"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1118,
+   "status": 403,
+   "ms": 1021,
    "data": {
-    "title": "Home Cleaning | Three Village Local",
-    "textLen": 2320,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 3,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/home-organization",
+   "url": "https://www.threevillagelocal.com/electronics",
    "kind": "category",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/electronics?sitecheck=1794845407426"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1114,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Home Organization | Three Village Local",
-    "textLen": 2402,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
+    "htmlCls": "",
     "vip": 0,
-    "reg": 3,
-    "cur": 3,
-    "tot": 3,
-    "p3": true,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
     "none": false
-   }
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/fishing-tackle",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/fishing-tackle?sitecheck=1794845420873"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1023,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/furniture-stores",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/furniture-stores?sitecheck=1794845434319"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1035,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/liquor",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/liquor?sitecheck=1794845447769"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1024,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/liquor-stores",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/liquor-stores?sitecheck=1794845461206"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1026,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/musical-instruments",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/musical-instruments?sitecheck=1794845474664"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1023,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/nurseries-gardening",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/nurseries-gardening?sitecheck=1794845488112"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1022,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/picture-framing",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/picture-framing?sitecheck=1794845501552"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1026,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/plants",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/plants?sitecheck=1794845515001"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1024,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/specialty-food",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/specialty-food?sitecheck=1794845528437"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1024,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/specialty-foods",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/specialty-foods?sitecheck=1794845541883"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1021,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/dinner",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/dinner?sitecheck=1794845555327"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1022,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/lunch",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/lunch?sitecheck=1794845568762"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1023,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/american",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/american?sitecheck=1794845582200"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1022,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/breakfast",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/breakfast?sitecheck=1794845595640"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1022,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/take-out-restaurants",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/take-out-restaurants?sitecheck=1794845609089"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1023,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/burgers",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/burgers?sitecheck=1794845622529"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1022,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/healthy-eating",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/healthy-eating?sitecheck=1794845635970"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1038,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/salads",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/salads?sitecheck=1794845649429"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1020,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/cafe",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/cafe?sitecheck=1794845662864"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1024,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/wings",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/wings?sitecheck=1794845676307"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1022,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/italian",
+   "kind": "category",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "our page design did not load (BD default layout showing)",
+    "failed files: 403 https://www.threevillagelocal.com/italian?sitecheck=1794845689743"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1022,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "vip": 0,
+    "reg": 0,
+    "cur": 0,
+    "tot": 0,
+    "p3": false,
+    "none": false
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/team-passamenti-at-better-homes-and-gardens-real-estate-realty-connect",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/team-passamenti-at-better-homes-and-gardens-real-estate-realty-connect?sitecheck=1794845703179"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1767,
+   "status": 403,
+   "ms": 1021,
    "data": {
-    "title": "Team Passamenti at Better Homes and Gardens Real Estate Realty",
-    "textLen": 4893,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Team Passamenti at Better Homes and Gardens Real Estate Realty Connect                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/girard-wealth-management-group",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/girard-wealth-management-group?sitecheck=1794845716614"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1386,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Girard Wealth Management Group | Setauket, NY",
-    "textLen": 5479,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Girard Wealth Management Group                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/the-odwyer-brainard-team-at-daniel-gale-sothebys-international-realty",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/the-odwyer-brainard-team-at-daniel-gale-sothebys-international-realty?sitecheck=1794845730054"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1407,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "The O'Dwyer-Brainard Team at Daniel Gale Sotheby's International",
-    "textLen": 5551,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    The O'Dwyer-Brainard Team at Daniel Gale Sotheby's International Realty                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/kgr-contracting-corp",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/kgr-contracting-corp?sitecheck=1794845743496"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1391,
+   "status": 403,
+   "ms": 1026,
    "data": {
-    "title": "KGR Contracting Corp. | Port Jefferson Station, NY",
-    "textLen": 4190,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    KGR Contracting Corp.                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/matt-bardram-at-coltrain-mortgage",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/matt-bardram-at-coltrain-mortgage?sitecheck=1794845756939"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1489,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Matt Bardram at Coltrain Mortgage | Hauppauge, NY",
-    "textLen": 6746,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Matt Bardram at Coltrain Mortgage                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/southard-estate-planning",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/southard-estate-planning?sitecheck=1794845770380"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1359,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Southard Estate Planning | Estate Planning Attorney in Setauket",
-    "textLen": 4852,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Southard Estate Planning                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/tj-sirani-at-zuma-payroll",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/tj-sirani-at-zuma-payroll?sitecheck=1794845783821"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1502,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "TJ Sirani at Zuma Payroll | Payroll & HR Services in Melville, NY",
-    "textLen": 5168,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    TJ Sirani at Zuma Payroll                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/aronica-plant-healthcare-llc",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/aronica-plant-healthcare-llc?sitecheck=1794845797260"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1410,
+   "status": 403,
+   "ms": 1021,
    "data": {
-    "title": "Aronica Plant Healthcare, LLC | Landscaping in Setauket, NY",
-    "textLen": 4071,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Aronica Plant Healthcare, LLC                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/emma-s-clark-memorial-library",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/emma-s-clark-memorial-library?sitecheck=1794845810700"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1578,
+   "status": 403,
+   "ms": 1035,
    "data": {
-    "title": "Emma S. Clark Memorial Library | Setauket, NY",
-    "textLen": 4404,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Emma S. Clark Memorial Library                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/magic-home-restoration",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/magic-home-restoration?sitecheck=1794845824152"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1520,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Magic Home Restoration | Damage Restoration in Nesconset, NY",
-    "textLen": 4367,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Magic Home Restoration                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/jlw-accounting-and-tax-services",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/jlw-accounting-and-tax-services?sitecheck=1794845837592"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1408,
+   "status": 403,
+   "ms": 1036,
    "data": {
-    "title": "JLW Accounting and Tax Services | Setauket, NY",
-    "textLen": 4728,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    JLW Accounting and Tax Services                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/raupp-law-pc",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/raupp-law-pc?sitecheck=1794845851040"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1421,
+   "status": 403,
+   "ms": 1021,
    "data": {
-    "title": "Raupp Law PC | Estate Planning Attorney in Setauket, NY",
-    "textLen": 5323,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Raupp Law PC                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/jm-management-solutions-inc",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/jm-management-solutions-inc?sitecheck=1794845864472"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1356,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "JM Management Solutions Inc | Patchogue, NY",
-    "textLen": 4319,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    JM Management Solutions Inc                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/the-north-shore-injury-lawyer",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/the-north-shore-injury-lawyer?sitecheck=1794845877908"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1445,
+   "status": 403,
+   "ms": 1032,
    "data": {
-    "title": "The North Shore Injury Lawyer | Stony Brook, NY",
-    "textLen": 5107,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    The North Shore Injury Lawyer                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/hart-orthopedics",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/hart-orthopedics?sitecheck=1794845891359"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1424,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Hart Orthopedics | Orthopedists in Stony Brook, NY",
-    "textLen": 4306,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Hart Orthopedics                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/chriss-complete-landscaping",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/chriss-complete-landscaping?sitecheck=1794845904790"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1359,
+   "status": 403,
+   "ms": 1026,
    "data": {
-    "title": "Chris's Complete Landscaping | Three Village, NY",
-    "textLen": 3749,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Chris's Complete Landscaping                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/j33-art-studios-inc",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/j33-art-studios-inc?sitecheck=1794845918236"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1463,
+   "status": 403,
+   "ms": 1031,
    "data": {
-    "title": "J33 Art Studios Inc. | Local Artist",
-    "textLen": 3746,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    J33 Art Studios Inc.                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/orthopedic-associates-of-long-island",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/orthopedic-associates-of-long-island?sitecheck=1794845931690"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1632,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Orthopedic Associates of Long Island | Orthopedists in Setauket",
-    "textLen": 4437,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Orthopedic Associates of Long Island                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/rolling-hills-property-services-inc",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/rolling-hills-property-services-inc?sitecheck=1794845945141"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1472,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Rolling Hills Property Services Inc. | Port Jefferson Station, NY",
-    "textLen": 4183,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Rolling Hills Property Services Inc.                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/strong-strains",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/strong-strains?sitecheck=1794845958589"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1361,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Strong Strains | Cannabis Dispensary in Setauket, NY",
-    "textLen": 4137,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Strong Strains                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/victor-stabile-at-douglas-elliman-real-estate-684",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/victor-stabile-at-douglas-elliman-real-estate-684?sitecheck=1794845972027"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1390,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Victor Stabile | Douglas Elliman Realtor in Setauket & Stony Brook, NY",
-    "textLen": 4773,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Victor Stabile at Douglas Elliman Real Estate                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/green-machine-landscaping",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/green-machine-landscaping?sitecheck=1794845985463"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1394,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Green Machine Landscaping | Landscaping & Property Maintenance in Stony Brook, New York",
-    "textLen": 5297,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on pv3-m2 pv3-on pv2-on",
-    "h1": "\n                    Green Machine Landscaping                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/port-jefferson-music-academy",
+   "url": "https://www.threevillagelocal.com/ken-kroncke-at-realty-connect-usa",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/ken-kroncke-at-realty-connect-usa?sitecheck=1794845998910"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1202,
+   "status": 403,
+   "ms": 1020,
    "data": {
-    "title": "Port Jefferson Music Academy | Port Jefferson, NY",
-    "textLen": 1806,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    Port Jefferson Music Academy                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/first-class-remodeling-corp",
+   "url": "https://www.threevillagelocal.com/glamour-den",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/glamour-den?sitecheck=1794846012350"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1242,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "First Class Remodeling Corp. | Stony Brook, NY",
-    "textLen": 1886,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    First Class Remodeling Corp.                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/jean-giuffre-at-realty-connect-usa",
+   "url": "https://www.threevillagelocal.com/serenity-hair-salon",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/serenity-hair-salon?sitecheck=1794846025791"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1242,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Jean Giuffre at Realty Connect USA | Setauket, NY",
-    "textLen": 1806,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    Jean Giuffre at Realty Connect USA                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/paumanok-tours",
+   "url": "https://www.threevillagelocal.com/apelskog-marine",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/apelskog-marine?sitecheck=1794846039227"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1096,
+   "status": 403,
+   "ms": 1024,
    "data": {
-    "title": "Paumanok Tours | Hotels & Travel in Setauket, New York",
-    "textLen": 1847,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    Paumanok Tours                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/revival-strength-recovery",
+   "url": "https://www.threevillagelocal.com/5-brothers-chicken-waffles",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/5-brothers-chicken-waffles?sitecheck=1794846052662"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1212,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "REVIVAL Strength & Recovery | Sports & Fitness in Setauket, New York",
-    "textLen": 1987,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3-done p3v-js tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    REVIVAL Strength & Recovery                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
-   "url": "https://www.threevillagelocal.com/village-hair-studio",
+   "url": "https://www.threevillagelocal.com/donna-e-friedman-phd",
    "kind": "profile",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/donna-e-friedman-phd?sitecheck=1794846066098"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1215,
+   "status": 403,
+   "ms": 1023,
    "data": {
-    "title": "Village Hair Studio | Beauty & Personal Care in Stony Brook, New York",
-    "textLen": 1919,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js p3-done tvl-sh-on pf-on tvl-sf-on",
-    "h1": "\n                    Village Hair Studio                "
-   }
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive",
    "kind": "event",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "event page design did not load",
+    "failed files: 403 https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive?sitecheck=1794846079543"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1166,
+   "status": 403,
+   "ms": 1025,
    "data": {
-    "title": "Reboli Center Thanksgiving Food Drive | Thu, Oct 1 in Stony Brook",
-    "textLen": 2602,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-we tvl-sh p3v-js p3-done tvl-sh-on ev-on tvl-sf-on",
-    "ev": true
-   }
-  },
-  {
-   "url": "https://www.threevillagelocal.com/events/the-47th-annual-holiday-tree-competition",
-   "kind": "event",
-   "phone": false,
-   "problems": [],
-   "notes": [],
-   "status": 200,
-   "ms": 1164,
-   "data": {
-    "title": "The 47th Annual Holiday Tree… | Thu, Oct 29 in Stony Brook",
-    "textLen": 3155,
-    "brokenImgs": [],
-    "overflow": 0,
-    "htmlCls": "tvl-we tvl-sh p3v-js p3-done tvl-sh-on ev-on tvl-sf-on",
-    "ev": true
-   }
+    "htmlCls": "",
+    "ev": false
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/events/emerging-artist-spotlight-november-genevieve-rochlin",
    "kind": "event",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "event page design did not load",
+    "failed files: 403 https://www.threevillagelocal.com/events/emerging-artist-spotlight-november-genevieve-rochlin?sitecheck=1794846092978"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1152,
+   "status": 403,
+   "ms": 1028,
    "data": {
-    "title": "Emerging Artist Spotlight: November |… | Sun, Nov 1 in Stony Brook",
-    "textLen": 2798,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-we tvl-sh p3v-js p3-done tvl-sh-on ev-on tvl-sf-on",
-    "ev": true
-   }
+    "htmlCls": "",
+    "ev": false
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/events/novembers-feature-artisan-of-the-month-patricia-patten",
    "kind": "event",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "event page design did not load",
+    "failed files: 403 https://www.threevillagelocal.com/events/novembers-feature-artisan-of-the-month-patricia-patten?sitecheck=1794846106422"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1136,
+   "status": 403,
+   "ms": 1021,
    "data": {
-    "title": "November's Feature Artisan of the… | Sun, Nov 1 in Stony Brook",
-    "textLen": 2973,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-we tvl-sh p3v-js p3-done tvl-sh-on ev-on tvl-sf-on",
-    "ev": true
-   }
+    "htmlCls": "",
+    "ev": false
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition",
+   "kind": "event",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "event page design did not load",
+    "failed files: 403 https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition?sitecheck=1794846119855"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1022,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "ev": false
+   },
+   "retried": true
   },
   {
    "url": "https://www.threevillagelocal.com/blog/the-ultimate-culper-spy-day-blueprint-setaukets-spy-ring-weekend-oct-3",
    "kind": "post",
    "phone": false,
-   "problems": [],
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/blog/the-ultimate-culper-spy-day-blueprint-setaukets-spy-ring-weekend-oct-3?sitecheck=1794846133290"
+   ],
    "notes": [],
-   "status": 200,
-   "ms": 1507,
+   "status": 403,
+   "ms": 1022,
    "data": {
-    "title": "Culper Spy Day Guide: Setauket Spy Ring Weekend | Three Village Local",
-    "textLen": 14604,
+    "title": "403 Forbidden",
+    "textLen": 248,
     "brokenImgs": [],
     "overflow": 0,
-    "htmlCls": "tvl-sh p3v-js tvl-sh-on p3-done tvl-sf-on"
-   }
+    "htmlCls": ""
+   },
+   "retried": true
   }
  ]
 }
