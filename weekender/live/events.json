@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-16T18:01:09.935206+00:00",
+"updated": "2026-11-16T20:00:49.599760+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 40,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 193,
-"Emma S. Clark Library": 221,
+"Emma S. Clark Library": 220,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 42,
 "Ward Melville Heritage Org": 2,
@@ -341,23 +341,6 @@
 "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485",
 "pu": "",
 "rank": 5
-},
-{
-"id": "emmaclark-preventing-financial-exploitation-seniors-60028",
-"title": "Preventing the Financial Exploitation of Seniors",
-"start": "2026-11-16T14:00:00",
-"end": "2026-11-16T15:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/preventing-financial-exploitation-seniors-60028",
-"desc": "REGISTRATION FOR THIS PROGRAM HAS BEEN OPENED FOR ALL SUFFOLK COUNTY RESIDENTS. Join the Suffolk County District Attorney’s Office for an informative discussion regarding the prevention of financial exploitation. Learn how to recognize the latest scams and how",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-01/closeup-support-hands.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/preventing-the-financial-exploitation-of-seniors"
 },
 {
 "id": "emmaclark-patriotic-jars-donate-community-service-project-grades-3-5-61459",
