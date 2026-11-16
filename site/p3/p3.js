@@ -417,15 +417,16 @@ var h=document.querySelector('.dashboard_home_title');if(!h||document.getElement
 /* Member Dashboard v2 loader (OFF until the owner approves: set MDV2=true and publish). Private token pages, no member-number URLs.
    The signed-in member's browser computes sha256('3vlmd|'+memberId+'|'+account email) from their own /account/contact page,
    fetches live/md/k/<hash>.txt (holds only their token) and shows live/md/v/<token>.html. Anyone else would need both the id and the email. */
-var MDV2=false;
+var MDV2=false;var MDV3=true;/* v3 design (md3.css/js); only matters once MDV2 is on */
 if(MDV2)(function(){var sb=document.querySelector('.member_sidebar');var mt=sb&&(sb.textContent||'').match(/Member ID #(\d+)/);var mid=mt&&mt[1];if(!mid||document.getElementById('mdx'))return;
 var B='https://threevillagelocal-cloud.github.io/3vl-share/live/md/',d=new Date(),v=''+d.getFullYear()+(d.getMonth()+1)+d.getDate();document.documentElement.classList.add('md-on');
-var l=document.createElement('link');l.rel='stylesheet';l.href=B+'md2.css?v='+v;document.head.appendChild(l);
+var MDN=MDV3?'md3':'md2';var l=document.createElement('link');l.rel='stylesheet';l.href=B+MDN+'.css?v='+v;document.head.appendChild(l);
+if(MDV3){var gf=document.createElement('link');gf.rel='stylesheet';gf.href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Anton&display=swap';document.head.appendChild(gf)}
 var nm=((sb.querySelector('h1,h2,h3,h4,b,strong')||{}).textContent||'').replace(/\s+/g,' ').trim();
 function txt(u){return fetch(u,{cache:'no-cache'}).then(function(r){return r.ok?r.text():''})}
 function show(t){if(!t){document.documentElement.classList.remove('md-on');return}var doc=new DOMParser().parseFromString(t,'text/html'),x=doc.getElementById('mdx');if(!x){document.documentElement.classList.remove('md-on');return}
 x.setAttribute('data-md-uid',mid);[].forEach.call(x.querySelectorAll('[data-md-name]'),function(s){if(nm)s.textContent=nm});var ins=document.getElementById('x-inst');if(ins)ins.remove();var w=document.createElement('div');w.className='md-wrap';w.appendChild(document.importNode(x,true));
-h.insertAdjacentElement('afterend',w);var sc=document.createElement('script');sc.src=B+'md2.js?v='+v;document.body.appendChild(sc);try{if(window.gtag)gtag('event','member_dashboard_view',{tier:x.getAttribute('data-tier')||''})}catch(e){}}
+var an=doc.getElementById('mdann');if(an)w.appendChild(document.importNode(an,true));h.insertAdjacentElement('afterend',w);var sc=document.createElement('script');sc.src=B+MDN+'.js?v='+v;document.body.appendChild(sc);try{if(window.gtag)gtag('event','member_dashboard_view',{tier:x.getAttribute('data-tier')||''})}catch(e){}}
 function sha(s){return crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)).then(function(b){return [].map.call(new Uint8Array(b),function(n){return('0'+n.toString(16)).slice(-2)}).join('')})}
 fetch('/account/contact',{credentials:'same-origin'}).then(function(r){return r.text()}).then(function(t){
 var em=(new DOMParser().parseFromString(t,'text/html').querySelector('input[name="email"]')||{}).value||'';

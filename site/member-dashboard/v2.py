@@ -485,9 +485,9 @@ def manifest(token, icon_base):
                                  {"src": icon_base + "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}]}, indent=1)
 
 
-INSTALL = ('<div class="x-inst" id="x-inst" hidden role="dialog" aria-label="Add your dashboard to your home screen"><img src="%s" alt="" width="44" height="44">'
-           '<div class="x-inst-t"><b>Add your dashboard to your home screen</b><i class="x-inst-ios">Tap <span class="x-shr" aria-label="Share">'
+INSTALL = ('<div class="x-inst" id="x-inst" hidden role="dialog" aria-label="Get your 3VL Dashboard app"><img src="%s" alt="" width="44" height="44">'
+           '<div class="x-inst-t"><b>Get your 3VL Dashboard app</b><i class="x-inst-ios">Tap <span class="x-shr" aria-label="Share">'
            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
            '<path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg></span> Share, then <b>Add to Home Screen</b></i>'
            '<i class="x-inst-and">One tap, no app store. It opens like an app.</i></div>'
-           '<button type="button" class="x-btn x-inst-go">Install</button><button type="button" class="x-inst-x" aria-label="Dismiss">&times;</button></div>')
+           '<button type="button" class="x-btn x-inst-go">Get the app</button><button type="button" class="x-inst-x" aria-label="Dismiss">&times;</button></div>')

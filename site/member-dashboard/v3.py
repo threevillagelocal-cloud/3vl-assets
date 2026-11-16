@@ -466,24 +466,29 @@ def page(a, ctx):
                  '<li><b>Tell your customers</b><i>Print your QR code for the counter, cards and flyers.</i><a class="chip" href="#profile" data-go="profile">Get your QR code</a></li></ul></div>') % ic("spark")
 
     # ---- sidebar
-    acct = [("edit", "Edit my listing", "/account/contact"), ("mail", "Leads and inquiries", "/account/leads"), ("tag", "Billing and payment", "/account/billing/change"),
-            ("star", "Upgrade my plan", "/account/upgrade"), ("lock", "Change password", "/account/password")]
+    acct = [("tag", "Billing and payment", "/account/billing/change"), ("star", "Upgrade my plan", "/account/upgrade"), ("lock", "Change password", "/account/password")]
+    acct_more = [("edit", "Edit my listing", "/account/contact"), ("mail", "Leads and inquiries", "/account/leads")]
     acct_nav = "".join('<a class="nav-acct" href="/login?login_direct_url=%s" data-acct="%s" data-ga="dash_account_click" data-product="%s">%s<span>%s</span></a>' % (
         quote(p, safe=""), p, re.sub(r"[^a-z]+", "_", t.lower()), ic(i if i in ICONS else "chev"), t) for i, t, p in acct) + '<a class="nav-acct" href="/logout" data-acct="/logout">%s<span>Sign out</span></a>' % ic("x")
+    more_acct_nav = "".join('<a class="nav-acct" href="/login?login_direct_url=%s" data-acct="%s" data-ga="dash_account_click" data-product="%s">%s<span>%s</span></a>' % (
+        quote(p, safe=""), p, re.sub(r"[^a-z]+", "_", t.lower()), ic(i if i in ICONS else "chev"), t) for i, t, p in acct_more) + acct_nav
+    leads_nav = '<a class="nav-leads" href="/login?login_direct_url=%s" data-acct="/account/leads" data-ga="dash_account_click" data-product="leads">%s<span>Leads</span><em class="nb lead">Inquiries</em></a>' % (quote("/account/leads", safe=""), ic("mail"))
     def nav(v, icn, label, badge=""):
         return '<a href="#%s" data-go="%s"%s>%s<span>%s</span>%s</a>' % (v, v, ' class="on" aria-current="page"' if v == "overview" else "", ic(icn), label, badge)
     lockb = '<em class="nlk">%s</em>' % ic("lock")
     seen_lock = lockb if not (has(tier, "banner") and has(tier, "spotlight")) else ""
     promo_badge = ('<em class="nb">%d</em>' % len(soc30 + em30)) if (soc30 or em30) and has(tier, "timeline") else ("" if has(tier, "timeline") else lockb)
     side = ('<aside class="sidebar"><a class="brand" href="%s/" target="_blank" rel="noopener">%s<span class="brand-sub">Member dashboard</span></a><nav class="nav" aria-label="Dashboard">'
-            '<div class="nav-label">Your dashboard</div>%s%s%s<div class="nav-label">Take action</div>%s%s<div class="nav-label">Grow</div>%s<a href="#" data-open="app" data-ga="dash_action_open" data-product="get_app">%s<span>Get the app on your phone</span></a><div class="nav-label">Account</div>%s</nav>'
-            '<a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="sidebar_3vl_digital"><span>Visit our business AI services at</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a><div class="side-foot"><div class="me">%s<div><b class="ellip">%s</b><span class="tierb t-%s">%s%s</span></div></div><a class="side-link" href="%s">Sign in to edit %s</a></div></aside>') % (
-        SITE, img("https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-white.webp", "Three Village Local", 168, 58, "brand-logo", lazy=False), nav("overview", "grid", "Overview"), nav("promotions", "megaphone", "Promotions", promo_badge),
-        nav("seen", "eye", "Banner and Spotlight", seen_lock), nav("actions", "send", "Action center"), nav("profile", "user", "Profile"), nav("grow", "rocket", "Grow with 3VL Digital"), ic("phone"), acct_nav,
-        img(a.get("logo"), "", 60, 60, "me-logo") if a.get("logo") else '<span class="me-logo ph">%s</span>' % ic("user"), name_html, tier, "&#9733; " if X.RANK[tier] >= X.RANK["v"] else "", TIER_NAME[tier].upper() if X.RANK[tier] >= X.RANK["v"] else TIER_NAME[tier], LOGIN, ic("chev"))
+            '%s%s%s%s%s<details class="nav-grp"><summary>%s<span>Account</span>%s</summary>%s</details></nav>'
+            '<a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="sidebar_3vl_digital"><span>Visit our business AI services at</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a>'
+            '<div class="side-foot"><div class="me">%s<div><b class="ellip">%s</b><span class="tierb t-%s">%s%s</span></div><button type="button" class="me-app" data-open="app" aria-label="Get the dashboard app on your phone" title="Get the app on your phone" data-ga="dash_action_open" data-product="get_app">%s</button></div></div></aside>') % (
+        SITE, img("https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-white.webp", "Three Village Local", 168, 58, "brand-logo", lazy=False),
+        nav("overview", "grid", "Overview"), nav("promotions", "megaphone", "Your promotions", promo_badge), leads_nav, nav("profile", "user", "Your listing"), nav("grow", "rocket", "Grow"),
+        ic("lock"), '<span class="nav-chev">%s</span>' % ic("chev"), acct_nav,
+        img(a.get("logo"), "", 64, 64, "me-logo") if a.get("logo") else '<span class="me-logo ph">%s</span>' % ic("user"), name_html, tier, "&#9733; " if X.RANK[tier] >= X.RANK["v"] else "", TIER_NAME[tier].upper() if X.RANK[tier] >= X.RANK["v"] else TIER_NAME[tier], ic("phone"))
 
     top = ('<header class="topbar"><label class="search">%s<input type="search" placeholder="Search your dashboard" aria-label="Search your dashboard" data-search></label>'
-           '<span class="pill live hide-s"><i></i>Updated nightly</span>%s<div class="topbar-actions"><button type="button" class="btn primary sm hide-s" data-open="event">%s Submit something</button>'
+           '<span class="pill live hide-s"><i></i>Updated nightly</span>%s<div class="topbar-actions"><a class="btn primary sm hide-s" href="#actions" data-go="actions">%s Submit something</a>'
            '<a class="btn ghost sm hide-s" href="%s" target="_blank" rel="noopener">View profile %s</a><span class="avatar">%s</span></div></header>') % (
         ic("search"), ('<span class="tpill vip">&#9733; VIP MEMBER</span>' if X.RANK[tier] >= X.RANK["v"] else
                        '<span class="tpill">%s<a href="%s" data-ga="dash_upgrade_click" data-product="topbar">Upgrade</a></span>' % (TIER_NAME[tier], UPGRADE)),
@@ -535,13 +540,16 @@ def page(a, ctx):
     seen_more = "".join(c for c in (cal_card, tips_card, net_card) if c)
     seen = '<div class="view" data-view="seen"><div class="vh"><h1>Banner and Spotlight</h1><p>Where neighbors see %s on Three Village Local.</p></div><div class="grid g-2">%s</div><div class="grid g-3 mt">%s</div></div>' % (name_html, seen_main, seen_more)
 
+    promotions = promotions.replace('<h1>Promotions</h1>', '<h1>Your promotions</h1>', 1).replace('</p></div><div class="grid g-promo">', '</p></div><div class="grid g-2 mb">%s</div><div class="grid g-promo">' % seen_main.replace('%', '%%').replace('%%', '%'), 1)
+    if seen_more:
+        promotions = promotions[:-len("</div>")] + '<div class="grid g-3 mt">%s</div></div>' % seen_more
     actions_v = ('<div class="view" data-view="actions"><div class="vh"><h1>Action center</h1><p>Send it to us and we will get it out there. Our team replies to every request.</p></div>'
                  '<div class="qa-big">%s</div><div class="grid g-3 mt">%s<div class="card how"><div class="card-head"><span class="card-icon violet">%s</span><div><h3>How it works</h3></div></div>'
                  '<ol class="steps"><li><b>Send it</b><i>Pick an action, add the details and a photo.</i></li><li><b>We review</b><i>Our team checks it and plans where it fits.</i></li>'
                  '<li><b>It goes out</b><i>Calendar, homepage, weekly email or social, tagged to you.</i></li></ol></div>%s</div></div>') % (
         act_big, upc_card, ic("layers"), news_card)
 
-    profile_v = ('<div class="view" data-view="profile"><div class="vh"><h1>Profile</h1><p>How neighbors see %s, plus tools to help them find you.</p></div>'
+    profile_v = ('<div class="view" data-view="profile"><div class="vh"><h1>Your listing</h1><p>How neighbors see %s, plus tools to help them find you.</p><div class="row-wrap mt-s"><a class="btn primary sm" href="/login?login_direct_url=%%2Faccount%%2Fcontact">Edit my listing</a><a class="btn ghost sm" href="/login?login_direct_url=%%2Faccount%%2Fleads">See my leads</a></div></div>'
                  '<div class="grid g-prof">%s<div class="stack"><div class="card"><div class="card-head"><span class="card-icon green">%s</span><div><h3>Profile strength</h3><div class="sub">%s</div></div><span class="right">%s</span></div>'
                  '<ul class="checks">%s</ul></div><div class="card upsell">' + ups.replace('data-ups="', 'data-ups3="').replace('%', '%%') + '</div></div><div class="card"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Quick links</h3><div class="sub">Tools to help neighbors find you</div></div></div><div class="tools">%s</div></div></div></div>') % (
         name_html, listing if uid else '<div class="card listing"><div class="card-body"><b class="lst-n">%s</b><i class="lst-c">Basic member</i><div class="row-wrap mt-s"><a class="btn primary sm" href="%s">Edit listing %s</a></div></div></div>' % (name_html, LOGIN_EDIT, ic("chev")),
@@ -553,16 +561,16 @@ def page(a, ctx):
 
     dash_url = ctx.get("dash_url") or ""
     app_qr = X.qr_data_uri(dash_url) if dash_url else ""
-    app_pane = ('<section class="drawpane" data-pane="app" hidden><div class="apppane"><span class="card-icon blue">%s</span><h3>Put your dashboard on your phone</h3>'
+    app_pane = ('<section class="drawpane" data-pane="app" hidden><div class="apppane"><span class="card-icon blue">%s</span><h3>Put your dashboard app on your phone</h3>'
                 '<p class="faint">It opens like an app, updates every morning and needs no login.</p>%s'
                 '<div class="appsteps"><div><b>iPhone</b><ol><li>Open your dashboard link in <b>Safari</b></li><li>Tap <b>Share</b> (the square with an arrow)</li><li>Tap <b>Add to Home Screen</b></li></ol></div>'
                 '<div><b>Android</b><ol><li>Open your dashboard link in <b>Chrome</b></li><li>Tap <b>Install app</b> (or the menu, then Add to Home screen)</li></ol>'
-                '<button type="button" class="btn primary sm x-inst-go" data-install hidden>Install now</button></div></div>%s</div></section>') % (
-        ic("phone"), ('<div class="appqr"><img src="%s" alt="QR code to open your dashboard on your phone" width="168" height="168"><i>Scan with your phone camera</i></div>' % app_qr) if app_qr else "",
+                '<button type="button" class="btn primary sm x-inst-go" data-install hidden>Get the app</button></div></div>%s</div></section>') % (
+        ic("phone"), ('<div class="appqr"><img src="%s" alt="QR code to get your dashboard app on your phone" width="168" height="168"><i>Scan with your phone camera</i></div>' % app_qr) if app_qr else "",
         ('<button type="button" class="chip" data-copy="%s">%s Copy my dashboard link</button>' % (e(dash_url), ic("copy"))) if dash_url else "")
     more_pane = ('<section class="drawpane" data-pane="more" hidden><div class="morepane"><h3>More</h3><button type="button" class="tile-l" data-open="app">%s<span><b>Get the app on your phone</b><i>Your dashboard on your home screen</i></span></button>'
                  '<div class="nav-label">Account</div><div class="morelinks">%s</div><a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="more_3vl_digital">'
-                 '<span>Visit our business AI services at</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a></div></section>') % (ic("phone"), acct_nav)
+                 '<span>Visit our business AI services at</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a></div></section>') % (ic("phone"), more_acct_nav)
     drawer = ('<div class="drawer" id="drawer" hidden aria-hidden="true"><div class="dr-scrim" data-close></div><div class="dr-panel" role="dialog" aria-modal="true" aria-label="Send to Three Village Local">'
               '<button type="button" class="dr-x" data-close aria-label="Close">%s</button>%s%s</div></div>') % (
         ic("x"), drawer_forms(tier) + app_pane + more_pane, '<p class="prev-note">Preview (test mode): what you send goes only to the 3VL team inbox, marked TEST.</p>' if ctx.get("preview") else "")
@@ -574,13 +582,13 @@ def page(a, ctx):
               '<li>Signed-in loader on /account/home (test with a real member login)</li></ul><p class="faint small">Monthly promo reel (free VIP perk) stays hidden until delivery works.</p></details>') if ctx.get("preview") else ""
     tabs = ('<nav class="tabbar" aria-label="Dashboard">%s</nav>' % ("".join(
         '<a href="#%s" data-go="%s"%s>%s<span>%s</span></a>' % (v, v, ' class="on"' if v == "overview" else "", ic(i), t) for v, i, t in (
-            ("overview", "grid", "Home"), ("promotions", "megaphone", "Promos"), ("seen", "eye", "Seen"), ("actions", "send", "Actions"), ("grow", "rocket", "Grow"))) + ('<a href="#" data-open="more">%s<span>More</span></a>' % ic("layers"))))
+            ("overview", "grid", "Home"), ("promotions", "megaphone", "Promos"), ("actions", "send", "Submit"), ("profile", "user", "Listing"), ("grow", "rocket", "Grow"))) + ('<a href="#" data-open="more">%s<span>More</span></a>' % ic("layers"))))
     attrs = (' data-preview="1"' if ctx.get("preview") else "") + (' data-endpoint="%s"' % e(ctx["endpoint"]) if ctx.get("endpoint") else "") + (' data-token="%s"' % e(ctx["token"]) if ctx.get("token") else "")
     body = ('<div class="mdx app" id="mdx" data-tier="%s" data-uid="%s"%s>%s<div class="main">%s<main class="content" id="view">%s%s%s%s%s%s'
             '<p class="foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a>. Updated nightly.</p></main></div>%s%s'
             '<div class="toasts" id="toasts" aria-live="polite"></div></div>') % (
-        tier, uid, attrs, side, top, overview, promotions, seen, actions_v, profile_v, grow_v, drawer, tabs + status)
-    return body
+        tier, uid, attrs, side, top, overview, promotions, "", actions_v, profile_v, grow_v, drawer, tabs + status)
+    return body.replace('data-go="seen"', 'data-go="promotions"').replace('href="#seen"', 'href="#promotions"')
 
 
 SHELL = X.SHELL.replace("family=Inter:wght@400;500;600;700;800", "family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Anton")

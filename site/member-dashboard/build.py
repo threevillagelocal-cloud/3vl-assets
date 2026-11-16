@@ -757,6 +757,51 @@ def speedup(html, css_path):
     return "".join(out)
 
 
+def announcements_for(uid, tier):
+    """Active one-time popups for this member (member-specific first, then "all"). Source: guard data/member_dashboard/announcements.json."""
+    import datetime as _dt
+    today = _dt.datetime.now().strftime("%Y-%m-%d")
+    items = (jload(os.path.join(GUARD, "data", "member_dashboard", "announcements.json"), {}) or {}).get("items", [])
+    out = []
+    for it in items:
+        if not it.get("id") or not it.get("title"):
+            continue
+        if str(it.get("start") or "0000") > today or str(it.get("end") or "9999") < today:
+            continue
+        who = str(it.get("uid") or "all")
+        if who != "all" and who != str(uid or ""):
+            continue
+        if it.get("tiers") and tier not in it["tiers"]:
+            continue
+        j = {k: it[k] for k in ("id", "title", "emoji", "body", "frame", "button", "end") if it.get(k)}
+        for k in ("image", "image_640"):
+            if it.get(k):
+                j[k] = it[k] if it[k].startswith("http") else SHARE + "live/md/" + it[k]
+        out.append((0 if who != "all" else 1, j))
+    out.sort(key=lambda x: x[0])
+    return [j for _, j in out]
+
+
+def ann_script(uid, tier):
+    a = announcements_for(uid, tier)
+    if not a:
+        return ""
+    return '<script type="application/json" id="mdann">%s</script>' % json.dumps(a, ensure_ascii=False).replace("</", "<\/")
+
+
+def inst_html(icon, company=""):
+    import importlib
+    X = importlib.import_module("v3" if V3_FLAG else "v2")
+    """Phone install bubble (owner 11/15: call it their dashboard APP). Installed app name stays "3VL Dashboard"."""
+    h = X.INSTALL % icon
+    if company and V3_FLAG:
+        h = h.replace("<b>Get your 3VL Dashboard app</b>", "<b>Add your %s dashboard app to your home screen</b>" % e(company), 1)
+    return h
+
+
+V3_FLAG = "--v3" in sys.argv
+
+
 def requested_samples():
     """uid -> date of a dashboard sample request: legacy guard file + the submit endpoint's record files in news-monitor."""
     out = {}
@@ -844,7 +889,7 @@ def build_v2(acts, V, NETd, r):
     def write(name, title, body, installable=True):
         b = body.replace(SHARE + "live/md/3vl-navy-440.webp", "../img/3vl-navy-440.webp")
         if installable:
-            b = b.replace("</main></div>", "</main>" + X.INSTALL % "../img/icon-180.png" + "</div>")
+            b = b.replace("</main></div>", "</main>" + inst_html("../img/icon-180.png", title if name != "basic" else "") + "</div>")
             open(os.path.join(HERE, "_local", PFX + "%s.webmanifest" % name), "w", encoding="utf-8").write(X.manifest(PFX + name, "../img/"))
         page_html = X.SHELL % (e(title), PFX + "%s.webmanifest" % name, "../img/icon-180.png", local_css, b, local_js)
         if V3:
@@ -857,14 +902,14 @@ def build_v2(acts, V, NETd, r):
         if want and u not in want:
             continue
         a, tier = acts[u], tier_of(u)
-        body = X.page(a, ctx_for(u, a, tier))
+        body = X.page(a, ctx_for(u, a, tier)) + (ann_script(u, tier) if V3 else "")
         for bad in ("\u2014", "\u2013", "&mdash;", "&ndash;"):
             assert bad not in body, "dash in v2 " + u
         write(u, a["short"], body)
         if WRITE_LIVE:
             os.makedirs(os.path.join(LIVE_DIR, "v"), exist_ok=True)
             ib = SHARE + "live/md/"
-            lb = body.replace('<div class="mdx"', '<div class="mdx" data-sw="sw.js"', 1).replace("</main></div>", "</main>" + X.INSTALL % (ib + "icon-180.png") + "</div>")
+            lb = body.replace('<div class="mdx"', '<div class="mdx" data-sw="sw.js"', 1).replace("</main></div>", "</main>" + inst_html(ib + "icon-180.png", a["short"]) + "</div>")
             lh = X.SHELL % (e(a["short"]), "%s.webmanifest" % toks[u], ib + "icon-180.png", live_css, lb, live_js)
             if V3:
                 lh = speedup(lh, os.path.join(HERE, "dash3.css"))
@@ -872,7 +917,7 @@ def build_v2(acts, V, NETd, r):
             open(os.path.join(LIVE_DIR, "v", "%s.webmanifest" % toks[u]), "w", encoding="utf-8").write(X.manifest(toks[u], ib))
         built.append(u)
     # Basic members: one shared page (no personal data; the loader fills in the business name)
-    basic = X.page({"uid": "", "short": "", "items": [], "hp_days": []}, ctx_for("", {"items": [], "hp_days": []}, "b"))
+    basic = X.page({"uid": "", "short": "", "items": [], "hp_days": []}, ctx_for("", {"items": [], "hp_days": []}, "b")) + (ann_script("", "b") if V3 else "")
     write("basic", "Member Dashboard", basic, installable=False)
     if WRITE_LIVE:
         import shutil
