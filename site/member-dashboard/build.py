@@ -786,7 +786,7 @@ def ann_script(uid, tier):
     a = announcements_for(uid, tier)
     if not a:
         return ""
-    return '<script type="application/json" id="mdann">%s</script>' % json.dumps(a, ensure_ascii=False).replace("</", "<\/")
+    return '<script type="application/json" id="mdann">%s</script>' % json.dumps(a, ensure_ascii=False).replace("</", "<" + "\\" + "/")
 
 
 def inst_html(icon, company=""):
