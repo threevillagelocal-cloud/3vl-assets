@@ -16,7 +16,7 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
   if(!bar){bar=document.createElement('div');bar.className='y-tabs';bar.setAttribute('role','tablist');
     bar.innerHTML='<button type="button" role="tab" class="on" aria-selected="true" data-y="tp">Top Picks</button><button type="button" role="tab" aria-selected="false" data-y="td">Today <b class="y-tdn"></b></button><button type="button" role="tab" aria-selected="false" data-y="cu">Coming Up</button>';
     h2.parentNode.insertBefore(bar,h2.nextSibling)}
-  /* the lead story is the first pick: hide its duplicate row and keep 5 compact rows beside it */
+  /* the lead story is the first pick: hide its duplicate row and keep 4 compact rows beside it (owner 11/16: 5 picks total) */
   var tp=sec.querySelector('.y-tp');
   function norm(x){return String(x||'').toLowerCase().replace(/[^a-z0-9]/g,'')}
   function rowsFix(){if(!tp)return;var leadT=tp.getAttribute('data-lead'),n=0;
@@ -27,7 +27,7 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
       if(!same){var first=box.querySelector('.wk-radar');sorted.forEach(function(p){box.insertBefore(p,first)})}}
     $$('.wk-picks .wk-pick',sec).forEach(function(p){if(p.classList.contains('wk-radar'))return;
     var t=p.getAttribute('data-title')||((p.querySelector('.wk-ptitle')||{}).textContent)||'';var dup=leadT&&norm(t)===norm(leadT);
-    p.classList.toggle('y-dup',!!dup);if(!dup)n++;p.classList.toggle('y-first',!dup&&n===1);p.classList.toggle('y-extra',!dup&&n>5);if(!dup){var nb=p.querySelector('.wk-pnum');if(nb&&!nb.classList.contains('wk-soon'))nb.textContent=(n+1<10?'0':'')+(n+1)}
+    p.classList.toggle('y-dup',!!dup);if(!dup)n++;p.classList.toggle('y-first',!dup&&n===1);p.classList.toggle('y-extra',!dup&&n>4);if(!dup){var nb=p.querySelector('.wk-pnum');if(nb&&!nb.classList.contains('wk-soon'))nb.textContent=(n+1<10?'0':'')+(n+1)}
       var st=p.querySelector('.wk-pimg .wk-pstat'),wh=p.querySelector('.wk-pwhen');if(st&&wh)wh.appendChild(st)})}
   rowsFix();window.__yRowsFix=rowsFix;
   /* pick rows are small: ask for the small photo copy (weekender.js redraws the row with a 280px size hint) */
