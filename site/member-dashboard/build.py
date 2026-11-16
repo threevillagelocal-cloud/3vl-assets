@@ -730,14 +730,19 @@ def account_emails(uids):
 
 def build_v2(acts, V, NETd, r):
     """One dashboard for every tier. VIP + Featured get their own private token page; Basic members share one page (name filled in)."""
-    import v2 as X
+    V3 = "--v3" in sys.argv
+    if V3:
+        import v3 as X
+    else:
+        import v2 as X
+    PFX = "v3-" if V3 else "v2-"
     mem = {str(m["id"]): m for m in (jload(os.path.join(GUARD, "data", "members.json"), {}) or {}).get("members", [])}
     tier_of = lambda u: {"vip": "v", "noticed": "f", "partner": "p"}.get((mem.get(u) or {}).get("plan"), "b")
     ids = list(acts.keys())
     toks = tokens_for(ids)
     share_dir = os.path.join(DOCS, "3vl-share")
-    local_css, local_js = "../dash2.css", "../dash2.js"
-    live_css, live_js = SHARE + "live/md/md2.css", SHARE + "live/md/md2.js"
+    local_css, local_js = ("../dash3.css", "../dash3.js") if V3 else ("../dash2.css", "../dash2.js")
+    live_css, live_js = (SHARE + "live/md/md3.css", SHARE + "live/md/md3.js") if V3 else (SHARE + "live/md/md2.css", SHARE + "live/md/md2.js")
     bviews = floor_k(r.get("views") or 0)
     soc = jload(os.path.join(NEWS, "data", "hq", "social.json"), {}) or {}
     net = dict(NETd)
@@ -768,9 +773,9 @@ def build_v2(acts, V, NETd, r):
         b = body.replace(SHARE + "live/md/3vl-navy-440.webp", "../img/3vl-navy-440.webp")
         if installable:
             b = b.replace("</main></div>", "</main>" + X.INSTALL % "../img/icon-180.png" + "</div>")
-            open(os.path.join(HERE, "_local", "v2-%s.webmanifest" % name), "w", encoding="utf-8").write(X.manifest("v2-" + name, "../img/"))
-        open(os.path.join(HERE, "_local", "v2-%s.html" % name), "w", encoding="utf-8").write(
-            X.SHELL % (e(title), "v2-%s.webmanifest" % name, "../img/icon-180.png", local_css, b, local_js))
+            open(os.path.join(HERE, "_local", PFX + "%s.webmanifest" % name), "w", encoding="utf-8").write(X.manifest(PFX + name, "../img/"))
+        open(os.path.join(HERE, "_local", PFX + "%s.html" % name), "w", encoding="utf-8").write(
+            X.SHELL % (e(title), PFX + "%s.webmanifest" % name, "../img/icon-180.png", local_css, b, local_js))
 
     for u in ids:
         if want and u not in want:
