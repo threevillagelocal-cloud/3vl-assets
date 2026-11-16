@@ -1,7 +1,7 @@
 {
- "when": "2026-11-16T16:22:18.617Z",
- "checked": 124,
- "failed": 122,
+ "when": "2026-11-16T17:50:12.002Z",
+ "checked": 125,
+ "failed": 123,
  "results": [
   {
    "url": "https://www.threevillagelocal.com/",
@@ -12,11 +12,11 @@
     "page is almost empty (248 characters of text)",
     "homepage content (Things to Do) missing",
     "Eat & Drink shows 0 cards (expected 6)",
-    "failed files: 403 https://www.threevillagelocal.com/?sitecheck=1794844485176"
+    "failed files: 403 https://www.threevillagelocal.com/?sitecheck=1794849727530"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -37,10 +37,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1609,
+   "ms": 2398,
    "data": {
     "title": "Three Village Local: Things To Do, Food & Local Businesses",
-    "textLen": 4593,
+    "textLen": 4634,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "p3v-js p3-done",
@@ -58,11 +58,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "category tiles missing",
-    "failed files: 403 https://www.threevillagelocal.com/categories?sitecheck=1794844509434"
+    "failed files: 403 https://www.threevillagelocal.com/categories?sitecheck=1794849752752"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -81,11 +81,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "no events showing on the calendar",
-    "failed files: 403 https://www.threevillagelocal.com/events?sitecheck=1794844522877"
+    "failed files: 403 https://www.threevillagelocal.com/events?sitecheck=1794849766336"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -105,11 +105,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "no events showing on the calendar",
-    "failed files: 403 https://www.threevillagelocal.com/events-calendar?sitecheck=1794844536328"
+    "failed files: 403 https://www.threevillagelocal.com/events-calendar?sitecheck=1794849779906"
    ],
    "notes": [],
    "status": 403,
-   "ms": 552,
+   "ms": 1078,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -129,11 +129,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "blog shows 0 posts",
-    "failed files: 403 https://www.threevillagelocal.com/blog?sitecheck=1794844549353"
+    "failed files: 403 https://www.threevillagelocal.com/blog?sitecheck=1794849793623"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1083,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -151,11 +151,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/join?sitecheck=1794844562793"
+    "failed files: 403 https://www.threevillagelocal.com/join?sitecheck=1794849807200"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -172,11 +172,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/newsletter?sitecheck=1794844576241"
+    "failed files: 403 https://www.threevillagelocal.com/newsletter?sitecheck=1794849820768"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -193,11 +193,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/locallistings?sitecheck=1794844589686"
+    "failed files: 403 https://www.threevillagelocal.com/locallistings?sitecheck=1794849834341"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -214,11 +214,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/app?sitecheck=1794844603138"
+    "failed files: 403 https://www.threevillagelocal.com/app?sitecheck=1794849847921"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -235,11 +235,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/promotion?sitecheck=1794844616585"
+    "failed files: 403 https://www.threevillagelocal.com/promotion?sitecheck=1794849861498"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1027,
+   "ms": 1078,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -256,11 +256,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/smart-publisher?sitecheck=1794844630039"
+    "failed files: 403 https://www.threevillagelocal.com/smart-publisher?sitecheck=1794849875070"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -277,11 +277,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/three-village-farmers-market?sitecheck=1794844643479"
+    "failed files: 403 https://www.threevillagelocal.com/three-village-farmers-market?sitecheck=1794849888647"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -298,11 +298,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/login?sitecheck=1794844656916"
+    "failed files: 403 https://www.threevillagelocal.com/login?sitecheck=1794849902236"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1083,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -319,11 +319,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/about/contact?sitecheck=1794844670354"
+    "failed files: 403 https://www.threevillagelocal.com/about/contact?sitecheck=1794849915805"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -341,11 +341,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "search returned no results",
-    "failed files: 403 https://www.threevillagelocal.com/search_results?q=pizza&sitecheck=1794844683796"
+    "failed files: 403 https://www.threevillagelocal.com/search_results?q=pizza&sitecheck=1794849929369"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -369,11 +369,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "search returned no results",
-    "failed files: 403 https://www.threevillagelocal.com/search_results?q=plumber&sitecheck=1794844697239"
+    "failed files: 403 https://www.threevillagelocal.com/search_results?q=plumber&sitecheck=1794849942938"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1060,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -397,11 +397,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/fitness-sports?sitecheck=1794844710715"
+    "failed files: 403 https://www.threevillagelocal.com/fitness-sports?sitecheck=1794849956511"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1084,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -425,11 +425,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/arts-entertainment?sitecheck=1794844724176"
+    "failed files: 403 https://www.threevillagelocal.com/arts-entertainment?sitecheck=1794849970087"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -453,11 +453,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/health-wellness?sitecheck=1794844737624"
+    "failed files: 403 https://www.threevillagelocal.com/health-wellness?sitecheck=1794849983656"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -481,11 +481,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/education?sitecheck=1794844751062"
+    "failed files: 403 https://www.threevillagelocal.com/education?sitecheck=1794849997230"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -509,11 +509,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/medical-services?sitecheck=1794844764501"
+    "failed files: 403 https://www.threevillagelocal.com/medical-services?sitecheck=1794850010799"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -537,11 +537,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/hotels-travel?sitecheck=1794844777950"
+    "failed files: 403 https://www.threevillagelocal.com/hotels-travel?sitecheck=1794850024377"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1021,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -565,11 +565,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/nightlife?sitecheck=1794844791390"
+    "failed files: 403 https://www.threevillagelocal.com/nightlife?sitecheck=1794850037953"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -593,11 +593,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/pet-services?sitecheck=1794844804828"
+    "failed files: 403 https://www.threevillagelocal.com/pet-services?sitecheck=1794850051519"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -621,11 +621,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/professional-services?sitecheck=1794844818272"
+    "failed files: 403 https://www.threevillagelocal.com/professional-services?sitecheck=1794850065082"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -649,11 +649,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/automotive?sitecheck=1794844831713"
+    "failed files: 403 https://www.threevillagelocal.com/automotive?sitecheck=1794850078650"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1027,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -677,11 +677,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/shopping?sitecheck=1794844845165"
+    "failed files: 403 https://www.threevillagelocal.com/shopping?sitecheck=1794850092216"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -705,11 +705,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/restaurant?sitecheck=1794844858613"
+    "failed files: 403 https://www.threevillagelocal.com/restaurant?sitecheck=1794850105782"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -733,11 +733,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/events-entertainment?sitecheck=1794844872056"
+    "failed files: 403 https://www.threevillagelocal.com/events-entertainment?sitecheck=1794850119355"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1027,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -761,11 +761,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/real-estate-services?sitecheck=1794844885502"
+    "failed files: 403 https://www.threevillagelocal.com/real-estate-services?sitecheck=1794850132925"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -789,11 +789,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/attorney?sitecheck=1794844898958"
+    "failed files: 403 https://www.threevillagelocal.com/attorney?sitecheck=1794850146493"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -817,11 +817,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/business-services?sitecheck=1794844912401"
+    "failed files: 403 https://www.threevillagelocal.com/business-services?sitecheck=1794850160063"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1026,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -845,11 +845,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/beauty-personal-care?sitecheck=1794844925866"
+    "failed files: 403 https://www.threevillagelocal.com/beauty-personal-care?sitecheck=1794850173627"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -873,11 +873,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/community-civic?sitecheck=1794844939308"
+    "failed files: 403 https://www.threevillagelocal.com/community-civic?sitecheck=1794850187193"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -901,11 +901,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/marine-services?sitecheck=1794844952774"
+    "failed files: 403 https://www.threevillagelocal.com/marine-services?sitecheck=1794850200764"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1027,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -929,11 +929,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/technology-it?sitecheck=1794844966226"
+    "failed files: 403 https://www.threevillagelocal.com/technology-it?sitecheck=1794850214340"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -957,11 +957,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/marketing-advertising?sitecheck=1794844979675"
+    "failed files: 403 https://www.threevillagelocal.com/marketing-advertising?sitecheck=1794850227918"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -985,11 +985,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/payroll-human-resources?sitecheck=1794844993123"
+    "failed files: 403 https://www.threevillagelocal.com/payroll-human-resources?sitecheck=1794850241488"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1013,11 +1013,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/farmstand-agriculture?sitecheck=1794845006585"
+    "failed files: 403 https://www.threevillagelocal.com/farmstand-agriculture?sitecheck=1794850255056"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1041,11 +1041,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/restoration?sitecheck=1794845020021"
+    "failed files: 403 https://www.threevillagelocal.com/restoration?sitecheck=1794850268621"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1083,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1069,11 +1069,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/landscaping-property-maintenance?sitecheck=1794845033457"
+    "failed files: 403 https://www.threevillagelocal.com/landscaping-property-maintenance?sitecheck=1794850282191"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1097,11 +1097,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/contractor?sitecheck=1794845046892"
+    "failed files: 403 https://www.threevillagelocal.com/contractor?sitecheck=1794850295763"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1026,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1125,11 +1125,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/plumbing-electric-repairs?sitecheck=1794845060345"
+    "failed files: 403 https://www.threevillagelocal.com/plumbing-electric-repairs?sitecheck=1794850309339"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1083,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1153,11 +1153,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/cleaning-organizing?sitecheck=1794845073799"
+    "failed files: 403 https://www.threevillagelocal.com/cleaning-organizing?sitecheck=1794850322932"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1083,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1181,11 +1181,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/wealth-management-financial-planning?sitecheck=1794845087246"
+    "failed files: 403 https://www.threevillagelocal.com/wealth-management-financial-planning?sitecheck=1794850336509"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1209,11 +1209,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/mortgages-home-loans?sitecheck=1794845100699"
+    "failed files: 403 https://www.threevillagelocal.com/mortgages-home-loans?sitecheck=1794850350086"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1237,11 +1237,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/accounting-tax?sitecheck=1794845114146"
+    "failed files: 403 https://www.threevillagelocal.com/accounting-tax?sitecheck=1794850363653"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1265,11 +1265,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/insurance?sitecheck=1794845127583"
+    "failed files: 403 https://www.threevillagelocal.com/insurance?sitecheck=1794850377223"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1293,11 +1293,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/business-lending?sitecheck=1794845141025"
+    "failed files: 403 https://www.threevillagelocal.com/business-lending?sitecheck=1794850390787"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1320,10 +1320,10 @@
    "problems": [],
    "notes": [],
    "status": 200,
-   "ms": 1723,
+   "ms": 2470,
    "data": {
     "title": "Sports & Fitness in the Three Village Area | Three Village Local",
-    "textLen": 8022,
+    "textLen": 8030,
     "brokenImgs": [],
     "overflow": 0,
     "htmlCls": "tvl-sh p3v-js p3-on p3-done tvl-sh-on tvl-sf-on",
@@ -1343,11 +1343,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/home-garden?sitecheck=1794845165423"
+    "failed files: 403 https://www.threevillagelocal.com/home-garden?sitecheck=1794850416035"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1087,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1371,11 +1371,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/jewelry?sitecheck=1794845178865"
+    "failed files: 403 https://www.threevillagelocal.com/jewelry?sitecheck=1794850429617"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1399,11 +1399,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/candles?sitecheck=1794845192310"
+    "failed files: 403 https://www.threevillagelocal.com/candles?sitecheck=1794850443188"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1427,11 +1427,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/candy-store?sitecheck=1794845205765"
+    "failed files: 403 https://www.threevillagelocal.com/candy-store?sitecheck=1794850456759"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1455,11 +1455,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/children-s-clothing?sitecheck=1794845219205"
+    "failed files: 403 https://www.threevillagelocal.com/children-s-clothing?sitecheck=1794850470324"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1026,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1483,11 +1483,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/collectibles?sitecheck=1794845232645"
+    "failed files: 403 https://www.threevillagelocal.com/collectibles?sitecheck=1794850483897"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1511,11 +1511,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/florists?sitecheck=1794845246089"
+    "failed files: 403 https://www.threevillagelocal.com/florists?sitecheck=1794850497464"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1539,11 +1539,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/wine?sitecheck=1794845259529"
+    "failed files: 403 https://www.threevillagelocal.com/wine?sitecheck=1794850511033"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1567,11 +1567,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/antiques?sitecheck=1794845272970"
+    "failed files: 403 https://www.threevillagelocal.com/antiques?sitecheck=1794850524612"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1595,11 +1595,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/bicycles?sitecheck=1794845286413"
+    "failed files: 403 https://www.threevillagelocal.com/bicycles?sitecheck=1794850538190"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1027,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1623,11 +1623,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/books?sitecheck=1794845299864"
+    "failed files: 403 https://www.threevillagelocal.com/books?sitecheck=1794850551761"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1651,11 +1651,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/cameras-telescopes?sitecheck=1794845313309"
+    "failed files: 403 https://www.threevillagelocal.com/cameras-telescopes?sitecheck=1794850565324"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1679,11 +1679,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/cannabis-dispensary?sitecheck=1794845326747"
+    "failed files: 403 https://www.threevillagelocal.com/cannabis-dispensary?sitecheck=1794850578890"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1026,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1707,11 +1707,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/cards?sitecheck=1794845340193"
+    "failed files: 403 https://www.threevillagelocal.com/cards?sitecheck=1794850592458"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1735,11 +1735,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/chocolatiers-chocolate-shop?sitecheck=1794845353639"
+    "failed files: 403 https://www.threevillagelocal.com/chocolatiers-chocolate-shop?sitecheck=1794850606028"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1763,11 +1763,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/cigars?sitecheck=1794845367082"
+    "failed files: 403 https://www.threevillagelocal.com/cigars?sitecheck=1794850619601"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1791,11 +1791,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/comics?sitecheck=1794845380527"
+    "failed files: 403 https://www.threevillagelocal.com/comics?sitecheck=1794850633174"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1819,11 +1819,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/crystals?sitecheck=1794845393983"
+    "failed files: 403 https://www.threevillagelocal.com/crystals?sitecheck=1794850646737"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1021,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1847,11 +1847,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/electronics?sitecheck=1794845407426"
+    "failed files: 403 https://www.threevillagelocal.com/electronics?sitecheck=1794850660306"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1875,11 +1875,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/fishing-tackle?sitecheck=1794845420873"
+    "failed files: 403 https://www.threevillagelocal.com/fishing-tackle?sitecheck=1794850673871"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1903,11 +1903,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/furniture-stores?sitecheck=1794845434319"
+    "failed files: 403 https://www.threevillagelocal.com/furniture-stores?sitecheck=1794850687450"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1035,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1931,11 +1931,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/liquor?sitecheck=1794845447769"
+    "failed files: 403 https://www.threevillagelocal.com/liquor?sitecheck=1794850701021"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1959,11 +1959,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/liquor-stores?sitecheck=1794845461206"
+    "failed files: 403 https://www.threevillagelocal.com/liquor-stores?sitecheck=1794850714590"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1026,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -1987,11 +1987,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/musical-instruments?sitecheck=1794845474664"
+    "failed files: 403 https://www.threevillagelocal.com/musical-instruments?sitecheck=1794850728158"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2015,11 +2015,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/nurseries-gardening?sitecheck=1794845488112"
+    "failed files: 403 https://www.threevillagelocal.com/nurseries-gardening?sitecheck=1794850741721"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2043,11 +2043,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/picture-framing?sitecheck=1794845501552"
+    "failed files: 403 https://www.threevillagelocal.com/picture-framing?sitecheck=1794850755289"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1026,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2071,11 +2071,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/plants?sitecheck=1794845515001"
+    "failed files: 403 https://www.threevillagelocal.com/plants?sitecheck=1794850768865"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2099,11 +2099,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/specialty-food?sitecheck=1794845528437"
+    "failed files: 403 https://www.threevillagelocal.com/specialty-food?sitecheck=1794850782436"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2127,11 +2127,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/specialty-foods?sitecheck=1794845541883"
+    "failed files: 403 https://www.threevillagelocal.com/specialty-foods?sitecheck=1794850796016"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1021,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2155,11 +2155,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/dinner?sitecheck=1794845555327"
+    "failed files: 403 https://www.threevillagelocal.com/dinner?sitecheck=1794850809582"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2183,11 +2183,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/lunch?sitecheck=1794845568762"
+    "failed files: 403 https://www.threevillagelocal.com/lunch?sitecheck=1794850823146"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2211,11 +2211,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/american?sitecheck=1794845582200"
+    "failed files: 403 https://www.threevillagelocal.com/american?sitecheck=1794850836720"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2239,11 +2239,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/breakfast?sitecheck=1794845595640"
+    "failed files: 403 https://www.threevillagelocal.com/breakfast?sitecheck=1794850850285"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1078,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2267,11 +2267,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/take-out-restaurants?sitecheck=1794845609089"
+    "failed files: 403 https://www.threevillagelocal.com/take-out-restaurants?sitecheck=1794850863850"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2295,11 +2295,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/burgers?sitecheck=1794845622529"
+    "failed files: 403 https://www.threevillagelocal.com/burgers?sitecheck=1794850877413"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2323,11 +2323,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/healthy-eating?sitecheck=1794845635970"
+    "failed files: 403 https://www.threevillagelocal.com/healthy-eating?sitecheck=1794850890984"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1038,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2351,11 +2351,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/salads?sitecheck=1794845649429"
+    "failed files: 403 https://www.threevillagelocal.com/salads?sitecheck=1794850904546"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1020,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2379,11 +2379,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/cafe?sitecheck=1794845662864"
+    "failed files: 403 https://www.threevillagelocal.com/cafe?sitecheck=1794850918114"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2407,11 +2407,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/wings?sitecheck=1794845676307"
+    "failed files: 403 https://www.threevillagelocal.com/wings?sitecheck=1794850931679"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2435,11 +2435,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "our page design did not load (BD default layout showing)",
-    "failed files: 403 https://www.threevillagelocal.com/italian?sitecheck=1794845689743"
+    "failed files: 403 https://www.threevillagelocal.com/italian?sitecheck=1794850945245"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2462,11 +2462,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/team-passamenti-at-better-homes-and-gardens-real-estate-realty-connect?sitecheck=1794845703179"
+    "failed files: 403 https://www.threevillagelocal.com/team-passamenti-at-better-homes-and-gardens-real-estate-realty-connect?sitecheck=1794850958810"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1021,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2484,11 +2484,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/girard-wealth-management-group?sitecheck=1794845716614"
+    "failed files: 403 https://www.threevillagelocal.com/girard-wealth-management-group?sitecheck=1794850972372"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2506,11 +2506,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/the-odwyer-brainard-team-at-daniel-gale-sothebys-international-realty?sitecheck=1794845730054"
+    "failed files: 403 https://www.threevillagelocal.com/the-odwyer-brainard-team-at-daniel-gale-sothebys-international-realty?sitecheck=1794850985940"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1084,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2528,11 +2528,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/kgr-contracting-corp?sitecheck=1794845743496"
+    "failed files: 403 https://www.threevillagelocal.com/kgr-contracting-corp?sitecheck=1794850999509"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1026,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2550,11 +2550,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/matt-bardram-at-coltrain-mortgage?sitecheck=1794845756939"
+    "failed files: 403 https://www.threevillagelocal.com/matt-bardram-at-coltrain-mortgage?sitecheck=1794851013074"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2572,11 +2572,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/southard-estate-planning?sitecheck=1794845770380"
+    "failed files: 403 https://www.threevillagelocal.com/southard-estate-planning?sitecheck=1794851026637"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2594,11 +2594,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/tj-sirani-at-zuma-payroll?sitecheck=1794845783821"
+    "failed files: 403 https://www.threevillagelocal.com/tj-sirani-at-zuma-payroll?sitecheck=1794851040206"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2616,11 +2616,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/aronica-plant-healthcare-llc?sitecheck=1794845797260"
+    "failed files: 403 https://www.threevillagelocal.com/aronica-plant-healthcare-llc?sitecheck=1794851053785"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1021,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2638,11 +2638,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/emma-s-clark-memorial-library?sitecheck=1794845810700"
+    "failed files: 403 https://www.threevillagelocal.com/emma-s-clark-memorial-library?sitecheck=1794851067355"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1035,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2660,11 +2660,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/magic-home-restoration?sitecheck=1794845824152"
+    "failed files: 403 https://www.threevillagelocal.com/magic-home-restoration?sitecheck=1794851080922"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1082,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2682,11 +2682,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/jlw-accounting-and-tax-services?sitecheck=1794845837592"
+    "failed files: 403 https://www.threevillagelocal.com/jlw-accounting-and-tax-services?sitecheck=1794851094492"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1036,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2704,11 +2704,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/raupp-law-pc?sitecheck=1794845851040"
+    "failed files: 403 https://www.threevillagelocal.com/raupp-law-pc?sitecheck=1794851108055"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1021,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2726,11 +2726,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/jm-management-solutions-inc?sitecheck=1794845864472"
+    "failed files: 403 https://www.threevillagelocal.com/jm-management-solutions-inc?sitecheck=1794851121624"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2748,11 +2748,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/the-north-shore-injury-lawyer?sitecheck=1794845877908"
+    "failed files: 403 https://www.threevillagelocal.com/the-north-shore-injury-lawyer?sitecheck=1794851135191"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1032,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2770,11 +2770,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/hart-orthopedics?sitecheck=1794845891359"
+    "failed files: 403 https://www.threevillagelocal.com/hart-orthopedics?sitecheck=1794851148752"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2792,11 +2792,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/chriss-complete-landscaping?sitecheck=1794845904790"
+    "failed files: 403 https://www.threevillagelocal.com/chriss-complete-landscaping?sitecheck=1794851162318"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1026,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2814,11 +2814,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/j33-art-studios-inc?sitecheck=1794845918236"
+    "failed files: 403 https://www.threevillagelocal.com/j33-art-studios-inc?sitecheck=1794851175893"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1031,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2836,11 +2836,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/orthopedic-associates-of-long-island?sitecheck=1794845931690"
+    "failed files: 403 https://www.threevillagelocal.com/orthopedic-associates-of-long-island?sitecheck=1794851189462"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1084,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2858,11 +2858,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/rolling-hills-property-services-inc?sitecheck=1794845945141"
+    "failed files: 403 https://www.threevillagelocal.com/rolling-hills-property-services-inc?sitecheck=1794851203032"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1083,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2880,11 +2880,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/strong-strains?sitecheck=1794845958589"
+    "failed files: 403 https://www.threevillagelocal.com/strong-strains?sitecheck=1794851216601"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2902,11 +2902,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/victor-stabile-at-douglas-elliman-real-estate-684?sitecheck=1794845972027"
+    "failed files: 403 https://www.threevillagelocal.com/victor-stabile-at-douglas-elliman-real-estate-684?sitecheck=1794851230171"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2924,11 +2924,33 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/green-machine-landscaping?sitecheck=1794845985463"
+    "failed files: 403 https://www.threevillagelocal.com/green-machine-landscaping?sitecheck=1794851243743"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1080,
+   "data": {
+    "title": "403 Forbidden",
+    "textLen": 248,
+    "brokenImgs": [],
+    "overflow": 0,
+    "htmlCls": "",
+    "h1": "403"
+   },
+   "retried": true
+  },
+  {
+   "url": "https://www.threevillagelocal.com/disaster-cleanup-services-inc",
+   "kind": "profile",
+   "phone": false,
+   "problems": [
+    "HTTP 403",
+    "page is almost empty (248 characters of text)",
+    "failed files: 403 https://www.threevillagelocal.com/disaster-cleanup-services-inc?sitecheck=1794851257304"
+   ],
+   "notes": [],
+   "status": 403,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2946,11 +2968,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/ken-kroncke-at-realty-connect-usa?sitecheck=1794845998910"
+    "failed files: 403 https://www.threevillagelocal.com/ken-kroncke-at-realty-connect-usa?sitecheck=1794851270864"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1020,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2968,11 +2990,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/glamour-den?sitecheck=1794846012350"
+    "failed files: 403 https://www.threevillagelocal.com/glamour-den?sitecheck=1794851284434"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -2990,11 +3012,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/serenity-hair-salon?sitecheck=1794846025791"
+    "failed files: 403 https://www.threevillagelocal.com/serenity-hair-salon?sitecheck=1794851297998"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -3012,11 +3034,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/apelskog-marine?sitecheck=1794846039227"
+    "failed files: 403 https://www.threevillagelocal.com/apelskog-marine?sitecheck=1794851311564"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1024,
+   "ms": 1083,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -3034,11 +3056,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/5-brothers-chicken-waffles?sitecheck=1794846052662"
+    "failed files: 403 https://www.threevillagelocal.com/5-brothers-chicken-waffles?sitecheck=1794851325131"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -3056,11 +3078,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/donna-e-friedman-phd?sitecheck=1794846066098"
+    "failed files: 403 https://www.threevillagelocal.com/donna-e-friedman-phd?sitecheck=1794851338699"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1023,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -3079,11 +3101,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "event page design did not load",
-    "failed files: 403 https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive?sitecheck=1794846079543"
+    "failed files: 403 https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive?sitecheck=1794851352276"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1025,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -3102,11 +3124,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "event page design did not load",
-    "failed files: 403 https://www.threevillagelocal.com/events/emerging-artist-spotlight-november-genevieve-rochlin?sitecheck=1794846092978"
+    "failed files: 403 https://www.threevillagelocal.com/events/emerging-artist-spotlight-november-genevieve-rochlin?sitecheck=1794851365844"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1028,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -3125,11 +3147,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "event page design did not load",
-    "failed files: 403 https://www.threevillagelocal.com/events/novembers-feature-artisan-of-the-month-patricia-patten?sitecheck=1794846106422"
+    "failed files: 403 https://www.threevillagelocal.com/events/novembers-feature-artisan-of-the-month-patricia-patten?sitecheck=1794851379408"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1021,
+   "ms": 1079,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -3148,11 +3170,11 @@
     "HTTP 403",
     "page is almost empty (248 characters of text)",
     "event page design did not load",
-    "failed files: 403 https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition?sitecheck=1794846119855"
+    "failed files: 403 https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition?sitecheck=1794851392976"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1080,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
@@ -3170,11 +3192,11 @@
    "problems": [
     "HTTP 403",
     "page is almost empty (248 characters of text)",
-    "failed files: 403 https://www.threevillagelocal.com/blog/the-ultimate-culper-spy-day-blueprint-setaukets-spy-ring-weekend-oct-3?sitecheck=1794846133290"
+    "failed files: 403 https://www.threevillagelocal.com/blog/the-ultimate-culper-spy-day-blueprint-setaukets-spy-ring-weekend-oct-3?sitecheck=1794851406543"
    ],
    "notes": [],
    "status": 403,
-   "ms": 1022,
+   "ms": 1081,
    "data": {
     "title": "403 Forbidden",
     "textLen": 248,
