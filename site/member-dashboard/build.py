@@ -694,8 +694,13 @@ def tokens_for(uids):
     t = jload(TOKENS_P, {}) or {}
     changed = False
     for u in uids:
-        if u not in t:
-            t[u] = secrets.token_urlsafe(24)
+        # 11/16: GitHub Pages (Jekyll) never serves files starting with "_" or "." -> member 122's page was a silent 404.
+        # Tokens must start with a letter or digit; a bad stored token is replaced.
+        if u not in t or not t[u][:1].isalnum():
+            tok = secrets.token_urlsafe(24)
+            while not tok[:1].isalnum():
+                tok = secrets.token_urlsafe(24)
+            t[u] = tok
             changed = True
     if changed:
         os.makedirs(os.path.dirname(TOKENS_P), exist_ok=True)
