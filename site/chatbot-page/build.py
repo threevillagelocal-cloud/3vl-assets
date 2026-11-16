@@ -124,13 +124,14 @@ HOW = K.sec("how", "How it works", "Live on your site in about a week.", "",
             + '\n  <div class="tvc-works tvs-up">' + WORKS_ROW.replace(' tvs-up"', '"', 1) + '</div>')
 
 PRICE = '''<section class="tvs-sec tvx-sec tvc-price" id="tvp-price">
-  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Pricing</p><h2>One simple price.</h2><p>The same price for everyone, members or not. Month to month after setup, no contract.</p></div>
+  <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Pricing</p><h2>One simple price.</h2><p>Month to month after setup, no contract.</p></div>
   <div class="tvc-pc tvs-up">
     <div class="tvc-pa">
       <p class="tvc-badge">Your Digital Front Desk</p>
       <p class="tvc-pl">One-time setup</p>
       <p class="tvc-amt"><sup>$</sup><b>%d</b></p>
       <p class="tvc-mo">+ <b>$%d</b>/month</p>
+      <div class="tvc-promo"><b>3VL members: $50 off setup</b><span>Current members pay $247 to set up. Ends December 15, 2026.</span></div>
       <a class="tvs-btn tvs-blue tvc-go" href="#tvs-book">Get started</a>
       <p class="tvc-note">Month to month. No contract.</p>
     </div>
@@ -146,10 +147,9 @@ PRICE = '''<section class="tvs-sec tvx-sec tvc-price" id="tvp-price">
         <li>%sMonthly summary, plus updates whenever you email us</li>
         <li>%sAI usage included, no per-chat fees</li>
       </ul>
-      <p class="tvc-plus">%s<span><b>Also included at setup:</b> a one-time AI Website Optimization, so ChatGPT, Google and other AI tools can understand your business.</span></p>
     </div>
   </div>
-</section>''' % ((SETUP, MONTHLY) + (ic("check"),) * 8 + (ic("sparkle"),))
+</section>''' % ((SETUP, MONTHLY) + (ic("check"),) * 8)
 
 FAQ = K.faq([
     ("How accurate is it? Will it make things up?", "It answers only from the information you approve: your website, services, prices, hours and policies. We test it hard before launch and you approve it. When a question needs you, it says so and takes a message instead of guessing."),
@@ -161,13 +161,13 @@ FAQ = K.faq([
     ("I&#39;m a law firm, financial advisor or medical office. Is this OK for my industry?", "Yes. We set up your assistant to follow your industry&#39;s rules. It shares general information about your business, never advice, uses the disclaimers you need, only states rates or fees you approve, never asks for sensitive information, and hands anything specific to you. You approve everything before launch."),
     ("Is there a contract?", "No. One setup fee, then it is month to month with no contract."),
     ("Do I have to be a Three Village Local member?", "No. The price is the same for everyone: $%d to set up, then $%d a month. Member intro offer: current Three Village Local members get $50 off setup through December 15, 2026." % (SETUP, MONTHLY)),
-    ("Will the chatbot help AI tools recommend me?", "Not on its own: AI search tools don&#39;t read chat bubbles. The chatbot turns more of your visitors into leads. The AI Website Optimization included at setup is what helps AI tools understand your business."),
 ])
 
 CTA = K.cta("Your next customer is asking right now", "Let your front desk answer.",
             "Set up for you in about a week. Every lead sent to you. Month to month, no contract.", alt=("Try the live demo", "#tvx-hero"))
 
 CSS = '''
+.tvc-promo{margin:-8px 0 18px;padding:12px 14px;border-radius:14px;background:#fff8e1;border:1px solid #f2c94c;text-align:center}.tvc-promo b{display:block;color:var(--navy);font-size:15.5px}.tvc-promo span{display:block;font-size:13.5px;line-height:1.4;color:#5b4a12;margin-top:2px}
 /* hero live demo */
 .tvc-hvis{min-height:0}
 .tvc-try{position:relative;width:100%;max-width:440px;margin:0 auto}

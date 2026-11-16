@@ -1,4 +1,4 @@
-"""AI add-ons for an EXISTING website (owner 11/3/2026): stand-alone AI Chat Assistant + AI Website Optimization for sites built and hosted by
+"""AI add-ons for an EXISTING website (owner 11/3/2026): stand-alone AI Chat Assistant for sites built and hosted by
 someone else. Same look as /websites: imports that page's build and swaps the sections.
     python site/ai-assistant-page/build.py          -> widget "3VL Page AI Assistant Preview" + hidden /preview-ai-assistant
     python site/ai-assistant-page/build.py --live   -> widget "3VL Page AI Assistant" + /ai-assistant (indexable)"""
@@ -15,9 +15,9 @@ CHAT = {"all": (297, 99), "member": (297, 99)}
 
 D.NAME = "3VL Page AI Assistant" if D.LIVE else "3VL Page AI Assistant Preview"
 D.SLUG = "ai-assistant" if D.LIVE else "preview-ai-assistant"
-D.TITLE = "Your Digital Front Desk: AI Assistant + AI Website Optimization | Three Village Local"
+D.TITLE = "Your Digital Front Desk: AI Chat Assistant for Your Website | Three Village Local"
 D.DESC = ("Add a smart AI assistant to the website you already have. It answers customers 24/7 and sends you every lead. "
-          "Plus AI Website Optimization built to get your business noticed and recommended by ChatGPT, Google and other AI tools. Works with Wix, Squarespace, WordPress and more.")
+          "Works with Wix, Squarespace, WordPress and more. No new website needed.")
 D.FB_TITLE = "Turn your website into a 24/7 lead machine."
 HOW = "/ai-assistant-how-it-works" if D.LIVE else "/preview-ai-assistant-how"
 
@@ -30,7 +30,7 @@ HERO = '''<section class="tvs-hero">
   <div class="tvs-hin tvs-up">
     <p class="tvs-kick"><span class="tvs-dot"></span>Your Digital Front Desk</p>
     <h1>Turn your website<br><span>into a 24/7 lead machine.</span></h1>
-    <p class="tvs-sub">Add a smart AI assistant to your current website. It answers customers the second they ask, day or night, and sends you every lead. Plus AI Website Optimization so your site gets noticed and recommended by AI. No new website needed.</p>
+    <p class="tvs-sub">Add a smart AI assistant to your current website. It answers customers the second they ask, day or night, and sends you every lead. No new website needed.</p>
     <div class="tvs-ctas">
       <a class="tvs-btn tvs-blue" href="#" data-tva-open>Try the live demo &rarr;</a>
       <a class="tvs-btn tvs-ghost" href="#tvs-bundles">See pricing</a>
@@ -78,41 +78,25 @@ WORKS = '''<section class="tvs-sec tva-plat">
   <div class="tva-works tvs-up"><p>Works on the website you already have</p><div><span><svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#0C6EFC" d="m0 7.354 2.113 9.292h.801a1.54 1.54 0 0 0 1.506-1.218l1.351-6.34a.171.171 0 0 1 .167-.137c.08 0 .15.058.167.137l1.352 6.34a1.54 1.54 0 0 0 1.506 1.218h.805l2.113-9.292h-.565c-.62 0-1.159.43-1.296 1.035l-1.26 5.545-1.106-5.176a1.76 1.76 0 0 0-2.19-1.324c-.639.176-1.113.716-1.251 1.365l-1.094 5.127-1.26-5.537A1.33 1.33 0 0 0 .563 7.354H0zm13.992 0a.951.951 0 0 0-.951.95v8.342h.635a.952.952 0 0 0 .951-.95V7.353h-.635zm1.778 0 3.158 4.66-3.14 4.632h1.325c.368 0 .712-.181.918-.486l1.756-2.59a.12.12 0 0 1 .197 0l1.754 2.59c.206.305.55.486.918.486h1.326l-3.14-4.632L24 7.354h-1.326c-.368 0-.712.181-.918.486l-1.772 2.617a.12.12 0 0 1-.197 0L18.014 7.84a1.108 1.108 0 0 0-.918-.486H15.77z"/></svg>Wix</span><span><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 204"><path fill="#1a1918" d="M162.931 40.67c-4.823-4.824-12.644-4.824-17.464 0L66.87 119.268c-9.651 9.643-25.287 9.643-34.931 0c-9.654-9.647-9.654-25.285 0-34.937L109.023 7.25c-9.646-9.649-25.288-9.649-34.934 0L14.467 66.87c-19.29 19.294-19.29 50.57 0 69.866c19.295 19.295 50.57 19.295 69.865 0l78.599-78.599c4.82-4.823 4.82-12.644 0-17.467m26.199-26.197c-19.295-19.297-50.57-19.297-69.865 0L40.67 93.067c-4.82 4.82-4.82 12.646 0 17.467c4.823 4.823 12.64 4.823 17.464 0l78.602-78.594c9.646-9.649 25.282-9.649 34.926 0c4.828 4.82 12.646 4.82 17.469 0c4.823-4.828 4.823-12.644 0-17.467m26.201 78.594c-4.823-4.818-12.646-4.818-17.469 0l-78.597 78.597c-9.646 9.646-25.287 9.646-34.933 0c-4.82-4.82-12.639-4.82-17.462 0c-4.83 4.825-4.83 12.646 0 17.464c19.287 19.295 50.57 19.295 69.865 0l78.596-78.594c4.82-4.82 4.82-12.646 0-17.467m26.202-26.196c-19.295-19.292-50.575-19.292-69.865 0L93.066 145.47c-4.823 4.818-4.823 12.644 0 17.464c4.826 4.826 12.647 4.826 17.467 0l78.597-78.597c9.643-9.648 25.287-9.648 34.931 0c9.646 9.647 9.646 25.285 0 34.932l-77.084 77.086c9.646 9.643 25.28 9.643 34.934 0l59.622-59.62c19.29-19.297 19.29-50.572 0-69.864"/></svg>Squarespace</span><span><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 255"><path fill="#464342" d="M18.124 127.5c0 43.296 25.16 80.711 61.646 98.442L27.594 82.986a109 109 0 0 0-9.47 44.514m183.221-5.52c0-13.517-4.856-22.879-9.02-30.165c-5.545-9.01-10.742-16.64-10.742-25.65c0-10.055 7.626-19.415 18.368-19.415c.485 0 .944.06 1.417.088c-19.46-17.829-45.387-28.714-73.863-28.714c-38.213 0-71.832 19.606-91.39 49.302c2.566.077 4.984.13 7.039.13c11.44 0 29.15-1.387 29.15-1.387c5.897-.348 6.592 8.312.702 9.01c0 0-5.926.697-12.52 1.042L100.32 194.7l23.937-71.79l-17.042-46.692c-5.89-.345-11.47-1.042-11.47-1.042c-5.894-.346-5.203-9.358.691-9.01c0 0 18.064 1.388 28.811 1.388c11.44 0 29.151-1.388 29.151-1.388c5.9-.348 6.594 8.312.702 9.01c0 0-5.938.697-12.52 1.042l39.529 117.581l10.91-36.458c4.728-15.129 8.327-25.995 8.327-35.36m-71.921 15.088l-32.818 95.363a109.4 109.4 0 0 0 30.899 4.456c12.737 0 24.952-2.202 36.323-6.2a9.6 9.6 0 0 1-.779-1.507zm94.058-62.045a84 84 0 0 1 .737 11.247c0 11.1-2.073 23.577-8.317 39.178l-33.411 96.6c32.518-18.963 54.39-54.193 54.39-94.545c.002-19.017-4.856-36.9-13.4-52.48M127.505 0C57.2 0 0 57.196 0 127.5c0 70.313 57.2 127.507 127.505 127.507c70.302 0 127.51-57.194 127.51-127.507C255.014 57.196 197.808 0 127.506 0m0 249.163c-67.08 0-121.659-54.578-121.659-121.663c0-67.08 54.576-121.654 121.659-121.654c67.078 0 121.652 54.574 121.652 121.654c0 67.085-54.574 121.663-121.652 121.663"/></svg>WordPress</span><span><svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#1BDBDB" d="M20.702 2.29c-2.494-1.554-5.778-1.187-8.706.654C9.076 1.104 5.79.736 3.3 2.29c-3.941 2.463-4.42 8.806-1.07 14.167 2.47 3.954 6.333 6.269 9.77 6.226 3.439.043 7.301-2.273 9.771-6.226 3.347-5.361 2.872-11.704-1.069-14.167zM4.042 15.328a12.838 12.838 0 01-1.546-3.541 10.12 10.12 0 01-.336-3.338c.15-1.98.956-3.524 2.27-4.345 1.315-.822 3.052-.87 4.903-.137.281.113.556.24.825.382A15.11 15.11 0 007.5 7.54c-2.035 3.255-2.655 6.878-1.945 9.765a13.247 13.247 0 01-1.514-1.98zm17.465-3.541a12.866 12.866 0 01-1.547 3.54 13.25 13.25 0 01-1.513 1.984c.635-2.589.203-5.76-1.353-8.734a.39.39 0 00-.563-.153l-4.852 3.032a.397.397 0 00-.126.546l.712 1.139a.395.395 0 00.547.126l3.145-1.965c.101.306.203.606.28.916.296 1.086.41 2.214.335 3.337-.15 1.982-.956 3.525-2.27 4.347a4.437 4.437 0 01-2.25.65h-.101a4.432 4.432 0 01-2.25-.65c-1.314-.822-2.121-2.365-2.27-4.347-.074-1.123.039-2.251.335-3.337a13.212 13.212 0 014.05-6.482 10.148 10.148 0 012.849-1.765c1.845-.733 3.586-.685 4.9.137 1.316.822 2.122 2.365 2.271 4.345a10.146 10.146 0 01-.33 3.334z"/></svg>GoDaddy</span><span><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 292"><path fill="#95bf46" d="M223.774 57.34c-.201-1.46-1.48-2.268-2.537-2.357a19614 19614 0 0 0-23.383-1.743s-15.507-15.395-17.209-17.099c-1.703-1.703-5.029-1.185-6.32-.805c-.19.056-3.388 1.043-8.678 2.68c-5.18-14.906-14.322-28.604-30.405-28.604c-.444 0-.901.018-1.358.044C129.31 3.407 123.644.779 118.75.779c-37.465 0-55.364 46.835-60.976 70.635c-14.558 4.511-24.9 7.718-26.221 8.133c-8.126 2.549-8.383 2.805-9.45 10.462C21.3 95.806.038 260.235.038 260.235l165.678 31.042l89.77-19.42S223.973 58.8 223.775 57.34M156.49 40.848l-14.019 4.339c.005-.988.01-1.96.01-3.023c0-9.264-1.286-16.723-3.349-22.636c8.287 1.04 13.806 10.469 17.358 21.32m-27.638-19.483c2.304 5.773 3.802 14.058 3.802 25.238c0 .572-.005 1.095-.01 1.624c-9.117 2.824-19.024 5.89-28.953 8.966c5.575-21.516 16.025-31.908 25.161-35.828m-11.131-10.537c1.617 0 3.246.549 4.805 1.622c-12.007 5.65-24.877 19.88-30.312 48.297l-22.886 7.088C75.694 46.16 90.81 10.828 117.72 10.828"/><path fill="#5e8e3e" d="M221.237 54.983a19614 19614 0 0 0-23.383-1.743s-15.507-15.395-17.209-17.099c-.637-.634-1.496-.959-2.394-1.099l-12.527 256.233l89.762-19.418S223.972 58.8 223.774 57.34c-.201-1.46-1.48-2.268-2.537-2.357"/><path fill="#fff" d="m135.242 104.585l-11.069 32.926s-9.698-5.176-21.586-5.176c-17.428 0-18.305 10.937-18.305 13.693c0 15.038 39.2 20.8 39.2 56.024c0 27.713-17.577 45.558-41.277 45.558c-28.44 0-42.984-17.7-42.984-17.7l7.615-25.16s14.95 12.835 27.565 12.835c8.243 0 11.596-6.49 11.596-11.232c0-19.616-32.16-20.491-32.16-52.724c0-27.129 19.472-53.382 58.778-53.382c15.145 0 22.627 4.338 22.627 4.338"/></svg>Shopify</span><span><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 197"><path fill="#3192e7" d="M212.31 0c-19.972 0-36.617 13.278-41.722 33.15C161.385 3.29 137.83.023 128.004.023c-9.824 0-33.37 3.267-42.59 33.12C80.307 13.29 63.66.023 43.693.023C19.192.023 0 17.538 0 39.897c0 9.888 2.443 17.782 5.395 26.344l33.267 94.076c11.139 31.2 33.832 35.859 46.366 35.859c19.662 0 34.983-10.07 42.973-27.917c7.997 17.927 23.32 28.048 42.972 28.048c12.519 0 35.189-4.667 46.385-35.982l33.45-94.396l.261-.779c.382-1.21.768-2.345 1.132-3.423c1.781-5.27 3.799-11.243 3.799-18.563C256 18.154 237.626 0 212.31 0m15.769 57.875l-33.45 94.396c-4.084 11.42-10.876 19.922-23.656 19.922c-11.973 0-19.042-6.672-22.574-18.104L128.27 91.264h-.547l-20.116 62.825c-3.539 11.434-10.61 17.972-22.58 17.972c-12.782 0-19.58-8.431-23.657-19.852L28.193 58.385c-2.72-7.89-4.079-12.772-4.079-18.49c0-8.704 8.163-15.758 19.579-15.758c9.52 0 16.318 6.276 18.494 15.522l22.573 74.837h.54l22.845-73.188c2.997-10.605 8.433-17.171 19.859-17.171c11.42 0 16.857 6.555 19.848 17.16l22.846 73.199h.54l22.58-74.837c2.173-9.246 8.97-15.545 18.492-15.545c11.416 0 19.576 7.08 19.576 19.05c0 4.349-1.91 8.718-3.807 14.71"/></svg>Weebly</span><span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#1d5fd1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Custom sites</span></div></div>
 </section>'''
 
-TUNEUP = '''<section class="tvs-sec tva-tune" id="tva-tune">
-  <div class="tva-tune-in tvs-up">
-    <div>
-      <p class="tvs-eyebrow">Included: AI Website Optimization</p>
-      <h2>Get your website noticed and recommended by AI.</h2>
-      <p>At setup we optimize your website and listings so ChatGPT, Google and other AI tools know exactly who you are, what you do and where.</p>
-      <p class="tva-rep"><b>Before and after report included.</b></p>
-    </div>
-    <ul class="tva-list">
-      <li><b>Business facts AI can read</b></li>
-      <li><b>Google, Bing and Apple listings cleaned up</b></li>
-      <li><b>FAQs written the way people ask</b></li>
-      <li><b>Nothing blocking AI from your site</b></li>
-    </ul>
-  </div>
-</section>'''
-
 
 PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
   <div class="tvs-head tvs-up">
     <p class="tvs-eyebrow">Pricing</p>
-    <h2>One package. Found by AI, and turning visitors into leads.</h2>
-    <p>Your AI assistant comes with full AI Website Optimization of your site and listings, done once at setup. Works with the website you already have.</p>
+    <h2>One simple price. Every visitor gets an answer.</h2>
+    <p>Built, trained and added to the website you already have.</p>
   </div>
   <div class="tvs-cards tva-one">
     <article class="tvs-card tvs-pop tvs-up tva-wide" data-b="aichat">
       <div class="tva-pc-a">
-      <p class="tvs-badge">AI Website Optimization included</p>
+      <p class="tvs-badge">Done for you</p>
       <p class="tvs-cname">Your Digital Front Desk</p>
-      <p class="tvs-cfor">A smart assistant that answers your customers 24/7 and sends you every lead, plus one-time AI Website Optimization so ChatGPT, Google and other AI tools can find and understand you.</p>
+      <p class="tvs-cfor">A smart assistant that answers your customers 24/7 and sends you every lead.</p>
       <p class="tva-plabel">One-time setup</p>
       <p class="tvs-was"></p>
       <p class="tvs-price"><sup>$</sup><b>%(cm0)s</b></p>
       <p class="tvs-mo">+ <b>$%(cm1)s</b>/mo</p>
       <p class="tvs-save"></p>
+      <div class="tva-promo"><b>3VL members: $50 off setup</b><span>Current members pay $247 to set up. Ends December 15, 2026.</span></div>
       <a class="tvs-btn tvs-blue tvs-wide tvw-go tva-pick" data-pick="ai_chat" href="#tvs-book">Get started &rarr;</a>
       <p class="tva-pc-note">Month to month after setup. No contract.</p>
       </div>
@@ -128,20 +112,9 @@ PRICING = '''<section class="tvs-sec tvs-bundles" id="tvs-bundles">
         <li>Monthly summary and tuning: just email us changes</li>
       </ul>
       </div>
-      <div class="tva-pc-c">
-      <p class="tva-grp">Your AI Website Optimization (included, done at setup)</p>
-      <ul>
-        <li>Before and after &ldquo;Can AI find you?&rdquo; report</li>
-        <li>Business facts code AI can read</li>
-        <li>Page titles, descriptions and FAQs rewritten</li>
-        <li>Google, Bing and Apple listings cleaned up</li>
-        <li>Name, address and phone matched across the web</li>
-        <li>Google Search Console and Bing Webmaster set up</li>
-      </ul>
-      </div>
     </article>
   </div>
-  <p class="tvs-fine tvs-up"><b>Works with the site you have.</b> Wix, Squarespace, WordPress, GoDaddy, Shopify and custom sites. Some website builders only allow added code on their paid plans; we check yours first, free. The setup fee covers building your assistant and your full AI Website Optimization. Month to month after that, no contract. Want a site AI can fully read from the ground up? See our <a href="/websites">AI-Ready websites</a>.</p>
+  <p class="tvs-fine tvs-up"><b>Works with the site you have.</b> Wix, Squarespace, WordPress, GoDaddy, Shopify and custom sites. Some website builders only allow added code on their paid plans; we check yours first, free. The setup fee covers researching, building, training and installing your assistant. Month to month after that, no contract. Want a site AI can fully read from the ground up? See our <a href="/websites">AI-Ready websites</a>.</p>
 </section>''' % {"cm0": CHAT["member"][0], "cm1": CHAT["member"][1]}
 
 VS = '''<section class="tvs-sec tvs-vs">
@@ -177,15 +150,13 @@ STEPS = '''<section class="tvs-sec tvs-steps">
 FAQ = '''<section class="tvs-sec tvs-faq">
   <div class="tvs-head tvs-up"><p class="tvs-eyebrow">Questions</p><h2>Good questions, straight answers.</h2></div>
   <div class="tvs-qs tvs-up">
-    <details open><summary>Do I need a new website?</summary><p>No. Both add-ons work with the website you already have, no matter who built it or where it is hosted.</p></details>
+    <details open><summary>Do I need a new website?</summary><p>No. It works with the website you already have, no matter who built it or where it is hosted.</p></details>
     <details><summary>What if it doesn&#39;t know an answer?</summary><p>It answers from the information you give us. When a question needs you, it says so, takes the customer&#39;s name and number, and sends the details to you instead of guessing.</p></details>
     <details><summary>How do I get the leads?</summary><p>Every lead is sent to your email (and phone, if you like) right away, with the customer&#39;s name, number and what they need.</p></details>
     <details><summary>Can I change what it says?</summary><p>Anytime. New prices, specials, hours or services: just email or text us and we update it.</p></details>
     <details><summary>I&#39;m a law firm, financial advisor or medical office. Is this OK for my industry?</summary><p>Yes. We set up your assistant to follow your industry&#39;s regulations and guidelines. It shares general information about your firm and services, never advice, uses the disclaimers you need, only states rates or fees you approve, never asks for sensitive information, and hands anything specific to you. You review and approve everything before launch, and we&#39;re happy to work with your compliance person.</p></details>
     <details><summary>Will it work on my website builder?</summary><p>Almost always. Wix, Squarespace, WordPress, GoDaddy, Shopify and custom sites all work. A few builders only allow added code on their paid plans, so we check yours first, free.</p></details>
-    <details><summary>What is AI Website Optimization?</summary><p>It comes with every AI assistant. At setup we make a one-time set of fixes to your website and your Google, Bing and Apple listings so AI tools like ChatGPT can understand your business. You get a before and after report.</p></details>
-    <details><summary>Does the chat assistant help AI recommend me?</summary><p>Not on its own: AI search tools don&#39;t read chat bubbles. The assistant turns more of your visitors into leads, and the included AI Website Optimization is what helps AI tools find and understand you. That&#39;s why they come together.</p></details>
-    <details><summary>Is there a contract?</summary><p>No. One setup fee covers your assistant and your AI Website Optimization, then it is month to month.</p></details>
+    <details><summary>Is there a contract?</summary><p>No. One setup fee, then it is month to month. Cancel anytime.</p></details>
     <details><summary>Do I have to be a Three Village Local member?</summary><p>No. The price is the same for everyone: $297 to set up, then $99 a month. Member intro offer: current Three Village Local members get $50 off setup through December 15, 2026.</p></details>
   </div>
 </section>'''
@@ -195,8 +166,8 @@ i, j = sec(h, "tvs-hero")
 h = h[:i] + HERO + h[j:]
 h = cut(h, "tvw-strip")
 h = cut(h, "tvs-sec tvw-shift")
-STRIP = W.STRIP_SEC.replace("<p>Get recommended on the AI tools your customers use</p>", "<p>AI Website Optimization: built to get you noticed and recommended on</p>")
-h = swap(h, "tvs-sec tvw-ai", WORKS + "\n\n" + STRIP + "\n\n" + FEAT + "\n\n" + NEXT + "\n\n" + TUNEUP)
+
+h = swap(h, "tvs-sec tvw-ai", WORKS + chr(10)*2 + FEAT + chr(10)*2 + NEXT)
 h = cut(h, "tvs-sec tvw-bot")
 h = swap(h, "tvs-sec tvs-bundles", PRICING)
 h = swap(h, "tvs-sec tvs-vs", VS)
@@ -220,6 +191,7 @@ var n=0,iv=setInterval(function(){if(set()||++n>60)clearInterval(iv)},300);})();
 OPENJS = '''<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-tva-open]');if(a){e.preventDefault();if(window.tvaOpen)window.tvaOpen()}});</script>'''
 
 CSS = '''
+.tva-promo{margin:14px 0 4px;padding:12px 14px;border-radius:14px;background:#fff8e1;border:1px solid #f2c94c;text-align:center}.tva-promo b{display:block;color:var(--navy);font-size:15.5px}.tva-promo span{display:block;font-size:13.5px;line-height:1.4;color:#5b4a12;margin-top:2px}
 .tva-hvis{padding:28px 34px 28px 24px}
 .tvs-hero:has(.tva-hvis){min-height:680px}
 .tva-hvis:before{pointer-events:none}   /* websites hero decor layer sat over the chat and swallowed clicks */
@@ -275,8 +247,8 @@ CSS = '''
 .tva-how{display:inline-block;margin:16px 0 4px;font-weight:800;color:var(--blue)!important;text-decoration:none!important;border-bottom:2px solid rgba(29,95,209,.25)}.tva-how:hover{border-color:var(--blue)}
 .tva-one{display:grid!important;grid-template-columns:minmax(0,560px)!important;justify-content:center}
 @media (min-width:980px){.tva-one{grid-template-columns:minmax(0,1120px)!important}
-.tva-wide{display:grid!important;grid-template-columns:1fr 1.15fr 1.15fr;gap:30px;align-items:start;padding:34px 34px 30px!important}
-.tva-pc-a{padding-right:26px;border-right:1px solid #e3e9f2}.tva-pc-b{padding-right:24px;border-right:1px solid #e3e9f2}
+.tva-wide{display:grid!important;grid-template-columns:1fr 1.3fr;gap:30px;align-items:start;padding:34px 34px 30px!important}
+.tva-pc-a{padding-right:26px;border-right:1px solid #e3e9f2}.tva-pc-b{padding-right:0}
 .tva-wide .tvs-cfor{display:none}.tva-wide li{font-size:14.5px!important;margin-bottom:6px!important}#tvs-bundles{padding-top:46px!important}#tvs-bundles .tvs-head{margin-bottom:18px!important}#tvs-bundles .tvs-head p{display:none}
 .tva-wide .tva-grp{margin-top:6px!important}.tva-wide ul{margin-bottom:0!important}}
 .tva-plabel{display:inline-block;margin:6px 0 2px!important;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;background:#e7f0ff;color:var(--blue)}
