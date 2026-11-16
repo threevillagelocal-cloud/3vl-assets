@@ -936,7 +936,8 @@ def build_v2(acts, V, NETd, r):
         for u, em in emails.items():
             open(os.path.join(kdir, lookup_key(u, em) + ".txt"), "w").write(toks[u])
         print("members map:", write_members_map({u: toks[u] for u in ids}, mem, acts, tier_of, emails))
-        shutil.rmtree(os.path.join(LIVE_DIR, "m"), ignore_errors=True)   # retire the guessable member-number pages
+        if os.environ.get("MD_RETIRE_M") == "1":   # only after the v3 loader is live + verified (old p3.js loader still reads m/)
+            shutil.rmtree(os.path.join(LIVE_DIR, "m"), ignore_errors=True)   # retire the guessable member-number pages
     if "--map" in sys.argv and not WRITE_LIVE:   # write the endpoint's members map without publishing pages
         print("members map:", write_members_map({u: toks[u] for u in ids}, mem, acts, tier_of, account_emails(ids)))
     if "--shots" in sys.argv:
