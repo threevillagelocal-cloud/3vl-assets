@@ -518,16 +518,16 @@ def page(a, ctx):
             '<a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="sidebar_3vl_digital"><span>Business AI services by</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a>'
             '<div class="side-foot"><div class="me">%s<div><b class="ellip">%s</b><span class="tierb t-%s">%s%s</span></div><button type="button" class="me-app" data-open="app" aria-label="Get the dashboard app on your phone" title="Get the app on your phone" data-ga="dash_action_open" data-product="get_app">%s</button></div></div></aside>') % (
         SITE, img("https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-white.webp", "Three Village Local", 168, 58, "brand-logo", lazy=False),
-        nav("overview", "grid", "Overview"), nav("promotions", "megaphone", "Your promotions", promo_badge), nav("profile", "user", "Your listing"), nav("grow", "rocket", "Grow"),
+        nav("overview", "grid", "Overview") + nav("edit", "edit", "Edit your profile"), nav("promotions", "megaphone", "Your promotions", promo_badge), nav("profile", "user", "Your listing"), nav("grow", "rocket", "Grow"),
         ic("lock"), '<span class="nav-chev">%s</span>' % ic("chev"), acct_nav,
         img(a.get("logo"), "", 64, 64, "me-logo") if a.get("logo") else '<span class="me-logo ph">%s</span>' % ic("user"), name_html, tier, "&#9733; " if X.RANK[tier] >= X.RANK["v"] else "", TIER_NAME[tier].upper() if X.RANK[tier] >= X.RANK["v"] else TIER_NAME[tier], ic("phone"))
 
     top = ('<header class="topbar"><label class="search">%s<input type="search" placeholder="Search your dashboard" aria-label="Search your dashboard" data-search></label>'
-           '<span class="pill live hide-s"><i></i>Updated nightly</span>%s<div class="topbar-actions"><a class="btn primary sm hide-s" href="#actions" data-go="actions">%s Submit something</a>'
+           '<span class="pill live hide-s"><i></i>Updated nightly</span>%s<div class="topbar-actions"><a class="btn edit-btn sm" href="#edit" data-go="edit">%s<span>Edit your profile</span></a><a class="btn primary sm hide-s" href="#actions" data-go="actions">%s Submit something</a>'
            '<a class="btn ghost sm hide-s" href="%s" target="_blank" rel="noopener">View profile %s</a><span class="avatar">%s</span></div></header>') % (
         ic("search"), ('<span class="tpill vip">&#9733; VIP MEMBER</span>' if X.RANK[tier] >= X.RANK["v"] else
                        '<span class="tpill">%s<a href="%s" data-ga="dash_upgrade_click" data-product="topbar">Upgrade</a></span>' % (TIER_NAME[tier], UPGRADE)),
-        ic("send"), e(prof or SITE), ic("ext"), img(a.get("logo"), "", 34, 34) if a.get("logo") else ic("user"))
+        ic("edit"), ic("send"), e(prof or SITE), ic("ext"), img(a.get("logo"), "", 34, 34) if a.get("logo") else ic("user"))
 
     hero_img = ('<img src="%s" alt="" fetchpriority="high" decoding="async" data-processed="true" onerror="this.style.opacity=0">' % e(hero_photo)) if hero_photo else ""
     hero = ('<section class="hero"><div class="hero-ph">%s</div><div class="hero-in"><span class="chip-ai">%s Your month &middot; %s</span>'
@@ -585,7 +585,7 @@ def page(a, ctx):
                  '<li><b>It goes out</b><i>Calendar, homepage, weekly email or social, tagged to you.</i></li></ol></div>%s</div></div>') % (
         act_big, upc_card, ic("layers"), news_card)
 
-    profile_v = ('<div class="view" data-view="profile"><div class="vh"><h1>Your listing</h1><p>How neighbors see %s, plus tools to help them find you.</p><div class="row-wrap mt-s"><a class="btn primary sm" href="/login?login_direct_url=%%2Faccount%%2Fcontact">Edit my listing</a></div></div>'
+    profile_v = ('<div class="view" data-view="profile"><div class="vh"><h1>Your listing</h1><p>How neighbors see %s, plus tools to help them find you.</p><div class="row-wrap mt-s"><a class="btn primary sm" href="#edit" data-go="edit">Edit your profile</a></div></div>'
                  '<div class="grid g-prof">%s<div class="card pstr"><div class="card-head"><span class="card-icon green">%s</span><div><h3>Profile strength</h3><div class="sub">%s</div></div><span class="right">%s</span></div>'
                  '<ul class="checks">%s</ul></div><div class="card qlk"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Quick links</h3><div class="sub">Tools to help neighbors find you</div></div></div><div class="tools">%s</div></div></div>'
                  '<div class="card upsell wide mt">' + ups.replace('data-ups="', 'data-ups3="').replace('%', '%%') + '</div></div>') % (
@@ -617,6 +617,39 @@ def page(a, ctx):
               '<p><b>Finish before go-live</b></p><ul class="todo"><li>Form submissions (event, special, promo video, social): endpoint to email you</li>'
               '<li>Free sample request + waitlist alert: same endpoint, weekly cap of 5</li><li>Home screen install: needs the private live pages + service worker</li>'
               '<li>Signed-in loader on /account/home (test with a real member login)</li></ul><p class="faint small">Monthly promo reel (free VIP perk) stays hidden until delivery works.</p></details>') if ctx.get("preview") else ""
+    # ---- Owner 11/16: "a prominent Edit your profile button ... a different screen with all the options to edit" (new VIP couldn't find BD's Manage Listing)
+    def ed_link(path, icn, title, sub, color="blue"):
+        return ('<a class="ed-row" href="/login?login_direct_url=%s" data-ga="dash_edit_click" data-product="%s"><span class="card-icon %s">%s</span>'
+                '<span class="ed-t"><b>%s</b><i>%s</i></span><span class="ed-go">%s</span></a>') % (quote(path, safe=""), re.sub(r"[^a-z]+", "_", path.strip("/").lower()), color, ic(icn), title, sub, ic("chev"))
+    def ed_card(icn, color, title, sub, rows):
+        return ('<div class="card ed-card"><div class="card-head"><span class="card-icon %s">%s</span><div><h3>%s</h3><div class="sub">%s</div></div></div>'
+                '<div class="ed-list">%s</div></div>') % (color, ic(icn), title, sub, "".join(rows))
+    ed_listing = ed_card("user", "green", "Your listing", "What neighbors see on your page", [
+        ed_link("/account/contact", "phone", "Business name and contact", "Name, phone, email, website, address", "green"),
+        ed_link("/account/profile", "camera", "Logo and photos", "Your logo, profile photo and cover", "green"),
+        ed_link("/account/about", "article", "About your business", "Your description and story", "green"),
+        ed_link("/account/resume", "layers", "Hours, services and details", "Hours, services, social links and more", "green"),
+        ed_link("/account/locations", "globe", "Service areas", "Towns you serve", "green")])
+    ed_post = ed_card("send", "blue", "Post to your listing", "Shows on your page and around the site", [
+        ed_link("/account/events/add", "cal", "Add an event", "Goes on our events calendar"),
+        ed_link("/account/coupons/add", "tag", "Add a special or coupon", "Deals and seasonal offers"),
+        ed_link("/account/photo-albums/add", "camera", "Add a photo album", "Show your work, menu or space"),
+        ed_link("/account/videos/add", "video", "Add a video", "YouTube or Vimeo link"),
+        ed_link("/account/articles/add", "article", "Write an article", "News, tips or an announcement"),
+        ed_link("/account/jobs/add", "user", "Post a job opening", "Hiring? Neighbors will see it")])
+    ed_more = ed_card("star", "amber", "Leads and reviews", "People reaching out to you", [
+        ed_link("/account/leads", "mail", "Your leads", "Messages from your listing", "amber"),
+        ed_link("/account/recommendations", "star", "Your reviews", "See and manage reviews", "amber")])
+    ed_acct = ed_card("lock", "violet", "Account", "Billing, password and plan", [
+        ed_link("/account/billing/change", "gift", "Billing information", "Card on file and receipts", "violet"),
+        ed_link("/account/password", "lock", "Change password", "Update your login", "violet"),
+        ed_link("/account/upgrade", "rocket", "Change membership plan", "See every plan", "violet")])
+    edit_v = ('<div class="view" data-view="edit"><div class="vh"><h1>Edit your profile</h1><p>Everything you can change on %s, in one place. Each one opens the editor; save there and it goes live.</p>'
+              '<div class="row-wrap mt-s"><a class="btn ghost sm" href="%s" target="_blank" rel="noopener">See your public page %s</a></div></div>'
+              '<div class="grid g-2 ed-grid">%s%s%s%s</div>'
+              '<p class="ed-help">Rather have us do it? Email your updates and photos to <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a> and our team will update your page.</p></div>') % (
+        name_html, e(prof or SITE), ic("ext"), ed_listing, ed_post, ed_more, ed_acct)
+
     tabs = ('<nav class="tabbar" aria-label="Dashboard">%s</nav>' % ("".join(
         '<a href="#%s" data-go="%s"%s>%s<span>%s</span></a>' % (v, v, ' class="on"' if v == "overview" else "", ic(i), t) for v, i, t in (
             ("overview", "grid", "Home"), ("promotions", "megaphone", "Promos"), ("actions", "send", "Submit"), ("profile", "user", "Listing"), ("grow", "rocket", "Grow"))) + ('<a href="#" data-open="more">%s<span>More</span></a>' % ic("layers"))))
@@ -624,7 +657,7 @@ def page(a, ctx):
     body = ('<div class="mdx app" id="mdx" data-tier="%s" data-uid="%s"%s>%s<div class="main">%s<main class="content" id="view">%s%s%s%s%s%s'
             '<p class="foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a>. Updated nightly.</p></main></div>%s%s'
             '<div class="toasts" id="toasts" aria-live="polite"></div></div>') % (
-        tier, uid, attrs, side, top, overview, promotions, "", actions_v, profile_v, grow_v, drawer, tabs + status)
+        tier, uid, attrs, side, top, overview, promotions, "", actions_v, profile_v + edit_v, grow_v, drawer, tabs + status)
     body = body.replace('data-go="seen"', 'data-go="promotions"').replace('href="#seen"', 'href="#promotions"')
     # 11/15: every site link absolute (preview + private pages live on github.io, where relative links 404)
     return body.replace('href="/login?', 'href="' + SITE + '/login?').replace('href="/logout"', 'href="' + SITE + '/logout"')
