@@ -97,13 +97,21 @@ def site_mock(banner_src, short):
 
 
 def spot_mock(a, others, big=False):
+    """Owner 11/15: a faithful copy of the real homepage Local Business Spotlight card for THIS business (front.js card(): 12:5 photo,
+    logo tile, blue caps category + town, name, services line, View profile + Call). No 'Also featured' list."""
     photo = a.get("banner") or a.get("logo") or ""
-    also = "".join('<span class="sp-a">%s<b>%s</b></span>' % (img(o["img"], "", 34, 34), e(o["name"])) for o in others[:3] if o.get("img"))
-    return ('<div class="spotmock%s"><div class="sp-h">Local Business Spotlight<span>Neighbors who support Three Village Local</span></div>'
-            '<div class="sp-grid"><div class="sp-main"><div class="sp-img">%s</div><div class="sp-t"><em>%s%s</em><b>%s</b><span class="sp-cta">View profile</span></div></div>'
-            '<div class="sp-also"><i>Also featured</i>%s</div></div></div>') % (
-        " big" if big else "", img(photo, "Your business in the homepage spotlight"), e(a.get("cat") or ""), (" &middot; " + e(a["town"])) if a.get("town") else "",
-        e(a.get("short") or "Your business"), also)
+    desc = (a.get("desc") or "").replace("—", "-").replace("–", "-")
+    tel = re.sub(r"\D", "", a.get("tel") or "")
+    prof = a.get("profile") or SITE
+    logo = a.get("logo") or ""
+    return ('<div class="hspot%s"><div class="hs-h"><b>Local Business Spotlight</b><span>Neighbors who support Three Village Local</span></div>'
+            '<article class="hs-c"><a class="hs-img" href="%s" target="_blank" rel="noopener" tabindex="-1">%s</a><div class="hs-b"><div class="hs-top">%s'
+            '<p class="hs-cat">%s%s</p></div><h4 class="hs-n">%s</h4>%s<div class="hs-btns"><a class="hs-btn" href="%s" target="_blank" rel="noopener">View profile %s</a>%s</div></div></article></div>') % (
+        " big" if big else "", e(prof), img(photo, "Your business in the homepage spotlight"),
+        ('<span class="hs-logo" style="background-image:url(&#39;%s&#39;)"></span>' % e(logo)) if logo else '<span class="hs-logo"></span>',
+        e(a.get("cat") or ""), (' <span>&middot; %s</span>' % e(a["town"])) if a.get("town") else "", e(a.get("short") or "Your business"),
+        ('<p class="hs-d">%s</p>' % e(desc)) if desc else "", e(prof), ic("chev"),
+        ('<a class="hs-btn o" href="tel:%s">%s Call</a>' % (tel, ic("phone"))) if tel else "")
 
 
 def drawer_forms(tier):
@@ -196,6 +204,12 @@ def sample_feature(company, first, sample_done, tier, full, cat):
         h, sub, btn, fine, LOGOS_ROW, SHOT, shot, SHOT, shot, SHOT, shot)
 
 
+CHAT_SNIP = ('<div class="csnip" aria-hidden="true"><div class="cs-h"><span class="cs-av">R</span><span><b>Ridgeline Assistant</b><i><em></em>Online now</i></span></div>'
+             '<p class="cs-b">Hi! Thinking about a kitchen, a bath or something bigger?</p><p class="cs-b u">Kitchen. Can someone call me tomorrow?</p>'
+             '<p class="cs-b">Absolutely. What is the best number for the owner?</p>'
+             '<div class="cs-lead"><span>&#128241;</span><span><b>New lead texted to you</b><i>Kelly M. &middot; Kitchen remodel</i></span></div></div>')
+
+
 def upsell_cards(company, first, sample_done, tier, full):
     """3VL Digital slot (photo-rich): free working dashboard sample first, then chatbot / websites / tip. dash3.js shows one per visit."""
     comp = e(company) if company else '<span data-md-name>your business</span>'
@@ -217,8 +231,8 @@ def upsell_cards(company, first, sample_done, tier, full):
             ("websites", "3VL Digital &middot; Websites", "A website that works as hard as you do.", "Built from scratch to sell, and to be recommended by Google and AI.", "See AI-ready websites", "/websites", "chris-640.webp")):
         url = "%s%s?utm_source=3vl&utm_medium=member-dashboard&utm_campaign=%s-upsell" % (DIG, path, k[:-1])
         c.append((k, kick, h, sub, '<a class="btn light" href="%s" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="%s">%s %s</a>' % (e(url), k, btn, ic("chev")), im))
-    return "".join('<div class="ups" data-ups="%s"%s><div class="ups-t"><span class="ups-k">%s</span><b>%s</b><i>%s</i>%s</div><div class="ups-v">%s</div></div>'
-                   % (k, "" if i == 0 else " hidden", kick, h, sub, btn, img(SHOT + im, "", 320, 200)) for i, (k, kick, h, sub, btn, im) in enumerate(c))
+    return "".join('<div class="ups ups-%s" data-ups="%s"%s><div class="ups-t"><span class="ups-k">%s</span><b>%s</b><i>%s</i>%s</div><div class="ups-v">%s</div></div>'
+                   % (k, k, "" if i == 0 else " hidden", kick, h, sub, btn, CHAT_SNIP if k == "chatbots" else img(SHOT + im, "", 320, 200)) for i, (k, kick, h, sub, btn, im) in enumerate(c))
 
 
 def page(a, ctx):
@@ -243,6 +257,7 @@ def page(a, ctx):
     name_html = e(short) if uid else '<span data-md-name>Your business</span>'
     hello = e(first) if uid else '<span data-md-name>neighbor</span>'
     month = dt.date.today().strftime("%B %Y")
+    a = dict(a, desc=(j.get("sub") or j.get("tagline") or ""), tel=(j.get("phone") or a.get("phone") or ""))
 
     # ---- hero summary (plain language, positive, real)
     bits = []
@@ -303,9 +318,9 @@ def page(a, ctx):
     else:
         ban_card = ""
     if has(tier, "spotlight") and hp30:
-        spot_card = ('<div class="card seen" data-go="seen"><div class="card-head"><span class="card-icon violet">%s</span><div><h3>On our homepage</h3><div class="sub">The Spotlight rotates our VIPs</div></div>'
-                     '<span class="right"><a class="btn ghost sm" href="%s/" target="_blank" rel="noopener">See it live %s</a></span></div><div class="card-body">%s</div></div>'
-                     % (ic("home"), SITE, ic("ext"), spot_mock(a, others)))
+        spot_card = ('<div class="card seen hsc" data-go="seen"><div class="hs-rib"><span class="hs-rk"><i></i>&#9733; On our homepage</span><span class="hs-rs">Rotating through our VIPs</span>'
+                     '<a class="hs-live" href="%s/" target="_blank" rel="noopener">See it live %s</a></div><div class="card-body">%s</div></div>'
+                     % (SITE, ic("ext"), spot_mock(a, others)))
     elif not has(tier, "spotlight"):
         spot_card = '<div class="card seen">%s</div>' % lock("spotlight", spot_mock({"short": "Your business here", "cat": "Your category"}, others))
     else:
@@ -331,9 +346,9 @@ def page(a, ctx):
             {"date": dt.date.today().isoformat(), "ch": "social", "icon": "insta", "title": "Spotlight on Instagram and Facebook", "note": "Tagged with a collab invite"},
             {"date": dt.date.today().isoformat(), "ch": "email", "icon": "mail", "title": "Featured in Three Village Weekly", "note": "Your photo and story in our weekly email"}]
     if has(tier, "timeline") and real:
-        act_card = ('<div class="card"><div class="card-head"><span class="card-icon amber">%s</span><div><h3>What we did for you</h3><div class="sub">%s</div></div>'
-                    '<span class="right"><a class="btn ghost sm" href="#promotions" data-go="promotions">See all %s</a></span></div><ul class="acts">%s</ul></div>'
-                    % (ic("megaphone"), ("%d promotions since you joined" % lifetime) if lifetime >= 3 else "Newest first", ic("chev"), "".join(row(it) for it in real[:4])))
+        act_card = ('<div class="card actc"><div class="card-head"><span class="card-icon amber">%s</span><div><h3>What we did for you</h3><div class="sub">%s</div></div>'
+                    '<span class="right"><a class="btn ghost sm" href="#promotions" data-go="promotions">See all %s</a></span></div><ul class="acts">%s</ul>'
+                    % (ic("megaphone"), ("%d promotions since you joined" % lifetime) if lifetime >= 3 else "Newest first", ic("chev"), "".join(row(it) for it in real[:7])) + '<div class="card-foot"><span>Have news, a special or an event?</span><button type="button" class="btn primary sm" data-open="event">%s Send it to us</button></div></div>' % ic("send"))
         chans = sorted({it["ch"] for it in real})
         chips = ('<div class="seg" role="group" aria-label="Filter"><button type="button" class="on" data-f="all">All</button>' + "".join(
             '<button type="button" data-f="%s">%s</button>' % (c, l) for c, l in (("web", "Website"), ("social", "Social"), ("email", "Email")) if c in chans) + "</div>") if len(chans) > 1 else ""
@@ -353,7 +368,7 @@ def page(a, ctx):
     upc = "".join('<li><span class="date"><b>%s</b><i>%d</i></span><div><b>%s</b><i>%s</i></div></li>' % (
         dt.date.fromisoformat(u["date"]).strftime("%b"), dt.date.fromisoformat(u["date"]).day, e(u["title"]), e(u["note"])) for u in up[:4]) or (
         '<li><span class="date"><b>%s</b><i>%s</i></span><div><b>More on the way</b><i>Send us your news, specials and events and we will promote them.</i></div></li>' % (dt.date.today().strftime("%b"), "&bull;"))
-    upc_card = '<div class="card"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Coming up for you</h3><div class="sub">Scheduled promotions</div></div></div><ul class="upc">%s</ul></div>' % (ic("cal"), upc)
+    upc_card = '<div class="card upcc"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Coming up for you</h3><div class="sub">Scheduled promotions</div></div></div><ul class="upc">%s</ul><div class="card-foot"><span>Something coming up?</span><button type="button" class="btn primary sm" data-open="event">%s Submit it</button></div></div>' % (ic("cal"), upc, ic("send"))
 
     # ---- profile strength
     done = sum(1 for _, ok, _ in checks if ok)
@@ -389,8 +404,11 @@ def page(a, ctx):
             '<div class="row-wrap"><a class="btn primary sm" href="%s/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=meet-3vl-digital" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="meet_3vl_digital">Visit 3vldigital.com %s</a>'
             '<span class="faint small">Follow</span><a class="chip" href="https://www.instagram.com/3vl.digital/" target="_blank" rel="noopener" data-ga="dash_follow_click" data-product="instagram">Instagram</a>'
             '<a class="chip" href="%s" target="_blank" rel="noopener" data-ga="dash_follow_click" data-product="facebook">Facebook</a>'
-            '<a class="chip" href="https://www.linkedin.com/company/3vldigital" target="_blank" rel="noopener" data-ga="dash_follow_click" data-product="linkedin">LinkedIn</a></div></div></div>'
-            % (img(DIG + "/assets/img/brand/logo-full.webp", "3VL Digital", 150, 50, "meet-logo"), DIG, ic("chev"), FB_DIGITAL))
+            '<a class="chip" href="https://www.linkedin.com/company/3vldigital" target="_blank" rel="noopener" data-ga="dash_follow_click" data-product="linkedin">LinkedIn</a></div>'
+            '<ul class="meet-l"><li><span class="card-icon blue">%s</span><span><b>AI chatbots</b><i>Answer customers 24/7, every lead texted to you</i></span></li>'
+            '<li><span class="card-icon green">%s</span><span><b>AI-ready websites</b><i>Built to sell and get recommended by AI</i></span></li>'
+            '<li><span class="card-icon violet">%s</span><span><b>Custom dashboards</b><i>Leads, jobs, team and money on one screen</i></span></li></ul></div></div>'
+            % (img(DIG + "/assets/img/brand/logo-full.webp", "3VL Digital", 150, 50, "meet-logo"), DIG, ic("chev"), FB_DIGITAL, ic("chat") if "chat" in ICONS else ic("send"), ic("globe"), ic("grid")))
     news = [("Just launched", "Homepage trivia: neighbors play every Monday, with local business prizes."),
             ("Live now", "Our Thanksgiving guide is up. Send us your holiday hours and specials."),
             ("New", "AI chatbots by 3VL Digital: answer customers 24/7 on your own website.")]
@@ -409,7 +427,7 @@ def page(a, ctx):
                 ("websites", "AI-ready websites", "Built to sell, and to be recommended by Google and AI", "chris-640.webp", "/websites"),
                 ("dashboards", "Custom dashboards", "Leads, jobs, team and money on one screen", "dash-restaurant-640.webp", "/dashboards")]
     prod = "".join('<a class="card prod" href="%s%s?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=grow-%s" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="grow_%s">'
-                   '<span class="prod-img">%s</span><span class="prod-t"><b>%s</b><i>%s</i></span></a>' % (DIG, p, k, k, img(SHOT + im, ""), t, d) for k, t, d, im, p in products)
+                   '<span class="prod-img%s">%s</span><span class="prod-t"><b>%s</b><i>%s</i></span></a>' % (DIG, p, k, k, " chat" if k == "chatbots" else "", CHAT_SNIP if k == "chatbots" else img(SHOT + im, ""), t, d) for k, t, d, im, p in products)
     # owner 11/15: only offers that are 100% working end to end (AI visibility report + drone cards removed until they have a working request path)
     more = ([("video", "Your free promo reel", "VIP perk: a new video every month", "data-open=\"video\"")] if X.RANK[tier] >= X.RANK["v"] else []) + [
             ("insta", "Social spotlight", "Ask us to feature you on Facebook and Instagram", "data-open=\"social\""),
@@ -480,7 +498,7 @@ def page(a, ctx):
     promo_badge = ('<em class="nb">%d</em>' % len(soc30 + em30)) if (soc30 or em30) and has(tier, "timeline") else ("" if has(tier, "timeline") else lockb)
     side = ('<aside class="sidebar"><a class="brand" href="%s/" target="_blank" rel="noopener">%s<span class="brand-sub">Member dashboard</span></a><nav class="nav" aria-label="Dashboard">'
             '%s%s%s%s%s<details class="nav-grp"><summary>%s<span>Account</span>%s</summary>%s</details></nav>'
-            '<a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="sidebar_3vl_digital"><span>Visit our business AI services at</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a>'
+            '<a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="sidebar_3vl_digital"><span>Business AI services by</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a>'
             '<div class="side-foot"><div class="me">%s<div><b class="ellip">%s</b><span class="tierb t-%s">%s%s</span></div><button type="button" class="me-app" data-open="app" aria-label="Get the dashboard app on your phone" title="Get the app on your phone" data-ga="dash_action_open" data-product="get_app">%s</button></div></div></aside>') % (
         SITE, img("https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-white.webp", "Three Village Local", 168, 58, "brand-logo", lazy=False),
         nav("overview", "grid", "Overview"), nav("promotions", "megaphone", "Your promotions", promo_badge), leads_nav, nav("profile", "user", "Your listing"), nav("grow", "rocket", "Grow"),
@@ -515,8 +533,9 @@ def page(a, ctx):
     seen_row = '<div class="grid g-ov">%s%s</div>' % ("".join(sc), prof_mini)
     sfeat = sample_feature(short, first if uid else "", ctx.get("sample_done", False), tier, ctx.get("samples_full", False), a.get("cat"))
     third = sfeat or '<div class="card upsell" id="ups">%s</div>' % ups
-    overview = ('<div class="view on" data-view="overview">%s<div class="kpis">%s</div>%s<div class="grid g-ov">%s%s%s</div></div>') % (
-        hero, kpis, seen_row, chart_card or tips_card, act_card, third)
+    left3 = '<div class="stack fill">%s%s</div>' % (chart_card or tips_card, upc_card)
+    overview = ('<div class="view on" data-view="overview">%s<div class="kpis">%s</div>%s<div class="grid g-ov r3">%s%s%s</div></div>') % (
+        hero, kpis, seen_row, left3, act_card, third)
 
     promotions = ('<div class="view" data-view="promotions"><div class="vh"><h1>Promotions</h1><p>Everything we have done to put %s in front of neighbors.</p></div>'
                   '<div class="grid g-promo"><div class="stack">%s<div class="grid g-2">%s%s</div></div>%s</div></div>') % (name_html, chart_card or "", mix_card or news_card, upc_card, tl_full)
@@ -550,8 +569,9 @@ def page(a, ctx):
         act_big, upc_card, ic("layers"), news_card)
 
     profile_v = ('<div class="view" data-view="profile"><div class="vh"><h1>Your listing</h1><p>How neighbors see %s, plus tools to help them find you.</p><div class="row-wrap mt-s"><a class="btn primary sm" href="/login?login_direct_url=%%2Faccount%%2Fcontact">Edit my listing</a><a class="btn ghost sm" href="/login?login_direct_url=%%2Faccount%%2Fleads">See my leads</a></div></div>'
-                 '<div class="grid g-prof">%s<div class="stack"><div class="card"><div class="card-head"><span class="card-icon green">%s</span><div><h3>Profile strength</h3><div class="sub">%s</div></div><span class="right">%s</span></div>'
-                 '<ul class="checks">%s</ul></div><div class="card upsell">' + ups.replace('data-ups="', 'data-ups3="').replace('%', '%%') + '</div></div><div class="card"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Quick links</h3><div class="sub">Tools to help neighbors find you</div></div></div><div class="tools">%s</div></div></div></div>') % (
+                 '<div class="grid g-prof">%s<div class="card pstr"><div class="card-head"><span class="card-icon green">%s</span><div><h3>Profile strength</h3><div class="sub">%s</div></div><span class="right">%s</span></div>'
+                 '<ul class="checks">%s</ul></div><div class="card qlk"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Quick links</h3><div class="sub">Tools to help neighbors find you</div></div></div><div class="tools">%s</div></div></div>'
+                 '<div class="card upsell wide mt">' + ups.replace('data-ups="', 'data-ups3="').replace('%', '%%') + '</div></div>') % (
         name_html, listing if uid else '<div class="card listing"><div class="card-body"><b class="lst-n">%s</b><i class="lst-c">Basic member</i><div class="row-wrap mt-s"><a class="btn primary sm" href="%s">Edit listing %s</a></div></div></div>' % (name_html, LOGIN_EDIT, ic("chev")),
         ic("user"), "Complete. Nice work." if done == len(checks) else "A complete profile gets more calls", ring, plist, ic("share"), "".join(ql))
 
@@ -570,7 +590,7 @@ def page(a, ctx):
         ('<button type="button" class="chip" data-copy="%s">%s Copy my dashboard link</button>' % (e(dash_url), ic("copy"))) if dash_url else "")
     more_pane = ('<section class="drawpane" data-pane="more" hidden><div class="morepane"><h3>More</h3><button type="button" class="tile-l" data-open="app">%s<span><b>Get the app on your phone</b><i>Your dashboard on your home screen</i></span></button>'
                  '<div class="nav-label">Account</div><div class="morelinks">%s</div><a class="side-dig" href="https://3vldigital.com/?utm_source=3vl&amp;utm_medium=member-dashboard&amp;utm_campaign=sidebar" target="_blank" rel="noopener" data-ga="dash_upsell_click" data-product="more_3vl_digital">'
-                 '<span>Visit our business AI services at</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a></div></section>') % (ic("phone"), more_acct_nav)
+                 '<span>Business AI services by</span><img src="https://3vldigital.com/assets/img/brand/logo-full-white.png" alt="3VL Digital" width="150" height="50" loading="lazy" decoding="async" data-processed="true"></a></div></section>') % (ic("phone"), more_acct_nav)
     drawer = ('<div class="drawer" id="drawer" hidden aria-hidden="true"><div class="dr-scrim" data-close></div><div class="dr-panel" role="dialog" aria-modal="true" aria-label="Send to Three Village Local">'
               '<button type="button" class="dr-x" data-close aria-label="Close">%s</button>%s%s</div></div>') % (
         ic("x"), drawer_forms(tier) + app_pane + more_pane, '<p class="prev-note">Preview (test mode): what you send goes only to the 3VL team inbox, marked TEST.</p>' if ctx.get("preview") else "")
@@ -588,7 +608,9 @@ def page(a, ctx):
             '<p class="foot">Questions or something to promote? Email <a href="mailto:hello@threevillagelocal.com">hello@threevillagelocal.com</a>. Updated nightly.</p></main></div>%s%s'
             '<div class="toasts" id="toasts" aria-live="polite"></div></div>') % (
         tier, uid, attrs, side, top, overview, promotions, "", actions_v, profile_v, grow_v, drawer, tabs + status)
-    return body.replace('data-go="seen"', 'data-go="promotions"').replace('href="#seen"', 'href="#promotions"')
+    body = body.replace('data-go="seen"', 'data-go="promotions"').replace('href="#seen"', 'href="#promotions"')
+    # 11/15: every site link absolute (preview + private pages live on github.io, where relative links 404)
+    return body.replace('href="/login?', 'href="' + SITE + '/login?').replace('href="/logout"', 'href="' + SITE + '/logout"')
 
 
 SHELL = X.SHELL.replace("family=Inter:wght@400;500;600;700;800", "family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Anton")
