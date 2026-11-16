@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-16T16:01:00.039832+00:00",
+"updated": "2026-11-16T16:02:30.807864+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 39,
@@ -2119,6 +2119,25 @@
 "page": "https://www.threevillagelocal.com/eat-drink/po-boy-brewery-thanksgiving-eve-bash-new-beers",
 "profile": "https://www.threevillagelocal.com/po-boy-brewery",
 "label": "Live music"
+},
+{
+"id": "18106140302034259",
+"biz": "Toast Coffee + Kitchen",
+"ig": "toastcoffeeandkitchen",
+"town": "Port Jefferson Station",
+"category": "Cafe/Brunch",
+"member": false,
+"title": "Thanksgiving Turkey Sandwich",
+"when": "Through November 25th",
+"desc": "Limited-time turkey sandwich with cranberry mayo, stuffing, Swiss, and gravy for dipping.",
+"expires": "2026-11-25",
+"posted": "2026-11-16T14:42:54+0000",
+"url": "https://www.instagram.com/reel/DfzlzpPh_bI/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18106140302034259.jpg",
+"page": "https://www.threevillagelocal.com/toast-coffee-kitchen",
+"profile": "https://www.threevillagelocal.com/toast-coffee-kitchen",
+"label": "Special"
 },
 {
 "id": "18224331736348848",

@@ -1,20 +1,4 @@
 {
-"18502688491100263": {
-"special": false,
-"title": "Hirosaki - Japanese & Hibachi",
-"when": "Ongoing",
-"desc": "Stony Brook's destination for happy hour, live hibachi, cocktails, and modern Japanese dishes.",
-"expires": "2026-10-17",
-"_ts": "2026-10-17T14:00:47+0000"
-},
-"18638894698016587": {
-"special": true,
-"title": "Breakfast Burrito Brunch",
-"when": "Sat, Oct. 18 · 12-4 PM",
-"desc": "Eggs, chorizo, bacon, cheddar-jack, pico, potatoes with hash browns or salad.",
-"expires": "2026-10-18",
-"_ts": "2026-10-17T13:01:00+0000"
-},
 "17931655359410036": {
 "special": true,
 "title": "Spooky Cheese Workshop",
@@ -2874,5 +2858,25 @@
 "desc": "The Pie of Port Jeff highlights their dessert menu as holiday season approaches.",
 "expires": "2026-11-16",
 "_ts": "2026-11-15T21:15:14+0000"
+},
+"18037289762912547": {
+"special": false,
+"_ts": "2026-11-16T15:55:11+0000"
+},
+"17971974560964233": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-16T15:10:53+0000"
+},
+"18106140302034259": {
+"special": true,
+"title": "Thanksgiving Turkey Sandwich",
+"when": "Through November 25th",
+"desc": "Limited-time turkey sandwich with cranberry mayo, stuffing, Swiss, and gravy for dipping.",
+"expires": "2026-11-25",
+"_ts": "2026-11-16T14:42:54+0000"
 }
 }

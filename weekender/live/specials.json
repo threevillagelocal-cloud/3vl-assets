@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T13:00:13.581936+00:00",
+ "updated": "2026-11-16T16:00:15.069419+00:00",
  "specials": [
   {
    "id": "17916105516283491",
@@ -420,6 +420,22 @@
    "url": "https://www.instagram.com/reel/DfkS5pIsqPQ/",
    "img": "",
    "inset": "ig/p17963853557996306.jpg"
+  },
+  {
+   "id": "18106140302034259",
+   "biz": "Toast Coffee + Kitchen",
+   "ig": "toastcoffeeandkitchen",
+   "town": "Port Jefferson Station",
+   "category": "Cafe/Brunch",
+   "member": false,
+   "title": "Thanksgiving Turkey Sandwich",
+   "when": "Through November 25th",
+   "desc": "Limited-time turkey sandwich with cranberry mayo, stuffing, Swiss, and gravy for dipping.",
+   "expires": "2026-11-25",
+   "posted": "2026-11-16T14:42:54+0000",
+   "url": "https://www.instagram.com/reel/DfzlzpPh_bI/",
+   "img": "",
+   "inset": "ig/p18106140302034259.jpg"
   },
   {
    "id": "18224331736348848",
