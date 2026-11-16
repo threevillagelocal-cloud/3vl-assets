@@ -24,6 +24,8 @@ FILES = [   # (source in 3vl-assets, destination under 3vl-share/live)
     ("site/p3/vip_meta.json", "p3/vip_meta.json"),
     ("site/p3/img/cafe-hero.jpg", "p3/img/cafe-hero.jpg"),
     ("site/p3/img/village-hero.jpg", "p3/img/village-hero.jpg"),
+    ("site/p3/img/login-dash-1360.webp", "p3/img/login-dash-1360.webp"),   # login page v2 (11/16)
+    ("site/p3/img/login-dash-900.webp", "p3/img/login-dash-900.webp"),
     ("site/p3/img/now-glow.jpg", "p3/img/now-glow.jpg"),
     ("events-cal/tvl-cal.js", "events-cal/tvl-cal.js"),
     ("events-cal/tvl-cal.css", "events-cal/tvl-cal.css"),
