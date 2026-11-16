@@ -1,0 +1,7 @@
+{
+ "_how": "Owner 11/16/2026: members in the same group are direct competitors and are NEVER shown together. Add a new conflict by adding one line (member ids as strings). Read by: weekender/front/front_build.py (homepage spotlight: also-featured list + logo strip order), site/p3/p3.js (category top spots: one per page view, the other shows as a regular card), weekender/banners.json 'group' must match (banner rotator: one per group per page), news-monitor tools/check_compete.py (social rotation: at least min_days_apart days between them).",
+ "min_days_apart": 3,
+ "groups": {
+  "restoration": ["151", "939"]
+ }
+}

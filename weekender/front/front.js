@@ -75,7 +75,9 @@ var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
     var used={},pick=[],rest=[];used[fam(cards[i])]=1;
     for(var d=1;d<n;d++){var c=cards[(i+d)%n],f=fam(c);if(pick.length<3&&!used[f]){used[f]=1;pick.push(c)}else rest.push(c)}
     cards[i].hidden=true;cards[i].style.order=0;cards[i].classList.remove('y-on');
-    pick.concat(rest).forEach(function(c,k){c.hidden=false;c.style.order=k+1;c.classList.toggle('y-on',k<pick.length)});list.scrollLeft=0;
+    /* owner 11/16/2026 (weekender/compete.json): a direct competitor of the big card is not shown at all while it is up */
+    var g0=cards[i].getAttribute('data-grp');
+    pick.concat(rest).forEach(function(c,k){c.hidden=!!(g0&&c.getAttribute('data-grp')===g0);c.style.order=k+1;c.classList.toggle('y-on',k<pick.length)});list.scrollLeft=0;
     if(tm){var nx=cards[(i+1)%n].getAttribute('data-img');if(nx){var p=new Image();p.src=nx}}}
   function go(){clearInterval(tm);if(RM)return;tm=setInterval(function(){if(!hold&&!document.hidden)show(i+1)},7000)}
   var sec=document.getElementById('nh-feat')||wrap;

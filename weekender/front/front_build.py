@@ -12,6 +12,16 @@ import nowhome_build as nhb  # noqa: E402
 
 VIPBASE = "https://threevillagelocal-cloud.github.io/3vl-share/live/p3/vip/"
 NO_SPOT = {"552"}   # logo strip only
+
+
+def compete_groups():
+    """uid -> competitor group from weekender/compete.json (owner 11/16/2026: same-industry members never shown together)."""
+    try:
+        g = json.load(open(os.path.join(HERE, "..", "compete.json"), encoding="utf-8")).get("groups", {})
+        return {str(u): k for k, us in g.items() for u in us}
+    except Exception as e:
+        print("compete.json skipped:", e)
+        return {}
 esc = nhb.esc
 
 
@@ -347,6 +357,19 @@ def spotlight(base=""):
     vips = _vips()
     if not vips:
         return ""
+    GRP = compete_groups()
+    # logo strip: competitors never sit next to each other (move a clashing logo to the next free slot)
+    order = []
+    for m in vips:
+        order.append(m)
+    for k in range(1, len(order)):
+        g = GRP.get(str(order[k]["id"]))
+        if g and GRP.get(str(order[k - 1]["id"])) == g:
+            for j in range(k + 1, len(order)):
+                if GRP.get(str(order[j]["id"])) != g and (j + 1 >= len(order) or GRP.get(str(order[j + 1]["id"])) != g):
+                    order[k], order[j] = order[j], order[k]
+                    break
+    vips = order
     idx = _get_json(SHARE + "t/vip.json") or {}
     OK = lambda u: bool(u) and _ok(u)
     ONERR = 'onerror="if(this.dataset.o){this.removeAttribute(&quot;srcset&quot;);this.src=this.dataset.o;this.dataset.o=&quot;&quot;}"'
@@ -393,6 +416,8 @@ def spotlight(base=""):
             '<span class="y-mci">%s</span><span class="y-mct"><b>%s</b><small>%s</small></span></a>' % (
                 esc(m["u"]), uid, esc(big), esc(big_o), esc(srcset), "1" if banner else "", esc(pos), esc(alt or m["n"]), esc(logo), esc(logo_o), esc(cat), esc(twn), esc(desc), tel, color,
                 vis, esc(m["n"]), esc(cat)))
+        if GRP.get(uid):
+            cards[-1] = cards[-1].replace('<a class="y-mc" ', '<a class="y-mc" data-grp="%s" ' % esc(GRP[uid]), 1)
     nav = ('<span class="y-spnav"><button type="button" class="y-spn" data-sp="-1" aria-label="Previous business"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>'
            '<button type="button" class="y-spn" data-sp="1" aria-label="Next business"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></span>')
     lg = "".join(logos)
