@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-17T00:00:49.776935+00:00",
+"updated": "2026-11-17T02:00:52.415684+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 40,
 "I Love Port Jeff": 4,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 193,
-"Emma S. Clark Library": 219,
+"Emma S. Clark Library": 217,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 41,
 "Ward Melville Heritage Org": 2,
@@ -416,7 +416,7 @@
 ],
 "status": "",
 "fb": 1,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/gift-bow-making-for-a-cause-462"
 },
 {
 "id": "emmaclark-pies-parades-zoom-61308",
