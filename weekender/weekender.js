@@ -221,7 +221,7 @@ var feedItems=[],nwsItems=[];
 function loadFeed(){var url=root.getAttribute('data-feed');if(!url)return;
   fetch(url+(url.indexOf('?')<0?'?':'&')+'v='+Math.floor(Date.now()/60000),{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){feedItems=d.items||[];JOKES=d.jokes||[];if(JOKES.length&&!feedItems.some(function(x){return x.src==='joke'})){feedItems.push({t:new Date().toISOString(),src:'joke',who:'347 Traffic Desk',text:JOKES[Math.floor(Math.random()*JOKES.length)]})}drawFeed(feedItems.concat(nwsItems));
     var u=$('wk-fupd');if(u)u.textContent='synced '+tm(new Date())}).catch(function(){var u=$('wk-fupd');if(u)u.textContent='offline'})}
-function loadAlerts(){fetch('https://api.weather.gov/alerts/active?point='+LAT+','+LON).then(function(r){return r.json()}).then(function(d){
+function loadAlerts(){fetch('https://api.weather.gov/alerts/active?status=actual&message_type=alert,update&point='+LAT+','+LON).then(function(r){return r.json()}).then(function(d){
   nwsItems=(d.features||[]).slice(0,3).map(function(f){var p=f.properties;return{t:p.sent,src:'nws',who:'National Weather Service',text:p.event+(p.ends||p.expires?' in effect until '+DAYN2(new Date(p.ends||p.expires))+'.':'.'),url:'https://forecast.weather.gov/MapClick.php?lat='+LAT+'&lon='+LON}});
   drawFeed(feedItems.concat(nwsItems))}).catch(function(){})}
 

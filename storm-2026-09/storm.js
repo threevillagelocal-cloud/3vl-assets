@@ -1,7 +1,7 @@
 (function(){
 var FC='https://api.weather.gov/gridpoints/OKX/62,57/forecast';
 var GRID='https://api.weather.gov/gridpoints/OKX/62,57';
-var AL='https://api.weather.gov/alerts/active?point=40.9387,-73.1182';
+var AL='https://api.weather.gov/alerts/active?status=actual&message_type=alert,update&point=40.9387,-73.1182';
 var OBS='https://api.weather.gov/stations/KISP/observations?limit=100';
 var TD='https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=ThreeVillageLocal&datum=MLLW&station=8514560&time_zone=lst_ldt&units=english&interval=hilo&format=json&range=72&begin_date=';
 // storm milestones (Eastern time)

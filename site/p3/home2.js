@@ -203,7 +203,7 @@ function liveFeed(box){
     fit();window.addEventListener('resize',fit);
     var TRI='<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19z"/><path d="M12 10v4.5"/><circle cx="12" cy="17" r=".8" fill="#fff"/></svg>';
     var j=function(u){return fetch(u,{headers:{'Accept':'application/geo+json'}}).then(function(r){return r.json()})};
-    Promise.all([j('https://api.weather.gov/alerts/active?point=40.9387,-73.1182').catch(function(){return null}),
+    Promise.all([j('https://api.weather.gov/alerts/active?status=actual&message_type=alert,update&point=40.9387,-73.1182').catch(function(){return null}),
       j('https://api.weather.gov/points/40.9387,-73.1182').then(function(p){return j(p.properties.forecast)}).catch(function(){return null})]).then(function(r){
       var w=document.getElementById('tvn-wx');if(!w)return;
       var al=r[0]&&r[0].features&&r[0].features[0],ps=r[1]&&r[1].properties&&r[1].properties.periods;if(!ps||!ps[0])return;

@@ -37,7 +37,7 @@ FEEDS = [("TBR News Media", "https://tbrnewsmedia.com/category/three-village/fee
          ("Suffolk County Police", "https://suffolkpd.org/Alerts/Press-Releases/ctl/rss/mid/10029"),   # owner 10/17: 6th Precinct activity
          ("Reddit r/longisland", "https://www.reddit.com/r/longisland/new/.rss")]
 POLICE_TOWNS = re.compile(r"setauket|stony ?brook|port jeff(erson)?|old field|poquott|belle terre|south setauket", re.I)
-NWS = "https://api.weather.gov/alerts/active?zone=NYZ078"     # Northwest Suffolk
+NWS = "https://api.weather.gov/alerts/active?status=actual&message_type=alert,update&zone=NYZ078"     # Northwest Suffolk
 SLA = ("https://data.ny.gov/resource/f8i8-k2gm.json?$where=" +
        urllib.parse.quote("zip_code in(%s)" % ",".join("'%s'" % z for z in ZIPS)) + "&$limit=200")
 
