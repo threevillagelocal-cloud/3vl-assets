@@ -1,40 +1,4 @@
 {
-"18474508726112702": {
-"special": false,
-"_ts": "2026-10-18T16:26:56+0000"
-},
-"17951658774364965": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-18T16:29:08+0000"
-},
-"17858913420697156": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-18T16:41:52+0000"
-},
-"17973813630157129": {
-"special": false,
-"title": "Oysters on the Half Shell",
-"when": "Sundays",
-"desc": "Oysters on the half shell with lemon and a drink, presented as a Sunday dining option.",
-"expires": "2026-10-18",
-"_ts": "2026-10-18T18:01:19+0000"
-},
-"18100129598537917": {
-"special": false,
-"title": "Visit The Pie at Harvest Fest",
-"when": "Today, Oct. 18",
-"desc": "Stop by for coal-fired pizza and smoky wings during Harvest Fest in downtown Port Jefferson.",
-"expires": "2026-10-18",
-"_ts": "2026-10-18T16:12:02+0000"
-},
 "18110587121242192": {
 "special": false,
 "title": "Cosimo Taurino Negroamaro Wine",
@@ -2842,5 +2806,21 @@
 "desc": "New soft, chewy mochi snacks with Demon Slayer characters in 4 flavors. Grab with your bowl or take home.",
 "expires": "2026-12-01",
 "_ts": "2026-11-17T15:16:25+0000"
+},
+"17879359485634955": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-17T18:19:08+0000"
+},
+"18119352014133832": {
+"special": false,
+"title": "Private Party Planning at Castawaysays",
+"when": "Call to book",
+"desc": "Book holiday parties before Thanksgiving for 15% off. Various space and menu options available.",
+"expires": "2026-11-27",
+"_ts": "2026-11-17T19:02:10+0000"
 }
 }

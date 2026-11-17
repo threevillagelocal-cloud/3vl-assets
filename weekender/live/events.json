@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-17T20:01:09.252503+00:00",
+"updated": "2026-11-17T20:02:27.520877+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 41,
@@ -1940,25 +1940,6 @@
 "label": "Special"
 },
 {
-"id": "17921223336253823",
-"biz": "The Study by Toast",
-"ig": "thestudy.bytoast",
-"town": "East Setauket",
-"category": "Coffee House",
-"member": false,
-"title": "Holiday Pies - Pre-Order Now",
-"when": "Nov 24-25, 9 AM - 3 PM",
-"desc": "First-time holiday pies ($25 each): Apple Crumb, Coconut Pecan Custard, Pumpkin Cheesecake.",
-"expires": "2026-11-25",
-"posted": "2026-11-10T16:19:54+0000",
-"url": "https://www.instagram.com/p/DfkUhZ1pXEa/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17921223336253823.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-holiday-pies-pre-order",
-"profile": "https://www.threevillagelocal.com/the-study-by-toast",
-"label": "Special"
-},
-{
 "id": "18155940556551591",
 "biz": "Right Coast Taqueria",
 "ig": "rctaqueria",
@@ -1974,25 +1955,6 @@
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18155940556551591.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-pilgrim-burrito",
-"profile": "https://www.threevillagelocal.com/right-coast-taqueria",
-"label": "Special"
-},
-{
-"id": "17963853557996306",
-"biz": "Right Coast Taqueria",
-"ig": "rctaqueria",
-"town": "East Setauket",
-"category": "Restaurant",
-"member": false,
-"title": "Taco Tuesday Specials",
-"when": "Every Tuesday",
-"desc": "Get 3 specialty tacos for $12 or build your own 3 for $10. Plus $5 burritos after 8 PM.",
-"expires": "2026-11-17",
-"posted": "2026-11-10T16:06:21+0000",
-"url": "https://www.instagram.com/reel/DfkS5pIsqPQ/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17963853557996306.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-taco-tuesday-specials",
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria",
 "label": "Special"
 },
