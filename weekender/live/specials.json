@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T13:00:16.415516+00:00",
+ "updated": "2026-11-17T16:00:13.686231+00:00",
  "specials": [
   {
    "id": "17916105516283491",
@@ -420,6 +420,22 @@
    "url": "https://www.instagram.com/reel/DfkS5pIsqPQ/",
    "img": "",
    "inset": "ig/p17963853557996306.jpg"
+  },
+  {
+   "id": "18135578608688275",
+   "biz": "Slurp Ramen",
+   "ig": "slurp_ramen_usa",
+   "town": "Port Jefferson",
+   "category": "Restaurant (Ramen)",
+   "member": false,
+   "title": "Demon Slayer Mochi Snacks",
+   "when": "Limited stock available now",
+   "desc": "New soft, chewy mochi snacks with Demon Slayer characters in 4 flavors. Grab with your bowl or take home.",
+   "expires": "2026-12-01",
+   "posted": "2026-11-17T15:16:25+0000",
+   "url": "https://www.instagram.com/reel/Df2OBz1uxjP/",
+   "img": "",
+   "inset": "ig/p18135578608688275.jpg"
   },
   {
    "id": "18106140302034259",

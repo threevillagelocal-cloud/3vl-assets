@@ -507,6 +507,23 @@
 }
 ],
 "portjefficecream": [],
-"slurp_ramen_usa": [],
+"slurp_ramen_usa": [
+{
+"id": "18135578608688275",
+"biz": "Slurp Ramen",
+"ig": "slurp_ramen_usa",
+"town": "Port Jefferson",
+"category": "Restaurant (Ramen)",
+"member": false,
+"title": "Demon Slayer Mochi Snacks",
+"when": "Limited stock available now",
+"desc": "New soft, chewy mochi snacks with Demon Slayer characters in 4 flavors. Grab with your bowl or take home.",
+"expires": "2026-12-01",
+"posted": "2026-11-17T15:16:25+0000",
+"url": "https://www.instagram.com/reel/Df2OBz1uxjP/",
+"img": "",
+"inset": "ig/p18135578608688275.jpg"
+}
+],
 "tara.inn": []
 }

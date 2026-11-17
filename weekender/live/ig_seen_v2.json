@@ -1,28 +1,4 @@
 {
-"18144743578604429": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-18T13:38:40+0000"
-},
-"18123704545903692": {
-"special": false,
-"title": "Fried Eggplant Bites",
-"when": "",
-"desc": "New menu item: crisp panko-coated eggplant, peppers, and cheese with marinara sauce.",
-"expires": "",
-"_ts": "2026-10-18T14:32:48+0000"
-},
-"18134822992761307": {
-"special": true,
-"title": "Winter Prix Fixe Menu",
-"when": "Now available",
-"desc": "Enjoy a winter prix fixe menu starting at $42 plus tax with delicious options.",
-"expires": "2026-11-01",
-"_ts": "2026-10-18T13:02:41+0000"
-},
 "18474508726112702": {
 "special": false,
 "_ts": "2026-10-18T16:26:56+0000"
@@ -2842,5 +2818,29 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-17T04:34:41+0000"
+},
+"18164835544542452": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-17T14:55:06+0000"
+},
+"17913747111303355": {
+"special": false,
+"title": "Thanksgiving Brunch & Lunch Boxes",
+"when": "Order now",
+"desc": "Pre-order brunch or lunch boxes to simplify holiday meal prep. Order via website or bio link.",
+"expires": "2026-11-17",
+"_ts": "2026-11-17T14:37:32+0000"
+},
+"18135578608688275": {
+"special": true,
+"title": "Demon Slayer Mochi Snacks",
+"when": "Limited stock available now",
+"desc": "New soft, chewy mochi snacks with Demon Slayer characters in 4 flavors. Grab with your bowl or take home.",
+"expires": "2026-12-01",
+"_ts": "2026-11-17T15:16:25+0000"
 }
 }
