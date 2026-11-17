@@ -206,7 +206,7 @@ function liveFeed(box){
     Promise.all([j('https://api.weather.gov/alerts/active?status=actual&message_type=alert,update&point=40.9387,-73.1182').catch(function(){return null}),
       j('https://api.weather.gov/points/40.9387,-73.1182').then(function(p){return j(p.properties.forecast)}).catch(function(){return null})]).then(function(r){
       var w=document.getElementById('tvn-wx');if(!w)return;
-      var al=r[0]&&r[0].features&&r[0].features[0],ps=r[1]&&r[1].properties&&r[1].properties.periods;if(!ps||!ps[0])return;
+      var al=r[0]&&r[0].features&&r[0].features.filter(function(f){var p=f.properties||{};return p.status==='Actual'&&!/tsunami|evacuat|shelter|civil|nuclear|radiolog|hazardous|law enforcement|abduction|earthquake|volcano|danger|emergency|911|fire warning|test|exercise|practice/i.test(p.event||'')})[0],ps=r[1]&&r[1].properties&&r[1].properties.periods;if(!ps||!ps[0])return;
       var p0=ps[0],p1=ps[1]||{},hi=p0.isDaytime?p0.temperature:p1.temperature,lo=p0.isDaytime?p1.temperature:p0.temperature;
       var pop=p0.probabilityOfPrecipitation&&p0.probabilityOfPrecipitation.value;
       w.innerHTML=(al?'<span class="wal"><i>'+TRI+'</i>'+esc2(al.properties.event)+'</span>':'')
