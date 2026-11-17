@@ -43,13 +43,13 @@ def slug(u):
 def floor_k(n):
     """Friendly rounding (owner 11/15/2026): totals round DOWN to the thousand, so 12,263 -> 12,000. Never rounds up."""
     n = int(n or 0)
-    return (n // 1000) * 1000 if n >= 1000 else n
+    return n   # owner 11/16/2026: "rounded numbers seem fake" -> exact rolling 30-day numbers everywhere (was: round down to the thousand)
 
 
 def nice(n, plus=True):
     """12,263 -> '12,000+' ; 640 -> '640'. Callers hide anything under their floor, so '0' never renders."""
     n = int(n or 0)
-    return ("{:,}".format(floor_k(n)) + ("+" if plus and n >= 1000 else "")) if n >= 1000 else "{:,}".format(n)
+    return "{:,}".format(n)   # exact, no "+" (owner 11/16/2026)
 
 
 # Floor rule (owner 11/15/2026): a weak or zero number is never shown. The card or row is hidden instead.
@@ -364,7 +364,7 @@ def sprite():
 
 # Owner exception 11/13/2026 to the no-raw-traffic rule, for this ONE stat. {n} = data/banner_reach.json "views"
 # (sitewide GA4 page views, last 30 days, refreshed nightly by banner_reach.py). Change wording here only.
-BANNER_LABEL = "Your banner ad may have been seen up to {n} times in the past 30 days"
+BANNER_LABEL = "Your banner ad rotated across {n} page views on our site in the last 30 days"
 # Month-over-month % (last 30 days vs the 30 before, real GA4) shows only when it is UP; a drop hides the pill (owner OK pending).
 AI_LINE = "Plus AI assistants like ChatGPT, Gemini and Google AI read our pages to recommend local businesses."   # no number, owner 11/13
 BANNER_LIVE_URL =SHARE + "live/member-dashboard/banner_reach.json"   # where the nightly job would publish it (not live yet)
@@ -412,7 +412,7 @@ def reach30(a):
     banner, total = floor_k(banner), floor_k(total)
     parts = []
     if banner:
-        parts.append(("banner", "Banner ad", "up to %s views" % "{:,}".format(banner)))
+        parts.append(("banner", "Banner ad", "rotated across %s page views" % "{:,}".format(banner)))
     if days:
         pl = "" if len(days) == 1 else "s"
         parts.append(("home", "Homepage spotlight", ("%s views on your %d day%s" % (nice(home), len(days), pl)) if home >= FLOOR_HOME_VIEWS
@@ -423,8 +423,8 @@ def reach30(a):
         parts.append(("insta", "Facebook and Instagram", "%d post%s about you" % (len(social), "" if len(social) == 1 else "s")))
     rows = "".join('<li><span class="md-ic">%s</span><b>%s</b><em>%s</em></li>' % (ic(i), t, v) for i, t, v in parts)
     return ('<div class="md-kpis md-reach" data-m="r30"><div class="md-reach-tot"><span class="md-ic">%s</span><b>%s<span data-n="%d" data-plus="%s">%s</span></b>'
-            '<i>Times neighbors may have seen your business in the last 30 days</i></div><ul class="md-reach-l">%s</ul></div>'
-            % (ic("megaphone"), "Up to " if banner else "", total, "" if banner else "+", "{:,}".format(total) + ("" if banner or total < 1000 else "+"), rows))
+            '<i>Ways neighbors saw your business in the last 30 days</i></div><ul class="md-reach-l">%s</ul></div>'
+            % (ic("megaphone"), "", total, "", "{:,}".format(total), rows))
 
 
 def kpis(a, mk):
@@ -863,7 +863,10 @@ def build_v2(acts, V, NETd, r):
     bviews = floor_k(r.get("views") or 0)
     soc = jload(os.path.join(NEWS, "data", "hq", "social.json"), {}) or {}
     net = dict(NETd)
-    net["social"] = int(((soc.get("fb") or {}).get("cur") or {}).get("page_media_view") or 0) + int(((soc.get("ig") or {}).get("cur") or {}).get("views") or 0)
+    # exact FB + IG views; the 30-day window (cur30) when social_stats has it, else its 28-day window, labelled with its real length
+    k30 = "cur30" if (((soc.get("fb") or {}).get("cur30") or {}).get("page_media_view") is not None and ((soc.get("ig") or {}).get("cur30") or {}).get("views") is not None) else "cur"
+    net["social"] = int(((soc.get("fb") or {}).get(k30) or {}).get("page_media_view") or 0) + int(((soc.get("ig") or {}).get(k30) or {}).get("views") or 0)
+    net["social_days"] = 30 if k30 == "cur30" else 28
     others_all = []
     for u, a in acts.items():
         if a["tier"] == "v":
@@ -984,6 +987,12 @@ def main():
             hl += len([d for d in a.get("hp_days", []) if d >= W0]) + len([it for it in a["items"] if it["ch"] in ("social", "email") and it["date"] >= W0])
     subs = next((f.get("_recipients") for d, st, f in sorted(issues, reverse=True) if f.get("_recipients")), 0)
     NET.update({"views": int(r.get("views", 0)), "pct": r.get("change_pct"), "vip_hl": hl, "subs": subs})
+    # owner 11/16/2026: exact rolling 30-day network numbers for the member value email (scripts/member_value.py reads this)
+    cut30 = (TODAY - dt.timedelta(days=30)).isoformat()
+    older = [f.get("_recipients") for d, st, f in sorted(issues, reverse=True) if f.get("_recipients") and d <= cut30]
+    json.dump({"views": int(r.get("views", 0)), "prev_views": int(r.get("prev_views", 0) or 0), "start": r.get("start"), "end": r.get("end"),
+               "subs": subs, "subs_prev": older[0] if older else 0, "built": dt.datetime.now().isoformat(timespec="minutes")},
+              open(os.path.join(HERE, "data", "value_net.json"), "w", encoding="utf-8"), indent=1)
     print("network", NET)
     for uid, m in V.items():
         if want and uid not in want:

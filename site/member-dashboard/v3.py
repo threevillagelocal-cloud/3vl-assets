@@ -286,7 +286,7 @@ def page(a, ctx):
     if em30:
         bits.append("a feature in <b>Three Village Weekly</b>")
     if bits:
-        lead = "In the last 30 days we put %s in front of neighbors%s: " % (e(short), (" up to <b>%s times</b>" % "{:,}".format(reach)) if reach else "")
+        lead = "In the last 30 days we put %s in front of neighbors: " % e(short)
         summary = lead + (", ".join(bits[:-1]) + " and " + bits[-1] if len(bits) > 1 else bits[0]) + "."
     elif tier == "b":
         summary = "You are listed on Three Village Local, where neighbors find local businesses. Here is how to get seen more."
@@ -304,18 +304,18 @@ def page(a, ctx):
     spot_src = a.get("banner") or hero_photo
     k = []
     if bview:
-        k.append(("eye", "Banner reach", bview, "up to ", "+", "this month", spark(series(a, 30)), "#seen", "c1", th1(banner_src, "Your banner")))
+        k.append(("eye", "Banner reach", bview, "", "", "page views, 30 days", spark(series(a, 30)), "#seen", "c1", th1(banner_src, "Your banner")))
     if hp30 and has(tier, "spotlight"):
         k.append(("home", "Homepage spotlight", len(hp30), "", "", "days this month", spark(series(a, 30, home=True)), "#seen", "c2", th1(spot_src, "Your spotlight photo")))
     if (len(soc30) + len(em30)) >= 2 and has(tier, "timeline"):
         k.append(("insta", "Social and email", len(soc30) + len(em30), "", "", "this month", spark(series(a, 30, ch=("social", "email"))), "#promotions", "c3", logos("instagram", "facebook", "gmail")))
     if lifetime >= 3 and has(tier, "timeline"):
         k.append(("megaphone", "Promotions for you", lifetime, "", "", "since you joined", spark(series(a, 90)), "#promotions", "c4", stack))
-    if int(net.get("views") or 0) >= 1000:
-        k.append(("globe", "Three Village Local", int(net["views"]) // 1000 * 1000, "", "+", "page views", spark([]), "#grow", "c5",
+    if int(net.get("views") or 0) >= 1000 and not bview:   # VIPs already see the same sitewide page views as Banner reach
+        k.append(("globe", "Three Village Local", int(net["views"]), "", "", "page views, 30 days", spark([]), "#grow", "c5",
                   '<span class="kt-img logo">%s</span>' % img("https://threevillagelocal-cloud.github.io/3vl-share/live/hdr/logo-540.webp", "Three Village Local", 56, 28)))
     if len(k) < 5 and int(net.get("social") or 0) >= 1000:
-        k.append(("share", "Social reach", int(net["social"]) // 1000 * 1000, "", "+", "social views", spark([]), "#grow", "c3", logos("instagram", "facebook")))
+        k.append(("share", "Social reach", int(net["social"]), "", "", "views, %d days" % int(net.get("social_days") or 30), spark([]), "#grow", "c3", logos("instagram", "facebook")))
     if len(k) < 5 and int(net.get("subs") or 0) >= 100:
         k.append(("mail", "Weekly email", int(net["subs"]), "", "", "subscribers", spark([]), "#grow", "c4", logos("gmail")))
     k = k[:5]
@@ -337,7 +337,7 @@ def page(a, ctx):
     # ---- seen: banner + spotlight (or locks)
     if bview:
         ban_card = ('<div class="card seen" data-go="seen"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Your banner ad</h3><div class="sub">Rotating on every page</div></div>'
-                    '<span class="right"><span class="pill live"><i></i>Live</span></span></div><div class="card-body seen-b2">%s<div class="seen-n row"><b class="num" data-count="%d" data-suf="+">%s+</b><i>times it may have been seen this month</i></div></div></div>'
+                    '<span class="right"><span class="pill live"><i></i>Live</span></span></div><div class="card-body seen-b2">%s<div class="seen-n row"><b class="num" data-count="%d" data-suf="">%s</b><i>page views it rotated across, last 30 days</i></div></div></div>'
                     % (ic("banner"), ban_hero(banner_src, short), bview, "{:,}".format(bview)))
     elif not has(tier, "banner"):
         ban_card = '<div class="card seen">%s</div>' % lock("banner", ban_hero("", ""))
@@ -442,9 +442,9 @@ def page(a, ctx):
         ic("spark"), "".join('<li><em>%s</em><span>%s</span></li>' % n for n in news))
     netl = []
     if int(net.get("views") or 0) >= 1000:
-        netl.append(("globe", int(net["views"]) // 1000 * 1000, "+", "Website page views this month"))
+        netl.append(("globe", int(net["views"]), "", "Website page views, last 30 days"))
     if int(net.get("social") or 0) >= 1000:
-        netl.append(("share", int(net["social"]) // 1000 * 1000, "+", "Facebook and Instagram views, 28 days"))
+        netl.append(("share", int(net["social"]), "", "Facebook and Instagram views, last %d days" % int(net.get("social_days") or 30)))
     if int(net.get("subs") or 0) >= 100:
         netl.append(("mail", int(net["subs"]), "", "Neighbors who get Three Village Weekly"))
     net_card = ('<div class="card"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Three Village Local right now</h3><div class="sub">Updated nightly</div></div></div><div class="netg">%s</div></div>'
@@ -570,7 +570,7 @@ def page(a, ctx):
     if bview:
         seen_main += ('<div class="card seen-big"><div class="card-head"><span class="card-icon blue">%s</span><div><h3>Your banner ad, on every page</h3><div class="sub">It rotates in the side rail across threevillagelocal.com</div></div>'
                       '<span class="right"><span class="pill live"><i></i>Live</span></span></div><div class="card-body sb">%s<div class="sb-side">'
-                      '<div class="seen-n big"><b class="num" data-count="%d" data-suf="+">%s+</b><i>times your banner may have been seen this month</i></div></div></div></div>') % (
+                      '<div class="seen-n big"><b class="num" data-count="%d" data-suf="">%s</b><i>page views your banner rotated across, last 30 days</i></div></div></div></div>') % (
             ic("banner"), ban_hero(banner_src, short, big=True), bview, "{:,}".format(bview))
     elif not has(tier, "banner"):
         seen_main += '<div class="card seen-big">%s</div>' % lock("banner", ban_hero("", "", big=True))
