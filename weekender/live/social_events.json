@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T13:01+00:00",
+ "updated": "2026-11-17T13:01+00:00",
  "confirmed": [
   {
    "post": "18120500564087106",
@@ -88,24 +88,6 @@
    "url": "https://www.instagram.com/p/DflJL99ikjt/",
    "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18217738600364210.jpg",
    "posted": "2026-11-11",
-   "kind": "community",
-   "member": true
-  },
-  {
-   "post": "18439948099181531",
-   "title": "Kind Jar Community Service Program for Veterans",
-   "date": "2026-11-16",
-   "start": "16:30",
-   "end": "17:30",
-   "venue": "Emma S. Clark Memorial Library",
-   "addr": "120 Main St, Setauket, NY 11733",
-   "desc": "Children in grades 3-5 make jars filled with kind phrases and nostalgic questions for veterans to reflect on. Taught by Theresa Maritato.",
-   "org": "Emma S. Clark Memorial Library",
-   "handle": "emmaclarklibrary",
-   "org_url": "https://www.threevillagelocal.com/emma-s-clark-memorial-library",
-   "url": "https://www.instagram.com/p/DfkxJYMjQUm/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18439948099181531.jpg",
-   "posted": "2026-11-10",
    "kind": "community",
    "member": true
   },
@@ -256,6 +238,25 @@
  ],
  "review": [
   {
+   "post": "17912304438566219",
+   "title": "Discovery Omakase - 14 Courses",
+   "date": "",
+   "start": "",
+   "end": "",
+   "venue": "Sora Omakase",
+   "addr": "1113 NY-25A Unit 3E, Stony Brook, NY 11790",
+   "desc": "Chef's omakase experience featuring 14 courses at $98 per person. Available seating times Wed-Thu 6:00 PM & 7:45 PM, Fri-Sat 6:00 PM & 8:00 PM, Sun 5:00 PM & 7:15 PM.",
+   "org": "Sora Omakase",
+   "handle": "soraomakase",
+   "org_url": "https://www.threevillagelocal.com/sora-omakase",
+   "url": "https://www.instagram.com/p/DfyOtPaMtrO/",
+   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17912304438566219.jpg",
+   "posted": "2026-11-16",
+   "kind": "food_drink",
+   "member": true,
+   "why": "food/drink item (Eat & Drink, not the calendar); no clear date; no start time in the post"
+  },
+  {
    "post": "17904209898607376",
    "title": "Pink Friday",
    "date": "2026-11-20",
@@ -351,25 +352,6 @@
    "why": "food/drink item (Eat & Drink, not the calendar); no clear date"
   },
   {
-   "post": "18659513545008456",
-   "title": "Saturday Night Dinner at RUVO",
-   "date": "2026-11-16",
-   "start": "",
-   "end": "",
-   "venue": "RUVO Kitchen & Wine Bar",
-   "addr": "105 Wynn Ln, Port Jefferson, NY 11777",
-   "desc": "Dinner with good food and handcrafted cocktails. Reservations encouraged.",
-   "org": "RUVO Kitchen & Wine Bar",
-   "handle": "ruvorestaurant",
-   "org_url": "https://www.threevillagelocal.com/ruvo-restaurant",
-   "url": "https://www.instagram.com/p/Dfuenw5AYpJ/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18659513545008456.jpg",
-   "posted": "2026-11-14",
-   "kind": "food_drink",
-   "member": true,
-   "why": "food/drink item (Eat & Drink, not the calendar); no start time in the post"
-  },
-  {
    "post": "18120190153794098",
    "title": "Three Village Electric Holiday Parade",
    "date": "2026-12-13",
@@ -387,6 +369,25 @@
    "kind": "community",
    "member": false,
    "why": "no start time in the post; no place in the post"
+  },
+  {
+   "post": "18114523886127667",
+   "title": "Discovery Omakase - 14 Courses",
+   "date": "",
+   "start": "",
+   "end": "",
+   "venue": "Sora Omakase",
+   "addr": "1113 NY-25A Unit 3E, Stony Brook, NY 11790",
+   "desc": "Precision omakase craftsmanship you can watch and taste. $98 Discovery Omakase with 14 courses available at multiple seating times throughout the week.",
+   "org": "Sora Omakase",
+   "handle": "soraomakase",
+   "org_url": "https://www.threevillagelocal.com/sora-omakase",
+   "url": "https://www.instagram.com/p/Dfs6EYQMPo4/",
+   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18114523886127667.jpg",
+   "posted": "2026-11-14",
+   "kind": "food_drink",
+   "member": true,
+   "why": "food/drink item (Eat & Drink, not the calendar); no clear date; no start time in the post"
   },
   {
    "post": "18092044019697868",

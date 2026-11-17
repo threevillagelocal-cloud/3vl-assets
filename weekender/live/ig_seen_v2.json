@@ -1,52 +1,4 @@
 {
-"18437649649181535": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-17T20:50:40+0000"
-},
-"18132377878782708": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-17T20:48:59+0000"
-},
-"18647003032001813": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-17T20:32:54+0000"
-},
-"17911664130480330": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-17T20:14:36+0000"
-},
-"18122401276938699": {
-"special": false,
-"title": "Halloween at Danfords Hotel & Marina",
-"when": "Not specified",
-"desc": "Festive Halloween nights and fall activities at the harborfront venue, but no specific event date or offer listed.",
-"expires": "2026-10-18",
-"_ts": "2026-10-18T04:00:15+0000"
-},
-"17971539903141484": {
-"special": false,
-"title": "Old Fields Port Jefferson",
-"when": "",
-"desc": "Generic dinner invitation with no specific offer, date, or time-bound special announced.",
-"expires": "",
-"_ts": "2026-10-18T04:37:30+0000"
-},
 "18144743578604429": {
 "special": false,
 "title": "",
@@ -2850,5 +2802,45 @@
 "desc": "Save 15% on office parties, family dinners or friends' nights out when you book before Thanksgiving.",
 "expires": "2026-11-26",
 "_ts": "2026-11-16T17:01:44+0000"
+},
+"17964868176232295": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-16T20:24:19+0000"
+},
+"18198727504400659": {
+"special": false,
+"title": "Holiday Party Bookings at Tommy's Place",
+"when": "Call to reserve",
+"desc": "Private rooms for groups of 10+, catering packages, personalized menus available.",
+"expires": "2026-12-31",
+"_ts": "2026-11-17T02:57:04+0000"
+},
+"18133810375701891": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-17T11:00:13+0000"
+},
+"18286943923294439": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-17T02:54:43+0000"
+},
+"17921888349464765": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-17T04:34:41+0000"
 }
 }

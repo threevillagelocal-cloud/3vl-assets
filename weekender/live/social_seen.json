@@ -1,6 +1,6 @@
 {
-"last_run": "2026-11-16T13:01:53.086236+00:00",
-"cursor": 143,
+"last_run": "2026-11-17T13:01:47.261280+00:00",
+"cursor": 213,
 "accounts": 316,
 "posts": {
 "18481707613112188": {
@@ -7073,6 +7073,126 @@
 "link": "https://www.instagram.com/p/DfpoiRByRsZ/",
 "caption": "Our Anger Management Adult Only Group is starting : Tuesday, November 24th and will be running weekly from 6:30-7:45!\n\nContact us for more information or to sign up now!",
 "img": "ig/p18251090620312312.jpg"
+},
+"17995941692848817": {
+"ts": "2026-11-13T21:04:08+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Coach Mark's Last Classes at F45",
+"date": "2026-11-15",
+"start": "08:15",
+"end": "",
+"place": "F45 Training East Setauket",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Two final classes with Coach Mark on Sunday, November 15th at 8:15am and 9:15am. Come take a class, give him a hug and help send him off the F45 East Setauket way."
+},
+"acct": {
+"name": "F45 Training East Setauket",
+"ig": "f45_training_eastsetauket",
+"town": "East Setauket",
+"cat": "Sports & Fitness",
+"food": false,
+"addr": "1385 NY 25A, E, East Setauket, NY 11733",
+"page": "https://www.threevillagelocal.com/f45-training-east-setauket",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfsiuupPwoU/",
+"caption": "This Sunday we say goodbye to Coach Mark ❤️🥹\n\nWe’re so grateful for all the energy, motivation and memories he’s brought to our East Setauket Family. We will miss having you in the studio but we know you are going to great things! F45 East Setauket will always be your home! \n\nYou have TWO more opportunities to sweat with Coach Mark! \nSunday November 15th \n815am & 915am \n\nCome take one last class, give him a big hug and help us send him off the F45 East Setauket way! \n\nWe will miss you Coach Mark! #f45training #lastday #family #goodbyecoach",
+"img": "ig/p17995941692848817.jpg"
+},
+"18115425272177996": {
+"ts": "2026-11-13T12:40:50+0000",
+"c": {
+"event": true,
+"kind": "community",
+"title": "Hilary Gardner and the Lonesome Pines",
+"date": "2026-11-14",
+"start": "19:00",
+"end": "",
+"place": "The Jazz Loft",
+"at_business": true,
+"date_stated": true,
+"time_stated": true,
+"desc": "Vocalist Hilary Gardner and the Lonesome Pines bring the sounds of the American West, blending jazz, Western classics, and beautiful harmonies."
+},
+"acct": {
+"name": "The Jazz Loft",
+"ig": "thejazzloft.tjl",
+"town": "Stony Brook",
+"cat": "Arts & Entertainment",
+"food": false,
+"addr": "275 Christian Ave, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/the-jazz-loft",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/reel/DfrpzLjsrkW/",
+"caption": "A little jazz with a Western twist! ✨🎶\n\nVocalist Hilary Gardner and the Lonesome Pines bring the sounds of the American West to The Jazz Loft, blending jazz, Western classics, and beautiful harmonies.\n\nTheir award-winning debut album, On the Trail with The Lonesome Pines, has earned international praise, with performances taking them from New York City to London and beyond.\n\n⭐️ Join us Saturday, November 14 at 7 PM!\n\n🎟️ For tickets and more information, visit www.thejazzloft.org (link in bio).\n\n#thejazzloft #jazz #livejazz #stonybrookvillage hilarygardner",
+"img": "ig/p18115425272177996.jpg"
+},
+"17912304438566219": {
+"ts": "2026-11-16T02:00:20+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Discovery Omakase - 14 Courses",
+"date": "",
+"start": "",
+"end": "",
+"place": "Sora Omakase",
+"at_business": true,
+"date_stated": false,
+"time_stated": true,
+"desc": "Chef's omakase experience featuring 14 courses at $98 per person. Available seating times Wed-Thu 6:00 PM & 7:45 PM, Fri-Sat 6:00 PM & 8:00 PM, Sun 5:00 PM & 7:15 PM."
+},
+"acct": {
+"name": "Sora Omakase",
+"ig": "soraomakase",
+"town": "Stony Brook",
+"cat": "Restaurant",
+"food": true,
+"addr": "1113 NY-25A Unit 3E, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/sora-omakase",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/DfyOtPaMtrO/",
+"caption": "Every piece begins in the chef’s hands.\n\n$98 Discovery Omakase | 14 Courses\nSeating Times\nWed–Thu: 6:00 PM & 7:45 PM\nFri–Sat: 6:00 PM & 8:00 PM\nSun: 5:00 PM & 7:15 PM\n\nReserve via OpenTable or soraomakase.com\n\n#SoraOmakase #ChefYama #JapaneseCraftsmanship #LongIslandOmakase #OmakaseExperience",
+"img": "ig/p17912304438566219.jpg"
+},
+"18114523886127667": {
+"ts": "2026-11-14T00:22:26+0000",
+"c": {
+"event": true,
+"kind": "food_drink",
+"title": "Discovery Omakase - 14 Courses",
+"date": "",
+"start": "",
+"end": "",
+"place": "Sora Omakase",
+"at_business": true,
+"date_stated": false,
+"time_stated": true,
+"desc": "Precision omakase craftsmanship you can watch and taste. $98 Discovery Omakase with 14 courses available at multiple seating times throughout the week."
+},
+"acct": {
+"name": "Sora Omakase",
+"ig": "soraomakase",
+"town": "Stony Brook",
+"cat": "Restaurant",
+"food": true,
+"addr": "1113 NY-25A Unit 3E, Stony Brook, NY 11790",
+"page": "https://www.threevillagelocal.com/sora-omakase",
+"member": true
+},
+"tagged": false,
+"link": "https://www.instagram.com/p/Dfs6EYQMPo4/",
+"caption": "The final touch, done by hand.\n\nThis is the beauty of omakase: precision you can watch, and craftsmanship you can taste.\n\n$98 Discovery Omakase — 14 Courses\n\nSeating Times\nWed–Thu: 6:00 PM & 7:45 PM\nFri–Sat: 6:00 PM & 8:00 PM\nSun: 5:00 PM & 7:15 PM\n\nReserve via OpenTable or soraomakase.com\n\n#SoraOmakase #ChefYama #OmakaseExperience #JapaneseCraftsmanship #LongIslandOmakase",
+"img": "ig/p18114523886127667.jpg"
 }
 }
 }

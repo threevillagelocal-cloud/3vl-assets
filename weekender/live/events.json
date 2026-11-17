@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-17T11:32:09.470216+00:00",
+"updated": "2026-11-17T13:04:52.478739+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 40,
@@ -18,7 +18,7 @@
 "Sweetbriar Nature Center": 28,
 "Historical Society of Greater Port Jefferson": 0,
 "Madiran The Wine Bar live music": 33,
-"Local business Instagram posts": 14
+"Local business Instagram posts": 13
 },
 "icons": {
 "kids": "&#129490;",
@@ -2145,25 +2145,6 @@
 "page": "https://www.threevillagelocal.com/eat-drink/tommys-place-thanksgiving-eve-party",
 "profile": "https://www.threevillagelocal.com/tommys-place",
 "label": "Event"
-},
-{
-"id": "18079551524738743",
-"biz": "Tommy's Place",
-"ig": "tommysplaceportjeff_",
-"town": "Port Jefferson",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Lunch Specials at Tommy's Place",
-"when": "Mon-Fri · 11:30 AM-3:00 PM",
-"desc": "New $12.95 lunch specials: beef sliders, fish tacos, Buffalo chicken, Caprese sandwich, or Tommy's Snack Attack.",
-"expires": "2026-11-24",
-"posted": "2026-11-10T02:31:31+0000",
-"url": "https://www.instagram.com/p/Dfi0lNPNy9A/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18079551524738743.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/tommys-place-lunch-specials",
-"profile": "https://www.threevillagelocal.com/tommys-place",
-"label": "Special"
 },
 {
 "id": "17924523486446853",
