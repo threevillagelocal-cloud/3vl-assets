@@ -1,9 +1,9 @@
 {
-"updated": "2026-11-17T13:06:04.550010+00:00",
+"updated": "2026-11-17T14:00:48.225056+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 40,
-"I Love Port Jeff": 4,
+"I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 193,
 "Emma S. Clark Library": 217,
@@ -1241,6 +1241,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/reindeer-scavenger-hunt"
+},
+{
+"id": "iloveportjeff-6afc59763adb5b08c432ed37",
+"title": "Port Jeff Winter Farmers Market",
+"start": "2026-11-22T09:00:00",
+"end": "2026-11-22T14:00:00",
+"allday": false,
+"venue": "Village Center",
+"addr": "101A East Broadway, Port Jefferson, NY, 11777",
+"url": "https://www.iloveportjeff.com/events/l9d2pgb465ydil7hlmuneixt79i4wa-b2w2a-sydnk-cyc9z-hm6wk-3rlgj-55syr-lph9e",
+"desc": "Port Jeff Farmers Market Located at the Port Jeff Village Center",
+"img": "https://images.squarespace-cdn.com/content/v1/6849b4cd4d4fd13a7a9784e5/1768398582481-0JHFFAAU18YXXXFAAZXW/port-jefferson%3Dfarmers-market+%281%29.png",
+"src": "iloveportjeff",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": ""
 },
 {
 "id": "portjeff-1103",
