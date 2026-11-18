@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-18T16:03:28.444748+00:00",
+"updated": "2026-11-18T17:10:48.079165+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 39,
 "I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 192,
-"Emma S. Clark Library": 215,
+"Emma S. Clark Library": 214,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 38,
 "Ward Melville Heritage Org": 2,
@@ -358,25 +358,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/one-on-one-medicare-telephone-counseling-621"
-},
-{
-"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63783",
-"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
-"start": "2026-11-18T11:00:00",
-"end": "2026-11-18T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63783",
-"desc": "Experience sharing, group participation, and play.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": ""
 },
 {
 "id": "sbv-2429",
