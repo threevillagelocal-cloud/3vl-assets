@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-18T17:10:48.079165+00:00",
+"updated": "2026-11-18T18:00:46.476922+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 39,
 "I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 192,
-"Emma S. Clark Library": 214,
+"Emma S. Clark Library": 213,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 38,
 "Ward Melville Heritage Org": 2,
@@ -341,23 +341,6 @@
 "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485",
 "pu": "",
 "rank": 5
-},
-{
-"id": "emmaclark-one-one-medicare-telephone-counseling-61336",
-"title": "One-on-One Medicare Telephone Counseling",
-"start": "2026-11-18T10:00:00",
-"end": "2026-11-18T12:30:00",
-"allday": false,
-"venue": "Online (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/one-one-medicare-telephone-counseling-61336",
-"desc": "HIICAP: Health Insurance Information Counseling & Assistance Program To schedule an appointment with a HIICAP volunteer, call Cassidy at 631-941-4080 ext. 116, or email cassidy@emmaclark.org",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-03/top-view-paper-heart-with-heartbeat-stethoscope-heart-day.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/one-on-one-medicare-telephone-counseling-621"
 },
 {
 "id": "sbv-2429",
