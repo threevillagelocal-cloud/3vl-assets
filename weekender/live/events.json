@@ -1,15 +1,15 @@
 {
-"updated": "2026-11-18T14:00:57.518248+00:00",
+"updated": "2026-11-18T16:01:14.764019+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 0,
+"Port Jefferson Chamber": 39,
 "I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 192,
-"Emma S. Clark Library": 216,
-"Stony Brook Village Center": 0,
+"Emma S. Clark Library": 215,
+"Stony Brook Village Center": 7,
 "Long Island Museum": 38,
-"Ward Melville Heritage Org": 0,
+"Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 3,
 "Staller Center for the Arts": 138,
 "Theatre Three": 67,
@@ -343,25 +343,6 @@
 "rank": 5
 },
 {
-"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63779",
-"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
-"start": "2026-11-18T09:30:00",
-"end": "2026-11-18T10:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63779",
-"desc": "Experience sharing, group participation, and play.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/parent-toddler-workshop-ages-18m-3-5-yrs-w-caregiver-549"
-},
-{
 "id": "emmaclark-one-one-medicare-telephone-counseling-61336",
 "title": "One-on-One Medicare Telephone Counseling",
 "start": "2026-11-18T10:00:00",
@@ -377,6 +358,44 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/one-on-one-medicare-telephone-counseling-621"
+},
+{
+"id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63783",
+"title": "Parent Toddler Workshop (Ages 18m-3.5 yrs. w/ caregiver)",
+"start": "2026-11-18T11:00:00",
+"end": "2026-11-18T12:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63783",
+"desc": "Experience sharing, group participation, and play.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": ""
+},
+{
+"id": "sbv-2429",
+"title": "Lookbook Luncheon Fashion Show at Luca Restaurant",
+"start": "2026-11-18T12:00:00",
+"end": "2026-11-18T14:00:00",
+"allday": false,
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/lookbook-luncheon-fashion-show-at-luca-restaurant/",
+"desc": "Experience an afternoon of style, flavor, and fall inspiration at Stony Brook Village’s fifth annual Lookbook Luncheon Fashion Shows , returning this November. Each event offers guests a curated dining experience paired with an exclusive showcase of the latest",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2026/10/Fashion-Show-scaled.png",
+"src": "sbv",
+"tags": [
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/lookbook-luncheon-fashion-show-at-luca-restaurant"
 },
 {
 "id": "emmaclark-autumns-canvas-rooster-leaf-art-61309",
@@ -685,17 +704,17 @@
 "page": "https://www.threevillagelocal.com/events/the-new-york-bee-gees"
 },
 {
-"id": "iloveportjeff-6af538ec4d49134cd51924c9",
+"id": "pjchamber-15330",
 "title": "Pink Friday Boutique Crawl",
 "start": "2026-11-20T00:00:00",
-"end": "2026-11-20T12:00:00",
-"allday": false,
+"end": "2026-11-20T23:59:59",
+"allday": true,
 "venue": "Port Jefferson Village",
-"addr": "11777",
-"url": "https://www.iloveportjeff.com/events/pink-friday-boutique-crawl",
-"desc": "Join us on Friday, November 20th, for our Pink Friday Boutique Crawl, a day of exclusive discounts, special promotions, giveaways, and a few surprises at participating shops throughout the Village!",
-"img": "https://images.squarespace-cdn.com/content/v1/6849b4cd4d4fd13a7a9784e5/1794456061239-FDBLOC5DCD5SDQBVXKML/Make%2Bthe%2BPledge%2BPF+%281%29.png",
-"src": "iloveportjeff",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/pink-friday-boutique-crawl/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
 "tags": [
 "arts"
 ],
@@ -817,6 +836,25 @@
 "page": "https://www.threevillagelocal.com/events/america-on-screen-made-in-the-usa"
 },
 {
+"id": "pjchamber-15286",
+"title": "Kids Night Out",
+"start": "2026-11-20T18:00:00",
+"end": "2026-11-20T20:00:00",
+"allday": false,
+"venue": "Port Jefferson Village Center",
+"addr": "101A East Broadway, Port Jefferson, 11777",
+"url": "https://portjeffchamber.com/events-calendar/kids-night-out-nov-2026/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/kids-night-out"
+},
+{
 "id": "reboli-6aad4cbf062c0f03de80759e",
 "title": "November's Third Friday!",
 "start": "2026-11-20T18:30:00",
@@ -933,6 +971,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/wildlife-wonders-furry-friends-ages-2y-5y"
+},
+{
+"id": "pjchamber-15079",
+"title": "March For Liberty",
+"start": "2026-11-21T11:00:00",
+"end": "2026-11-21T15:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/march-for-liberty/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/march-for-liberty"
 },
 {
 "id": "emmaclark-instrument-petting-zoo-ages-3-8-yrs-62060",
@@ -1070,6 +1127,25 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/live-music-tim-siciliano-1010"
+},
+{
+"id": "pjchamber-15103",
+"title": "Reindeer Scavenger Hunt",
+"start": "2026-11-22T00:00:00",
+"end": "2027-01-04T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/reindeer-scavenger-hunt/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/reindeer-scavenger-hunt"
 },
 {
 "id": "iloveportjeff-6afc59763adb5b08c432ed37",
@@ -1328,6 +1404,26 @@
 "page": "https://www.threevillagelocal.com/events/live-music-rod-borrie-and-vincent-loccisano"
 },
 {
+"id": "pjchamber-15101",
+"title": "Port Jefferson BID Tree Lighting",
+"start": "2026-11-25T05:30:00",
+"end": "2026-11-25T20:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/port-jefferson-bid-tree-lighting/",
+"desc": "– Location: Corner intersection of the Broadways & Main Street – 5:30-7:30pm: Live music from Cole Platt & Company – Live performance by Shine Dance Company – Free Hot Chocolate & Candy Canes (while supplies last) – Visit from Santa & the lighting of the Tree!",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"free",
+"music"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/bid-tree-lighting"
+},
+{
 "id": "emmaclark-social-work-intern-appointments-62275",
 "title": "Social Work Intern Appointments",
 "start": "2026-11-25T10:00:00",
@@ -1437,6 +1533,26 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/outdoor-ice-skating-on-the-harbor-opening-day"
+},
+{
+"id": "sbv-2454",
+"title": "Black Friday Festival",
+"start": "2026-11-27T00:00:00",
+"end": "2026-11-27T23:59:59",
+"allday": true,
+"venue": "Stony Brook Village Center",
+"addr": "111 Main St, Stony Brook, NY 11790",
+"url": "https://stonybrookvillage.com/event/black-friday-festival/",
+"desc": "Stony Brook Village Center invites the community to celebrate the start of the holiday shopping season with a free, festive Black Friday event on Friday, November 27. Throughout the day, visitors can enjoy exclusive deals from shops across the open-air village",
+"img": "https://stonybrookvillage.com/wp-content/uploads/2025/10/DSC_0491-scaled.jpg",
+"src": "sbv",
+"tags": [
+"free",
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/black-friday-festival"
 },
 {
 "id": "sweetbriar-6a8476dd717d8426f978999e",
