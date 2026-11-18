@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-18T16:01:14.764019+00:00",
+"updated": "2026-11-18T16:02:03.506834+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 39,
@@ -1844,22 +1844,22 @@
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson"
 },
 {
-"id": "18023690675949485",
+"id": "18114093602145450",
 "biz": "The Study by Toast",
 "ig": "thestudy.bytoast",
 "town": "East Setauket",
 "category": "Coffee House",
 "member": false,
-"title": "Holiday Pie Preorders",
-"when": "Order by Nov. 25",
-"desc": "Preorder festive pies: Coconut Pecan Custard, Pumpkin Cheesecake, or Apple Crumb for $25 each.",
-"expires": "2026-11-25",
-"posted": "2026-11-13T16:01:16+0000",
-"url": "https://www.instagram.com/reel/DfsAncBTAyT/",
+"title": "Trivia Night at The Study",
+"when": "Wed, Nov. 18 · 4:30-6:30 PM",
+"desc": "Trivia night at The Study by Toast runs 4:30-6:30 PM; drop in anytime, grab your crew, and enjoy food and drinks.",
+"expires": "2026-11-18",
+"posted": "2026-11-18T15:50:07+0000",
+"url": "https://www.instagram.com/reel/Df43TXGTet5/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18023690675949485.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-holiday-pie-preorders",
-"label": "Special",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18114093602145450.jpg",
+"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"label": "Event",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast"
 },
 {
@@ -1957,6 +1957,25 @@
 "page": "https://www.threevillagelocal.com/eat-drink/kilwins-port-jefferson-gift-card-bonus-card-per",
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson",
 "label": "Special"
+},
+{
+"id": "18114093602145450",
+"biz": "The Study by Toast",
+"ig": "thestudy.bytoast",
+"town": "East Setauket",
+"category": "Coffee House",
+"member": false,
+"title": "Trivia Night at The Study",
+"when": "Wed, Nov. 18 · 4:30-6:30 PM",
+"desc": "Trivia night at The Study by Toast runs 4:30-6:30 PM; drop in anytime, grab your crew, and enjoy food and drinks.",
+"expires": "2026-11-18",
+"posted": "2026-11-18T15:50:07+0000",
+"url": "https://www.instagram.com/reel/Df43TXGTet5/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18114093602145450.jpg",
+"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"profile": "https://www.threevillagelocal.com/the-study-by-toast",
+"label": "Event"
 },
 {
 "id": "18023690675949485",
