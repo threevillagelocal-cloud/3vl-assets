@@ -1,19 +1,19 @@
 {
-"updated": "2026-11-18T18:00:46.476922+00:00",
+"updated": "2026-11-18T20:00:54.504778+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 39,
 "I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 192,
-"Emma S. Clark Library": 213,
+"Emma S. Clark Library": 212,
 "Stony Brook Village Center": 7,
 "Long Island Museum": 38,
 "Ward Melville Heritage Org": 2,
-"LI Music Hall of Fame": 3,
+"LI Music Hall of Fame": 4,
 "Staller Center for the Arts": 138,
 "Theatre Three": 67,
-"Gallery North": 12,
+"Gallery North": 13,
 "Reboli Center": 19,
 "Sweetbriar Nature Center": 28,
 "Historical Society of Greater Port Jefferson": 0,
@@ -359,26 +359,26 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/lookbook-luncheon-fashion-show-at-luca-restaurant"
+"page": ""
 },
 {
-"id": "emmaclark-autumns-canvas-rooster-leaf-art-61309",
+"id": "emmaclark-copy-autumns-canvas-rooster-leaf-art-61310",
 "title": "Autumn's Canvas: Rooster Leaf Art",
-"start": "2026-11-18T12:30:00",
-"end": "2026-11-18T13:30:00",
+"start": "2026-11-18T14:30:00",
+"end": "2026-11-18T15:30:00",
 "allday": false,
 "venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
 "addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/autumns-canvas-rooster-leaf-art-61309",
+"url": "https://emmaclark.librarycalendar.com/event/copy-autumns-canvas-rooster-leaf-art-61310",
 "desc": "Guided by Christin Nash, you will design and assemble a charming, two-dimensional rooster using a variety of autumn leaves. Perfect for all skill levels, this class is a wonderful way to celebrate seasonal creativity.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-10/2Rooster%20Leaf%20Art%2011_18-21_2026.png_1.jpeg",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-10/2Rooster%20Leaf%20Art%2011_18-21_2026.png_0.jpeg",
 "src": "emmaclark",
 "tags": [
 "arts"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/autumns-canvas-rooster-leaf-art"
+"page": "https://www.threevillagelocal.com/events/autumns-canvas-rooster-leaf-art-631"
 },
 {
 "id": "emmaclark-crafts-r-fun-paper-mache-plates-grades-k-5-62055",
@@ -1727,23 +1727,24 @@
 "page": "https://www.threevillagelocal.com/events/monster-of-the-week-a-tabletop-rpg-511"
 },
 {
-"id": "social-18083230598394960",
-"title": "Parents' Afternoon Out",
+"id": "gallerynorth-74656",
+"title": "Parent's Day Out! Gift Making for Kids",
 "start": "2026-11-28T13:00:00",
 "end": "2026-11-28T17:00:00",
 "allday": false,
-"venue": "Gallery North",
-"addr": "90 North Country Road, Setauket, NY 11733",
-"url": "https://www.instagram.com/reel/DexUSMwAC93/",
-"desc": "Drop off kids for supervised fun while parents enjoy time on the town. Ages 5 and up. Sign up required.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18083230598394960.jpg",
-"src": "social",
+"venue": "Gallery North, The Studio",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org/products/parents-day-out-gift-making-for-kids",
+"desc": "This is the perfect Parents' Afternoon Out – drop the kids off, enjoy some fun time on the town, and let us take care of the fun! Give yourself a well-deserved afternoon out while your kids get creative! In this festive art class, children will create special ",
+"img": "",
+"src": "gallerynorth",
 "tags": [
-"kids"
+"kids",
+"arts"
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/parents-afternoon-out"
+"page": "https://www.threevillagelocal.com/events/parents-day-out-gift-making-for-kids-ages-5"
 },
 {
 "id": "theatre3-9248",
