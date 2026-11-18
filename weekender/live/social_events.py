@@ -24,7 +24,17 @@ STATE = os.path.join(HERE, "social_seen.json")
 HIDE = os.path.join(HERE, "social_hide.json")
 OK = os.path.join(HERE, "social_ok.json")         # post ids the owner approved from the review email
 ME, V = "17841472800565482", "v21.0"
-MODEL = "claude-haiku-4-5-20251001"
+MODEL = "claude-haiku-5-5"  # 11/18/2026: newer + ~10x cheaper than Haiku 4.5; thinking off, falls back to 4.5 on a 400/404
+OLD_MODEL = "claude-haiku-4-5-20251001"
+
+def _old_model_req(req):
+    """Haiku 5.5 rejected the request (400/404): same request on Haiku 4.5, or None if already on it."""
+    b = json.loads(req.data)
+    if b.get("model") == OLD_MODEL:
+        return None
+    b["model"] = OLD_MODEL
+    return urllib.request.Request(req.full_url, data=json.dumps(b).encode(), headers=dict(req.header_items()))
+
 BATCH = int(os.environ.get("SOCIAL_BATCH", "70"))      # accounts read per day
 LOOKBACK = 21                                          # days of posts
 AHEAD = 45                                             # events this far out at most
@@ -75,7 +85,7 @@ def igget(fields):
 
 
 def classify(acct, post):
-    body = {"model": MODEL, "max_tokens": 400, "messages": [{"role": "user", "content": PROMPT.format(
+    body = {"model": MODEL, "max_tokens": 400, "thinking": {"type": "disabled"}, "messages": [{"role": "user", "content": PROMPT.format(
         name=acct["name"], handle=acct["ig"], cat=(", " + acct["cat"]) if acct.get("cat") else "", posted=post["timestamp"][:10],
         today=TODAY.isoformat(), caption=(post.get("caption") or "")[:1800])}]}
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=json.dumps(body).encode(),
@@ -88,6 +98,10 @@ def classify(acct, post):
             m = re.search(r"\{.*\}", txt, re.S)
             return json.loads(m.group(0)) if m else {"event": False}
         except urllib.error.HTTPError as e:
+            nr = _old_model_req(req) if e.code in (400, 404) else None
+            if nr:
+                req = nr
+                continue
             if e.code in (429, 500, 529) and attempt < 2:
                 time.sleep(8)
                 continue

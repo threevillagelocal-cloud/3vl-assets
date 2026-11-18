@@ -15,7 +15,17 @@ IGDIR = os.path.join(HERE, "ig")
 STATE = os.path.join(HERE, "ig_seen_v2.json")      # post id -> classification (so each post is only judged once)
 OUT = os.path.join(HERE, "specials.json")
 ME, V = "17841472800565482", "v21.0"
-MODEL = "claude-haiku-4-5-20251001"
+MODEL = "claude-haiku-5-5"  # 11/18/2026: newer + ~10x cheaper than Haiku 4.5; thinking off, falls back to 4.5 on a 400/404
+OLD_MODEL = "claude-haiku-4-5-20251001"
+
+def _old_model_req(req):
+    """Haiku 5.5 rejected the request (400/404): same request on Haiku 4.5, or None if already on it."""
+    b = json.loads(req.data)
+    if b.get("model") == OLD_MODEL:
+        return None
+    b["model"] = OLD_MODEL
+    return urllib.request.Request(req.full_url, data=json.dumps(b).encode(), headers=dict(req.header_items()))
+
 LOOKBACK_DAYS = 7
 IG_TOKEN = os.environ.get("IG_TOKEN", "").strip()
 AKEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
@@ -78,7 +88,7 @@ def classify(acct, post):
     cap = (post.get("caption") or "").strip()
     if len(cap) < 15:
         return {"special": False}
-    body = {"model": MODEL, "max_tokens": 300, "messages": [{"role": "user", "content": PROMPT.format(
+    body = {"model": MODEL, "max_tokens": 300, "thinking": {"type": "disabled"}, "messages": [{"role": "user", "content": PROMPT.format(
         name=acct["name"], category=acct.get("category", ""), town=acct.get("town", ""), posted=post["timestamp"][:10],
         today=TODAY.isoformat(), caption=cap[:1800])}]}
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=json.dumps(body).encode(),
@@ -90,6 +100,10 @@ def classify(acct, post):
             m = re.search(r"\{.*\}", txt, re.S)
             return json.loads(m.group(0)) if m else {"special": False}
         except urllib.error.HTTPError as e:
+            nr = _old_model_req(req) if e.code in (400, 404) else None
+            if nr:
+                req = nr
+                continue
             if e.code in (429, 529, 500) and attempt < 2:
                 time.sleep(8); continue
             print("  AI error", e.code)
