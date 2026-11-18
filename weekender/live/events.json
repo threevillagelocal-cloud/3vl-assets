@@ -1,8 +1,8 @@
 {
-"updated": "2026-11-18T07:09:41.582967+00:00",
+"updated": "2026-11-18T07:11:11.071210+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 39,
+"Port Jefferson Chamber": 0,
 "I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 192,
@@ -704,17 +704,17 @@
 "page": "https://www.threevillagelocal.com/events/the-new-york-bee-gees"
 },
 {
-"id": "pjchamber-15330",
+"id": "iloveportjeff-6af538ec4d49134cd51924c9",
 "title": "Pink Friday Boutique Crawl",
 "start": "2026-11-20T00:00:00",
-"end": "2026-11-20T23:59:59",
-"allday": true,
+"end": "2026-11-20T12:00:00",
+"allday": false,
 "venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/pink-friday-boutique-crawl/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
+"addr": "11777",
+"url": "https://www.iloveportjeff.com/events/pink-friday-boutique-crawl",
+"desc": "Join us on Friday, November 20th, for our Pink Friday Boutique Crawl, a day of exclusive discounts, special promotions, giveaways, and a few surprises at participating shops throughout the Village!",
+"img": "https://images.squarespace-cdn.com/content/v1/6849b4cd4d4fd13a7a9784e5/1794456061239-FDBLOC5DCD5SDQBVXKML/Make%2Bthe%2BPledge%2BPF+%281%29.png",
+"src": "iloveportjeff",
 "tags": [
 "arts"
 ],
@@ -836,25 +836,6 @@
 "page": "https://www.threevillagelocal.com/events/america-on-screen-made-in-the-usa"
 },
 {
-"id": "pjchamber-15286",
-"title": "Kids Night Out",
-"start": "2026-11-20T18:00:00",
-"end": "2026-11-20T20:00:00",
-"allday": false,
-"venue": "Port Jefferson Village Center",
-"addr": "101A East Broadway, Port Jefferson, 11777",
-"url": "https://portjeffchamber.com/events-calendar/kids-night-out-nov-2026/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/kids-night-out"
-},
-{
 "id": "reboli-6aad4cbf062c0f03de80759e",
 "title": "November's Third Friday!",
 "start": "2026-11-20T18:30:00",
@@ -971,25 +952,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/wildlife-wonders-furry-friends-ages-2y-5y"
-},
-{
-"id": "pjchamber-15079",
-"title": "March For Liberty",
-"start": "2026-11-21T11:00:00",
-"end": "2026-11-21T15:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/march-for-liberty/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/march-for-liberty"
 },
 {
 "id": "emmaclark-instrument-petting-zoo-ages-3-8-yrs-62060",
@@ -1127,25 +1089,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/live-music-tim-siciliano-1010"
-},
-{
-"id": "pjchamber-15103",
-"title": "Reindeer Scavenger Hunt",
-"start": "2026-11-22T00:00:00",
-"end": "2027-01-04T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/reindeer-scavenger-hunt/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/reindeer-scavenger-hunt"
 },
 {
 "id": "iloveportjeff-6afc59763adb5b08c432ed37",
@@ -1402,26 +1345,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/live-music-rod-borrie-and-vincent-loccisano"
-},
-{
-"id": "pjchamber-15101",
-"title": "Port Jefferson BID Tree Lighting",
-"start": "2026-11-25T05:30:00",
-"end": "2026-11-25T20:00:00",
-"allday": false,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/port-jefferson-bid-tree-lighting/",
-"desc": "– Location: Corner intersection of the Broadways & Main Street – 5:30-7:30pm: Live music from Cole Platt & Company – Live performance by Shine Dance Company – Free Hot Chocolate & Candy Canes (while supplies last) – Visit from Santa & the lighting of the Tree!",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"free",
-"music"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/bid-tree-lighting"
 },
 {
 "id": "emmaclark-social-work-intern-appointments-62275",
@@ -1914,7 +1837,7 @@
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/eat.namkeen.jpg",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-wing-wednesday",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
@@ -2029,7 +1952,7 @@
 "img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
 "inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-wing-wednesday",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "label": "Special"
 },
