@@ -1,84 +1,4 @@
 {
-"18110587121242192": {
-"special": false,
-"title": "Cosimo Taurino Negroamaro Wine",
-"when": "Ongoing",
-"desc": "Featured wine: Cosimo Taurino Notarpanaro 2014 Salento Negroamaro. No specific event or time-bound offer.",
-"expires": "2026-10-19",
-"_ts": "2026-10-19T02:58:32+0000"
-},
-"18115839827135839": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-18T21:59:31+0000"
-},
-"18096963293679643": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-18T20:29:19+0000"
-},
-"18170918134461851": {
-"special": false,
-"title": "Trivia Nights Coming Soon",
-"when": "Starting November 4th",
-"desc": "Trivia nights launching in November, more than 14 days away from today.",
-"expires": "2026-10-19",
-"_ts": "2026-10-18T21:06:36+0000"
-},
-"18124519358511297": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-19T11:16:19+0000"
-},
-"18119170489979417": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-19T00:37:20+0000"
-},
-"17913927444497812": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-18T23:55:14+0000"
-},
-"17891212680456642": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-18T23:51:26+0000"
-},
-"17947585629074493": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-18T23:35:55+0000"
-},
-"18152115871544411": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-18T22:00:34+0000"
-},
 "18110078588184328": {
 "special": true,
 "title": "Live Music: Ray Anderson & Steve Salerno",
@@ -2822,5 +2742,13 @@
 "desc": "Book holiday parties before Thanksgiving for 15% off. Various space and menu options available.",
 "expires": "2026-11-27",
 "_ts": "2026-11-17T19:02:10+0000"
+},
+"18416874232082330": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-18T02:05:58+0000"
 }
 }
