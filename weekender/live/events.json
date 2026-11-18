@@ -1,14 +1,14 @@
 {
-"updated": "2026-11-17T23:28:10.975402+00:00",
+"updated": "2026-11-18T00:00:58.700927+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 41,
+"Port Jefferson Chamber": 39,
 "I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 193,
-"Emma S. Clark Library": 218,
+"Emma S. Clark Library": 217,
 "Stony Brook Village Center": 7,
-"Long Island Museum": 41,
+"Long Island Museum": 38,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 3,
 "Staller Center for the Arts": 138,
@@ -341,63 +341,6 @@
 "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485",
 "pu": "",
 "rank": 5
-},
-{
-"id": "social-18122047301470616",
-"title": "Shoulder Pain Educational Discussion with Dr. Swanson",
-"start": "2026-11-17T12:15:00",
-"end": "2026-11-17T12:15:00",
-"allday": false,
-"venue": "Patchogue Family YMCA | 255 W. Main Street, Patchogue",
-"addr": "",
-"url": "https://www.instagram.com/p/Dfmzp3al7tD/",
-"desc": "Dr. Swanson and Jaclyn Rauchfuss will discuss shoulder pain causes and treatment options, including the role of physical therapy in recovery. Light lunch provided for registered attendees.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18122047301470616.jpg",
-"src": "social",
-"tags": [
-"food"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "emmaclark-gift-bow-making-cause-63061",
-"title": "Gift Bow Making for a Cause",
-"start": "2026-11-17T17:00:00",
-"end": "2026-11-17T18:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/gift-bow-making-cause-63061",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/gift-bow-making-for-a-cause-462"
-},
-{
-"id": "emmaclark-pies-parades-zoom-61308",
-"title": "From Pies to Parades [ZOOM]",
-"start": "2026-11-17T19:00:00",
-"end": "2026-11-17T20:00:00",
-"allday": false,
-"venue": "Online (Emma S. Clark Library program)",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/pies-parades-zoom-61308",
-"desc": "Discover the origins of America’s favorite Thanksgiving traditions! In celebration of the 100 th Anniversary of the Macy’s Thanksgiving Day Parade, explore the maritime roots of Macy’s iconic star logo, learn how football became a Thanksgiving-day obsession, a",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/paradecrop1.jpg",
-"src": "emmaclark",
-"tags": [
-"history"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/from-pies-to-parades-zoom"
 },
 {
 "id": "emmaclark-parent-toddler-workshop-ages-18m-35-yrs-w-caregiver-63779",
@@ -1744,6 +1687,139 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/live-music-phil-rinaldi"
+},
+{
+"id": "portjeff-1163",
+"title": "Small Business Saturday",
+"start": "2026-11-28T09:00:00",
+"end": "2026-11-28T17:00:00",
+"allday": false,
+"venue": "Port Jefferson",
+"addr": "Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1163",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/small-business-saturday"
+},
+{
+"id": "emmaclark-storytime-snow-sisters-ages-3-8-62073",
+"title": "Storytime with the Snow Sisters (Ages 3-8 yrs.)",
+"start": "2026-11-28T10:30:00",
+"end": "2026-11-28T11:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Periodical Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/storytime-snow-sisters-ages-3-8-62073",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/Snow%20Sisters.png",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/storytime-with-the-snow-sisters-ages-3-8-yrs"
+},
+{
+"id": "theatre3-9300",
+"title": "Barnaby Saves Christmas",
+"start": "2026-11-28T11:00:00",
+"end": "2026-11-28T11:00:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson, NY 11777",
+"url": "https://theatrethree.getmytix.net/tickets#928/Barnaby-Saves-Christmas",
+"desc": "Come join Santa, Barnaby, Franklynne, and all of their friends for a wonderful holiday treat. As our littlest elf and his reindeer friend set off on their journey to save Christmas, they meet some new friends along the way and learn the true meaning of Christm",
+"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_898_Barnaby.jpg",
+"src": "theatre3",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/barnaby-saves-christmas"
+},
+{
+"id": "emmaclark-monster-week-tabletop-rpg-61439",
+"title": "Monster of the Week: A Tabletop RPG",
+"start": "2026-11-28T12:00:00",
+"end": "2026-11-28T14:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Board Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/monster-week-tabletop-rpg-61439",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/monster-of-the-week-a-tabletop-rpg-511"
+},
+{
+"id": "social-18083230598394960",
+"title": "Parents' Afternoon Out",
+"start": "2026-11-28T13:00:00",
+"end": "2026-11-28T17:00:00",
+"allday": false,
+"venue": "Gallery North",
+"addr": "90 North Country Road, Setauket, NY 11733",
+"url": "https://www.instagram.com/reel/DexUSMwAC93/",
+"desc": "Drop off kids for supervised fun while parents enjoy time on the town. Ages 5 and up. Sign up required.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18083230598394960.jpg",
+"src": "social",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/parents-afternoon-out"
+},
+{
+"id": "theatre3-9248",
+"title": "A Christmas Carol",
+"start": "2026-11-28T19:00:00",
+"end": "2026-11-28T19:00:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson, NY 11777",
+"url": "https://theatrethree.getmytix.net/tickets#922/A-Christmas-Carol",
+"desc": "“I will honor Christmas in my heart…” Celebrate the season with Long Island’s own holiday tradition and BroadwayWorld.com winner for Best Play. Follow the miser Ebenezer Scrooge on a journey that teaches him the meaning of Christmas - past, present, and future",
+"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_922_A%20Christmas%20Carol%201600x1000.png",
+"src": "theatre3",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
+},
+{
+"id": "madiran-20261128-douglas-baldwin-jazz-trio",
+"title": "Live Music: Douglas Baldwin Jazz Trio",
+"start": "2026-11-28T19:00:00",
+"end": "2026-11-28T22:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in Setauket: Douglas Baldwin Jazz Trio. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-douglas-baldwin-jazz-trio-1013"
 }
 ],
 "closings": [],
@@ -1768,21 +1844,21 @@
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson"
 },
 {
-"id": "18120385831810538",
+"id": "18134508478823617",
 "biz": "Schnitzels",
 "ig": "eatschnitzels",
 "town": "Stony Brook",
 "category": "Restaurant/Gastropub",
 "member": false,
-"title": "Scrambled Harvest Special",
-"when": "Fri–Sun · 9 AM–1 PM",
-"desc": "Fluffy scrambled eggs with ham, scallions, mushrooms, tomatoes, potatoes, and cheddar. Choose your toast.",
-"expires": "2026-11-17",
-"posted": "2026-11-15T13:30:50+0000",
-"url": "https://www.instagram.com/p/Dfw5JbwHCpD/",
+"title": "Butterfly-Cut Breaded Veal Chop",
+"when": "November (limited time)",
+"desc": "Golden crispy veal chop with thyme cream sauce, cherry tomatoes, paprika fried potatoes and spinach.",
+"expires": "2026-11-30",
+"posted": "2026-11-10T21:00:14+0000",
+"url": "https://www.instagram.com/p/Dfk0moeEYP3/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18120385831810538.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-scrambled-harvest-special",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18134508478823617.jpg",
+"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-butterfly-cut-breaded-veal-chop",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/schnitzels"
 },
@@ -1880,25 +1956,6 @@
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18345345856287318.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/kilwins-port-jefferson-gift-card-bonus-card-per",
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson",
-"label": "Special"
-},
-{
-"id": "18120385831810538",
-"biz": "Schnitzels",
-"ig": "eatschnitzels",
-"town": "Stony Brook",
-"category": "Restaurant/Gastropub",
-"member": false,
-"title": "Scrambled Harvest Special",
-"when": "Fri–Sun · 9 AM–1 PM",
-"desc": "Fluffy scrambled eggs with ham, scallions, mushrooms, tomatoes, potatoes, and cheddar. Choose your toast.",
-"expires": "2026-11-17",
-"posted": "2026-11-15T13:30:50+0000",
-"url": "https://www.instagram.com/p/Dfw5JbwHCpD/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18120385831810538.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/schnitzels-scrambled-harvest-special",
-"profile": "https://www.threevillagelocal.com/schnitzels",
 "label": "Special"
 },
 {
