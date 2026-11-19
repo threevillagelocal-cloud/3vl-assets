@@ -1,35 +1,7 @@
 {
-"17936397948400476": {
-"special": false,
-"title": "The Study by Toast accepts Wolfie Bucks",
-"when": "Ongoing",
-"desc": "Now accepting Stony Brook University campus cards at this East Setauket coffee shop and study spot.",
-"expires": "2026-10-20",
-"_ts": "2026-10-20T13:42:27+0000"
-},
-"18141809722720480": {
-"special": false,
-"_ts": "2026-10-20T14:59:42+0000"
-},
-"18157410445556634": {
-"special": false,
-"title": "A2 Mozzarella Blocks Available",
-"when": "Ongoing",
-"desc": "Regenerative, organic A2 mozzarella blocks from grassfed cows perfect for homemade mozzarella sticks.",
-"expires": "2026-10-20",
-"_ts": "2026-10-20T15:10:15+0000"
-},
 "17909174493603179": {
 "special": false,
 "_ts": "2026-10-20T16:19:45+0000"
-},
-"18061180484795109": {
-"special": false,
-"title": "Oysters Rockefeller",
-"when": "Ongoing",
-"desc": "Fresh Oysters Rockefeller available to enjoy in-house or order online.",
-"expires": "2026-10-20",
-"_ts": "2026-10-20T15:44:30+0000"
 },
 "18078304106726827": {
 "special": true,
@@ -2766,5 +2738,37 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-18T22:53:18+0000"
+},
+"18225221362352106": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-19T15:12:07+0000"
+},
+"18025959902922394": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-19T13:43:20+0000"
+},
+"18455523025131328": {
+"special": true,
+"title": "Black Friday Gift Card BOGO at Toast",
+"when": "Fri, Nov. 27 · 8 AM-6 PM",
+"desc": "Buy up to $500 in gift cards in store and get $1,000 in value. Cyber Monday online deal: $50 card gets a $10 bonus.",
+"expires": "2026-11-30",
+"_ts": "2026-11-19T15:47:33+0000"
+},
+"17911961931333523": {
+"special": true,
+"title": "Thanksgiving Dinner at Black Pearl",
+"when": "Thu, Nov. 26",
+"desc": "Enjoy a three-course Thanksgiving dinner with family and friends at Black Pearl Seafood Chophouse overlooking Port Jefferson Harbor.",
+"expires": "2026-11-26",
+"_ts": "2026-11-19T14:35:19+0000"
 }
 }
