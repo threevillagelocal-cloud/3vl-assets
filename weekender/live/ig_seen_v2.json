@@ -1,28 +1,4 @@
 {
-"18161323057501919": {
-"special": false,
-"title": "Buckeye Monsters",
-"when": "Ongoing",
-"desc": "Creamy peanut butter and rich milk chocolate Halloween treats available now.",
-"expires": "2026-10-19",
-"_ts": "2026-10-19T22:09:07+0000"
-},
-"18002590815033150": {
-"special": false,
-"title": "Hirosaki - Japanese & Hibachi",
-"when": "Ongoing",
-"desc": "Stony Brook's destination for fresh sushi, hibachi, cocktails, and happy hour.",
-"expires": "2026-10-20",
-"_ts": "2026-10-20T11:00:12+0000"
-},
-"18504007429100687": {
-"special": true,
-"title": "Taco Tuesday Specials",
-"when": "Every Tuesday",
-"desc": "3 specialty tacos for $12 or 3 tacos for $10 on Tuesdays.",
-"expires": "2026-10-27",
-"_ts": "2026-10-20T12:23:26+0000"
-},
 "17936397948400476": {
 "special": false,
 "title": "The Study by Toast accepts Wolfie Bucks",
@@ -2774,5 +2750,21 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-18T16:01:25+0000"
+},
+"17896493409435633": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-19T01:38:07+0000"
+},
+"18068530751516965": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-18T22:53:18+0000"
 }
 }
