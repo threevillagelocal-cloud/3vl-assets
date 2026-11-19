@@ -1,14 +1,14 @@
 {
-"updated": "2026-11-18T22:00:55.272109+00:00",
+"updated": "2026-11-19T00:00:52.915698+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
-"Port Jefferson Chamber": 39,
+"Port Jefferson Chamber": 38,
 "I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 192,
-"Emma S. Clark Library": 211,
+"Emma S. Clark Library": 210,
 "Stony Brook Village Center": 7,
-"Long Island Museum": 38,
+"Long Island Museum": 37,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 4,
 "Staller Center for the Arts": 138,
@@ -341,85 +341,6 @@
 "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485",
 "pu": "",
 "rank": 5
-},
-{
-"id": "sbv-2429",
-"title": "Lookbook Luncheon Fashion Show at Luca Restaurant",
-"start": "2026-11-18T12:00:00",
-"end": "2026-11-18T14:00:00",
-"allday": false,
-"venue": "Stony Brook Village Center",
-"addr": "111 Main St, Stony Brook, NY 11790",
-"url": "https://stonybrookvillage.com/event/lookbook-luncheon-fashion-show-at-luca-restaurant/",
-"desc": "Experience an afternoon of style, flavor, and fall inspiration at Stony Brook Village’s fifth annual Lookbook Luncheon Fashion Shows , returning this November. Each event offers guests a curated dining experience paired with an exclusive showcase of the latest",
-"img": "https://stonybrookvillage.com/wp-content/uploads/2026/10/Fashion-Show-scaled.png",
-"src": "sbv",
-"tags": [
-"food"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "emmaclark-crafts-r-fun-paper-mache-plates-grades-k-5-62055",
-"title": "Crafts R Fun: Paper Mache Plates (Grades K-5)",
-"start": "2026-11-18T17:30:00",
-"end": "2026-11-18T18:15:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/crafts-r-fun-paper-mache-plates-grades-k-5-62055",
-"desc": "",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"arts",
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": "https://www.threevillagelocal.com/events/crafts-r-fun-paper-mache-plates-grades-k-5"
-},
-{
-"id": "social-17970977996965299",
-"title": "Book Club: Heart of a Dog",
-"start": "2026-11-18T18:00:00",
-"end": "2026-11-18T18:00:00",
-"allday": false,
-"venue": "Madiran The Wine Bar",
-"addr": "",
-"url": "https://www.instagram.com/p/DfHhz2uCKxs/",
-"desc": "Monthly book club meeting discussing Heart of a Dog by Mikhail Bulgakov. $30 covers a glass of wine, a small plate, and a leather bookmark.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17970977996965299.jpg",
-"src": "social",
-"tags": [
-"food"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/book-club-heart-of-a-dog"
-},
-{
-"id": "lim-3226021",
-"title": "Stealing America with Linford D. Fisher – Free Virtual Lecture",
-"start": "2026-11-18T19:00:00",
-"end": "2026-11-18T20:30:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/stealing-america/",
-"desc": "Join us for a virtual lecture with Linford D. Fisher, author and Professor of History at Brown University, to focus on his new book, Stealing America: The Hidden Story of Indigenous Slavery in U.S. History , and the lesser-known stories of Native enslavement a",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/09/Stealing-America.jpg",
-"src": "lim",
-"tags": [
-"free",
-"history",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/stealing-america-with-linford-d-fisher-free-virtual-lecture"
 },
 {
 "id": "gallerynorth-71302",
@@ -1766,6 +1687,159 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/live-music-douglas-baldwin-jazz-trio-1013"
+},
+{
+"id": "emmaclark-gift-wrapping-clinic-63597",
+"title": "Gift Wrapping Clinic",
+"start": "2026-11-29T11:00:00",
+"end": "2026-11-29T13:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/gift-wrapping-clinic-63597",
+"desc": "Do you have gifts you need wrapped for the holidays, but lack the mobility or resources to wrap them yourself? Never fear, the Library Teen Volunteers are here! Bring your gifts to the Library to be wrapped by teens; choose from a variety of paper and bow opti",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-09/Cropped%20present%20photo.jpg",
+"src": "emmaclark",
+"tags": [],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/gift-wrapping-clinic"
+},
+{
+"id": "portjeff-1164",
+"title": "Santa Parade - Main Street",
+"start": "2026-11-29T13:00:00",
+"end": "2026-11-29T23:59:00",
+"allday": false,
+"venue": "Port Jefferson",
+"addr": "Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1164",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/santa-parade-main-street"
+},
+{
+"id": "pjchamber-14907",
+"title": "Port Jefferson Santa Parade & Visit",
+"start": "2026-11-29T13:30:00",
+"end": "2026-11-29T16:00:00",
+"allday": false,
+"venue": "Port Jefferson Village",
+"addr": "",
+"url": "https://portjeffchamber.com/events-calendar/port-jefferson-santa-parade-visit/",
+"desc": "",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/port-jefferson-santa-parade-visit"
+},
+{
+"id": "portjeff-1165",
+"title": "Santa Visit",
+"start": "2026-11-29T13:30:00",
+"end": "2026-11-29T15:00:00",
+"allday": false,
+"venue": "Village Center",
+"addr": "Village Center - 101A Robert T. Strong Way Port Jefferson NY 11777",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1165",
+"desc": "",
+"img": "",
+"src": "portjeff",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/santa-visit"
+},
+{
+"id": "lim-10000288",
+"title": "Dickens in the Carriage Museum",
+"start": "2026-11-29T14:00:00",
+"end": "2026-11-29T16:00:00",
+"allday": false,
+"venue": "The Long Island Museum",
+"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"url": "https://longislandmuseum.org/event/dickens-in-the-carriage-museum/2026-11-29/",
+"desc": "In celebration of the 30th Annual Charles Dickens Festival in Port Jefferson Village, stop by the Carriage Museum to meet roaming costumed street characters from the Dickensian era as they magically transform the galleries into London of a bygone century. Incl",
+"img": "https://longislandmuseum.org/wp-content/uploads/2026/03/Dickens-on-the-Carriage-Museum-smaller.jpg",
+"src": "lim",
+"tags": [
+"outdoor",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/dickens-in-the-carriage-museum"
+},
+{
+"id": "emmaclark-teen-movie-night-night-museum-64003",
+"title": "Teen Movie Night: Night at the Museum",
+"start": "2026-11-29T14:30:00",
+"end": "2026-11-29T16:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/teen-movie-night-night-museum-64003",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-11/MV5BNGMyYjYyZDAtNzRiZC00ZjRkLTkwYjktODkxODQzNTFiMTVmXkEyXkFqcGc%40._V1_FMjpg_UX1000_.jpg",
+"src": "emmaclark",
+"tags": [
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/teen-movie-night-night-at-the-museum"
+},
+{
+"id": "limehof-202611291500-firetog-co-",
+"title": "Firetog & Co.",
+"start": "2026-11-29T15:00:00",
+"end": "2026-11-29T17:00:00",
+"allday": false,
+"venue": "The Long Island Music and Entertainment Hall of Fame",
+"addr": "97 Main St, Stony Brook, NY 11790",
+"url": "https://www.limusichalloffame.org/events/",
+"desc": "Free with Admission. The Phil Firetog Trio , a band that mingles texture and layers to create music that draws their audience into ‘an experience’ of sound, rhythm, and cadence, continues to evolve and emerge as unique among the crowd. The members of the Long ",
+"img": "https://www.limusichalloffame.org/wp-content/uploads/2026/10/Firetog-small.jpg",
+"src": "limehof",
+"tags": [
+"free",
+"music"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/firetog-co"
+},
+{
+"id": "theatre3-9249",
+"title": "A Christmas Carol",
+"start": "2026-11-29T15:00:00",
+"end": "2026-11-29T15:00:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson, NY 11777",
+"url": "https://theatrethree.getmytix.net/tickets#922/A-Christmas-Carol",
+"desc": "“I will honor Christmas in my heart…” Celebrate the season with Long Island’s own holiday tradition and BroadwayWorld.com winner for Best Play. Follow the miser Ebenezer Scrooge on a journey that teaches him the meaning of Christmas - past, present, and future",
+"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_922_A%20Christmas%20Carol%201600x1000.png",
+"src": "theatre3",
+"tags": [
+"music",
+"stage"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
 }
 ],
 "closings": [],
@@ -1790,22 +1864,22 @@
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson"
 },
 {
-"id": "18114093602145450",
+"id": "18023690675949485",
 "biz": "The Study by Toast",
 "ig": "thestudy.bytoast",
 "town": "East Setauket",
 "category": "Coffee House",
 "member": false,
-"title": "Trivia Night at The Study",
-"when": "Wed, Nov. 18 · 4:30-6:30 PM",
-"desc": "Trivia night at The Study by Toast runs 4:30-6:30 PM; drop in anytime, grab your crew, and enjoy food and drinks.",
-"expires": "2026-11-18",
-"posted": "2026-11-18T15:50:07+0000",
-"url": "https://www.instagram.com/reel/Df43TXGTet5/",
+"title": "Holiday Pie Preorders",
+"when": "Order by Nov. 25",
+"desc": "Preorder festive pies: Coconut Pecan Custard, Pumpkin Cheesecake, or Apple Crumb for $25 each.",
+"expires": "2026-11-25",
+"posted": "2026-11-13T16:01:16+0000",
+"url": "https://www.instagram.com/reel/DfsAncBTAyT/",
 "img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18114093602145450.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-trivia-night",
-"label": "Event",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18023690675949485.jpg",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-holiday-pie-preorders",
+"label": "Special",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast"
 },
 {
@@ -1903,25 +1977,6 @@
 "page": "https://www.threevillagelocal.com/eat-drink/kilwins-port-jefferson-gift-card-bonus-card-per",
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson",
 "label": "Special"
-},
-{
-"id": "18114093602145450",
-"biz": "The Study by Toast",
-"ig": "thestudy.bytoast",
-"town": "East Setauket",
-"category": "Coffee House",
-"member": false,
-"title": "Trivia Night at The Study",
-"when": "Wed, Nov. 18 · 4:30-6:30 PM",
-"desc": "Trivia night at The Study by Toast runs 4:30-6:30 PM; drop in anytime, grab your crew, and enjoy food and drinks.",
-"expires": "2026-11-18",
-"posted": "2026-11-18T15:50:07+0000",
-"url": "https://www.instagram.com/reel/Df43TXGTet5/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18114093602145450.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-trivia-night",
-"profile": "https://www.threevillagelocal.com/the-study-by-toast",
-"label": "Event"
 },
 {
 "id": "18023690675949485",
