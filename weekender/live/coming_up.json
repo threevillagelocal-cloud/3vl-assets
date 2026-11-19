@@ -1,0 +1,15 @@
+{
+ "_note": "Owner-approved 'Coming up' cards for Top Things to Do. weekend_push.py (site-guard) copies every item dated within the new edition's week (Fri..next Thu) into that edition's 'next' list; the image files live in weekender/coming_up/<img>*.webp. Nightly drops them after their date.",
+ "items": [
+  {
+   "date": "2026-11-26",
+   "when": "Thanksgiving, Thu Nov. 26, 7:30 AM",
+   "title": "Turkey Burn Ride at CrankCycle",
+   "desc": "Burn calories before the turkey: a special 75-minute Thanksgiving morning ride at CrankCycle's East Setauket studio.",
+   "img": "crankturkey",
+   "credit": "Photo: CrankCycle",
+   "page": "https://www.threevillagelocal.com/events/turkey-burn-ride-at-crankcycle",
+   "added": "owner 11/19/2026 (member 651 submission)"
+  }
+ ]
+}
