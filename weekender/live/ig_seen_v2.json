@@ -1,16 +1,4 @@
 {
-"17909174493603179": {
-"special": false,
-"_ts": "2026-10-20T16:19:45+0000"
-},
-"18078304106726827": {
-"special": true,
-"title": "Soup Season Opens",
-"when": "Starting tomorrow, Oct. 21",
-"desc": "Lobster Bisque, Seafood Chowder, or Soup of the Day. Open from 4 PM.",
-"expires": "2026-11-03",
-"_ts": "2026-10-20T18:01:43+0000"
-},
 "18124063798934600": {
 "special": true,
 "title": "London Broil Special",
@@ -62,14 +50,6 @@
 "desc": "Choose any half sandwich with a cup of soup for $14.",
 "expires": "2026-11-04",
 "_ts": "2026-10-21T11:03:54+0000"
-},
-"17963374023211130": {
-"special": true,
-"title": "Taco Tuesday: 3 for $10",
-"when": "Every Tuesday",
-"desc": "Crispy shrimp, mahi mahi, or chipotle chicken tacos with green cabbage, pico de gallo, and chipotle crema.",
-"expires": "2026-10-27",
-"_ts": "2026-10-20T19:33:06+0000"
 },
 "18041321483838169": {
 "special": false,
@@ -2770,5 +2750,53 @@
 "desc": "Enjoy a three-course Thanksgiving dinner with family and friends at Black Pearl Seafood Chophouse overlooking Port Jefferson Harbor.",
 "expires": "2026-11-26",
 "_ts": "2026-11-19T14:35:19+0000"
+},
+"18103476569062779": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-19T16:16:26+0000"
+},
+"18442976704181563": {
+"special": true,
+"title": "Black Friday & Cyber Monday Gift Cards",
+"when": "Fri, Nov. 27 & Mon, Nov. 30",
+"desc": "Black Friday BOGO gift cards in-store, and Cyber Monday online deals with a $10 bonus on every $50 card. Valid at all Toast locations.",
+"expires": "2026-11-30",
+"_ts": "2026-11-19T16:43:45+0000"
+},
+"18194693581396594": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-19T16:25:50+0000"
+},
+"18118905410587764": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-19T19:20:34+0000"
+},
+"18129915215297176": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-19T16:33:11+0000"
+},
+"18223183381346422": {
+"special": true,
+"title": "Happy Hour: Half Off All Drinks",
+"when": "Daily 12-6 PM",
+"desc": "Castaways is offering half off all drinks during Happy Hour, which runs 12-6 PM daily, with lunch starting at noon.",
+"expires": "2026-11-19",
+"_ts": "2026-11-19T17:47:22+0000"
 }
 }

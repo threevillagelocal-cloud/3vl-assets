@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T16:00:18.071758+00:00",
+ "updated": "2026-11-19T20:00:15.308946+00:00",
  "specials": [
   {
    "id": "17916105516283491",
@@ -34,20 +34,20 @@
    "inset": "ig/p17871751329693435.jpg"
   },
   {
-   "id": "18023690675949485",
+   "id": "18442976704181563",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
    "town": "East Setauket",
    "category": "Coffee House",
    "member": false,
-   "title": "Holiday Pie Preorders",
-   "when": "Order by Nov. 25",
-   "desc": "Preorder festive pies: Coconut Pecan Custard, Pumpkin Cheesecake, or Apple Crumb for $25 each.",
-   "expires": "2026-11-25",
-   "posted": "2026-11-13T16:01:16+0000",
-   "url": "https://www.instagram.com/reel/DfsAncBTAyT/",
+   "title": "Black Friday & Cyber Monday Gift Cards",
+   "when": "Fri, Nov. 27 & Mon, Nov. 30",
+   "desc": "Black Friday BOGO gift cards in-store, and Cyber Monday online deals with a $10 bonus on every $50 card. Valid at all Toast locations.",
+   "expires": "2026-11-30",
+   "posted": "2026-11-19T16:43:45+0000",
+   "url": "https://www.instagram.com/p/Df7iZNIz-QT/",
    "img": "",
-   "inset": "ig/p18023690675949485.jpg"
+   "inset": "ig/p18442976704181563.jpg"
   },
   {
    "id": "17957224149267265",
@@ -132,20 +132,20 @@
    "inset": "ig/p17871751329693435.jpg"
   },
   {
-   "id": "18023690675949485",
+   "id": "18442976704181563",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
    "town": "East Setauket",
    "category": "Coffee House",
    "member": false,
-   "title": "Holiday Pie Preorders",
-   "when": "Order by Nov. 25",
-   "desc": "Preorder festive pies: Coconut Pecan Custard, Pumpkin Cheesecake, or Apple Crumb for $25 each.",
-   "expires": "2026-11-25",
-   "posted": "2026-11-13T16:01:16+0000",
-   "url": "https://www.instagram.com/reel/DfsAncBTAyT/",
+   "title": "Black Friday & Cyber Monday Gift Cards",
+   "when": "Fri, Nov. 27 & Mon, Nov. 30",
+   "desc": "Black Friday BOGO gift cards in-store, and Cyber Monday online deals with a $10 bonus on every $50 card. Valid at all Toast locations.",
+   "expires": "2026-11-30",
+   "posted": "2026-11-19T16:43:45+0000",
+   "url": "https://www.instagram.com/p/Df7iZNIz-QT/",
    "img": "",
-   "inset": "ig/p18023690675949485.jpg"
+   "inset": "ig/p18442976704181563.jpg"
   },
   {
    "id": "17957224149267265",
@@ -230,6 +230,22 @@
    "inset": "ig/p17871751329693435.jpg"
   },
   {
+   "id": "18442976704181563",
+   "biz": "The Study by Toast",
+   "ig": "thestudy.bytoast",
+   "town": "East Setauket",
+   "category": "Coffee House",
+   "member": false,
+   "title": "Black Friday & Cyber Monday Gift Cards",
+   "when": "Fri, Nov. 27 & Mon, Nov. 30",
+   "desc": "Black Friday BOGO gift cards in-store, and Cyber Monday online deals with a $10 bonus on every $50 card. Valid at all Toast locations.",
+   "expires": "2026-11-30",
+   "posted": "2026-11-19T16:43:45+0000",
+   "url": "https://www.instagram.com/p/Df7iZNIz-QT/",
+   "img": "",
+   "inset": "ig/p18442976704181563.jpg"
+  },
+  {
    "id": "18023690675949485",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
@@ -294,6 +310,22 @@
    "inset": "ig/p18030186059700958.jpg"
   },
   {
+   "id": "18223183381346422",
+   "biz": "Castaways Steak & Seafood",
+   "ig": "castawayspj",
+   "town": "Port Jefferson",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Happy Hour: Half Off All Drinks",
+   "when": "Daily 12-6 PM",
+   "desc": "Castaways is offering half off all drinks during Happy Hour, which runs 12-6 PM daily, with lunch starting at noon.",
+   "expires": "2026-11-19",
+   "posted": "2026-11-19T17:47:22+0000",
+   "url": "https://www.instagram.com/reel/Df7pmIKhJJu/",
+   "img": "",
+   "inset": "ig/p18223183381346422.jpg"
+  },
+  {
    "id": "17924523486446853",
    "biz": "Castaways Steak & Seafood",
    "ig": "castawayspj",
@@ -308,22 +340,6 @@
    "url": "https://www.instagram.com/p/Dfz2Aa4in9R/",
    "img": "",
    "inset": "ig/p17924523486446853.jpg"
-  },
-  {
-   "id": "18108793784212492",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Sunday Brunch at Castaways",
-   "when": "Every Sunday · 12-4 PM",
-   "desc": "Breakfast burritos, burgers with fried eggs, and brunch favorites in Port Jefferson.",
-   "expires": "2026-11-29",
-   "posted": "2026-11-15T15:00:46+0000",
-   "url": "https://www.instagram.com/p/DfxDbE4ChMD/",
-   "img": "",
-   "inset": "ig/p18108793784212492.jpg"
   },
   {
    "id": "18155940556551591",
@@ -404,22 +420,6 @@
    "url": "https://www.instagram.com/reel/DfzlzpPh_bI/",
    "img": "",
    "inset": "ig/p18106140302034259.jpg"
-  },
-  {
-   "id": "17920719537523986",
-   "biz": "Level Up Kitchen",
-   "ig": "levelupkitchenny",
-   "town": "Setauket / St. James",
-   "category": "Cafe/Catering",
-   "member": false,
-   "title": "Thanksgiving Order Pickup",
-   "when": "Tue, Nov. 25",
-   "desc": "Order Thanksgiving meals by Nov. 20 for pickup on Nov. 25. Use form at link in bio.",
-   "expires": "2026-11-25",
-   "posted": "2026-11-12T16:03:18+0000",
-   "url": "https://www.instagram.com/p/DfpcNpXG9HW/",
-   "img": "",
-   "inset": "ig/p17920719537523986.jpg"
   },
   {
    "id": "18345345856287318",
