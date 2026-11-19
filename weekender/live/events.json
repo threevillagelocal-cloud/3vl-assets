@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-19T20:02:33.610220+00:00",
+"updated": "2026-11-19T20:03:55.683828+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 38,
 "I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 191,
-"Emma S. Clark Library": 230,
+"Emma S. Clark Library": 231,
 "Stony Brook Village Center": 3,
 "Long Island Museum": 37,
 "Ward Melville Heritage Org": 2,
@@ -1787,7 +1787,7 @@
 "url": "https://www.instagram.com/reel/Df7pmIKhJJu/",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/castawayspj.jpg",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18223183381346422.jpg",
-"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-happy-hour-half-off-all",
 "label": "Happy hour",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood"
 },
@@ -1881,7 +1881,7 @@
 "url": "https://www.instagram.com/p/Df7iZNIz-QT/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18442976704181563.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-black-friday-cyber-monday-gift",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast"
 }
@@ -1902,7 +1902,7 @@
 "url": "https://www.instagram.com/reel/Df7pmIKhJJu/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18223183381346422.jpg",
-"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-happy-hour-half-off-all",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
 "label": "Happy hour"
 },
@@ -2015,7 +2015,7 @@
 "url": "https://www.instagram.com/p/Df7iZNIz-QT/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18442976704181563.jpg",
-"page": "https://www.threevillagelocal.com/the-study-by-toast",
+"page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-black-friday-cyber-monday-gift",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast",
 "label": "Special"
 },
