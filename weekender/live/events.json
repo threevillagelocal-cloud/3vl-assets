@@ -1,9 +1,9 @@
 {
-"updated": "2026-11-20T18:00:58.018940+00:00",
+"updated": "2026-11-20T18:02:09.955244+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 37,
-"I Love Port Jeff": 4,
+"I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 190,
 "Emma S. Clark Library": 249,
@@ -1505,7 +1505,7 @@
 "url": "https://www.instagram.com/p/Df9yimET5IK/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18125110561901814.jpg",
-"page": "https://www.threevillagelocal.com/luca",
+"page": "https://www.threevillagelocal.com/eat-drink/luca-restaurant-aperitivo-hour-bar",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/luca"
 },
@@ -1677,7 +1677,7 @@
 "url": "https://www.instagram.com/p/Df9yimET5IK/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18125110561901814.jpg",
-"page": "https://www.threevillagelocal.com/luca",
+"page": "https://www.threevillagelocal.com/eat-drink/luca-restaurant-aperitivo-hour-bar",
 "profile": "https://www.threevillagelocal.com/luca",
 "label": "Special"
 },
