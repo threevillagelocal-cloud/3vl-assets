@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T20:02:23.504136+00:00",
+"updated": "2026-11-20T20:03:30.190520+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 37,
@@ -1410,7 +1410,7 @@
 "url": "https://www.instagram.com/reel/Df-JMS_zwBR/",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/castawayspj.jpg",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18348935671285211.jpg",
-"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-half-off-all-drinks",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood"
 },
@@ -1504,7 +1504,7 @@
 "url": "https://www.instagram.com/reel/Df-H0wqO8Dd/",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/rctaqueria.jpg",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18102531734395599.jpg",
-"page": "https://www.threevillagelocal.com/right-coast-taqueria",
+"page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-burritos-after-pm",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria"
 }
@@ -1525,7 +1525,7 @@
 "url": "https://www.instagram.com/reel/Df-JMS_zwBR/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18348935671285211.jpg",
-"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-half-off-all-drinks",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
 "label": "Special"
 },
@@ -1657,7 +1657,7 @@
 "url": "https://www.instagram.com/reel/Df-H0wqO8Dd/",
 "img": "",
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18102531734395599.jpg",
-"page": "https://www.threevillagelocal.com/right-coast-taqueria",
+"page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-burritos-after-pm",
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria",
 "label": "Special"
 },
