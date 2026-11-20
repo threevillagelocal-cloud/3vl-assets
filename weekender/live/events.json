@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T12:43:58.041191+00:00",
+"updated": "2026-11-20T13:03:44.349800+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 37,
@@ -18,7 +18,7 @@
 "Sweetbriar Nature Center": 28,
 "Historical Society of Greater Port Jefferson": 0,
 "Madiran The Wine Bar live music": 33,
-"Local business Instagram posts": 10
+"Local business Instagram posts": 11
 },
 "icons": {
 "kids": "&#129490;",
@@ -1565,22 +1565,22 @@
 "profile": "https://www.threevillagelocal.com/the-study-by-toast"
 },
 {
-"id": "17916105516283491",
+"id": "18135166018744521",
 "biz": "Tommy's Place",
 "ig": "tommysplaceportjeff_",
 "town": "Port Jefferson",
 "category": "Bar/Restaurant",
 "member": false,
-"title": "Thanksgiving Eve Party at Tommy's Place",
-"when": "Wed, Nov. 25 · Until 4 AM",
-"desc": "Music, food, and drinks with no cover charge. Arrive early to avoid the line.",
-"expires": "2026-11-25",
-"posted": "2026-11-14T00:32:39+0000",
-"url": "https://www.instagram.com/p/Dfs67MLN3vF/",
+"title": "New Specials at Tommy's Place",
+"when": "Starting Fri, Nov. 20",
+"desc": "New specials include broccoli cheddar soup in a bread bowl, sausage arancini, a surf & turf burger, and a 14 oz. strip steak.",
+"expires": "2026-12-04",
+"posted": "2026-11-20T01:20:07+0000",
+"url": "https://www.instagram.com/p/Df8df-BjRdq/",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/tommysplaceportjeff_.jpg",
 "inset": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-"page": "https://www.threevillagelocal.com/eat-drink/tommys-place-thanksgiving-eve-party",
-"label": "Event",
+"page": "https://www.threevillagelocal.com/tommys-place",
+"label": "Special",
 "profile": "https://www.threevillagelocal.com/tommys-place"
 }
 ],
@@ -1603,6 +1603,25 @@
 "page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-off-holiday-party-bookings",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
 "label": "Event"
+},
+{
+"id": "18108793784212492",
+"biz": "Castaways Steak & Seafood",
+"ig": "castawayspj",
+"town": "Port Jefferson",
+"category": "Restaurant",
+"member": false,
+"title": "Sunday Brunch at Castaways",
+"when": "Every Sunday · 12-4 PM",
+"desc": "Breakfast burritos, burgers with fried eggs, and brunch favorites in Port Jefferson.",
+"expires": "2026-11-29",
+"posted": "2026-11-15T15:00:46+0000",
+"url": "https://www.instagram.com/p/DfxDbE4ChMD/",
+"img": "",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18108793784212492.jpg",
+"page": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
+"label": "Special"
 },
 {
 "id": "17871751329693435",
@@ -1696,6 +1715,25 @@
 "inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18023690675949485.jpg",
 "page": "https://www.threevillagelocal.com/eat-drink/the-study-by-toast-holiday-pie-preorders",
 "profile": "https://www.threevillagelocal.com/the-study-by-toast",
+"label": "Special"
+},
+{
+"id": "18135166018744521",
+"biz": "Tommy's Place",
+"ig": "tommysplaceportjeff_",
+"town": "Port Jefferson",
+"category": "Bar/Restaurant",
+"member": false,
+"title": "New Specials at Tommy's Place",
+"when": "Starting Fri, Nov. 20",
+"desc": "New specials include broccoli cheddar soup in a bread bowl, sausage arancini, a surf & turf burger, and a 14 oz. strip steak.",
+"expires": "2026-12-04",
+"posted": "2026-11-20T01:20:07+0000",
+"url": "https://www.instagram.com/p/Df8df-BjRdq/",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18135166018744521.jpg",
+"page": "https://www.threevillagelocal.com/tommys-place",
+"profile": "https://www.threevillagelocal.com/tommys-place",
 "label": "Special"
 },
 {

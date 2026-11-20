@@ -1,64 +1,4 @@
 {
-"18124063798934600": {
-"special": true,
-"title": "London Broil Special",
-"when": "Limited time",
-"desc": "London Broil comfort meal on the specials menu for a limited time this fall.",
-"expires": "2026-11-04",
-"_ts": "2026-10-21T00:56:46+0000"
-},
-"18027113510913497": {
-"special": false,
-"title": "New Maine Cheeses Now in Stock",
-"when": "Available now",
-"desc": "Limited supply of Opus 42 and Rockweed cheeses from Lakins Farmstead Cheese in Maine.",
-"expires": "2026-10-21",
-"_ts": "2026-10-20T20:42:51+0000"
-},
-"18127412185916800": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-21T11:35:07+0000"
-},
-"17906048265657466": {
-"special": false,
-"title": "Witches Potion Punch Cocktail",
-"when": "Ongoing",
-"desc": "New Halloween cocktail available at Burgerology. Spooky and mysterious drink to get into the spirit.",
-"expires": "2026-10-31",
-"_ts": "2026-10-20T20:41:59+0000"
-},
-"18109095848186290": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-21T11:24:57+0000"
-},
-"18080423606425406": {
-"special": false,
-"_ts": "2026-10-20T22:15:57+0000"
-},
-"17959517340254859": {
-"special": true,
-"title": "Soup & Sandwich Combo",
-"when": "Daily, 11am - 5pm",
-"desc": "Choose any half sandwich with a cup of soup for $14.",
-"expires": "2026-11-04",
-"_ts": "2026-10-21T11:03:54+0000"
-},
-"18041321483838169": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-20T20:01:02+0000"
-},
 "18150886438536933": {
 "special": true,
 "title": "Final Day: Seasonal Closure This Sunday",
@@ -2798,5 +2738,29 @@
 "desc": "Castaways is offering half off all drinks during Happy Hour, which runs 12-6 PM daily, with lunch starting at noon.",
 "expires": "2026-11-19",
 "_ts": "2026-11-19T17:47:22+0000"
+},
+"18135166018744521": {
+"special": true,
+"title": "New Specials at Tommy's Place",
+"when": "Starting Fri, Nov. 20",
+"desc": "New specials include broccoli cheddar soup in a bread bowl, sausage arancini, a surf & turf burger, and a 14 oz. strip steak.",
+"expires": "2026-12-04",
+"_ts": "2026-11-20T01:20:07+0000"
+},
+"17915863452472106": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-20T01:37:23+0000"
+},
+"18088624931706223": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-20T04:17:33+0000"
 }
 }
