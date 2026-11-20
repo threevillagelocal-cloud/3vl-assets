@@ -1,12 +1,12 @@
 {
-"updated": "2026-11-20T16:01:50.985686+00:00",
+"updated": "2026-11-20T18:00:58.018940+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 37,
-"I Love Port Jeff": 5,
+"I Love Port Jeff": 4,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 190,
-"Emma S. Clark Library": 251,
+"Emma S. Clark Library": 249,
 "Stony Brook Village Center": 3,
 "Long Island Museum": 36,
 "Ward Melville Heritage Org": 2,
@@ -68,7 +68,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/emerging-artist-spotlight-november-genevieve-rochlin"
 },
 {
 "id": "reboli-6accf440d369597d05b08c0e",
@@ -87,7 +87,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/novembers-feature-artisan-of-the-month-patricia-patten"
 },
 {
 "id": "reboli-695acda2780a38578fe575b6",
@@ -106,7 +106,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition"
 },
 {
 "id": "gallerynorth-71302",
@@ -167,42 +167,6 @@
 "page": ""
 },
 {
-"id": "emmaclark-game-day-38295",
-"title": "Game Day",
-"start": "2026-11-20T10:00:00",
-"end": "2026-11-20T12:00:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/game-day-38295",
-"desc": "We provide the space, tables and chairs. You bring your friends and a favorite board or card game to play. No registration required.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-11/people-having-fun-while-playing-board-game2.jpg",
-"src": "emmaclark",
-"tags": [],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "emmaclark-time-baby-16-mos-24-mos-w-caregiver-63801",
-"title": "Time For Baby (16 mos. - 24 mos. w/ caregiver)",
-"start": "2026-11-20T11:00:00",
-"end": "2026-11-20T11:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Program Room",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/time-baby-16-mos-24-mos-w-caregiver-63801",
-"desc": "There will be music, dancing, and games to enjoy with your baby.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
-"src": "emmaclark",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 1,
-"page": ""
-},
-{
 "id": "emmaclark-friday-matinee-pressure-2026-61313",
 "title": "Friday Matinee: Pressure (2026)",
 "start": "2026-11-20T14:00:00",
@@ -219,7 +183,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/friday-matinee-pressure-2026"
 },
 {
 "id": "lim-3225062",
@@ -238,7 +202,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/america-on-screen-made-in-the-usa"
 },
 {
 "id": "pjchamber-15286",
@@ -257,7 +221,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/kids-night-out"
 },
 {
 "id": "cur-novembersthird",
@@ -299,7 +263,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
 },
 {
 "id": "gallerynorth-71325",
@@ -320,7 +284,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/adults-only-card-making"
 },
 {
 "id": "madiran-20261120-jim-lowe",
@@ -340,7 +304,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/live-music-jim-lowe-1009"
 },
 {
 "id": "emmaclark-puzzle-swap-61314",
@@ -357,7 +321,7 @@
 "tags": [],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/puzzle-swap"
 },
 {
 "id": "sweetbriar-6a8472f435618a6bb0dc3a4c",
@@ -377,7 +341,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/wildlife-wonders-furry-friends-ages-2y-5y"
 },
 {
 "id": "cur-barnabysavesch",
@@ -417,7 +381,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/march-for-liberty"
 },
 {
 "id": "emmaclark-instrument-petting-zoo-ages-3-8-yrs-62060",
@@ -437,7 +401,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/instrument-petting-zoo-ages-3-8-yrs"
 },
 {
 "id": "cur-theboysgirlscl",
@@ -499,7 +463,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
 },
 {
 "id": "madiran-20261121-tim-siciliano",
@@ -519,7 +483,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/live-music-tim-siciliano-1010"
 },
 {
 "id": "pjchamber-15103",
@@ -538,7 +502,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/reindeer-scavenger-hunt"
 },
 {
 "id": "cur-portjeffersonf",
@@ -580,7 +544,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/port-jeff-winter-farmers-market"
 },
 {
 "id": "portjeff-1154",
@@ -600,7 +564,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-last-day"
 },
 {
 "id": "emmaclark-stitching-circle-64002",
@@ -619,7 +583,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/the-stitching-circle-667"
 },
 {
 "id": "sweetbriar-6a8c9599ed7fd62bd230ba0f",
@@ -640,7 +604,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/sunday-funday-treetop-friends"
 },
 {
 "id": "cur-paulcipro",
@@ -683,7 +647,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
 },
 {
 "id": "social-18113392583171525",
@@ -702,7 +666,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/sunday-sounds-stillness-meditation-sound-bath"
 },
 {
 "id": "emmaclark-learn-type-grades-2-5-62061",
@@ -721,7 +685,7 @@
 ],
 "status": "",
 "fb": 1,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/learn-to-type-grades-2-5"
 },
 {
 "id": "emmaclark-gift-bow-making-cause-63062",
@@ -740,7 +704,7 @@
 ],
 "status": "",
 "fb": 1,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/gift-bow-making-for-a-cause-462"
 },
 {
 "id": "emmaclark-cricut-coffee-mug-lottery-43471",
@@ -759,7 +723,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/cricut-coffee-mug-lottery-632"
 },
 {
 "id": "emmaclark-holiday-cards-seniors-community-service-project-grades-3-5-61460",
@@ -778,7 +742,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/holiday-cards-for-seniors-community-service-project-grades-3-5"
 },
 {
 "id": "madiran-20261124-rod-borrie-and-vincent-loccisano",
@@ -798,7 +762,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/live-music-rod-borrie-and-vincent-loccisano"
 },
 {
 "id": "pjchamber-15101",
@@ -818,7 +782,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/bid-tree-lighting"
 },
 {
 "id": "emmaclark-social-work-intern-appointments-62275",
@@ -835,7 +799,7 @@
 "tags": [],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/social-work-intern-appointments-633"
 },
 {
 "id": "emmaclark-crafts-r-fun-diy-gift-pouches-and-bows-grades-k-5-62063",
@@ -855,7 +819,7 @@
 ],
 "status": "",
 "fb": 1,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/crafts-r-fun-diy-gift-pouches-and-bows-grades-k-5"
 },
 {
 "id": "emmaclark-thanksgiving-eve-early-closure-38090",
@@ -872,7 +836,7 @@
 "tags": [],
 "status": "",
 "fb": 1,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/thanksgiving-eve-early-closure"
 },
 {
 "id": "iloveportjeff-6af757b23944af4c43aed500",
@@ -891,7 +855,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/christmas-tree-lighting"
 },
 {
 "id": "gallerynorth-72970",
@@ -910,7 +874,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/thanksgiving-day"
 },
 {
 "id": "portjeff-1153",
@@ -929,7 +893,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/outdoor-ice-skating-on-the-harbor-opening-day"
 },
 {
 "id": "sbv-2454",
@@ -949,7 +913,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/black-friday-festival"
 },
 {
 "id": "sweetbriar-6a8476dd717d8426f978999e",
@@ -969,7 +933,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/first-steps-into-nature-2y-5y-953"
 },
 {
 "id": "emmaclark-game-day-38296",
@@ -986,7 +950,7 @@
 "tags": [],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/game-day-634"
 },
 {
 "id": "theatre3-9299",
@@ -1005,7 +969,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/barnaby-saves-christmas"
 },
 {
 "id": "emmaclark-lego-club-grades-k-5-62064",
@@ -1024,7 +988,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/lego-club-grades-k-5-704"
 },
 {
 "id": "emmaclark-family-night-balloon-twisting-101-w-jenny-families-w-children-ages-7-1",
@@ -1043,7 +1007,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/family-night-balloon-twisting-w-jenny-for-families-w-children-ages-7-11-yrs"
 },
 {
 "id": "theatre3-9247",
@@ -1063,7 +1027,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
 },
 {
 "id": "madiran-20261127-phil-rinaldi-and-alex-volpe-smith",
@@ -1083,7 +1047,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/live-music-phil-rinaldi"
 },
 {
 "id": "portjeff-1163",
@@ -1102,7 +1066,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/small-business-saturday"
 },
 {
 "id": "emmaclark-storytime-snow-sisters-ages-3-8-62073",
@@ -1121,7 +1085,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/storytime-with-the-snow-sisters-ages-3-8-yrs"
 },
 {
 "id": "theatre3-9300",
@@ -1140,7 +1104,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/barnaby-saves-christmas"
 },
 {
 "id": "emmaclark-monster-week-tabletop-rpg-61439",
@@ -1157,7 +1121,7 @@
 "tags": [],
 "status": "",
 "fb": 1,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/monster-of-the-week-a-tabletop-rpg-511"
 },
 {
 "id": "gallerynorth-74656",
@@ -1177,7 +1141,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/parents-day-out-gift-making-for-kids"
 },
 {
 "id": "theatre3-9248",
@@ -1197,7 +1161,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
 },
 {
 "id": "madiran-20261128-douglas-baldwin-jazz-trio",
@@ -1217,7 +1181,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/live-music-douglas-baldwin-jazz-trio-1013"
 },
 {
 "id": "emmaclark-gift-wrapping-clinic-63597",
@@ -1234,7 +1198,7 @@
 "tags": [],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/gift-wrapping-clinic"
 },
 {
 "id": "portjeff-1164",
@@ -1253,7 +1217,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/santa-parade-main-street"
 },
 {
 "id": "pjchamber-14907",
@@ -1272,7 +1236,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/port-jefferson-santa-parade-visit"
 },
 {
 "id": "portjeff-1165",
@@ -1291,7 +1255,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/santa-visit"
 },
 {
 "id": "lim-10000288",
@@ -1311,7 +1275,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/dickens-in-the-carriage-museum"
 },
 {
 "id": "emmaclark-teen-movie-night-night-museum-64003",
@@ -1330,7 +1294,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/teen-movie-night-night-at-the-museum"
 },
 {
 "id": "limehof-202611291500-firetog-co-",
@@ -1350,7 +1314,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/firetog-co"
 },
 {
 "id": "theatre3-9249",
@@ -1370,7 +1334,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
 },
 {
 "id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-63808",
@@ -1389,7 +1353,7 @@
 ],
 "status": "",
 "fb": 1,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-554"
 },
 {
 "id": "emmaclark-preschool-storytime-ages-35-5-yrs-63816",
@@ -1408,7 +1372,7 @@
 ],
 "status": "",
 "fb": 1,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-555"
 },
 {
 "id": "emmaclark-cooking-chef-rob-holiday-gatherings-61315",
@@ -1427,7 +1391,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/cooking-with-chef-rob-holiday-gatherings"
 },
 {
 "id": "emmaclark-bark-readers-5th-grade-62078",
@@ -1446,7 +1410,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": ""
+"page": "https://www.threevillagelocal.com/events/bark-for-readers-up-to-5th-grade-708"
 }
 ],
 "closings": [],
