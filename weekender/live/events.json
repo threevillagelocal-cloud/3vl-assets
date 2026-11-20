@@ -1,21 +1,21 @@
 {
-"updated": "2026-11-20T18:02:09.955244+00:00",
+"updated": "2026-11-20T20:01:09.806414+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 37,
-"I Love Port Jeff": 5,
+"I Love Port Jeff": 4,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
 "Village of Port Jefferson": 190,
-"Emma S. Clark Library": 249,
+"Emma S. Clark Library": 250,
 "Stony Brook Village Center": 3,
 "Long Island Museum": 36,
 "Ward Melville Heritage Org": 2,
 "LI Music Hall of Fame": 4,
 "Staller Center for the Arts": 138,
 "Theatre Three": 66,
-"Gallery North": 14,
+"Gallery North": 13,
 "Reboli Center": 19,
-"Sweetbriar Nature Center": 28,
+"Sweetbriar Nature Center": 27,
 "Historical Society of Greater Port Jefferson": 0,
 "Madiran The Wine Bar live music": 33,
 "Local business Instagram posts": 11
@@ -147,26 +147,6 @@
 "page": ""
 },
 {
-"id": "sweetbriar-6a8476d48c45724f7474bb24",
-"title": "First Steps Into Nature 2y-5y",
-"start": "2026-11-20T09:30:00",
-"end": "2026-11-20T10:30:00",
-"allday": false,
-"venue": "Sweetbriar Nature Center",
-"addr": "62 Eckernkamp Dr, Smithtown, NY 11787",
-"url": "https://www.sweetbriarnc.org/new-events/2wyhmzz39xjsct5-ah326-rf8sy-exd5d-h3ltx-a23ea-hljsh-kbrg6-sdsmr",
-"desc": "Sweetbriar’s experienced educators help open up the wonders of the natural world for children, through hands-on activities, live animals, crafts, and much more.",
-"img": "https://images.squarespace-cdn.com/content/v1/5bd08660b9144922c00e2111/1697550982103-EKZXM6RQAQDHVTQWZZC8/images.jpeg.jpg",
-"src": "sweetbriar",
-"tags": [
-"kids",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
 "id": "emmaclark-friday-matinee-pressure-2026-61313",
 "title": "Friday Matinee: Pressure (2026)",
 "start": "2026-11-20T14:00:00",
@@ -202,7 +182,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/america-on-screen-made-in-the-usa"
+"page": ""
 },
 {
 "id": "pjchamber-15286",
