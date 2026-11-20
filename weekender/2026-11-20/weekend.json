@@ -1,0 +1,224 @@
+{
+ "edition": "2026-11-20",
+ "brand": "The Weekender",
+ "range": "Nov 20-22, 2026",
+ "starts": "2026-11-20T17:00:00-05:00",
+ "ends": "2026-11-22T23:59:00-05:00",
+ "slug": "",
+ "headline": [
+  "This Weekend",
+  "in Three Village"
+ ],
+ "dek": "Paul Cipro, Barnaby Saves Christmas and The Boys & Girls Club of Shinnecock Nation Dance Troupe top the list. Here's everything worth doing in Three Village this weekend, updated live.",
+ "hero": {
+  "img": "hero-theboysgirlscl",
+  "credit": "The Boys & Girls Club of Shinnecock Nation Dance Troupe. Photo: The Long Island Museum",
+  "alt": "The Boys & Girls Club of Shinnecock Nation Dance Troupe"
+ },
+ "days": {
+  "fri": "2026-11-20",
+  "sat": "2026-11-21",
+  "sun": "2026-11-22"
+ },
+ "picks": [
+  "paulcipro",
+  "barnabysavesch",
+  "theboysgirlscl",
+  "novembersthird",
+  "portjeffersonf",
+  "autumnscanvasr"
+ ],
+ "venues": {
+  "thelongislandmusicandent": {
+   "name": "The Long Island Music and Entertainment Hall of Fame",
+   "addr": "97 Main St, Stony Brook",
+   "ll": [
+    40.9257,
+    -73.1409
+   ]
+  },
+  "theatrethree": {
+   "name": "Theatre Three",
+   "addr": "412 Main St, Port Jefferson",
+   "ll": [
+    40.94366,
+    -73.06754
+   ]
+  },
+  "thelongislandmuseum": {
+   "name": "The Long Island Museum",
+   "addr": "1200 Route 25A, Stony Brook",
+   "ll": [
+    40.93029,
+    -73.11519
+   ]
+  },
+  "therebolicenterforartand": {
+   "name": "The Reboli Center for Art and History",
+   "addr": "64 Main Street, Stony Brook, NY, 11790",
+   "ll": [
+    40.91802,
+    -73.14514
+   ]
+  },
+  "jeannegarantharborfrontp": {
+   "name": "Jeanne Garant Harborfront Park",
+   "addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson",
+   "ll": [
+    40.9465,
+    -73.0693
+   ]
+  },
+  "emmasclarkmemoriallibrar": {
+   "name": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+   "addr": "120 Main St, Setauket",
+   "ll": [
+    40.9465,
+    -73.1118
+   ]
+  }
+ },
+ "events": [
+  {
+   "id": "paulcipro",
+   "title": "Paul Cipro",
+   "start": "2026-11-22T15:00",
+   "end": "2026-11-22T17:00",
+   "page": "https://www.threevillagelocal.com/events/paul-cipro",
+   "venue": "thelongislandmusicandent",
+   "price": "Free",
+   "tags": [
+    "free",
+    "music",
+    "stage"
+   ],
+   "img": "paulcipro",
+   "credit": "Photo: The Long Island Music and Entertainment Hall of Fame",
+   "desc": "Free with Admission. “Popular Long Island songwriter and musician Paul Cipro will perform his original songs accompanied by Billy Hall (keyboard/harmonica) and Allie Richardson (backing vocals/guitar). Cipro has recently been featured on...",
+   "url": "https://www.limusichalloffame.org/events/",
+   "src": "limusichalloffame.org"
+  },
+  {
+   "id": "barnabysavesch",
+   "title": "Barnaby Saves Christmas",
+   "start": "2026-11-21T11:00",
+   "end": "2026-11-21T13:00",
+   "page": "https://www.threevillagelocal.com/events/barnaby-saves-christmas",
+   "venue": "theatrethree",
+   "price": "See details",
+   "tags": [
+    "arts"
+   ],
+   "img": "barnabysavesch",
+   "credit": "Photo: Theatre Three",
+   "desc": "Come join Santa, Barnaby, Franklynne, and all of their friends for a wonderful holiday treat. As our littlest elf and his reindeer friend set off on their journey to save Christmas, they meet some new friends along the way and learn the...",
+   "url": "https://theatrethree.getmytix.net/tickets#928/Barnaby-Saves-Christmas",
+   "src": "theatrethree.getmytix.net"
+  },
+  {
+   "id": "theboysgirlscl",
+   "title": "The Boys & Girls Club of Shinnecock Nation Dance Troupe",
+   "start": "2026-11-21T13:00",
+   "end": "2026-11-21T14:00",
+   "page": "https://www.threevillagelocal.com/events/the-boys-girls-club-of-shinnecock-nation-dance-troupe",
+   "venue": "thelongislandmuseum",
+   "price": "See details",
+   "tags": [
+    "history"
+   ],
+   "img": "theboysgirlscl",
+   "credit": "Photo: The Long Island Museum",
+   "desc": "Experience the vibrant culture and traditions of the Shinnecock Nation through a special performance by the Boys & Girls Club of Shinnecock Nation Dance Troupe. Made up of Native American youth from the Shinnecock Nation, the troupe shares...",
+   "url": "https://longislandmuseum.org/event/the-boys-girls-club-of-shinnecock-nation-dance-troupe/",
+   "src": "longislandmuseum.org"
+  },
+  {
+   "id": "novembersthird",
+   "title": "November's Third Friday!",
+   "start": "2026-11-20T18:30",
+   "end": "2026-11-20T20:00",
+   "page": "https://www.threevillagelocal.com/events/novembers-third-friday",
+   "venue": "therebolicenterforartand",
+   "price": "Free",
+   "tags": [
+    "free",
+    "arts"
+   ],
+   "img": "novembersthird",
+   "credit": "Photo: The Reboli Center for Art and History",
+   "desc": "Join us for another great Third Friday at The Reboli Center with local artist and Vietnam veteran John Melillo. Melillo, a proud Eastern Long Islander, found solace in art to combat his PTSD. Through his paintings, he captures the images...",
+   "url": "https://rebolicenter.org/events/2026/11/20/novembers-third-friday",
+   "src": "rebolicenter.org"
+  },
+  {
+   "id": "portjeffersonf",
+   "title": "Port Jefferson Farmers Market",
+   "start": "2026-11-22T09:00",
+   "end": "2026-11-22T14:00",
+   "page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-486",
+   "venue": "jeannegarantharborfrontp",
+   "price": "See details",
+   "tags": [
+    "food",
+    "outdoor"
+   ],
+   "img": "portjeffersonf",
+   "credit": "Photo: Jeanne Garant Harborfront Park",
+   "desc": "",
+   "url": "https://www.portjeffny.gov/calendar.aspx?EID=1103",
+   "src": "portjeffny.gov"
+  },
+  {
+   "id": "autumnscanvasr",
+   "title": "Autumn's Canvas: Rooster Leaf Art",
+   "start": "2026-11-21T14:00",
+   "end": "2026-11-21T15:00",
+   "page": "https://www.threevillagelocal.com/events/autumns-canvas-rooster-leaf-art-631",
+   "venue": "emmasclarkmemoriallibrar",
+   "price": "See details",
+   "tags": [
+    "arts"
+   ],
+   "img": "autumnscanvasr",
+   "credit": "Photo: Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+   "desc": "Guided by Christin Nash, you will design and assemble a charming, two-dimensional rooster using a variety of autumn leaves. Perfect for all skill levels, this class is a wonderful way to celebrate seasonal",
+   "url": "https://emmaclark.librarycalendar.com/event/autumns-canvas-rooster-leaf-art-61311",
+   "src": "emmaclark.librarycalendar.com"
+  }
+ ],
+ "allweekend": [],
+ "specials": [],
+ "next": [
+  {
+   "when": "Thanksgiving, Thu Nov. 26, 7:30 AM",
+   "title": "Turkey Burn Ride at CrankCycle",
+   "desc": "Burn calories before the turkey: a special 75-minute Thanksgiving morning ride at CrankCycle's East Setauket studio.",
+   "img": "crankturkey",
+   "credit": "Photo: CrankCycle",
+   "page": "https://www.threevillagelocal.com/events/turkey-burn-ride-at-crankcycle"
+  }
+ ],
+ "trolley": [],
+ "wxbg": {
+  "fri": {
+   "loc": "Stony Brook Village Green",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_1",
+   "photo": "sbvgreen",
+   "credit": "Live cam: Stony Brook Village Center"
+  },
+  "sat": {
+   "loc": "Port Jefferson Harbor",
+   "photo": "pjharbor",
+   "credit": "Photo: Traitor, CC BY-SA 3.0"
+  },
+  "sun": {
+   "loc": "Stony Brook Harbor",
+   "cam": "https://share.earthcam.net/public/tJ90CoLmq7TzrY396Yd88IppNgKRsG0IKsp1qXkpqZ0/water_views/camera_2",
+   "photo": "sbharbor2",
+   "credit": "Live cam: Stony Brook Village Center"
+  }
+ },
+ "closings": null,
+ "guides": [],
+ "auto": true
+}

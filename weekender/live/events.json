@@ -1,11 +1,11 @@
 {
-"updated": "2026-11-20T02:59:54.149987+00:00",
+"updated": "2026-11-20T09:21:08.882625+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 37,
 "I Love Port Jeff": 5,
 "Town of Brookhaven (local)": "error: HTTP Error 403: Forbidden",
-"Village of Port Jefferson": 191,
+"Village of Port Jefferson": 190,
 "Emma S. Clark Library": 252,
 "Stony Brook Village Center": 3,
 "Long Island Museum": 37,
@@ -48,7 +48,7 @@
 ],
 "status": "",
 "fb": 0,
-"page": "https://www.threevillagelocal.com/events/reboli-center-thanksgiving-food-drive"
+"page": ""
 },
 {
 "id": "reboli-6adf9dab4c6329721a5cedc5",
@@ -107,240 +107,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/celebrate-the-season-annual-holiday-exhibition"
-},
-{
-"id": "cur-jmr",
-"title": "Live Music: John Maurice Restrepo and Eduardo Withrington at Madiran",
-"start": "2026-11-13T19:00",
-"end": "2026-11-13T22:00",
-"allday": false,
-"venue": "Madiran The Wine Bar",
-"addr": "209 Route 25A, East Setauket",
-"url": "https://madiranthewinebar.com/events.html",
-"desc": "Friday night live music at the East Setauket wine bar, 7 to 10 PM. Call 631-675-2778 to reserve a table.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-13/madiran-720.webp",
-"src": "3vl",
-"tags": [
-"music",
-"food"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/live-music-john-maurice-restrepo-and-eduardo-withrington",
-"pu": ""
-},
-{
-"id": "cur-bacher",
-"title": "Danny Bacher Memorial Roast & Toast at The Jazz Loft",
-"start": "2026-11-13T19:00",
-"end": "2026-11-13T21:00",
-"allday": false,
-"venue": "The Jazz Loft",
-"addr": "275 Christian Ave, Stony Brook",
-"url": "https://thejazzloft.org/calendar/",
-"desc": "A memorial Roast & Toast for Danny Bacher, featuring Tom Manuel & the Jazz Loft All Stars, comedian Amadeo Fusco and special guests. Friday at 7 PM.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-13/bacher-720.webp",
-"src": "3vl",
-"tags": [
-"music",
-"stage"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/danny-bacher-memorial-roast-toast-at-the-jazz-loft",
-"pu": "",
-"rank": 6
-},
-{
-"id": "cur-rorie",
-"title": "Rorie Kelly and Zoe Speed at Grounds & Sounds",
-"start": "2026-11-13T19:30",
-"end": "2026-11-13T22:00",
-"allday": false,
-"venue": "Grounds & Sounds Cafe (UU Fellowship)",
-"addr": "380 Nicolls Rd, East Setauket",
-"url": "https://www.groundsandsounds.org/",
-"desc": "Acoustic night at the Grounds & Sounds Cafe: open mic at 7:30 PM, then Rorie Kelly and Zoe Speed at 8:15 PM. Bring your own bottle of wine.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-13/rorie-720.webp",
-"src": "3vl",
-"tags": [
-"music"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/rorie-kelly-and-zoe-speed-at-grounds-sounds-cafe",
-"pu": ""
-},
-{
-"id": "cur-heart",
-"title": "Enduring Heart Lecture & Gallery Walk",
-"start": "2026-11-14T13:00",
-"end": "2026-11-14T14:30",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook",
-"url": "https://longislandmuseum.org/event/enduring-heart-lecture/",
-"desc": "Archaeologist Allison McGovern of Brookhaven National Laboratory on archaeology and Native American history, followed by a gallery walk. Register at longislandmuseum.org.",
-"img": "",
-"src": "3vl",
-"tags": [
-"history",
-"arts"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/enduring-heart-lecture-gallery-walk",
-"pu": ""
-},
-{
-"id": "cur-reception",
-"title": "Celebrate the Season Artist's Reception at the Reboli Center",
-"start": "2026-11-14T14:00",
-"end": "2026-11-14T17:00",
-"allday": false,
-"venue": "The Reboli Center for Art and History",
-"addr": "64 Main St, Stony Brook",
-"url": "https://rebolicenter.org/events/2026/ctsreception",
-"desc": "Meet the 50+ artists and artisans of Celebrate the Season, the Reboli Center's winter exhibition, with sweet and savory refreshments. Saturday 2 to 5 PM, free, no reservations needed.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-13/reception-720.webp",
-"src": "3vl",
-"tags": [
-"arts",
-"free"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/celebrate-the-season-artists-reception",
-"pu": "",
-"rank": 4
-},
-{
-"id": "cur-baldwin",
-"title": "Live Music: Douglas Baldwin Jazz Trio at Madiran",
-"start": "2026-11-14T19:00",
-"end": "2026-11-14T22:00",
-"allday": false,
-"venue": "Madiran The Wine Bar",
-"addr": "209 Route 25A, East Setauket",
-"url": "https://madiranthewinebar.com/events.html",
-"desc": "Saturday night jazz at the East Setauket wine bar, 7 to 10 PM. Call 631-675-2778 to reserve a table.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-13/madiran-720.webp",
-"src": "3vl",
-"tags": [
-"music",
-"food"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/live-music-douglas-baldwin-jazz-trio",
-"pu": ""
-},
-{
-"id": "cur-mtt",
-"title": "(mostly) TRUE THINGS: Stories About On the Menu",
-"start": "2026-11-14T19:00",
-"end": "2026-11-14T21:00",
-"allday": false,
-"venue": "The Performing Arts Studio of NY",
-"addr": "224 E. Main St, Port Jefferson",
-"url": "https://www.mostlytruethings.com/",
-"desc": "A game wrapped in a storytelling show, hosted by Jude Treder-Wolff: all but one storyteller slips little lies into their true story, and the audience gets to question them in Act 2. This month's theme is On the Menu.",
-"img": "",
-"src": "3vl",
-"tags": [
-"stage"
-],
-"status": "",
-"pick": false,
-"page": "https://www.threevillagelocal.com/events/mostly-true-things-stories-about-on-the-menu",
-"pu": ""
-},
-{
-"id": "cur-gardner",
-"title": "Hilary Gardner with the Lonesome Pines at The Jazz Loft",
-"start": "2026-11-14T19:00",
-"end": "2026-11-14T21:00",
-"allday": false,
-"venue": "The Jazz Loft",
-"addr": "275 Christian Ave, Stony Brook",
-"url": "https://thejazzloft.org/calendar/",
-"desc": "Lippe Concert Series: singer Hilary Gardner with the Lonesome Pines (guitar, accordion, bass and drums). Saturday at 7 PM.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-13/gardner-720.webp",
-"src": "3vl",
-"tags": [
-"music"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/hilary-gardner-with-the-lonesome-pines-at-the-jazz-loft",
-"pu": "",
-"rank": 3
-},
-{
-"id": "cur-carol",
-"title": "A Christmas Carol at Theatre Three",
-"start": "2026-11-14T19:00",
-"end": "2026-11-14T21:30",
-"allday": false,
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson",
-"url": "https://www.theatrethree.com",
-"desc": "Theatre Three's annual A Christmas Carol, Long Island's own holiday tradition: Friday and Saturday at 7 PM and Sunday at 3 PM, running through Dec. 27.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-13/carol-720.webp",
-"src": "3vl",
-"tags": [
-"stage",
-"kids"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/a-christmas-carol-at-theatre-three",
-"pu": "",
-"rank": 1
-},
-{
-"id": "cur-suzette",
-"title": "Dee Snider Inducts Suzette Guilot-Snider into the Music Hall of Fame",
-"start": "2026-11-14T20:30",
-"end": "2026-11-14T22:30",
-"allday": false,
-"venue": "LI Music & Entertainment Hall of Fame",
-"addr": "97 Main St, Stony Brook",
-"url": "https://www.limusichalloffame.org/events/",
-"desc": "Twisted Sister's Dee Snider inducts acclaimed costume designer Suzette Guilot-Snider into the Long Island Music & Entertainment Hall of Fame. Saturday at 8:30 PM.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-13/suzette-720.webp",
-"src": "3vl",
-"tags": [
-"music"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/suzette-guilot-snider-induction",
-"pu": "",
-"rank": 2
-},
-{
-"id": "cur-pjfm",
-"title": "Port Jefferson Farmers Market",
-"start": "2026-11-15T09:00",
-"end": "2026-11-15T14:00",
-"allday": false,
-"venue": "Harborfront Park",
-"addr": "101 E. Broadway, Port Jefferson",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1100",
-"desc": "The Sunday market at Harborfront Park, 9 AM to 2 PM. Next Sunday (Nov. 22) is the last one of the season.",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-13/pjfm-720.webp",
-"src": "3vl",
-"tags": [
-"free",
-"food",
-"outdoor"
-],
-"status": "",
-"pick": true,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-485",
-"pu": "",
-"rank": 5
 },
 {
 "id": "gallerynorth-71302",
@@ -513,24 +279,26 @@
 "page": "https://www.threevillagelocal.com/events/kids-night-out"
 },
 {
-"id": "reboli-6aad4cbf062c0f03de80759e",
+"id": "cur-novembersthird",
 "title": "November's Third Friday!",
-"start": "2026-11-20T18:30:00",
-"end": "2026-11-20T20:00:00",
+"start": "2026-11-20T18:30",
+"end": "2026-11-20T20:00",
 "allday": false,
 "venue": "The Reboli Center for Art and History",
 "addr": "64 Main Street, Stony Brook, NY, 11790",
 "url": "https://rebolicenter.org/events/2026/11/20/novembers-third-friday",
-"desc": "Join us for another great Third Friday at The Reboli Center with local artist and Vietnam veteran John Melillo. Melillo, a proud Eastern Long Islander, found solace in art to combat his PTSD. Through his paintings, he captures the images of Vietnam and Long Is",
-"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1789742483085-JPUEFEOFYI6JLXHPSJIB/NOVEMBER+RC+THIRD+FRIDAY+FLYER%282%29.png",
-"src": "reboli",
+"desc": "Join us for another great Third Friday at The Reboli Center with local artist and Vietnam veteran John Melillo. Melillo, a proud Eastern Long Islander, found solace in art to combat his PTSD. Through his paintings, he captures the images...",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-20/novembersthird-720.webp",
+"src": "3vl",
 "tags": [
 "free",
 "arts"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/novembers-third-friday"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/novembers-third-friday",
+"pu": "",
+"rank": 4
 },
 {
 "id": "theatre3-9244",
@@ -631,6 +399,27 @@
 "page": "https://www.threevillagelocal.com/events/wildlife-wonders-furry-friends-ages-2y-5y"
 },
 {
+"id": "cur-barnabysavesch",
+"title": "Barnaby Saves Christmas",
+"start": "2026-11-21T11:00",
+"end": "2026-11-21T13:00",
+"allday": false,
+"venue": "Theatre Three",
+"addr": "412 Main St, Port Jefferson",
+"url": "https://theatrethree.getmytix.net/tickets#928/Barnaby-Saves-Christmas",
+"desc": "Come join Santa, Barnaby, Franklynne, and all of their friends for a wonderful holiday treat. As our littlest elf and his reindeer friend set off on their journey to save Christmas, they meet some new friends along the way and learn the...",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-20/barnabysavesch-720.webp",
+"src": "3vl",
+"tags": [
+"arts"
+],
+"status": "",
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/barnaby-saves-christmas",
+"pu": "",
+"rank": 2
+},
+{
 "id": "pjchamber-15079",
 "title": "March For Liberty",
 "start": "2026-11-21T11:00:00",
@@ -670,81 +459,46 @@
 "page": "https://www.threevillagelocal.com/events/instrument-petting-zoo-ages-3-8-yrs"
 },
 {
-"id": "theatre3-9297",
-"title": "Barnaby Saves Christmas",
-"start": "2026-11-21T11:00:00",
-"end": "2026-11-21T11:00:00",
-"allday": false,
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson, NY 11777",
-"url": "https://theatrethree.getmytix.net/tickets#928/Barnaby-Saves-Christmas",
-"desc": "Come join Santa, Barnaby, Franklynne, and all of their friends for a wonderful holiday treat. As our littlest elf and his reindeer friend set off on their journey to save Christmas, they meet some new friends along the way and learn the true meaning of Christm",
-"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_898_Barnaby.jpg",
-"src": "theatre3",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/barnaby-saves-christmas"
-},
-{
-"id": "lim-3225670",
+"id": "cur-theboysgirlscl",
 "title": "The Boys & Girls Club of Shinnecock Nation Dance Troupe",
-"start": "2026-11-21T13:00:00",
-"end": "2026-11-21T14:00:00",
+"start": "2026-11-21T13:00",
+"end": "2026-11-21T14:00",
 "allday": false,
 "venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
+"addr": "1200 Route 25A, Stony Brook",
 "url": "https://longislandmuseum.org/event/the-boys-girls-club-of-shinnecock-nation-dance-troupe/",
-"desc": "Experience the vibrant culture and traditions of the Shinnecock Nation through a special performance by the Boys & Girls Club of Shinnecock Nation Dance Troupe. Made up of Native American youth from the Shinnecock Nation, the troupe shares their heritage throu",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/08/Shinnecock-Dance-Cover.jpg",
-"src": "lim",
+"desc": "Experience the vibrant culture and traditions of the Shinnecock Nation through a special performance by the Boys & Girls Club of Shinnecock Nation Dance Troupe. Made up of Native American youth from the Shinnecock Nation, the troupe shares...",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-20/theboysgirlscl-720.webp",
+"src": "3vl",
 "tags": [
 "history"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/the-boys-girls-club-of-shinnecock-nation-dance-troupe"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/the-boys-girls-club-of-shinnecock-nation-dance-troupe",
+"pu": "",
+"rank": 3
 },
 {
-"id": "emmaclark-autumns-canvas-rooster-leaf-art-61311",
+"id": "cur-autumnscanvasr",
 "title": "Autumn's Canvas: Rooster Leaf Art",
-"start": "2026-11-21T14:00:00",
-"end": "2026-11-21T15:00:00",
+"start": "2026-11-21T14:00",
+"end": "2026-11-21T15:00",
 "allday": false,
 "venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
-"addr": "120 Main St, Setauket, NY 11733",
+"addr": "120 Main St, Setauket",
 "url": "https://emmaclark.librarycalendar.com/event/autumns-canvas-rooster-leaf-art-61311",
-"desc": "Guided by Christin Nash, you will design and assemble a charming, two-dimensional rooster using a variety of autumn leaves. Perfect for all skill levels, this class is a wonderful way to celebrate seasonal creativity.",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-10/2Rooster%20Leaf%20Art%2011_18-21_2026.png.jpeg",
-"src": "emmaclark",
+"desc": "Guided by Christin Nash, you will design and assemble a charming, two-dimensional rooster using a variety of autumn leaves. Perfect for all skill levels, this class is a wonderful way to celebrate seasonal",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-20/autumnscanvasr-720.webp",
+"src": "3vl",
 "tags": [
 "arts"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/autumns-canvas-rooster-leaf-art-631"
-},
-{
-"id": "emmaclark-crafternoon-ages-3-11-yrs-w-caregiver-59966",
-"title": "Crafternoon (Ages 3-11 yrs. w/ caregiver)",
-"start": "2026-11-21T14:00:00",
-"end": "2026-11-21T15:30:00",
-"allday": false,
-"venue": "Emma S. Clark Memorial Library, Children's Library",
-"addr": "120 Main St, Setauket, NY 11733",
-"url": "https://emmaclark.librarycalendar.com/event/crafternoon-ages-3-11-yrs-w-caregiver-59966",
-"desc": "",
-"img": "https://emmaclark.librarycalendar.com/sites/default/files/2025-01/Crafternoon%20Collage.png",
-"src": "emmaclark",
-"tags": [
-"arts",
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/crafternoon-ages-3-11-yrs-w-caregiver-701"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/autumns-canvas-rooster-leaf-art-631",
+"pu": "",
+"rank": 6
 },
 {
 "id": "theatre3-9245",
@@ -806,6 +560,28 @@
 "page": "https://www.threevillagelocal.com/events/reindeer-scavenger-hunt"
 },
 {
+"id": "cur-portjeffersonf",
+"title": "Port Jefferson Farmers Market",
+"start": "2026-11-22T09:00",
+"end": "2026-11-22T14:00",
+"allday": false,
+"venue": "Jeanne Garant Harborfront Park",
+"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson",
+"url": "https://www.portjeffny.gov/calendar.aspx?EID=1103",
+"desc": "",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-20/portjeffersonf-720.webp",
+"src": "3vl",
+"tags": [
+"food",
+"outdoor"
+],
+"status": "",
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-486",
+"pu": "",
+"rank": 5
+},
+{
 "id": "iloveportjeff-6afc59763adb5b08c432ed37",
 "title": "Port Jeff Winter Farmers Market",
 "start": "2026-11-22T09:00:00",
@@ -824,26 +600,6 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/port-jeff-winter-farmers-market"
-},
-{
-"id": "portjeff-1103",
-"title": "Outdoor Summer Farmers Market",
-"start": "2026-11-22T09:00:00",
-"end": "2026-11-22T14:00:00",
-"allday": false,
-"venue": "Jeanne Garant Harborfront Park",
-"addr": "Jeanne Garant Harborfront Park - 101 East Broadway Port Jefferson NY 11777",
-"url": "https://www.portjeffny.gov/calendar.aspx?EID=1103",
-"desc": "",
-"img": "",
-"src": "portjeff",
-"tags": [
-"food",
-"outdoor"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/outdoor-summer-farmers-market-486"
 },
 {
 "id": "portjeff-1154",
@@ -906,25 +662,27 @@
 "page": "https://www.threevillagelocal.com/events/sunday-funday-treetop-friends"
 },
 {
-"id": "limehof-202611221500-paul-cipro",
+"id": "cur-paulcipro",
 "title": "Paul Cipro",
-"start": "2026-11-22T15:00:00",
-"end": "2026-11-22T17:00:00",
+"start": "2026-11-22T15:00",
+"end": "2026-11-22T17:00",
 "allday": false,
 "venue": "The Long Island Music and Entertainment Hall of Fame",
-"addr": "97 Main St, Stony Brook, NY 11790",
+"addr": "97 Main St, Stony Brook",
 "url": "https://www.limusichalloffame.org/events/",
-"desc": "Free with Admission. “Popular Long Island songwriter and musician Paul Cipro will perform his original songs accompanied by Billy Hall (keyboard/harmonica) and Allie Richardson (backing vocals/guitar). Cipro has recently been featured on UK’s Radio Wigwam, WLI",
-"img": "https://www.limusichalloffame.org/wp-content/uploads/2026/10/Paul-Cipro.jpg",
-"src": "limehof",
+"desc": "Free with Admission. “Popular Long Island songwriter and musician Paul Cipro will perform his original songs accompanied by Billy Hall (keyboard/harmonica) and Allie Richardson (backing vocals/guitar). Cipro has recently been featured on...",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@master/weekender/2026-11-20/paulcipro-720.webp",
+"src": "3vl",
 "tags": [
 "free",
 "music",
 "stage"
 ],
 "status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/paul-cipro"
+"pick": true,
+"page": "https://www.threevillagelocal.com/events/paul-cipro",
+"pu": "",
+"rank": 1
 },
 {
 "id": "theatre3-9246",
@@ -1770,21 +1528,21 @@
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria"
 },
 {
-"id": "wd-eat.namkeen-20261119",
+"id": "wd-eat.namkeen-20261120",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Smash Thursday: $9.99 meal",
-"when": "Today, Thursday",
-"desc": "Classic smash burger meal for $9.99. Dine-in only.",
-"expires": "2026-11-19",
+"title": "Family Friday: free shake",
+"when": "Today, Friday",
+"desc": "Buy 2 meals and get a free shake. Dine-in only.",
+"expires": "2026-11-20",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/eat.namkeen.jpg",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-smash-thursday-meal",
-"label": "Event",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
+"label": "Special",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken"
 },
 {
@@ -1885,22 +1643,22 @@
 "label": "Special"
 },
 {
-"id": "wd-eat.namkeen-20261119",
+"id": "wd-eat.namkeen-20261120",
 "biz": "Namkeen Hot Chicken",
 "ig": "eat.namkeen",
 "town": "Stony Brook",
 "category": "Restaurant",
 "member": true,
-"title": "Smash Thursday: $9.99 meal",
-"when": "Today, Thursday",
-"desc": "Classic smash burger meal for $9.99. Dine-in only.",
-"expires": "2026-11-19",
-"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
-"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/classic-800.webp",
+"title": "Family Friday: free shake",
+"when": "Today, Friday",
+"desc": "Buy 2 meals and get a free shake. Dine-in only.",
+"expires": "2026-11-20",
+"img": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
+"inset": "https://threevillagelocal-cloud.github.io/3vl-share/site/members/namkeen/spread-800.webp",
 "url": "",
-"page": "https://www.threevillagelocal.com/eat-drink/namkeen-hot-chicken-smash-thursday-meal",
+"page": "https://www.threevillagelocal.com/namkeen-hot-chicken",
 "profile": "https://www.threevillagelocal.com/namkeen-hot-chicken",
-"label": "Event"
+"label": "Special"
 },
 {
 "id": "18442976704181563",
