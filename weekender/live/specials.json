@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:00:13.001665+00:00",
+ "updated": "2026-11-20T16:00:14.156949+00:00",
  "specials": [
   {
    "id": "18135166018744521",
@@ -18,22 +18,6 @@
    "inset": "ig/p18135166018744521.jpg"
   },
   {
-   "id": "17871751329693435",
-   "biz": "Burgerology",
-   "ig": "burgerologyusa",
-   "town": "Stony Brook",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Pumpkin Pie Milkshake & Sweet Potato Fries",
-   "when": "Now through end of season",
-   "desc": "Pumpkin Pie Milkshake served in a real pumpkin with sweet potato fries and marshmallow dipping sauce.",
-   "expires": "2026-11-30",
-   "posted": "2026-11-13T15:27:51+0000",
-   "url": "https://www.instagram.com/reel/Dfr84T5RxGw/",
-   "img": "",
-   "inset": "ig/p17871751329693435.jpg"
-  },
-  {
    "id": "18442976704181563",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
@@ -48,6 +32,22 @@
    "url": "https://www.instagram.com/p/Df7iZNIz-QT/",
    "img": "",
    "inset": "ig/p18442976704181563.jpg"
+  },
+  {
+   "id": "18125110561901814",
+   "biz": "Luca Restaurant",
+   "ig": "lucastonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Aperitivo Hour at the Bar",
+   "when": "Today, Nov. 20 · 5-6 PM",
+   "desc": "Join us at the bar for Aperitivo Hour with an artisanal cheese plate and thoughtfully crafted cocktails.",
+   "expires": "2026-11-20",
+   "posted": "2026-11-20T13:43:42+0000",
+   "url": "https://www.instagram.com/p/Df9yimET5IK/",
+   "img": "",
+   "inset": "ig/p18125110561901814.jpg"
   },
   {
    "id": "18127003225698973",
@@ -116,22 +116,6 @@
    "inset": "ig/p18135166018744521.jpg"
   },
   {
-   "id": "17871751329693435",
-   "biz": "Burgerology",
-   "ig": "burgerologyusa",
-   "town": "Stony Brook",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Pumpkin Pie Milkshake & Sweet Potato Fries",
-   "when": "Now through end of season",
-   "desc": "Pumpkin Pie Milkshake served in a real pumpkin with sweet potato fries and marshmallow dipping sauce.",
-   "expires": "2026-11-30",
-   "posted": "2026-11-13T15:27:51+0000",
-   "url": "https://www.instagram.com/reel/Dfr84T5RxGw/",
-   "img": "",
-   "inset": "ig/p17871751329693435.jpg"
-  },
-  {
    "id": "18442976704181563",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
@@ -146,6 +130,22 @@
    "url": "https://www.instagram.com/p/Df7iZNIz-QT/",
    "img": "",
    "inset": "ig/p18442976704181563.jpg"
+  },
+  {
+   "id": "18125110561901814",
+   "biz": "Luca Restaurant",
+   "ig": "lucastonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Aperitivo Hour at the Bar",
+   "when": "Today, Nov. 20 · 5-6 PM",
+   "desc": "Join us at the bar for Aperitivo Hour with an artisanal cheese plate and thoughtfully crafted cocktails.",
+   "expires": "2026-11-20",
+   "posted": "2026-11-20T13:43:42+0000",
+   "url": "https://www.instagram.com/p/Df9yimET5IK/",
+   "img": "",
+   "inset": "ig/p18125110561901814.jpg"
   },
   {
    "id": "18127003225698973",
@@ -230,22 +230,6 @@
    "inset": "ig/p17916105516283491.jpg"
   },
   {
-   "id": "17871751329693435",
-   "biz": "Burgerology",
-   "ig": "burgerologyusa",
-   "town": "Stony Brook",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Pumpkin Pie Milkshake & Sweet Potato Fries",
-   "when": "Now through end of season",
-   "desc": "Pumpkin Pie Milkshake served in a real pumpkin with sweet potato fries and marshmallow dipping sauce.",
-   "expires": "2026-11-30",
-   "posted": "2026-11-13T15:27:51+0000",
-   "url": "https://www.instagram.com/reel/Dfr84T5RxGw/",
-   "img": "",
-   "inset": "ig/p17871751329693435.jpg"
-  },
-  {
    "id": "18442976704181563",
    "biz": "The Study by Toast",
    "ig": "thestudy.bytoast",
@@ -276,6 +260,22 @@
    "url": "https://www.instagram.com/reel/DfsAncBTAyT/",
    "img": "",
    "inset": "ig/p18023690675949485.jpg"
+  },
+  {
+   "id": "18125110561901814",
+   "biz": "Luca Restaurant",
+   "ig": "lucastonybrook",
+   "town": "Stony Brook",
+   "category": "Restaurant",
+   "member": false,
+   "title": "Aperitivo Hour at the Bar",
+   "when": "Today, Nov. 20 · 5-6 PM",
+   "desc": "Join us at the bar for Aperitivo Hour with an artisanal cheese plate and thoughtfully crafted cocktails.",
+   "expires": "2026-11-20",
+   "posted": "2026-11-20T13:43:42+0000",
+   "url": "https://www.instagram.com/p/Df9yimET5IK/",
+   "img": "",
+   "inset": "ig/p18125110561901814.jpg"
   },
   {
    "id": "18127003225698973",
@@ -340,22 +340,6 @@
    "url": "https://www.instagram.com/p/DfxDbE4ChMD/",
    "img": "",
    "inset": "ig/p18108793784212492.jpg"
-  },
-  {
-   "id": "18155940556551591",
-   "biz": "Right Coast Taqueria",
-   "ig": "rctaqueria",
-   "town": "East Setauket",
-   "category": "Restaurant",
-   "member": false,
-   "title": "Pilgrim Burrito",
-   "when": "Now through holiday season",
-   "desc": "Turkey, stuffing, mashed sweet potatoes, and cranberry sauce in one holiday-inspired burrito.",
-   "expires": "2026-11-27",
-   "posted": "2026-11-13T15:35:33+0000",
-   "url": "https://www.instagram.com/p/Dfr91MRlrQn/",
-   "img": "",
-   "inset": "ig/p18155940556551591.jpg"
   },
   {
    "id": "18135578608688275",
