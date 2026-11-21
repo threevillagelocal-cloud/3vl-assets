@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:01+00:00",
+ "updated": "2026-11-21T13:01+00:00",
  "confirmed": [
   {
    "post": "18143100796549473",
@@ -202,25 +202,6 @@
  ],
  "review": [
   {
-   "post": "18167020072496017",
-   "title": "Evening at the bar: sour cocktail night",
-   "date": "2026-11-20",
-   "start": "",
-   "end": "",
-   "venue": "Enology Wine Bar & Bistro",
-   "addr": "",
-   "desc": "Enology Wine Bar & Bistro invites guests to join them tonight in Saint James for an evening at the bar, featuring one of their sour cocktails. Reservations are available through the link in their bio.",
-   "org": "Enology Wine Bar & Bistro",
-   "handle": "enologywinebar",
-   "org_url": "https://www.instagram.com/enologywinebar/",
-   "url": "https://www.instagram.com/p/Df7_9L0HRdb/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18167020072496017.jpg",
-   "posted": "2026-11-19",
-   "kind": "food_drink",
-   "member": false,
-   "why": "food/drink item (Eat & Drink, not the calendar); no start time in the post"
-  },
-  {
    "post": "18129328684895451",
    "title": "Gather & Gift Evening on East Main Street",
    "date": "2026-12-02",
@@ -373,25 +354,6 @@
    "why": "no clear date"
   },
   {
-   "post": "18100034768449064",
-   "title": "Chakra Rebalancing Workshop with Heather",
-   "date": "2026-11-20",
-   "start": "19:00",
-   "end": "20:30",
-   "venue": "Mindful Turtle Yoga",
-   "addr": "60 Route 25A, Setauket, NY 11733",
-   "desc": "Heather leads a Chakra Rebalancing workshop this Friday, November 20, from 7:00 to 8:30pm. The caption does not name a venue.",
-   "org": "Mindful Turtle Yoga",
-   "handle": "mindfulturtle",
-   "org_url": "https://www.threevillagelocal.com/mindful-turtle-yoga",
-   "url": "https://www.instagram.com/reel/Df3Nb2wt-Dz/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18100034768449064.jpg",
-   "posted": "2026-11-18",
-   "kind": "community",
-   "member": true,
-   "why": "no place in the post"
-  },
-  {
    "post": "18103922384433485",
    "title": "Black Friday at NST Wellness",
    "date": "2026-11-27",
@@ -523,25 +485,6 @@
    "kind": "food_drink",
    "member": true,
    "why": "food/drink item (Eat & Drink, not the calendar); no clear date; no start time in the post"
-  },
-  {
-   "post": "17904209898607376",
-   "title": "Pink Friday",
-   "date": "2026-11-20",
-   "start": "",
-   "end": "",
-   "venue": "Chocology Unlimited",
-   "addr": "1099 N Country Rd, Stony Brook, NY 11790",
-   "desc": "Pink Friday celebration dedicated to shopping small and supporting independent businesses. Chocology is welcoming the season with Chocolate Wonderland, exceptional chocolates from around the world, and thoughtfully curated gifts.",
-   "org": "Chocology Unlimited",
-   "handle": "chocology_unlimited",
-   "org_url": "https://www.threevillagelocal.com/chocology-unlimited",
-   "url": "https://www.instagram.com/p/DfxxpNGDQMf/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17904209898607376.jpg",
-   "posted": "2026-11-15",
-   "kind": "sale",
-   "member": true,
-   "why": "a sale, not an event; no start time in the post"
   },
   {
    "post": "17898814413416003",
@@ -709,25 +652,6 @@
    "org_url": "https://www.threevillagelocal.com/refined-medical-ny",
    "url": "https://www.instagram.com/p/Dfrp--8Fne2/",
    "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18217170769318799.jpg",
-   "posted": "2026-11-13",
-   "kind": "sale",
-   "member": true,
-   "why": "a sale, not an event; no start time in the post"
-  },
-  {
-   "post": "18149184796571551",
-   "title": "Pink Friday at Celtic Apothecary",
-   "date": "2026-11-20",
-   "start": "",
-   "end": "",
-   "venue": "Celtic Apothecary",
-   "addr": "214 Main Street, Port Jefferson, NY 11777",
-   "desc": "Spend $50 in-store and receive $10 in Celtic Cash. Celtic Cash is redeemable in-store from November 21 through December 24 on purchases of $50 or more.",
-   "org": "Celtic Apothecary",
-   "handle": "celticapothecaryli",
-   "org_url": "https://www.threevillagelocal.com/celtic-apothecary",
-   "url": "https://www.instagram.com/p/DfqZ8oWSW5Q/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18149184796571551.jpg",
    "posted": "2026-11-13",
    "kind": "sale",
    "member": true,
@@ -998,25 +922,6 @@
    "kind": "community",
    "member": true,
    "why": "start time not written plainly in the caption"
-  },
-  {
-   "post": "17968409001226330",
-   "title": "Friendsgiving Parents Night Out",
-   "date": "2026-11-20",
-   "start": "",
-   "end": "",
-   "venue": "Chance To Dance",
-   "addr": "140 N Belle Mead Rd Suite F, Setauket, NY 11733",
-   "desc": "Join Chance To Dance on Friday, November 20th for a Friendsgiving. Pre-register by sending them a message.",
-   "org": "Chance To Dance",
-   "handle": "chancetodancestudios",
-   "org_url": "https://www.threevillagelocal.com/chance-to-dance",
-   "url": "https://www.instagram.com/p/DfdD05JzQTf/",
-   "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17968409001226330.jpg",
-   "posted": "2026-11-07",
-   "kind": "community",
-   "member": true,
-   "why": "no start time in the post"
   },
   {
    "post": "18159081826525495",

@@ -1,6 +1,6 @@
 {
-"last_run": "2026-11-20T13:01:10.735333+00:00",
-"cursor": 107,
+"last_run": "2026-11-21T13:01:36.665778+00:00",
+"cursor": 177,
 "accounts": 317,
 "posts": {
 "18481707613112188": {
@@ -8124,6 +8124,70 @@
 "date_stated": false,
 "time_stated": false,
 "desc": "A National Butter Day post from the Long Island Museum highlighting the history of butter-making tools and decorative butter molds from its collection. It announces no upcoming event with a date or time."
+}
+},
+"17898076059683921": {
+"ts": "2026-11-20T04:10:46+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "A photography studio asks followers to vote for it in the 2027 FourLeaf Best of Long Island contest, open through December 20, and shares a story about a Springsteen moment captured in Minneapolis."
+}
+},
+"18053171105817444": {
+"ts": "2026-11-19T14:00:28+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Real estate post with housing market facts and an invitation to comment or visit the agent's website about buying or selling. No event is announced."
+}
+},
+"18080692139562448": {
+"ts": "2026-11-18T13:03:19+0000",
+"c": {
+"event": false,
+"kind": "other",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Real estate post sharing housing market data and claims that home prices are not crashing, with an invitation to check local neighborhood price trends. No event is announced."
+}
+},
+"17940855744126468": {
+"ts": "2026-11-20T13:05:10+0000",
+"c": {
+"event": false,
+"kind": "sale",
+"title": "",
+"date": "",
+"start": "",
+"end": "",
+"place": "",
+"at_business": false,
+"date_stated": false,
+"time_stated": false,
+"desc": "Chocology Unlimited celebrates Pink Friday and Shop Small First, encouraging support for local independent businesses before Black Friday, without announcing a specific event or sale."
 }
 }
 }

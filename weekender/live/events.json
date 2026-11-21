@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-21T12:28:27.264000+00:00",
+"updated": "2026-11-21T13:04:35.809408+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 37,
@@ -1623,25 +1623,6 @@
 "label": "Special"
 },
 {
-"id": "17916105516283491",
-"biz": "Tommy's Place",
-"ig": "tommysplaceportjeff_",
-"town": "Port Jefferson",
-"category": "Bar/Restaurant",
-"member": false,
-"title": "Thanksgiving Eve Party at Tommy's Place",
-"when": "Wed, Nov. 25 · Until 4 AM",
-"desc": "Music, food, and drinks with no cover charge. Arrive early to avoid the line.",
-"expires": "2026-11-25",
-"posted": "2026-11-14T00:32:39+0000",
-"url": "https://www.instagram.com/p/Dfs67MLN3vF/",
-"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/tommys-ext-720.webp",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17916105516283491.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/tommys-place-thanksgiving-eve-party",
-"profile": "https://www.threevillagelocal.com/tommys-place",
-"label": "Event"
-},
-{
 "id": "18102531734395599",
 "biz": "Right Coast Taqueria",
 "ig": "rctaqueria",
@@ -1735,25 +1716,6 @@
 "page": "https://www.threevillagelocal.com/eat-drink/kilwins-port-jefferson-gift-card-bonus-card-per",
 "profile": "https://www.threevillagelocal.com/kilwins-port-jefferson",
 "label": "Special"
-},
-{
-"id": "18127003225698973",
-"biz": "Po' Boy Brewery",
-"ig": "poboybeerandcider",
-"town": "Port Jefferson Station",
-"category": "Brewery/Cidery",
-"member": false,
-"title": "Thanksgiving Eve Bash + New Beers",
-"when": "Wed, Nov 26 · 4 PM onward",
-"desc": "Free heroes and chips 4-6 PM, live music at 7 PM. New Strawberry Quick IPA and Peach Sour Ale on tap.",
-"expires": "2026-11-26",
-"posted": "2026-11-13T20:47:30+0000",
-"url": "https://www.instagram.com/reel/DfshcYEyQSq/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18127003225698973.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/po-boy-brewery-thanksgiving-eve-bash-new-beers",
-"profile": "https://www.threevillagelocal.com/po-boy-brewery",
-"label": "Live music"
 },
 {
 "id": "18455523025131328",

@@ -1,44 +1,4 @@
 {
-"18217945741349180": {
-"special": true,
-"title": "Seafood Stuffed Shells Special",
-"when": "Now",
-"desc": "Seafood Stuffed Shells featured on the specials menu at Tommy's Place.",
-"expires": "2026-11-05",
-"_ts": "2026-10-22T00:17:50+0000"
-},
-"18074576285727806": {
-"special": true,
-"title": "The Dip Schnitz Limited Menu Item",
-"when": "Limited time",
-"desc": "Crispy chicken schnitzel with speck, caramelized onions, portobello mushrooms, Gruyère on pretzel hero with brown gravy.",
-"expires": "2026-11-21",
-"_ts": "2026-10-21T21:25:57+0000"
-},
-"18119189521984340": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-21T20:33:01+0000"
-},
-"18154222495572399": {
-"special": true,
-"title": "Long Island Restaurant Week Prix Fixe",
-"when": "Nov 1–8, 2026",
-"desc": "Special dinner menu at $48 per person. Reserve on Resy or call (888) 624-6106.",
-"expires": "2026-11-08",
-"_ts": "2026-10-21T21:01:03+0000"
-},
-"18120258622975718": {
-"special": true,
-"title": "NEW Pumpkin Shake with Real Pumpkin",
-"when": "Now - Seasonal",
-"desc": "Try Kilwins' new fall pumpkin shake made with real pumpkin while supplies last.",
-"expires": "2026-11-30",
-"_ts": "2026-10-21T22:31:03+0000"
-},
 "18338906227275645": {
 "special": false,
 "title": "",
@@ -2782,5 +2742,13 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-20T17:12:59+0000"
+},
+"18096142958678018": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-20T22:30:10+0000"
 }
 }
