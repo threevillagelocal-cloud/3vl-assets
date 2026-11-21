@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-20T22:00:48.567822+00:00",
+"updated": "2026-11-21T00:00:58.707191+00:00",
 "counts": {
 "Three Village Chamber": "error: HTTP Error 403: Forbidden",
 "Port Jefferson Chamber": 37,
@@ -31,25 +31,6 @@
 "free": "&#127903;&#65039;"
 },
 "events": [
-{
-"id": "reboli-695ad1cbc2e9370261a8c6ec",
-"title": "Thanksgiving Food Drive",
-"start": "2026-10-01T11:00:00",
-"end": "2026-11-20T17:00:00",
-"allday": false,
-"venue": "The Reboli Center for Art and History",
-"addr": "64 Main Street, Stony Brook, NY, 11790",
-"url": "https://rebolicenter.org/events/2026fooddrive",
-"desc": "We are eager to support local families in need. Help us ensure that every family in our community can enjoy a warm and nourishing Thanksgiving season. We invite you to donate non-perishable, non-expired food items to our collection basket, located in the foyer",
-"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1767559709522-DT3IVFLXKD3RDHCDMG0Z/Pastel+Food+Drive+A4+Flyer-2.png",
-"src": "reboli",
-"tags": [
-"food"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
 {
 "id": "reboli-6adf9dab4c6329721a5cedc5",
 "title": "Emerging Artist Spotlight: November | Genevieve Rochlin",
@@ -128,63 +109,6 @@
 "page": ""
 },
 {
-"id": "pjchamber-15330",
-"title": "Pink Friday Boutique Crawl",
-"start": "2026-11-20T00:00:00",
-"end": "2026-11-20T23:59:59",
-"allday": true,
-"venue": "Port Jefferson Village",
-"addr": "",
-"url": "https://portjeffchamber.com/events-calendar/pink-friday-boutique-crawl/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "lim-3225062",
-"title": "America on Screen: Made in the USA",
-"start": "2026-11-20T14:00:00",
-"end": "2026-11-20T15:00:00",
-"allday": false,
-"venue": "The Long Island Museum",
-"addr": "1200 Route 25A, Stony Brook, NY 11790",
-"url": "https://longislandmuseum.org/event/america-on-screen-made-in-the-usa/",
-"desc": "Join us on select Friday afternoons for a special film series commemorating America’s 250th: Anniversary: America on Screen . Enjoy screenings of Smithsonian Channel programs that explore the people, places, and stories that shaped America. Made in the USA Wit",
-"img": "https://longislandmuseum.org/wp-content/uploads/2026/06/America_in_Color_03_304_episode_3840_2160_GEG333183-scaled.jpg",
-"src": "lim",
-"tags": [
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": ""
-},
-{
-"id": "pjchamber-15286",
-"title": "Kids Night Out",
-"start": "2026-11-20T18:00:00",
-"end": "2026-11-20T20:00:00",
-"allday": false,
-"venue": "Port Jefferson Village Center",
-"addr": "101A East Broadway, Port Jefferson, 11777",
-"url": "https://portjeffchamber.com/events-calendar/kids-night-out-nov-2026/",
-"desc": "",
-"img": "",
-"src": "pjchamber",
-"tags": [
-"kids"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/kids-night-out"
-},
-{
 "id": "cur-novembersthird",
 "title": "November's Third Friday!",
 "start": "2026-11-20T18:30",
@@ -205,67 +129,6 @@
 "page": "https://www.threevillagelocal.com/events/novembers-third-friday",
 "pu": "",
 "rank": 4
-},
-{
-"id": "theatre3-9244",
-"title": "A Christmas Carol",
-"start": "2026-11-20T19:00:00",
-"end": "2026-11-20T19:00:00",
-"allday": false,
-"venue": "Theatre Three",
-"addr": "412 Main St, Port Jefferson, NY 11777",
-"url": "https://theatrethree.getmytix.net/tickets#922/A-Christmas-Carol",
-"desc": "“I will honor Christmas in my heart…” Celebrate the season with Long Island’s own holiday tradition and BroadwayWorld.com winner for Best Play. Follow the miser Ebenezer Scrooge on a journey that teaches him the meaning of Christmas - past, present, and future",
-"img": "https://theatrethree.getmytix.net/_wss/clients/434/venued_events/event_922_A%20Christmas%20Carol%201600x1000.png",
-"src": "theatre3",
-"tags": [
-"music",
-"stage"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/a-christmas-carol"
-},
-{
-"id": "gallerynorth-71325",
-"title": "Adults ONLY Card Making",
-"start": "2026-11-20T19:00:00",
-"end": "2026-11-20T21:00:00",
-"allday": false,
-"venue": "Gallery North",
-"addr": "90 N Country Rd, Setauket, NY 11733",
-"url": "https://gallerynorth.org/products/adults-only-card-making",
-"desc": "Have some well deserved fun and allow yourself to play with art materials!! Join us for some ADULTS ONLY art making!! During this Sip, Make, Play guests will have all the supplies they need to create all sorts of Holiday Cards! Get a chance to use our etching ",
-"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71325/v1792692704587/image_large.webp",
-"src": "gallerynorth",
-"tags": [
-"food",
-"stage",
-"arts"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/adults-only-card-making"
-},
-{
-"id": "madiran-20261120-jim-lowe",
-"title": "Live Music: Jim Lowe",
-"start": "2026-11-20T19:00:00",
-"end": "2026-11-20T22:00:00",
-"allday": false,
-"venue": "Madiran The Wine Bar",
-"addr": "209 Route 25A, East Setauket, NY 11733",
-"url": "https://madiranthewinebar.com/events.html",
-"desc": "Live music at Madiran The Wine Bar in Setauket: Jim Lowe. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
-"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
-"src": "madiran",
-"tags": [
-"music",
-"food"
-],
-"status": "",
-"fb": 0,
-"page": "https://www.threevillagelocal.com/events/live-music-jim-lowe-1009"
 },
 {
 "id": "emmaclark-puzzle-swap-61314",
@@ -1372,27 +1235,220 @@
 "status": "",
 "fb": 0,
 "page": "https://www.threevillagelocal.com/events/bark-for-readers-up-to-5th-grade-708"
+},
+{
+"id": "pjchamber-14877",
+"title": "2026 Port Jefferson Festival of Trees",
+"start": "2026-12-01T00:00:00",
+"end": "2027-01-02T23:59:59",
+"allday": true,
+"venue": "Port Jefferson Village Center",
+"addr": "101A East Broadway, Port Jefferson, 11777",
+"url": "https://portjeffchamber.com/events-calendar/2026-port-jefferson-festival-of-trees/",
+"desc": "2026 Port Jefferson Festival of Trees",
+"img": "",
+"src": "pjchamber",
+"tags": [
+"outdoor"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/2026-port-jefferson-festival-of-trees"
+},
+{
+"id": "emmaclark-tot-storytime-ages-2-3-yrs-w-caregiver-63812",
+"title": "Tot Storytime (Ages 2-3 yrs w/ caregiver)",
+"start": "2026-12-01T10:30:00",
+"end": "2026-12-01T11:00:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/tot-storytime-ages-2-3-yrs-w-caregiver-63812",
+"desc": "Themed activities that you and your child can enjoy together.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/tot-storytime-ages-2-3-yrs-w-caregiver-556"
+},
+{
+"id": "reboli-6af3a5264aa31a27069fada4",
+"title": "December's Feature Artisan of the Month: John Mutch | Jewelry Design",
+"start": "2026-12-01T11:00:00",
+"end": "2026-12-31T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2026/12/1/decembers-feature-artisan-of-the-month-john-mutch-jewelry-design",
+"desc": "John Mutch, the founder of the beloved Port Jefferson boutiques Earring Tabú and Gialos, established in 1989. What began as a desire to put down roots while continuing to pursue his love of creating and discovering distinctive jewelry eventually grew into a de",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1794352505581-ELB0L6EHM3R9QDZID0A8/Screenshot+2026-11-10+at+11.59.29+AM.png",
+"src": "reboli",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/decembers-feature-artisan-of-the-month-john-mutch-jewelry-design"
+},
+{
+"id": "reboli-695ad27e27a39922deff0f53",
+"title": "Annual Sock and Mitten Drive!",
+"start": "2026-12-01T11:00:00",
+"end": "2026-12-24T13:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2025/12/1/annual-sock-and-mitten-drive-6rjna",
+"desc": "Please help us help fellow New Yorkers in need by donating a new or gently used pair of socks or mittens! Click to Learn More…",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1767559844346-NJJRF4HL234ON26JPW2B/Blue+Christmas+Food+Drive+Flyer-2.png",
+"src": "reboli",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/annual-sock-and-mitten-drive"
+},
+{
+"id": "reboli-6adfa144908e526404d610be",
+"title": "Emerging Artist Spotlight: December | Catalin Giurcanu",
+"start": "2026-12-01T11:00:00",
+"end": "2026-12-31T17:00:00",
+"allday": false,
+"venue": "The Reboli Center for Art and History",
+"addr": "64 Main Street, Stony Brook, NY, 11790",
+"url": "https://rebolicenter.org/events/2026/12/1/emerging-artist-spotlight-december-catalin-giurcanu",
+"desc": "The Reboli Center for Art and History is pleased to announce photographer Catalin Giurcanu as our featured artist for the December 2026 Emerging Artist Spotlight , highlighting his distinctive approach to photography and his exploration of the beauty, mystery,",
+"img": "https://images.squarespace-cdn.com/content/v1/56a9735cdf40f3e0ec0c17cd/1793041007801-6XAZP2M5E4KCL5BYL58P/Lifting+off.jpg",
+"src": "reboli",
+"tags": [
+"history",
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/emerging-artist-spotlight-december-catalin-giurcanu"
+},
+{
+"id": "emmaclark-preschool-storytime-ages-35-5-yrs-63825",
+"title": "PreSchool Storytime Ages 3.5- 5 yrs",
+"start": "2026-12-01T13:15:00",
+"end": "2026-12-01T13:45:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/preschool-storytime-ages-35-5-yrs-63825",
+"desc": "Have fun and meet some new friends. This storytime is geared to give the children a little independence.",
+"img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@20bba76f6e4b/events-cal/img/emma-clark.jpg",
+"src": "emmaclark",
+"tags": [
+"kids"
+],
+"status": "",
+"fb": 1,
+"page": "https://www.threevillagelocal.com/events/preschool-storytime-ages-3-5-5-yrs-557"
+},
+{
+"id": "emmaclark-felted-winter-scene-61317",
+"title": "Felted Winter Scene",
+"start": "2026-12-01T14:00:00",
+"end": "2026-12-01T16:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Vincent R. O'Leary Community Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/felted-winter-scene-61317",
+"desc": "Learn the easy art of 2D felting with art educator Bonnie Schwartz. You’ll use 100% Merino Wool and special felting tools to make a winter scene featuring a holiday snowman. Space is limited. All supplies provided.",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2026-10/IMG_0761.PNG",
+"src": "emmaclark",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/felted-winter-scene"
+},
+{
+"id": "emmaclark-mindful-masterpieces-grades-2-5-62079",
+"title": "Mindful Masterpieces (Grades 2-5)",
+"start": "2026-12-01T16:45:00",
+"end": "2026-12-01T17:30:00",
+"allday": false,
+"venue": "Emma S. Clark Memorial Library, Children's Program Room",
+"addr": "120 Main St, Setauket, NY 11733",
+"url": "https://emmaclark.librarycalendar.com/event/mindful-masterpieces-grades-2-5-62079",
+"desc": "",
+"img": "https://emmaclark.librarycalendar.com/sites/default/files/2024-08/SelfCareJars.png",
+"src": "emmaclark",
+"tags": [
+"arts",
+"kids"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/mindful-masterpieces-grades-2-5"
+},
+{
+"id": "gallerynorth-71326",
+"title": "Intro to Watercolor: Painting Flowers with Cathleen Ficht",
+"start": "2026-12-01T17:00:00",
+"end": "2026-12-01T20:00:00",
+"allday": false,
+"venue": "Gallery North",
+"addr": "90 N Country Rd, Setauket, NY 11733",
+"url": "https://gallerynorth.org/products/12-01-intro-to-watercolor-painting-flowers",
+"desc": "Explore the fundamentals of watercolor through the observation of individual flowers, bunches, and bouquet. Students will learn basic washes, color mixing, brushwork techniques, and layering while discovering how to build a painting from light, transparent was",
+"img": "https://careers-app-shopify.s3.ap-south-1.amazonaws.com/prod/5339/71326/v1792692821457/image_large.webp",
+"src": "gallerynorth",
+"tags": [
+"arts"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/intro-to-watercolor-painting-flowers-with-cathleen-ficht"
+},
+{
+"id": "madiran-20261201-cathy-rose-salit-with-rod-borrie-steve-s",
+"title": "Live Music: Cathy Rose Salit with Rod Borrie, Steve Salerno, and Dave Lobenstein",
+"start": "2026-12-01T19:00:00",
+"end": "2026-12-01T21:00:00",
+"allday": false,
+"venue": "Madiran The Wine Bar",
+"addr": "209 Route 25A, East Setauket, NY 11733",
+"url": "https://madiranthewinebar.com/events.html",
+"desc": "Live music at Madiran The Wine Bar in Setauket: Cathy Rose Salit with Rod Borrie, Steve Salerno, and Dave Lobenstein. Wine, small plates and a cozy room. Call 631-675-2778 to reserve a table.",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/madiranthewinebar_eastsetauket.jpg",
+"src": "madiran",
+"tags": [
+"music",
+"food"
+],
+"status": "",
+"fb": 0,
+"page": "https://www.threevillagelocal.com/events/live-music-cathy-rose-salit-with-rod-borrie-steve-salerno-and-dave-lobenstein"
 }
 ],
 "closings": [],
 "specials": [
 {
-"id": "18348935671285211",
+"id": "17924523486446853",
 "biz": "Castaways Steak & Seafood",
 "ig": "castawayspj",
 "town": "Port Jefferson",
 "category": "Restaurant",
 "member": false,
-"title": "Half Off All Drinks at Castaways",
-"when": "Fri, Nov. 20 · 12-6 PM",
-"desc": "Get half off all drinks at Castaways in Port Jefferson today from 12 to 6 PM. Grab your friends and claim a spot at the bar.",
-"expires": "2026-11-20",
-"posted": "2026-11-20T17:01:58+0000",
-"url": "https://www.instagram.com/reel/Df-JMS_zwBR/",
+"title": "15% Off Holiday Party Bookings",
+"when": "Book by Nov. 26",
+"desc": "Save 15% on office parties, family dinners or friends' nights out when you book before Thanksgiving.",
+"expires": "2026-11-26",
+"posted": "2026-11-16T17:01:44+0000",
+"url": "https://www.instagram.com/p/Dfz2Aa4in9R/",
 "img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/castawayspj.jpg",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18348935671285211.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-half-off-all-drinks",
-"label": "Special",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p17924523486446853.jpg",
+"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-off-holiday-party-bookings",
+"label": "Event",
 "profile": "https://www.threevillagelocal.com/castaways-steak-seafood"
 },
 {
@@ -1452,25 +1508,6 @@
 "profile": "https://www.threevillagelocal.com/tommys-place"
 },
 {
-"id": "18125110561901814",
-"biz": "Luca Restaurant",
-"ig": "lucastonybrook",
-"town": "Stony Brook",
-"category": "Restaurant",
-"member": false,
-"title": "Aperitivo Hour at the Bar",
-"when": "Today, Nov. 20 · 5-6 PM",
-"desc": "Join us at the bar for Aperitivo Hour with an artisanal cheese plate and thoughtfully crafted cocktails.",
-"expires": "2026-11-20",
-"posted": "2026-11-20T13:43:42+0000",
-"url": "https://www.instagram.com/p/Df9yimET5IK/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18125110561901814.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/luca-restaurant-aperitivo-hour-bar",
-"label": "Special",
-"profile": "https://www.threevillagelocal.com/luca"
-},
-{
 "id": "18102531734395599",
 "biz": "Right Coast Taqueria",
 "ig": "rctaqueria",
@@ -1488,28 +1525,28 @@
 "page": "https://www.threevillagelocal.com/eat-drink/right-coast-taqueria-burritos-after-pm",
 "label": "Special",
 "profile": "https://www.threevillagelocal.com/right-coast-taqueria"
+},
+{
+"id": "18030186059700958",
+"biz": "Nantuckets",
+"ig": "nantucketspjefferson",
+"town": "Port Jefferson",
+"category": "Restaurant (Seafood)",
+"member": false,
+"title": "Bottomless Mimosas Brunch",
+"when": "Every Sat & Sun · 10 AM-2:30 PM",
+"desc": "Bottomless mimosas, bloody marys, and coffee. No reservations needed.",
+"expires": "2026-11-28",
+"posted": "2026-11-14T16:33:34+0000",
+"url": "https://www.instagram.com/p/DfupMaTl0Q6/",
+"img": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/ext/nantucketspjefferson.jpg",
+"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18030186059700958.jpg",
+"page": "https://www.threevillagelocal.com/eat-drink/nantuckets-bottomless-mimosas-brunch",
+"label": "Special",
+"profile": "https://www.threevillagelocal.com/nantuckets"
 }
 ],
 "specialsAll": [
-{
-"id": "18348935671285211",
-"biz": "Castaways Steak & Seafood",
-"ig": "castawayspj",
-"town": "Port Jefferson",
-"category": "Restaurant",
-"member": false,
-"title": "Half Off All Drinks at Castaways",
-"when": "Fri, Nov. 20 · 12-6 PM",
-"desc": "Get half off all drinks at Castaways in Port Jefferson today from 12 to 6 PM. Grab your friends and claim a spot at the bar.",
-"expires": "2026-11-20",
-"posted": "2026-11-20T17:01:58+0000",
-"url": "https://www.instagram.com/reel/Df-JMS_zwBR/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18348935671285211.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/castaways-steak-seafood-half-off-all-drinks",
-"profile": "https://www.threevillagelocal.com/castaways-steak-seafood",
-"label": "Special"
-},
 {
 "id": "17924523486446853",
 "biz": "Castaways Steak & Seafood",
@@ -1603,25 +1640,6 @@
 "page": "https://www.threevillagelocal.com/eat-drink/tommys-place-thanksgiving-eve-party",
 "profile": "https://www.threevillagelocal.com/tommys-place",
 "label": "Event"
-},
-{
-"id": "18125110561901814",
-"biz": "Luca Restaurant",
-"ig": "lucastonybrook",
-"town": "Stony Brook",
-"category": "Restaurant",
-"member": false,
-"title": "Aperitivo Hour at the Bar",
-"when": "Today, Nov. 20 · 5-6 PM",
-"desc": "Join us at the bar for Aperitivo Hour with an artisanal cheese plate and thoughtfully crafted cocktails.",
-"expires": "2026-11-20",
-"posted": "2026-11-20T13:43:42+0000",
-"url": "https://www.instagram.com/p/Df9yimET5IK/",
-"img": "",
-"inset": "https://raw.githubusercontent.com/threevillagelocal-cloud/3vl-assets/master/weekender/live/ig/p18125110561901814.jpg",
-"page": "https://www.threevillagelocal.com/eat-drink/luca-restaurant-aperitivo-hour-bar",
-"profile": "https://www.threevillagelocal.com/luca",
-"label": "Special"
 },
 {
 "id": "18102531734395599",
@@ -1781,7 +1799,6 @@
 "Namkeen Hot Chicken",
 "The Study by Toast",
 "Tommy's Place",
-"Luca Restaurant",
 "Right Coast Taqueria",
 "Nantuckets",
 "Slurp Ramen",
@@ -1797,6 +1814,7 @@
 "Burgerology",
 "Se-Port Deli & Caterers",
 "Little Cheese Shop",
+"Luca Restaurant",
 "Three Village Inn / Mirabelle Restaurant & Tavern",
 "Bliss Restaurant",
 "Prohibition Port Jefferson",
