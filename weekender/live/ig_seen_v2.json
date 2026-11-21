@@ -1,20 +1,4 @@
 {
-"18338906227275645": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-22T14:12:55+0000"
-},
-"18106290422527803": {
-"special": false,
-"title": "Churro Fries",
-"when": "Ongoing",
-"desc": "Cinnamon sugar coated churro fries served with caramel sauce for dipping.",
-"expires": "2026-10-22",
-"_ts": "2026-10-22T13:53:35+0000"
-},
 "17941494225389338": {
 "special": false,
 "title": "Edible Gold Flakes Available",
@@ -42,22 +26,6 @@
 "18397070935167732": {
 "special": false,
 "_ts": "2026-10-22T18:41:45+0000"
-},
-"17961680139246691": {
-"special": false,
-"title": "",
-"when": "",
-"desc": "",
-"expires": "",
-"_ts": "2026-10-22T15:42:42+0000"
-},
-"18116670341043180": {
-"special": true,
-"title": "Thursday Happy Hour at Castaways",
-"when": "Every Thursday · 12-6 PM",
-"desc": "Half off all drinks at the inside bar, high tops and lounge.",
-"expires": "2026-10-29",
-"_ts": "2026-10-22T15:01:33+0000"
 },
 "18386134387233987": {
 "special": false,
@@ -2750,5 +2718,21 @@
 "desc": "",
 "expires": "",
 "_ts": "2026-11-20T22:30:10+0000"
+},
+"18051282482819680": {
+"special": true,
+"title": "Thanksgiving Prix Fixe Dinner",
+"when": "Thu, Nov. 26 · Reserve ahead",
+"desc": "Three-course Thanksgiving prix fixe menu for $59 per person, with traditional dinner or steak, scallops, and salmon options.",
+"expires": "2026-11-26",
+"_ts": "2026-11-21T15:49:31+0000"
+},
+"18195127066405587": {
+"special": false,
+"title": "",
+"when": "",
+"desc": "",
+"expires": "",
+"_ts": "2026-11-21T15:09:42+0000"
 }
 }

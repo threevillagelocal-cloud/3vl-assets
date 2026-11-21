@@ -1,6 +1,22 @@
 {
- "updated": "2026-11-21T13:00:14.395939+00:00",
+ "updated": "2026-11-21T16:00:16.294813+00:00",
  "specials": [
+  {
+   "id": "18051282482819680",
+   "biz": "Culpers 1778",
+   "ig": "culpers1778",
+   "town": "East Setauket",
+   "category": "Restaurant/Steakhouse",
+   "member": false,
+   "title": "Thanksgiving Prix Fixe Dinner",
+   "when": "Thu, Nov. 26 · Reserve ahead",
+   "desc": "Three-course Thanksgiving prix fixe menu for $59 per person, with traditional dinner or steak, scallops, and salmon options.",
+   "expires": "2026-11-26",
+   "posted": "2026-11-21T15:49:31+0000",
+   "url": "https://www.instagram.com/p/DgAluvyPL3r/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
+   "inset": "ig/p18051282482819680.jpg"
+  },
   {
    "id": "18135166018744521",
    "biz": "Tommy's Place",
@@ -48,22 +64,6 @@
    "url": "https://www.instagram.com/p/DfupMaTl0Q6/",
    "img": "",
    "inset": "ig/p18030186059700958.jpg"
-  },
-  {
-   "id": "17924523486446853",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "15% Off Holiday Party Bookings",
-   "when": "Book by Nov. 26",
-   "desc": "Save 15% on office parties, family dinners or friends' nights out when you book before Thanksgiving.",
-   "expires": "2026-11-26",
-   "posted": "2026-11-16T17:01:44+0000",
-   "url": "https://www.instagram.com/p/Dfz2Aa4in9R/",
-   "img": "",
-   "inset": "ig/p17924523486446853.jpg"
   },
   {
    "id": "18102531734395599",
@@ -100,6 +100,22 @@
  ],
  "candidates": [
   {
+   "id": "18051282482819680",
+   "biz": "Culpers 1778",
+   "ig": "culpers1778",
+   "town": "East Setauket",
+   "category": "Restaurant/Steakhouse",
+   "member": false,
+   "title": "Thanksgiving Prix Fixe Dinner",
+   "when": "Thu, Nov. 26 · Reserve ahead",
+   "desc": "Three-course Thanksgiving prix fixe menu for $59 per person, with traditional dinner or steak, scallops, and salmon options.",
+   "expires": "2026-11-26",
+   "posted": "2026-11-21T15:49:31+0000",
+   "url": "https://www.instagram.com/p/DgAluvyPL3r/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
+   "inset": "ig/p18051282482819680.jpg"
+  },
+  {
    "id": "18135166018744521",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -146,22 +162,6 @@
    "url": "https://www.instagram.com/p/DfupMaTl0Q6/",
    "img": "",
    "inset": "ig/p18030186059700958.jpg"
-  },
-  {
-   "id": "17924523486446853",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "15% Off Holiday Party Bookings",
-   "when": "Book by Nov. 26",
-   "desc": "Save 15% on office parties, family dinners or friends' nights out when you book before Thanksgiving.",
-   "expires": "2026-11-26",
-   "posted": "2026-11-16T17:01:44+0000",
-   "url": "https://www.instagram.com/p/Dfz2Aa4in9R/",
-   "img": "",
-   "inset": "ig/p17924523486446853.jpg"
   },
   {
    "id": "18102531734395599",
@@ -198,6 +198,22 @@
  ],
  "all": [
   {
+   "id": "18051282482819680",
+   "biz": "Culpers 1778",
+   "ig": "culpers1778",
+   "town": "East Setauket",
+   "category": "Restaurant/Steakhouse",
+   "member": false,
+   "title": "Thanksgiving Prix Fixe Dinner",
+   "when": "Thu, Nov. 26 · Reserve ahead",
+   "desc": "Three-course Thanksgiving prix fixe menu for $59 per person, with traditional dinner or steak, scallops, and salmon options.",
+   "expires": "2026-11-26",
+   "posted": "2026-11-21T15:49:31+0000",
+   "url": "https://www.instagram.com/p/DgAluvyPL3r/",
+   "img": "https://cdn.jsdelivr.net/gh/threevillagelocal-cloud/3vl-assets@01e112a281e4/weekender/2026-10-02/culpers-ext-720.webp",
+   "inset": "ig/p18051282482819680.jpg"
+  },
+  {
    "id": "18135166018744521",
    "biz": "Tommy's Place",
    "ig": "tommysplaceportjeff_",
@@ -244,22 +260,6 @@
    "url": "https://www.instagram.com/p/DfupMaTl0Q6/",
    "img": "",
    "inset": "ig/p18030186059700958.jpg"
-  },
-  {
-   "id": "17924523486446853",
-   "biz": "Castaways Steak & Seafood",
-   "ig": "castawayspj",
-   "town": "Port Jefferson",
-   "category": "Restaurant",
-   "member": false,
-   "title": "15% Off Holiday Party Bookings",
-   "when": "Book by Nov. 26",
-   "desc": "Save 15% on office parties, family dinners or friends' nights out when you book before Thanksgiving.",
-   "expires": "2026-11-26",
-   "posted": "2026-11-16T17:01:44+0000",
-   "url": "https://www.instagram.com/p/Dfz2Aa4in9R/",
-   "img": "",
-   "inset": "ig/p17924523486446853.jpg"
   },
   {
    "id": "18102531734395599",
